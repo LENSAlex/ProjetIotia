@@ -1,0 +1,28 @@
+Nous avons dans un premier temps fait un schéma organisé sur tableau de comment nous allons procéder.
+
+Nous allons fonctionner par salle, étage, par example, nous avons mit en corrélation tous les capteurs au sein d'une salle.
+Chaque capteurs aura un positionnement spéficique dans la salle.
+
+Nous avons donc des technologies de transfert de données tel que Bluetooth, LoRa.
+La récupération des données se fera principalement par le biai d'arduino, comme la majeure partie des capteurs fonctionnent avec celui-ci.
+
+Pour centraliser toutes les données des capteurs nous allons les envoyer sur un Raspberry PI.
+Il y a aura dans notre prévision, un RPI par étage. Il faut bien prendre en compte le fait que les capteurs BT ou WiFI (selon les besoins) ont des restrictions au niveau des distances.
+
+Le Raspberry PI va devoir stocker les données (Base de Données). Nous ne savons pas encorer quelle technologie nous allons utiliser.
+Il y a par exemple: Web Service NODE JS / JSON | Base de données via MySQL ou MariaDB etc...
+Pour facilité l'accessibilité des données, nous allons mettre en place une application web et une application mobile.
+L'application web servira à administrer les capteurs au sein de la salle.
+L'application Android servira aux élèves. Exemple d'utilisation : Une élève à cours à 8h, il reçoit une notification des données, des cas covid ETC.
+
+Il faudra donc un accès par Agenda / Nom des élèves / Numéro de Salle de classe.
+Etant données que nous n'avons pas accès au données de l'IUT, nous allons surement utiliser une virtualisation en créer unee salle de classe et des élèves.
+
+Choix des capteurs: M5Stcik-C ; M5Stack (ecran LCD) ; CO2 Capteur ; Store Automatisé ; Capteur de tempétature ; Capteur RFID ; Capteur Caméra (Détection de mouvement/Visage) 
+
+
+Capteur RFID = Qui 
+Capteur Caméra = Quand
+Il doit pouvoir vérifier qui est entré. Si non; Vérouillage sérrure par exemple. 
+
+//Ebauche 16h15 le 12/03/2021
