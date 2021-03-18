@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-18T10:02:14.190Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="ZKYLt8DiQl0pneMoFMix" version="14.4.9" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-03-18T10:03:30.722Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="fttCtdzKvI-ZaN7XDWDy" version="14.4.9" type="github" pages="2">
   <diagram id="ARH5aImlDJQzNbsXuoi2" name="Page-1">
     <mxGraphModel dx="2227" dy="1963" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -206,6 +206,11 @@
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="hwvQYhv3dfhFRNOniil5-113" value="&lt;span style=&quot;font-size: 12px ; background-color: rgb(248 , 249 , 250)&quot;&gt;click icon nave&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hwvQYhv3dfhFRNOniil5-36">
+          <mxGeometry x="0.4098" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="hwvQYhv3dfhFRNOniil5-37" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-453.75" y="-135" width="485" height="355" as="geometry" />
         </mxCell>
@@ -371,9 +376,6 @@
         <mxCell id="hwvQYhv3dfhFRNOniil5-85" value="click icon nave" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="402.5" y="620" width="90" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="hwvQYhv3dfhFRNOniil5-86" value="click icon nave" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="31.25" y="670" width="90" height="20" as="geometry" />
-        </mxCell>
         <mxCell id="hwvQYhv3dfhFRNOniil5-87" value="click icon liste" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-160" y="220" width="90" height="20" as="geometry" />
         </mxCell>
@@ -444,7 +446,28 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="178.75" y="405" as="sourcePoint" />
             <mxPoint x="42.01499999999987" y="403.0050000000001" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="405" y="1050" />
+            </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="hwvQYhv3dfhFRNOniil5-112" value="" style="endArrow=classic;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="mvBOg-nYU6NL9uwTwKON-12" target="hwvQYhv3dfhFRNOniil5-99">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="178.75" y="475" as="sourcePoint" />
+            <mxPoint x="170" y="758.75" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="80" y="453" />
+              <mxPoint x="80" y="1250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hwvQYhv3dfhFRNOniil5-114" value="&lt;span style=&quot;font-size: 12px ; background-color: rgb(248 , 249 , 250)&quot;&gt;click icon nave&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hwvQYhv3dfhFRNOniil5-112">
+          <mxGeometry x="-0.0421" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hwvQYhv3dfhFRNOniil5-115" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(248, 249, 250); display: inline; float: none;&quot;&gt;click icon liste&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1030" width="100" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
