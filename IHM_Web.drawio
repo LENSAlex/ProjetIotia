@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-18T09:35:03.843Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="fnlMhxCXyrLSTrl85tNt" version="14.4.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-18T09:35:30.840Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="LHdj14nwGuLNc7b5k6YZ" version="14.4.9" type="github">
   <diagram id="ARH5aImlDJQzNbsXuoi2" name="Page-1">
     <mxGraphModel dx="2249" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -74,7 +74,7 @@
           <mxGeometry x="-452.5" y="255" width="485" height="340" as="geometry" />
         </mxCell>
         <mxCell id="mvBOg-nYU6NL9uwTwKON-22" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-452.5" y="300" width="112.5" height="240" as="geometry" />
+          <mxGeometry x="-446.25" y="310" width="112.5" height="240" as="geometry" />
         </mxCell>
         <mxCell id="mvBOg-nYU6NL9uwTwKON-23" value="Page d&#39;accuille" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-435" y="220" width="90" height="20" as="geometry" />
@@ -83,22 +83,22 @@
           <mxGeometry x="-446.25" y="310" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="mvBOg-nYU6NL9uwTwKON-25" value="Page Utilisateur" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-446.25" y="330" width="100" height="50" as="geometry" />
+          <mxGeometry x="-440" y="330" width="100" height="50" as="geometry" />
         </mxCell>
         <mxCell id="mvBOg-nYU6NL9uwTwKON-26" value="page Capteur" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-446.25" y="400" width="100" height="50" as="geometry" />
+          <mxGeometry x="-440" y="400" width="100" height="50" as="geometry" />
         </mxCell>
         <mxCell id="mvBOg-nYU6NL9uwTwKON-27" value="Liste&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-446.25" y="480" width="100" height="50" as="geometry" />
+          <mxGeometry x="-440" y="480" width="100" height="50" as="geometry" />
         </mxCell>
         <mxCell id="mvBOg-nYU6NL9uwTwKON-28" value="Liste&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-315" y="300" width="170" height="120" as="geometry" />
+          <mxGeometry x="-315" y="310" width="170" height="120" as="geometry" />
         </mxCell>
         <mxCell id="mvBOg-nYU6NL9uwTwKON-29" value="Liste Utilisateur" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-115" y="300" width="130" height="240" as="geometry" />
+          <mxGeometry x="-106.25" y="310" width="130" height="240" as="geometry" />
         </mxCell>
         <mxCell id="mvBOg-nYU6NL9uwTwKON-30" value="Liste&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-315" y="430" width="170" height="110" as="geometry" />
+          <mxGeometry x="-315" y="440" width="170" height="110" as="geometry" />
         </mxCell>
         <mxCell id="mvBOg-nYU6NL9uwTwKON-31" value="Logo iut&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-446.25" y="260" width="470" height="40" as="geometry" />
