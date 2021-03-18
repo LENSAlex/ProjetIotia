@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-18T10:25:50.277Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="mAuiKEEr-KsfJ3qC0q6E" version="14.4.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-18T10:30:07.284Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="LyLconszbr1LKNFh0Aaw" version="14.4.9" type="github">
   <diagram id="JMVW4VKieBPlmQIHoedn" name="Page-1">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -22,7 +22,7 @@
         <mxCell id="2HFA_lHzWDiCbQfCLhAR-4" value="Capteur PIR&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="414" y="535" width="160" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="2HFA_lHzWDiCbQfCLhAR-5" value="Haut parleur&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="2HFA_lHzWDiCbQfCLhAR-5" value="Haut parleur&amp;nbsp;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="618" y="535" width="160" height="100" as="geometry" />
         </mxCell>
         <mxCell id="2HFA_lHzWDiCbQfCLhAR-6" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
@@ -56,7 +56,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Rmg1uCzJ_VwoZsZOOwg5-4" value="Enregistrement Capteur avec Web Service" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="480" y="350" width="156" height="20" as="geometry" />
+          <mxGeometry x="174" y="350" width="156" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Rmg1uCzJ_VwoZsZOOwg5-5" value="Route PIR entrée" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="50" y="140" width="120" height="60" as="geometry" />
@@ -156,6 +156,18 @@
         </mxCell>
         <mxCell id="Rmg1uCzJ_VwoZsZOOwg5-35" value="Envoie donne sur oneM2M" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="394" y="70" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="pScQPtqC4jIof6JPwWHU-1" value="" style="endArrow=classic;html=1;exitX=0.994;exitY=0.36;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.394;entryY=0.02;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Rmg1uCzJ_VwoZsZOOwg5-1" target="2HFA_lHzWDiCbQfCLhAR-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="380" as="sourcePoint" />
+            <mxPoint x="680" y="530" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="681" y="356" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pScQPtqC4jIof6JPwWHU-2" value="Si seuil dépassé , personne entrée ou sortie." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="618" y="430" width="142" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
