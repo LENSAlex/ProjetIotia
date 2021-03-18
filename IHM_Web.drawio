@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-18T10:16:46.955Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="l8R-tn6z_v2snDONPd7t" version="14.4.9" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-03-18T10:17:44.105Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="JeHrdUJItmVw_Zy-Go8g" version="14.4.9" type="github" pages="2">
   <diagram id="ARH5aImlDJQzNbsXuoi2" name="Page-1">
     <mxGraphModel dx="2227" dy="1963" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -345,7 +345,7 @@
           <mxGeometry x="832.5" y="580" width="100" height="50" as="geometry" />
         </mxCell>
         <mxCell id="hwvQYhv3dfhFRNOniil5-78" value="Liste Salle:&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra voir la liste de tout les salle.il pourra cliquer sur une Icon pour faire une modification ou alors pour supprimer les salle.&amp;nbsp;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="952.5" y="315" width="200" height="240" as="geometry" />
+          <mxGeometry x="952.5" y="315" width="200" height="335" as="geometry" />
         </mxCell>
         <mxCell id="hwvQYhv3dfhFRNOniil5-79" value="Logo iut&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="826.25" y="265" width="470" height="40" as="geometry" />
@@ -559,7 +559,7 @@
         <mxCell id="hwvQYhv3dfhFRNOniil5-144" value="Liste Salle" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-568.75" y="1065" width="100" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="hwvQYhv3dfhFRNOniil5-145" value="Liste Equipement:&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra voir la liste de tout les Equipement&amp;nbsp;.il pourra cliquer sur une Icon pour faire une modification ou alors pour supprimer le compte. il pourra filtras les utilisateurs par classe si il veut.&amp;nbsp;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="hwvQYhv3dfhFRNOniil5-145" value="Liste Equipement:&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra voir la liste de tout les Equipement&amp;nbsp;.il pourra cliquer sur une Icon pour faire une modification ou alors pour supprimer le compte. il pourra filtras les utilisateurs par type si il veut.&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;br&gt;visualiser :&lt;br&gt;type , état(oui ou non)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-447.5" y="830" width="207.5" height="310" as="geometry" />
         </mxCell>
         <mxCell id="hwvQYhv3dfhFRNOniil5-146" value="Logo iut&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
