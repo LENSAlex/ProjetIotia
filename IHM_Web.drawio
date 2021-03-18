@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-18T09:48:39.532Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="gd8ZptWZYpyge15C6HRE" version="14.4.9" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-03-18T09:49:59.888Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="Y54nCx4LOgq_IKsefvrB" version="14.4.9" type="github" pages="2">
   <diagram id="ARH5aImlDJQzNbsXuoi2" name="Page-1">
     <mxGraphModel dx="2227" dy="1963" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -109,8 +109,8 @@
         <mxCell id="hwvQYhv3dfhFRNOniil5-3" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-446.25" y="310" width="112.5" height="240" as="geometry" />
         </mxCell>
-        <mxCell id="hwvQYhv3dfhFRNOniil5-4" value="Page Utilisateur" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-440" y="240" width="90" height="20" as="geometry" />
+        <mxCell id="hwvQYhv3dfhFRNOniil5-4" value="Page List Utilisateur" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-440" y="240" width="110" height="20" as="geometry" />
         </mxCell>
         <mxCell id="hwvQYhv3dfhFRNOniil5-5" value="Nav" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-446.25" y="310" width="40" height="20" as="geometry" />
@@ -248,8 +248,8 @@
         <mxCell id="hwvQYhv3dfhFRNOniil5-49" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-447.5" y="-65" width="112.5" height="240" as="geometry" />
         </mxCell>
-        <mxCell id="hwvQYhv3dfhFRNOniil5-50" value="Page Utilisateur" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-441.25" y="-135" width="90" height="20" as="geometry" />
+        <mxCell id="hwvQYhv3dfhFRNOniil5-50" value="Page ajout ou modifier Utilisateur" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-441.25" y="-135" width="191.25" height="20" as="geometry" />
         </mxCell>
         <mxCell id="hwvQYhv3dfhFRNOniil5-51" value="Nav" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-447.5" y="-65" width="40" height="20" as="geometry" />
@@ -263,7 +263,7 @@
         <mxCell id="hwvQYhv3dfhFRNOniil5-54" value="Liste Salle" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-441.25" y="105" width="100" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="hwvQYhv3dfhFRNOniil5-55" value="Liste Utilisateur :&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra voir la liste de tout les utilisateur avec leur nom .il pourra cliquer sur une Icon pour faire une modification ou alors pour supprimer le compte. il pourra filtras les utilisateurs par classe si il veut.&amp;nbsp;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="hwvQYhv3dfhFRNOniil5-55" value="Création Utilisateur :&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra crée ou modifier de tout les utilisateur avec leur nom .il pourra cliquer sur une Icon pour faire une modification ou alors pour supprimer le compte. il pourra filtras les utilisateurs par classe si il veut.&amp;nbsp;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-321.25" y="-65" width="330" height="240" as="geometry" />
         </mxCell>
         <mxCell id="hwvQYhv3dfhFRNOniil5-56" value="Logo iut&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
