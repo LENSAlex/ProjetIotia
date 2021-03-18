@@ -1,10 +1,7 @@
 
-Lp SIGD-IOTIA 
-2020-2021
+# Nom projet (Projet batiment connecté )
 
-#Nom projet (Projet batiment connecté )
-
-##Détail du projet 
+## Détail du projet 
 
 Dans le cadre de la Lp SIGD-IOTIA, nous réalisons un projet mettant en application les connaisances acquises durant la formation.
 
