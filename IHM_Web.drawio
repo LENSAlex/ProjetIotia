@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-18T11:04:55.059Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="p2xlLjcLDZ06vzKE5qPB" version="14.4.9" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-03-18T11:06:35.526Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="hUotBKi5hJD7-y7rf6qM" version="14.4.9" type="github" pages="2">
   <diagram id="ARH5aImlDJQzNbsXuoi2" name="Page-1">
     <mxGraphModel dx="1994" dy="1783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -135,7 +135,7 @@
         <mxCell id="hwvQYhv3dfhFRNOniil5-7" value="page Capteur" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-440" y="400" width="100" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="hwvQYhv3dfhFRNOniil5-8" value="Liste Salle" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="hwvQYhv3dfhFRNOniil5-8" value="Liste lieu" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-441.25" y="545" width="100" height="50" as="geometry" />
         </mxCell>
         <mxCell id="hwvQYhv3dfhFRNOniil5-9" value="Liste Utilisateur :&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra voir la liste de tout les utilisateur avec leur nom .il pourra cliquer sur une Icon pour faire une modification ou alors pour supprimer le compte. il pourra filtras les utilisateurs par classe si il veut.&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;br&gt;visualiser :&lt;br&gt;Nom , Prenom ,@Mail , Classe , Santer&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -198,7 +198,7 @@
         <mxCell id="hwvQYhv3dfhFRNOniil5-29" value="page Capteur" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="170.25" y="870" width="100" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="hwvQYhv3dfhFRNOniil5-30" value="Liste Salle" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="hwvQYhv3dfhFRNOniil5-30" value="Liste Lieu" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="171.25" y="1010" width="100" height="50" as="geometry" />
         </mxCell>
         <mxCell id="hwvQYhv3dfhFRNOniil5-31" value="Liste capteur :&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra voir la liste de tout les capteur.il pourra cliquer sur une Icon pour faire une modification ou alors pour supprimer les capteur. il pourra filtras les utilisateurs par Salle si il veut.&lt;br&gt;&lt;br&gt;visualiser :&amp;nbsp;&lt;br&gt;ip , @mac , salle, la fonctionnalité , Accessible&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -358,7 +358,7 @@
         <mxCell id="hwvQYhv3dfhFRNOniil5-77" value="Liste Salle" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="832.5" y="580" width="100" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="hwvQYhv3dfhFRNOniil5-78" value="Liste Salle:&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra voir la liste de tout les salle.il pourra cliquer sur une Icon pour faire une modification ou alors pour supprimer les salle.&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;br&gt;visualiser :&lt;br&gt;Batiment , N°salle, Class , Accessible&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="hwvQYhv3dfhFRNOniil5-78" value="Liste Salle:&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra voir la liste de tout les salle.il pourra cliquer sur une Icon pour faire une modification ou alors pour supprimer les salle.&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;br&gt;visualiser :&lt;br&gt;N°salle,Batiment&amp;nbsp;&lt;br&gt;, Class , Accessible&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="952.5" y="315" width="200" height="335" as="geometry" />
         </mxCell>
         <mxCell id="hwvQYhv3dfhFRNOniil5-79" value="Logo iut&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -368,7 +368,7 @@
           <mxGeometry x="1242.5" y="275" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="hwvQYhv3dfhFRNOniil5-81" value="Saissi d&#39;ajout ou de modification" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1172.5" y="315" width="120" height="50" as="geometry" />
+          <mxGeometry x="1172.5" y="315" width="120" height="125" as="geometry" />
         </mxCell>
         <mxCell id="hwvQYhv3dfhFRNOniil5-82" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.887;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="mvBOg-nYU6NL9uwTwKON-13" target="hwvQYhv3dfhFRNOniil5-71">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -446,7 +446,7 @@
         <mxCell id="hwvQYhv3dfhFRNOniil5-104" value="page Capteur" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="165" y="1370" width="100" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="hwvQYhv3dfhFRNOniil5-105" value="Liste Salle" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="hwvQYhv3dfhFRNOniil5-105" value="Liste Lieu" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="164" y="1520" width="100" height="50" as="geometry" />
         </mxCell>
         <mxCell id="hwvQYhv3dfhFRNOniil5-106" value="Création Capteur:&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra crée ou modifier un utilisateur Nom,Ip, @mac, salle, la fonctionnaliter&amp;nbsp; (max temp , max personne , ...)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -570,7 +570,7 @@
         <mxCell id="hwvQYhv3dfhFRNOniil5-143" value="page Capteur" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-567.5" y="920" width="100" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="hwvQYhv3dfhFRNOniil5-144" value="Liste Salle" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="hwvQYhv3dfhFRNOniil5-144" value="Liste lieu" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-568.75" y="1065" width="100" height="50" as="geometry" />
         </mxCell>
         <mxCell id="hwvQYhv3dfhFRNOniil5-145" value="Liste Equipement:&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra voir la liste de tout les Equipement&amp;nbsp;.il pourra cliquer sur une Icon pour faire une modification ou alors pour supprimer le compte. il pourra filtras les utilisateurs par type si il veut.&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;br&gt;visualiser :&lt;br&gt;type , état(oui ou non)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -639,10 +639,10 @@
         <mxCell id="hwvQYhv3dfhFRNOniil5-190" value="page Capteur" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="839.5" y="880" width="100" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="hwvQYhv3dfhFRNOniil5-191" value="Liste Salle" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="hwvQYhv3dfhFRNOniil5-191" value="Liste lieu" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="839.5" y="1055" width="100" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="hwvQYhv3dfhFRNOniil5-192" value="Liste Salle:&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra voir la liste de tout les salle.il pourra cliquer sur une Icon pour faire une modification ou alors pour supprimer les salle.&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;br&gt;visualiser :&lt;br&gt;Batiment , N°salle, Class , Accessible&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="hwvQYhv3dfhFRNOniil5-192" value="Liste Batiment:&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra voir la liste de tout les salle.il pourra cliquer sur une Icon pour faire une modification ou alors pour supprimer les salle.&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;br&gt;visualiser :&lt;br&gt;Batiment , N°salle, Class , Accessible&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="959.5" y="790" width="200" height="335" as="geometry" />
         </mxCell>
         <mxCell id="hwvQYhv3dfhFRNOniil5-193" value="Logo iut&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -652,7 +652,7 @@
           <mxGeometry x="1249.5" y="750" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="hwvQYhv3dfhFRNOniil5-195" value="Saissi d&#39;ajout ou de modification" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1179.5" y="790" width="120" height="50" as="geometry" />
+          <mxGeometry x="1179.5" y="790" width="120" height="120" as="geometry" />
         </mxCell>
         <mxCell id="hwvQYhv3dfhFRNOniil5-196" value="page Equipement" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="839.5" y="965" width="100" height="50" as="geometry" />
