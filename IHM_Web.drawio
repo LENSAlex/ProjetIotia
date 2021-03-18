@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-18T10:19:49.104Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="vEWzWfAi-D_QdN_xLQ89" version="14.4.9" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-03-18T10:30:24.200Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="ThUxRoFVsXvz_GXdlDwf" version="14.4.9" type="github" pages="2">
   <diagram id="ARH5aImlDJQzNbsXuoi2" name="Page-1">
-    <mxGraphModel dx="2227" dy="1963" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3627" dy="2757" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -188,7 +188,7 @@
           <mxGeometry x="171.25" y="1010" width="100" height="50" as="geometry" />
         </mxCell>
         <mxCell id="hwvQYhv3dfhFRNOniil5-31" value="Liste capteur :&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra voir la liste de tout les capteur.il pourra cliquer sur une Icon pour faire une modification ou alors pour supprimer les capteur. il pourra filtras les utilisateurs par Salle si il veut.&lt;br&gt;&lt;br&gt;visualiser :&amp;nbsp;&lt;br&gt;ip , @mac , salle,la fonctionnaliter&amp;nbsp;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="290.25" y="780" width="337.5" height="240" as="geometry" />
+          <mxGeometry x="290.25" y="780" width="337.5" height="300" as="geometry" />
         </mxCell>
         <mxCell id="hwvQYhv3dfhFRNOniil5-32" value="Logo iut&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="164" y="730" width="470" height="40" as="geometry" />
@@ -436,7 +436,7 @@
           <mxGeometry x="164" y="1520" width="100" height="50" as="geometry" />
         </mxCell>
         <mxCell id="hwvQYhv3dfhFRNOniil5-106" value="Création Capteur:&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra crée ou modifier un utilisateur Nom,Ip, @mac, salle, la fonctionnaliter&amp;nbsp; (max temp , max personne , ...)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="285" y="1280" width="330" height="240" as="geometry" />
+          <mxGeometry x="285" y="1280" width="330" height="330" as="geometry" />
         </mxCell>
         <mxCell id="hwvQYhv3dfhFRNOniil5-107" value="Logo iut&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="158.75" y="1230" width="470" height="40" as="geometry" />
