@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-18T11:06:46.237Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="SNX3DLZvbFRLQ0YpfVO_" version="14.4.9" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-03-18T11:07:00.737Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="XAgoJRJHoFHqYxZ-2mdv" version="14.4.9" type="github" pages="2">
   <diagram id="ARH5aImlDJQzNbsXuoi2" name="Page-1">
     <mxGraphModel dx="1994" dy="1783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -642,7 +642,7 @@
         <mxCell id="hwvQYhv3dfhFRNOniil5-191" value="Liste lieu" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="839.5" y="1055" width="100" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="hwvQYhv3dfhFRNOniil5-192" value="Liste Batiment:&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra voir la liste de tout les salle.il pourra cliquer sur une Icon pour faire une modification ou alors pour supprimer les salle.&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;br&gt;visualiser :&lt;br&gt;Batiment , N°salle, Class , Accessible&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="hwvQYhv3dfhFRNOniil5-192" value="Liste Batiment:&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra voir la liste de tout les Batiments.il pourra cliquer sur une Icon pour faire une modification ou alors pour supprimer les salle.&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;br&gt;visualiser :&lt;br&gt;Batiment , N°salle, Class , Accessible&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="959.5" y="790" width="200" height="335" as="geometry" />
         </mxCell>
         <mxCell id="hwvQYhv3dfhFRNOniil5-193" value="Logo iut&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
