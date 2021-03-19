@@ -9,9 +9,9 @@
     <ContentPage.Content>
         <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
             <Button VerticalOptions="Center" Text="Test" Command="{Binding LoginCommand}"/>
-            <Entry Text="{Binding Text, Mode=TwoWay}" FontSize="Medium" />
+            <Entry  Text="{Binding Identifiant, Mode=TwoWay}" Placeholder="Identifiant" FontSize="Medium" ClearButtonVisibility="WhileEditing" />
             <Label Text="Description" FontSize="Medium" />
-            <Editor Text="{Binding Description, Mode=TwoWay}" AutoSize="TextChanges" FontSize="Medium" Margin="0" />
+            <Entry IsPassword="true" Text="{Binding Password, Mode=TwoWay}" Placeholder="Password" FontSize="Medium" Margin="0" ClearButtonVisibility="WhileEditing" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

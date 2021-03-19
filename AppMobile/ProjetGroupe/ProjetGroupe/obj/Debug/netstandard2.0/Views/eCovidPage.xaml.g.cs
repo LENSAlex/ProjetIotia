@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("ProjetGroupe.Views.eCovidPage.xaml", "Views/eCovidPage.xaml", typeof(global::ProjetGroupe.Views.AlerteCovid))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("ProjetGroupe.Views.eCovidPage.xaml", "Views/eCovidPage.xaml", typeof(global::ProjetGroupe.Views.eCovidPage))]
 
 namespace ProjetGroupe.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\eCovidPage.xaml")]
-    public partial class AlerteCovid : global::Xamarin.Forms.ContentView {
+    public partial class eCovidPage : global::Xamarin.Forms.ContentView {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(AlerteCovid));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(eCovidPage));
         }
     }
 }

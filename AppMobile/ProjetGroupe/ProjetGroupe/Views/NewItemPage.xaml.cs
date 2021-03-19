@@ -18,4 +18,4 @@ namespace ProjetGroupe.Views
             BindingContext = new NewItemViewModel();
         }
     }
-}
+}                                                                                 /*  coucou mon choipi ;-) <3 */

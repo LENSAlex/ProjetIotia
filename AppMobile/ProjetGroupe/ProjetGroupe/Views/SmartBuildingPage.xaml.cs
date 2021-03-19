@@ -10,10 +10,10 @@ using Xamarin.Forms.Xaml;
 namespace ProjetGroupe.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class AffichageDonnees : ContentView
+    public partial class SmartBuildingPage : ContentView
     {
 
-        public AffichageDonnees()
+        public SmartBuildingPage()
         {
             InitializeComponent();
         }

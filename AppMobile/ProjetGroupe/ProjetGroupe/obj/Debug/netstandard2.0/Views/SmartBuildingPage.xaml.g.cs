@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("ProjetGroupe.Views.SmartBuildingPage.xaml", "Views/SmartBuildingPage.xaml", typeof(global::ProjetGroupe.Views.AffichageDonnees))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("ProjetGroupe.Views.SmartBuildingPage.xaml", "Views/SmartBuildingPage.xaml", typeof(global::ProjetGroupe.Views.SmartBuildingPage))]
 
 namespace ProjetGroupe.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\SmartBuildingPage.xaml")]
-    public partial class AffichageDonnees : global::Xamarin.Forms.ContentView {
+    public partial class SmartBuildingPage : global::Xamarin.Forms.ContentView {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(AffichageDonnees));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(SmartBuildingPage));
         }
     }
 }

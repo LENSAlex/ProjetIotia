@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace ProjetGroupe.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Accueil : ContentView
+    public partial class AccueilPage : ContentView
     {
-        public Accueil()
+        public AccueilPage()
         {
             InitializeComponent();
 

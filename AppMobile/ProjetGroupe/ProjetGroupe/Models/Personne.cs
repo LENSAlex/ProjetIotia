@@ -2,6 +2,7 @@
 using MediaSense.Tools;
 using System;
 using System.Collections.Generic;
+using System.Net;
 using System.Text;
 
 namespace MediaSense.Main
@@ -102,5 +103,6 @@ namespace MediaSense.Main
         //{
         //    context.Session.SetInt32("UtilisateurId", 0);
         //}
+    
     }
 }

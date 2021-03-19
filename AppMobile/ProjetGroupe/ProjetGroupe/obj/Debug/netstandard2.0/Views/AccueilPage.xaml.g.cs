@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("ProjetGroupe.Views.AccueilPage.xaml", "Views/AccueilPage.xaml", typeof(global::ProjetGroupe.Views.Accueil))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("ProjetGroupe.Views.AccueilPage.xaml", "Views/AccueilPage.xaml", typeof(global::ProjetGroupe.Views.AccueilPage))]
 
 namespace ProjetGroupe.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\AccueilPage.xaml")]
-    public partial class Accueil : global::Xamarin.Forms.ContentView {
+    public partial class AccueilPage : global::Xamarin.Forms.ContentView {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Accueil));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(AccueilPage));
         }
     }
 }
