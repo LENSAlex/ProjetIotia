@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-19T08:29:44.919Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="_EDpcmr5x151X674UPqj" version="14.4.9" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-03-19T08:36:07.869Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="QYEh9SZOz3ybuNYhQFm6" version="14.4.9" type="github" pages="2">
   <diagram id="ARH5aImlDJQzNbsXuoi2" name="Page-1">
     <mxGraphModel dx="1865" dy="1724" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -204,7 +204,7 @@
         <mxCell id="hwvQYhv3dfhFRNOniil5-30" value="Liste Lieu" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="171.25" y="1010" width="100" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="hwvQYhv3dfhFRNOniil5-31" value="Liste capteur :&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra voir la liste de tout les capteur.il pourra cliquer sur une Icon pour faire une modification ou alors pour supprimer les capteur. il pourra filtras les utilisateurs par Salle si il veut.&lt;br&gt;&lt;br&gt;visualiser :&amp;nbsp;&lt;br&gt;ip , @mac , salle, la fonctionnalité , Accessible&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="hwvQYhv3dfhFRNOniil5-31" value="Liste capteur :&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra voir la liste de tout les capteur.il pourra cliquer sur une Icon pour faire une modification ou alors pour supprimer les capteur. il pourra filtras les utilisateurs par Salle si il veut.&lt;br&gt;&lt;br&gt;visualiser :&amp;nbsp;&lt;br&gt;ip , @mac , salle, la fonctionnalité , Gestion Capteur" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="290.25" y="780" width="337.5" height="340" as="geometry" />
         </mxCell>
         <mxCell id="hwvQYhv3dfhFRNOniil5-32" value="Logo iut&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -366,8 +366,8 @@
         <mxCell id="hwvQYhv3dfhFRNOniil5-77" value="Liste Salle" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="832.5" y="560" width="100" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="hwvQYhv3dfhFRNOniil5-78" value="Liste Salle:&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra voir la liste de tout les salle.il pourra cliquer sur une Icon pour faire une modification ou alors pour supprimer les salle.&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;br&gt;visualiser :&lt;br&gt;N°salle, étage ,Batiment&amp;nbsp;&lt;br&gt;, Class , Accessible,&amp;nbsp; %présence , M²" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="952.5" y="315" width="200" height="335" as="geometry" />
+        <mxCell id="hwvQYhv3dfhFRNOniil5-78" value="Liste Salle:&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra voir la liste de tout les salle.il pourra cliquer sur une Icon pour faire une modification ou alors pour supprimer les salle.&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;br&gt;visualiser :&lt;br&gt;N°salle, étage ,Batiment&amp;nbsp;&lt;br&gt;, Class , Accessible,&amp;nbsp; %présence , M²,&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="952.5" y="315" width="200" height="385" as="geometry" />
         </mxCell>
         <mxCell id="hwvQYhv3dfhFRNOniil5-79" value="Logo iut&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="826.25" y="265" width="470" height="40" as="geometry" />
@@ -451,7 +451,7 @@
         <mxCell id="hwvQYhv3dfhFRNOniil5-105" value="Liste Lieu" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="183" y="1670" width="100" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="hwvQYhv3dfhFRNOniil5-106" value="Création Capteur:&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra crée ou modifier un utilisateur Nom,Ip, @mac, salle, la fonctionnaliter&amp;nbsp; (max temp , max personne , ...)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="hwvQYhv3dfhFRNOniil5-106" value="Création Capteur:&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra crée ou modifier un utilisateur Nom,Ip, @mac, salle, la fonctionnaliter&amp;nbsp; (max temp , max personne , ...), Gestion Capteur" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="304" y="1450" width="330" height="330" as="geometry" />
         </mxCell>
         <mxCell id="hwvQYhv3dfhFRNOniil5-107" value="Logo iut&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
