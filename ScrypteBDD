@@ -1,0 +1,221 @@
+create or replace table Site(
+	id_site INTEGER PRIMARY KEY AUTO_INCREMENT,
+	nom VARCHAR(50) NOT NULL);
+	
+CREATE OR REPLACE TABLE Batiment(
+	id_batiment INTEGER PRIMARY KEY AUTO_INCREMENT,
+	id_site INTEGER NOT NULL,
+	nom VARCHAR(50) NOT NULL,
+	surface INTEGER NOT NULL,
+	CONSTRAINT FK_Batiment1
+    FOREIGN KEY (id_site)
+    REFERENCES Site (id_site)
+	);
+
+CREATE OR REPLACE TABLE Etage(
+	id_etage INTEGER PRIMARY KEY AUTO_INCREMENT,
+	id_batiment INTEGER NOT NULL,
+	num VARCHAR(5) NOT NULL,
+	surface INTEGER NOT NULL,
+	CONSTRAINT FK_Etage1 
+    FOREIGN KEY (id_batiment)
+    REFERENCES Batiment (id_batiment)
+	);
+
+CREATE OR REPLACE TABLE Salle(
+	id_salle INTEGER PRIMARY KEY AUTO_INCREMENT,
+	id_etage INTEGER NOT NULL,
+	capacite_max INTEGER NOT NULL,
+	surface INTEGER NOT NULL,
+	volume INTEGER NOT NULL,
+	CONSTRAINT FK_Salle1 
+    FOREIGN KEY (id_etage)
+    REFERENCES Etage (id_etage)
+	);
+	
+CREATE OR REPLACE TABLE AccessibiliteType(
+	id_accessibilite INTEGER PRIMARY KEY AUTO_INCREMENT,
+	acces_prof SMALLINT  NOT NULL,
+	acces_eleve SMALLINT  NOT NULL,
+	acces_entretien SMALLINT  NOT NULL,
+	acces_administratif SMALLINT  NOT NULL
+	);
+	
+CREATE OR REPLACE TABLE AccesSite(
+	id_site INTEGER NOT NULL,
+	id_accessibilite INTEGER NOT NULL,
+	seuil_presence INTEGER NOT NULL,
+	date_debut DATETIME NOT NULL,
+	date_fin DATETIME,
+	CONSTRAINT FK_AccesSite1 
+    FOREIGN KEY (id_site)
+    REFERENCES Site (id_site),
+	CONSTRAINT FK_AccesSite2
+	FOREIGN KEY (id_accessibilite)
+    REFERENCES AccessibiliteType (id_accessibilite)
+	);
+
+CREATE OR REPLACE INDEX ind_AccesSite 
+ON AccesSite (id_site, date_debut, date_fin);
+
+CREATE OR REPLACE TABLE AccesBatiment(
+	id_batiment INTEGER NOT NULL,
+	id_accessibilite INTEGER NOT NULL,
+	seuil_presence INTEGER NOT NULL,
+	date_debut DATETIME NOT NULL,
+	date_fin DATETIME,
+	CONSTRAINT FK_AccesBatiment1 
+    FOREIGN KEY (id_batiment)
+    REFERENCES Batiment (id_batiment),
+	CONSTRAINT FK_AccesBatiment2
+	FOREIGN KEY (id_accessibilite)
+    REFERENCES AccessibiliteType (id_accessibilite)
+	);
+
+CREATE OR REPLACE INDEX ind_AccesBatiment 
+ON AccesBatiment (id_batiment, date_debut, date_fin);
+
+CREATE OR REPLACE TABLE AccesEtage(
+	id_etage INTEGER NOT NULL,
+	id_accessibilite INTEGER NOT NULL,
+	seuil_presence INTEGER NOT NULL,
+	date_debut DATETIME NOT NULL,
+	date_fin DATETIME,
+	CONSTRAINT FK_AccesEtage1
+    FOREIGN KEY (id_etage)
+    REFERENCES Etage (id_etage),
+	CONSTRAINT FK_AccesEtage2
+	FOREIGN KEY (id_accessibilite)
+    REFERENCES AccessibiliteType (id_accessibilite)
+	);
+
+CREATE OR REPLACE INDEX ind_AccesEtage 
+ON AccesEtage (id_etage, date_debut, date_fin);
+
+CREATE OR REPLACE TABLE AccesSalle(
+	id_salle INTEGER NOT NULL,
+	id_accessibilite INTEGER NOT NULL,
+	seuil_presence INTEGER NOT NULL,
+	date_debut DATETIME NOT NULL,
+	date_fin DATETIME,
+	CONSTRAINT  FK_AccesSalle1
+    FOREIGN KEY (id_salle)
+    REFERENCES Salle (id_salle),
+	CONSTRAINT FK_AccesSalle2
+	FOREIGN KEY (id_accessibilite)
+    REFERENCES AccessibiliteType (id_accessibilite)
+	);
+	
+CREATE OR REPLACE INDEX ind_AccesSalle 
+ON AccesSalle (id_salle, date_debut, date_fin);
+
+CREATE OR REPLACE TABLE Equipement(
+	id_equipement INTEGER PRIMARY KEY AUTO_INCREMENT,
+	libelle VARCHAR(50) NOT NULL,
+	description VARCHAR(250),
+	equipement_type VARCHAR(50) NOT NULL
+	);
+	
+CREATE OR REPLACE TABLE Penurie(
+	id_equipement INTEGER NOT NULL,
+	id_salle INTEGER NOT NULL,
+	is_penurie SMALLINT,
+	date_maj DATETIME NOT NULL,
+	CONSTRAINT FK_Penurie1
+    FOREIGN KEY  (id_equipement)
+    REFERENCES Equipement (id_equipement),
+	CONSTRAINT FK_Penurie2
+	FOREIGN KEY (id_salle)
+    REFERENCES Salle (id_salle),
+	CONSTRAINT PK_Penurie
+	PRIMARY KEY (id_equipement, id_salle)
+	);
+
+CREATE OR REPLACE INDEX ind_Penurie 
+ON Penurie (id_equipement, id_salle, date_maj);
+	
+CREATE OR REPLACE TABLE ValueType (
+	id_valuetype INTEGER PRIMARY KEY AUTO_INCREMENT,
+	libelle VARCHAR(50) NOT NULL,
+	unite VARCHAR(10)
+	);
+
+CREATE OR REPLACE TABLE DeviceType (
+	id_devicetype INTEGER PRIMARY KEY AUTO_INCREMENT,
+	libelle_type VARCHAR(50) NOT NULL,
+	description VARCHAR(250),
+	reference VARCHAR(200) NOT NULL
+	);
+	
+CREATE OR REPLACE TABLE Box (
+	id_box INTEGER PRIMARY KEY AUTO_INCREMENT,
+	id_salle INTEGER NOT NULL,
+	id_devicetype INTEGER NOT NULL,
+	adr_mac VARCHAR(50),
+	adr_ip VARCHAR(50),
+	libelle VARCHAR(50) NOT NULL,
+	description VARCHAR(250),
+	date_installation DATETIME NOT NULL,
+	CONSTRAINT FK_Box1
+	FOREIGN KEY (id_salle)
+	REFERENCES Salle (id_salle),
+	CONSTRAINT FK_Box2
+	FOREIGN KEY (id_devicetype)
+	REFERENCES DeviceType (id_devicetype),
+	);
+	
+CREATE OR REPLACE INDEX ind_Box 
+ON Box (id_box, id_salle, date_installation);
+
+CREATE OR REPLACE TABLE Alerte (
+	id_alerte INTEGER PRIMARY KEY AUTO_INCREMENT,
+	id_box INTEGER NOT NULL,
+	libelle VARCHAR(50) NOT NULL,
+	description VARCHAR(250),
+	date_alerte DATETIME NOT NULL,
+	CONSTRAINT FK_Alerte1
+	FOREIGN KEY (id_box)
+	REFERENCES Box (id_box)
+	);
+	
+CREATE OR REPLACE INDEX ind_Alerte 
+ON Alerte (id_alerte, id_box, date_alerte);
+	
+	
+CREATE OR REPLACE TABLE Device (
+	id_device INTEGER PRIMARY KEY AUTO_INCREMENT,
+	id_box INTEGER NOT NULL,
+	id_devicetype INTEGER NOT NULL,
+	id_valuetype INTEGER NOT NULL,
+	seuil_min DECIMAL (15,5),
+	seuil_max DECIMAL (15,5),
+	CONSTRAINT FK_Device1
+	FOREIGN KEY (id_box)
+	REFERENCES Box (id_box),
+	CONSTRAINT FK_Device2
+	FOREIGN KEY (id_deviceType)
+	REFERENCES DeviceType (id_deviceType),
+	CONSTRAINT FK_Device3
+	FOREIGN KEY (id_ValueType)
+	REFERENCES ValueType (id_ValueType)
+	);
+	
+CREATE OR REPLACE TABLE Historique (
+	id_historique INTEGER PRIMARY KEY AUTO_INCREMENT,
+	id_box INTEGER NOT NULL,
+	id_valuetype INTEGER NOT NULL,
+	valeur DECIMAL (15,5) NOT NULL,
+	date_historique DATETIME NOT NULL,
+	CONSTRAINT FK_Historique1
+	FOREIGN KEY (id_box)
+	REFERENCES Box (id_box),
+	CONSTRAINT FK_Historique2
+	FOREIGN KEY (id_ValueType)
+	REFERENCES ValueType (id_ValueType)
+	);
+
+CREATE OR REPLACE INDEX ind_Historique 
+ON Historique (id_historique, id_box, date_historique);
+
+
+	
