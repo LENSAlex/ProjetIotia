@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-19T08:25:43.491Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="nJaAjougQZKMUpPz-RFG" version="14.4.9" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-03-19T08:29:44.919Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="_EDpcmr5x151X674UPqj" version="14.4.9" type="github" pages="2">
   <diagram id="ARH5aImlDJQzNbsXuoi2" name="Page-1">
-    <mxGraphModel dx="1692" dy="1669" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1865" dy="1724" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -34,8 +34,8 @@
         <mxCell id="mvBOg-nYU6NL9uwTwKON-8" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="217.5" y="15" width="112.5" height="370" as="geometry" />
         </mxCell>
-        <mxCell id="mvBOg-nYU6NL9uwTwKON-9" value="Page d&#39;accuille" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="235" y="-65" width="90" height="20" as="geometry" />
+        <mxCell id="mvBOg-nYU6NL9uwTwKON-9" value="Page Tableau bord" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="235" y="-65" width="125" height="20" as="geometry" />
         </mxCell>
         <mxCell id="mvBOg-nYU6NL9uwTwKON-10" value="Nav" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="223.75" y="25" width="40" height="20" as="geometry" />
@@ -68,7 +68,7 @@
         <mxCell id="mvBOg-nYU6NL9uwTwKON-15" value="Liste Salle (10 max)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="555" y="15" width="130" height="240" as="geometry" />
         </mxCell>
-        <mxCell id="mvBOg-nYU6NL9uwTwKON-16" value="Liste Capteur(10 max)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="mvBOg-nYU6NL9uwTwKON-16" value="Liste Box(10 max)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="355" y="145" width="170" height="110" as="geometry" />
         </mxCell>
         <mxCell id="mvBOg-nYU6NL9uwTwKON-18" value="Logo iut&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -189,7 +189,7 @@
         <mxCell id="hwvQYhv3dfhFRNOniil5-25" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="164" y="780" width="112.5" height="360" as="geometry" />
         </mxCell>
-        <mxCell id="hwvQYhv3dfhFRNOniil5-26" value="Page Capteur" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="hwvQYhv3dfhFRNOniil5-26" value="Page Box" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="170.25" y="710" width="90" height="20" as="geometry" />
         </mxCell>
         <mxCell id="hwvQYhv3dfhFRNOniil5-27" value="Nav" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
@@ -366,7 +366,7 @@
         <mxCell id="hwvQYhv3dfhFRNOniil5-77" value="Liste Salle" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="832.5" y="560" width="100" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="hwvQYhv3dfhFRNOniil5-78" value="Liste Salle:&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra voir la liste de tout les salle.il pourra cliquer sur une Icon pour faire une modification ou alors pour supprimer les salle.&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;br&gt;visualiser :&lt;br&gt;N°salle, étage ,Batiment&amp;nbsp;&lt;br&gt;, Class , Accessible,&amp;nbsp; %présence&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="hwvQYhv3dfhFRNOniil5-78" value="Liste Salle:&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra voir la liste de tout les salle.il pourra cliquer sur une Icon pour faire une modification ou alors pour supprimer les salle.&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;br&gt;visualiser :&lt;br&gt;N°salle, étage ,Batiment&amp;nbsp;&lt;br&gt;, Class , Accessible,&amp;nbsp; %présence , M²" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="952.5" y="315" width="200" height="335" as="geometry" />
         </mxCell>
         <mxCell id="hwvQYhv3dfhFRNOniil5-79" value="Logo iut&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -648,7 +648,7 @@
         <mxCell id="hwvQYhv3dfhFRNOniil5-191" value="Liste lieu" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="862.5" y="1135" width="100" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="hwvQYhv3dfhFRNOniil5-192" value="Liste Batiment:&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra voir la liste de tout les Batiments.il pourra cliquer sur une Icon pour faire une modification ou alors pour supprimer les salle.&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;br&gt;visualiser :&lt;br&gt;Batiment , N°salle, Class , Accessible, %présence&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="hwvQYhv3dfhFRNOniil5-192" value="Liste Batiment:&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra voir la liste de tout les Batiments.il pourra cliquer sur une Icon pour faire une modification ou alors pour supprimer les salle.&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;br&gt;visualiser :&lt;br&gt;Batiment , N°salle, Class , Accessible, %présence , M²&lt;br&gt;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="982.5" y="870" width="200" height="335" as="geometry" />
         </mxCell>
         <mxCell id="hwvQYhv3dfhFRNOniil5-193" value="Logo iut&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -768,7 +768,7 @@
         <mxCell id="RcjOclbqkBx9WkXxXYVM-40" value="Accuiel" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="833.25" y="640" width="100" height="55" as="geometry" />
         </mxCell>
-        <mxCell id="RcjOclbqkBx9WkXxXYVM-41" value="Accuiel" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="RcjOclbqkBx9WkXxXYVM-41" value="Tableau bord" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="223.75" y="315" width="100" height="55" as="geometry" />
         </mxCell>
         <mxCell id="RcjOclbqkBx9WkXxXYVM-42" value="Accuiel" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
