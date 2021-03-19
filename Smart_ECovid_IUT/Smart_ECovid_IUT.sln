@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31105.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smart_ECovid_IUT", "Smart_ECovid_IUT\Smart_ECovid_IUT.csproj", "{3A101700-5513-4EA6-B8BC-413EBF63B7FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A101700-5513-4EA6-B8BC-413EBF63B7FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A101700-5513-4EA6-B8BC-413EBF63B7FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A101700-5513-4EA6-B8BC-413EBF63B7FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A101700-5513-4EA6-B8BC-413EBF63B7FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5191E23C-87DE-4D1F-9661-1E94A7529D7B}
+	EndGlobalSection
+EndGlobal
