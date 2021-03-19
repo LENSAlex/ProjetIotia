@@ -8,9 +8,9 @@ namespace MediaSense.Main.Manager
 {
     internal static class UtilisateurManager
     {
-        internal static Utilisateur Load(int id)
+        internal static Personne Load(int id)
         {
-            Utilisateur item = null;
+            Personne item = null;
             using (MySqlConnection cnx = new MySqlConnection(Config.ConnectionString))
             {
                 using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM Utilisateurs WHERE ut_id=@id", cnx))
@@ -22,7 +22,7 @@ namespace MediaSense.Main.Manager
                     {
                         if (dr.Read())
                         {
-                            item = new Utilisateur();
+                            item = new Personne();
                             fill(item, dr);
                         }
                     }
@@ -32,9 +32,9 @@ namespace MediaSense.Main.Manager
             return item;
         }
 
-        internal static Utilisateur Search(string email)
+        internal static Personne Search(string email)
         {
-            Utilisateur item = null;
+            Personne item = null;
             using (MySqlConnection cnx = new MySqlConnection(Config.ConnectionString))
             {
                 using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM Utilisateurs WHERE ut_email=@email", cnx))
@@ -46,7 +46,7 @@ namespace MediaSense.Main.Manager
                     {
                         if (dr.Read())
                         {
-                            item = new Utilisateur();
+                            item = new Personne();
                             fill(item, dr);
                         }
                     }
@@ -56,9 +56,9 @@ namespace MediaSense.Main.Manager
             return item;
         }
 
-        internal static Utilisateur Search(string email, string password)
+        internal static Personne Search(string email, string password)
         {
-            Utilisateur item = null;
+            Personne item = null;
             using (MySqlConnection cnx = new MySqlConnection(Config.ConnectionString))
             {
                 using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM Utilisateurs WHERE ut_email=@email AND ut_password=@password", cnx))
@@ -71,7 +71,7 @@ namespace MediaSense.Main.Manager
                     {
                         if (dr.Read())
                         {
-                            item = new Utilisateur();
+                            item = new Personne();
                             fill(item, dr);
                         }
                     }
@@ -81,9 +81,9 @@ namespace MediaSense.Main.Manager
             return item;
         }
 
-        internal static Utilisateur SearchByHash(int id, string hash)
+        internal static Personne SearchByHash(int id, string hash)
         {
-            Utilisateur item = null;
+            Personne item = null;
             using (MySqlConnection cnx = new MySqlConnection(Config.ConnectionString))
             {
                 using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM Utilisateurs WHERE ut_id=@id", cnx))
@@ -95,7 +95,7 @@ namespace MediaSense.Main.Manager
                     {
                         if (dr.Read())
                         {
-                            item = new Utilisateur();
+                            item = new Personne();
                             fill(item, dr);
                             if (item.Password != hash)
                                 item = null;
@@ -107,9 +107,9 @@ namespace MediaSense.Main.Manager
             return item;
         }
 
-        internal static List<Utilisateur> List()
+        internal static List<Personne> List()
         {
-            List<Utilisateur> list = new List<Utilisateur>();
+            List<Personne> list = new List<Personne>();
             using (MySqlConnection cnx = new MySqlConnection(Config.ConnectionString))
             {
                 using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM Utilisateurs ORDER BY ut_id", cnx))
@@ -120,7 +120,7 @@ namespace MediaSense.Main.Manager
                     {
                         while (dr.Read())
                         {
-                            Utilisateur item = new Utilisateur();
+                            Personne item = new Personne();
                             fill(item, dr);
                             list.Add(item);
                         }
@@ -131,7 +131,7 @@ namespace MediaSense.Main.Manager
             return list;
         }
 
-        private static void fill(Utilisateur item, MySqlDataReader dr)
+        private static void fill(Personne item, MySqlDataReader dr)
         {
             item.Id = (int)dr["ut_id"];
             item.Nom = (string)dr["ut_nom"];
@@ -141,7 +141,7 @@ namespace MediaSense.Main.Manager
             item.Newsletter = (Newsletter)dr["ut_newsletter"];
         }
 
-        internal static void Save(Utilisateur client)
+        internal static void Save(Personne client)
         {
             if (client.Id == 0)
             {
@@ -173,7 +173,7 @@ namespace MediaSense.Main.Manager
             }
         }
 
-        internal static void FillSql(MySqlCommand cmd, Utilisateur item)
+        internal static void FillSql(MySqlCommand cmd, Personne item)
         {
             cmd.Parameters.Add(new MySqlParameter("@id", item.Id));
             cmd.Parameters.Add(new MySqlParameter("@nom", item.Nom));
@@ -183,7 +183,7 @@ namespace MediaSense.Main.Manager
             cmd.Parameters.Add(new MySqlParameter("@newsletter", item.Newsletter));
         }
 
-        internal static void Delete(Utilisateur client)
+        internal static void Delete(Personne client)
         {
             using (MySqlConnection cnx = new MySqlConnection(Config.ConnectionString))
             {
@@ -200,9 +200,9 @@ namespace MediaSense.Main.Manager
         }
 
 
-        internal static List<Utilisateur> List(int nbUtilisateurs)
+        internal static List<Personne> List(int nbUtilisateurs)
         {
-            List<Utilisateur> list = new List<Utilisateur>();
+            List<Personne> list = new List<Personne>();
             using (MySqlConnection cnx = new MySqlConnection(Config.ConnectionString))
             {
 

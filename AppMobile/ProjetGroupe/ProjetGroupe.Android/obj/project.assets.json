@@ -3197,24 +3197,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Poste\\.nuget\\packages\\": {},
+    "C:\\Users\\bl005314\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Poste\\Source\\Repos\\ProjetIotia\\AppMobile\\ProjetGroupe\\ProjetGroupe.Android\\ProjetGroupe.Android.csproj",
+      "projectUniqueName": "C:\\Users\\bl005314\\Source\\Repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe.Android\\ProjetGroupe.Android.csproj",
       "projectName": "ProjetGroupe.Android",
-      "projectPath": "C:\\Users\\Poste\\Source\\Repos\\ProjetIotia\\AppMobile\\ProjetGroupe\\ProjetGroupe.Android\\ProjetGroupe.Android.csproj",
-      "packagesPath": "C:\\Users\\Poste\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Poste\\Source\\Repos\\ProjetIotia\\AppMobile\\ProjetGroupe\\ProjetGroupe.Android\\obj\\",
+      "projectPath": "C:\\Users\\bl005314\\Source\\Repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe.Android\\ProjetGroupe.Android.csproj",
+      "packagesPath": "C:\\Users\\bl005314\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bl005314\\Source\\Repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Poste\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\bl005314\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -3228,8 +3228,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Users\\Poste\\Source\\Repos\\ProjetIotia\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj": {
-              "projectPath": "C:\\Users\\Poste\\Source\\Repos\\ProjetIotia\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj"
+            "C:\\Users\\bl005314\\Source\\Repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj": {
+              "projectPath": "C:\\Users\\bl005314\\Source\\Repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj"
             }
           }
         }

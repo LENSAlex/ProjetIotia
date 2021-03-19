@@ -16,7 +16,7 @@ namespace MediaSense.Main
         Normal = 1,
         Administrateur = 10
     }
-    public class Utilisateur
+    public class Personne
     {
         private int id;
         private string email;
@@ -36,32 +36,32 @@ namespace MediaSense.Main
             UtilisateurManager.Save(this);
         }
 
-        public static Utilisateur Load(int id)
+        public static Personne Load(int id)
         {
             return UtilisateurManager.Load(id);
         }
 
-        public static List<Utilisateur> List()
+        public static List<Personne> List()
         {
             return UtilisateurManager.List();
         }
 
-        public static Utilisateur Search(string email)
+        public static Personne Search(string email)
         {
             return UtilisateurManager.Search(email);
         }
 
-        public static Utilisateur Search(string email, string password)
+        public static Personne Search(string email, string password)
         {
             return UtilisateurManager.Search(email, password);
         }
 
-        public static Utilisateur SearchByHash(int id, string hash)
+        public static Personne SearchByHash(int id, string hash)
         {
             return UtilisateurManager.SearchByHash(id, hash);
         }
 
-        public static List<Utilisateur> List(int nbUtilisateurs)
+        public static List<Personne> List(int nbUtilisateurs)
         {
             return UtilisateurManager.List(nbUtilisateurs);
         }
