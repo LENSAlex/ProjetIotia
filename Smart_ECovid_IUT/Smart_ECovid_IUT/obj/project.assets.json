@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "ClasseE-Covid/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/ClasseE-Covid.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ClasseE-Covid.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ClasseE-Covid/1.0.0": {
+      "type": "project",
+      "path": "../ClasseE-Covid/ClasseE-Covid.csproj",
+      "msbuildProject": "../ClasseE-Covid/ClasseE-Covid.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "ClasseE-Covid >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\pd012752\\.nuget\\packages\\": {},
@@ -41,7 +60,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\pd012752\\Source\\Repos\\LENSAlex\\ProjetIotia\\Smart_ECovid_IUT\\ClasseE-Covid\\ClasseE-Covid.csproj": {
+              "projectPath": "C:\\Users\\pd012752\\Source\\Repos\\LENSAlex\\ProjetIotia\\Smart_ECovid_IUT\\ClasseE-Covid\\ClasseE-Covid.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
