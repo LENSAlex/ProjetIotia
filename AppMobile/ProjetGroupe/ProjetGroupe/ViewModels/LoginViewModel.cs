@@ -1,6 +1,9 @@
-﻿using ProjetGroupe.Views;
+﻿using ProjetGroupe.Models;
+using ProjetGroupe.Tools;
+using ProjetGroupe.Views;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Net;
 using System.Net.Http;
 using System.Text;
@@ -18,14 +21,10 @@ namespace ProjetGroupe.ViewModels
         private string password;
         public LoginViewModel()
         {
-            LoginCommand = new Command(OnLoginClicked, ValidateSave);
+            LoginCommand = new Command(OnLoginClicked);
         }
 
-        private bool ValidateSave(object arg)
-        {
-            return !String.IsNullOrWhiteSpace(identifiant)
-                && !String.IsNullOrWhiteSpace(password);
-        }
+
 
         public string Identifiant
         {
@@ -44,9 +43,23 @@ namespace ProjetGroupe.ViewModels
             var handler = new HttpClientHandler { CookieContainer = CookieContainer };
             var httpClient = new HttpClient(handler);
             CookieContainer = handler.CookieContainer;
+            if (!String.IsNullOrEmpty(identifiant) && !String.IsNullOrEmpty(password))
+            {
+                Personne utilisateur = Personne.Search(identifiant, MHash.HashString(password));
 
-            // Prefixing with `//` switches to a different navigation stack instead of pushing to the active one
-            await Shell.Current.GoToAsync($"//{nameof(AccueilPage)}");    
+                if (utilisateur != null)
+                {
+                    await Shell.Current.GoToAsync($"{nameof(AccueilPage)}");
+                }
+                else
+                {
+                    await Shell.Current.GoToAsync($"{nameof(LoginPage)}");
+                }
+            }
+            else
+            {
+                await Shell.Current.GoToAsync($"{nameof(LoginPage)}");
+            }
         }
     }
 }

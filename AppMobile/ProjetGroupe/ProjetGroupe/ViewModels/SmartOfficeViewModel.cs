@@ -4,7 +4,14 @@ using System.Text;
 
 namespace ProjetGroupe.ViewModels
 {
-    class SmartOfficeViewModel
+    public class SmartOfficeViewModel : BaseViewModel
     {
+        private string text;
+        private string description;
+
+        public SmartOfficeViewModel()
+        {
+        }
+
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjetGroupe.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,12 +10,12 @@ using Xamarin.Forms.Xaml;
 
 namespace ProjetGroupe.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SmartOfficePage : ContentView
+    public partial class SmartOfficePage : ContentPage
     {
         public SmartOfficePage()
         {
             InitializeComponent();
+            BindingContext = new SmartOfficeViewModel();
         }
         //3)SmartOffice => alerte à pénurie de produit avec choix du produit.
     }

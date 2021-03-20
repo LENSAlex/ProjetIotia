@@ -14,7 +14,7 @@ namespace ProjetGroupe.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\AccueilPage.xaml")]
-    public partial class AccueilPage : global::Xamarin.Forms.ContentView {
+    public partial class AccueilPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {

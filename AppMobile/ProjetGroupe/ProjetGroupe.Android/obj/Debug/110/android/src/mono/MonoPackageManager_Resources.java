@@ -3,12 +3,7 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "ProjetGroupe.Android.dll" comes first in this list. */
 		"ProjetGroupe.Android.dll",
-		"BouncyCastle.Crypto.dll",
 		"FormsViewGroup.dll",
-		"Google.Protobuf.dll",
-		"K4os.Compression.LZ4.dll",
-		"K4os.Compression.LZ4.Streams.dll",
-		"K4os.Hash.xxHash.dll",
 		"Microsoft.Bcl.AsyncInterfaces.dll",
 		"Microsoft.Extensions.Configuration.Abstractions.dll",
 		"Microsoft.Extensions.Configuration.dll",
@@ -18,17 +13,13 @@ public class MonoPackageManager_Resources {
 		"Microsoft.Extensions.FileProviders.Physical.dll",
 		"Microsoft.Extensions.FileSystemGlobbing.dll",
 		"Microsoft.Extensions.Primitives.dll",
-		"MySql.Data.dll",
+		"MySql.Data.CF.dll",
+		"MySqlConnector.dll",
+		"Newtonsoft.Json.Bson.dll",
+		"Newtonsoft.Json.dll",
 		"ProjetGroupe.dll",
-		"Renci.SshNet.dll",
-		"SshNet.Security.Cryptography.dll",
-		"System.Configuration.ConfigurationManager.dll",
-		"System.Security.AccessControl.dll",
-		"System.Security.Permissions.dll",
-		"System.Security.Principal.Windows.dll",
 		"System.Text.Encodings.Web.dll",
 		"System.Text.Json.dll",
-		"Ubiety.Dns.Core.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
 		"Xamarin.AndroidX.Annotation.Experimental.dll",
@@ -79,7 +70,6 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Forms.Xaml.dll",
 		"Xamarin.Google.Android.Material.dll",
 		"Xamarin.Google.Guava.ListenableFuture.dll",
-		"Zstandard.Net.dll",
 	};
 	public static String[] Dependencies = new String[]{
 	};

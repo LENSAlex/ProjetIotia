@@ -12,11 +12,13 @@ namespace ProjetGroupe
         {
             InitializeComponent();
             DependencyService.Register<MockDataStore>();
+            //MainPage = new AppShell();
             MainPage = new AppShell();
         }
 
         protected override void OnStart()
         {
+
         }
 
         protected override void OnSleep()

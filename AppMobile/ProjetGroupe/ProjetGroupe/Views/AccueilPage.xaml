@@ -1,10 +1,22 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ProjetGroupe.Views.AccueilPage">
-  <ContentView.Content>
-      <StackLayout>
-          <Label Text="Hello Xamarin.Forms!" />
-      </StackLayout>
-  </ContentView.Content>
-</ContentView>
+             x:Class="ProjetGroupe.Views.AccueilPage"
+             Shell.PresentationMode="ModalAnimated"
+             Title="Accueil"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" xmlns:views="clr-namespace:ProjetGroupe.Views" x:DataType="views:AccueilPage"
+             ios:Page.UseSafeArea="true">
+    <ContentPage.Content>
+        <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
+            <Label Text="Accueil" FontSize="Medium" />
+        </StackLayout>
+    </ContentPage.Content>
+    <!--<ListView x:Name="PersonneView"
+            ItemsSource="{Binding Personne}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding Nom}" />
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>-->
+</ContentPage>   

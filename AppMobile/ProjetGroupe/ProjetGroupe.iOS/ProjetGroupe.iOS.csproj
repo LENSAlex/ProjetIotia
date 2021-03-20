@@ -142,4 +142,7 @@
       <Name>ProjetGroupe</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\iut.png" />
+  </ItemGroup>
 </Project>

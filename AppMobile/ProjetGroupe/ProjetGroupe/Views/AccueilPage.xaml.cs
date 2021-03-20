@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjetGroupe.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,12 +10,14 @@ using Xamarin.Forms.Xaml;
 
 namespace ProjetGroupe.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class AccueilPage : ContentView
+    public partial class AccueilPage : ContentPage
     {
         public AccueilPage()
         {
             InitializeComponent();
+            this.BindingContext = new AccueilViewModel();
+
+
 
             //Page accueil faire trois boutons pour 1)eCovid => sur alerte/notifcation ou je ne notifie moi même en envoyant une alerte.
             //2)SmartBuilding => affichage des énergie, Co2, température 
@@ -22,6 +25,8 @@ namespace ProjetGroupe.Views
             //Page de login
             //page de logout
             //Managers 
+
+
         }
     }
 }

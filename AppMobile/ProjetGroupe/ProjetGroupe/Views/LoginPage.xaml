@@ -1,17 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
              x:Class="ProjetGroupe.Views.LoginPage"
+             xmlns:vm="clr-namespace:ProjetGroupe.ViewModels"
              Shell.NavBarIsVisible="False">
-    <ContentPage.Content>
-        <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
-            <Button VerticalOptions="Center" Text="Test" Command="{Binding LoginCommand}"/>
-            <Entry  Text="{Binding Identifiant, Mode=TwoWay}" Placeholder="Identifiant" FontSize="Medium" ClearButtonVisibility="WhileEditing" />
-            <Label Text="Description" FontSize="Medium" />
-            <Entry IsPassword="true" Text="{Binding Password, Mode=TwoWay}" Placeholder="Password" FontSize="Medium" Margin="0" ClearButtonVisibility="WhileEditing" />
+    <ContentPage.BindingContext>
+        <vm:LoginViewModel />
+    </ContentPage.BindingContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackLayout BackgroundColor="#96d1ff" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
+                    <Image Source="iut.png" VerticalOptions="Center" HeightRequest="128" />
+                </ContentView>
+            </StackLayout>
         </StackLayout>
-    </ContentPage.Content>
+        <ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
+                <Label TextColor="#2196F3" Text="Veuillez entrer vos informations de connexion" FontSize="Medium" />
+                <Frame BorderColor="#2196F3" CornerRadius="4">
+                    <Entry TextColor="#2196F3" PlaceholderColor="#96d1ff" Text="{Binding Identifiant, Mode=TwoWay}" Placeholder="Identifiant" FontSize="Medium"   />
+                </Frame>
+                <Frame BorderColor="#2196F3" CornerRadius="4">
+                    <Entry PlaceholderColor="#96d1ff"  TextColor="#2196F3" IsPassword="true" Text="{Binding Password, Mode=TwoWay}" Placeholder="Mot de passe" FontSize="Medium" Margin="0" />
+                </Frame>
+                <Button VerticalOptions="Center" Text="Connexion" Command="{Binding LoginCommand}"/>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
 </ContentPage>

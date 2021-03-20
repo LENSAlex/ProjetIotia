@@ -5,7 +5,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MediaSense.Tools
+namespace ProjetGroupe.Tools
 {    public static class MHash
     {
         public static string HashString(string rawData)
