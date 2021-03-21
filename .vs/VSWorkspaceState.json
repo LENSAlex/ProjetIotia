@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\AppMobile"
+    "\\AppMobile",
+    "\\AppMobile\\ProjetGroupe",
+    "\\AppMobile\\ProjetGroupe\\ProjetGroupe"
   ],
   "SelectedNode": "\\AppMobile\\ProjetGroupe.sln",
   "PreviewInSolutionExplorer": false

@@ -14,9 +14,11 @@
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "12.0.3",
           "Newtonsoft.Json.Bson": "1.0.2",
+          "Syncfusion.Xamarin.Pdf": "18.4.0.48",
           "System.Runtime": "4.3.1",
           "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012"
+          "Xamarin.Forms": "5.0.0.2012",
+          "Mono.Android": "0.0.0.0"
         },
         "runtime": {
           "ProjetGroupe.dll": {}
@@ -170,6 +172,34 @@
           }
         }
       },
+      "Syncfusion.Licensing/18.4.0.48": {
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "18.4.0.48",
+            "fileVersion": "18.4.0.48"
+          }
+        }
+      },
+      "Syncfusion.Xamarin.Compression/18.4.0.48": {
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Compression.Portable.dll": {
+            "assemblyVersion": "18.4451.0.48",
+            "fileVersion": "18.4451.0.48"
+          }
+        }
+      },
+      "Syncfusion.Xamarin.Pdf/18.4.0.48": {
+        "dependencies": {
+          "Syncfusion.Licensing": "18.4.0.48",
+          "Syncfusion.Xamarin.Compression": "18.4.0.48"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Pdf.Portable.dll": {
+            "assemblyVersion": "18.4451.0.48",
+            "fileVersion": "18.4451.0.48"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {
         "runtime": {
           "lib/netstandard2.0/System.Buffers.dll": {
@@ -276,6 +306,14 @@
           "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "5.0.0.671"
+          }
+        }
+      },
+      "Mono.Android/0.0.0.0": {
+        "runtime": {
+          "Mono.Android.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
           }
         }
       }
@@ -392,6 +430,27 @@
       "path": "newtonsoft.json.bson/1.0.2",
       "hashPath": "newtonsoft.json.bson.1.0.2.nupkg.sha512"
     },
+    "Syncfusion.Licensing/18.4.0.48": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oXAdH7utKg/e8/oOeymi88yeXyFf7PzY9ONir+hWgjAUWwKFRaco8SQXI/hCfyCq1fDPHyHQUSJE8S2oVBfutQ==",
+      "path": "syncfusion.licensing/18.4.0.48",
+      "hashPath": "syncfusion.licensing.18.4.0.48.nupkg.sha512"
+    },
+    "Syncfusion.Xamarin.Compression/18.4.0.48": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vlhAdl6CGT4tJ5AxuXSnVb08UsERsPtYeraPJ5//wLi2ZWxXm5PVr5X9e3lUfkNXgSmFLiu5DnL2MoDpJFrSTg==",
+      "path": "syncfusion.xamarin.compression/18.4.0.48",
+      "hashPath": "syncfusion.xamarin.compression.18.4.0.48.nupkg.sha512"
+    },
+    "Syncfusion.Xamarin.Pdf/18.4.0.48": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5unEgRVjyhX0YG0edksI2l5OZQrmIuZlYfPHg8elYBpFEjcytRubqcKNYXQKCZUI6nKfx4zplhdabHuzHt1zMg==",
+      "path": "syncfusion.xamarin.pdf/18.4.0.48",
+      "hashPath": "syncfusion.xamarin.pdf.18.4.0.48.nupkg.sha512"
+    },
     "System.Buffers/4.5.1": {
       "type": "package",
       "serviceable": true,
@@ -461,6 +520,11 @@
       "sha512": "sha512-Rqc6xvWR/sf+Db5+qRCFmuYTWVp04QWRfwPto2/JHbShSy4Ed53Q2jpoFzsoloXkJA6saD236PlaWAhT6vI4gw==",
       "path": "xamarin.forms/5.0.0.2012",
       "hashPath": "xamarin.forms.5.0.0.2012.nupkg.sha512"
+    },
+    "Mono.Android/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

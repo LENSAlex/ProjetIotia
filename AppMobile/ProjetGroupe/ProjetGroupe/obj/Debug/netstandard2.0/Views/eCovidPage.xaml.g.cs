@@ -14,7 +14,7 @@ namespace ProjetGroupe.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\eCovidPage.xaml")]
-    public partial class eCovidPage : global::Xamarin.Forms.ContentView {
+    public partial class eCovidPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "W4PtcX3WAko8hgUlFNE8cU0vkEcb8ibLSNRKN8boN9mO52wbMwClIPNkjVv/8XERNDl50dnyYkw99sjE3xgoHg==",
+  "dgSpecHash": "qt34U/19tMQ0KumLUj1H3X8VYtrhwQLnfEnrnoHxnuq68DVfebKN4VlPH3TeXcfNPe/tQIKPl44W8zhSwRxSVA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Poste\\source\\repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj",
   "expectedPackageFiles": [
@@ -19,6 +19,9 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\Poste\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Poste\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
+    "C:\\Users\\Poste\\.nuget\\packages\\syncfusion.licensing\\18.4.0.48\\syncfusion.licensing.18.4.0.48.nupkg.sha512",
+    "C:\\Users\\Poste\\.nuget\\packages\\syncfusion.xamarin.compression\\18.4.0.48\\syncfusion.xamarin.compression.18.4.0.48.nupkg.sha512",
+    "C:\\Users\\Poste\\.nuget\\packages\\syncfusion.xamarin.pdf\\18.4.0.48\\syncfusion.xamarin.pdf.18.4.0.48.nupkg.sha512",
     "C:\\Users\\Poste\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Poste\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\Poste\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",

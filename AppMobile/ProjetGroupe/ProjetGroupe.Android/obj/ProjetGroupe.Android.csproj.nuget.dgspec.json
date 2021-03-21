@@ -42,13 +42,41 @@
       "frameworks": {
         "monoandroid11.0": {
           "dependencies": {
+            "Syncfusion.Xamarin.Pdf": {
+              "target": "Package",
+              "version": "[18.4.0.48, )"
+            },
+            "Xamarin.Azure.NotificationHubs.Android": {
+              "target": "Package",
+              "version": "[1.1.4.1, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.6.1, )"
             },
+            "Xamarin.Firebase.Analytics.Impl": {
+              "target": "Package",
+              "version": "[116.3.0, )"
+            },
+            "Xamarin.Firebase.Messaging": {
+              "target": "Package",
+              "version": "[121.0.1, )"
+            },
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[5.0.0.2012, )"
+            },
+            "Xamarin.Google.Dagger": {
+              "target": "Package",
+              "version": "[2.27.0, )"
+            },
+            "Xamarin.GooglePlayServices.Base": {
+              "target": "Package",
+              "version": "[117.6.0, )"
+            },
+            "Xamarin.GooglePlayServices.Basement": {
+              "target": "Package",
+              "version": "[117.6.0, )"
             },
             "Xamarin.MySql.Data": {
               "target": "Package",
@@ -120,6 +148,10 @@
             "Newtonsoft.Json.Bson": {
               "target": "Package",
               "version": "[1.0.2, )"
+            },
+            "Syncfusion.Xamarin.Pdf": {
+              "target": "Package",
+              "version": "[18.4.0.48, )"
             },
             "System.Runtime": {
               "target": "Package",

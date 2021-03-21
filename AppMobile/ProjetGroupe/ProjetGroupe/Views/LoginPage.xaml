@@ -7,28 +7,40 @@
     <ContentPage.BindingContext>
         <vm:LoginViewModel />
     </ContentPage.BindingContext>
-    <Grid>
+    <Grid BackgroundColor="AliceBlue">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <StackLayout BackgroundColor="#96d1ff" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+        <Image Source="overlay.png" Aspect="Fill" HeightRequest="300" VerticalOptions="StartAndExpand"/>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+            <ContentView Padding="0,-20,0,40" VerticalOptions="FillAndExpand">
+                <Image Source="iut.png" VerticalOptions="Center" HeightRequest="200" />
+            </ContentView>
+        </StackLayout>
+        <Frame Grid.Row="1" HasShadow="True" CornerRadius="15" Margin="20,-30,20,0" Padding="0" HeightRequest="450" VerticalOptions="Start">
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+            </Grid>
+        </Frame>
+
+        <!--StackLayout BackgroundColor="#96d1ff" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
                 <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
                     <Image Source="iut.png" VerticalOptions="Center" HeightRequest="128" />
                 </ContentView>
             </StackLayout>
-        </StackLayout>
+        </StackLayout>-->
         <ScrollView Grid.Row="1">
-            <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
-                <Label TextColor="#2196F3" Text="Veuillez entrer vos informations de connexion" FontSize="Medium" />
-                <Frame BorderColor="#2196F3" CornerRadius="4">
-                    <Entry TextColor="#2196F3" PlaceholderColor="#96d1ff" Text="{Binding Identifiant, Mode=TwoWay}" Placeholder="Identifiant" FontSize="Medium"   />
+            <StackLayout Orientation="Vertical" Padding="40,0,40,24" Spacing="15">
+                <Label Margin="0,-3,0,0" HorizontalTextAlignment="Center" TextColor="#91B3FB" Text="Veuillez entrer vos informations de connexion" FontSize="16" />
+                <Frame Padding="10" BorderColor="#91B3FB" CornerRadius="8">
+                    <Entry TextColor="#96d1ff" PlaceholderColor="#96d1ff" Text="{Binding Identifiant, Mode=TwoWay}" Placeholder="Identifiant" FontSize="Medium"   />
                 </Frame>
-                <Frame BorderColor="#2196F3" CornerRadius="4">
-                    <Entry PlaceholderColor="#96d1ff"  TextColor="#2196F3" IsPassword="true" Text="{Binding Password, Mode=TwoWay}" Placeholder="Mot de passe" FontSize="Medium" Margin="0" />
+                <Frame Padding="10" BorderColor="#91B3FB" CornerRadius="8">
+                    <Entry PlaceholderColor="#96d1ff"  TextColor="#96d1ff" IsPassword="true" Text="{Binding Password, Mode=TwoWay}" Placeholder="Mot de passe" FontSize="Medium" Margin="0" />
                 </Frame>
-                <Button VerticalOptions="Center" Text="Connexion" Command="{Binding LoginCommand}"/>
+                <Button VerticalOptions="Center" CornerRadius="8"  Text="Connexion" Command="{Binding LoginCommand}"/>
+                <Label HorizontalTextAlignment="Center" TextColor="Red" Text="{Binding Erreur}" FontSize="16" />
             </StackLayout>
         </ScrollView>
     </Grid>

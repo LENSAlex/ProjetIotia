@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ProjetGroupe.Models;
+using ProjetGroupe.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,13 +11,25 @@ using Xamarin.Forms.Xaml;
 
 namespace ProjetGroupe.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SmartBuildingPage : ContentView
+    public partial class SmartBuildingPage : ContentPage
     {
-
+        public string SearchResults { get; set; }
         public SmartBuildingPage()
         {
             InitializeComponent();
+            this.BindingContext = new SmartBuildingViewModel();
+        }
+
+        private void searchBar_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            SearchBar searchBar = (SearchBar)sender;
+            SearchResults = Personne(searchBar.Text);
+        }
+        private string Personne(string query)
+        {
+            var ListPersonne = new Personne();
+            ListPersonne = ListPersonne.SearchMail(email: query);
+            return ListPersonne.Email;
         }
         //2)SmartBuilding => affichage des énergie, Co2, température 
     }

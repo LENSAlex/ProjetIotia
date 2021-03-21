@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Net;
+using System.Net.Mail;
 using System.Text;
 
 namespace ProjetGroupe.Models
@@ -49,7 +50,10 @@ namespace ProjetGroupe.Models
         {
             return PersonneManager.Search(email);
         }
-
+        public Personne SearchMail(string email)
+        {
+            return PersonneManager.Search(email);
+        }
         public static Personne Search(string rfid, string password)
         {
             return PersonneManager.Search(rfid, password);
@@ -60,28 +64,62 @@ namespace ProjetGroupe.Models
             return PersonneManager.Count();
         }
 
-  
+
 
         //public void Delete()
         //{
         //    UtilisateurManager.Delete(this);
         //}
 
-        //public static Utilisateur Current()
-        //{
-
-        //    if (id != null)
-        //        return Load(id.Value);
-        //    else if (utilisateurEmail != null && utilisateurPassword != null)
-        //        return Utilisateur.Search(utilisateurEmail, utilisateurPassword);
-        //    else
-        //        return null;
-        //}
+        public static Personne IsLogged()
+        {
+            int result = Convert.ToInt32(Xamarin.Essentials.SecureStorage.GetAsync("isLogged").Result);
+            if (result == 1)
+            {
+                int id = Convert.ToInt32(Xamarin.Essentials.SecureStorage.GetAsync("Id").Result);
+                Personne Personne = Personne.Load(id);
+                if(Personne != null)
+                {
+                    return Personne;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            else
+            {
+                return null;
+            }
+        }
 
         //public static void LogOff(HttpContext context)
         //{
         //    context.Session.SetInt32("UtilisateurId", 0);
         //}
-    
+        public bool RappelMail(string MailPatient)
+        {
+            //juste ici verifier que le mail existe bien
+            using (MailMessage mail = new MailMessage())
+            {
+                mail.From = new MailAddress("soignantsniriotia@gmail.com");
+                mail.To.Add(MailPatient);
+                mail.Subject = "Formulaire à remplir ";
+                mail.Body = "<h1 style='text-align:center'>Bonjour</h1>";
+                mail.IsBodyHtml = true;
+   
+                using (SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587))
+                {
+                    smtp.UseDefaultCredentials = false;
+                    smtp.Credentials = new NetworkCredential("soignantsniriotia@gmail.com", "testtest25.");
+                    smtp.EnableSsl = true;
+                    smtp.Send(mail);
+                }
+                return true;
+            }
+            //return false;
+        }
+
+
     }
 }

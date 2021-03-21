@@ -63,3 +63,7 @@ C:\Users\Poste\source\repos\ProjetIotiaV2\AppMobile\ProjetGroupe\ProjetGroupe\ob
 C:\Users\Poste\source\repos\ProjetIotiaV2\AppMobile\ProjetGroupe\ProjetGroupe\obj\Debug\netstandard2.0\ProjetGroupe.dll
 C:\Users\Poste\source\repos\ProjetIotiaV2\AppMobile\ProjetGroupe\ProjetGroupe\obj\Debug\netstandard2.0\ref\ProjetGroupe.dll
 C:\Users\Poste\source\repos\ProjetIotiaV2\AppMobile\ProjetGroupe\ProjetGroupe\obj\Debug\netstandard2.0\ProjetGroupe.pdb
+C:\Users\Poste\source\repos\ProjetIotiaV2\AppMobile\ProjetGroupe\ProjetGroupe\bin\Debug\netstandard2.0\Mono.Android.dll
+C:\Users\Poste\source\repos\ProjetIotiaV2\AppMobile\ProjetGroupe\ProjetGroupe\bin\Debug\netstandard2.0\Mono.Android.pdb
+C:\Users\Poste\source\repos\ProjetIotiaV2\AppMobile\ProjetGroupe\ProjetGroupe\bin\Debug\netstandard2.0\Mono.Android.xml
+C:\Users\Poste\source\repos\ProjetIotiaV2\AppMobile\ProjetGroupe\ProjetGroupe\obj\Debug\netstandard2.0\ProjetGroupe.csproj.CopyComplete
