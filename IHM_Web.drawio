@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-22T21:13:20.859Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="Flf22FD6Uh6BpoGHoKmn" version="14.5.0" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-03-22T21:15:43.220Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="J9f77gdxCCdnVssC7TYw" version="14.5.0" type="github" pages="2">
   <diagram id="ARH5aImlDJQzNbsXuoi2" name="Page-1">
     <mxGraphModel dx="3237" dy="3081" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1496,10 +1496,10 @@
         <mxCell id="vrpec3YslxEc7_vkl1N--486" value="&lt;br&gt;&lt;br&gt;&lt;br&gt;Liste Production Co2:&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra voir la liste de tout les valeur des capteur Co2.&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;br&gt;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1316.25" y="-705" width="330" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="vrpec3YslxEc7_vkl1N--487" value="&lt;br&gt;&lt;br&gt;&lt;br&gt;Liste Production Energie:&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra voir la liste de tout les Capteur .&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;br&gt;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="vrpec3YslxEc7_vkl1N--487" value="&lt;br&gt;&lt;br&gt;&lt;br&gt;Liste Taux occupation %:&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra voir la liste de tout les Taux occupation %.&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;br&gt;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1316.25" y="-597.5" width="330" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="vrpec3YslxEc7_vkl1N--488" value="&lt;br&gt;&lt;br&gt;&lt;br&gt;Liste Production Energie:&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra voir la liste de tout les Capteur .&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;br&gt;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="vrpec3YslxEc7_vkl1N--488" value="&lt;br&gt;&lt;br&gt;&lt;br&gt;Liste Température:&amp;nbsp;&lt;br&gt;dans cette page l&#39;admin pourra voir la liste de&amp;nbsp; tout les valeur des capteur&amp;nbsp;de Température.&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;br&gt;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1316.25" y="-487.5" width="330" height="80" as="geometry" />
         </mxCell>
       </root>
