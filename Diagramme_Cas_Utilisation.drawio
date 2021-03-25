@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-25T16:59:57.155Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="x5nc6zg6NK5V-XmouX0-" version="14.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-25T17:01:55.214Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="G_EzRM6xJC9v7QsyGQ-Q" version="14.5.1" type="github">
   <diagram id="ocuWfuaNGDJ26_I2H6SO" name="Page-1">
     <mxGraphModel dx="1483" dy="783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -84,6 +84,30 @@
         </mxCell>
         <mxCell id="1Jgu8GzvpvVnRny0nY7y-14" value="&lt;span&gt;Equipement alerte (penuri de stock)&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="316.5" y="210" width="145" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="W6VFH3kQfa4Qgz9BV_cm-1" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tEwAyCv08CmWJKM7VAuX-1" target="LUslN0Hp2iyH4F8RHUz0-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="470" as="sourcePoint" />
+            <mxPoint x="390" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W6VFH3kQfa4Qgz9BV_cm-2" value="" style="endArrow=classic;html=1;entryX=-0.009;entryY=0.601;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="LUslN0Hp2iyH4F8RHUz0-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="460" as="sourcePoint" />
+            <mxPoint x="390" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W6VFH3kQfa4Qgz9BV_cm-3" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="tEwAyCv08CmWJKM7VAuX-1" target="LUslN0Hp2iyH4F8RHUz0-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="110" y="460" as="sourcePoint" />
+            <mxPoint x="277.75" y="454.2399999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W6VFH3kQfa4Qgz9BV_cm-4" value="" style="endArrow=classic;html=1;entryX=-0.013;entryY=0.544;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="1Jgu8GzvpvVnRny0nY7y-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="510" as="sourcePoint" />
+            <mxPoint x="277.75" y="454.2399999999998" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
