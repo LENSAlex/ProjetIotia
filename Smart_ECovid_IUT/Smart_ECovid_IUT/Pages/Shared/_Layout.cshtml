@@ -10,15 +10,15 @@
     <link rel="stylesheet" href="~/css/custom.css" />
 </head>
 <body>
-    <header>
-        <div class=" bg-color-blue">
+    <header style="display: grid;">
+        <div class=" bg-color-blue "     style="z-index: 1;"> 
             <ul class="nav nav-pills nav-fill">
                 <li class="nav-item">
-                    <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4 margin-top-40"><i class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold">Navigation</small></button>
+                    <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4 mar-top-40"><i class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold">Navigation</small></button>
 
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-page="/Index"><img src="~/img/logo_uns_hd.png" width="150" /></a>
+                    <a class="nav-link text-dark" asp-area="" asp-page="/Index"><img src="~/img/Logo-couple-IUT-horizontal-CMJN-05-07.png" width="200" /></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark margin-top-40" asp-area="" asp-page="/Privacy">Nom Utilisateur</a>
@@ -27,18 +27,18 @@
         </div>
     </header>
     <div class="vertical-nav bg-white" id="sidebar">
-        <ul class="nav flex-column mb-0">
+        <ul class="nav flex-column mb-0 mar-top-100">
             <li class="nav-item">
-                <a class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0 dropdown-toggle"><i class="fas fa-user-circle">Utilisateurs</i></a>
+                <a class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0"><i class="fas fa-user-circle">Utilisateurs</i></a>
                 <ul>
-                    <li>
+                    <li >
                         <a href="#" class="nav-link text-dark font-italic bg-light ">
                             <i class="fas fa-user-plus mr-3 text-primary fa-fw"></i>
                             Crée Utilisateur
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link text-dark font-italic ">
+                        <a href="#" class="nav-link text-dark font-italic bg-light ">
                             <i class="fas fa-users mr-3 text-primary fa-fw"></i>
                             Liste Utilisateur
                         </a>
@@ -46,7 +46,7 @@
                 </ul>
             </li>
             <li class="nav-item">
-                <a class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0" href="#" ><i class="fas fa-graduation-cap"></i></i>Promotion</i></a>
+                <a class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0"><i class="fas fa-graduation-cap">Promotion</i></a>
                 <ul>
                     <li>
                         <a href="#" class="nav-link text-dark font-italic bg-light">
@@ -55,7 +55,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link text-dark font-italic">
+                        <a href="#" class="nav-link text-dark font-italic bg-light ">
                             <i class="fas fa-list mr-3 text-primary fa-fw"></i>
                            
                             Liste Promotion
@@ -73,7 +73,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link text-dark font-italic ">
+                        <a href="#" class="nav-link text-dark font-italic bg-light ">
                             <i class="fas fa-city mr-3 text-primary fa-fw"></i>
                             Liste Campus
                         </a>
@@ -95,7 +95,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link text-dark font-italic ">
+                        <a href="#" class="nav-link text-dark font-italic bg-light ">
                             <i class="fas fa-list mr-3 text-primary fa-fw"></i>
                             Liste IOT Devis
 
@@ -106,13 +106,13 @@
 
         </ul>
     </div>
-    <div class="page-content p-5" id="content">
+    <div class="page-content p-5 my-custom-scrollbar my-custom-scrollbar-primary" id="content">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer text-muted page-content p-5" id="content">
         <div class="container">
             &copy; 2021 - Smart_ECovid_IUT - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
