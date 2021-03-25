@@ -8,4 +8,8 @@
     <ProjectReference Include="..\ClasseE-Covid\ClasseE-Covid.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\img\" />
+  </ItemGroup>
+
 </Project>
