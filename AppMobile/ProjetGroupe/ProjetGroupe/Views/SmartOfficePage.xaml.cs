@@ -1,4 +1,5 @@
-﻿using ProjetGroupe.ViewModels;
+﻿using ProjetGroupe.Services;
+using ProjetGroupe.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,11 +13,22 @@ namespace ProjetGroupe.Views
 {
     public partial class SmartOfficePage : ContentPage
     {
+        RestService _restService;
+
         public SmartOfficePage()
         {
             InitializeComponent();
             BindingContext = new SmartOfficeViewModel();
+            _restService = new RestService();
         }
         //3)SmartOffice => alerte à pénurie de produit avec choix du produit.
+
+
+        //For example webrequest
+        async void OnButtonClicked(object sender, EventArgs e)
+        {
+            List<WebRequestProperty> repositories = await _restService.GetRepositoriesAsync(Constants.WebRequest);
+           // collectionView.ItemsSource = repositories;
+        }
     }
 }

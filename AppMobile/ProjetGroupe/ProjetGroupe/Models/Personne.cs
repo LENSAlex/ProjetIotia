@@ -54,6 +54,10 @@ namespace ProjetGroupe.Models
         {
             return PersonneManager.Search(email);
         }
+        public static Personne SearchLike(string query)
+        {
+            return PersonneManager.SearchLike(query);
+        }
         public static Personne Search(string rfid, string password)
         {
             return PersonneManager.Search(rfid, password);

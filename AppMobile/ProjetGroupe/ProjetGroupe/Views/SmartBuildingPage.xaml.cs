@@ -13,6 +13,7 @@ namespace ProjetGroupe.Views
 {
     public partial class SmartBuildingPage : ContentPage
     {
+        public Personne _Personne { get; set; }
         public string SearchResults { get; set; }
         public SmartBuildingPage()
         {
@@ -23,13 +24,21 @@ namespace ProjetGroupe.Views
         private void searchBar_TextChanged(object sender, TextChangedEventArgs e)
         {
             SearchBar searchBar = (SearchBar)sender;
-            SearchResults = Personne(searchBar.Text);
+            SearchResults = PersonneSearch(searchBar.Text);
         }
-        private string Personne(string query)
+        private string PersonneSearch(string query)
         {
-            var ListPersonne = new Personne();
-            ListPersonne = ListPersonne.SearchMail(email: query);
-            return ListPersonne.Email;
+            //var ListPersonne = new Personne();
+            _Personne = Personne.SearchLike(query);
+            if (_Personne != null)
+            {
+                return _Personne?.Email;
+            }
+            else
+            {
+                return "null";
+            }
+
         }
         //2)SmartBuilding => affichage des énergie, Co2, température 
     }

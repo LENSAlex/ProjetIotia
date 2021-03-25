@@ -4,8 +4,10 @@ using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
 
+[assembly: Xamarin.Forms.ExportFont("Roboto-Regular.ttf", Alias = "Roboto")]
 namespace ProjetGroupe
 {
+
     public partial class AppShell : Xamarin.Forms.Shell
     {
         public AppShell()

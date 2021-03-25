@@ -3,7 +3,7 @@
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:local="clr-namespace:ProjetGroupe.Views"
        Title="ProjetGroupe"
-       x:Class="ProjetGroupe.AppShell">
+       x:Class="ProjetGroupe.AppShell" FlyoutBackgroundColor="#FFFFFF">
 
     <!--
         The overall app visual hierarchy is defined here, along with navigation.
@@ -23,6 +23,7 @@
                 <Setter Property="Shell.TabBarForegroundColor" Value="White"/>
                 <Setter Property="Shell.TabBarUnselectedColor" Value="#95FFFFFF"/>
                 <Setter Property="Shell.TabBarTitleColor" Value="White" />
+                <Setter Property="Shell.FlyoutBackgroundColor" Value="White" />
             </Style>
             <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
             <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
@@ -70,26 +71,42 @@
         </ResourceDictionary>
     </Shell.Resources>
     
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <Grid BackgroundColor="#96BCE3" Padding="60">
+                <Image Source="profil2.png" Margin="-150,0,20,0" WidthRequest="125" HeightRequest="125" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Label Text="Votre nom" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            </Grid>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
 
+
+    <FlyoutItem Icon="accueil.png" Title="Accueil > Navigation" IsVisible="False" IsTabStop="True">
+
+        <ShellContent Icon="accueil.png" Title="Accueil" ContentTemplate="{DataTemplate local:AccueilPage}" />
+        <ShellContent Icon="warning.png" Title="Alerte Covid" ContentTemplate="{DataTemplate local:AccueilPage}" />
+        <ShellContent Icon="warning.png" Title="Données Capteurs" ContentTemplate="{DataTemplate local:AccueilPage}" />
+        <ShellContent Icon="warning.png" Title="Autres" ContentTemplate="{DataTemplate local:AccueilPage}" />
+    </FlyoutItem>
     <!-- 
         When the Flyout is visible this defines the content to display in the flyout.
         FlyoutDisplayOptions="AsMultipleItems" will create a separate flyout item for each child element    
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
 
-    <ShellItem Icon="dashboard.png" Title="Navigation">
+    <!--<ShellItem Icon="dashboard.png" Title="Navigation">
         <ShellContent Icon="dashboard.png" Title="Navigation" ContentTemplate="{DataTemplate local:AccueilPage}" />
-    </ShellItem>
-    
-    <MenuItem  Icon="icon_about.png" Text="Alerte Pénurie" StyleClass="MenuItemLayoutStyle" Clicked="OnSmartOfficePageClicked">
+    </ShellItem>-->
+
+    <MenuItem  Icon="warning.png" Text="Alerte Pénurie" StyleClass="MenuItemLayoutStyle" Clicked="OnSmartOfficePageClicked">
     </MenuItem>
 
-    <MenuItem  Icon="alert.png" Text="Alerte E-Covid" StyleClass="MenuItemLayoutStyle" Clicked="OnSmartBuildingPageClicked">
+    <MenuItem  Icon="warning.png" Text="Alerte E-Covid" StyleClass="MenuItemLayoutStyle" Clicked="OnSmartBuildingPageClicked">
     </MenuItem>
-    <MenuItem  Icon="icon_feed.png" Text="Consulter les données" StyleClass="MenuItemLayoutStyle" Clicked="OneCovidPageClicked">
+    <MenuItem  Icon="data.png" Text="Consulter les données" StyleClass="MenuItemLayoutStyle" Clicked="OneCovidPageClicked">
     </MenuItem>
     
-    <MenuItem Icon="settings.png" Text="Déconnexion" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">
+    <MenuItem Icon="logout.png" Text="Déconnexion" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">
     </MenuItem>
     <!--<ShellItem Route="SmartOfficePage">
         <ShellContent ContentTemplate="{DataTemplate local:SmartOfficePage}" />

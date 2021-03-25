@@ -145,4 +145,10 @@
   <ItemGroup>
     <BundleResource Include="Resources\iut.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\logohoiut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\logoveiut.png" />
+  </ItemGroup>
 </Project>

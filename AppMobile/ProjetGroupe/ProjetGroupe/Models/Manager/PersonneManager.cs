@@ -55,6 +55,29 @@ namespace ProjetGroupe.Models.Manager
 
             return item;
         }
+        internal static Personne SearchLike(string query)
+        {
+            Personne item = null;
+            using (MySqlConnection cnx = new MySqlConnection(Config.ConnectionString))
+            {
+                using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM Personne3 WHERE email LIKE @email", cnx))
+                {
+                    cmd.Parameters.Add(new MySqlParameter("@email", "%" + query + "%"));
+
+                    cnx.Open();
+                    using (MySqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        if (dr.Read())
+                        {
+                            item = new Personne();
+                            fill(item, dr);
+                        }
+                    }
+                }
+            }
+
+            return item;
+        }
 
         internal static Personne Search(string rfid, string password)
         {

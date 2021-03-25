@@ -92,6 +92,11 @@
   <ItemGroup>
     <None Include="appsettings.json" />
     <GoogleServicesJson Include="google-services.json" />
+    <AndroidAsset Include="Assets\Roboto-Black.ttf" />
+    <AndroidAsset Include="Assets\Roboto-Bold.ttf" />
+    <AndroidAsset Include="Assets\Roboto-Regular.ttf" />
+    <AndroidAsset Include="Assets\Roboto-BoldItalic.ttf" />
+    <AndroidAsset Include="Assets\Roboto-Medium.ttf" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
@@ -145,6 +150,15 @@
     <AndroidResource Include="Resources\layout\Tabbar.axml" />
     <AndroidResource Include="Resources\layout\Toolbar.axml" />
     <AndroidResource Include="Resources\drawable\alert.png" />
+    <AndroidResource Include="Resources\drawable\logohoiut.png" />
+    <AndroidResource Include="Resources\drawable\logoveiut.png" />
+    <AndroidResource Include="Resources\drawable\accueil.png" />
+    <AndroidResource Include="Resources\drawable\profil.png" />
+    <AndroidResource Include="Resources\drawable\warning.png" />
+    <AndroidResource Include="Resources\drawable\data.png" />
+    <AndroidResource Include="Resources\drawable\logout.png" />
+    <AndroidResource Include="Resources\drawable\profil2.png" />
+    <AndroidResource Include="Resources\drawable\accueil2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>
