@@ -7,3 +7,12 @@ C:\Users\pd012752\Source\Repos\LENSAlex\ProjetIotia\Smart_ECovid_IUT\ClasseE-Cov
 C:\Users\pd012752\Source\Repos\LENSAlex\ProjetIotia\Smart_ECovid_IUT\ClasseE-Covid\obj\Debug\netcoreapp3.1\ClasseE-Covid.csproj.CoreCompileInputs.cache
 C:\Users\pd012752\Source\Repos\LENSAlex\ProjetIotia\Smart_ECovid_IUT\ClasseE-Covid\obj\Debug\netcoreapp3.1\ClasseE-Covid.dll
 C:\Users\pd012752\Source\Repos\LENSAlex\ProjetIotia\Smart_ECovid_IUT\ClasseE-Covid\obj\Debug\netcoreapp3.1\ClasseE-Covid.pdb
+C:\Users\ga304263\Source\Repos\ProjetIotia\Smart_ECovid_IUT\ClasseE-Covid\bin\Debug\netcoreapp3.1\ClasseE-Covid.deps.json
+C:\Users\ga304263\Source\Repos\ProjetIotia\Smart_ECovid_IUT\ClasseE-Covid\bin\Debug\netcoreapp3.1\ClasseE-Covid.dll
+C:\Users\ga304263\Source\Repos\ProjetIotia\Smart_ECovid_IUT\ClasseE-Covid\bin\Debug\netcoreapp3.1\ClasseE-Covid.pdb
+C:\Users\ga304263\Source\Repos\ProjetIotia\Smart_ECovid_IUT\ClasseE-Covid\obj\Debug\netcoreapp3.1\ClasseE-Covid.csprojAssemblyReference.cache
+C:\Users\ga304263\Source\Repos\ProjetIotia\Smart_ECovid_IUT\ClasseE-Covid\obj\Debug\netcoreapp3.1\ClasseE-Covid.AssemblyInfoInputs.cache
+C:\Users\ga304263\Source\Repos\ProjetIotia\Smart_ECovid_IUT\ClasseE-Covid\obj\Debug\netcoreapp3.1\ClasseE-Covid.AssemblyInfo.cs
+C:\Users\ga304263\Source\Repos\ProjetIotia\Smart_ECovid_IUT\ClasseE-Covid\obj\Debug\netcoreapp3.1\ClasseE-Covid.csproj.CoreCompileInputs.cache
+C:\Users\ga304263\Source\Repos\ProjetIotia\Smart_ECovid_IUT\ClasseE-Covid\obj\Debug\netcoreapp3.1\ClasseE-Covid.dll
+C:\Users\ga304263\Source\Repos\ProjetIotia\Smart_ECovid_IUT\ClasseE-Covid\obj\Debug\netcoreapp3.1\ClasseE-Covid.pdb
