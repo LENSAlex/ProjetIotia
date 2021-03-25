@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-25T16:54:48.136Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="I52ucg0CoDAJPELHXqXF" version="14.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-25T16:57:19.618Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="HX-MycG_50dPioeN0fq_" version="14.5.1" type="github">
   <diagram id="ocuWfuaNGDJ26_I2H6SO" name="Page-1">
     <mxGraphModel dx="1126" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -35,7 +35,7 @@
           <mxGeometry x="700" y="580" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="1Jgu8GzvpvVnRny0nY7y-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="267.5" y="800" width="250" height="200" as="geometry" />
+          <mxGeometry x="267.5" y="800" width="250" height="270" as="geometry" />
         </mxCell>
         <mxCell id="1Jgu8GzvpvVnRny0nY7y-4" value="&lt;b&gt;Capteur&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="370" y="800" width="40" height="20" as="geometry" />
@@ -43,14 +43,14 @@
         <mxCell id="LUslN0Hp2iyH4F8RHUz0-9" value="Personnes Atteintes Covid&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="279" y="210" width="230" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="1Jgu8GzvpvVnRny0nY7y-7" value="Avoir la derniere valeur d&#39;un capteur,Liste de tous les releves d&#39;un capteur et entre deux 2 dates , liste de tous les releves dans une salle , liste des derniers releves dans une salle." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="269" y="840" width="245" height="50" as="geometry" />
+        <mxCell id="1Jgu8GzvpvVnRny0nY7y-7" value="Avoir la derniere valeur d&#39;un capteur&lt;br&gt;&lt;br&gt;Liste de tous les releves d&#39;un capteur et entre deux 2 dates &lt;br&gt;&lt;br&gt;Liste de tous les releves dans une salle&lt;br&gt;&lt;br&gt;&amp;nbsp;Liste des derniers releves dans une salle.&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="265" y="850" width="245" height="50" as="geometry" />
         </mxCell>
         <mxCell id="LUslN0Hp2iyH4F8RHUz0-10" value="Taux Co2" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="275" y="180" width="230" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="1Jgu8GzvpvVnRny0nY7y-9" value="Moyenne journalieres : CO2 , Temperature.&lt;br&gt;Valeur min et max capteur dans une journée: température , Co2.&lt;br&gt;Nombre ouverture fenetre journee , nombre entree/sortie salle par jour ou entre deux dates&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="280" y="910" width="221" height="80" as="geometry" />
+        <mxCell id="1Jgu8GzvpvVnRny0nY7y-9" value="Moyenne journalieres : CO2 , Temperature.&lt;br&gt;Valeur min et max capteur dans une journée: température , Co2.&lt;br&gt;&lt;br&gt;Nombre ouverture fenetre journee , nombre entree/sortie salle par jour ou entre deux dates&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="281" y="960" width="221" height="80" as="geometry" />
         </mxCell>
         <mxCell id="LUslN0Hp2iyH4F8RHUz0-11" value="Alerte Ouverture fenêtre&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="280" y="270" width="230" height="20" as="geometry" />
