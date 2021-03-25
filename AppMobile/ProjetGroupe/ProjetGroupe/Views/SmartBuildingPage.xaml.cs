@@ -13,6 +13,7 @@ namespace ProjetGroupe.Views
 {
     public partial class SmartBuildingPage : ContentPage
     {
+
         public Personne _Personne { get; set; }
         public string SearchResults { get; set; }
         public SmartBuildingPage()
@@ -40,6 +41,8 @@ namespace ProjetGroupe.Views
             }
 
         }
-        //2)SmartBuilding => affichage des énergie, Co2, température 
     }
+      
+    //2)SmartBuilding => affichage des énergie, Co2, température 
+
 }

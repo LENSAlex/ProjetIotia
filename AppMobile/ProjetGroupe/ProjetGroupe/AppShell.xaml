@@ -81,8 +81,7 @@
     </Shell.FlyoutHeaderTemplate>
 
 
-    <FlyoutItem Icon="accueil.png" Title="Accueil > Navigation" IsVisible="False" IsTabStop="True">
-
+    <FlyoutItem Icon="accueil.png" Title="Accueil > Navigation">
         <ShellContent Icon="accueil.png" Title="Accueil" ContentTemplate="{DataTemplate local:AccueilPage}" />
         <ShellContent Icon="warning.png" Title="Alerte Covid" ContentTemplate="{DataTemplate local:AccueilPage}" />
         <ShellContent Icon="warning.png" Title="Données Capteurs" ContentTemplate="{DataTemplate local:AccueilPage}" />

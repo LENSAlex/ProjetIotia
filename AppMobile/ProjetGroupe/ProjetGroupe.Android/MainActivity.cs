@@ -13,12 +13,10 @@ namespace ProjetGroupe.Droid
     [Activity(Label = "ProjetGroupe", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize )]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
-        static readonly string HubName = "ProjetCovid";
-        public const string ConnectionString = "Endpoint=sb://projetcovid.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=6u2e8rZYxxWAp3baEl5Hc04Lnsnqpk0Cd+MCbJ/PB94=";
-        internal static readonly string CHANNEL_ID = "Notification";
-        internal static readonly int NOTIFICATION_ID = 100;
-
-        protected override void OnCreate(Bundle savedInstanceState )
+    //    public static string CHANNEL_ID = "Notification";
+     //   public static string Hubname = "ProjetCovid";
+     //   public static string Endpoint = "Endpoint=sb://projetcovid.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=6u2e8rZYxxWAp3baEl5Hc04Lnsnqpk0Cd+MCbJ/PB94=";
+        protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
  
@@ -31,9 +29,9 @@ namespace ProjetGroupe.Droid
 
             FirebaseApp.InitializeApp(this.ApplicationContext);
             NotificationHub.SetListener(new AzureListener());
-            // Start the SDK
-            NotificationHub.Start(this.Application, HubName, ConnectionString);
-            //CreateNotificationChannel();
+            //Start the SDK
+            NotificationHub.Start(this.Application, Config.NotificationHubName, Config.NotificationEndPoint);
+            CreateNotificationChannel();
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
@@ -49,14 +47,10 @@ namespace ProjetGroupe.Droid
                 return;
             }
 
-            var channel = new NotificationChannel(CHANNEL_ID,
-                                                  "Notification",
-                                                  NotificationImportance.Default)
+            var channel = new NotificationChannel(Config.NotificationChannelID, "Notification", NotificationImportance.Default)
             {
-
                 Description = "Test de notification via firebase"
             };
-
             var notificationManager = (NotificationManager)GetSystemService(Android.Content.Context.NotificationService);
             notificationManager.CreateNotificationChannel(channel);
         }

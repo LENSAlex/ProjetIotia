@@ -130,7 +130,6 @@
     <AndroidResource Include="Resources\drawable\iut.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="iut.png" />
     <AndroidResource Include="Resources\drawable\dashboard.png" />
     <AndroidResource Include="Resources\drawable\grid.png" />
     <AndroidResource Include="Resources\drawable\gridColor.png" />
@@ -159,6 +158,9 @@
     <AndroidResource Include="Resources\drawable\logout.png" />
     <AndroidResource Include="Resources\drawable\profil2.png" />
     <AndroidResource Include="Resources\drawable\accueil2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\logoiut.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>

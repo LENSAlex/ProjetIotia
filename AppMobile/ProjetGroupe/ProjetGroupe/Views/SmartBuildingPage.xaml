@@ -52,5 +52,31 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <ListView x:Name="WeathersList" ItemsSource="{Binding Weathers}" SeparatorVisibility="None"
+                  Grid.Row="3" Margin="20,10,20,10"   VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <ListView.ItemTemplate StyleClass="ListViewCustom">
+                <DataTemplate >
+                    <ViewCell>
+                        <Frame BackgroundColor="White" BorderColor="#F0F0F0" Padding="5" Margin="0,0,0,5" HasShadow="true">
+                            <Grid HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="Start"  Padding="10,-5,0,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Text="ID #" TextColor="Black" FontSize="10" VerticalOptions="Center"/>
+                                <Label Text="{Binding Id}" TextColor="Black" FontSize="10" Margin="20,0" FontAttributes="Bold" VerticalOptions="Center"/>
+
+                                <Label Text="{Binding PersonneType}" TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="50,0,20,0"/>
+                                <Image Grid.Column="1" Source="weather.png" WidthRequest="38" HeightRequest="38" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                <StackLayout Grid.Column="2" Orientation="Horizontal" Margin="20,0" HorizontalOptions="End" VerticalOptions="Center">
+                                    <Label Text="{Binding RFID}" TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="20,0"/>
+                                </StackLayout>
+                            </Grid>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </ContentPage>

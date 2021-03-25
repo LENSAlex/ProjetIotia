@@ -13,7 +13,7 @@ namespace ProjetGroupe.Droid
             intent.AddFlags(ActivityFlags.ClearTop);
             var pendingIntent = PendingIntent.GetActivity(context, 0, intent, Android.App.PendingIntentFlags.OneShot);
 
-            var notificationBuilder = new NotificationCompat.Builder(context, MainActivity.CHANNEL_ID);
+            var notificationBuilder = new NotificationCompat.Builder(context, Config.NotificationChannelID);
 
             notificationBuilder.SetContentTitle(message.Title)
                         .SetSmallIcon(Resource.Drawable.ic_launcher)

@@ -12,6 +12,10 @@ namespace ProjetGroupe
     public class Config
     {
         public static string ConnectionString { get; set; }
+        public static string NotificationEndPoint { get; set; }
+        public static string NotificationHubName { get; set; }
+        public static string NotificationChannelID { get; set; }
+
         static Config()
         {
             var assembly = Assembly.GetExecutingAssembly();
@@ -20,7 +24,12 @@ namespace ProjetGroupe
             var sr = new StreamReader(file);
             var json = sr.ReadToEnd();
             var j = JToken.Parse(json);
+
             ConnectionString = j.SelectToken("MainDatabase").ToString();
+
+            NotificationEndPoint = j.SelectToken("NotificationEndPoint").ToString();
+            NotificationHubName = j.SelectToken("NotificationHubName").ToString();
+            NotificationChannelID = j.SelectToken("NotificationChannelID").ToString();
         }
     }
 }

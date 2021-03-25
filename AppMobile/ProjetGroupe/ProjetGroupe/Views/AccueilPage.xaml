@@ -30,7 +30,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Image Source="overlay.png" Aspect="Fill" HeightRequest="300" VerticalOptions="StartAndExpand"/>
-        <Image Source="logohoiut.png" Margin="0,-160,0,0" WidthRequest="475" HeightRequest="475" HorizontalOptions="Center" VerticalOptions="Center"/>
+        <Image Source="logoiut.png" Margin="0,-160,0,0" WidthRequest="475" HeightRequest="475" HorizontalOptions="Center" VerticalOptions="Center"/>
         <!--<StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Start" VerticalOptions="Start" Margin="20,50">
             <ImageButton Source="menu.png" WidthRequest="23" HeightRequest="15" HorizontalOptions="Start" VerticalOptions="Center" />
             <Label Text="Accueil" FontSize="18" VerticalOptions="Center" TextColor="White"/>
@@ -43,22 +43,33 @@
             <!--<Label Text="{Binding Date}" TextColor="White" FontSize="12" HorizontalOptions="Center"/>
             <Label Text="{Binding Email}" TextColor="White" FontSize="12" HorizontalOptions="Center"/>-->
         </StackLayout>
-        <Frame Grid.Row="1" HasShadow="True" CornerRadius="15" Margin="20,-80,20,0" Padding="0" HeightRequest="120" VerticalOptions="Start">
+        <Frame Grid.Row="1" HasShadow="True" CornerRadius="15" Margin="20,-80,20,20" Padding="0" HeightRequest="150" VerticalOptions="Start">
             <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <StackLayout Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
-                    <Image Source="humidity.png" HeightRequest="25" HorizontalOptions="Center"/>
-                    <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                        <Label Text="50%" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
-                        <Label Text="Humidity" TextColor="#7D7D7D" FontSize="11" HorizontalOptions="Center"/>
+                <StackLayout Orientation="Vertical" Spacing="1000" HorizontalOptions="CenterAndExpand">
+                    <StackLayout Spacing="20" HorizontalOptions="CenterAndExpand">
+                        <Label Text="Pensez aux autres en les avertissant au plus vite" FontFamily="Roboto" HorizontalOptions="Center" TextColor="Olive" FontSize="12" VerticalOptions="Center"/>
+                        <Button VerticalOptions="Center" CornerRadius="16" BackgroundColor="Wheat" BorderWidth="2" BorderColor="Olive" WidthRequest="300" TextColor="Black" Text="Alerte E-COVID" Command="{Binding LoginCommand}"/>
                     </StackLayout>
                 </StackLayout>
-                <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
+            </Grid>
+        </Frame>
+        <Frame Grid.Row="3" HasShadow="True" CornerRadius="15" Margin="20,-10,20,20" Padding="0" HeightRequest="150" VerticalOptions="Start">
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackLayout Orientation="Vertical" Spacing="1000" HorizontalOptions="CenterAndExpand">
+                    <StackLayout Spacing="20" HorizontalOptions="CenterAndExpand">
+                        <Label Text="Pensez aux autres en les avertissant au plus vite" FontFamily="Roboto" HorizontalOptions="Center" TextColor="Olive" FontSize="12" VerticalOptions="Center"/>
+                        <Button VerticalOptions="Center" CornerRadius="16" BackgroundColor="Wheat" BorderWidth="2" BorderColor="Olive" WidthRequest="300" TextColor="Black" Text="Alerte E-COVID" Command="{Binding LoginCommand}"/>
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+        </Frame>
+        <!--<StackLayout Grid.Column="1" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                     <Image Source="wind.png" HeightRequest="25" HorizontalOptions="Center"/>
                     <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
                         <Label Text="2.6 m/s" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
@@ -78,40 +89,12 @@
                         <Label Text="24%" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
                         <Label Text="Cloudiness" TextColor="#7D7D7D" FontSize="11" HorizontalOptions="Center"/>
                     </StackLayout>
-                </StackLayout>
-            </Grid>
-        </Frame>
+                </StackLayout>-->
         <!--<StackLayout Grid.Row="2" BackgroundColor="Transparent" Orientation="Horizontal" Margin="20" HorizontalOptions="End">
             <ImageButton x:Name="ListBtn" Source="listColor.png" WidthRequest="15" HeightRequest="15" />
             <ImageButton x:Name="GridBtn" Source="grid.png" WidthRequest="15" HeightRequest="15"/>
         </StackLayout>-->
-        <ListView x:Name="WeathersList" ItemsSource="{Binding Weathers}" SeparatorVisibility="None"
-                  Grid.Row="3" Margin="20,10,20,10"   VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-            <ListView.ItemTemplate StyleClass="ListViewCustom">
-                <DataTemplate >
-                    <ViewCell>
-                        <Frame BackgroundColor="White" BorderColor="#F0F0F0" Padding="5" Margin="0,0,0,5" HasShadow="true">
-                            <Grid HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="Start"  Padding="10,-5,0,0">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="Auto"/>
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
-                                <Label Text="ID #" TextColor="Black" FontSize="10" VerticalOptions="Center"/>
-                                <Label Text="{Binding Id}" TextColor="Black" FontSize="10" Margin="20,0" FontAttributes="Bold" VerticalOptions="Center"/>
-
-                                <Label Text="{Binding PersonneType}" TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="50,0,20,0"/>
-                                <Image Grid.Column="1" Source="weather.png" WidthRequest="38" HeightRequest="38" HorizontalOptions="Center" VerticalOptions="Center"/>
-                                <StackLayout Grid.Column="2" Orientation="Horizontal" Margin="20,0" HorizontalOptions="End" VerticalOptions="Center">
-                                    <Label Text="{Binding RFID}" TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="20,0"/>
-                                </StackLayout>
-                            </Grid>
-                        </Frame>
-                       
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+        
         <!--<StackLayout Grid.Row="2" BackgroundColor="Transparent" Orientation="Horizontal" Margin="20" HorizontalOptions="End">
             <Button Margin="0,50,0,0" Text="Click Me" Clicked="{Binding Notif}" />
         </StackLayout>-->
