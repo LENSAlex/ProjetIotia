@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bl005314\\Source\\Repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe.iOS\\ProjetGroupe.iOS.csproj": {}
+    "C:\\Users\\Poste\\source\\repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe.iOS\\ProjetGroupe.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bl005314\\Source\\Repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe.iOS\\ProjetGroupe.iOS.csproj": {
+    "C:\\Users\\Poste\\source\\repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe.iOS\\ProjetGroupe.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bl005314\\Source\\Repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe.iOS\\ProjetGroupe.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\Poste\\source\\repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe.iOS\\ProjetGroupe.iOS.csproj",
         "projectName": "ProjetGroupe.iOS",
-        "projectPath": "C:\\Users\\bl005314\\Source\\Repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe.iOS\\ProjetGroupe.iOS.csproj",
-        "packagesPath": "C:\\Users\\bl005314\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bl005314\\Source\\Repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe.iOS\\obj\\",
+        "projectPath": "C:\\Users\\Poste\\source\\repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe.iOS\\ProjetGroupe.iOS.csproj",
+        "packagesPath": "C:\\Users\\Poste\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Poste\\source\\repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\bl005314\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Poste\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\bl005314\\Source\\Repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj": {
-                "projectPath": "C:\\Users\\bl005314\\Source\\Repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj"
+              "C:\\Users\\Poste\\source\\repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj": {
+                "projectPath": "C:\\Users\\Poste\\source\\repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj"
               }
             }
           }
@@ -65,20 +65,21 @@
         }
       }
     },
-    "C:\\Users\\bl005314\\Source\\Repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj": {
+    "C:\\Users\\Poste\\source\\repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bl005314\\Source\\Repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj",
+        "projectUniqueName": "C:\\Users\\Poste\\source\\repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj",
         "projectName": "ProjetGroupe",
-        "projectPath": "C:\\Users\\bl005314\\Source\\Repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj",
-        "packagesPath": "C:\\Users\\bl005314\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bl005314\\Source\\Repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe\\obj\\",
+        "projectPath": "C:\\Users\\Poste\\source\\repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj",
+        "packagesPath": "C:\\Users\\Poste\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Poste\\source\\repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\bl005314\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Poste\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -109,15 +110,31 @@
               "target": "Package",
               "version": "[5.0.0, )"
             },
-            "MySql.Data": {
+            "MySqlConnector": {
               "target": "Package",
-              "version": "[8.0.23, )"
+              "version": "[1.3.1, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "Newtonsoft.Json.Bson": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            },
+            "Syncfusion.Xamarin.Pdf": {
+              "target": "Package",
+              "version": "[18.4.0.48, )"
+            },
+            "System.Runtime": {
+              "target": "Package",
+              "version": "[4.3.1, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",

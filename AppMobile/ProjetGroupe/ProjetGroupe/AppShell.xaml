@@ -12,7 +12,7 @@
     -->
 
     <Shell.Resources>
-        <ResourceDictionary>
+        <ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
             <Style x:Key="BaseStyle" TargetType="Element">
                 <Setter Property="Shell.BackgroundColor" Value="{StaticResource Primary}" />
                 <Setter Property="Shell.ForegroundColor" Value="White" />
@@ -22,17 +22,17 @@
                 <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource Primary}" />
                 <Setter Property="Shell.TabBarForegroundColor" Value="White"/>
                 <Setter Property="Shell.TabBarUnselectedColor" Value="#95FFFFFF"/>
-                <Setter Property="Shell.TabBarTitleColor" Value="White"/>
+                <Setter Property="Shell.TabBarTitleColor" Value="White" />
             </Style>
             <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
             <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
 
-            <!--
-            Default Styles for all Flyout Items
-            https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/flyout#flyoutitem-and-menuitem-style-classes
-            -->
+            <Style Class="ListViewCustom" TargetType="DatePicker">
+                <Setter Property="BackgroundColor" Value="Red"></Setter>
+            </Style>
+      
             <Style Class="FlyoutItemLabelStyle" TargetType="Label">
-                <Setter Property="TextColor" Value="Yellow"></Setter>
+                <Setter Property="TextColor" Value="white"></Setter>
             </Style>
             <Style Class="FlyoutItemLayoutStyle" TargetType="Layout" ApplyToDerivedTypes="True">
                 <Setter Property="VisualStateManager.VisualStateGroups">
@@ -54,9 +54,6 @@
                 </Setter>
             </Style>
 
-            <!--
-            Custom Style you can apply to any Flyout Item
-            -->
             <Style Class="MenuItemLayoutStyle" TargetType="Layout" ApplyToDerivedTypes="True">
                 <Setter Property="VisualStateManager.VisualStateGroups">
                     <VisualStateGroupList>
@@ -72,34 +69,54 @@
             </Style>
         </ResourceDictionary>
     </Shell.Resources>
+    
 
     <!-- 
         When the Flyout is visible this defines the content to display in the flyout.
         FlyoutDisplayOptions="AsMultipleItems" will create a separate flyout item for each child element    
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
-    <FlyoutItem Title="About" Icon="icon_about.png">
-        <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
-    </FlyoutItem>
-    <FlyoutItem Title="Browse" Icon="icon_feed.png">
-        <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate local:ItemsPage}" />
-    </FlyoutItem>
 
-    <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->
-    <MenuItem Text="Logout" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">
+    <ShellItem Icon="dashboard.png" Title="Navigation">
+        <ShellContent Icon="dashboard.png" Title="Navigation" ContentTemplate="{DataTemplate local:AccueilPage}" />
+    </ShellItem>
+    
+    <MenuItem  Icon="icon_about.png" Text="Alerte Pénurie" StyleClass="MenuItemLayoutStyle" Clicked="OnSmartOfficePageClicked">
     </MenuItem>
 
+    <MenuItem  Icon="alert.png" Text="Alerte E-Covid" StyleClass="MenuItemLayoutStyle" Clicked="OnSmartBuildingPageClicked">
+    </MenuItem>
+    <MenuItem  Icon="icon_feed.png" Text="Consulter les données" StyleClass="MenuItemLayoutStyle" Clicked="OneCovidPageClicked">
+    </MenuItem>
+    
+    <MenuItem Icon="settings.png" Text="Déconnexion" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">
+    </MenuItem>
+    <!--<ShellItem Route="SmartOfficePage">
+        <ShellContent ContentTemplate="{DataTemplate local:SmartOfficePage}" />
+    </ShellItem>-->
+    <!--<FlyoutItem Title="Connexion" Icon="iut.png">
+        <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
+    </FlyoutItem>-->
+
+    <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->
+
+    <!--<MenuItem Text="SmartOfficePage" StyleClass="MenuItemLayoutStyle" Clicked="OnSmartOfficePageClicked">
+    </MenuItem>-->
+
+
     <!--
-        TabBar lets you define content that won't show up in a flyout menu. When this content is active
-        the flyout menu won't be available. This is useful for creating areas of the application where 
-        you don't want users to be able to navigate away from. If you would like to navigate to this 
-        content you can do so by calling 
-        await Shell.Current.GoToAsync("//LoginPage");
-    -->
     <TabBar>
         <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
     </TabBar>
-
+    <TabBar>
+        <ShellContent Route="SmartOfficePage" ContentTemplate="{DataTemplate local:SmartOfficePage}" />
+    </TabBar>
+    <TabBar>
+        <ShellContent  Route="SmartBuildingPage" ContentTemplate="{DataTemplate local:SmartBuildingPage}" />
+    </TabBar>
+    <TabBar>
+        <ShellContent Route="AccueilPage" ContentTemplate="{DataTemplate local:AccueilPage}" />
+    </TabBar>-->
     <!-- Optional Templates 
     // These may be provided inline as below or as separate classes.
 

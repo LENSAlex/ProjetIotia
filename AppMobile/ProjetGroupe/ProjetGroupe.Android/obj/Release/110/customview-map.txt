@@ -3,6 +3,8 @@ adaptive-icon;obj\Release\110\res\mipmap-anydpi-v26\icon.xml
 adaptive-icon;obj\Release\110\res\mipmap-anydpi-v26\icon_round.xml
 alpha;C:\Users\bl005314\Source\Repos\ProjetIotia\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Release\110\lp\45\jl\res\anim\enterfromleft.xml
 alpha;C:\Users\bl005314\Source\Repos\ProjetIotia\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Release\110\lp\45\jl\res\anim\exittoleft.xml
+android.support.design.widget.TabLayout;obj\Release\110\res\layout\tabbar.xml
+android.support.v7.widget.Toolbar;obj\Release\110\res\layout\toolbar.xml
 androidx.appcompat.widget.Toolbar;C:\Users\bl005314\Source\Repos\ProjetIotia\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Release\110\lp\45\jl\res\layout\fallbacktoolbardonotuse.xml
 androidx.appcompat.widget.Toolbar;C:\Users\bl005314\Source\Repos\ProjetIotia\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Release\110\lp\45\jl\res\layout\rootlayout.xml
 androidx.appcompat.widget.Toolbar;C:\Users\bl005314\Source\Repos\ProjetIotia\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Release\110\lp\45\jl\res\layout\shellcontent.xml
@@ -14,6 +16,7 @@ background;obj\Release\110\res\mipmap-anydpi-v26\icon.xml
 background;obj\Release\110\res\mipmap-anydpi-v26\icon_round.xml
 cache-path;C:\Users\bl005314\Source\Repos\ProjetIotia\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Release\110\lp\44\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 color;obj\Release\110\res\values\colors.xml
+color;obj\Release\110\res\values\styles.xml
 com.google.android.material.appbar.AppBarLayout;C:\Users\bl005314\Source\Repos\ProjetIotia\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Release\110\lp\45\jl\res\layout\flyoutcontent.xml
 com.google.android.material.appbar.AppBarLayout;C:\Users\bl005314\Source\Repos\ProjetIotia\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Release\110\lp\45\jl\res\layout\rootlayout.xml
 com.google.android.material.appbar.AppBarLayout;C:\Users\bl005314\Source\Repos\ProjetIotia\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Release\110\lp\45\jl\res\layout\shellcontent.xml
@@ -28,11 +31,14 @@ foreground;obj\Release\110\res\mipmap-anydpi-v26\icon.xml
 foreground;obj\Release\110\res\mipmap-anydpi-v26\icon_round.xml
 FrameLayout;C:\Users\bl005314\Source\Repos\ProjetIotia\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Release\110\lp\45\jl\res\layout\bottomtablayout.xml
 item;C:\Users\bl005314\Source\Repos\ProjetIotia\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Release\110\lp\45\jl\res\values\styles.xml
+item;obj\Release\110\res\values\styles.xml
 LinearLayout;C:\Users\bl005314\Source\Repos\ProjetIotia\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Release\110\lp\45\jl\res\layout\bottomtablayout.xml
 paths;C:\Users\bl005314\Source\Repos\ProjetIotia\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Release\110\lp\44\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 resources;C:\Users\bl005314\Source\Repos\ProjetIotia\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Release\110\lp\45\jl\res\values\attrs.xml
 resources;C:\Users\bl005314\Source\Repos\ProjetIotia\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Release\110\lp\45\jl\res\values\strings.xml
 resources;C:\Users\bl005314\Source\Repos\ProjetIotia\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Release\110\lp\45\jl\res\values\styles.xml
+resources;C:\Users\Poste\source\repos\ProjetIotiaV2\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Release\110\googsvcsjson\values\goog_svcs_json.xml
+resources;C:\Users\Poste\source\repos\ProjetIotiaV2\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Release\110\lp\132\jl\res\values\values.xml
 resources;obj\Release\110\res\values\colors.xml
 resources;obj\Release\110\res\values\styles.xml
 set;C:\Users\bl005314\Source\Repos\ProjetIotia\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Release\110\lp\45\jl\res\anim\enterfromleft.xml
@@ -40,6 +46,8 @@ set;C:\Users\bl005314\Source\Repos\ProjetIotia\AppMobile\ProjetGroupe\ProjetGrou
 set;C:\Users\bl005314\Source\Repos\ProjetIotia\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Release\110\lp\45\jl\res\anim\exittoleft.xml
 set;C:\Users\bl005314\Source\Repos\ProjetIotia\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Release\110\lp\45\jl\res\anim\exittoright.xml
 string;C:\Users\bl005314\Source\Repos\ProjetIotia\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Release\110\lp\45\jl\res\values\strings.xml
+string;C:\Users\Poste\source\repos\ProjetIotiaV2\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Release\110\googsvcsjson\values\goog_svcs_json.xml
+string;C:\Users\Poste\source\repos\ProjetIotiaV2\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Release\110\lp\132\jl\res\values\values.xml
 style;C:\Users\bl005314\Source\Repos\ProjetIotia\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Release\110\lp\45\jl\res\values\styles.xml
 style;obj\Release\110\res\values\styles.xml
 translate;C:\Users\bl005314\Source\Repos\ProjetIotia\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Release\110\lp\45\jl\res\anim\enterfromleft.xml

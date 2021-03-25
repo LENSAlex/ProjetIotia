@@ -13,11 +13,29 @@ namespace ProjetGroupe
             InitializeComponent();
             Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
+            Routing.RegisterRoute(nameof(AccueilPage), typeof(AccueilPage));
+            Routing.RegisterRoute(nameof(SmartOfficePage), typeof(SmartOfficePage));
+            Routing.RegisterRoute(nameof(SmartBuildingPage), typeof(SmartBuildingPage));
+            Routing.RegisterRoute(nameof(eCovidPage), typeof(eCovidPage));
         }
 
-        private async void OnMenuItemClicked(object sender, EventArgs e)
+        private  void OnMenuItemClicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("//LoginPage");
+            Xamarin.Essentials.SecureStorage.Remove("isLogged");
+            Application.Current.MainPage = new LoginPage();
+            //await Shell.Current.GoToAsync("///LoginPage");
+        }
+        private async void OnSmartOfficePageClicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("/SmartOfficePage");
+        }
+        private async void OnSmartBuildingPageClicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("/SmartBuildingPage");
+        }
+        private async void OneCovidPageClicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("/eCovidPage");
         }
     }
 }

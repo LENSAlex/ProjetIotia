@@ -1,17 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
              x:Class="ProjetGroupe.Views.LoginPage"
+             xmlns:vm="clr-namespace:ProjetGroupe.ViewModels"
              Shell.NavBarIsVisible="False">
-    <ContentPage.Content>
-        <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
-            <Button VerticalOptions="Center" Text="Test" Command="{Binding LoginCommand}"/>
-            <Entry  Text="{Binding Identifiant, Mode=TwoWay}" Placeholder="Identifiant" FontSize="Medium" ClearButtonVisibility="WhileEditing" />
-            <Label Text="Description" FontSize="Medium" />
-            <Entry IsPassword="true" Text="{Binding Password, Mode=TwoWay}" Placeholder="Password" FontSize="Medium" Margin="0" ClearButtonVisibility="WhileEditing" />
+    <ContentPage.BindingContext>
+        <vm:LoginViewModel />
+    </ContentPage.BindingContext>
+    <Grid BackgroundColor="AliceBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Image Source="overlay.png" Aspect="Fill" HeightRequest="300" VerticalOptions="StartAndExpand"/>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+            <ContentView Padding="0,-20,0,40" VerticalOptions="FillAndExpand">
+                <Image Source="iut.png" VerticalOptions="Center" HeightRequest="200" />
+            </ContentView>
         </StackLayout>
-    </ContentPage.Content>
+        <Frame Grid.Row="1" HasShadow="True" CornerRadius="15" Margin="20,-30,20,0" Padding="0" HeightRequest="450" VerticalOptions="Start">
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+            </Grid>
+        </Frame>
+
+        <!--StackLayout BackgroundColor="#96d1ff" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
+                    <Image Source="iut.png" VerticalOptions="Center" HeightRequest="128" />
+                </ContentView>
+            </StackLayout>
+        </StackLayout>-->
+        <ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" Padding="40,0,40,24" Spacing="15">
+                <Label Margin="0,-3,0,0" HorizontalTextAlignment="Center" TextColor="#91B3FB" Text="Veuillez entrer vos informations de connexion" FontSize="16" />
+                <Frame Padding="10" BorderColor="#91B3FB" CornerRadius="8">
+                    <Entry TextColor="#96d1ff" PlaceholderColor="#96d1ff" Text="{Binding Identifiant, Mode=TwoWay}" Placeholder="Identifiant" FontSize="Medium"   />
+                </Frame>
+                <Frame Padding="10" BorderColor="#91B3FB" CornerRadius="8">
+                    <Entry PlaceholderColor="#96d1ff"  TextColor="#96d1ff" IsPassword="true" Text="{Binding Password, Mode=TwoWay}" Placeholder="Mot de passe" FontSize="Medium" Margin="0" />
+                </Frame>
+                <Button VerticalOptions="Center" CornerRadius="8"  Text="Connexion" Command="{Binding LoginCommand}"/>
+                <Label HorizontalTextAlignment="Center" TextColor="Red" Text="{Binding Erreur}" FontSize="16" />
+            </StackLayout>
+        </ScrollView>
+    </Grid>
 </ContentPage>

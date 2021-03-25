@@ -1,108 +1,125 @@
-﻿using MediaSense.Main.Manager;
-using MediaSense.Tools;
+﻿using ProjetGroupe.Models.Manager;
 using System;
 using System.Collections.Generic;
 using System.Net;
+using System.Net.Mail;
 using System.Text;
 
-namespace MediaSense.Main
+namespace ProjetGroupe.Models
 {
-    public enum UtilisateurLevel
+    public enum PersonneType
     {
-        Normal = 1,
-        Administrateur = 10
+        Etudiant = 1,
+        Professeur = 2,
+        Personnel = 3
     }
-    public enum Newsletter
-    {
-        Normal = 1,
-        Administrateur = 10
-    }
+
     public class Personne
     {
         private int id;
         private string email;
-        private string nom;
+        private string sexe;
         private string password;
-        private UtilisateurLevel level;
-        private Newsletter newsletter;
+        private PersonneType persType;
+        private DateTime anniversaire;
+        private string rfid;
 
         public int Id { get => id; set => id = value; }
         public string Email { get => email; set => email = value; }
-        public string Nom { get => nom; set => nom = value; }
+        public string Sexe { get => sexe; set => sexe = value; }
         public string Password { get => password; set => password = value; }
-        public UtilisateurLevel Level { get => level; set => level = value; }
-        public Newsletter Newsletter { get => newsletter; set => newsletter = value; }
+        public PersonneType PersonneType { get => persType; set => persType = value; }
+        public DateTime Anniversaire { get => anniversaire; set => anniversaire = value; }
+        public string RFID { get => rfid; set => rfid = value; }
         public void Save()
         {
-            UtilisateurManager.Save(this);
+            PersonneManager.Save(this);
         }
 
         public static Personne Load(int id)
         {
-            return UtilisateurManager.Load(id);
+            return PersonneManager.Load(id);
         }
 
         public static List<Personne> List()
         {
-            return UtilisateurManager.List();
+            return PersonneManager.List();
         }
 
         public static Personne Search(string email)
         {
-            return UtilisateurManager.Search(email);
+            return PersonneManager.Search(email);
         }
-
-        public static Personne Search(string email, string password)
+        public Personne SearchMail(string email)
         {
-            return UtilisateurManager.Search(email, password);
+            return PersonneManager.Search(email);
         }
-
-        public static Personne SearchByHash(int id, string hash)
+        public static Personne Search(string rfid, string password)
         {
-            return UtilisateurManager.SearchByHash(id, hash);
-        }
-
-        public static List<Personne> List(int nbUtilisateurs)
-        {
-            return UtilisateurManager.List(nbUtilisateurs);
+            return PersonneManager.Search(rfid, password);
         }
 
         public static int Count()
         {
-            return UtilisateurManager.Count();
+            return PersonneManager.Count();
         }
 
-        public static int Count(UtilisateurLevel level)
+
+
+        //public void Delete()
+        //{
+        //    UtilisateurManager.Delete(this);
+        //}
+
+        public static Personne IsLogged()
         {
-            return UtilisateurManager.Count(level);
-        }
-
-        public void Delete()
-        {
-            UtilisateurManager.Delete(this);
-        }
-
-        public string HashPassword {
-            get {
-                return MHash.HashString(password);
+            int result = Convert.ToInt32(Xamarin.Essentials.SecureStorage.GetAsync("isLogged").Result);
+            if (result == 1)
+            {
+                int id = Convert.ToInt32(Xamarin.Essentials.SecureStorage.GetAsync("Id").Result);
+                Personne Personne = Personne.Load(id);
+                if(Personne != null)
+                {
+                    return Personne;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            else
+            {
+                return null;
             }
         }
-
-        //public static Utilisateur Current()
-        //{
-
-        //    if (id != null)
-        //        return Load(id.Value);
-        //    else if (utilisateurEmail != null && utilisateurPassword != null)
-        //        return Utilisateur.Search(utilisateurEmail, utilisateurPassword);
-        //    else
-        //        return null;
-        //}
 
         //public static void LogOff(HttpContext context)
         //{
         //    context.Session.SetInt32("UtilisateurId", 0);
         //}
-    
+        public bool RappelMail(string MailPatient)
+        {
+            //juste ici verifier que le mail existe bien
+            using (MailMessage mail = new MailMessage())
+            {
+                mail.From = new MailAddress("soignantsniriotia@gmail.com");
+                mail.To.Add(MailPatient);
+                mail.Subject = "Formulaire à remplir ";
+                mail.Body = "<h1 style='text-align:center'>Bonjour</h1>";
+                mail.IsBodyHtml = true;
+   
+                using (SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587))
+                {
+                    smtp.UseDefaultCredentials = false;
+                    smtp.Credentials = new NetworkCredential("soignantsniriotia@gmail.com", "testtest25.");
+                    smtp.EnableSsl = true;
+                    smtp.Send(mail);
+                }
+                return true;
+            }
+            //return false;
+        }
+
+
     }
 }
