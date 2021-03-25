@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-25T17:01:55.990Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="TwfHgi6Bi_49C9jJrpfZ" version="14.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-25T17:08:25.658Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="qvXHuDW2jIGxdCH6sycT" version="14.5.1" type="github">
   <diagram id="ocuWfuaNGDJ26_I2H6SO" name="Page-1">
     <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -13,19 +13,19 @@
         <mxCell id="tEwAyCv08CmWJKM7VAuX-1" value="&lt;b&gt;Actor&lt;/b&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="70" y="430" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="LUslN0Hp2iyH4F8RHUz0-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="LUslN0Hp2iyH4F8RHUz0-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="266.5" y="120" width="250" height="160" as="geometry" />
         </mxCell>
         <mxCell id="LUslN0Hp2iyH4F8RHUz0-2" value="&lt;b&gt;Alerte&amp;nbsp;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="366.5" y="120" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="LUslN0Hp2iyH4F8RHUz0-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="LUslN0Hp2iyH4F8RHUz0-4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="270" y="300" width="250" height="240" as="geometry" />
         </mxCell>
         <mxCell id="LUslN0Hp2iyH4F8RHUz0-5" value="&lt;b&gt;Accès&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="367.5" y="300" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="LUslN0Hp2iyH4F8RHUz0-6" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="LUslN0Hp2iyH4F8RHUz0-6" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="270" y="580" width="245" height="290" as="geometry" />
         </mxCell>
         <mxCell id="LUslN0Hp2iyH4F8RHUz0-7" value="&lt;b&gt;Personne&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
@@ -40,13 +40,13 @@
         <mxCell id="APrOK2f-dDUVphas6wfj-2" value="&lt;b&gt;Onem2m&lt;/b&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="700" y="580" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="1Jgu8GzvpvVnRny0nY7y-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="1Jgu8GzvpvVnRny0nY7y-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="270" y="880" width="250" height="270" as="geometry" />
         </mxCell>
         <mxCell id="1Jgu8GzvpvVnRny0nY7y-4" value="&lt;b&gt;Capteur&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="374" y="890" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="LUslN0Hp2iyH4F8RHUz0-9" value="Personnes Atteintes Covid&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="LUslN0Hp2iyH4F8RHUz0-9" value="Personnes Atteintes Covid&amp;nbsp;" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="275.5" y="180" width="230" height="20" as="geometry" />
         </mxCell>
         <mxCell id="1Jgu8GzvpvVnRny0nY7y-7" value="Avoir la derniere valeur d&#39;un capteur&lt;br&gt;&lt;br&gt;Liste de tous les releves d&#39;un capteur et entre deux 2 dates &lt;br&gt;&lt;br&gt;Liste de tous les releves dans une salle&lt;br&gt;&lt;br&gt;&amp;nbsp;Liste des derniers releves dans une salle.&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
@@ -55,7 +55,7 @@
         <mxCell id="LUslN0Hp2iyH4F8RHUz0-10" value="Taux Co2" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="271.5" y="150" width="230" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="1Jgu8GzvpvVnRny0nY7y-9" value="Moyenne journalieres : CO2 , Temperature.&lt;br&gt;Valeur min et max capteur dans une journée: température , Co2.&lt;br&gt;&lt;br&gt;Nombre ouverture fenetre journee , nombre entree/sortie salle par jour ou entre deux dates&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="1Jgu8GzvpvVnRny0nY7y-9" value="Moyenne journalieres : CO2 , Temperature.&lt;br&gt;Valeur min et max capteur dans une journée: température , Co2.&lt;br&gt;&lt;br&gt;Nombre ouverture fenetre journee , nombre entree/sortie salle par jour ou entre deux dates&amp;nbsp;" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="282" y="1050" width="221" height="80" as="geometry" />
         </mxCell>
         <mxCell id="LUslN0Hp2iyH4F8RHUz0-11" value="Alerte Ouverture fenêtre&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
@@ -88,8 +88,8 @@
         <mxCell id="LUslN0Hp2iyH4F8RHUz0-20" value="Liste d&#39;absence d&#39;un élève" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="279" y="830" width="230" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="1Jgu8GzvpvVnRny0nY7y-14" value="&lt;span&gt;Equipement alerte (penuri de stock)&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="316.5" y="210" width="145" height="20" as="geometry" />
+        <mxCell id="1Jgu8GzvpvVnRny0nY7y-14" value="&lt;span&gt;Equipement alerte (penuri de stock)&lt;/span&gt;" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="289" y="210" width="200" height="20" as="geometry" />
         </mxCell>
         <mxCell id="W6VFH3kQfa4Qgz9BV_cm-1" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tEwAyCv08CmWJKM7VAuX-1" target="LUslN0Hp2iyH4F8RHUz0-1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
