@@ -25,7 +25,7 @@ namespace ProjetGroupe.ViewModels
 
             //Create PDF graphics for the page
             PdfGraphics graphics = page.Graphics;
-
+             
             //Set the standard font
             PdfFont font = new PdfStandardFont(PdfFontFamily.Helvetica, 20);
 
@@ -40,7 +40,7 @@ namespace ProjetGroupe.ViewModels
             document.Close(true);
 
             //Save the stream as a file in the device and invoke it for viewing
-            Xamarin.Forms.DependencyService.Get<ISave>().SaveAndView("Output.pdf", "application/pdf", stream);
+            DependencyService.Get<ISave>().SaveAndView("Output.pdf", "application/pdf", stream);
         }
 
 

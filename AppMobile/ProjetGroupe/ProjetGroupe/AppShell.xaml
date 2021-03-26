@@ -70,12 +70,14 @@
             </Style>
         </ResourceDictionary>
     </Shell.Resources>
-    
+   
     <Shell.FlyoutHeaderTemplate>
         <DataTemplate>
-            <Grid BackgroundColor="#96BCE3" Padding="60">
-                <Image Source="profil2.png" Margin="-150,0,20,0" WidthRequest="125" HeightRequest="125" HorizontalOptions="Center" VerticalOptions="Center"/>
-                <Label Text="Votre nom" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <!--https://www.c-sharpcorner.com/article/xamarin-forms-upload-image-to-blob-storage/ TO UPLOAD IMG -->
+            <Grid BackgroundColor="#96BCE3" Padding="20">
+                <Image Source="profil2.png" Margin="-175,0,20,0" WidthRequest="125" HeightRequest="125" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Label Text="{Binding Email}" Margin="-180,170,20,0" TextColor="#DFDBED" FontSize="16" HorizontalTextAlignment="Center" />
+                <Label Text="{Binding UserType}" Margin="-240,190,20,0" TextColor="White" FontAttributes="Italic" FontSize="16" HorizontalTextAlignment="Center" />
             </Grid>
         </DataTemplate>
     </Shell.FlyoutHeaderTemplate>
@@ -83,10 +85,15 @@
 
     <FlyoutItem Icon="accueil.png" Title="Accueil > Navigation">
         <ShellContent Icon="accueil.png" Title="Accueil" ContentTemplate="{DataTemplate local:AccueilPage}" />
-        <ShellContent Icon="warning.png" Title="Alerte Covid" ContentTemplate="{DataTemplate local:AccueilPage}" />
-        <ShellContent Icon="warning.png" Title="Données Capteurs" ContentTemplate="{DataTemplate local:AccueilPage}" />
-        <ShellContent Icon="warning.png" Title="Autres" ContentTemplate="{DataTemplate local:AccueilPage}" />
+        <ShellContent Icon="warning3.png" Title="Alertes Pénurie" ContentTemplate="{DataTemplate local:SmartOfficePage}" />
+        <ShellContent Icon="data2.png" Title="Données Capteurs" ContentTemplate="{DataTemplate local:SmartBuildingPage}" />
+        <ShellContent Icon="contact.png" Title="Contacts" ContentTemplate="{DataTemplate local:eCovidPage}" />
     </FlyoutItem>
+
+    <MenuItem Icon="contact2.png" Text="Contacts et Autres" StyleClass="MenuItemLayoutStyle" Clicked="OnContactPageClicked">
+    </MenuItem>
+    <MenuItem Icon="logout.png" Text="Déconnexion" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">
+    </MenuItem>
     <!-- 
         When the Flyout is visible this defines the content to display in the flyout.
         FlyoutDisplayOptions="AsMultipleItems" will create a separate flyout item for each child element    
@@ -97,16 +104,14 @@
         <ShellContent Icon="dashboard.png" Title="Navigation" ContentTemplate="{DataTemplate local:AccueilPage}" />
     </ShellItem>-->
 
-    <MenuItem  Icon="warning.png" Text="Alerte Pénurie" StyleClass="MenuItemLayoutStyle" Clicked="OnSmartOfficePageClicked">
+    <!--<MenuItem  Icon="warning.png" Text="Alerte Pénurie" StyleClass="MenuItemLayoutStyle" Clicked="OnSmartOfficePageClicked">
     </MenuItem>
 
-    <MenuItem  Icon="warning.png" Text="Alerte E-Covid" StyleClass="MenuItemLayoutStyle" Clicked="OnSmartBuildingPageClicked">
+    <MenuItem  Icon="datalayout.png" Text="Alerte E-Covid" StyleClass="MenuItemLayoutStyle" Clicked="OnSmartBuildingPageClicked">
     </MenuItem>
     <MenuItem  Icon="data.png" Text="Consulter les données" StyleClass="MenuItemLayoutStyle" Clicked="OneCovidPageClicked">
-    </MenuItem>
-    
-    <MenuItem Icon="logout.png" Text="Déconnexion" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">
-    </MenuItem>
+    </MenuItem>-->
+
     <!--<ShellItem Route="SmartOfficePage">
         <ShellContent ContentTemplate="{DataTemplate local:SmartOfficePage}" />
     </ShellItem>-->

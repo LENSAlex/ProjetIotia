@@ -3,7 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjetGroupe.Views.eCovidPage"
              xmlns:vm="clr-namespace:ProjetGroupe.ViewModels"
-             Shell.NavBarIsVisible="True">
+             Shell.NavBarIsVisible="True"
+             Title="SmartOffice">
+    
     <ContentPage.BindingContext>
         <vm:eCovidViewModel />
     </ContentPage.BindingContext>

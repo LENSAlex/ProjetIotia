@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "caI2Qob4XdiBhHehv6IdcYU8U2cOiGwgDR/FVROC5SbPsK4JEl3PbmTWxe1k410mrULl0kxiJpnBxYKQkz0k9Q==",
+  "dgSpecHash": "OZ5XnEq6bNbKoXyta6wiX12Wq7Mc3X7rJh57yVocP1GmoLWoi9couEeSyB6WZhxmI5i+EVeToRjcOvO2ON2AAA==",
   "success": true,
   "projectFilePath": "C:\\Users\\bl005314\\Source\\Repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj",
   "expectedPackageFiles": [
@@ -19,10 +19,13 @@
     "C:\\Users\\bl005314\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\bl005314\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\bl005314\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
-    "C:\\Users\\bl005314\\.nuget\\packages\\syncfusion.licensing\\18.4.0.48\\syncfusion.licensing.18.4.0.48.nupkg.sha512",
+    "C:\\Users\\bl005314\\.nuget\\packages\\syncfusion.licensing\\18.4.0.49\\syncfusion.licensing.18.4.0.49.nupkg.sha512",
     "C:\\Users\\bl005314\\.nuget\\packages\\syncfusion.xamarin.compression\\18.4.0.48\\syncfusion.xamarin.compression.18.4.0.48.nupkg.sha512",
+    "C:\\Users\\bl005314\\.nuget\\packages\\syncfusion.xamarin.core\\18.4.0.49\\syncfusion.xamarin.core.18.4.0.49.nupkg.sha512",
     "C:\\Users\\bl005314\\.nuget\\packages\\syncfusion.xamarin.pdf\\18.4.0.48\\syncfusion.xamarin.pdf.18.4.0.48.nupkg.sha512",
+    "C:\\Users\\bl005314\\.nuget\\packages\\syncfusion.xamarin.sfpopuplayout\\18.4.0.49\\syncfusion.xamarin.sfpopuplayout.18.4.0.49.nupkg.sha512",
     "C:\\Users\\bl005314\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\bl005314\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\bl005314\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\bl005314\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\bl005314\\.nuget\\packages\\system.runtime\\4.3.1\\system.runtime.4.3.1.nupkg.sha512",
@@ -31,7 +34,9 @@
     "C:\\Users\\bl005314\\.nuget\\packages\\system.text.json\\5.0.0\\system.text.json.5.0.0.nupkg.sha512",
     "C:\\Users\\bl005314\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
+    "C:\\Users\\bl005314\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512",
+    "C:\\Users\\bl005314\\.nuget\\packages\\xamarin.plugin.sharedtransitions\\2.4.0\\xamarin.plugin.sharedtransitions.2.4.0.nupkg.sha512"
   ],
   "logs": []
 }

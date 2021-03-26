@@ -1,9 +1,11 @@
-﻿using ProjetGroupe.Services;
+﻿using Plugin.SharedTransitions;
+using ProjetGroupe.Services;
 using ProjetGroupe.Views;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+[assembly: ExportFont("Roboto-Regular.ttf", Alias = "Roboto")]
 namespace ProjetGroupe
 {
     public partial class App : Application
@@ -17,6 +19,7 @@ namespace ProjetGroupe
             var isLoogged = Xamarin.Essentials.SecureStorage.GetAsync("isLogged").Result;
             if (isLoogged == "1")
             {
+            
                 MainPage = new AppShell();
             }
             else

@@ -7,10 +7,11 @@ using Android.Gms.Common;
 using WindowsAzure.Messaging.NotificationHubs;
 using Firebase;
 using Android.Content;
+using Syncfusion.XForms.Android.PopupLayout;
 
 namespace ProjetGroupe.Droid
 {
-    [Activity(Label = "ProjetGroupe", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize )]
+    [Activity(Label = "ProjetGroupe", Icon = "@drawable/logoveiut", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize )]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
     //    public static string CHANNEL_ID = "Notification";
@@ -23,7 +24,8 @@ namespace ProjetGroupe.Droid
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
-
+            SfPopupLayoutRenderer.Init();
+            
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ioM6YeoWBNijm7bQ0d5rhpJd7cblxE4BNEfRP3pJfzRRYr1vApswhh3JLiJUxLfPy8prmB7+NNeUyLxHvAPbnA==",
+  "dgSpecHash": "6J3S8NfR+Xb4P2JtdUkVGveX47ko8tDktqpHWibuxy0qWvUPJBrlqDp+zvY7uKhYBm3iLNO000zOXOmIWvI0iw==",
   "success": true,
   "projectFilePath": "C:\\Users\\bl005314\\Source\\Repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe.Android\\ProjetGroupe.Android.csproj",
   "expectedPackageFiles": [
@@ -16,10 +16,13 @@
     "C:\\Users\\bl005314\\.nuget\\packages\\mysqlconnector\\1.3.1\\mysqlconnector.1.3.1.nupkg.sha512",
     "C:\\Users\\bl005314\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\bl005314\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
-    "C:\\Users\\bl005314\\.nuget\\packages\\syncfusion.licensing\\18.4.0.48\\syncfusion.licensing.18.4.0.48.nupkg.sha512",
-    "C:\\Users\\bl005314\\.nuget\\packages\\syncfusion.xamarin.compression\\18.4.0.48\\syncfusion.xamarin.compression.18.4.0.48.nupkg.sha512",
-    "C:\\Users\\bl005314\\.nuget\\packages\\syncfusion.xamarin.pdf\\18.4.0.48\\syncfusion.xamarin.pdf.18.4.0.48.nupkg.sha512",
+    "C:\\Users\\bl005314\\.nuget\\packages\\syncfusion.licensing\\18.4.0.49\\syncfusion.licensing.18.4.0.49.nupkg.sha512",
+    "C:\\Users\\bl005314\\.nuget\\packages\\syncfusion.xamarin.compression\\18.4.0.49\\syncfusion.xamarin.compression.18.4.0.49.nupkg.sha512",
+    "C:\\Users\\bl005314\\.nuget\\packages\\syncfusion.xamarin.core\\18.4.0.49\\syncfusion.xamarin.core.18.4.0.49.nupkg.sha512",
+    "C:\\Users\\bl005314\\.nuget\\packages\\syncfusion.xamarin.pdf\\18.4.0.49\\syncfusion.xamarin.pdf.18.4.0.49.nupkg.sha512",
+    "C:\\Users\\bl005314\\.nuget\\packages\\syncfusion.xamarin.sfpopuplayout\\18.4.0.49\\syncfusion.xamarin.sfpopuplayout.18.4.0.49.nupkg.sha512",
     "C:\\Users\\bl005314\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\bl005314\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\bl005314\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\bl005314\\.nuget\\packages\\system.runtime\\4.3.1\\system.runtime.4.3.1.nupkg.sha512",
     "C:\\Users\\bl005314\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
@@ -87,6 +90,7 @@
     "C:\\Users\\bl005314\\.nuget\\packages\\xamarin.firebase.measurement.connector\\118.0.1\\xamarin.firebase.measurement.connector.118.0.1.nupkg.sha512",
     "C:\\Users\\bl005314\\.nuget\\packages\\xamarin.firebase.messaging\\121.0.1\\xamarin.firebase.messaging.121.0.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
+    "C:\\Users\\bl005314\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512",
     "C:\\Users\\bl005314\\.nuget\\packages\\xamarin.google.android.datatransport.transportapi\\2.2.1\\xamarin.google.android.datatransport.transportapi.2.2.1.nupkg.sha512",
     "C:\\Users\\bl005314\\.nuget\\packages\\xamarin.google.android.datatransport.transportbackendcct\\2.3.3\\xamarin.google.android.datatransport.transportbackendcct.2.3.3.nupkg.sha512",
     "C:\\Users\\bl005314\\.nuget\\packages\\xamarin.google.android.datatransport.transportruntime\\2.2.5\\xamarin.google.android.datatransport.transportruntime.2.2.5.nupkg.sha512",
@@ -101,7 +105,8 @@
     "C:\\Users\\bl005314\\.nuget\\packages\\xamarin.googleplayservices.stats\\117.0.0\\xamarin.googleplayservices.stats.117.0.0.nupkg.sha512",
     "C:\\Users\\bl005314\\.nuget\\packages\\xamarin.googleplayservices.tasks\\117.2.1\\xamarin.googleplayservices.tasks.117.2.1.nupkg.sha512",
     "C:\\Users\\bl005314\\.nuget\\packages\\xamarin.javax.inject\\1.0.0\\xamarin.javax.inject.1.0.0.nupkg.sha512",
-    "C:\\Users\\bl005314\\.nuget\\packages\\xamarin.mysql.data\\1.0.1\\xamarin.mysql.data.1.0.1.nupkg.sha512"
+    "C:\\Users\\bl005314\\.nuget\\packages\\xamarin.mysql.data\\1.0.1\\xamarin.mysql.data.1.0.1.nupkg.sha512",
+    "C:\\Users\\bl005314\\.nuget\\packages\\xamarin.plugin.sharedtransitions\\2.4.0\\xamarin.plugin.sharedtransitions.2.4.0.nupkg.sha512"
   ],
   "logs": [
     {

@@ -90,3 +90,4 @@ C:\Users\bl005314\source\repos\ProjetIotiaV2\AppMobile\ProjetGroupe\ProjetGroupe
 C:\Users\bl005314\source\repos\ProjetIotiaV2\AppMobile\ProjetGroupe\ProjetGroupe\obj\Debug\netstandard2.0\ref\ProjetGroupe.dll
 C:\Users\bl005314\source\repos\ProjetIotiaV2\AppMobile\ProjetGroupe\ProjetGroupe\obj\Debug\netstandard2.0\ProjetGroupe.pdb
 C:\Users\bl005314\Source\Repos\ProjetIotiaV2\AppMobile\ProjetGroupe\ProjetGroupe\obj\Debug\netstandard2.0\ProjetGroupe.csprojAssemblyReference.cache
+C:\Users\bl005314\Source\Repos\ProjetIotiaV2\AppMobile\ProjetGroupe\ProjetGroupe\obj\Debug\netstandard2.0\Views\CapteursDetailsPage.xaml.g.cs

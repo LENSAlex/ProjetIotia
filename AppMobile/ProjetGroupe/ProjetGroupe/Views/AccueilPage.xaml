@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjetGroupe.Views.AccueilPage"
              xmlns:vm="clr-namespace:ProjetGroupe.ViewModels"
-             Shell.NavBarIsVisible="True">
+             Shell.NavBarIsVisible="True"
+             Title="Accueil">
     <ContentPage.BindingContext>
         <vm:AccueilViewModel />
     </ContentPage.BindingContext>
@@ -50,23 +51,23 @@
                 </Grid.ColumnDefinitions>
                 <StackLayout Orientation="Vertical" Spacing="1000" HorizontalOptions="CenterAndExpand">
                     <StackLayout Spacing="20" HorizontalOptions="CenterAndExpand">
-                        <Label Text="Pensez aux autres en les avertissant au plus vite" FontFamily="Roboto" HorizontalOptions="Center" TextColor="Olive" FontSize="12" VerticalOptions="Center"/>
-                        <Button VerticalOptions="Center" CornerRadius="16" BackgroundColor="Wheat" BorderWidth="2" BorderColor="Olive" WidthRequest="300" TextColor="Black" Text="Alerte E-COVID" Command="{Binding LoginCommand}"/>
+                        <Label Text="Pensez aux autres en les avertissant au plus vite" FontFamily="Roboto" HorizontalOptions="Center" TextColor="#AF001A" FontSize="12" VerticalOptions="Center"/>
+                        <Button VerticalOptions="Center" CornerRadius="32" BackgroundColor="#AF001A" BorderWidth="2" BorderColor="#D6586D" WidthRequest="300" TextColor="White" Text="J'ai la Covid-19" Command="{Binding AlertCovid}"/>
                     </StackLayout>
                 </StackLayout>
             </Grid>
         </Frame>
-        <Frame Grid.Row="3" HasShadow="True" CornerRadius="15" Margin="20,-10,20,20" Padding="0" HeightRequest="150" VerticalOptions="Start">
+        <Frame Grid.Row="3" HasShadow="True" CornerRadius="15" Margin="20,-10,20,20" Padding="0" HeightRequest="300" VerticalOptions="Start" BackgroundColor="AliceBlue">
             <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <StackLayout Orientation="Vertical" Spacing="1000" HorizontalOptions="CenterAndExpand">
+                <!--<StackLayout Orientation="Vertical" Spacing="1000" HorizontalOptions="CenterAndExpand">
                     <StackLayout Spacing="20" HorizontalOptions="CenterAndExpand">
-                        <Label Text="Pensez aux autres en les avertissant au plus vite" FontFamily="Roboto" HorizontalOptions="Center" TextColor="Olive" FontSize="12" VerticalOptions="Center"/>
-                        <Button VerticalOptions="Center" CornerRadius="16" BackgroundColor="Wheat" BorderWidth="2" BorderColor="Olive" WidthRequest="300" TextColor="Black" Text="Alerte E-COVID" Command="{Binding LoginCommand}"/>
+                        <Label Text="Pensez aux autres en les avertissant au plus vite" FontFamily="Roboto" HorizontalOptions="Center" TextColor="#C4263E" FontSize="12" VerticalOptions="Center"/>
+                        <Button VerticalOptions="Center" CornerRadius="16" BackgroundColor="#C4263E" BorderWidth="2" BorderColor="#D6586D" WidthRequest="300" TextColor="White" Text="Alerte E-COVID" Command="{Binding LoginCommand}"/>
                     </StackLayout>
-                </StackLayout>
+                </StackLayout>-->
             </Grid>
         </Frame>
         <!--<StackLayout Grid.Column="1" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">

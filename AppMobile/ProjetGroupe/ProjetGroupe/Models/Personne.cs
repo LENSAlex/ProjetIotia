@@ -96,20 +96,17 @@ namespace ProjetGroupe.Models
                 return null;
             }
         }
-
-        //public static void LogOff(HttpContext context)
-        //{
-        //    context.Session.SetInt32("UtilisateurId", 0);
-        //}
-        public bool RappelMail(string MailPatient)
+        public bool RappelMail(Personne personne)
         {
             //juste ici verifier que le mail existe bien
             using (MailMessage mail = new MailMessage())
             {
                 mail.From = new MailAddress("soignantsniriotia@gmail.com");
-                mail.To.Add(MailPatient);
-                mail.Subject = "Formulaire à remplir ";
-                mail.Body = "<h1 style='text-align:center'>Bonjour</h1>";
+                mail.To.Add("soignantsniriotia@gmail.com");
+                mail.Subject = "Une alerte à été envoyé par: <b>" + personne.RFID +"</b> à: " + DateTime.Now;
+                mail.Body = "<h1 style='text-align:center'>Une alerte vous a été envoyé par l'application Smart E-Covid IUT.</h1>" +
+                    "<p>Merci de prévenir les personnes présentent autour de lui au plus vite.</p>" + "Envoyé par:" + personne.Email;
+
                 mail.IsBodyHtml = true;
    
                 using (SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587))
@@ -121,6 +118,7 @@ namespace ProjetGroupe.Models
                 }
                 return true;
             }
+            //TODO Add Header au mail
             //return false;
         }
 
