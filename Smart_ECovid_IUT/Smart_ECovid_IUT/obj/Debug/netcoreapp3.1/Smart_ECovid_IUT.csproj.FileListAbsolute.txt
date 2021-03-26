@@ -88,3 +88,14 @@ C:\Users\ga304263\Source\Repos\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj
 C:\Users\ga304263\Source\Repos\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Smart_ECovid_IUT.dll
 C:\Users\ga304263\Source\Repos\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Smart_ECovid_IUT.pdb
 C:\Users\ga304263\Source\Repos\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Smart_ECovid_IUT.genruntimeconfig.cache
+C:\Users\pd012752\source\repos\LENSAlex\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Campus\CreeModifCampus.cshtml.g.cs
+C:\Users\pd012752\source\repos\LENSAlex\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Campus\ListeCampus.cshtml.g.cs
+C:\Users\pd012752\source\repos\LENSAlex\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Capteur\AfficheCapteur.cshtml.g.cs
+C:\Users\pd012752\source\repos\LENSAlex\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\IOTDevise\CreeModifIOTDevise.cshtml.g.cs
+C:\Users\pd012752\source\repos\LENSAlex\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\IOTDevise\ListeIOTDevise.cshtml.g.cs
+C:\Users\pd012752\source\repos\LENSAlex\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\LogAlerte\AfficheLogAlerte.cshtml.g.cs
+C:\Users\pd012752\source\repos\LENSAlex\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\LogEtatPlateforme\AfficherLogEtatPlateforme.cshtml.g.cs
+C:\Users\pd012752\source\repos\LENSAlex\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Promotion\CréeModifPromotion.cshtml.g.cs
+C:\Users\pd012752\source\repos\LENSAlex\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Promotion\ListePromotion.cshtml.g.cs
+C:\Users\pd012752\source\repos\LENSAlex\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Utilisateur\CreeModifUtilisateur.cshtml.g.cs
+C:\Users\pd012752\source\repos\LENSAlex\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Utilisateur\ListeUtilisateur.cshtml.g.cs

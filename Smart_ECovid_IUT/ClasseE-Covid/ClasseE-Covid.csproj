@@ -5,14 +5,4 @@
     <RootNamespace>ClasseE_Covid</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Campus\" />
-    <Folder Include="IOTDevise\" />
-    <Folder Include="LogAlerte\" />
-    <Folder Include="LogEtatPlateforme\" />
-    <Folder Include="Capteur\" />
-    <Folder Include="Promotion\" />
-    <Folder Include="Utilisateur\" />
-  </ItemGroup>
-
 </Project>
