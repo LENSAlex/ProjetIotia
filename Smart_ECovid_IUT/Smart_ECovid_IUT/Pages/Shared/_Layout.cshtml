@@ -11,7 +11,7 @@
 </head>
 <body>
     <header style="display: grid;">
-        <div class=" bg-color-blue "     style="z-index: 1;"> 
+        <div class=" bg-color-blue " style="z-index: 1;"> 
             <ul class="nav nav-pills nav-fill">
                 <li class="nav-item">
                     <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4 mar-top-40"><i class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold">Navigation</small></button>
@@ -21,7 +21,7 @@
                     <a class="nav-link text-dark" asp-area="" asp-page="/Index"><img src="~/img/Logo-couple-IUT-horizontal-CMJN-05-07.png" width="200" /></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark margin-top-40" asp-area="" asp-page="/Privacy">Nom Utilisateur</a>
+                    <a class="nav-link text-dark mar-top-40" asp-area="" asp-page="/Privacy">Nom Utilisateur</a>
                 </li>
             </ul>
         </div>
@@ -32,13 +32,13 @@
                 <a class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0"><i class="fas fa-user-circle">Utilisateurs</i></a>
                 <ul>
                     <li >
-                        <a href="#" class="nav-link text-dark font-italic bg-light ">
+                        <a asp-page="/Utilisateur/CreeModifUtilisateur" class="nav-link text-dark font-italic bg-light ">
                             <i class="fas fa-user-plus mr-3 text-primary fa-fw"></i>
                             Crée Utilisateur
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link text-dark font-italic bg-light ">
+                        <a asp-page="/Utilisateur/ListeUtilisateur" class="nav-link text-dark font-italic bg-light ">
                             <i class="fas fa-users mr-3 text-primary fa-fw"></i>
                             Liste Utilisateur
                         </a>
@@ -46,20 +46,16 @@
                 </ul>
             </li>
             <li class="nav-item">
-<<<<<<< HEAD
                 <a class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0"><i class="fas fa-graduation-cap">Promotion</i></a>
-=======
-                <a class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0" href="#" ><i class="fas fa-graduation-cap"></i>Promotion</a>
->>>>>>> 50bc5d208d249ebc65bf574392f2c4cee16fd776
                 <ul>
                     <li>
-                        <a href="#" class="nav-link text-dark font-italic bg-light">
+                        <a asp-page="/Promotion/CréeModifPromotion" class="nav-link text-dark font-italic bg-light">
                             <i class="fas fas fa-plus-circle mr-3 text-primary fa-fw"></i>
                             Crée Promotion
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link text-dark font-italic bg-light ">
+                        <a asp-page="/Promotion/ListePromotion" class="nav-link text-dark font-italic bg-light ">
                             <i class="fas fa-list mr-3 text-primary fa-fw"></i>
                            
                             Liste Promotion
@@ -71,13 +67,13 @@
                 <a class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0" ><i class="fas fa-school">Campus</i></a>
                 <ul>
                     <li>
-                        <a href="#" class="nav-link text-dark font-italic bg-light">
+                        <a asp-page="/Campus/CreeModifCampus" class="nav-link text-dark font-italic bg-light">
                             <i class="fas fas fa-plus-circle mr-3 text-primary fa-fw"></i>
                             Crée Campus
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link text-dark font-italic bg-light ">
+                        <a asp-page="/Campus/ListeCampus" class="nav-link text-dark font-italic bg-light ">
                             <i class="fas fa-city mr-3 text-primary fa-fw"></i>
                             Liste Campus
                         </a>
@@ -85,21 +81,21 @@
                 </ul>
             </li>
             <li class="nav-item ">
-                <a class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0"/>
-                <i class="fas fa-microchip">
+                <a class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">
+                    <i class="fas fa-microchip">
                         IOT Devis
                     </i>
-                
+                </a>
                 <ul>
                     <li>
-                        <a href="#" class="nav-link text-dark font-italic bg-light ">
+                        <a asp-page="/IOTDevise/CreeModifIOTDevise" class="nav-link text-dark font-italic bg-light ">
                             <i class="fas fa-plus-circle mr-3 text-primary fa-fw"></i>
                             Crée IOT Devis
 
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link text-dark font-italic bg-light ">
+                        <a asp-page="/IOTDevise/ListeIOTDevise" class="nav-link text-dark font-italic bg-light ">
                             <i class="fas fa-list mr-3 text-primary fa-fw"></i>
                             Liste IOT Devis
 
@@ -110,7 +106,7 @@
 
         </ul>
     </div>
-    <div class="page-content p-5 my-custom-scrollbar my-custom-scrollbar-primary" id="content">
+    <div class="page-content p-5" id="content">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>

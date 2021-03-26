@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31105.61
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Smart_ECovid_IUT", "Smart_ECovid_IUT\Smart_ECovid_IUT.csproj", "{3A101700-5513-4EA6-B8BC-413EBF63B7FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClasseE-Covid", "ClasseE-Covid\ClasseE-Covid.csproj", "{2D9CEAC4-1EDF-4682-8283-D720C894EE56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClasseE-Covid", "ClasseE-Covid\ClasseE-Covid.csproj", "{2D9CEAC4-1EDF-4682-8283-D720C894EE56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
