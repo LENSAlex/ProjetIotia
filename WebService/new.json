@@ -1,0 +1,5 @@
+{"ValeurCapteur":[{"Nom":"test","Valeur":"11","Unite":"°C","Date":"2021-03-22T18:33:59.101Z","Batiment":"1","Salle":"3"}
+    ,{"Nom":"test1","Valeur":"11","Unite":"°C","Date":"2021-03-22T18:33:59.101Z","Batiment":"1","Salle":"2"}
+    ,{"Nom":"test2","Valeur":"11","Unite":"°C","Date":"2021-03-22T18:33:59.101Z","Batiment":"1","Salle":"3"},
+    {"Nom":"test3","Valeur":"11","Unite":"°C","Date":"2021-03-22T18:33:59.101Z","Batiment":"1","Salle":"1"}
+    ,{"Nom":"test4","Valeur":"11","Unite":"°C","Date":"2021-03-22T18:33:59.101Z","Batiment":"1","Salle":"3"}]}
