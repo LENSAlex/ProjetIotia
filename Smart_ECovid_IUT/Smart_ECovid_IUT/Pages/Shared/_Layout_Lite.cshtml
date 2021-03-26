@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Smart_ECovid_IUT</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="~/fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/custom.css" />
+</head>
+<body>
+    <header style="display: grid;">
+        <div class=" bg-color-blue " style="z-index: 1;"> 
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                    <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4 mar-top-40"><i class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold">Navigation</small></button>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-page="/Index"><img src="~/img/Logo-couple-IUT-horizontal-CMJN-05-07.png" width="200" /></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark mar-top-40" asp-area="" asp-page="/Privacy">Nom Utilisateur</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="vertical-nav bg-white" id="sidebar">
+        <ul class="nav flex-column mb-0 mar-top-100">
+            <li class="nav-item">
+                <a class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0"><i class="fas fa-user-circle">Utilisateurs</i></a>
+                <ul>
+                    <li >
+                        <a asp-page="/Utilisateur/CreeModifUtilisateur" class="nav-link text-dark font-italic bg-light ">
+                            <i class="fas fa-user-plus mr-3 text-primary fa-fw"></i>
+                            Crée Utilisateur
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-page="/Utilisateur/ListeUtilisateur" class="nav-link text-dark font-italic bg-light ">
+                            <i class="fas fa-users mr-3 text-primary fa-fw"></i>
+                            Liste Utilisateur
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0"><i class="fas fa-graduation-cap">Promotion</i></a>
+                <ul>
+                    <li>
+                        <a asp-page="/Promotion/CréeModifPromotion" class="nav-link text-dark font-italic bg-light">
+                            <i class="fas fas fa-plus-circle mr-3 text-primary fa-fw"></i>
+                            Crée Promotion
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-page="/Promotion/ListePromotion" class="nav-link text-dark font-italic bg-light ">
+                            <i class="fas fa-list mr-3 text-primary fa-fw"></i>
+                           
+                            Liste Promotion
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item ">
+                <a class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0" ><i class="fas fa-school">Campus</i></a>
+                <ul>
+                    <li>
+                        <a asp-page="/Campus/CreeModifCampus" class="nav-link text-dark font-italic bg-light">
+                            <i class="fas fas fa-plus-circle mr-3 text-primary fa-fw"></i>
+                            Crée Campus
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-page="/Campus/ListeCampus" class="nav-link text-dark font-italic bg-light ">
+                            <i class="fas fa-city mr-3 text-primary fa-fw"></i>
+                            Liste Campus
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item ">
+                <a class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">
+                    <i class="fas fa-microchip">
+                        IOT Devis
+                    </i>
+                </a>
+                <ul>
+                    <li>
+                        <a asp-page="/IOTDevise/CreeModifIOTDevise" class="nav-link text-dark font-italic bg-light ">
+                            <i class="fas fa-plus-circle mr-3 text-primary fa-fw"></i>
+                            Crée IOT Devis
+
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-page="/IOTDevise/ListeIOTDevise" class="nav-link text-dark font-italic bg-light ">
+                            <i class="fas fa-list mr-3 text-primary fa-fw"></i>
+                            Liste IOT Devis
+
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+    <div class="page-content p-5" id="content">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted page-content p-5" id="content">
+        <div class="container">
+            &copy; 2021 - Smart_ECovid_IUT - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
+
+<script>
+    $(function () {
+        // Sidebar toggle behavior
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar, #content').toggleClass('active');
+        });
+    });
+</script>
