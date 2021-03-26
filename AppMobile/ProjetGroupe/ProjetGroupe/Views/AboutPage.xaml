@@ -4,11 +4,11 @@
              x:Class="ProjetGroupe.Views.AboutPage"
              xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              xmlns:st="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions" 
-             xmlns:viewmodels="clr-namespace:ProjetGroupe.Views" x:DataType="viewmodels:AboutPage"
+             xmlns:views="clr-namespace:ProjetGroupe.Views" x:DataType="views:AboutPage"
              Title="Contacts et Autres">
     
     <!--<ContentPage.BindingContext>
-        <vm:AboutViewModel />
+        <viewmodels:AboutViewModel />
     </ContentPage.BindingContext>-->
 
     <ContentPage.Resources>
@@ -30,16 +30,20 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
-                <Image HeightRequest="20" WidthRequest="20" Margin="20,0" Source="search.png"/>
+                <!--<Image HeightRequest="20" WidthRequest="20" Margin="20,0" Source="search.png"/>
                 <Entry Grid.Column="1" Placeholder="Search" TextColor="Black" FontSize="15" FontFamily="ThemeFontRegular" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-                <Image Grid.Column="2" HeightRequest="20" WidthRequest="20" Margin="20,0" Source="filter.png"/>
+                <Image Grid.Column="2" HeightRequest="20" WidthRequest="20" Margin="20,0" Source="filter.png"/>-->
+                <Label Text="{Binding Username}" Margin="0" TextColor="#DFDBED" FontSize="16" HorizontalTextAlignment="Center" />
             </Grid>
+           
         </Frame>
-        <StackLayout Grid.Row="1">
+      
+    </Grid>
+    <!--StackLayout Grid.Row="1">
             <Label Text="Property Type" TextColor="#515151" FontSize="15" FontFamily="ThemeFontBold"/>
             <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
                 <StackLayout Orientation="Horizontal" Spacing="10">
-                    <!--BindableLayout.ItemsSource="PropertyList"-->
+                    --><!--BindableLayout.ItemsSource="PropertyList"--><!--
                     <BindableLayout.ItemTemplate>
                         <DataTemplate>
                             <pv:PancakeView CornerRadius="15" Margin="5,10,0,10" BackgroundColor="White">
@@ -50,7 +54,7 @@
                                     <VisualStateGroup x:Name="CommonStates">
                                         <VisualState x:Name="Normal">
                                             <VisualState.Setters>
-                                                <!--<Setter Property="BackgroundGradientStops" Value="{x:Null}"/>-->
+                                                --><!--<Setter Property="BackgroundGradientStops" Value="{x:Null}"/>--><!--
                                             </VisualState.Setters>
                                         </VisualState>
                                         <VisualState x:Name="Selected">
@@ -64,7 +68,7 @@
                                                         </pv:GradientStopCollection>
                                                     </Setter.Value>
                                                 </Setter>
-                                                <!--<Setter Property="BackgroundGradientAngle" Value="270"/>-->
+                                                --><!--<Setter Property="BackgroundGradientAngle" Value="270"/>--><!--
                                             </VisualState.Setters>
                                         </VisualState>
                                     </VisualStateGroup>
@@ -123,6 +127,7 @@
                 </BindableLayout.ItemTemplate>
             </StackLayout>
         </ScrollView>
-    </Grid>
+    </Grid>-->
+
 
 </ContentPage>

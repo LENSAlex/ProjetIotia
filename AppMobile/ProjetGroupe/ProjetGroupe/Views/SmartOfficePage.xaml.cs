@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using static ProjetGroupe.ViewModels.AboutViewModel;
+using static ProjetGroupe.Views.AboutPage;
 
 namespace ProjetGroupe.Views
 {
@@ -27,7 +29,7 @@ namespace ProjetGroupe.Views
         //For example webrequest
         async void OnButtonClicked(object sender, EventArgs e)
         {
-            List<WebRequestProperty> repositories = await _restService.GetRepositoriesAsync(Constants.WebRequest);
+     //       List<WebRequestProperty> repositories = await _restService.GetRepositoriesAsync(Constants.WebRequest);
            // collectionView.ItemsSource = repositories;
         }
     }

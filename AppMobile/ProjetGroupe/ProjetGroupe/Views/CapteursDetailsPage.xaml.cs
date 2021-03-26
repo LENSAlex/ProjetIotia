@@ -25,7 +25,7 @@ namespace ProjetGroupe.Views
            //  = new SharedTransitionNavigationPage(new CapteursDetailsPage());
         }
 
-        public Property Property { get; set; }
+       // public Property Property { get; set; }
 
         private void GoBack(object sender, EventArgs e)
         {
