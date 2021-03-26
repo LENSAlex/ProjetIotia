@@ -8,10 +8,11 @@
     <link href="~/fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="~/css/custom.css" />
+    <link rel="stylesheet" href="~/select2-bootstrap-theme-0.1.0-beta.10/dist/select2-bootstrap.css" />
 </head>
 <body>
     <header style="display: grid;">
-        <div class=" bg-color-blue " style="z-index: 1;"> 
+        <div class=" bg-color-blue " style="z-index: 1;">
             <ul class="nav nav-pills nav-fill">
                 <li class="nav-item">
                     <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4 mar-top-40"><i class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold">Navigation</small></button>
@@ -28,10 +29,10 @@
     </header>
     <div class="vertical-nav bg-white" id="sidebar">
         <ul class="nav flex-column mb-0 mar-top-100">
-            <li class="nav-item">
+            <li class="nav-item" style="padding-bottom:30px";>
                 <a class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0"><i class="fas fa-user-circle">Utilisateurs</i></a>
                 <ul>
-                    <li >
+                    <li>
                         <a asp-page="/Utilisateur/CreeModifUtilisateur" class="nav-link text-dark font-italic bg-light ">
                             <i class="fas fa-user-plus mr-3 text-primary fa-fw"></i>
                             Crée Utilisateur
@@ -45,7 +46,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="nav-item">
+            <li class="nav-item"  style="padding-bottom:30px ">
                 <a class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0"><i class="fas fa-graduation-cap">Promotion</i></a>
                 <ul>
                     <li>
@@ -57,14 +58,14 @@
                     <li>
                         <a asp-page="/Promotion/ListePromotion" class="nav-link text-dark font-italic bg-light ">
                             <i class="fas fa-list mr-3 text-primary fa-fw"></i>
-                           
+
                             Liste Promotion
                         </a>
                     </li>
                 </ul>
             </li>
-            <li class="nav-item ">
-                <a class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0" ><i class="fas fa-school">Campus</i></a>
+            <li class="nav-item "  style="padding-bottom:30px ">
+                <a class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0"><i class="fas fa-school">Campus</i></a>
                 <ul>
                     <li>
                         <a asp-page="/Campus/CreeModifCampus" class="nav-link text-dark font-italic bg-light">
@@ -80,7 +81,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="nav-item ">
+            <li class="nav-item "  style="padding-bottom:30px ">
                 <a class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">
                     <i class="fas fa-microchip">
                         IOT Devis
@@ -121,6 +122,7 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.full.js"></script>
 
     @RenderSection("Scripts", required: false)
 </body>
@@ -128,9 +130,12 @@
 
 <script>
     $(function () {
-        // Sidebar toggle behavior
         $('#sidebarCollapse').on('click', function () {
             $('#sidebar, #content').toggleClass('active');
         });
+    });
+
+    $("#dropdown").select2({
+        theme: "bootstrap"
     });
 </script>
