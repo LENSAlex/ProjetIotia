@@ -31,7 +31,8 @@ CREATE OR REPLACE TABLE Salle(
 	volume INTEGER NOT NULL,
 	CONSTRAINT FK_Salle1 
     FOREIGN KEY (id_etage)
-    REFERENCES Etage (id_etage)
+    REFERENCES Etage (id_etage),
+	CONSTRAINT const_salle_volume CHECK (volume>=(surface*2))
 	);
 	
 CREATE OR REPLACE TABLE AccessibiliteType(
@@ -122,14 +123,14 @@ CREATE OR REPLACE TABLE Penurie(
 	id_salle INTEGER NOT NULL,
 	is_penurie SMALLINT,
 	date_maj DATETIME NOT NULL,
+	CONSTRAINT PK_Penurie
+	PRIMARY KEY (id_equipement, id_salle),
 	CONSTRAINT FK_Penurie1
     FOREIGN KEY  (id_equipement)
     REFERENCES Equipement (id_equipement),
 	CONSTRAINT FK_Penurie2
 	FOREIGN KEY (id_salle)
-    REFERENCES Salle (id_salle),
-	CONSTRAINT PK_Penurie
-	PRIMARY KEY (id_equipement, id_salle)
+    REFERENCES Salle (id_salle)
 	);
 
 CREATE OR REPLACE INDEX ind_Penurie 
@@ -232,7 +233,7 @@ CREATE OR REPLACE TABLE Formation
 	id_departement 	INTEGER NOT NULL, 
 	nom 			VARCHAR(50), 
 	duree 			INTEGER NOT NULL,
-	
+	CONSTRAINT const_formation_duree CHECK (duree > 0 and duree < 6),
 	CONSTRAINT FK_Formation_Department FOREIGN KEY (id_departement) REFERENCES (id_departement)
 );
 CREATE INDEX ind_Formation ON Formation (id_formation, id_departement); 
@@ -258,6 +259,7 @@ CREATE OR REPLACE TABLE Personne
 	prenom 				VARCHAR(50) NOT NULL,
 	date_anniversaire	DATETIME, 
 	rfid				VARCHAR(21),
+	CONSTRAINT check_mail CHECK (mail REGEXP '^(\\+?[0-9]{1,4}-)?[0-9]{3,10}$') ,
 	CONSTRAINT FOREIGN KEY FK_Personne1 REFERENCES PersonneType (id_pers_type)
 );
 CREATE INDEX ind_Personne ON Personne (id_personne, id_pers_type); 
@@ -269,6 +271,7 @@ CREATE OR REPLACE TABLE Promotion
 	id_formation 		INTEGER NOT NULL,
 	id_professeur		INTEGER NOT NULL,
 	annee				INTEGER NOT NULL,
+	CONSTRAINT const_promo_annee CHECK (annee > YEAR(current_date)-1 and annee < YEAR(current_date)+1),
 	CONSTRAINT FK_Promotion_formation FOREIGN KEY (id_formation) REFERENCES Formation (id_formation),
 	CONSTRAINT FK_Promotion_Professeur FOREIGN KEY (id_professeur) REFERENCES Personne(id_personne)
 );
@@ -287,7 +290,8 @@ CREATE OR REPLACE Module
 (
 	id_module 		INTEGER PRIMARY KEY AUTO_INCREMENT, 
 	libelle 		VARCHAR(50),
-	is_enabled		VARCHAR(1)
+	is_enabled		VARCHAR(1),
+	CONSTRAINT const_module_is_enabled CHECK (is_enabled = 1 or is_enabled = 0)
 );
 
 CREATE OR REPLACE Cours
@@ -302,6 +306,7 @@ CREATE OR REPLACE Cours
 	presentiel		 SMALLINT NOT NULL,
 	cours_type 		 VARCHAR(2) NOT NULL,
 	commentaire		 VARCHAR(250),
+	CONSTRAINT const_cours_presentiel CHECK (presentiel = 1 or presentiel = 0),
 	CONSTRAINT FK_Cours_Module FOREIGN KEY (id_module) REFERENCES Module (id_module),
 	CONSTRAINT FK_Cours_Salle  FOREIGN KEY (id_salle) REFERENCES Salle (id_salle),
 	CONSTRAINT FK_Cours_Prof FOREIGN KEY (id_professeur) REFERENCES Personne (id_personne),
@@ -326,7 +331,7 @@ CREATE OR REPLACE TABLE Presentiel
 (
 	id_cours	INTEGER NOT NULL, 
 	id_personne	INTEGER NOT NULL, 
-	presence	SMALLINT,
+	presence	SMALLINT NOT NULL,
 	CONSTRAINT PK_Presentiel PRIMARY KEY (id_cours, id_personne),
 	CONSTRAINT FK_Presentiel_Cours FOREIGN KEY (id_cours) REFERENCES Cours (id_cours),
 	CONSTRAINT FK_Presentiel_Personne FOREIGN KEY (id_personne) REFERENCES Personne (id_personne)
