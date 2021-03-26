@@ -23,7 +23,7 @@
 //        'Authorization': 'Basic ' + new Buffer('alex' + ':' + 'lens').toString('base64')
 //     }   
 //  };
- 
+
 //  //this is the call
 //  request = https.get(options, function(res){
 //     var body = "";
@@ -38,7 +38,7 @@
 //        onsole.log("Got error: " + e.message);
 //     });
 // });
- 
+
 
 /*Keycloack start standalone.sh
 http://localhost:8080/auth/admin to connect tel
@@ -49,7 +49,7 @@ var express = require('express');
 var bodyParser = require("body-parser");
 
 var session = require("express-session");
-var Keycloak  = require("keycloak-connect");
+var Keycloak = require("keycloak-connect");
 
 var app = express();
 
@@ -62,24 +62,24 @@ var app = express();
 //middlewares
 const memoryStore = new session.MemoryStore();
 app.use(
-  session({
-    secret: 'secretKey',
-    resave: false,
-    saveUninitialized: true,
-    store: memoryStore
-  })
+    session({
+        secret: 'secretKey',
+        resave: false,
+        saveUninitialized: true,
+        store: memoryStore
+    })
 );
 
 //keycloak.json for keycloak-connect error
 const keycloak = new Keycloak({
     store: memoryStore
-  });
-  app.use(
+});
+app.use(
     keycloak.middleware({
-      logout: '/logout',
-      admin: '/'
+        logout: '/logout',
+        admin: '/'
     })
-  );
+);
 
 app.get('/api/unsecured', function(req, res) {
     res.json({ message: 'This is an unsecured endpoint payload' });
@@ -92,10 +92,9 @@ app.get('/api/user', keycloak.protect('realm:user'), function(req, res) {
 });
 
 app.listen(3000, err => {
-if (err) {
-    console.error(err);
-}
-{
-    console.log(`APP Listen to port : 3000`);
-}
+    if (err) {
+        console.error(err);
+    } {
+        console.log(`APP Listen to port : 3000`);
+    }
 });
