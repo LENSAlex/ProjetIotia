@@ -6,6 +6,7 @@ using ProjetGroupe.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -19,16 +20,16 @@ namespace ProjetGroupe.Views
      //   public List<WebRequestProperty> testo { get; set; } = new List<WebRequestProperty>();
 
         private string username;
-        public string Username { get => username; set => username = value; } 
+        public string Username { get => GetMail(); } 
         RestService _restService;
         public AboutPage( )
         {
 
-            _restService = new RestService();
+           _restService = new RestService();
 
             InitializeComponent();
-            this.GetMailAsync();
-            this.BindingContext = this;
+           // this.GetMailAsync();
+            this.BindingContext = new AboutViewModel();
         }
 
         public async void GetMailAsync()
@@ -67,6 +68,7 @@ namespace ProjetGroupe.Views
             //}
 
         }
+
         public class WebRequestProperty
         {
             [JsonProperty("username")]

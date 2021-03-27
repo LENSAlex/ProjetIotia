@@ -171,29 +171,29 @@ public final class R {
 		public static final int notification_template_part_time = 0x7f0b005c;
 	}
 	public static final class string {
-		public static final int app_name = 0x7f0e001c;
-		public static final int common_google_play_services_enable_button = 0x7f0e0024;
-		public static final int common_google_play_services_enable_text = 0x7f0e0025;
-		public static final int common_google_play_services_enable_title = 0x7f0e0026;
-		public static final int common_google_play_services_install_button = 0x7f0e0027;
-		public static final int common_google_play_services_install_text = 0x7f0e0028;
-		public static final int common_google_play_services_install_title = 0x7f0e0029;
-		public static final int common_google_play_services_notification_channel_name = 0x7f0e002a;
-		public static final int common_google_play_services_notification_ticker = 0x7f0e002b;
-		public static final int common_google_play_services_unknown_issue = 0x7f0e002c;
-		public static final int common_google_play_services_unsupported_text = 0x7f0e002d;
-		public static final int common_google_play_services_update_button = 0x7f0e002e;
-		public static final int common_google_play_services_update_text = 0x7f0e002f;
-		public static final int common_google_play_services_update_title = 0x7f0e0030;
-		public static final int common_google_play_services_updating_text = 0x7f0e0031;
-		public static final int common_google_play_services_wear_update_text = 0x7f0e0032;
-		public static final int common_open_on_phone = 0x7f0e0033;
-		public static final int common_signin_button_text = 0x7f0e0034;
-		public static final int common_signin_button_text_long = 0x7f0e0035;
-		public static final int fcm_fallback_notification_channel_label = 0x7f0e0040;
-		public static final int firebase_preference_file_key = 0x7f0e0041;
-		public static final int installation_enrichment_file_key = 0x7f0e0049;
-		public static final int status_bar_notification_info_overflow = 0x7f0e007a;
+		public static final int app_name = 0x7f0e001f;
+		public static final int common_google_play_services_enable_button = 0x7f0e0027;
+		public static final int common_google_play_services_enable_text = 0x7f0e0028;
+		public static final int common_google_play_services_enable_title = 0x7f0e0029;
+		public static final int common_google_play_services_install_button = 0x7f0e002a;
+		public static final int common_google_play_services_install_text = 0x7f0e002b;
+		public static final int common_google_play_services_install_title = 0x7f0e002c;
+		public static final int common_google_play_services_notification_channel_name = 0x7f0e002d;
+		public static final int common_google_play_services_notification_ticker = 0x7f0e002e;
+		public static final int common_google_play_services_unknown_issue = 0x7f0e002f;
+		public static final int common_google_play_services_unsupported_text = 0x7f0e0030;
+		public static final int common_google_play_services_update_button = 0x7f0e0031;
+		public static final int common_google_play_services_update_text = 0x7f0e0032;
+		public static final int common_google_play_services_update_title = 0x7f0e0033;
+		public static final int common_google_play_services_updating_text = 0x7f0e0034;
+		public static final int common_google_play_services_wear_update_text = 0x7f0e0035;
+		public static final int common_open_on_phone = 0x7f0e0036;
+		public static final int common_signin_button_text = 0x7f0e0037;
+		public static final int common_signin_button_text_long = 0x7f0e0038;
+		public static final int fcm_fallback_notification_channel_label = 0x7f0e0043;
+		public static final int firebase_preference_file_key = 0x7f0e0044;
+		public static final int installation_enrichment_file_key = 0x7f0e004c;
+		public static final int status_bar_notification_info_overflow = 0x7f0e007d;
 	}
 	public static final class style {
 		public static final int TextAppearance_Compat_Notification = 0x7f0f0162;

@@ -15,9 +15,8 @@ namespace ProjetGroupe.ViewModels
     {
         //public Personne personne { get; set; }
         Context context;
-
         public Command AlertCovid { get; }
-        
+
         public AccueilViewModel()
         {
             var listView = new ListView();
@@ -29,11 +28,13 @@ namespace ProjetGroupe.ViewModels
             Personne personne = Personne.IsLogged();
             if (personne != null)
             {
-                AlertNotifications(context);
-                //  message.Title = "Test";
-                //  message.Body = "Notif loris";
-                // AlertNotifications(context, message);
+                string tag = Xamarin.Essentials.SecureStorage.GetAsync("Tag").Result;
+                int regid = Convert.ToInt32(Xamarin.Essentials.SecureStorage.GetAsync("RegId").Result);
+                //SendTemplateNotificationAsync(notificationParameters, p_tags);
+                // AlertNotifications(context);
+                SendPushNotification("Test","TestLoris", regid, tag);
                 //personne.RappelMail(personne);
+
             }
         }
 
@@ -56,6 +57,19 @@ namespace ProjetGroupe.ViewModels
             var notificationManager = NotificationManager.FromContext(context);
 
             notificationManager.Notify(0, notificationBuilder.Build());
+        }
+        public async void SendPushNotification(string p_title, string p_message, int p_assignmentID, string p_tags)
+        {
+            Dictionary<string, string> notificationParameters = new Dictionary<string, string>();
+            Microsoft.Azure.NotificationHubs.NotificationHubClient hub = null;
+
+            hub = Microsoft.Azure.NotificationHubs.NotificationHubClient.CreateClientFromConnectionString(Config.NotificationEndPoint, Config.NotificationHubName);
+
+            notificationParameters.Add("Title", p_title);
+            notificationParameters.Add("Message", p_message);
+            notificationParameters.Add("AssignmentID", p_assignmentID.ToString());
+
+            await hub.SendTemplateNotificationAsync(notificationParameters, p_tags);
         }
     }
 }

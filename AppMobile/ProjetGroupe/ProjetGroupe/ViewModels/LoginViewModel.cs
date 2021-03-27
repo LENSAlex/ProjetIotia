@@ -60,6 +60,7 @@ namespace ProjetGroupe.ViewModels
                 {
                     await Xamarin.Essentials.SecureStorage.SetAsync("isLogged", "1");
                     await Xamarin.Essentials.SecureStorage.SetAsync("Id", utilisateur.Id.ToString());
+                    RegisterDeviceForPushNotifications();
                     Xamarin.Forms.Application.Current.MainPage = new AppShell();
                     await Shell.Current.GoToAsync($"{nameof(AccueilPage)}");
                 }
@@ -70,6 +71,7 @@ namespace ProjetGroupe.ViewModels
                     await Xamarin.Forms.Application.Current.MainPage.DisplayAlert("Erreur:", "Informations incorrectes", "Ok");
                 }
             }
+
             //    else
             //    {
             //        await Shell.Current.GoToAsync($"{nameof(LoginPage)}");
@@ -79,6 +81,26 @@ namespace ProjetGroupe.ViewModels
             //{
             //    await Shell.Current.GoToAsync($"{nameof(LoginPage)}");
             //}
+        }
+        public static void RegisterDeviceForPushNotifications()
+        {
+            IRegisterNotifications reg = null;
+            List<string> tagList = new List<string>();
+            string token = "";
+            string tags = "";
+
+            tags = Xamarin.Essentials.SecureStorage.GetAsync("Tag").Result;
+
+            if (tags == null)
+            {
+                token = Xamarin.Essentials.SecureStorage.GetAsync("HubToken").Result;
+                tagList.Add(App.Current.ToString());
+                tagList.Add("DCW");
+
+                reg = Xamarin.Forms.DependencyService.Get<IRegisterNotifications>();
+
+                reg.RegisterDevice(token, tagList);
+            }
         }
     }
 }
