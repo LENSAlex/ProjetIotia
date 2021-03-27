@@ -38,7 +38,7 @@ GET:
 
 //Personne
 -/Personne (liste de tous les eleves des promos)
--/Personne/Promotion (List des promos)
+-/Personne/Formation (List des promos)
 -/Personne/Formation/ID (List des personne pour une formation)
 -/Personne/Departement/ID (Liste eleves dans un departement)
 -/Personne/Promotion/ID (Liste eleves dans une promo)
