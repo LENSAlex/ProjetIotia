@@ -26,7 +26,6 @@ namespace ProjetGroupe
             var j = JToken.Parse(json);
 
             ConnectionString = j.SelectToken("MainDatabase").ToString();
-
             NotificationEndPoint = j.SelectToken("NotificationEndPoint").ToString();
             NotificationHubName = j.SelectToken("NotificationHubName").ToString();
             NotificationChannelID = j.SelectToken("NotificationChannelID").ToString();

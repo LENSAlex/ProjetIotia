@@ -13,24 +13,17 @@ namespace ProjetGroupe.Views
 
     public partial class CapteursDetailsPage : ContentPage
     {
-        //public CapteursDetailsPage()
-        //{
-
-        //}
+   
         public CapteursDetailsPage()
         {
             InitializeComponent();
             //     this.Property = property;
             this.BindingContext = this;
-           //  = new SharedTransitionNavigationPage(new CapteursDetailsPage());
+            //  = new SharedTransitionNavigationPage(new CapteursDetailsPage());
         }
-
-       // public Property Property { get; set; }
-
-        private void GoBack(object sender, EventArgs e)
-        {
-            this.Navigation.PopAsync();
-        }
+      
+        // public Property Property { get; set; }
+        public string TypeName { get; set; }
 
         protected override void OnAppearing()
         {
@@ -39,4 +32,7 @@ namespace ProjetGroupe.Views
             DetailsView.TranslateTo(0, 0, 500, Easing.SinInOut);
         }
     }
+
+
 }
+

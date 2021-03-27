@@ -11,7 +11,7 @@ using Syncfusion.XForms.Android.PopupLayout;
 
 namespace ProjetGroupe.Droid
 {
-    [Activity(Label = "ProjetGroupe", Icon = "@drawable/logoveiut", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize )]
+    [Activity(Label = "ProjetGroupe", Icon = "@drawable/logoveiut", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
     //    public static string CHANNEL_ID = "Notification";
@@ -25,7 +25,6 @@ namespace ProjetGroupe.Droid
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
             SfPopupLayoutRenderer.Init();
-            
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
@@ -34,6 +33,7 @@ namespace ProjetGroupe.Droid
             //Start the SDK
             NotificationHub.Start(this.Application, Config.NotificationHubName, Config.NotificationEndPoint);
             CreateNotificationChannel();
+
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)

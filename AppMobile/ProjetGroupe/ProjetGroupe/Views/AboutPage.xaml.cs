@@ -1,4 +1,4 @@
-﻿using Android.Util;
+﻿
 using Newtonsoft.Json;
 using ProjetGroupe.Models;
 using ProjetGroupe.Services;
@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using static ProjetGroupe.ViewModels.AboutViewModel;
+using static ProjetGroupe.Views.CapteursDetailsPage;
 
 namespace ProjetGroupe.Views
 {
@@ -20,14 +21,16 @@ namespace ProjetGroupe.Views
         private string username;
         public string Username { get => username; set => username = value; } 
         RestService _restService;
-        public AboutPage()
+        public AboutPage( )
         {
+
             _restService = new RestService();
 
             InitializeComponent();
             this.GetMailAsync();
             this.BindingContext = this;
         }
+
         public async void GetMailAsync()
         {
             WebRequestProperty test = await _restService.GetRepositoriesAsync(Constants.WebRequest);
@@ -70,5 +73,18 @@ namespace ProjetGroupe.Views
             public string Username { get; set; }
         }
 
+        private void GoBack(object sender, EventArgs e)
+        {
+            this.Navigation.PopAsync();
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            DetailsView.TranslationY = 600;
+            DetailsView.TranslateTo(0, 0, 500, Easing.SinInOut);
+        }
     }
+
 }
+

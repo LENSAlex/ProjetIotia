@@ -23,9 +23,9 @@
             <RowDefinition Height="2*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <Image Aspect="AspectFill" Source="bg.png" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" st:Transition.Name="PropertyImage"/>
+        <Image Aspect="AspectFill" Source="bg.png" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
         <ImageButton BackgroundColor="Transparent" Aspect="Fill" Source="bg.png" Margin="25" WidthRequest="20" HeightRequest="13" 
-                     HorizontalOptions="Start" VerticalOptions="Start" Clicked="GoBack"/>
+                     HorizontalOptions="Start" VerticalOptions="Start" />
         <pv:PancakeView x:Name="DetailsView" Grid.Row="1" CornerRadius="30,30,0,0" Padding="35,35,35,0" Margin="0,-40,0,0" 
                         BackgroundColor="White" VerticalOptions="FillAndExpand">
             <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" VerticalScrollBarVisibility="Never">

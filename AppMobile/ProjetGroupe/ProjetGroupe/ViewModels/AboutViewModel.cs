@@ -20,13 +20,6 @@ namespace ProjetGroupe.ViewModels
         {
         }
 
-
-        private string username;
-        AboutPage ap = new AboutPage();
-     //   public string Username { get => ap.Username; }
-
-
     }
 
-    //  public ICommand OpenWebCommand { get; }
 }

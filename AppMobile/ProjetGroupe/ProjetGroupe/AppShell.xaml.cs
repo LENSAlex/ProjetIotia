@@ -52,6 +52,10 @@ namespace ProjetGroupe
         {
             await Shell.Current.GoToAsync("/eCovidPage");
         }
+        private async void OnTestPageClicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("/CapteursDetailsPage");
+        }
         public string GetMail()
         {
             var personne = Personne.IsLogged();
