@@ -39,6 +39,13 @@ namespace ProjetGroupe.Views
             DetailsView.TranslationY = 600;
             DetailsView.TranslateTo(0, 0, 500, Easing.SinInOut);
         }
+        private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var obj = (Equipes)e.SelectedItem;
+            var ide = Convert.ToInt32(obj.Id);
+            Application.Current.MainPage.DisplayAlert("Capteur:", "Informations "+ ide, "Ok");
+            Xamarin.Essentials.SecureStorage.SetAsync("CapteurId", ide.ToString());
+        }
     }
 }
 

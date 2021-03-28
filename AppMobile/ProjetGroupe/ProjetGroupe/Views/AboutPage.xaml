@@ -5,8 +5,7 @@
              xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" 
              Title="Contacts et Autres"
              xmlns:vm="clr-namespace:ProjetGroupe.ViewModels"
-             Shell.NavBarIsVisible="True"
-             Shell.SearchHandler="Test">
+             Shell.NavBarIsVisible="True">
     
     <ContentPage.BindingContext>
             <vm:AboutViewModel />
@@ -29,7 +28,7 @@
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <ListView Grid.Row="1" x:Name="listViews" ItemsSource="{Binding Items}" >
+            <ListView Grid.Row="1" x:Name="listViews" ItemsSource="{Binding Items}"  ItemSelected="OnItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell Height="200">

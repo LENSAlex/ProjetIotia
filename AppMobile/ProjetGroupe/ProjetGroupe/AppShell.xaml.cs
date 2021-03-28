@@ -18,8 +18,6 @@ namespace ProjetGroupe
             InitializeComponent();
             this.BindingContext = this;
 
-            Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
-            Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
             Routing.RegisterRoute(nameof(AccueilPage), typeof(AccueilPage));
             Routing.RegisterRoute(nameof(SmartOfficePage), typeof(SmartOfficePage));
             Routing.RegisterRoute(nameof(SmartBuildingPage), typeof(SmartBuildingPage));
