@@ -44,6 +44,9 @@ namespace ProjetGroupe.Droid
             Xamarin.Essentials.SecureStorage.SetAsync("HubToken", token);
             //AndroidFireBaseMessagingService.SendRegistrationToServer(token,"");
 
+            //string tag = Android.Provider.Settings.Secure.GetString(this.ApplicationContext.ContentResolver, Android.Provider.Settings.Secure.AndroidId);
+       //     string tag = Xamarin.Forms.Application.Current.Properties;
+          //  Xamarin.Essentials.SecureStorage.SetAsync("Tag", tag);
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)

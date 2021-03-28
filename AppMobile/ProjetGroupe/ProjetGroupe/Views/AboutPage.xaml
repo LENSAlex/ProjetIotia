@@ -2,150 +2,71 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjetGroupe.Views.AboutPage"
-             xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
-             xmlns:st="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions" 
+             xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" 
+             Title="Contacts et Autres"
              xmlns:vm="clr-namespace:ProjetGroupe.ViewModels"
-             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
-             Title="Contacts et Autres">
+             Shell.NavBarIsVisible="True"
+             Shell.SearchHandler="Test">
     
     <ContentPage.BindingContext>
-        <vm:AboutViewModel />
+            <vm:AboutViewModel />
     </ContentPage.BindingContext>
-
-    <ContentPage.Resources>
+    
+        <ContentPage.Resources>
         <ResourceDictionary>
             <Color x:Key="Accent">#96d1ff</Color>
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    <Grid BackgroundColor="#F9F9F9" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="20">
+    <Grid BackgroundColor="#F9F9F9" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="10">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <!--<Frame HasShadow="True" Margin="0,20" Padding="0" HeightRequest="400" HorizontalOptions="FillAndExpand">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="Auto"/>
-                </Grid.ColumnDefinitions>
-                --><!--<Image HeightRequest="20" WidthRequest="20" Margin="20,0" Source="search.png"/>
-                <Entry Grid.Column="1" Placeholder="Search" TextColor="Black" FontSize="15" FontFamily="ThemeFontRegular" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-                <Image Grid.Column="2" HeightRequest="20" WidthRequest="20" Margin="20,0" Source="filter.png"/>--><!--
-                <Label Text="{Binding Username}" Margin="0" TextColor="#DFDBED" FontSize="16" HorizontalTextAlignment="Center" />
-            </Grid>
-
-        </Frame>-->
-        <Grid >
+        <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="50"/>
+                <RowDefinition Height="auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Label Text="Données Capteurs" BackgroundColor="SlateBlue" FontSize="18" FontAttributes="Bold" TextColor="White" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
-            <ListView x:Name="listView"  Grid.Row="1"
-                               BackgroundColor="AliceBlue" ItemsSource="{Binding Items}">
+            <ListView Grid.Row="1" x:Name="listViews" ItemsSource="{Binding Items}" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <Frame BorderColor="#757575" Padding="5">
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto"/>
-                                    <RowDefinition Height="Auto"/>
-                                </Grid.RowDefinitions>
-                                <Label Grid.Row="0" Grid.Column="0" Text="Order ID  " HorizontalOptions="Start" TextColor="Black" FontSize="16" FontAttributes="Bold"/>
-                                <Label Grid.Row="1" Grid.Column="0" Text="Customer ID  " HorizontalOptions="Start" TextColor="Black" FontSize="16" FontAttributes="Bold"/>
-
-                                <Label Grid.Row="0" Grid.Column="1" Text="{Binding Id}" HorizontalOptions="Start" TextColor="Black" FontSize="16" WidthRequest="100"/>
-                                <Label Grid.Row="1" Grid.Column="1" Text="{Binding Name}" HorizontalOptions="Start" TextColor="Black" WidthRequest="100"/>
-                            </Grid>
-                        </Frame>
+                        <ViewCell Height="200">
+                            <Frame HasShadow="True" Margin="5" BackgroundColor="AliceBlue" BorderColor="{StaticResource Key=Accent}" Padding="5">
+                                <Grid Padding="0">
+                                    <StackLayout Orientation="Horizontal" Spacing="25" HorizontalOptions="FillAndExpand">
+                                        <Label Text="{Binding Id}" FontAttributes="Bold"  FontSize="12" TextColor="Red" />
+                                        <Label Text="{Binding Name}" FontAttributes="Bold" TextColor="Green" />
+                                    </StackLayout>
+                                </Grid>
+                            </Frame>
+                        </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-        </Grid>
+            <pv:PancakeView Grid.Row="2" BackgroundColor="BlanchedAlmond" x:Name="DetailsView" CornerRadius="0,0,0,0" Padding="35,35,35,0" Margin="0,0,0,0" VerticalOptions="FillAndExpand">
+                <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" VerticalScrollBarVisibility="Never">
+                    <StackLayout Spacing="25" HorizontalOptions="FillAndExpand">
+                        <Grid HorizontalOptions="FillAndExpand">
+                            <StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="FillAndExpand">
+                                <Image HeightRequest="12" WidthRequest="8" Source="address.png" VerticalOptions="Center" HorizontalOptions="Start"/>
+                                <Label Text="Capteurs: " FontSize="16" TextColor="Black" FontFamily="ThemeFontRegular" HorizontalOptions="Start" VerticalOptions="Center"/>
+                            </StackLayout>
+                            <ImageButton BackgroundColor="Transparent" Aspect="Fill" HeightRequest="40" WidthRequest="40" Source="data2.png" VerticalOptions="Center" HorizontalOptions="End"/>
 
-        <pv:PancakeView BackgroundColor="BlanchedAlmond" x:Name="DetailsView" Grid.Row="4" CornerRadius="30,30,0,0" Padding="35,35,35,0" Margin="0,0,0,0" 
-                         VerticalOptions="FillAndExpand">
-            <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" VerticalScrollBarVisibility="Never">
-                <StackLayout Spacing="15" HorizontalOptions="FillAndExpand">
-                    <Grid HorizontalOptions="FillAndExpand">
-                        <StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="FillAndExpand">
-                            <Image HeightRequest="12" WidthRequest="8" Source="address.png" VerticalOptions="Center" HorizontalOptions="Start"/>
-                            <Label Text="Capteurs: " FontSize="16" TextColor="Black" FontFamily="ThemeFontRegular" HorizontalOptions="Start" VerticalOptions="Center"/>
+                        </Grid>
+                        <StackLayout Grid.Row="1" Spacing="15" >
+                            <Label Text="Mesures:" FontSize="20" FontFamily="ThemeFontBold" TextColor="#515151"/>
                         </StackLayout>
-                        <ImageButton BackgroundColor="Transparent" Aspect="Fill" HeightRequest="40" WidthRequest="40" Source="data2.png" VerticalOptions="Center" HorizontalOptions="End"/>
-                    </Grid>
-                    <StackLayout Grid.Row="1" Spacing="15" >
-                        <Label Text="Mesures:" FontSize="20" FontFamily="ThemeFontBold" TextColor="#515151"/>
-                        <!--<StackLayout Orientation="Horizontal" Spacing="15">
-                            <StackLayout Orientation="Horizontal" Spacing="10">
-                                <Image WidthRequest="16" Source="bed.png"/>
-                                <Label Text="Bed" FontSize="12" FontFamily="ThemeFontRegular" TextColor="#707070"/>
-                            </StackLayout>
-                            <StackLayout Orientation="Horizontal" Spacing="10">
-                                <Image WidthRequest="16" Source="shower.png"/>
-                                <Label Text="Bath" FontSize="12" FontFamily="ThemeFontRegular" TextColor="#707070"/>
-                            </StackLayout>
-                            <StackLayout Orientation="Horizontal" Spacing="10">
-                                <Image WidthRequest="16" Source="square.png"/>
-                                <Label Text="Space" FontSize="12" FontFamily="ThemeFontRegular" TextColor="#707070"/>
-                            </StackLayout>
-                        </StackLayout>-->
+                        <BoxView HeightRequest="1" VerticalOptions="Start" HorizontalOptions="FillAndExpand" BackgroundColor="DarkGray"/>
+                        <BoxView HeightRequest="1" VerticalOptions="Start" HorizontalOptions="FillAndExpand" BackgroundColor="DarkGray"/>
+                        <StackLayout Grid.Row="1" Spacing="15" >
+                            <Label Text="Consommation Energétique:" FontSize="20" FontFamily="ThemeFontBold" TextColor="#515151"/>
+                        </StackLayout>
                     </StackLayout>
-                    <BoxView HeightRequest="1" VerticalOptions="Start" HorizontalOptions="FillAndExpand" BackgroundColor="DarkGray"/>
-                    <!--<StackLayout Orientation="Horizontal" Spacing="30" HorizontalOptions="Center">
-                        <StackLayout>
-                            <pv:PancakeView BackgroundColor="#E9E9E9" HeightRequest="50" WidthRequest="50" CornerRadius="30" HorizontalOptions="Center">
-                                <Image WidthRequest="16" HeightRequest="16" Source="phone.png" HorizontalOptions="Center" VerticalOptions="Center"/>
-                            </pv:PancakeView>
-                            <Label Text="Call" TextColor="#8D8D8D" FontSize="14" FontFamily="ThemeFontMedium" HorizontalTextAlignment="Center"/>
-                        </StackLayout>
-                        <StackLayout>
-                            <pv:PancakeView BackgroundColor="#E9E9E9" HeightRequest="50" WidthRequest="50" CornerRadius="30" HorizontalOptions="Center">
-                                <Image WidthRequest="16" HeightRequest="16" Source="email.png" HorizontalOptions="Center" VerticalOptions="Center"/>
-                            </pv:PancakeView>
-                            <Label Text="Email" TextColor="#8D8D8D" FontSize="14" FontFamily="ThemeFontMedium" HorizontalTextAlignment="Center"/>
-                        </StackLayout>
-                        <StackLayout>
-                            <pv:PancakeView BackgroundColor="#E9E9E9" HeightRequest="50" WidthRequest="50" CornerRadius="30" HorizontalOptions="Center">
-                                <Image WidthRequest="16" HeightRequest="16" Source="map.png" HorizontalOptions="Center" VerticalOptions="Center"/>
-                            </pv:PancakeView>
-                            <Label Text="Map View" TextColor="#8D8D8D" FontSize="14" FontFamily="ThemeFontMedium" HorizontalTextAlignment="Center"/>
-                        </StackLayout>
-                        <StackLayout>
-                            <pv:PancakeView BackgroundColor="#E9E9E9" HeightRequest="50" WidthRequest="50" CornerRadius="30" HorizontalOptions="Center">
-                                <Image WidthRequest="16" HeightRequest="16" Source="more.png" HorizontalOptions="Center" VerticalOptions="Center"/>
-                            </pv:PancakeView>
-                            <Label Text="More" TextColor="#8D8D8D" FontSize="14" FontFamily="ThemeFontMedium" HorizontalTextAlignment="Center"/>
-                        </StackLayout>
-                    </StackLayout>-->
-                    <BoxView HeightRequest="1" VerticalOptions="Start" HorizontalOptions="FillAndExpand" BackgroundColor="DarkGray"/>
-                    <StackLayout Grid.Row="1" Spacing="15" >
-                        <Label Text="Consommation Energétique:" FontSize="20" FontFamily="ThemeFontBold" TextColor="#515151"/>
-                        <!--<StackLayout Orientation="Horizontal" Spacing="15">
-                            <StackLayout Orientation="Horizontal" Spacing="10">
-                                <Image WidthRequest="16" Source="bed.png"/>
-                                <Label Text="Bed" FontSize="12" FontFamily="ThemeFontRegular" TextColor="#707070"/>
-                            </StackLayout>
-                            <StackLayout Orientation="Horizontal" Spacing="10">
-                                <Image WidthRequest="16" Source="shower.png"/>
-                                <Label Text="Bath" FontSize="12" FontFamily="ThemeFontRegular" TextColor="#707070"/>
-                            </StackLayout>
-                            <StackLayout Orientation="Horizontal" Spacing="10">
-                                <Image WidthRequest="16" Source="square.png"/>
-                                <Label Text="Space" FontSize="12" FontFamily="ThemeFontRegular" TextColor="#707070"/>
-                            </StackLayout>
-                        </StackLayout>-->
-                    </StackLayout>
-                </StackLayout>
-            </ScrollView>
-        </pv:PancakeView>
-        
+                </ScrollView>
+            </pv:PancakeView>
+        </Grid>
     </Grid>
 </ContentPage>

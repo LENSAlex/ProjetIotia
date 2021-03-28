@@ -16,7 +16,7 @@ using System.Text;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
-[assembly: ExportRenderer(typeof(MyEntry), typeof(MyEntryRenderer))]
+[assembly: ExportRenderer(typeof(MyEntryRenderer), typeof(MyEntryRenderer))]
 namespace CustomRenderer.Android
 {
     class MyEntryRenderer : EntryRenderer

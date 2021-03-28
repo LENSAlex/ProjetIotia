@@ -16,9 +16,6 @@ namespace ProjetGroupe
         public App()
         {
             InitializeComponent();
-            DependencyService.Register<MockDataStore>();
-            //MainPage = new AppShell();
-            //MainPage = new AppShell();
             var isLoogged = Xamarin.Essentials.SecureStorage.GetAsync("isLogged").Result;
             if (isLoogged == "1")
             {

@@ -14,16 +14,15 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using Newtonsoft.Json.Linq;
 using System.Linq;
+using ProjetGroupe.Models.Manager;
 
 namespace ProjetGroupe.ViewModels
 {
-    public class AboutViewModel : BaseViewModel, INotifyPropertyChanged
+    public class AboutViewModel : INotifyPropertyChanged
     {
-        //public List<WebRequestProperty> collectionView { get; set; } = new List<WebRequestProperty>();
         public event PropertyChangedEventHandler PropertyChanged;
-        private List<Equipes> items;
-
-        public List<Equipes> Items
+        public ObservableCollection<Equipes> items { get; set; }
+        public ObservableCollection<Equipes> Items
         {
             get
             {
@@ -35,69 +34,36 @@ namespace ProjetGroupe.ViewModels
                 RaisepropertyChanged("Items");
             }
         }
-
-
-        async void GetData()
+        public AboutViewModel()
         {
-            Items = await RefreshDataAsync();
+            Device.BeginInvokeOnMainThread(() => GetData());
         }
-        void RaisepropertyChanged(string propertyName)
+        public async void GetData()
+        {
+            Items = await Equipes.List();
+        }
+        public void RaisepropertyChanged(string propertyName)
         {
             if (PropertyChanged != null)
                 PropertyChanged.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-        public AboutViewModel()
-        {
-            items = new List<Equipes>();
-            GetData();
-        }
-        public async System.Threading.Tasks.Task<List<Equipes>> RefreshDataAsync()
-        {
-            var httpClient = new HttpClient();
 
-            if (Device.RuntimePlatform == Device.Android)
-            {
-                httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
-                httpClient.DefaultRequestHeaders.TryAddWithoutValidation("Content-Type", "application/json");
-                httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            }
-            string WebAPIUrl = "http://51.77.137.170:8080/equipes"; // Set your REST API URL here.
-            var uri = new Uri(WebAPIUrl);
-            try
-            {
-                var response = await httpClient.GetAsync(uri);
-
-                if (response.IsSuccessStatusCode)
-                {
-                    var content = await response.Content.ReadAsStringAsync();
-
-                    //Items = JObject.Parse(content);
-                    //string test = jsonData.ToString();
-                    Items = JsonConvert.DeserializeObject<List<Equipes>>(content);
-                    
-                    //for (int i = 0; (JArray)jsonData["data"].lengh; i++)
-                    //{
-                    //    var data = jsonData[i - 1];
-                    //}
-                    //   Items = new SJavaScriptSerializer().Deserialize<Equipes>(content);
-                    return Items;
-                }
-            }
-            catch (Exception ex)
-            {
-            }
-            return null;
-        }
-}
+    }
     public class Equipes
     {
-        [JsonProperty("id")]
+        [JsonProperty("Id")]
         public int Id { get; set; }
         [JsonProperty("name")]
-        public string name { get; set; }
+        public string Name { get; set; }
         [JsonProperty("disponible")]
-        public bool disponible { get; set; }
+        public bool Disponible { get; set; }
+        public static Task<ObservableCollection<Equipes>> List()
+        {
+            return CapteurManager.RefreshDataAsync();
+        }
+        public static Task<Equipes> Load(int id)
+        {
+            return CapteurManager.Load(id);
+        }
     }
-
-
 }

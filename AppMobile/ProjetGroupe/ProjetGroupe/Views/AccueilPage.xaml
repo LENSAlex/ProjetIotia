@@ -38,7 +38,7 @@
         </StackLayout>-->
         <StackLayout Orientation="Vertical" Margin="0,40,0,0" HorizontalOptions="Center" VerticalOptions="Center">
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                <Label Text="Smart E-Covid IUT" FontFamily="ThemeFontRegular" HorizontalOptions="Center" TextColor="#DFDBED" FontSize="36" FontAttributes="Bold" VerticalOptions="Center"/>
+                <Label Text="Smart E-Covid IUT" FontFamily="ThemeFontBold" HorizontalOptions="Center" TextColor="#DFDBED" FontSize="36" FontAttributes="Bold" VerticalOptions="Center"/>
             </StackLayout>
             <!--<Label Text="Application Projet E-Covid" TextColor="White" FontSize="16" HorizontalOptions="Center"/>-->
             <!--<Label Text="{Binding Date}" TextColor="White" FontSize="12" HorizontalOptions="Center"/>

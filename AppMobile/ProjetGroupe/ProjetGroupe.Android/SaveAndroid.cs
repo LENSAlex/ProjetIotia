@@ -36,7 +36,7 @@ class SaveAndroid : ISave
        // root = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
         //Create directory and file 
-        Java.IO.File myDir = new Java.IO.File(newRoot + "/test");
+        Java.IO.File myDir = new Java.IO.File(newRoot + "/SmartCovid");
        // myDir.Mkdir();
         Directory.CreateDirectory(myDir.ToString());
         Java.IO.File file = new Java.IO.File(myDir, fileName);

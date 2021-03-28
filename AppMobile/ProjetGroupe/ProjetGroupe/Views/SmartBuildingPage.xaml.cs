@@ -29,7 +29,6 @@ namespace ProjetGroupe.Views
         }
         private string PersonneSearch(string query)
         {
-            //var ListPersonne = new Personne();
             _Personne = Personne.SearchLike(query);
             if (_Personne != null)
             {

@@ -28,11 +28,12 @@ namespace ProjetGroupe.ViewModels
             Personne personne = Personne.IsLogged();
             if (personne != null)
             {
-                string tag = Xamarin.Essentials.SecureStorage.GetAsync("Tag").Result;
-                int regid = Convert.ToInt32(Xamarin.Essentials.SecureStorage.GetAsync("RegId").Result);
+                //string tag = Xamarin.Essentials.SecureStorage.GetAsync("Tag").Result;
+                //string regid = Xamarin.Essentials.SecureStorage.GetAsync("RegId").Result;
+                // int test = 5;
                 //SendTemplateNotificationAsync(notificationParameters, p_tags);
                 // AlertNotifications(context);
-                SendPushNotification("Test","TestLoris", regid, tag);
+                //SendPushNotification("Test","TestLoris", test, tag);
                 //personne.RappelMail(personne);
 
             }

@@ -46,12 +46,6 @@ namespace ProjetGroupe.ViewModels
 
         private async void OnLoginClicked(object obj)
         {
-
-            // var handler = new HttpClientHandler { CookieContainer = CookieContainer };
-            // var httpClient = new HttpClient(handler);
-            //  CookieContainer = handler.CookieContainer;
-            //  ISharedPreferencesEditor session = session.;
-
             if (!String.IsNullOrEmpty(identifiant) && !String.IsNullOrEmpty(password))
             {
                 Personne utilisateur = Personne.Search(identifiant, MHash.HashString(password));
@@ -66,21 +60,9 @@ namespace ProjetGroupe.ViewModels
                 }
                 else
                 {
-                    //Page page = new Page();
-                    //await page.DisplayAlert("Alert", "You have been alerted", "OK");
                     await Xamarin.Forms.Application.Current.MainPage.DisplayAlert("Erreur:", "Informations incorrectes", "Ok");
                 }
             }
-
-            //    else
-            //    {
-            //        await Shell.Current.GoToAsync($"{nameof(LoginPage)}");
-            //    }
-            //}
-            //else
-            //{
-            //    await Shell.Current.GoToAsync($"{nameof(LoginPage)}");
-            //}
         }
         public static void RegisterDeviceForPushNotifications()
         {
@@ -91,12 +73,15 @@ namespace ProjetGroupe.ViewModels
 
             tags = Xamarin.Essentials.SecureStorage.GetAsync("Tag").Result;
 
-            if (tags == null)
+            if (tags != null)
             {
                 token = Xamarin.Essentials.SecureStorage.GetAsync("HubToken").Result;
-                tagList.Add(App.Current.ToString());
+                //  tagList.Add(App.Current.ToString());
+                //  tagList.Add("DCW");
+               
+                tagList.Add(tags);
                 tagList.Add("DCW");
-
+          
                 reg = Xamarin.Forms.DependencyService.Get<IRegisterNotifications>();
 
                 reg.RegisterDevice(token, tagList);

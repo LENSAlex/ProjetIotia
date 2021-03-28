@@ -1,5 +1,6 @@
 ﻿using ProjetGroupe.Models;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
@@ -65,7 +66,7 @@ namespace ProjetGroupe.ViewModels
 
             }
             //make sure to end the refresh state
-            
+
         }
         // public string Email { get; set; }
 
@@ -118,7 +119,7 @@ namespace ProjetGroupe.ViewModels
 
             // return tempList;
         }
-
     }
+
 }
 
