@@ -3507,3 +3507,4 @@ C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\ProjetGroupe\ProjetGroupe.An
 C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Debug\110\android\src\crc64ede7d561f89251b6\MaterialSfListViewRenderer.java
 C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Debug\110\android\src\crc64ede7d561f89251b6\SfListViewControlRenderer.java
 C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Debug\110\android\src\crc64ede7d561f89251b6\SwipeViewRenderer.java
+C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Debug\110\res\drawable\bgcapteur2.png

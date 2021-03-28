@@ -90,6 +90,7 @@
   <ItemGroup>
     <Compile Include="AndroidFireBaseMessagingService.cs" />
     <Compile Include="AzureListener.cs" />
+    <Compile Include="DropdownRenderer.cs" />
     <Compile Include="EntryCustom.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="MyFirebaseMessagingService .cs" />
@@ -234,6 +235,9 @@
     <AndroidResourceAnalysisConfig Include="Resources\drawable\splash_screen.xml">
       <SubType>Designer</SubType>
     </AndroidResourceAnalysisConfig>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\bgcapteur2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>

@@ -25,6 +25,9 @@ namespace ProjetGroupe.Views
         }
         //3)SmartOffice => alerte à pénurie de produit avec choix du produit.
 
+        //Select sur le choix du produit
+       // PopUp ou alert validation
+       //envoie de msg ou mail ou insert dans bdd
 
         //For example webrequest
         async void OnButtonClicked(object sender, EventArgs e)

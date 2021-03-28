@@ -25,7 +25,6 @@ namespace ProjetGroupe.Views
         {
             CapteurId = Xamarin.Essentials.SecureStorage.GetAsync("CapteurId").Result;
             //Capteur = Capteur.Load(Convert.ToInt32(CapteurId));
-
             Device.BeginInvokeOnMainThread(() => GetCapteur());
 
             InitializeComponent();
@@ -33,16 +32,22 @@ namespace ProjetGroupe.Views
 
 
         }
-      
+
+        public void OnImageButtonClicked(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new AppShell();
+            Xamarin.Essentials.SecureStorage.Remove("CapteurId");
+        }
+
         // public Property Property { get; set; }
         // public string TypeName { get; set; }
 
-        //protected override void OnAppearing()
-        //{
-        //    base.OnAppearing();
-        //    DetailsView.TranslationY = 600;
-        //    DetailsView.TranslateTo(0, 0, 500, Easing.SinInOut);
-        //}
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            DetailsView.TranslationY = 600;
+            DetailsView.TranslateTo(0, 0, 500, Easing.SinInOut);
+        }
         protected override void OnDisappearing() 
         { 
             base.OnDisappearing();

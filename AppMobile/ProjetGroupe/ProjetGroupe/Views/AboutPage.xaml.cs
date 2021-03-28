@@ -43,8 +43,10 @@ namespace ProjetGroupe.Views
         {
             var obj = (Equipes)e.SelectedItem;
             var ide = Convert.ToInt32(obj.Id);
-            Application.Current.MainPage.DisplayAlert("Capteur:", "Informations "+ ide, "Ok");
+            //Application.Current.MainPage.DisplayAlert("Capteur:", "Informations "+ ide, "Ok");
             Xamarin.Essentials.SecureStorage.SetAsync("CapteurId", ide.ToString());
+            Xamarin.Forms.Application.Current.MainPage = new CapteursDetailsPage();
+           // Shell.Current.GoToAsync("/CapteursDetailsPage");
         }
     }
 }
