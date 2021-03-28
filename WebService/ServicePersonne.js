@@ -10,7 +10,7 @@ var conn = mysql.createConnection({
   database: 'test',
   host: "51.75.125.121",
   user: "alex",
-  password: "Jessicalex2510*"
+  password: "*"
 });
 
 //https://www.sitepoint.com/using-node-mysql-javascript-client/
@@ -108,17 +108,8 @@ app.get("/Personne/Formation" , (req,res) =>
 
     //liste des promos
 
-
 })
 
-app.get("/Personne/Formation/:ID" , (req,res) =>
-{
-    //Requete possible: select P.nom , P.prenom from Promotion P inner join Contenir C C.id_formation=P.id_Formation 
-    //inner join Personne P on P.id_Personne=C.id_Eleve 
-
-    //liste des personnes pour une formation
-
-})
 
 app.get("/Personne/Departement/:ID" , (req,res) =>
 {
@@ -130,10 +121,52 @@ app.get("/Personne/Departement/:ID" , (req,res) =>
 
 app.get("/Personne/Promotion/:ID" , (req,res) =>
 {
-    //Requete possible:
+    //Requete possible:select P.nom , P.prenom from Promotion P inner join Contenir C C.id_formation=P.id_Formation 
+    //inner join Personne P on P.id_Personne=C.id_Eleve 
 
     //liste des personnes dans une promo
 })
+
+app.get("/Personne/Promotion/:IDPromo/personne/cours" , (req,res) =>
+{
+    //Requete possible:select heure_debut , heure_fin ,Commentaire from Cours where id_promotion = '"+req.params.IDPromo+"'
+
+    //Liste des cours d un eleve
+})
+
+app.get("/Personne/Promotion/:IDPromo/personne/cours/presentielle" , (req,res) =>
+{
+    //Requete possible:select heure_debut , heure_fin ,Commentaire from Cours where id_promotion = '"+req.params.IDPromo+"' and presentiel = true
+
+    //Liste des cours en presentielle d un eleve
+})
+
+
+app.get("/Personne/Promotion/:IDPromo/personne/cours/distancielle" , (req,res) =>
+{
+    //Requete possible:select heure_debut , heure_fin ,Commentaire from Cours where id_promotion = '"+req.params.IDPromo+"' and presentiel = false
+
+    //Liste des cours en distancielle d un eleve
+})
+
+
+app.get("/Personne/:IDPersonne/abs" , (req,res) =>
+{
+    //Requete possible:select C.Commentaire , A.motif from Cours C inner join Absence A on A.id_cours = C.id_cours where A.id_PersonneEtudiant = '"+req.params.IDPersonne+"'
+
+    //Absecence d un eleve
+})
+
+
+
+//Route annexes qui doivent etre utiliser avant de passer des parametre route (idUser , IdPromo , ...)
+//Id personne voir https
+app.get("/Personne/GetIDPerson/:login/:mdp" , (req,res) =>
+{
+    //
+})
+
+//IDPromo a savoir car je n ai pas de nom pour identifier
 
 app.listen(port , () =>
 {
