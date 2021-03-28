@@ -41,10 +41,12 @@ GET:
 -/Personne/Formation (List des promos)
 -/Personne/Departement/ID (Liste eleves dans un departement)
 -/Personne/Promotion/ID (Liste eleves dans une promo)
--/Personne/Promotion/ID/personne/ID/cours (Liste des cours d un eleve)
--/Personne/Promotion/ID/personne/ID/cours/presentielle (Liste des cours en presentielle d un eleve)
--/Personne/Promotion/ID/personne/ID/cours/distancielle (Liste des cours en distancielle d un eleve)
--/Personne/Promotion/ID/personne/ID/abs (Liste des abscence d un eleve)
+-/Personne/Promotion/:IDPromo/personne/cours (Liste des cours d un eleve)
+-/Personne/Promotion/ID/personne/cours/presentielle (Liste des cours en presentielle d un eleve)
+-/Personne/Promotion/ID/personne/cours/distancielle (Liste des cours en distancielle d un eleve)
+-/Personne/ID/abs (Liste des abscence d un eleve)
+
+---> Voir route qui pouvent aider a avoir idPromo et idPersonne ...
 
 //Acces
 -/Acces/Batiment (Jauge de tous les batiments)
