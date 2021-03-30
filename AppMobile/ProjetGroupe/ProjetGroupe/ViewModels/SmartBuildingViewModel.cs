@@ -46,7 +46,7 @@ namespace ProjetGroupe.ViewModels
         }
         void OnTap(object sender, ItemTappedEventArgs e)
         {
-            Xamarin.Forms.Application.Current.MainPage.DisplayAlert("TAPED:", "Informations incorrectes", "Ok");
+            Application.Current.MainPage.DisplayAlert("TAPED:", "Informations incorrectes", "Ok");
         }
 
         public void OnSelection(object sender, SelectedItemChangedEventArgs e)
@@ -55,7 +55,7 @@ namespace ProjetGroupe.ViewModels
             {
                 return;
             }
-            Xamarin.Forms.Application.Current.MainPage.DisplayAlert("Erreur:", "Informations incorrectes", "Ok");
+            Application.Current.MainPage.DisplayAlert("Erreur:", "Informations incorrectes", "Ok");
         }
 
         public void OnRefreshing()
@@ -63,10 +63,10 @@ namespace ProjetGroupe.ViewModels
             var personne = Personne.IsLogged();
             if (personne != null)
             {
-
+                IsBusy = false;
             }
             //make sure to end the refresh state
-
+           
         }
         // public string Email { get; set; }
 

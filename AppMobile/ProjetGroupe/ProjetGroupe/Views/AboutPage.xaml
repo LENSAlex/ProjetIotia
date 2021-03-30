@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjetGroupe.Views.AboutPage"
              xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" 
-             Title="Contacts et Autres"
+             Title="Liste des données consultables"
              xmlns:vm="clr-namespace:ProjetGroupe.ViewModels"
              Shell.NavBarIsVisible="True">
     
@@ -16,35 +16,41 @@
             <Color x:Key="Accent">#96d1ff</Color>
         </ResourceDictionary>
     </ContentPage.Resources>
-
-    <Grid BackgroundColor="#F9F9F9" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="10">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+   
+    <Grid BackgroundColor="#F9F9F9" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="0">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <ListView Grid.Row="1" x:Name="listViews" ItemsSource="{Binding Items}"  ItemSelected="OnItemSelected">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell Height="200">
-                            <Frame HasShadow="True" Margin="5" BackgroundColor="AliceBlue" BorderColor="{StaticResource Key=Accent}" Padding="5">
-                                <Grid Padding="0">
-                                    <StackLayout Orientation="Horizontal" Spacing="25" HorizontalOptions="FillAndExpand">
-                                        <Label Text="{Binding Id}" FontAttributes="Bold"  FontSize="12" TextColor="Red" />
-                                        <Label Text="{Binding Name}" FontAttributes="Bold" TextColor="Green" />
-                                    </StackLayout>
-                                </Grid>
-                            </Frame>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            <pv:PancakeView Grid.Row="2" BackgroundColor="BlanchedAlmond" x:Name="DetailsView" CornerRadius="0,0,0,0" Padding="35,35,35,0" Margin="0,0,0,0" VerticalOptions="FillAndExpand">
+            <Grid>
+                <Label HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Text="" TextColor="black" BackgroundColor="AliceBlue" />
+                <pv:PancakeView CornerRadius="35,30,5,0" Margin="25,35,25,0" BackgroundColor="#8E8A95" Padding="5">
+                    <ListView HasUnevenRows="true" BackgroundColor="#8E8A95" RowHeight="100" SeparatorColor="#6F5C92"  SeparatorVisibility="Default" Grid.Row="0" x:Name="listViews" ItemsSource="{Binding Items}" Margin="20,25,20,0"  ItemSelected="OnItemSelected">
+                    <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <TextCell Text="{Binding Id}" Detail="{Binding Name}" TextColor="white" DetailColor="GhostWhite" />
+                            </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                    
+                </pv:PancakeView>
+          
+            </Grid>
+
+            <!--<ViewCell Height="200">
+                <Frame HasShadow="True" Margin="5" BackgroundColor="AliceBlue" BorderColor="{StaticResource Key=Accent}" Padding="5">
+                    <Grid Padding="0">
+                        <BoxView Grid.Column="0" BackgroundColor="green" WidthRequest="2" HorizontalOptions="Start" VerticalOptions="FillAndExpand"/>
+                        <StackLayout Orientation="Horizontal" Spacing="25" HorizontalOptions="FillAndExpand">
+                            <Label Text="{Binding Id}" FontAttributes="Bold"  FontSize="12" TextColor="Red" />
+                            <Label Text="{Binding Name}" FontAttributes="Bold" TextColor="Green" />
+                        </StackLayout>
+                    </Grid>
+
+            </ViewCell>-->
+
+            <!--<pv:PancakeView Grid.Row="2" BackgroundColor="BlanchedAlmond" x:Name="DetailsView" CornerRadius="0,0,0,0" Padding="35,35,35,0" Margin="0,0,0,0" VerticalOptions="FillAndExpand">
                 <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" VerticalScrollBarVisibility="Never">
                     <StackLayout Spacing="25" HorizontalOptions="FillAndExpand">
                         <Grid HorizontalOptions="FillAndExpand">
@@ -65,7 +71,83 @@
                         </StackLayout>
                     </StackLayout>
                 </ScrollView>
-            </pv:PancakeView>
+            </pv:PancakeView>-->
+            <!--<CollectionView Grid.Row="2" Margin="25" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                        SelectionMode="None" ItemsSource="{Binding MyAgenda}">
+                <CollectionView.Header>
+                    <Label Text="Agenda" TextColor="Black" FontSize="18"/>
+                </CollectionView.Header>
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" ItemSpacing="20"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <pv:PancakeView BackgroundColor="White" VerticalOptions="StartAndExpand" 
+                                    HorizontalOptions="FillAndExpand">
+                            <Grid VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <BoxView BackgroundColor="{Binding Color}" WidthRequest="3" HorizontalOptions="Start"
+                                     VerticalOptions="FillAndExpand"/>
+                                <E Grid.Column="1">
+                                    <Expander.Header>
+                                        <Grid HorizontalOptions="FillAndExpand">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="3.5*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                                                <Label Text="{Binding Date, StringFormat='{0:dd}'}" TextColor="Black" FontSize="27" 
+                                                   HorizontalOptions="Center"/>
+                                                <Label Text="{Binding Date, StringFormat='{0:MMMM}'}" TextColor="Black" FontSize="10" 
+                                                   HorizontalOptions="Center" Margin="0,-10,0,0"/>
+                                            </StackLayout>
+                                            <BoxView Grid.Column="1" BackgroundColor="#F2F4F8" WidthRequest="1" HorizontalOptions="Start" 
+                                                 VerticalOptions="FillAndExpand"/>
+                                            <StackLayout Grid.Column="2" HorizontalOptions="Start" VerticalOptions="Center" Margin="20">
+                                                <Label Text="{Binding Topic}" TextColor="Black" FontSize="15"/>
+                                                <Label Text="{Binding Duration}" TextColor="#2F3246" FontSize="12" Margin="0,-10,0,0"/>
+                                            </StackLayout>
+                                        </Grid>
+                                    </Expander.Header>
+                                    <Grid HorizontalOptions="FillAndExpand">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="3.5*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <BoxView Grid.Column="1" BackgroundColor="#F2F4F8" WidthRequest="1" HorizontalOptions="Start" 
+                                             VerticalOptions="FillAndExpand"/>
+                                        <StackLayout Grid.Column="2" Spacing="10">
+                                            <Label Text="SPEAKERS" TextColor="Black" Opacity="0.5" FontSize="10" Margin="20,0"/>
+                                            <StackLayout BindableLayout.ItemsSource="{Binding Speakers}" HorizontalOptions="Start" VerticalOptions="Center" Margin="20,0,0,20">
+                                                <BindableLayout.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <Label TextColor="#2F3246" FontSize="12">
+                                                            <Label.FormattedText>
+                                                                <FormattedString>
+                                                                    <FormattedString.Spans>
+                                                                        <Span Text="{Binding Time}"/>
+                                                                        <Span Text=" - "/>
+                                                                        <Span Text="{Binding Name}" FontAttributes="Bold"/>
+                                                                    </FormattedString.Spans>
+                                                                </FormattedString>
+                                                            </Label.FormattedText>
+                                                        </Label>
+                                                    </DataTemplate>
+                                                </BindableLayout.ItemTemplate>
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </Grid>
+                                </E>
+                            </Grid>
+                        </pv:PancakeView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>-->
         </Grid>
     </Grid>
 </ContentPage>

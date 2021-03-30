@@ -112,5 +112,13 @@ namespace ProjetGroupe.Models
         {
             return CapteurManager.ListCapteur();
         }
+        public static Task<string> Save(Capteur capteur)
+        {
+            return CapteurManager.Save(capteur);
+        }
+        public Task<string> Save()
+        {
+            return CapteurManager.Save(this);
+        }
     }
 }

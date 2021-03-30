@@ -7,6 +7,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace ProjetGroupe.Views
@@ -30,13 +31,13 @@ namespace ProjetGroupe.Views
             InitializeComponent();
             this.BindingContext = this;
 
-
         }
 
         public void OnImageButtonClicked(object sender, EventArgs e)
         {
             Application.Current.MainPage = new AppShell();
             Xamarin.Essentials.SecureStorage.Remove("CapteurId");
+            this.Navigation.PopAsync();
         }
 
         // public Property Property { get; set; }
@@ -53,6 +54,18 @@ namespace ProjetGroupe.Views
             base.OnDisappearing();
             Xamarin.Essentials.SecureStorage.Remove("CapteurId");
         }
+        public void TapGestureRecognizer_Tapped(System.Object sender, System.EventArgs e)
+        {
+            var mainDisplayInfo = DeviceDisplay.MainDisplayInfo;
+            Action<double> callback = input => DetailsView.HeightRequest = input;
+            double startHeight = mainDisplayInfo.Height / 3;
+            double endiendHeight = 0;
+            uint rate = 32;
+            uint length = 500;
+            Easing easing = Easing.SinOut;
+            DetailsView.Animate("anim", callback, startHeight, endiendHeight, rate, length, easing);
+        }
+   
     }
 
 

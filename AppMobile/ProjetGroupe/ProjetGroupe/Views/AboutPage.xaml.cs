@@ -33,12 +33,6 @@ namespace ProjetGroupe.Views
             this.Navigation.PopAsync();
         }
 
-        protected override void OnAppearing()
-        {
-            base.OnAppearing();
-            DetailsView.TranslationY = 600;
-            DetailsView.TranslateTo(0, 0, 500, Easing.SinInOut);
-        }
         private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var obj = (Equipes)e.SelectedItem;
@@ -48,6 +42,7 @@ namespace ProjetGroupe.Views
             Xamarin.Forms.Application.Current.MainPage = new CapteursDetailsPage();
            // Shell.Current.GoToAsync("/CapteursDetailsPage");
         }
+
     }
 }
 

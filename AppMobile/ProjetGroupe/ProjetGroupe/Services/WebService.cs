@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using ProjetGroupe.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -34,6 +35,7 @@ namespace ProjetGroupe.Services
                 _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             }
         }
+
         //public async Task<WebRequestProperty> GetRepositoriesAsync(string uri)
         //{
         //    WebRequestProperty repositories = null;
@@ -54,7 +56,7 @@ namespace ProjetGroupe.Services
         //    return repositories;
         //}
     }
-   
+
 }
 
 

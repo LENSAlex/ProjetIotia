@@ -1,4 +1,5 @@
-﻿using ProjetGroupe.Services;
+﻿using ProjetGroupe.Models;
+using ProjetGroupe.Services;
 using ProjetGroupe.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -15,25 +16,74 @@ namespace ProjetGroupe.Views
 {
     public partial class SmartOfficePage : ContentPage
     {
+        Personne personne = new Personne();
         RestService _restService;
-
         public SmartOfficePage()
         {
             InitializeComponent();
-            BindingContext = new SmartOfficeViewModel();
+            this.BindingContext = new SmartOfficeViewModel()
+            {
+                ListPersonne = GetJobsInfo(),
+                Id = GetId()
+                
+            };
             _restService = new RestService();
+            //  Picker.ItemDisplayBinding.FallbackValue = personne.RFID;
+        }
+        private List<Personne> GetJobsInfo()
+        {
+            var list = Personne.List();
+            return list.ToList();
+        }
+        private List<int> GetId()
+        {
+            List<int> list = new List<int>();
+            foreach(Personne personne in Personne.List())
+            {
+                list.Add(personne.Id);
+            }
+            return list.ToList();
         }
         //3)SmartOffice => alerte à pénurie de produit avec choix du produit.
 
         //Select sur le choix du produit
-       // PopUp ou alert validation
-       //envoie de msg ou mail ou insert dans bdd
+        // PopUp ou alert validation
+        //envoie de msg ou mail ou insert dans bdd
 
         //For example webrequest
-        async void OnButtonClicked(object sender, EventArgs e)
+        //   async void OnButtonClicked(object sender, EventArgs e)
+        //   {
+        //       var obj = e.LoadFromXaml as Equipes;
+        //       var ide = Convert.ToInt32(obj.Id);
+        //       Penurie penurie = Penurie.Load()
+        ////       List<WebRequestProperty> repositories = await _restService.GetRepositoriesAsync(Constants.WebRequest);
+        //      // collectionView.ItemsSource = repositories;
+        //   }
+
+        async Task OnPickerSelectedIndexChangedAsync(object sender, SelectedItemChangedEventArgs e)
         {
-     //       List<WebRequestProperty> repositories = await _restService.GetRepositoriesAsync(Constants.WebRequest);
-           // collectionView.ItemsSource = repositories;
+            var picker = (Picker)sender;
+            var obj = (Personne)e.SelectedItem;
+            var Id = Convert.ToInt32(obj.Id);
+            // int selectedIndex = picker.SelectedIndex;
+
+            if (Id != 0)
+            {
+                Personne personne = Personne.Load(Id);
+                if (personne != null)
+                {
+                    var result = await DisplayAlert("Attention!", "Voulez vous vraiment alterter que ce produit est en pénurie?", "Valider", "Annuler");
+                    if (result == true)
+                    {
+                        personne.RFID = "C'est la pénurie genre stock faux";
+                        personne.Save();
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
+            }
         }
     }
 }
