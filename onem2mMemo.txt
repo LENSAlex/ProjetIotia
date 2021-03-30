@@ -5,3 +5,101 @@ Sur le mn ss ipe(pour obtenir des programmes d exemples) puis start <ip> pour av
 
 localhost:8080/webpage
 
+
+Requete utilisés:
+GET
+http://127.0.0.1:8080/~/in-cse
+params:[{"key":"X-M2M-Origin","value":"admin:admin","description":""},{"key":"Accept","value":"application/xml","description":""}]
+Voir le format voulu mais nous ca sera json
+
+
+POST
+Pour cree une application on fera peut etre pareil pour chaque type de capteur:
+http://127.0.0.1:8080/~/in-cse
+params:[{"key":"X-M2M-Origin","value":"admin:admin","description":""},{"key":"","value":"","description":""},{"key":"Content-Type","value":"application/xml;ty=2","description":""}]
+Body(XML)
+<m2m:ae xmlns:m2m="http://www.onem2m.org/xml/protocols" rn="MY_SENSOR" >
+     <api> app-sensor </api>
+     <lbl> Type/sensor Category/temperature Location/home </lbl>
+     <rr> false </rr>
+</m2m:ae>
+
+
+Get
+Faire des recherches en fonction de leur libelles
+http://127.0.0.1:8080/~/in-cse?fu=1&lbl=Type/sensor (fu = filter usage / lbl = label)
+params = meme que en haut
+<?xml version="1.0" encoding="UTF-8"?>
+<m2m:uril xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain">/in-cse/in-name/MY_SENSOR /in-cse/in-name/MYSENSOR3 /in-cse/in-name/MYSENSOR2 /in-cse/in-name/MYSENSOR100 /in-cse/in-name/MYSENSOR99</m2m:uril>
+Ressort tous ce qui ont un lbl specifique peut etre construire des labels differents
+
+
+Post 
+Creer un container dans une ressources comme Mysensor
+http://127.0.0.1:8080/~/in-cse/in-name/MYSENSOR100
+params:
+[{"key":"X-M2M-Origin","value":"admin:admin","description":""},{"key":"","value":"","description":""},{"key":"Content-Type","value":"application/xml;ty=3","description":""}]
+body 
+<m2m:cnt xmlns:m2m ="http://www.onem2m.org/xml/protocols" rn="testDedans">
+</m2m:cnt>
+
+Post
+Remplir le container dans la ressources
+http://127.0.0.1:8080/~/in-cse/in-name/MYSENSOR100/testDedans
+Params:
+[{"key":"X-M2M-Origin","value":"admin:admin","description":""},{"key":"","value":"","description":""},{"key":"Content-Type","value":"application/xml;ty=4","description":""}]
+
+body:
+<m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols">
+
+    <cnf>application/xml</cnf>
+
+    <con>
+
+        &lt;obj&gt;
+
+            &lt;str name=&quot;type&quot; val=&quot;Temperature_Sensor&quot;/&gt;
+
+            &lt;str name=&quot;location&quot; val=&quot;Home&quot;/&gt;
+
+            &lt;str name=&quot;appId&quot; val=&quot;MY_SENSOR&quot;/&gt;
+
+            &lt;op name=&quot;getValue&quot; href=&quot;/in-cse/in-name/MY_SENSOR/DATA/la&quot;
+
+         in=&quot;obix:Nil&quot; out=&quot;obix:Nil&quot; is=&quot;retrieve&quot;/&gt;
+
+        &lt;/obj&gt;
+
+    </con>
+
+</m2m:cin>
+
+
+//example pour mettre une temperature
+<m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols">
+
+    <cnf>Essaie test temp</cnf>
+
+    <con>
+
+      &lt;obj&gt;
+
+        &lt;str name=&quot;appId&quot; val=&quot;MY_SENSOR&quot;/&gt;
+
+        &lt;str name=&quot;category&quot; val=&quot;temperature &quot;/&gt;
+
+        &lt;int name=&quot;data&quot; val=&quot;27&quot;/&gt;
+
+        &lt;int name=&quot;unit&quot; val=&quot;celsius&quot;/&gt;
+
+      &lt;/obj&gt;
+
+    </con>
+
+</m2m:cin>
+
+
+Requete pour avoir une data precise:
+Date pour requete ct ou lt a voir
+
+
