@@ -1,0 +1,7 @@
+in et mn liée d'abord start le in puis le mn.
+Le in agit comme proxy.
+
+Sur le mn ss ipe(pour obtenir des programmes d exemples) puis start <ip> pour avoir un prog d exemple avec des valeurs
+
+localhost:8080/webpage
+
