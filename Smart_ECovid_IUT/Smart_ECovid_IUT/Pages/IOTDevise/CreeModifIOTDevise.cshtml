@@ -1,4 +1,145 @@
 ﻿@page
 @model Smart_ECovid_IUT.Pages.IOTDevise.CreeModifIOTDeviseModel
 @{
+    ViewData["Title"] = "Home page";
 }
+<div class="container">
+    <div class="border-bottom mb-4">
+        <h1> Création IOT Devise</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-12 mb-4">
+            <div class="card mb-4">
+                <div class="card-header border-bottom">
+                    <h3>Création Box</h3>
+                </div>
+                <div class="card-body border-bottom">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-md-4 mb-3">
+                                <label for="Nom">Nom</label>
+                                <input type="text" class="form-control" id="Nom" placeholder="Nom" required />
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="Nom">Ip</label>
+                                <input type="text" class="form-control" id="Ip" placeholder="Ip" required />
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="Nom">Description</label>
+                                <input type="text" class="form-control" id="Ip" placeholder="Ip" required />
+                            </div>
+                            <div class="col-md-6 mb-3 ">
+                                <label for="Batiment">Batiment</label>
+                                <select class="form-control select2-multiple" aria-hidden="true">
+                                    <option data-tokens="ketchup mustard">INFORMATIQUE </option>
+                                    <option data-tokens="mustard">INFO COM</option>
+                                    <option data-tokens="frosting">Cyber</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3 ">
+                                <label for="Etage">Etage</label>
+                                <select class="form-control select2-multiple" aria-hidden="true">
+                                    <option data-tokens="ketchup mustard">1</option>
+                                    <option data-tokens="mustard">2</option>
+                                    <option data-tokens="frosting">3</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3 ">
+                                <label for="validationDefault03">Salle</label>
+                                <select class="form-control select2-multiple" aria-hidden="true">
+                                    <option data-tokens="ketchup mustard">102</option>
+                                    <option data-tokens="mustard">202</option>
+                                    <option data-tokens="frosting">306</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Submit form</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-header border-bottom">
+                    <h3>Création Capteur</h3>
+                </div>
+                <div class="card-body border-bottom">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-md-4 mb-3">
+                                <label for="Nom">Nom</label>
+                                <input type="text" class="form-control" id="Nom" placeholder="Nom" required />
+                            </div>
+                            <div class="col-md-4 mb-3 ">
+                                <label for="Batiment">Capteur</label>
+                                <select class="form-control select2-multiple" aria-hidden="true">
+                                    <option data-tokens="ketchup mustard">Tepérature</option>
+                                    <option data-tokens="mustard">Caméra</option>
+                                    <option data-tokens="frosting">Présion</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 mb-3 ">
+                                <label for="Batiment">Box</label>
+                                <select class="form-control select2-multiple" aria-hidden="true">
+                                    <option data-tokens="ketchup mustard">Box - IOTIA </option>
+                                    <option data-tokens="mustard">Box - DAM</option>
+                                    <option data-tokens="frosting">Box - Cyber</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Submit form</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-header border-bottom">
+                    <h3>Création Actionneur</h3>
+                </div>
+                <div class="card-body border-bottom">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="Nom">Nom</label>
+                                <input type="text" class="form-control" id="Nom" placeholder="Nom" required />
+                            </div>
+                            <div class="col-md-6 mb-3 ">
+                                <label for="Batiment">Box</label>
+                                <select class="form-control select2-multiple" aria-hidden="true">
+                                    <option data-tokens="ketchup mustard">Box - IOTIA </option>
+                                    <option data-tokens="mustard">Box - DAM</option>
+                                    <option data-tokens="frosting">Box - Cyber</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Submit form</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card  mb-4">
+                <div class="card-header border-bottom">
+                    <h3>Création Pannaux Solaire</h3>
+                </div>
+                <div class="card-body border-bottom">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="Nom">Nom</label>
+                                <input type="text" class="form-control" id="Nom" placeholder="Nom" required />
+                            </div>
+                            <div class="col-md-6 mb-3 ">
+                                <label for="Batiment">Box</label>
+                                <select class="form-control select2-multiple" aria-hidden="true">
+                                    <option data-tokens="ketchup mustard">Box - IOTIA </option>
+                                    <option data-tokens="mustard">Box - DAM</option>
+                                    <option data-tokens="frosting">Box - Cyber</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Submit form</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

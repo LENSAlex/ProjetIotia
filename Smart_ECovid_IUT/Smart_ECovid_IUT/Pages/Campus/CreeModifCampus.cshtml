@@ -1,4 +1,96 @@
 ﻿@page
 @model Smart_ECovid_IUT.Pages.Campus.CreeModifCampusModel
 @{
+    ViewData["Title"] = "Home page";
 }
+<div class="container">
+    <div class="border-bottom mb-4">
+        <h1> Création Campus</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-12 mb-4">
+            <div class="card mb-4">
+                <div class="card-header border-bottom">
+                    <h3>Création Batiment</h3>
+                </div>
+                <div class="card-body border-bottom">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-md-4 mb-3">
+                                <label for="Nom">Nom</label>
+                                <input type="text" class="form-control" id="Nom" placeholder="Nom" required />
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="Nom">Km²</label>
+                                <input type="text" class="form-control" id="Ip" placeholder="Ip" required />
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="Nom">Description</label>
+                                <input type="text" class="form-control" id="Ip" placeholder="Ip" required />
+                            </div>
+                            <div class="col-md-6 mb-3 ">
+                                <label for="Batiment">Campus</label>
+                                <select class="form-control select2-multiple" aria-hidden="true">
+                                    <option data-tokens="ketchup mustard">Sophia </option>
+                                    <option data-tokens="mustard">Fabron</option>
+                                    <option data-tokens="frosting">Carlone</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Submit form</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-header border-bottom">
+                    <h3>Création Etage</h3>
+                </div>
+                <div class="card-body border-bottom">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="Nom">Etage</label>
+                                <input type="text" class="form-control" id="Etage" placeholder="Nom" required />
+                            </div>
+                            <div class="col-md-6 mb-3 ">
+                                <label for="Batiment">Batiment</label>
+                                <select class="form-control select2-multiple" aria-hidden="true">
+                                    <option data-tokens="ketchup mustard">Informatique</option>
+                                    <option data-tokens="mustard">INFO COM</option>
+                                    <option data-tokens="frosting">Cyber</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Submit form</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card  mb-4">
+                <div class="card-header border-bottom">
+                    <h3>Création Pannaux Solaire</h3>
+                </div>
+                <div class="card-body border-bottom">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="Nom">Salle</label>
+                                <input type="text" class="form-control" id="salle" placeholder="Nom" required />
+                            </div>
+                            <div class="col-md-6 mb-3 ">
+                                <label for="Batiment">Batiment</label>
+                                <select class="form-control select2-multiple" aria-hidden="true">
+                                    <option data-tokens="ketchup mustard">Informatique</option>
+                                    <option data-tokens="mustard">INFO COM</option>
+                                    <option data-tokens="frosting">Cyber</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Submit form</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
