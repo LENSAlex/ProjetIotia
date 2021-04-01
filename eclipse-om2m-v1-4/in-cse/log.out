@@ -21497,3 +21497,7 @@ Response in Router= ResponsePrimitive [
 ]
 [2021-04-01 08:59:35,677 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
 send UTF8
+[2021-04-01 10:47:49,592 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Starting Data Mapper
+[2021-04-01 10:47:49,592 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Registering XML Mapper Service..
