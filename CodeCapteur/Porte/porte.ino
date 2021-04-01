@@ -15,9 +15,10 @@ void setup(){
   M5.Lcd.setCursor(0,10);
   pinMode(0, INPUT);
 }
-
+int cpt=0;
 // the loop routine runs over and over again forever
 void loop() {
+  
   int info = 0;
   // read the state of the pushbutton value
   Serial.println("Port A0: ");

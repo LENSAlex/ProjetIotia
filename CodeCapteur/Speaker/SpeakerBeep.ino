@@ -6,6 +6,7 @@
 #endif
 
 BluetoothSerial SerialBT;
+BluetoothSerial SerialBT_fenetre;
 
 #define NOTE_D0 -1
 #define NOTE_D1 294
@@ -37,8 +38,8 @@ void setup() {
   // Initialize the M5Stack object
   M5.begin();
   M5.Power.begin();
-  SerialBT.begin("Charbonnel_test"); //Bluetooth device name
-  M5.Lcd.printf("M5Stack Speaker test:\r\n");
+  SerialBT.begin("Haut_parleur_BT"); //Bluetooth device name
+  M5.Lcd.printf("Haut parleur activer:\r\n");
 }
 char result[255];
 void loop() {
@@ -46,20 +47,18 @@ void loop() {
   {
     Serial.println(SerialBT.readString());
   }
-  sprintf(result,"%s",SerialBT.readString());
-  M5.Lcd.printf(result);
+  /*sprintf(result,"%s",SerialBT.readString());
+  M5.Lcd.printf(result);*/
   if(SerialBT.readString()=="PirEntreeBL")
   //if(M5.BtnB.wasPressed())
   {
-    M5.Lcd.printf("B wasPressed \r\n");
+    M5.Lcd.printf("B pir \r\n");
     M5.Speaker.tone(NOTE_DH3, 200); //frequency 3000, with a duration of 200ms
   }
-  if(SerialBT.readString()=="GazBL")
-  //if(M5.BtnB.wasPressed())
+  if(SerialBT.readString()=="GazAlerte")
   {
-    M5.Lcd.printf("B wasPressed \r\n");
-    M5.Speaker.tone(NOTE_DH7, 200); //frequency 3000, with a duration of 200ms
+    M5.Lcd.printf("B gazal \r\n");
+    M5.Speaker.tone(NOTE_D1, 200); //frequency 3000, with a duration of 200ms
   }
-
   M5.update();
 }

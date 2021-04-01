@@ -7,7 +7,6 @@
 
 BluetoothSerial SerialBT;
 void setup() {
-  // put your setup code here, to run once:
  M5.begin();
  SerialBT.begin("BtGaz"); //Bluetooth device name
  //Serial.begin(115200);
@@ -16,8 +15,8 @@ void setup() {
 
 void loop() {
 
-  int gaz;
-  // put your main code here, to run repeatedly:
+int gaz;
+
 gaz=analogRead(36);
 Serial.println("GAZ Level :");
 Serial.println(gaz);
