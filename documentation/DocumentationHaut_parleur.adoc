@@ -1,0 +1,119 @@
+---
+title: Documentation Haut parleur
+title_expanded: Documentation Haut parleur
+categories: [ "Structure" ]
+subCategories: [ "Subcategory Name" ]
+---
+// ARDUINO LANGUAGE REFERENCE TAGS (above)   ►►►►► ALWAYS INCLUDE IN YOUR FILE ◄◄◄◄◄
+// title will show up in the Index of all Reference terms
+// If the title is an operator write it out in words in title_expanded
+// categories: Pick between Structure, Variable or Function
+// The subcategory within the ones available in the index ("Digital I/O", "Arithmetic Operators")
+
+
+
+// PAGE TITLE
+= Documentation Haut parleur
+
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+// Describe what this Reference term does, and what it is used for	►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+Le haut parleur joue différents sons en fonction des données qu'il reçoit en Bluetooth. Il y a un son pour un taux de gaz trop élevé, un son pour indiquer qu'une personne est entrée ou qu'une fenêtre est ouverte par exemple
+[%hardbreaks]
+
+image::M5Stack.jpg[caption="", title="M5Stack classique"]
+[%hardbreaks]
+
+
+[float]
+=== Setup
+// Enter Reference term syntax, please specify all available parameters  ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+`void setup()`
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Code Setup
+Initialisation du M5Stack et du Bluetooth
+
+[source,arduino]
+----
+  // Initialize the M5Stack object
+  M5.begin();
+  M5.Power.begin();
+  SerialBT.begin("Haut_parleur_BT"); //Bluetooth device name
+  M5.Lcd.printf("Haut parleur activé\r\n");
+----
+[%hardbreaks]
+
+[float]
+=== Loop
+// Enter Reference term syntax, please specify all available parameters  ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+`void loop()`
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Code Loop
+Programme qui tourne en permanance sur le M5Stack. En fonction de ce qui est reçus. Il y a un son différent qui est joué 
+
+[source,arduino]
+----
+  if (SerialBT.available())
+  {
+    Serial.println(SerialBT.readString());
+  }
+  /*sprintf(result,"%s",SerialBT.readString());
+  M5.Lcd.printf(result);*/
+  if(SerialBT.readString()=="PirEntreeBL")
+  //if(M5.BtnB.wasPressed())
+  {
+    M5.Lcd.printf("B wasPressed \r\n");
+    M5.Speaker.tone(NOTE_DH3, 200); //frequency 3000, with a duration of 200ms
+  }
+  if(SerialBT.readString()=="GazBL")
+  //if(M5.BtnB.wasPressed())
+  {
+    M5.Lcd.printf("B wasPressed \r\n");
+    M5.Speaker.tone(NOTE_DH7, 200); //frequency 3000, with a duration of 200ms
+  }
+  if(SerialBT.readString()=="Ouvert")
+  {
+    M5.Lcd.printf("B wasPressed \r\n");
+    M5.Speaker.tone(NOTE_D7, 200); //frequency 3000, with a duration of 200ms
+  }
+  if(SerialBT.readString()=="Ferme")
+  {
+    M5.Lcd.printf("B wasPressed \r\n");
+    M5.Speaker.tone(NOTE_DH5, 200); //frequency 3000, with a duration of 200ms
+  }
+  if(SerialBT.readString()=="Gaz")
+  {
+    M5.Lcd.printf("B wasPressed \r\n");
+    M5.Speaker.tone(NOTE_D1, 200); //frequency 3000, with a duration of 200ms
+  }
+  M5.update();
+----
+[%hardbreaks]
+
+--
+[#see_also]
+--
+
+[float]
+=== Voir d'autres documentations
+
+[role="language"]
+* #LANGUAGE# link:../../porte[Documentation Porte]
+* #LANGUAGE# link:../gaz/gaz/GAZ[Documentation détecteur de Gaz]
+
