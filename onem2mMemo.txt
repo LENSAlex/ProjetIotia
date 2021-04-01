@@ -52,6 +52,7 @@ Params:
 body:
 <m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols">
 
+    <rn>capteur1</rn>
     <cnf>application/xml</cnf>
 
     <con>
