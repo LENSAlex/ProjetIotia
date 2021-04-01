@@ -33,32 +33,33 @@
                 <ul>
                     <li>
                         <a asp-page="/Utilisateur/CreeModifUtilisateur" class="nav-link text-dark font-italic bg-light ">
-                            <i class="fas fa-user-plus mr-3 text-primary fa-fw"></i>
-                            Crée Utilisateur
+                            <i class="fas fa-user-edit mr-3 text-primary fa-fw"></i>
+                            Mon Profil
                         </a>
                     </li>
                     <li>
-                        <a asp-page="/Utilisateur/ListeUtilisateur" class="nav-link text-dark font-italic bg-light ">
-                            <i class="fas fa-users mr-3 text-primary fa-fw"></i>
-                            Liste Utilisateur
+                        <a asp-page="/Utilisateur/CreeModifUtilisateur" class="nav-link text-dark font-italic bg-light ">
+                            <i class="fas fa-sign-out-alt mr-3 text-primary fa-fw"></i>
+                            Déconnexion
                         </a>
                     </li>
+
                 </ul>
             </li>
             <li class="nav-item">
-                <a class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0"><i class="fas fa-graduation-cap">Test</i></a>
+                <a class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0"><i class="fas fa-radiation-alt">Alerte</i></a>
                 <ul>
                     <li>
                         <a asp-page="/Test/CréeModifPromotion" class="nav-link text-dark font-italic bg-light">
-                            <i class="fas fas fa-plus-circle mr-3 text-primary fa-fw"></i>
-                            Crée Test
+                            <i class="fas fas fa-exclamation mr-3 text-primary fa-fw"></i>
+                            Signalement Covid
                         </a>
                     </li>
                     <li>
                         <a asp-page="/Test/ListePromotion" class="nav-link text-dark font-italic bg-light ">
                             <i class="fas fa-list mr-3 text-primary fa-fw"></i>
 
-                            Liste Test
+                            Liste Alerte
                         </a>
                     </li>
                 </ul>
@@ -67,42 +68,21 @@
                 <a class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0"><i class="fas fa-school">Campus</i></a>
                 <ul>
                     <li>
-                        <a asp-page="/Campus/CreeModifCampus" class="nav-link text-dark font-italic bg-light">
-                            <i class="fas fas fa-plus-circle mr-3 text-primary fa-fw"></i>
-                            Crée Campus
-                        </a>
-                    </li>
-                    <li>
-                        <a asp-page="/Campus/ListeCampus" class="nav-link text-dark font-italic bg-light ">
+                        <a asp-page="/Campus/LogCampus" class="nav-link text-dark font-italic bg-light ">
                             <i class="fas fa-city mr-3 text-primary fa-fw"></i>
-                            Liste Campus
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav-item ">
-                <a class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">
-                    <i class="fas fa-microchip">
-                        IOT Devis
-                    </i>
-                </a>
-                <ul>
-                    <li>
-                        <a asp-page="/IOTDevise/CreeModifIOTDevise" class="nav-link text-dark font-italic bg-light ">
-                            <i class="fas fa-plus-circle mr-3 text-primary fa-fw"></i>
-                            Crée IOT Devis
-
+                            Campus
                         </a>
                     </li>
                     <li>
-                        <a asp-page="/IOTDevise/ListeIOTDevise" class="nav-link text-dark font-italic bg-light ">
-                            <i class="fas fa-list mr-3 text-primary fa-fw"></i>
-                            Liste IOT Devis
-
+                        <a asp-page="/Campus/LogBatiment" class="nav-link text-dark font-italic bg-light">
+                            <i class="fas fas fa-building mr-3 text-primary fa-fw"></i>
+                            Bâtiment
                         </a>
                     </li>
+
                 </ul>
             </li>
+            
 
         </ul>
     </div>

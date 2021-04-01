@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "g6y+Ne/MkbxR57RgKxB9GpELYFGN7/3NszHiVAD4rbb7DRIesQF6TvRzJeNWRmQV/u3FrfgbNVrD5mqRuiGNDA==",
   "success": true,
   "projectFilePath": "C:\\Users\\pd012752\\Desktop\\WEBProjetIotia\\Smart_ECovid_IUT\\ClasseE-Covid\\ClasseE-Covid.csproj",
@@ -61,5 +62,11 @@
     "C:\\Users\\pd012752\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\pd012752\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
   ],
+=======
+  "dgSpecHash": "wCEBqSoneXMWeUFPzsitF0rrMFSsBCxa7G/kZrDkbUbju4oiRNA8bpWiH8sP/H4/xxJvIw2k3THqPB5/hQ7nAg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ga304263\\Source\\Repos\\ProjetIotia\\Smart_ECovid_IUT\\ClasseE-Covid\\ClasseE-Covid.csproj",
+  "expectedPackageFiles": [],
+>>>>>>> a10323e679ee141f933f12a421f0d84997ff9d91
   "logs": []
 }

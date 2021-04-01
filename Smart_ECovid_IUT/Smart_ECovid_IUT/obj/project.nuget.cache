@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "Y9JPSPNAQthJHpLx405/RUUo9QQiFZquCbQp/YTmnEmOiTyVbDyY/agHdVSUOJH/qbNwzGp1JyZEmivJMw2SZA==",
   "success": true,
   "projectFilePath": "C:\\Users\\pd012752\\Desktop\\WEBProjetIotia\\Smart_ECovid_IUT\\Smart_ECovid_IUT\\Smart_ECovid_IUT.csproj",
@@ -61,5 +62,11 @@
     "C:\\Users\\pd012752\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\pd012752\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
   ],
+=======
+  "dgSpecHash": "LHkm5OEGMDnFOtd4WbB7LizZWvTSqQ0SLJPzAbOBIQk4M9nPYQY+WN4bCj/aPffTcwm3JgVa1vsvfGFnGsX33Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ga304263\\Source\\Repos\\ProjetIotia\\Smart_ECovid_IUT\\Smart_ECovid_IUT\\Smart_ECovid_IUT.csproj",
+  "expectedPackageFiles": [],
+>>>>>>> a10323e679ee141f933f12a421f0d84997ff9d91
   "logs": []
 }
