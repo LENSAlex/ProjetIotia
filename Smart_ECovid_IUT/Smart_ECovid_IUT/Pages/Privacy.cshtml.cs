@@ -16,7 +16,7 @@ namespace Smart_ECovid_IUT.Pages
 {
     public class PrivacyModel : PageModel
     {
-        public string element { get; set; }
+      //  public string element { get; set;}
         private readonly ILogger<PrivacyModel> _logger;
 
         private readonly IHttpClientFactory _clientFactory;
@@ -34,9 +34,12 @@ namespace Smart_ECovid_IUT.Pages
         public async Task OnGet() // tache asycrene attent une reponce tache awit 
         {
             var request = new HttpRequestMessage(HttpMethod.Get,
-            "https://api.github.com/repos/dotnet/AspNetCore.Docs/branches");
-            request.Headers.Add("Accept", "application/vnd.github.v3+json");
-            request.Headers.Add("User-Agent", "HttpClientFactory-Sample");
+            "http://51.75.125.121:8080/testlolo2");
+            request.Headers.Add("Accept", "application/json"); // application/vnd.github.v3+json"
+            request.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
+
+            //httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
+            //request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
             var client = _clientFactory.CreateClient();
 

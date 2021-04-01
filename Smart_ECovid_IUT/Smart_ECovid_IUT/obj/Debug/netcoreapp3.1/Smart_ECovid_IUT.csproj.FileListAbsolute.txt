@@ -170,12 +170,12 @@ C:\Users\pd012752\Source\Repos\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj
 C:\Users\pd012752\Source\Repos\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Smart_ECovid_IUT.dll
 C:\Users\pd012752\Source\Repos\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Smart_ECovid_IUT.pdb
 C:\Users\pd012752\Source\Repos\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Smart_ECovid_IUT.genruntimeconfig.cache
+C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\packages.config
 C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\Web.config
 C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\Web.Debug.config
 C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\Web.Release.config
 C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\packages.config
 C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\Smart_ECovid_IUT.exe
 C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\Smart_ECovid_IUT.deps.json
 C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\Smart_ECovid_IUT.runtimeconfig.json
@@ -184,6 +184,13 @@ C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\D
 C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\Smart_ECovid_IUT.pdb
 C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\Smart_ECovid_IUT.Views.dll
 C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\Smart_ECovid_IUT.Views.pdb
+C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\System.Text.Json.dll
 C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\ClasseE-Covid.dll
 C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\ClasseE-Covid.pdb
 C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Smart_ECovid_IUT.csprojAssemblyReference.cache
@@ -203,6 +210,8 @@ C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\D
 C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Smart_ECovid_IUT.RazorCoreGenerate.cache
 C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Campus\CreeModifCampus.cshtml.g.cs
 C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Campus\ListeCampus.cshtml.g.cs
+C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Campus\LogBatiment.cshtml.g.cs
+C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Campus\LogCampus.cshtml.g.cs
 C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Capteur\AfficheCapteur.cshtml.g.cs
 C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
 C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
@@ -210,6 +219,7 @@ C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\D
 C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\IOTDevise\ListeIOTDevise.cshtml.g.cs
 C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\LogAlerte\AfficheLogAlerte.cshtml.g.cs
 C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\LogEtatPlateforme\AfficherLogEtatPlateforme.cshtml.g.cs
+C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Log\Logon.cshtml.g.cs
 C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
 C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Promotion\CréeModifPromotion.cshtml.g.cs
 C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Promotion\ListePromotion.cshtml.g.cs
@@ -228,10 +238,3 @@ C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\D
 C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Smart_ECovid_IUT.dll
 C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Smart_ECovid_IUT.pdb
 C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Smart_ECovid_IUT.genruntimeconfig.cache
-C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
-C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
-C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-C:\Users\pd012752\Desktop\WEBProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\System.Text.Json.dll
