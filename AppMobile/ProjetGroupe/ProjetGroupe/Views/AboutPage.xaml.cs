@@ -40,7 +40,9 @@ namespace ProjetGroupe.Views
             //Application.Current.MainPage.DisplayAlert("Capteur:", "Informations "+ ide, "Ok");
             Xamarin.Essentials.SecureStorage.SetAsync("CapteurId", ide.ToString());
             Xamarin.Forms.Application.Current.MainPage = new CapteursDetailsPage();
-           // Shell.Current.GoToAsync("/CapteursDetailsPage");
+           // Shell.Current.GoToAsync("/CapteursDetailsPage")
+           //;
+           //Permettre la recherche via numéro de salle
         }
 
     }

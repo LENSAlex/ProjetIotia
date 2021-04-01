@@ -1,6 +1,8 @@
-﻿using System;
+﻿using ProjetGroupe.Models.Manager;
+using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace ProjetGroupe.Models
 {
@@ -44,6 +46,10 @@ namespace ProjetGroupe.Models
         public static Salle Load(int Id)
         {
             return new Salle();
+        }
+        public static Task<Salle> LoadSalleById(int Id)
+        {
+            return SalleManager.LoadSalleBy(Id);
         }
 
     }

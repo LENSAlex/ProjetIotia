@@ -1,4 +1,5 @@
-﻿using ProjetGroupe.Models.Manager;
+﻿using Newtonsoft.Json;
+using ProjetGroupe.Models.Manager;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -9,6 +10,7 @@ namespace ProjetGroupe.Models
 {
     public class Capteur
     {
+        [JsonProperty("Id")]
         public int Id_Device { get; set; }
 
         private int _BoxId;

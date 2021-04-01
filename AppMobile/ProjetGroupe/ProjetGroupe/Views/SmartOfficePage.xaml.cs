@@ -59,24 +59,36 @@ namespace ProjetGroupe.Views
         ////       List<WebRequestProperty> repositories = await _restService.GetRepositoriesAsync(Constants.WebRequest);
         //      // collectionView.ItemsSource = repositories;
         //   }
-
-        async Task OnPickerSelectedIndexChangedAsync(object sender, SelectedItemChangedEventArgs e)
+        //Voir poure remettre tout va en void
+        public void OnPickerSelectedIndexChanged(object sender, EventArgs e)
         {
             var picker = (Picker)sender;
-            var obj = (Personne)e.SelectedItem;
-            var Id = Convert.ToInt32(obj.Id);
-            // int selectedIndex = picker.SelectedIndex;
-
+            // var obj = (Personne)e.SelectedItem;
+            //   var Id = Convert.ToInt32(obj.Id);
+            int Id = 1;
+            int selectedIndex = picker.SelectedIndex;
+            Equipement equipement = new Equipement(); // A Remplacer par l'id de l'quipement choisi par le selected item
+            Salle salle = new Salle(); // trouver un moyen de récuperer l'id de la salle.
             if (Id != 0)
             {
                 Personne personne = Personne.Load(Id);
                 if (personne != null)
                 {
-                    var result = await DisplayAlert("Attention!", "Voulez vous vraiment alterter que ce produit est en pénurie?", "Valider", "Annuler");
+                    bool result = true;
+                   // var result = await DisplayAlert("Attention!", "Voulez vous vraiment alterter que ce produit est en pénurie?", "Valider", "Annuler");
                     if (result == true)
                     {
-                        personne.RFID = "C'est la pénurie genre stock faux";
-                        personne.Save();
+                        Penurie penurie = new Penurie()
+                        {
+                            date_maj = DateTime.Now,
+                            Is_Penurie = true,
+                            Id_Equipement = equipement.Id,
+                            SalleId = salle.Id
+                        };
+                    //    await Penurie.UpdateStock(penurie);
+                        personne.RappelMail(personne);
+                        //Envoie d'une notification
+     
                     }
                     else
                     {

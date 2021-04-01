@@ -26,7 +26,7 @@
         <Frame Grid.Row="1" HasShadow="True" CornerRadius="15" Margin="20,-30,20,0" Padding="0" HeightRequest="120" VerticalOptions="Start">
             <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
                 <!--<Button CommandParameter="{Binding Personne.Id}" Clicked="Button_Clicked"></Button>-->
-                <Picker x:Name="Picker" Title="Test" TitleColor="Red" ItemsSource="{Binding ListPersonne}" ItemDisplayBinding="{Binding Id}">
+                <Picker x:Name="Picker" Title="Test" TitleColor="Red" SelectedIndexChanged="OnPickerSelectedIndexChanged" ItemsSource="{Binding ListPersonne}" SelectedItem="{Binding Id}" ItemDisplayBinding="{Binding Id}">
                 </Picker>
             </Grid>
         </Frame>

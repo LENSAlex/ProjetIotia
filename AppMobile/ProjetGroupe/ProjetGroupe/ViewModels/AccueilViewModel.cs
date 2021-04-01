@@ -16,6 +16,7 @@ namespace ProjetGroupe.ViewModels
         //public Personne personne { get; set; }
         Context context;
         public Command AlertCovid { get; }
+     //   public CasCovid cascovid { get; set; }
 
         public AccueilViewModel()
         {
@@ -24,18 +25,28 @@ namespace ProjetGroupe.ViewModels
         }
         public void NotifCovid()
         {
-
             Personne personne = Personne.IsLogged();
             if (personne != null)
             {
+                CasCovid cas = new CasCovid()
+                {
+                    DateDeContamination = DateTime.Now,
+                    PersonneId = personne.Id
+                };
+                CasCovid.SendAlert(cas);
+                personne.RappelMail(personne);
+
+                //envoie un mail, une alerte et maybe une notification
+
+
+
+
                 //string tag = Xamarin.Essentials.SecureStorage.GetAsync("Tag").Result;
                 //string regid = Xamarin.Essentials.SecureStorage.GetAsync("RegId").Result;
                 // int test = 5;
                 //SendTemplateNotificationAsync(notificationParameters, p_tags);
                 // AlertNotifications(context);
                 //SendPushNotification("Test","TestLoris", test, tag);
-                //personne.RappelMail(personne);
-
             }
         }
 
