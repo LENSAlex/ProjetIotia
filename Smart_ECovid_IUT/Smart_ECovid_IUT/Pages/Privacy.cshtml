@@ -1,8 +1,31 @@
 ﻿@page
 @model PrivacyModel
+@using ClasseE_Covid
 @{
     ViewData["Title"] = "Privacy Policy";
 }
 <h1>@ViewData["Title"]</h1>
 
 <p>Use this page to detail your site's privacy policy.</p>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">name</th>
+            <th scope="col">commit</th>
+            <th scope="col">url</th>
+        </tr>
+    </thead>
+    @foreach (GitHubBranch gitHubBranch in Model.Branches)
+    {
+
+        <tbody>
+            <tr>
+                <td>@gitHubBranch.Name</td>
+                <td>Test</td>
+                <td>@gitHubBranch.Protected</td>
+            </tr>
+        </tbody>
+    }
+</table>
