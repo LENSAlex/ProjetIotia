@@ -37,7 +37,7 @@
             </Grid>
         </Frame>
         <ListView x:Name="searchResults" ItemsSource="{Binding SearchResults}" SeparatorVisibility="None"
-                  Grid.Row="3" Margin="20,0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                  Grid.Row="2" Margin="20,0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
             <ListView.ItemTemplate>
                 <DataTemplate >
                     <ViewCell>
@@ -53,7 +53,7 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <ListView x:Name="WeathersList" ItemsSource="{Binding Weathers}" SeparatorVisibility="None"
+        <ListView x:Name="WeathersList" ItemsSource="{Binding Weathers}" SeparatorVisibility="None" IsPullToRefreshEnabled="true" RefreshCommand="{Binding OnRefresh }"
                   Grid.Row="3" Margin="20,10,20,10"   VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
             <ListView.ItemTemplate StyleClass="ListViewCustom">
                 <DataTemplate >

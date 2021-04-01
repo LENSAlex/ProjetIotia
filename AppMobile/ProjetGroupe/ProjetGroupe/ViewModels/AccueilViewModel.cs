@@ -1,4 +1,8 @@
 ﻿
+using Android;
+using Android.App;
+using Android.Content;
+using AndroidX.Core.App;
 using ProjetGroupe.Models;
 using System;
 using System.Collections.Generic;
@@ -10,7 +14,9 @@ namespace ProjetGroupe.ViewModels
     public class AccueilViewModel : BaseViewModel
     {
         //public Personne personne { get; set; }
+        Context context;
         public Command AlertCovid { get; }
+
         public AccueilViewModel()
         {
             var listView = new ListView();
@@ -18,13 +24,56 @@ namespace ProjetGroupe.ViewModels
         }
         public void NotifCovid()
         {
+
             Personne personne = Personne.IsLogged();
             if (personne != null)
             {
-                personne.RappelMail(personne);
+                //string tag = Xamarin.Essentials.SecureStorage.GetAsync("Tag").Result;
+                //string regid = Xamarin.Essentials.SecureStorage.GetAsync("RegId").Result;
+                // int test = 5;
+                //SendTemplateNotificationAsync(notificationParameters, p_tags);
+                // AlertNotifications(context);
+                //SendPushNotification("Test","TestLoris", test, tag);
+                //personne.RappelMail(personne);
+
             }
         }
-    }
 
+        public void AlertNotifications(Context context)
+        {
+
+            var intent = new Intent(context, typeof(AccueilViewModel));
+            intent.AddFlags(ActivityFlags.ClearTop);
+            var pendingIntent = PendingIntent.GetActivity(context, 0, intent, Android.App.PendingIntentFlags.OneShot);
+
+            var notificationBuilder = new NotificationCompat.Builder(context, Config.NotificationChannelID);
+
+            notificationBuilder.SetContentTitle("Title")
+                        .SetSmallIcon(Resource.Drawable.ArrowDownFloat)
+                        .SetContentText("Test loris")
+                        .SetAutoCancel(true)
+                        .SetShowWhen(false)
+                        .SetContentIntent(pendingIntent);
+
+            var notificationManager = NotificationManager.FromContext(context);
+
+            notificationManager.Notify(0, notificationBuilder.Build());
+        }
+        public async void SendPushNotification(string p_title, string p_message, int p_assignmentID, string p_tags)
+        {
+            Dictionary<string, string> notificationParameters = new Dictionary<string, string>();
+            Microsoft.Azure.NotificationHubs.NotificationHubClient hub = null;
+
+            hub = Microsoft.Azure.NotificationHubs.NotificationHubClient.CreateClientFromConnectionString(Config.NotificationEndPoint, Config.NotificationHubName);
+
+            notificationParameters.Add("Title", p_title);
+            notificationParameters.Add("Message", p_message);
+            notificationParameters.Add("AssignmentID", p_assignmentID.ToString());
+
+            await hub.SendTemplateNotificationAsync(notificationParameters, p_tags);
+        }
+    }
 }
+
+
 

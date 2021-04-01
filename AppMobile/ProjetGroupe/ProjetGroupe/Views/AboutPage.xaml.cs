@@ -1,74 +1,48 @@
-﻿using Android.Util;
+﻿
 using Newtonsoft.Json;
 using ProjetGroupe.Models;
+using ProjetGroupe.Models.Manager;
 using ProjetGroupe.Services;
 using ProjetGroupe.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using static ProjetGroupe.ViewModels.AboutViewModel;
+using static ProjetGroupe.Views.CapteursDetailsPage;
 
 namespace ProjetGroupe.Views
 {
-    public partial class AboutPage : ContentPage
+    public partial class AboutPage : ContentPage, INotifyPropertyChanged
     {
-     //   public List<WebRequestProperty> testo { get; set; } = new List<WebRequestProperty>();
 
-        private string username;
-        public string Username { get => username; set => username = value; } 
-        RestService _restService;
-        public AboutPage()
+        public event PropertyChangedEventHandler PropertyChanged;
+        public AboutPage( )
         {
-            _restService = new RestService();
-
             InitializeComponent();
-            this.GetMailAsync();
-            this.BindingContext = this;
+            this.BindingContext = new AboutViewModel();
         }
-        public async void GetMailAsync()
-        {
-            WebRequestProperty test = await _restService.GetRepositoriesAsync(Constants.WebRequest);
-            if (test != null)
-            {
-                username = test.Username;
-            }
-            else
-            {
-                username = "null";
-            }
-        }
-        public string GetMail()
-        {
-            var personne = Personne.IsLogged();
-            if (personne != null)
-            {
-                string email = personne?.Email;
-                return email;
-            }
-            else
-            {
-                return "null";
-            }
-        }
-        async void OnButtonClicked(object sender, EventArgs e)
-        {
-            WebRequestProperty test = await _restService.GetRepositoriesAsync(Constants.WebRequest);
-            // Test.ItemsSource = test;
-            //foreach (WebRequestProperty wb in test)
-            //{
-            //AboutViewModel acc = new AboutViewModel();
-            username = test.Username;
-            //}
 
-        }
-        public class WebRequestProperty
+        private void GoBack(object sender, EventArgs e)
         {
-            [JsonProperty("username")]
-            public string Username { get; set; }
+            this.Navigation.PopAsync();
+        }
+
+        private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var obj = (Equipes)e.SelectedItem;
+            var ide = Convert.ToInt32(obj.Id);
+            //Application.Current.MainPage.DisplayAlert("Capteur:", "Informations "+ ide, "Ok");
+            Xamarin.Essentials.SecureStorage.SetAsync("CapteurId", ide.ToString());
+            Xamarin.Forms.Application.Current.MainPage = new CapteursDetailsPage();
+           // Shell.Current.GoToAsync("/CapteursDetailsPage");
         }
 
     }
 }
+

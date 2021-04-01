@@ -6,7 +6,8 @@
              xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              xmlns:st="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions" xmlns:viewmodels="clr-namespace:ProjetGroupe.Views"
              x:DataType="viewmodels:CapteursDetailsPage"
-             Title="Contacts et Autres">
+             Title="Contacts et Autres"
+             Shell.NavBarIsVisible="False">
     
     <!--<ContentPage.BindingContext>
         <vm:CapteursDetailsViewModel />
@@ -23,80 +24,90 @@
             <RowDefinition Height="2*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <Image Aspect="AspectFill" Source="bg.png" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" st:Transition.Name="PropertyImage"/>
-        <ImageButton BackgroundColor="Transparent" Aspect="Fill" Source="bg.png" Margin="25" WidthRequest="20" HeightRequest="13" 
-                     HorizontalOptions="Start" VerticalOptions="Start" Clicked="GoBack"/>
+        <Image Aspect="AspectFill" Source="bgcapteur2.png" HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" />
+        <ImageButton Clicked="OnImageButtonClicked"  BackgroundColor="Transparent" Aspect="Fill" Source="data2.png" Margin="25" WidthRequest="20" HeightRequest="20" HorizontalOptions="Start" VerticalOptions="Start" />
+        <Label Text="Capteur de température" FontAttributes="Bold" Margin="50,19" FontFamily="roboto" FontSize="16" TextColor="#E38947" />
+        <Label Text="{Binding Capteur.CapteurType}" FontAttributes="Bold" TextColor="Green" />
+        <Frame BorderColor="#E38947"  HasShadow="True" CornerRadius="30" Grid.Row="1" Padding="35,35,35,0" Margin="0,-35,0,-100" >
+            <Frame.Background>
+                <LinearGradientBrush StartPoint="1,1" EndPoint="0,0">
+                    <GradientStop Color="#F0EADB"
+                          Offset="0.8" /> 
+                    <GradientStop Color="#F8ECD6"
+                          Offset="2.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+        </Frame>
         <pv:PancakeView x:Name="DetailsView" Grid.Row="1" CornerRadius="30,30,0,0" Padding="35,35,35,0" Margin="0,-40,0,0" 
-                        BackgroundColor="White" VerticalOptions="FillAndExpand">
+                        BackgroundColor="Transparent" VerticalOptions="FillAndExpand">
             <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" VerticalScrollBarVisibility="Never">
                 <StackLayout Spacing="15" HorizontalOptions="FillAndExpand">
                     <Grid HorizontalOptions="FillAndExpand">
+                        <!--<BoxView HeightRequest="2"  Margin="10" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" BackgroundColor="Gray" WidthRequest="90"/>-->
                         <StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="FillAndExpand">
-                            <Image HeightRequest="12" WidthRequest="8" Source="address.png" VerticalOptions="Center" HorizontalOptions="Start"/>
-                            <Label Text="Adresse" FontSize="15" TextColor="Black" FontFamily="ThemeFontRegular" HorizontalOptions="Start" VerticalOptions="Center"/>
+    
+                            <Image HeightRequest="22" WidthRequest="12" Source="address.png" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            <Label Text="Salle 209 Bâtiment IUT" FontSize="15" TextColor="Black" FontFamily="ThemeFontRegular" HorizontalOptions="Start" VerticalOptions="Center"/>
                         </StackLayout>
-                        <ImageButton BackgroundColor="Transparent" Aspect="Fill" HeightRequest="30" WidthRequest="30" Source="direction.png" VerticalOptions="Center" HorizontalOptions="End"/>
+                        
+                        <ImageButton BackgroundColor="Transparent" Aspect="Fill" HeightRequest="35" WidthRequest="35" Source="accueil.png" VerticalOptions="Center" Clicked="OnImageButtonClicked" HorizontalOptions="End"/>
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                        </Grid.GestureRecognizers>
                     </Grid>
                     <StackLayout Grid.Row="1" Spacing="15" >
-                        <Label Text="Price" FontSize="20" FontFamily="ThemeFontBold" TextColor="#515151"/>
+                        <Label Text="Date du jour" FontAttributes="Bold" FontSize="20" FontFamily="ThemeFontBold" TextColor="Black"/>
                         <StackLayout Orientation="Horizontal" Spacing="15">
-                            <StackLayout Orientation="Horizontal" Spacing="10">
+                            <!--<StackLayout Orientation="Horizontal" Spacing="10">
                                 <Image WidthRequest="16" Source="bed.png"/>
-                                <Label Text="Bed" FontSize="12" FontFamily="ThemeFontRegular" TextColor="#707070"/>
+                                <Label Text="Bed" FontSize="12" FontFamily="ThemeFontRegular" TextColor="#E38947"/>
                             </StackLayout>
                             <StackLayout Orientation="Horizontal" Spacing="10">
                                 <Image WidthRequest="16" Source="shower.png"/>
-                                <Label Text="Bath" FontSize="12" FontFamily="ThemeFontRegular" TextColor="#707070"/>
+                                <Label Text="Bath" FontSize="12" FontFamily="ThemeFontRegular" TextColor="#E38947"/>
                             </StackLayout>
                             <StackLayout Orientation="Horizontal" Spacing="10">
                                 <Image WidthRequest="16" Source="square.png"/>
                                 <Label Text="Space" FontSize="12" FontFamily="ThemeFontRegular" TextColor="#707070"/>
-                            </StackLayout>
+                            </StackLayout>-->
                         </StackLayout>
                     </StackLayout>
-                    <BoxView HeightRequest="1" VerticalOptions="Start" HorizontalOptions="FillAndExpand" BackgroundColor="#E4E4E4"/>
+                    <BoxView HeightRequest="1" VerticalOptions="Start" HorizontalOptions="FillAndExpand" BackgroundColor="#E38947"/>
                     <StackLayout Orientation="Horizontal" Spacing="30" HorizontalOptions="Center">
                         <StackLayout>
                             <pv:PancakeView BackgroundColor="#E9E9E9" HeightRequest="50" WidthRequest="50" CornerRadius="30" HorizontalOptions="Center">
-                                <Image WidthRequest="16" HeightRequest="16" Source="phone.png" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                <Label Margin="17,15,8,0" Text="53°" FontSize="12" FontAttributes="Bold" TextColor="#E38947"/>
                             </pv:PancakeView>
-                            <Label Text="Call" TextColor="#8D8D8D" FontSize="14" FontFamily="ThemeFontMedium" HorizontalTextAlignment="Center"/>
+                            <Label Text="Maintenant" TextColor="Black" FontSize="12" FontFamily="ThemeFontMedium" HorizontalTextAlignment="Center"/>
                         </StackLayout>
                         <StackLayout>
                             <pv:PancakeView BackgroundColor="#E9E9E9" HeightRequest="50" WidthRequest="50" CornerRadius="30" HorizontalOptions="Center">
-                                <Image WidthRequest="16" HeightRequest="16" Source="email.png" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                <Label Margin="17,15,8,0" Text="53°" FontSize="12" FontAttributes="Bold" TextColor="#E38947"/>
                             </pv:PancakeView>
-                            <Label Text="Email" TextColor="#8D8D8D" FontSize="14" FontFamily="ThemeFontMedium" HorizontalTextAlignment="Center"/>
+                            <Label Text="Hier" TextColor="Black" FontSize="12" FontFamily="ThemeFontMedium" HorizontalTextAlignment="Center"/>
                         </StackLayout>
                         <StackLayout>
                             <pv:PancakeView BackgroundColor="#E9E9E9" HeightRequest="50" WidthRequest="50" CornerRadius="30" HorizontalOptions="Center">
-                                <Image WidthRequest="16" HeightRequest="16" Source="map.png" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                <Label Margin="17,15,8,0" Text="53°" FontSize="12" FontAttributes="Bold" TextColor="#E38947"/>
                             </pv:PancakeView>
-                            <Label Text="Map View" TextColor="#8D8D8D" FontSize="14" FontFamily="ThemeFontMedium" HorizontalTextAlignment="Center"/>
+                            <Label Text="Seuil" TextColor="Black" FontSize="12" FontFamily="ThemeFontMedium" HorizontalTextAlignment="Center"/>
                         </StackLayout>
                         <StackLayout>
                             <pv:PancakeView BackgroundColor="#E9E9E9" HeightRequest="50" WidthRequest="50" CornerRadius="30" HorizontalOptions="Center">
-                                <Image WidthRequest="16" HeightRequest="16" Source="more.png" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                <Label Margin="17,15,8,0" Text="53°" FontSize="12" FontAttributes="Bold" TextColor="#E38947"/>
                             </pv:PancakeView>
-                            <Label Text="More" TextColor="#8D8D8D" FontSize="14" FontFamily="ThemeFontMedium" HorizontalTextAlignment="Center"/>
+                            <Label Text="Moyenne" TextColor="Black" FontSize="12" FontFamily="ThemeFontMedium" HorizontalTextAlignment="Center"/>
                         </StackLayout>
                     </StackLayout>
-                    <BoxView HeightRequest="1" VerticalOptions="Start" HorizontalOptions="FillAndExpand" BackgroundColor="#E4E4E4"/>
-                    <Label Text="Details" FontSize="15" FontFamily="ThemeFontBold" TextColor="#515151"/>
-                    <Label Text="Details"  FontSize="15" FontFamily="ThemeFontRegular" TextColor="#515151"/>
+                    <BoxView HeightRequest="1" VerticalOptions="Start" HorizontalOptions="FillAndExpand" BackgroundColor="#E38947"/>
+                    <!--<Label Text="Description / Libelle" FontSize="16" FontFamily="ThemeFontBold" TextColor="#515151"/>-->
+                    <Label Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                           when an unknown printer took a galley of type and scrambled it to make a type specimen book."  FontSize="15" FontFamily="ThemeFontRegular" TextColor="#515151"/>
                 </StackLayout>
             </ScrollView>
         </pv:PancakeView>
-        <pv:PancakeView Grid.Row="2" HeightRequest="50" >
-            <pv:PancakeView.BackgroundGradientStops>
-                <pv:GradientStopCollection>
-                    <pv:GradientStop Color="#FF4157" Offset="0" />
-                    <pv:GradientStop Color="#FF4359" Offset="0.5" />
-                    <pv:GradientStop Color="#FE93C5" Offset="1" />
-                </pv:GradientStopCollection>
-            </pv:PancakeView.BackgroundGradientStops>
-            <Label Text="Book Now" TextColor="White" FontSize="15" FontFamily="ThemeFontBold" VerticalOptions="Center" HorizontalTextAlignment="Center"/>
-        </pv:PancakeView>
+
     </Grid>
 
 </ContentPage>

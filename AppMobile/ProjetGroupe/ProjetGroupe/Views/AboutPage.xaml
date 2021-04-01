@@ -2,132 +2,152 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjetGroupe.Views.AboutPage"
-             xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
-             xmlns:st="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions" 
-             xmlns:views="clr-namespace:ProjetGroupe.Views" x:DataType="views:AboutPage"
-             Title="Contacts et Autres">
+             xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" 
+             Title="Liste des données consultables"
+             xmlns:vm="clr-namespace:ProjetGroupe.ViewModels"
+             Shell.NavBarIsVisible="True">
     
-    <!--<ContentPage.BindingContext>
-        <viewmodels:AboutViewModel />
-    </ContentPage.BindingContext>-->
-
-    <ContentPage.Resources>
+    <ContentPage.BindingContext>
+            <vm:AboutViewModel />
+    </ContentPage.BindingContext>
+    
+        <ContentPage.Resources>
         <ResourceDictionary>
             <Color x:Key="Accent">#96d1ff</Color>
         </ResourceDictionary>
     </ContentPage.Resources>
-
-    <Grid BackgroundColor="#F9F9F9" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="20">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <Frame HasShadow="True" Margin="0,20" Padding="0" HeightRequest="40" HorizontalOptions="FillAndExpand">
+   
+    <Grid BackgroundColor="#F9F9F9" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="0">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
             <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="Auto"/>
-                </Grid.ColumnDefinitions>
-                <!--<Image HeightRequest="20" WidthRequest="20" Margin="20,0" Source="search.png"/>
-                <Entry Grid.Column="1" Placeholder="Search" TextColor="Black" FontSize="15" FontFamily="ThemeFontRegular" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-                <Image Grid.Column="2" HeightRequest="20" WidthRequest="20" Margin="20,0" Source="filter.png"/>-->
-                <Label Text="{Binding Username}" Margin="0" TextColor="#DFDBED" FontSize="16" HorizontalTextAlignment="Center" />
+                <Label HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Text="" TextColor="black" BackgroundColor="AliceBlue" />
+                <pv:PancakeView CornerRadius="35,30,5,0" Margin="25,35,25,0" BackgroundColor="#8E8A95" Padding="5">
+                    <ListView HasUnevenRows="true" BackgroundColor="#8E8A95" RowHeight="100" SeparatorColor="#6F5C92"  SeparatorVisibility="Default" Grid.Row="0" x:Name="listViews" ItemsSource="{Binding Items}" Margin="20,25,20,0"  ItemSelected="OnItemSelected">
+                    <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <TextCell Text="{Binding Id}" Detail="{Binding Name}" TextColor="white" DetailColor="GhostWhite" />
+                            </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                    
+                </pv:PancakeView>
+          
             </Grid>
-           
-        </Frame>
-      
-    </Grid>
-    <!--StackLayout Grid.Row="1">
-            <Label Text="Property Type" TextColor="#515151" FontSize="15" FontFamily="ThemeFontBold"/>
-            <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
-                <StackLayout Orientation="Horizontal" Spacing="10">
-                    --><!--BindableLayout.ItemsSource="PropertyList"--><!--
-                    <BindableLayout.ItemTemplate>
-                        <DataTemplate>
-                            <pv:PancakeView CornerRadius="15" Margin="5,10,0,10" BackgroundColor="White">
-                                <pv:PancakeView.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="SelectType"/>
-                                </pv:PancakeView.GestureRecognizers>
-                                <VisualStateManager.VisualStateGroups>
-                                    <VisualStateGroup x:Name="CommonStates">
-                                        <VisualState x:Name="Normal">
-                                            <VisualState.Setters>
-                                                --><!--<Setter Property="BackgroundGradientStops" Value="{x:Null}"/>--><!--
-                                            </VisualState.Setters>
-                                        </VisualState>
-                                        <VisualState x:Name="Selected">
-                                            <VisualState.Setters>
-                                                <Setter Property="BackgroundGradientStops">
-                                                    <Setter.Value>
-                                                        <pv:GradientStopCollection>
-                                                            <pv:GradientStop Color="#FF4157" Offset="0" />
-                                                            <pv:GradientStop Color="#FF4359" Offset="0.5" />
-                                                            <pv:GradientStop Color="#FE93C5" Offset="1" />
-                                                        </pv:GradientStopCollection>
-                                                    </Setter.Value>
-                                                </Setter>
-                                                --><!--<Setter Property="BackgroundGradientAngle" Value="270"/>--><!--
-                                            </VisualState.Setters>
-                                        </VisualState>
-                                    </VisualStateGroup>
-                                </VisualStateManager.VisualStateGroups>
-                                <Label x:Name="PropertyTypeName" Padding="20,5" Text="ok" TextColor="#707070" FontSize="15" FontFamily="ThemeFontRegular"/>
-                            </pv:PancakeView>
-                        </DataTemplate>
-                    </BindableLayout.ItemTemplate>
-                </StackLayout>
-            </ScrollView>
-        </StackLayout>
-        <ScrollView Grid.Row="2" Margin="0,10" VerticalScrollBarVisibility="Never">
-            <StackLayout BackgroundColor="Transparent">
-                <BindableLayout.ItemTemplate>
+
+            <!--<ViewCell Height="200">
+                <Frame HasShadow="True" Margin="5" BackgroundColor="AliceBlue" BorderColor="{StaticResource Key=Accent}" Padding="5">
+                    <Grid Padding="0">
+                        <BoxView Grid.Column="0" BackgroundColor="green" WidthRequest="2" HorizontalOptions="Start" VerticalOptions="FillAndExpand"/>
+                        <StackLayout Orientation="Horizontal" Spacing="25" HorizontalOptions="FillAndExpand">
+                            <Label Text="{Binding Id}" FontAttributes="Bold"  FontSize="12" TextColor="Red" />
+                            <Label Text="{Binding Name}" FontAttributes="Bold" TextColor="Green" />
+                        </StackLayout>
+                    </Grid>
+
+            </ViewCell>-->
+
+            <!--<pv:PancakeView Grid.Row="2" BackgroundColor="BlanchedAlmond" x:Name="DetailsView" CornerRadius="0,0,0,0" Padding="35,35,35,0" Margin="0,0,0,0" VerticalOptions="FillAndExpand">
+                <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" VerticalScrollBarVisibility="Never">
+                    <StackLayout Spacing="25" HorizontalOptions="FillAndExpand">
+                        <Grid HorizontalOptions="FillAndExpand">
+                            <StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="FillAndExpand">
+                                <Image HeightRequest="12" WidthRequest="8" Source="address.png" VerticalOptions="Center" HorizontalOptions="Start"/>
+                                <Label Text="Capteurs: " FontSize="16" TextColor="Black" FontFamily="ThemeFontRegular" HorizontalOptions="Start" VerticalOptions="Center"/>
+                            </StackLayout>
+                            <ImageButton BackgroundColor="Transparent" Aspect="Fill" HeightRequest="40" WidthRequest="40" Source="data2.png" VerticalOptions="Center" HorizontalOptions="End"/>
+
+                        </Grid>
+                        <StackLayout Grid.Row="1" Spacing="15" >
+                            <Label Text="Mesures:" FontSize="20" FontFamily="ThemeFontBold" TextColor="#515151"/>
+                        </StackLayout>
+                        <BoxView HeightRequest="1" VerticalOptions="Start" HorizontalOptions="FillAndExpand" BackgroundColor="DarkGray"/>
+                        <BoxView HeightRequest="1" VerticalOptions="Start" HorizontalOptions="FillAndExpand" BackgroundColor="DarkGray"/>
+                        <StackLayout Grid.Row="1" Spacing="15" >
+                            <Label Text="Consommation Energétique:" FontSize="20" FontFamily="ThemeFontBold" TextColor="#515151"/>
+                        </StackLayout>
+                    </StackLayout>
+                </ScrollView>
+            </pv:PancakeView>-->
+            <!--<CollectionView Grid.Row="2" Margin="25" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                        SelectionMode="None" ItemsSource="{Binding MyAgenda}">
+                <CollectionView.Header>
+                    <Label Text="Agenda" TextColor="Black" FontSize="18"/>
+                </CollectionView.Header>
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" ItemSpacing="20"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <pv:PancakeView HeightRequest="190" Margin="5,10" CornerRadius="5"  BackgroundColor="White">
-                            <Grid>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto"/>
-                                    <RowDefinition Height="*"/>
-                                </Grid.RowDefinitions>
-                                <Grid.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="PropertySelected"/>
-                                </Grid.GestureRecognizers>
-                                <Image HeightRequest="115" Aspect="AspectFill" Source="bg.png" st:Transition.Name="PropertyImage"/>
-                                <Image Source="bookmark.png" HorizontalOptions="End" Margin="12" HeightRequest="16" VerticalOptions="Start"/>
-                                <Grid VerticalOptions="End" Margin="15">
-                                    <pv:PancakeView CornerRadius="13" Padding="15,5" BackgroundColor="Black" Opacity="0.5" 
-                                                    HorizontalOptions="Start" VerticalOptions="Start">
-                                        <StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="Start">
-                                            <Image HeightRequest="12" WidthRequest="12" Source="location.png" VerticalOptions="Center" HorizontalOptions="Start"/>
-                                            <Label Text="location" FontSize="12" TextColor="White" FontFamily="ThemeFontRegular" VerticalOptions="Center"/>
+                        <pv:PancakeView BackgroundColor="White" VerticalOptions="StartAndExpand" 
+                                    HorizontalOptions="FillAndExpand">
+                            <Grid VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <BoxView BackgroundColor="{Binding Color}" WidthRequest="3" HorizontalOptions="Start"
+                                     VerticalOptions="FillAndExpand"/>
+                                <E Grid.Column="1">
+                                    <Expander.Header>
+                                        <Grid HorizontalOptions="FillAndExpand">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="3.5*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                                                <Label Text="{Binding Date, StringFormat='{0:dd}'}" TextColor="Black" FontSize="27" 
+                                                   HorizontalOptions="Center"/>
+                                                <Label Text="{Binding Date, StringFormat='{0:MMMM}'}" TextColor="Black" FontSize="10" 
+                                                   HorizontalOptions="Center" Margin="0,-10,0,0"/>
+                                            </StackLayout>
+                                            <BoxView Grid.Column="1" BackgroundColor="#F2F4F8" WidthRequest="1" HorizontalOptions="Start" 
+                                                 VerticalOptions="FillAndExpand"/>
+                                            <StackLayout Grid.Column="2" HorizontalOptions="Start" VerticalOptions="Center" Margin="20">
+                                                <Label Text="{Binding Topic}" TextColor="Black" FontSize="15"/>
+                                                <Label Text="{Binding Duration}" TextColor="#2F3246" FontSize="12" Margin="0,-10,0,0"/>
+                                            </StackLayout>
+                                        </Grid>
+                                    </Expander.Header>
+                                    <Grid HorizontalOptions="FillAndExpand">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="3.5*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <BoxView Grid.Column="1" BackgroundColor="#F2F4F8" WidthRequest="1" HorizontalOptions="Start" 
+                                             VerticalOptions="FillAndExpand"/>
+                                        <StackLayout Grid.Column="2" Spacing="10">
+                                            <Label Text="SPEAKERS" TextColor="Black" Opacity="0.5" FontSize="10" Margin="20,0"/>
+                                            <StackLayout BindableLayout.ItemsSource="{Binding Speakers}" HorizontalOptions="Start" VerticalOptions="Center" Margin="20,0,0,20">
+                                                <BindableLayout.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <Label TextColor="#2F3246" FontSize="12">
+                                                            <Label.FormattedText>
+                                                                <FormattedString>
+                                                                    <FormattedString.Spans>
+                                                                        <Span Text="{Binding Time}"/>
+                                                                        <Span Text=" - "/>
+                                                                        <Span Text="{Binding Name}" FontAttributes="Bold"/>
+                                                                    </FormattedString.Spans>
+                                                                </FormattedString>
+                                                            </Label.FormattedText>
+                                                        </Label>
+                                                    </DataTemplate>
+                                                </BindableLayout.ItemTemplate>
+                                            </StackLayout>
                                         </StackLayout>
-                                    </pv:PancakeView>
-                                </Grid>
-                                <StackLayout Grid.Row="1" Spacing="5" Margin="20,5">
-                                    <Label Text="price" FontSize="15" FontFamily="ThemeFontBold" TextColor="#515151"/>
-                                    <StackLayout Orientation="Horizontal" Spacing="15">
-                                        <StackLayout Orientation="Horizontal" Spacing="10">
-                                            <Image WidthRequest="16" Source="bed.png"/>
-                                            <Label Text="bed" FontSize="12" FontFamily="ThemeFontRegular" TextColor="#707070"/>
-                                        </StackLayout>
-                                        <StackLayout Orientation="Horizontal" Spacing="10">
-                                            <Image WidthRequest="16" Source="shower.png"/>
-                                            <Label Text="bath" FontSize="12" FontFamily="ThemeFontRegular" TextColor="#707070"/>
-                                        </StackLayout>
-                                        <StackLayout Orientation="Horizontal" Spacing="10">
-                                            <Image WidthRequest="16" Source="square.png"/>
-                                            <Label Text="space" FontSize="12" FontFamily="ThemeFontRegular" TextColor="#707070"/>
-                                        </StackLayout>
-                                    </StackLayout>
-                                </StackLayout>
+                                    </Grid>
+                                </E>
                             </Grid>
                         </pv:PancakeView>
                     </DataTemplate>
-                </BindableLayout.ItemTemplate>
-            </StackLayout>
-        </ScrollView>
-    </Grid>-->
-
-
+                </CollectionView.ItemTemplate>
+            </CollectionView>-->
+        </Grid>
+    </Grid>
 </ContentPage>

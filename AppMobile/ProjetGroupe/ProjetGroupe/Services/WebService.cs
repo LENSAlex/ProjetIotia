@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using ProjetGroupe.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -34,27 +35,28 @@ namespace ProjetGroupe.Services
                 _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             }
         }
-        public async Task<WebRequestProperty> GetRepositoriesAsync(string uri)
-        {
-            WebRequestProperty repositories = null;
-            try
-            {
-                HttpResponseMessage response = await _client.GetAsync(uri);
-                if (response.IsSuccessStatusCode)
-                {
-                    string content = await response.Content.ReadAsStringAsync();
-                    repositories = JsonConvert.DeserializeObject<WebRequestProperty>(content);
-                }
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine("\tERROR {0}", ex.Message);
-            }
 
-            return repositories;
-        }
+        //public async Task<WebRequestProperty> GetRepositoriesAsync(string uri)
+        //{
+        //    WebRequestProperty repositories = null;
+        //    try
+        //    {
+        //        HttpResponseMessage response = await _client.GetAsync(uri);
+        //        if (response.IsSuccessStatusCode)
+        //        {
+        //            string content = await response.Content.ReadAsStringAsync();
+        //            repositories = JsonConvert.DeserializeObject<WebRequestProperty>(content);
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Debug.WriteLine("\tERROR {0}", ex.Message);
+        //    }
+
+        //    return repositories;
+        //}
     }
-   
+
 }
 
 

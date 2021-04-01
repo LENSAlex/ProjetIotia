@@ -1,5 +1,6 @@
 ﻿using ProjetGroupe.Models;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
@@ -22,15 +23,15 @@ namespace ProjetGroupe.ViewModels
         private string temp;
         public string Temp { get => temp; set => SetProperty(ref temp, value); }
         public List<Personne> Weathers { get => WeatherData(); }
-
+        public Command PerformSearch;
         private string text;
         private string description;
         public string SearchResults { get; set; }
         public SmartBuildingViewModel()
         {
-
+            OnRefresh = new Command(OnRefreshing);
         }
-
+        public Command OnRefresh;
         //public string ListPersonne { get => Personne(Email); }
         private string Personnes(string query)
         {
@@ -42,6 +43,30 @@ namespace ProjetGroupe.ViewModels
         {
             SearchBar searchBar = (SearchBar)sender;
             SearchResults = Personnes(searchBar.Text);
+        }
+        void OnTap(object sender, ItemTappedEventArgs e)
+        {
+            Application.Current.MainPage.DisplayAlert("TAPED:", "Informations incorrectes", "Ok");
+        }
+
+        public void OnSelection(object sender, SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem == null)
+            {
+                return;
+            }
+            Application.Current.MainPage.DisplayAlert("Erreur:", "Informations incorrectes", "Ok");
+        }
+
+        public void OnRefreshing()
+        {
+            var personne = Personne.IsLogged();
+            if (personne != null)
+            {
+                IsBusy = false;
+            }
+            //make sure to end the refresh state
+           
         }
         // public string Email { get; set; }
 
@@ -94,7 +119,7 @@ namespace ProjetGroupe.ViewModels
 
             // return tempList;
         }
-
     }
+
 }
 

@@ -42,7 +42,5 @@ namespace ProjetGroupe.ViewModels
             //Save the stream as a file in the device and invoke it for viewing
             DependencyService.Get<ISave>().SaveAndView("Output.pdf", "application/pdf", stream);
         }
-
-
     }
 }

@@ -46,12 +46,6 @@ namespace ProjetGroupe.ViewModels
 
         private async void OnLoginClicked(object obj)
         {
-
-            // var handler = new HttpClientHandler { CookieContainer = CookieContainer };
-            // var httpClient = new HttpClient(handler);
-            //  CookieContainer = handler.CookieContainer;
-            //  ISharedPreferencesEditor session = session.;
-
             if (!String.IsNullOrEmpty(identifiant) && !String.IsNullOrEmpty(password))
             {
                 Personne utilisateur = Personne.Search(identifiant, MHash.HashString(password));
@@ -60,25 +54,38 @@ namespace ProjetGroupe.ViewModels
                 {
                     await Xamarin.Essentials.SecureStorage.SetAsync("isLogged", "1");
                     await Xamarin.Essentials.SecureStorage.SetAsync("Id", utilisateur.Id.ToString());
+                    RegisterDeviceForPushNotifications();
                     Xamarin.Forms.Application.Current.MainPage = new AppShell();
                     await Shell.Current.GoToAsync($"{nameof(AccueilPage)}");
                 }
                 else
                 {
-                    //Page page = new Page();
-                    //await page.DisplayAlert("Alert", "You have been alerted", "OK");
                     await Xamarin.Forms.Application.Current.MainPage.DisplayAlert("Erreur:", "Informations incorrectes", "Ok");
                 }
             }
-            //    else
-            //    {
-            //        await Shell.Current.GoToAsync($"{nameof(LoginPage)}");
-            //    }
-            //}
-            //else
-            //{
-            //    await Shell.Current.GoToAsync($"{nameof(LoginPage)}");
-            //}
+        }
+        public static void RegisterDeviceForPushNotifications()
+        {
+            IRegisterNotifications reg = null;
+            List<string> tagList = new List<string>();
+            string token = "";
+            string tags = "";
+
+            tags = Xamarin.Essentials.SecureStorage.GetAsync("Tag").Result;
+
+            if (tags != null)
+            {
+                token = Xamarin.Essentials.SecureStorage.GetAsync("HubToken").Result;
+                //  tagList.Add(App.Current.ToString());
+                //  tagList.Add("DCW");
+               
+                tagList.Add(tags);
+                tagList.Add("DCW");
+          
+                reg = Xamarin.Forms.DependencyService.Get<IRegisterNotifications>();
+
+                reg.RegisterDevice(token, tagList);
+            }
         }
     }
 }

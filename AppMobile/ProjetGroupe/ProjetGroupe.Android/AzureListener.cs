@@ -5,9 +5,9 @@ using WindowsAzure.Messaging.NotificationHubs;
 
 namespace ProjetGroupe.Droid
 {
-    public class AzureListener : Java.Lang.Object, INotificationListener
+    public class AzureListener : Java.Lang.Object, WindowsAzure.Messaging.NotificationHubs.INotificationListener
     {
-        public void OnPushNotificationReceived(Context context, INotificationMessage message)
+        public void OnPushNotificationReceived(Context context, WindowsAzure.Messaging.NotificationHubs.INotificationMessage message)
         {
             var intent = new Intent(context, typeof(MainActivity));
             intent.AddFlags(ActivityFlags.ClearTop);
@@ -26,5 +26,7 @@ namespace ProjetGroupe.Droid
 
             notificationManager.Notify(0, notificationBuilder.Build());
         }
+
+
     }
 }

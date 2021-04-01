@@ -18,20 +18,19 @@ namespace ProjetGroupe
             InitializeComponent();
             this.BindingContext = this;
 
-            Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
-            Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
             Routing.RegisterRoute(nameof(AccueilPage), typeof(AccueilPage));
             Routing.RegisterRoute(nameof(SmartOfficePage), typeof(SmartOfficePage));
             Routing.RegisterRoute(nameof(SmartBuildingPage), typeof(SmartBuildingPage));
             Routing.RegisterRoute(nameof(eCovidPage), typeof(eCovidPage));
             Routing.RegisterRoute(nameof(AboutPage), typeof(AboutPage));
-            Routing.RegisterRoute(nameof(CapteursDetailsPage), typeof(CapteursDetailsPage));
+            //Routing.RegisterRoute(nameof(CapteursDetailsPage), typeof(CapteursDetailsPage));
             //Routing.RegisterRoute(nameof(TestPage), typeof(TestPage));
         }
 
 
         private  void OnMenuItemClicked(object sender, EventArgs e)
         {
+            Xamarin.Essentials.SecureStorage.Remove("CapteurId");
             Xamarin.Essentials.SecureStorage.Remove("isLogged");
             Application.Current.MainPage = new LoginPage();
             //await Shell.Current.GoToAsync("///LoginPage");
@@ -51,6 +50,10 @@ namespace ProjetGroupe
         private async void OneCovidPageClicked(object sender, EventArgs e)
         {
             await Shell.Current.GoToAsync("/eCovidPage");
+        }
+        private async void OnTestPageClicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("/CapteursDetailsPage");
         }
         public string GetMail()
         {

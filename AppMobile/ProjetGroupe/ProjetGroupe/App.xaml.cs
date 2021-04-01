@@ -6,6 +6,9 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 [assembly: ExportFont("Roboto-Regular.ttf", Alias = "Roboto")]
+[assembly: ExportFont("NunitoSans-Regular.ttf", Alias = "ThemeFontRegular")]
+[assembly: ExportFont("NunitoSans-SemiBold.ttf", Alias = "ThemeFontMedium")]
+[assembly: ExportFont("NunitoSans-Bold.ttf", Alias = "ThemeFontBold")]
 namespace ProjetGroupe
 {
     public partial class App : Application
@@ -13,9 +16,6 @@ namespace ProjetGroupe
         public App()
         {
             InitializeComponent();
-            DependencyService.Register<MockDataStore>();
-            //MainPage = new AppShell();
-            //MainPage = new AppShell();
             var isLoogged = Xamarin.Essentials.SecureStorage.GetAsync("isLogged").Result;
             if (isLoogged == "1")
             {
