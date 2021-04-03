@@ -16,22 +16,21 @@ Web service du projet iotia
 GET:
 
 //Capteur
+-Capteur/Salle/:idSalle/:Obj (Avoir valeur d'un capteur , derniere valeur)
+-Capteur/Salle/:idSalle/:Obj/List (List d un capteur specifique)
+-Capteur/Salle/:idSalle/:Obj/List/Date1/Date2 (List capteur entre 2 dates)
+-Capteur/Salle/:idSalle/All (list de toutes les valeurs releves dans une salle)
+-Capteur/Salle/:idSalle/Last (list de toutes les dernieres valeurs releves dans une salle)
 
--/Batiment/:idBat/Salle/:idSalle/:Obj (Avoir valeur d'un capteur , derniere valeur)
--/Batiment/:idBat/Salle/:idSalle/:Obj/List (List d un capteur specifique)
--/Batiment/:idBat/Salle/:idSalle/:Obj/List/Date1/Date2 (List capteur entre 2 dates)
--/Batiment/:idBat/Salle/:idSalle/All (list de toutes les valeurs releves dans une salle)
--/Batiment/:idBat/Salle/:idSalle/Last (list de toutes les dernieres valeurs releves dans une salle)
-
--/Batiment/:idBat/Salle/:idSalle/MoyenneCo2 (Co2Moyen journee)
--/Batiment/:idBat/Salle/:idSalle/Co2/Attribut (co2 min ou max journee)
--/Batiment/:idBat/Salle/:idSalle/Temp (tempMoyenne journee)
--/Batiment/:idBat/Salle/:idSalle/Temp/attribut (temp min ou max  journee)
--/Batiment/:idBat/Salle/:idSalle/OuvertureFenetre (ouverture fenetre journee)
--/Batiment/:idBat/Salle/:idSalle/NbEntree (nombre entre salle journee)
--/Batiment/:idBat/Salle/:idSalle/NbEntree/Date1/Date2 (nombre entre salle entre deux dates)
--/Batiment/:idBat/Salle/:idSalle/NbSortie(nombre sortie salle journee)
--/Batiment/:idBat/Salle/:idSalle/NbSortie/Date1/Date2 (nombre sortie salle entre deux dates)
+-Capteur/Salle/:idSalle/MoyenneCo2 (Co2Moyen journee)
+-Capteur/Salle/:idSalle/Co2/Attribut (co2 min ou max journee)
+-Capteur/Salle/:idSalle/Temp (tempMoyenne journee)
+-Capteur/Salle/:idSalle/Temp/Attribut (temp min ou max  journee)
+-Capteur/Salle/:idSalle/OuvertureFenetre (ouverture fenetre journee)
+-Capteur/Salle/:idSalle/NbEntree (nombre entre salle journee)
+-Capteur/Salle/:idSalle/NbEntree/Date1/Date2 (nombre entre salle entre deux dates)
+-Capteur/Salle/:idSalle/NbSortie(nombre sortie salle journee)
+-Capteur/Salle/:idSalle/NbSortie/Date1/Date2 (nombre sortie salle entre deux dates)
 
 //Equipement
 -/Equipement/Alerte (avertir penurie car pas de stock)
