@@ -51,30 +51,29 @@ app.get("Capteur/GetIdSalle/Batiment/:IDBat/Etage/:IDEtage/Salle/:IDSalle", (req
 })
 
 //Voir pour get capteur , 
-
+//SELECT * FROM historique WHERE id_valutetype IN (SELECT id_valuetype FROM valueType WHERE unité LIKE 'degré'); 
 
 //Get recption valeur capteur par bdd vu avec MAP.
 app.get("/Capteur/Salle/:idSalle/All", (req, res) => {
   //List de tous les releves dans une salle pour chq capteur / en supposant une salle a une box plus sur
   // A voir quoi correspond la valeur je ne vois pas
   /*
-    select H.Valeur from box B , 
-    where
-    B.id_Salle = 
-    and
-    E.id_Etage
+    SELECT * FROM historique;
   */
+ //Puis traitement ici
 })
 
 app.get("/Capteur/Salle/:idSalle/Last", (req, res) => {
   //List des derniers releve dans une salle pour chq capteur 
   //pareil que en haut
-
+  /*
+  SELECT distinct * FROM historique order by DESC; //Avoir les derneires valeur une fois
+  */
 
 })
 
 app.get("Capteur/Salle/:idSalle/:Obj/List/Date1/Date2", (req, res) => {
-  //List capteur entre 2 dates
+  //List capteur entre 2 dates Partir de Device
 })
 
 
