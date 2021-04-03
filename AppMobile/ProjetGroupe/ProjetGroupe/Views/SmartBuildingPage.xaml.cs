@@ -44,4 +44,6 @@ namespace ProjetGroupe.Views
       
     //2)SmartBuilding => affichage des énergie, Co2, température 
 
+    //Recherche de données en fonction de la salle entrée
+
 }

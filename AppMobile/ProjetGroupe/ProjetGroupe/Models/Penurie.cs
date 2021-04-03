@@ -1,11 +1,14 @@
-﻿using System;
+﻿using ProjetGroupe.Models.Manager;
+using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace ProjetGroupe.Models
 {
     public class Penurie
     {
+        public int Id { get; set; }
         public int Id_Equipement { get; set; }
         private int _SalleId;
         //Id_Box
@@ -37,12 +40,20 @@ namespace ProjetGroupe.Models
                 _SalleId = value?.Id ?? 0;
             }
         }
-        public int Is_Penurie { get; set; }
+        public bool Is_Penurie { get; set; }
         public DateTime date_maj { get; set; }
 
-        public static Penurie Load(int Id)
+        //public static Penurie Load(int Id)
+        //{
+        //    return new Penurie();
+        //}
+        public static Task<string> UpdateStock(Penurie penurie)
         {
-            return new Penurie();
+            return PenurieManager.UpdateStock(penurie);
+        }
+        public Task<string> UpdateStock()
+        {
+            return PenurieManager.UpdateStock(this);
         }
 
     }
