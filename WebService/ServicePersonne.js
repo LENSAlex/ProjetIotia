@@ -102,7 +102,13 @@ app.get("/Personne", (req, res) => {
 
 app.get("/Personne/Formation", (req, res) => {
     //Requete possible: Select Formation_nom from Formation;
-
+    /*select * from 
+	Departement, Formation, Promotion, Contenir, Personne
+    where 
+    Departement.id_departement = Formation.id_departement
+    and Formation.id_formation = Promotion.id_formation
+    and Promotion.id_promotion = Contenir.id_promotion
+    and Contenir.id_eleve = Personne.id_personne */
     //liste des promos
 
 })
