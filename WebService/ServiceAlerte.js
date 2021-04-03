@@ -17,5 +17,5 @@ var conn = mysql.createConnection({
 
 app.get("/Alerte/Covid/Personne/id", (req, res) => {
     //alerte cas covid , alerté membre classe , etage , bat ....
-
+    //Voir avec les autres ce qu il veule car un peu flou
 })
