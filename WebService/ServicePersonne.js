@@ -164,6 +164,13 @@ app.get("/Personne/GetIDPerson/:login/:mdp", (req, res) => {
 
 //IDPromo a savoir car je n ai pas de nom pour identifier
 
+//POST / PUT --------------------------------------
+//HTTPS
+app.post("/Personne/Add/:IdPersType/:Num_ref/:password/:mail/:Tel/:Nom/:Prenom/:Sexe/:anniv/:RFID")
+{
+    //Requete possible faire un insert avec toutes ces valeurs
+}
+
 app.listen(port, () => {
     console.log("Serveur disponible port " + port);
 })
