@@ -53,15 +53,13 @@ GET:
 -/Acces/Batiment/id/ (Jauge d un batiement)
 -/Acces/Batiment/id/Etage (Jauge des etages d un batiment)
 -/Acces/Batiment/id/Etage/id (Jauge d un etage d un batiment)
--/Acces/Batiment/id/Salle/id (Jauge d une salle d un batiment)
--/Acces/Batiment/id/Salle/id (Jauge d une salle d un batiment)
--/Acces/Promo/ (nb acces de toutes les promos)
--/Acces/Promo/id (nb acces par promo demi jauge)
+-/Acces/Batiment/Salle/id (Jauge d une salle d un batiment)
+-/Acces/Batiment/id/Salle (Jauge des salle d un batiment)
+-/Acces/Promo/ (nb acces de toutes les promos)  //pas sur possible ou par cour donc un cour et le nombre a voir 
+-/Acces/Promo/id (nb acces par promo demi jauge)  //Pareil que au dessus 
 
 //Alerte 
 -/Alerte/Covid/Personne/id (alerte cas covid , alerté membre classe , etage , bat ....)
--/Alerte/TAuxCo2 (si co2 trop haut avertisseur sonore pour ouvrir fenetre)
--/Alerte/TempsSansOuverture (Si periode pas aerer , signal sonore pour aerer)
 
 PUT:
 -/Batiment/:idBat/Salle/:idSalle/:Obj/:Value (Modifié valeur d un capteur)
