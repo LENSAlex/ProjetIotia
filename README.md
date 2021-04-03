@@ -72,5 +72,6 @@ POST:
 -/Batiment/:idBat/ (ajout batiment)
 -/Batiment/:idBat/Salle/:idSalle (ajout salle batiment)
 
-
+//Pour les capteurs je dois faire des requetes pour remplir onem2m ou la bdd.
+//Pour recup ca se passe que avec la bdd.
 
