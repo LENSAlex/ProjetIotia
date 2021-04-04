@@ -58,7 +58,7 @@ app.get("/Capteur/Salle/:idSalle/All", (req, res) => {
   //List de tous les releves dans une salle pour chq capteur / en supposant une salle a une box plus sur
   // A voir quoi correspond la valeur je ne vois pas
   /*
-    SELECT * FROM historique;
+    SELECT * FROM historique , box where box.id_Salle = Historique.id_box and box.id_Salle = '"+req.params.idSalle+"';
   */
  //Puis traitement ici
 })
@@ -67,23 +67,40 @@ app.get("/Capteur/Salle/:idSalle/Last", (req, res) => {
   //List des derniers releve dans une salle pour chq capteur 
   //pareil que en haut
   /*
-  SELECT distinct * FROM historique order by DESC; //Avoir les derneires valeur une fois
+  SELECT distinct * FROM historique , box where box.id_Salle = Historique.id_box and box.id_Salle = '"+req.params.idSalle+"' order by DESC; //Avoir les derneires valeur une fois
   */
 
 })
 
-app.get("Capteur/Salle/:idSalle/:Obj/List/Date1/Date2", (req, res) => {
+app.get("Capteur/Salle/:idSalle/:Obj/List/:Date1/:Date2", (req, res) => {
   //List capteur entre 2 dates Partir de Device
+  /*
+  SELECT * FROM historique , box where box.id_Salle = Historique.id_box and box.id_Salle = '"+req.params.idSalle+"' and Date BETWEEN '"+req.params.Date1+"' and '"+req.params.Date2+"'
+  */
 })
 
 
 app.get("Capteur/Salle/:idSalle/:Obj", (req, res) => {
-//Releve d un capteur specifique
+//Releve d un capteur specifique a voir avec le valuType peut etre partir du order desc et en prendre une valeur
+
+/* select Distinct Valeur from Historique 
+where 
+id_TypeValue = (select id_DeviceType from Device where id_Device = '"+req.params.Obj+"') 
+and 
+id_box = (select id_box from box where id_Salle = '"+req.params.idSalle+"')
+order by DESC; */
 })
 
 
 app.get("Capteur/Salle/:idSalle/:Obj/List", (req, res) => {
-//List d un capteur specifique
+//List d un capteur specifique , Pareil que en haut mais tout
+
+/* select Valeur from Historique 
+where 
+id_TypeValue = (select id_DeviceType from Device where id_Device = '"+req.params.Obj+"') 
+and 
+id_box = (select id_box from box where id_Salle = '"+req.params.idSalle+"')
+order by DESC; */
 })
 
 
@@ -93,6 +110,24 @@ app.get("Capteur/Salle/:idSalle/:Obj/List", (req, res) => {
 
 app.get("Capteur/Salle/:idSalle/MoyenneCo2", (req, res) => {
   //Co2Moyen journee facile juste recup id co2 et faire traitement peut etre avec historique
+  //Voir juste id capteur CO2
+
+  /* select Valeur from Historique 
+  where 
+  id_TypeValue = (select id_DeviceType from Device where id_Device = 'IdCapteurCo2') 
+  and 
+  id_box = (select id_box from box where id_Salle = '"+req.params.idSalle+"') */
+
+  //Apres reception donnes
+  //var moyenne = 0;
+//             result.forEach( (result) => {
+//                 moyenne = moyenne + result.Valeur;
+//                 console.log(moyenne)
+//               });
+//               moyenne = moyenne / result.length;
+//               console.log(moyenne);
+//             res.status(200).json({MoyenneCapteurCo2 : moyenne});
+
 })
 
 
@@ -100,11 +135,21 @@ app.get("Capteur/Salle/:idSalle/Co2/:Attribut", (req, res) => {
   //co2 min ou max journee Pareil que en haut sauf trouver min et max en focntion attributs
   if(req.params.Attribut == "min")
   {
-
+        /* select MIN(Valeur) from Historique 
+        where 
+        id_TypeValue = (select id_DeviceType from Device where id_Device = 'IdCapteurCo2') 
+        and 
+        id_box = (select id_box from box where id_Salle = '"+req.params.idSalle+"')
+        */
   }
   else if(req.params.Attribut == "max")
   {
-
+      /* select MAX(Valeur) from Historique 
+        where 
+        id_TypeValue = (select id_DeviceType from Device where id_Device = 'IdCapteurCo2') 
+        and 
+        id_box = (select id_box from box where id_Salle = '"+req.params.idSalle+"')
+        */
   }
   else
   {
@@ -114,17 +159,48 @@ app.get("Capteur/Salle/:idSalle/Co2/:Attribut", (req, res) => {
 
 app.get("Capteur/Salle/:idSalle/Temp", (req, res) => {
   //tempMoyenne journee voir historique avec id capteur
+
+  //var Today = SELECT DATE( NOW() );
+
+    /* select Valeur from Historique 
+  where 
+  id_TypeValue = (select id_DeviceType from Device where id_Device = 'IdTemps') 
+  and 
+  id_box = (select id_box from box where id_Salle = '"+req.params.idSalle+"')
+  and
+  Date = '"+Today+"'
+  */
+
+  //Apres reception donnes
+  //var moyenne = 0;
+//             result.forEach( (result) => {
+//                 moyenne = moyenne + result.Valeur;
+//                 console.log(moyenne)
+//               });
+//               moyenne = moyenne / result.length;
+//               console.log(moyenne);
+//             res.status(200).json({MoyenneTemp : moyenne});
 })
 
 app.get("Capteur/Salle/:idSalle/Temp/:Attribut", (req, res) => {
   //temp min ou max  journee
   if(req.params.Attribut == "min")
   {
-
+    /* select MIN(Valeur) from Historique 
+        where 
+        id_TypeValue = (select id_DeviceType from Device where id_Device = 'IdTemp') 
+        and 
+        id_box = (select id_box from box where id_Salle = '"+req.params.idSalle+"')
+        */
   }
   else if(req.params.Attribut == "max")
   {
-
+    /* select MAX(Valeur) from Historique 
+        where 
+        id_TypeValue = (select id_DeviceType from Device where id_Device = 'IdTemp') 
+        and 
+        id_box = (select id_box from box where id_Salle = '"+req.params.idSalle+"')
+        */
   }
   else
   {
@@ -133,28 +209,58 @@ app.get("Capteur/Salle/:idSalle/Temp/:Attribut", (req, res) => {
 })
 
 app.get("Capteur/Salle/:idSalle/OuvertureFenetre", (req, res) => {
-  //ouverture fenetre journee nb ou dernieres valeur releve a voir
-})
-
-app.get("Capteur/Salle/:idSalle/Co2/:Attribut", (req, res) => {
-  //nombre entre salle journee
-  //Faire une route qui incremente le compteur sur bdd post
+  /* select Distinct Valeur from Historique 
+        where 
+        id_TypeValue = (select id_DeviceType from Device where id_Device = 'IdCapteurFenetre') 
+        and 
+        id_box = (select id_box from box where id_Salle = '"+req.params.idSalle+"')
+        order by desc
+    */
 })
 
 app.get("Capteur/Salle/:idSalle/NbEntree", (req, res) => {
   //nombre entre salle journee
+  /* select COUNT(Valeur) from Historique 
+        where 
+        id_TypeValue = (select id_DeviceType from Device where id_Device = 'IDCapteurEntree') 
+        and 
+        id_box = (select id_box from box where id_Salle = '"+req.params.idSalle+"')
+    */
 })
 
-app.get("Capteur/Salle/:idSalle/NbEntree/Date1/Date2", (req, res) => {
+app.get("Capteur/Salle/:idSalle/NbEntree/:Date1/:Date2", (req, res) => {
   //nombre entre salle entre deux dates
+
+   /*
+  SELECT Valeur FROM historique , box 
+  id_TypeValue = (select id_DeviceType from Device where id_Device = 'IdCapteurEntree') 
+  and 
+  id_box = (select id_box from box where id_Salle = '"+req.params.idSalle+"')
+  and
+  Date BETWEEN '"+req.params.Date1+"' and '"+req.params.Date2+"'
+  */
 })
 
 app.get("Capteur/Salle/:idSalle/NbSortie", (req, res) => {
-  //nombre sortie salle journee
+  /* select COUNT(Valeur) from Historique 
+        where 
+        id_TypeValue = (select id_DeviceType from Device where id_Device = 'IDCapteurSortie') 
+        and 
+        id_box = (select id_box from box where id_Salle = '"+req.params.idSalle+"')
+    */
 })
 
-app.get("Capteur/Salle/:idSalle/NbSortie/Date1/Date2", (req, res) => {
+app.get("Capteur/Salle/:idSalle/NbSortie/:Date1/:Date2", (req, res) => {
   //nombre sortie salle entre deux dates
+
+  /*
+  SELECT Valeur FROM historique , box 
+  id_TypeValue = (select id_DeviceType from Device where id_Device = 'IdCapteurSortie') 
+  and 
+  id_box = (select id_box from box where id_Salle = '"+req.params.idSalle+"')
+  and
+  Date BETWEEN '"+req.params.Date1+"' and '"+req.params.Date2+"'
+  */
 })
 
 //Fin GET -------------------------------------------------
