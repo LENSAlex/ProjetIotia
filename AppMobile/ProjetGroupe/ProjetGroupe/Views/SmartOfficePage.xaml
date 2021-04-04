@@ -4,7 +4,7 @@
              x:Class="ProjetGroupe.Views.SmartOfficePage"
              xmlns:vm="clr-namespace:ProjetGroupe.ViewModels"
              Shell.NavBarIsVisible="True"
-             Title="SmartOffice">
+             Title="SmartOffice - Alerte pénurie">
     <ContentPage.BindingContext>
         <vm:SmartOfficeViewModel />
     </ContentPage.BindingContext>
@@ -18,18 +18,21 @@
         <Image Source="overlay.png" Aspect="Fill" HeightRequest="300" VerticalOptions="StartAndExpand"/>
         <StackLayout Orientation="Vertical" Margin="0,20" HorizontalOptions="Center" VerticalOptions="Center">
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                <Image Source="iut.png" WidthRequest="75" HeightRequest="75" VerticalOptions="Center"/>
-                <Label Text="SmartOffice" TextColor="White" FontSize="52" FontAttributes="Bold" VerticalOptions="Center"/>
+                <Label Text="SmartOffice" TextColor="White" FontSize="36" FontAttributes="Bold" VerticalOptions="Center"/>
             </StackLayout>
             <Label Text="Alerter sur la pénurie" TextColor="White" FontSize="16" HorizontalOptions="Center"/>
         </StackLayout>
         <Frame Grid.Row="1" HasShadow="True" CornerRadius="15" Margin="20,-30,20,0" Padding="0" HeightRequest="120" VerticalOptions="Start">
-            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+            <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                <Label Text="Alertez quand un produit est en pérunie" TextColor="White" FontSize="52" FontAttributes="Bold" VerticalOptions="Center"/>
                 <!--<Button CommandParameter="{Binding Personne.Id}" Clicked="Button_Clicked"></Button>-->
-                <Picker x:Name="Picker" Title="Test" TitleColor="Red" SelectedIndexChanged="OnPickerSelectedIndexChanged" ItemsSource="{Binding ListPersonne}" SelectedItem="{Binding Id}" ItemDisplayBinding="{Binding Id}">
-                </Picker>
+                <Label  Margin="0,20,0,20" Padding="10,5,10,5" Text="En cas de pénurie de gel htdroalcoolique, panne du verseur, ou autres, veuillez l'indiquer en sélectionnant le produit dans la liste ci-dessous" TextColor="#96d1ff" FontSize="16" HorizontalOptions="Center"/>
             </Grid>
+            
         </Frame>
-
+        <Picker x:Name="Picker" Grid.Row="2" Title="Choisir un produit" Margin="20,10,20,10" BackgroundColor="AliceBlue"  TitleColor="#96d1ff" SelectedIndexChanged="OnPickerSelectedIndexChanged" ItemsSource="{Binding ListPersonne}" SelectedItem="{Binding 
+                    Id, Mode=TwoWay}"  TextColor="Black" ItemDisplayBinding="{Binding Email}">
+        </Picker>
+        <Label x:Name="Label1" Text="" TextColor="green" IsVisible="False" FontSize="16" HorizontalOptions="Center"/>
     </Grid>
 </ContentPage>

@@ -13,6 +13,7 @@ namespace ProjetGroupe.ViewModels
         private string description;
         public Personne personne { get; set; } = new Personne();
         public List<int> Id { get; set; }
+        public List<string> Email { get; set; }
         public List<Personne> ListPersonne { get; set; } = new List<Personne>();
         public SmartOfficeViewModel()
         {

@@ -1,17 +1,45 @@
-﻿using ProjetGroupe.Models;
+﻿using Newtonsoft.Json;
+using ProjetGroupe.Models;
+using ProjetGroupe.Models.Manager;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace ProjetGroupe.ViewModels
 {
-    public class SmartBuildingViewModel : BaseViewModel
+    public class SmartBuildingViewModel : BaseViewModel, INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler PropertyChanged;
+        public ObservableCollection<Equipes> items { get; set; }
+        public ObservableCollection<Equipes> Items
+        {
+            get
+            {
+                return items;
+            }
+            set
+            {
+                items = value;
+                RaisepropertyChanged("Items");
+            }
+        }
+        public async void GetData()
+        {
+            Items = await Equipes.List();
+        }
+        public void RaisepropertyChanged(string propertyName)
+        {
+            if (PropertyChanged != null)
+                PropertyChanged.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
         public Personne personne { get; set; }
 
         private DateTime date = DateTime.Now;
@@ -22,14 +50,12 @@ namespace ProjetGroupe.ViewModels
         public string Email { get => GetMail(); }
         private string temp;
         public string Temp { get => temp; set => SetProperty(ref temp, value); }
-        public List<Personne> Weathers { get => WeatherData(); }
+        public List<Personne> Weathers { get => GetPersonne(); }
         public Command PerformSearch;
-        private string text;
-        private string description;
         public string SearchResults { get; set; }
         public SmartBuildingViewModel()
         {
-            OnRefresh = new Command(OnRefreshing);
+            Device.BeginInvokeOnMainThread(() => GetData());
         }
         public Command OnRefresh;
         //public string ListPersonne { get => Personne(Email); }
@@ -39,60 +65,7 @@ namespace ProjetGroupe.ViewModels
             ListPersonne = ListPersonne.SearchMail(email: query);
             return ListPersonne.Email;
         }
-        private void searchBar_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            SearchBar searchBar = (SearchBar)sender;
-            SearchResults = Personnes(searchBar.Text);
-        }
-        void OnTap(object sender, ItemTappedEventArgs e)
-        {
-            Application.Current.MainPage.DisplayAlert("TAPED:", "Informations incorrectes", "Ok");
-        }
 
-        public void OnSelection(object sender, SelectedItemChangedEventArgs e)
-        {
-            if (e.SelectedItem == null)
-            {
-                return;
-            }
-            Application.Current.MainPage.DisplayAlert("Erreur:", "Informations incorrectes", "Ok");
-        }
-
-        public void OnRefreshing()
-        {
-            var personne = Personne.IsLogged();
-            if (personne != null)
-            {
-                IsBusy = false;
-            }
-            //make sure to end the refresh state
-           
-        }
-        // public string Email { get; set; }
-
-        //   public PropertyChangedEventHandler PropertyChanged;
-
-
-        //  List<Personne> SearchResults = new List<Personne>();
-
-        //public ICommand PerformSearch => new Command<Personne>((string query) =>
-        //{
-        //    SearchResults = Personne.Search(query);
-        //});
-
-        //private List<string> searchResults = DataService.Fruits;
-        //public List<string> SearchResults
-        //{
-        //    get
-        //    {
-        //        return searchResults;
-        //    }
-        //    set
-        //    {
-        //        searchResults = value;
-        //        NotifyPropertyChanged();
-        //    }
-        //}
         private string GetMail()
         {
             var personne = Personne.IsLogged();
@@ -106,7 +79,7 @@ namespace ProjetGroupe.ViewModels
                 return "null";
             }
         }
-        private List<Personne> WeatherData()
+        private List<Personne> GetPersonne()
         {
             List<Personne> listPersonne = new List<Personne>();
             foreach (Personne personne in Personne.List())
@@ -114,12 +87,25 @@ namespace ProjetGroupe.ViewModels
                 listPersonne.Add(new Personne { PersonneType = personne.PersonneType, Id = personne.Id, RFID = personne.RFID });
             }
             return listPersonne;
-            //  var tempList = new List<Weather>();
-
-
-            // return tempList;
         }
     }
+    public class Equipes
+    {
+        [JsonProperty("Id")]
+        public int Id { get; set; }
+        [JsonProperty("name")]
+        public string Name { get; set; }
+        [JsonProperty("disponible")]
+        public bool Disponible { get; set; }
+        public static Task<ObservableCollection<Equipes>> List()
+        {
+            return CapteurManager.RefreshDataAsync();
+        }
+        public static Task<Equipes> Load(int id)
+        {
+            return CapteurManager.Load(id);
+        }
 
+    }
 }
 

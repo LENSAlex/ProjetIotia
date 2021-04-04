@@ -49,21 +49,21 @@ namespace ProjetGroupe.ViewModels
         }
 
     }
-    public class Equipes
-    {
-        [JsonProperty("Id")]
-        public int Id { get; set; }
-        [JsonProperty("name")]
-        public string Name { get; set; }
-        [JsonProperty("disponible")]
-        public bool Disponible { get; set; }
-        public static Task<ObservableCollection<Equipes>> List()
-        {
-            return CapteurManager.RefreshDataAsync();
-        }
-        public static Task<Equipes> Load(int id)
-        {
-            return CapteurManager.Load(id);
-        }
-    }
+    //public class Equipes
+    //{
+    //    [JsonProperty("Id")]
+    //    public int Id { get; set; }
+    //    [JsonProperty("name")]
+    //    public string Name { get; set; }
+    //    [JsonProperty("disponible")]
+    //    public bool Disponible { get; set; }
+    //    public static Task<ObservableCollection<Equipes>> List()
+    //    {
+    //        return CapteurManager.RefreshDataAsync();
+    //    }
+    //    public static Task<Equipes> Load(int id)
+    //    {
+    //        return CapteurManager.Load(id);
+    //    }
+    //}
 }

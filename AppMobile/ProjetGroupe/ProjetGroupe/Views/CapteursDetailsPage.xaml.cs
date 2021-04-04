@@ -18,6 +18,8 @@ namespace ProjetGroupe.Views
 
         public Capteur Capteur { get; set; }
         public string CapteurId { get; set; }
+
+        public DateTime Date { get; set; } = DateTime.Now;
         public async Task GetCapteur()
         {
             Capteur = await Capteur.Load(Convert.ToInt32(CapteurId));
@@ -36,10 +38,15 @@ namespace ProjetGroupe.Views
         public void OnImageButtonClicked(object sender, EventArgs e)
         {
             Application.Current.MainPage = new AppShell();
-            Xamarin.Essentials.SecureStorage.Remove("CapteurId");
+            SecureStorage.Remove("CapteurId");
             this.Navigation.PopAsync();
         }
-
+        public void OnImageButtonClicked2(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new AppShell();
+            SecureStorage.Remove("CapteurId");
+            this.Navigation.PopAsync();
+        }
         // public Property Property { get; set; }
         // public string TypeName { get; set; }
 

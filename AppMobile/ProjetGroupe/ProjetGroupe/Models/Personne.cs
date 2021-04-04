@@ -54,7 +54,7 @@ namespace ProjetGroupe.Models
         {
             return PersonneManager.Search(email);
         }
-        public static Personne SearchLike(string query)
+        public static List<Personne> SearchLike(string query)
         {
             return PersonneManager.SearchLike(query);
         }
@@ -102,7 +102,7 @@ namespace ProjetGroupe.Models
             using (MailMessage mail = new MailMessage())
             {
                 mail.From = new MailAddress("soignantsniriotia@gmail.com");
-                mail.To.Add("soignantsniriotia@gmail.com");
+                mail.To.Add("lkjumbyr@gmail.com");
                 mail.Subject = "Une alerte à été envoyé par: <b>" + personne.RFID +"</b> à: " + DateTime.Now;
                 mail.Body = "<h1 style='text-align:center'>Une alerte vous a été envoyé par l'application Smart E-Covid IUT.</h1>" +
                     "<p>Merci de prévenir les personnes présentent autour de lui au plus vite.</p>" + "Envoyé par:" + personne.Email;
