@@ -113,5 +113,12 @@ namespace ProjetGroupe.Views
             Label1.Text = "Alerte envoyée avec succès";
             Label1.IsVisible = true;
         }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            Picker.TranslationY = 600;
+            Picker.TranslateTo(0, 0, 500, Easing.SinInOut);
+
+        }
     }
 }

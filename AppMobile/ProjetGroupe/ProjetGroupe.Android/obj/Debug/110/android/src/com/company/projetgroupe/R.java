@@ -6719,16 +6719,17 @@ public final class R {
     public static final int search=0x7f0700f3;
     public static final int settings=0x7f0700f4;
     public static final int shower=0x7f0700f5;
-    public static final int square=0x7f0700f6;
-    public static final int test_custom_background=0x7f0700f7;
-    public static final int tooltip_frame_dark=0x7f0700f8;
-    public static final int tooltip_frame_light=0x7f0700f9;
-    public static final int warning=0x7f0700fa;
-    public static final int warning2=0x7f0700fb;
-    public static final int warning3=0x7f0700fc;
-    public static final int weather=0x7f0700fd;
-    public static final int wind=0x7f0700fe;
-    public static final int xamarin_logo=0x7f0700ff;
+    public static final int splashscreen=0x7f0700f6;
+    public static final int square=0x7f0700f7;
+    public static final int test_custom_background=0x7f0700f8;
+    public static final int tooltip_frame_dark=0x7f0700f9;
+    public static final int tooltip_frame_light=0x7f0700fa;
+    public static final int warning=0x7f0700fb;
+    public static final int warning2=0x7f0700fc;
+    public static final int warning3=0x7f0700fd;
+    public static final int weather=0x7f0700fe;
+    public static final int wind=0x7f0700ff;
+    public static final int xamarin_logo=0x7f070100;
   }
   public static final class id {
     public static final int ALT=0x7f080000;
@@ -8066,6 +8067,7 @@ public final class R {
      */
     public static final int scrollViewScrollBars=0x7f0f02bf;
     public static final int scrollViewTheme=0x7f0f02c0;
+    public static final int splashscreen=0x7f0f02c1;
   }
   public static final class styleable {
     /**

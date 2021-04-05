@@ -76,7 +76,14 @@ namespace ProjetGroupe.Views
             searchResults.ItemsSource = null;
             searchBar.Text = "";
         }
-
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            WeathersList.TranslationY = 600;
+            WeathersList.TranslateTo(0, 0, 500, Easing.SinInOut);
+            searchResults.TranslationY = 600;
+            searchResults.TranslateTo(0, 0, 500, Easing.SinInOut);
+        }
         //private void WeathersList_Refreshing(object sender, EventArgs e)
         //{
         //    var personne = Personne.IsLogged();
@@ -86,6 +93,8 @@ namespace ProjetGroupe.Views
         //    }
         //}
     }
+
+    //Voir si on peut mettre en place l'Excpander + Animation et background page CapteurDetails + animation listeview
 }
       
     //2)SmartBuilding => affichage des énergie, Co2, température 

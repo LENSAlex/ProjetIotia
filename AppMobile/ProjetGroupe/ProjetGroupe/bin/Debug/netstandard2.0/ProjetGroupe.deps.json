@@ -15,6 +15,7 @@
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "13.0.1",
           "Newtonsoft.Json.Bson": "1.0.2",
+          "Syncfusion.Xamarin.Expander": "19.1.0.54",
           "Syncfusion.Xamarin.Pdf": "18.4.0.49",
           "Syncfusion.Xamarin.SfListView": "18.4.0.49",
           "Syncfusion.Xamarin.SfPopupLayout": "18.4.0.49",
@@ -246,11 +247,11 @@
           }
         }
       },
-      "Syncfusion.Licensing/18.4.0.49": {
+      "Syncfusion.Licensing/19.1.0.54": {
         "runtime": {
           "lib/netstandard2.0/Syncfusion.Licensing.dll": {
-            "assemblyVersion": "18.4.0.49",
-            "fileVersion": "18.4.0.49"
+            "assemblyVersion": "19.1.0.54",
+            "fileVersion": "19.1.0.54"
           }
         }
       },
@@ -262,15 +263,15 @@
           }
         }
       },
-      "Syncfusion.Xamarin.Core/18.4.0.49": {
+      "Syncfusion.Xamarin.Core/19.1.0.54": {
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.49",
+          "Syncfusion.Licensing": "19.1.0.54",
           "Xamarin.Forms": "5.0.0.2012"
         },
         "runtime": {
           "lib/netstandard2.0/Syncfusion.Core.XForms.dll": {
-            "assemblyVersion": "18.4451.0.49",
-            "fileVersion": "18.4451.0.49"
+            "assemblyVersion": "19.1451.0.54",
+            "fileVersion": "19.1451.0.54"
           }
         }
       },
@@ -279,6 +280,18 @@
           "lib/netstandard2.0/Syncfusion.DataSource.Portable.dll": {
             "assemblyVersion": "18.4451.0.49",
             "fileVersion": "18.4451.0.49"
+          }
+        }
+      },
+      "Syncfusion.Xamarin.Expander/19.1.0.54": {
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "19.1.0.54",
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Expander.XForms.dll": {
+            "assemblyVersion": "19.1451.0.54",
+            "fileVersion": "19.1451.0.54"
           }
         }
       },
@@ -292,7 +305,7 @@
       },
       "Syncfusion.Xamarin.Pdf/18.4.0.49": {
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.49",
+          "Syncfusion.Licensing": "19.1.0.54",
           "Syncfusion.Xamarin.Compression": "18.4.0.49"
         },
         "runtime": {
@@ -304,7 +317,7 @@
       },
       "Syncfusion.Xamarin.SfListView/18.4.0.49": {
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "18.4.0.49",
+          "Syncfusion.Xamarin.Core": "19.1.0.54",
           "Syncfusion.Xamarin.DataSource": "18.4.0.49",
           "Syncfusion.Xamarin.GridCommon": "18.4.0.49",
           "Xamarin.Forms": "5.0.0.2012"
@@ -318,7 +331,7 @@
       },
       "Syncfusion.Xamarin.SfPopupLayout/18.4.0.49": {
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "18.4.0.49",
+          "Syncfusion.Xamarin.Core": "19.1.0.54",
           "Xamarin.Forms": "5.0.0.2012"
         },
         "runtime": {
@@ -754,12 +767,12 @@
       "path": "newtonsoft.json.bson/1.0.2",
       "hashPath": "newtonsoft.json.bson.1.0.2.nupkg.sha512"
     },
-    "Syncfusion.Licensing/18.4.0.49": {
+    "Syncfusion.Licensing/19.1.0.54": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-jyCApzsanhPcReiYKVTnS89D4Js4GhBN5coEuP/a2hhpYnMg3RdpyBUCA84pCl/04LN1O0ttGdRHxmcX5AIWYA==",
-      "path": "syncfusion.licensing/18.4.0.49",
-      "hashPath": "syncfusion.licensing.18.4.0.49.nupkg.sha512"
+      "sha512": "sha512-8dQSVjq+P4ocJEXyQm45hv9IW5YICkuClTL2UZgNDkojBqqVHELbLhAEdyCM2Qpyh7+mg963+mXbNv3pxKWHng==",
+      "path": "syncfusion.licensing/19.1.0.54",
+      "hashPath": "syncfusion.licensing.19.1.0.54.nupkg.sha512"
     },
     "Syncfusion.Xamarin.Compression/18.4.0.49": {
       "type": "package",
@@ -768,12 +781,12 @@
       "path": "syncfusion.xamarin.compression/18.4.0.49",
       "hashPath": "syncfusion.xamarin.compression.18.4.0.49.nupkg.sha512"
     },
-    "Syncfusion.Xamarin.Core/18.4.0.49": {
+    "Syncfusion.Xamarin.Core/19.1.0.54": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+34zcXH2SR12gccy3RfBHgZfeyOBC2ic93E5ZnOnvvBoA0JRZZfkD8mBznb3Ex/mbVquaLS+7dHJ0T+VrXpcjQ==",
-      "path": "syncfusion.xamarin.core/18.4.0.49",
-      "hashPath": "syncfusion.xamarin.core.18.4.0.49.nupkg.sha512"
+      "sha512": "sha512-r8+BxA6H62zxQ7UZGohSaDT8y1c7IoSNt1gawd6dKHTzRlt+I/rdOk8PfUM60TbzOIzn25hEfSwSAr21e93NDw==",
+      "path": "syncfusion.xamarin.core/19.1.0.54",
+      "hashPath": "syncfusion.xamarin.core.19.1.0.54.nupkg.sha512"
     },
     "Syncfusion.Xamarin.DataSource/18.4.0.49": {
       "type": "package",
@@ -781,6 +794,13 @@
       "sha512": "sha512-mukDGUaTuTS9Tq53qb28p1xR7ZCTXPZGbKOBPjVLUNfBhD2aCL1DYQRVP0mMzfZkor4/7UMj5Xxzhd1iionykQ==",
       "path": "syncfusion.xamarin.datasource/18.4.0.49",
       "hashPath": "syncfusion.xamarin.datasource.18.4.0.49.nupkg.sha512"
+    },
+    "Syncfusion.Xamarin.Expander/19.1.0.54": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-prFdpP0VkUTIq5jsN+N4knxqJhVy4AEwwTGCaOqMyTj3xaeSG00TaXrGVKcjYjj84FZazR/LifdxczY+7B/F3g==",
+      "path": "syncfusion.xamarin.expander/19.1.0.54",
+      "hashPath": "syncfusion.xamarin.expander.19.1.0.54.nupkg.sha512"
     },
     "Syncfusion.Xamarin.GridCommon/18.4.0.49": {
       "type": "package",

@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjetGroupe.Views.SmartBuildingPage"
-             xmlns:vm="clr-namespace:ProjetGroupe.ViewModels"
+             xmlns:vm="clr-namespace:ProjetGroupe.ViewModels" xmlns:syncfusion="clr-namespace:Syncfusion.XForms.Expander;assembly=Syncfusion.Expander.XForms"
              Shell.NavBarIsVisible="True"
              Title="SmartBuilding - Visionnage des données">
     <ContentPage.BindingContext>
@@ -89,6 +89,6 @@
             <BoxView Margin="20,-160,20,0" HeightRequest="3" VerticalOptions="Start" HorizontalOptions="FillAndExpand" BackgroundColor="LightGray"/>
             <Label  Margin="20,-158,20,0" Text="Résultat de la recherche:" TextColor="DarkGray" FontSize="12" HorizontalOptions="FillAndExpand"/>
         </Grid>
-      
     </Grid>
+
 </ContentPage>

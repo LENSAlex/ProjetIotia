@@ -7,7 +7,7 @@
 	</style>
 	<style name="MyTheme" parent="android:style/Theme.Material.Light.DarkActionBar">
 		<item name="android:colorPressedHighlight">@color/ListViewSelected</item>
-		<item name="android:colorLongPressedHighlight">@color/ListViewHighlighted</item>
+		<item name="android:colorLongPressedHighlight">#96BCE3</item>
 		<item name="android:colorFocusedHighlight">@color/ListViewSelected</item>
 		<item name="android:colorActivatedHighlight">@color/ListViewSelected</item>
 		<item name="android:activatedBackgroundIndicator">@color/ListViewSelected</item>
@@ -33,4 +33,13 @@
          which is used to tint widgets -->
     <!--<item name="colorAccent">#FF4081</item>-->
   </style>
+	<style name="splashscreen" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="android:windowBackground">@drawable/splashscreen</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowIsTranslucent">false</item>
+		<item name="android:windowIsFloating">false</item>
+		<item name="android:backgroundDimEnabled">true</item>
+		<item name="android:colorBackground">#F0F0F0</item>
+	</style>
+
 </resources>

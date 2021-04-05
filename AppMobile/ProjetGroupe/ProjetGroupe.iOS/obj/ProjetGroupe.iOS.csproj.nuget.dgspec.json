@@ -132,6 +132,10 @@
               "target": "Package",
               "version": "[1.0.2, )"
             },
+            "Syncfusion.Xamarin.Expander": {
+              "target": "Package",
+              "version": "[19.1.0.54, )"
+            },
             "Syncfusion.Xamarin.Pdf": {
               "target": "Package",
               "version": "[18.4.0.49, )"

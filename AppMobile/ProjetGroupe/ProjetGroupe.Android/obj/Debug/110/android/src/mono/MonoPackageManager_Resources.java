@@ -29,6 +29,8 @@ public class MonoPackageManager_Resources {
 		"Syncfusion.Core.XForms.Android.dll",
 		"Syncfusion.Core.XForms.dll",
 		"Syncfusion.DataSource.Portable.dll",
+		"Syncfusion.Expander.XForms.Android.dll",
+		"Syncfusion.Expander.XForms.dll",
 		"Syncfusion.GridCommon.Portable.dll",
 		"Syncfusion.Licensing.dll",
 		"Syncfusion.Pdf.Portable.dll",
