@@ -26,10 +26,8 @@ namespace ProjetGroupe.Views
         }
         public CapteursDetailsPage()
         {
-            CapteurId = Xamarin.Essentials.SecureStorage.GetAsync("CapteurId").Result;
-            //Capteur = Capteur.Load(Convert.ToInt32(CapteurId));
+            CapteurId = SecureStorage.GetAsync("CapteurId").Result;
             Device.BeginInvokeOnMainThread(() => GetCapteur());
-
             InitializeComponent();
             this.BindingContext = this;
 
@@ -47,8 +45,6 @@ namespace ProjetGroupe.Views
             SecureStorage.Remove("CapteurId");
             this.Navigation.PopAsync();
         }
-        // public Property Property { get; set; }
-        // public string TypeName { get; set; }
 
         protected override void OnAppearing()
         {
@@ -59,9 +55,9 @@ namespace ProjetGroupe.Views
         protected override void OnDisappearing() 
         { 
             base.OnDisappearing();
-            Xamarin.Essentials.SecureStorage.Remove("CapteurId");
+            SecureStorage.Remove("CapteurId");
         }
-        public void TapGestureRecognizer_Tapped(System.Object sender, System.EventArgs e)
+        public void TapGestureRecognizer_Tapped(Object sender, EventArgs e)
         {
             var mainDisplayInfo = DeviceDisplay.MainDisplayInfo;
             Action<double> callback = input => DetailsView.HeightRequest = input;

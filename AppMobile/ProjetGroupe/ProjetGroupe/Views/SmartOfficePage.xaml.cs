@@ -99,7 +99,7 @@ namespace ProjetGroupe.Views
             if (result == true)
             {
                 UpdateStockAsync();
-                result = false;
+                //result = false;
             }
             else
             {
@@ -110,7 +110,7 @@ namespace ProjetGroupe.Views
         public void SetInfo()
         {
             personne.RappelMail(personne);
-            Label1.Text = "Alerte envoyé avec succès";
+            Label1.Text = "Alerte envoyée avec succès";
             Label1.IsVisible = true;
         }
     }

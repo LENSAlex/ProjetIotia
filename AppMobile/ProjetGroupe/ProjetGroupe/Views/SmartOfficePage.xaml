@@ -25,10 +25,8 @@
         <Frame Grid.Row="1" HasShadow="True" CornerRadius="15" Margin="20,-30,20,0" Padding="0" HeightRequest="120" VerticalOptions="Start">
             <Grid HorizontalOptions="Center" VerticalOptions="Center">
                 <Label Text="Alertez quand un produit est en pérunie" TextColor="White" FontSize="52" FontAttributes="Bold" VerticalOptions="Center"/>
-                <!--<Button CommandParameter="{Binding Personne.Id}" Clicked="Button_Clicked"></Button>-->
                 <Label  Margin="0,20,0,20" Padding="10,5,10,5" Text="En cas de pénurie de gel htdroalcoolique, panne du verseur, ou autres, veuillez l'indiquer en sélectionnant le produit dans la liste ci-dessous" TextColor="#96d1ff" FontSize="16" HorizontalOptions="Center"/>
             </Grid>
-            
         </Frame>
         <Picker x:Name="Picker" Grid.Row="2" Title="Choisir un produit" Margin="20,10,20,10" BackgroundColor="AliceBlue"  TitleColor="#96d1ff" SelectedIndexChanged="OnPickerSelectedIndexChanged" ItemsSource="{Binding ListPersonne}" SelectedItem="{Binding 
                     Id, Mode=TwoWay}"  TextColor="Black" ItemDisplayBinding="{Binding Email}">

@@ -34,19 +34,19 @@ namespace ProjetGroupe.ViewModels
                     PersonneId = personne.Id
                 };
                 CasCovid.SendAlert(cas);
-                personne.RappelMail(personne);
+             //   personne.RappelMail(personne);
 
                 //envoie un mail, une alerte et maybe une notification
 
 
 
 
-                //string tag = Xamarin.Essentials.SecureStorage.GetAsync("Tag").Result;
-                //string regid = Xamarin.Essentials.SecureStorage.GetAsync("RegId").Result;
+             //   string tag = Xamarin.Essentials.SecureStorage.GetAsync("Tag").Result;
+                //int token = Xamarin.Essentials.SecureStorage.GetAsync("Token").Result;
                 // int test = 5;
-                //SendTemplateNotificationAsync(notificationParameters, p_tags);
+               // SendTemplateNotificationAsync(notificationParameters, p_tags);
                 // AlertNotifications(context);
-                //SendPushNotification("Test","TestLoris", test, tag);
+              //  SendPushNotification("Test","TestLoris", Convert.ToInt32(tag), "100");
             }
         }
 

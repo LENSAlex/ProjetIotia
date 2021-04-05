@@ -12,18 +12,18 @@ namespace ProjetGroupe.Models.Manager
         internal static async Task<string> UpdateStock(Penurie item)
         {
             var httpClient = new HttpClient();
-            string WebAPIUrl = "http://51.77.137.170:8080/equipes";
+            string WebAPIUrl = "http://51.77.137.170:8080/Alerte/Covid/Personne";
             Uri uri = new Uri(WebAPIUrl);
             httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
             StringBuilder sb = new StringBuilder();
 
             if (item != null)
             {
-                sb.Append(@"{""IsPenurie"" : """ + item.Is_Penurie + @""",");
+                sb.Append(@"{""IsPenurie"" : " + item.Is_Penurie + ",");
                 sb.Append(@"{""DatePenurie"" : """ + item.date_maj + @""",");
-                sb.Append(@"{""EquipementId"" : """ + item.Id_Equipement + @""",");
-                sb.Append(@"{""SalleId"" : """ + item.SalleId);
-                sb.Append(@"""}");
+                sb.Append(@"{""EquipementId"" : " + item.Id_Equipement + ",");
+                sb.Append(@"{""SalleId"" : " + item.SalleId);
+                sb.Append("}");
 
                 string jsonData = sb.ToString();
                 //string json = JsonConvert.SerializeObject(item); A utiliser que si envoie d'une liste complète dès le départ.

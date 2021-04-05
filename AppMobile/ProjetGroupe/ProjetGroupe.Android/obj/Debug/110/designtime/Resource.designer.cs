@@ -17558,43 +17558,46 @@ namespace ProjetGroupe.Droid
 			public const int profil2 = 2131165425;
 			
 			// aapt resource value: 0x7F0700F2
-			public const int search = 2131165426;
+			public const int refresh = 2131165426;
 			
 			// aapt resource value: 0x7F0700F3
-			public const int settings = 2131165427;
+			public const int search = 2131165427;
 			
 			// aapt resource value: 0x7F0700F4
-			public const int shower = 2131165428;
+			public const int settings = 2131165428;
 			
 			// aapt resource value: 0x7F0700F5
-			public const int square = 2131165429;
+			public const int shower = 2131165429;
 			
 			// aapt resource value: 0x7F0700F6
-			public const int test_custom_background = 2131165430;
+			public const int square = 2131165430;
 			
 			// aapt resource value: 0x7F0700F7
-			public const int tooltip_frame_dark = 2131165431;
+			public const int test_custom_background = 2131165431;
 			
 			// aapt resource value: 0x7F0700F8
-			public const int tooltip_frame_light = 2131165432;
+			public const int tooltip_frame_dark = 2131165432;
 			
 			// aapt resource value: 0x7F0700F9
-			public const int warning = 2131165433;
+			public const int tooltip_frame_light = 2131165433;
 			
 			// aapt resource value: 0x7F0700FA
-			public const int warning2 = 2131165434;
+			public const int warning = 2131165434;
 			
 			// aapt resource value: 0x7F0700FB
-			public const int warning3 = 2131165435;
+			public const int warning2 = 2131165435;
 			
 			// aapt resource value: 0x7F0700FC
-			public const int weather = 2131165436;
+			public const int warning3 = 2131165436;
 			
 			// aapt resource value: 0x7F0700FD
-			public const int wind = 2131165437;
+			public const int weather = 2131165437;
 			
 			// aapt resource value: 0x7F0700FE
-			public const int xamarin_logo = 2131165438;
+			public const int wind = 2131165438;
+			
+			// aapt resource value: 0x7F0700FF
+			public const int xamarin_logo = 2131165439;
 			
 			static Drawable()
 			{

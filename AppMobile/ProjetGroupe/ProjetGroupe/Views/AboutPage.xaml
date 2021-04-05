@@ -6,17 +6,14 @@
              Title="Contacts et Autres"
              xmlns:vm="clr-namespace:ProjetGroupe.ViewModels"
              Shell.NavBarIsVisible="True">
-    
     <ContentPage.BindingContext>
-            <vm:AboutViewModel />
+        <vm:AboutViewModel />
     </ContentPage.BindingContext>
-    
-        <ContentPage.Resources>
+    <ContentPage.Resources>
         <ResourceDictionary>
             <Color x:Key="Accent">#96d1ff</Color>
         </ResourceDictionary>
     </ContentPage.Resources>
-
     <Grid VerticalOptions="FillAndExpand">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -34,10 +31,27 @@
         <Frame Grid.Row="1" HasShadow="True" CornerRadius="15" Margin="20,-30,20,0" Padding="0" HeightRequest="120" VerticalOptions="Start">
             <Grid HorizontalOptions="Center" VerticalOptions="Center">
                 <Label Text="Alertez quand un produit est en pérunie" TextColor="White" FontSize="52" FontAttributes="Bold" VerticalOptions="Center"/>
-                <!--<Button CommandParameter="{Binding Personne.Id}" Clicked="Button_Clicked"></Button>-->
-               
+                <Label Text="Email: contact@iut-cote-dazur.fr" FontFamily="Roboto" HorizontalOptions="Start" TextColor="#C4263E" FontSize="12" Margin="20,20,10,20" VerticalOptions="Start"/>
             </Grid>
-
+        </Frame>
+        <Frame Grid.Row="3" HasShadow="True" CornerRadius="15" Margin="20,-10,20,20" Padding="0" HeightRequest="300" VerticalOptions="Start" BackgroundColor="AliceBlue">
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Row="0">
+                    <StackLayout Orientation="Horizontal" Spacing="1" HorizontalOptions="Start">
+                        <StackLayout Spacing="20" HorizontalOptions="CenterAndExpand">
+                            <Label Text="Nombre de malade atteind du covid:" FontFamily="Roboto" HorizontalOptions="Start" TextColor="DarkGray" FontSize="12" Margin="10,10,10,0" VerticalOptions="Start"/>
+                            <Label Text="{Binding CasAll}" FontFamily="Roboto" HorizontalOptions="Start" TextColor="#C4263E" FontSize="12" Margin="10,0,10,0" VerticalOptions="Start"/>
+                            <Label Text="Nombre de malade atteind du covid dans le bâtiment:" FontFamily="Roboto" HorizontalOptions="Start" TextColor="DarkGray" FontSize="12" Margin="10,0,10,0" VerticalOptions="Start"/>
+                            <Label Text="{Binding CasBat}" FontFamily="Roboto" HorizontalOptions="Start" TextColor="#C4263E" FontSize="12" Margin="10,0,10,0" VerticalOptions="Start"/>
+                            <Label Text="Nombre de malade atteind dans la salle:" FontFamily="Roboto" HorizontalOptions="Start" TextColor="DarkGray" FontSize="12" Margin="10,0,10,0" VerticalOptions="Start"/>
+                            <Label Text="{Binding CasSalle}" FontFamily="Roboto" HorizontalOptions="Start" TextColor="#C4263E" FontSize="12" Margin="10,0,10,0" VerticalOptions="Start"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Grid>
+            </Grid>
         </Frame>
     </Grid>
 </ContentPage>

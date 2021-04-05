@@ -21,7 +21,6 @@ namespace ProjetGroupe.Droid
         //   public static string Endpoint = "Endpoint=sb://projetcovid.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=6u2e8rZYxxWAp3baEl5Hc04Lnsnqpk0Cd+MCbJ/PB94=";
         private FirebaseInstanceId fcm;
         public string Token { get; set; }
-        public TestNotifHub hub = new TestNotifHub();
         [System.Obsolete]
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -39,14 +38,16 @@ namespace ProjetGroupe.Droid
             //Start the SDK
             NotificationHub.Start(this.Application, Config.NotificationHubName, Config.NotificationEndPoint);
             CreateNotificationChannel();
-
-            string token = (string)FirebaseInstanceId.GetInstance(fb);
-            Xamarin.Essentials.SecureStorage.SetAsync("HubToken", token);
+            var refreshedToken = FirebaseInstanceId.Instance.Token;
+            //string token = (string)FirebaseInstanceId.GetInstance(fb);
+            var tag = "568049259572";
+            Xamarin.Essentials.SecureStorage.SetAsync("HubToken", refreshedToken);
+            Xamarin.Essentials.SecureStorage.SetAsync("Tag", tag);
             //AndroidFireBaseMessagingService.SendRegistrationToServer(token,"");
 
             //string tag = Android.Provider.Settings.Secure.GetString(this.ApplicationContext.ContentResolver, Android.Provider.Settings.Secure.AndroidId);
-       //     string tag = Xamarin.Forms.Application.Current.Properties;
-          //  Xamarin.Essentials.SecureStorage.SetAsync("Tag", tag);
+            //     string tag = Xamarin.Forms.Application.Current.Properties;
+            //  Xamarin.Essentials.SecureStorage.SetAsync("Tag", tag);
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)

@@ -90,7 +90,6 @@
   <ItemGroup>
     <Compile Include="AndroidFireBaseMessagingService.cs" />
     <Compile Include="AzureListener.cs" />
-    <Compile Include="DropdownRenderer.cs" />
     <Compile Include="EntryCustom.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="MyFirebaseMessagingService .cs" />
@@ -99,7 +98,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SaveAndroid.cs" />
     <Compile Include="SplashActivity.cs" />
-    <Compile Include="TestNotifHub.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="appsettings.json" />

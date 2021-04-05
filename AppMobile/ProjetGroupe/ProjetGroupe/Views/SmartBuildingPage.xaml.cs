@@ -22,19 +22,17 @@ namespace ProjetGroupe.Views
         {
             InitializeComponent();
             this.BindingContext = new SmartBuildingViewModel();
+
+            WeathersList.RefreshCommand = new Command(() => {
+                WeathersList.IsRefreshing = true;
+                GetData();
+                WeathersList.IsRefreshing = false;
+            });
         }
-        private bool _isBusy;
-        public bool isBusy
+        public async void GetData()
         {
-            get { return _isBusy; }
-            set
-            {
-                _isBusy = value;
-
-                OnPropertyChanged("isBusy");
-            }
+            WeathersList.ItemsSource = await Equipes.List();
         }
-
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
@@ -59,7 +57,6 @@ namespace ProjetGroupe.Views
         {
             var obj = (Equipes)e.SelectedItem;
             var ide = Convert.ToInt32(obj.Id);
-            //Application.Current.MainPage.DisplayAlert("Capteur:", "Informations "+ ide, "Ok");
             Xamarin.Essentials.SecureStorage.SetAsync("CapteurId", ide.ToString());
             Xamarin.Forms.Application.Current.MainPage = new CapteursDetailsPage();
             searchResults.ItemsSource = null;
@@ -69,7 +66,6 @@ namespace ProjetGroupe.Views
         {
             var obj = (Personne)e.SelectedItem;
             var ide = Convert.ToInt32(obj.Id);
-            //Application.Current.MainPage.DisplayAlert("Capteur:", "Informations "+ ide, "Ok");
             Xamarin.Essentials.SecureStorage.SetAsync("CapteurId", ide.ToString());
             Xamarin.Forms.Application.Current.MainPage = new CapteursDetailsPage();
             searchResults.ItemsSource = null;
@@ -81,14 +77,14 @@ namespace ProjetGroupe.Views
             searchBar.Text = "";
         }
 
-        private void WeathersList_Refreshing(object sender, EventArgs e)
-        {
-            var personne = Personne.IsLogged();
-            if (personne != null)
-            {
-                IsBusy = false;
-            }
-        }
+        //private void WeathersList_Refreshing(object sender, EventArgs e)
+        //{
+        //    var personne = Personne.IsLogged();
+        //    if (personne != null)
+        //    {
+        //        IsBusy = false;
+        //    }
+        //}
     }
 }
       

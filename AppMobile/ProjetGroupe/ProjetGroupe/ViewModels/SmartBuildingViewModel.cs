@@ -44,8 +44,6 @@ namespace ProjetGroupe.ViewModels
 
         private DateTime date = DateTime.Now;
         public DateTime Date { get => date; set => SetProperty(ref date, value); }
-
-        //   public string Email = ;
         //Pour la page accueil faire 2 boutons 1 pour aller sur E-Covid un pour aller sur sMartBuilding
         public string Email { get => GetMail(); }
         private string temp;
@@ -57,8 +55,8 @@ namespace ProjetGroupe.ViewModels
         {
             Device.BeginInvokeOnMainThread(() => GetData());
         }
+
         public Command OnRefresh;
-        //public string ListPersonne { get => Personne(Email); }
         private string Personnes(string query)
         {
             var ListPersonne = new Personne();
