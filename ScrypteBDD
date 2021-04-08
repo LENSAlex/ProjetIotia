@@ -245,13 +245,15 @@ CREATE OR REPLACE TABLE PersonneType
 );
 CREATE UNIQUE INDEX ind_Personne_Type ON PersonneType (id_pers_type);
 
+
+
 CREATE OR REPLACE TABLE Personne
 (
 	id_personne 		INTEGER PRIMARY KEY AUTO_INCREMENT, 
 	num_ref		 		VARCHAR(13) NOT NULL, 
 	id_pers_type		INTEGER NOT NULL, 
 	password 			VARCHAR(50) NOT NULL, 
-	email				VARCHAR(100) CHECK (email REGEXP '^(\\+?[0-9]{1,4}-)?[0-9]{3,10}$' or email IS NULL),
+	email				VARCHAR(100),
 	telephone			VARCHAR(10),	
 	sexe				VARCHAR(1), 
 	nom 				VARCHAR(50) NOT NULL,
@@ -287,6 +289,7 @@ CREATE OR REPLACE TABLE Module
 (
 	id_module 		INTEGER PRIMARY KEY AUTO_INCREMENT, 
 	libelle 		VARCHAR(50),
+	description 	VARCHAR(250),
 	is_enabled		VARCHAR(1) CHECK (is_enabled = 1 or is_enabled = 0)
 );
 
@@ -343,6 +346,14 @@ CREATE OR REPLACE TABLE Badgeuse
 );
 CREATE INDEX ind_badgeuse ON Badgeuse (id_personne, id_salle, date_heure);
 
+
+CREATE OR REPLACE TABLE CasCovid
+(
+	id_personne INTEGER NOT NULL, 
+	date_declaration	DATETIME NOT NULL,
+	CONSTRAINT fK_CasCovid_Personne FOREIGN KEY (id_personne) REFERENCES Personne (id_personne)
+);
+CREATE INDEX ind_cascovid ON CasCovid (id_personne, date_declaration);
 
 
 INSERT INTO Site (nom) VALUES 
@@ -821,6 +832,8 @@ INSERT INTO Equipement (libelle, description, equipement_type) VALUES
 ( 'Gel hydroalcoolique', 'gel antibactérien à base d alcool','SANITAIRE'), 
 ( 'Désinfectant', 'spray antibactérien','SANITAIRE'), 
 ( 'Papier toilette', 'du PQ quoi...','SANITAIRE'); 
+
+
 
 INSERT INTO Penurie (id_equipement, id_salle, is_penurie, date_maj) VALUES
 ( 1, 1, 0, '2021-01-01 01:00:00'), 
@@ -3080,7 +3093,7 @@ INSERT INTO Promotion (id_formation, id_professeur, annee) VALUES
 (3 , 32 , 2020 ), 
 (2 , 31 , 2020 );
 
-INSERT INTO Contenir (id_promotion, id_personne) VALUES
+INSERT INTO Contenir (id_formation, id_eleve) VALUES
 (1 , 1), 
 (1 , 2), 
 (1 , 3), 
@@ -3113,9 +3126,9 @@ INSERT INTO Contenir (id_promotion, id_personne) VALUES
 (2 , 30);
  
 INSERT INTO Module (libelle, description, is_enabled) VALUES
-("M220B" , "un truc qui peut faire mal" , "O"), 
-("AC130" , "ça vole très haut" , "N"),
-("P90" , "ça va vite et c'est précis" , "O");
+("M220B" , "un truc qui peut faire mal" , 0), 
+("AC130" , "ça vole très haut" , 1),
+("P90" , "ça va vite et c'est précis" , 0);
 
 INSERT INTO Cours (id_module, id_salle, id_professeur, heure_debut, heure_fin, presentiel, cours_type, commentaire) VALUES
 ( 1 , 1 , 31 , '2021-03-25 08:00:00' , '2021-03-25 12:15:00' , 1 , 'TD' , NULL ),
@@ -3139,7 +3152,7 @@ INSERT INTO Absence (id_cours, id_personne, motif) VALUES
 ( 1 , 5 , "FLEMME" ),
 ( 1 , 15 , "FLEMME" ),
 ( 2 , 5 , "FLEMME" ),
-( 1 , 15 , "FLEMME" );
+( 2 , 15 , "FLEMME" );
  
 INSERT INTO Presentiel (id_cours, id_personne, presence) VALUES
 (1 , 1 , 0), 
