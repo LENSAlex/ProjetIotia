@@ -1,0 +1,98 @@
+---
+title: Documentation PIR 
+title_expanded: Documentation PIR
+categories: [ "Structure" ]
+subCategories: [ "Subcategory Name" ]
+---
+// ARDUINO LANGUAGE REFERENCE TAGS (above)   ►►►►► ALWAYS INCLUDE IN YOUR FILE ◄◄◄◄◄
+// title will show up in the Index of all Reference terms
+// If the title is an operator write it out in words in title_expanded
+// categories: Pick between Structure, Variable or Function
+// The subcategory within the ones available in the index ("Digital I/O", "Arithmetic Operators")
+
+
+
+// PAGE TITLE
+= Documentation PIR
+
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+// Describe what this Reference term does, and what it is used for	►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+Renvoit 1 ou 0 sur le pin 0 en fonction de si une personne est entrée ou non. Les données sont lues par un M5StickC
+[%hardbreaks]
+
+image::PIR.jpg[caption="", title="Détecteur Mouvement PIR"]
+[%hardbreaks]
+
+
+[float]
+=== Setup
+`void setup()`
+
+[#howtouse]
+--
+
+[float]
+=== Code Setup
+Initialisation du M5StickC auquel est relié ce capteur, la lecture de données sur le pin 36 ainsi que le Bluetooth.
+
+[source,arduino]
+----
+  //Initialisation du bluetooph nom du peripherique
+    SerialBT.begin("PirEntreeBL");
+    
+  // put your setup code here, to run once:
+    M5.begin();
+    M5.Lcd.fillScreen(BLACK);
+    M5.Lcd.setCursor(15, 15, 2);M5.Lcd.println("PIR Etat");
+    pinMode(36,INPUT_PULLUP);
+----
+[%hardbreaks]
+
+[float]
+=== Loop
+`void loop()`
+
+[#howtouse]
+--
+
+[float]
+=== Code Loop
+Programme qui tourne en permanance sur le M5StickC. Il lis les valeurs du pin 36 et les transmet via Bluetooth
+
+[source,arduino]
+----
+  if(digitalRead(36)==1){
+    M5.Lcd.setCursor(25, 70, 7);M5.Lcd.print("1");
+    //Ici j'envoie qu'un passage a été détecté = 1
+    SerialBT.println("1");
+    Serial.println("1");
+    delay(1000);
+  }
+  else{
+    M5.Lcd.setCursor(25, 70, 7);M5.Lcd.print("0");
+    //Ici j'envoie qu'un passage a été détecté = 0
+    SerialBT.println("0");
+    Serial.println("0");
+    delay(1000);
+  }
+----
+[%hardbreaks]
+
+--
+[#see_also]
+--
+
+[float]
+=== Voir d'autres documentations
+
+[role="language"]
+* #LANGUAGE# link:../Speaker/SpeakerBeep[Documentation Haut Parleur]
+* #LANGUAGE# link:../gaz/gaz/GAZ[Documentation détecteur de gaz]
+
