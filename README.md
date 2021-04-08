@@ -77,4 +77,10 @@ POST:
 
 Faire partie admin en service pour administrer les brokers , rajouter enlever.
 
-
+- Application Mobile WebRequest:
+Get All Capteur (Liste les capteurs via un select *)
+Post Alerte Covid (Requête post vers la table AlertCovid en envoyé une ligne avec la date et la personne qui à le covid)
+Put Alerte pénurie (Update un produit en stock par un 0 (donc pas en stock))
+Get Capteur de la salle via search (Cherche les capteurs d'une salle via le numéro de salle)
+Get Count des malades d'un salle, bâtiment et iut (Récupère le nombre de malade en fonction de ce qu'on a choisit)
+Get list des équipements pour le stock (Liste les équipements disponible dans l'établissement)
