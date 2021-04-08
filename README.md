@@ -76,3 +76,12 @@ Pour que l'application puisse atteindre le serveur nodejs, il faut lui donner un
 - 1] Ouvrez l'application
 - 2] Vous arrivez ensuite sur une page d'authentification, utiliser vos identifiants de connexion (Ici nous utilisons ceux de l'IUT)
 - 3] Vous avez ensuite accès aux pages de l'application
+
+# Définitions des WebServices:
+
+- Get All Capteur (Liste les capteurs via un select *)
+- Post Alerte Covid (Requête post vers la table AlertCovid en envoyé une ligne avec la date et la personne qui à le covid)
+- Put Alerte pénurie (Update un produit en stock par un 0 (donc pas en stock))
+- Get Capteur de la salle via search (Cherche les capteurs d'une salle via le numéro de salle)
+- Get Count des malades d'un salle, bâtiment et iut (Récupère le nombre de malade en fonction de ce qu'on a choisit)
+- Get list des équipements pour le stock (Liste les équipements disponible dans l'établissement)
