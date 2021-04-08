@@ -14,7 +14,7 @@
         <tr>
             <th scope="col">name</th>
             <th scope="col">commit</th>
-            <th scope="col">Protected</th>
+            @*<th scope="col">Protected</th>*@
         </tr>
     </thead>
     @foreach (GitHubBranch gitHubBranch in Model.Branches)
@@ -24,7 +24,7 @@
             <tr>
                 <td>@gitHubBranch.Name</td>
                 <td>Test</td>
-                <td>@gitHubBranch.Protected</td>
+                @*<td>@gitHubBranch.Protected</td>*@
             </tr>
         </tbody>
     }

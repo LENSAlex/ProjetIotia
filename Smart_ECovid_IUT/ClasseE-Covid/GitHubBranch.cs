@@ -12,14 +12,14 @@ namespace ClasseE_Covid
 {
     public class GitHubBranch
     {
+        [JsonPropertyName("Id")]
+        public int Id { get; set; }
+
         [JsonPropertyName("name")]
         public string Name { get; set; }
 
-        //[JsonProperty("commit")]
-        //public string Commit { get; set; }
-
-        [JsonPropertyName("protected")]
-        public bool Protected { get; set; }
+        [JsonPropertyName("disponible")]
+        public bool Disponible { get; set; }
 
     } 
 }

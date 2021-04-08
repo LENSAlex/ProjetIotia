@@ -31,15 +31,12 @@ namespace Smart_ECovid_IUT.Pages
             _clientFactory = clientFactory;
         }
 
-        public async Task OnGet() // tache asycrene attent une reponce tache awit 
+        public async Task OnGet() // tache asycrene attent une reponce tache awit  https://api.github.com/repos/dotnet/AspNetCore.Docs/branches
         {
             var request = new HttpRequestMessage(HttpMethod.Get,
-            "https://api.github.com/repos/dotnet/AspNetCore.Docs/branches"); 
-            request.Headers.Add("Accept", "application/json"); // application/vnd.github.v3+json"
+            "http://51.75.125.121:8080/testlolo2"); 
+            request.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
             request.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
-
-            //httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
-            //request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
             var client = _clientFactory.CreateClient();
 

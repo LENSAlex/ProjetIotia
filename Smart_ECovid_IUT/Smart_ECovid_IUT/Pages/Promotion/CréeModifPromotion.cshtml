@@ -14,25 +14,34 @@
                     <h3>Création une Promotion</h3>
                 </div>
                 <div class="card-body border-bottom">
-                    <form>
+
+                    <form method="post">
                         <div class="form-row">
                             <div class="col-md-4 mb-3">
                                 <label for="Nom">Nom</label>
-                                <input type="text" class="form-control" id="Nom" placeholder="Nom" required />
+                                <input type="text" class="form-control" id="nom" name="nom" placeholder="Nom" required />
                             </div>
                             <div class="col-md-4 mb-3">
                                 <label for="Nom">Année</label>
-                                <input type="text" class="form-control" id="Ip" placeholder="Ip" required />
+                                <input type="text" class="form-control" id="id" name="id" placeholder="Ip" required />
                             </div>
                             <div class="col-md-4 mb-3">
-                                <label for="Nom">Durée</label>
-                                <input type="text" class="form-control" id="Ip" placeholder="Ip" required />
+                              <label for="Batiment">Durée</label>
+                                <select class="form-control select" aria-hidden="true" id="duree" name="duree">
+                                    <option value="1">True</option>
+                                    <option value="0">False</option>
+                                </select>/>
                             </div>
                         </div>
-                        <button class="btn btn-primary" type="submit">Submit form</button>
+                        <button class="btn btn-primary" type="submit" asp-page-handler="EnvoieDonne">Ajouter</button>
                     </form>
+
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+
+</script>
