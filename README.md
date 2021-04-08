@@ -3,7 +3,7 @@ Projet fin d'année iotia (projet covid)
 
 Application Mobile:
 
-Cette application mobile à été développé en C# sous Windows grâvce au logiciel Visual Studio. 
+Cette application mobile à été développé en C# sous Windows grâce au logiciel Visual Studio. 
 Pour utiliser le code de l'application, le modifier vous devez:
 
 - 1] Installer Visual Studio Community 
@@ -62,6 +62,7 @@ https://cedgabrang.wixsite.com/xamarintipsandtricks/post/xamarin-forms-implement
 - 6.2] Si vous voulez changer la police d'écriture, vous avez un dossier "Font" ou vous allez devoir mettre vos polices .ttf. Ensuite, dans le fichier "AssemblyInfo.cs", vous devez écrire cette ligne: [assembly: ExportFont("Roboto-Regular.ttf", Alias = "Roboto")]
 - 6.3] Il est aussi important de définir des permissions utilisateurs notament l'accès à internet, la lecture et l'écriture. [assembly:UsesPermission(Android.Manifest.Permission.Internet)]
 [assembly:UsesPermission(Android.Manifest.Permission.WriteExternalStorage)]
+- 6.4] Il vous faudra aussi une adresse mail d'envois et de réception pour les alertes par emails, celles ci sont à changer dans le appsettings.json
 
 - 7] Le fichier MainActivity.cs est le fichier source ou vous mettrez toutes vos initialisations de plugin par exemple pour les notifications. N'hésitez pas à récupérer celui déjà existant. Vous allez devoir modifier les informations concernant le Hub de notification par vos informations que vous avez pu obtenir en suivant le tutoriel d'installation de Firebase et d'Azure.
 - 8] Dans le fichier appsettings.json vous trouverez également les informations de liaison et les token/clé permettant les accès à certain service de l'application. Là aussi, vous alleze devoir les modifier par les votre. La classe "Config.cs" vous permet  de récupérer depuis n'importe ou, via un Getter/Setter, la chaîne récupérée par le JsonReader du fichier appsettings.json.
@@ -75,3 +76,12 @@ Pour que l'application puisse atteindre le serveur nodejs, il faut lui donner un
 - 1] Ouvrez l'application
 - 2] Vous arrivez ensuite sur une page d'authentification, utiliser vos identifiants de connexion (Ici nous utilisons ceux de l'IUT)
 - 3] Vous avez ensuite accès aux pages de l'application
+
+# Définitions des WebServices:
+
+- Get All Capteur (Liste les capteurs via un select *)
+- Post Alerte Covid (Requête post vers la table AlertCovid en envoyé une ligne avec la date et la personne qui à le covid)
+- Put Alerte pénurie (Update un produit en stock par un 0 (donc pas en stock))
+- Get Capteur de la salle via search (Cherche les capteurs d'une salle via le numéro de salle)
+- Get Count des malades d'un salle, bâtiment et iut (Récupère le nombre de malade en fonction de ce qu'on a choisit)
+- Get list des équipements pour le stock (Liste les équipements disponible dans l'établissement)
