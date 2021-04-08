@@ -15,7 +15,8 @@ Nous distinguons 3 entités qui interargissent entre elles. Ne seront spécifié
 	- **Broker MQTT** (mosquitto)
 + **Box** : Une box représente chaques salles du batiments. Cette **Box** collecte les données de ses capteurs et pilote ses actionneurs.
 
-![Schemas interactions](https://github.com/LENSAlex/ProjetIotia/blob/configRaspbery/SCHEMAS/SCHEMAS_EXPORT/0-1_interaction-entite.png?raw=true)
+![Schemas interactions](https://github.com/LENSAlex/ProjetIotia/blob/configRaspbery/config-raspbery/SCHEMAS/SCHEMAS_EXPORT/0-1_interaction-entite.png)
 
+			https://github.com/LENSAlex/ProjetIotia/blob/configRaspbery/config-raspbery/SCHEMAS/SCHEMAS_EXPORT/0-1_interaction-entite.png
 
 <
