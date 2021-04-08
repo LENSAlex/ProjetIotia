@@ -4,20 +4,22 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using System.Net;
-using Newtonsoft.Json;
+//using Newtonsoft.Json;
 using System.Text.Json;
+using System.Text.Json.Serialization;
+
 namespace ClasseE_Covid
 {
     public class GitHubBranch
     {
-        [JsonProperty("username")]
+        [JsonPropertyName("name")]
         public string Name { get; set; }
 
-       //[JsonProperty("commit")]
-       //public string Commit { get; set; }
+        //[JsonProperty("commit")]
+        //public string Commit { get; set; }
 
-        //[JsonProperty("protected")]
-       // public string Protected { get; set; }
+        [JsonPropertyName("protected")]
+        public bool Protected { get; set; }
 
     } 
 }
