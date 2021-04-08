@@ -20,9 +20,9 @@ namespace ProjetGroupe.Models.Manager
             if (item != null)
             {
                 sb.Append(@"{""IsPenurie"" : " + item.Is_Penurie + ",");
-                sb.Append(@"{""DatePenurie"" : """ + item.date_maj + @""",");
-                sb.Append(@"{""EquipementId"" : " + item.Id_Equipement + ",");
-                sb.Append(@"{""SalleId"" : " + item.SalleId);
+                sb.Append(@"""DatePenurie"" : """ + item.date_maj + @""",");
+                sb.Append(@"""EquipementId"" : " + item.Id_Equipement + ",");
+                sb.Append(@"""SalleId"" : " + item.SalleId);
                 sb.Append("}");
 
                 string jsonData = sb.ToString();

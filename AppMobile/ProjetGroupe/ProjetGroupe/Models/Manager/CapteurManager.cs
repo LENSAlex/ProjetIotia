@@ -133,15 +133,15 @@ namespace ProjetGroupe.Models.Manager
             if (item != null)
             {
                 sb.Append(@"{""Id"" : """ + item.Id_Device + @""",");
-                sb.Append(@"{""CapteurTypeId"" : """ + item.CapteurTypeId + @""",");
-                sb.Append(@"{""ValeurTypeId"" : """ + item.ValueTypeId + @""",");
-                sb.Append(@"{""BoxId"" : """ + item.BoxId);
+                sb.Append(@"""CapteurTypeId"" : """ + item.CapteurTypeId + @""",");
+                sb.Append(@"""ValeurTypeId"" : """ + item.ValueTypeId + @""",");
+                sb.Append(@"""BoxId"" : """ + item.BoxId);
 
                 if (item.seuil_min != 0 && item.seuil_max != 0)
                 {
                     sb.Append(@""",");
-                    sb.Append(@"{""SeuilMin"" : """ + item.seuil_min + @""",");
-                    sb.Append(@"{""SeuiMax"" : """ + item.seuil_max + @"""}");
+                    sb.Append(@"""SeuilMin"" : """ + item.seuil_min + @""",");
+                    sb.Append(@"""SeuiMax"" : """ + item.seuil_max + @"""}");
                 }
                 else
                 {

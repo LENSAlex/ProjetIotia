@@ -1,8 +1,6 @@
-﻿
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using ProjetGroupe.Models;
 using ProjetGroupe.Models.Manager;
-using ProjetGroupe.Services;
 using ProjetGroupe.ViewModels;
 using System;
 using System.Collections.Generic;

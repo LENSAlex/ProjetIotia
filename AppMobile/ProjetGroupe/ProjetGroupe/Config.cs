@@ -5,7 +5,10 @@ using ProjetGroupe.Views;
 using System;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Reflection;
+using Xamarin.Forms;
 
 namespace ProjetGroupe
 {
@@ -16,6 +19,7 @@ namespace ProjetGroupe
         public static string NotificationHubName { get; set; }
         public static string NotificationChannelID { get; set; }
 
+        public static string WebServiceURI { get; set; }
         static Config()
         {
             var assembly = Assembly.GetExecutingAssembly();
@@ -29,6 +33,22 @@ namespace ProjetGroupe
             NotificationEndPoint = j.SelectToken("NotificationEndPoint").ToString();
             NotificationHubName = j.SelectToken("NotificationHubName").ToString();
             NotificationChannelID = j.SelectToken("NotificationChannelID").ToString();
+            WebServiceURI = j.SelectToken("WebServiceURI").ToString();
+        }
+    }
+    public class RestService
+    {
+        HttpClient _client;
+
+        public RestService()
+        {
+            _client = new HttpClient();
+
+            if (Device.RuntimePlatform == Device.Android)
+            {
+                _client.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
+                _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            }
         }
     }
 }

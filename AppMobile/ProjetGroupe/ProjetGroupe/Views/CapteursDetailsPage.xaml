@@ -22,7 +22,7 @@
         <Image Aspect="AspectFill" Source="overlay.png" HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" />
         <StackLayout Orientation="Vertical" Margin="0,20" HorizontalOptions="Center" VerticalOptions="Center">
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                <Label Text="Capteur de température" TextColor="White" FontSize="24" FontAttributes="Bold" VerticalOptions="Center"/>
+                <Label FontFamily="ThemeFontBold" Text="Capteur de température" TextColor="White" FontSize="24" FontAttributes="Bold" VerticalOptions="Center"/>
             </StackLayout>
         </StackLayout>
         <Frame BorderColor="#F0F0F0"  HasShadow="True" CornerRadius="30" Grid.Row="1" Padding="35,35,35,0" Margin="0,-35,0,-100" >

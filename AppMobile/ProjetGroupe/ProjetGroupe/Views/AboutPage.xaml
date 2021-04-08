@@ -26,7 +26,7 @@
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                 <Label Text="Contacts et Autres" TextColor="White" FontSize="36" FontAttributes="Bold" VerticalOptions="Center"/>
             </StackLayout>
-            <Label Text="Projet E-COVID" TextColor="White" FontSize="16" HorizontalOptions="Center"/>
+            <Label FontFamily="ThemeFontBold" Text="Projet E-COVID" TextColor="White" FontSize="16" HorizontalOptions="Center"/>
         </StackLayout>
         <Frame Grid.Row="1" HasShadow="True" CornerRadius="15" Margin="20,-30,20,0" Padding="0" HeightRequest="120" VerticalOptions="Start">
             <Grid HorizontalOptions="Center" VerticalOptions="Center">
@@ -42,12 +42,12 @@
                 <Grid Grid.Row="0">
                     <StackLayout Orientation="Horizontal" Spacing="1" HorizontalOptions="Start">
                         <StackLayout Spacing="20" HorizontalOptions="CenterAndExpand">
-                            <Label Text="Nombre de malade atteind du covid:" FontFamily="Roboto" HorizontalOptions="Start" TextColor="DarkGray" FontSize="12" Margin="10,10,10,0" VerticalOptions="Start"/>
-                            <Label Text="{Binding CasAll}" FontFamily="Roboto" HorizontalOptions="Start" TextColor="#C4263E" FontSize="12" Margin="10,0,10,0" VerticalOptions="Start"/>
+                            <Label Text="Nombre de malade atteind du covid:" FontFamily="ThemeFontBold" HorizontalOptions="Start" TextColor="DarkGray" FontSize="12" Margin="10,10,10,0" VerticalOptions="Start"/>
+                            <Label Text="{Binding CasAll}" FontFamily="ThemeFontBold" HorizontalOptions="Start" TextColor="#C4263E" FontSize="12" Margin="10,0,10,0" VerticalOptions="Start"/>
                             <Label Text="Nombre de malade atteind du covid dans le bâtiment:" FontFamily="Roboto" HorizontalOptions="Start" TextColor="DarkGray" FontSize="12" Margin="10,0,10,0" VerticalOptions="Start"/>
-                            <Label Text="{Binding CasBat}" FontFamily="Roboto" HorizontalOptions="Start" TextColor="#C4263E" FontSize="12" Margin="10,0,10,0" VerticalOptions="Start"/>
-                            <Label Text="Nombre de malade atteind dans la salle:" FontFamily="Roboto" HorizontalOptions="Start" TextColor="DarkGray" FontSize="12" Margin="10,0,10,0" VerticalOptions="Start"/>
-                            <Label Text="{Binding CasSalle}" FontFamily="Roboto" HorizontalOptions="Start" TextColor="#C4263E" FontSize="12" Margin="10,0,10,0" VerticalOptions="Start"/>
+                            <Label Text="{Binding CasBat}" FontFamily="ThemeFontBold" HorizontalOptions="Start" TextColor="#C4263E" FontSize="12" Margin="10,0,10,0" VerticalOptions="Start"/>
+                            <Label Text="Nombre de malade atteind dans la salle:" FontFamily="ThemeFontBold" HorizontalOptions="Start" TextColor="DarkGray" FontSize="12" Margin="10,0,10,0" VerticalOptions="Start"/>
+                            <Label Text="{Binding CasSalle}" FontFamily="ThemeFontBold" HorizontalOptions="Start" TextColor="#C4263E" FontSize="12" Margin="10,0,10,0" VerticalOptions="Start"/>
                         </StackLayout>
                     </StackLayout>
                 </Grid>

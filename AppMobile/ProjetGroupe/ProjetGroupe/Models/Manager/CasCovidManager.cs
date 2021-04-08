@@ -20,7 +20,7 @@ namespace ProjetGroupe.Models.Manager
             if (cas != null)
             {
                 sb.Append(@"{""DateAlerte"" : """ + cas.DateDeContamination + @""",");
-                sb.Append(@"{""PersonneId"" : " + Personne.IsLogged().Id);
+                sb.Append(@"""PersonneId"" : " + Personne.IsLogged().Id);
                 sb.Append("}");
 
                 string jsonData = sb.ToString();
