@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pd012752\\Desktop\\WEBProjetIotia\\Smart_ECovid_IUT\\ClasseE-Covid\\ClasseE-Covid.csproj": {}
+    "C:\\Users\\ga304263\\Source\\Repos\\ProjetIotia\\Smart_ECovid_IUT\\ClasseE-Covid\\ClasseE-Covid.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pd012752\\Desktop\\WEBProjetIotia\\Smart_ECovid_IUT\\ClasseE-Covid\\ClasseE-Covid.csproj": {
+    "C:\\Users\\ga304263\\Source\\Repos\\ProjetIotia\\Smart_ECovid_IUT\\ClasseE-Covid\\ClasseE-Covid.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pd012752\\Desktop\\WEBProjetIotia\\Smart_ECovid_IUT\\ClasseE-Covid\\ClasseE-Covid.csproj",
+        "projectUniqueName": "C:\\Users\\ga304263\\Source\\Repos\\ProjetIotia\\Smart_ECovid_IUT\\ClasseE-Covid\\ClasseE-Covid.csproj",
         "projectName": "ClasseE-Covid",
-        "projectPath": "C:\\Users\\pd012752\\Desktop\\WEBProjetIotia\\Smart_ECovid_IUT\\ClasseE-Covid\\ClasseE-Covid.csproj",
-        "packagesPath": "C:\\Users\\pd012752\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pd012752\\Desktop\\WEBProjetIotia\\Smart_ECovid_IUT\\ClasseE-Covid\\obj\\",
+        "projectPath": "C:\\Users\\ga304263\\Source\\Repos\\ProjetIotia\\Smart_ECovid_IUT\\ClasseE-Covid\\ClasseE-Covid.csproj",
+        "packagesPath": "C:\\Users\\ga304263\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ga304263\\Source\\Repos\\ProjetIotia\\Smart_ECovid_IUT\\ClasseE-Covid\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\pd012752\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ga304263\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
