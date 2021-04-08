@@ -8,7 +8,6 @@ namespace ProjetGroupe.Models
     {
         public int Id_Historique { get; set; }
         private int _BoxId;
-        //Id_Box
         public int BoxId
         {
             get

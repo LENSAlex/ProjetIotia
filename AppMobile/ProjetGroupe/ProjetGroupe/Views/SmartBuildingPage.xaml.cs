@@ -58,7 +58,8 @@ namespace ProjetGroupe.Views
             var obj = (Equipes)e.SelectedItem;
             var ide = Convert.ToInt32(obj.Id);
             Xamarin.Essentials.SecureStorage.SetAsync("CapteurId", ide.ToString());
-            Xamarin.Forms.Application.Current.MainPage = new CapteursDetailsPage();
+            Application.Current.MainPage = new CapteursDetailsPage();
+            //Go route vers la page (la remettre dans le shell pour permettre le go back
             searchResults.ItemsSource = null;
             searchBar.Text = "";
         }
@@ -67,7 +68,8 @@ namespace ProjetGroupe.Views
             var obj = (Personne)e.SelectedItem;
             var ide = Convert.ToInt32(obj.Id);
             Xamarin.Essentials.SecureStorage.SetAsync("CapteurId", ide.ToString());
-            Xamarin.Forms.Application.Current.MainPage = new CapteursDetailsPage();
+            Application.Current.MainPage = new CapteursDetailsPage();
+            //Go route vers la page (la remettre dans le shell pour permettre le go back
             searchResults.ItemsSource = null;
             searchBar.Text = "";
         }
@@ -93,6 +95,7 @@ namespace ProjetGroupe.Views
         //    }
         //}
     }
+    //ScrollViews
 
     //Voir si on peut mettre en place l'Excpander + Animation et background page CapteurDetails + animation listeview
 }

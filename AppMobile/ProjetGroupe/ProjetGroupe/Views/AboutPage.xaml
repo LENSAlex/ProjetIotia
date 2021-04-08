@@ -24,14 +24,14 @@
         <Image Source="overlay.png" Aspect="Fill" HeightRequest="300" VerticalOptions="StartAndExpand"/>
         <StackLayout Orientation="Vertical" Margin="0,20" HorizontalOptions="Center" VerticalOptions="Center">
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                <Label Text="Contacts et Autres" TextColor="White" FontSize="36" FontAttributes="Bold" VerticalOptions="Center"/>
+                <Label FontFamily="ThemeFontBold" Text="Contacts et Autres" TextColor="White" FontSize="36" FontAttributes="Bold" VerticalOptions="Center"/>
             </StackLayout>
             <Label FontFamily="ThemeFontBold" Text="Projet E-COVID" TextColor="White" FontSize="16" HorizontalOptions="Center"/>
         </StackLayout>
         <Frame Grid.Row="1" HasShadow="True" CornerRadius="15" Margin="20,-30,20,0" Padding="0" HeightRequest="120" VerticalOptions="Start">
             <Grid HorizontalOptions="Center" VerticalOptions="Center">
                 <Label Text="Alertez quand un produit est en pérunie" TextColor="White" FontSize="52" FontAttributes="Bold" VerticalOptions="Center"/>
-                <Label Text="Email: contact@iut-cote-dazur.fr" FontFamily="Roboto" HorizontalOptions="Start" TextColor="#C4263E" FontSize="12" Margin="20,20,10,20" VerticalOptions="Start"/>
+                <Label Text="Email: contact@iut-cote-dazur.fr" FontFamily="ThemeFontBold" HorizontalOptions="Start" TextColor="#C4263E" FontSize="12" Margin="20,20,10,20" VerticalOptions="Start"/>
             </Grid>
         </Frame>
         <Frame Grid.Row="3" HasShadow="True" CornerRadius="15" Margin="20,-10,20,20" Padding="0" HeightRequest="300" VerticalOptions="Start" BackgroundColor="AliceBlue">

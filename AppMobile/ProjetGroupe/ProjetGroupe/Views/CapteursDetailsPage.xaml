@@ -7,7 +7,8 @@
              xmlns:st="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions" xmlns:viewmodels="clr-namespace:ProjetGroupe.Views"
              x:DataType="viewmodels:CapteursDetailsPage"
              Title="Contacts et Autres"
-             Shell.NavBarIsVisible="False">
+             Shell.NavBarIsVisible="False"
+             Shell.TabBarIsVisible="False">
     <ContentPage.Resources>
         <ResourceDictionary>
             <Color x:Key="Accent">#96d1ff</Color>
@@ -43,16 +44,16 @@
                         <StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="FillAndExpand">
 
                             <Image HeightRequest="22" WidthRequest="12" Source="address.png" VerticalOptions="Center" HorizontalOptions="Start"/>
-                            <Label Text="Salle 209 Bâtiment IUT" FontSize="15" TextColor="Black" FontFamily="ThemeFontRegular" HorizontalOptions="Start" VerticalOptions="Center"/>
+                            <Label FontFamily="ThemeFontBold" Text="Salle 209 Bâtiment IUT" FontSize="15" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center"/>
                         </StackLayout>
-                        <Label Text="Sortir" Margin="0,0,5,-5" FontSize="12" FontAttributes="Bold" TextColor="Black" FontFamily="ThemeFontRegular" HorizontalOptions="End" VerticalOptions="End"/>
-                        <ImageButton BackgroundColor="Transparent" HeightRequest="50" WidthRequest="50" Source="back.png" VerticalOptions="Center" Clicked="OnImageButtonClicked" HorizontalOptions="End"/>
+                        <Label Text="Sortir" Margin="0,0,8,-5" FontSize="12" FontAttributes="Bold" TextColor="Black" FontFamily="ThemeFontBold" HorizontalOptions="End" VerticalOptions="End"/>
+                        <ImageButton BackgroundColor="Transparent" HeightRequest="55" WidthRequest="55" Source="back.png" VerticalOptions="Center" Clicked="OnImageButtonClicked" HorizontalOptions="End"/>
                         <Grid.GestureRecognizers>
                             <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
                         </Grid.GestureRecognizers>
                     </Grid>
                     <StackLayout Grid.Row="1" Spacing="15" >
-                        <Label Text="{Binding Date}" FontAttributes="Bold" FontSize="20" FontFamily="ThemeFontBold" TextColor="Black"/>
+                        <Label Text="{Binding Date}" FontAttributes="Bold" FontSize="20" FontFamily="ThemeFontRegular" TextColor="Black"/>
                         <StackLayout Orientation="Horizontal" Spacing="15">
                         </StackLayout>
                     </StackLayout>
@@ -86,7 +87,7 @@
                     <BoxView HeightRequest="1" VerticalOptions="Start" HorizontalOptions="FillAndExpand" BackgroundColor="AliceBlue"/>
                     <Label Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                           when an unknown printer took a galley of type and scrambled it to make a type specimen book."  FontSize="15" FontFamily="ThemeFontRegular" TextColor="#515151"/>
+                           when an unknown printer took a galley of type and scrambled it to make a type specimen book."  FontSize="16" FontFamily="ThemeFontBold" TextColor="#515151"/>
                 </StackLayout>
             </ScrollView>
         </pv:PancakeView>
