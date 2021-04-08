@@ -74,3 +74,7 @@ POST:
 //Pour les capteurs je dois faire des requetes pour remplir onem2m ou la bdd.
 //Pour recup ca se passe que avec la bdd.
 
+
+Faire partie admin en service pour administrer les brokers , rajouter enlever.
+
+
