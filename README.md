@@ -75,7 +75,9 @@ POST:
 //Pour recup ca se passe que avec la bdd.
 
 
-Faire partie admin en service pour administrer les brokers , rajouter enlever.
+-Faire partie admin en service pour administrer les brokers , rajouter enlever.
+-Du coup voir les routes util via les issues.
+
 
 - Application Mobile WebRequest:
 Get All Capteur (Liste les capteurs via un select *)
