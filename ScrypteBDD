@@ -223,7 +223,7 @@ ON Historique (id_historique, id_box, date_historique);
 CREATE OR REPLACE TABLE Departement
 (
 	id_departement INTEGER PRIMARY KEY AUTO_INCREMENT,
-	name VARCHAR(50)
+	nom VARCHAR(50)
 );
 CREATE INDEX ind_Departement ON Departement (id_departement);
 
@@ -340,7 +340,7 @@ CREATE OR REPLACE TABLE Badgeuse
 	id_salle 	INTEGER NOT NULL,
 	date_heure	DATETIME NOT NULL,
 	statut  	SMALLINT NOT NULL,
-	CONSTRAINT PK_Badgeuse PRIMARY KEY (id_personne, id_salle), 
+	CONSTRAINT PK_Badgeuse PRIMARY KEY (id_personne, date_heure), 
 	CONSTRAINT FK_Badgeuse_Personne FOREIGN KEY (id_personne) REFERENCES Personne (id_personne),
 	CONSTRAINT FK_Badgeuse_Salle 	FOREIGN KEY (id_salle) REFERENCES Salle (id_salle)
 );
