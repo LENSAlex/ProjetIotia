@@ -20,8 +20,8 @@ namespace ProjetGroupe.Models.Manager
             if (cas != null)
             {
                 sb.Append(@"{""DateAlerte"" : """ + cas.DateDeContamination + @""",");
-                sb.Append(@"{""PersonneId"" : """ + cas.PersonneId);
-                sb.Append(@"""}");
+                sb.Append(@"{""PersonneId"" : " + Personne.IsLogged().Id);
+                sb.Append("}");
 
                 string jsonData = sb.ToString();
                 //string json = JsonConvert.SerializeObject(item); A utiliser que si envoie d'une liste complète dès le départ.

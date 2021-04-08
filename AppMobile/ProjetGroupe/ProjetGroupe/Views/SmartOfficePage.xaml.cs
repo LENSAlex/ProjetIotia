@@ -23,14 +23,13 @@ namespace ProjetGroupe.Views
             InitializeComponent();
             this.BindingContext = new SmartOfficeViewModel()
             {
-                ListPersonne = GetJobsInfo(),
-                Id = GetId()
-                
+                ListPersonne = GetPersonne(),
+                Id = GetId(),
+                Email = GetMail()
             };
             _restService = new RestService();
-            //  Picker.ItemDisplayBinding.FallbackValue = personne.RFID;
         }
-        private List<Personne> GetJobsInfo()
+        private List<Personne> GetPersonne()
         {
             var list = Personne.List();
             return list.ToList();
@@ -38,64 +37,88 @@ namespace ProjetGroupe.Views
         private List<int> GetId()
         {
             List<int> list = new List<int>();
-            foreach(Personne personne in Personne.List())
+            foreach (Personne personne in Personne.List())
             {
                 list.Add(personne.Id);
             }
             return list.ToList();
         }
+        private List<string> GetMail()
+        {
+            List<string> list = new List<string>();
+            foreach (Personne personne in Personne.List())
+            {
+                list.Add(personne.Email);
+            }
+            return list.ToList();
+        }
         //3)SmartOffice => alerte à pénurie de produit avec choix du produit.
-
-        //Select sur le choix du produit
-        // PopUp ou alert validation
-        //envoie de msg ou mail ou insert dans bdd
-
-        //For example webrequest
-        //   async void OnButtonClicked(object sender, EventArgs e)
-        //   {
-        //       var obj = e.LoadFromXaml as Equipes;
-        //       var ide = Convert.ToInt32(obj.Id);
-        //       Penurie penurie = Penurie.Load()
-        ////       List<WebRequestProperty> repositories = await _restService.GetRepositoriesAsync(Constants.WebRequest);
-        //      // collectionView.ItemsSource = repositories;
-        //   }
-        //Voir poure remettre tout va en void
         public void OnPickerSelectedIndexChanged(object sender, EventArgs e)
         {
             var picker = (Picker)sender;
-            // var obj = (Personne)e.SelectedItem;
-            //   var Id = Convert.ToInt32(obj.Id);
-            int Id = 1;
-            int selectedIndex = picker.SelectedIndex;
-            Equipement equipement = new Equipement(); // A Remplacer par l'id de l'quipement choisi par le selected item
-            Salle salle = new Salle(); // trouver un moyen de récuperer l'id de la salle.
+            var selectedIndex = (Personne)picker.SelectedItem;
+            int Id = Convert.ToInt32(selectedIndex.Id);
             if (Id != 0)
             {
                 Personne personne = Personne.Load(Id);
                 if (personne != null)
                 {
-                    bool result = true;
-                   // var result = await DisplayAlert("Attention!", "Voulez vous vraiment alterter que ce produit est en pénurie?", "Valider", "Annuler");
-                    if (result == true)
-                    {
-                        Penurie penurie = new Penurie()
-                        {
-                            date_maj = DateTime.Now,
-                            Is_Penurie = true,
-                            Id_Equipement = equipement.Id,
-                            SalleId = salle.Id
-                        };
-                    //    await Penurie.UpdateStock(penurie);
-                        personne.RappelMail(personne);
-                        //Envoie d'une notification
-     
-                    }
-                    else
-                    {
-                        return;
-                    }
+                    GetDisplayChoiceAsync();
+                }
+                else
+                {
+                    return;
                 }
             }
+        }
+        public async Task UpdateStockAsync()
+        {
+            Salle salle = new Salle();
+            Equipement equipement = new Equipement();
+            Penurie penurie = new Penurie()
+            {
+                date_maj = DateTime.Now,
+                Is_Penurie = true,
+                Id_Equipement = 1,
+                SalleId = 1
+            };
+            var result = await Penurie.UpdateStock(penurie);
+            if(result=="Ok")
+            {
+                SetInfo();
+            }
+            else
+            {
+                return;
+            }
+         
+        }
+        public async Task GetDisplayChoiceAsync()
+        {
+            var result = await DisplayAlert("Attention!", "Voulez vous vraiment alterter que ce produit est en pénurie?", "Valider", "Annuler");
+            if (result == true)
+            {
+                UpdateStockAsync();
+                //result = false;
+            }
+            else
+            {
+                return;
+            }
+        }
+
+        public void SetInfo()
+        {
+            personne.RappelMail(personne);
+            Label1.Text = "Alerte envoyée avec succès";
+            Label1.IsVisible = true;
+        }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            Picker.TranslationY = 600;
+            Picker.TranslateTo(0, 0, 500, Easing.SinInOut);
+
         }
     }
 }

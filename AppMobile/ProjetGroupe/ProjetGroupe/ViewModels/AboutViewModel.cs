@@ -20,6 +20,10 @@ namespace ProjetGroupe.ViewModels
 {
     public class AboutViewModel : INotifyPropertyChanged
     {
+        public string CasAll { get; set; } = "12";
+        public string CasBat { get; set; } = "14";
+        public string CasSalle { get; set; } = "16";
+
         public event PropertyChangedEventHandler PropertyChanged;
         public ObservableCollection<Equipes> items { get; set; }
         public ObservableCollection<Equipes> Items
@@ -49,21 +53,21 @@ namespace ProjetGroupe.ViewModels
         }
 
     }
-    public class Equipes
-    {
-        [JsonProperty("Id")]
-        public int Id { get; set; }
-        [JsonProperty("name")]
-        public string Name { get; set; }
-        [JsonProperty("disponible")]
-        public bool Disponible { get; set; }
-        public static Task<ObservableCollection<Equipes>> List()
-        {
-            return CapteurManager.RefreshDataAsync();
-        }
-        public static Task<Equipes> Load(int id)
-        {
-            return CapteurManager.Load(id);
-        }
-    }
+    //public class Equipes
+    //{
+    //    [JsonProperty("Id")]
+    //    public int Id { get; set; }
+    //    [JsonProperty("name")]
+    //    public string Name { get; set; }
+    //    [JsonProperty("disponible")]
+    //    public bool Disponible { get; set; }
+    //    public static Task<ObservableCollection<Equipes>> List()
+    //    {
+    //        return CapteurManager.RefreshDataAsync();
+    //    }
+    //    public static Task<Equipes> Load(int id)
+    //    {
+    //        return CapteurManager.Load(id);
+    //    }
+    //}
 }

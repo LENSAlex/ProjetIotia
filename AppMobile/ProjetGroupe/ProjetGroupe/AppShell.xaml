@@ -87,12 +87,10 @@
         <ShellContent Icon="accueil.png" Title="Accueil" ContentTemplate="{DataTemplate local:AccueilPage}" />
         <ShellContent Icon="warning3.png" Title="Alertes Pénurie" ContentTemplate="{DataTemplate local:SmartOfficePage}" />
         <ShellContent Icon="data2.png" Title="Données Capteurs" ContentTemplate="{DataTemplate local:SmartBuildingPage}" />
-        <ShellContent Icon="contact.png" Title="Contacts" ContentTemplate="{DataTemplate local:eCovidPage}" />
+        <ShellContent Icon="contact.png" Title="Contacts" ContentTemplate="{DataTemplate local:AboutPage}" />
     </FlyoutItem>
 
     <MenuItem Icon="contact2.png" Text="Contacts et Autres" StyleClass="MenuItemLayoutStyle" Clicked="OnContactPageClicked">
-    </MenuItem>
-    <MenuItem Icon="contact2.png" Text="Contacts et Autres" StyleClass="MenuItemLayoutStyle" Clicked="OnTestPageClicked">
     </MenuItem>
     <MenuItem Icon="logout.png" Text="Déconnexion" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">
     </MenuItem>

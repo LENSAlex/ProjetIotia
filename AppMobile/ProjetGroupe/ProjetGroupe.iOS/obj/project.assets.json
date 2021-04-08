@@ -218,7 +218,7 @@
           "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {}
         }
       },
-      "Syncfusion.Licensing/18.4.0.49": {
+      "Syncfusion.Licensing/19.1.0.54": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
@@ -236,10 +236,10 @@
           "lib/netstandard2.0/Syncfusion.Compression.Portable.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/18.4.0.49": {
+      "Syncfusion.Xamarin.Core/19.1.0.54": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.49",
+          "Syncfusion.Licensing": "19.1.0.54",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -258,6 +258,21 @@
         },
         "runtime": {
           "lib/Xamarin.iOS10/Syncfusion.DataSource.Portable.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.Expander/19.1.0.54": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "19.1.0.54",
+          "Xamarin.Forms": "4.5.0.617"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Expander.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Expander.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Expander.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Expander.XForms.iOS.dll": {}
         }
       },
       "Syncfusion.Xamarin.GridCommon/18.4.0.49": {
@@ -575,6 +590,7 @@
           "MySqlConnector": "1.3.2",
           "Newtonsoft.Json": "13.0.1",
           "Newtonsoft.Json.Bson": "1.0.2",
+          "Syncfusion.Xamarin.Expander": "19.1.0.54",
           "Syncfusion.Xamarin.Pdf": "18.4.0.49",
           "Syncfusion.Xamarin.SfListView": "18.4.0.49",
           "Syncfusion.Xamarin.SfPopupLayout": "18.4.0.49",
@@ -810,7 +826,7 @@
           "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {}
         }
       },
-      "Syncfusion.Licensing/18.4.0.49": {
+      "Syncfusion.Licensing/19.1.0.54": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
@@ -828,10 +844,10 @@
           "lib/netstandard2.0/Syncfusion.Compression.Portable.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/18.4.0.49": {
+      "Syncfusion.Xamarin.Core/19.1.0.54": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.49",
+          "Syncfusion.Licensing": "19.1.0.54",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -850,6 +866,21 @@
         },
         "runtime": {
           "lib/Xamarin.iOS10/Syncfusion.DataSource.Portable.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.Expander/19.1.0.54": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "19.1.0.54",
+          "Xamarin.Forms": "4.5.0.617"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Expander.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Expander.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Expander.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Expander.XForms.iOS.dll": {}
         }
       },
       "Syncfusion.Xamarin.GridCommon/18.4.0.49": {
@@ -1167,6 +1198,7 @@
           "MySqlConnector": "1.3.2",
           "Newtonsoft.Json": "13.0.1",
           "Newtonsoft.Json.Bson": "1.0.2",
+          "Syncfusion.Xamarin.Expander": "19.1.0.54",
           "Syncfusion.Xamarin.Pdf": "18.4.0.49",
           "Syncfusion.Xamarin.SfListView": "18.4.0.49",
           "Syncfusion.Xamarin.SfPopupLayout": "18.4.0.49",
@@ -1402,7 +1434,7 @@
           "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {}
         }
       },
-      "Syncfusion.Licensing/18.4.0.49": {
+      "Syncfusion.Licensing/19.1.0.54": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
@@ -1420,10 +1452,10 @@
           "lib/netstandard2.0/Syncfusion.Compression.Portable.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/18.4.0.49": {
+      "Syncfusion.Xamarin.Core/19.1.0.54": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.49",
+          "Syncfusion.Licensing": "19.1.0.54",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -1442,6 +1474,21 @@
         },
         "runtime": {
           "lib/Xamarin.iOS10/Syncfusion.DataSource.Portable.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.Expander/19.1.0.54": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "19.1.0.54",
+          "Xamarin.Forms": "4.5.0.617"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Expander.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Expander.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Expander.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Expander.XForms.iOS.dll": {}
         }
       },
       "Syncfusion.Xamarin.GridCommon/18.4.0.49": {
@@ -1759,6 +1806,7 @@
           "MySqlConnector": "1.3.2",
           "Newtonsoft.Json": "13.0.1",
           "Newtonsoft.Json.Bson": "1.0.2",
+          "Syncfusion.Xamarin.Expander": "19.1.0.54",
           "Syncfusion.Xamarin.Pdf": "18.4.0.49",
           "Syncfusion.Xamarin.SfListView": "18.4.0.49",
           "Syncfusion.Xamarin.SfPopupLayout": "18.4.0.49",
@@ -1994,7 +2042,7 @@
           "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {}
         }
       },
-      "Syncfusion.Licensing/18.4.0.49": {
+      "Syncfusion.Licensing/19.1.0.54": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
@@ -2012,10 +2060,10 @@
           "lib/netstandard2.0/Syncfusion.Compression.Portable.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/18.4.0.49": {
+      "Syncfusion.Xamarin.Core/19.1.0.54": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "18.4.0.49",
+          "Syncfusion.Licensing": "19.1.0.54",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -2034,6 +2082,21 @@
         },
         "runtime": {
           "lib/Xamarin.iOS10/Syncfusion.DataSource.Portable.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.Expander/19.1.0.54": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "19.1.0.54",
+          "Xamarin.Forms": "4.5.0.617"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Expander.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Expander.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Expander.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Expander.XForms.iOS.dll": {}
         }
       },
       "Syncfusion.Xamarin.GridCommon/18.4.0.49": {
@@ -2351,6 +2414,7 @@
           "MySqlConnector": "1.3.2",
           "Newtonsoft.Json": "13.0.1",
           "Newtonsoft.Json.Bson": "1.0.2",
+          "Syncfusion.Xamarin.Expander": "19.1.0.54",
           "Syncfusion.Xamarin.Pdf": "18.4.0.49",
           "Syncfusion.Xamarin.SfListView": "18.4.0.49",
           "Syncfusion.Xamarin.SfPopupLayout": "18.4.0.49",
@@ -2726,10 +2790,10 @@
         "newtonsoft.json.bson.nuspec"
       ]
     },
-    "Syncfusion.Licensing/18.4.0.49": {
-      "sha512": "jyCApzsanhPcReiYKVTnS89D4Js4GhBN5coEuP/a2hhpYnMg3RdpyBUCA84pCl/04LN1O0ttGdRHxmcX5AIWYA==",
+    "Syncfusion.Licensing/19.1.0.54": {
+      "sha512": "8dQSVjq+P4ocJEXyQm45hv9IW5YICkuClTL2UZgNDkojBqqVHELbLhAEdyCM2Qpyh7+mg963+mXbNv3pxKWHng==",
       "type": "package",
-      "path": "syncfusion.licensing/18.4.0.49",
+      "path": "syncfusion.licensing/19.1.0.54",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2743,15 +2807,15 @@
         "lib/net45/Syncfusion.Licensing.dll",
         "lib/net451/Syncfusion.Licensing.dll",
         "lib/net46/Syncfusion.Licensing.dll",
+        "lib/net5.0/Syncfusion.Licensing.dll",
         "lib/netcoreapp3.1/Syncfusion.Licensing.dll",
-        "lib/netcoreapp5.0/Syncfusion.Licensing.dll",
         "lib/netstandard1.0/Syncfusion.Licensing.dll",
         "lib/netstandard1.2/Syncfusion.Licensing.dll",
         "lib/netstandard1.4/Syncfusion.Licensing.dll",
         "lib/netstandard2.0/Syncfusion.Licensing.dll",
         "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
         "lib/uap10.0/Syncfusion.Licensing.dll",
-        "syncfusion.licensing.18.4.0.49.nupkg.sha512",
+        "syncfusion.licensing.19.1.0.54.nupkg.sha512",
         "syncfusion.licensing.nuspec"
       ]
     },
@@ -2772,10 +2836,10 @@
         "syncfusion.xamarin.compression.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.Core/18.4.0.49": {
-      "sha512": "+34zcXH2SR12gccy3RfBHgZfeyOBC2ic93E5ZnOnvvBoA0JRZZfkD8mBznb3Ex/mbVquaLS+7dHJ0T+VrXpcjQ==",
+    "Syncfusion.Xamarin.Core/19.1.0.54": {
+      "sha512": "r8+BxA6H62zxQ7UZGohSaDT8y1c7IoSNt1gawd6dKHTzRlt+I/rdOk8PfUM60TbzOIzn25hEfSwSAr21e93NDw==",
       "type": "package",
-      "path": "syncfusion.xamarin.core/18.4.0.49",
+      "path": "syncfusion.xamarin.core/19.1.0.54",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2803,7 +2867,7 @@
         "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleVisibleIcon.xaml",
         "lib/uap10.0/Syncfusion.Core.XForms.dll",
         "lib/uap10.0/Syncfusion.Core.XForms.xml",
-        "syncfusion.xamarin.core.18.4.0.49.nupkg.sha512",
+        "syncfusion.xamarin.core.19.1.0.54.nupkg.sha512",
         "syncfusion.xamarin.core.nuspec"
       ]
     },
@@ -2828,6 +2892,40 @@
         "lib/uap10.0/Syncfusion.DataSource.Portable.dll",
         "syncfusion.xamarin.datasource.18.4.0.49.nupkg.sha512",
         "syncfusion.xamarin.datasource.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.Expander/19.1.0.54": {
+      "sha512": "prFdpP0VkUTIq5jsN+N4knxqJhVy4AEwwTGCaOqMyTj3xaeSG00TaXrGVKcjYjj84FZazR/LifdxczY+7B/F3g==",
+      "type": "package",
+      "path": "syncfusion.xamarin.expander/19.1.0.54",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10.0/Syncfusion.Expander.XForms.Android.dll",
+        "lib/MonoAndroid10.0/Syncfusion.Expander.XForms.dll",
+        "lib/MonoAndroid10.0/Syncfusion.Expander.XForms.xml",
+        "lib/MonoAndroid90/Syncfusion.Expander.XForms.Android.dll",
+        "lib/MonoAndroid90/Syncfusion.Expander.XForms.dll",
+        "lib/MonoAndroid90/Syncfusion.Expander.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.Expander.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Expander.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Expander.XForms.xml",
+        "lib/netstandard2.0/Syncfusion.Expander.XForms.dll",
+        "lib/netstandard2.0/Syncfusion.Expander.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Expander.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Expander.XForms.xml",
+        "lib/uap10.0/Syncfusion.Expander.XForms.UWP.XML",
+        "lib/uap10.0/Syncfusion.Expander.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.Expander.XForms.UWP.pri",
+        "lib/uap10.0/Syncfusion.Expander.XForms.UWP/Accordion/Accordion.xbf",
+        "lib/uap10.0/Syncfusion.Expander.XForms.UWP/Expander/Expander.xbf",
+        "lib/uap10.0/Syncfusion.Expander.XForms.UWP/LayoutTransformControl/LayoutTransformControl.xbf",
+        "lib/uap10.0/Syncfusion.Expander.XForms.UWP/Syncfusion.Expander.XForms.UWP.xr.xml",
+        "lib/uap10.0/Syncfusion.Expander.XForms.UWP/Themes/Generic.xbf",
+        "lib/uap10.0/Syncfusion.Expander.XForms.dll",
+        "lib/uap10.0/Syncfusion.Expander.XForms.xml",
+        "syncfusion.xamarin.expander.19.1.0.54.nupkg.sha512",
+        "syncfusion.xamarin.expander.nuspec"
       ]
     },
     "Syncfusion.Xamarin.GridCommon/18.4.0.49": {
@@ -3742,24 +3840,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bl005314\\.nuget\\packages\\": {},
+    "C:\\Users\\Poste\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bl005314\\Source\\Repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe.iOS\\ProjetGroupe.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Poste\\Source\\Repos\\ProjetIotiaV4\\AppMobile\\ProjetGroupe\\ProjetGroupe.iOS\\ProjetGroupe.iOS.csproj",
       "projectName": "ProjetGroupe.iOS",
-      "projectPath": "C:\\Users\\bl005314\\Source\\Repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe.iOS\\ProjetGroupe.iOS.csproj",
-      "packagesPath": "C:\\Users\\bl005314\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bl005314\\Source\\Repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe.iOS\\obj\\",
+      "projectPath": "C:\\Users\\Poste\\Source\\Repos\\ProjetIotiaV4\\AppMobile\\ProjetGroupe\\ProjetGroupe.iOS\\ProjetGroupe.iOS.csproj",
+      "packagesPath": "C:\\Users\\Poste\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Poste\\Source\\Repos\\ProjetIotiaV4\\AppMobile\\ProjetGroupe\\ProjetGroupe.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\bl005314\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Poste\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -3773,8 +3871,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\bl005314\\Source\\Repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj": {
-              "projectPath": "C:\\Users\\bl005314\\Source\\Repos\\ProjetIotiaV2\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj"
+            "C:\\Users\\Poste\\Source\\Repos\\ProjetIotiaV4\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj": {
+              "projectPath": "C:\\Users\\Poste\\Source\\Repos\\ProjetIotiaV4\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj"
             }
           }
         }

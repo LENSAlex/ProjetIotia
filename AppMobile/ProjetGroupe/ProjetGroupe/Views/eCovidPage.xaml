@@ -17,10 +17,6 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Image Source="overlay.png" Aspect="Fill" HeightRequest="300" VerticalOptions="StartAndExpand"/>
-        <!--<StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Start" VerticalOptions="Start" Margin="20,50">
-            <ImageButton Source="menu.png" WidthRequest="23" HeightRequest="15" HorizontalOptions="Start" VerticalOptions="Center" />
-            <Label Text="Accueil" FontSize="18" VerticalOptions="Center" TextColor="White"/>
-        </StackLayout>-->
         <StackLayout Orientation="Vertical" Margin="0,20" HorizontalOptions="Center" VerticalOptions="Center">
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                 <Label Text="/!\ E-Covid /!\" TextColor="White" FontSize="52" FontAttributes="Bold" VerticalOptions="Center"/>

@@ -8,21 +8,6 @@
     <ContentPage.BindingContext>
         <vm:AccueilViewModel />
     </ContentPage.BindingContext>
-    <!--<ContentPage.Content>
-        <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
-            <Label Text="Accueil" FontSize="Medium" />
-        </StackLayout>
-    </ContentPage.Content>-->
-    <!--<ListView x:Name="PersonneView"
-            ItemsSource="{Binding Personne}">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <TextCell Text="{Binding Nom}" />
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>-->
-
-
     <Grid VerticalOptions="FillAndExpand">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -32,17 +17,10 @@
         </Grid.RowDefinitions>
         <Image Source="overlay.png" Aspect="Fill" HeightRequest="300" VerticalOptions="StartAndExpand"/>
         <Image Source="logoiut.png" Margin="0,-160,0,0" WidthRequest="475" HeightRequest="475" HorizontalOptions="Center" VerticalOptions="Center"/>
-        <!--<StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Start" VerticalOptions="Start" Margin="20,50">
-            <ImageButton Source="menu.png" WidthRequest="23" HeightRequest="15" HorizontalOptions="Start" VerticalOptions="Center" />
-            <Label Text="Accueil" FontSize="18" VerticalOptions="Center" TextColor="White"/>
-        </StackLayout>-->
         <StackLayout Orientation="Vertical" Margin="0,40,0,0" HorizontalOptions="Center" VerticalOptions="Center">
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                 <Label Text="Smart E-Covid IUT" FontFamily="ThemeFontBold" HorizontalOptions="Center" TextColor="#DFDBED" FontSize="36" FontAttributes="Bold" VerticalOptions="Center"/>
             </StackLayout>
-            <!--<Label Text="Application Projet E-Covid" TextColor="White" FontSize="16" HorizontalOptions="Center"/>-->
-            <!--<Label Text="{Binding Date}" TextColor="White" FontSize="12" HorizontalOptions="Center"/>
-            <Label Text="{Binding Email}" TextColor="White" FontSize="12" HorizontalOptions="Center"/>-->
         </StackLayout>
         <Frame Grid.Row="1" HasShadow="True" CornerRadius="15" Margin="20,-80,20,20" Padding="0" HeightRequest="150" VerticalOptions="Start">
             <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
@@ -58,46 +36,18 @@
             </Grid>
         </Frame>
         <Frame Grid.Row="3" HasShadow="True" CornerRadius="15" Margin="20,-10,20,20" Padding="0" HeightRequest="300" VerticalOptions="Start" BackgroundColor="AliceBlue">
-            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Start">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <!--<StackLayout Orientation="Vertical" Spacing="1000" HorizontalOptions="CenterAndExpand">
-                    <StackLayout Spacing="20" HorizontalOptions="CenterAndExpand">
-                        <Label Text="Pensez aux autres en les avertissant au plus vite" FontFamily="Roboto" HorizontalOptions="Center" TextColor="#C4263E" FontSize="12" VerticalOptions="Center"/>
-                        <Button VerticalOptions="Center" CornerRadius="16" BackgroundColor="#C4263E" BorderWidth="2" BorderColor="#D6586D" WidthRequest="300" TextColor="White" Text="Alerte E-COVID" Command="{Binding LoginCommand}"/>
+                <Grid Grid.Row="0">
+                    <StackLayout Orientation="Horizontal" Spacing="1" HorizontalOptions="Start">
+                        <StackLayout Spacing="20" HorizontalOptions="CenterAndExpand">
+                            <Label Text="Projet LP-IOTIA : Une application mobile permettant d'alerter, et faire un suivi de la pandémie au sein de l'IUT." FontFamily="Roboto" HorizontalOptions="Start" TextColor="#C4263E" FontSize="12" Margin="10,20,10,20" VerticalOptions="Start"/>
+                        </StackLayout>
                     </StackLayout>
-                </StackLayout>-->
+                </Grid>
             </Grid>
         </Frame>
-        <!--<StackLayout Grid.Column="1" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
-                    <Image Source="wind.png" HeightRequest="25" HorizontalOptions="Center"/>
-                    <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                        <Label Text="2.6 m/s" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
-                        <Label Text="Wind" TextColor="#7D7D7D" FontSize="11" HorizontalOptions="Center"/>
-                    </StackLayout>
-                </StackLayout>
-                <StackLayout Grid.Column="2" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
-                    <Image Source="pressure.png" HeightRequest="25" HorizontalOptions="Center"/>
-                    <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                        <Label Text="1011 hpa" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
-                        <Label Text="Pressure" TextColor="#7D7D7D" FontSize="11" HorizontalOptions="Center"/>
-                    </StackLayout>
-                </StackLayout>
-                <StackLayout Grid.Column="3" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
-                    <Image Source="cloudiness.png" HeightRequest="25" HorizontalOptions="Center"/>
-                    <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                        <Label Text="24%" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
-                        <Label Text="Cloudiness" TextColor="#7D7D7D" FontSize="11" HorizontalOptions="Center"/>
-                    </StackLayout>
-                </StackLayout>-->
-        <!--<StackLayout Grid.Row="2" BackgroundColor="Transparent" Orientation="Horizontal" Margin="20" HorizontalOptions="End">
-            <ImageButton x:Name="ListBtn" Source="listColor.png" WidthRequest="15" HeightRequest="15" />
-            <ImageButton x:Name="GridBtn" Source="grid.png" WidthRequest="15" HeightRequest="15"/>
-        </StackLayout>-->
-        
-        <!--<StackLayout Grid.Row="2" BackgroundColor="Transparent" Orientation="Horizontal" Margin="20" HorizontalOptions="End">
-            <Button Margin="0,50,0,0" Text="Click Me" Clicked="{Binding Notif}" />
-        </StackLayout>-->
     </Grid>
 </ContentPage>   

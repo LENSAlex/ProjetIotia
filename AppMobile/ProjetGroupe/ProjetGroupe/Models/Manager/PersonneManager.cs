@@ -59,9 +59,9 @@ namespace ProjetGroupe.Models.Manager
 
             return item;
         }
-        internal static Personne SearchLike(string query)
+        internal static List<Personne> SearchLike(string query)
         {
-            Personne item = null;
+            List<Personne> list = new List<Personne>();
             using (MySqlConnection cnx = new MySqlConnection(Config.ConnectionString))
             {
                 using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM Personne3 WHERE email LIKE @email", cnx))
@@ -71,16 +71,17 @@ namespace ProjetGroupe.Models.Manager
                     cnx.Open();
                     using (MySqlDataReader dr = cmd.ExecuteReader())
                     {
-                        if (dr.Read())
+                        while (dr.Read())
                         {
-                            item = new Personne();
+                            Personne item = new Personne();
                             fill(item, dr);
+                            list.Add(item);
                         }
                     }
                 }
             }
 
-            return item;
+            return list;
         }
 
         internal static Personne Search(string rfid, string password)
