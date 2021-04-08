@@ -3,7 +3,7 @@ Projet fin d'année iotia (projet covid)
 
 Application Mobile:
 
-Cette application mobile à été développé en C# sous Windows grâvce au logiciel Visual Studio. 
+Cette application mobile à été développé en C# sous Windows grâce au logiciel Visual Studio. 
 Pour utiliser le code de l'application, le modifier vous devez:
 
 - 1] Installer Visual Studio Community 
