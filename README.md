@@ -21,26 +21,26 @@ Pour utiliser le code de l'application, le modifier vous devez:
 
 Pour la bibliothèque de classe:
 
-- PancakeView
-- SharedTransitions
-- Newtonsoft.Json
-- MySqlConnector
-- Microsoft.Azure.NotificationHubs
+- PancakeView (Composant XAML)
+- SharedTransitions (Composant XAML)
+- Newtonsoft.Json (Json Parser)
+- MySqlConnector (Liaison MySQL (falc))
+- Microsoft.Azure.NotificationHubs (Notification)
 - Syncfusion.Xamarin.pdf (Facultatif)
 
 Pour le projet Android Ios & UWP:
 
-- Newtonsoft.Json
-- MySqlConnector
+- Newtonsoft.Json (Json Parser)
+- MySqlConnector (Liaison MySQL (falc))
 - Microsoft.Azure.NotificationHubs.Android (.Ios .UWP en fonction de l'OS)
 - Syncfusion.Xamarin.pdf (Facultatif)
-- Xamarin.Firebase.Common
-- Xamarin.Firebase.Analytics.impl
-- Xamarin.Firebase.Messaging
-- Xamarin.Forms
-- Xamarin.Google.Dagger
-- Xamarin.GooglePlayServices.Base
-- Xamarin.GooglePlayServices.Basement
+- Xamarin.Firebase.Common (Notification)
+- Xamarin.Firebase.Analytics.impl (Analytics des Notifications)
+- Xamarin.Firebase.Messaging (Notification Hub)
+- Xamarin.Forms (Composants)
+- Xamarin.Google.Dagger (Service)
+- Xamarin.GooglePlayServices.Base (Service Google)
+- Xamarin.GooglePlayServices.Basement (Service Google)
 
 - 6] Vous devez également vous munir d'un compte Firebase & Azure Notification pour permettre à vos applications de recevoir des notifications push sur le téléphone. 
 https://cedgabrang.wixsite.com/xamarintipsandtricks/post/xamarin-forms-implementing-push-notification-using-firebase-cloud-messaging
