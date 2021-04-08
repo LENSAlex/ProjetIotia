@@ -7,10 +7,10 @@ const port = 3000;
 // BDD--------------------
 console.log('Get connection ...');
 var conn = mysql.createConnection({
-    database: 'test', //Voir database
+    database: 'ProjetIotia', //Voir database
     host: "51.75.125.121", //134.59.143.55:8081
-    user: "alex", //ioita
-    password: "*" //Sm@rt$2021
+    user: "iotia", //ioita
+    password: "iotia" //Sm@rt$2021
 });
 
 //https://www.sitepoint.com/using-node-mysql-javascript-client/
@@ -166,8 +166,7 @@ app.get("/Personne/GetIDPerson/:login/:mdp", (req, res) => {
 
 //POST / PUT --------------------------------------
 //HTTPS
-app.post("/Personne/Add/:IdPersType/:Num_ref/:password/:mail/:Tel/:Nom/:Prenom/:Sexe/:anniv/:RFID")
-{
+app.post("/Personne/Add/:IdPersType/:Num_ref/:password/:mail/:Tel/:Nom/:Prenom/:Sexe/:anniv/:RFID") {
     //Requete possible faire un insert avec toutes ces valeurs
 }
 
