@@ -13,8 +13,20 @@ RASPIAN 9.4
 /!\ A modifier en release 
 
 utilisateur root : 
-**user:** root
+**user:** pi 
 **password:** RASPiotia
 
 /!\ A modifier en release 
 
+**Configuration network** 
+Conection du résau lp-iotia, 
+static ip 192.168.0.10
+
+
+## Installation Packets
+**Installation packets bluetooth**
+
+bluetooth bluez libbluetooth-dev blueman python-bluez
+
+
+**Installation mosquitto**

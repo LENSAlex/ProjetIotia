@@ -17,6 +17,4 @@ Nous distinguons 3 entités qui interargissent entre elles. Ne seront spécifié
 
 ![Schemas interactions](/config-raspbery/SCHEMAS/SCHEMAS_EXPORT/0-1_interaction-entite.png)
 
-			https://github.com/LENSAlex/ProjetIotia/blob/configRaspbery/config-raspbery/SCHEMAS/SCHEMAS_EXPORT/0-1_interaction-entite.png
 
-<
