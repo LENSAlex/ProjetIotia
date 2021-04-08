@@ -76,7 +76,9 @@ POST:
 
 
 -Faire partie admin en service pour administrer les brokers , rajouter enlever.
--Du coup voir les routes util via les issues.
+-Du coup voir les routes utiles via les issues. 
+
+INFLUXDB et GRAPHANA
 
 
 - Application Mobile WebRequest:
