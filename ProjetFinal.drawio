@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-04-08T08:24:29.404Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" etag="NuGnquCNINNaKiWQRwQ5" version="14.5.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-08T08:28:29.801Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" etag="g8vOb8YKahUZggyN-KfS" version="14.5.4" type="github">
   <diagram name="Page-1" id="2ca16b54-16f6-2749-3443-fa8db7711227">
-    <mxGraphModel dx="1663" dy="2210" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="4275" dy="2698" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -49,12 +49,6 @@
             <mxPoint x="-600" y="239" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="72ab_2RYmbYa8t2Mf4Ar-15" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="470" y="-1020" width="580" height="580" as="geometry" />
-        </mxCell>
-        <mxCell id="72ab_2RYmbYa8t2Mf4Ar-16" value="&lt;font style=&quot;font-size: 20px&quot;&gt;Etage :&lt;br&gt;&amp;nbsp; &amp;nbsp;Etage_num --&amp;gt; RDC, 1er, 2eme ...etc&lt;br&gt;&lt;br&gt;Salle :&lt;br&gt;&amp;nbsp; &amp;nbsp;Volume --&amp;gt; volume de la pièce en M3&lt;br&gt;&amp;nbsp; &amp;nbsp;Capacite_max --&amp;gt; Capacité d&#39;accueille de la salle&lt;br&gt;&lt;br&gt;LORA, ArduinoLORA, ArduinoBL, TypeModule:&lt;br&gt;&amp;nbsp; &amp;nbsp;Reference --&amp;gt; Numéro de référence de la pièce&lt;br&gt;&lt;br&gt;TypeModule :&lt;br&gt;&amp;nbsp; Type --&amp;gt; Récepteur, Emetteur&amp;nbsp; &amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp;Type_valeur --&amp;gt; Définie le type de donnée transmise ou&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;réceptionnée pour le traitement&lt;br&gt;&lt;br&gt;Historique :&lt;br&gt;&amp;nbsp; &amp;nbsp;Valeur --&amp;gt; ce qui est transmit par un capteur&lt;br&gt;&amp;nbsp; &amp;nbsp;Date --&amp;gt; la date complète auquel à lieu l&#39;enregistrement&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;whiteSpace=wrap;rounded=0;font-size: larger;" parent="1" vertex="1">
-          <mxGeometry x="495" y="-985" width="530" height="510" as="geometry" />
-        </mxCell>
         <mxCell id="72ab_2RYmbYa8t2Mf4Ar-17" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Site&lt;/div&gt;&lt;table style=&quot;width: 100% ; font-size: 1em&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;id_site&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;nom&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
           <mxGeometry x="-80" y="-20.5" width="180" height="69" as="geometry" />
         </mxCell>
@@ -95,7 +89,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="72ab_2RYmbYa8t2Mf4Ar-28" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Module&lt;/div&gt;&lt;table style=&quot;width: 100% ; font-size: 1em&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;id_module&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;libelle&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;description&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;is_enabled&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
-          <mxGeometry x="930" y="90" width="180" height="95" as="geometry" />
+          <mxGeometry x="930" y="131.25" width="180" height="95" as="geometry" />
         </mxCell>
         <mxCell id="72ab_2RYmbYa8t2Mf4Ar-29" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Presentiel&lt;/div&gt;&lt;table style=&quot;width: 100% ; font-size: 1em&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;id_cours&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK2&lt;/td&gt;&lt;td&gt;id_personne&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;presence&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
           <mxGeometry x="1150" y="497" width="180" height="87.5" as="geometry" />
@@ -111,7 +105,9 @@
             <mxPoint x="1250" y="169.99999999999977" as="sourcePoint" />
             <mxPoint x="980" y="180" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1020" y="193" />
+              <mxPoint x="1320" y="193" />
+              <mxPoint x="1320" y="320" />
+              <mxPoint x="1020" y="320" />
             </Array>
           </mxGeometry>
         </mxCell>
