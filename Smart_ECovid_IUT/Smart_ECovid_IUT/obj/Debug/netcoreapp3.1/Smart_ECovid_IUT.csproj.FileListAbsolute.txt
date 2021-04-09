@@ -245,7 +245,12 @@ C:\Users\ga304263\Source\Repos\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin
 C:\Users\ga304263\Source\Repos\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\ga304263\Source\Repos\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\System.Text.Json.dll
 C:\Users\ga304263\Source\Repos\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\scopedcss\bundle\Smart_ECovid_IUT.styles.css
-C:\Users\ga304263\Source\Repos\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Campus\LogBatiment.cshtml.g.cs
-C:\Users\ga304263\Source\Repos\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Campus\LogCampus.cshtml.g.cs
 C:\Users\ga304263\Source\Repos\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Log\Logon.cshtml.g.cs
-C:\Users\ga304263\Source\Repos\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Utilisateur\Profil.cshtml.g.cs
+C:\Users\ga304263\Source\Repos\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\AlIndex.cshtml.g.cs
+C:\Users\ga304263\Source\Repos\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Campus\AlLogBatiment.cshtml.g.cs
+C:\Users\ga304263\Source\Repos\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Campus\AlLogCampus.cshtml.g.cs
+C:\Users\ga304263\Source\Repos\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\LogAlerte\AlAfficheLogAlerte.cshtml.g.cs
+C:\Users\ga304263\Source\Repos\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\LogAlerte\AlSignalCovid.cshtml.g.cs
+C:\Users\ga304263\Source\Repos\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Utilisateur\AlCreeModifUtilisateur.cshtml.g.cs
+C:\Users\ga304263\Source\Repos\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Utilisateur\AlProfil.cshtml.g.cs
+C:\Users\ga304263\Source\Repos\ProjetIotia\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\AlPrivacy.cshtml.g.cs
