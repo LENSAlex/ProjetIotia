@@ -25,7 +25,8 @@ namespace ProjetGroupe.Views
                 handler(this, new PropertyChangedEventArgs(propertyName));
             }
         }
-        public List<Personne> _Personne { get; set; }
+        public List<Salle> _Salle { get; set; }
+        public List<CapteurType> _CapteurType { get; set; }
         public string SearchResults { get; set; }
         public SmartBuildingPage()
         {
@@ -45,20 +46,41 @@ namespace ProjetGroupe.Views
         private void searchBar_TextChanged(object sender, TextChangedEventArgs e)
         {
             SearchBar searchBar = (SearchBar)sender;
-            searchResults.ItemsSource = PersonneSearch(searchBar.Text);
+            GetResultAsync(searchBar.Text);
+            searchResults.ItemsSource = _CapteurType;
         }
-        private List<Personne> PersonneSearch(string query)
+        //private List<Salle> SalleSearch(string query)
+        //{
+        //    _Salle = Salle.LoadSalleById(query);
+        //    return _Salle;
+        //}
+        public async void GetResultAsync(string query)
         {
-            _Personne = Personne.SearchLike(query);
-            return _Personne;
+            //_Salle = await Salle.ListSalleOfEleve();
+
+            //List<int> listId = new List<int>();
+
+            //CapteurType capteurType = new CapteurType();
+
+            //foreach (Salle id in _Salle)
+            //{
+            //    listId.Add(id.Id_device);
+            //}
+
+            //foreach(int id in listId)
+            //{
+            //    capteurType.Id = id;
+            //}
+            //Trouver une solution pour avoir 
+            _CapteurType = await Salle.ListCapteurBySalleId(query);
+
         }
         private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var obj = (CapteurType)e.SelectedItem;
             var ide = Convert.ToInt32(obj.Id);
             Xamarin.Essentials.SecureStorage.SetAsync("CapteurId", ide.ToString());
-            Application.Current.MainPage = new CapteursDetailsPage();
-            //Go route vers la page (la remettre dans le shell pour permettre le go back
+            Shell.Current.GoToAsync($"{nameof(CapteursDetailsPage)}");
             searchResults.ItemsSource = null;
             searchBar.Text = "";
         }
@@ -67,8 +89,7 @@ namespace ProjetGroupe.Views
             var obj = (CapteurType)e.SelectedItem;
             var ide = Convert.ToInt32(obj.Id);
             Xamarin.Essentials.SecureStorage.SetAsync("CapteurId", ide.ToString());
-            Application.Current.MainPage = new CapteursDetailsPage();
-            //Go route vers la page (la remettre dans le shell pour permettre le go back
+            Shell.Current.GoToAsync($"{nameof(CapteursDetailsPage)}");
             searchResults.ItemsSource = null;
             searchBar.Text = "";
         }

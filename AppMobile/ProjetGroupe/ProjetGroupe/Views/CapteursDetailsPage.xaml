@@ -9,6 +9,7 @@
              Title="Contacts et Autres"
              Shell.NavBarIsVisible="False"
              Shell.TabBarIsVisible="False">
+    
     <ContentPage.Resources>
         <ResourceDictionary>
             <Color x:Key="Accent">#96d1ff</Color>

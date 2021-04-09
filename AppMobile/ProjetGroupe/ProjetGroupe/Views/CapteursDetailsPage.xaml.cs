@@ -22,7 +22,7 @@ namespace ProjetGroupe.Views
         public DateTime Date { get; set; } = DateTime.Now;
         public async Task GetCapteur()
         {
-            Capteur = await Capteur.Load(Convert.ToInt32(CapteurId));
+           // Capteur = await Capteur.Load(Convert.ToInt32(CapteurId));
         }
         public CapteursDetailsPage()
         {
@@ -35,13 +35,13 @@ namespace ProjetGroupe.Views
 
         public void OnImageButtonClicked(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new AppShell();
+           // Application.Current.MainPage = new AppShell();
             SecureStorage.Remove("CapteurId");
             this.Navigation.PopAsync();
         }
         public void OnImageButtonClicked2(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new AppShell();
+           // Application.Current.MainPage = new AppShell();
             SecureStorage.Remove("CapteurId");
             this.Navigation.PopAsync();
         }

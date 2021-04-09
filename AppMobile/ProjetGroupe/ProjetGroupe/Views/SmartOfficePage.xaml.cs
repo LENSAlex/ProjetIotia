@@ -32,9 +32,10 @@ namespace ProjetGroupe.Views
         public SmartOfficePage()
         {
             InitializeComponent();
+            Label1.IsVisible = false;
             this.BindingContext = new SmartOfficeViewModel();
             _restService = new RestService();
-
+          
             WeathersList.RefreshCommand = new Command(() => {
                 WeathersList.IsRefreshing = true;
                 GetData();
@@ -65,8 +66,15 @@ namespace ProjetGroupe.Views
         }
         public async Task UpdateStockAsync()
         {
-            Salle salle = new Salle();
+
+            List<Salle> salle = await Salle.ListSalleOfEleve();
+            foreach(Salle s in salle)
+            {
+                //Indiquer la salle a choisir
+                //If la salle existe
+            }
             Equipement equipement = new Equipement();
+
             Penurie penurie = new Penurie()
             {
                 date_maj = DateTime.Now,
