@@ -296,7 +296,7 @@ CREATE OR REPLACE TABLE Module
 CREATE OR REPLACE TABLE Cours
 (
 	id_cours 		 INTEGER PRIMARY KEY AUTO_INCREMENT,
-	id_promotion     INTERGER NOT NULL, 
+	id_promotion     	 INTEGER NOT NULL, 
 	id_module		 INTEGER NOT NULL,
 	id_salle		 INTEGER NOT NULL,
 	id_professeur	 INTEGER NOT NULL,		
