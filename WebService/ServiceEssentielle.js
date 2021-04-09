@@ -19,9 +19,6 @@ conn.connect(function(err) {
     console.log("Connected!");
 })
 
-/*
-select B.id_box ,B.libelle , B.adr_ip , B.description ,Ba.nom , S.id_etage , S.nom  as NomSalle from Box B , Salle S , Etage E , Batiment Ba where B.id_salle = S.id_salle and S.id_etage = E.id_etage AND E.id_batiment = Ba.id_batiment;
-*/
 
 
 //------------------------------GET ----------------------------
@@ -41,7 +38,7 @@ app.get("/Personne/CasCovid", (req, res) => {
 
 app.get("/Batiment/CountInfo/Campus", (req, res) => {
     //Affciahe nb etage et nb salle par campus
-    conn.query("select * from (select a.id_salle , a.id_box ,a.libelle , a.adr_ip , a.description ,a.nom , a.id_etage , a.nom as NomSalle , PanneauSolaire from (select B.id_salle , B.id_box ,B.libelle , B.adr_ip , B.description ,Ba.nom , S.id_etage , S.nom as NomSalle from Box B , Salle S , Etage E , Batiment Ba where B.id_salle = S.id_salle and S.id_etage = E.id_etage AND E.id_batiment = Ba.id_batiment) a LEFT JOIN (select S.id_salle , count(*) as PanneauSolaire from DeviceType DT , Device D , Box B , Salle S where DT.id_devicetype = D.id_device AND D.id_box = B.id_box AND B.id_salle = S.id_salle AND DT.id_devicetype = 17 group by S.id_salle) b on a.id_salle = b.id_salle) c LEFT JOIN (select S.id_salle , count(*) as NbBouton from Device D , Box B , Salle S where D.id_box = B.id_box AND B.id_salle = S.id_salle AND D.id_devicetype = 11 group by S.id_salle) d on c.id_salle = d.id_salle", function(err, result) {
+    conn.query("select a.nom , nbetage , nbsalle from (select Site.nom, count(id_salle) as nbsalle from Site, Batiment, Etage, Salle where Site.id_site = Batiment.id_site and Batiment.id_batiment = Etage.id_batiment and Etage.id_etage = Salle.id_etage group by Site.nom) a, (select Site.nom, count(Etage.id_etage) as nbetage from Site, Batiment, Etage where Site.id_site = Batiment.id_site and Batiment.id_batiment = Etage.id_batiment group by Site.nom) b where a.nom = b.nom", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -93,6 +90,21 @@ app.get("/Personne/ListDevice", (req, res) => {
     });
 })
 
+//Liste des devices sans arduino et rasp pour dorian
+app.get("/Personne/ListDevice/All", (req, res) => {
+
+    //List device sans rpi et arduino 
+    conn.query("select id_box as IDBoxCapteur, DeviceType.id_devicetype, libelle_type from DeviceType, Box where Box.id_devicetype = DeviceType.id_devicetype and DeviceType.id_devicetype <> 1 and DeviceType.id_devicetype <> 2", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+
 //List des capteurs (device)
 app.get("/Personne/ListCapteur", (req, res) => {
 
@@ -110,7 +122,7 @@ app.get("/Personne/ListCapteur", (req, res) => {
 app.get("/Personne/Box/Info", (req, res) => {
 
     //List device sans rpi et arduino 
-    conn.query("select B.id_box ,B.libelle , B.adr_ip , B.description ,Ba.nom , S.id_etage , S.nom as NomSalle from Box B , Salle S , Etage E , Batiment Ba where B.id_salle = S.id_salle and S.id_etage = E.id_etage AND E.id_batiment = Ba.id_batiment", function(err, result) {
+    conn.query("select * from (select a.id_salle , a.id_box ,a.libelle , a.adr_ip , a.description ,a.nom , a.id_etage , a.nom as NomSalle , PanneauSolaire from (select B.id_salle , B.id_box ,B.libelle , B.adr_ip , B.description ,Ba.nom , S.id_etage , S.nom as NomSalle from Box B , Salle S , Etage E , Batiment Ba where B.id_salle = S.id_salle and S.id_etage = E.id_etage AND E.id_batiment = Ba.id_batiment) a LEFT JOIN (select S.id_salle , count(*) as PanneauSolaire from DeviceType DT , Device D , Box B , Salle S where DT.id_devicetype = D.id_device AND D.id_box = B.id_box AND B.id_salle = S.id_salle AND DT.id_devicetype = 17 group by S.id_salle) b on a.id_salle = b.id_salle) c LEFT JOIN (select S.id_salle , count(*) as NbBouton from Device D , Box B , Salle S where D.id_box = B.id_box AND B.id_salle = S.id_salle AND D.id_devicetype = 11 group by S.id_salle) d on c.id_salle = d.id_salle", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -228,8 +240,8 @@ app.get("/Personne/ListPromo", (req, res) => {
 })
 
 //List Salle pour eleve
-app.get("/Personne/ListSalleEleve", (req, res) => {
-    conn.query("select P.id_personne,S.id_salle from Personne P , Contenir C , Promotion Po , Cours Cou , Salle S where P.id_personne = C.id_eleve AND C.id_promotion = Po.id_promotion AND Po.id_promotion = Cou.id_promotion AND Cou.id_salle = S.id_salle", function(err, result) {
+app.get("/Personne/ListSalleEleve/:Id", (req, res) => {
+    conn.query("select distinct P.id_personne,S.id_salle from Personne P , Contenir C , Promotion Po , Cours Cou , Salle S where P.id_personne = C.id_eleve AND C.id_promotion = Po.id_promotion AND Po.id_promotion = Cou.id_promotion AND Cou.id_salle = S.id_salle and P.id_personne = '" + req.params.Id + "'", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -251,6 +263,48 @@ app.get("/Personne/ListSalleEleve/:Salle", (req, res) => {
     });
 })
 
+//Selection Personne via nom , prenom , email
+app.get("/Personne/GetIdEleve/:Nom/:Prenom/:Email", (req, res) => {
+    var id;
+    conn.query("select id_personne from Personne where nom = '" + req.params.Nom + "' and prenom = '" + req.params.Prenom + "' and email = '" + req.params.Email + "'", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            result.forEach((result) => {
+                id = result.id_personne;
+            });
+            conn.query("INSERT INTO `CasCovid`(`id_personne`, `date_declaration`) VALUES ('" + id + "',NOW())", function(err, result) {
+                if (err)
+                    res.status(400).json({ ErrorRequete: 'Requete invalid' });
+                else {
+                    res.status(200).json("Cas covid cree");
+                }
+            });
+        }
+    });
+})
+
+
+//Selection Personne via INE (unique normalement)
+app.get("/Personne/GetIdEleve/:Ine", (req, res) => {
+    var id;
+    conn.query("select id_personne from Personne where num_ref = '" + req.params.Ine + "'", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            result.forEach((result) => {
+                id = result.id_personne;
+            });
+            conn.query("INSERT INTO `CasCovid`(`id_personne`, `date_declaration`) VALUES ('" + id + "',NOW())", function(err, result) {
+                if (err)
+                    res.status(400).json({ ErrorRequete: 'Requete invalid' });
+                else {
+                    res.status(200).json("Cas covid cree");
+                }
+            });
+        }
+    });
+})
 
 //-----------------------------------PUT-----------------------------
 app.put("/Alerte/IsPenurie/:IdEquipement/:IdSalle", (req, res) => {
@@ -324,9 +378,8 @@ app.post("/Personne/Add/:NumRef/:IdPersType/:Password/:Email/:Tel/:Sexe/:Nom/:Pr
         }
     });
 
-
-
 })
+
 
 //Envoie nouveau covid vers CasCovid
 app.post("/Alerte/Covid/:IdPersonne", (req, res) => {
