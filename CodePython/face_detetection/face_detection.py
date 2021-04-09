@@ -1,9 +1,9 @@
 import cv2
-import time
+from time import sleep
 import sys
 import paho.mqtt.client as mqtt
 
-broker_address = "127.0.0.1"
+broker_address = "192.168.143.136"
 client = mqtt.Client("camera")
 # Load the cascade
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
@@ -28,6 +28,7 @@ while True:
     #print(nb_pers)
     client.connect(broker_address) #connect to broker
     client.publish("/batiment/etages/salles/nombre_pers",nb_pers)
+    sleep(1)
     #cv2.imshow('img', img)
     # Stop if escape key is pressed
     k = cv2.waitKey(30) & 0xff

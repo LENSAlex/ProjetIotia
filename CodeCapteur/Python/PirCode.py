@@ -24,13 +24,15 @@ from bluetooth import *
 import socket
 import tkinter as tk
 from datetime import datetime
-import time
+from time import sleep
 import re
 import paho.mqtt.client as mqtt
+import signal
+import sys
 
 #date de prise
-
-
+broker_address="192.168.143.136"
+client = mqtt.Client("capteur")
 now=datetime.now()
 date_time=now.strftime("%Y/%d/%m %H:%M:%S")
 dat=str(date_time)
@@ -61,8 +63,15 @@ client_socket_fenetre.connect(("50:02:91:8D:DC:56",1))
 client_socket_pir=socket.socket(socket.AF_BLUETOOTH,socket.SOCK_STREAM, socket.BTPROTO_RFCOMM)
 client_socket_pir.connect(("24:A1:60:46:AD:3E",1))
 
-mqtt.connect("mqtt.eclipse.org")
-mqtt.loop_start()
+def signal_handler(sig, frame):
+    print('You pressed Ctrl+C!')
+    client_socket_gaz.close()
+    #client_socket_haut_parleur.close()
+    client_socket_fenetre.close()
+    client_socket_pir.close()
+    sys.exit(0)
+
+signal.signal(signal.SIGINT, signal_handler)
 
 while True:
     size = 1024
@@ -71,6 +80,9 @@ while True:
     res_gaz = re.sub(r"[^Z0-9]","",data_gaz)
     dataGaz = res_gaz[0:3]
     print(dataGaz)
+    sleep(1)
+    client.connect(broker_address)
+    client.publish("/paho/gaz", dataGaz)
     #Reception data pour fenetre
     data_fenetre = str(client_socket_fenetre.recv(size))
     res_fenetre = re.sub(r"[^Z0-9]","",data_fenetre)
@@ -79,9 +91,13 @@ while True:
     data_pir = str(client_socket_pir.recv(size))
     res_pir = re.sub(r"[^Z0-9]","",data_pir)
     data_pir = res_pir[0:1]
+    sleep(1)
+    client.connect(broker_address)
+    client.publish("/paho/pir", data_pir)
     print(datafentre)
-    mqtt.publish("paho/temperature", 5)
-   
+    sleep(1)
+    client.connect(broker_address)
+    client.publish("/paho/fenetre", datafentre)   
     """
     if datafentre == "0" and dataGaz > "210":
         print("ferme")
@@ -120,3 +136,4 @@ client_socket_gaz.close()
 client_socket_haut_parleur.close()
 client_socket_fenetre.close()
 client_socket_pir.close()
+

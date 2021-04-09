@@ -10,7 +10,7 @@ import paho.mqtt.client as mqtt
 
 from time import sleep
 
-broker_address="127.0.0.1"
+broker_address="192.168.143.136"
 client = mqtt.Client("RFID_IUD")
 
 GPIO.setmode(GPIO.BOARD)
