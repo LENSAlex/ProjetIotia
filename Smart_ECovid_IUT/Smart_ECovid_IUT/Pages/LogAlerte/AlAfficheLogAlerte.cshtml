@@ -1,0 +1,96 @@
+﻿@page
+@model Smart_ECovid_IUT.Pages.LogAlerte.AlAfficheLogAlerteModel
+@{
+    Layout = "../Shared/_Layout_Lite.cshtml";
+}
+<div>
+    <div class="border-bottom mb-4">
+        <h1>Liste Log d'alerte</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header border-bottom">
+                    <h3>Liste cas Covid-19</h3>
+                </div>
+                <div class=" table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Nom</th>
+                                <th scope="col">prenom</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">etat</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Moky</th>
+                                <td>nina</td>
+                                <td>25/03/2021</td>
+                                <td>Possitif</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Jean</th>
+                                <td>Gabrielle</td>
+                                <td>16/01/2021</td>
+                                <td>Possitif</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Potote</th>
+                                <td>Michelle</td>
+                                <td>30/02/2021</td>
+                                <td>Possitif</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header border-bottom">
+                    <h3>Liste dépassement de Co2</h3>
+                </div>
+                <div class=" table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Campus</th>
+                                <th scope="col">Batiment</th>
+                                <th scope="col">etage</th>
+                                <th scope="col">Salle</th>
+                                <th scope="col">Horaire</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Carlone</th>
+                                <td><p>Phycologie</p></td>
+                                <td>3</td>
+                                <td>305</td>
+                                <td>12/02/2021 14:25:23</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Shophia</th>
+                                <td><p>Informatique</p></td>
+                                <td>1</td>
+                                <td>206</td>
+                                <td>28/11/2020 9:23:59</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Fabron</th>
+                                <td><p>Reseau</p></td>
+                                <td>2</td>
+                                <td>305</td>
+                                <td>07/03/2021 17:56:43</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

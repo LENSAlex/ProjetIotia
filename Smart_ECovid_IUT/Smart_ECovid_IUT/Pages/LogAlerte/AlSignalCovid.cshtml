@@ -1,0 +1,70 @@
+﻿@page
+@model Smart_ECovid_IUT.Pages.LogAlerte.SignalCovidModel
+@{
+    Layout = "../Shared/_Layout_Lite.cshtml";
+}
+<div class="container">
+    <div class="border-bottom mb-4">
+        <h1> Nouveau cas covid</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-12 mb-4">
+            <div class="card">
+                <div class="card-header border-bottom">
+                    <h3><i class="fas fa-biohazard"></i><i class="fas fa-biohazard"></i><i class="fas fa-biohazard"></i></h3>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label for="Num">Numéro d'identification</label>
+                    <div class="align-self-center d-flex">
+                        <input type="text" class="form-control" id="Num" placeholder="N° INE ou NUMEN" required />
+                    </div>
+                    <div class="card-body border-bottom col-md-4">
+                        <form>
+
+                            <button class="btn btn-primary" type="submit">Signalement</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 mb-4">
+        <div class="card">
+            <div class="card-header border-bottom">
+                <h3><i class="fas fa-biohazard"></i><i class="fas fa-biohazard"></i><i class="fas fa-biohazard"></i></h3>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="Prenom">Prénom</label>
+                <input type="text" class="form-control" id="Prenom" placeholder="Prénom" required />
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="Nom">Nom</label>
+                <input type="text" class="form-control" id="Nom" placeholder="Nom" required />
+            </div>
+            <div class="dropdown">
+                <label for="dropdownMenuButton">Type</label>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Etudiant
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Etudiant</a>
+                    <a class="dropdown-item" href="#">Enseignant</a>
+                    <a class="dropdown-item" href="#">Administratif</a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="Num">Formation</label>
+                <input type="text" class="form-control" id="Num" placeholder="Fomation" required />
+            </div>
+
+            <div class="card-body border-bottom col-md-4">
+                <form>
+                    <button class="btn btn-primary" type="submit">Signalement</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

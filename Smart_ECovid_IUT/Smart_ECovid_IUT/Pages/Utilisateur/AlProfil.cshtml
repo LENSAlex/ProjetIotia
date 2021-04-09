@@ -1,0 +1,52 @@
+﻿@page
+@model Smart_ECovid_IUT.Pages.Utilisateur.ProfilModel
+@{
+    Layout = "../Shared/_Layout_Lite.cshtml";
+}
+<div class="container">
+<div class="border-bottom mb-4">
+    <h1> Mon profil</h1>
+</div>
+<div class="row">
+    <div class="col-md-12 mb-4">
+        <div class="card">
+            <div class="card-header border-bottom">
+                <h3>Mes infos</h3>
+            </div>
+            <div class="card-body border-bottom">
+                <form>
+                    <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                            <label for="Nom">Nom</label>
+                            <input type="text" class="form-control" id="Nom" placeholder="Nom" required />
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="Prenom">Prénom</label>
+                            <input type="text" class="form-control" id="Prenom" placeholder="Prénom" required />
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="Statut">Statut</label>
+                            <input type="text" class="form-control" id="Statut" placeholder="Statut" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationDefault03">City</label>
+                            <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="validationDefault04">State</label>
+                            <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="validationDefault05">Zip</label>
+                            <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Modifier</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
