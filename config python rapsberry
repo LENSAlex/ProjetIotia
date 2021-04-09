@@ -1,7 +1,7 @@
 librairie python à installer :
--sudo -H pip3 install pahoo-mqtt opencv-python bluepy
+-sudo -H pip3 install paho-mqtt opencv-python bluepy
 
--sudo -H pip install pahoo-mqtt pi-rc522
+-sudo -H pip install paho-mqtt pi-rc522
 
 
 -git clone https://github.com/the-raspberry-pi-guy/lcd
