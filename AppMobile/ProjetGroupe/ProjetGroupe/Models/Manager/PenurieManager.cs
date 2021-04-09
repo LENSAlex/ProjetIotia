@@ -12,7 +12,7 @@ namespace ProjetGroupe.Models.Manager
         internal static async Task<string> UpdateStock(Penurie item)
         {
             var httpClient = new HttpClient();
-            string WebAPIUrl = "http://51.77.137.170:8080/Alerte/Covid/Personne";
+            string WebAPIUrl = Config.WebServiceURI + "/Alerte/IsPenurie/:IdEquipement/:IdSalle";
             Uri uri = new Uri(WebAPIUrl);
             httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
             StringBuilder sb = new StringBuilder();

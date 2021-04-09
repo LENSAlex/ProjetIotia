@@ -61,17 +61,7 @@ namespace ProjetGroupe.Models
         private CapteurType _capteurType;
         public CapteurType CapteurType
         {
-            get
-            {
-                if (_capteurType == null && CapteurTypeId != 0)
-                    _capteurType = CapteurType.Load(CapteurTypeId);
-                return _capteurType;
-            }
-            set
-            {
-                _capteurType = value;
-                _CapteurTypeId = value?.Id ?? 0;
-            }
+            get; set;
         }
 
         private int _ValueTypeId;
@@ -110,10 +100,7 @@ namespace ProjetGroupe.Models
         {
             return CapteurManager.LoadCapteur(Id);
         }
-        public static Task<ObservableCollection<Capteur>> List()
-        {
-            return CapteurManager.ListCapteur();
-        }
+
         public static Task<string> Save(Capteur capteur)
         {
             return CapteurManager.Save(capteur);

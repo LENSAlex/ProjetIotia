@@ -72,10 +72,10 @@
                                 <Label FontFamily="ThemeFontBold" Text="{Binding Id}" TextColor="Black" FontSize="10" Margin="20,0" FontAttributes="Bold" VerticalOptions="Center"/>
                                 <BoxView Grid.Column="0" BackgroundColor="#96d1ff" WidthRequest="8" Margin="-14,-10" HorizontalOptions="Start" 
                                                  VerticalOptions="FillAndExpand"/>
-                                <Label FontFamily="ThemeFontBold" Text="{Binding Name}" TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="50,0,20,0"/>
+                                <Label FontFamily="ThemeFontBold" Text="{Binding LibelleType}" TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="50,0,20,0"/>
 
                                 <StackLayout Grid.Column="2" Orientation="Horizontal" Margin="20,0" HorizontalOptions="End" VerticalOptions="Center">
-                                    <Label FontFamily="ThemeFontBold" Text="{Binding Disponible}" TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="20,0"/>
+                                    <Label FontFamily="ThemeFontBold" Text="{Binding Description}" TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="20,0"/>
                                 </StackLayout>
                             </Grid>
                         </Frame>

@@ -2,7 +2,10 @@
 using ProjetGroupe.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,51 +18,41 @@ namespace ProjetGroupe.Views
 {
     public partial class SmartOfficePage : ContentPage
     {
-        Personne personne = new Personne();
         RestService _restService;
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChangedEventHandler handler = PropertyChanged;
+            if (handler != null)
+            {
+                handler(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
         public SmartOfficePage()
         {
             InitializeComponent();
-            this.BindingContext = new SmartOfficeViewModel()
-            {
-                ListPersonne = GetPersonne(),
-                Id = GetId(),
-                Email = GetMail()
-            };
+            this.BindingContext = new SmartOfficeViewModel();
             _restService = new RestService();
+
+            WeathersList.RefreshCommand = new Command(() => {
+                WeathersList.IsRefreshing = true;
+                GetData();
+                WeathersList.IsRefreshing = false;
+            });
         }
-        private List<Personne> GetPersonne()
+        public async void GetData()
         {
-            var list = Personne.List();
-            return list.ToList();
-        }
-        private List<int> GetId()
-        {
-            List<int> list = new List<int>();
-            foreach (Personne personne in Personne.List())
-            {
-                list.Add(personne.Id);
-            }
-            return list.ToList();
-        }
-        private List<string> GetMail()
-        {
-            List<string> list = new List<string>();
-            foreach (Personne personne in Personne.List())
-            {
-                list.Add(personne.Email);
-            }
-            return list.ToList();
+            WeathersList.ItemsSource = await Equipement.ListEquipement();
         }
         //3)SmartOffice => alerte à pénurie de produit avec choix du produit.
-        public void OnPickerSelectedIndexChanged(object sender, EventArgs e)
+        private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            var picker = (Picker)sender;
-            var selectedIndex = (Personne)picker.SelectedItem;
-            int Id = Convert.ToInt32(selectedIndex.Id);
-            if (Id != 0)
+            var obj = (Equipement)e.SelectedItem;
+            var ide = Convert.ToInt32(obj.Id);
+            if(ide != 0)
             {
-                Personne personne = Personne.Load(Id);
+                Personne personne = Personne.Load(ide);
                 if (personne != null)
                 {
                     GetDisplayChoiceAsync();
@@ -108,16 +101,33 @@ namespace ProjetGroupe.Views
 
         public void SetInfo()
         {
-            personne.RappelMail(personne);
+            //personne.RappelMail(personne);
             Label1.Text = "Alerte envoyée avec succès";
             Label1.IsVisible = true;
         }
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            Picker.TranslationY = 600;
-            Picker.TranslateTo(0, 0, 500, Easing.SinInOut);
-
+            WeathersList.TranslationY = 600;
+            WeathersList.TranslateTo(0, 0, 500, Easing.SinInOut);
         }
+        //public void OnPickerSelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    var picker = (Picker)sender;
+        //    var selectedIndex = (Personne)picker.SelectedItem;
+        //    int Id = Convert.ToInt32(selectedIndex.Id);
+        //    if (Id != 0)
+        //    {
+        //        Personne personne = Personne.Load(Id);
+        //        if (personne != null)
+        //        {
+        //            GetDisplayChoiceAsync();
+        //        }
+        //        else
+        //        {
+        //            return;
+        //        }
+        //    }
+        //}
     }
 }

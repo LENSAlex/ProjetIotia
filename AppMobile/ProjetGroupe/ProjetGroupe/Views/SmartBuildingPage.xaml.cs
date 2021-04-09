@@ -15,7 +15,16 @@ namespace ProjetGroupe.Views
 {
     public partial class SmartBuildingPage : ContentPage, INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler PropertyChanged;
 
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChangedEventHandler handler = PropertyChanged;
+            if (handler != null)
+            {
+                handler(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
         public List<Personne> _Personne { get; set; }
         public string SearchResults { get; set; }
         public SmartBuildingPage()
@@ -31,17 +40,7 @@ namespace ProjetGroupe.Views
         }
         public async void GetData()
         {
-            WeathersList.ItemsSource = await Equipes.List();
-        }
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChangedEventHandler handler = PropertyChanged;
-            if (handler != null)
-            {
-                handler(this, new PropertyChangedEventArgs(propertyName));
-            }
+            WeathersList.ItemsSource = await CapteurType.List();
         }
         private void searchBar_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -55,7 +54,7 @@ namespace ProjetGroupe.Views
         }
         private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            var obj = (Equipes)e.SelectedItem;
+            var obj = (CapteurType)e.SelectedItem;
             var ide = Convert.ToInt32(obj.Id);
             Xamarin.Essentials.SecureStorage.SetAsync("CapteurId", ide.ToString());
             Application.Current.MainPage = new CapteursDetailsPage();
@@ -65,7 +64,7 @@ namespace ProjetGroupe.Views
         }
         private void OnItemSelected2(object sender, SelectedItemChangedEventArgs e)
         {
-            var obj = (Personne)e.SelectedItem;
+            var obj = (CapteurType)e.SelectedItem;
             var ide = Convert.ToInt32(obj.Id);
             Xamarin.Essentials.SecureStorage.SetAsync("CapteurId", ide.ToString());
             Application.Current.MainPage = new CapteursDetailsPage();
@@ -86,20 +85,18 @@ namespace ProjetGroupe.Views
             searchResults.TranslationY = 600;
             searchResults.TranslateTo(0, 0, 500, Easing.SinInOut);
         }
-        //private void WeathersList_Refreshing(object sender, EventArgs e)
-        //{
-        //    var personne = Personne.IsLogged();
-        //    if (personne != null)
-        //    {
-        //        IsBusy = false;
-        //    }
-        //}
     }
     //ScrollViews
 
     //Voir si on peut mettre en place l'Excpander + Animation et background page CapteurDetails + animation listeview
-}
+}      //Notification Hub plz
       
     //2)SmartBuilding => affichage des énergie, Co2, température 
 
     //Recherche de données en fonction de la salle entrée
+
+
+//arrangé la listviews de façon a voir la liste entière
+
+//Une page complète de la liste des capteurs
+//Une page pour la recherche des capteurs

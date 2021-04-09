@@ -17,8 +17,8 @@ namespace ProjetGroupe.ViewModels
     public class SmartBuildingViewModel : BaseViewModel, INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
-        public ObservableCollection<Equipes> items { get; set; }
-        public ObservableCollection<Equipes> Items
+        public ObservableCollection<CapteurType> items { get; set; }
+        public ObservableCollection<CapteurType> Items
         {
             get
             {
@@ -32,7 +32,7 @@ namespace ProjetGroupe.ViewModels
         }
         public async void GetData()
         {
-            Items = await Equipes.List();
+            Items = await CapteurType.List();
         }
         public void RaisepropertyChanged(string propertyName)
         {
@@ -87,7 +87,7 @@ namespace ProjetGroupe.ViewModels
             return listPersonne;
         }
     }
-    public class Equipes
+    public class Equiquement
     {
         [JsonProperty("Id")]
         public int Id { get; set; }
@@ -95,11 +95,11 @@ namespace ProjetGroupe.ViewModels
         public string Name { get; set; }
         [JsonProperty("disponible")]
         public bool Disponible { get; set; }
-        public static Task<ObservableCollection<Equipes>> List()
+        public static Task<ObservableCollection<Equiquement>> List()
         {
             return CapteurManager.RefreshDataAsync();
         }
-        public static Task<Equipes> Load(int id)
+        public static Task<Equiquement> Load(int id)
         {
             return CapteurManager.Load(id);
         }

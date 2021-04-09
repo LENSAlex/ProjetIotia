@@ -14,10 +14,10 @@ namespace ProjetGroupe.Models.Manager
 {
     internal static class CapteurManager
     {
-        internal static async Task<Equipes> Load(int id)
+        internal static async Task<Equiquement> Load(int id)
         {
             var httpClient = new HttpClient();
-            Equipes Items = null;
+            Equiquement Items = null;
 
             if (Device.RuntimePlatform == Device.Android)
             {
@@ -35,7 +35,7 @@ namespace ProjetGroupe.Models.Manager
                 if (response.IsSuccessStatusCode)
                 {
                     var content = await response.Content.ReadAsStringAsync();
-                    Items = JsonConvert.DeserializeObject<Equipes>(content);
+                    Items = JsonConvert.DeserializeObject<Equiquement>(content);
 
                     return Items;
                 }
@@ -43,10 +43,10 @@ namespace ProjetGroupe.Models.Manager
             catch (Exception ex) { }
             return null;
         }
-        internal static async Task<ObservableCollection<Equipes>> RefreshDataAsync()
+        internal static async Task<ObservableCollection<Equiquement>> RefreshDataAsync()
         {
             var httpClient = new HttpClient();
-            ObservableCollection<Equipes> list = new ObservableCollection<Equipes>();
+            ObservableCollection<Equiquement> list = new ObservableCollection<Equiquement>();
             if (Device.RuntimePlatform == Device.Android)
             {
                 httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
@@ -61,23 +61,23 @@ namespace ProjetGroupe.Models.Manager
                 if (response.IsSuccessStatusCode)
                 {
                     var content = await response.Content.ReadAsStringAsync();
-                    list = JsonConvert.DeserializeObject<ObservableCollection<Equipes>>(content);
+                    list = JsonConvert.DeserializeObject<ObservableCollection<Equiquement>>(content);
                     return list;
                 }
             }
             catch (Exception ex) { }
             return null;
         }
-        internal static async Task<ObservableCollection<Capteur>> ListCapteur()
+        internal static async Task<ObservableCollection<CapteurType>> ListCapteur()
         {
             var httpClient = new HttpClient();
-            ObservableCollection<Capteur> list = new ObservableCollection<Capteur>();
+            ObservableCollection<CapteurType> list = new ObservableCollection<CapteurType>();
             if (Device.RuntimePlatform == Device.Android)
             {
                 httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
                 httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             }
-            string WebAPIUrl = "http://51.77.137.170:8080/equipes";
+            string WebAPIUrl = Config.WebServiceURI + "/Personne/ListCapteur";
             var uri = new Uri(WebAPIUrl);
             try
             {
@@ -86,7 +86,7 @@ namespace ProjetGroupe.Models.Manager
                 if (response.IsSuccessStatusCode)
                 {
                     var content = await response.Content.ReadAsStringAsync();
-                    list = JsonConvert.DeserializeObject<ObservableCollection<Capteur>>(content);
+                    list = JsonConvert.DeserializeObject<ObservableCollection<CapteurType>>(content);
                     return list;
                 }
             }

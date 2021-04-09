@@ -33,7 +33,7 @@ namespace ProjetGroupe.Views
 
         private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            var obj = (Equipes)e.SelectedItem;
+            var obj = (Equiquement)e.SelectedItem;
             var ide = Convert.ToInt32(obj.Id);
             //Application.Current.MainPage.DisplayAlert("Capteur:", "Informations "+ ide, "Ok");
             Xamarin.Essentials.SecureStorage.SetAsync("CapteurId", ide.ToString());

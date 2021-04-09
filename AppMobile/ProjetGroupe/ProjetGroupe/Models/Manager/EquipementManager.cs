@@ -21,7 +21,7 @@ namespace ProjetGroupe.Models.Manager
                 httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
                 httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             }
-            string WebAPIUrl = "http://51.77.137.170:8080/equipes";
+            string WebAPIUrl = Config.WebServiceURI + "/Batiment/ListEquipement";
             var uri = new Uri(WebAPIUrl);
             try
             {
