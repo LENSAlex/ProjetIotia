@@ -17,3 +17,6 @@ sudo iwconfig wlan0 mode Managed
 sudo ifconfig wlan0 up
 sudo iwlist wlan0 scan
 ```
+
+To configure wpa suplicant(https://linuxconfig.org/how-to-connect-to-wifi-from-the-cli-on-debian-10-buster)
+
