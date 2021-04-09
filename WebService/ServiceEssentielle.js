@@ -66,7 +66,7 @@ app.get("/Personne/ListPersonne", (req, res) => {
     //Prof faisable aussi voir demain
 
     //Affichage formation avec departement et duree
-    conn.query("select * from (select Personne.id_personne, num_ref, Personne.id_pers_type, password, email, telephone, sexe, nom, prenom, date_anniversaire, rfid, libelle, description from Personne, PersonneType where Personne.id_pers_type = PersonneType.id_pers_type) pers LEFT JOIN (select nom, Contenir.id_promotion, id_eleve from (select id_promotion, nom from Promotion, Formation where Promotion.id_formation = Formation.id_formation and (annee + duree) >= (SELECT YEAR(NOW()))) a, Contenir where a.id_promotion = Contenir.id_promotion) b on pers.id_personne = b.id_eleve", function(err, result) {
+    conn.query("select * from (select Personne.id_personne, num_ref, Personne.id_pers_type, password, email, telephone, sexe, nom, prenom, date_anniversaire, rfid, libelle, description from Personne, PersonneType where Personne.id_pers_type = PersonneType.id_pers_type) pers LEFT JOIN (select nom as NomFormation, Contenir.id_promotion, id_eleve from (select id_promotion, nom from Promotion, Formation where Promotion.id_formation = Formation.id_formation and (annee + duree) >= (SELECT YEAR(NOW()))) a, Contenir where a.id_promotion = Contenir.id_promotion) b on pers.id_personne = b.id_eleve", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -202,7 +202,7 @@ app.get("/Batiment/ListSite", (req, res) => {
 
 //List des Batiment
 app.get("/Batiment/ListBatiment", (req, res) => {
-    conn.query("select id_batiment , nom from Batiment", function(err, result) {
+    conn.query("select id_batiment ,id_site , nom from Batiment", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -212,10 +212,41 @@ app.get("/Batiment/ListBatiment", (req, res) => {
     });
 })
 
-// Get list des équipements pour le stock (Liste les équipements disponible dans l'établissement)
-//Voir avec Loris
+//List Promo
+app.get("/Personne/ListPromo", (req, res) => {
+    conn.query("select id_promotion , Formation.nom from Promotion , Formation where Promotion.id_formation = Formation.id_formation", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
 
+//List Salle pour eleve
+app.get("/Personne/ListSalleEleve", (req, res) => {
+    conn.query("select P.id_personne,S.id_salle from Personne P , Contenir C , Promotion Po , Cours Cou , Salle S where P.id_personne = C.id_eleve AND C.id_promotion = Po.id_promotion AND Po.id_promotion = Cou.id_promotion AND Cou.id_salle = S.id_salle", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
 
+//All Capteur d une salle
+app.get("/Personne/ListSalleEleve/:Salle", (req, res) => {
+    conn.query("select D.id_device , VT.libelle from ValueType VT , Device D , Box B , Salle S where D.id_valuetype = VT.id_valuetype AND D.id_box = B.id_box and B.id_salle = S.id_salle and S.nom = '" + req.params.Salle + "'", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
 
 
 //-----------------------------------PUT-----------------------------
@@ -244,15 +275,54 @@ app.put("/Alerte/NotPenurie/:IdEquipement/:IdSalle", (req, res) => {
 
 //-----------------------------------POST--------------------------------
 
-app.post("/Personne/Add/", (req, res) => {
+app.post("/Personne/Add/:NumRef/:IdPersType/:Password/:Email/:Tel/:Sexe/:Nom/:Prenom/:Birth/:IdPromo", (req, res) => {
 
-    conn.query("INSERT INTO `CasCovid`(`id_personne`, `date_declaration`) VALUES ('" + req.params.IdPersonne + "',NOW())", function(err, result) {
+    var idUser;
+    var TypePers;
+
+    //localhost:3001/Personne/Add/125/1/test/alex.@gmail.com/0607070705/F/LENS/AL/1908-08-11 01:00:00/1
+    conn.query("INSERT INTO `Personne`(`num_ref`, `id_pers_type`, `password`, `email`, `telephone`, `sexe`, `nom`, `prenom`, `date_anniversaire`) VALUES ('" + req.params.NumRef + "','" + req.params.IdPersType + "', '" + req.params.Password + "' , '" + req.params.Email + "', '" + req.params.Tel + "' , '" + req.params.Sexe + "' , '" + req.params.Nom + "' , '" + req.params.Prenom + "' , '" + req.params.Birth + "')", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
-            res.status(200).json("Cas covid cree");
+            res.status(200).json("Personne Creer");
         }
     });
+
+    //La je vais chercher la requete que je viens d envoyer pour avoir l id de l utilisateur cree
+    conn.query("SELECT id_personne , id_pers_type from Personne order by id_personne DESC LIMIT 1", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            // res.status(200);
+            result.forEach((result) => {
+                idUser = result.id_personne;
+                TypePers = result.id_pers_type
+                console.log(idUser + "" + TypePers)
+            });
+
+
+            console.log("avant boucle" + idUser + "" + TypePers)
+                //Que si eleve
+            if (TypePers == 1) {
+                console.log("dedans")
+                    //La je vais chercher la requete que je viens d envoyer pour avoir l id de l utilisateur cree
+                conn.query("INSERT INTO `Contenir`(`id_promotion`, `id_eleve`) VALUES ('" + req.params.IdPromo + "','" + idUser + "')", function(err, result) {
+                    if (err)
+                        res.status(400).json({ ErrorRequete: 'Requete invalid' });
+                    else {
+                        res.status(200).json("Etudiant integrer dans la table Contenir");
+                    }
+                });
+            } else {
+                res.status(200);
+            }
+
+        }
+    });
+
+
+
 })
 
 //Envoie nouveau covid vers CasCovid
