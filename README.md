@@ -82,7 +82,8 @@ Pour que l'application puisse atteindre le serveur nodejs, il faut lui donner un
 - Get All Capteur (Liste les capteurs via un select *)  OK 
 - Post Alerte Covid (Requête post vers la table AlertCovid en envoyé une ligne avec la date et la personne qui à le covid) OK
 - Put Alerte pénurie (Update un produit en stock par un 0 (donc pas en stock)) OK
-- Get All Salle de la personne connecté (Select *)
-- Get Capteur de la salle via search (Cherche les capteurs d'une salle via le numéro de salle)
-- Get Count des malades d'un salle, bâtiment et iut (Récupère le nombre de malade en fonction de ce qu'on a choisit)
+- Get All Salle de la personne connecté (Select *) OK
+- Get Capteur de la salle via search (Cherche les capteurs d'une salle via le numéro de salle) OK
+- Get Count des malades d'un salle, bâtiment et iut (Récupère le nombre de malade en fonction de ce qu'on a choisit) 
 - Get list des équipements pour le stock (Liste les équipements disponible dans l'établissement) OK
+- Get Historique by CapteurId (Liste les données du Capteur choisi)
