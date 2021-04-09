@@ -20,3 +20,6 @@ sudo iwlist wlan0 scan
 
 To configure wpa suplicant(https://linuxconfig.org/how-to-connect-to-wifi-from-the-cli-on-debian-10-buster)
 
+/!\ interface reseau par defaut : p2p-interfqce, l'enlever dans /var/run/wpa_supplicant/p2p...
+
+
