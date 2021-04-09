@@ -133,8 +133,8 @@ app.get("/Personne/Box/Info", (req, res) => {
 
 
 // Get Capteur de la salle via search (Cherche les capteurs d'une salle via le numéro de salle)
-app.get("/Capteur/Search/:IdSalle", (req, res) => {
-    conn.query("select D.id_device ,B.libelle , B.adr_ip , B.description ,Ba.nom , S.id_etage from Box B , Salle S , Etage E , Batiment Ba , Device D where B.id_salle = S.id_salle and S.id_etage = E.id_etage AND E.id_batiment = Ba.id_batiment and B.id_box = D.id_box and S.id_salle = '" + req.params.IdSalle + "'", function(err, result) {
+app.get("/Capteur/Search/:NomSalle", (req, res) => {
+    conn.query("select D.id_device ,B.libelle , B.adr_ip , B.description ,Ba.nom , S.id_etage from Box B , Salle S , Etage E , Batiment Ba , Device D where B.id_salle = S.id_salle and S.id_etage = E.id_etage AND E.id_batiment = Ba.id_batiment and B.id_box = D.id_box and S.nom = '" + req.params.NomSalle + "'", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
