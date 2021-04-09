@@ -296,6 +296,7 @@ CREATE OR REPLACE TABLE Module
 CREATE OR REPLACE TABLE Cours
 (
 	id_cours 		 INTEGER PRIMARY KEY AUTO_INCREMENT,
+	id_promotion     INTERGER NOT NULL, 
 	id_module		 INTEGER NOT NULL,
 	id_salle		 INTEGER NOT NULL,
 	id_professeur	 INTEGER NOT NULL,		
@@ -306,9 +307,10 @@ CREATE OR REPLACE TABLE Cours
 	commentaire		 VARCHAR(250),
 	CONSTRAINT FK_Cours_Module FOREIGN KEY (id_module) REFERENCES Module (id_module),
 	CONSTRAINT FK_Cours_Salle  FOREIGN KEY (id_salle) REFERENCES Salle (id_salle),
-	CONSTRAINT FK_Cours_Prof FOREIGN KEY (id_professeur) REFERENCES Personne (id_personne)
+	CONSTRAINT FK_Cours_Prof FOREIGN KEY (id_professeur) REFERENCES Personne (id_personne),
+	CONSTRAINT FK_Cours_Promotion FOREIGN KEY (id_promotion) REFERENCES Promotion (id_promotion)
 );
-CREATE OR REPLACE INDEX ind_Cours ON Cours (id_cours, id_module, id_salle, id_professeur);
+CREATE OR REPLACE INDEX ind_Cours ON Cours (id_cours, id_module, id_salle, id_professeur, id_promotion);
 CREATE OR REPLACE INDEX ind_Cours2 ON Cours (id_cours, heure_debut, heure_fin);
 
 CREATE OR REPLACE TABLE Absence 
@@ -3130,23 +3132,23 @@ INSERT INTO Module (libelle, description, is_enabled) VALUES
 ("AC130" , "ça vole très haut" , 1),
 ("P90" , "ça va vite et c'est précis" , 0);
 
-INSERT INTO Cours (id_module, id_salle, id_professeur, heure_debut, heure_fin, presentiel, cours_type, commentaire) VALUES
-( 1 , 1 , 31 , '2021-03-25 08:00:00' , '2021-03-25 12:15:00' , 1 , 'TD' , NULL ),
-( 2 , 1 , 32 , '2021-03-25 13:30:00' , '2021-03-25 16:45:00' , 1 , 'TD' , NULL ),
-( 2 , 1 , 32 , '2021-03-26 08:00:00' , '2021-03-26 12:15:00' , 0 , 'TD' , NULL ),
-( 3 , 1 , 31 , '2021-03-26 13:30:00' , '2021-03-26 16:45:00' , 0 , 'TP' , NULL ),
-( 1 , 1 , 31 , '2021-04-01 08:00:00' , '2021-04-01 12:15:00' , 0 , 'TD' , NULL ),
-( 2 , 1 , 32 , '2021-04-01 13:30:00' , '2021-04-01 16:45:00' , 0 , 'TD' , NULL ),
-( 2 , 1 , 32 , '2021-04-02 08:00:00' , '2021-04-02 12:15:00' , 0 , 'TD' , NULL ),
-( 3 , 1 , 31 , '2021-04-02 13:30:00' , '2021-04-02 16:45:00' , 0 , 'TP' , NULL ),
-( 1 , 1 , 31 , '2021-04-08 08:00:00' , '2021-04-08 12:15:00' , 0 , 'TD' , NULL ),
-( 3 , 1 , 31 , '2021-04-08 13:30:00' , '2021-04-08 16:45:00' , 0 , 'TP' , NULL ),
-( 2 , 1 , 32 , '2021-04-09 08:00:00' , '2021-04-09 12:15:00' , 0 , 'TD' , NULL ),
-( 2 , 1 , 32 , '2021-04-09 13:30:00' , '2021-04-09 16:45:00' , 0 , 'TD' , NULL ),
-( 1 , 1 , 31 , '2021-04-15 08:00:00' , '2021-04-15 12:15:00' , 0 , 'TD' , NULL ),
-( 1 , 1 , 31 , '2021-04-15 13:30:00' , '2021-04-15 16:45:00' , 0 , 'TD' , NULL ),
-( 2 , 1 , 32 , '2021-04-16 08:00:00' , '2021-04-16 12:15:00' , 1 , 'TP' , NULL ),
-( 3 , 1 , 31 , '2021-04-16 13:30:00' , '2021-04-16 16:45:00' , 1 , 'TD' , NULL );
+INSERT INTO Cours (id_module, id_salle, id_promotion, id_professeur, heure_debut, heure_fin, presentiel, cours_type, commentaire) VALUES
+( 1 , 1 , 1, 31 , '2021-03-25 08:00:00' , '2021-03-25 12:15:00' , 1 , 'TD' , NULL ),
+( 2 , 1 , 1 , 32 , '2021-03-25 13:30:00' , '2021-03-25 16:45:00' , 1 , 'TD' , NULL ),
+( 2 , 1 , 1 , 32 , '2021-03-26 08:00:00' , '2021-03-26 12:15:00' , 0 , 'TD' , NULL ),
+( 3 , 1 , 1 , 31 , '2021-03-26 13:30:00' , '2021-03-26 16:45:00' , 0 , 'TP' , NULL ),
+( 1 , 1 , 1 , 31 , '2021-04-01 08:00:00' , '2021-04-01 12:15:00' , 0 , 'TD' , NULL ),
+( 2 , 1 , 1 , 32 , '2021-04-01 13:30:00' , '2021-04-01 16:45:00' , 0 , 'TD' , NULL ),
+( 2 , 1 , 1 , 32 , '2021-04-02 08:00:00' , '2021-04-02 12:15:00' , 0 , 'TD' , NULL ),
+( 3 , 1 , 1 , 31 , '2021-04-02 13:30:00' , '2021-04-02 16:45:00' , 0 , 'TP' , NULL ),
+( 1 , 1 , 1 , 31 , '2021-04-08 08:00:00' , '2021-04-08 12:15:00' , 0 , 'TD' , NULL ),
+( 3 , 1 , 1 , 31 , '2021-04-08 13:30:00' , '2021-04-08 16:45:00' , 0 , 'TP' , NULL ),
+( 2 , 1 , 1 , 32 , '2021-04-09 08:00:00' , '2021-04-09 12:15:00' , 0 , 'TD' , NULL ),
+( 2 , 1 , 1 , 32 , '2021-04-09 13:30:00' , '2021-04-09 16:45:00' , 0 , 'TD' , NULL ),
+( 1 , 1 , 1 , 31 , '2021-04-15 08:00:00' , '2021-04-15 12:15:00' , 0 , 'TD' , NULL ),
+( 1 , 1 , 1 , 31 , '2021-04-15 13:30:00' , '2021-04-15 16:45:00' , 0 , 'TD' , NULL ),
+( 2 , 1 , 1 , 32 , '2021-04-16 08:00:00' , '2021-04-16 12:15:00' , 1 , 'TP' , NULL ),
+( 3 , 1 , 1 , 31 , '2021-04-16 13:30:00' , '2021-04-16 16:45:00' , 1 , 'TD' , NULL );
 	
 INSERT INTO Absence (id_cours, id_personne, motif) VALUES
 ( 1 , 5 , "FLEMME" ),
