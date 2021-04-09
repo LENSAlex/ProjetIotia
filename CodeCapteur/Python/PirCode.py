@@ -26,12 +26,13 @@ import tkinter as tk
 from datetime import datetime
 import time
 import re
+import paho.mqtt.client as mqtt
 
 #date de prise
 
 
 now=datetime.now()
-date_time=now.strftime("%m/%d/%Y, %H:%M:%S")
+date_time=now.strftime("%Y/%d/%m %H:%M:%S")
 dat=str(date_time)
 print("Recherche des appareils BT ")
 nearby_devices=discover_devices(lookup_names = True)
@@ -49,9 +50,10 @@ for name, addr in nearby_devices:
         print("OK_adr_mac\n")
         break
 
-
+"""
 client_socket_haut_parleur=socket.socket(socket.AF_BLUETOOTH,socket.SOCK_STREAM, socket.BTPROTO_RFCOMM) #m5Stack
 client_socket_haut_parleur.connect(("84:0D:8E:3D:3C:56",1))
+"""
 client_socket_gaz=socket.socket(socket.AF_BLUETOOTH,socket.SOCK_STREAM, socket.BTPROTO_RFCOMM)
 client_socket_gaz.connect(("50:02:91:8D:10:36",1))
 client_socket_fenetre=socket.socket(socket.AF_BLUETOOTH,socket.SOCK_STREAM, socket.BTPROTO_RFCOMM)
@@ -59,9 +61,12 @@ client_socket_fenetre.connect(("50:02:91:8D:DC:56",1))
 client_socket_pir=socket.socket(socket.AF_BLUETOOTH,socket.SOCK_STREAM, socket.BTPROTO_RFCOMM)
 client_socket_pir.connect(("24:A1:60:46:AD:3E",1))
 
+mqtt.connect("mqtt.eclipse.org")
+mqtt.loop_start()
+
 while True:
     size = 1024
-    #Reception data pour gaz 
+    #Reception data pour gaz
     data_gaz = str(client_socket_gaz.recv(size))
     res_gaz = re.sub(r"[^Z0-9]","",data_gaz)
     dataGaz = res_gaz[0:3]
@@ -75,18 +80,19 @@ while True:
     res_pir = re.sub(r"[^Z0-9]","",data_pir)
     data_pir = res_pir[0:1]
     print(datafentre)
-    
-    
+    mqtt.publish("paho/temperature", 5)
+   
+    """
     if datafentre == "0" and dataGaz > "210":
         print("ferme")
-        msg=("GazAlerte").encode('utf-8'); 
+        msg=("GazAlerte").encode('utf-8');
         client_socket_haut_parleur.send(msg);
         time.sleep(5)
-    
+   
     print("Pir" + data_pir)
     if data_pir == "1":
         print("dedans pir");
-        msg=("PirEntreeBL").encode('utf-8'); 
+        msg=("PirEntreeBL").encode('utf-8');
         client_socket_haut_parleur.send(msg);
         time.sleep(2)
         #print("dedans");
@@ -96,6 +102,18 @@ while True:
             #data_pir = data_pir[0:1];
         #    print("attente 0")
         #    time.sleep(2)
+       
+    #print(dataGaz)
+    """
+
+
+client_socket_gaz.close()
+"""
+client_socket_haut_parleur.close()
+"""
+client_socket_fenetre.close()
+client_socket_pir.close()
+
         
     #print(dataGaz)
 client_socket_gaz.close()
