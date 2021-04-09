@@ -1,5 +1,6 @@
 ﻿@page
 @model Smart_ECovid_IUT.Pages.Campus.ListeCampusModel
+@using ClasseE_Covid.Campus
 @{
 
 }
@@ -25,37 +26,27 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">Carlone</th>
-                                    <td><p>Phycologie</p><p>Philosophie</p></td>
-                                    <td>8</td>
-                                    <td>40</td>
-                                    <td>
-                                        <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-edit"></i>"</a>
-                                        <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-trash-alt"></i>"</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Shophia</th>
-                                    <td><p>Philotech</p><p>Informatique</p><p>INFO COM</p><p>Cyber</p></td>
-                                    <td>16</td>
-                                    <td>80</td>
-                                    <td>
-                                        <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-edit"></i>"</a>
-                                        <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-trash-alt"></i>"</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Fabron</th>
-                                    <td><p>Reseau</p></td>
-                                    <td>2</td>
-                                    <td>24</td>
-                                    <td>
-                                        <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-edit"></i>"</a>
-                                        <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-trash-alt"></i>"</a>
-                                    </td>
-                                </tr>
-   
+                                @foreach (Campus campus in Model.Branches)
+                                {
+                                    <tr>
+
+                                        <td>@campus.NomCampus</td>
+                                        <td>
+                                            @foreach (Campus campus2 in Model.Branches2)
+                                            {
+                                            <p>@campus2.IdBatiment</p> 
+                                            }
+                                        </td>
+                                        <td>@campus.NBEtageCampus</td>
+                                        <td>@campus.NBSalleCampus</td>
+                                        <td>
+                                            <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-edit"></i>"</a>
+                                            <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-trash-alt"></i>"</a>
+                                        </td>
+                                    </tr>
+
+                                }
+
                             </tbody>
                         </table>
                     </div>

@@ -1,5 +1,6 @@
 ﻿@page
 @model Smart_ECovid_IUT.Pages.IOTDevise.ListeIOTDeviseModel
+@using ClasseE_Covid.IOTDevise;
 @{
 }
 <div>
@@ -23,66 +24,41 @@
                                 <th scope="col">Etage</th>
                                 <th scope="col">Salle</th>
                                 <th scope="col">Capteur</th>
-                                <th scope="col">Actionneur</th>
-                                <th scope="col">Création Pannaux Solaire</th>
+                                @*<th scope="col">Actionneur</th>
+                                <th scope="col">Création Pannaux Solaire</th*@>
                                 <th scope="col">Action</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">Toto</th>
-                                <td>125.24.36.25</td>
-                                <td>Capte les donnée</td>
-                                <td>INFORMATIQUE</td>
-                                <td>1</td>
-                                <td>206</td>
-                                <td>
-                                    <p>Température</p>
-                                    <p>Mouvement</p>
-                                    <p>Co2</p>
-                                </td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>
-                                    <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-edit"></i>"</a>
-                                    <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-trash-alt"></i>"</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">tutu</th>
-                                <td>125.24.36.25</td>
-                                <td>Capte les donnée</td>
-                                <td>INFO COM</td>
-                                <td>3</td>
-                                <td>401</td>
-                                <td>
-                                    <p>Température</p>
-                                    <p>Mouvement</p>
-                                </td>
-                                <td>2</td>
-                                <td>1</td>
-                                <td>
-                                    <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-edit"></i>"</a>
-                                    <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-trash-alt"></i>"</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Tata</th>
-                                <td>125.24.36.25</td>
-                                <td>Sécuriter</td>
-                                <td>Cyber</td>
-                                <td>2</td>
-                                <td>303</td>
-                                <td>
-                                    <p>Mouvement</p>
-                                </td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>
-                                    <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-edit"></i>"</a>
-                                    <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-trash-alt"></i>"</a>
-                                </td>
-                            </tr>
+                            @foreach (IOTDevise devise in Model.Branches)
+                            {
+                                <tr>
+
+                                    <td>@devise.NomBox</td>
+                                    <td>@devise.AdrIpBox</td>
+                                    <td>@devise.DescriptionBox</td>
+                                    <td>@devise.NomBatimentBox</td>
+                                    <td>@devise.IdEtageBox</td>
+                                    <td>@devise.IdSalleBox</td>
+                                    <td>
+                                        @foreach (IOTDevise devise2 in Model.Branches2)
+                                        {
+                                            if (devise2.IDBoxCapteur == devise.Id_box)
+                                            {
+                                             <p>@devise2.NomCapteur</p>;
+                                            }
+                                        }
+                                        </td>
+                                            
+                                    @*<td>@devise.NbBouton</td>*@ 
+                                    @*<td>@devise?.NbPanneauSolaire</td>*@
+                                    <td>
+                                        <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-edit"></i>"</a>
+                                        <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-trash-alt"></i>"</a>
+                                    </td>
+                                </tr>
+
+                            }
                         </tbody>
                     </table>
                 </div>
