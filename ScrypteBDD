@@ -278,12 +278,12 @@ CREATE INDEX ind_Promotion ON Promotion (id_promotion, id_formation, id_professe
 
 CREATE OR REPLACE TABLE Contenir
 (
-	id_formation 		INTEGER NOT NULL,
+	id_promotion 		INTEGER NOT NULL,
 	id_eleve		INTEGER NOT NULL,
-	CONSTRAINT FK_Contenir_formation FOREIGN KEY (id_formation) REFERENCES Formation (id_formation),
+	CONSTRAINT FK_Contenir_formation FOREIGN KEY (id_promotion) REFERENCES Promotion (id_promotion),
 	CONSTRAINT FK_Contenir_Eleve FOREIGN KEY (id_eleve) REFERENCES Personne(id_personne)
 );
-CREATE INDEX ind_Contenir ON Contenir (id_formation, id_eleve);
+CREATE INDEX ind_Contenir ON Contenir (id_promotion, id_eleve);
 
 CREATE OR REPLACE TABLE Module
 (
@@ -3093,7 +3093,7 @@ INSERT INTO Promotion (id_formation, id_professeur, annee) VALUES
 (3 , 32 , 2020 ), 
 (2 , 31 , 2020 );
 
-INSERT INTO Contenir (id_formation, id_eleve) VALUES
+INSERT INTO Contenir (id_promotion, id_eleve) VALUES
 (1 , 1), 
 (1 , 2), 
 (1 , 3), 
