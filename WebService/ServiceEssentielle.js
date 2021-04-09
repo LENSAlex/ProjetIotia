@@ -51,7 +51,7 @@ app.get("/Batiment/CountInfo/Campus", (req, res) => {
 app.get("/Personne/ListPromo", (req, res) => {
 
     //Affichage formation avec departement et duree
-    conn.query("select D.name , F.nom , F.duree from Formation F , Departement D where D.id_departement = F.id_departement", function(err, result) {
+    conn.query("select F.nom , P.annee ,F.duree from Promotion P , Formation F , Departement D where P.id_formation = F.id_formation and D.id_departement = F.id_departement", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -61,12 +61,12 @@ app.get("/Personne/ListPromo", (req, res) => {
     })
 })
 
-app.get("/Personne/ListEleve", (req, res) => {
+app.get("/Personne/ListPersonne", (req, res) => {
 
     //Prof faisable aussi voir demain
 
     //Affichage formation avec departement et duree
-    conn.query("select P.nom , P.prenom , P.email , F.nom , PT.libelle from Personne P , PersonneType PT , Contenir C , Formation F where P.id_pers_type = PT.id_pers_type AND P.id_personne = C.id_eleve AND C.id_formation = F.id_formation", function(err, result) {
+    conn.query("select * from (select Personne.id_personne, num_ref, Personne.id_pers_type, password, email, telephone, sexe, nom, prenom, date_anniversaire, rfid, libelle, description from Personne, PersonneType where Personne.id_pers_type = PersonneType.id_pers_type) pers LEFT JOIN (select nom, Contenir.id_promotion, id_eleve from (select id_promotion, nom from Promotion, Formation where Promotion.id_formation = Formation.id_formation and (annee + duree) >= (SELECT YEAR(NOW()))) a, Contenir where a.id_promotion = Contenir.id_promotion) b on pers.id_personne = b.id_eleve", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -93,7 +93,7 @@ app.get("/Personne/ListDevice", (req, res) => {
 //List des capteurs (device)
 app.get("/Personne/ListCapteur", (req, res) => {
 
-    conn.query("select DT.libelle_type , B.libelle from DeviceType DT , Device D , Box B where DT.id_devicetype = D.id_devicetype and D.id_box = B.id_box", function(err, result) {
+    conn.query("select D.id_device ,DT.libelle_type , B.libelle from DeviceType DT , Device D , Box B where DT.id_devicetype = D.id_devicetype and D.id_box = B.id_box", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -164,6 +164,7 @@ app.get("/Covid/Count/:IdSalle/:IdBatiment/", (req, res) => {
 
 })
 
+//List des equipement
 app.get("/Batiment/ListEquipement", (req, res) => {
     conn.query("select id_equipement , libelle , description from Equipement", function(err, result) {
         if (err)
@@ -175,7 +176,41 @@ app.get("/Batiment/ListEquipement", (req, res) => {
     });
 })
 
+//List des types de personne
+app.get("/Personne/ListTypePersonne", (req, res) => {
+    conn.query("select id_pers_type , libelle from PersonneType", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
 
+//List des sites
+app.get("/Batiment/ListSite", (req, res) => {
+    conn.query("select id_site , nom from Site", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+//List des Batiment
+app.get("/Batiment/ListBatiment", (req, res) => {
+    conn.query("select id_batiment , nom from Batiment", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
 
 // Get list des équipements pour le stock (Liste les équipements disponible dans l'établissement)
 //Voir avec Loris
@@ -208,6 +243,17 @@ app.put("/Alerte/NotPenurie/:IdEquipement/:IdSalle", (req, res) => {
 
 
 //-----------------------------------POST--------------------------------
+
+app.post("/Personne/Add/", (req, res) => {
+
+    conn.query("INSERT INTO `CasCovid`(`id_personne`, `date_declaration`) VALUES ('" + req.params.IdPersonne + "',NOW())", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json("Cas covid cree");
+        }
+    });
+})
 
 //Envoie nouveau covid vers CasCovid
 app.post("/Alerte/Covid/:IdPersonne", (req, res) => {
