@@ -22,7 +22,6 @@ Mais requete bdd pour savoir personne dans cette salle
 
 from bluetooth import *
 import socket
-import tkinter as tk
 from datetime import datetime
 from time import sleep
 import re
