@@ -23,19 +23,7 @@ conn.connect(function(err) {
 
 //------------------------------GET ----------------------------
 
-app.get("/Personne/CasCovid", (req, res) => {
-    //Affichage de toutes les personne qui ont le covid
-    //Pb pas remplie la table
-    conn.query("select P.nom , P.prenom , CC.date_declaration from Personne P , CasCovid CC where P.id_personne = CC.id_personne", function(err, result) {
-        if (err)
-            res.status(400).json({ ErrorRequete: 'Requete invalid' });
-        else {
-            res.status(200).json(result);
-            console.log(result);
-        }
-    });
-})
-
+//Batiment-----
 app.get("/Batiment/CountInfo/Campus", (req, res) => {
     //Affciahe nb etage et nb salle par campus
     conn.query("select a.nom , nbetage , nbsalle from (select Site.nom, count(id_salle) as nbsalle from Site, Batiment, Etage, Salle where Site.id_site = Batiment.id_site and Batiment.id_batiment = Etage.id_batiment and Etage.id_etage = Salle.id_etage group by Site.nom) a, (select Site.nom, count(Etage.id_etage) as nbetage from Site, Batiment, Etage where Site.id_site = Batiment.id_site and Batiment.id_batiment = Etage.id_batiment group by Site.nom) b where a.nom = b.nom", function(err, result) {
@@ -48,150 +36,9 @@ app.get("/Batiment/CountInfo/Campus", (req, res) => {
     })
 })
 
-app.get("/Personne/ListPromo", (req, res) => {
-
-    //Affichage formation avec departement et duree
-    conn.query("select F.nom , P.annee ,F.duree from Promotion P , Formation F , Departement D where P.id_formation = F.id_formation and D.id_departement = F.id_departement", function(err, result) {
-        if (err)
-            res.status(400).json({ ErrorRequete: 'Requete invalid' });
-        else {
-            res.status(200).json(result);
-            console.log(result);
-        }
-    })
-})
-
-app.get("/Personne/ListPersonne", (req, res) => {
-
-    //Prof faisable aussi voir demain
-
-    //Affichage formation avec departement et duree
-    conn.query("select * from (select Personne.id_personne, num_ref, Personne.id_pers_type, password, email, telephone, sexe, nom, prenom, date_anniversaire, rfid, libelle, description from Personne, PersonneType where Personne.id_pers_type = PersonneType.id_pers_type) pers LEFT JOIN (select nom as NomFormation, Contenir.id_promotion, id_eleve from (select id_promotion, nom from Promotion, Formation where Promotion.id_formation = Formation.id_formation and (annee + duree) >= (SELECT YEAR(NOW()))) a, Contenir where a.id_promotion = Contenir.id_promotion) b on pers.id_personne = b.id_eleve", function(err, result) {
-        if (err)
-            res.status(400).json({ ErrorRequete: 'Requete invalid' });
-        else {
-            res.status(200).json(result);
-            console.log(result);
-        }
-    });
-})
-
-//Liste des devices sans arduino et rasp pour dorian
-app.get("/Personne/ListDevice", (req, res) => {
-    //List device sans rpi et arduino 
-    conn.query("select id_devicetype , libelle_type from DeviceType where id_devicetype <> 1 and id_devicetype <> 2", function(err, result) {
-        if (err)
-            res.status(400).json({ ErrorRequete: 'Requete invalid' });
-        else {
-            res.status(200).json(result);
-            console.log(result);
-        }
-    });
-})
-
-//Liste des devices sans arduino et rasp pour dorian
-app.get("/Personne/ListDevice/All", (req, res) => {
-
-    //List device sans rpi et arduino 
-    conn.query("select Device.id_devicetype as TypeCapteur , Box.id_box as IDBoxCapteur, DeviceType.id_devicetype, libelle_type from DeviceType, Box , Device where Box.id_devicetype = DeviceType.id_devicetype AND Box.id_box = Device.id_box and DeviceType.id_devicetype <> 1 and DeviceType.id_devicetype <> 2        ", function(err, result) {
-        if (err)
-            res.status(400).json({ ErrorRequete: 'Requete invalid' });
-        else {
-            res.status(200).json(result);
-            console.log(result);
-        }
-    });
-})
-
-
-//List des capteurs (device)
-app.get("/Personne/ListCapteur", (req, res) => {
-
-    conn.query("select D.id_device ,DT.libelle_type , B.libelle from DeviceType DT , Device D , Box B where DT.id_devicetype = D.id_devicetype and D.id_box = B.id_box", function(err, result) {
-        if (err)
-            res.status(400).json({ ErrorRequete: 'Requete invalid' });
-        else {
-            res.status(200).json(result);
-            console.log(result);
-        }
-    });
-})
-
-//Info de chaque Box Ip , Etage , batiment ...
-app.get("/Personne/Box/Info", (req, res) => {
-
-    //List device sans rpi et arduino 
-    conn.query("select c.id_salle , c.id_box ,c.libelle , c.adr_ip , c.description ,c.nom , c.id_etage , c.nom as NomSalle , COALESCE(PanneauSolaire,0) as PanneauSolaire , COALESCE(NbBouton,0) as NbBouton  from (select a.id_salle , a.id_box ,a.libelle , a.adr_ip , a.description ,a.nom , a.id_etage , a.nom as NomSalle , PanneauSolaire from (select B.id_salle , B.id_box ,B.libelle , B.adr_ip , B.description ,S.nom , S.id_etage , S.nom as NomSalle from Box B , Salle S , Etage E , Batiment Ba where B.id_salle = S.id_salle and S.id_etage = E.id_etage AND E.id_batiment = Ba.id_batiment)a LEFT JOIN (select S.id_salle , count(*) as PanneauSolaire from DeviceType DT , Device D , Box B , Salle S where DT.id_devicetype = D.id_device AND D.id_box = B.id_box AND B.id_salle = S.id_salle AND DT.id_devicetype = 17 group by S.id_salle) b on a.id_salle = b.id_salle) c LEFT JOIN (select S.id_salle , count(*) as NbBouton from Device D , Box B , Salle S where D.id_box = B.id_box AND B.id_salle = S.id_salle AND D.id_devicetype = 11 group by S.id_salle) d on c.id_salle = d.id_salle", function(err, result) {
-        if (err)
-            res.status(400).json({ ErrorRequete: 'Requete invalid' });
-        else {
-            res.status(200).json(result);
-            console.log(result);
-        }
-    });
-})
-
-
-// Get Capteur de la salle via search (Cherche les capteurs d'une salle via le numéro de salle)
-app.get("/Capteur/Search/:NomSalle", (req, res) => {
-    conn.query("select D.id_device ,B.libelle , B.adr_ip , B.description ,Ba.nom , S.id_etage from Box B , Salle S , Etage E , Batiment Ba , Device D where B.id_salle = S.id_salle and S.id_etage = E.id_etage AND E.id_batiment = Ba.id_batiment and B.id_box = D.id_box and S.nom = '" + req.params.NomSalle + "'", function(err, result) {
-        if (err)
-            res.status(400).json({ ErrorRequete: 'Requete invalid' });
-        else {
-            res.status(200).json(result);
-            console.log(result);
-        }
-    });
-})
-
-
-
-// Get Count des malades d'un salle, bâtiment et iut (Récupère le nombre de malade en fonction de ce qu'on a choisit)
-//Voir avec Pierre
-app.get("/Covid/Count/:IdSalle/:IdBatiment/", (req, res) => {
-    //Echelle Salle
-
-    // select F.nom from CasCovid CC , Personne P , Contenir C , Formation F where CC.id_personne = P.id_personne and P.id_personne = C.id_eleve and C.id_formation = F.id_formation
-
-    if (req.params.IdBatiment == 0) {
-        conn.query("select B.libelle , B.adr_ip , B.description ,Ba.nom , S.id_etage from Box B , Salle S , Etage E , Batiment Ba where B.id_salle = S.id_salle and S.id_etage = E.id_etage AND E.id_batiment = Ba.id_batiment", function(err, result) {
-            if (err)
-                res.status(400).json({ ErrorRequete: 'Requete invalid' });
-            else {
-                res.status(200).json(result);
-                console.log(result);
-            }
-        });
-    }
-    //Echelle Batiment
-    else {
-        conn.query("select B.libelle , B.adr_ip , B.description ,Ba.nom , S.id_etage from Box B , Salle S , Etage E , Batiment Ba where B.id_salle = S.id_salle and S.id_etage = E.id_etage AND E.id_batiment = Ba.id_batiment", function(err, result) {
-            if (err)
-                res.status(400).json({ ErrorRequete: 'Requete invalid' });
-            else {
-                res.status(200).json(result);
-                console.log(result);
-            }
-        });
-    }
-
-})
-
 //List des equipement
 app.get("/Batiment/ListEquipement", (req, res) => {
     conn.query("select id_equipement , libelle , description from Equipement", function(err, result) {
-        if (err)
-            res.status(400).json({ ErrorRequete: 'Requete invalid' });
-        else {
-            res.status(200).json(result);
-            console.log(result);
-        }
-    });
-})
-
-//List des types de personne
-app.get("/Personne/ListTypePersonne", (req, res) => {
-    conn.query("select id_pers_type , libelle from PersonneType", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -225,6 +72,52 @@ app.get("/Batiment/ListBatiment", (req, res) => {
     });
 })
 
+
+
+
+
+//Personne------
+app.get("/Personne/ListPromo", (req, res) => {
+
+    //Affichage formation avec departement et duree
+    conn.query("select F.nom , P.annee ,F.duree from Promotion P , Formation F , Departement D where P.id_formation = F.id_formation and D.id_departement = F.id_departement", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    })
+})
+
+app.get("/Personne/ListPersonne", (req, res) => {
+
+    //Prof faisable aussi voir demain
+
+    //Affichage formation avec departement et duree
+    conn.query("select * from (select Personne.id_personne, num_ref, Personne.id_pers_type, password, email, telephone, sexe, nom, prenom, date_anniversaire, rfid, libelle, description from Personne, PersonneType where Personne.id_pers_type = PersonneType.id_pers_type) pers LEFT JOIN (select nom as NomFormation, Contenir.id_promotion, id_eleve from (select id_promotion, nom from Promotion, Formation where Promotion.id_formation = Formation.id_formation and (annee + duree) >= (SELECT YEAR(NOW()))) a, Contenir where a.id_promotion = Contenir.id_promotion) b on pers.id_personne = b.id_eleve", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+
+//List des types de personne
+app.get("/Personne/ListTypePersonne", (req, res) => {
+    conn.query("select id_pers_type , libelle from PersonneType", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
 //List Promo
 app.get("/Personne/ListPromo", (req, res) => {
     conn.query("select id_promotion , Formation.nom from Promotion , Formation where Promotion.id_formation = Formation.id_formation", function(err, result) {
@@ -240,18 +133,6 @@ app.get("/Personne/ListPromo", (req, res) => {
 //List Salle pour eleve
 app.get("/Personne/ListSalleEleve/:Id", (req, res) => {
     conn.query("select distinct P.id_personne,S.id_salle from Personne P , Contenir C , Promotion Po , Cours Cou , Salle S where P.id_personne = C.id_eleve AND C.id_promotion = Po.id_promotion AND Po.id_promotion = Cou.id_promotion AND Cou.id_salle = S.id_salle and P.id_personne = '" + req.params.Id + "'", function(err, result) {
-        if (err)
-            res.status(400).json({ ErrorRequete: 'Requete invalid' });
-        else {
-            res.status(200).json(result);
-            console.log(result);
-        }
-    });
-})
-
-//All Capteur d une salle
-app.get("/Personne/ListSalleEleve/:Salle", (req, res) => {
-    conn.query("select D.id_device , VT.libelle from ValueType VT , Device D , Box B , Salle S where D.id_valuetype = VT.id_valuetype AND D.id_box = B.id_box and B.id_salle = S.id_salle and S.nom = '" + req.params.Salle + "'", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -304,7 +185,24 @@ app.get("/Personne/GetIdEleve/:Ine", (req, res) => {
     });
 })
 
-app.get("/Personne/Count/CasCovid/Formation" , (req,res) =>
+
+
+//Covid---------
+
+app.get("/Covid/CasCovid", (req, res) => {
+    //Affichage de toutes les personne qui ont le covid
+    //Pb pas remplie la table
+    conn.query("select P.nom , P.prenom , CC.date_declaration from Personne P , CasCovid CC where P.id_personne = CC.id_personne", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+app.get("/Covid/Count/CasCovid/Formation" , (req,res) =>
 {
     conn.query("select F.nom , count(*) as NbCasCovid from CasCovid CC , Personne P , Contenir C , Promotion Po , Formation F    where     CC.id_personne = P.id_personne    and     P.id_personne = C.id_eleve    AND    Po.id_promotion = C.id_promotion    and     Po.id_formation = F.id_formation    group by F.nom" , function(err, result) {
         if (err)
@@ -317,7 +215,7 @@ app.get("/Personne/Count/CasCovid/Formation" , (req,res) =>
 })
 
 
-app.get("/Personne/Count/CasCovid/Departement" , (req,res) =>
+app.get("/Covid/Count/CasCovid/Departement" , (req,res) =>
 {
     conn.query("select D.name , count(*) as NbCasCovid from CasCovid CC , Personne P , Contenir C , Promotion Po , Formation F , Departement D    where     CC.id_personne = P.id_personne    and     P.id_personne = C.id_eleve    AND    Po.id_promotion = C.id_promotion    and     Po.id_formation = F.id_formation AND F.id_departement = D.id_departement group by D.name", function(err, result) {
         if (err)
@@ -329,7 +227,7 @@ app.get("/Personne/Count/CasCovid/Departement" , (req,res) =>
     });
 })
 
-app.get("/Personne/Count/CasCovid/Formation/:IdFormation" , (req,res) =>
+app.get("/Covid/Count/CasCovid/Formation/:IdFormation" , (req,res) =>
 {
     conn.query("select F.nom , count(*) as NbCasCovid from CasCovid CC , Personne P , Contenir C , Promotion Po , Formation F    where     CC.id_personne = P.id_personne    and     P.id_personne = C.id_eleve    AND    Po.id_promotion = C.id_promotion    and     Po.id_formation = F.id_formation  and F.id_formation='" + req.params.IdFormation + "'  group by F.nom", function(err, result) {
         if (err)
@@ -342,9 +240,114 @@ app.get("/Personne/Count/CasCovid/Formation/:IdFormation" , (req,res) =>
 })
 
 
-app.get("/Personne/Count/CasCovid/Departement/:IdDepartement" , (req,res) =>
+app.get("/Covid/Count/CasCovid/Departement/:IdDepartement" , (req,res) =>
 {
     conn.query("select D.name , count(*) as NbCasCovid from CasCovid CC , Personne P , Contenir C , Promotion Po , Formation F , Departement D   where     CC.id_personne = P.id_personne    and     P.id_personne = C.id_eleve    AND    Po.id_promotion = C.id_promotion    and     Po.id_formation = F.id_formation AND F.id_departement = D.id_departement and D.id_departement= '" + req.params.IdDepartement + "' group by D.name", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+
+//Capteur-----
+//List des ValueType
+app.get("/Capteur/ListValueType" , (req,res) =>
+{
+    conn.query("SELECT `id_valuetype`, `libelle`, `unite` FROM `ValueType`", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+//Liste des devices sans arduino et rasp pour dorian
+app.get("/Capteur/ListDevice", (req, res) => {
+    //List device sans rpi et arduino 
+    conn.query("select id_devicetype , libelle_type from DeviceType where id_devicetype <> 1 and id_devicetype <> 2", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+// Get Capteur de la salle via search (Cherche les capteurs d'une salle via le numéro de salle)
+app.get("/Capteur/Search/:NomSalle", (req, res) => {
+    conn.query("select D.id_device ,B.libelle , B.adr_ip , B.description ,Ba.nom , S.id_etage from Box B , Salle S , Etage E , Batiment Ba , Device D where B.id_salle = S.id_salle and S.id_etage = E.id_etage AND E.id_batiment = Ba.id_batiment and B.id_box = D.id_box and S.nom = '" + req.params.NomSalle + "'", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+//Info de chaque Box Ip , Etage , batiment ...
+app.get("/Capteur/Box/Info", (req, res) => {
+
+    //List device sans rpi et arduino 
+    conn.query("select c.id_salle , c.id_box ,c.libelle , c.adr_ip , c.description ,c.nom , c.id_etage , c.nom as NomSalle , COALESCE(PanneauSolaire,0) as PanneauSolaire , COALESCE(NbBouton,0) as NbBouton  from (select a.id_salle , a.id_box ,a.libelle , a.adr_ip , a.description ,a.nom , a.id_etage , a.nom as NomSalle , PanneauSolaire from (select B.id_salle , B.id_box ,B.libelle , B.adr_ip , B.description ,S.nom , S.id_etage , S.nom as NomSalle from Box B , Salle S , Etage E , Batiment Ba where B.id_salle = S.id_salle and S.id_etage = E.id_etage AND E.id_batiment = Ba.id_batiment)a LEFT JOIN (select S.id_salle , count(*) as PanneauSolaire from DeviceType DT , Device D , Box B , Salle S where DT.id_devicetype = D.id_device AND D.id_box = B.id_box AND B.id_salle = S.id_salle AND DT.id_devicetype = 17 group by S.id_salle) b on a.id_salle = b.id_salle) c LEFT JOIN (select S.id_salle , count(*) as NbBouton from Device D , Box B , Salle S where D.id_box = B.id_box AND B.id_salle = S.id_salle AND D.id_devicetype = 11 group by S.id_salle) d on c.id_salle = d.id_salle", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+//All Capteur d une salle
+app.get("/Capteur/ListCapteur/:Salle", (req, res) => {
+    conn.query("select D.id_device , VT.libelle from ValueType VT , Device D , Box B , Salle S where D.id_valuetype = VT.id_valuetype AND D.id_box = B.id_box and B.id_salle = S.id_salle and S.nom = '" + req.params.Salle + "'", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+//Liste des devices sans arduino et rasp pour dorian
+app.get("/Capteur/ListDevice/All", (req, res) => {
+
+    //List device sans rpi et arduino 
+    conn.query("select Device.id_devicetype as TypeCapteur , Box.id_box as IDBoxCapteur, DeviceType.id_devicetype, libelle_type from DeviceType, Box , Device where Box.id_devicetype = DeviceType.id_devicetype AND Box.id_box = Device.id_box and DeviceType.id_devicetype <> 1 and DeviceType.id_devicetype <> 2", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+//List des capteurs (device)
+app.get("/Capteur/ListCapteur", (req, res) => {
+
+    conn.query("select D.id_device ,DT.libelle_type , B.libelle from DeviceType DT , Device D , Box B where DT.id_devicetype = D.id_devicetype and D.id_box = B.id_box", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+app.get("/Capteur/Valeur/:idSalle/" , (req,res) =>
+{
+    conn.query("SELECT `id_valuetype`, `libelle`, `unite` FROM `ValueType`", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
