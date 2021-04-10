@@ -1,64 +1,45 @@
 ﻿using ProjetGroupe.Models;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text;
+using Xamarin.Forms;
 
 namespace ProjetGroupe.ViewModels
 {
     public class SmartOfficeViewModel : BaseViewModel, INotifyPropertyChanged
     {
-        private string text;
-        private string description;
-        public Personne personne { get; set; } = new Personne();
-        public List<int> Id { get; set; }
-        public List<string> Email { get; set; }
-        public List<Personne> ListPersonne { get; set; } = new List<Personne>();
+        public event PropertyChangedEventHandler PropertyChanged;
+        public ObservableCollection<Equipement> items { get; set; }
+        public ObservableCollection<Equipement> Items
+        {
+            get
+            {
+                return items;
+            }
+            set
+            {
+                items = value;
+                RaisepropertyChanged("Items");
+            }
+        }
+
+        public void RaisepropertyChanged(string propertyName)
+        {
+            if (PropertyChanged != null)
+                PropertyChanged.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
         public SmartOfficeViewModel()
         {
-          //  ListPersonne = Personne.List();
-            
+            Device.BeginInvokeOnMainThread(() => GetData());
         }
-        List<Personne> jobList;
-        public List<Personne> JobList
+        public async void GetData()
         {
-            get { return jobList; }
-            set
-            {
-                if (jobList != value)
-                {
-                    jobList = value;
-                    OnPropertyChanged();
-                }
-            }
+            Items = await Equipement.ListEquipement();
         }
-
-        Personne selectedJob;
-        public Personne SelectedJob
-        {
-            get { return selectedJob; }
-            set
-            {
-                if (selectedJob != value)
-                {
-                    selectedJob = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
-
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChangedEventHandler handler = PropertyChanged;
-            if (handler != null)
-            {
-                handler(this, new PropertyChangedEventArgs(propertyName));
-            }
-        }
-
+        
     }
+
 }

@@ -13,10 +13,10 @@ namespace ProjetGroupe.Models.Manager
     {
 
         //Cette fonction doit nous donner la liste des données (capteurs, co2, consommation de la salle à un instanté)
-        internal static async Task<Salle> LoadSalleBy(int id)
+        internal static async Task<List<Salle>> LoadSalleByNom(string nomSalle)
         {
             var httpClient = new HttpClient();
-            Salle Items = null;
+            List<Salle> Items = new List<Salle>();
 
             if (Device.RuntimePlatform == Device.Android)
             {
@@ -24,7 +24,7 @@ namespace ProjetGroupe.Models.Manager
                 httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             }
 
-            string WebAPIUrl = "http://51.77.137.170:8080/equipes";
+            string WebAPIUrl = Config.WebServiceURI + "/Personne/ListSalleEleve/" + nomSalle;
             var uri = new Uri(WebAPIUrl);
 
             try
@@ -34,7 +34,65 @@ namespace ProjetGroupe.Models.Manager
                 if (response.IsSuccessStatusCode)
                 {
                     var content = await response.Content.ReadAsStringAsync();
-                    Items = JsonConvert.DeserializeObject<Salle>(content);
+                    Items = JsonConvert.DeserializeObject<List<Salle>>(content);
+
+                    return Items;
+                }
+            }
+            catch (Exception ex) { }
+            return null;
+        }
+        internal static async Task<List<Salle>> ListSalleOfEleve()
+        {
+            var httpClient = new HttpClient();
+            List<Salle> Items = new List<Salle>();
+
+            if (Device.RuntimePlatform == Device.Android)
+            {
+                httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
+                httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            }
+
+            string WebAPIUrl = Config.WebServiceURI + "/Personne/ListSalleEleve/" + Personne.IsLogged().Id;
+            var uri = new Uri(WebAPIUrl);
+
+            try
+            {
+                var response = await httpClient.GetAsync(uri);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var content = await response.Content.ReadAsStringAsync();
+                    Items = JsonConvert.DeserializeObject<List<Salle>>(content);
+
+                    return Items;
+                }
+            }
+            catch (Exception ex) { }
+            return null;
+        }
+        internal static async Task<List<CapteurType>> ListCapteurBySalleId(string nomSalle)
+        {
+            var httpClient = new HttpClient();
+            List<CapteurType> Items = new List<CapteurType>();
+
+            if (Device.RuntimePlatform == Device.Android)
+            {
+                httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
+                httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            }
+
+            string WebAPIUrl = Config.WebServiceURI + "/Capteur/Search/" + nomSalle;
+            var uri = new Uri(WebAPIUrl);
+
+            try
+            {
+                var response = await httpClient.GetAsync(uri);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var content = await response.Content.ReadAsStringAsync();
+                    Items = JsonConvert.DeserializeObject<List<CapteurType>>(content);
 
                     return Items;
                 }

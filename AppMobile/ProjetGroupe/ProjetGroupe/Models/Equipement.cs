@@ -10,11 +10,11 @@ namespace ProjetGroupe.Models
 {
     public class Equipement
     {
-        [JsonProperty("Id")]
+        [JsonProperty("id_equipement")]
         public int Id { get; set; }
-        [JsonProperty("Libelle")]
+        [JsonProperty("libelle")]
         public string Libelle { get; set; }
-        [JsonProperty("Description")]
+        [JsonProperty("description")]
         public string Description { get; set; }
         [JsonProperty("EquipementType")]
         public string EquipementType { get; set; }

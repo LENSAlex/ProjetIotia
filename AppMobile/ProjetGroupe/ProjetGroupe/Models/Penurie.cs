@@ -28,17 +28,7 @@ namespace ProjetGroupe.Models
         private Salle _salle;
         public Salle Salle
         {
-            get
-            {
-                if (_salle == null && SalleId != 0)
-                    _salle = Salle.Load(SalleId);
-                return _salle;
-            }
-            set
-            {
-                _salle = value;
-                _SalleId = value?.Id ?? 0;
-            }
+            get; set;
         }
         public bool Is_Penurie { get; set; }
         public DateTime date_maj { get; set; }

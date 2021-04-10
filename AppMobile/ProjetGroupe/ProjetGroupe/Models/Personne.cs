@@ -102,13 +102,16 @@ namespace ProjetGroupe.Models
             using (MailMessage mail = new MailMessage())
             {
                 mail.From = new MailAddress("soignantsniriotia@gmail.com");
+                //Changer par Email
                 mail.To.Add("lkjumbyr@gmail.com");
-                mail.Subject = "Une alerte à été envoyé par: <b>" + personne.RFID +"</b> à: " + DateTime.Now;
+                mail.Subject = "Une alerte à été envoyé par un utilisateur à: " + DateTime.Now;
                 mail.Body = "<h1 style='text-align:center'>Une alerte vous a été envoyé par l'application Smart E-Covid IUT.</h1>" +
-                    "<p>Merci de prévenir les personnes présentent autour de lui au plus vite.</p>" + "Envoyé par:" + personne.Email;
+                    "<p>Merci de prévenir les personnes présentent autour de lui au plus vite.</p>" + "Envoyé par: " + personne.Email;
+
+                mail.Headers.Add("Content-Type", "text/html; charset=utf-8");
+                mail.Headers.Add("MIME-Version", "1.0");
 
                 mail.IsBodyHtml = true;
-   
                 using (SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587))
                 {
                     smtp.UseDefaultCredentials = false;
@@ -118,10 +121,6 @@ namespace ProjetGroupe.Models
                 }
                 return true;
             }
-            //TODO Add Header au mail
-            //return false;
         }
-
-
     }
 }

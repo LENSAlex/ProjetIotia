@@ -1,5 +1,4 @@
 ﻿using Newtonsoft.Json;
-using ProjetGroupe.Services;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -25,8 +24,8 @@ namespace ProjetGroupe.ViewModels
         public string CasSalle { get; set; } = "16";
 
         public event PropertyChangedEventHandler PropertyChanged;
-        public ObservableCollection<Equipes> items { get; set; }
-        public ObservableCollection<Equipes> Items
+        public ObservableCollection<Equiquement> items { get; set; }
+        public ObservableCollection<Equiquement> Items
         {
             get
             {
@@ -44,7 +43,7 @@ namespace ProjetGroupe.ViewModels
         }
         public async void GetData()
         {
-            Items = await Equipes.List();
+            Items = await Equiquement.List();
         }
         public void RaisepropertyChanged(string propertyName)
         {

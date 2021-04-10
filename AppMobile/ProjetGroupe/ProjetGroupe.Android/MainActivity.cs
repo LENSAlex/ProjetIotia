@@ -38,10 +38,10 @@ namespace ProjetGroupe.Droid
             //Start the SDK
             NotificationHub.Start(this.Application, Config.NotificationHubName, Config.NotificationEndPoint);
             CreateNotificationChannel();
-            var refreshedToken = FirebaseInstanceId.Instance.Token;
+            //var refreshedToken = FirebaseInstanceId.Instance.Token;
             //string token = (string)FirebaseInstanceId.GetInstance(fb);
             var tag = "568049259572";
-            Xamarin.Essentials.SecureStorage.SetAsync("HubToken", refreshedToken);
+            //Xamarin.Essentials.SecureStorage.SetAsync("HubToken", refreshedToken);
             Xamarin.Essentials.SecureStorage.SetAsync("Tag", tag);
             //AndroidFireBaseMessagingService.SendRegistrationToServer(token,"");
 

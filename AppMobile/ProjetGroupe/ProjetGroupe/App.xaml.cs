@@ -1,5 +1,4 @@
 ﻿using Plugin.SharedTransitions;
-using ProjetGroupe.Services;
 using ProjetGroupe.Views;
 using System;
 using Xamarin.Forms;

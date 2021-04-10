@@ -34,7 +34,7 @@ namespace ProjetGroupe.ViewModels
                     PersonneId = personne.Id
                 };
                 CasCovid.SendAlert(cas);
-             //   personne.RappelMail(personne);
+                //personne.RappelMail(personne);
 
                 //envoie un mail, une alerte et maybe une notification
 

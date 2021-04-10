@@ -25,17 +25,8 @@ namespace ProjetGroupe.Models
         private Salle _salle;
         public Salle Salle
         {
-            get
-            {
-                if (_salle == null && SalleId != 0)
-                    _salle = Salle.Load(SalleId);
-                return _salle;
-            }
-            set
-            {
-                _salle = value;
-                _SalleId = value?.Id ?? 0;
-            }
+            get;
+            set;
         }
         private int _CapteurTypeId;
         //Id_DeviceType
@@ -55,17 +46,7 @@ namespace ProjetGroupe.Models
         private CapteurType _capteurType;
         public CapteurType CapteurType
         {
-            get
-            {
-                if (_capteurType == null && CapteurTypeId != 0)
-                    _capteurType = CapteurType.Load(CapteurTypeId);
-                return _capteurType;
-            }
-            set
-            {
-                _capteurType = value;
-                _CapteurTypeId = value?.Id ?? 0;
-            }
+            get; set;
         }
         public string AdresseMac { get; set; }
         public string AdresseIP { get; set; }

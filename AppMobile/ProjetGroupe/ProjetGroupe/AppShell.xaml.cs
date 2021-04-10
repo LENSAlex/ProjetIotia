@@ -23,7 +23,7 @@ namespace ProjetGroupe
             Routing.RegisterRoute(nameof(SmartBuildingPage), typeof(SmartBuildingPage));
             Routing.RegisterRoute(nameof(eCovidPage), typeof(eCovidPage));
             Routing.RegisterRoute(nameof(AboutPage), typeof(AboutPage));
-            //Routing.RegisterRoute(nameof(CapteursDetailsPage), typeof(CapteursDetailsPage));
+            Routing.RegisterRoute(nameof(CapteursDetailsPage), typeof(CapteursDetailsPage));
             //Routing.RegisterRoute(nameof(TestPage), typeof(TestPage));
         }
 

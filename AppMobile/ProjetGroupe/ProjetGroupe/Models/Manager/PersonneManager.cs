@@ -17,7 +17,7 @@ namespace ProjetGroupe.Models.Manager
             Personne item = null;
             using (MySqlConnection cnx = new MySqlConnection(Config.ConnectionString))
             {
-                using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM Personne3 WHERE id_personne=@id", cnx))
+                using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM Personne WHERE id_personne=@id", cnx))
                 {
                     cmd.Parameters.Add(new MySqlParameter("@id", id));
 
@@ -41,7 +41,7 @@ namespace ProjetGroupe.Models.Manager
             Personne item = null;
             using (MySqlConnection cnx = new MySqlConnection(Config.ConnectionString))
             {
-                using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM Personne3 WHERE email=@email", cnx))
+                using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM Personne WHERE email=@email", cnx))
                 {
                     cmd.Parameters.Add(new MySqlParameter("@email", email));
 
@@ -64,7 +64,7 @@ namespace ProjetGroupe.Models.Manager
             List<Personne> list = new List<Personne>();
             using (MySqlConnection cnx = new MySqlConnection(Config.ConnectionString))
             {
-                using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM Personne3 WHERE email LIKE @email", cnx))
+                using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM Personne WHERE email LIKE @email", cnx))
                 {
                     cmd.Parameters.Add(new MySqlParameter("@email", "%" + query + "%"));
 
@@ -89,7 +89,7 @@ namespace ProjetGroupe.Models.Manager
             Personne item = null;
             using (MySqlConnection cnx = new MySqlConnection(Config.ConnectionString))
             {
-                using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM Personne3 WHERE rfid=@rfid AND password=@password", cnx))
+                using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM Personne WHERE rfid=@rfid AND password=@password", cnx))
                 {
                     cmd.Parameters.Add(new MySqlParameter("@rfid", rfid));
                     cmd.Parameters.Add(new MySqlParameter("@password", password));
@@ -114,7 +114,7 @@ namespace ProjetGroupe.Models.Manager
             List<Personne> list = new List<Personne>();
             using (MySqlConnection cnx = new MySqlConnection(Config.ConnectionString))
             {
-                using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM Personne3 ORDER BY id_personne", cnx))
+                using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM Personne ORDER BY id_personne", cnx))
                 {
 
                     cnx.Open();
