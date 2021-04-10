@@ -33,26 +33,20 @@ Pour le projet Web:
 - Microsoft.Extensions.DependencyInjection
 - Microsoft.Extensions.Configuration
 
-- 6] Vous devez également vous munir d'un compte Firebase & Azure Notification pour permettre à vos applications de recevoir des notifications push sur le téléphone. 
-https://cedgabrang.wixsite.com/xamarintipsandtricks/post/xamarin-forms-implementing-push-notification-using-firebase-cloud-messaging
+- 6] Pour aller sur  l'application web il vous faux aller sur le lien https://Smart_ECovid_IUT.com (pas encore disponible)
 
-- 7] Pour obtenir l'application compiler vous devez ensuite: Clique droit sur le projet (Android, Ios ou UWP) et choisir "Publier". Le projet va se compiler et dans le dossier de destination vous aurez l'application que vous pourrez partager aux utilisateurs via un lien de téléchargement ou une plateforme tel que le PlayStore.
-- 8] Vous devez ensuite accepter les "Applications de source inconnu" si l'application est obtenu via un lien de téléchargement sur un site internet par exemple.
 
 # Installation du projet:
 
 - 1] Téléchargez le .zip et décompressez le dans votre dossier ou est contenu vos projets visual studio
-- 2] Vous pouvez également lancer directement le fichier "nom-projet.sln". En faisant ceci, vous n'avez pas besoin d'installer les dépendances de build.
+- 2] Vous pouvez également lancer directement le fichier "Smart_ECovid_IUT.sln". En faisant ceci, vous n'avez pas besoin d'installer les dépendances de build.
 
-- 3] Vous devez également vous munir d'un compte Firebase & Azure Notification pour permettre à vos applications de recevoir des notifications push sur le téléphone. 
-https://cedgabrang.wixsite.com/xamarintipsandtricks/post/xamarin-forms-implementing-push-notification-using-firebase-cloud-messaging
+- 4] Pour obtenir l'application compiler vous devez ensuite: Clique droit sur le projet et choisir "Publier". Le projet va se compiler et dans le dossier de destination vous aurez l'application web .
 
-- 4] Pour obtenir l'application compiler vous devez ensuite: Clique droit sur le projet (Android, Ios ou UWP) et choisir "Publier". Le projet va se compiler et dans le dossier de destination vous aurez l'application que vous pourrez partager aux utilisateurs via un lien de téléchargement ou une plateforme tel que le PlayStore.
-- 5] Vous devez ensuite accepter les "Applications de source inconnu" si l'application est obtenu via un lien de téléchargement sur un site internet par exemple.
-- 6] Si vous voulez changer les images de l'application, les backgrounds ou autre, il est important de noter que les ressources doivent se trouver dans le dossier "Ressource" de chaque OS. Pour android vous les trouverez dans "Ressource/drawable" et vous avez aussi un dossier pour chaque taille d'écran. 
-- 6.2] Si vous voulez changer la police d'écriture, vous avez un dossier "Font" ou vous allez devoir mettre vos polices .ttf. Ensuite, dans le fichier "AssemblyInfo.cs", vous devez écrire cette ligne: [assembly: ExportFont("Roboto-Regular.ttf", Alias = "Roboto")]
-- 6.3] Il est aussi important de définir des permissions utilisateurs notament l'accès à internet, la lecture et l'écriture. [assembly:UsesPermission(Android.Manifest.Permission.Internet)]
-[assembly:UsesPermission(Android.Manifest.Permission.WriteExternalStorage)]
+- 5] Si vous voulez changer les images de l'application, les backgrounds ou autre, il est important de noter que les ressources doivent se trouver dans le dossier "wwwroot/img" .
+- 6.2] Si vous voulez changer la police d'écriture, vous avez un dossier "Font" ou vous allez devoir mettre vos polices .ttf. Ensuite, dans le document "wwwroot/css"
+- 6.3] Il est aussi important de définir des permissions utilisateurs que l'ont peut modifier quan on vas dans 
+- "Liste Uilisateur " ensuite on choise un utilisateur on click sur le stylo et on peut modifier les droit (et aussi tous ce qui et relier a utilisateur)
 - 6.4] Il vous faudra aussi une adresse mail d'envois et de réception pour les alertes par emails, celles ci sont à changer dans le appsettings.json
 
 - 7] Le fichier MainActivity.cs est le fichier source ou vous mettrez toutes vos initialisations de plugin par exemple pour les notifications. N'hésitez pas à récupérer celui déjà existant. Vous allez devoir modifier les informations concernant le Hub de notification par vos informations que vous avez pu obtenir en suivant le tutoriel d'installation de Firebase et d'Azure.
