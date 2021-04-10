@@ -44,6 +44,7 @@ Pour le projet Android Ios & UWP:
 
 - 6] Vous devez également vous munir d'un compte Firebase & Azure Notification pour permettre à vos applications de recevoir des notifications push sur le téléphone. 
 https://cedgabrang.wixsite.com/xamarintipsandtricks/post/xamarin-forms-implementing-push-notification-using-firebase-cloud-messaging
+Notification via AzureHub: https://docs.microsoft.com/en-us/azure/developer/mobile-apps/notification-hubs-backend-service-xamarin-forms
 
 - 7] Pour obtenir l'application compiler vous devez ensuite: Clique droit sur le projet (Android, Ios ou UWP) et choisir "Publier". Le projet va se compiler et dans le dossier de destination vous aurez l'application que vous pourrez partager aux utilisateurs via un lien de téléchargement ou une plateforme tel que le PlayStore.
 - 8] Vous devez ensuite accepter les "Applications de source inconnu" si l'application est obtenu via un lien de téléchargement sur un site internet par exemple.
@@ -55,6 +56,7 @@ https://cedgabrang.wixsite.com/xamarintipsandtricks/post/xamarin-forms-implement
 
 - 3] Vous devez également vous munir d'un compte Firebase & Azure Notification pour permettre à vos applications de recevoir des notifications push sur le téléphone. 
 https://cedgabrang.wixsite.com/xamarintipsandtricks/post/xamarin-forms-implementing-push-notification-using-firebase-cloud-messaging
+Notification via AzureHub: https://docs.microsoft.com/en-us/azure/developer/mobile-apps/notification-hubs-backend-service-xamarin-forms
 
 - 4] Pour obtenir l'application compiler vous devez ensuite: Clique droit sur le projet (Android, Ios ou UWP) et choisir "Publier". Le projet va se compiler et dans le dossier de destination vous aurez l'application que vous pourrez partager aux utilisateurs via un lien de téléchargement ou une plateforme tel que le PlayStore.
 - 5] Vous devez ensuite accepter les "Applications de source inconnu" si l'application est obtenu via un lien de téléchargement sur un site internet par exemple.
