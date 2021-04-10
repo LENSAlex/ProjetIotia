@@ -19,6 +19,11 @@ namespace ProjetGroupe
         public static string NotificationHubName { get; set; }
         public static string NotificationChannelID { get; set; }
 
+        public static string Mail { get; set; }
+        public static string MailTo { get; set; }
+        public static string MailPw { get; set; }
+        public static string MailServer { get; set; }
+        public static string MailPort { get; set; }
         public static string WebServiceURI { get; set; }
         static Config()
         {
@@ -34,6 +39,12 @@ namespace ProjetGroupe
             NotificationHubName = j.SelectToken("NotificationHubName").ToString();
             NotificationChannelID = j.SelectToken("NotificationChannelID").ToString();
             WebServiceURI = j.SelectToken("WebServiceURI").ToString();
+
+            Mail = j.SelectToken("Mail").ToString();
+            MailTo = j.SelectToken("MailTo").ToString();
+            MailPw = j.SelectToken("MailPw").ToString();
+            MailServer = j.SelectToken("MailServer").ToString();
+            MailPort = j.SelectToken("MailPort").ToString();
         }
     }
     public class RestService

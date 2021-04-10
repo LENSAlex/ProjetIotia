@@ -32,17 +32,18 @@ namespace ProjetGroupe.Views
         {
             InitializeComponent();
             this.BindingContext = new SmartBuildingViewModel();
-
-            WeathersList.RefreshCommand = new Command(() => {
-                WeathersList.IsRefreshing = true;
-                GetData();
-                WeathersList.IsRefreshing = false;
-            });
+            searchResults.ItemsSource = null;
+            searchBar.Text = "";
+            //WeathersList.RefreshCommand = new Command(() => {
+            //    WeathersList.IsRefreshing = true;
+            //    GetData();
+            //    WeathersList.IsRefreshing = false;
+            //});
         }
-        public async void GetData()
-        {
-            WeathersList.ItemsSource = await CapteurType.List();
-        }
+        //public async void GetData()
+        //{
+        //    WeathersList.ItemsSource = await CapteurType.List();
+        //}
         private void searchBar_TextChanged(object sender, TextChangedEventArgs e)
         {
             SearchBar searchBar = (SearchBar)sender;
@@ -56,6 +57,7 @@ namespace ProjetGroupe.Views
         //}
         public async void GetResultAsync(string query)
         {
+            string result = query += " ";
             //_Salle = await Salle.ListSalleOfEleve();
 
             //List<int> listId = new List<int>();
@@ -72,18 +74,18 @@ namespace ProjetGroupe.Views
             //    capteurType.Id = id;
             //}
             //Trouver une solution pour avoir 
-            _CapteurType = await Salle.ListCapteurBySalleId(query);
+            _CapteurType = await Salle.ListCapteurBySalleId(result);
 
         }
-        private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
-        {
-            var obj = (CapteurType)e.SelectedItem;
-            var ide = Convert.ToInt32(obj.Id);
-            Xamarin.Essentials.SecureStorage.SetAsync("CapteurId", ide.ToString());
-            Shell.Current.GoToAsync($"{nameof(CapteursDetailsPage)}");
-            searchResults.ItemsSource = null;
-            searchBar.Text = "";
-        }
+        //private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        //{
+        //    var obj = (CapteurType)e.SelectedItem;
+        //    var ide = Convert.ToInt32(obj.Id);
+        //    Xamarin.Essentials.SecureStorage.SetAsync("CapteurId", ide.ToString());
+        //    Shell.Current.GoToAsync($"{nameof(CapteursDetailsPage)}");
+        //    searchResults.ItemsSource = null;
+        //    searchBar.Text = "";
+        //}
         private void OnItemSelected2(object sender, SelectedItemChangedEventArgs e)
         {
             var obj = (CapteurType)e.SelectedItem;
@@ -101,10 +103,25 @@ namespace ProjetGroupe.Views
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            WeathersList.TranslationY = 600;
-            WeathersList.TranslateTo(0, 0, 500, Easing.SinInOut);
+            //WeathersList.TranslationY = 600;
+            //WeathersList.TranslateTo(0, 0, 500, Easing.SinInOut);
             searchResults.TranslationY = 600;
             searchResults.TranslateTo(0, 0, 500, Easing.SinInOut);
+            searchResults.ItemsSource = null;
+            searchBar.Text = "";
+        }
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+            searchResults.ItemsSource = null;
+            searchBar.Text = "";
+        }
+
+        private void searchBar_SearchButtonPressed(object sender, EventArgs e)
+        {
+            SearchBar searchBar = (SearchBar)sender;
+            GetResultAsync(searchBar.Text);
+            searchResults.ItemsSource = _CapteurType;
         }
     }
     //ScrollViews

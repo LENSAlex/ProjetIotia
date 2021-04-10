@@ -15,8 +15,9 @@ namespace ProjetGroupe.Models
         [JsonProperty("libelle_type")]
         public string LibelleType { get; set; }
         [JsonProperty("libelle")]
-        public string Description { get; set; }
-        public string Reference { get; set; }
+        public string Libelle { get; set; }
+        [JsonProperty("nom")]
+        public string Nom { get; set; }
 
         public static Task<ObservableCollection<CapteurType>> List()
         {

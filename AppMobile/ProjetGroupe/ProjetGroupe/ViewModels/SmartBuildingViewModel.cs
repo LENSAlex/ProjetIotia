@@ -49,13 +49,18 @@ namespace ProjetGroupe.ViewModels
         private string temp;
         public string Temp { get => temp; set => SetProperty(ref temp, value); }
         public List<Personne> Weathers { get => GetPersonne(); }
-        public Command PerformSearch;
-        public string SearchResults { get; set; }
+      //  public ICommand PerformSearch;
+        public List<CapteurType> SearchResults { get; set; }
         public SmartBuildingViewModel()
         {
             Device.BeginInvokeOnMainThread(() => GetData());
+            //PerformSearch = new Command<string>(HandleSearchPressed);
         }
-
+        //private async void HandleSearchPressed(string searchText)
+        //{
+        //    SearchResults = await Salle.ListCapteurBySalleId(searchText);
+        //   // LabelTextPress = searchText;
+        //}
         public Command OnRefresh;
         private string Personnes(string query)
         {
@@ -85,6 +90,12 @@ namespace ProjetGroupe.ViewModels
                 listPersonne.Add(new Personne { PersonneType = personne.PersonneType, Id = personne.Id, RFID = personne.RFID });
             }
             return listPersonne;
+        }
+        public event PropertyChangedEventHandler PropertyChanged2;
+
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            this.PropertyChanged2?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
     public class Equiquement

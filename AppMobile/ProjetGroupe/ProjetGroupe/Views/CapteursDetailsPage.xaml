@@ -8,7 +8,8 @@
              x:DataType="viewmodels:CapteursDetailsPage"
              Title="Contacts et Autres"
              Shell.NavBarIsVisible="False"
-             Shell.TabBarIsVisible="False">
+             Shell.TabBarIsVisible="False"
+             Shell.FlyoutItemIsVisible="False">
     
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -49,9 +50,9 @@
                         </StackLayout>
                         <Label Text="Sortir" Margin="0,0,8,-5" FontSize="12" FontAttributes="Bold" TextColor="Black" FontFamily="ThemeFontBold" HorizontalOptions="End" VerticalOptions="End"/>
                         <ImageButton BackgroundColor="Transparent" HeightRequest="55" WidthRequest="55" Source="back.png" VerticalOptions="Center" Clicked="OnImageButtonClicked" HorizontalOptions="End"/>
-                        <Grid.GestureRecognizers>
+                        <!--<Grid.GestureRecognizers>
                             <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
-                        </Grid.GestureRecognizers>
+                        </Grid.GestureRecognizers>-->
                     </Grid>
                     <StackLayout Grid.Row="1" Spacing="15" >
                         <Label Text="{Binding Date}" FontAttributes="Bold" FontSize="20" FontFamily="ThemeFontRegular" TextColor="Black"/>

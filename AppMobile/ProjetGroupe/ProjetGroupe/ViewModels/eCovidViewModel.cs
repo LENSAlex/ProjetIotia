@@ -1,8 +1,11 @@
-﻿using Syncfusion.Drawing;
+﻿using ProjetGroupe.Models;
+using Syncfusion.Drawing;
 using Syncfusion.Pdf;
 using Syncfusion.Pdf.Graphics;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.IO;
 using System.Text;
 using Xamarin.Forms;
@@ -11,11 +14,36 @@ namespace ProjetGroupe.ViewModels
 {
     public class eCovidViewModel : BaseViewModel
     {
+        public event PropertyChangedEventHandler PropertyChanged;
+        public ObservableCollection<CapteurType> items { get; set; }
+        public ObservableCollection<CapteurType> Items
+        {
+            get
+            {
+                return items;
+            }
+            set
+            {
+                items = value;
+                RaisepropertyChanged("Items");
+            }
+        }
+        public async void GetData()
+        {
+            Items = await CapteurType.List();
+        }
+        public void RaisepropertyChanged(string propertyName)
+        {
+            if (PropertyChanged != null)
+                PropertyChanged.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
         public Command ClickedTest { get; }
         public eCovidViewModel()
         {
+            Device.BeginInvokeOnMainThread(() => GetData());
             ClickedTest = new Command(OnClickedTestClicked);
         }
+
         private void OnClickedTestClicked(object obj)
         {
             PdfDocument document = new PdfDocument();
