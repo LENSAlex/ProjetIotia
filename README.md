@@ -78,6 +78,8 @@ Pour que l'application puisse atteindre le serveur nodejs, il faut lui donner un
 - 1] Ouvrez l'application
 - 2] Vous arrivez ensuite sur une page d'authentification, utiliser vos identifiants de connexion (Ici nous utilisons ceux de l'IUT)
 - 3] Vous avez ensuite accès aux pages de l'application
+- 4] Il est important de noter qu'à votre connexion à l'application (une fois le bouton connexion pressé), vous serrez ammener à accepter les notifications push
+- car votre smartphone sera enregistré au Hub de Notification Azure via Firebase. Egalement si vous voulez générer un pdf, on vous demandera d'activté ou non les droits d'écriture.
 
 # Notification API
 
