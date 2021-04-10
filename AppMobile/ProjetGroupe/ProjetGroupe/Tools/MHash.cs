@@ -6,17 +6,14 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ProjetGroupe.Tools
-{    public static class MHash
+{    
+    public static class MHash
     {
         public static string HashString(string rawData)
         {
-            // Create a SHA256   
             using (SHA256 sha256Hash = SHA256.Create())
-            {
-                // ComputeHash - returns byte array  
-                byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(rawData));
-
-                // Convert byte array to a string   
+            { 
+                byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(rawData)); 
                 StringBuilder builder = new StringBuilder();
                 for (int i = 0; i < bytes.Length; i++)
                 {

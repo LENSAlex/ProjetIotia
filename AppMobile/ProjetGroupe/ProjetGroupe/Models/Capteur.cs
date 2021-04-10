@@ -95,19 +95,5 @@ namespace ProjetGroupe.Models
         }
         public decimal seuil_min { get; set; }
         public decimal seuil_max { get; set; }
-
-        public static Task<Capteur> Load(int Id)
-        {
-            return CapteurManager.LoadCapteur(Id);
-        }
-
-        public static Task<string> Save(Capteur capteur)
-        {
-            return CapteurManager.Save(capteur);
-        }
-        public Task<string> Save()
-        {
-            return CapteurManager.Save(this);
-        }
     }
 }

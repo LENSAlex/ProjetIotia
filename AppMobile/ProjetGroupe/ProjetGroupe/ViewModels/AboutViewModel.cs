@@ -14,6 +14,7 @@ using System.Net.Http.Headers;
 using Newtonsoft.Json.Linq;
 using System.Linq;
 using ProjetGroupe.Models.Manager;
+using ProjetGroupe.Models;
 
 namespace ProjetGroupe.ViewModels
 {
@@ -24,8 +25,8 @@ namespace ProjetGroupe.ViewModels
         public string CasSalle { get; set; } = "16";
 
         public event PropertyChangedEventHandler PropertyChanged;
-        public ObservableCollection<Equiquement> items { get; set; }
-        public ObservableCollection<Equiquement> Items
+        public ObservableCollection<Equipement> items { get; set; }
+        public ObservableCollection<Equipement> Items
         {
             get
             {
@@ -43,7 +44,7 @@ namespace ProjetGroupe.ViewModels
         }
         public async void GetData()
         {
-            Items = await Equiquement.List();
+            Items = await Equipement.ListEquipement();
         }
         public void RaisepropertyChanged(string propertyName)
         {
@@ -52,21 +53,4 @@ namespace ProjetGroupe.ViewModels
         }
 
     }
-    //public class Equipes
-    //{
-    //    [JsonProperty("Id")]
-    //    public int Id { get; set; }
-    //    [JsonProperty("name")]
-    //    public string Name { get; set; }
-    //    [JsonProperty("disponible")]
-    //    public bool Disponible { get; set; }
-    //    public static Task<ObservableCollection<Equipes>> List()
-    //    {
-    //        return CapteurManager.RefreshDataAsync();
-    //    }
-    //    public static Task<Equipes> Load(int id)
-    //    {
-    //        return CapteurManager.Load(id);
-    //    }
-    //}
 }

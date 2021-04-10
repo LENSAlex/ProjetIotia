@@ -1,0 +1,15 @@
+C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\NotificationAPI\obj\Release\netcoreapp3.1\PubTmp\Out\NotificationAPI.exe
+C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\NotificationAPI\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.Development.json
+C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\NotificationAPI\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.json
+C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\NotificationAPI\obj\Release\netcoreapp3.1\PubTmp\Out\NotificationAPI.dll
+C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\NotificationAPI\obj\Release\netcoreapp3.1\PubTmp\Out\NotificationAPI.deps.json
+C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\NotificationAPI\obj\Release\netcoreapp3.1\PubTmp\Out\NotificationAPI.runtimeconfig.json
+C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\NotificationAPI\obj\Release\netcoreapp3.1\PubTmp\Out\NotificationAPI.pdb
+C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\NotificationAPI\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.Azure.NotificationHubs.dll
+C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\NotificationAPI\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\NotificationAPI\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\NotificationAPI\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\NotificationAPI\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\NotificationAPI\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.Extensions.Options.dll
+C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\NotificationAPI\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.Extensions.Primitives.dll
+C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\NotificationAPI\obj\Release\netcoreapp3.1\PubTmp\Out\Newtonsoft.Json.dll

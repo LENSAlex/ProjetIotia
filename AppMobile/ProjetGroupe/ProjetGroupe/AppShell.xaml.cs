@@ -1,4 +1,5 @@
 ﻿using ProjetGroupe.Models;
+using ProjetGroupe.Tools.Services;
 using ProjetGroupe.ViewModels;
 using ProjetGroupe.Views;
 using System;
@@ -9,8 +10,9 @@ using Xamarin.Forms;
 namespace ProjetGroupe
 {
 
-    public partial class AppShell : Xamarin.Forms.Shell
+    public partial class AppShell : Shell
     {
+        readonly INotificationRegistrationService _notificationRegistrationService;
         public string Email { get => GetMail(); }
         public string UserType  { get => GetUserType(); }
         public AppShell()
@@ -18,13 +20,17 @@ namespace ProjetGroupe
             InitializeComponent();
             this.BindingContext = this;
 
+            _notificationRegistrationService = ServiceContainer.Resolve<INotificationRegistrationService>();
+
             Routing.RegisterRoute(nameof(AccueilPage), typeof(AccueilPage));
             Routing.RegisterRoute(nameof(SmartOfficePage), typeof(SmartOfficePage));
             Routing.RegisterRoute(nameof(SmartBuildingPage), typeof(SmartBuildingPage));
             Routing.RegisterRoute(nameof(eCovidPage), typeof(eCovidPage));
             Routing.RegisterRoute(nameof(AboutPage), typeof(AboutPage));
             Routing.RegisterRoute(nameof(CapteursDetailsPage), typeof(CapteursDetailsPage));
-            //Routing.RegisterRoute(nameof(TestPage), typeof(TestPage));
+
+            Device.BeginInvokeOnMainThread(() => _notificationRegistrationService.RegisterDeviceAsync());    
+ 
         }
 
 
@@ -33,7 +39,6 @@ namespace ProjetGroupe
             Xamarin.Essentials.SecureStorage.Remove("CapteurId");
             Xamarin.Essentials.SecureStorage.Remove("isLogged");
             Application.Current.MainPage = new LoginPage();
-            //await Shell.Current.GoToAsync("///LoginPage");
         }
         private async void OnSmartOfficePageClicked(object sender, EventArgs e)
         {
@@ -51,10 +56,6 @@ namespace ProjetGroupe
         {
             await Shell.Current.GoToAsync("/eCovidPage");
         }
-        //private async void OnTestPageClicked(object sender, EventArgs e)
-        //{
-        //    await Shell.Current.GoToAsync("/CapteursDetailsPage");
-        //}
         public string GetMail()
         {
             var personne = Personne.IsLogged();
