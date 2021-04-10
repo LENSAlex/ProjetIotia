@@ -345,9 +345,37 @@ app.get("/Capteur/ListCapteur", (req, res) => {
     });
 })
 
-app.get("/Capteur/Valeur/:idSalle/" , (req,res) =>
+
+//Affichage des salles comme ca pour avoir id_box
+app.get("/Capteur/ListSalle" , (req,res) =>
 {
-    conn.query("SELECT `id_valuetype`, `libelle`, `unite` FROM `ValueType`", function(err, result) {
+    conn.query("select S.nom , B.id_box , B.id_salle from Box B , Salle S where B.id_salle = S.id_salle", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+//Chercher les valeurs d une salle
+app.get("/Capteur/Valeur/:IdSalle" , (req,res) =>
+{
+    conn.query("select H.valeur , VT.libelle , S.nom from Historique H , ValueType VT , Box B , Salle S where H.id_valuetype = VT.id_valuetype and H.id_box = B.id_box and B.id_salle = S.id_salle AND S.id_salle = '" + req.params.IdSalle + "'", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+//Chercher une valeur precise dans une salle garce a son type 
+app.get("/Capteur/Valeur/:IdSalle/:IdValueType" , (req,res) =>
+{
+    conn.query("select H.valeur , VT.libelle , S.nom from Historique H , ValueType VT , Box B , Salle S where H.id_valuetype = VT.id_valuetype and H.id_box = B.id_box and B.id_salle = S.id_salle AND S.id_salle = '" + req.params.IdSalle + "' and H.id_valuetype = '" + req.params.IdValueType + "'", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
