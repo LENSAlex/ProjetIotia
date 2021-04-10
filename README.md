@@ -79,6 +79,22 @@ Pour que l'application puisse atteindre le serveur nodejs, il faut lui donner un
 - 2] Vous arrivez ensuite sur une page d'authentification, utiliser vos identifiants de connexion (Ici nous utilisons ceux de l'IUT)
 - 3] Vous avez ensuite accès aux pages de l'application
 
+# Notification API
+
+- Pour pouvoir envoyer des notifications push à tout le monde lors d'une alerte de covid-19. Il faut créer une API application web sur Visual Studio.
+Voici un tutoriel d'installation de l'api sur Azure via votre compte Etudiant ou Entreprise.
+https://docs.microsoft.com/en-us/azure/developer/mobile-apps/notification-hubs-backend-service-xamarin-forms
+ 
+Après avoir mit en ligne l'API, il est possible de tester l'envoie de notification avec postman:
+Envoyez une requête POST sur https://nomduprojet.azurewebsites.net/api/notifications/requests avec votre body un json tel que
+```
+{
+    "text": "Alerte Covid",
+    "action": "action_a"
+}
+```
+Pour envoyer une notification, envoyez simplement un requête post via la librairie HttpClient de Visual Studio et en lui envoyant votre chaîne json.
+
 # Définitions des WebServices:
 
 - Get All Capteur (Liste les capteurs via un select *)  OK 
@@ -89,3 +105,4 @@ Pour que l'application puisse atteindre le serveur nodejs, il faut lui donner un
 - Get Count des malades d'un salle, bâtiment et iut (Récupère le nombre de malade en fonction de ce qu'on a choisit) 
 - Get list des équipements pour le stock (Liste les équipements disponible dans l'établissement) OK
 - Get Historique by CapteurId (Liste les données du Capteur choisi)
+- Post (envoie un text et une action à une API en ligne sur les service d'azure) OK
