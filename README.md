@@ -47,20 +47,18 @@ Pour le projet Web:
 - 6.2] Si vous voulez changer la police d'écriture, vous avez un dossier "Font" ou vous allez devoir mettre vos polices .ttf. Ensuite, dans le document "wwwroot/css"
 - 6.3] Il est aussi important de définir des permissions utilisateurs que l'ont peut modifier quan on vas dans 
 - "Liste Uilisateur " ensuite on choise un utilisateur on click sur le stylo et on peut modifier les droit (et aussi tous ce qui et relier a utilisateur)
-- 6.4] Il vous faudra aussi une adresse mail d'envois et de réception pour les alertes par emails, celles ci sont à changer dans le appsettings.json
 
-- 7] Le fichier MainActivity.cs est le fichier source ou vous mettrez toutes vos initialisations de plugin par exemple pour les notifications. N'hésitez pas à récupérer celui déjà existant. Vous allez devoir modifier les informations concernant le Hub de notification par vos informations que vous avez pu obtenir en suivant le tutoriel d'installation de Firebase et d'Azure.
-- 8] Dans le fichier appsettings.json vous trouverez également les informations de liaison et les token/clé permettant les accès à certain service de l'application. Là aussi, vous alleze devoir les modifier par les votre. La classe "Config.cs" vous permet  de récupérer depuis n'importe ou, via un Getter/Setter, la chaîne récupérée par le JsonReader du fichier appsettings.json.
-- 9] Concernant le bibliothèque de classe, vous avez une hiérarchie qui a été utilisée: Les classes métiers et les classes internes. Les classes métiers sont l'équivalent des tables de la base de données. Les classes internes sont les classes ou se trouvent les méthodes (Get, post, put) vers le serveur nodejs. Grâce au service RESTFul de Xamarin, nous pouvons récupérer un chaîne json et la parser pour remplir les Getter/Setter des classes métiers. Les méthodes sont ensuite récupéré dans les classes métiers étant données que se sont des méthodes "static". Ce qui nous permet de les appeler directement depuis le backend. Ici, chaque méthode (Get, Post, Put) est symbolisé par une méthode (Get => List() (pour une liste) ou Load() pour une ligne spécifique, Post => Save(), Put => Update()). Le principe est de ne pas avoir de requête vers la base de données directement dans le code, donc il faut passer par des webservices, ce sont eux qui font les requêtes SQL.
-Pour que l'application puisse atteindre le serveur nodejs, il faut lui donner une permission à rajouter dans "AssemblyInfo.cs": [assembly: Application(UsesCleartextTraffic = true)]
+- 7] Dans le fichier appsettings.json vous trouverez également les informations de liaison et les token/clé permettant les accès à certain service de l'application. Là aussi, vous alleze devoir les modifier par les votre. La classe "Config.cs" vous permet  de récupérer depuis n'importe ou, via un Getter/Setter, la chaîne récupérée par le JsonReader du fichier appsettings.json.
+- 9] Concernant le bibliothèque de classe, vous avez une hiérarchie qui a été utilisée: Les classes métiers et les classes internes. Les classes métiers sont l'équivalent des tables de la base de données. Les classes internes sont les classes ou se trouvent les méthodes (Get, post, put) vers le serveur nodejs. Grâce au service c#, nous pouvons récupérer un chaîne json et la parser pour remplir les Getter/Setter des classes métiers. Les méthodes sont ensuite récupéré dans les classes métiers étant données que se sont des méthodes "static". Ce qui nous permet de les appeler directement depuis le backend. Ici, chaque méthode (Get, Post, Put) est symbolisé par une méthode (Get => List() (pour une liste) ou Load() pour une ligne spécifique, Post => Save(), Put => Update()). Le principe est de ne pas avoir de requête vers la base de données directement dans le code, donc il faut passer par des webservices, ce sont eux qui font les requêtes SQL.
 
 - 10] Installation du serveur nodejs (Autres collaborateurs)
 
 # Utilisation de l'application:
 
 - 1] Ouvrez l'application
-- 2] Vous arrivez ensuite sur une page d'authentification, utiliser vos identifiants de connexion (Ici nous utilisons ceux de l'IUT)
-- 3] Vous avez ensuite accès aux pages de l'application
+- 2] Vous arrivez ensuite sur une page d'authentification, utiliser vos identifiants de connexion 
+- 3] Vous avez ensuite accès aux pages de l'application web et au tableau de bord (Acccuil) avec c'est 3 card clicable et ca bar de navigation a gauche
+
 
 # Définitions des WebServices:
 
