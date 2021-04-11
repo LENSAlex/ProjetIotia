@@ -103,7 +103,7 @@ Pour envoyer une notification, envoyez simplement un requête post via la librai
 - Put Alerte pénurie (Update un produit en stock par un 0 (donc pas en stock)) OK
 - Get All Salle de la personne connecté (Select *) OK
 - Get Capteur de la salle via search (Cherche les capteurs d'une salle via le numéro de salle) OK
-- Get Count des malades d'un salle, bâtiment et iut (Récupère le nombre de malade en fonction de ce qu'on a choisit) 
+- Get Count des malades d'un salle, bâtiment et iut (Récupère le nombre de malade en fonction de ce qu'on a choisit) OK
 - Get list des équipements pour le stock (Liste les équipements disponible dans l'établissement) OK
 - Get Historique by CapteurId (Liste les données du Capteur choisi)
 - Post (envoie un text et une action à une API en ligne sur les service d'azure) OK
