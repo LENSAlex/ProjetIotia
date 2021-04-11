@@ -23,5 +23,9 @@ namespace ProjetGroupe.Models
         {
             return CapteurManager.ListCapteur();
         }
-    }
+        public static Task<List<ValueType>> ListUnite()
+        {
+            return CapteurManager.ListValueType();
+        }
+}
 }

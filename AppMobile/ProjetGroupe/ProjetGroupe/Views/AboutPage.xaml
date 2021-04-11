@@ -21,6 +21,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+
         <Image Source="overlay.png" Aspect="Fill" HeightRequest="300" VerticalOptions="StartAndExpand"/>
         <StackLayout Orientation="Vertical" Margin="0,20" HorizontalOptions="Center" VerticalOptions="Center">
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
@@ -32,26 +33,61 @@
             <Grid HorizontalOptions="Center" VerticalOptions="Center">
                 <Label Text="Alertez quand un produit est en pérunie" TextColor="White" FontSize="52" FontAttributes="Bold" VerticalOptions="Center"/>
                 <Label Text="Email: contact@iut-cote-dazur.fr" FontFamily="ThemeFontBold" HorizontalOptions="Start" TextColor="#C4263E" FontSize="12" Margin="20,20,10,20" VerticalOptions="Start"/>
+                <Label Text="Nombre de malade atteind du covid à l'IUT:" FontFamily="ThemeFontBold" HorizontalOptions="Start" TextColor="DarkGray" FontSize="12" Margin="20,40,10,20" VerticalOptions="Start"/>
+                <Label Text="{Binding CountCovid}" FontFamily="ThemeFontBold" HorizontalOptions="Start" TextColor="#C4263E" FontSize="12" Margin="25,40,10,20" VerticalOptions="Start"/>
             </Grid>
         </Frame>
-        <Frame Grid.Row="3" HasShadow="True" CornerRadius="15" Margin="20,-10,20,20" Padding="0" HeightRequest="300" VerticalOptions="Start" BackgroundColor="AliceBlue">
-            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Start">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <Grid Grid.Row="0">
-                    <StackLayout Orientation="Horizontal" Spacing="1" HorizontalOptions="Start">
-                        <StackLayout Spacing="20" HorizontalOptions="CenterAndExpand">
-                            <Label Text="Nombre de malade atteind du covid:" FontFamily="ThemeFontBold" HorizontalOptions="Start" TextColor="DarkGray" FontSize="12" Margin="10,10,10,0" VerticalOptions="Start"/>
-                            <Label Text="{Binding CasAll}" FontFamily="ThemeFontBold" HorizontalOptions="Start" TextColor="#C4263E" FontSize="12" Margin="10,0,10,0" VerticalOptions="Start"/>
-                            <Label Text="Nombre de malade atteind du covid dans le bâtiment:" FontFamily="Roboto" HorizontalOptions="Start" TextColor="DarkGray" FontSize="12" Margin="10,0,10,0" VerticalOptions="Start"/>
-                            <Label Text="{Binding CasBat}" FontFamily="ThemeFontBold" HorizontalOptions="Start" TextColor="#C4263E" FontSize="12" Margin="10,0,10,0" VerticalOptions="Start"/>
-                            <Label Text="Nombre de malade atteind dans la salle:" FontFamily="ThemeFontBold" HorizontalOptions="Start" TextColor="DarkGray" FontSize="12" Margin="10,0,10,0" VerticalOptions="Start"/>
-                            <Label Text="{Binding CasSalle}" FontFamily="ThemeFontBold" HorizontalOptions="Start" TextColor="#C4263E" FontSize="12" Margin="10,0,10,0" VerticalOptions="Start"/>
-                        </StackLayout>
-                    </StackLayout>
-                </Grid>
-            </Grid>
-        </Frame>
+        <Label  Grid.Row="2" Text="Liste des cas présents dans chaque départements: " FontFamily="ThemeFontBold" HorizontalOptions="Start" TextColor="DarkGray" FontSize="12" Margin="20,4,10,20" VerticalOptions="Start"/>
+        <ListView x:Name="ListCasCovidDep" ItemsSource="{Binding Items}" HeightRequest="140" SeparatorVisibility="None" HorizontalOptions="Fill" IsPullToRefreshEnabled="True" RefreshCommand="{Binding RefreshCommand}" IsRefreshing="{Binding IsRefreshing}"
+                  Grid.Row="2" Margin="20,25,20,10">
+            <ListView.ItemTemplate StyleClass="ListViewCustom">
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame BackgroundColor="White" BorderColor="#F0F0F0" Padding="5" Margin="0,0,0,5" HasShadow="true">
+                            <Grid HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="Start"  Padding="10,-5,0,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label FontFamily="ThemeFontBold" Text="Département:" TextColor="Black" FontSize="10" VerticalOptions="Center"/>
+                                <Label FontFamily="ThemeFontBold" Text="{Binding Nom}" TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="80,0,20,0"/>
+                                <BoxView Grid.Column="0" BackgroundColor="#C4263E" WidthRequest="8" Margin="-14,-10" HorizontalOptions="Start" VerticalOptions="FillAndExpand"/>
+                                <StackLayout Grid.Column="2" Orientation="Horizontal" Margin="0,0" HorizontalOptions="End" VerticalOptions="Center">
+                                    <Label FontFamily="ThemeFontBold" Text="Nbr de cas: " TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="-20,0"/>
+                                    <Label FontFamily="ThemeFontBold" Text="{Binding NbCasCovid}" TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="20,0"/>
+                                </StackLayout>
+                            </Grid>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Label  Grid.Row="3" Text="Liste des cas présents dans chaque formation: " FontFamily="ThemeFontBold" HorizontalOptions="Start" TextColor="DarkGray" FontSize="12" Margin="20,-10,10,20" VerticalOptions="Start"/>
+        <ListView x:Name="ListCasCovidForm" ItemsSource="{Binding ItemsB}" HeightRequest="140" SeparatorVisibility="None" HorizontalOptions="Fill" IsPullToRefreshEnabled="True" RefreshCommand="{Binding RefreshCommand}" IsRefreshing="{Binding IsRefreshing}"
+                  Grid.Row="3" Margin="20,10,20,10">
+            <ListView.ItemTemplate StyleClass="ListViewCustom">
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame BackgroundColor="White" BorderColor="#F0F0F0" Padding="5" Margin="0,0,0,5" HasShadow="true">
+                            <Grid HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="Start"  Padding="10,-5,0,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label FontFamily="ThemeFontBold" Text="Formation:" TextColor="Black" FontSize="10" VerticalOptions="Center"/>
+                                <Label FontFamily="ThemeFontBold" Text="{Binding Nom2}" TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="80,0,20,0"/>
+                                <BoxView Grid.Column="0" BackgroundColor="#C4263E" WidthRequest="8" Margin="-14,-10" HorizontalOptions="Start" VerticalOptions="FillAndExpand"/>
+                                <StackLayout Grid.Column="2" Orientation="Horizontal" Margin="0,0" HorizontalOptions="End" VerticalOptions="Center">
+                                    <Label FontFamily="ThemeFontBold" Text="Nbr de cas: " TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="-20,0"/>
+                                    <Label FontFamily="ThemeFontBold" Text="{Binding NbCasCovid}" TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="20,0"/>
+                                </StackLayout>
+                            </Grid>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </ContentPage>

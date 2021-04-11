@@ -38,8 +38,34 @@ namespace ProjetGroupe.Models.Manager
             }
             catch (Exception ex) { }
             return null;
-        }  
+        }
+        internal static async Task<List<ValueType>> ListValueType()
+        {
+            var httpClient = new HttpClient();
+            List<ValueType> list = new List<ValueType>();
+            if (Device.RuntimePlatform == Device.Android)
+            {
+                httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
+                httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            }
+            string WebAPIUrl = Config.WebServiceURI + "/Capteur/ListValueType";
+            var uri = new Uri(WebAPIUrl);
+            try
+            {
+                var response = await httpClient.GetAsync(uri);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var content = await response.Content.ReadAsStringAsync();
+                    list = JsonConvert.DeserializeObject<List<ValueType>>(content);
+                    return list;
+                }
+            }
+            catch (Exception ex) { }
+            return null;
+        }
     }
+
 }
 
 

@@ -20,13 +20,23 @@ namespace ProjetGroupe.ViewModels
 {
     public class AboutViewModel : INotifyPropertyChanged
     {
-        public string CasAll { get; set; } = "12";
-        public string CasBat { get; set; } = "14";
-        public string CasSalle { get; set; } = "16";
+        public string countcovid;
+        public string CountCovid
+        {
+            get
+            {
+                return countcovid;
+            }
+            set
+            {
+                countcovid = value;
+                RaisepropertyChanged("CountCovid");
+            }
+        }
 
         public event PropertyChangedEventHandler PropertyChanged;
-        public ObservableCollection<Equipement> items { get; set; }
-        public ObservableCollection<Equipement> Items
+        public List<CasCovid> items { get; set; }
+        public List<CasCovid> Items
         {
             get
             {
@@ -38,13 +48,38 @@ namespace ProjetGroupe.ViewModels
                 RaisepropertyChanged("Items");
             }
         }
+        public List<CasCovid> itemsB { get; set; }
+        public List<CasCovid> ItemsB
+        {
+            get
+            {
+                return itemsB;
+            }
+            set
+            {
+                itemsB = value;
+                RaisepropertyChanged("ItemsB");
+            }
+        }
         public AboutViewModel()
         {
-            Device.BeginInvokeOnMainThread(() => GetData());
+            Device.BeginInvokeOnMainThread(() => GetCovidDep());
+            Device.BeginInvokeOnMainThread(() => GetCovidForm());
+            Device.BeginInvokeOnMainThread(() => GetCovidAll());
+       
         }
-        public async void GetData()
+        public async void GetCovidDep()
         {
-            Items = await Equipement.ListEquipement();
+            Items = await CasCovid.ListCasCovidDepartement();
+        }
+        public async void GetCovidForm()
+        {
+            ItemsB = await CasCovid.ListCasCovidFormation();
+        }
+        public async Task<string> GetCovidAll()
+        {
+            var result = await CasCovid.Count();
+            return CountCovid+=result;
         }
         public void RaisepropertyChanged(string propertyName)
         {

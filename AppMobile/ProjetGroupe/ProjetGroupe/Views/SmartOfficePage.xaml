@@ -32,7 +32,7 @@
         <!--<Picker FontFamily="ThemeFontBold" x:Name="Picker" Grid.Row="2" Title="Choisir un produit" Margin="20,10,20,10" BackgroundColor="AliceBlue"  TitleColor="#96d1ff" SelectedIndexChanged="OnPickerSelectedIndexChanged" ItemsSource="{Binding ListEquipement}" SelectedItem="{Binding 
                     Id, Mode=TwoWay}"  TextColor="Black" ItemDisplayBinding="{Binding Libelle}">
         </Picker>-->
-        <ListView x:Name="WeathersList" ItemsSource="{Binding Items}" HeightRequest="170" SeparatorVisibility="None" ItemSelected="OnItemSelected" IsPullToRefreshEnabled="True" RefreshCommand="{Binding RefreshCommand}"
+        <ListView x:Name="ListEquipement" ItemsSource="{Binding Items}" HeightRequest="170" SeparatorVisibility="None" ItemSelected="OnItemSelected" IsPullToRefreshEnabled="True" RefreshCommand="{Binding RefreshCommand}"
            IsRefreshing="{Binding IsRefreshing}"
                   Grid.Row="2" Margin="20,10,20,10">
             <ListView.ItemTemplate StyleClass="ListViewCustom">

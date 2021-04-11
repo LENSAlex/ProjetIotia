@@ -36,35 +36,6 @@ namespace ProjetGroupe.Models
                 _BoxId = value?.Id ?? 0;
             }
         }
-        private int _ValueTypeId;
-        public int ValueTypeId
-        {
-            get
-            {
-                return _ValueTypeId;
-            }
-            set
-            {
-                _ValueTypeId = value;
-                _valueType = null;
-            }
-        }
-
-        private ValueType _valueType;
-        public ValueType ValueType
-        {
-            get
-            {
-                if (_valueType == null && ValueTypeId != 0)
-                    _valueType = ValueType.Load(ValueTypeId);
-                return _valueType;
-            }
-            set
-            {
-                _valueType = value;
-                _ValueTypeId = value?.Id ?? 0;
-            }
-        }
         public decimal Valeur { get; set; }
         public DateTime date_historique { get; set; }
     }

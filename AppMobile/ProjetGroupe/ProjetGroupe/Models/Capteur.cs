@@ -63,36 +63,6 @@ namespace ProjetGroupe.Models
         {
             get; set;
         }
-
-        private int _ValueTypeId;
-        public int ValueTypeId
-        {
-            get
-            {
-                return _ValueTypeId;
-            }
-            set
-            {
-                _ValueTypeId = value;
-                _valueType = null;
-            }
-        }
-
-        private ValueType _valueType;
-        public ValueType ValueType
-        {
-            get
-            {
-                if (_valueType == null && ValueTypeId != 0)
-                    _valueType = ValueType.Load(ValueTypeId);
-                return _valueType;
-            }
-            set
-            {
-                _valueType = value;
-                _ValueTypeId = value?.Id ?? 0;
-            }
-        }
         public decimal seuil_min { get; set; }
         public decimal seuil_max { get; set; }
     }

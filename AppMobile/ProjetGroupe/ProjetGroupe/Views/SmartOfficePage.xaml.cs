@@ -36,16 +36,16 @@ namespace ProjetGroupe.Views
             Label1.IsVisible = false;
             this.BindingContext = new SmartOfficeViewModel();
             _restService = new RestService();
-          
-            WeathersList.RefreshCommand = new Command(() => {
-                WeathersList.IsRefreshing = true;
+
+            ListEquipement.RefreshCommand = new Command(() => {
+                ListEquipement.IsRefreshing = true;
                 GetData();
-                WeathersList.IsRefreshing = false;
+                ListEquipement.IsRefreshing = false;
             });
         }
         public async void GetData()
         {
-            WeathersList.ItemsSource = await Equipement.ListEquipement();
+            ListEquipement.ItemsSource = await Equipement.ListEquipement();
         }
         //3)SmartOffice => alerte à pénurie de produit avec choix du produit.
         private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -123,8 +123,8 @@ namespace ProjetGroupe.Views
             base.OnAppearing();
             Label1.IsVisible = false;
             Label1.Text = "";
-            WeathersList.TranslationY = 600;
-            WeathersList.TranslateTo(0, 0, 500, Easing.SinInOut);
+            ListEquipement.TranslationY = 600;
+            ListEquipement.TranslateTo(0, 0, 500, Easing.SinInOut);
         }
         //public void OnPickerSelectedIndexChanged(object sender, EventArgs e)
         //{
