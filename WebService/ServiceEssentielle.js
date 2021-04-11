@@ -178,7 +178,7 @@ app.get("/Personne/GetIdEleve/:Ine", (req, res) => {
                 if (err)
                     res.status(400).json({ ErrorRequete: 'Requete invalid' });
                 else {
-                    res.status(200).json("Cas covid cree");
+                    res.status(200).json(result);
                 }
             });
         }
@@ -376,6 +376,58 @@ app.get("/Capteur/Valeur/:IdSalle" , (req,res) =>
 app.get("/Capteur/Valeur/:IdSalle/:IdValueType" , (req,res) =>
 {
     conn.query("select H.valeur , VT.libelle , S.nom from Historique H , ValueType VT , Box B , Salle S where H.id_valuetype = VT.id_valuetype and H.id_box = B.id_box and B.id_salle = S.id_salle AND S.id_salle = '" + req.params.IdSalle + "' and H.id_valuetype = '" + req.params.IdValueType + "'", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+
+//Pas fait attente nouvelle insert -------------------------------------
+//Recup valeur d un capteur specifique
+app.get("/Capteur/ValeurSpecifique/:IdDevice" , (req,res) =>
+{
+    //les jointures ne fonctionait pas
+    var id_box , id_valuetype;
+    conn.query("select id_box , id_valuetype from Device where id_device = '" + req.params.IdDevice + "'", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            result.forEach((result) => {
+                id_box = result.id_box;
+                id_valuetype = result.id_valuetype;
+            });
+            conn.query("select * from Historique where id_box = '" + id_box+ "' and id_valuetype = '" + id_valuetype + "'", function(err, result) {
+                if (err)
+                    res.status(400).json({ ErrorRequete: 'Requete invalid' });
+                else {
+                    res.status(200).json(result);
+                }
+            });
+        }
+    });
+})
+// En attendant des nouveau insert
+// SELECT S.id_salle , D.id_devicetype FROM Device D, Box B , Salle S WHERE D.id_box = B.id_box AND B.id_salle = S.id_salle AND D.id_device = 1
+
+app.get("/Capteur/ValeurSpecifique/Last/:IdDevice" , (req,res) =>
+{
+    conn.query("", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+app.get("/Capteur/ValeurSpecifique/Moyenne/:IdDevice" , (req,res) =>
+{
+    conn.query("", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
