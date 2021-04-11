@@ -64,10 +64,10 @@ Notification via AzureHub: https://docs.microsoft.com/en-us/azure/developer/mobi
 - 6.2] Si vous voulez changer la police d'écriture, vous avez un dossier "Font" ou vous allez devoir mettre vos polices .ttf. Ensuite, dans le fichier "AssemblyInfo.cs", vous devez écrire cette ligne: [assembly: ExportFont("Roboto-Regular.ttf", Alias = "Roboto")]
 - 6.3] Il est aussi important de définir des permissions utilisateurs notament l'accès à internet, la lecture et l'écriture. [assembly:UsesPermission(Android.Manifest.Permission.Internet)]
 [assembly:UsesPermission(Android.Manifest.Permission.WriteExternalStorage)]
-- 6.4] Il vous faudra aussi une adresse mail d'envois et de réception pour les alertes par emails, celles ci sont à changer dans le appsettings.json
 
 - 7] Le fichier MainActivity.cs est le fichier source ou vous mettrez toutes vos initialisations de plugin par exemple pour les notifications. N'hésitez pas à récupérer celui déjà existant. Vous allez devoir modifier les informations concernant le Hub de notification par vos informations que vous avez pu obtenir en suivant le tutoriel d'installation de Firebase et d'Azure.
-- 8] Dans le fichier appsettings.json vous trouverez également les informations de liaison et les token/clé permettant les accès à certain service de l'application. Là aussi, vous alleze devoir les modifier par les votre. La classe "Config.cs" vous permet  de récupérer depuis n'importe ou, via un Getter/Setter, la chaîne récupérée par le JsonReader du fichier appsettings.json.
+- 8] Dans le fichier appsettings.json vous trouverez également les informations de liaison et les token/clé permettant les accès à certain service de l'application. Là aussi, vous alleze devoir les modifier par les votre. La classe "Config.cs" vous permet  de récupérer depuis n'importe ou, via un Getter/Setter, la chaîne récupérée par le JsonReader du fichier appsettings.json. (le appsettings.json est compilé dans la dll du projet. (Pour modifier les valeur il faut charger le projet dans Visual Studio puis recompiler)
+- 8.1] 2 types de mails sont présents dans l'application, vous pouvez modifier la configuration du server smtp et les mail d'envois et de réceptions
 - 9] Concernant le bibliothèque de classe, vous avez une hiérarchie qui a été utilisée: Les classes métiers et les classes internes. Les classes métiers sont l'équivalent des tables de la base de données. Les classes internes sont les classes ou se trouvent les méthodes (Get, post, put) vers le serveur nodejs. Grâce au service RESTFul de Xamarin, nous pouvons récupérer un chaîne json et la parser pour remplir les Getter/Setter des classes métiers. Les méthodes sont ensuite récupéré dans les classes métiers étant données que se sont des méthodes "static". Ce qui nous permet de les appeler directement depuis le backend. Ici, chaque méthode (Get, Post, Put) est symbolisé par une méthode (Get => List() (pour une liste) ou Load() pour une ligne spécifique, Post => Save(), Put => Update()). Le principe est de ne pas avoir de requête vers la base de données directement dans le code, donc il faut passer par des webservices, ce sont eux qui font les requêtes SQL.
 Pour que l'application puisse atteindre le serveur nodejs, il faut lui donner une permission à rajouter dans "AssemblyInfo.cs": [assembly: Application(UsesCleartextTraffic = true)]
 
@@ -78,6 +78,23 @@ Pour que l'application puisse atteindre le serveur nodejs, il faut lui donner un
 - 1] Ouvrez l'application
 - 2] Vous arrivez ensuite sur une page d'authentification, utiliser vos identifiants de connexion (Ici nous utilisons ceux de l'IUT)
 - 3] Vous avez ensuite accès aux pages de l'application
+- 4] Il est important de noter qu'à votre connexion à l'application (une fois le bouton connexion pressé), vous serrez ammener à accepter les notifications push car votre smartphone sera enregistré au Hub de Notification Azure via Firebase. Egalement si vous voulez générer un pdf, on vous demandera d'activté ou non les droits d'écriture.
+
+# Notification API
+
+- Pour pouvoir envoyer des notifications push à tout le monde lors d'une alerte de covid-19. Il faut créer une API application web sur Visual Studio.
+Voici un tutoriel d'installation de l'api sur Azure via votre compte Etudiant ou Entreprise.
+https://docs.microsoft.com/en-us/azure/developer/mobile-apps/notification-hubs-backend-service-xamarin-forms
+ 
+Après avoir mit en ligne l'API, il est possible de tester l'envoie de notification avec postman:
+Envoyez une requête POST sur https://nomduprojet.azurewebsites.net/api/notifications/requests avec votre body un json tel que
+```
+{
+    "text": "Alerte Covid",
+    "action": "action_a"
+}
+```
+Pour envoyer une notification, envoyez simplement un requête post via la librairie HttpClient de Visual Studio et en lui envoyant votre chaîne json.
 
 # Définitions des WebServices:
 
@@ -89,3 +106,4 @@ Pour que l'application puisse atteindre le serveur nodejs, il faut lui donner un
 - Get Count des malades d'un salle, bâtiment et iut (Récupère le nombre de malade en fonction de ce qu'on a choisit) 
 - Get list des équipements pour le stock (Liste les équipements disponible dans l'établissement) OK
 - Get Historique by CapteurId (Liste les données du Capteur choisi)
+- Post (envoie un text et une action à une API en ligne sur les service d'azure) OK
