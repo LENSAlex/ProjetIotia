@@ -1,0 +1,404 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Equipe API",
+    "description": "This is a sample server Petstore server.  You can find out more about     Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).      For this sample, you can use the api key `special-key` to test the authorization     filters.",
+    "termsOfService": "http://swagger.io/terms/",
+    "contact": {
+      "email": "apiteam@swagger.io"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    },
+    "version": "1.0.0"
+  },
+  "externalDocs": {
+    "description": "Find out more about Swagger",
+    "url": "http://swagger.io"
+  },
+  "servers": [
+    {
+      "url": "https://petstore.swagger.io/v2"
+    },
+    {
+      "url": "http://petstore.swagger.io/v2"
+    }
+  ],
+  "tags": [
+    {
+      "name": "infoTouteEquipe",
+      "description": "Toutes les equipes repertorié"
+    },
+    {
+      "name": "NbEquipe",
+      "description": "Nombre d'equipes"
+    },
+    {
+      "name": "InfoEquipe",
+      "description": "Info d'une equipe"
+    },
+    {
+      "name": "reservation",
+      "description": "Reservé une equipe"
+    },
+    {
+      "name": "Equipe",
+      "description": "Section equipe"
+    }
+  ],
+  "paths": {
+    "/infoTouteEquipe": {
+      "get": {
+        "tags": [
+          "Equipe",
+          "infoTouteEquipe"
+        ],
+        "summary": "Details equipe",
+        "description": "Avoir toutes les infos de chaque equipe",
+        "operationId": "InfoAllEquipe",
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EquipesAll"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid status value",
+            "content": {}
+          }
+        },
+        "security": [
+          {
+            "petstore_auth": [
+              "write:pets",
+              "read:pets"
+            ]
+          }
+        ]
+      }
+    },
+    "/NbEquipe": {
+      "get": {
+        "tags": [
+          "Equipe",
+          "NbEquipe"
+        ],
+        "summary": "Nombre equipe",
+        "description": "Nous donne le nombre d equipes",
+        "operationId": "NbEquipe",
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/NbEquipe"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid status value",
+            "content": {}
+          }
+        },
+        "security": [
+          {
+            "petstore_auth": [
+              "write:pets",
+              "read:pets"
+            ]
+          }
+        ]
+      }
+    },
+    "/InfoEquipe/{Id}": {
+      "get": {
+        "tags": [
+          "Equipe",
+          "InfoEquipe"
+        ],
+        "summary": "Trouvé une equipe avec son id",
+        "description": "Returns une equipe",
+        "operationId": "InfoEquipeId",
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "description": "ID equipe",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InfoEquipeId"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid ID supplied",
+            "content": {}
+          },
+          "404": {
+            "description": "Pet not found",
+            "content": {}
+          }
+        },
+        "security": [
+          {
+            "api_key": []
+          }
+        ]
+      }
+    },
+    "/reservation/{Id}": {
+      "put": {
+        "tags": [
+          "Equipe",
+          "reservation"
+        ],
+        "summary": "Reserve une equipe",
+        "description": "Reserve une equipe grace a son id",
+        "operationId": "ReserveID",
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "description": "ID equipe",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "204": {
+            "description": "Equipe deja prise"
+          },
+          "400": {
+            "description": "Invalid ID supplied",
+            "content": {}
+          },
+          "404": {
+            "description": "Pet not found",
+            "content": {}
+          }
+        },
+        "security": [
+          {
+            "api_key": []
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Order": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "petId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "quantity": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "shipDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "status": {
+            "type": "string",
+            "description": "Order Status",
+            "enum": [
+              "placed",
+              "approved",
+              "delivered"
+            ]
+          },
+          "complete": {
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "xml": {
+          "name": "Order"
+        }
+      },
+      "Category": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string"
+          }
+        },
+        "xml": {
+          "name": "Category"
+        }
+      },
+      "User": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "username": {
+            "type": "string"
+          },
+          "firstName": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "userStatus": {
+            "type": "integer",
+            "description": "User Status",
+            "format": "int32"
+          }
+        },
+        "xml": {
+          "name": "User"
+        }
+      },
+      "Tag": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string"
+          }
+        },
+        "xml": {
+          "name": "Tag"
+        }
+      },
+      "InfoEquipeId": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "reserve": {
+            "type": "boolean",
+            "example": false
+          },
+          "nom": {
+            "type": "string",
+            "example": "Team1"
+          }
+        }
+      },
+      "EquipesAll": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "reserve": {
+            "type": "boolean",
+            "example": false
+          },
+          "nom": {
+            "type": "string",
+            "example": "Team1"
+          }
+        }
+      },
+      "NbEquipe": {
+        "type": "object",
+        "properties": {
+          "NombreEquipe": {
+            "type": "integer",
+            "format": "int64",
+            "example": 2
+          }
+        }
+      },
+      "ApiResponse": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "type": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "petstore_auth": {
+        "type": "oauth2",
+        "flows": {
+          "implicit": {
+            "authorizationUrl": "http://petstore.swagger.io/oauth/dialog",
+            "scopes": {
+              "write:pets": "modify pets in your account",
+              "read:pets": "read your pets"
+            }
+          }
+        }
+      },
+      "api_key": {
+        "type": "apiKey",
+        "name": "api_key",
+        "in": "header"
+      }
+    }
+  }
+}

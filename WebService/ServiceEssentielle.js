@@ -2,6 +2,11 @@ var express = require("express");
 var mysql = require('mysql');
 var app = express();
 
+// npm i swagger-ui-express
+//https://editor.swagger.io/
+// const swaggerUi = require('swagger-ui-express');
+// const swaggerJsDoc = require('swagger-jsdoc');
+
 const port = 3001;
 
 // BDD--------------------
@@ -18,6 +23,9 @@ conn.connect(function(err) {
         res.status(404).json({ ErrorConnection: 'Error bdd' });
     console.log("Connected!");
 })
+
+//Test doc swagger----------------------
+// const swaggers 
 
 
 
@@ -512,6 +520,19 @@ app.post("/Personne/Add/:NumRef/:IdPersType/:Password/:Email/:Tel/:Sexe/:Nom/:Pr
 })
 
 
+//Ajout d'un utilisateur rapide
+app.post("/Personne/Add/Test/:Nom/:Prenom", (req, res) => {
+
+    conn.query("INSERT INTO `Personne`(`nom`, `prenom` , `num_ref` , `id_pers_type` , `password` ) VALUES ('" + req.params.Nom + "' , '" + req.params.Prenom + "' , '25416' , '1' , 'password')", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json("Cas covid cree");
+        }
+    });
+})
+
+
 //Envoie nouveau covid vers CasCovid
 app.post("/Alerte/Covid/:IdPersonne", (req, res) => {
 
@@ -519,7 +540,7 @@ app.post("/Alerte/Covid/:IdPersonne", (req, res) => {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
-            res.status(200).json("Cas covid cree");
+            res.status(200).json("Utilisateur test cree");
         }
     });
 })
