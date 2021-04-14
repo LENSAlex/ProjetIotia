@@ -14,35 +14,82 @@
                     <h3>Création Utilisateur</h3>
                 </div>
                 <div class="card-body border-bottom">
-                    <form>
+                    <form method="post">
                         <div class="form-row">
                             <div class="col-md-4 mb-3">
                                 <label for="Nom">Nom</label>
-                                <input type="text" class="form-control" id="Nom" placeholder="Nom" required />
+                                <input type="text" class="form-control" id="nom" name="nom" placeholder="Nom" required />
                             </div>
                             <div class="col-md-4 mb-3">
                                 <label for="Prenom">Prénom</label>
-                                <input type="text" class="form-control" id="Prenom" placeholder="Prénom" required />
+                                <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Prénom" required />
                             </div>
                             <div class="col-md-4 mb-3">
-                                <label for="Promotion">Promotion</label>
-                                <input type="text" class="form-control" id="Promotion" placeholder="Promotion"  required />
+                                <label for="validationDefault03">Email</label>
+                                <input type="text" class="form-control" id="email" name="email" placeholder="coco@iut-nice.fr" required>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-md-6 mb-3">
-                                <label for="validationDefault03">Formation</label>
-                                <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
+                                <label for="validationDefault04">Mot de passe</label>
+                                <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Mf65$" required>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <label for="validationDefault04">Niveau</label>
-                                <input type="text" class="form-control" id="validationDefault04" placeholder="Eléve" required>
+                                <label for="validationDefault04">Vérification mot de passe</label>
+                                <input type="password" class="form-control" id="pwd2" name="pwd2" placeholder="Mf65$" required>
                             </div>
                         </div>
-                        <button class="btn btn-primary" type="submit">Submit form</button>
+                        <div class="form-row">
+                            <div class="col-md-4 mb-3">
+                                <label for="validationDefault03">Formation</label>
+                                <select class="form-control select" aria-hidden="true" id="formation" name="formation">
+                                    <option value="1">DUT informatique</option>
+                                    <option value="2">LP DAM</option>
+                                    <option value="3">LP IOTIA</option>
+                                    <option value="4">DUT QLIO</option>
+                                    <option value="5">DUT R&T</option>
+                                    <option value="6">DUT INFOCOM</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationDefault04">Niveau</label>
+                                <select class="form-control select" aria-hidden="true" id="niveau" name="niveau">
+                                    <option value="1">Etudiant</option>
+                                    <option value="2">Enseignant</option>
+                                    <option value="3">Personnel administratif</option>
+                                    <option value="4">Personnel entretient</option>
+                                    <option value="5">Administrateur</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationDefault04">Numéro référencielle </label>
+                                <input type="text" class="form-control" id="num_ref" name="num_ref" placeholder="Num_ref" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-4 mb-3">
+                                <label for="validationDefault03">Tel </label>
+                                <input type="text" class="form-control" id="tel" name="tel" placeholder="0625639874" required>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationDefault04">Sexe</label>
+                                <select class="form-control select" aria-hidden="true" id="sexe" name="sexe">
+                                    <option value="F">Femme</option>
+                                    <option value="H">Homme</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationDefault04">Anniversaire</label>
+                                <input type="text" class="form-control dateAnniv" id="anniv" name="anniv" placeholder="1968-08-11" required>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit" asp-page-handler="EnvoieDonne">Envoier</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<script>
+
+</script>

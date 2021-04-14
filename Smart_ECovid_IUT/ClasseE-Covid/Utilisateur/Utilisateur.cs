@@ -38,9 +38,13 @@ namespace ClasseE_Covid.Utilisateur
         public string Prenom { get; set; }
 
         [JsonPropertyName("date_anniversaire")]
-        public DateTime Anniv { get; set; }
+        public string Anniv { get; set; }
 
         [JsonPropertyName("libelle")]
         public string Niveau { get; set; }
+
+        [JsonPropertyName("IdPromo")]
+        public int Promotion { get; set; }
+
     }
 }
