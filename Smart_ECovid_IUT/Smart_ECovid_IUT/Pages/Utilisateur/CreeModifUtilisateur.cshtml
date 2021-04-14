@@ -5,7 +5,7 @@
 }
 <div class="container">
     <div class="border-bottom mb-4">
-        <h1> Création Utilisateur</h1>
+        <h1 class="letest"> Création Utilisateur</h1>
     </div>
     <div class="row">
         <div class="col-md-12 mb-4">
@@ -32,11 +32,11 @@
                         <div class="form-row">
                             <div class="col-md-6 mb-3">
                                 <label for="validationDefault04">Mot de passe</label>
-                                <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Mf65$" required>
+                                <input type="password" class="form-control verif" id="pwd" name="pwd" placeholder="Mf65$" required>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label for="validationDefault04">Vérification mot de passe</label>
-                                <input type="password" class="form-control" id="pwd2" name="pwd2" placeholder="Mf65$" required>
+                                <input type="password" class="form-control verif2" id="pwd2" name="pwd2" placeholder="Mf65$" required>
                             </div>
                         </div>
                         <div class="form-row">
@@ -83,13 +83,53 @@
                                 <input type="text" class="form-control dateAnniv" id="anniv" name="anniv" placeholder="1968-08-11" required>
                             </div>
                         </div>
-                        <button class="btn btn-primary" type="submit" asp-page-handler="EnvoieDonne">Envoier</button>
+                        <button class="btn btn-primary " type="submit" asp-page-handler="EnvoieDonne">Envoier</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<script>
 
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script  type="text/javascript">
+
+    $(".verif2").keyup(function (e) {
+        var verif = $(this).val();
+        var pass1 = $('.verif').val();
+
+        if ($(this).val().length == $('.verif').val().length && verif != null) {
+            if (verif != pass1)
+                alert("ATTENTION LES 2 MOT DE PASSE NE SONT PAS IDENTIQUE")
+        }
+    })
+
+    $(".dateAnniv").keyup(function (e) {
+        var rech = $(this).val();
+
+        var max = 10;
+
+        if ($(this).val().length >= max) {
+            $(this).val(rech.substr(0, max));
+        }
+
+        $(this).val($(this).val().replace(/[a-zA-Z]/, ""));
+
+        var max = parseInt($(this).attr('max'));
+        var min = "01";
+
+        if ($(this).val().length == 11) {
+            $(this).val($(this).val().replace(/./, ""));
+        }
+
+        if (($(this).val().length == 4 && $(this).val()[1] != "-" && event.which != 11) || ($(this).val().length == 7 && $(this).val()[1] != "-" && event.which != 11)) {
+            if ($(this).val() > max) {
+                $(this).val(max);
+            }
+            else if ($(this).val() < min) {
+                $(this).val(min);
+            }
+            $(this).val($(this).val() + "-");
+        }
+    })
 </script>

@@ -33,5 +33,8 @@ namespace ClasseE_Covid.Campus
         [JsonPropertyName("id_site")]
         public int IdCampusBatiment { get; set; }
 
+        //[JsonPropertyName("nom")]
+        //public string NomduBatimen { get; set; }
+
     }
 }

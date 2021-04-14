@@ -37,46 +37,6 @@ namespace Smart_ECovid_IUT.Pages.Utilisateur
             StringBuilder sb = new StringBuilder();
             if (item != null)
             {
-
-                //List<KeyValuePair<string, string>> pairs = new List<KeyValuePair<string, string>>();
-
-                //pairs.Add(new KeyValuePair<string, string>("NumRef", item.NumRef));
-                //pairs.Add(new KeyValuePair<string, string>("IdPersType", item.Niveau));
-                //pairs.Add(new KeyValuePair<string, string>("Password", item.Pwd));
-                //pairs.Add(new KeyValuePair<string, string>("Tel", item.Telephone));
-                //pairs.Add(new KeyValuePair<string, string>("Email", item.Email));
-                //pairs.Add(new KeyValuePair<string, string>("Sexe", item.Sexe));
-                //pairs.Add(new KeyValuePair<string, string>("Nom", item.Nom));
-                //pairs.Add(new KeyValuePair<string, string>("Prenom", item.Prenom));
-                //pairs.Add(new KeyValuePair<string, DateTime>("Birth", item.Anniv));
-                //pairs.Add(new KeyValuePair<string, string>("IdPromo", item.Promotion));
-
-                //HttpContent stringContent1 = new StringContent("NumRef");
-                //HttpContent stringContent2 = new StringContent("IdPersType");
-                //HttpContent stringContent3 = new StringContent("Password");
-                //HttpContent stringContent4 = new StringContent("Tel");
-                //HttpContent stringContent5 = new StringContent("Email");
-                //HttpContent stringContent6 = new StringContent("Sexe");
-                //HttpContent stringContent7 = new StringContent("Nom");
-                //HttpContent stringContent8 = new StringContent("Prenom");
-                //HttpContent stringContent9 = new StringContent("Birth");
-                //HttpContent stringContent10 = new StringContent("IdPromo");
-
-                //var formData = new MultipartFormDataContent();
-
-                //formData.Add(stringContent1, item.NumRef);
-                //formData.Add(stringContent2, Convert.ToString(item.IdPersType));
-                //formData.Add(stringContent3,Convert.ToString(item.IdPersType));
-                //formData.Add(stringContent4, item.Pwd);
-                //formData.Add(stringContent5, item.Telephone);
-                //formData.Add(stringContent6, item.Email);
-                //formData.Add(stringContent7, item.Sexe);
-                //formData.Add(stringContent8, item.Nom);
-                //formData.Add(stringContent9, item.Prenom);
-                //formData.Add(stringContent10, Convert.ToString(item.Anniv));
-                //formData.Add(stringContent10, item.Promotion);
-
-
                 sb.Append(@"{""NumRef"" : """ + item.NumRef + @""",");
                 sb.Append(@"""IdPersType"" : " + item.IdPersType + ",");
                 sb.Append(@"""Password"" : """ + item.Pwd + @""",");
