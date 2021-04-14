@@ -14,8 +14,8 @@ Pour utiliser cette api , la modifier vous devez :
 
 - 1] Pour créer une API va devez creer un fichier .js
 - 2] Vous pouvez ensuite utiliser des modules comme express pour creer un server http [Voir ici](https://www.npmjs.com/package/express)
-- 3] Lancer votre serveur http avec la commande   ```shell  node NomFichier.js```
-- 4] Vous pouvez voir le resultat sur ```shell localhost:VotrePort/VotreRoute ```
+- 3] Lancer votre serveur http avec la commande   ```node NomFichier.js```
+- 4] Vous pouvez voir le resultat sur ```localhost:VotrePort/VotreRoute ```
 
 
 
