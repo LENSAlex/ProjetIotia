@@ -1,5 +1,6 @@
 var express = require("express");
 var mysql = require('mysql');
+const fs = require('fs');
 var app = express();
 
 // npm i swagger-ui-express
@@ -26,7 +27,14 @@ conn.connect(function(err) {
 
 //Test doc swagger----------------------
 // const swaggers 
-
+// app.get("/Docs" , (req,res) =>
+// {   
+//     fs.readFile('swagger/Swagger_Editor.html', function(err, data) {
+//         res.writeHead(200, {'Content-Type': 'text/html'});
+//         res.write(data);
+//         return res.end();
+//     })
+// })
 
 
 //------------------------------GET ----------------------------
@@ -344,6 +352,18 @@ app.get("/Capteur/ListDevice/All", (req, res) => {
 app.get("/Capteur/ListCapteur", (req, res) => {
 
     conn.query("select D.id_device ,DT.libelle_type , B.libelle from DeviceType DT , Device D , Box B where DT.id_devicetype = D.id_devicetype and D.id_box = B.id_box", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+app.get("/Capteur/ListCapteur/All", (req, res) => {
+
+    conn.query("select D.id_device ,VT.libelle , B.id_box from ValueType VT , Device D , Box B where VT.id_valuetype = D.id_valuetype and D.id_box = B.id_box order by D.id_device", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
