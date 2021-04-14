@@ -13,12 +13,16 @@ Pour utiliser cette api , la modifier vous devez :
 # Création d'une nouvelle API :
 
 - 1] Pour créer une API va devez creer un fichier .js
-- 2] Vous pouvez ensuite utiliser des modules 
+- 2] Vous pouvez ensuite utiliser des modules comme express pour creer un server http [Voir ici](https://www.npmjs.com/package/express)
+- 3] Lancer votre serveur http avec la commande   ```shell  node NomFichier.js```
+- 4] Vous pouvez voir le resultat sur ```shell localhost:VotrePort/VotreRoute ```
 
 
 
-- 4] Vous devez ensuite installer plusieur librairies disponible dans les Packages NuGet (clique droit sur le projet dans l'explorateur de solution)
-- 5] Liste des Lib: 
+
+
+
+
 
 Pour la bibliothèque de classe:
 
