@@ -7,7 +7,11 @@ Ce web service est une api de type REST , codé grace a Node JS.
 
 # Utilisation du WebService :
 
-Ce WebService est décomposé en plusieurs service voir le tableau ci dessous:
+Les codes qui constitue le WebService ce trouve [ici](https://github.com/LENSAlex/ProjetIotia/tree/WebService/WebService)
+
+Pour **utiliser** les service cela se passe pour l'instant sur l'ip ```http://51.75.125.121```
+
+Ce WebService est décomposé en plusieurs services voir le tableau ci dessous:
 | Nom du service | Port | Remarque |
 | --- | --- | --- |
 | Batiment  | 3000 | Service pour avoir des informations sur les infrastructures |
