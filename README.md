@@ -1,90 +1,110 @@
-Web Service dirigé par Thibaud et alex:
+# ProjetIotia
+Projet fin d'année iotia (projet covid)
 
-# WebServiceProjetIotia
-Web service du projet iotia
+Web Service:
 
--Le web service s'applique au serveur qui collecte toutes les données des differentes gateway des batiments (il tourne sur le serveur)
+Ce web service est une api de type REST , codé grace a Node JS.
+Pour utiliser cette api , la modifier vous devez :
 
--Pour le web service on peux en fonction des actions sur le site ou l app mobile données des routes pour avoir des infos (allé chercher bdd ou onem2m)
+- 1] Installer Node JS (version utiliser v12.18.4)
+- 2] Installer les dependance present dans le fichier package.json avec npm par exemple.
+- 3] Faire un dump de notre base de donnée (phpmyadmin).
 
--Donc les capteurs envoie au raspberry pi de la salle , qui lui envoie au gateway du bat vers serveur central (peut etre car pas deployé).
+# Création d'une nouvelle API :
 
--Diagramme cas d utilisation pour mieux comprendre quelles ressouces (bdd , onem2m) est utilisés.
-
---------------------------------------------
-//
-GET:
-
-//Capteur
--Capteur/Salle/:idSalle/:Obj (Avoir valeur d'un capteur , derniere valeur)
--Capteur/Salle/:idSalle/:Obj/List (List d un capteur specifique)
--Capteur/Salle/:idSalle/:Obj/List/Date1/Date2 (List capteur entre 2 dates)
--Capteur/Salle/:idSalle/All (list de toutes les valeurs releves dans une salle)
--Capteur/Salle/:idSalle/Last (list de toutes les dernieres valeurs releves dans une salle)
-
--Capteur/Salle/:idSalle/MoyenneCo2 (Co2Moyen journee)
--Capteur/Salle/:idSalle/Co2/Attribut (co2 min ou max journee)
--Capteur/Salle/:idSalle/Temp (tempMoyenne journee)
--Capteur/Salle/:idSalle/Temp/Attribut (temp min ou max  journee)
--Capteur/Salle/:idSalle/OuvertureFenetre (ouverture fenetre journee)
--Capteur/Salle/:idSalle/NbEntree (nombre entre salle journee)
--Capteur/Salle/:idSalle/NbEntree/Date1/Date2 (nombre entre salle entre deux dates)
--Capteur/Salle/:idSalle/NbSortie(nombre sortie salle journee)
--Capteur/Salle/:idSalle/NbSortie/Date1/Date2 (nombre sortie salle entre deux dates)
-
-//Equipement
--/Equipement/Alerte (avertir penurie car pas de stock)
-
-//Personne
--/Personne (liste de tous les eleves des promos)
--/Personne/Formation (List des promos)
--/Personne/Departement/ID (Liste eleves dans un departement)
--/Personne/Promotion/ID (Liste eleves dans une promo)
--/Personne/Promotion/:IDPromo/personne/cours (Liste des cours d un eleve)
--/Personne/Promotion/ID/personne/cours/presentielle (Liste des cours en presentielle d un eleve)
--/Personne/Promotion/ID/personne/cours/distancielle (Liste des cours en distancielle d un eleve)
--/Personne/ID/abs (Liste des abscence d un eleve)
-
----> Voir route qui pouvent aider a avoir idPromo et idPersonne ...
-
-//Acces
--/Acces/Batiment (Jauge de tous les batiments)
--/Acces/Batiment/id/ (Jauge d un batiement)
--/Acces/Batiment/id/Etage (Jauge des etages d un batiment)
--/Acces/Batiment/id/Etage/id (Jauge d un etage d un batiment)
--/Acces/Batiment/Salle/id (Jauge d une salle d un batiment)
--/Acces/Batiment/id/Salle (Jauge des salle d un batiment)
--/Acces/Promo/ (nb acces de toutes les promos)  //pas sur possible ou par cour donc un cour et le nombre a voir 
--/Acces/Promo/id (nb acces par promo demi jauge)  //Pareil que au dessus 
-
-//Alerte 
--/Alerte/Covid/Personne/id (alerte cas covid , alerté membre classe , etage , bat ....)
-
-PUT:
--/Batiment/:idBat/Salle/:idSalle/:Obj/:Value (Modifié valeur d un capteur)
--/Batiment/:idBat/ (modif batiment)
--/Batiment/:idBat/Salle/:idSalle (modif salle batiment)
+- 1] Pour créer une API va devez creer un fichier .js
+- 2] Vous pouvez ensuite utiliser des modules 
 
 
-POST:
--/Batiment/:idBat/Salle/:idSalle/Obj (ajout d un capteur)
--/Batiment/:idBat/ (ajout batiment)
--/Batiment/:idBat/Salle/:idSalle (ajout salle batiment)
 
-//Pour les capteurs je dois faire des requetes pour remplir onem2m ou la bdd.
-//Pour recup ca se passe que avec la bdd.
+- 4] Vous devez ensuite installer plusieur librairies disponible dans les Packages NuGet (clique droit sur le projet dans l'explorateur de solution)
+- 5] Liste des Lib: 
 
+Pour la bibliothèque de classe:
 
--Faire partie admin en service pour administrer les brokers , rajouter enlever.
--Du coup voir les routes utiles via les issues. 
+- PancakeView (Composant XAML)
+- SharedTransitions (Composant XAML)
+- Newtonsoft.Json (Json Parser)
+- MySqlConnector (Liaison MySQL (falc))
+- Microsoft.Azure.NotificationHubs (Notification)
+- Syncfusion.Xamarin.pdf (Facultatif)
 
-INFLUXDB et GRAPHANA
+Pour le projet Android Ios & UWP:
 
+- Newtonsoft.Json (Json Parser)
+- MySqlConnector (Liaison MySQL (falc))
+- Microsoft.Azure.NotificationHubs.Android (.Ios .UWP en fonction de l'OS)
+- Syncfusion.Xamarin.pdf (Facultatif)
+- Xamarin.Firebase.Common (Notification)
+- Xamarin.Firebase.Analytics.impl (Analytics des Notifications)
+- Xamarin.Firebase.Messaging (Notification Hub)
+- Xamarin.Forms (Composants)
+- Xamarin.Google.Dagger (Service)
+- Xamarin.GooglePlayServices.Base (Service Google)
+- Xamarin.GooglePlayServices.Basement (Service Google)
 
-- Application Mobile WebRequest:
-Get All Capteur (Liste les capteurs via un select *)
-Post Alerte Covid (Requête post vers la table AlertCovid en envoyé une ligne avec la date et la personne qui à le covid)
-Put Alerte pénurie (Update un produit en stock par un 0 (donc pas en stock))
-Get Capteur de la salle via search (Cherche les capteurs d'une salle via le numéro de salle)
-Get Count des malades d'un salle, bâtiment et iut (Récupère le nombre de malade en fonction de ce qu'on a choisit)
-Get list des équipements pour le stock (Liste les équipements disponible dans l'établissement)
+- 6] Vous devez également vous munir d'un compte Firebase & Azure Notification pour permettre à vos applications de recevoir des notifications push sur le téléphone. 
+https://cedgabrang.wixsite.com/xamarintipsandtricks/post/xamarin-forms-implementing-push-notification-using-firebase-cloud-messaging
+Notification via AzureHub: https://docs.microsoft.com/en-us/azure/developer/mobile-apps/notification-hubs-backend-service-xamarin-forms
+
+- 7] Pour obtenir l'application compiler vous devez ensuite: Clique droit sur le projet (Android, Ios ou UWP) et choisir "Publier". Le projet va se compiler et dans le dossier de destination vous aurez l'application que vous pourrez partager aux utilisateurs via un lien de téléchargement ou une plateforme tel que le PlayStore.
+- 8] Vous devez ensuite accepter les "Applications de source inconnu" si l'application est obtenu via un lien de téléchargement sur un site internet par exemple.
+
+# Installation du projet:
+
+- 1] Téléchargez le .zip et décompressez le dans votre dossier ou est contenu vos projets visual studio
+- 2] Vous pouvez également lancer directement le fichier "nom-projet.sln". En faisant ceci, vous n'avez pas besoin d'installer les dépendances de build.
+
+- 3] Vous devez également vous munir d'un compte Firebase & Azure Notification pour permettre à vos applications de recevoir des notifications push sur le téléphone. 
+https://cedgabrang.wixsite.com/xamarintipsandtricks/post/xamarin-forms-implementing-push-notification-using-firebase-cloud-messaging
+Notification via AzureHub: https://docs.microsoft.com/en-us/azure/developer/mobile-apps/notification-hubs-backend-service-xamarin-forms
+
+- 4] Pour obtenir l'application compiler vous devez ensuite: Clique droit sur le projet (Android, Ios ou UWP) et choisir "Publier". Le projet va se compiler et dans le dossier de destination vous aurez l'application que vous pourrez partager aux utilisateurs via un lien de téléchargement ou une plateforme tel que le PlayStore.
+- 5] Vous devez ensuite accepter les "Applications de source inconnu" si l'application est obtenu via un lien de téléchargement sur un site internet par exemple.
+- 6] Si vous voulez changer les images de l'application, les backgrounds ou autre, il est important de noter que les ressources doivent se trouver dans le dossier "Ressource" de chaque OS. Pour android vous les trouverez dans "Ressource/drawable" et vous avez aussi un dossier pour chaque taille d'écran. 
+- 6.2] Si vous voulez changer la police d'écriture, vous avez un dossier "Font" ou vous allez devoir mettre vos polices .ttf. Ensuite, dans le fichier "AssemblyInfo.cs", vous devez écrire cette ligne: [assembly: ExportFont("Roboto-Regular.ttf", Alias = "Roboto")]
+- 6.3] Il est aussi important de définir des permissions utilisateurs notament l'accès à internet, la lecture et l'écriture. [assembly:UsesPermission(Android.Manifest.Permission.Internet)]
+[assembly:UsesPermission(Android.Manifest.Permission.WriteExternalStorage)]
+
+- 7] Le fichier MainActivity.cs est le fichier source ou vous mettrez toutes vos initialisations de plugin par exemple pour les notifications. N'hésitez pas à récupérer celui déjà existant. Vous allez devoir modifier les informations concernant le Hub de notification par vos informations que vous avez pu obtenir en suivant le tutoriel d'installation de Firebase et d'Azure.
+- 8] Dans le fichier appsettings.json vous trouverez également les informations de liaison et les token/clé permettant les accès à certain service de l'application. Là aussi, vous alleze devoir les modifier par les votre. La classe "Config.cs" vous permet  de récupérer depuis n'importe ou, via un Getter/Setter, la chaîne récupérée par le JsonReader du fichier appsettings.json. (le appsettings.json est compilé dans la dll du projet. (Pour modifier les valeur il faut charger le projet dans Visual Studio puis recompiler)
+- 8.1] 2 types de mails sont présents dans l'application, vous pouvez modifier la configuration du server smtp et les mail d'envois et de réceptions
+- 9] Concernant le bibliothèque de classe, vous avez une hiérarchie qui a été utilisée: Les classes métiers et les classes internes. Les classes métiers sont l'équivalent des tables de la base de données. Les classes internes sont les classes ou se trouvent les méthodes (Get, post, put) vers le serveur nodejs. Grâce au service RESTFul de Xamarin, nous pouvons récupérer un chaîne json et la parser pour remplir les Getter/Setter des classes métiers. Les méthodes sont ensuite récupéré dans les classes métiers étant données que se sont des méthodes "static". Ce qui nous permet de les appeler directement depuis le backend. Ici, chaque méthode (Get, Post, Put) est symbolisé par une méthode (Get => List() (pour une liste) ou Load() pour une ligne spécifique, Post => Save(), Put => Update()). Le principe est de ne pas avoir de requête vers la base de données directement dans le code, donc il faut passer par des webservices, ce sont eux qui font les requêtes SQL.
+Pour que l'application puisse atteindre le serveur nodejs, il faut lui donner une permission à rajouter dans "AssemblyInfo.cs": [assembly: Application(UsesCleartextTraffic = true)]
+
+- 10] Installation du serveur nodejs (Autres collaborateurs)
+
+# Utilisation de l'application:
+
+- 1] Ouvrez l'application
+- 2] Vous arrivez ensuite sur une page d'authentification, utiliser vos identifiants de connexion (Ici nous utilisons ceux de l'IUT)
+- 3] Vous avez ensuite accès aux pages de l'application
+- 4] Il est important de noter qu'à votre connexion à l'application (une fois le bouton connexion pressé), vous serrez ammener à accepter les notifications push car votre smartphone sera enregistré au Hub de Notification Azure via Firebase. Egalement si vous voulez générer un pdf, on vous demandera d'activté ou non les droits d'écriture.
+
+# Notification API
+
+- Pour pouvoir envoyer des notifications push à tout le monde lors d'une alerte de covid-19. Il faut créer une API application web sur Visual Studio.
+Voici un tutoriel d'installation de l'api sur Azure via votre compte Etudiant ou Entreprise.
+https://docs.microsoft.com/en-us/azure/developer/mobile-apps/notification-hubs-backend-service-xamarin-forms
+ 
+Après avoir mit en ligne l'API, il est possible de tester l'envoie de notification avec postman:
+Envoyez une requête POST sur https://nomduprojet.azurewebsites.net/api/notifications/requests avec votre body un json tel que
+```
+{
+    "text": "Alerte Covid",
+    "action": "action_a"
+}
+```
+Pour envoyer une notification, envoyez simplement un requête post via la librairie HttpClient de Visual Studio et en lui envoyant votre chaîne json.
+
+# Définitions des WebServices:
+
+- Get All Capteur (Liste les capteurs via un select *)  OK 
+- Post Alerte Covid (Requête post vers la table AlertCovid en envoyé une ligne avec la date et la personne qui à le covid) OK
+- Put Alerte pénurie (Update un produit en stock par un 0 (donc pas en stock)) OK
+- Get All Salle de la personne connecté (Select *) OK
+- Get Capteur de la salle via search (Cherche les capteurs d'une salle via le numéro de salle) OK
+- Get Count des malades d'un salle, bâtiment et iut (Récupère le nombre de malade en fonction de ce qu'on a choisit) OK
+- Get list des équipements pour le stock (Liste les équipements disponible dans l'établissement) OK
+- Get Historique by CapteurId (Liste les données du Capteur choisi)
+- Post (envoie un text et une action à une API en ligne sur les service d'azure) OK
