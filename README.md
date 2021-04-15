@@ -64,6 +64,13 @@ Notification via AzureHub: https://docs.microsoft.com/en-us/azure/developer/mobi
 ```[assembly: ExportFont("Roboto-Regular.ttf", Alias = "Roboto")]```
 - 6.3] Il est aussi important de définir des permissions utilisateurs notament l'accès à internet, la lecture et l'écriture. ```[assembly:UsesPermission(Android.Manifest.Permission.Internet)]```
 ```[assembly:UsesPermission(Android.Manifest.Permission.WriteExternalStorage)]```
+- 6.4] Dans le fichier "AndroidManifest.xml" se trouvant dans le dossier "Properties"; Il vous faudra ajouter les permissions suivantes:
+-```<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />```
 
 - 7] Le fichier MainActivity.cs est le fichier source ou vous mettrez toutes vos initialisations de plugin par exemple pour les notifications. N'hésitez pas à récupérer celui déjà existant. Vous allez devoir modifier les informations concernant le Hub de notification par vos informations que vous avez pu obtenir en suivant le tutoriel d'installation de Firebase et d'Azure.
 - 8] Dans le fichier appsettings.json vous trouverez également les informations de liaison et les token/clé permettant les accès à certain service de l'application. Là aussi, vous alleze devoir les modifier par les votre. La classe "Config.cs" vous permet  de récupérer depuis n'importe ou, via un Getter/Setter, la chaîne récupérée par le JsonReader du fichier appsettings.json. (le appsettings.json est compilé dans la dll du projet. (Pour modifier les valeur il faut charger le projet dans Visual Studio puis recompiler)
