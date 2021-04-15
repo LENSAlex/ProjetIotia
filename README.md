@@ -29,9 +29,7 @@ Vous trouverez la documentation [Ici](https://nodejs.org/en/)
 ## Capteur Gaz :
 Veuillez réaliser les actions suivantes :</br>
 **1°** : Dans *Fichier* -> *Préférences* -> ajouté "https://dl.espressif.com/dl/package_esp32_index.json" dans le *Gestionnaire de cartes supplémentaires*
-**2°** :
+**2°** : Dans *Croquis* -> *Gestionnaire de bibliothèque* -> Recherchez "*ESP32 Lite Pack Library*" et installez là, faites de même pour "*M5StickC*"
+**3°** : Dans *Outils* -> *Type de cartes* -> *Gestionnaire de Carte* -> Recherchez "*esp32*"
  
 
-
-# Installation code Python (Raspberry Pi) :
-Pour le bon fonctionnement des alertes et du stockage des données veuillez ... (à suivre) 
