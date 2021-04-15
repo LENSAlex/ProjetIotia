@@ -7,6 +7,7 @@ Ils ont tous été programmé avec l'interface Arduino.
 
 # Capteur "PIR" :  
 Le PIR est un capteur qui détecte l'infrarouge provenant du corps humain. Il permet de savoir si une personne est rentrée ou sortie. De type AS312 adapté pour le M5StickC. Il est donc relié à un M5StickC et les données sont transmises par le pin 36
+Vous trouverez la documentation [Ici](https://nodejs.org/en/)
 
 # Capteur "Gaz" : 
 Le Capteur de gaz est un MH MQ Sensor, qui capte le taux de gaz présent dans une salle. Plus la valeur augmente, moins il y aura d'oxygène. Il est relié à un M5StickC et les données sont transmises par le pin 36
