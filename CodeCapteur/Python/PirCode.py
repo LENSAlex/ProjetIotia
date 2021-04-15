@@ -53,24 +53,24 @@ for name, addr in nearby_devices:
 
 client_socket_haut_parleur=socket.socket(socket.AF_BLUETOOTH,socket.SOCK_STREAM, socket.BTPROTO_RFCOMM) #m5Stack
 client_socket_haut_parleur.connect(("84:0D:8E:3D:3C:56",1))
-"""
+
 client_socket_gaz=socket.socket(socket.AF_BLUETOOTH,socket.SOCK_STREAM, socket.BTPROTO_RFCOMM)
 client_socket_gaz.connect(("50:02:91:8D:10:36",1))# utiliser également pour tester le pir sortie
 client_socket_fenetre=socket.socket(socket.AF_BLUETOOTH,socket.SOCK_STREAM, socket.BTPROTO_RFCOMM)
 client_socket_fenetre.connect(("50:02:91:8D:DC:56",1))
-"""
+
 client_socket_pir=socket.socket(socket.AF_BLUETOOTH,socket.SOCK_STREAM, socket.BTPROTO_RFCOMM)
 client_socket_pir.connect(("24:A1:60:46:AD:3E",1))
 
 client_socket_pir_sortie=socket.socket(socket.AF_BLUETOOTH,socket.SOCK_STREAM, socket.BTPROTO_RFCOMM)
 client_socket_pir_sortie.connect(("50:02:91:8D:DC:56",1))#modifier l'adresse mac en fonction 
 
-#mqtt.connect("192.168.143.136")
-#mqtt.loop_start()
+mqtt.connect("192.168.143.136")
+mqtt.loop_start()
 
 while True:
     size = 1024
-    """
+    
     #Reception data pour gaz 
     data_gaz = str(client_socket_gaz.recv(size))
     res_gaz = re.sub(r"[^Z0-9]","",data_gaz)
@@ -80,7 +80,7 @@ while True:
     data_fenetre = str(client_socket_fenetre.recv(size))
     res_fenetre = re.sub(r"[^Z0-9]","",data_fenetre)
     datafentre = res_fenetre[0:1]
-    """
+    
     #Reception data pour pir
     data_pir = str(client_socket_pir.recv(size))
     res_pir = re.sub(r"[^Z0-9]","",data_pir)
@@ -120,12 +120,12 @@ while True:
         time.sleep(2)
 
 
-"""
+
 client_socket_gaz.close()
-"""
+
 client_socket_haut_parleur.close()
-"""
+
 client_socket_fenetre.close()
-"""
+
 client_socket_pir.close()
-client_socket_pir.close()
+client_socket_pir_sortie.close()
