@@ -39,10 +39,10 @@ conn.connect(function(err) {
 
 //------------------------------GET ----------------------------
 
-app.get("/test/:id?", (req, res) => {
-    console.log("test")
-    res.end("ca marche");
-})
+// app.get("/test/:id?", (req, res) => {
+//     console.log("test")
+//     res.end("ca marche");
+// })
 
 //Batiment-----
 app.get("/Batiment/CountInfo/Campus", (req, res) => {
@@ -107,6 +107,30 @@ app.get("/Batiment/ListEtage", (req, res) => {
     });
 })
 
+
+//List des etages d un batiment
+app.get("/Batiment/ListEtage/:IdBatiment", (req, res) => {
+    conn.query("select id_etage , num from Etage , Batiment where Etage.id_batiment = Batiment.id_batiment AND Batiment.id_batiment = '" + req.params.IdBatiment + "'", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+//List des Salle d un etage
+app.get("/Batiment/ListSalle/:IdEtage", (req, res) => {
+    conn.query("select id_salle ,nom from Salle , Etage where Etage.id_etage = Salle.id_etage and Etage.id_etage = '" + req.params.IdEtage + "'", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
 
 
 
@@ -639,35 +663,31 @@ app.post("/Alerte/Covid/:IdPersonne", (req, res) => {
 //Capteur -------------- 
 
 //DORIAN
-//creation box , Voir nouveau parametre //DropDwn Salle et deviceType
-app.post("/Capteur/Add/Box/:IdSalle/:IdDeviceType/:AddrMac/:AddrIp/:Libelle/:Description/:DateInstallation", (req, res) => {
+//Il faut liée les capteurs avec la box
+//Faire la meme chose avec batiment , puis etage et salle pour mettre la box donc Choisir son batiment , puis son etage , puis sa salle
+//Donc quand on a la salle on peut remplir la box et device
+//Dropdown id_devicetype , batiment , etage , salle , id_valuetype
+app.post("/Capteur/Add/BoxDevice/:IdSalle/:IdDeviceType/:AddrMac/:AddrIp/:LibelleBox/:DescriptionBox/:DateInstallation/:IdValueType/:LibelleDevice/:SeuilMin?/:SeuilMax?", (req, res) => {
 
+    //D'abord requete Box
     conn.query("INSERT INTO `Box`(`id_salle`, `id_devicetype`, `adr_mac`, `adr_ip`, `libelle`, `description`, `date_installation`) VALUES ('" + req.params.IdSalle + "','" + req.params.IdDeviceType + "','" + req.params.AddrMac + "','" + req.params.AddrIp + "','" + req.params.Libelle + "','" + req.params.Description + "','" + req.params.DateInstallation + "')", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
-            res.status(200).json("Box cree");
+            //Puis device
+            var IdBox = result.insertId;
+            conn.query("INSERT INTO `Device`(`id_box`, `id_devicetype`, `id_valuetype`, `libelle`, `seuil_min`, `seuil_max`) VALUES ('" + IdBox + "','" + req.params.IdDeviceType + "','" + req.params.IdValueType + "','" + req.params.LibelleDevice + "','" + req.params.SeuilMin + "','" + req.params.SeuilMax + "')", function(err, result) {
+                if (err)
+                    res.status(400).json({ ErrorRequete: 'Requete invalid' });
+                else {
+                    res.status(200).json("Box et capteur cree");
+                }
+            })
+
         }
     });
 })
 
-//DORIAN
-//Creation capteur (nom , capteur , box) il faut IdBox , IdDeviceType , idValueType , libelle , SeuilMin , SeuilMax
-//Sinon mettre des valeur defini pour ne pas mettre de seuil genre 99 et 99 puis faire traitement en dessous.
-app.post("/Capteur/Add/Capteur/:IdBox/:IdDeviceType/:idValueType/:libelle/:SeuilMin?/:SeuilMax?", (req, res) => {
-
-    //Traitement seuil min et seuil max
-    var SeuilMin = req.params.SeuilMin != undefined ? req.params.SeuilMin : ''
-    var SeuilMax = req.params.SeuilMax != undefined ? req.params.SeuilMax : ''
-
-    conn.query("INSERT INTO `Device`(`id_box`, `id_devicetype`, `id_valuetype`, `libelle`, `seuil_min`, `seuil_max`) VALUES ('" + req.params.IdBox + "','" + req.params.IdDeviceType + "','" + req.params.idValueType + "','" + req.params.libelle + "','" + SeuilMin + "','" + SeuilMax + "')", function(err, result) {
-        if (err)
-            res.status(400).json({ ErrorRequete: 'Requete invalid' });
-        else {
-            res.status(200).json("Capteur cree");
-        }
-    });
-})
 
 //DORIAN
 //creation actionneur peut etre capteur bouton dans Devicetype = 11 Voir dropdown ValueType je ne sais pas celui d un actionneur
@@ -723,13 +743,17 @@ app.post("/Batiment/Add/Batiment/:Nom/:Superficie/:IdCampus/:EtageSuperficie", (
                     }
                 });
             });
+            res.status(200).json("Batiment et etage creer");
         }
     })
 })
 
 
 //DORIAN
-//Creation dune salle (IdEtage , Nom , ...) //Revoir les parametres releves , Faire avec dropdown pour etage faites
+//Creation d'une salle a partir : DropDown Etage , dropdown Batiment
+//Du coup on choisit son batiment et en fonction de ca on a les Etage du batiment
+//Utilisés cette route pour avoir les etages /Batiment/ListEtage/:IdBatiment
+//DOnc apres choisir son etage et inserer ca salle
 app.post("/Batiment/Add/Salle/:IdEtage/:Nom/:CapaciteMax/:Surface/:Volume", (req, res) => {
 
     conn.query("INSERT INTO `Salle`(`id_etage`, `nom`, `capacite_max`, `surface`, `volume`) VALUES ('" + req.params.IdEtage + "','" + req.params.Nom + "','" + req.params.CapaciteMax + "','" + req.params.Surface + "','" + req.params.Volume + "')", function(err, result) {
