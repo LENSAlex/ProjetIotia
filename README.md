@@ -126,5 +126,8 @@ Pour envoyer une notification, envoyez simplement un requête post via la librai
 - Get Capteur de la salle via search (Cherche les capteurs d'une salle via le numéro de salle) OK
 - Get Count des malades d'un salle, bâtiment et iut (Récupère le nombre de malade en fonction de ce qu'on a choisit) OK
 - Get list des équipements pour le stock (Liste les équipements disponible dans l'établissement) OK
-- Get Historique by CapteurId (Liste les données du Capteur choisi)
+- Get Historique by CapteurId (Liste les données du Capteur choisi) OK
+- Get Historique des capteurs (Liste toute les données) OK 
+- Get Historique Valeur Moyenne d'un Capteur (donne la ligne du capteur avec sa moyenne via son Id) OK 
+- Get Historique Dernière Valeur d'un Capteur (donne la ligne du capteur avec sa dernière valeur (la plus récente) via son Id) OK
 - Post (envoie un text et une action à une API en ligne sur les service d'azure) OK
