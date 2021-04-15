@@ -1,5 +1,6 @@
 ﻿@page
 @model Smart_ECovid_IUT.Pages.LogAlerte.AfficheLogAlerteModel
+@using ClasseE_Covid.LogAlerte;
 @{
 
 }
@@ -20,30 +21,17 @@
                                 <th scope="col">Nom</th>
                                 <th scope="col">prenom</th>
                                 <th scope="col">Date</th>
-                                <th scope="col">etat</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        @foreach (LogAlerte logAlerte in Model.Branches)
+                        {
                             <tr>
-                                <th scope="row">Moky</th>
-                                <td>nina</td>
-                                <td>25/03/2021</td>
-                                <td>Possitif</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Jean</th>
-                                <td>Gabrielle</td>
-                                <td>16/01/2021</td>
-                                <td>Possitif</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Potote</th>
-                                <td>Michelle</td>
-                                <td>30/02/2021</td>
-                                <td>Possitif</td>
+                                <td>@logAlerte.nomCasCovid</td>
+                                <td>@logAlerte.prenomCasCovid</td>
+                                <td>@logAlerte.DateCasCovid</td>
                             </tr>
 
-                        </tbody>
+                        }
                     </table>
                 </div>
             </div>

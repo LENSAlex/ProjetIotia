@@ -1,5 +1,6 @@
 ﻿@page
 @model IndexModel
+@using ClasseE_Covid.LogAlerte;
 @{
     ViewData["Title"] = "Home page";
 }
@@ -15,8 +16,29 @@
                         <h3><a asp-page="/LogAlerte/AfficheLogAlerte">Log alerte</a></h3>
                     </div>
                     <div class="card-body border-bottom">
-                        <p>Cas Covid-19</p>
-                        <p>dépasse Co2</p>
+                        <h5>Cas Covid-19</h5><div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Promotion</th>
+                <th scope="col">Nombre cas covid</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (ClasseE_Covid.LogAlerte.LogAlerte logAlerte in Model.Branches)
+            {
+                <tr>
+                    <td>@logAlerte.PromoCasCovid</td>
+                    <td>@logAlerte.NbCasCovid</td>
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+</div>
+                        <h5>dépasse Co2</h5>
                     </div>
                 </div>
             </div>
@@ -26,7 +48,7 @@
                         <h3><a  asp-page="/Capteur/AfficheCapteur">Capteur</a></h3>
                     </div>
                     <div class="card-body border-bottom">
-                        <p>capteur</p>
+                        <h5>capteur</h5>
                     </div>
                 </div>
             </div>
@@ -38,7 +60,7 @@
                         <h3 ><a asp-page="/LogEtatPlateforme/AfficherLogEtatPlateforme">Log Etat plateforme</a></h3>
                     </div>
                     <div class="card-body border-bottom">
-                        <p>Alert capteur</p>
+                        <h5>Alert capteur</h5>
                     </div>
                 </div>
             </div>

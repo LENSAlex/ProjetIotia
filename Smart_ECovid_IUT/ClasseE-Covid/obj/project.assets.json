@@ -3059,28 +3059,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ga304263\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Pennacchioni\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ga304263\\Source\\Repos\\ProjetIotia\\Smart_ECovid_IUT\\ClasseE-Covid\\ClasseE-Covid.csproj",
+      "projectUniqueName": "D:\\TAFF\\IOTIATravaille\\CourAcctuelle\\ProjetFinAnnee\\Smart_ECovid_IUT\\ClasseE-Covid\\ClasseE-Covid.csproj",
       "projectName": "ClasseE-Covid",
-      "projectPath": "C:\\Users\\ga304263\\Source\\Repos\\ProjetIotia\\Smart_ECovid_IUT\\ClasseE-Covid\\ClasseE-Covid.csproj",
-      "packagesPath": "C:\\Users\\ga304263\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ga304263\\Source\\Repos\\ProjetIotia\\Smart_ECovid_IUT\\ClasseE-Covid\\obj\\",
+      "projectPath": "D:\\TAFF\\IOTIATravaille\\CourAcctuelle\\ProjetFinAnnee\\Smart_ECovid_IUT\\ClasseE-Covid\\ClasseE-Covid.csproj",
+      "packagesPath": "C:\\Users\\Pennacchioni\\.nuget\\packages\\",
+      "outputPath": "D:\\TAFF\\IOTIATravaille\\CourAcctuelle\\ProjetFinAnnee\\Smart_ECovid_IUT\\ClasseE-Covid\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\ga304263\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Pennacchioni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"

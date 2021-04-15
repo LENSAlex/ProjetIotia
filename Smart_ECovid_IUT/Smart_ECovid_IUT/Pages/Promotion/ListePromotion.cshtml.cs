@@ -4,7 +4,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
-using ClasseE_Covid;
+using ClasseE_Covid.Promotion;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -14,7 +14,7 @@ namespace Smart_ECovid_IUT.Pages.Promotion
     {
         private readonly IHttpClientFactory _clientFactory;
 
-        public IEnumerable<GitHubBranch> Branches { get; private set; } //GitHubBranch et une class
+        public IEnumerable<PromotionClass> Branches { get; private set; } //GitHubBranch et une class
 
         public bool GetBranchesError { get; private set; }
 
@@ -25,7 +25,7 @@ namespace Smart_ECovid_IUT.Pages.Promotion
         public async Task OnGet()
         {
             var request = new HttpRequestMessage(HttpMethod.Get,
-           "http://51.77.137.170:8080/equipes");
+           "http://51.75.125.121:3001/Personne/ListPromo");
             request.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
             request.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
 
@@ -37,12 +37,12 @@ namespace Smart_ECovid_IUT.Pages.Promotion
             {
                 using var responseStream = await response.Content.ReadAsStreamAsync(); // recupaire les donnée de api et les mette dans le responseStream
                 Branches = await JsonSerializer.DeserializeAsync
-                <IEnumerable<GitHubBranch>>(responseStream); // remplie la class GitHubBranch 
+                <IEnumerable<PromotionClass>>(responseStream); // remplie la class GitHubBranch 
             }
             else
             {
                 GetBranchesError = true;
-                Branches = Array.Empty<GitHubBranch>();
+                Branches = Array.Empty<PromotionClass>();
             }
         }
     }

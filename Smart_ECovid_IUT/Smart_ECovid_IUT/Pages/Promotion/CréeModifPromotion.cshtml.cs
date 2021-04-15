@@ -23,14 +23,14 @@ namespace Smart_ECovid_IUT.Pages.Promotion
         {
             _clientFactory = clientFactory;
         }
-        public async Task OnGet()
+        public void OnGet()
         {
 
         }
         internal static async Task<string> Save(GitHubBranch item)
         {
             var httpClient = new HttpClient();
-            string WebAPIUrl = "http://51.77.137.170:8080/equipes";
+            string WebAPIUrl = "http://51.75.125.121:3001/Personne/ListPromo";
             Uri uri = new Uri(WebAPIUrl);
             httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
             StringBuilder sb = new StringBuilder();

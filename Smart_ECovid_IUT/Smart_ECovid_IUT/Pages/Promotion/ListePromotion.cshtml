@@ -1,6 +1,6 @@
 ﻿@page
 @model Smart_ECovid_IUT.Pages.Promotion.ListePromotionModel
-@using ClasseE_Covid
+@using ClasseE_Covid.Promotion
 @{
 
 }
@@ -24,14 +24,14 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach (GitHubBranch gitHubBranch in Model.Branches)
+                            @foreach (PromotionClass promotion in Model.Branches)
                             {
 
 
                                 <tr>
-                                    <td>@gitHubBranch.Name</td>
-                                    <td>@gitHubBranch.Id</td>
-                                    <td>@gitHubBranch.Disponible</td>
+                                    <td>@promotion.Nom</td>
+                                    <td>@promotion.Annee</td>
+                                    <td>@promotion.Duree</td>
                                 </tr>
                             }
                         </tbody>
