@@ -28,7 +28,8 @@ Vous trouverez la documentation [Ici](https://nodejs.org/en/)
 # Installation Capteurs :
 ## Capteur Gaz :
 Veuillez réaliser les actions suivantes :</br>
-**1°** 
+**1°** : Dans *Fichier* -> *Préférences* -> ajouté "https://dl.espressif.com/dl/package_esp32_index.json" dans le *Gestionnaire de cartes supplémentaires*
+**2°** :
  
 
 
