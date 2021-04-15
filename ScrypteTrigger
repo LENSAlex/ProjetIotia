@@ -73,3 +73,16 @@ BEGIN
     END IF;
 END;
 //
+
+
+delimiter //
+CREATE TRIGGER trigger_cascovid_date_enregistrement
+BEFORE INSERT ON CasCovid
+FOR EACH ROW
+BEGIN
+	IF  (select DATEDIFF((SELECT CURDATE()), (select max(date_declaration) from CasCovid where id_personne = NEW.id_personne))) < 30 THEN
+    	SIGNAL SQLSTATE VALUE '45005'
+        SET MESSAGE_TEXT = 'La personne a deja ete enregistree';
+    END IF;
+END;
+//
