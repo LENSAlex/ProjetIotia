@@ -26,7 +26,8 @@ Vous trouverez un code python utilisé sur un raspberry Pi pour collecter les di
 Vous trouverez la documentation [Ici](https://nodejs.org/en/)
 
 # Installation Capteurs :
-Pour le bon fonctionnement de l'ensemble des capteurs/haut parleur, veuillez téléverser les différents codes sur les bon appareils. 
+## Capteur de Gaz :
+
 
 # Installation code Python (Raspberry Pi) :
 Pour le bon fonctionnement des alertes et du stockage des données veuillez ... (à suivre) 
