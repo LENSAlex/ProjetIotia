@@ -44,16 +44,14 @@
                 <label for="Nom">Nom</label>
                 <input type="text" class="form-control" id="Nom" placeholder="Nom" required />
             </div>
-            <div class="dropdown">
+            <div class="col-md-4 mb-3">
                 <label for="dropdownMenuButton">Type</label>
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Etudiant
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Etudiant</a>
-                    <a class="dropdown-item" href="#">Enseignant</a>
-                    <a class="dropdown-item" href="#">Administratif</a>
-                </div>
+                <select class="form-control" id="dropdownMenuButton">
+                    <option>Etudiant</option>
+                    <option>Enseignant</option>
+                    <option>Administratif</option>
+                    <option>Personel d'entretien</option>
+                </select>
             </div>
             <div class="col-md-4 mb-3">
                 <label for="Num">Formation</label>

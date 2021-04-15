@@ -4,53 +4,57 @@
 @{
 
 }
-    <div>
-        <div class="border-bottom mb-4">
-            <h1>Liste Campus</h1>
-        </div>
-        <div class="row">
-            <div class="col-md-12 mb-4">
-                <div class="card">
-                    <div class="card-header border-bottom">
-                        <h3>Liste Campus</h3>
-                    </div>
-                    <div class=" table-responsive">
-                        <table class="table table-striped">
-                            <thead>
+<div>
+    <div class="border-bottom mb-4">
+        <h1>Liste Campus</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-12 mb-4">
+            <div class="card">
+                <div class="card-header border-bottom">
+                    <h3>Liste Campus</h3>
+                </div>
+                <div class=" table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Campus</th>
+                                <th scope="col">Batiment</th>
+                                <th scope="col">N°Etage</th>
+                                <th scope="col">N°Salle</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (Campus campus in Model.Branches)
+                            {
                                 <tr>
-                                    <th scope="col">Campus</th>
-                                    <th scope="col">Batiment</th>
-                                    <th scope="col">N°Etage</th>
-                                    <th scope="col">N°Salle</th>
-                                    <th scope="col">Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach (Campus campus in Model.Branches)
-                                {
-                                    <tr>
 
-                                        <td>@campus.NomCampus</td>
-                                        <td>
-                                            @foreach (Campus campus2 in Model.Branches2)
+                                    <td>@campus.NomCampus</td>
+                                    <td>
+                                        @foreach (Campus campus2 in Model.Branches2)
+                                        {
+                                            if (campus2.IdBatiment == campus.IdCampusBatiment)
                                             {
-                                            <p>@campus2.IdBatiment</p> 
+                                                <p>@campus2.IdBatiment</p>
                                             }
-                                        </td>
-                                        <td>@campus.NBEtageCampus</td>
-                                        <td>@campus.NBSalleCampus</td>
-                                        <td>
-                                            <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-edit"></i>"</a>
-                                            <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-trash-alt"></i>"</a>
-                                        </td>
-                                    </tr>
 
-                                }
+                                        }
+                                    </td>
+                                    <td>@campus.NBEtageCampus</td>
+                                    <td>@campus.NBSalleCampus</td>
+                                    <td>
+                                        <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-edit"></i>"</a>
+                                        <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-trash-alt"></i>"</a>
+                                    </td>
+                                </tr>
 
-                            </tbody>
-                        </table>
-                    </div>
+                            }
+
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
     </div>
+</div>

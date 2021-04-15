@@ -23,7 +23,7 @@ namespace Smart_ECovid_IUT.Pages.Promotion
         {
             _clientFactory = clientFactory;
         }
-        public async Task OnGet()
+        public void OnGet()
         {
 
         }
