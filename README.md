@@ -104,6 +104,7 @@ https://docs.microsoft.com/en-us/azure/developer/mobile-apps/notification-hubs-b
 - Attention ! A chaque nouveau projet (ou changement d'ordinateur pour la compilation) vous devez remettre les user-secrets. Vous devez vous positionner dans votre répertoire "NotificationAPI" et executé en ligne de commande (via GitBash par exemple) :
 
 ```dotnet user-secrets set "NotificationHub:ConnectionString" "Endpoint=sb://suitedevotreendpoint"```
+
 ```dotnet user-secrets set "NotificationHub:Name" "NomDuProjet"```
 
 Après avoir mit en ligne l'API, il est possible de tester l'envoie de notification avec postman:
