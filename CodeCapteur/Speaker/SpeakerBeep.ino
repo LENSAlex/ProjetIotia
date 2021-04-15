@@ -54,20 +54,24 @@ void loop() {
   //if(M5.BtnB.wasPressed())
   {
     cptPersonnes++;
-    M5.Speaker.tone(NOTE_DH3, 200); //frequency 3000, with a duration of 200ms
+    //M5.Speaker.tone(NOTE_DH3, 200); //frequency 3000, with a duration of 200ms
   }
   if(SerialBT.readString()=="PirSortieBL")
   //if(M5.BtnB.wasPressed())
   {
     cptPersonnes--;
-    M5.Speaker.tone(NOTE_DL3, 200); //frequency 3000, with a duration of 200ms
+    //M5.Speaker.tone(NOTE_DL3, 200); //frequency 3000, with a duration of 200ms
   }
   if(SerialBT.readString()=="GazAlerte")
   {
     //M5.Lcd.printf("B gazal \r\n");
     M5.Speaker.tone(NOTE_D1, 200); //frequency 3000, with a duration of 200ms
   }
-  sprintf(result,"Il y a %d personnes", cptPersonnes);
-  M5.Lcd.printf(result);
+  if(cptPersonnes < 0){
+    M5.Lcd.printf("Il y a 0 personnes");
+  }else{
+    sprintf(result,"Il y a %d personnes", cptPersonnes);
+    M5.Lcd.printf(result);
+  }
   M5.update();
 }

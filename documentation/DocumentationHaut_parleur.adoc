@@ -1,3 +1,16 @@
+---
+title: Documentation Haut parleur
+title_expanded: Documentation Haut parleur
+categories: [ "Structure" ]
+subCategories: [ "Subcategory Name" ]
+---
+// ARDUINO LANGUAGE REFERENCE TAGS (above)   ►►►►► ALWAYS INCLUDE IN YOUR FILE ◄◄◄◄◄
+// title will show up in the Index of all Reference terms
+// If the title is an operator write it out in words in title_expanded
+// categories: Pick between Structure, Variable or Function
+// The subcategory within the ones available in the index ("Digital I/O", "Arithmetic Operators")
+
+
 
 // PAGE TITLE
 = Documentation Haut parleur
@@ -62,11 +75,13 @@ Programme qui tourne en permanance sur le M5Stack. En fonction de ce qui est re�
     Serial.println(SerialBT.readString());
   }
   if(SerialBT.readString()=="PirEntreeBL")
+  //if(M5.BtnB.wasPressed())
   {
     cptPersonnes++;
     M5.Speaker.tone(NOTE_DH3, 200); //frequency 3000, with a duration of 200ms
   }
   if(SerialBT.readString()=="PirSortieBL")
+  //if(M5.BtnB.wasPressed())
   {
     cptPersonnes--;
     M5.Speaker.tone(NOTE_DL3, 200); //frequency 3000, with a duration of 200ms
@@ -76,8 +91,12 @@ Programme qui tourne en permanance sur le M5Stack. En fonction de ce qui est re�
     //M5.Lcd.printf("B gazal \r\n");
     M5.Speaker.tone(NOTE_D1, 200); //frequency 3000, with a duration of 200ms
   }
-  sprintf(result,"Il y a %d personnes", cptPersonnes);
-  M5.Lcd.printf(result);
+  if(cptPersonnes < 0){
+    M5.Lcd.printf("Il y a 0 personnes");
+  }else{
+    sprintf(result,"Il y a %d personnes", cptPersonnes);
+    M5.Lcd.printf(result);
+  }
   M5.update();
 ----
 [%hardbreaks]
@@ -93,4 +112,5 @@ Programme qui tourne en permanance sur le M5Stack. En fonction de ce qui est re�
 * #LIEN :# link:https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationPorte.adoc[Documentation Porte]
 * #LIEN :# link:https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationGaz.adoc[Documentation détecteur de Gaz]
 * #LIEN :# link:https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationPIR.adoc[Documentation PIR]
+
 
