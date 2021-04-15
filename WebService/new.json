@@ -1,5 +1,8 @@
-{"ValeurCapteur":[{"Nom":"test","Valeur":"11","Unite":"°C","Date":"2021-03-22T18:33:59.101Z","Batiment":"1","Salle":"3"}
-    ,{"Nom":"test1","Valeur":"11","Unite":"°C","Date":"2021-03-22T18:33:59.101Z","Batiment":"1","Salle":"2"}
-    ,{"Nom":"test2","Valeur":"11","Unite":"°C","Date":"2021-03-22T18:33:59.101Z","Batiment":"1","Salle":"3"},
-    {"Nom":"test3","Valeur":"11","Unite":"°C","Date":"2021-03-22T18:33:59.101Z","Batiment":"1","Salle":"1"}
-    ,{"Nom":"test4","Valeur":"11","Unite":"°C","Date":"2021-03-22T18:33:59.101Z","Batiment":"1","Salle":"3"}]}
+{"SuperifieEtage":[
+{"Etage":"0","Superficie":"200"},
+{"Etage":"1","Superficie":"400"},
+{"Etage":"2","Superficie":"300"},
+{"Etage":"3","Superficie":"200"},
+{"Etage":"4","Superficie":"100"},
+{"Etage":"5","Superficie":"750"}
+]}

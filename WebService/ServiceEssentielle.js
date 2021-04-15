@@ -39,6 +39,11 @@ conn.connect(function(err) {
 
 //------------------------------GET ----------------------------
 
+app.get("/test/:id?", (req, res) => {
+    console.log("test")
+    res.end("ca marche");
+})
+
 //Batiment-----
 app.get("/Batiment/CountInfo/Campus", (req, res) => {
     //Affciahe nb etage et nb salle par campus
@@ -107,6 +112,20 @@ app.get("/Batiment/ListEtage", (req, res) => {
 
 
 //Personne------
+
+//list personne(nom , prenom)
+app.get("/Personne/:Prenom/:Nom", (req, res) => {
+
+    //Affichage formation avec departement et duree
+    conn.query("select nom , prenom , email from Personne where nom LIKE '%" + req.params.Nom + "%' AND prenom LIKE '%" + req.params.Prenom + "%'", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+        }
+    })
+})
+
 app.get("/Personne/ListPromo", (req, res) => {
 
     //Affichage formation avec departement et duree
@@ -438,7 +457,7 @@ app.get("/Capteur/Valeur/:IdSalle/:IdValueType", (req, res) => {
 app.get("/Capteur/ValeurSpecifique/:IdDevice", (req, res) => {
     //les jointures ne fonctionait pas
     var id_box, id_valuetype;
-    conn.query("select id_box , id_valuetype from Device where id_device = '" + req.params.IdDevice + "'", function(err, result) {
+    conn.query("select id_box , id_valuetype , DeviceType.libelle_type from Device , DeviceType where id_device = '" + req.params.IdDevice + "' and DeviceType.id_devicetype = Device.id_devicetype", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -459,7 +478,7 @@ app.get("/Capteur/ValeurSpecifique/:IdDevice", (req, res) => {
 
 
 app.get("/Capteur/List/Historique", (req, res) => {
-    conn.query("select ValueType.libelle , Device.id_device , Historique.valeur , ValueType.unite from Historique , Device , ValueType WHERE Historique.id_device = Device.id_device AND Device.id_valuetype = ValueType.id_valuetype ", function(err, result) {
+    conn.query("select ValueType.libelle , Device.id_device , Historique.valeur , ValueType.unite , DeviceType.libelle_type from Historique , Device , ValueType , DeviceType WHERE Historique.id_device = Device.id_device AND Device.id_valuetype = ValueType.id_valuetype and DeviceType.id_devicetype = Device.id_devicetype", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -470,7 +489,7 @@ app.get("/Capteur/List/Historique", (req, res) => {
 })
 
 app.get("/Capteur/ValeurSpecifique/Last/:IdDevice", (req, res) => {
-    conn.query("select Historique.valeur , ValueType.unite , ValueType.libelle from Historique , Device , ValueType WHERE Historique.id_device = Device.id_device AND Device.id_valuetype = ValueType.id_valuetype AND Historique.id_device = 1 order by Historique.valeur desc LIMIT 1", function(err, result) {
+    conn.query("select Historique.valeur , ValueType.unite , ValueType.libelle , DeviceType.libelle_type from Historique , Device , ValueType , DeviceType WHERE Historique.id_device = Device.id_device AND Device.id_valuetype = ValueType.id_valuetype AND Historique.id_device = 1 and DeviceType.id_devicetype = Device.id_devicetype order by Historique.valeur desc LIMIT 1", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -481,7 +500,7 @@ app.get("/Capteur/ValeurSpecifique/Last/:IdDevice", (req, res) => {
 })
 
 app.get("/Capteur/ValeurSpecifique/Moyenne/:IdDevice", (req, res) => {
-    conn.query("select AVG(Historique.valeur) as Moyenne , ValueType.unite , ValueType.libelle from Historique , Device , ValueType WHERE Historique.id_device = Device.id_device AND Device.id_valuetype = ValueType.id_valuetype AND Historique.id_device = 1 order by Historique.valeur desc LIMIT 1", function(err, result) {
+    conn.query("select AVG(Historique.valeur) as Moyenne , ValueType.unite , ValueType.libelle , DeviceType.libelle_type from Historique , Device , ValueType , DeviceType WHERE Historique.id_device = Device.id_device AND Device.id_valuetype = ValueType.id_valuetype AND Historique.id_device = 1 and DeviceType.id_devicetype = Device.id_devicetype order by Historique.valeur desc LIMIT 1", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -580,18 +599,28 @@ app.post("/Personne/Add/Test/:Nom/:Prenom", (req, res) => {
 })
 
 //DORIAN
-//Creation d'une promo AFAIRE TODO: Choisir idFormation avec dropdown LIST , idProfesseur avec dropdown LIST faite
-app.post("/Personne/Add/Promo/:IdFormation/:Annee/:IdProfesseur", (req, res) => {
+//Creation d'une promo AFAIRE TODO: Liaison de Formation avec Promotion , utilisés une dropdown pour IdDepartement et IdProfesseur
+app.post("/Personne/Add/Promo/:IdDepartement/:NomFormation/:DureeFormation/:AnneePromotion/:IdProfesseurPromotion", (req, res) => {
 
-    conn.query("INSERT INTO `Promotion`(`id_formation`, `id_professeur`, `annee`) VALUES ('" + req.params.IdFormation + "','" + req.params.IdProfesseur + "','" + req.params.Annee + "')", function(err, result) {
+    //liée la table formation et promotion 
+    //Creation d'une formation:
+    conn.query("INSERT INTO `Formation` (`id_departement`, `nom`, `duree`) VALUES('" + req.params.IdDepartement + "', '" + req.params.NomFormation + "', '" + req.params.DureeFormation + "')", function(err, result) {
         if (err)
-            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+            res.status(400).json({ ErrorRequete: err });
         else {
-            res.status(200).json("Promotion cree");
+            //liaison de la formation avec la promotion:
+            var IDFormation = result.insertId;
+            conn.query("INSERT INTO `Promotion`(`id_formation`, `id_professeur`, `annee`) VALUES ('" + IDFormation + "','" + req.params.IdProfesseurPromotion + "','" + req.params.AnneePromotion + "')", function(err, result) {
+                if (err)
+                    res.status(400).json({ ErrorRequete: 'Requete invalid' });
+                else {
+                    res.status(200).json("Promotion cree");
+                }
+            })
         }
-    });
-})
+    })
 
+})
 
 //Covid-------------------
 //Envoie nouveau covid vers CasCovid
@@ -607,7 +636,7 @@ app.post("/Alerte/Covid/:IdPersonne", (req, res) => {
 })
 
 
-//Capteur --------------
+//Capteur -------------- 
 
 //DORIAN
 //creation box , Voir nouveau parametre //DropDwn Salle et deviceType
@@ -670,17 +699,34 @@ app.post("/Capteur/Add/PanneauSolaire/:IdBox/:Libelle", (req, res) => {
 //Batiment --------------
 
 //DORIAN
-//Creation d'un batiment (nom , superficie , idCampus) //Juste besoin de ca 
-app.post("/Batiment/Add/Batiment/:Nom/:Superficie/:IdCampus", (req, res) => {
+//Creation d'un batiment et des etages correspondant : DropDown IdCampus , envoie du nombre de batiment et superficie etage
+app.post("/Batiment/Add/Batiment/:Nom/:Superficie/:IdCampus/:EtageSuperficie", (req, res) => {
+    // console.log(req.params.EtageSuperficie.SuperficieEtage)
 
     conn.query("INSERT INTO `Batiment`(`id_site`, `nom`, `surface`) VALUES ('" + req.params.IdCampus + "','" + req.params.Nom + "','" + req.params.Superficie + "')", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
-            res.status(200).json("Batiment cree");
+            var IdBatiment = result.insertId; //Id du batiment
+            var json = JSON.parse(req.params.EtageSuperficie) //json 
+            var numEtage = ['RDC', '1er', '2eme', '3eme', '4eme', '5eme']; //nom etage
+            var compteur = 0;
+            json.SuperficieEtage.forEach((result) => {
+                // console.log(result);
+                // console.log("Etage = " + result.Etage);
+                // console.log("Superficie = " + result.Superficie);
+                conn.query("INSERT INTO `Etage`(`id_batiment`, `num`, `surface`) VALUES ('" + IdBatiment + "','" + numEtage[compteur] + "','" + result.Superficie + "')", function(err, result) {
+                    if (err)
+                        res.status(400).json({ ErrorRequete: 'Requete invalid' });
+                    else {
+                        compteur++;
+                    }
+                });
+            });
         }
-    });
+    })
 })
+
 
 //DORIAN
 //Creation dune salle (IdEtage , Nom , ...) //Revoir les parametres releves , Faire avec dropdown pour etage faites
