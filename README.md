@@ -25,11 +25,26 @@ Vous trouverez la documentation [Ici](https://github.com/LENSAlex/ProjetIotia/bl
 Vous trouverez un code python utilisé sur un raspberry Pi pour collecter les différentes valeurs des capteurs, envoyer les données au Broker MQTT ainsi que r'envoyer des alertes au M5Stack pour qu'il puisse jouer un son d'alerte. 
 Vous trouverez la documentation [Ici](https://nodejs.org/en/)
 
-# Installation Capteurs :
+# Installation Capteurs/Haut parleur :
 ## Capteur Gaz :
 Veuillez réaliser les actions suivantes : (Avoir un M5StickC)</br>
 **1°** : Dans *Fichier* -> *Préférences* -> ajouté "https://dl.espressif.com/dl/package_esp32_index.json" dans le *Gestionnaire de cartes supplémentaires*
 **2°** : Dans *Croquis* -> *Gestionnaire de bibliothèque* -> Recherchez "*ESP32 Lite Pack Library*" et installez là, faites de même pour "*M5StickC*"</br>
-**3°** : Dans *Outils* -> *Type de cartes* -> *Gestionnaire de Carte* -> Recherchez "*esp32*"
-**4°** : Toujours dans *Outils* -> *Type de cartes* -> *Gestionnaire de Carte* -> *ESP32 Arduino* -> Sélectionnez "*ESP 32 Dev Module*"
+**3°** : Dans *Outils* -> *Type de cartes* -> *Gestionnaire de Carte* -> Recherchez "*esp32*"</br>
+**4°** : Toujours dans *Outils* -> *Type de cartes* -> *Gestionnaire de Carte* -> *ESP32 Arduino* -> Sélectionnez "*ESP 32 Dev Module*"</br>
 **5°** : Choissez le port de votre M5StickC puis téléverser votre programme. 
+## Capteur PIR :
+Veuillez réaliser les actions suivantes : (Avoir un M5StickC)</br>
+**1°** : Dans *Fichier* -> *Préférences* -> ajouté "https://dl.espressif.com/dl/package_esp32_index.json" dans le *Gestionnaire de cartes supplémentaires*
+**2°** : Dans *Croquis* -> *Gestionnaire de bibliothèque* -> Recherchez "*ESP32 Lite Pack Library*" et installez là, faites de même pour "*M5StickC*"</br>
+**3°** : Dans *Outils* -> *Type de cartes* -> *Gestionnaire de Carte* -> Recherchez "*esp32*"</br>
+**4°** : Toujours dans *Outils* -> *Type de cartes* -> *Gestionnaire de Carte* -> *ESP32 Arduino* -> Sélectionnez "*ESP 32 Dev Module*"</br>
+**5°** : Choissez le port de votre M5StickC puis téléverser votre programme. 
+## Capteur fenêtre :
+Veuillez réaliser les actions suivantes : (Avoir un M5StickC)</br>
+**1°** : Dans *Fichier* -> *Préférences* -> ajouté "https://dl.espressif.com/dl/package_esp32_index.json" dans le *Gestionnaire de cartes supplémentaires*
+**2°** : Dans *Croquis* -> *Gestionnaire de bibliothèque* -> Recherchez "*ESP32 Lite Pack Library*" et installez là, faites de même pour "*M5StickC*"</br>
+**3°** : Dans *Outils* -> *Type de cartes* -> *Gestionnaire de Carte* -> Recherchez "*esp32*"</br>
+**4°** : Toujours dans *Outils* -> *Type de cartes* -> *Gestionnaire de Carte* -> *ESP32 Arduino* -> Sélectionnez "*ESP 32 Dev Module*"</br>
+**5°** : Choissez le port de votre M5StickC puis téléverser votre programme. 
+***Important !*** : Veuillez bien téléverser votre programme avant de brancher le capteur de fenêtre à votre M5StickC. 
