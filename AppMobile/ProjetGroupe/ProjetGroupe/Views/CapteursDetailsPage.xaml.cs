@@ -13,11 +13,70 @@ using Xamarin.Forms;
 namespace ProjetGroupe.Views
 {
 
-    public partial class CapteursDetailsPage : ContentPage
+    public partial class CapteursDetailsPage : ContentPage, INotifyPropertyChanged
     {
 
         public Capteur Capteur { get; set; }
         public string CapteurId { get; set; }
+
+        public string valmoy;
+        public string ValMoy
+        {
+            get
+            {
+                return valmoy;
+            }
+            set
+            {
+                valmoy = value;
+                RaisepropertyChanged("ValMoy");
+            }
+        }
+        public string unit;
+        public string Unite
+        {
+            get
+            {
+                return unit;
+            }
+            set
+            {
+                unit = value;
+                RaisepropertyChanged("Unite");
+            }
+        }
+        public string libel;
+        public string Libelle
+        {
+            get
+            {
+                return libel;
+            }
+            set
+            {
+                libel = value;
+                RaisepropertyChanged("Libelle");
+            }
+        }
+        public string libeltype;
+        public string LibelleType
+        {
+            get
+            {
+                return libeltype;
+            }
+            set
+            {
+                libeltype = value;
+                RaisepropertyChanged("LibelleType");
+            }
+        }
+        public event PropertyChangedEventHandler PropertyChanged;
+        public void RaisepropertyChanged(string propertyName)
+        {
+            if (PropertyChanged != null)
+                PropertyChanged.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
 
         public DateTime Date { get; set; } = DateTime.Now;
         public async Task GetCapteur()
@@ -27,12 +86,35 @@ namespace ProjetGroupe.Views
         public CapteursDetailsPage()
         {
             CapteurId = SecureStorage.GetAsync("CapteurId").Result;
-            Device.BeginInvokeOnMainThread(() => GetCapteur());
+            //Device.BeginInvokeOnMainThread(() => GetCapteur());
+            GetValeurLast();
             InitializeComponent();
             this.BindingContext = this;
 
         }
+        public async void GetValeur()
+        {
+            List<Historique> histoList = new List<Historique>();
+            histoList = await Historique.ListValeurLast(Convert.ToInt32(CapteurId));
+            foreach (Historique histo in histoList)
+            {
 
+            }
+        }
+        public async void GetValeurMoyenne()
+        {
+            List<Historique> histoList = new List<Historique>();
+            histoList = await Historique.ListValeurMoyenne(Convert.ToInt32(CapteurId));
+        }
+        public async void GetValeurLast()
+        {
+            List<Historique> histoList = new List<Historique>();
+            histoList = await Historique.ListValeurLast(Convert.ToInt32(CapteurId));
+            ValMoy = Convert.ToString(histoList[0].Valeur);
+            Libelle = Convert.ToString(histoList[0].Libelle);
+            Unite = Convert.ToString(histoList[0].Unite);
+            LibelleType = Convert.ToString(histoList[0].LibelleType);
+        }
         public void OnImageButtonClicked(object sender, EventArgs e)
         {
             var liste = SecureStorage.GetAsync("Liste").Result;

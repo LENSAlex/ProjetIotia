@@ -76,11 +76,10 @@
    
     <Shell.FlyoutHeaderTemplate>
         <DataTemplate>
-            <!--https://www.c-sharpcorner.com/article/xamarin-forms-upload-image-to-blob-storage/ TO UPLOAD IMG -->
             <Grid BackgroundColor="#96BCE3" Padding="20">
-                <Image Source="profil2.png" Margin="-175,0,20,0" WidthRequest="125" HeightRequest="125" HorizontalOptions="Center" VerticalOptions="Center"/>
-                <Label Text="{Binding Email}" Margin="-180,170,20,0" TextColor="#DFDBED" FontSize="16" HorizontalTextAlignment="Center" />
-                <Label Text="{Binding UserType}" Margin="-240,190,20,0" TextColor="White" FontAttributes="Italic" FontSize="16" HorizontalTextAlignment="Center" />
+                <Image Source="profil2.png" Margin="-170,0,20,0" WidthRequest="125" HeightRequest="125" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Label Text="{Binding Email}" Margin="-160,170,20,0" TextColor="#DFDBED" FontSize="16" HorizontalTextAlignment="Center" />
+                <Label Text="{Binding UserType}" Margin="-220,190,20,0" TextColor="White" FontAttributes="Italic" FontSize="16" HorizontalTextAlignment="Center" />
             </Grid>
         </DataTemplate>
     </Shell.FlyoutHeaderTemplate>

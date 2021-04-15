@@ -25,7 +25,7 @@
         <Frame Grid.Row="1" HasShadow="True" CornerRadius="15" Margin="20,-30,20,0" Padding="0" HeightRequest="120" VerticalOptions="Start">
             <Grid HorizontalOptions="Center" VerticalOptions="Center">
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                    <Label FontFamily="ThemeFontBold" Margin="0,20,0,20" Padding="10,5,10,5" Text="En cas de pénurie de gel htdroalcoolique, panne du verseur, ou autres, veuillez l'indiquer en sélectionnant le produit dans la liste ci-dessous" TextColor="#96d1ff" FontSize="14" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    <Label FontFamily="ThemeFontBold" Margin="0,20,0,20" Padding="10,5,10,5" Text="En cas de pénurie de gel hydro-alcoolique, panne du verseur, ou autres, veuillez l'indiquer en sélectionnant le produit dans la liste ci-dessous" TextColor="#96d1ff" FontSize="12" HorizontalOptions="Center" VerticalOptions="Center"/>
                 </StackLayout>
             </Grid>
         </Frame>

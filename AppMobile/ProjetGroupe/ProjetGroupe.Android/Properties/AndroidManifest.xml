@@ -7,7 +7,7 @@
 	<uses-permission android:name="android.permission.GET_ACCOUNTS"/>
 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-	<application android:label="ProjetGroupe.Android" android:theme="@style/MainTheme">
+	<application android:label="E-Covid !" android:theme="@style/MainTheme">
 		<receiver
 			android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"
 			android:exported="false" />

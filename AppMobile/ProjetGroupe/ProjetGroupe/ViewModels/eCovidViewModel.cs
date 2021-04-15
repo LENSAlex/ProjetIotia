@@ -58,7 +58,7 @@ namespace ProjetGroupe.ViewModels
             PdfFont font = new PdfStandardFont(PdfFontFamily.Helvetica, 20);
 
             //Draw the text
-            graphics.DrawString("Hello World!!!", font, PdfBrushes.Black, new PointF(0, 0));
+            graphics.DrawString("Données des capteurs", font, PdfBrushes.Black, new PointF(0, 0));
 
             //Save the document to the stream
             MemoryStream stream = new MemoryStream();

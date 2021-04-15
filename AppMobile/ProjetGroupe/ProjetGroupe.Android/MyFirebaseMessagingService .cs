@@ -21,7 +21,7 @@ namespace ProjetGroupe.Droid
             var notificationBuilder = new NotificationCompat.Builder(context, Config.NotificationChannelID);
 
             notificationBuilder.SetContentTitle(message.Title)
-                        .SetSmallIcon(Resource.Drawable.ic_launcher)
+                        .SetSmallIcon(Resource.Drawable.icon_about)
                         .SetContentText(message.Body)
                         .SetAutoCancel(true)
                         .SetShowWhen(false)
