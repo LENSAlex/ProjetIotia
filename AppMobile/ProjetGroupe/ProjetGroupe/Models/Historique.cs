@@ -17,6 +17,8 @@ namespace ProjetGroupe.Models
         public string Unite { get; set; }
         [JsonProperty("valeur")]
         public string Valeur { get; set; }
+        [JsonProperty("libelle_type")]
+        public string LibelleType { get; set; }
         public DateTime date_historique { get; set; }
         public int Id_Historique { get; set; }
 
@@ -32,7 +34,9 @@ namespace ProjetGroupe.Models
         {
             return HistoriqueManager.ListValeurMoyenne(CapteurId);
         }
-        //TODO Generation PDF donnees capteur + Affichage données capteur + Erreur AppShell sur le s8
+        //TODO Generation PDF donnees capteur + Affichage données capteur 
+        //Manque le num de la salle
+        //Changement des routes
     }
 
 }

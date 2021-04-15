@@ -18,7 +18,7 @@
                 <Image Source="logohoiut.png" VerticalOptions="Center" HeightRequest="170" />
             </ContentView>
         </StackLayout>
-        <Frame Grid.Row="1" HasShadow="True" CornerRadius="15" Margin="20,-30,20,0" Padding="0" HeightRequest="450" VerticalOptions="Start">
+        <Frame Grid.Row="1" HasShadow="True" CornerRadius="15" Margin="20,-30,20,0" Padding="0" HeightRequest="385" VerticalOptions="Start">
             <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
             </Grid>
         </Frame>
