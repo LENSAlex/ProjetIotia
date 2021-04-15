@@ -51,4 +51,31 @@ Lorsque les éléménts out-of-the-box sont instalés, ils entrent dans une phas
 + démarage des processus de collecte de données( publication topic ) 
 + démarage de l'écoute ( subscription topic) 
 
+## Les éléménts communiquants 
+### La BOX
+
+Une box à une configuration __out-the-box__ qui sera identique pour tous les éléments. Cette configuration comprends son comportement pour :
++ se conecter et s'authentifier dans le réseau.
++ Démarer le processus mosquitto (MQTT) 
++ S'identifier et telecharger sa configuration auprès du serveur
++ s'apairer avec ses capteurs/Acesseurs 
+
+Lorsque chaques modules sont authentifiés sur le réseau, outre l'adresse ip qui leur a été attribuée, ils téléchargent leurs configuration qui définit son environement.
+
+**Environement**
++ **Identitée**: Les informations contenue dans le fichier de configuration stockée sur le serveur
+	+ Le hostname de la machine : unique dans le réseau 
+	+ Leur localisation de type __(campus/batiment/etage/salle)__ qui lui permettra de connaitre les topics mqtt qui lui seront réservés
+	+ l'adresse ip de la gateway de leur batiment sur laquelle est hébergée le service mqtt aui lui est attribué. 
+	+ La liste des capteurs qui lui sont attribué 
+	+ la liste des actionneurs qui lui sont attribués 
+
+
+### Les gateway (BROKER) 
+
+
+
+
+### Le serveur DHCP 
+
 
