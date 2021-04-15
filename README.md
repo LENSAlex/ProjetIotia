@@ -27,9 +27,9 @@ Vous trouverez la documentation [Ici](https://nodejs.org/en/)
 
 # Installation Capteurs :
 ## Capteur Gaz :
-Veuillez réaliser les actions suivantes :</br>
+Veuillez réaliser les actions suivantes : (Avoir un M5StickC)</br>
 **1°** : Dans *Fichier* -> *Préférences* -> ajouté "https://dl.espressif.com/dl/package_esp32_index.json" dans le *Gestionnaire de cartes supplémentaires*
 **2°** : Dans *Croquis* -> *Gestionnaire de bibliothèque* -> Recherchez "*ESP32 Lite Pack Library*" et installez là, faites de même pour "*M5StickC*"</br>
 **3°** : Dans *Outils* -> *Type de cartes* -> *Gestionnaire de Carte* -> Recherchez "*esp32*"
- 
-
+**4°** : Toujours dans *Outils* -> *Type de cartes* -> *Gestionnaire de Carte* -> *ESP32 Arduino* -> Sélectionnez "*ESP 32 Dev Module*"
+**5°** : Choissez le port de votre M5StickC puis téléverser votre programme. 
