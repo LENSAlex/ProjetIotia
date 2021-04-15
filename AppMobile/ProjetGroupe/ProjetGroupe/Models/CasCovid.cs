@@ -1,4 +1,5 @@
-﻿using ProjetGroupe.Models.Manager;
+﻿using Newtonsoft.Json;
+using ProjetGroupe.Models.Manager;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,6 +9,13 @@ namespace ProjetGroupe.Models
 {
     public class CasCovid
     {
+        [JsonProperty("nom")]
+        public string Nom { get; set; }
+        [JsonProperty("NbCasCovid")]
+        public int NbCasCovid { get; set; }
+        [JsonProperty("name")]
+        public string Nom2 { get; set; }
+
         public int Id { get; set; }
         public DateTime DateDeContamination { get; set; }
 
@@ -47,6 +55,20 @@ namespace ProjetGroupe.Models
         public Task<string> SendAlert()
         {
             return CasCovidManager.SendAlert(this);
+        }
+        public static async Task<string> Count()
+        {
+            List<CasCovid> cascovid = await CasCovidManager.ListCasCovid();
+            int count = cascovid.Count;
+            return count.ToString();
+        }
+        public static Task<List<CasCovid>> ListCasCovidFormation()
+        {
+            return CasCovidManager.ListCasCovidFormation();
+        }
+        public static Task<List<CasCovid>> ListCasCovidDepartement()
+        {
+            return CasCovidManager.ListCasCovidDepartement();
         }
     }
 }

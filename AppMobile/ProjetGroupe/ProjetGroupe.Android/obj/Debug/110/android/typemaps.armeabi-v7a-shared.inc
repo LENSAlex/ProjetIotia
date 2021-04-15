@@ -36764,194 +36764,194 @@
 	.section	.rodata.java_type_name.6127,"aMS",%progbits,1
 	.type	.L.java_type_name.6127, %object
 .L.java_type_name.6127:
-	.asciz	"crc6466d27d713c291f37/CloseButtonFrame"
-	.size	.L.java_type_name.6127, 39
+	.asciz	"crc6455838bd710f8350b/PushNotificationFirebaseMessagingService"
+	.size	.L.java_type_name.6127, 63
 
 	.section	.rodata.java_type_name.6128,"aMS",%progbits,1
 	.type	.L.java_type_name.6128, %object
 .L.java_type_name.6128:
-	.asciz	"crc6466d27d713c291f37/MaterialPopupRenderer"
-	.size	.L.java_type_name.6128, 44
+	.asciz	"crc6466d27d713c291f37/CloseButtonFrame"
+	.size	.L.java_type_name.6128, 39
 
 	.section	.rodata.java_type_name.6129,"aMS",%progbits,1
 	.type	.L.java_type_name.6129, %object
 .L.java_type_name.6129:
-	.asciz	"crc6466d27d713c291f37/PopupFooter"
-	.size	.L.java_type_name.6129, 34
+	.asciz	"crc6466d27d713c291f37/MaterialPopupRenderer"
+	.size	.L.java_type_name.6129, 44
 
 	.section	.rodata.java_type_name.6130,"aMS",%progbits,1
 	.type	.L.java_type_name.6130, %object
 .L.java_type_name.6130:
-	.asciz	"crc6466d27d713c291f37/PopupHeader"
+	.asciz	"crc6466d27d713c291f37/PopupFooter"
 	.size	.L.java_type_name.6130, 34
 
 	.section	.rodata.java_type_name.6131,"aMS",%progbits,1
 	.type	.L.java_type_name.6131, %object
 .L.java_type_name.6131:
-	.asciz	"crc6466d27d713c291f37/PopupView"
-	.size	.L.java_type_name.6131, 32
+	.asciz	"crc6466d27d713c291f37/PopupHeader"
+	.size	.L.java_type_name.6131, 34
 
 	.section	.rodata.java_type_name.6132,"aMS",%progbits,1
 	.type	.L.java_type_name.6132, %object
 .L.java_type_name.6132:
-	.asciz	"crc6466d27d713c291f37/PopupViewRenderer"
-	.size	.L.java_type_name.6132, 40
+	.asciz	"crc6466d27d713c291f37/PopupView"
+	.size	.L.java_type_name.6132, 32
 
 	.section	.rodata.java_type_name.6133,"aMS",%progbits,1
 	.type	.L.java_type_name.6133, %object
 .L.java_type_name.6133:
-	.asciz	"crc6466d27d713c291f37/SfPopupLayout"
-	.size	.L.java_type_name.6133, 36
+	.asciz	"crc6466d27d713c291f37/PopupViewRenderer"
+	.size	.L.java_type_name.6133, 40
 
 	.section	.rodata.java_type_name.6134,"aMS",%progbits,1
 	.type	.L.java_type_name.6134, %object
 .L.java_type_name.6134:
-	.asciz	"crc6466d27d713c291f37/SfPopupRenderer"
-	.size	.L.java_type_name.6134, 38
+	.asciz	"crc6466d27d713c291f37/SfPopupLayout"
+	.size	.L.java_type_name.6134, 36
 
 	.section	.rodata.java_type_name.6135,"aMS",%progbits,1
 	.type	.L.java_type_name.6135, %object
 .L.java_type_name.6135:
-	.asciz	"crc6466d27d713c291f37/VisualContainer"
+	.asciz	"crc6466d27d713c291f37/SfPopupRenderer"
 	.size	.L.java_type_name.6135, 38
 
 	.section	.rodata.java_type_name.6136,"aMS",%progbits,1
 	.type	.L.java_type_name.6136, %object
 .L.java_type_name.6136:
-	.asciz	"crc64720bb2db43a66fe9/ButtonRenderer"
-	.size	.L.java_type_name.6136, 37
+	.asciz	"crc6466d27d713c291f37/VisualContainer"
+	.size	.L.java_type_name.6136, 38
 
 	.section	.rodata.java_type_name.6137,"aMS",%progbits,1
 	.type	.L.java_type_name.6137, %object
 .L.java_type_name.6137:
-	.asciz	"crc64720bb2db43a66fe9/CarouselPageRenderer"
-	.size	.L.java_type_name.6137, 43
+	.asciz	"crc64720bb2db43a66fe9/ButtonRenderer"
+	.size	.L.java_type_name.6137, 37
 
 	.section	.rodata.java_type_name.6138,"aMS",%progbits,1
 	.type	.L.java_type_name.6138, %object
 .L.java_type_name.6138:
-	.asciz	"crc64720bb2db43a66fe9/FormsFragmentPagerAdapter_1"
-	.size	.L.java_type_name.6138, 50
+	.asciz	"crc64720bb2db43a66fe9/CarouselPageRenderer"
+	.size	.L.java_type_name.6138, 43
 
 	.section	.rodata.java_type_name.6139,"aMS",%progbits,1
 	.type	.L.java_type_name.6139, %object
 .L.java_type_name.6139:
-	.asciz	"crc64720bb2db43a66fe9/FormsViewPager"
-	.size	.L.java_type_name.6139, 37
+	.asciz	"crc64720bb2db43a66fe9/FormsFragmentPagerAdapter_1"
+	.size	.L.java_type_name.6139, 50
 
 	.section	.rodata.java_type_name.6140,"aMS",%progbits,1
 	.type	.L.java_type_name.6140, %object
 .L.java_type_name.6140:
-	.asciz	"crc64720bb2db43a66fe9/FragmentContainer"
-	.size	.L.java_type_name.6140, 40
+	.asciz	"crc64720bb2db43a66fe9/FormsViewPager"
+	.size	.L.java_type_name.6140, 37
 
 	.section	.rodata.java_type_name.6141,"aMS",%progbits,1
 	.type	.L.java_type_name.6141, %object
 .L.java_type_name.6141:
-	.asciz	"crc64720bb2db43a66fe9/FrameRenderer"
-	.size	.L.java_type_name.6141, 36
+	.asciz	"crc64720bb2db43a66fe9/FragmentContainer"
+	.size	.L.java_type_name.6141, 40
 
 	.section	.rodata.java_type_name.6142,"aMS",%progbits,1
 	.type	.L.java_type_name.6142, %object
 .L.java_type_name.6142:
-	.asciz	"crc64720bb2db43a66fe9/MasterDetailPageRenderer"
-	.size	.L.java_type_name.6142, 47
+	.asciz	"crc64720bb2db43a66fe9/FrameRenderer"
+	.size	.L.java_type_name.6142, 36
 
 	.section	.rodata.java_type_name.6143,"aMS",%progbits,1
 	.type	.L.java_type_name.6143, %object
 .L.java_type_name.6143:
-	.asciz	"crc64720bb2db43a66fe9/NavigationPageRenderer"
-	.size	.L.java_type_name.6143, 45
+	.asciz	"crc64720bb2db43a66fe9/MasterDetailPageRenderer"
+	.size	.L.java_type_name.6143, 47
 
 	.section	.rodata.java_type_name.6144,"aMS",%progbits,1
 	.type	.L.java_type_name.6144, %object
 .L.java_type_name.6144:
-	.asciz	"crc64720bb2db43a66fe9/NavigationPageRenderer_ClickListener"
-	.size	.L.java_type_name.6144, 59
+	.asciz	"crc64720bb2db43a66fe9/NavigationPageRenderer"
+	.size	.L.java_type_name.6144, 45
 
 	.section	.rodata.java_type_name.6145,"aMS",%progbits,1
 	.type	.L.java_type_name.6145, %object
 .L.java_type_name.6145:
-	.asciz	"crc64720bb2db43a66fe9/NavigationPageRenderer_Container"
-	.size	.L.java_type_name.6145, 55
+	.asciz	"crc64720bb2db43a66fe9/NavigationPageRenderer_ClickListener"
+	.size	.L.java_type_name.6145, 59
 
 	.section	.rodata.java_type_name.6146,"aMS",%progbits,1
 	.type	.L.java_type_name.6146, %object
 .L.java_type_name.6146:
-	.asciz	"crc64720bb2db43a66fe9/NavigationPageRenderer_DrawerMultiplexedListener"
-	.size	.L.java_type_name.6146, 71
+	.asciz	"crc64720bb2db43a66fe9/NavigationPageRenderer_Container"
+	.size	.L.java_type_name.6146, 55
 
 	.section	.rodata.java_type_name.6147,"aMS",%progbits,1
 	.type	.L.java_type_name.6147, %object
 .L.java_type_name.6147:
-	.asciz	"crc64720bb2db43a66fe9/PickerRenderer"
-	.size	.L.java_type_name.6147, 37
+	.asciz	"crc64720bb2db43a66fe9/NavigationPageRenderer_DrawerMultiplexedListener"
+	.size	.L.java_type_name.6147, 71
 
 	.section	.rodata.java_type_name.6148,"aMS",%progbits,1
 	.type	.L.java_type_name.6148, %object
 .L.java_type_name.6148:
-	.asciz	"crc64720bb2db43a66fe9/PickerRendererBase_1"
-	.size	.L.java_type_name.6148, 43
+	.asciz	"crc64720bb2db43a66fe9/PickerRenderer"
+	.size	.L.java_type_name.6148, 37
 
 	.section	.rodata.java_type_name.6149,"aMS",%progbits,1
 	.type	.L.java_type_name.6149, %object
 .L.java_type_name.6149:
-	.asciz	"crc64720bb2db43a66fe9/Platform_ModalContainer"
-	.size	.L.java_type_name.6149, 46
+	.asciz	"crc64720bb2db43a66fe9/PickerRendererBase_1"
+	.size	.L.java_type_name.6149, 43
 
 	.section	.rodata.java_type_name.6150,"aMS",%progbits,1
 	.type	.L.java_type_name.6150, %object
 .L.java_type_name.6150:
-	.asciz	"crc64720bb2db43a66fe9/ShellFragmentContainer"
-	.size	.L.java_type_name.6150, 45
+	.asciz	"crc64720bb2db43a66fe9/Platform_ModalContainer"
+	.size	.L.java_type_name.6150, 46
 
 	.section	.rodata.java_type_name.6151,"aMS",%progbits,1
 	.type	.L.java_type_name.6151, %object
 .L.java_type_name.6151:
-	.asciz	"crc64720bb2db43a66fe9/SwitchRenderer"
-	.size	.L.java_type_name.6151, 37
+	.asciz	"crc64720bb2db43a66fe9/ShellFragmentContainer"
+	.size	.L.java_type_name.6151, 45
 
 	.section	.rodata.java_type_name.6152,"aMS",%progbits,1
 	.type	.L.java_type_name.6152, %object
 .L.java_type_name.6152:
-	.asciz	"crc64720bb2db43a66fe9/TabbedPageRenderer"
-	.size	.L.java_type_name.6152, 41
+	.asciz	"crc64720bb2db43a66fe9/SwitchRenderer"
+	.size	.L.java_type_name.6152, 37
 
 	.section	.rodata.java_type_name.6153,"aMS",%progbits,1
 	.type	.L.java_type_name.6153, %object
 .L.java_type_name.6153:
-	.asciz	"crc64720bb2db43a66fe9/ViewRenderer_2"
-	.size	.L.java_type_name.6153, 37
+	.asciz	"crc64720bb2db43a66fe9/TabbedPageRenderer"
+	.size	.L.java_type_name.6153, 41
 
 	.section	.rodata.java_type_name.6154,"aMS",%progbits,1
 	.type	.L.java_type_name.6154, %object
 .L.java_type_name.6154:
-	.asciz	"crc6479820c45fd9c6153/NavigationTransitionListener"
-	.size	.L.java_type_name.6154, 51
+	.asciz	"crc64720bb2db43a66fe9/ViewRenderer_2"
+	.size	.L.java_type_name.6154, 37
 
 	.section	.rodata.java_type_name.6155,"aMS",%progbits,1
 	.type	.L.java_type_name.6155, %object
 .L.java_type_name.6155:
-	.asciz	"crc6479820c45fd9c6153/SharedTransitionNavigationPageRenderer"
-	.size	.L.java_type_name.6155, 61
+	.asciz	"crc6479820c45fd9c6153/NavigationTransitionListener"
+	.size	.L.java_type_name.6155, 51
 
 	.section	.rodata.java_type_name.6156,"aMS",%progbits,1
 	.type	.L.java_type_name.6156, %object
 .L.java_type_name.6156:
-	.asciz	"crc6479820c45fd9c6153/SharedTransitionPageRenderer"
-	.size	.L.java_type_name.6156, 51
+	.asciz	"crc6479820c45fd9c6153/SharedTransitionNavigationPageRenderer"
+	.size	.L.java_type_name.6156, 61
 
 	.section	.rodata.java_type_name.6157,"aMS",%progbits,1
 	.type	.L.java_type_name.6157, %object
 .L.java_type_name.6157:
-	.asciz	"crc6479820c45fd9c6153/SharedTransitionShellItemRenderer"
-	.size	.L.java_type_name.6157, 56
+	.asciz	"crc6479820c45fd9c6153/SharedTransitionPageRenderer"
+	.size	.L.java_type_name.6157, 51
 
 	.section	.rodata.java_type_name.6158,"aMS",%progbits,1
 	.type	.L.java_type_name.6158, %object
 .L.java_type_name.6158:
-	.asciz	"crc64836ecd110479da2a/MyEntryRenderer"
-	.size	.L.java_type_name.6158, 38
+	.asciz	"crc6479820c45fd9c6153/SharedTransitionShellItemRenderer"
+	.size	.L.java_type_name.6158, 56
 
 	.section	.rodata.java_type_name.6159,"aMS",%progbits,1
 	.type	.L.java_type_name.6159, %object
@@ -79714,12978 +79714,12978 @@
 	.section	.rodata.managed_type_name.5575,"aMS",%progbits,1
 	.type	.L.managed_type_name.5575, %object
 .L.managed_type_name.5575:
-	.asciz	"CustomRenderer.Android.MyEntryRenderer, ProjetGroupe.Android"
-	.size	.L.managed_type_name.5575, 61
+	.asciz	"Dagger.IBindsInstanceInvoker, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5575, 52
 	.section	.rodata.managed_type_name.5576,"aMS",%progbits,1
 	.type	.L.managed_type_name.5576, %object
 .L.managed_type_name.5576:
-	.asciz	"Dagger.IBindsInstanceInvoker, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5576, 52
+	.asciz	"Dagger.IBindsInvoker, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5576, 44
 	.section	.rodata.managed_type_name.5577,"aMS",%progbits,1
 	.type	.L.managed_type_name.5577, %object
 .L.managed_type_name.5577:
-	.asciz	"Dagger.IBindsInvoker, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5577, 44
+	.asciz	"Dagger.IBindsOptionalOfInvoker, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5577, 54
 	.section	.rodata.managed_type_name.5578,"aMS",%progbits,1
 	.type	.L.managed_type_name.5578, %object
 .L.managed_type_name.5578:
-	.asciz	"Dagger.IBindsOptionalOfInvoker, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5578, 54
+	.asciz	"Dagger.IComponentBuilderInvoker, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5578, 55
 	.section	.rodata.managed_type_name.5579,"aMS",%progbits,1
 	.type	.L.managed_type_name.5579, %object
 .L.managed_type_name.5579:
-	.asciz	"Dagger.IComponentBuilderInvoker, Xamarin.Google.Dagger"
+	.asciz	"Dagger.IComponentFactoryInvoker, Xamarin.Google.Dagger"
 	.size	.L.managed_type_name.5579, 55
 	.section	.rodata.managed_type_name.5580,"aMS",%progbits,1
 	.type	.L.managed_type_name.5580, %object
 .L.managed_type_name.5580:
-	.asciz	"Dagger.IComponentFactoryInvoker, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5580, 55
+	.asciz	"Dagger.IComponentInvoker, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5580, 48
 	.section	.rodata.managed_type_name.5581,"aMS",%progbits,1
 	.type	.L.managed_type_name.5581, %object
 .L.managed_type_name.5581:
-	.asciz	"Dagger.IComponentInvoker, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5581, 48
+	.asciz	"Dagger.ILazyInvoker, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5581, 43
 	.section	.rodata.managed_type_name.5582,"aMS",%progbits,1
 	.type	.L.managed_type_name.5582, %object
 .L.managed_type_name.5582:
-	.asciz	"Dagger.ILazyInvoker, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5582, 43
+	.asciz	"Dagger.IMapKeyInvoker, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5582, 45
 	.section	.rodata.managed_type_name.5583,"aMS",%progbits,1
 	.type	.L.managed_type_name.5583, %object
 .L.managed_type_name.5583:
-	.asciz	"Dagger.IMapKeyInvoker, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5583, 45
+	.asciz	"Dagger.IMembersInjectorInvoker, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5583, 54
 	.section	.rodata.managed_type_name.5584,"aMS",%progbits,1
 	.type	.L.managed_type_name.5584, %object
 .L.managed_type_name.5584:
-	.asciz	"Dagger.IMembersInjectorInvoker, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5584, 54
+	.asciz	"Dagger.IModuleInvoker, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5584, 45
 	.section	.rodata.managed_type_name.5585,"aMS",%progbits,1
 	.type	.L.managed_type_name.5585, %object
 .L.managed_type_name.5585:
-	.asciz	"Dagger.IModuleInvoker, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5585, 45
+	.asciz	"Dagger.IProvidesInvoker, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5585, 47
 	.section	.rodata.managed_type_name.5586,"aMS",%progbits,1
 	.type	.L.managed_type_name.5586, %object
 .L.managed_type_name.5586:
-	.asciz	"Dagger.IProvidesInvoker, Xamarin.Google.Dagger"
+	.asciz	"Dagger.IReusableInvoker, Xamarin.Google.Dagger"
 	.size	.L.managed_type_name.5586, 47
 	.section	.rodata.managed_type_name.5587,"aMS",%progbits,1
 	.type	.L.managed_type_name.5587, %object
 .L.managed_type_name.5587:
-	.asciz	"Dagger.IReusableInvoker, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5587, 47
+	.asciz	"Dagger.ISubcomponentBuilderInvoker, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5587, 58
 	.section	.rodata.managed_type_name.5588,"aMS",%progbits,1
 	.type	.L.managed_type_name.5588, %object
 .L.managed_type_name.5588:
-	.asciz	"Dagger.ISubcomponentBuilderInvoker, Xamarin.Google.Dagger"
+	.asciz	"Dagger.ISubcomponentFactoryInvoker, Xamarin.Google.Dagger"
 	.size	.L.managed_type_name.5588, 58
 	.section	.rodata.managed_type_name.5589,"aMS",%progbits,1
 	.type	.L.managed_type_name.5589, %object
 .L.managed_type_name.5589:
-	.asciz	"Dagger.ISubcomponentFactoryInvoker, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5589, 58
+	.asciz	"Dagger.ISubcomponentInvoker, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5589, 51
 	.section	.rodata.managed_type_name.5590,"aMS",%progbits,1
 	.type	.L.managed_type_name.5590, %object
 .L.managed_type_name.5590:
-	.asciz	"Dagger.ISubcomponentInvoker, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5590, 51
+	.asciz	"Dagger.Internal.DaggerCollections, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5590, 57
 	.section	.rodata.managed_type_name.5591,"aMS",%progbits,1
 	.type	.L.managed_type_name.5591, %object
 .L.managed_type_name.5591:
-	.asciz	"Dagger.Internal.DaggerCollections, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5591, 57
+	.asciz	"Dagger.Internal.DelegateFactory, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5591, 55
 	.section	.rodata.managed_type_name.5592,"aMS",%progbits,1
 	.type	.L.managed_type_name.5592, %object
 .L.managed_type_name.5592:
-	.asciz	"Dagger.Internal.DelegateFactory, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5592, 55
+	.asciz	"Dagger.Internal.DoubleCheck, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5592, 51
 	.section	.rodata.managed_type_name.5593,"aMS",%progbits,1
 	.type	.L.managed_type_name.5593, %object
 .L.managed_type_name.5593:
-	.asciz	"Dagger.Internal.DoubleCheck, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5593, 51
+	.asciz	"Dagger.Internal.IBetaInvoker, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5593, 52
 	.section	.rodata.managed_type_name.5594,"aMS",%progbits,1
 	.type	.L.managed_type_name.5594, %object
 .L.managed_type_name.5594:
-	.asciz	"Dagger.Internal.IBetaInvoker, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5594, 52
+	.asciz	"Dagger.Internal.IComponentDefinitionTypeInvoker, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5594, 71
 	.section	.rodata.managed_type_name.5595,"aMS",%progbits,1
 	.type	.L.managed_type_name.5595, %object
 .L.managed_type_name.5595:
-	.asciz	"Dagger.Internal.IComponentDefinitionTypeInvoker, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5595, 71
+	.asciz	"Dagger.Internal.IFactoryInvoker, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5595, 55
 	.section	.rodata.managed_type_name.5596,"aMS",%progbits,1
 	.type	.L.managed_type_name.5596, %object
 .L.managed_type_name.5596:
-	.asciz	"Dagger.Internal.IFactoryInvoker, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5596, 55
+	.asciz	"Dagger.Internal.IGwtIncompatibleInvoker, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5596, 63
 	.section	.rodata.managed_type_name.5597,"aMS",%progbits,1
 	.type	.L.managed_type_name.5597, %object
 .L.managed_type_name.5597:
-	.asciz	"Dagger.Internal.IGwtIncompatibleInvoker, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5597, 63
+	.asciz	"Dagger.Internal.IInjectedFieldSignatureInvoker, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5597, 70
 	.section	.rodata.managed_type_name.5598,"aMS",%progbits,1
 	.type	.L.managed_type_name.5598, %object
 .L.managed_type_name.5598:
-	.asciz	"Dagger.Internal.IInjectedFieldSignatureInvoker, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5598, 70
+	.asciz	"Dagger.Internal.InstanceFactory, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5598, 55
 	.section	.rodata.managed_type_name.5599,"aMS",%progbits,1
 	.type	.L.managed_type_name.5599, %object
 .L.managed_type_name.5599:
-	.asciz	"Dagger.Internal.InstanceFactory, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5599, 55
+	.asciz	"Dagger.Internal.MapBuilder, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5599, 50
 	.section	.rodata.managed_type_name.5600,"aMS",%progbits,1
 	.type	.L.managed_type_name.5600, %object
 .L.managed_type_name.5600:
-	.asciz	"Dagger.Internal.MapBuilder, Xamarin.Google.Dagger"
+	.asciz	"Dagger.Internal.MapFactory, Xamarin.Google.Dagger"
 	.size	.L.managed_type_name.5600, 50
 	.section	.rodata.managed_type_name.5601,"aMS",%progbits,1
 	.type	.L.managed_type_name.5601, %object
 .L.managed_type_name.5601:
-	.asciz	"Dagger.Internal.MapFactory, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5601, 50
+	.asciz	"Dagger.Internal.MapProviderFactory, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5601, 58
 	.section	.rodata.managed_type_name.5602,"aMS",%progbits,1
 	.type	.L.managed_type_name.5602, %object
 .L.managed_type_name.5602:
-	.asciz	"Dagger.Internal.MapProviderFactory, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5602, 58
+	.asciz	"Dagger.Internal.MembersInjectors, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5602, 56
 	.section	.rodata.managed_type_name.5603,"aMS",%progbits,1
 	.type	.L.managed_type_name.5603, %object
 .L.managed_type_name.5603:
-	.asciz	"Dagger.Internal.MembersInjectors, Xamarin.Google.Dagger"
+	.asciz	"Dagger.Internal.MemoizedSentinel, Xamarin.Google.Dagger"
 	.size	.L.managed_type_name.5603, 56
 	.section	.rodata.managed_type_name.5604,"aMS",%progbits,1
 	.type	.L.managed_type_name.5604, %object
 .L.managed_type_name.5604:
-	.asciz	"Dagger.Internal.MemoizedSentinel, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5604, 56
+	.asciz	"Dagger.Internal.Preconditions, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5604, 53
 	.section	.rodata.managed_type_name.5605,"aMS",%progbits,1
 	.type	.L.managed_type_name.5605, %object
 .L.managed_type_name.5605:
-	.asciz	"Dagger.Internal.Preconditions, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5605, 53
+	.asciz	"Dagger.Internal.ProviderOfLazy, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5605, 54
 	.section	.rodata.managed_type_name.5606,"aMS",%progbits,1
 	.type	.L.managed_type_name.5606, %object
 .L.managed_type_name.5606:
-	.asciz	"Dagger.Internal.ProviderOfLazy, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5606, 54
+	.asciz	"Dagger.Internal.SetBuilder, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5606, 50
 	.section	.rodata.managed_type_name.5607,"aMS",%progbits,1
 	.type	.L.managed_type_name.5607, %object
 .L.managed_type_name.5607:
-	.asciz	"Dagger.Internal.SetBuilder, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5607, 50
+	.asciz	"Dagger.Internal.SetFactory+Builder, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5607, 58
 	.section	.rodata.managed_type_name.5608,"aMS",%progbits,1
 	.type	.L.managed_type_name.5608, %object
 .L.managed_type_name.5608:
-	.asciz	"Dagger.Internal.SetFactory+Builder, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5608, 58
+	.asciz	"Dagger.Internal.SetFactory, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5608, 50
 	.section	.rodata.managed_type_name.5609,"aMS",%progbits,1
 	.type	.L.managed_type_name.5609, %object
 .L.managed_type_name.5609:
-	.asciz	"Dagger.Internal.SetFactory, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5609, 50
+	.asciz	"Dagger.Internal.SingleCheck, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5609, 51
 	.section	.rodata.managed_type_name.5610,"aMS",%progbits,1
 	.type	.L.managed_type_name.5610, %object
 .L.managed_type_name.5610:
-	.asciz	"Dagger.Internal.SingleCheck, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5610, 51
+	.asciz	"Dagger.Multibindings.IClassKeyInvoker, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5610, 61
 	.section	.rodata.managed_type_name.5611,"aMS",%progbits,1
 	.type	.L.managed_type_name.5611, %object
 .L.managed_type_name.5611:
-	.asciz	"Dagger.Multibindings.IClassKeyInvoker, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5611, 61
+	.asciz	"Dagger.Multibindings.IElementsIntoSetInvoker, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5611, 68
 	.section	.rodata.managed_type_name.5612,"aMS",%progbits,1
 	.type	.L.managed_type_name.5612, %object
 .L.managed_type_name.5612:
-	.asciz	"Dagger.Multibindings.IElementsIntoSetInvoker, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5612, 68
+	.asciz	"Dagger.Multibindings.IIntKeyInvoker, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5612, 59
 	.section	.rodata.managed_type_name.5613,"aMS",%progbits,1
 	.type	.L.managed_type_name.5613, %object
 .L.managed_type_name.5613:
-	.asciz	"Dagger.Multibindings.IIntKeyInvoker, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5613, 59
+	.asciz	"Dagger.Multibindings.IIntoMapInvoker, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5613, 60
 	.section	.rodata.managed_type_name.5614,"aMS",%progbits,1
 	.type	.L.managed_type_name.5614, %object
 .L.managed_type_name.5614:
-	.asciz	"Dagger.Multibindings.IIntoMapInvoker, Xamarin.Google.Dagger"
+	.asciz	"Dagger.Multibindings.IIntoSetInvoker, Xamarin.Google.Dagger"
 	.size	.L.managed_type_name.5614, 60
 	.section	.rodata.managed_type_name.5615,"aMS",%progbits,1
 	.type	.L.managed_type_name.5615, %object
 .L.managed_type_name.5615:
-	.asciz	"Dagger.Multibindings.IIntoSetInvoker, Xamarin.Google.Dagger"
+	.asciz	"Dagger.Multibindings.ILongKeyInvoker, Xamarin.Google.Dagger"
 	.size	.L.managed_type_name.5615, 60
 	.section	.rodata.managed_type_name.5616,"aMS",%progbits,1
 	.type	.L.managed_type_name.5616, %object
 .L.managed_type_name.5616:
-	.asciz	"Dagger.Multibindings.ILongKeyInvoker, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5616, 60
+	.asciz	"Dagger.Multibindings.IMultibindsInvoker, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5616, 63
 	.section	.rodata.managed_type_name.5617,"aMS",%progbits,1
 	.type	.L.managed_type_name.5617, %object
 .L.managed_type_name.5617:
-	.asciz	"Dagger.Multibindings.IMultibindsInvoker, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5617, 63
+	.asciz	"Dagger.Multibindings.IStringKeyInvoker, Xamarin.Google.Dagger"
+	.size	.L.managed_type_name.5617, 62
 	.section	.rodata.managed_type_name.5618,"aMS",%progbits,1
 	.type	.L.managed_type_name.5618, %object
 .L.managed_type_name.5618:
-	.asciz	"Dagger.Multibindings.IStringKeyInvoker, Xamarin.Google.Dagger"
-	.size	.L.managed_type_name.5618, 62
+	.asciz	"Dalvik.Annotation.ITestTargetClassInvoker, Mono.Android"
+	.size	.L.managed_type_name.5618, 56
 	.section	.rodata.managed_type_name.5619,"aMS",%progbits,1
 	.type	.L.managed_type_name.5619, %object
 .L.managed_type_name.5619:
-	.asciz	"Dalvik.Annotation.ITestTargetClassInvoker, Mono.Android"
-	.size	.L.managed_type_name.5619, 56
+	.asciz	"Dalvik.Annotation.ITestTargetInvoker, Mono.Android"
+	.size	.L.managed_type_name.5619, 51
 	.section	.rodata.managed_type_name.5620,"aMS",%progbits,1
 	.type	.L.managed_type_name.5620, %object
 .L.managed_type_name.5620:
-	.asciz	"Dalvik.Annotation.ITestTargetInvoker, Mono.Android"
-	.size	.L.managed_type_name.5620, 51
+	.asciz	"Dalvik.Annotation.TestTarget, Mono.Android"
+	.size	.L.managed_type_name.5620, 43
 	.section	.rodata.managed_type_name.5621,"aMS",%progbits,1
 	.type	.L.managed_type_name.5621, %object
 .L.managed_type_name.5621:
-	.asciz	"Dalvik.Annotation.TestTarget, Mono.Android"
-	.size	.L.managed_type_name.5621, 43
+	.asciz	"Dalvik.Annotation.TestTargetClass, Mono.Android"
+	.size	.L.managed_type_name.5621, 48
 	.section	.rodata.managed_type_name.5622,"aMS",%progbits,1
 	.type	.L.managed_type_name.5622, %object
 .L.managed_type_name.5622:
-	.asciz	"Dalvik.Annotation.TestTargetClass, Mono.Android"
-	.size	.L.managed_type_name.5622, 48
+	.asciz	"Dalvik.Annotation.TestTargetClassInvoker, Mono.Android"
+	.size	.L.managed_type_name.5622, 55
 	.section	.rodata.managed_type_name.5623,"aMS",%progbits,1
 	.type	.L.managed_type_name.5623, %object
 .L.managed_type_name.5623:
-	.asciz	"Dalvik.Annotation.TestTargetClassInvoker, Mono.Android"
-	.size	.L.managed_type_name.5623, 55
+	.asciz	"Dalvik.Annotation.TestTargetInvoker, Mono.Android"
+	.size	.L.managed_type_name.5623, 50
 	.section	.rodata.managed_type_name.5624,"aMS",%progbits,1
 	.type	.L.managed_type_name.5624, %object
 .L.managed_type_name.5624:
-	.asciz	"Dalvik.Annotation.TestTargetInvoker, Mono.Android"
-	.size	.L.managed_type_name.5624, 50
+	.asciz	"Dalvik.Bytecode.OpcodeInfo, Mono.Android"
+	.size	.L.managed_type_name.5624, 41
 	.section	.rodata.managed_type_name.5625,"aMS",%progbits,1
 	.type	.L.managed_type_name.5625, %object
 .L.managed_type_name.5625:
-	.asciz	"Dalvik.Bytecode.OpcodeInfo, Mono.Android"
-	.size	.L.managed_type_name.5625, 41
+	.asciz	"Dalvik.Bytecode.Opcodes, Mono.Android"
+	.size	.L.managed_type_name.5625, 38
 	.section	.rodata.managed_type_name.5626,"aMS",%progbits,1
 	.type	.L.managed_type_name.5626, %object
 .L.managed_type_name.5626:
-	.asciz	"Dalvik.Bytecode.Opcodes, Mono.Android"
-	.size	.L.managed_type_name.5626, 38
+	.asciz	"Dalvik.SystemInterop.BaseDexClassLoader, Mono.Android"
+	.size	.L.managed_type_name.5626, 54
 	.section	.rodata.managed_type_name.5627,"aMS",%progbits,1
 	.type	.L.managed_type_name.5627, %object
 .L.managed_type_name.5627:
-	.asciz	"Dalvik.SystemInterop.BaseDexClassLoader, Mono.Android"
-	.size	.L.managed_type_name.5627, 54
+	.asciz	"Dalvik.SystemInterop.DelegateLastClassLoader, Mono.Android"
+	.size	.L.managed_type_name.5627, 59
 	.section	.rodata.managed_type_name.5628,"aMS",%progbits,1
 	.type	.L.managed_type_name.5628, %object
 .L.managed_type_name.5628:
-	.asciz	"Dalvik.SystemInterop.DelegateLastClassLoader, Mono.Android"
-	.size	.L.managed_type_name.5628, 59
+	.asciz	"Dalvik.SystemInterop.DexClassLoader, Mono.Android"
+	.size	.L.managed_type_name.5628, 50
 	.section	.rodata.managed_type_name.5629,"aMS",%progbits,1
 	.type	.L.managed_type_name.5629, %object
 .L.managed_type_name.5629:
-	.asciz	"Dalvik.SystemInterop.DexClassLoader, Mono.Android"
-	.size	.L.managed_type_name.5629, 50
+	.asciz	"Dalvik.SystemInterop.DexFile, Mono.Android"
+	.size	.L.managed_type_name.5629, 43
 	.section	.rodata.managed_type_name.5630,"aMS",%progbits,1
 	.type	.L.managed_type_name.5630, %object
 .L.managed_type_name.5630:
-	.asciz	"Dalvik.SystemInterop.DexFile, Mono.Android"
-	.size	.L.managed_type_name.5630, 43
+	.asciz	"Dalvik.SystemInterop.InMemoryDexClassLoader, Mono.Android"
+	.size	.L.managed_type_name.5630, 58
 	.section	.rodata.managed_type_name.5631,"aMS",%progbits,1
 	.type	.L.managed_type_name.5631, %object
 .L.managed_type_name.5631:
-	.asciz	"Dalvik.SystemInterop.InMemoryDexClassLoader, Mono.Android"
-	.size	.L.managed_type_name.5631, 58
+	.asciz	"Dalvik.SystemInterop.PathClassLoader, Mono.Android"
+	.size	.L.managed_type_name.5631, 51
 	.section	.rodata.managed_type_name.5632,"aMS",%progbits,1
 	.type	.L.managed_type_name.5632, %object
 .L.managed_type_name.5632:
-	.asciz	"Dalvik.SystemInterop.PathClassLoader, Mono.Android"
-	.size	.L.managed_type_name.5632, 51
+	.asciz	"Firebase.Analytics.Connector.AnalyticsConnectorConditionalUserProperty, Xamarin.Firebase.Measurement.Connector"
+	.size	.L.managed_type_name.5632, 111
 	.section	.rodata.managed_type_name.5633,"aMS",%progbits,1
 	.type	.L.managed_type_name.5633, %object
 .L.managed_type_name.5633:
-	.asciz	"Firebase.Analytics.Connector.AnalyticsConnectorConditionalUserProperty, Xamarin.Firebase.Measurement.Connector"
-	.size	.L.managed_type_name.5633, 111
+	.asciz	"Firebase.Analytics.Connector.IAnalyticsConnectorAnalyticsConnectorHandleInvoker, Xamarin.Firebase.Measurement.Connector"
+	.size	.L.managed_type_name.5633, 120
 	.section	.rodata.managed_type_name.5634,"aMS",%progbits,1
 	.type	.L.managed_type_name.5634, %object
 .L.managed_type_name.5634:
-	.asciz	"Firebase.Analytics.Connector.IAnalyticsConnectorAnalyticsConnectorHandleInvoker, Xamarin.Firebase.Measurement.Connector"
-	.size	.L.managed_type_name.5634, 120
+	.asciz	"Firebase.Analytics.Connector.IAnalyticsConnectorAnalyticsConnectorListenerImplementor, Xamarin.Firebase.Measurement.Connector"
+	.size	.L.managed_type_name.5634, 126
 	.section	.rodata.managed_type_name.5635,"aMS",%progbits,1
 	.type	.L.managed_type_name.5635, %object
 .L.managed_type_name.5635:
-	.asciz	"Firebase.Analytics.Connector.IAnalyticsConnectorAnalyticsConnectorListenerImplementor, Xamarin.Firebase.Measurement.Connector"
-	.size	.L.managed_type_name.5635, 126
+	.asciz	"Firebase.Analytics.Connector.IAnalyticsConnectorAnalyticsConnectorListenerInvoker, Xamarin.Firebase.Measurement.Connector"
+	.size	.L.managed_type_name.5635, 122
 	.section	.rodata.managed_type_name.5636,"aMS",%progbits,1
 	.type	.L.managed_type_name.5636, %object
 .L.managed_type_name.5636:
-	.asciz	"Firebase.Analytics.Connector.IAnalyticsConnectorAnalyticsConnectorListenerInvoker, Xamarin.Firebase.Measurement.Connector"
-	.size	.L.managed_type_name.5636, 122
+	.asciz	"Firebase.Analytics.Connector.IAnalyticsConnectorInvoker, Xamarin.Firebase.Measurement.Connector"
+	.size	.L.managed_type_name.5636, 96
 	.section	.rodata.managed_type_name.5637,"aMS",%progbits,1
 	.type	.L.managed_type_name.5637, %object
 .L.managed_type_name.5637:
-	.asciz	"Firebase.Analytics.Connector.IAnalyticsConnectorInvoker, Xamarin.Firebase.Measurement.Connector"
-	.size	.L.managed_type_name.5637, 96
+	.asciz	"Firebase.Annotations.IDeferredApiInvoker, Xamarin.Firebase.Annotations"
+	.size	.L.managed_type_name.5637, 71
 	.section	.rodata.managed_type_name.5638,"aMS",%progbits,1
 	.type	.L.managed_type_name.5638, %object
 .L.managed_type_name.5638:
-	.asciz	"Firebase.Annotations.IDeferredApiInvoker, Xamarin.Firebase.Annotations"
-	.size	.L.managed_type_name.5638, 71
+	.asciz	"Firebase.Annotations.IPublicApiInvoker, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5638, 64
 	.section	.rodata.managed_type_name.5639,"aMS",%progbits,1
 	.type	.L.managed_type_name.5639, %object
 .L.managed_type_name.5639:
-	.asciz	"Firebase.Annotations.IPublicApiInvoker, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5639, 64
+	.asciz	"Firebase.BuildConfig, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5639, 46
 	.section	.rodata.managed_type_name.5640,"aMS",%progbits,1
 	.type	.L.managed_type_name.5640, %object
 .L.managed_type_name.5640:
-	.asciz	"Firebase.BuildConfig, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5640, 46
+	.asciz	"Firebase.Components.BuildConfig, Xamarin.Firebase.Components"
+	.size	.L.managed_type_name.5640, 61
 	.section	.rodata.managed_type_name.5641,"aMS",%progbits,1
 	.type	.L.managed_type_name.5641, %object
 .L.managed_type_name.5641:
-	.asciz	"Firebase.Components.BuildConfig, Xamarin.Firebase.Components"
-	.size	.L.managed_type_name.5641, 61
+	.asciz	"Firebase.Components.Component+Builder, Xamarin.Firebase.Components"
+	.size	.L.managed_type_name.5641, 67
 	.section	.rodata.managed_type_name.5642,"aMS",%progbits,1
 	.type	.L.managed_type_name.5642, %object
 .L.managed_type_name.5642:
-	.asciz	"Firebase.Components.Component+Builder, Xamarin.Firebase.Components"
-	.size	.L.managed_type_name.5642, 67
+	.asciz	"Firebase.Components.Component, Xamarin.Firebase.Components"
+	.size	.L.managed_type_name.5642, 59
 	.section	.rodata.managed_type_name.5643,"aMS",%progbits,1
 	.type	.L.managed_type_name.5643, %object
 .L.managed_type_name.5643:
-	.asciz	"Firebase.Components.Component, Xamarin.Firebase.Components"
-	.size	.L.managed_type_name.5643, 59
+	.asciz	"Firebase.Components.ComponentDiscovery, Xamarin.Firebase.Components"
+	.size	.L.managed_type_name.5643, 68
 	.section	.rodata.managed_type_name.5644,"aMS",%progbits,1
 	.type	.L.managed_type_name.5644, %object
 .L.managed_type_name.5644:
-	.asciz	"Firebase.Components.ComponentDiscovery, Xamarin.Firebase.Components"
-	.size	.L.managed_type_name.5644, 68
+	.asciz	"Firebase.Components.ComponentDiscoveryService, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5644, 71
 	.section	.rodata.managed_type_name.5645,"aMS",%progbits,1
 	.type	.L.managed_type_name.5645, %object
 .L.managed_type_name.5645:
-	.asciz	"Firebase.Components.ComponentDiscoveryService, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5645, 71
+	.asciz	"Firebase.Components.ComponentRuntime+Builder, Xamarin.Firebase.Components"
+	.size	.L.managed_type_name.5645, 74
 	.section	.rodata.managed_type_name.5646,"aMS",%progbits,1
 	.type	.L.managed_type_name.5646, %object
 .L.managed_type_name.5646:
-	.asciz	"Firebase.Components.ComponentRuntime+Builder, Xamarin.Firebase.Components"
-	.size	.L.managed_type_name.5646, 74
+	.asciz	"Firebase.Components.ComponentRuntime, Xamarin.Firebase.Components"
+	.size	.L.managed_type_name.5646, 66
 	.section	.rodata.managed_type_name.5647,"aMS",%progbits,1
 	.type	.L.managed_type_name.5647, %object
 .L.managed_type_name.5647:
-	.asciz	"Firebase.Components.ComponentRuntime, Xamarin.Firebase.Components"
-	.size	.L.managed_type_name.5647, 66
+	.asciz	"Firebase.Components.Dependency, Xamarin.Firebase.Components"
+	.size	.L.managed_type_name.5647, 60
 	.section	.rodata.managed_type_name.5648,"aMS",%progbits,1
 	.type	.L.managed_type_name.5648, %object
 .L.managed_type_name.5648:
-	.asciz	"Firebase.Components.Dependency, Xamarin.Firebase.Components"
-	.size	.L.managed_type_name.5648, 60
+	.asciz	"Firebase.Components.DependencyCycleException, Xamarin.Firebase.Components"
+	.size	.L.managed_type_name.5648, 74
 	.section	.rodata.managed_type_name.5649,"aMS",%progbits,1
 	.type	.L.managed_type_name.5649, %object
 .L.managed_type_name.5649:
-	.asciz	"Firebase.Components.DependencyCycleException, Xamarin.Firebase.Components"
-	.size	.L.managed_type_name.5649, 74
+	.asciz	"Firebase.Components.DependencyException, Xamarin.Firebase.Components"
+	.size	.L.managed_type_name.5649, 69
 	.section	.rodata.managed_type_name.5650,"aMS",%progbits,1
 	.type	.L.managed_type_name.5650, %object
 .L.managed_type_name.5650:
-	.asciz	"Firebase.Components.DependencyException, Xamarin.Firebase.Components"
-	.size	.L.managed_type_name.5650, 69
+	.asciz	"Firebase.Components.IComponentContainerInvoker, Xamarin.Firebase.Components"
+	.size	.L.managed_type_name.5650, 76
 	.section	.rodata.managed_type_name.5651,"aMS",%progbits,1
 	.type	.L.managed_type_name.5651, %object
 .L.managed_type_name.5651:
-	.asciz	"Firebase.Components.IComponentContainerInvoker, Xamarin.Firebase.Components"
-	.size	.L.managed_type_name.5651, 76
+	.asciz	"Firebase.Components.IComponentFactoryInvoker, Xamarin.Firebase.Components"
+	.size	.L.managed_type_name.5651, 74
 	.section	.rodata.managed_type_name.5652,"aMS",%progbits,1
 	.type	.L.managed_type_name.5652, %object
 .L.managed_type_name.5652:
-	.asciz	"Firebase.Components.IComponentFactoryInvoker, Xamarin.Firebase.Components"
-	.size	.L.managed_type_name.5652, 74
+	.asciz	"Firebase.Components.IComponentRegistrarInvoker, Xamarin.Firebase.Components"
+	.size	.L.managed_type_name.5652, 76
 	.section	.rodata.managed_type_name.5653,"aMS",%progbits,1
 	.type	.L.managed_type_name.5653, %object
 .L.managed_type_name.5653:
-	.asciz	"Firebase.Components.IComponentRegistrarInvoker, Xamarin.Firebase.Components"
-	.size	.L.managed_type_name.5653, 76
+	.asciz	"Firebase.Components.InvalidRegistrarException, Xamarin.Firebase.Components"
+	.size	.L.managed_type_name.5653, 75
 	.section	.rodata.managed_type_name.5654,"aMS",%progbits,1
 	.type	.L.managed_type_name.5654, %object
 .L.managed_type_name.5654:
-	.asciz	"Firebase.Components.InvalidRegistrarException, Xamarin.Firebase.Components"
-	.size	.L.managed_type_name.5654, 75
+	.asciz	"Firebase.Components.Lazy, Xamarin.Firebase.Components"
+	.size	.L.managed_type_name.5654, 54
 	.section	.rodata.managed_type_name.5655,"aMS",%progbits,1
 	.type	.L.managed_type_name.5655, %object
 .L.managed_type_name.5655:
-	.asciz	"Firebase.Components.Lazy, Xamarin.Firebase.Components"
-	.size	.L.managed_type_name.5655, 54
+	.asciz	"Firebase.Components.MissingDependencyException, Xamarin.Firebase.Components"
+	.size	.L.managed_type_name.5655, 76
 	.section	.rodata.managed_type_name.5656,"aMS",%progbits,1
 	.type	.L.managed_type_name.5656, %object
 .L.managed_type_name.5656:
-	.asciz	"Firebase.Components.MissingDependencyException, Xamarin.Firebase.Components"
-	.size	.L.managed_type_name.5656, 76
+	.asciz	"Firebase.Components.Preconditions, Xamarin.Firebase.Components"
+	.size	.L.managed_type_name.5656, 63
 	.section	.rodata.managed_type_name.5657,"aMS",%progbits,1
 	.type	.L.managed_type_name.5657, %object
 .L.managed_type_name.5657:
-	.asciz	"Firebase.Components.Preconditions, Xamarin.Firebase.Components"
-	.size	.L.managed_type_name.5657, 63
+	.asciz	"Firebase.DataCollectionDefaultChange, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5657, 62
 	.section	.rodata.managed_type_name.5658,"aMS",%progbits,1
 	.type	.L.managed_type_name.5658, %object
 .L.managed_type_name.5658:
-	.asciz	"Firebase.DataCollectionDefaultChange, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5658, 62
+	.asciz	"Firebase.DataTransport.BuildConfig, Xamarin.Firebase.Datatransport"
+	.size	.L.managed_type_name.5658, 67
 	.section	.rodata.managed_type_name.5659,"aMS",%progbits,1
 	.type	.L.managed_type_name.5659, %object
 .L.managed_type_name.5659:
-	.asciz	"Firebase.DataTransport.BuildConfig, Xamarin.Firebase.Datatransport"
-	.size	.L.managed_type_name.5659, 67
+	.asciz	"Firebase.DataTransport.TransportRegistrar, Xamarin.Firebase.Datatransport"
+	.size	.L.managed_type_name.5659, 74
 	.section	.rodata.managed_type_name.5660,"aMS",%progbits,1
 	.type	.L.managed_type_name.5660, %object
 .L.managed_type_name.5660:
-	.asciz	"Firebase.DataTransport.TransportRegistrar, Xamarin.Firebase.Datatransport"
-	.size	.L.managed_type_name.5660, 74
+	.asciz	"Firebase.DynamicLoading.IComponentLoaderInvoker, Xamarin.Firebase.Components"
+	.size	.L.managed_type_name.5660, 77
 	.section	.rodata.managed_type_name.5661,"aMS",%progbits,1
 	.type	.L.managed_type_name.5661, %object
 .L.managed_type_name.5661:
-	.asciz	"Firebase.DynamicLoading.IComponentLoaderInvoker, Xamarin.Firebase.Components"
-	.size	.L.managed_type_name.5661, 77
+	.asciz	"Firebase.Emulators.EmulatedServiceSettings, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5661, 68
 	.section	.rodata.managed_type_name.5662,"aMS",%progbits,1
 	.type	.L.managed_type_name.5662, %object
 .L.managed_type_name.5662:
-	.asciz	"Firebase.Emulators.EmulatedServiceSettings, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5662, 68
+	.asciz	"Firebase.Encoders.Annotations.IEncodableFieldInvoker, Xamarin.Firebase.Encoders"
+	.size	.L.managed_type_name.5662, 80
 	.section	.rodata.managed_type_name.5663,"aMS",%progbits,1
 	.type	.L.managed_type_name.5663, %object
 .L.managed_type_name.5663:
-	.asciz	"Firebase.Encoders.Annotations.IEncodableFieldInvoker, Xamarin.Firebase.Encoders"
-	.size	.L.managed_type_name.5663, 80
+	.asciz	"Firebase.Encoders.Annotations.IEncodableIgnoreInvoker, Xamarin.Firebase.Encoders"
+	.size	.L.managed_type_name.5663, 81
 	.section	.rodata.managed_type_name.5664,"aMS",%progbits,1
 	.type	.L.managed_type_name.5664, %object
 .L.managed_type_name.5664:
-	.asciz	"Firebase.Encoders.Annotations.IEncodableIgnoreInvoker, Xamarin.Firebase.Encoders"
-	.size	.L.managed_type_name.5664, 81
+	.asciz	"Firebase.Encoders.Annotations.IEncodableInvoker, Xamarin.Firebase.Encoders"
+	.size	.L.managed_type_name.5664, 75
 	.section	.rodata.managed_type_name.5665,"aMS",%progbits,1
 	.type	.L.managed_type_name.5665, %object
 .L.managed_type_name.5665:
-	.asciz	"Firebase.Encoders.Annotations.IEncodableInvoker, Xamarin.Firebase.Encoders"
-	.size	.L.managed_type_name.5665, 75
+	.asciz	"Firebase.Encoders.Annotations.IExtraPropertyInvoker, Xamarin.Firebase.Encoders"
+	.size	.L.managed_type_name.5665, 79
 	.section	.rodata.managed_type_name.5666,"aMS",%progbits,1
 	.type	.L.managed_type_name.5666, %object
 .L.managed_type_name.5666:
-	.asciz	"Firebase.Encoders.Annotations.IExtraPropertyInvoker, Xamarin.Firebase.Encoders"
-	.size	.L.managed_type_name.5666, 79
+	.asciz	"Firebase.Encoders.EncodingException, Xamarin.Firebase.Encoders"
+	.size	.L.managed_type_name.5666, 63
 	.section	.rodata.managed_type_name.5667,"aMS",%progbits,1
 	.type	.L.managed_type_name.5667, %object
 .L.managed_type_name.5667:
-	.asciz	"Firebase.Encoders.EncodingException, Xamarin.Firebase.Encoders"
-	.size	.L.managed_type_name.5667, 63
+	.asciz	"Firebase.Encoders.FieldDescriptor+Builder, Xamarin.Firebase.Encoders"
+	.size	.L.managed_type_name.5667, 69
 	.section	.rodata.managed_type_name.5668,"aMS",%progbits,1
 	.type	.L.managed_type_name.5668, %object
 .L.managed_type_name.5668:
-	.asciz	"Firebase.Encoders.FieldDescriptor+Builder, Xamarin.Firebase.Encoders"
-	.size	.L.managed_type_name.5668, 69
+	.asciz	"Firebase.Encoders.FieldDescriptor, Xamarin.Firebase.Encoders"
+	.size	.L.managed_type_name.5668, 61
 	.section	.rodata.managed_type_name.5669,"aMS",%progbits,1
 	.type	.L.managed_type_name.5669, %object
 .L.managed_type_name.5669:
-	.asciz	"Firebase.Encoders.FieldDescriptor, Xamarin.Firebase.Encoders"
-	.size	.L.managed_type_name.5669, 61
+	.asciz	"Firebase.Encoders.IDataEncoderInvoker, Xamarin.Firebase.Encoders"
+	.size	.L.managed_type_name.5669, 65
 	.section	.rodata.managed_type_name.5670,"aMS",%progbits,1
 	.type	.L.managed_type_name.5670, %object
 .L.managed_type_name.5670:
-	.asciz	"Firebase.Encoders.IDataEncoderInvoker, Xamarin.Firebase.Encoders"
-	.size	.L.managed_type_name.5670, 65
+	.asciz	"Firebase.Encoders.IObjectEncoderContextInvoker, Xamarin.Firebase.Encoders"
+	.size	.L.managed_type_name.5670, 74
 	.section	.rodata.managed_type_name.5671,"aMS",%progbits,1
 	.type	.L.managed_type_name.5671, %object
 .L.managed_type_name.5671:
-	.asciz	"Firebase.Encoders.IObjectEncoderContextInvoker, Xamarin.Firebase.Encoders"
-	.size	.L.managed_type_name.5671, 74
+	.asciz	"Firebase.Encoders.IValueEncoderContextInvoker, Xamarin.Firebase.Encoders"
+	.size	.L.managed_type_name.5671, 73
 	.section	.rodata.managed_type_name.5672,"aMS",%progbits,1
 	.type	.L.managed_type_name.5672, %object
 .L.managed_type_name.5672:
-	.asciz	"Firebase.Encoders.IValueEncoderContextInvoker, Xamarin.Firebase.Encoders"
-	.size	.L.managed_type_name.5672, 73
+	.asciz	"Firebase.Encoders.JSON.BuildConfig, Xamarin.Firebase.Encoders.JSON"
+	.size	.L.managed_type_name.5672, 67
 	.section	.rodata.managed_type_name.5673,"aMS",%progbits,1
 	.type	.L.managed_type_name.5673, %object
 .L.managed_type_name.5673:
-	.asciz	"Firebase.Encoders.JSON.BuildConfig, Xamarin.Firebase.Encoders.JSON"
-	.size	.L.managed_type_name.5673, 67
+	.asciz	"Firebase.Events.Event, Xamarin.Firebase.Components"
+	.size	.L.managed_type_name.5673, 51
 	.section	.rodata.managed_type_name.5674,"aMS",%progbits,1
 	.type	.L.managed_type_name.5674, %object
 .L.managed_type_name.5674:
-	.asciz	"Firebase.Events.Event, Xamarin.Firebase.Components"
-	.size	.L.managed_type_name.5674, 51
+	.asciz	"Firebase.Events.IEventHandlerInvoker, Xamarin.Firebase.Components"
+	.size	.L.managed_type_name.5674, 66
 	.section	.rodata.managed_type_name.5675,"aMS",%progbits,1
 	.type	.L.managed_type_name.5675, %object
 .L.managed_type_name.5675:
-	.asciz	"Firebase.Events.IEventHandlerInvoker, Xamarin.Firebase.Components"
-	.size	.L.managed_type_name.5675, 66
+	.asciz	"Firebase.Events.IPublisherInvoker, Xamarin.Firebase.Components"
+	.size	.L.managed_type_name.5675, 63
 	.section	.rodata.managed_type_name.5676,"aMS",%progbits,1
 	.type	.L.managed_type_name.5676, %object
 .L.managed_type_name.5676:
-	.asciz	"Firebase.Events.IPublisherInvoker, Xamarin.Firebase.Components"
-	.size	.L.managed_type_name.5676, 63
+	.asciz	"Firebase.Events.ISubscriberInvoker, Xamarin.Firebase.Components"
+	.size	.L.managed_type_name.5676, 64
 	.section	.rodata.managed_type_name.5677,"aMS",%progbits,1
 	.type	.L.managed_type_name.5677, %object
 .L.managed_type_name.5677:
-	.asciz	"Firebase.Events.ISubscriberInvoker, Xamarin.Firebase.Components"
-	.size	.L.managed_type_name.5677, 64
+	.asciz	"Firebase.FirebaseApiNotAvailableException, Xamarin.GooglePlayServices.Basement"
+	.size	.L.managed_type_name.5677, 79
 	.section	.rodata.managed_type_name.5678,"aMS",%progbits,1
 	.type	.L.managed_type_name.5678, %object
 .L.managed_type_name.5678:
-	.asciz	"Firebase.FirebaseApiNotAvailableException, Xamarin.GooglePlayServices.Basement"
-	.size	.L.managed_type_name.5678, 79
+	.asciz	"Firebase.FirebaseApp+IBackgroundStateChangeListenerImplementor, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5678, 88
 	.section	.rodata.managed_type_name.5679,"aMS",%progbits,1
 	.type	.L.managed_type_name.5679, %object
 .L.managed_type_name.5679:
-	.asciz	"Firebase.FirebaseApp+IBackgroundStateChangeListenerImplementor, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5679, 88
+	.asciz	"Firebase.FirebaseApp+IBackgroundStateChangeListenerInvoker, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5679, 84
 	.section	.rodata.managed_type_name.5680,"aMS",%progbits,1
 	.type	.L.managed_type_name.5680, %object
 .L.managed_type_name.5680:
-	.asciz	"Firebase.FirebaseApp+IBackgroundStateChangeListenerInvoker, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5680, 84
+	.asciz	"Firebase.FirebaseApp, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5680, 46
 	.section	.rodata.managed_type_name.5681,"aMS",%progbits,1
 	.type	.L.managed_type_name.5681, %object
 .L.managed_type_name.5681:
-	.asciz	"Firebase.FirebaseApp, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5681, 46
+	.asciz	"Firebase.FirebaseCommonRegistrar, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5681, 58
 	.section	.rodata.managed_type_name.5682,"aMS",%progbits,1
 	.type	.L.managed_type_name.5682, %object
 .L.managed_type_name.5682:
-	.asciz	"Firebase.FirebaseCommonRegistrar, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5682, 58
+	.asciz	"Firebase.FirebaseError, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5682, 48
 	.section	.rodata.managed_type_name.5683,"aMS",%progbits,1
 	.type	.L.managed_type_name.5683, %object
 .L.managed_type_name.5683:
-	.asciz	"Firebase.FirebaseError, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5683, 48
+	.asciz	"Firebase.FirebaseException, Xamarin.GooglePlayServices.Basement"
+	.size	.L.managed_type_name.5683, 64
 	.section	.rodata.managed_type_name.5684,"aMS",%progbits,1
 	.type	.L.managed_type_name.5684, %object
 .L.managed_type_name.5684:
-	.asciz	"Firebase.FirebaseException, Xamarin.GooglePlayServices.Basement"
-	.size	.L.managed_type_name.5684, 64
+	.asciz	"Firebase.FirebaseExceptionMapper, Xamarin.GooglePlayServices.Basement"
+	.size	.L.managed_type_name.5684, 70
 	.section	.rodata.managed_type_name.5685,"aMS",%progbits,1
 	.type	.L.managed_type_name.5685, %object
 .L.managed_type_name.5685:
-	.asciz	"Firebase.FirebaseExceptionMapper, Xamarin.GooglePlayServices.Basement"
-	.size	.L.managed_type_name.5685, 70
+	.asciz	"Firebase.FirebaseNetworkException, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5685, 59
 	.section	.rodata.managed_type_name.5686,"aMS",%progbits,1
 	.type	.L.managed_type_name.5686, %object
 .L.managed_type_name.5686:
-	.asciz	"Firebase.FirebaseNetworkException, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5686, 59
+	.asciz	"Firebase.FirebaseOptions+Builder, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5686, 58
 	.section	.rodata.managed_type_name.5687,"aMS",%progbits,1
 	.type	.L.managed_type_name.5687, %object
 .L.managed_type_name.5687:
-	.asciz	"Firebase.FirebaseOptions+Builder, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5687, 58
+	.asciz	"Firebase.FirebaseOptions, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5687, 50
 	.section	.rodata.managed_type_name.5688,"aMS",%progbits,1
 	.type	.L.managed_type_name.5688, %object
 .L.managed_type_name.5688:
-	.asciz	"Firebase.FirebaseOptions, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5688, 50
+	.asciz	"Firebase.FirebaseTooManyRequestsException, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5688, 67
 	.section	.rodata.managed_type_name.5689,"aMS",%progbits,1
 	.type	.L.managed_type_name.5689, %object
 .L.managed_type_name.5689:
-	.asciz	"Firebase.FirebaseTooManyRequestsException, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5689, 67
+	.asciz	"Firebase.HeartBeatInfo.DefaultHeartBeatInfo, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5689, 69
 	.section	.rodata.managed_type_name.5690,"aMS",%progbits,1
 	.type	.L.managed_type_name.5690, %object
 .L.managed_type_name.5690:
-	.asciz	"Firebase.HeartBeatInfo.DefaultHeartBeatInfo, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5690, 69
+	.asciz	"Firebase.HeartBeatInfo.HeartBeatConsumerComponent, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5690, 75
 	.section	.rodata.managed_type_name.5691,"aMS",%progbits,1
 	.type	.L.managed_type_name.5691, %object
 .L.managed_type_name.5691:
-	.asciz	"Firebase.HeartBeatInfo.HeartBeatConsumerComponent, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5691, 75
+	.asciz	"Firebase.HeartBeatInfo.HeartBeatInfoHeartBeat, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5691, 71
 	.section	.rodata.managed_type_name.5692,"aMS",%progbits,1
 	.type	.L.managed_type_name.5692, %object
 .L.managed_type_name.5692:
-	.asciz	"Firebase.HeartBeatInfo.HeartBeatInfoHeartBeat, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5692, 71
+	.asciz	"Firebase.HeartBeatInfo.HeartBeatResult, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5692, 64
 	.section	.rodata.managed_type_name.5693,"aMS",%progbits,1
 	.type	.L.managed_type_name.5693, %object
 .L.managed_type_name.5693:
-	.asciz	"Firebase.HeartBeatInfo.HeartBeatResult, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5693, 64
+	.asciz	"Firebase.HeartBeatInfo.HeartBeatResultInvoker, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5693, 71
 	.section	.rodata.managed_type_name.5694,"aMS",%progbits,1
 	.type	.L.managed_type_name.5694, %object
 .L.managed_type_name.5694:
-	.asciz	"Firebase.HeartBeatInfo.HeartBeatResultInvoker, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5694, 71
+	.asciz	"Firebase.HeartBeatInfo.IHeartBeatConsumerInvoker, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5694, 74
 	.section	.rodata.managed_type_name.5695,"aMS",%progbits,1
 	.type	.L.managed_type_name.5695, %object
 .L.managed_type_name.5695:
-	.asciz	"Firebase.HeartBeatInfo.IHeartBeatConsumerInvoker, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5695, 74
+	.asciz	"Firebase.HeartBeatInfo.IHeartBeatInfoInvoker, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5695, 70
 	.section	.rodata.managed_type_name.5696,"aMS",%progbits,1
 	.type	.L.managed_type_name.5696, %object
 .L.managed_type_name.5696:
-	.asciz	"Firebase.HeartBeatInfo.IHeartBeatInfoInvoker, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5696, 70
+	.asciz	"Firebase.HeartBeatInfo.SdkHeartBeatResult, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5696, 67
 	.section	.rodata.managed_type_name.5697,"aMS",%progbits,1
 	.type	.L.managed_type_name.5697, %object
 .L.managed_type_name.5697:
-	.asciz	"Firebase.HeartBeatInfo.SdkHeartBeatResult, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5697, 67
+	.asciz	"Firebase.HeartBeatInfo.SdkHeartBeatResultInvoker, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5697, 74
 	.section	.rodata.managed_type_name.5698,"aMS",%progbits,1
 	.type	.L.managed_type_name.5698, %object
 .L.managed_type_name.5698:
-	.asciz	"Firebase.HeartBeatInfo.SdkHeartBeatResultInvoker, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5698, 74
+	.asciz	"Firebase.IFirebaseAppLifecycleListenerImplementor, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5698, 75
 	.section	.rodata.managed_type_name.5699,"aMS",%progbits,1
 	.type	.L.managed_type_name.5699, %object
 .L.managed_type_name.5699:
-	.asciz	"Firebase.IFirebaseAppLifecycleListenerImplementor, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5699, 75
+	.asciz	"Firebase.IFirebaseAppLifecycleListenerInvoker, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5699, 71
 	.section	.rodata.managed_type_name.5700,"aMS",%progbits,1
 	.type	.L.managed_type_name.5700, %object
 .L.managed_type_name.5700:
-	.asciz	"Firebase.IFirebaseAppLifecycleListenerInvoker, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5700, 71
+	.asciz	"Firebase.Iid.BuildConfig, Xamarin.Firebase.Iid"
+	.size	.L.managed_type_name.5700, 47
 	.section	.rodata.managed_type_name.5701,"aMS",%progbits,1
 	.type	.L.managed_type_name.5701, %object
 .L.managed_type_name.5701:
-	.asciz	"Firebase.Iid.BuildConfig, Xamarin.Firebase.Iid"
-	.size	.L.managed_type_name.5701, 47
+	.asciz	"Firebase.Iid.FcmBroadcastProcessor, Xamarin.Firebase.Iid"
+	.size	.L.managed_type_name.5701, 57
 	.section	.rodata.managed_type_name.5702,"aMS",%progbits,1
 	.type	.L.managed_type_name.5702, %object
 .L.managed_type_name.5702:
-	.asciz	"Firebase.Iid.FcmBroadcastProcessor, Xamarin.Firebase.Iid"
-	.size	.L.managed_type_name.5702, 57
+	.asciz	"Firebase.Iid.FirebaseInstanceId, Xamarin.Firebase.Iid"
+	.size	.L.managed_type_name.5702, 54
 	.section	.rodata.managed_type_name.5703,"aMS",%progbits,1
 	.type	.L.managed_type_name.5703, %object
 .L.managed_type_name.5703:
-	.asciz	"Firebase.Iid.FirebaseInstanceId, Xamarin.Firebase.Iid"
-	.size	.L.managed_type_name.5703, 54
+	.asciz	"Firebase.Iid.FirebaseInstanceIdReceiver, Xamarin.Firebase.Iid"
+	.size	.L.managed_type_name.5703, 62
 	.section	.rodata.managed_type_name.5704,"aMS",%progbits,1
 	.type	.L.managed_type_name.5704, %object
 .L.managed_type_name.5704:
-	.asciz	"Firebase.Iid.FirebaseInstanceIdReceiver, Xamarin.Firebase.Iid"
-	.size	.L.managed_type_name.5704, 62
+	.asciz	"Firebase.Iid.FirebaseInstanceIdService, Xamarin.Firebase.Iid"
+	.size	.L.managed_type_name.5704, 61
 	.section	.rodata.managed_type_name.5705,"aMS",%progbits,1
 	.type	.L.managed_type_name.5705, %object
 .L.managed_type_name.5705:
-	.asciz	"Firebase.Iid.FirebaseInstanceIdService, Xamarin.Firebase.Iid"
-	.size	.L.managed_type_name.5705, 61
+	.asciz	"Firebase.Iid.GmsRpc, Xamarin.Firebase.Iid"
+	.size	.L.managed_type_name.5705, 42
 	.section	.rodata.managed_type_name.5706,"aMS",%progbits,1
 	.type	.L.managed_type_name.5706, %object
 .L.managed_type_name.5706:
-	.asciz	"Firebase.Iid.GmsRpc, Xamarin.Firebase.Iid"
-	.size	.L.managed_type_name.5706, 42
+	.asciz	"Firebase.Iid.IInstanceIdResultInvoker, Xamarin.Firebase.Iid"
+	.size	.L.managed_type_name.5706, 60
 	.section	.rodata.managed_type_name.5707,"aMS",%progbits,1
 	.type	.L.managed_type_name.5707, %object
 .L.managed_type_name.5707:
-	.asciz	"Firebase.Iid.IInstanceIdResultInvoker, Xamarin.Firebase.Iid"
-	.size	.L.managed_type_name.5707, 60
+	.asciz	"Firebase.Iid.Internal.IFirebaseInstanceIdInternalInvoker, Xamarin.Firebase.Iid.Interop"
+	.size	.L.managed_type_name.5707, 87
 	.section	.rodata.managed_type_name.5708,"aMS",%progbits,1
 	.type	.L.managed_type_name.5708, %object
 .L.managed_type_name.5708:
-	.asciz	"Firebase.Iid.Internal.IFirebaseInstanceIdInternalInvoker, Xamarin.Firebase.Iid.Interop"
-	.size	.L.managed_type_name.5708, 87
+	.asciz	"Firebase.Iid.Metadata, Xamarin.Firebase.Iid"
+	.size	.L.managed_type_name.5708, 44
 	.section	.rodata.managed_type_name.5709,"aMS",%progbits,1
 	.type	.L.managed_type_name.5709, %object
 .L.managed_type_name.5709:
-	.asciz	"Firebase.Iid.Metadata, Xamarin.Firebase.Iid"
-	.size	.L.managed_type_name.5709, 44
+	.asciz	"Firebase.Iid.Registrar, Xamarin.Firebase.Iid"
+	.size	.L.managed_type_name.5709, 45
 	.section	.rodata.managed_type_name.5710,"aMS",%progbits,1
 	.type	.L.managed_type_name.5710, %object
 .L.managed_type_name.5710:
-	.asciz	"Firebase.Iid.Registrar, Xamarin.Firebase.Iid"
-	.size	.L.managed_type_name.5710, 45
+	.asciz	"Firebase.Iid.ServiceStarter, Xamarin.Firebase.Iid"
+	.size	.L.managed_type_name.5710, 50
 	.section	.rodata.managed_type_name.5711,"aMS",%progbits,1
 	.type	.L.managed_type_name.5711, %object
 .L.managed_type_name.5711:
-	.asciz	"Firebase.Iid.ServiceStarter, Xamarin.Firebase.Iid"
+	.asciz	"Firebase.Iid.WakeLockHolder, Xamarin.Firebase.Iid"
 	.size	.L.managed_type_name.5711, 50
 	.section	.rodata.managed_type_name.5712,"aMS",%progbits,1
 	.type	.L.managed_type_name.5712, %object
 .L.managed_type_name.5712:
-	.asciz	"Firebase.Iid.WakeLockHolder, Xamarin.Firebase.Iid"
-	.size	.L.managed_type_name.5712, 50
+	.asciz	"Firebase.Iid.WithinAppServiceBinder+IIntentHandlerInvoker, Xamarin.Firebase.Iid"
+	.size	.L.managed_type_name.5712, 80
 	.section	.rodata.managed_type_name.5713,"aMS",%progbits,1
 	.type	.L.managed_type_name.5713, %object
 .L.managed_type_name.5713:
-	.asciz	"Firebase.Iid.WithinAppServiceBinder+IIntentHandlerInvoker, Xamarin.Firebase.Iid"
-	.size	.L.managed_type_name.5713, 80
+	.asciz	"Firebase.Iid.WithinAppServiceBinder, Xamarin.Firebase.Iid"
+	.size	.L.managed_type_name.5713, 58
 	.section	.rodata.managed_type_name.5714,"aMS",%progbits,1
 	.type	.L.managed_type_name.5714, %object
 .L.managed_type_name.5714:
-	.asciz	"Firebase.Iid.WithinAppServiceBinder, Xamarin.Firebase.Iid"
-	.size	.L.managed_type_name.5714, 58
+	.asciz	"Firebase.Iid.WithinAppServiceConnection, Xamarin.Firebase.Iid"
+	.size	.L.managed_type_name.5714, 62
 	.section	.rodata.managed_type_name.5715,"aMS",%progbits,1
 	.type	.L.managed_type_name.5715, %object
 .L.managed_type_name.5715:
-	.asciz	"Firebase.Iid.WithinAppServiceConnection, Xamarin.Firebase.Iid"
-	.size	.L.managed_type_name.5715, 62
+	.asciz	"Firebase.Inject.IDeferredDeferredHandlerInvoker, Xamarin.Firebase.Components"
+	.size	.L.managed_type_name.5715, 77
 	.section	.rodata.managed_type_name.5716,"aMS",%progbits,1
 	.type	.L.managed_type_name.5716, %object
 .L.managed_type_name.5716:
-	.asciz	"Firebase.Inject.IDeferredDeferredHandlerInvoker, Xamarin.Firebase.Components"
-	.size	.L.managed_type_name.5716, 77
+	.asciz	"Firebase.Inject.IDeferredInvoker, Xamarin.Firebase.Components"
+	.size	.L.managed_type_name.5716, 62
 	.section	.rodata.managed_type_name.5717,"aMS",%progbits,1
 	.type	.L.managed_type_name.5717, %object
 .L.managed_type_name.5717:
-	.asciz	"Firebase.Inject.IDeferredInvoker, Xamarin.Firebase.Components"
+	.asciz	"Firebase.Inject.IProviderInvoker, Xamarin.Firebase.Components"
 	.size	.L.managed_type_name.5717, 62
 	.section	.rodata.managed_type_name.5718,"aMS",%progbits,1
 	.type	.L.managed_type_name.5718, %object
 .L.managed_type_name.5718:
-	.asciz	"Firebase.Inject.IProviderInvoker, Xamarin.Firebase.Components"
-	.size	.L.managed_type_name.5718, 62
+	.asciz	"Firebase.Installations.BuildConfig, Xamarin.Firebase.Installations"
+	.size	.L.managed_type_name.5718, 67
 	.section	.rodata.managed_type_name.5719,"aMS",%progbits,1
 	.type	.L.managed_type_name.5719, %object
 .L.managed_type_name.5719:
-	.asciz	"Firebase.Installations.BuildConfig, Xamarin.Firebase.Installations"
-	.size	.L.managed_type_name.5719, 67
+	.asciz	"Firebase.Installations.FirebaseInstallations, Xamarin.Firebase.Installations"
+	.size	.L.managed_type_name.5719, 77
 	.section	.rodata.managed_type_name.5720,"aMS",%progbits,1
 	.type	.L.managed_type_name.5720, %object
 .L.managed_type_name.5720:
-	.asciz	"Firebase.Installations.FirebaseInstallations, Xamarin.Firebase.Installations"
-	.size	.L.managed_type_name.5720, 77
+	.asciz	"Firebase.Installations.FirebaseInstallationsException+Status, Xamarin.Firebase.Installations"
+	.size	.L.managed_type_name.5720, 93
 	.section	.rodata.managed_type_name.5721,"aMS",%progbits,1
 	.type	.L.managed_type_name.5721, %object
 .L.managed_type_name.5721:
-	.asciz	"Firebase.Installations.FirebaseInstallationsException+Status, Xamarin.Firebase.Installations"
-	.size	.L.managed_type_name.5721, 93
+	.asciz	"Firebase.Installations.FirebaseInstallationsException, Xamarin.Firebase.Installations"
+	.size	.L.managed_type_name.5721, 86
 	.section	.rodata.managed_type_name.5722,"aMS",%progbits,1
 	.type	.L.managed_type_name.5722, %object
 .L.managed_type_name.5722:
-	.asciz	"Firebase.Installations.FirebaseInstallationsException, Xamarin.Firebase.Installations"
+	.asciz	"Firebase.Installations.FirebaseInstallationsRegistrar, Xamarin.Firebase.Installations"
 	.size	.L.managed_type_name.5722, 86
 	.section	.rodata.managed_type_name.5723,"aMS",%progbits,1
 	.type	.L.managed_type_name.5723, %object
 .L.managed_type_name.5723:
-	.asciz	"Firebase.Installations.FirebaseInstallationsRegistrar, Xamarin.Firebase.Installations"
-	.size	.L.managed_type_name.5723, 86
+	.asciz	"Firebase.Installations.IFirebaseInstallationsApiInvoker, Xamarin.Firebase.Installations.InterOp"
+	.size	.L.managed_type_name.5723, 96
 	.section	.rodata.managed_type_name.5724,"aMS",%progbits,1
 	.type	.L.managed_type_name.5724, %object
 .L.managed_type_name.5724:
-	.asciz	"Firebase.Installations.IFirebaseInstallationsApiInvoker, Xamarin.Firebase.Installations.InterOp"
-	.size	.L.managed_type_name.5724, 96
+	.asciz	"Firebase.Installations.InstallationTokenResult+Builder, Xamarin.Firebase.Installations.InterOp"
+	.size	.L.managed_type_name.5724, 95
 	.section	.rodata.managed_type_name.5725,"aMS",%progbits,1
 	.type	.L.managed_type_name.5725, %object
 .L.managed_type_name.5725:
-	.asciz	"Firebase.Installations.InstallationTokenResult+Builder, Xamarin.Firebase.Installations.InterOp"
-	.size	.L.managed_type_name.5725, 95
+	.asciz	"Firebase.Installations.InstallationTokenResult+BuilderInvoker, Xamarin.Firebase.Installations.InterOp"
+	.size	.L.managed_type_name.5725, 102
 	.section	.rodata.managed_type_name.5726,"aMS",%progbits,1
 	.type	.L.managed_type_name.5726, %object
 .L.managed_type_name.5726:
-	.asciz	"Firebase.Installations.InstallationTokenResult+BuilderInvoker, Xamarin.Firebase.Installations.InterOp"
-	.size	.L.managed_type_name.5726, 102
+	.asciz	"Firebase.Installations.InstallationTokenResult, Xamarin.Firebase.Installations.InterOp"
+	.size	.L.managed_type_name.5726, 87
 	.section	.rodata.managed_type_name.5727,"aMS",%progbits,1
 	.type	.L.managed_type_name.5727, %object
 .L.managed_type_name.5727:
-	.asciz	"Firebase.Installations.InstallationTokenResult, Xamarin.Firebase.Installations.InterOp"
-	.size	.L.managed_type_name.5727, 87
+	.asciz	"Firebase.Installations.InstallationTokenResultInvoker, Xamarin.Firebase.Installations.InterOp"
+	.size	.L.managed_type_name.5727, 94
 	.section	.rodata.managed_type_name.5728,"aMS",%progbits,1
 	.type	.L.managed_type_name.5728, %object
 .L.managed_type_name.5728:
-	.asciz	"Firebase.Installations.InstallationTokenResultInvoker, Xamarin.Firebase.Installations.InterOp"
-	.size	.L.managed_type_name.5728, 94
+	.asciz	"Firebase.Installations.InterOp.BuildConfig, Xamarin.Firebase.Installations.InterOp"
+	.size	.L.managed_type_name.5728, 83
 	.section	.rodata.managed_type_name.5729,"aMS",%progbits,1
 	.type	.L.managed_type_name.5729, %object
 .L.managed_type_name.5729:
-	.asciz	"Firebase.Installations.InterOp.BuildConfig, Xamarin.Firebase.Installations.InterOp"
-	.size	.L.managed_type_name.5729, 83
+	.asciz	"Firebase.Installations.Internal.IFidListenerHandleInvoker, Xamarin.Firebase.Installations.InterOp"
+	.size	.L.managed_type_name.5729, 98
 	.section	.rodata.managed_type_name.5730,"aMS",%progbits,1
 	.type	.L.managed_type_name.5730, %object
 .L.managed_type_name.5730:
-	.asciz	"Firebase.Installations.Internal.IFidListenerHandleInvoker, Xamarin.Firebase.Installations.InterOp"
-	.size	.L.managed_type_name.5730, 98
+	.asciz	"Firebase.Installations.Internal.IFidListenerImplementor, Xamarin.Firebase.Installations.InterOp"
+	.size	.L.managed_type_name.5730, 96
 	.section	.rodata.managed_type_name.5731,"aMS",%progbits,1
 	.type	.L.managed_type_name.5731, %object
 .L.managed_type_name.5731:
-	.asciz	"Firebase.Installations.Internal.IFidListenerImplementor, Xamarin.Firebase.Installations.InterOp"
-	.size	.L.managed_type_name.5731, 96
+	.asciz	"Firebase.Installations.Internal.IFidListenerInvoker, Xamarin.Firebase.Installations.InterOp"
+	.size	.L.managed_type_name.5731, 92
 	.section	.rodata.managed_type_name.5732,"aMS",%progbits,1
 	.type	.L.managed_type_name.5732, %object
 .L.managed_type_name.5732:
-	.asciz	"Firebase.Installations.Internal.IFidListenerInvoker, Xamarin.Firebase.Installations.InterOp"
-	.size	.L.managed_type_name.5732, 92
+	.asciz	"Firebase.Installations.Local.IidStore, Xamarin.Firebase.Installations"
+	.size	.L.managed_type_name.5732, 70
 	.section	.rodata.managed_type_name.5733,"aMS",%progbits,1
 	.type	.L.managed_type_name.5733, %object
 .L.managed_type_name.5733:
-	.asciz	"Firebase.Installations.Local.IidStore, Xamarin.Firebase.Installations"
-	.size	.L.managed_type_name.5733, 70
+	.asciz	"Firebase.Installations.Local.PersistedInstallation+RegistrationStatus, Xamarin.Firebase.Installations"
+	.size	.L.managed_type_name.5733, 102
 	.section	.rodata.managed_type_name.5734,"aMS",%progbits,1
 	.type	.L.managed_type_name.5734, %object
 .L.managed_type_name.5734:
-	.asciz	"Firebase.Installations.Local.PersistedInstallation+RegistrationStatus, Xamarin.Firebase.Installations"
-	.size	.L.managed_type_name.5734, 102
+	.asciz	"Firebase.Installations.Local.PersistedInstallation, Xamarin.Firebase.Installations"
+	.size	.L.managed_type_name.5734, 83
 	.section	.rodata.managed_type_name.5735,"aMS",%progbits,1
 	.type	.L.managed_type_name.5735, %object
 .L.managed_type_name.5735:
-	.asciz	"Firebase.Installations.Local.PersistedInstallation, Xamarin.Firebase.Installations"
-	.size	.L.managed_type_name.5735, 83
+	.asciz	"Firebase.Installations.Local.PersistedInstallationEntry+Builder, Xamarin.Firebase.Installations"
+	.size	.L.managed_type_name.5735, 96
 	.section	.rodata.managed_type_name.5736,"aMS",%progbits,1
 	.type	.L.managed_type_name.5736, %object
 .L.managed_type_name.5736:
-	.asciz	"Firebase.Installations.Local.PersistedInstallationEntry+Builder, Xamarin.Firebase.Installations"
-	.size	.L.managed_type_name.5736, 96
+	.asciz	"Firebase.Installations.Local.PersistedInstallationEntry+BuilderInvoker, Xamarin.Firebase.Installations"
+	.size	.L.managed_type_name.5736, 103
 	.section	.rodata.managed_type_name.5737,"aMS",%progbits,1
 	.type	.L.managed_type_name.5737, %object
 .L.managed_type_name.5737:
-	.asciz	"Firebase.Installations.Local.PersistedInstallationEntry+BuilderInvoker, Xamarin.Firebase.Installations"
-	.size	.L.managed_type_name.5737, 103
+	.asciz	"Firebase.Installations.Local.PersistedInstallationEntry, Xamarin.Firebase.Installations"
+	.size	.L.managed_type_name.5737, 88
 	.section	.rodata.managed_type_name.5738,"aMS",%progbits,1
 	.type	.L.managed_type_name.5738, %object
 .L.managed_type_name.5738:
-	.asciz	"Firebase.Installations.Local.PersistedInstallationEntry, Xamarin.Firebase.Installations"
-	.size	.L.managed_type_name.5738, 88
+	.asciz	"Firebase.Installations.Local.PersistedInstallationEntryInvoker, Xamarin.Firebase.Installations"
+	.size	.L.managed_type_name.5738, 95
 	.section	.rodata.managed_type_name.5739,"aMS",%progbits,1
 	.type	.L.managed_type_name.5739, %object
 .L.managed_type_name.5739:
-	.asciz	"Firebase.Installations.Local.PersistedInstallationEntryInvoker, Xamarin.Firebase.Installations"
-	.size	.L.managed_type_name.5739, 95
+	.asciz	"Firebase.Installations.RandomFidGenerator, Xamarin.Firebase.Installations"
+	.size	.L.managed_type_name.5739, 74
 	.section	.rodata.managed_type_name.5740,"aMS",%progbits,1
 	.type	.L.managed_type_name.5740, %object
 .L.managed_type_name.5740:
-	.asciz	"Firebase.Installations.RandomFidGenerator, Xamarin.Firebase.Installations"
-	.size	.L.managed_type_name.5740, 74
+	.asciz	"Firebase.Installations.Remote.FirebaseInstallationServiceClient, Xamarin.Firebase.Installations"
+	.size	.L.managed_type_name.5740, 96
 	.section	.rodata.managed_type_name.5741,"aMS",%progbits,1
 	.type	.L.managed_type_name.5741, %object
 .L.managed_type_name.5741:
-	.asciz	"Firebase.Installations.Remote.FirebaseInstallationServiceClient, Xamarin.Firebase.Installations"
-	.size	.L.managed_type_name.5741, 96
+	.asciz	"Firebase.Installations.Remote.InstallationResponse+Builder, Xamarin.Firebase.Installations"
+	.size	.L.managed_type_name.5741, 91
 	.section	.rodata.managed_type_name.5742,"aMS",%progbits,1
 	.type	.L.managed_type_name.5742, %object
 .L.managed_type_name.5742:
-	.asciz	"Firebase.Installations.Remote.InstallationResponse+Builder, Xamarin.Firebase.Installations"
-	.size	.L.managed_type_name.5742, 91
+	.asciz	"Firebase.Installations.Remote.InstallationResponse+BuilderInvoker, Xamarin.Firebase.Installations"
+	.size	.L.managed_type_name.5742, 98
 	.section	.rodata.managed_type_name.5743,"aMS",%progbits,1
 	.type	.L.managed_type_name.5743, %object
 .L.managed_type_name.5743:
-	.asciz	"Firebase.Installations.Remote.InstallationResponse+BuilderInvoker, Xamarin.Firebase.Installations"
-	.size	.L.managed_type_name.5743, 98
+	.asciz	"Firebase.Installations.Remote.InstallationResponse+ResponseCode, Xamarin.Firebase.Installations"
+	.size	.L.managed_type_name.5743, 96
 	.section	.rodata.managed_type_name.5744,"aMS",%progbits,1
 	.type	.L.managed_type_name.5744, %object
 .L.managed_type_name.5744:
-	.asciz	"Firebase.Installations.Remote.InstallationResponse+ResponseCode, Xamarin.Firebase.Installations"
-	.size	.L.managed_type_name.5744, 96
+	.asciz	"Firebase.Installations.Remote.InstallationResponse, Xamarin.Firebase.Installations"
+	.size	.L.managed_type_name.5744, 83
 	.section	.rodata.managed_type_name.5745,"aMS",%progbits,1
 	.type	.L.managed_type_name.5745, %object
 .L.managed_type_name.5745:
-	.asciz	"Firebase.Installations.Remote.InstallationResponse, Xamarin.Firebase.Installations"
-	.size	.L.managed_type_name.5745, 83
+	.asciz	"Firebase.Installations.Remote.InstallationResponseInvoker, Xamarin.Firebase.Installations"
+	.size	.L.managed_type_name.5745, 90
 	.section	.rodata.managed_type_name.5746,"aMS",%progbits,1
 	.type	.L.managed_type_name.5746, %object
 .L.managed_type_name.5746:
-	.asciz	"Firebase.Installations.Remote.InstallationResponseInvoker, Xamarin.Firebase.Installations"
-	.size	.L.managed_type_name.5746, 90
+	.asciz	"Firebase.Installations.Remote.TokenResult+Builder, Xamarin.Firebase.Installations"
+	.size	.L.managed_type_name.5746, 82
 	.section	.rodata.managed_type_name.5747,"aMS",%progbits,1
 	.type	.L.managed_type_name.5747, %object
 .L.managed_type_name.5747:
-	.asciz	"Firebase.Installations.Remote.TokenResult+Builder, Xamarin.Firebase.Installations"
-	.size	.L.managed_type_name.5747, 82
+	.asciz	"Firebase.Installations.Remote.TokenResult+BuilderInvoker, Xamarin.Firebase.Installations"
+	.size	.L.managed_type_name.5747, 89
 	.section	.rodata.managed_type_name.5748,"aMS",%progbits,1
 	.type	.L.managed_type_name.5748, %object
 .L.managed_type_name.5748:
-	.asciz	"Firebase.Installations.Remote.TokenResult+BuilderInvoker, Xamarin.Firebase.Installations"
-	.size	.L.managed_type_name.5748, 89
+	.asciz	"Firebase.Installations.Remote.TokenResult+ResponseCode, Xamarin.Firebase.Installations"
+	.size	.L.managed_type_name.5748, 87
 	.section	.rodata.managed_type_name.5749,"aMS",%progbits,1
 	.type	.L.managed_type_name.5749, %object
 .L.managed_type_name.5749:
-	.asciz	"Firebase.Installations.Remote.TokenResult+ResponseCode, Xamarin.Firebase.Installations"
-	.size	.L.managed_type_name.5749, 87
+	.asciz	"Firebase.Installations.Remote.TokenResult, Xamarin.Firebase.Installations"
+	.size	.L.managed_type_name.5749, 74
 	.section	.rodata.managed_type_name.5750,"aMS",%progbits,1
 	.type	.L.managed_type_name.5750, %object
 .L.managed_type_name.5750:
-	.asciz	"Firebase.Installations.Remote.TokenResult, Xamarin.Firebase.Installations"
-	.size	.L.managed_type_name.5750, 74
+	.asciz	"Firebase.Installations.Remote.TokenResultInvoker, Xamarin.Firebase.Installations"
+	.size	.L.managed_type_name.5750, 81
 	.section	.rodata.managed_type_name.5751,"aMS",%progbits,1
 	.type	.L.managed_type_name.5751, %object
 .L.managed_type_name.5751:
-	.asciz	"Firebase.Installations.Remote.TokenResultInvoker, Xamarin.Firebase.Installations"
-	.size	.L.managed_type_name.5751, 81
+	.asciz	"Firebase.Installations.Time.IClockInvoker, Xamarin.Firebase.Installations"
+	.size	.L.managed_type_name.5751, 74
 	.section	.rodata.managed_type_name.5752,"aMS",%progbits,1
 	.type	.L.managed_type_name.5752, %object
 .L.managed_type_name.5752:
-	.asciz	"Firebase.Installations.Time.IClockInvoker, Xamarin.Firebase.Installations"
-	.size	.L.managed_type_name.5752, 74
+	.asciz	"Firebase.Installations.Time.SystemClock, Xamarin.Firebase.Installations"
+	.size	.L.managed_type_name.5752, 72
 	.section	.rodata.managed_type_name.5753,"aMS",%progbits,1
 	.type	.L.managed_type_name.5753, %object
 .L.managed_type_name.5753:
-	.asciz	"Firebase.Installations.Time.SystemClock, Xamarin.Firebase.Installations"
-	.size	.L.managed_type_name.5753, 72
+	.asciz	"Firebase.Installations.Utils, Xamarin.Firebase.Installations"
+	.size	.L.managed_type_name.5753, 61
 	.section	.rodata.managed_type_name.5754,"aMS",%progbits,1
 	.type	.L.managed_type_name.5754, %object
 .L.managed_type_name.5754:
-	.asciz	"Firebase.Installations.Utils, Xamarin.Firebase.Installations"
-	.size	.L.managed_type_name.5754, 61
+	.asciz	"Firebase.Internal.DataCollectionConfigStorage, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5754, 71
 	.section	.rodata.managed_type_name.5755,"aMS",%progbits,1
 	.type	.L.managed_type_name.5755, %object
 .L.managed_type_name.5755:
-	.asciz	"Firebase.Internal.DataCollectionConfigStorage, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5755, 71
+	.asciz	"Firebase.Messaging.BuildConfig, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5755, 59
 	.section	.rodata.managed_type_name.5756,"aMS",%progbits,1
 	.type	.L.managed_type_name.5756, %object
 .L.managed_type_name.5756:
-	.asciz	"Firebase.Messaging.BuildConfig, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5756, 59
+	.asciz	"Firebase.Messaging.CommonNotificationBuilder+DisplayNotificationInfo, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5756, 97
 	.section	.rodata.managed_type_name.5757,"aMS",%progbits,1
 	.type	.L.managed_type_name.5757, %object
 .L.managed_type_name.5757:
-	.asciz	"Firebase.Messaging.CommonNotificationBuilder+DisplayNotificationInfo, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5757, 97
+	.asciz	"Firebase.Messaging.CommonNotificationBuilder, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5757, 73
 	.section	.rodata.managed_type_name.5758,"aMS",%progbits,1
 	.type	.L.managed_type_name.5758, %object
 .L.managed_type_name.5758:
-	.asciz	"Firebase.Messaging.CommonNotificationBuilder, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5758, 73
+	.asciz	"Firebase.Messaging.Constants+AnalyticsKeys, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5758, 71
 	.section	.rodata.managed_type_name.5759,"aMS",%progbits,1
 	.type	.L.managed_type_name.5759, %object
 .L.managed_type_name.5759:
-	.asciz	"Firebase.Messaging.Constants+AnalyticsKeys, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5759, 71
+	.asciz	"Firebase.Messaging.Constants+FirelogAnalytics+EventType, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5759, 84
 	.section	.rodata.managed_type_name.5760,"aMS",%progbits,1
 	.type	.L.managed_type_name.5760, %object
 .L.managed_type_name.5760:
-	.asciz	"Firebase.Messaging.Constants+FirelogAnalytics+EventType, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5760, 84
+	.asciz	"Firebase.Messaging.Constants+FirelogAnalytics+EventTypeConsts, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5760, 90
 	.section	.rodata.managed_type_name.5761,"aMS",%progbits,1
 	.type	.L.managed_type_name.5761, %object
 .L.managed_type_name.5761:
-	.asciz	"Firebase.Messaging.Constants+FirelogAnalytics+EventTypeConsts, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5761, 90
+	.asciz	"Firebase.Messaging.Constants+FirelogAnalytics+IEventTypeInvoker, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5761, 92
 	.section	.rodata.managed_type_name.5762,"aMS",%progbits,1
 	.type	.L.managed_type_name.5762, %object
 .L.managed_type_name.5762:
-	.asciz	"Firebase.Messaging.Constants+FirelogAnalytics+IEventTypeInvoker, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5762, 92
+	.asciz	"Firebase.Messaging.Constants+FirelogAnalytics+IMessageTypeInvoker, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5762, 94
 	.section	.rodata.managed_type_name.5763,"aMS",%progbits,1
 	.type	.L.managed_type_name.5763, %object
 .L.managed_type_name.5763:
-	.asciz	"Firebase.Messaging.Constants+FirelogAnalytics+IMessageTypeInvoker, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5763, 94
+	.asciz	"Firebase.Messaging.Constants+FirelogAnalytics+MessageType, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5763, 86
 	.section	.rodata.managed_type_name.5764,"aMS",%progbits,1
 	.type	.L.managed_type_name.5764, %object
 .L.managed_type_name.5764:
-	.asciz	"Firebase.Messaging.Constants+FirelogAnalytics+MessageType, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5764, 86
+	.asciz	"Firebase.Messaging.Constants+FirelogAnalytics+MessageTypeConsts, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5764, 92
 	.section	.rodata.managed_type_name.5765,"aMS",%progbits,1
 	.type	.L.managed_type_name.5765, %object
 .L.managed_type_name.5765:
-	.asciz	"Firebase.Messaging.Constants+FirelogAnalytics+MessageTypeConsts, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5765, 92
+	.asciz	"Firebase.Messaging.Constants+FirelogAnalytics, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5765, 74
 	.section	.rodata.managed_type_name.5766,"aMS",%progbits,1
 	.type	.L.managed_type_name.5766, %object
 .L.managed_type_name.5766:
-	.asciz	"Firebase.Messaging.Constants+FirelogAnalytics, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5766, 74
+	.asciz	"Firebase.Messaging.Constants+MessageNotificationKeys, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5766, 81
 	.section	.rodata.managed_type_name.5767,"aMS",%progbits,1
 	.type	.L.managed_type_name.5767, %object
 .L.managed_type_name.5767:
-	.asciz	"Firebase.Messaging.Constants+MessageNotificationKeys, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5767, 81
+	.asciz	"Firebase.Messaging.Constants+MessagePayloadKeys, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5767, 76
 	.section	.rodata.managed_type_name.5768,"aMS",%progbits,1
 	.type	.L.managed_type_name.5768, %object
 .L.managed_type_name.5768:
-	.asciz	"Firebase.Messaging.Constants+MessagePayloadKeys, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5768, 76
+	.asciz	"Firebase.Messaging.Constants+MessageTypes, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5768, 70
 	.section	.rodata.managed_type_name.5769,"aMS",%progbits,1
 	.type	.L.managed_type_name.5769, %object
 .L.managed_type_name.5769:
-	.asciz	"Firebase.Messaging.Constants+MessageTypes, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5769, 70
+	.asciz	"Firebase.Messaging.Constants+ScionAnalytics+IMessageTypeInvoker, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5769, 92
 	.section	.rodata.managed_type_name.5770,"aMS",%progbits,1
 	.type	.L.managed_type_name.5770, %object
 .L.managed_type_name.5770:
-	.asciz	"Firebase.Messaging.Constants+ScionAnalytics+IMessageTypeInvoker, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5770, 92
+	.asciz	"Firebase.Messaging.Constants+ScionAnalytics+MessageType, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5770, 84
 	.section	.rodata.managed_type_name.5771,"aMS",%progbits,1
 	.type	.L.managed_type_name.5771, %object
 .L.managed_type_name.5771:
-	.asciz	"Firebase.Messaging.Constants+ScionAnalytics+MessageType, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5771, 84
+	.asciz	"Firebase.Messaging.Constants+ScionAnalytics+MessageTypeConsts, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5771, 90
 	.section	.rodata.managed_type_name.5772,"aMS",%progbits,1
 	.type	.L.managed_type_name.5772, %object
 .L.managed_type_name.5772:
-	.asciz	"Firebase.Messaging.Constants+ScionAnalytics+MessageTypeConsts, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5772, 90
+	.asciz	"Firebase.Messaging.Constants+ScionAnalytics, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5772, 72
 	.section	.rodata.managed_type_name.5773,"aMS",%progbits,1
 	.type	.L.managed_type_name.5773, %object
 .L.managed_type_name.5773:
-	.asciz	"Firebase.Messaging.Constants+ScionAnalytics, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5773, 72
+	.asciz	"Firebase.Messaging.Constants, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5773, 57
 	.section	.rodata.managed_type_name.5774,"aMS",%progbits,1
 	.type	.L.managed_type_name.5774, %object
 .L.managed_type_name.5774:
-	.asciz	"Firebase.Messaging.Constants, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5774, 57
+	.asciz	"Firebase.Messaging.EnhancedIntentService, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5774, 69
 	.section	.rodata.managed_type_name.5775,"aMS",%progbits,1
 	.type	.L.managed_type_name.5775, %object
 .L.managed_type_name.5775:
-	.asciz	"Firebase.Messaging.EnhancedIntentService, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5775, 69
+	.asciz	"Firebase.Messaging.EnhancedIntentServiceInvoker, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5775, 76
 	.section	.rodata.managed_type_name.5776,"aMS",%progbits,1
 	.type	.L.managed_type_name.5776, %object
 .L.managed_type_name.5776:
-	.asciz	"Firebase.Messaging.EnhancedIntentServiceInvoker, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5776, 76
+	.asciz	"Firebase.Messaging.FirebaseMessaging, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5776, 65
 	.section	.rodata.managed_type_name.5777,"aMS",%progbits,1
 	.type	.L.managed_type_name.5777, %object
 .L.managed_type_name.5777:
-	.asciz	"Firebase.Messaging.FirebaseMessaging, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5777, 65
+	.asciz	"Firebase.Messaging.FirebaseMessagingRegistrar+DevNullTransportFactory, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5777, 98
 	.section	.rodata.managed_type_name.5778,"aMS",%progbits,1
 	.type	.L.managed_type_name.5778, %object
 .L.managed_type_name.5778:
-	.asciz	"Firebase.Messaging.FirebaseMessagingRegistrar+DevNullTransportFactory, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5778, 98
+	.asciz	"Firebase.Messaging.FirebaseMessagingRegistrar, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5778, 74
 	.section	.rodata.managed_type_name.5779,"aMS",%progbits,1
 	.type	.L.managed_type_name.5779, %object
 .L.managed_type_name.5779:
-	.asciz	"Firebase.Messaging.FirebaseMessagingRegistrar, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5779, 74
+	.asciz	"Firebase.Messaging.FirebaseMessagingService, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5779, 72
 	.section	.rodata.managed_type_name.5780,"aMS",%progbits,1
 	.type	.L.managed_type_name.5780, %object
 .L.managed_type_name.5780:
-	.asciz	"Firebase.Messaging.FirebaseMessagingService, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5780, 72
+	.asciz	"Firebase.Messaging.MessagingAnalytics, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5780, 66
 	.section	.rodata.managed_type_name.5781,"aMS",%progbits,1
 	.type	.L.managed_type_name.5781, %object
 .L.managed_type_name.5781:
-	.asciz	"Firebase.Messaging.MessagingAnalytics, Xamarin.Firebase.Messaging"
+	.asciz	"Firebase.Messaging.NotificationParams, Xamarin.Firebase.Messaging"
 	.size	.L.managed_type_name.5781, 66
 	.section	.rodata.managed_type_name.5782,"aMS",%progbits,1
 	.type	.L.managed_type_name.5782, %object
 .L.managed_type_name.5782:
-	.asciz	"Firebase.Messaging.NotificationParams, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5782, 66
+	.asciz	"Firebase.Messaging.RemoteMessage+Builder, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5782, 69
 	.section	.rodata.managed_type_name.5783,"aMS",%progbits,1
 	.type	.L.managed_type_name.5783, %object
 .L.managed_type_name.5783:
-	.asciz	"Firebase.Messaging.RemoteMessage+Builder, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5783, 69
+	.asciz	"Firebase.Messaging.RemoteMessage+IMessagePriorityInvoker, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5783, 85
 	.section	.rodata.managed_type_name.5784,"aMS",%progbits,1
 	.type	.L.managed_type_name.5784, %object
 .L.managed_type_name.5784:
-	.asciz	"Firebase.Messaging.RemoteMessage+IMessagePriorityInvoker, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5784, 85
+	.asciz	"Firebase.Messaging.RemoteMessage+Notification, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5784, 74
 	.section	.rodata.managed_type_name.5785,"aMS",%progbits,1
 	.type	.L.managed_type_name.5785, %object
 .L.managed_type_name.5785:
-	.asciz	"Firebase.Messaging.RemoteMessage+Notification, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5785, 74
+	.asciz	"Firebase.Messaging.RemoteMessage, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5785, 61
 	.section	.rodata.managed_type_name.5786,"aMS",%progbits,1
 	.type	.L.managed_type_name.5786, %object
 .L.managed_type_name.5786:
-	.asciz	"Firebase.Messaging.RemoteMessage, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5786, 61
+	.asciz	"Firebase.Messaging.RemoteMessageCreator, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5786, 68
 	.section	.rodata.managed_type_name.5787,"aMS",%progbits,1
 	.type	.L.managed_type_name.5787, %object
 .L.managed_type_name.5787:
-	.asciz	"Firebase.Messaging.RemoteMessageCreator, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5787, 68
+	.asciz	"Firebase.Messaging.SendException, Xamarin.Firebase.Messaging"
+	.size	.L.managed_type_name.5787, 61
 	.section	.rodata.managed_type_name.5788,"aMS",%progbits,1
 	.type	.L.managed_type_name.5788, %object
 .L.managed_type_name.5788:
-	.asciz	"Firebase.Messaging.SendException, Xamarin.Firebase.Messaging"
-	.size	.L.managed_type_name.5788, 61
+	.asciz	"Firebase.PlatformInfo.DefaultUserAgentPublisher, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5788, 73
 	.section	.rodata.managed_type_name.5789,"aMS",%progbits,1
 	.type	.L.managed_type_name.5789, %object
 .L.managed_type_name.5789:
-	.asciz	"Firebase.PlatformInfo.DefaultUserAgentPublisher, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5789, 73
+	.asciz	"Firebase.PlatformInfo.GlobalLibraryVersionRegistrar, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5789, 77
 	.section	.rodata.managed_type_name.5790,"aMS",%progbits,1
 	.type	.L.managed_type_name.5790, %object
 .L.managed_type_name.5790:
-	.asciz	"Firebase.PlatformInfo.GlobalLibraryVersionRegistrar, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5790, 77
+	.asciz	"Firebase.PlatformInfo.IUserAgentPublisherInvoker, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5790, 74
 	.section	.rodata.managed_type_name.5791,"aMS",%progbits,1
 	.type	.L.managed_type_name.5791, %object
 .L.managed_type_name.5791:
-	.asciz	"Firebase.PlatformInfo.IUserAgentPublisherInvoker, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5791, 74
+	.asciz	"Firebase.PlatformInfo.KotlinDetector, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5791, 62
 	.section	.rodata.managed_type_name.5792,"aMS",%progbits,1
 	.type	.L.managed_type_name.5792, %object
 .L.managed_type_name.5792:
-	.asciz	"Firebase.PlatformInfo.KotlinDetector, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5792, 62
+	.asciz	"Firebase.PlatformInfo.LibraryVersionComponent+IVersionExtractorInvoker, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5792, 96
 	.section	.rodata.managed_type_name.5793,"aMS",%progbits,1
 	.type	.L.managed_type_name.5793, %object
 .L.managed_type_name.5793:
-	.asciz	"Firebase.PlatformInfo.LibraryVersionComponent+IVersionExtractorInvoker, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5793, 96
+	.asciz	"Firebase.PlatformInfo.LibraryVersionComponent, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5793, 71
 	.section	.rodata.managed_type_name.5794,"aMS",%progbits,1
 	.type	.L.managed_type_name.5794, %object
 .L.managed_type_name.5794:
-	.asciz	"Firebase.PlatformInfo.LibraryVersionComponent, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5794, 71
+	.asciz	"Firebase.Provider.FirebaseInitProvider, Xamarin.Firebase.Common"
+	.size	.L.managed_type_name.5794, 64
 	.section	.rodata.managed_type_name.5795,"aMS",%progbits,1
 	.type	.L.managed_type_name.5795, %object
 .L.managed_type_name.5795:
-	.asciz	"Firebase.Provider.FirebaseInitProvider, Xamarin.Firebase.Common"
-	.size	.L.managed_type_name.5795, 64
+	.asciz	"Google.Ads.Identifier.AdvertisingIdClient+Info, Xamarin.GooglePlayServices.Ads.Identifier"
+	.size	.L.managed_type_name.5795, 90
 	.section	.rodata.managed_type_name.5796,"aMS",%progbits,1
 	.type	.L.managed_type_name.5796, %object
 .L.managed_type_name.5796:
-	.asciz	"Google.Ads.Identifier.AdvertisingIdClient+Info, Xamarin.GooglePlayServices.Ads.Identifier"
-	.size	.L.managed_type_name.5796, 90
+	.asciz	"Google.Ads.Identifier.AdvertisingIdClient, Xamarin.GooglePlayServices.Ads.Identifier"
+	.size	.L.managed_type_name.5796, 85
 	.section	.rodata.managed_type_name.5797,"aMS",%progbits,1
 	.type	.L.managed_type_name.5797, %object
 .L.managed_type_name.5797:
-	.asciz	"Google.Ads.Identifier.AdvertisingIdClient, Xamarin.GooglePlayServices.Ads.Identifier"
-	.size	.L.managed_type_name.5797, 85
+	.asciz	"Google.Android.Material.Animation.AnimationUtils, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5797, 82
 	.section	.rodata.managed_type_name.5798,"aMS",%progbits,1
 	.type	.L.managed_type_name.5798, %object
 .L.managed_type_name.5798:
-	.asciz	"Google.Android.Material.Animation.AnimationUtils, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5798, 82
+	.asciz	"Google.Android.Material.Animation.AnimatorSetCompat, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5798, 85
 	.section	.rodata.managed_type_name.5799,"aMS",%progbits,1
 	.type	.L.managed_type_name.5799, %object
 .L.managed_type_name.5799:
-	.asciz	"Google.Android.Material.Animation.AnimatorSetCompat, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5799, 85
+	.asciz	"Google.Android.Material.Animation.ArgbEvaluatorCompat, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5799, 87
 	.section	.rodata.managed_type_name.5800,"aMS",%progbits,1
 	.type	.L.managed_type_name.5800, %object
 .L.managed_type_name.5800:
-	.asciz	"Google.Android.Material.Animation.ArgbEvaluatorCompat, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5800, 87
+	.asciz	"Google.Android.Material.Animation.ChildrenAlphaProperty, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5800, 89
 	.section	.rodata.managed_type_name.5801,"aMS",%progbits,1
 	.type	.L.managed_type_name.5801, %object
 .L.managed_type_name.5801:
-	.asciz	"Google.Android.Material.Animation.ChildrenAlphaProperty, Xamarin.Google.Android.Material"
+	.asciz	"Google.Android.Material.Animation.DrawableAlphaProperty, Xamarin.Google.Android.Material"
 	.size	.L.managed_type_name.5801, 89
 	.section	.rodata.managed_type_name.5802,"aMS",%progbits,1
 	.type	.L.managed_type_name.5802, %object
 .L.managed_type_name.5802:
-	.asciz	"Google.Android.Material.Animation.DrawableAlphaProperty, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5802, 89
+	.asciz	"Google.Android.Material.Animation.ITransformationCallbackInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5802, 98
 	.section	.rodata.managed_type_name.5803,"aMS",%progbits,1
 	.type	.L.managed_type_name.5803, %object
 .L.managed_type_name.5803:
-	.asciz	"Google.Android.Material.Animation.ITransformationCallbackInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5803, 98
+	.asciz	"Google.Android.Material.Animation.ImageMatrixProperty, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5803, 87
 	.section	.rodata.managed_type_name.5804,"aMS",%progbits,1
 	.type	.L.managed_type_name.5804, %object
 .L.managed_type_name.5804:
-	.asciz	"Google.Android.Material.Animation.ImageMatrixProperty, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5804, 87
+	.asciz	"Google.Android.Material.Animation.MatrixEvaluator, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5804, 83
 	.section	.rodata.managed_type_name.5805,"aMS",%progbits,1
 	.type	.L.managed_type_name.5805, %object
 .L.managed_type_name.5805:
-	.asciz	"Google.Android.Material.Animation.MatrixEvaluator, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5805, 83
+	.asciz	"Google.Android.Material.Animation.MotionSpec, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5805, 78
 	.section	.rodata.managed_type_name.5806,"aMS",%progbits,1
 	.type	.L.managed_type_name.5806, %object
 .L.managed_type_name.5806:
-	.asciz	"Google.Android.Material.Animation.MotionSpec, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5806, 78
+	.asciz	"Google.Android.Material.Animation.MotionTiming, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5806, 80
 	.section	.rodata.managed_type_name.5807,"aMS",%progbits,1
 	.type	.L.managed_type_name.5807, %object
 .L.managed_type_name.5807:
-	.asciz	"Google.Android.Material.Animation.MotionTiming, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5807, 80
+	.asciz	"Google.Android.Material.Animation.Positioning, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5807, 79
 	.section	.rodata.managed_type_name.5808,"aMS",%progbits,1
 	.type	.L.managed_type_name.5808, %object
 .L.managed_type_name.5808:
-	.asciz	"Google.Android.Material.Animation.Positioning, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5808, 79
+	.asciz	"Google.Android.Material.AppBar.AppBarLayout+BaseBehavior+BaseDragCallback, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5808, 107
 	.section	.rodata.managed_type_name.5809,"aMS",%progbits,1
 	.type	.L.managed_type_name.5809, %object
 .L.managed_type_name.5809:
-	.asciz	"Google.Android.Material.AppBar.AppBarLayout+BaseBehavior+BaseDragCallback, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5809, 107
+	.asciz	"Google.Android.Material.AppBar.AppBarLayout+BaseBehavior+BaseDragCallbackInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5809, 114
 	.section	.rodata.managed_type_name.5810,"aMS",%progbits,1
 	.type	.L.managed_type_name.5810, %object
 .L.managed_type_name.5810:
-	.asciz	"Google.Android.Material.AppBar.AppBarLayout+BaseBehavior+BaseDragCallbackInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5810, 114
+	.asciz	"Google.Android.Material.AppBar.AppBarLayout+BaseBehavior+SavedState, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5810, 101
 	.section	.rodata.managed_type_name.5811,"aMS",%progbits,1
 	.type	.L.managed_type_name.5811, %object
 .L.managed_type_name.5811:
-	.asciz	"Google.Android.Material.AppBar.AppBarLayout+BaseBehavior+SavedState, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5811, 101
+	.asciz	"Google.Android.Material.AppBar.AppBarLayout+BaseBehavior, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5811, 90
 	.section	.rodata.managed_type_name.5812,"aMS",%progbits,1
 	.type	.L.managed_type_name.5812, %object
 .L.managed_type_name.5812:
-	.asciz	"Google.Android.Material.AppBar.AppBarLayout+BaseBehavior, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5812, 90
+	.asciz	"Google.Android.Material.AppBar.AppBarLayout+Behavior+DragCallback, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5812, 99
 	.section	.rodata.managed_type_name.5813,"aMS",%progbits,1
 	.type	.L.managed_type_name.5813, %object
 .L.managed_type_name.5813:
-	.asciz	"Google.Android.Material.AppBar.AppBarLayout+Behavior+DragCallback, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5813, 99
+	.asciz	"Google.Android.Material.AppBar.AppBarLayout+Behavior+DragCallbackInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5813, 106
 	.section	.rodata.managed_type_name.5814,"aMS",%progbits,1
 	.type	.L.managed_type_name.5814, %object
 .L.managed_type_name.5814:
-	.asciz	"Google.Android.Material.AppBar.AppBarLayout+Behavior+DragCallbackInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5814, 106
+	.asciz	"Google.Android.Material.AppBar.AppBarLayout+Behavior, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5814, 86
 	.section	.rodata.managed_type_name.5815,"aMS",%progbits,1
 	.type	.L.managed_type_name.5815, %object
 .L.managed_type_name.5815:
-	.asciz	"Google.Android.Material.AppBar.AppBarLayout+Behavior, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5815, 86
+	.asciz	"Google.Android.Material.AppBar.AppBarLayout+IOnOffsetChangedListenerImplementor, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5815, 113
 	.section	.rodata.managed_type_name.5816,"aMS",%progbits,1
 	.type	.L.managed_type_name.5816, %object
 .L.managed_type_name.5816:
-	.asciz	"Google.Android.Material.AppBar.AppBarLayout+IOnOffsetChangedListenerImplementor, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5816, 113
+	.asciz	"Google.Android.Material.AppBar.AppBarLayout+IOnOffsetChangedListenerInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5816, 109
 	.section	.rodata.managed_type_name.5817,"aMS",%progbits,1
 	.type	.L.managed_type_name.5817, %object
 .L.managed_type_name.5817:
-	.asciz	"Google.Android.Material.AppBar.AppBarLayout+IOnOffsetChangedListenerInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5817, 109
+	.asciz	"Google.Android.Material.AppBar.AppBarLayout+LayoutParams+IScrollFlagsInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5817, 110
 	.section	.rodata.managed_type_name.5818,"aMS",%progbits,1
 	.type	.L.managed_type_name.5818, %object
 .L.managed_type_name.5818:
-	.asciz	"Google.Android.Material.AppBar.AppBarLayout+LayoutParams+IScrollFlagsInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5818, 110
+	.asciz	"Google.Android.Material.AppBar.AppBarLayout+LayoutParams, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5818, 90
 	.section	.rodata.managed_type_name.5819,"aMS",%progbits,1
 	.type	.L.managed_type_name.5819, %object
 .L.managed_type_name.5819:
-	.asciz	"Google.Android.Material.AppBar.AppBarLayout+LayoutParams, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5819, 90
+	.asciz	"Google.Android.Material.AppBar.AppBarLayout+ScrollingViewBehavior, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5819, 99
 	.section	.rodata.managed_type_name.5820,"aMS",%progbits,1
 	.type	.L.managed_type_name.5820, %object
 .L.managed_type_name.5820:
-	.asciz	"Google.Android.Material.AppBar.AppBarLayout+ScrollingViewBehavior, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5820, 99
+	.asciz	"Google.Android.Material.AppBar.AppBarLayout, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5820, 77
 	.section	.rodata.managed_type_name.5821,"aMS",%progbits,1
 	.type	.L.managed_type_name.5821, %object
 .L.managed_type_name.5821:
-	.asciz	"Google.Android.Material.AppBar.AppBarLayout, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5821, 77
+	.asciz	"Google.Android.Material.AppBar.CollapsingToolbarLayout+LayoutParams, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5821, 101
 	.section	.rodata.managed_type_name.5822,"aMS",%progbits,1
 	.type	.L.managed_type_name.5822, %object
 .L.managed_type_name.5822:
-	.asciz	"Google.Android.Material.AppBar.CollapsingToolbarLayout+LayoutParams, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5822, 101
+	.asciz	"Google.Android.Material.AppBar.CollapsingToolbarLayout, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5822, 88
 	.section	.rodata.managed_type_name.5823,"aMS",%progbits,1
 	.type	.L.managed_type_name.5823, %object
 .L.managed_type_name.5823:
-	.asciz	"Google.Android.Material.AppBar.CollapsingToolbarLayout, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5823, 88
+	.asciz	"Google.Android.Material.AppBar.HeaderBehavior, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5823, 79
 	.section	.rodata.managed_type_name.5824,"aMS",%progbits,1
 	.type	.L.managed_type_name.5824, %object
 .L.managed_type_name.5824:
-	.asciz	"Google.Android.Material.AppBar.HeaderBehavior, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5824, 79
+	.asciz	"Google.Android.Material.AppBar.HeaderBehaviorInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5824, 86
 	.section	.rodata.managed_type_name.5825,"aMS",%progbits,1
 	.type	.L.managed_type_name.5825, %object
 .L.managed_type_name.5825:
-	.asciz	"Google.Android.Material.AppBar.HeaderBehaviorInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5825, 86
+	.asciz	"Google.Android.Material.AppBar.HeaderScrollingViewBehavior, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5825, 92
 	.section	.rodata.managed_type_name.5826,"aMS",%progbits,1
 	.type	.L.managed_type_name.5826, %object
 .L.managed_type_name.5826:
-	.asciz	"Google.Android.Material.AppBar.HeaderScrollingViewBehavior, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5826, 92
+	.asciz	"Google.Android.Material.AppBar.HeaderScrollingViewBehaviorInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5826, 99
 	.section	.rodata.managed_type_name.5827,"aMS",%progbits,1
 	.type	.L.managed_type_name.5827, %object
 .L.managed_type_name.5827:
-	.asciz	"Google.Android.Material.AppBar.HeaderScrollingViewBehaviorInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5827, 99
+	.asciz	"Google.Android.Material.AppBar.MaterialToolbar, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5827, 80
 	.section	.rodata.managed_type_name.5828,"aMS",%progbits,1
 	.type	.L.managed_type_name.5828, %object
 .L.managed_type_name.5828:
-	.asciz	"Google.Android.Material.AppBar.MaterialToolbar, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5828, 80
+	.asciz	"Google.Android.Material.AppBar.ViewOffsetBehavior, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5828, 83
 	.section	.rodata.managed_type_name.5829,"aMS",%progbits,1
 	.type	.L.managed_type_name.5829, %object
 .L.managed_type_name.5829:
-	.asciz	"Google.Android.Material.AppBar.ViewOffsetBehavior, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5829, 83
+	.asciz	"Google.Android.Material.Badge.BadgeDrawable+IBadgeGravityInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5829, 98
 	.section	.rodata.managed_type_name.5830,"aMS",%progbits,1
 	.type	.L.managed_type_name.5830, %object
 .L.managed_type_name.5830:
-	.asciz	"Google.Android.Material.Badge.BadgeDrawable+IBadgeGravityInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5830, 98
+	.asciz	"Google.Android.Material.Badge.BadgeDrawable+SavedState, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5830, 88
 	.section	.rodata.managed_type_name.5831,"aMS",%progbits,1
 	.type	.L.managed_type_name.5831, %object
 .L.managed_type_name.5831:
-	.asciz	"Google.Android.Material.Badge.BadgeDrawable+SavedState, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5831, 88
+	.asciz	"Google.Android.Material.Badge.BadgeDrawable, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5831, 77
 	.section	.rodata.managed_type_name.5832,"aMS",%progbits,1
 	.type	.L.managed_type_name.5832, %object
 .L.managed_type_name.5832:
-	.asciz	"Google.Android.Material.Badge.BadgeDrawable, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5832, 77
+	.asciz	"Google.Android.Material.Badge.BadgeUtils, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5832, 74
 	.section	.rodata.managed_type_name.5833,"aMS",%progbits,1
 	.type	.L.managed_type_name.5833, %object
 .L.managed_type_name.5833:
-	.asciz	"Google.Android.Material.Badge.BadgeUtils, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5833, 74
+	.asciz	"Google.Android.Material.Behavior.HideBottomViewOnScrollBehavior, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5833, 97
 	.section	.rodata.managed_type_name.5834,"aMS",%progbits,1
 	.type	.L.managed_type_name.5834, %object
 .L.managed_type_name.5834:
-	.asciz	"Google.Android.Material.Behavior.HideBottomViewOnScrollBehavior, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5834, 97
+	.asciz	"Google.Android.Material.Behavior.SwipeDismissBehavior+IOnDismissListenerImplementor, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5834, 117
 	.section	.rodata.managed_type_name.5835,"aMS",%progbits,1
 	.type	.L.managed_type_name.5835, %object
 .L.managed_type_name.5835:
-	.asciz	"Google.Android.Material.Behavior.SwipeDismissBehavior+IOnDismissListenerImplementor, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5835, 117
+	.asciz	"Google.Android.Material.Behavior.SwipeDismissBehavior+IOnDismissListenerInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5835, 113
 	.section	.rodata.managed_type_name.5836,"aMS",%progbits,1
 	.type	.L.managed_type_name.5836, %object
 .L.managed_type_name.5836:
-	.asciz	"Google.Android.Material.Behavior.SwipeDismissBehavior+IOnDismissListenerInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5836, 113
+	.asciz	"Google.Android.Material.Behavior.SwipeDismissBehavior, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5836, 87
 	.section	.rodata.managed_type_name.5837,"aMS",%progbits,1
 	.type	.L.managed_type_name.5837, %object
 .L.managed_type_name.5837:
-	.asciz	"Google.Android.Material.Behavior.SwipeDismissBehavior, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5837, 87
+	.asciz	"Google.Android.Material.BottomAppBar.BottomAppBar+Behavior, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5837, 92
 	.section	.rodata.managed_type_name.5838,"aMS",%progbits,1
 	.type	.L.managed_type_name.5838, %object
 .L.managed_type_name.5838:
-	.asciz	"Google.Android.Material.BottomAppBar.BottomAppBar+Behavior, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5838, 92
+	.asciz	"Google.Android.Material.BottomAppBar.BottomAppBar+IFabAlignmentModeInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5838, 108
 	.section	.rodata.managed_type_name.5839,"aMS",%progbits,1
 	.type	.L.managed_type_name.5839, %object
 .L.managed_type_name.5839:
-	.asciz	"Google.Android.Material.BottomAppBar.BottomAppBar+IFabAlignmentModeInvoker, Xamarin.Google.Android.Material"
+	.asciz	"Google.Android.Material.BottomAppBar.BottomAppBar+IFabAnimationModeInvoker, Xamarin.Google.Android.Material"
 	.size	.L.managed_type_name.5839, 108
 	.section	.rodata.managed_type_name.5840,"aMS",%progbits,1
 	.type	.L.managed_type_name.5840, %object
 .L.managed_type_name.5840:
-	.asciz	"Google.Android.Material.BottomAppBar.BottomAppBar+IFabAnimationModeInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5840, 108
+	.asciz	"Google.Android.Material.BottomAppBar.BottomAppBar, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5840, 83
 	.section	.rodata.managed_type_name.5841,"aMS",%progbits,1
 	.type	.L.managed_type_name.5841, %object
 .L.managed_type_name.5841:
-	.asciz	"Google.Android.Material.BottomAppBar.BottomAppBar, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5841, 83
+	.asciz	"Google.Android.Material.BottomAppBar.BottomAppBarTopEdgeTreatment, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5841, 99
 	.section	.rodata.managed_type_name.5842,"aMS",%progbits,1
 	.type	.L.managed_type_name.5842, %object
 .L.managed_type_name.5842:
-	.asciz	"Google.Android.Material.BottomAppBar.BottomAppBarTopEdgeTreatment, Xamarin.Google.Android.Material"
+	.asciz	"Google.Android.Material.BottomNavigation.BottomNavigationItemView, Xamarin.Google.Android.Material"
 	.size	.L.managed_type_name.5842, 99
 	.section	.rodata.managed_type_name.5843,"aMS",%progbits,1
 	.type	.L.managed_type_name.5843, %object
 .L.managed_type_name.5843:
-	.asciz	"Google.Android.Material.BottomNavigation.BottomNavigationItemView, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5843, 99
+	.asciz	"Google.Android.Material.BottomNavigation.BottomNavigationMenu, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5843, 95
 	.section	.rodata.managed_type_name.5844,"aMS",%progbits,1
 	.type	.L.managed_type_name.5844, %object
 .L.managed_type_name.5844:
-	.asciz	"Google.Android.Material.BottomNavigation.BottomNavigationMenu, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5844, 95
+	.asciz	"Google.Android.Material.BottomNavigation.BottomNavigationMenuView, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5844, 99
 	.section	.rodata.managed_type_name.5845,"aMS",%progbits,1
 	.type	.L.managed_type_name.5845, %object
 .L.managed_type_name.5845:
-	.asciz	"Google.Android.Material.BottomNavigation.BottomNavigationMenuView, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5845, 99
+	.asciz	"Google.Android.Material.BottomNavigation.BottomNavigationPresenter, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5845, 100
 	.section	.rodata.managed_type_name.5846,"aMS",%progbits,1
 	.type	.L.managed_type_name.5846, %object
 .L.managed_type_name.5846:
-	.asciz	"Google.Android.Material.BottomNavigation.BottomNavigationPresenter, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5846, 100
+	.asciz	"Google.Android.Material.BottomNavigation.BottomNavigationView+IOnNavigationItemReselectedListenerImplementor, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5846, 142
 	.section	.rodata.managed_type_name.5847,"aMS",%progbits,1
 	.type	.L.managed_type_name.5847, %object
 .L.managed_type_name.5847:
-	.asciz	"Google.Android.Material.BottomNavigation.BottomNavigationView+IOnNavigationItemReselectedListenerImplementor, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5847, 142
+	.asciz	"Google.Android.Material.BottomNavigation.BottomNavigationView+IOnNavigationItemReselectedListenerInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5847, 138
 	.section	.rodata.managed_type_name.5848,"aMS",%progbits,1
 	.type	.L.managed_type_name.5848, %object
 .L.managed_type_name.5848:
-	.asciz	"Google.Android.Material.BottomNavigation.BottomNavigationView+IOnNavigationItemReselectedListenerInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5848, 138
+	.asciz	"Google.Android.Material.BottomNavigation.BottomNavigationView+IOnNavigationItemSelectedListenerImplementor, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5848, 140
 	.section	.rodata.managed_type_name.5849,"aMS",%progbits,1
 	.type	.L.managed_type_name.5849, %object
 .L.managed_type_name.5849:
-	.asciz	"Google.Android.Material.BottomNavigation.BottomNavigationView+IOnNavigationItemSelectedListenerImplementor, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5849, 140
+	.asciz	"Google.Android.Material.BottomNavigation.BottomNavigationView+IOnNavigationItemSelectedListenerInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5849, 136
 	.section	.rodata.managed_type_name.5850,"aMS",%progbits,1
 	.type	.L.managed_type_name.5850, %object
 .L.managed_type_name.5850:
-	.asciz	"Google.Android.Material.BottomNavigation.BottomNavigationView+IOnNavigationItemSelectedListenerInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5850, 136
+	.asciz	"Google.Android.Material.BottomNavigation.BottomNavigationView, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5850, 95
 	.section	.rodata.managed_type_name.5851,"aMS",%progbits,1
 	.type	.L.managed_type_name.5851, %object
 .L.managed_type_name.5851:
-	.asciz	"Google.Android.Material.BottomNavigation.BottomNavigationView, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5851, 95
+	.asciz	"Google.Android.Material.BottomNavigation.ILabelVisibilityModeInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5851, 102
 	.section	.rodata.managed_type_name.5852,"aMS",%progbits,1
 	.type	.L.managed_type_name.5852, %object
 .L.managed_type_name.5852:
-	.asciz	"Google.Android.Material.BottomNavigation.ILabelVisibilityModeInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5852, 102
+	.asciz	"Google.Android.Material.BottomNavigation.LabelVisibilityMode, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5852, 94
 	.section	.rodata.managed_type_name.5853,"aMS",%progbits,1
 	.type	.L.managed_type_name.5853, %object
 .L.managed_type_name.5853:
-	.asciz	"Google.Android.Material.BottomNavigation.LabelVisibilityMode, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5853, 94
+	.asciz	"Google.Android.Material.BottomNavigation.LabelVisibilityModeConsts, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5853, 100
 	.section	.rodata.managed_type_name.5854,"aMS",%progbits,1
 	.type	.L.managed_type_name.5854, %object
 .L.managed_type_name.5854:
-	.asciz	"Google.Android.Material.BottomNavigation.LabelVisibilityModeConsts, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5854, 100
+	.asciz	"Google.Android.Material.BottomSheet.BottomSheetBehavior+BottomSheetCallback, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5854, 109
 	.section	.rodata.managed_type_name.5855,"aMS",%progbits,1
 	.type	.L.managed_type_name.5855, %object
 .L.managed_type_name.5855:
-	.asciz	"Google.Android.Material.BottomSheet.BottomSheetBehavior+BottomSheetCallback, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5855, 109
+	.asciz	"Google.Android.Material.BottomSheet.BottomSheetBehavior+BottomSheetCallbackInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5855, 116
 	.section	.rodata.managed_type_name.5856,"aMS",%progbits,1
 	.type	.L.managed_type_name.5856, %object
 .L.managed_type_name.5856:
-	.asciz	"Google.Android.Material.BottomSheet.BottomSheetBehavior+BottomSheetCallbackInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5856, 116
+	.asciz	"Google.Android.Material.BottomSheet.BottomSheetBehavior+ISaveFlagsInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5856, 107
 	.section	.rodata.managed_type_name.5857,"aMS",%progbits,1
 	.type	.L.managed_type_name.5857, %object
 .L.managed_type_name.5857:
-	.asciz	"Google.Android.Material.BottomSheet.BottomSheetBehavior+ISaveFlagsInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5857, 107
+	.asciz	"Google.Android.Material.BottomSheet.BottomSheetBehavior+IStateInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5857, 103
 	.section	.rodata.managed_type_name.5858,"aMS",%progbits,1
 	.type	.L.managed_type_name.5858, %object
 .L.managed_type_name.5858:
-	.asciz	"Google.Android.Material.BottomSheet.BottomSheetBehavior+IStateInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5858, 103
+	.asciz	"Google.Android.Material.BottomSheet.BottomSheetBehavior+SavedState, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5858, 100
 	.section	.rodata.managed_type_name.5859,"aMS",%progbits,1
 	.type	.L.managed_type_name.5859, %object
 .L.managed_type_name.5859:
-	.asciz	"Google.Android.Material.BottomSheet.BottomSheetBehavior+SavedState, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5859, 100
+	.asciz	"Google.Android.Material.BottomSheet.BottomSheetBehavior, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5859, 89
 	.section	.rodata.managed_type_name.5860,"aMS",%progbits,1
 	.type	.L.managed_type_name.5860, %object
 .L.managed_type_name.5860:
-	.asciz	"Google.Android.Material.BottomSheet.BottomSheetBehavior, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5860, 89
+	.asciz	"Google.Android.Material.BottomSheet.BottomSheetDialog, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5860, 87
 	.section	.rodata.managed_type_name.5861,"aMS",%progbits,1
 	.type	.L.managed_type_name.5861, %object
 .L.managed_type_name.5861:
-	.asciz	"Google.Android.Material.BottomSheet.BottomSheetDialog, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5861, 87
+	.asciz	"Google.Android.Material.BottomSheet.BottomSheetDialogFragment, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5861, 95
 	.section	.rodata.managed_type_name.5862,"aMS",%progbits,1
 	.type	.L.managed_type_name.5862, %object
 .L.managed_type_name.5862:
-	.asciz	"Google.Android.Material.BottomSheet.BottomSheetDialogFragment, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5862, 95
+	.asciz	"Google.Android.Material.Button.MaterialButton+IIconGravityInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5862, 99
 	.section	.rodata.managed_type_name.5863,"aMS",%progbits,1
 	.type	.L.managed_type_name.5863, %object
 .L.managed_type_name.5863:
-	.asciz	"Google.Android.Material.Button.MaterialButton+IIconGravityInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5863, 99
+	.asciz	"Google.Android.Material.Button.MaterialButton+IOnCheckedChangeListenerImplementor, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5863, 115
 	.section	.rodata.managed_type_name.5864,"aMS",%progbits,1
 	.type	.L.managed_type_name.5864, %object
 .L.managed_type_name.5864:
-	.asciz	"Google.Android.Material.Button.MaterialButton+IOnCheckedChangeListenerImplementor, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5864, 115
+	.asciz	"Google.Android.Material.Button.MaterialButton+IOnCheckedChangeListenerInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5864, 111
 	.section	.rodata.managed_type_name.5865,"aMS",%progbits,1
 	.type	.L.managed_type_name.5865, %object
 .L.managed_type_name.5865:
-	.asciz	"Google.Android.Material.Button.MaterialButton+IOnCheckedChangeListenerInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5865, 111
+	.asciz	"Google.Android.Material.Button.MaterialButton, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5865, 79
 	.section	.rodata.managed_type_name.5866,"aMS",%progbits,1
 	.type	.L.managed_type_name.5866, %object
 .L.managed_type_name.5866:
-	.asciz	"Google.Android.Material.Button.MaterialButton, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5866, 79
+	.asciz	"Google.Android.Material.Button.MaterialButtonToggleGroup+IOnButtonCheckedListenerImplementor, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5866, 126
 	.section	.rodata.managed_type_name.5867,"aMS",%progbits,1
 	.type	.L.managed_type_name.5867, %object
 .L.managed_type_name.5867:
-	.asciz	"Google.Android.Material.Button.MaterialButtonToggleGroup+IOnButtonCheckedListenerImplementor, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5867, 126
+	.asciz	"Google.Android.Material.Button.MaterialButtonToggleGroup+IOnButtonCheckedListenerInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5867, 122
 	.section	.rodata.managed_type_name.5868,"aMS",%progbits,1
 	.type	.L.managed_type_name.5868, %object
 .L.managed_type_name.5868:
-	.asciz	"Google.Android.Material.Button.MaterialButtonToggleGroup+IOnButtonCheckedListenerInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5868, 122
+	.asciz	"Google.Android.Material.Button.MaterialButtonToggleGroup, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5868, 90
 	.section	.rodata.managed_type_name.5869,"aMS",%progbits,1
 	.type	.L.managed_type_name.5869, %object
 .L.managed_type_name.5869:
-	.asciz	"Google.Android.Material.Button.MaterialButtonToggleGroup, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5869, 90
+	.asciz	"Google.Android.Material.Canvas.CanvasCompat, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5869, 77
 	.section	.rodata.managed_type_name.5870,"aMS",%progbits,1
 	.type	.L.managed_type_name.5870, %object
 .L.managed_type_name.5870:
-	.asciz	"Google.Android.Material.Canvas.CanvasCompat, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5870, 77
+	.asciz	"Google.Android.Material.Card.MaterialCardView+IOnCheckedChangeListenerImplementor, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5870, 115
 	.section	.rodata.managed_type_name.5871,"aMS",%progbits,1
 	.type	.L.managed_type_name.5871, %object
 .L.managed_type_name.5871:
-	.asciz	"Google.Android.Material.Card.MaterialCardView+IOnCheckedChangeListenerImplementor, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5871, 115
+	.asciz	"Google.Android.Material.Card.MaterialCardView+IOnCheckedChangeListenerInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5871, 111
 	.section	.rodata.managed_type_name.5872,"aMS",%progbits,1
 	.type	.L.managed_type_name.5872, %object
 .L.managed_type_name.5872:
-	.asciz	"Google.Android.Material.Card.MaterialCardView+IOnCheckedChangeListenerInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5872, 111
+	.asciz	"Google.Android.Material.Card.MaterialCardView, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5872, 79
 	.section	.rodata.managed_type_name.5873,"aMS",%progbits,1
 	.type	.L.managed_type_name.5873, %object
 .L.managed_type_name.5873:
-	.asciz	"Google.Android.Material.Card.MaterialCardView, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5873, 79
+	.asciz	"Google.Android.Material.CheckBox.MaterialCheckBox, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5873, 83
 	.section	.rodata.managed_type_name.5874,"aMS",%progbits,1
 	.type	.L.managed_type_name.5874, %object
 .L.managed_type_name.5874:
-	.asciz	"Google.Android.Material.CheckBox.MaterialCheckBox, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5874, 83
+	.asciz	"Google.Android.Material.Chip.Chip, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5874, 67
 	.section	.rodata.managed_type_name.5875,"aMS",%progbits,1
 	.type	.L.managed_type_name.5875, %object
 .L.managed_type_name.5875:
-	.asciz	"Google.Android.Material.Chip.Chip, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5875, 67
+	.asciz	"Google.Android.Material.Chip.ChipDrawable+IDelegateInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5875, 92
 	.section	.rodata.managed_type_name.5876,"aMS",%progbits,1
 	.type	.L.managed_type_name.5876, %object
 .L.managed_type_name.5876:
-	.asciz	"Google.Android.Material.Chip.ChipDrawable+IDelegateInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5876, 92
+	.asciz	"Google.Android.Material.Chip.ChipDrawable, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5876, 75
 	.section	.rodata.managed_type_name.5877,"aMS",%progbits,1
 	.type	.L.managed_type_name.5877, %object
 .L.managed_type_name.5877:
-	.asciz	"Google.Android.Material.Chip.ChipDrawable, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5877, 75
+	.asciz	"Google.Android.Material.Chip.ChipGroup+IOnCheckedChangeListenerImplementor, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5877, 108
 	.section	.rodata.managed_type_name.5878,"aMS",%progbits,1
 	.type	.L.managed_type_name.5878, %object
 .L.managed_type_name.5878:
-	.asciz	"Google.Android.Material.Chip.ChipGroup+IOnCheckedChangeListenerImplementor, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5878, 108
+	.asciz	"Google.Android.Material.Chip.ChipGroup+IOnCheckedChangeListenerInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5878, 104
 	.section	.rodata.managed_type_name.5879,"aMS",%progbits,1
 	.type	.L.managed_type_name.5879, %object
 .L.managed_type_name.5879:
-	.asciz	"Google.Android.Material.Chip.ChipGroup+IOnCheckedChangeListenerInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5879, 104
+	.asciz	"Google.Android.Material.Chip.ChipGroup+LayoutParams, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5879, 85
 	.section	.rodata.managed_type_name.5880,"aMS",%progbits,1
 	.type	.L.managed_type_name.5880, %object
 .L.managed_type_name.5880:
-	.asciz	"Google.Android.Material.Chip.ChipGroup+LayoutParams, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5880, 85
+	.asciz	"Google.Android.Material.Chip.ChipGroup, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5880, 72
 	.section	.rodata.managed_type_name.5881,"aMS",%progbits,1
 	.type	.L.managed_type_name.5881, %object
 .L.managed_type_name.5881:
-	.asciz	"Google.Android.Material.Chip.ChipGroup, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5881, 72
+	.asciz	"Google.Android.Material.CircularReveal.CardView.CircularRevealCardView, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5881, 104
 	.section	.rodata.managed_type_name.5882,"aMS",%progbits,1
 	.type	.L.managed_type_name.5882, %object
 .L.managed_type_name.5882:
-	.asciz	"Google.Android.Material.CircularReveal.CardView.CircularRevealCardView, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5882, 104
+	.asciz	"Google.Android.Material.CircularReveal.CircularRevealCompat, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5882, 93
 	.section	.rodata.managed_type_name.5883,"aMS",%progbits,1
 	.type	.L.managed_type_name.5883, %object
 .L.managed_type_name.5883:
-	.asciz	"Google.Android.Material.CircularReveal.CircularRevealCompat, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5883, 93
+	.asciz	"Google.Android.Material.CircularReveal.CircularRevealFrameLayout, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5883, 98
 	.section	.rodata.managed_type_name.5884,"aMS",%progbits,1
 	.type	.L.managed_type_name.5884, %object
 .L.managed_type_name.5884:
-	.asciz	"Google.Android.Material.CircularReveal.CircularRevealFrameLayout, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5884, 98
+	.asciz	"Google.Android.Material.CircularReveal.CircularRevealGridLayout, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5884, 97
 	.section	.rodata.managed_type_name.5885,"aMS",%progbits,1
 	.type	.L.managed_type_name.5885, %object
 .L.managed_type_name.5885:
-	.asciz	"Google.Android.Material.CircularReveal.CircularRevealGridLayout, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5885, 97
+	.asciz	"Google.Android.Material.CircularReveal.CircularRevealHelper+IDelegateInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5885, 110
 	.section	.rodata.managed_type_name.5886,"aMS",%progbits,1
 	.type	.L.managed_type_name.5886, %object
 .L.managed_type_name.5886:
-	.asciz	"Google.Android.Material.CircularReveal.CircularRevealHelper+IDelegateInvoker, Xamarin.Google.Android.Material"
+	.asciz	"Google.Android.Material.CircularReveal.CircularRevealHelper+IStrategyInvoker, Xamarin.Google.Android.Material"
 	.size	.L.managed_type_name.5886, 110
 	.section	.rodata.managed_type_name.5887,"aMS",%progbits,1
 	.type	.L.managed_type_name.5887, %object
 .L.managed_type_name.5887:
-	.asciz	"Google.Android.Material.CircularReveal.CircularRevealHelper+IStrategyInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5887, 110
+	.asciz	"Google.Android.Material.CircularReveal.CircularRevealHelper, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5887, 93
 	.section	.rodata.managed_type_name.5888,"aMS",%progbits,1
 	.type	.L.managed_type_name.5888, %object
 .L.managed_type_name.5888:
-	.asciz	"Google.Android.Material.CircularReveal.CircularRevealHelper, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5888, 93
+	.asciz	"Google.Android.Material.CircularReveal.CircularRevealLinearLayout, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5888, 99
 	.section	.rodata.managed_type_name.5889,"aMS",%progbits,1
 	.type	.L.managed_type_name.5889, %object
 .L.managed_type_name.5889:
-	.asciz	"Google.Android.Material.CircularReveal.CircularRevealLinearLayout, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5889, 99
+	.asciz	"Google.Android.Material.CircularReveal.CircularRevealRelativeLayout, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5889, 101
 	.section	.rodata.managed_type_name.5890,"aMS",%progbits,1
 	.type	.L.managed_type_name.5890, %object
 .L.managed_type_name.5890:
-	.asciz	"Google.Android.Material.CircularReveal.CircularRevealRelativeLayout, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5890, 101
+	.asciz	"Google.Android.Material.CircularReveal.CircularRevealWidgetCircularRevealEvaluator, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5890, 116
 	.section	.rodata.managed_type_name.5891,"aMS",%progbits,1
 	.type	.L.managed_type_name.5891, %object
 .L.managed_type_name.5891:
-	.asciz	"Google.Android.Material.CircularReveal.CircularRevealWidgetCircularRevealEvaluator, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5891, 116
+	.asciz	"Google.Android.Material.CircularReveal.CircularRevealWidgetCircularRevealProperty, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5891, 115
 	.section	.rodata.managed_type_name.5892,"aMS",%progbits,1
 	.type	.L.managed_type_name.5892, %object
 .L.managed_type_name.5892:
-	.asciz	"Google.Android.Material.CircularReveal.CircularRevealWidgetCircularRevealProperty, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5892, 115
+	.asciz	"Google.Android.Material.CircularReveal.CircularRevealWidgetCircularRevealScrimColorProperty, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5892, 125
 	.section	.rodata.managed_type_name.5893,"aMS",%progbits,1
 	.type	.L.managed_type_name.5893, %object
 .L.managed_type_name.5893:
-	.asciz	"Google.Android.Material.CircularReveal.CircularRevealWidgetCircularRevealScrimColorProperty, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5893, 125
+	.asciz	"Google.Android.Material.CircularReveal.CircularRevealWidgetRevealInfo, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5893, 103
 	.section	.rodata.managed_type_name.5894,"aMS",%progbits,1
 	.type	.L.managed_type_name.5894, %object
 .L.managed_type_name.5894:
-	.asciz	"Google.Android.Material.CircularReveal.CircularRevealWidgetRevealInfo, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5894, 103
+	.asciz	"Google.Android.Material.CircularReveal.CoordinatorLayout.CircularRevealCoordinatorLayout, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5894, 122
 	.section	.rodata.managed_type_name.5895,"aMS",%progbits,1
 	.type	.L.managed_type_name.5895, %object
 .L.managed_type_name.5895:
-	.asciz	"Google.Android.Material.CircularReveal.CoordinatorLayout.CircularRevealCoordinatorLayout, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5895, 122
+	.asciz	"Google.Android.Material.CircularReveal.ICircularRevealWidgetInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5895, 101
 	.section	.rodata.managed_type_name.5896,"aMS",%progbits,1
 	.type	.L.managed_type_name.5896, %object
 .L.managed_type_name.5896:
-	.asciz	"Google.Android.Material.CircularReveal.ICircularRevealWidgetInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5896, 101
+	.asciz	"Google.Android.Material.Color.MaterialColors, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5896, 78
 	.section	.rodata.managed_type_name.5897,"aMS",%progbits,1
 	.type	.L.managed_type_name.5897, %object
 .L.managed_type_name.5897:
-	.asciz	"Google.Android.Material.Color.MaterialColors, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5897, 78
+	.asciz	"Google.Android.Material.DatePicker.CalendarConstraints+Builder, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5897, 96
 	.section	.rodata.managed_type_name.5898,"aMS",%progbits,1
 	.type	.L.managed_type_name.5898, %object
 .L.managed_type_name.5898:
-	.asciz	"Google.Android.Material.DatePicker.CalendarConstraints+Builder, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5898, 96
+	.asciz	"Google.Android.Material.DatePicker.CalendarConstraints+IDateValidatorInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5898, 110
 	.section	.rodata.managed_type_name.5899,"aMS",%progbits,1
 	.type	.L.managed_type_name.5899, %object
 .L.managed_type_name.5899:
-	.asciz	"Google.Android.Material.DatePicker.CalendarConstraints+IDateValidatorInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5899, 110
+	.asciz	"Google.Android.Material.DatePicker.CalendarConstraints, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5899, 88
 	.section	.rodata.managed_type_name.5900,"aMS",%progbits,1
 	.type	.L.managed_type_name.5900, %object
 .L.managed_type_name.5900:
-	.asciz	"Google.Android.Material.DatePicker.CalendarConstraints, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5900, 88
+	.asciz	"Google.Android.Material.DatePicker.CompositeDateValidator, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5900, 91
 	.section	.rodata.managed_type_name.5901,"aMS",%progbits,1
 	.type	.L.managed_type_name.5901, %object
 .L.managed_type_name.5901:
-	.asciz	"Google.Android.Material.DatePicker.CompositeDateValidator, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5901, 91
+	.asciz	"Google.Android.Material.DatePicker.DateValidatorPointBackward, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5901, 95
 	.section	.rodata.managed_type_name.5902,"aMS",%progbits,1
 	.type	.L.managed_type_name.5902, %object
 .L.managed_type_name.5902:
-	.asciz	"Google.Android.Material.DatePicker.DateValidatorPointBackward, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5902, 95
+	.asciz	"Google.Android.Material.DatePicker.DateValidatorPointForward, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5902, 94
 	.section	.rodata.managed_type_name.5903,"aMS",%progbits,1
 	.type	.L.managed_type_name.5903, %object
 .L.managed_type_name.5903:
-	.asciz	"Google.Android.Material.DatePicker.DateValidatorPointForward, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5903, 94
+	.asciz	"Google.Android.Material.DatePicker.IDateSelectorInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5903, 89
 	.section	.rodata.managed_type_name.5904,"aMS",%progbits,1
 	.type	.L.managed_type_name.5904, %object
 .L.managed_type_name.5904:
-	.asciz	"Google.Android.Material.DatePicker.IDateSelectorInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5904, 89
+	.asciz	"Google.Android.Material.DatePicker.IMaterialPickerOnPositiveButtonClickListenerImplementor, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5904, 124
 	.section	.rodata.managed_type_name.5905,"aMS",%progbits,1
 	.type	.L.managed_type_name.5905, %object
 .L.managed_type_name.5905:
-	.asciz	"Google.Android.Material.DatePicker.IMaterialPickerOnPositiveButtonClickListenerImplementor, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5905, 124
+	.asciz	"Google.Android.Material.DatePicker.IMaterialPickerOnPositiveButtonClickListenerInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5905, 120
 	.section	.rodata.managed_type_name.5906,"aMS",%progbits,1
 	.type	.L.managed_type_name.5906, %object
 .L.managed_type_name.5906:
-	.asciz	"Google.Android.Material.DatePicker.IMaterialPickerOnPositiveButtonClickListenerInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5906, 120
+	.asciz	"Google.Android.Material.DatePicker.MaterialCalendar, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5906, 85
 	.section	.rodata.managed_type_name.5907,"aMS",%progbits,1
 	.type	.L.managed_type_name.5907, %object
 .L.managed_type_name.5907:
-	.asciz	"Google.Android.Material.DatePicker.MaterialCalendar, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5907, 85
+	.asciz	"Google.Android.Material.DatePicker.MaterialDatePicker+Builder, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5907, 95
 	.section	.rodata.managed_type_name.5908,"aMS",%progbits,1
 	.type	.L.managed_type_name.5908, %object
 .L.managed_type_name.5908:
-	.asciz	"Google.Android.Material.DatePicker.MaterialDatePicker+Builder, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5908, 95
+	.asciz	"Google.Android.Material.DatePicker.MaterialDatePicker+IInputModeInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5908, 105
 	.section	.rodata.managed_type_name.5909,"aMS",%progbits,1
 	.type	.L.managed_type_name.5909, %object
 .L.managed_type_name.5909:
-	.asciz	"Google.Android.Material.DatePicker.MaterialDatePicker+IInputModeInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5909, 105
+	.asciz	"Google.Android.Material.DatePicker.MaterialDatePicker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5909, 87
 	.section	.rodata.managed_type_name.5910,"aMS",%progbits,1
 	.type	.L.managed_type_name.5910, %object
 .L.managed_type_name.5910:
-	.asciz	"Google.Android.Material.DatePicker.MaterialDatePicker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5910, 87
+	.asciz	"Google.Android.Material.DatePicker.MaterialStyledDatePickerDialog, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5910, 99
 	.section	.rodata.managed_type_name.5911,"aMS",%progbits,1
 	.type	.L.managed_type_name.5911, %object
 .L.managed_type_name.5911:
-	.asciz	"Google.Android.Material.DatePicker.MaterialStyledDatePickerDialog, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5911, 99
+	.asciz	"Google.Android.Material.DatePicker.MaterialTextInputPicker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5911, 92
 	.section	.rodata.managed_type_name.5912,"aMS",%progbits,1
 	.type	.L.managed_type_name.5912, %object
 .L.managed_type_name.5912:
-	.asciz	"Google.Android.Material.DatePicker.MaterialTextInputPicker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5912, 92
+	.asciz	"Google.Android.Material.DatePicker.RangeDateSelector, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5912, 86
 	.section	.rodata.managed_type_name.5913,"aMS",%progbits,1
 	.type	.L.managed_type_name.5913, %object
 .L.managed_type_name.5913:
-	.asciz	"Google.Android.Material.DatePicker.RangeDateSelector, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5913, 86
+	.asciz	"Google.Android.Material.DatePicker.SingleDateSelector, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5913, 87
 	.section	.rodata.managed_type_name.5914,"aMS",%progbits,1
 	.type	.L.managed_type_name.5914, %object
 .L.managed_type_name.5914:
-	.asciz	"Google.Android.Material.DatePicker.SingleDateSelector, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5914, 87
+	.asciz	"Google.Android.Material.Dialog.InsetDialogOnTouchListener, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5914, 91
 	.section	.rodata.managed_type_name.5915,"aMS",%progbits,1
 	.type	.L.managed_type_name.5915, %object
 .L.managed_type_name.5915:
-	.asciz	"Google.Android.Material.Dialog.InsetDialogOnTouchListener, Xamarin.Google.Android.Material"
+	.asciz	"Google.Android.Material.Dialog.MaterialAlertDialogBuilder, Xamarin.Google.Android.Material"
 	.size	.L.managed_type_name.5915, 91
 	.section	.rodata.managed_type_name.5916,"aMS",%progbits,1
 	.type	.L.managed_type_name.5916, %object
 .L.managed_type_name.5916:
-	.asciz	"Google.Android.Material.Dialog.MaterialAlertDialogBuilder, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5916, 91
+	.asciz	"Google.Android.Material.Dialog.MaterialDialogs, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5916, 80
 	.section	.rodata.managed_type_name.5917,"aMS",%progbits,1
 	.type	.L.managed_type_name.5917, %object
 .L.managed_type_name.5917:
-	.asciz	"Google.Android.Material.Dialog.MaterialDialogs, Xamarin.Google.Android.Material"
+	.asciz	"Google.Android.Material.Drawable.DrawableUtils, Xamarin.Google.Android.Material"
 	.size	.L.managed_type_name.5917, 80
 	.section	.rodata.managed_type_name.5918,"aMS",%progbits,1
 	.type	.L.managed_type_name.5918, %object
 .L.managed_type_name.5918:
-	.asciz	"Google.Android.Material.Drawable.DrawableUtils, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5918, 80
+	.asciz	"Google.Android.Material.Elevation.ElevationOverlayProvider, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5918, 92
 	.section	.rodata.managed_type_name.5919,"aMS",%progbits,1
 	.type	.L.managed_type_name.5919, %object
 .L.managed_type_name.5919:
-	.asciz	"Google.Android.Material.Elevation.ElevationOverlayProvider, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5919, 92
+	.asciz	"Google.Android.Material.Expandable.ExpandableWidgetHelper, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5919, 91
 	.section	.rodata.managed_type_name.5920,"aMS",%progbits,1
 	.type	.L.managed_type_name.5920, %object
 .L.managed_type_name.5920:
-	.asciz	"Google.Android.Material.Expandable.ExpandableWidgetHelper, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5920, 91
+	.asciz	"Google.Android.Material.Expandable.IExpandableTransformationWidgetInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5920, 107
 	.section	.rodata.managed_type_name.5921,"aMS",%progbits,1
 	.type	.L.managed_type_name.5921, %object
 .L.managed_type_name.5921:
-	.asciz	"Google.Android.Material.Expandable.IExpandableTransformationWidgetInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5921, 107
+	.asciz	"Google.Android.Material.Expandable.IExpandableWidgetInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5921, 93
 	.section	.rodata.managed_type_name.5922,"aMS",%progbits,1
 	.type	.L.managed_type_name.5922, %object
 .L.managed_type_name.5922:
-	.asciz	"Google.Android.Material.Expandable.IExpandableWidgetInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5922, 93
+	.asciz	"Google.Android.Material.FloatingActionButton.BaseMotionStrategy, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5922, 97
 	.section	.rodata.managed_type_name.5923,"aMS",%progbits,1
 	.type	.L.managed_type_name.5923, %object
 .L.managed_type_name.5923:
-	.asciz	"Google.Android.Material.FloatingActionButton.BaseMotionStrategy, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5923, 97
+	.asciz	"Google.Android.Material.FloatingActionButton.BaseMotionStrategyInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5923, 104
 	.section	.rodata.managed_type_name.5924,"aMS",%progbits,1
 	.type	.L.managed_type_name.5924, %object
 .L.managed_type_name.5924:
-	.asciz	"Google.Android.Material.FloatingActionButton.BaseMotionStrategyInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5924, 104
+	.asciz	"Google.Android.Material.FloatingActionButton.ExtendedFloatingActionButton+ExtendedFloatingActionButtonBehavior, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5924, 144
 	.section	.rodata.managed_type_name.5925,"aMS",%progbits,1
 	.type	.L.managed_type_name.5925, %object
 .L.managed_type_name.5925:
-	.asciz	"Google.Android.Material.FloatingActionButton.ExtendedFloatingActionButton+ExtendedFloatingActionButtonBehavior, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5925, 144
+	.asciz	"Google.Android.Material.FloatingActionButton.ExtendedFloatingActionButton+OnChangedCallback, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5925, 125
 	.section	.rodata.managed_type_name.5926,"aMS",%progbits,1
 	.type	.L.managed_type_name.5926, %object
 .L.managed_type_name.5926:
-	.asciz	"Google.Android.Material.FloatingActionButton.ExtendedFloatingActionButton+OnChangedCallback, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5926, 125
+	.asciz	"Google.Android.Material.FloatingActionButton.ExtendedFloatingActionButton+OnChangedCallbackInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5926, 132
 	.section	.rodata.managed_type_name.5927,"aMS",%progbits,1
 	.type	.L.managed_type_name.5927, %object
 .L.managed_type_name.5927:
-	.asciz	"Google.Android.Material.FloatingActionButton.ExtendedFloatingActionButton+OnChangedCallbackInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5927, 132
+	.asciz	"Google.Android.Material.FloatingActionButton.ExtendedFloatingActionButton, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5927, 107
 	.section	.rodata.managed_type_name.5928,"aMS",%progbits,1
 	.type	.L.managed_type_name.5928, %object
 .L.managed_type_name.5928:
-	.asciz	"Google.Android.Material.FloatingActionButton.ExtendedFloatingActionButton, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5928, 107
+	.asciz	"Google.Android.Material.FloatingActionButton.FloatingActionButton+BaseBehavior, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5928, 112
 	.section	.rodata.managed_type_name.5929,"aMS",%progbits,1
 	.type	.L.managed_type_name.5929, %object
 .L.managed_type_name.5929:
-	.asciz	"Google.Android.Material.FloatingActionButton.FloatingActionButton+BaseBehavior, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5929, 112
+	.asciz	"Google.Android.Material.FloatingActionButton.FloatingActionButton+Behavior, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5929, 108
 	.section	.rodata.managed_type_name.5930,"aMS",%progbits,1
 	.type	.L.managed_type_name.5930, %object
 .L.managed_type_name.5930:
-	.asciz	"Google.Android.Material.FloatingActionButton.FloatingActionButton+Behavior, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5930, 108
+	.asciz	"Google.Android.Material.FloatingActionButton.FloatingActionButton+ISizeInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5930, 112
 	.section	.rodata.managed_type_name.5931,"aMS",%progbits,1
 	.type	.L.managed_type_name.5931, %object
 .L.managed_type_name.5931:
-	.asciz	"Google.Android.Material.FloatingActionButton.FloatingActionButton+ISizeInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5931, 112
+	.asciz	"Google.Android.Material.FloatingActionButton.FloatingActionButton+OnVisibilityChangedListener, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5931, 127
 	.section	.rodata.managed_type_name.5932,"aMS",%progbits,1
 	.type	.L.managed_type_name.5932, %object
 .L.managed_type_name.5932:
-	.asciz	"Google.Android.Material.FloatingActionButton.FloatingActionButton+OnVisibilityChangedListener, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5932, 127
+	.asciz	"Google.Android.Material.FloatingActionButton.FloatingActionButton+OnVisibilityChangedListenerInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5932, 134
 	.section	.rodata.managed_type_name.5933,"aMS",%progbits,1
 	.type	.L.managed_type_name.5933, %object
 .L.managed_type_name.5933:
-	.asciz	"Google.Android.Material.FloatingActionButton.FloatingActionButton+OnVisibilityChangedListenerInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5933, 134
+	.asciz	"Google.Android.Material.FloatingActionButton.FloatingActionButton, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5933, 99
 	.section	.rodata.managed_type_name.5934,"aMS",%progbits,1
 	.type	.L.managed_type_name.5934, %object
 .L.managed_type_name.5934:
-	.asciz	"Google.Android.Material.FloatingActionButton.FloatingActionButton, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5934, 99
+	.asciz	"Google.Android.Material.ImageView.ShapeableImageView, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5934, 86
 	.section	.rodata.managed_type_name.5935,"aMS",%progbits,1
 	.type	.L.managed_type_name.5935, %object
 .L.managed_type_name.5935:
-	.asciz	"Google.Android.Material.ImageView.ShapeableImageView, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5935, 86
+	.asciz	"Google.Android.Material.Internal.BaselineLayout, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5935, 81
 	.section	.rodata.managed_type_name.5936,"aMS",%progbits,1
 	.type	.L.managed_type_name.5936, %object
 .L.managed_type_name.5936:
-	.asciz	"Google.Android.Material.Internal.BaselineLayout, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5936, 81
+	.asciz	"Google.Android.Material.Internal.CheckableImageButton, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5936, 87
 	.section	.rodata.managed_type_name.5937,"aMS",%progbits,1
 	.type	.L.managed_type_name.5937, %object
 .L.managed_type_name.5937:
-	.asciz	"Google.Android.Material.Internal.CheckableImageButton, Xamarin.Google.Android.Material"
+	.asciz	"Google.Android.Material.Internal.CollapsingTextHelper, Xamarin.Google.Android.Material"
 	.size	.L.managed_type_name.5937, 87
 	.section	.rodata.managed_type_name.5938,"aMS",%progbits,1
 	.type	.L.managed_type_name.5938, %object
 .L.managed_type_name.5938:
-	.asciz	"Google.Android.Material.Internal.CollapsingTextHelper, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5938, 87
+	.asciz	"Google.Android.Material.Internal.ContextUtils, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5938, 79
 	.section	.rodata.managed_type_name.5939,"aMS",%progbits,1
 	.type	.L.managed_type_name.5939, %object
 .L.managed_type_name.5939:
-	.asciz	"Google.Android.Material.Internal.ContextUtils, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5939, 79
+	.asciz	"Google.Android.Material.Internal.DescendantOffsetUtils, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5939, 88
 	.section	.rodata.managed_type_name.5940,"aMS",%progbits,1
 	.type	.L.managed_type_name.5940, %object
 .L.managed_type_name.5940:
-	.asciz	"Google.Android.Material.Internal.DescendantOffsetUtils, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5940, 88
+	.asciz	"Google.Android.Material.Internal.FlowLayout, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5940, 77
 	.section	.rodata.managed_type_name.5941,"aMS",%progbits,1
 	.type	.L.managed_type_name.5941, %object
 .L.managed_type_name.5941:
-	.asciz	"Google.Android.Material.Internal.FlowLayout, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5941, 77
+	.asciz	"Google.Android.Material.Internal.ForegroundLinearLayout, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5941, 89
 	.section	.rodata.managed_type_name.5942,"aMS",%progbits,1
 	.type	.L.managed_type_name.5942, %object
 .L.managed_type_name.5942:
-	.asciz	"Google.Android.Material.Internal.ForegroundLinearLayout, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5942, 89
+	.asciz	"Google.Android.Material.Internal.IExperimentalInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5942, 87
 	.section	.rodata.managed_type_name.5943,"aMS",%progbits,1
 	.type	.L.managed_type_name.5943, %object
 .L.managed_type_name.5943:
-	.asciz	"Google.Android.Material.Internal.IExperimentalInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5943, 87
+	.asciz	"Google.Android.Material.Internal.IViewOverlayImplInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5943, 90
 	.section	.rodata.managed_type_name.5944,"aMS",%progbits,1
 	.type	.L.managed_type_name.5944, %object
 .L.managed_type_name.5944:
-	.asciz	"Google.Android.Material.Internal.IViewOverlayImplInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5944, 90
+	.asciz	"Google.Android.Material.Internal.ManufacturerUtils, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5944, 84
 	.section	.rodata.managed_type_name.5945,"aMS",%progbits,1
 	.type	.L.managed_type_name.5945, %object
 .L.managed_type_name.5945:
-	.asciz	"Google.Android.Material.Internal.ManufacturerUtils, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5945, 84
+	.asciz	"Google.Android.Material.Internal.NavigationMenu, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5945, 81
 	.section	.rodata.managed_type_name.5946,"aMS",%progbits,1
 	.type	.L.managed_type_name.5946, %object
 .L.managed_type_name.5946:
-	.asciz	"Google.Android.Material.Internal.NavigationMenu, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5946, 81
+	.asciz	"Google.Android.Material.Internal.NavigationMenuItemView, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5946, 89
 	.section	.rodata.managed_type_name.5947,"aMS",%progbits,1
 	.type	.L.managed_type_name.5947, %object
 .L.managed_type_name.5947:
-	.asciz	"Google.Android.Material.Internal.NavigationMenuItemView, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5947, 89
+	.asciz	"Google.Android.Material.Internal.NavigationMenuPresenter, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5947, 90
 	.section	.rodata.managed_type_name.5948,"aMS",%progbits,1
 	.type	.L.managed_type_name.5948, %object
 .L.managed_type_name.5948:
-	.asciz	"Google.Android.Material.Internal.NavigationMenuPresenter, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5948, 90
+	.asciz	"Google.Android.Material.Internal.NavigationMenuView, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5948, 85
 	.section	.rodata.managed_type_name.5949,"aMS",%progbits,1
 	.type	.L.managed_type_name.5949, %object
 .L.managed_type_name.5949:
-	.asciz	"Google.Android.Material.Internal.NavigationMenuView, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5949, 85
+	.asciz	"Google.Android.Material.Internal.NavigationSubMenu, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5949, 84
 	.section	.rodata.managed_type_name.5950,"aMS",%progbits,1
 	.type	.L.managed_type_name.5950, %object
 .L.managed_type_name.5950:
-	.asciz	"Google.Android.Material.Internal.NavigationSubMenu, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5950, 84
+	.asciz	"Google.Android.Material.Internal.ParcelableSparseArray, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5950, 88
 	.section	.rodata.managed_type_name.5951,"aMS",%progbits,1
 	.type	.L.managed_type_name.5951, %object
 .L.managed_type_name.5951:
-	.asciz	"Google.Android.Material.Internal.ParcelableSparseArray, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5951, 88
+	.asciz	"Google.Android.Material.Internal.ParcelableSparseBooleanArray, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5951, 95
 	.section	.rodata.managed_type_name.5952,"aMS",%progbits,1
 	.type	.L.managed_type_name.5952, %object
 .L.managed_type_name.5952:
-	.asciz	"Google.Android.Material.Internal.ParcelableSparseBooleanArray, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5952, 95
+	.asciz	"Google.Android.Material.Internal.ParcelableSparseIntArray, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5952, 91
 	.section	.rodata.managed_type_name.5953,"aMS",%progbits,1
 	.type	.L.managed_type_name.5953, %object
 .L.managed_type_name.5953:
-	.asciz	"Google.Android.Material.Internal.ParcelableSparseIntArray, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5953, 91
+	.asciz	"Google.Android.Material.Internal.ScrimInsetsFrameLayout, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5953, 89
 	.section	.rodata.managed_type_name.5954,"aMS",%progbits,1
 	.type	.L.managed_type_name.5954, %object
 .L.managed_type_name.5954:
-	.asciz	"Google.Android.Material.Internal.ScrimInsetsFrameLayout, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5954, 89
+	.asciz	"Google.Android.Material.Internal.StateListAnimator, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5954, 84
 	.section	.rodata.managed_type_name.5955,"aMS",%progbits,1
 	.type	.L.managed_type_name.5955, %object
 .L.managed_type_name.5955:
-	.asciz	"Google.Android.Material.Internal.StateListAnimator, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5955, 84
+	.asciz	"Google.Android.Material.Internal.TextDrawableHelper+ITextDrawableDelegateInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5955, 114
 	.section	.rodata.managed_type_name.5956,"aMS",%progbits,1
 	.type	.L.managed_type_name.5956, %object
 .L.managed_type_name.5956:
-	.asciz	"Google.Android.Material.Internal.TextDrawableHelper+ITextDrawableDelegateInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5956, 114
+	.asciz	"Google.Android.Material.Internal.TextDrawableHelper, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5956, 85
 	.section	.rodata.managed_type_name.5957,"aMS",%progbits,1
 	.type	.L.managed_type_name.5957, %object
 .L.managed_type_name.5957:
-	.asciz	"Google.Android.Material.Internal.TextDrawableHelper, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5957, 85
+	.asciz	"Google.Android.Material.Internal.TextScale, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5957, 76
 	.section	.rodata.managed_type_name.5958,"aMS",%progbits,1
 	.type	.L.managed_type_name.5958, %object
 .L.managed_type_name.5958:
-	.asciz	"Google.Android.Material.Internal.TextScale, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5958, 76
+	.asciz	"Google.Android.Material.Internal.ThemeEnforcement, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5958, 83
 	.section	.rodata.managed_type_name.5959,"aMS",%progbits,1
 	.type	.L.managed_type_name.5959, %object
 .L.managed_type_name.5959:
-	.asciz	"Google.Android.Material.Internal.ThemeEnforcement, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5959, 83
+	.asciz	"Google.Android.Material.Internal.ViewUtils+IOnApplyWindowInsetsListenerImplementor, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5959, 116
 	.section	.rodata.managed_type_name.5960,"aMS",%progbits,1
 	.type	.L.managed_type_name.5960, %object
 .L.managed_type_name.5960:
-	.asciz	"Google.Android.Material.Internal.ViewUtils+IOnApplyWindowInsetsListenerImplementor, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5960, 116
+	.asciz	"Google.Android.Material.Internal.ViewUtils+IOnApplyWindowInsetsListenerInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5960, 112
 	.section	.rodata.managed_type_name.5961,"aMS",%progbits,1
 	.type	.L.managed_type_name.5961, %object
 .L.managed_type_name.5961:
-	.asciz	"Google.Android.Material.Internal.ViewUtils+IOnApplyWindowInsetsListenerInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5961, 112
+	.asciz	"Google.Android.Material.Internal.ViewUtils+RelativePadding, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5961, 92
 	.section	.rodata.managed_type_name.5962,"aMS",%progbits,1
 	.type	.L.managed_type_name.5962, %object
 .L.managed_type_name.5962:
-	.asciz	"Google.Android.Material.Internal.ViewUtils+RelativePadding, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5962, 92
+	.asciz	"Google.Android.Material.Internal.ViewUtils, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5962, 76
 	.section	.rodata.managed_type_name.5963,"aMS",%progbits,1
 	.type	.L.managed_type_name.5963, %object
 .L.managed_type_name.5963:
-	.asciz	"Google.Android.Material.Internal.ViewUtils, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5963, 76
+	.asciz	"Google.Android.Material.Internal.VisibilityAwareImageButton, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5963, 93
 	.section	.rodata.managed_type_name.5964,"aMS",%progbits,1
 	.type	.L.managed_type_name.5964, %object
 .L.managed_type_name.5964:
-	.asciz	"Google.Android.Material.Internal.VisibilityAwareImageButton, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5964, 93
+	.asciz	"Google.Android.Material.Math.MathUtils, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5964, 72
 	.section	.rodata.managed_type_name.5965,"aMS",%progbits,1
 	.type	.L.managed_type_name.5965, %object
 .L.managed_type_name.5965:
-	.asciz	"Google.Android.Material.Math.MathUtils, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5965, 72
+	.asciz	"Google.Android.Material.Navigation.NavigationView+IOnNavigationItemSelectedListenerImplementor, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5965, 128
 	.section	.rodata.managed_type_name.5966,"aMS",%progbits,1
 	.type	.L.managed_type_name.5966, %object
 .L.managed_type_name.5966:
-	.asciz	"Google.Android.Material.Navigation.NavigationView+IOnNavigationItemSelectedListenerImplementor, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5966, 128
+	.asciz	"Google.Android.Material.Navigation.NavigationView+IOnNavigationItemSelectedListenerInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5966, 124
 	.section	.rodata.managed_type_name.5967,"aMS",%progbits,1
 	.type	.L.managed_type_name.5967, %object
 .L.managed_type_name.5967:
-	.asciz	"Google.Android.Material.Navigation.NavigationView+IOnNavigationItemSelectedListenerInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5967, 124
+	.asciz	"Google.Android.Material.Navigation.NavigationView+SavedState, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5967, 94
 	.section	.rodata.managed_type_name.5968,"aMS",%progbits,1
 	.type	.L.managed_type_name.5968, %object
 .L.managed_type_name.5968:
-	.asciz	"Google.Android.Material.Navigation.NavigationView+SavedState, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5968, 94
+	.asciz	"Google.Android.Material.Navigation.NavigationView, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5968, 83
 	.section	.rodata.managed_type_name.5969,"aMS",%progbits,1
 	.type	.L.managed_type_name.5969, %object
 .L.managed_type_name.5969:
-	.asciz	"Google.Android.Material.Navigation.NavigationView, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5969, 83
+	.asciz	"Google.Android.Material.RadioButton.MaterialRadioButton, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5969, 89
 	.section	.rodata.managed_type_name.5970,"aMS",%progbits,1
 	.type	.L.managed_type_name.5970, %object
 .L.managed_type_name.5970:
-	.asciz	"Google.Android.Material.RadioButton.MaterialRadioButton, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5970, 89
+	.asciz	"Google.Android.Material.Resources.CancelableFontCallback+IApplyFontInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5970, 108
 	.section	.rodata.managed_type_name.5971,"aMS",%progbits,1
 	.type	.L.managed_type_name.5971, %object
 .L.managed_type_name.5971:
-	.asciz	"Google.Android.Material.Resources.CancelableFontCallback+IApplyFontInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5971, 108
+	.asciz	"Google.Android.Material.Resources.CancelableFontCallback, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5971, 90
 	.section	.rodata.managed_type_name.5972,"aMS",%progbits,1
 	.type	.L.managed_type_name.5972, %object
 .L.managed_type_name.5972:
-	.asciz	"Google.Android.Material.Resources.CancelableFontCallback, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5972, 90
+	.asciz	"Google.Android.Material.Resources.MaterialAttributes, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5972, 86
 	.section	.rodata.managed_type_name.5973,"aMS",%progbits,1
 	.type	.L.managed_type_name.5973, %object
 .L.managed_type_name.5973:
-	.asciz	"Google.Android.Material.Resources.MaterialAttributes, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5973, 86
+	.asciz	"Google.Android.Material.Resources.MaterialResources, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5973, 85
 	.section	.rodata.managed_type_name.5974,"aMS",%progbits,1
 	.type	.L.managed_type_name.5974, %object
 .L.managed_type_name.5974:
-	.asciz	"Google.Android.Material.Resources.MaterialResources, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5974, 85
+	.asciz	"Google.Android.Material.Resources.TextAppearance, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5974, 82
 	.section	.rodata.managed_type_name.5975,"aMS",%progbits,1
 	.type	.L.managed_type_name.5975, %object
 .L.managed_type_name.5975:
-	.asciz	"Google.Android.Material.Resources.TextAppearance, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5975, 82
+	.asciz	"Google.Android.Material.Resources.TextAppearanceConfig, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5975, 88
 	.section	.rodata.managed_type_name.5976,"aMS",%progbits,1
 	.type	.L.managed_type_name.5976, %object
 .L.managed_type_name.5976:
-	.asciz	"Google.Android.Material.Resources.TextAppearanceConfig, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5976, 88
+	.asciz	"Google.Android.Material.Resources.TextAppearanceFontCallback, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5976, 94
 	.section	.rodata.managed_type_name.5977,"aMS",%progbits,1
 	.type	.L.managed_type_name.5977, %object
 .L.managed_type_name.5977:
-	.asciz	"Google.Android.Material.Resources.TextAppearanceFontCallback, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5977, 94
+	.asciz	"Google.Android.Material.Resources.TextAppearanceFontCallbackInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5977, 101
 	.section	.rodata.managed_type_name.5978,"aMS",%progbits,1
 	.type	.L.managed_type_name.5978, %object
 .L.managed_type_name.5978:
-	.asciz	"Google.Android.Material.Resources.TextAppearanceFontCallbackInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5978, 101
+	.asciz	"Google.Android.Material.Ripple.RippleDrawableCompat, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5978, 85
 	.section	.rodata.managed_type_name.5979,"aMS",%progbits,1
 	.type	.L.managed_type_name.5979, %object
 .L.managed_type_name.5979:
-	.asciz	"Google.Android.Material.Ripple.RippleDrawableCompat, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5979, 85
+	.asciz	"Google.Android.Material.Ripple.RippleUtils, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5979, 76
 	.section	.rodata.managed_type_name.5980,"aMS",%progbits,1
 	.type	.L.managed_type_name.5980, %object
 .L.managed_type_name.5980:
-	.asciz	"Google.Android.Material.Ripple.RippleUtils, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5980, 76
+	.asciz	"Google.Android.Material.Shadow.IShadowViewDelegateInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5980, 91
 	.section	.rodata.managed_type_name.5981,"aMS",%progbits,1
 	.type	.L.managed_type_name.5981, %object
 .L.managed_type_name.5981:
-	.asciz	"Google.Android.Material.Shadow.IShadowViewDelegateInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5981, 91
+	.asciz	"Google.Android.Material.Shadow.ShadowDrawableWrapper, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5981, 86
 	.section	.rodata.managed_type_name.5982,"aMS",%progbits,1
 	.type	.L.managed_type_name.5982, %object
 .L.managed_type_name.5982:
-	.asciz	"Google.Android.Material.Shadow.ShadowDrawableWrapper, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5982, 86
+	.asciz	"Google.Android.Material.Shadow.ShadowRenderer, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5982, 79
 	.section	.rodata.managed_type_name.5983,"aMS",%progbits,1
 	.type	.L.managed_type_name.5983, %object
 .L.managed_type_name.5983:
-	.asciz	"Google.Android.Material.Shadow.ShadowRenderer, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5983, 79
+	.asciz	"Google.Android.Material.Shape.AbsoluteCornerSize, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5983, 82
 	.section	.rodata.managed_type_name.5984,"aMS",%progbits,1
 	.type	.L.managed_type_name.5984, %object
 .L.managed_type_name.5984:
-	.asciz	"Google.Android.Material.Shape.AbsoluteCornerSize, Xamarin.Google.Android.Material"
+	.asciz	"Google.Android.Material.Shape.AdjustedCornerSize, Xamarin.Google.Android.Material"
 	.size	.L.managed_type_name.5984, 82
 	.section	.rodata.managed_type_name.5985,"aMS",%progbits,1
 	.type	.L.managed_type_name.5985, %object
 .L.managed_type_name.5985:
-	.asciz	"Google.Android.Material.Shape.AdjustedCornerSize, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5985, 82
+	.asciz	"Google.Android.Material.Shape.CornerFamily, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5985, 76
 	.section	.rodata.managed_type_name.5986,"aMS",%progbits,1
 	.type	.L.managed_type_name.5986, %object
 .L.managed_type_name.5986:
-	.asciz	"Google.Android.Material.Shape.CornerFamily, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5986, 76
+	.asciz	"Google.Android.Material.Shape.CornerFamilyConsts, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5986, 82
 	.section	.rodata.managed_type_name.5987,"aMS",%progbits,1
 	.type	.L.managed_type_name.5987, %object
 .L.managed_type_name.5987:
-	.asciz	"Google.Android.Material.Shape.CornerFamilyConsts, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5987, 82
+	.asciz	"Google.Android.Material.Shape.CornerTreatment, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5987, 79
 	.section	.rodata.managed_type_name.5988,"aMS",%progbits,1
 	.type	.L.managed_type_name.5988, %object
 .L.managed_type_name.5988:
-	.asciz	"Google.Android.Material.Shape.CornerTreatment, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5988, 79
+	.asciz	"Google.Android.Material.Shape.CutCornerTreatment, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5988, 82
 	.section	.rodata.managed_type_name.5989,"aMS",%progbits,1
 	.type	.L.managed_type_name.5989, %object
 .L.managed_type_name.5989:
-	.asciz	"Google.Android.Material.Shape.CutCornerTreatment, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5989, 82
+	.asciz	"Google.Android.Material.Shape.EdgeTreatment, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5989, 77
 	.section	.rodata.managed_type_name.5990,"aMS",%progbits,1
 	.type	.L.managed_type_name.5990, %object
 .L.managed_type_name.5990:
-	.asciz	"Google.Android.Material.Shape.EdgeTreatment, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5990, 77
+	.asciz	"Google.Android.Material.Shape.ICornerFamilyInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5990, 84
 	.section	.rodata.managed_type_name.5991,"aMS",%progbits,1
 	.type	.L.managed_type_name.5991, %object
 .L.managed_type_name.5991:
-	.asciz	"Google.Android.Material.Shape.ICornerFamilyInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5991, 84
+	.asciz	"Google.Android.Material.Shape.ICornerSizeInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5991, 82
 	.section	.rodata.managed_type_name.5992,"aMS",%progbits,1
 	.type	.L.managed_type_name.5992, %object
 .L.managed_type_name.5992:
-	.asciz	"Google.Android.Material.Shape.ICornerSizeInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5992, 82
+	.asciz	"Google.Android.Material.Shape.IShapeableInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5992, 81
 	.section	.rodata.managed_type_name.5993,"aMS",%progbits,1
 	.type	.L.managed_type_name.5993, %object
 .L.managed_type_name.5993:
-	.asciz	"Google.Android.Material.Shape.IShapeableInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5993, 81
+	.asciz	"Google.Android.Material.Shape.InterpolateOnScrollPositionChangeHelper, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5993, 103
 	.section	.rodata.managed_type_name.5994,"aMS",%progbits,1
 	.type	.L.managed_type_name.5994, %object
 .L.managed_type_name.5994:
-	.asciz	"Google.Android.Material.Shape.InterpolateOnScrollPositionChangeHelper, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5994, 103
+	.asciz	"Google.Android.Material.Shape.MarkerEdgeTreatment, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5994, 83
 	.section	.rodata.managed_type_name.5995,"aMS",%progbits,1
 	.type	.L.managed_type_name.5995, %object
 .L.managed_type_name.5995:
-	.asciz	"Google.Android.Material.Shape.MarkerEdgeTreatment, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5995, 83
+	.asciz	"Google.Android.Material.Shape.MaterialShapeDrawable+ICompatibilityShadowModeInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5995, 117
 	.section	.rodata.managed_type_name.5996,"aMS",%progbits,1
 	.type	.L.managed_type_name.5996, %object
 .L.managed_type_name.5996:
-	.asciz	"Google.Android.Material.Shape.MaterialShapeDrawable+ICompatibilityShadowModeInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5996, 117
+	.asciz	"Google.Android.Material.Shape.MaterialShapeDrawable, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5996, 85
 	.section	.rodata.managed_type_name.5997,"aMS",%progbits,1
 	.type	.L.managed_type_name.5997, %object
 .L.managed_type_name.5997:
-	.asciz	"Google.Android.Material.Shape.MaterialShapeDrawable, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5997, 85
+	.asciz	"Google.Android.Material.Shape.MaterialShapeUtils, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5997, 82
 	.section	.rodata.managed_type_name.5998,"aMS",%progbits,1
 	.type	.L.managed_type_name.5998, %object
 .L.managed_type_name.5998:
-	.asciz	"Google.Android.Material.Shape.MaterialShapeUtils, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5998, 82
+	.asciz	"Google.Android.Material.Shape.OffsetEdgeTreatment, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5998, 83
 	.section	.rodata.managed_type_name.5999,"aMS",%progbits,1
 	.type	.L.managed_type_name.5999, %object
 .L.managed_type_name.5999:
-	.asciz	"Google.Android.Material.Shape.OffsetEdgeTreatment, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.5999, 83
+	.asciz	"Google.Android.Material.Shape.RelativeCornerSize, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.5999, 82
 	.section	.rodata.managed_type_name.6000,"aMS",%progbits,1
 	.type	.L.managed_type_name.6000, %object
 .L.managed_type_name.6000:
-	.asciz	"Google.Android.Material.Shape.RelativeCornerSize, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6000, 82
+	.asciz	"Google.Android.Material.Shape.RoundedCornerTreatment, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6000, 86
 	.section	.rodata.managed_type_name.6001,"aMS",%progbits,1
 	.type	.L.managed_type_name.6001, %object
 .L.managed_type_name.6001:
-	.asciz	"Google.Android.Material.Shape.RoundedCornerTreatment, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6001, 86
+	.asciz	"Google.Android.Material.Shape.ShapeAppearanceModel+Builder, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6001, 92
 	.section	.rodata.managed_type_name.6002,"aMS",%progbits,1
 	.type	.L.managed_type_name.6002, %object
 .L.managed_type_name.6002:
-	.asciz	"Google.Android.Material.Shape.ShapeAppearanceModel+Builder, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6002, 92
+	.asciz	"Google.Android.Material.Shape.ShapeAppearanceModel+ICornerSizeUnaryOperatorInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6002, 116
 	.section	.rodata.managed_type_name.6003,"aMS",%progbits,1
 	.type	.L.managed_type_name.6003, %object
 .L.managed_type_name.6003:
-	.asciz	"Google.Android.Material.Shape.ShapeAppearanceModel+ICornerSizeUnaryOperatorInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6003, 116
+	.asciz	"Google.Android.Material.Shape.ShapeAppearanceModel, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6003, 84
 	.section	.rodata.managed_type_name.6004,"aMS",%progbits,1
 	.type	.L.managed_type_name.6004, %object
 .L.managed_type_name.6004:
-	.asciz	"Google.Android.Material.Shape.ShapeAppearanceModel, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6004, 84
+	.asciz	"Google.Android.Material.Shape.ShapeAppearancePathProvider+IPathListenerImplementor, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6004, 116
 	.section	.rodata.managed_type_name.6005,"aMS",%progbits,1
 	.type	.L.managed_type_name.6005, %object
 .L.managed_type_name.6005:
-	.asciz	"Google.Android.Material.Shape.ShapeAppearancePathProvider+IPathListenerImplementor, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6005, 116
+	.asciz	"Google.Android.Material.Shape.ShapeAppearancePathProvider+IPathListenerInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6005, 112
 	.section	.rodata.managed_type_name.6006,"aMS",%progbits,1
 	.type	.L.managed_type_name.6006, %object
 .L.managed_type_name.6006:
-	.asciz	"Google.Android.Material.Shape.ShapeAppearancePathProvider+IPathListenerInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6006, 112
+	.asciz	"Google.Android.Material.Shape.ShapeAppearancePathProvider, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6006, 91
 	.section	.rodata.managed_type_name.6007,"aMS",%progbits,1
 	.type	.L.managed_type_name.6007, %object
 .L.managed_type_name.6007:
-	.asciz	"Google.Android.Material.Shape.ShapeAppearancePathProvider, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6007, 91
+	.asciz	"Google.Android.Material.Shape.ShapePath+PathArcOperation, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6007, 90
 	.section	.rodata.managed_type_name.6008,"aMS",%progbits,1
 	.type	.L.managed_type_name.6008, %object
 .L.managed_type_name.6008:
-	.asciz	"Google.Android.Material.Shape.ShapePath+PathArcOperation, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6008, 90
+	.asciz	"Google.Android.Material.Shape.ShapePath+PathCubicOperation, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6008, 92
 	.section	.rodata.managed_type_name.6009,"aMS",%progbits,1
 	.type	.L.managed_type_name.6009, %object
 .L.managed_type_name.6009:
-	.asciz	"Google.Android.Material.Shape.ShapePath+PathCubicOperation, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6009, 92
+	.asciz	"Google.Android.Material.Shape.ShapePath+PathLineOperation, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6009, 91
 	.section	.rodata.managed_type_name.6010,"aMS",%progbits,1
 	.type	.L.managed_type_name.6010, %object
 .L.managed_type_name.6010:
-	.asciz	"Google.Android.Material.Shape.ShapePath+PathLineOperation, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6010, 91
+	.asciz	"Google.Android.Material.Shape.ShapePath+PathOperation, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6010, 87
 	.section	.rodata.managed_type_name.6011,"aMS",%progbits,1
 	.type	.L.managed_type_name.6011, %object
 .L.managed_type_name.6011:
-	.asciz	"Google.Android.Material.Shape.ShapePath+PathOperation, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6011, 87
+	.asciz	"Google.Android.Material.Shape.ShapePath+PathOperationInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6011, 94
 	.section	.rodata.managed_type_name.6012,"aMS",%progbits,1
 	.type	.L.managed_type_name.6012, %object
 .L.managed_type_name.6012:
-	.asciz	"Google.Android.Material.Shape.ShapePath+PathOperationInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6012, 94
+	.asciz	"Google.Android.Material.Shape.ShapePath+PathQuadOperation, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6012, 91
 	.section	.rodata.managed_type_name.6013,"aMS",%progbits,1
 	.type	.L.managed_type_name.6013, %object
 .L.managed_type_name.6013:
-	.asciz	"Google.Android.Material.Shape.ShapePath+PathQuadOperation, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6013, 91
+	.asciz	"Google.Android.Material.Shape.ShapePath, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6013, 73
 	.section	.rodata.managed_type_name.6014,"aMS",%progbits,1
 	.type	.L.managed_type_name.6014, %object
 .L.managed_type_name.6014:
-	.asciz	"Google.Android.Material.Shape.ShapePath, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6014, 73
+	.asciz	"Google.Android.Material.Shape.ShapePathModel, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6014, 78
 	.section	.rodata.managed_type_name.6015,"aMS",%progbits,1
 	.type	.L.managed_type_name.6015, %object
 .L.managed_type_name.6015:
-	.asciz	"Google.Android.Material.Shape.ShapePathModel, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6015, 78
+	.asciz	"Google.Android.Material.Shape.TriangleEdgeTreatment, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6015, 85
 	.section	.rodata.managed_type_name.6016,"aMS",%progbits,1
 	.type	.L.managed_type_name.6016, %object
 .L.managed_type_name.6016:
-	.asciz	"Google.Android.Material.Shape.TriangleEdgeTreatment, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6016, 85
+	.asciz	"Google.Android.Material.Slider.BasicLabelFormatter, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6016, 84
 	.section	.rodata.managed_type_name.6017,"aMS",%progbits,1
 	.type	.L.managed_type_name.6017, %object
 .L.managed_type_name.6017:
-	.asciz	"Google.Android.Material.Slider.BasicLabelFormatter, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6017, 84
+	.asciz	"Google.Android.Material.Slider.IBaseOnChangeListenerImplementor, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6017, 97
 	.section	.rodata.managed_type_name.6018,"aMS",%progbits,1
 	.type	.L.managed_type_name.6018, %object
 .L.managed_type_name.6018:
-	.asciz	"Google.Android.Material.Slider.IBaseOnChangeListenerImplementor, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6018, 97
+	.asciz	"Google.Android.Material.Slider.IBaseOnChangeListenerInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6018, 93
 	.section	.rodata.managed_type_name.6019,"aMS",%progbits,1
 	.type	.L.managed_type_name.6019, %object
 .L.managed_type_name.6019:
-	.asciz	"Google.Android.Material.Slider.IBaseOnChangeListenerInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6019, 93
+	.asciz	"Google.Android.Material.Slider.IBaseOnSliderTouchListenerImplementor, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6019, 102
 	.section	.rodata.managed_type_name.6020,"aMS",%progbits,1
 	.type	.L.managed_type_name.6020, %object
 .L.managed_type_name.6020:
-	.asciz	"Google.Android.Material.Slider.IBaseOnSliderTouchListenerImplementor, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6020, 102
+	.asciz	"Google.Android.Material.Slider.IBaseOnSliderTouchListenerInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6020, 98
 	.section	.rodata.managed_type_name.6021,"aMS",%progbits,1
 	.type	.L.managed_type_name.6021, %object
 .L.managed_type_name.6021:
-	.asciz	"Google.Android.Material.Slider.IBaseOnSliderTouchListenerInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6021, 98
+	.asciz	"Google.Android.Material.Slider.ILabelFormatterInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6021, 87
 	.section	.rodata.managed_type_name.6022,"aMS",%progbits,1
 	.type	.L.managed_type_name.6022, %object
 .L.managed_type_name.6022:
-	.asciz	"Google.Android.Material.Slider.ILabelFormatterInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6022, 87
+	.asciz	"Google.Android.Material.Slider.LabelFormatter, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6022, 79
 	.section	.rodata.managed_type_name.6023,"aMS",%progbits,1
 	.type	.L.managed_type_name.6023, %object
 .L.managed_type_name.6023:
-	.asciz	"Google.Android.Material.Slider.LabelFormatter, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6023, 79
+	.asciz	"Google.Android.Material.Slider.LabelFormatterConsts, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6023, 85
 	.section	.rodata.managed_type_name.6024,"aMS",%progbits,1
 	.type	.L.managed_type_name.6024, %object
 .L.managed_type_name.6024:
-	.asciz	"Google.Android.Material.Slider.LabelFormatterConsts, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6024, 85
+	.asciz	"Google.Android.Material.Slider.RangeSlider+IOnChangeListenerInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6024, 101
 	.section	.rodata.managed_type_name.6025,"aMS",%progbits,1
 	.type	.L.managed_type_name.6025, %object
 .L.managed_type_name.6025:
-	.asciz	"Google.Android.Material.Slider.RangeSlider+IOnChangeListenerInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6025, 101
+	.asciz	"Google.Android.Material.Slider.RangeSlider+IOnSliderTouchListenerInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6025, 106
 	.section	.rodata.managed_type_name.6026,"aMS",%progbits,1
 	.type	.L.managed_type_name.6026, %object
 .L.managed_type_name.6026:
-	.asciz	"Google.Android.Material.Slider.RangeSlider+IOnSliderTouchListenerInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6026, 106
+	.asciz	"Google.Android.Material.Slider.RangeSlider, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6026, 76
 	.section	.rodata.managed_type_name.6027,"aMS",%progbits,1
 	.type	.L.managed_type_name.6027, %object
 .L.managed_type_name.6027:
-	.asciz	"Google.Android.Material.Slider.RangeSlider, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6027, 76
+	.asciz	"Google.Android.Material.Slider.Slider+IOnChangeListenerInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6027, 96
 	.section	.rodata.managed_type_name.6028,"aMS",%progbits,1
 	.type	.L.managed_type_name.6028, %object
 .L.managed_type_name.6028:
-	.asciz	"Google.Android.Material.Slider.Slider+IOnChangeListenerInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6028, 96
+	.asciz	"Google.Android.Material.Slider.Slider+IOnSliderTouchListenerInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6028, 101
 	.section	.rodata.managed_type_name.6029,"aMS",%progbits,1
 	.type	.L.managed_type_name.6029, %object
 .L.managed_type_name.6029:
-	.asciz	"Google.Android.Material.Slider.Slider+IOnSliderTouchListenerInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6029, 101
+	.asciz	"Google.Android.Material.Slider.Slider, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6029, 71
 	.section	.rodata.managed_type_name.6030,"aMS",%progbits,1
 	.type	.L.managed_type_name.6030, %object
 .L.managed_type_name.6030:
-	.asciz	"Google.Android.Material.Slider.Slider, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6030, 71
+	.asciz	"Google.Android.Material.Snackbar.BaseTransientBottomBar+BaseCallback+IDismissEventInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6030, 123
 	.section	.rodata.managed_type_name.6031,"aMS",%progbits,1
 	.type	.L.managed_type_name.6031, %object
 .L.managed_type_name.6031:
-	.asciz	"Google.Android.Material.Snackbar.BaseTransientBottomBar+BaseCallback+IDismissEventInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6031, 123
+	.asciz	"Google.Android.Material.Snackbar.BaseTransientBottomBar+BaseCallback, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6031, 102
 	.section	.rodata.managed_type_name.6032,"aMS",%progbits,1
 	.type	.L.managed_type_name.6032, %object
 .L.managed_type_name.6032:
-	.asciz	"Google.Android.Material.Snackbar.BaseTransientBottomBar+BaseCallback, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6032, 102
+	.asciz	"Google.Android.Material.Snackbar.BaseTransientBottomBar+BaseCallbackInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6032, 109
 	.section	.rodata.managed_type_name.6033,"aMS",%progbits,1
 	.type	.L.managed_type_name.6033, %object
 .L.managed_type_name.6033:
-	.asciz	"Google.Android.Material.Snackbar.BaseTransientBottomBar+BaseCallbackInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6033, 109
+	.asciz	"Google.Android.Material.Snackbar.BaseTransientBottomBar+Behavior, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6033, 98
 	.section	.rodata.managed_type_name.6034,"aMS",%progbits,1
 	.type	.L.managed_type_name.6034, %object
 .L.managed_type_name.6034:
-	.asciz	"Google.Android.Material.Snackbar.BaseTransientBottomBar+Behavior, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6034, 98
+	.asciz	"Google.Android.Material.Snackbar.BaseTransientBottomBar+BehaviorDelegate, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6034, 106
 	.section	.rodata.managed_type_name.6035,"aMS",%progbits,1
 	.type	.L.managed_type_name.6035, %object
 .L.managed_type_name.6035:
-	.asciz	"Google.Android.Material.Snackbar.BaseTransientBottomBar+BehaviorDelegate, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6035, 106
+	.asciz	"Google.Android.Material.Snackbar.BaseTransientBottomBar+IAnimationModeInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6035, 111
 	.section	.rodata.managed_type_name.6036,"aMS",%progbits,1
 	.type	.L.managed_type_name.6036, %object
 .L.managed_type_name.6036:
-	.asciz	"Google.Android.Material.Snackbar.BaseTransientBottomBar+IAnimationModeInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6036, 111
+	.asciz	"Google.Android.Material.Snackbar.BaseTransientBottomBar+IContentViewCallbackInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6036, 117
 	.section	.rodata.managed_type_name.6037,"aMS",%progbits,1
 	.type	.L.managed_type_name.6037, %object
 .L.managed_type_name.6037:
-	.asciz	"Google.Android.Material.Snackbar.BaseTransientBottomBar+IContentViewCallbackInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6037, 117
+	.asciz	"Google.Android.Material.Snackbar.BaseTransientBottomBar+IDurationInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6037, 106
 	.section	.rodata.managed_type_name.6038,"aMS",%progbits,1
 	.type	.L.managed_type_name.6038, %object
 .L.managed_type_name.6038:
-	.asciz	"Google.Android.Material.Snackbar.BaseTransientBottomBar+IDurationInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6038, 106
+	.asciz	"Google.Android.Material.Snackbar.BaseTransientBottomBar+SnackbarBaseLayout, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6038, 108
 	.section	.rodata.managed_type_name.6039,"aMS",%progbits,1
 	.type	.L.managed_type_name.6039, %object
 .L.managed_type_name.6039:
-	.asciz	"Google.Android.Material.Snackbar.BaseTransientBottomBar+SnackbarBaseLayout, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6039, 108
+	.asciz	"Google.Android.Material.Snackbar.BaseTransientBottomBar, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6039, 89
 	.section	.rodata.managed_type_name.6040,"aMS",%progbits,1
 	.type	.L.managed_type_name.6040, %object
 .L.managed_type_name.6040:
-	.asciz	"Google.Android.Material.Snackbar.BaseTransientBottomBar, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6040, 89
+	.asciz	"Google.Android.Material.Snackbar.BaseTransientBottomBarInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6040, 96
 	.section	.rodata.managed_type_name.6041,"aMS",%progbits,1
 	.type	.L.managed_type_name.6041, %object
 .L.managed_type_name.6041:
-	.asciz	"Google.Android.Material.Snackbar.BaseTransientBottomBarInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6041, 96
+	.asciz	"Google.Android.Material.Snackbar.IContentViewCallbackInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6041, 94
 	.section	.rodata.managed_type_name.6042,"aMS",%progbits,1
 	.type	.L.managed_type_name.6042, %object
 .L.managed_type_name.6042:
-	.asciz	"Google.Android.Material.Snackbar.IContentViewCallbackInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6042, 94
+	.asciz	"Google.Android.Material.Snackbar.Snackbar+Callback, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6042, 84
 	.section	.rodata.managed_type_name.6043,"aMS",%progbits,1
 	.type	.L.managed_type_name.6043, %object
 .L.managed_type_name.6043:
-	.asciz	"Google.Android.Material.Snackbar.Snackbar+Callback, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6043, 84
+	.asciz	"Google.Android.Material.Snackbar.Snackbar+SnackbarActionClickImplementor, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6043, 106
 	.section	.rodata.managed_type_name.6044,"aMS",%progbits,1
 	.type	.L.managed_type_name.6044, %object
 .L.managed_type_name.6044:
-	.asciz	"Google.Android.Material.Snackbar.Snackbar+SnackbarActionClickImplementor, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6044, 106
+	.asciz	"Google.Android.Material.Snackbar.Snackbar+SnackbarLayout, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6044, 90
 	.section	.rodata.managed_type_name.6045,"aMS",%progbits,1
 	.type	.L.managed_type_name.6045, %object
 .L.managed_type_name.6045:
-	.asciz	"Google.Android.Material.Snackbar.Snackbar+SnackbarLayout, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6045, 90
+	.asciz	"Google.Android.Material.Snackbar.Snackbar, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6045, 75
 	.section	.rodata.managed_type_name.6046,"aMS",%progbits,1
 	.type	.L.managed_type_name.6046, %object
 .L.managed_type_name.6046:
-	.asciz	"Google.Android.Material.Snackbar.Snackbar, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6046, 75
+	.asciz	"Google.Android.Material.Snackbar.SnackbarContentLayout, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6046, 88
 	.section	.rodata.managed_type_name.6047,"aMS",%progbits,1
 	.type	.L.managed_type_name.6047, %object
 .L.managed_type_name.6047:
-	.asciz	"Google.Android.Material.Snackbar.SnackbarContentLayout, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6047, 88
+	.asciz	"Google.Android.Material.Stateful.ExtendableSavedState, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6047, 87
 	.section	.rodata.managed_type_name.6048,"aMS",%progbits,1
 	.type	.L.managed_type_name.6048, %object
 .L.managed_type_name.6048:
-	.asciz	"Google.Android.Material.Stateful.ExtendableSavedState, Xamarin.Google.Android.Material"
+	.asciz	"Google.Android.Material.SwitchMaterial.SwitchMaterial, Xamarin.Google.Android.Material"
 	.size	.L.managed_type_name.6048, 87
 	.section	.rodata.managed_type_name.6049,"aMS",%progbits,1
 	.type	.L.managed_type_name.6049, %object
 .L.managed_type_name.6049:
-	.asciz	"Google.Android.Material.SwitchMaterial.SwitchMaterial, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6049, 87
+	.asciz	"Google.Android.Material.Tabs.AppCompat.App.AppCompatActivity, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6049, 94
 	.section	.rodata.managed_type_name.6050,"aMS",%progbits,1
 	.type	.L.managed_type_name.6050, %object
 .L.managed_type_name.6050:
-	.asciz	"Google.Android.Material.Tabs.AppCompat.App.AppCompatActivity, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6050, 94
+	.asciz	"Google.Android.Material.Tabs.TabItem, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6050, 70
 	.section	.rodata.managed_type_name.6051,"aMS",%progbits,1
 	.type	.L.managed_type_name.6051, %object
 .L.managed_type_name.6051:
-	.asciz	"Google.Android.Material.Tabs.TabItem, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6051, 70
+	.asciz	"Google.Android.Material.Tabs.TabLayout+ILabelVisibilityInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6051, 96
 	.section	.rodata.managed_type_name.6052,"aMS",%progbits,1
 	.type	.L.managed_type_name.6052, %object
 .L.managed_type_name.6052:
-	.asciz	"Google.Android.Material.Tabs.TabLayout+ILabelVisibilityInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6052, 96
+	.asciz	"Google.Android.Material.Tabs.TabLayout+IModeInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6052, 85
 	.section	.rodata.managed_type_name.6053,"aMS",%progbits,1
 	.type	.L.managed_type_name.6053, %object
 .L.managed_type_name.6053:
-	.asciz	"Google.Android.Material.Tabs.TabLayout+IModeInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6053, 85
+	.asciz	"Google.Android.Material.Tabs.TabLayout+IOnTabSelectedListener2Invoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6053, 103
 	.section	.rodata.managed_type_name.6054,"aMS",%progbits,1
 	.type	.L.managed_type_name.6054, %object
 .L.managed_type_name.6054:
-	.asciz	"Google.Android.Material.Tabs.TabLayout+IOnTabSelectedListener2Invoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6054, 103
+	.asciz	"Google.Android.Material.Tabs.TabLayout+IOnTabSelectedListenerImplementor, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6054, 106
 	.section	.rodata.managed_type_name.6055,"aMS",%progbits,1
 	.type	.L.managed_type_name.6055, %object
 .L.managed_type_name.6055:
-	.asciz	"Google.Android.Material.Tabs.TabLayout+IOnTabSelectedListenerImplementor, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6055, 106
+	.asciz	"Google.Android.Material.Tabs.TabLayout+IOnTabSelectedListenerInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6055, 102
 	.section	.rodata.managed_type_name.6056,"aMS",%progbits,1
 	.type	.L.managed_type_name.6056, %object
 .L.managed_type_name.6056:
-	.asciz	"Google.Android.Material.Tabs.TabLayout+IOnTabSelectedListenerInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6056, 102
+	.asciz	"Google.Android.Material.Tabs.TabLayout+ITabGravityInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6056, 91
 	.section	.rodata.managed_type_name.6057,"aMS",%progbits,1
 	.type	.L.managed_type_name.6057, %object
 .L.managed_type_name.6057:
-	.asciz	"Google.Android.Material.Tabs.TabLayout+ITabGravityInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6057, 91
+	.asciz	"Google.Android.Material.Tabs.TabLayout+ITabIndicatorGravityInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6057, 100
 	.section	.rodata.managed_type_name.6058,"aMS",%progbits,1
 	.type	.L.managed_type_name.6058, %object
 .L.managed_type_name.6058:
-	.asciz	"Google.Android.Material.Tabs.TabLayout+ITabIndicatorGravityInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6058, 100
+	.asciz	"Google.Android.Material.Tabs.TabLayout+Tab, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6058, 76
 	.section	.rodata.managed_type_name.6059,"aMS",%progbits,1
 	.type	.L.managed_type_name.6059, %object
 .L.managed_type_name.6059:
-	.asciz	"Google.Android.Material.Tabs.TabLayout+Tab, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6059, 76
+	.asciz	"Google.Android.Material.Tabs.TabLayout+TabLayoutOnPageChangeListener, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6059, 102
 	.section	.rodata.managed_type_name.6060,"aMS",%progbits,1
 	.type	.L.managed_type_name.6060, %object
 .L.managed_type_name.6060:
-	.asciz	"Google.Android.Material.Tabs.TabLayout+TabLayoutOnPageChangeListener, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6060, 102
+	.asciz	"Google.Android.Material.Tabs.TabLayout+TabView, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6060, 80
 	.section	.rodata.managed_type_name.6061,"aMS",%progbits,1
 	.type	.L.managed_type_name.6061, %object
 .L.managed_type_name.6061:
-	.asciz	"Google.Android.Material.Tabs.TabLayout+TabView, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6061, 80
+	.asciz	"Google.Android.Material.Tabs.TabLayout+ViewPagerOnTabSelectedListener, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6061, 103
 	.section	.rodata.managed_type_name.6062,"aMS",%progbits,1
 	.type	.L.managed_type_name.6062, %object
 .L.managed_type_name.6062:
-	.asciz	"Google.Android.Material.Tabs.TabLayout+ViewPagerOnTabSelectedListener, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6062, 103
+	.asciz	"Google.Android.Material.Tabs.TabLayout, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6062, 72
 	.section	.rodata.managed_type_name.6063,"aMS",%progbits,1
 	.type	.L.managed_type_name.6063, %object
 .L.managed_type_name.6063:
-	.asciz	"Google.Android.Material.Tabs.TabLayout, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6063, 72
+	.asciz	"Google.Android.Material.Tabs.TabLayoutMediator+ITabConfigurationStrategyInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6063, 113
 	.section	.rodata.managed_type_name.6064,"aMS",%progbits,1
 	.type	.L.managed_type_name.6064, %object
 .L.managed_type_name.6064:
-	.asciz	"Google.Android.Material.Tabs.TabLayoutMediator+ITabConfigurationStrategyInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6064, 113
+	.asciz	"Google.Android.Material.Tabs.TabLayoutMediator, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6064, 80
 	.section	.rodata.managed_type_name.6065,"aMS",%progbits,1
 	.type	.L.managed_type_name.6065, %object
 .L.managed_type_name.6065:
-	.asciz	"Google.Android.Material.Tabs.TabLayoutMediator, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6065, 80
+	.asciz	"Google.Android.Material.TextField.MaterialAutoCompleteTextView, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6065, 96
 	.section	.rodata.managed_type_name.6066,"aMS",%progbits,1
 	.type	.L.managed_type_name.6066, %object
 .L.managed_type_name.6066:
-	.asciz	"Google.Android.Material.TextField.MaterialAutoCompleteTextView, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6066, 96
+	.asciz	"Google.Android.Material.TextField.TextInputEditText, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6066, 85
 	.section	.rodata.managed_type_name.6067,"aMS",%progbits,1
 	.type	.L.managed_type_name.6067, %object
 .L.managed_type_name.6067:
-	.asciz	"Google.Android.Material.TextField.TextInputEditText, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6067, 85
+	.asciz	"Google.Android.Material.TextField.TextInputLayout+AccessibilityDelegate, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6067, 105
 	.section	.rodata.managed_type_name.6068,"aMS",%progbits,1
 	.type	.L.managed_type_name.6068, %object
 .L.managed_type_name.6068:
-	.asciz	"Google.Android.Material.TextField.TextInputLayout+AccessibilityDelegate, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6068, 105
+	.asciz	"Google.Android.Material.TextField.TextInputLayout+IBoxBackgroundModeInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6068, 109
 	.section	.rodata.managed_type_name.6069,"aMS",%progbits,1
 	.type	.L.managed_type_name.6069, %object
 .L.managed_type_name.6069:
-	.asciz	"Google.Android.Material.TextField.TextInputLayout+IBoxBackgroundModeInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6069, 109
+	.asciz	"Google.Android.Material.TextField.TextInputLayout+IEndIconModeInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6069, 103
 	.section	.rodata.managed_type_name.6070,"aMS",%progbits,1
 	.type	.L.managed_type_name.6070, %object
 .L.managed_type_name.6070:
-	.asciz	"Google.Android.Material.TextField.TextInputLayout+IEndIconModeInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6070, 103
+	.asciz	"Google.Android.Material.TextField.TextInputLayout+IOnEditTextAttachedListenerImplementor, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6070, 122
 	.section	.rodata.managed_type_name.6071,"aMS",%progbits,1
 	.type	.L.managed_type_name.6071, %object
 .L.managed_type_name.6071:
-	.asciz	"Google.Android.Material.TextField.TextInputLayout+IOnEditTextAttachedListenerImplementor, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6071, 122
+	.asciz	"Google.Android.Material.TextField.TextInputLayout+IOnEditTextAttachedListenerInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6071, 118
 	.section	.rodata.managed_type_name.6072,"aMS",%progbits,1
 	.type	.L.managed_type_name.6072, %object
 .L.managed_type_name.6072:
-	.asciz	"Google.Android.Material.TextField.TextInputLayout+IOnEditTextAttachedListenerInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6072, 118
+	.asciz	"Google.Android.Material.TextField.TextInputLayout+IOnEndIconChangedListenerImplementor, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6072, 120
 	.section	.rodata.managed_type_name.6073,"aMS",%progbits,1
 	.type	.L.managed_type_name.6073, %object
 .L.managed_type_name.6073:
-	.asciz	"Google.Android.Material.TextField.TextInputLayout+IOnEndIconChangedListenerImplementor, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6073, 120
+	.asciz	"Google.Android.Material.TextField.TextInputLayout+IOnEndIconChangedListenerInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6073, 116
 	.section	.rodata.managed_type_name.6074,"aMS",%progbits,1
 	.type	.L.managed_type_name.6074, %object
 .L.managed_type_name.6074:
-	.asciz	"Google.Android.Material.TextField.TextInputLayout+IOnEndIconChangedListenerInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6074, 116
+	.asciz	"Google.Android.Material.TextField.TextInputLayout, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6074, 83
 	.section	.rodata.managed_type_name.6075,"aMS",%progbits,1
 	.type	.L.managed_type_name.6075, %object
 .L.managed_type_name.6075:
-	.asciz	"Google.Android.Material.TextField.TextInputLayout, Xamarin.Google.Android.Material"
+	.asciz	"Google.Android.Material.TextView.MaterialTextView, Xamarin.Google.Android.Material"
 	.size	.L.managed_type_name.6075, 83
 	.section	.rodata.managed_type_name.6076,"aMS",%progbits,1
 	.type	.L.managed_type_name.6076, %object
 .L.managed_type_name.6076:
-	.asciz	"Google.Android.Material.TextView.MaterialTextView, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6076, 83
+	.asciz	"Google.Android.Material.Theme.MaterialComponentsViewInflater, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6076, 94
 	.section	.rodata.managed_type_name.6077,"aMS",%progbits,1
 	.type	.L.managed_type_name.6077, %object
 .L.managed_type_name.6077:
-	.asciz	"Google.Android.Material.Theme.MaterialComponentsViewInflater, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6077, 94
+	.asciz	"Google.Android.Material.Theme.Overlay.MaterialThemeOverlay, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6077, 92
 	.section	.rodata.managed_type_name.6078,"aMS",%progbits,1
 	.type	.L.managed_type_name.6078, %object
 .L.managed_type_name.6078:
-	.asciz	"Google.Android.Material.Theme.Overlay.MaterialThemeOverlay, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6078, 92
+	.asciz	"Google.Android.Material.Tooltip.TooltipDrawable, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6078, 81
 	.section	.rodata.managed_type_name.6079,"aMS",%progbits,1
 	.type	.L.managed_type_name.6079, %object
 .L.managed_type_name.6079:
-	.asciz	"Google.Android.Material.Tooltip.TooltipDrawable, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6079, 81
+	.asciz	"Google.Android.Material.Transformation.ExpandableBehavior, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6079, 91
 	.section	.rodata.managed_type_name.6080,"aMS",%progbits,1
 	.type	.L.managed_type_name.6080, %object
 .L.managed_type_name.6080:
-	.asciz	"Google.Android.Material.Transformation.ExpandableBehavior, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6080, 91
+	.asciz	"Google.Android.Material.Transformation.ExpandableBehaviorInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6080, 98
 	.section	.rodata.managed_type_name.6081,"aMS",%progbits,1
 	.type	.L.managed_type_name.6081, %object
 .L.managed_type_name.6081:
-	.asciz	"Google.Android.Material.Transformation.ExpandableBehaviorInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6081, 98
+	.asciz	"Google.Android.Material.Transformation.ExpandableTransformationBehavior, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6081, 105
 	.section	.rodata.managed_type_name.6082,"aMS",%progbits,1
 	.type	.L.managed_type_name.6082, %object
 .L.managed_type_name.6082:
-	.asciz	"Google.Android.Material.Transformation.ExpandableTransformationBehavior, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6082, 105
+	.asciz	"Google.Android.Material.Transformation.ExpandableTransformationBehaviorInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6082, 112
 	.section	.rodata.managed_type_name.6083,"aMS",%progbits,1
 	.type	.L.managed_type_name.6083, %object
 .L.managed_type_name.6083:
-	.asciz	"Google.Android.Material.Transformation.ExpandableTransformationBehaviorInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6083, 112
+	.asciz	"Google.Android.Material.Transformation.FabTransformationBehavior+FabTransformationSpec, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6083, 120
 	.section	.rodata.managed_type_name.6084,"aMS",%progbits,1
 	.type	.L.managed_type_name.6084, %object
 .L.managed_type_name.6084:
-	.asciz	"Google.Android.Material.Transformation.FabTransformationBehavior+FabTransformationSpec, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6084, 120
+	.asciz	"Google.Android.Material.Transformation.FabTransformationBehavior, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6084, 98
 	.section	.rodata.managed_type_name.6085,"aMS",%progbits,1
 	.type	.L.managed_type_name.6085, %object
 .L.managed_type_name.6085:
-	.asciz	"Google.Android.Material.Transformation.FabTransformationBehavior, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6085, 98
+	.asciz	"Google.Android.Material.Transformation.FabTransformationBehaviorInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6085, 105
 	.section	.rodata.managed_type_name.6086,"aMS",%progbits,1
 	.type	.L.managed_type_name.6086, %object
 .L.managed_type_name.6086:
-	.asciz	"Google.Android.Material.Transformation.FabTransformationBehaviorInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6086, 105
+	.asciz	"Google.Android.Material.Transformation.FabTransformationScrimBehavior, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6086, 103
 	.section	.rodata.managed_type_name.6087,"aMS",%progbits,1
 	.type	.L.managed_type_name.6087, %object
 .L.managed_type_name.6087:
-	.asciz	"Google.Android.Material.Transformation.FabTransformationScrimBehavior, Xamarin.Google.Android.Material"
+	.asciz	"Google.Android.Material.Transformation.FabTransformationSheetBehavior, Xamarin.Google.Android.Material"
 	.size	.L.managed_type_name.6087, 103
 	.section	.rodata.managed_type_name.6088,"aMS",%progbits,1
 	.type	.L.managed_type_name.6088, %object
 .L.managed_type_name.6088:
-	.asciz	"Google.Android.Material.Transformation.FabTransformationSheetBehavior, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6088, 103
+	.asciz	"Google.Android.Material.Transformation.TransformationChildCard, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6088, 96
 	.section	.rodata.managed_type_name.6089,"aMS",%progbits,1
 	.type	.L.managed_type_name.6089, %object
 .L.managed_type_name.6089:
-	.asciz	"Google.Android.Material.Transformation.TransformationChildCard, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6089, 96
+	.asciz	"Google.Android.Material.Transformation.TransformationChildLayout, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6089, 98
 	.section	.rodata.managed_type_name.6090,"aMS",%progbits,1
 	.type	.L.managed_type_name.6090, %object
 .L.managed_type_name.6090:
-	.asciz	"Google.Android.Material.Transformation.TransformationChildLayout, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6090, 98
+	.asciz	"Google.Android.Material.Transition.FadeProvider, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6090, 81
 	.section	.rodata.managed_type_name.6091,"aMS",%progbits,1
 	.type	.L.managed_type_name.6091, %object
 .L.managed_type_name.6091:
-	.asciz	"Google.Android.Material.Transition.FadeProvider, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6091, 81
+	.asciz	"Google.Android.Material.Transition.FadeThroughProvider, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6091, 88
 	.section	.rodata.managed_type_name.6092,"aMS",%progbits,1
 	.type	.L.managed_type_name.6092, %object
 .L.managed_type_name.6092:
-	.asciz	"Google.Android.Material.Transition.FadeThroughProvider, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6092, 88
+	.asciz	"Google.Android.Material.Transition.Hold, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6092, 73
 	.section	.rodata.managed_type_name.6093,"aMS",%progbits,1
 	.type	.L.managed_type_name.6093, %object
 .L.managed_type_name.6093:
-	.asciz	"Google.Android.Material.Transition.Hold, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6093, 73
+	.asciz	"Google.Android.Material.Transition.IVisibilityAnimatorProviderInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6093, 103
 	.section	.rodata.managed_type_name.6094,"aMS",%progbits,1
 	.type	.L.managed_type_name.6094, %object
 .L.managed_type_name.6094:
-	.asciz	"Google.Android.Material.Transition.IVisibilityAnimatorProviderInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6094, 103
+	.asciz	"Google.Android.Material.Transition.MaterialArcMotion, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6094, 86
 	.section	.rodata.managed_type_name.6095,"aMS",%progbits,1
 	.type	.L.managed_type_name.6095, %object
 .L.managed_type_name.6095:
-	.asciz	"Google.Android.Material.Transition.MaterialArcMotion, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6095, 86
+	.asciz	"Google.Android.Material.Transition.MaterialContainerTransform+IFadeModeInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6095, 112
 	.section	.rodata.managed_type_name.6096,"aMS",%progbits,1
 	.type	.L.managed_type_name.6096, %object
 .L.managed_type_name.6096:
-	.asciz	"Google.Android.Material.Transition.MaterialContainerTransform+IFadeModeInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6096, 112
+	.asciz	"Google.Android.Material.Transition.MaterialContainerTransform+IFitModeInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6096, 111
 	.section	.rodata.managed_type_name.6097,"aMS",%progbits,1
 	.type	.L.managed_type_name.6097, %object
 .L.managed_type_name.6097:
-	.asciz	"Google.Android.Material.Transition.MaterialContainerTransform+IFitModeInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6097, 111
+	.asciz	"Google.Android.Material.Transition.MaterialContainerTransform+ITransitionDirectionInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6097, 123
 	.section	.rodata.managed_type_name.6098,"aMS",%progbits,1
 	.type	.L.managed_type_name.6098, %object
 .L.managed_type_name.6098:
-	.asciz	"Google.Android.Material.Transition.MaterialContainerTransform+ITransitionDirectionInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6098, 123
+	.asciz	"Google.Android.Material.Transition.MaterialContainerTransform+ProgressThresholds, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6098, 114
 	.section	.rodata.managed_type_name.6099,"aMS",%progbits,1
 	.type	.L.managed_type_name.6099, %object
 .L.managed_type_name.6099:
-	.asciz	"Google.Android.Material.Transition.MaterialContainerTransform+ProgressThresholds, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6099, 114
+	.asciz	"Google.Android.Material.Transition.MaterialContainerTransform, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6099, 95
 	.section	.rodata.managed_type_name.6100,"aMS",%progbits,1
 	.type	.L.managed_type_name.6100, %object
 .L.managed_type_name.6100:
-	.asciz	"Google.Android.Material.Transition.MaterialContainerTransform, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6100, 95
+	.asciz	"Google.Android.Material.Transition.MaterialElevationScale, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6100, 91
 	.section	.rodata.managed_type_name.6101,"aMS",%progbits,1
 	.type	.L.managed_type_name.6101, %object
 .L.managed_type_name.6101:
-	.asciz	"Google.Android.Material.Transition.MaterialElevationScale, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6101, 91
+	.asciz	"Google.Android.Material.Transition.MaterialFade, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6101, 81
 	.section	.rodata.managed_type_name.6102,"aMS",%progbits,1
 	.type	.L.managed_type_name.6102, %object
 .L.managed_type_name.6102:
-	.asciz	"Google.Android.Material.Transition.MaterialFade, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6102, 81
+	.asciz	"Google.Android.Material.Transition.MaterialFadeThrough, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6102, 88
 	.section	.rodata.managed_type_name.6103,"aMS",%progbits,1
 	.type	.L.managed_type_name.6103, %object
 .L.managed_type_name.6103:
-	.asciz	"Google.Android.Material.Transition.MaterialFadeThrough, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6103, 88
+	.asciz	"Google.Android.Material.Transition.MaterialSharedAxis+IAxisInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6103, 100
 	.section	.rodata.managed_type_name.6104,"aMS",%progbits,1
 	.type	.L.managed_type_name.6104, %object
 .L.managed_type_name.6104:
-	.asciz	"Google.Android.Material.Transition.MaterialSharedAxis+IAxisInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6104, 100
+	.asciz	"Google.Android.Material.Transition.MaterialSharedAxis, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6104, 87
 	.section	.rodata.managed_type_name.6105,"aMS",%progbits,1
 	.type	.L.managed_type_name.6105, %object
 .L.managed_type_name.6105:
-	.asciz	"Google.Android.Material.Transition.MaterialSharedAxis, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6105, 87
+	.asciz	"Google.Android.Material.Transition.Platform.FadeProvider, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6105, 90
 	.section	.rodata.managed_type_name.6106,"aMS",%progbits,1
 	.type	.L.managed_type_name.6106, %object
 .L.managed_type_name.6106:
-	.asciz	"Google.Android.Material.Transition.Platform.FadeProvider, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6106, 90
+	.asciz	"Google.Android.Material.Transition.Platform.FadeThroughProvider, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6106, 97
 	.section	.rodata.managed_type_name.6107,"aMS",%progbits,1
 	.type	.L.managed_type_name.6107, %object
 .L.managed_type_name.6107:
-	.asciz	"Google.Android.Material.Transition.Platform.FadeThroughProvider, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6107, 97
+	.asciz	"Google.Android.Material.Transition.Platform.Hold, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6107, 82
 	.section	.rodata.managed_type_name.6108,"aMS",%progbits,1
 	.type	.L.managed_type_name.6108, %object
 .L.managed_type_name.6108:
-	.asciz	"Google.Android.Material.Transition.Platform.Hold, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6108, 82
+	.asciz	"Google.Android.Material.Transition.Platform.IVisibilityAnimatorProviderInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6108, 112
 	.section	.rodata.managed_type_name.6109,"aMS",%progbits,1
 	.type	.L.managed_type_name.6109, %object
 .L.managed_type_name.6109:
-	.asciz	"Google.Android.Material.Transition.Platform.IVisibilityAnimatorProviderInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6109, 112
+	.asciz	"Google.Android.Material.Transition.Platform.MaterialArcMotion, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6109, 95
 	.section	.rodata.managed_type_name.6110,"aMS",%progbits,1
 	.type	.L.managed_type_name.6110, %object
 .L.managed_type_name.6110:
-	.asciz	"Google.Android.Material.Transition.Platform.MaterialArcMotion, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6110, 95
+	.asciz	"Google.Android.Material.Transition.Platform.MaterialContainerTransform+IFadeModeInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6110, 121
 	.section	.rodata.managed_type_name.6111,"aMS",%progbits,1
 	.type	.L.managed_type_name.6111, %object
 .L.managed_type_name.6111:
-	.asciz	"Google.Android.Material.Transition.Platform.MaterialContainerTransform+IFadeModeInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6111, 121
+	.asciz	"Google.Android.Material.Transition.Platform.MaterialContainerTransform+IFitModeInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6111, 120
 	.section	.rodata.managed_type_name.6112,"aMS",%progbits,1
 	.type	.L.managed_type_name.6112, %object
 .L.managed_type_name.6112:
-	.asciz	"Google.Android.Material.Transition.Platform.MaterialContainerTransform+IFitModeInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6112, 120
+	.asciz	"Google.Android.Material.Transition.Platform.MaterialContainerTransform+ITransitionDirectionInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6112, 132
 	.section	.rodata.managed_type_name.6113,"aMS",%progbits,1
 	.type	.L.managed_type_name.6113, %object
 .L.managed_type_name.6113:
-	.asciz	"Google.Android.Material.Transition.Platform.MaterialContainerTransform+ITransitionDirectionInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6113, 132
+	.asciz	"Google.Android.Material.Transition.Platform.MaterialContainerTransform+ProgressThresholds, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6113, 123
 	.section	.rodata.managed_type_name.6114,"aMS",%progbits,1
 	.type	.L.managed_type_name.6114, %object
 .L.managed_type_name.6114:
-	.asciz	"Google.Android.Material.Transition.Platform.MaterialContainerTransform+ProgressThresholds, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6114, 123
+	.asciz	"Google.Android.Material.Transition.Platform.MaterialContainerTransform, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6114, 104
 	.section	.rodata.managed_type_name.6115,"aMS",%progbits,1
 	.type	.L.managed_type_name.6115, %object
 .L.managed_type_name.6115:
-	.asciz	"Google.Android.Material.Transition.Platform.MaterialContainerTransform, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6115, 104
+	.asciz	"Google.Android.Material.Transition.Platform.MaterialContainerTransformSharedElementCallback+IShapeProviderInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6115, 147
 	.section	.rodata.managed_type_name.6116,"aMS",%progbits,1
 	.type	.L.managed_type_name.6116, %object
 .L.managed_type_name.6116:
-	.asciz	"Google.Android.Material.Transition.Platform.MaterialContainerTransformSharedElementCallback+IShapeProviderInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6116, 147
+	.asciz	"Google.Android.Material.Transition.Platform.MaterialContainerTransformSharedElementCallback+ShapeableViewShapeProvider, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6116, 152
 	.section	.rodata.managed_type_name.6117,"aMS",%progbits,1
 	.type	.L.managed_type_name.6117, %object
 .L.managed_type_name.6117:
-	.asciz	"Google.Android.Material.Transition.Platform.MaterialContainerTransformSharedElementCallback+ShapeableViewShapeProvider, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6117, 152
+	.asciz	"Google.Android.Material.Transition.Platform.MaterialContainerTransformSharedElementCallback, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6117, 125
 	.section	.rodata.managed_type_name.6118,"aMS",%progbits,1
 	.type	.L.managed_type_name.6118, %object
 .L.managed_type_name.6118:
-	.asciz	"Google.Android.Material.Transition.Platform.MaterialContainerTransformSharedElementCallback, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6118, 125
+	.asciz	"Google.Android.Material.Transition.Platform.MaterialElevationScale, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6118, 100
 	.section	.rodata.managed_type_name.6119,"aMS",%progbits,1
 	.type	.L.managed_type_name.6119, %object
 .L.managed_type_name.6119:
-	.asciz	"Google.Android.Material.Transition.Platform.MaterialElevationScale, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6119, 100
+	.asciz	"Google.Android.Material.Transition.Platform.MaterialFade, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6119, 90
 	.section	.rodata.managed_type_name.6120,"aMS",%progbits,1
 	.type	.L.managed_type_name.6120, %object
 .L.managed_type_name.6120:
-	.asciz	"Google.Android.Material.Transition.Platform.MaterialFade, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6120, 90
+	.asciz	"Google.Android.Material.Transition.Platform.MaterialFadeThrough, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6120, 97
 	.section	.rodata.managed_type_name.6121,"aMS",%progbits,1
 	.type	.L.managed_type_name.6121, %object
 .L.managed_type_name.6121:
-	.asciz	"Google.Android.Material.Transition.Platform.MaterialFadeThrough, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6121, 97
+	.asciz	"Google.Android.Material.Transition.Platform.MaterialSharedAxis+IAxisInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6121, 109
 	.section	.rodata.managed_type_name.6122,"aMS",%progbits,1
 	.type	.L.managed_type_name.6122, %object
 .L.managed_type_name.6122:
-	.asciz	"Google.Android.Material.Transition.Platform.MaterialSharedAxis+IAxisInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6122, 109
+	.asciz	"Google.Android.Material.Transition.Platform.MaterialSharedAxis, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6122, 96
 	.section	.rodata.managed_type_name.6123,"aMS",%progbits,1
 	.type	.L.managed_type_name.6123, %object
 .L.managed_type_name.6123:
-	.asciz	"Google.Android.Material.Transition.Platform.MaterialSharedAxis, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6123, 96
+	.asciz	"Google.Android.Material.Transition.Platform.ScaleProvider, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6123, 91
 	.section	.rodata.managed_type_name.6124,"aMS",%progbits,1
 	.type	.L.managed_type_name.6124, %object
 .L.managed_type_name.6124:
-	.asciz	"Google.Android.Material.Transition.Platform.ScaleProvider, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6124, 91
+	.asciz	"Google.Android.Material.Transition.Platform.SlideDistanceProvider+IGravityFlagInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6124, 119
 	.section	.rodata.managed_type_name.6125,"aMS",%progbits,1
 	.type	.L.managed_type_name.6125, %object
 .L.managed_type_name.6125:
-	.asciz	"Google.Android.Material.Transition.Platform.SlideDistanceProvider+IGravityFlagInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6125, 119
+	.asciz	"Google.Android.Material.Transition.Platform.SlideDistanceProvider, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6125, 99
 	.section	.rodata.managed_type_name.6126,"aMS",%progbits,1
 	.type	.L.managed_type_name.6126, %object
 .L.managed_type_name.6126:
-	.asciz	"Google.Android.Material.Transition.Platform.SlideDistanceProvider, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6126, 99
+	.asciz	"Google.Android.Material.Transition.ScaleProvider, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6126, 82
 	.section	.rodata.managed_type_name.6127,"aMS",%progbits,1
 	.type	.L.managed_type_name.6127, %object
 .L.managed_type_name.6127:
-	.asciz	"Google.Android.Material.Transition.ScaleProvider, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6127, 82
+	.asciz	"Google.Android.Material.Transition.SlideDistanceProvider+IGravityFlagInvoker, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6127, 110
 	.section	.rodata.managed_type_name.6128,"aMS",%progbits,1
 	.type	.L.managed_type_name.6128, %object
 .L.managed_type_name.6128:
-	.asciz	"Google.Android.Material.Transition.SlideDistanceProvider+IGravityFlagInvoker, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6128, 110
+	.asciz	"Google.Android.Material.Transition.SlideDistanceProvider, Xamarin.Google.Android.Material"
+	.size	.L.managed_type_name.6128, 90
 	.section	.rodata.managed_type_name.6129,"aMS",%progbits,1
 	.type	.L.managed_type_name.6129, %object
 .L.managed_type_name.6129:
-	.asciz	"Google.Android.Material.Transition.SlideDistanceProvider, Xamarin.Google.Android.Material"
-	.size	.L.managed_type_name.6129, 90
+	.asciz	"Google.Common.Util.Concurrent.IListenableFutureInvoker, Xamarin.Google.Guava.ListenableFuture"
+	.size	.L.managed_type_name.6129, 94
 	.section	.rodata.managed_type_name.6130,"aMS",%progbits,1
 	.type	.L.managed_type_name.6130, %object
 .L.managed_type_name.6130:
-	.asciz	"Google.Common.Util.Concurrent.IListenableFutureInvoker, Xamarin.Google.Guava.ListenableFuture"
-	.size	.L.managed_type_name.6130, 94
+	.asciz	"Java.Awt.Font.NumericShaper+Range, Mono.Android"
+	.size	.L.managed_type_name.6130, 48
 	.section	.rodata.managed_type_name.6131,"aMS",%progbits,1
 	.type	.L.managed_type_name.6131, %object
 .L.managed_type_name.6131:
-	.asciz	"Java.Awt.Font.NumericShaper+Range, Mono.Android"
-	.size	.L.managed_type_name.6131, 48
+	.asciz	"Java.Awt.Font.NumericShaper, Mono.Android"
+	.size	.L.managed_type_name.6131, 42
 	.section	.rodata.managed_type_name.6132,"aMS",%progbits,1
 	.type	.L.managed_type_name.6132, %object
 .L.managed_type_name.6132:
-	.asciz	"Java.Awt.Font.NumericShaper, Mono.Android"
+	.asciz	"Java.Awt.Font.TextAttribute, Mono.Android"
 	.size	.L.managed_type_name.6132, 42
 	.section	.rodata.managed_type_name.6133,"aMS",%progbits,1
 	.type	.L.managed_type_name.6133, %object
 .L.managed_type_name.6133:
-	.asciz	"Java.Awt.Font.TextAttribute, Mono.Android"
-	.size	.L.managed_type_name.6133, 42
+	.asciz	"Java.Beans.IPropertyChangeListenerInvoker, Mono.Android"
+	.size	.L.managed_type_name.6133, 56
 	.section	.rodata.managed_type_name.6134,"aMS",%progbits,1
 	.type	.L.managed_type_name.6134, %object
 .L.managed_type_name.6134:
-	.asciz	"Java.Beans.IPropertyChangeListenerInvoker, Mono.Android"
-	.size	.L.managed_type_name.6134, 56
+	.asciz	"Java.Beans.IndexedPropertyChangeEvent, Mono.Android"
+	.size	.L.managed_type_name.6134, 52
 	.section	.rodata.managed_type_name.6135,"aMS",%progbits,1
 	.type	.L.managed_type_name.6135, %object
 .L.managed_type_name.6135:
-	.asciz	"Java.Beans.IndexedPropertyChangeEvent, Mono.Android"
-	.size	.L.managed_type_name.6135, 52
+	.asciz	"Java.Beans.PropertyChangeEvent, Mono.Android"
+	.size	.L.managed_type_name.6135, 45
 	.section	.rodata.managed_type_name.6136,"aMS",%progbits,1
 	.type	.L.managed_type_name.6136, %object
 .L.managed_type_name.6136:
-	.asciz	"Java.Beans.PropertyChangeEvent, Mono.Android"
-	.size	.L.managed_type_name.6136, 45
+	.asciz	"Java.Beans.PropertyChangeListenerProxy, Mono.Android"
+	.size	.L.managed_type_name.6136, 53
 	.section	.rodata.managed_type_name.6137,"aMS",%progbits,1
 	.type	.L.managed_type_name.6137, %object
 .L.managed_type_name.6137:
-	.asciz	"Java.Beans.PropertyChangeListenerProxy, Mono.Android"
-	.size	.L.managed_type_name.6137, 53
+	.asciz	"Java.Beans.PropertyChangeSupport, Mono.Android"
+	.size	.L.managed_type_name.6137, 47
 	.section	.rodata.managed_type_name.6138,"aMS",%progbits,1
 	.type	.L.managed_type_name.6138, %object
 .L.managed_type_name.6138:
-	.asciz	"Java.Beans.PropertyChangeSupport, Mono.Android"
-	.size	.L.managed_type_name.6138, 47
+	.asciz	"Java.IO.BufferedInputStream, Mono.Android"
+	.size	.L.managed_type_name.6138, 42
 	.section	.rodata.managed_type_name.6139,"aMS",%progbits,1
 	.type	.L.managed_type_name.6139, %object
 .L.managed_type_name.6139:
-	.asciz	"Java.IO.BufferedInputStream, Mono.Android"
-	.size	.L.managed_type_name.6139, 42
+	.asciz	"Java.IO.BufferedOutputStream, Mono.Android"
+	.size	.L.managed_type_name.6139, 43
 	.section	.rodata.managed_type_name.6140,"aMS",%progbits,1
 	.type	.L.managed_type_name.6140, %object
 .L.managed_type_name.6140:
-	.asciz	"Java.IO.BufferedOutputStream, Mono.Android"
-	.size	.L.managed_type_name.6140, 43
+	.asciz	"Java.IO.BufferedReader, Mono.Android"
+	.size	.L.managed_type_name.6140, 37
 	.section	.rodata.managed_type_name.6141,"aMS",%progbits,1
 	.type	.L.managed_type_name.6141, %object
 .L.managed_type_name.6141:
-	.asciz	"Java.IO.BufferedReader, Mono.Android"
+	.asciz	"Java.IO.BufferedWriter, Mono.Android"
 	.size	.L.managed_type_name.6141, 37
 	.section	.rodata.managed_type_name.6142,"aMS",%progbits,1
 	.type	.L.managed_type_name.6142, %object
 .L.managed_type_name.6142:
-	.asciz	"Java.IO.BufferedWriter, Mono.Android"
-	.size	.L.managed_type_name.6142, 37
+	.asciz	"Java.IO.ByteArrayInputStream, Mono.Android"
+	.size	.L.managed_type_name.6142, 43
 	.section	.rodata.managed_type_name.6143,"aMS",%progbits,1
 	.type	.L.managed_type_name.6143, %object
 .L.managed_type_name.6143:
-	.asciz	"Java.IO.ByteArrayInputStream, Mono.Android"
-	.size	.L.managed_type_name.6143, 43
+	.asciz	"Java.IO.ByteArrayOutputStream, Mono.Android"
+	.size	.L.managed_type_name.6143, 44
 	.section	.rodata.managed_type_name.6144,"aMS",%progbits,1
 	.type	.L.managed_type_name.6144, %object
 .L.managed_type_name.6144:
-	.asciz	"Java.IO.ByteArrayOutputStream, Mono.Android"
-	.size	.L.managed_type_name.6144, 44
+	.asciz	"Java.IO.CharArrayReader, Mono.Android"
+	.size	.L.managed_type_name.6144, 38
 	.section	.rodata.managed_type_name.6145,"aMS",%progbits,1
 	.type	.L.managed_type_name.6145, %object
 .L.managed_type_name.6145:
-	.asciz	"Java.IO.CharArrayReader, Mono.Android"
+	.asciz	"Java.IO.CharArrayWriter, Mono.Android"
 	.size	.L.managed_type_name.6145, 38
 	.section	.rodata.managed_type_name.6146,"aMS",%progbits,1
 	.type	.L.managed_type_name.6146, %object
 .L.managed_type_name.6146:
-	.asciz	"Java.IO.CharArrayWriter, Mono.Android"
-	.size	.L.managed_type_name.6146, 38
+	.asciz	"Java.IO.CharConversionException, Mono.Android"
+	.size	.L.managed_type_name.6146, 46
 	.section	.rodata.managed_type_name.6147,"aMS",%progbits,1
 	.type	.L.managed_type_name.6147, %object
 .L.managed_type_name.6147:
-	.asciz	"Java.IO.CharConversionException, Mono.Android"
-	.size	.L.managed_type_name.6147, 46
+	.asciz	"Java.IO.Console, Mono.Android"
+	.size	.L.managed_type_name.6147, 30
 	.section	.rodata.managed_type_name.6148,"aMS",%progbits,1
 	.type	.L.managed_type_name.6148, %object
 .L.managed_type_name.6148:
-	.asciz	"Java.IO.Console, Mono.Android"
-	.size	.L.managed_type_name.6148, 30
+	.asciz	"Java.IO.DataInputStream, Mono.Android"
+	.size	.L.managed_type_name.6148, 38
 	.section	.rodata.managed_type_name.6149,"aMS",%progbits,1
 	.type	.L.managed_type_name.6149, %object
 .L.managed_type_name.6149:
-	.asciz	"Java.IO.DataInputStream, Mono.Android"
-	.size	.L.managed_type_name.6149, 38
+	.asciz	"Java.IO.DataOutputStream, Mono.Android"
+	.size	.L.managed_type_name.6149, 39
 	.section	.rodata.managed_type_name.6150,"aMS",%progbits,1
 	.type	.L.managed_type_name.6150, %object
 .L.managed_type_name.6150:
-	.asciz	"Java.IO.DataOutputStream, Mono.Android"
-	.size	.L.managed_type_name.6150, 39
+	.asciz	"Java.IO.EOFException, Mono.Android"
+	.size	.L.managed_type_name.6150, 35
 	.section	.rodata.managed_type_name.6151,"aMS",%progbits,1
 	.type	.L.managed_type_name.6151, %object
 .L.managed_type_name.6151:
-	.asciz	"Java.IO.EOFException, Mono.Android"
-	.size	.L.managed_type_name.6151, 35
+	.asciz	"Java.IO.File, Mono.Android"
+	.size	.L.managed_type_name.6151, 27
 	.section	.rodata.managed_type_name.6152,"aMS",%progbits,1
 	.type	.L.managed_type_name.6152, %object
 .L.managed_type_name.6152:
-	.asciz	"Java.IO.File, Mono.Android"
-	.size	.L.managed_type_name.6152, 27
+	.asciz	"Java.IO.FileDescriptor, Mono.Android"
+	.size	.L.managed_type_name.6152, 37
 	.section	.rodata.managed_type_name.6153,"aMS",%progbits,1
 	.type	.L.managed_type_name.6153, %object
 .L.managed_type_name.6153:
-	.asciz	"Java.IO.FileDescriptor, Mono.Android"
-	.size	.L.managed_type_name.6153, 37
+	.asciz	"Java.IO.FileInputStream, Mono.Android"
+	.size	.L.managed_type_name.6153, 38
 	.section	.rodata.managed_type_name.6154,"aMS",%progbits,1
 	.type	.L.managed_type_name.6154, %object
 .L.managed_type_name.6154:
-	.asciz	"Java.IO.FileInputStream, Mono.Android"
-	.size	.L.managed_type_name.6154, 38
+	.asciz	"Java.IO.FileNotFoundException, Mono.Android"
+	.size	.L.managed_type_name.6154, 44
 	.section	.rodata.managed_type_name.6155,"aMS",%progbits,1
 	.type	.L.managed_type_name.6155, %object
 .L.managed_type_name.6155:
-	.asciz	"Java.IO.FileNotFoundException, Mono.Android"
-	.size	.L.managed_type_name.6155, 44
+	.asciz	"Java.IO.FileOutputStream, Mono.Android"
+	.size	.L.managed_type_name.6155, 39
 	.section	.rodata.managed_type_name.6156,"aMS",%progbits,1
 	.type	.L.managed_type_name.6156, %object
 .L.managed_type_name.6156:
-	.asciz	"Java.IO.FileOutputStream, Mono.Android"
-	.size	.L.managed_type_name.6156, 39
+	.asciz	"Java.IO.FilePermission, Mono.Android"
+	.size	.L.managed_type_name.6156, 37
 	.section	.rodata.managed_type_name.6157,"aMS",%progbits,1
 	.type	.L.managed_type_name.6157, %object
 .L.managed_type_name.6157:
-	.asciz	"Java.IO.FilePermission, Mono.Android"
-	.size	.L.managed_type_name.6157, 37
+	.asciz	"Java.IO.FileReader, Mono.Android"
+	.size	.L.managed_type_name.6157, 33
 	.section	.rodata.managed_type_name.6158,"aMS",%progbits,1
 	.type	.L.managed_type_name.6158, %object
 .L.managed_type_name.6158:
-	.asciz	"Java.IO.FileReader, Mono.Android"
+	.asciz	"Java.IO.FileWriter, Mono.Android"
 	.size	.L.managed_type_name.6158, 33
 	.section	.rodata.managed_type_name.6159,"aMS",%progbits,1
 	.type	.L.managed_type_name.6159, %object
 .L.managed_type_name.6159:
-	.asciz	"Java.IO.FileWriter, Mono.Android"
-	.size	.L.managed_type_name.6159, 33
+	.asciz	"Java.IO.FilterInputStream, Mono.Android"
+	.size	.L.managed_type_name.6159, 40
 	.section	.rodata.managed_type_name.6160,"aMS",%progbits,1
 	.type	.L.managed_type_name.6160, %object
 .L.managed_type_name.6160:
-	.asciz	"Java.IO.FilterInputStream, Mono.Android"
-	.size	.L.managed_type_name.6160, 40
+	.asciz	"Java.IO.FilterOutputStream, Mono.Android"
+	.size	.L.managed_type_name.6160, 41
 	.section	.rodata.managed_type_name.6161,"aMS",%progbits,1
 	.type	.L.managed_type_name.6161, %object
 .L.managed_type_name.6161:
-	.asciz	"Java.IO.FilterOutputStream, Mono.Android"
-	.size	.L.managed_type_name.6161, 41
+	.asciz	"Java.IO.FilterReader, Mono.Android"
+	.size	.L.managed_type_name.6161, 35
 	.section	.rodata.managed_type_name.6162,"aMS",%progbits,1
 	.type	.L.managed_type_name.6162, %object
 .L.managed_type_name.6162:
-	.asciz	"Java.IO.FilterReader, Mono.Android"
-	.size	.L.managed_type_name.6162, 35
+	.asciz	"Java.IO.FilterReaderInvoker, Mono.Android"
+	.size	.L.managed_type_name.6162, 42
 	.section	.rodata.managed_type_name.6163,"aMS",%progbits,1
 	.type	.L.managed_type_name.6163, %object
 .L.managed_type_name.6163:
-	.asciz	"Java.IO.FilterReaderInvoker, Mono.Android"
-	.size	.L.managed_type_name.6163, 42
+	.asciz	"Java.IO.FilterWriter, Mono.Android"
+	.size	.L.managed_type_name.6163, 35
 	.section	.rodata.managed_type_name.6164,"aMS",%progbits,1
 	.type	.L.managed_type_name.6164, %object
 .L.managed_type_name.6164:
-	.asciz	"Java.IO.FilterWriter, Mono.Android"
-	.size	.L.managed_type_name.6164, 35
+	.asciz	"Java.IO.FilterWriterInvoker, Mono.Android"
+	.size	.L.managed_type_name.6164, 42
 	.section	.rodata.managed_type_name.6165,"aMS",%progbits,1
 	.type	.L.managed_type_name.6165, %object
 .L.managed_type_name.6165:
-	.asciz	"Java.IO.FilterWriterInvoker, Mono.Android"
-	.size	.L.managed_type_name.6165, 42
+	.asciz	"Java.IO.ICloseableInvoker, Mono.Android"
+	.size	.L.managed_type_name.6165, 40
 	.section	.rodata.managed_type_name.6166,"aMS",%progbits,1
 	.type	.L.managed_type_name.6166, %object
 .L.managed_type_name.6166:
-	.asciz	"Java.IO.ICloseableInvoker, Mono.Android"
+	.asciz	"Java.IO.IDataInputInvoker, Mono.Android"
 	.size	.L.managed_type_name.6166, 40
 	.section	.rodata.managed_type_name.6167,"aMS",%progbits,1
 	.type	.L.managed_type_name.6167, %object
 .L.managed_type_name.6167:
-	.asciz	"Java.IO.IDataInputInvoker, Mono.Android"
-	.size	.L.managed_type_name.6167, 40
+	.asciz	"Java.IO.IDataOutputInvoker, Mono.Android"
+	.size	.L.managed_type_name.6167, 41
 	.section	.rodata.managed_type_name.6168,"aMS",%progbits,1
 	.type	.L.managed_type_name.6168, %object
 .L.managed_type_name.6168:
-	.asciz	"Java.IO.IDataOutputInvoker, Mono.Android"
-	.size	.L.managed_type_name.6168, 41
+	.asciz	"Java.IO.IExternalizableInvoker, Mono.Android"
+	.size	.L.managed_type_name.6168, 45
 	.section	.rodata.managed_type_name.6169,"aMS",%progbits,1
 	.type	.L.managed_type_name.6169, %object
 .L.managed_type_name.6169:
-	.asciz	"Java.IO.IExternalizableInvoker, Mono.Android"
-	.size	.L.managed_type_name.6169, 45
+	.asciz	"Java.IO.IFileFilterInvoker, Mono.Android"
+	.size	.L.managed_type_name.6169, 41
 	.section	.rodata.managed_type_name.6170,"aMS",%progbits,1
 	.type	.L.managed_type_name.6170, %object
 .L.managed_type_name.6170:
-	.asciz	"Java.IO.IFileFilterInvoker, Mono.Android"
-	.size	.L.managed_type_name.6170, 41
+	.asciz	"Java.IO.IFilenameFilterInvoker, Mono.Android"
+	.size	.L.managed_type_name.6170, 45
 	.section	.rodata.managed_type_name.6171,"aMS",%progbits,1
 	.type	.L.managed_type_name.6171, %object
 .L.managed_type_name.6171:
-	.asciz	"Java.IO.IFilenameFilterInvoker, Mono.Android"
-	.size	.L.managed_type_name.6171, 45
+	.asciz	"Java.IO.IFlushableInvoker, Mono.Android"
+	.size	.L.managed_type_name.6171, 40
 	.section	.rodata.managed_type_name.6172,"aMS",%progbits,1
 	.type	.L.managed_type_name.6172, %object
 .L.managed_type_name.6172:
-	.asciz	"Java.IO.IFlushableInvoker, Mono.Android"
-	.size	.L.managed_type_name.6172, 40
+	.asciz	"Java.IO.IOError, Mono.Android"
+	.size	.L.managed_type_name.6172, 30
 	.section	.rodata.managed_type_name.6173,"aMS",%progbits,1
 	.type	.L.managed_type_name.6173, %object
 .L.managed_type_name.6173:
-	.asciz	"Java.IO.IOError, Mono.Android"
-	.size	.L.managed_type_name.6173, 30
+	.asciz	"Java.IO.IOException, Mono.Android"
+	.size	.L.managed_type_name.6173, 34
 	.section	.rodata.managed_type_name.6174,"aMS",%progbits,1
 	.type	.L.managed_type_name.6174, %object
 .L.managed_type_name.6174:
-	.asciz	"Java.IO.IOException, Mono.Android"
-	.size	.L.managed_type_name.6174, 34
+	.asciz	"Java.IO.IObjectInputInvoker, Mono.Android"
+	.size	.L.managed_type_name.6174, 42
 	.section	.rodata.managed_type_name.6175,"aMS",%progbits,1
 	.type	.L.managed_type_name.6175, %object
 .L.managed_type_name.6175:
-	.asciz	"Java.IO.IObjectInputInvoker, Mono.Android"
-	.size	.L.managed_type_name.6175, 42
+	.asciz	"Java.IO.IObjectInputValidationInvoker, Mono.Android"
+	.size	.L.managed_type_name.6175, 52
 	.section	.rodata.managed_type_name.6176,"aMS",%progbits,1
 	.type	.L.managed_type_name.6176, %object
 .L.managed_type_name.6176:
-	.asciz	"Java.IO.IObjectInputValidationInvoker, Mono.Android"
-	.size	.L.managed_type_name.6176, 52
+	.asciz	"Java.IO.IObjectOutputInvoker, Mono.Android"
+	.size	.L.managed_type_name.6176, 43
 	.section	.rodata.managed_type_name.6177,"aMS",%progbits,1
 	.type	.L.managed_type_name.6177, %object
 .L.managed_type_name.6177:
-	.asciz	"Java.IO.IObjectOutputInvoker, Mono.Android"
+	.asciz	"Java.IO.ISerializableInvoker, Mono.Android"
 	.size	.L.managed_type_name.6177, 43
 	.section	.rodata.managed_type_name.6178,"aMS",%progbits,1
 	.type	.L.managed_type_name.6178, %object
 .L.managed_type_name.6178:
-	.asciz	"Java.IO.ISerializableInvoker, Mono.Android"
-	.size	.L.managed_type_name.6178, 43
+	.asciz	"Java.IO.InputStream, Mono.Android"
+	.size	.L.managed_type_name.6178, 34
 	.section	.rodata.managed_type_name.6179,"aMS",%progbits,1
 	.type	.L.managed_type_name.6179, %object
 .L.managed_type_name.6179:
-	.asciz	"Java.IO.InputStream, Mono.Android"
-	.size	.L.managed_type_name.6179, 34
+	.asciz	"Java.IO.InputStreamInvoker, Mono.Android"
+	.size	.L.managed_type_name.6179, 41
 	.section	.rodata.managed_type_name.6180,"aMS",%progbits,1
 	.type	.L.managed_type_name.6180, %object
 .L.managed_type_name.6180:
-	.asciz	"Java.IO.InputStreamInvoker, Mono.Android"
-	.size	.L.managed_type_name.6180, 41
+	.asciz	"Java.IO.InputStreamReader, Mono.Android"
+	.size	.L.managed_type_name.6180, 40
 	.section	.rodata.managed_type_name.6181,"aMS",%progbits,1
 	.type	.L.managed_type_name.6181, %object
 .L.managed_type_name.6181:
-	.asciz	"Java.IO.InputStreamReader, Mono.Android"
-	.size	.L.managed_type_name.6181, 40
+	.asciz	"Java.IO.InterruptedIOException, Mono.Android"
+	.size	.L.managed_type_name.6181, 45
 	.section	.rodata.managed_type_name.6182,"aMS",%progbits,1
 	.type	.L.managed_type_name.6182, %object
 .L.managed_type_name.6182:
-	.asciz	"Java.IO.InterruptedIOException, Mono.Android"
-	.size	.L.managed_type_name.6182, 45
+	.asciz	"Java.IO.InvalidClassException, Mono.Android"
+	.size	.L.managed_type_name.6182, 44
 	.section	.rodata.managed_type_name.6183,"aMS",%progbits,1
 	.type	.L.managed_type_name.6183, %object
 .L.managed_type_name.6183:
-	.asciz	"Java.IO.InvalidClassException, Mono.Android"
-	.size	.L.managed_type_name.6183, 44
+	.asciz	"Java.IO.InvalidObjectException, Mono.Android"
+	.size	.L.managed_type_name.6183, 45
 	.section	.rodata.managed_type_name.6184,"aMS",%progbits,1
 	.type	.L.managed_type_name.6184, %object
 .L.managed_type_name.6184:
-	.asciz	"Java.IO.InvalidObjectException, Mono.Android"
-	.size	.L.managed_type_name.6184, 45
+	.asciz	"Java.IO.LineNumberInputStream, Mono.Android"
+	.size	.L.managed_type_name.6184, 44
 	.section	.rodata.managed_type_name.6185,"aMS",%progbits,1
 	.type	.L.managed_type_name.6185, %object
 .L.managed_type_name.6185:
-	.asciz	"Java.IO.LineNumberInputStream, Mono.Android"
-	.size	.L.managed_type_name.6185, 44
+	.asciz	"Java.IO.LineNumberReader, Mono.Android"
+	.size	.L.managed_type_name.6185, 39
 	.section	.rodata.managed_type_name.6186,"aMS",%progbits,1
 	.type	.L.managed_type_name.6186, %object
 .L.managed_type_name.6186:
-	.asciz	"Java.IO.LineNumberReader, Mono.Android"
-	.size	.L.managed_type_name.6186, 39
+	.asciz	"Java.IO.NotActiveException, Mono.Android"
+	.size	.L.managed_type_name.6186, 41
 	.section	.rodata.managed_type_name.6187,"aMS",%progbits,1
 	.type	.L.managed_type_name.6187, %object
 .L.managed_type_name.6187:
-	.asciz	"Java.IO.NotActiveException, Mono.Android"
-	.size	.L.managed_type_name.6187, 41
+	.asciz	"Java.IO.NotSerializableException, Mono.Android"
+	.size	.L.managed_type_name.6187, 47
 	.section	.rodata.managed_type_name.6188,"aMS",%progbits,1
 	.type	.L.managed_type_name.6188, %object
 .L.managed_type_name.6188:
-	.asciz	"Java.IO.NotSerializableException, Mono.Android"
-	.size	.L.managed_type_name.6188, 47
+	.asciz	"Java.IO.ObjectInputStream+GetField, Mono.Android"
+	.size	.L.managed_type_name.6188, 49
 	.section	.rodata.managed_type_name.6189,"aMS",%progbits,1
 	.type	.L.managed_type_name.6189, %object
 .L.managed_type_name.6189:
-	.asciz	"Java.IO.ObjectInputStream+GetField, Mono.Android"
-	.size	.L.managed_type_name.6189, 49
+	.asciz	"Java.IO.ObjectInputStream+GetFieldInvoker, Mono.Android"
+	.size	.L.managed_type_name.6189, 56
 	.section	.rodata.managed_type_name.6190,"aMS",%progbits,1
 	.type	.L.managed_type_name.6190, %object
 .L.managed_type_name.6190:
-	.asciz	"Java.IO.ObjectInputStream+GetFieldInvoker, Mono.Android"
-	.size	.L.managed_type_name.6190, 56
+	.asciz	"Java.IO.ObjectInputStream, Mono.Android"
+	.size	.L.managed_type_name.6190, 40
 	.section	.rodata.managed_type_name.6191,"aMS",%progbits,1
 	.type	.L.managed_type_name.6191, %object
 .L.managed_type_name.6191:
-	.asciz	"Java.IO.ObjectInputStream, Mono.Android"
-	.size	.L.managed_type_name.6191, 40
+	.asciz	"Java.IO.ObjectOutputStream+PutField, Mono.Android"
+	.size	.L.managed_type_name.6191, 50
 	.section	.rodata.managed_type_name.6192,"aMS",%progbits,1
 	.type	.L.managed_type_name.6192, %object
 .L.managed_type_name.6192:
-	.asciz	"Java.IO.ObjectOutputStream+PutField, Mono.Android"
-	.size	.L.managed_type_name.6192, 50
+	.asciz	"Java.IO.ObjectOutputStream+PutFieldInvoker, Mono.Android"
+	.size	.L.managed_type_name.6192, 57
 	.section	.rodata.managed_type_name.6193,"aMS",%progbits,1
 	.type	.L.managed_type_name.6193, %object
 .L.managed_type_name.6193:
-	.asciz	"Java.IO.ObjectOutputStream+PutFieldInvoker, Mono.Android"
-	.size	.L.managed_type_name.6193, 57
+	.asciz	"Java.IO.ObjectOutputStream, Mono.Android"
+	.size	.L.managed_type_name.6193, 41
 	.section	.rodata.managed_type_name.6194,"aMS",%progbits,1
 	.type	.L.managed_type_name.6194, %object
 .L.managed_type_name.6194:
-	.asciz	"Java.IO.ObjectOutputStream, Mono.Android"
-	.size	.L.managed_type_name.6194, 41
+	.asciz	"Java.IO.ObjectStreamClass, Mono.Android"
+	.size	.L.managed_type_name.6194, 40
 	.section	.rodata.managed_type_name.6195,"aMS",%progbits,1
 	.type	.L.managed_type_name.6195, %object
 .L.managed_type_name.6195:
-	.asciz	"Java.IO.ObjectStreamClass, Mono.Android"
-	.size	.L.managed_type_name.6195, 40
+	.asciz	"Java.IO.ObjectStreamConstants, Mono.Android"
+	.size	.L.managed_type_name.6195, 44
 	.section	.rodata.managed_type_name.6196,"aMS",%progbits,1
 	.type	.L.managed_type_name.6196, %object
 .L.managed_type_name.6196:
-	.asciz	"Java.IO.ObjectStreamConstants, Mono.Android"
+	.asciz	"Java.IO.ObjectStreamException, Mono.Android"
 	.size	.L.managed_type_name.6196, 44
 	.section	.rodata.managed_type_name.6197,"aMS",%progbits,1
 	.type	.L.managed_type_name.6197, %object
 .L.managed_type_name.6197:
-	.asciz	"Java.IO.ObjectStreamException, Mono.Android"
-	.size	.L.managed_type_name.6197, 44
+	.asciz	"Java.IO.ObjectStreamExceptionInvoker, Mono.Android"
+	.size	.L.managed_type_name.6197, 51
 	.section	.rodata.managed_type_name.6198,"aMS",%progbits,1
 	.type	.L.managed_type_name.6198, %object
 .L.managed_type_name.6198:
-	.asciz	"Java.IO.ObjectStreamExceptionInvoker, Mono.Android"
-	.size	.L.managed_type_name.6198, 51
+	.asciz	"Java.IO.ObjectStreamField, Mono.Android"
+	.size	.L.managed_type_name.6198, 40
 	.section	.rodata.managed_type_name.6199,"aMS",%progbits,1
 	.type	.L.managed_type_name.6199, %object
 .L.managed_type_name.6199:
-	.asciz	"Java.IO.ObjectStreamField, Mono.Android"
-	.size	.L.managed_type_name.6199, 40
+	.asciz	"Java.IO.OptionalDataException, Mono.Android"
+	.size	.L.managed_type_name.6199, 44
 	.section	.rodata.managed_type_name.6200,"aMS",%progbits,1
 	.type	.L.managed_type_name.6200, %object
 .L.managed_type_name.6200:
-	.asciz	"Java.IO.OptionalDataException, Mono.Android"
-	.size	.L.managed_type_name.6200, 44
+	.asciz	"Java.IO.OutputStream, Mono.Android"
+	.size	.L.managed_type_name.6200, 35
 	.section	.rodata.managed_type_name.6201,"aMS",%progbits,1
 	.type	.L.managed_type_name.6201, %object
 .L.managed_type_name.6201:
-	.asciz	"Java.IO.OutputStream, Mono.Android"
-	.size	.L.managed_type_name.6201, 35
+	.asciz	"Java.IO.OutputStreamInvoker, Mono.Android"
+	.size	.L.managed_type_name.6201, 42
 	.section	.rodata.managed_type_name.6202,"aMS",%progbits,1
 	.type	.L.managed_type_name.6202, %object
 .L.managed_type_name.6202:
-	.asciz	"Java.IO.OutputStreamInvoker, Mono.Android"
-	.size	.L.managed_type_name.6202, 42
+	.asciz	"Java.IO.OutputStreamWriter, Mono.Android"
+	.size	.L.managed_type_name.6202, 41
 	.section	.rodata.managed_type_name.6203,"aMS",%progbits,1
 	.type	.L.managed_type_name.6203, %object
 .L.managed_type_name.6203:
-	.asciz	"Java.IO.OutputStreamWriter, Mono.Android"
-	.size	.L.managed_type_name.6203, 41
+	.asciz	"Java.IO.PipedInputStream, Mono.Android"
+	.size	.L.managed_type_name.6203, 39
 	.section	.rodata.managed_type_name.6204,"aMS",%progbits,1
 	.type	.L.managed_type_name.6204, %object
 .L.managed_type_name.6204:
-	.asciz	"Java.IO.PipedInputStream, Mono.Android"
-	.size	.L.managed_type_name.6204, 39
+	.asciz	"Java.IO.PipedOutputStream, Mono.Android"
+	.size	.L.managed_type_name.6204, 40
 	.section	.rodata.managed_type_name.6205,"aMS",%progbits,1
 	.type	.L.managed_type_name.6205, %object
 .L.managed_type_name.6205:
-	.asciz	"Java.IO.PipedOutputStream, Mono.Android"
-	.size	.L.managed_type_name.6205, 40
+	.asciz	"Java.IO.PipedReader, Mono.Android"
+	.size	.L.managed_type_name.6205, 34
 	.section	.rodata.managed_type_name.6206,"aMS",%progbits,1
 	.type	.L.managed_type_name.6206, %object
 .L.managed_type_name.6206:
-	.asciz	"Java.IO.PipedReader, Mono.Android"
+	.asciz	"Java.IO.PipedWriter, Mono.Android"
 	.size	.L.managed_type_name.6206, 34
 	.section	.rodata.managed_type_name.6207,"aMS",%progbits,1
 	.type	.L.managed_type_name.6207, %object
 .L.managed_type_name.6207:
-	.asciz	"Java.IO.PipedWriter, Mono.Android"
+	.asciz	"Java.IO.PrintStream, Mono.Android"
 	.size	.L.managed_type_name.6207, 34
 	.section	.rodata.managed_type_name.6208,"aMS",%progbits,1
 	.type	.L.managed_type_name.6208, %object
 .L.managed_type_name.6208:
-	.asciz	"Java.IO.PrintStream, Mono.Android"
+	.asciz	"Java.IO.PrintWriter, Mono.Android"
 	.size	.L.managed_type_name.6208, 34
 	.section	.rodata.managed_type_name.6209,"aMS",%progbits,1
 	.type	.L.managed_type_name.6209, %object
 .L.managed_type_name.6209:
-	.asciz	"Java.IO.PrintWriter, Mono.Android"
-	.size	.L.managed_type_name.6209, 34
+	.asciz	"Java.IO.PushbackInputStream, Mono.Android"
+	.size	.L.managed_type_name.6209, 42
 	.section	.rodata.managed_type_name.6210,"aMS",%progbits,1
 	.type	.L.managed_type_name.6210, %object
 .L.managed_type_name.6210:
-	.asciz	"Java.IO.PushbackInputStream, Mono.Android"
-	.size	.L.managed_type_name.6210, 42
+	.asciz	"Java.IO.PushbackReader, Mono.Android"
+	.size	.L.managed_type_name.6210, 37
 	.section	.rodata.managed_type_name.6211,"aMS",%progbits,1
 	.type	.L.managed_type_name.6211, %object
 .L.managed_type_name.6211:
-	.asciz	"Java.IO.PushbackReader, Mono.Android"
-	.size	.L.managed_type_name.6211, 37
+	.asciz	"Java.IO.RandomAccessFile, Mono.Android"
+	.size	.L.managed_type_name.6211, 39
 	.section	.rodata.managed_type_name.6212,"aMS",%progbits,1
 	.type	.L.managed_type_name.6212, %object
 .L.managed_type_name.6212:
-	.asciz	"Java.IO.RandomAccessFile, Mono.Android"
-	.size	.L.managed_type_name.6212, 39
+	.asciz	"Java.IO.Reader, Mono.Android"
+	.size	.L.managed_type_name.6212, 29
 	.section	.rodata.managed_type_name.6213,"aMS",%progbits,1
 	.type	.L.managed_type_name.6213, %object
 .L.managed_type_name.6213:
-	.asciz	"Java.IO.Reader, Mono.Android"
-	.size	.L.managed_type_name.6213, 29
+	.asciz	"Java.IO.ReaderInvoker, Mono.Android"
+	.size	.L.managed_type_name.6213, 36
 	.section	.rodata.managed_type_name.6214,"aMS",%progbits,1
 	.type	.L.managed_type_name.6214, %object
 .L.managed_type_name.6214:
-	.asciz	"Java.IO.ReaderInvoker, Mono.Android"
-	.size	.L.managed_type_name.6214, 36
+	.asciz	"Java.IO.SequenceInputStream, Mono.Android"
+	.size	.L.managed_type_name.6214, 42
 	.section	.rodata.managed_type_name.6215,"aMS",%progbits,1
 	.type	.L.managed_type_name.6215, %object
 .L.managed_type_name.6215:
-	.asciz	"Java.IO.SequenceInputStream, Mono.Android"
-	.size	.L.managed_type_name.6215, 42
+	.asciz	"Java.IO.SerializablePermission, Mono.Android"
+	.size	.L.managed_type_name.6215, 45
 	.section	.rodata.managed_type_name.6216,"aMS",%progbits,1
 	.type	.L.managed_type_name.6216, %object
 .L.managed_type_name.6216:
-	.asciz	"Java.IO.SerializablePermission, Mono.Android"
-	.size	.L.managed_type_name.6216, 45
+	.asciz	"Java.IO.StreamCorruptedException, Mono.Android"
+	.size	.L.managed_type_name.6216, 47
 	.section	.rodata.managed_type_name.6217,"aMS",%progbits,1
 	.type	.L.managed_type_name.6217, %object
 .L.managed_type_name.6217:
-	.asciz	"Java.IO.StreamCorruptedException, Mono.Android"
-	.size	.L.managed_type_name.6217, 47
+	.asciz	"Java.IO.StreamTokenizer, Mono.Android"
+	.size	.L.managed_type_name.6217, 38
 	.section	.rodata.managed_type_name.6218,"aMS",%progbits,1
 	.type	.L.managed_type_name.6218, %object
 .L.managed_type_name.6218:
-	.asciz	"Java.IO.StreamTokenizer, Mono.Android"
-	.size	.L.managed_type_name.6218, 38
+	.asciz	"Java.IO.StringBufferInputStream, Mono.Android"
+	.size	.L.managed_type_name.6218, 46
 	.section	.rodata.managed_type_name.6219,"aMS",%progbits,1
 	.type	.L.managed_type_name.6219, %object
 .L.managed_type_name.6219:
-	.asciz	"Java.IO.StringBufferInputStream, Mono.Android"
-	.size	.L.managed_type_name.6219, 46
+	.asciz	"Java.IO.StringReader, Mono.Android"
+	.size	.L.managed_type_name.6219, 35
 	.section	.rodata.managed_type_name.6220,"aMS",%progbits,1
 	.type	.L.managed_type_name.6220, %object
 .L.managed_type_name.6220:
-	.asciz	"Java.IO.StringReader, Mono.Android"
+	.asciz	"Java.IO.StringWriter, Mono.Android"
 	.size	.L.managed_type_name.6220, 35
 	.section	.rodata.managed_type_name.6221,"aMS",%progbits,1
 	.type	.L.managed_type_name.6221, %object
 .L.managed_type_name.6221:
-	.asciz	"Java.IO.StringWriter, Mono.Android"
-	.size	.L.managed_type_name.6221, 35
+	.asciz	"Java.IO.SyncFailedException, Mono.Android"
+	.size	.L.managed_type_name.6221, 42
 	.section	.rodata.managed_type_name.6222,"aMS",%progbits,1
 	.type	.L.managed_type_name.6222, %object
 .L.managed_type_name.6222:
-	.asciz	"Java.IO.SyncFailedException, Mono.Android"
-	.size	.L.managed_type_name.6222, 42
+	.asciz	"Java.IO.UTFDataFormatException, Mono.Android"
+	.size	.L.managed_type_name.6222, 45
 	.section	.rodata.managed_type_name.6223,"aMS",%progbits,1
 	.type	.L.managed_type_name.6223, %object
 .L.managed_type_name.6223:
-	.asciz	"Java.IO.UTFDataFormatException, Mono.Android"
-	.size	.L.managed_type_name.6223, 45
+	.asciz	"Java.IO.UncheckedIOException, Mono.Android"
+	.size	.L.managed_type_name.6223, 43
 	.section	.rodata.managed_type_name.6224,"aMS",%progbits,1
 	.type	.L.managed_type_name.6224, %object
 .L.managed_type_name.6224:
-	.asciz	"Java.IO.UncheckedIOException, Mono.Android"
-	.size	.L.managed_type_name.6224, 43
+	.asciz	"Java.IO.UnsupportedEncodingException, Mono.Android"
+	.size	.L.managed_type_name.6224, 51
 	.section	.rodata.managed_type_name.6225,"aMS",%progbits,1
 	.type	.L.managed_type_name.6225, %object
 .L.managed_type_name.6225:
-	.asciz	"Java.IO.UnsupportedEncodingException, Mono.Android"
-	.size	.L.managed_type_name.6225, 51
+	.asciz	"Java.IO.WriteAbortedException, Mono.Android"
+	.size	.L.managed_type_name.6225, 44
 	.section	.rodata.managed_type_name.6226,"aMS",%progbits,1
 	.type	.L.managed_type_name.6226, %object
 .L.managed_type_name.6226:
-	.asciz	"Java.IO.WriteAbortedException, Mono.Android"
-	.size	.L.managed_type_name.6226, 44
+	.asciz	"Java.IO.Writer, Mono.Android"
+	.size	.L.managed_type_name.6226, 29
 	.section	.rodata.managed_type_name.6227,"aMS",%progbits,1
 	.type	.L.managed_type_name.6227, %object
 .L.managed_type_name.6227:
-	.asciz	"Java.IO.Writer, Mono.Android"
-	.size	.L.managed_type_name.6227, 29
+	.asciz	"Java.IO.WriterInvoker, Mono.Android"
+	.size	.L.managed_type_name.6227, 36
 	.section	.rodata.managed_type_name.6228,"aMS",%progbits,1
 	.type	.L.managed_type_name.6228, %object
 .L.managed_type_name.6228:
-	.asciz	"Java.IO.WriterInvoker, Mono.Android"
-	.size	.L.managed_type_name.6228, 36
+	.asciz	"Java.Interop.TypeManager+JavaTypeManager, Mono.Android"
+	.size	.L.managed_type_name.6228, 55
 	.section	.rodata.managed_type_name.6229,"aMS",%progbits,1
 	.type	.L.managed_type_name.6229, %object
 .L.managed_type_name.6229:
-	.asciz	"Java.Interop.TypeManager+JavaTypeManager, Mono.Android"
-	.size	.L.managed_type_name.6229, 55
+	.asciz	"Java.Lang.AbstractMethodError, Mono.Android"
+	.size	.L.managed_type_name.6229, 44
 	.section	.rodata.managed_type_name.6230,"aMS",%progbits,1
 	.type	.L.managed_type_name.6230, %object
 .L.managed_type_name.6230:
-	.asciz	"Java.Lang.AbstractMethodError, Mono.Android"
-	.size	.L.managed_type_name.6230, 44
+	.asciz	"Java.Lang.AbstractStringBuilder, Mono.Android"
+	.size	.L.managed_type_name.6230, 46
 	.section	.rodata.managed_type_name.6231,"aMS",%progbits,1
 	.type	.L.managed_type_name.6231, %object
 .L.managed_type_name.6231:
-	.asciz	"Java.Lang.AbstractStringBuilder, Mono.Android"
-	.size	.L.managed_type_name.6231, 46
+	.asciz	"Java.Lang.AbstractStringBuilderInvoker, Mono.Android"
+	.size	.L.managed_type_name.6231, 53
 	.section	.rodata.managed_type_name.6232,"aMS",%progbits,1
 	.type	.L.managed_type_name.6232, %object
 .L.managed_type_name.6232:
-	.asciz	"Java.Lang.AbstractStringBuilderInvoker, Mono.Android"
-	.size	.L.managed_type_name.6232, 53
+	.asciz	"Java.Lang.Annotation.AnnotationFormatError, Mono.Android"
+	.size	.L.managed_type_name.6232, 57
 	.section	.rodata.managed_type_name.6233,"aMS",%progbits,1
 	.type	.L.managed_type_name.6233, %object
 .L.managed_type_name.6233:
-	.asciz	"Java.Lang.Annotation.AnnotationFormatError, Mono.Android"
-	.size	.L.managed_type_name.6233, 57
+	.asciz	"Java.Lang.Annotation.AnnotationTypeMismatchException, Mono.Android"
+	.size	.L.managed_type_name.6233, 67
 	.section	.rodata.managed_type_name.6234,"aMS",%progbits,1
 	.type	.L.managed_type_name.6234, %object
 .L.managed_type_name.6234:
-	.asciz	"Java.Lang.Annotation.AnnotationTypeMismatchException, Mono.Android"
-	.size	.L.managed_type_name.6234, 67
+	.asciz	"Java.Lang.Annotation.Documented, Mono.Android"
+	.size	.L.managed_type_name.6234, 46
 	.section	.rodata.managed_type_name.6235,"aMS",%progbits,1
 	.type	.L.managed_type_name.6235, %object
 .L.managed_type_name.6235:
-	.asciz	"Java.Lang.Annotation.Documented, Mono.Android"
-	.size	.L.managed_type_name.6235, 46
+	.asciz	"Java.Lang.Annotation.DocumentedInvoker, Mono.Android"
+	.size	.L.managed_type_name.6235, 53
 	.section	.rodata.managed_type_name.6236,"aMS",%progbits,1
 	.type	.L.managed_type_name.6236, %object
 .L.managed_type_name.6236:
-	.asciz	"Java.Lang.Annotation.DocumentedInvoker, Mono.Android"
-	.size	.L.managed_type_name.6236, 53
+	.asciz	"Java.Lang.Annotation.ElementType, Mono.Android"
+	.size	.L.managed_type_name.6236, 47
 	.section	.rodata.managed_type_name.6237,"aMS",%progbits,1
 	.type	.L.managed_type_name.6237, %object
 .L.managed_type_name.6237:
-	.asciz	"Java.Lang.Annotation.ElementType, Mono.Android"
-	.size	.L.managed_type_name.6237, 47
+	.asciz	"Java.Lang.Annotation.IAnnotationInvoker, Mono.Android"
+	.size	.L.managed_type_name.6237, 54
 	.section	.rodata.managed_type_name.6238,"aMS",%progbits,1
 	.type	.L.managed_type_name.6238, %object
 .L.managed_type_name.6238:
-	.asciz	"Java.Lang.Annotation.IAnnotationInvoker, Mono.Android"
+	.asciz	"Java.Lang.Annotation.IDocumentedInvoker, Mono.Android"
 	.size	.L.managed_type_name.6238, 54
 	.section	.rodata.managed_type_name.6239,"aMS",%progbits,1
 	.type	.L.managed_type_name.6239, %object
 .L.managed_type_name.6239:
-	.asciz	"Java.Lang.Annotation.IDocumentedInvoker, Mono.Android"
-	.size	.L.managed_type_name.6239, 54
+	.asciz	"Java.Lang.Annotation.IInheritedInvoker, Mono.Android"
+	.size	.L.managed_type_name.6239, 53
 	.section	.rodata.managed_type_name.6240,"aMS",%progbits,1
 	.type	.L.managed_type_name.6240, %object
 .L.managed_type_name.6240:
-	.asciz	"Java.Lang.Annotation.IInheritedInvoker, Mono.Android"
-	.size	.L.managed_type_name.6240, 53
+	.asciz	"Java.Lang.Annotation.INativeInvoker, Mono.Android"
+	.size	.L.managed_type_name.6240, 50
 	.section	.rodata.managed_type_name.6241,"aMS",%progbits,1
 	.type	.L.managed_type_name.6241, %object
 .L.managed_type_name.6241:
-	.asciz	"Java.Lang.Annotation.INativeInvoker, Mono.Android"
-	.size	.L.managed_type_name.6241, 50
+	.asciz	"Java.Lang.Annotation.IRepeatableInvoker, Mono.Android"
+	.size	.L.managed_type_name.6241, 54
 	.section	.rodata.managed_type_name.6242,"aMS",%progbits,1
 	.type	.L.managed_type_name.6242, %object
 .L.managed_type_name.6242:
-	.asciz	"Java.Lang.Annotation.IRepeatableInvoker, Mono.Android"
-	.size	.L.managed_type_name.6242, 54
+	.asciz	"Java.Lang.Annotation.IRetentionInvoker, Mono.Android"
+	.size	.L.managed_type_name.6242, 53
 	.section	.rodata.managed_type_name.6243,"aMS",%progbits,1
 	.type	.L.managed_type_name.6243, %object
 .L.managed_type_name.6243:
-	.asciz	"Java.Lang.Annotation.IRetentionInvoker, Mono.Android"
-	.size	.L.managed_type_name.6243, 53
+	.asciz	"Java.Lang.Annotation.ITargetInvoker, Mono.Android"
+	.size	.L.managed_type_name.6243, 50
 	.section	.rodata.managed_type_name.6244,"aMS",%progbits,1
 	.type	.L.managed_type_name.6244, %object
 .L.managed_type_name.6244:
-	.asciz	"Java.Lang.Annotation.ITargetInvoker, Mono.Android"
-	.size	.L.managed_type_name.6244, 50
+	.asciz	"Java.Lang.Annotation.IncompleteAnnotationException, Mono.Android"
+	.size	.L.managed_type_name.6244, 65
 	.section	.rodata.managed_type_name.6245,"aMS",%progbits,1
 	.type	.L.managed_type_name.6245, %object
 .L.managed_type_name.6245:
-	.asciz	"Java.Lang.Annotation.IncompleteAnnotationException, Mono.Android"
-	.size	.L.managed_type_name.6245, 65
+	.asciz	"Java.Lang.Annotation.Inherited, Mono.Android"
+	.size	.L.managed_type_name.6245, 45
 	.section	.rodata.managed_type_name.6246,"aMS",%progbits,1
 	.type	.L.managed_type_name.6246, %object
 .L.managed_type_name.6246:
-	.asciz	"Java.Lang.Annotation.Inherited, Mono.Android"
-	.size	.L.managed_type_name.6246, 45
+	.asciz	"Java.Lang.Annotation.InheritedInvoker, Mono.Android"
+	.size	.L.managed_type_name.6246, 52
 	.section	.rodata.managed_type_name.6247,"aMS",%progbits,1
 	.type	.L.managed_type_name.6247, %object
 .L.managed_type_name.6247:
-	.asciz	"Java.Lang.Annotation.InheritedInvoker, Mono.Android"
-	.size	.L.managed_type_name.6247, 52
+	.asciz	"Java.Lang.Annotation.Retention, Mono.Android"
+	.size	.L.managed_type_name.6247, 45
 	.section	.rodata.managed_type_name.6248,"aMS",%progbits,1
 	.type	.L.managed_type_name.6248, %object
 .L.managed_type_name.6248:
-	.asciz	"Java.Lang.Annotation.Retention, Mono.Android"
-	.size	.L.managed_type_name.6248, 45
+	.asciz	"Java.Lang.Annotation.RetentionInvoker, Mono.Android"
+	.size	.L.managed_type_name.6248, 52
 	.section	.rodata.managed_type_name.6249,"aMS",%progbits,1
 	.type	.L.managed_type_name.6249, %object
 .L.managed_type_name.6249:
-	.asciz	"Java.Lang.Annotation.RetentionInvoker, Mono.Android"
-	.size	.L.managed_type_name.6249, 52
+	.asciz	"Java.Lang.Annotation.RetentionPolicy, Mono.Android"
+	.size	.L.managed_type_name.6249, 51
 	.section	.rodata.managed_type_name.6250,"aMS",%progbits,1
 	.type	.L.managed_type_name.6250, %object
 .L.managed_type_name.6250:
-	.asciz	"Java.Lang.Annotation.RetentionPolicy, Mono.Android"
-	.size	.L.managed_type_name.6250, 51
+	.asciz	"Java.Lang.Annotation.Target, Mono.Android"
+	.size	.L.managed_type_name.6250, 42
 	.section	.rodata.managed_type_name.6251,"aMS",%progbits,1
 	.type	.L.managed_type_name.6251, %object
 .L.managed_type_name.6251:
-	.asciz	"Java.Lang.Annotation.Target, Mono.Android"
-	.size	.L.managed_type_name.6251, 42
+	.asciz	"Java.Lang.Annotation.TargetInvoker, Mono.Android"
+	.size	.L.managed_type_name.6251, 49
 	.section	.rodata.managed_type_name.6252,"aMS",%progbits,1
 	.type	.L.managed_type_name.6252, %object
 .L.managed_type_name.6252:
-	.asciz	"Java.Lang.Annotation.TargetInvoker, Mono.Android"
-	.size	.L.managed_type_name.6252, 49
+	.asciz	"Java.Lang.ArithmeticException, Mono.Android"
+	.size	.L.managed_type_name.6252, 44
 	.section	.rodata.managed_type_name.6253,"aMS",%progbits,1
 	.type	.L.managed_type_name.6253, %object
 .L.managed_type_name.6253:
-	.asciz	"Java.Lang.ArithmeticException, Mono.Android"
-	.size	.L.managed_type_name.6253, 44
+	.asciz	"Java.Lang.ArrayIndexOutOfBoundsException, Mono.Android"
+	.size	.L.managed_type_name.6253, 55
 	.section	.rodata.managed_type_name.6254,"aMS",%progbits,1
 	.type	.L.managed_type_name.6254, %object
 .L.managed_type_name.6254:
-	.asciz	"Java.Lang.ArrayIndexOutOfBoundsException, Mono.Android"
-	.size	.L.managed_type_name.6254, 55
+	.asciz	"Java.Lang.ArrayStoreException, Mono.Android"
+	.size	.L.managed_type_name.6254, 44
 	.section	.rodata.managed_type_name.6255,"aMS",%progbits,1
 	.type	.L.managed_type_name.6255, %object
 .L.managed_type_name.6255:
-	.asciz	"Java.Lang.ArrayStoreException, Mono.Android"
-	.size	.L.managed_type_name.6255, 44
+	.asciz	"Java.Lang.AssertionError, Mono.Android"
+	.size	.L.managed_type_name.6255, 39
 	.section	.rodata.managed_type_name.6256,"aMS",%progbits,1
 	.type	.L.managed_type_name.6256, %object
 .L.managed_type_name.6256:
-	.asciz	"Java.Lang.AssertionError, Mono.Android"
-	.size	.L.managed_type_name.6256, 39
+	.asciz	"Java.Lang.Boolean, Mono.Android"
+	.size	.L.managed_type_name.6256, 32
 	.section	.rodata.managed_type_name.6257,"aMS",%progbits,1
 	.type	.L.managed_type_name.6257, %object
 .L.managed_type_name.6257:
-	.asciz	"Java.Lang.Boolean, Mono.Android"
-	.size	.L.managed_type_name.6257, 32
+	.asciz	"Java.Lang.BootstrapMethodError, Mono.Android"
+	.size	.L.managed_type_name.6257, 45
 	.section	.rodata.managed_type_name.6258,"aMS",%progbits,1
 	.type	.L.managed_type_name.6258, %object
 .L.managed_type_name.6258:
-	.asciz	"Java.Lang.BootstrapMethodError, Mono.Android"
-	.size	.L.managed_type_name.6258, 45
+	.asciz	"Java.Lang.Byte, Mono.Android"
+	.size	.L.managed_type_name.6258, 29
 	.section	.rodata.managed_type_name.6259,"aMS",%progbits,1
 	.type	.L.managed_type_name.6259, %object
 .L.managed_type_name.6259:
-	.asciz	"Java.Lang.Byte, Mono.Android"
-	.size	.L.managed_type_name.6259, 29
+	.asciz	"Java.Lang.Character+Subset, Mono.Android"
+	.size	.L.managed_type_name.6259, 41
 	.section	.rodata.managed_type_name.6260,"aMS",%progbits,1
 	.type	.L.managed_type_name.6260, %object
 .L.managed_type_name.6260:
-	.asciz	"Java.Lang.Character+Subset, Mono.Android"
-	.size	.L.managed_type_name.6260, 41
+	.asciz	"Java.Lang.Character+UnicodeBlock, Mono.Android"
+	.size	.L.managed_type_name.6260, 47
 	.section	.rodata.managed_type_name.6261,"aMS",%progbits,1
 	.type	.L.managed_type_name.6261, %object
 .L.managed_type_name.6261:
-	.asciz	"Java.Lang.Character+UnicodeBlock, Mono.Android"
-	.size	.L.managed_type_name.6261, 47
+	.asciz	"Java.Lang.Character+UnicodeScript, Mono.Android"
+	.size	.L.managed_type_name.6261, 48
 	.section	.rodata.managed_type_name.6262,"aMS",%progbits,1
 	.type	.L.managed_type_name.6262, %object
 .L.managed_type_name.6262:
-	.asciz	"Java.Lang.Character+UnicodeScript, Mono.Android"
-	.size	.L.managed_type_name.6262, 48
+	.asciz	"Java.Lang.Character, Mono.Android"
+	.size	.L.managed_type_name.6262, 34
 	.section	.rodata.managed_type_name.6263,"aMS",%progbits,1
 	.type	.L.managed_type_name.6263, %object
 .L.managed_type_name.6263:
-	.asciz	"Java.Lang.Character, Mono.Android"
-	.size	.L.managed_type_name.6263, 34
+	.asciz	"Java.Lang.Class, Mono.Android"
+	.size	.L.managed_type_name.6263, 30
 	.section	.rodata.managed_type_name.6264,"aMS",%progbits,1
 	.type	.L.managed_type_name.6264, %object
 .L.managed_type_name.6264:
-	.asciz	"Java.Lang.Class, Mono.Android"
-	.size	.L.managed_type_name.6264, 30
+	.asciz	"Java.Lang.ClassCastException, Mono.Android"
+	.size	.L.managed_type_name.6264, 43
 	.section	.rodata.managed_type_name.6265,"aMS",%progbits,1
 	.type	.L.managed_type_name.6265, %object
 .L.managed_type_name.6265:
-	.asciz	"Java.Lang.ClassCastException, Mono.Android"
-	.size	.L.managed_type_name.6265, 43
+	.asciz	"Java.Lang.ClassCircularityError, Mono.Android"
+	.size	.L.managed_type_name.6265, 46
 	.section	.rodata.managed_type_name.6266,"aMS",%progbits,1
 	.type	.L.managed_type_name.6266, %object
 .L.managed_type_name.6266:
-	.asciz	"Java.Lang.ClassCircularityError, Mono.Android"
-	.size	.L.managed_type_name.6266, 46
+	.asciz	"Java.Lang.ClassFormatError, Mono.Android"
+	.size	.L.managed_type_name.6266, 41
 	.section	.rodata.managed_type_name.6267,"aMS",%progbits,1
 	.type	.L.managed_type_name.6267, %object
 .L.managed_type_name.6267:
-	.asciz	"Java.Lang.ClassFormatError, Mono.Android"
-	.size	.L.managed_type_name.6267, 41
+	.asciz	"Java.Lang.ClassLoader, Mono.Android"
+	.size	.L.managed_type_name.6267, 36
 	.section	.rodata.managed_type_name.6268,"aMS",%progbits,1
 	.type	.L.managed_type_name.6268, %object
 .L.managed_type_name.6268:
-	.asciz	"Java.Lang.ClassLoader, Mono.Android"
-	.size	.L.managed_type_name.6268, 36
+	.asciz	"Java.Lang.ClassLoaderInvoker, Mono.Android"
+	.size	.L.managed_type_name.6268, 43
 	.section	.rodata.managed_type_name.6269,"aMS",%progbits,1
 	.type	.L.managed_type_name.6269, %object
 .L.managed_type_name.6269:
-	.asciz	"Java.Lang.ClassLoaderInvoker, Mono.Android"
-	.size	.L.managed_type_name.6269, 43
+	.asciz	"Java.Lang.ClassNotFoundException, Mono.Android"
+	.size	.L.managed_type_name.6269, 47
 	.section	.rodata.managed_type_name.6270,"aMS",%progbits,1
 	.type	.L.managed_type_name.6270, %object
 .L.managed_type_name.6270:
-	.asciz	"Java.Lang.ClassNotFoundException, Mono.Android"
-	.size	.L.managed_type_name.6270, 47
+	.asciz	"Java.Lang.CloneNotSupportedException, Mono.Android"
+	.size	.L.managed_type_name.6270, 51
 	.section	.rodata.managed_type_name.6271,"aMS",%progbits,1
 	.type	.L.managed_type_name.6271, %object
 .L.managed_type_name.6271:
-	.asciz	"Java.Lang.CloneNotSupportedException, Mono.Android"
-	.size	.L.managed_type_name.6271, 51
+	.asciz	"Java.Lang.Compiler, Mono.Android"
+	.size	.L.managed_type_name.6271, 33
 	.section	.rodata.managed_type_name.6272,"aMS",%progbits,1
 	.type	.L.managed_type_name.6272, %object
 .L.managed_type_name.6272:
-	.asciz	"Java.Lang.Compiler, Mono.Android"
-	.size	.L.managed_type_name.6272, 33
+	.asciz	"Java.Lang.Deprecated, Mono.Android"
+	.size	.L.managed_type_name.6272, 35
 	.section	.rodata.managed_type_name.6273,"aMS",%progbits,1
 	.type	.L.managed_type_name.6273, %object
 .L.managed_type_name.6273:
-	.asciz	"Java.Lang.Deprecated, Mono.Android"
-	.size	.L.managed_type_name.6273, 35
+	.asciz	"Java.Lang.DeprecatedInvoker, Mono.Android"
+	.size	.L.managed_type_name.6273, 42
 	.section	.rodata.managed_type_name.6274,"aMS",%progbits,1
 	.type	.L.managed_type_name.6274, %object
 .L.managed_type_name.6274:
-	.asciz	"Java.Lang.DeprecatedInvoker, Mono.Android"
-	.size	.L.managed_type_name.6274, 42
+	.asciz	"Java.Lang.Double, Mono.Android"
+	.size	.L.managed_type_name.6274, 31
 	.section	.rodata.managed_type_name.6275,"aMS",%progbits,1
 	.type	.L.managed_type_name.6275, %object
 .L.managed_type_name.6275:
-	.asciz	"Java.Lang.Double, Mono.Android"
-	.size	.L.managed_type_name.6275, 31
+	.asciz	"Java.Lang.Enum, Mono.Android"
+	.size	.L.managed_type_name.6275, 29
 	.section	.rodata.managed_type_name.6276,"aMS",%progbits,1
 	.type	.L.managed_type_name.6276, %object
 .L.managed_type_name.6276:
-	.asciz	"Java.Lang.Enum, Mono.Android"
-	.size	.L.managed_type_name.6276, 29
+	.asciz	"Java.Lang.EnumConstantNotPresentException, Mono.Android"
+	.size	.L.managed_type_name.6276, 56
 	.section	.rodata.managed_type_name.6277,"aMS",%progbits,1
 	.type	.L.managed_type_name.6277, %object
 .L.managed_type_name.6277:
-	.asciz	"Java.Lang.EnumConstantNotPresentException, Mono.Android"
-	.size	.L.managed_type_name.6277, 56
+	.asciz	"Java.Lang.EnumInvoker, Mono.Android"
+	.size	.L.managed_type_name.6277, 36
 	.section	.rodata.managed_type_name.6278,"aMS",%progbits,1
 	.type	.L.managed_type_name.6278, %object
 .L.managed_type_name.6278:
-	.asciz	"Java.Lang.EnumInvoker, Mono.Android"
-	.size	.L.managed_type_name.6278, 36
+	.asciz	"Java.Lang.Error, Mono.Android"
+	.size	.L.managed_type_name.6278, 30
 	.section	.rodata.managed_type_name.6279,"aMS",%progbits,1
 	.type	.L.managed_type_name.6279, %object
 .L.managed_type_name.6279:
-	.asciz	"Java.Lang.Error, Mono.Android"
-	.size	.L.managed_type_name.6279, 30
+	.asciz	"Java.Lang.Exception, Mono.Android"
+	.size	.L.managed_type_name.6279, 34
 	.section	.rodata.managed_type_name.6280,"aMS",%progbits,1
 	.type	.L.managed_type_name.6280, %object
 .L.managed_type_name.6280:
-	.asciz	"Java.Lang.Exception, Mono.Android"
-	.size	.L.managed_type_name.6280, 34
+	.asciz	"Java.Lang.ExceptionInInitializerError, Mono.Android"
+	.size	.L.managed_type_name.6280, 52
 	.section	.rodata.managed_type_name.6281,"aMS",%progbits,1
 	.type	.L.managed_type_name.6281, %object
 .L.managed_type_name.6281:
-	.asciz	"Java.Lang.ExceptionInInitializerError, Mono.Android"
-	.size	.L.managed_type_name.6281, 52
+	.asciz	"Java.Lang.Float, Mono.Android"
+	.size	.L.managed_type_name.6281, 30
 	.section	.rodata.managed_type_name.6282,"aMS",%progbits,1
 	.type	.L.managed_type_name.6282, %object
 .L.managed_type_name.6282:
-	.asciz	"Java.Lang.Float, Mono.Android"
-	.size	.L.managed_type_name.6282, 30
+	.asciz	"Java.Lang.IAppendableInvoker, Mono.Android"
+	.size	.L.managed_type_name.6282, 43
 	.section	.rodata.managed_type_name.6283,"aMS",%progbits,1
 	.type	.L.managed_type_name.6283, %object
 .L.managed_type_name.6283:
-	.asciz	"Java.Lang.IAppendableInvoker, Mono.Android"
-	.size	.L.managed_type_name.6283, 43
+	.asciz	"Java.Lang.IAutoCloseableInvoker, Mono.Android"
+	.size	.L.managed_type_name.6283, 46
 	.section	.rodata.managed_type_name.6284,"aMS",%progbits,1
 	.type	.L.managed_type_name.6284, %object
 .L.managed_type_name.6284:
-	.asciz	"Java.Lang.IAutoCloseableInvoker, Mono.Android"
-	.size	.L.managed_type_name.6284, 46
+	.asciz	"Java.Lang.ICharSequenceInvoker, Mono.Android"
+	.size	.L.managed_type_name.6284, 45
 	.section	.rodata.managed_type_name.6285,"aMS",%progbits,1
 	.type	.L.managed_type_name.6285, %object
 .L.managed_type_name.6285:
-	.asciz	"Java.Lang.ICharSequenceInvoker, Mono.Android"
-	.size	.L.managed_type_name.6285, 45
+	.asciz	"Java.Lang.ICloneableInvoker, Mono.Android"
+	.size	.L.managed_type_name.6285, 42
 	.section	.rodata.managed_type_name.6286,"aMS",%progbits,1
 	.type	.L.managed_type_name.6286, %object
 .L.managed_type_name.6286:
-	.asciz	"Java.Lang.ICloneableInvoker, Mono.Android"
-	.size	.L.managed_type_name.6286, 42
+	.asciz	"Java.Lang.IComparableInvoker, Mono.Android"
+	.size	.L.managed_type_name.6286, 43
 	.section	.rodata.managed_type_name.6287,"aMS",%progbits,1
 	.type	.L.managed_type_name.6287, %object
 .L.managed_type_name.6287:
-	.asciz	"Java.Lang.IComparableInvoker, Mono.Android"
+	.asciz	"Java.Lang.IDeprecatedInvoker, Mono.Android"
 	.size	.L.managed_type_name.6287, 43
 	.section	.rodata.managed_type_name.6288,"aMS",%progbits,1
 	.type	.L.managed_type_name.6288, %object
 .L.managed_type_name.6288:
-	.asciz	"Java.Lang.IDeprecatedInvoker, Mono.Android"
-	.size	.L.managed_type_name.6288, 43
+	.asciz	"Java.Lang.IFunctionalInterfaceInvoker, Mono.Android"
+	.size	.L.managed_type_name.6288, 52
 	.section	.rodata.managed_type_name.6289,"aMS",%progbits,1
 	.type	.L.managed_type_name.6289, %object
 .L.managed_type_name.6289:
-	.asciz	"Java.Lang.IFunctionalInterfaceInvoker, Mono.Android"
-	.size	.L.managed_type_name.6289, 52
+	.asciz	"Java.Lang.IIterableInvoker, Mono.Android"
+	.size	.L.managed_type_name.6289, 41
 	.section	.rodata.managed_type_name.6290,"aMS",%progbits,1
 	.type	.L.managed_type_name.6290, %object
 .L.managed_type_name.6290:
-	.asciz	"Java.Lang.IIterableInvoker, Mono.Android"
+	.asciz	"Java.Lang.IOverrideInvoker, Mono.Android"
 	.size	.L.managed_type_name.6290, 41
 	.section	.rodata.managed_type_name.6291,"aMS",%progbits,1
 	.type	.L.managed_type_name.6291, %object
 .L.managed_type_name.6291:
-	.asciz	"Java.Lang.IOverrideInvoker, Mono.Android"
+	.asciz	"Java.Lang.IReadableInvoker, Mono.Android"
 	.size	.L.managed_type_name.6291, 41
 	.section	.rodata.managed_type_name.6292,"aMS",%progbits,1
 	.type	.L.managed_type_name.6292, %object
 .L.managed_type_name.6292:
-	.asciz	"Java.Lang.IReadableInvoker, Mono.Android"
+	.asciz	"Java.Lang.IRunnableInvoker, Mono.Android"
 	.size	.L.managed_type_name.6292, 41
 	.section	.rodata.managed_type_name.6293,"aMS",%progbits,1
 	.type	.L.managed_type_name.6293, %object
 .L.managed_type_name.6293:
-	.asciz	"Java.Lang.IRunnableInvoker, Mono.Android"
-	.size	.L.managed_type_name.6293, 41
+	.asciz	"Java.Lang.ISafeVarargsInvoker, Mono.Android"
+	.size	.L.managed_type_name.6293, 44
 	.section	.rodata.managed_type_name.6294,"aMS",%progbits,1
 	.type	.L.managed_type_name.6294, %object
 .L.managed_type_name.6294:
-	.asciz	"Java.Lang.ISafeVarargsInvoker, Mono.Android"
-	.size	.L.managed_type_name.6294, 44
+	.asciz	"Java.Lang.ISuppressWarningsInvoker, Mono.Android"
+	.size	.L.managed_type_name.6294, 49
 	.section	.rodata.managed_type_name.6295,"aMS",%progbits,1
 	.type	.L.managed_type_name.6295, %object
 .L.managed_type_name.6295:
-	.asciz	"Java.Lang.ISuppressWarningsInvoker, Mono.Android"
-	.size	.L.managed_type_name.6295, 49
+	.asciz	"Java.Lang.IllegalAccessError, Mono.Android"
+	.size	.L.managed_type_name.6295, 43
 	.section	.rodata.managed_type_name.6296,"aMS",%progbits,1
 	.type	.L.managed_type_name.6296, %object
 .L.managed_type_name.6296:
-	.asciz	"Java.Lang.IllegalAccessError, Mono.Android"
-	.size	.L.managed_type_name.6296, 43
+	.asciz	"Java.Lang.IllegalAccessException, Mono.Android"
+	.size	.L.managed_type_name.6296, 47
 	.section	.rodata.managed_type_name.6297,"aMS",%progbits,1
 	.type	.L.managed_type_name.6297, %object
 .L.managed_type_name.6297:
-	.asciz	"Java.Lang.IllegalAccessException, Mono.Android"
-	.size	.L.managed_type_name.6297, 47
+	.asciz	"Java.Lang.IllegalArgumentException, Mono.Android"
+	.size	.L.managed_type_name.6297, 49
 	.section	.rodata.managed_type_name.6298,"aMS",%progbits,1
 	.type	.L.managed_type_name.6298, %object
 .L.managed_type_name.6298:
-	.asciz	"Java.Lang.IllegalArgumentException, Mono.Android"
-	.size	.L.managed_type_name.6298, 49
+	.asciz	"Java.Lang.IllegalMonitorStateException, Mono.Android"
+	.size	.L.managed_type_name.6298, 53
 	.section	.rodata.managed_type_name.6299,"aMS",%progbits,1
 	.type	.L.managed_type_name.6299, %object
 .L.managed_type_name.6299:
-	.asciz	"Java.Lang.IllegalMonitorStateException, Mono.Android"
-	.size	.L.managed_type_name.6299, 53
+	.asciz	"Java.Lang.IllegalStateException, Mono.Android"
+	.size	.L.managed_type_name.6299, 46
 	.section	.rodata.managed_type_name.6300,"aMS",%progbits,1
 	.type	.L.managed_type_name.6300, %object
 .L.managed_type_name.6300:
-	.asciz	"Java.Lang.IllegalStateException, Mono.Android"
-	.size	.L.managed_type_name.6300, 46
+	.asciz	"Java.Lang.IllegalThreadStateException, Mono.Android"
+	.size	.L.managed_type_name.6300, 52
 	.section	.rodata.managed_type_name.6301,"aMS",%progbits,1
 	.type	.L.managed_type_name.6301, %object
 .L.managed_type_name.6301:
-	.asciz	"Java.Lang.IllegalThreadStateException, Mono.Android"
-	.size	.L.managed_type_name.6301, 52
+	.asciz	"Java.Lang.IncompatibleClassChangeError, Mono.Android"
+	.size	.L.managed_type_name.6301, 53
 	.section	.rodata.managed_type_name.6302,"aMS",%progbits,1
 	.type	.L.managed_type_name.6302, %object
 .L.managed_type_name.6302:
-	.asciz	"Java.Lang.IncompatibleClassChangeError, Mono.Android"
-	.size	.L.managed_type_name.6302, 53
+	.asciz	"Java.Lang.IndexOutOfBoundsException, Mono.Android"
+	.size	.L.managed_type_name.6302, 50
 	.section	.rodata.managed_type_name.6303,"aMS",%progbits,1
 	.type	.L.managed_type_name.6303, %object
 .L.managed_type_name.6303:
-	.asciz	"Java.Lang.IndexOutOfBoundsException, Mono.Android"
-	.size	.L.managed_type_name.6303, 50
+	.asciz	"Java.Lang.InheritableThreadLocal, Mono.Android"
+	.size	.L.managed_type_name.6303, 47
 	.section	.rodata.managed_type_name.6304,"aMS",%progbits,1
 	.type	.L.managed_type_name.6304, %object
 .L.managed_type_name.6304:
-	.asciz	"Java.Lang.InheritableThreadLocal, Mono.Android"
-	.size	.L.managed_type_name.6304, 47
+	.asciz	"Java.Lang.InstantiationError, Mono.Android"
+	.size	.L.managed_type_name.6304, 43
 	.section	.rodata.managed_type_name.6305,"aMS",%progbits,1
 	.type	.L.managed_type_name.6305, %object
 .L.managed_type_name.6305:
-	.asciz	"Java.Lang.InstantiationError, Mono.Android"
-	.size	.L.managed_type_name.6305, 43
+	.asciz	"Java.Lang.InstantiationException, Mono.Android"
+	.size	.L.managed_type_name.6305, 47
 	.section	.rodata.managed_type_name.6306,"aMS",%progbits,1
 	.type	.L.managed_type_name.6306, %object
 .L.managed_type_name.6306:
-	.asciz	"Java.Lang.InstantiationException, Mono.Android"
-	.size	.L.managed_type_name.6306, 47
+	.asciz	"Java.Lang.Integer, Mono.Android"
+	.size	.L.managed_type_name.6306, 32
 	.section	.rodata.managed_type_name.6307,"aMS",%progbits,1
 	.type	.L.managed_type_name.6307, %object
 .L.managed_type_name.6307:
-	.asciz	"Java.Lang.Integer, Mono.Android"
-	.size	.L.managed_type_name.6307, 32
+	.asciz	"Java.Lang.InternalError, Mono.Android"
+	.size	.L.managed_type_name.6307, 38
 	.section	.rodata.managed_type_name.6308,"aMS",%progbits,1
 	.type	.L.managed_type_name.6308, %object
 .L.managed_type_name.6308:
-	.asciz	"Java.Lang.InternalError, Mono.Android"
-	.size	.L.managed_type_name.6308, 38
+	.asciz	"Java.Lang.InterruptedException, Mono.Android"
+	.size	.L.managed_type_name.6308, 45
 	.section	.rodata.managed_type_name.6309,"aMS",%progbits,1
 	.type	.L.managed_type_name.6309, %object
 .L.managed_type_name.6309:
-	.asciz	"Java.Lang.InterruptedException, Mono.Android"
-	.size	.L.managed_type_name.6309, 45
+	.asciz	"Java.Lang.Invoke.CallSite, Mono.Android"
+	.size	.L.managed_type_name.6309, 40
 	.section	.rodata.managed_type_name.6310,"aMS",%progbits,1
 	.type	.L.managed_type_name.6310, %object
 .L.managed_type_name.6310:
-	.asciz	"Java.Lang.Invoke.CallSite, Mono.Android"
-	.size	.L.managed_type_name.6310, 40
+	.asciz	"Java.Lang.Invoke.CallSiteInvoker, Mono.Android"
+	.size	.L.managed_type_name.6310, 47
 	.section	.rodata.managed_type_name.6311,"aMS",%progbits,1
 	.type	.L.managed_type_name.6311, %object
 .L.managed_type_name.6311:
-	.asciz	"Java.Lang.Invoke.CallSiteInvoker, Mono.Android"
-	.size	.L.managed_type_name.6311, 47
+	.asciz	"Java.Lang.Invoke.ConstantCallSite, Mono.Android"
+	.size	.L.managed_type_name.6311, 48
 	.section	.rodata.managed_type_name.6312,"aMS",%progbits,1
 	.type	.L.managed_type_name.6312, %object
 .L.managed_type_name.6312:
-	.asciz	"Java.Lang.Invoke.ConstantCallSite, Mono.Android"
-	.size	.L.managed_type_name.6312, 48
+	.asciz	"Java.Lang.Invoke.IMethodHandleInfoInvoker, Mono.Android"
+	.size	.L.managed_type_name.6312, 56
 	.section	.rodata.managed_type_name.6313,"aMS",%progbits,1
 	.type	.L.managed_type_name.6313, %object
 .L.managed_type_name.6313:
-	.asciz	"Java.Lang.Invoke.IMethodHandleInfoInvoker, Mono.Android"
-	.size	.L.managed_type_name.6313, 56
+	.asciz	"Java.Lang.Invoke.LambdaConversionException, Mono.Android"
+	.size	.L.managed_type_name.6313, 57
 	.section	.rodata.managed_type_name.6314,"aMS",%progbits,1
 	.type	.L.managed_type_name.6314, %object
 .L.managed_type_name.6314:
-	.asciz	"Java.Lang.Invoke.LambdaConversionException, Mono.Android"
-	.size	.L.managed_type_name.6314, 57
+	.asciz	"Java.Lang.Invoke.MethodHandle, Mono.Android"
+	.size	.L.managed_type_name.6314, 44
 	.section	.rodata.managed_type_name.6315,"aMS",%progbits,1
 	.type	.L.managed_type_name.6315, %object
 .L.managed_type_name.6315:
-	.asciz	"Java.Lang.Invoke.MethodHandle, Mono.Android"
-	.size	.L.managed_type_name.6315, 44
+	.asciz	"Java.Lang.Invoke.MethodHandleInfo, Mono.Android"
+	.size	.L.managed_type_name.6315, 48
 	.section	.rodata.managed_type_name.6316,"aMS",%progbits,1
 	.type	.L.managed_type_name.6316, %object
 .L.managed_type_name.6316:
-	.asciz	"Java.Lang.Invoke.MethodHandleInfo, Mono.Android"
-	.size	.L.managed_type_name.6316, 48
+	.asciz	"Java.Lang.Invoke.MethodHandleInvoker, Mono.Android"
+	.size	.L.managed_type_name.6316, 51
 	.section	.rodata.managed_type_name.6317,"aMS",%progbits,1
 	.type	.L.managed_type_name.6317, %object
 .L.managed_type_name.6317:
-	.asciz	"Java.Lang.Invoke.MethodHandleInvoker, Mono.Android"
-	.size	.L.managed_type_name.6317, 51
+	.asciz	"Java.Lang.Invoke.MethodHandles+Lookup, Mono.Android"
+	.size	.L.managed_type_name.6317, 52
 	.section	.rodata.managed_type_name.6318,"aMS",%progbits,1
 	.type	.L.managed_type_name.6318, %object
 .L.managed_type_name.6318:
-	.asciz	"Java.Lang.Invoke.MethodHandles+Lookup, Mono.Android"
-	.size	.L.managed_type_name.6318, 52
+	.asciz	"Java.Lang.Invoke.MethodHandles, Mono.Android"
+	.size	.L.managed_type_name.6318, 45
 	.section	.rodata.managed_type_name.6319,"aMS",%progbits,1
 	.type	.L.managed_type_name.6319, %object
 .L.managed_type_name.6319:
-	.asciz	"Java.Lang.Invoke.MethodHandles, Mono.Android"
-	.size	.L.managed_type_name.6319, 45
+	.asciz	"Java.Lang.Invoke.MethodType, Mono.Android"
+	.size	.L.managed_type_name.6319, 42
 	.section	.rodata.managed_type_name.6320,"aMS",%progbits,1
 	.type	.L.managed_type_name.6320, %object
 .L.managed_type_name.6320:
-	.asciz	"Java.Lang.Invoke.MethodType, Mono.Android"
-	.size	.L.managed_type_name.6320, 42
+	.asciz	"Java.Lang.Invoke.MutableCallSite, Mono.Android"
+	.size	.L.managed_type_name.6320, 47
 	.section	.rodata.managed_type_name.6321,"aMS",%progbits,1
 	.type	.L.managed_type_name.6321, %object
 .L.managed_type_name.6321:
-	.asciz	"Java.Lang.Invoke.MutableCallSite, Mono.Android"
-	.size	.L.managed_type_name.6321, 47
+	.asciz	"Java.Lang.Invoke.VolatileCallSite, Mono.Android"
+	.size	.L.managed_type_name.6321, 48
 	.section	.rodata.managed_type_name.6322,"aMS",%progbits,1
 	.type	.L.managed_type_name.6322, %object
 .L.managed_type_name.6322:
-	.asciz	"Java.Lang.Invoke.VolatileCallSite, Mono.Android"
-	.size	.L.managed_type_name.6322, 48
+	.asciz	"Java.Lang.Invoke.WrongMethodTypeException, Mono.Android"
+	.size	.L.managed_type_name.6322, 56
 	.section	.rodata.managed_type_name.6323,"aMS",%progbits,1
 	.type	.L.managed_type_name.6323, %object
 .L.managed_type_name.6323:
-	.asciz	"Java.Lang.Invoke.WrongMethodTypeException, Mono.Android"
-	.size	.L.managed_type_name.6323, 56
+	.asciz	"Java.Lang.JavaSystem, Mono.Android"
+	.size	.L.managed_type_name.6323, 35
 	.section	.rodata.managed_type_name.6324,"aMS",%progbits,1
 	.type	.L.managed_type_name.6324, %object
 .L.managed_type_name.6324:
-	.asciz	"Java.Lang.JavaSystem, Mono.Android"
-	.size	.L.managed_type_name.6324, 35
+	.asciz	"Java.Lang.LinkageError, Mono.Android"
+	.size	.L.managed_type_name.6324, 37
 	.section	.rodata.managed_type_name.6325,"aMS",%progbits,1
 	.type	.L.managed_type_name.6325, %object
 .L.managed_type_name.6325:
-	.asciz	"Java.Lang.LinkageError, Mono.Android"
-	.size	.L.managed_type_name.6325, 37
+	.asciz	"Java.Lang.Long, Mono.Android"
+	.size	.L.managed_type_name.6325, 29
 	.section	.rodata.managed_type_name.6326,"aMS",%progbits,1
 	.type	.L.managed_type_name.6326, %object
 .L.managed_type_name.6326:
-	.asciz	"Java.Lang.Long, Mono.Android"
+	.asciz	"Java.Lang.Math, Mono.Android"
 	.size	.L.managed_type_name.6326, 29
 	.section	.rodata.managed_type_name.6327,"aMS",%progbits,1
 	.type	.L.managed_type_name.6327, %object
 .L.managed_type_name.6327:
-	.asciz	"Java.Lang.Math, Mono.Android"
-	.size	.L.managed_type_name.6327, 29
+	.asciz	"Java.Lang.NegativeArraySizeException, Mono.Android"
+	.size	.L.managed_type_name.6327, 51
 	.section	.rodata.managed_type_name.6328,"aMS",%progbits,1
 	.type	.L.managed_type_name.6328, %object
 .L.managed_type_name.6328:
-	.asciz	"Java.Lang.NegativeArraySizeException, Mono.Android"
-	.size	.L.managed_type_name.6328, 51
+	.asciz	"Java.Lang.NoClassDefFoundError, Mono.Android"
+	.size	.L.managed_type_name.6328, 45
 	.section	.rodata.managed_type_name.6329,"aMS",%progbits,1
 	.type	.L.managed_type_name.6329, %object
 .L.managed_type_name.6329:
-	.asciz	"Java.Lang.NoClassDefFoundError, Mono.Android"
-	.size	.L.managed_type_name.6329, 45
+	.asciz	"Java.Lang.NoSuchFieldError, Mono.Android"
+	.size	.L.managed_type_name.6329, 41
 	.section	.rodata.managed_type_name.6330,"aMS",%progbits,1
 	.type	.L.managed_type_name.6330, %object
 .L.managed_type_name.6330:
-	.asciz	"Java.Lang.NoSuchFieldError, Mono.Android"
-	.size	.L.managed_type_name.6330, 41
+	.asciz	"Java.Lang.NoSuchFieldException, Mono.Android"
+	.size	.L.managed_type_name.6330, 45
 	.section	.rodata.managed_type_name.6331,"aMS",%progbits,1
 	.type	.L.managed_type_name.6331, %object
 .L.managed_type_name.6331:
-	.asciz	"Java.Lang.NoSuchFieldException, Mono.Android"
-	.size	.L.managed_type_name.6331, 45
+	.asciz	"Java.Lang.NoSuchMethodError, Mono.Android"
+	.size	.L.managed_type_name.6331, 42
 	.section	.rodata.managed_type_name.6332,"aMS",%progbits,1
 	.type	.L.managed_type_name.6332, %object
 .L.managed_type_name.6332:
-	.asciz	"Java.Lang.NoSuchMethodError, Mono.Android"
-	.size	.L.managed_type_name.6332, 42
+	.asciz	"Java.Lang.NoSuchMethodException, Mono.Android"
+	.size	.L.managed_type_name.6332, 46
 	.section	.rodata.managed_type_name.6333,"aMS",%progbits,1
 	.type	.L.managed_type_name.6333, %object
 .L.managed_type_name.6333:
-	.asciz	"Java.Lang.NoSuchMethodException, Mono.Android"
-	.size	.L.managed_type_name.6333, 46
+	.asciz	"Java.Lang.NullPointerException, Mono.Android"
+	.size	.L.managed_type_name.6333, 45
 	.section	.rodata.managed_type_name.6334,"aMS",%progbits,1
 	.type	.L.managed_type_name.6334, %object
 .L.managed_type_name.6334:
-	.asciz	"Java.Lang.NullPointerException, Mono.Android"
-	.size	.L.managed_type_name.6334, 45
+	.asciz	"Java.Lang.Number, Mono.Android"
+	.size	.L.managed_type_name.6334, 31
 	.section	.rodata.managed_type_name.6335,"aMS",%progbits,1
 	.type	.L.managed_type_name.6335, %object
 .L.managed_type_name.6335:
-	.asciz	"Java.Lang.Number, Mono.Android"
-	.size	.L.managed_type_name.6335, 31
+	.asciz	"Java.Lang.NumberFormatException, Mono.Android"
+	.size	.L.managed_type_name.6335, 46
 	.section	.rodata.managed_type_name.6336,"aMS",%progbits,1
 	.type	.L.managed_type_name.6336, %object
 .L.managed_type_name.6336:
-	.asciz	"Java.Lang.NumberFormatException, Mono.Android"
-	.size	.L.managed_type_name.6336, 46
+	.asciz	"Java.Lang.NumberInvoker, Mono.Android"
+	.size	.L.managed_type_name.6336, 38
 	.section	.rodata.managed_type_name.6337,"aMS",%progbits,1
 	.type	.L.managed_type_name.6337, %object
 .L.managed_type_name.6337:
-	.asciz	"Java.Lang.NumberInvoker, Mono.Android"
-	.size	.L.managed_type_name.6337, 38
+	.asciz	"Java.Lang.Object, Mono.Android"
+	.size	.L.managed_type_name.6337, 31
 	.section	.rodata.managed_type_name.6338,"aMS",%progbits,1
 	.type	.L.managed_type_name.6338, %object
 .L.managed_type_name.6338:
-	.asciz	"Java.Lang.Object, Mono.Android"
-	.size	.L.managed_type_name.6338, 31
+	.asciz	"Java.Lang.OutOfMemoryError, Mono.Android"
+	.size	.L.managed_type_name.6338, 41
 	.section	.rodata.managed_type_name.6339,"aMS",%progbits,1
 	.type	.L.managed_type_name.6339, %object
 .L.managed_type_name.6339:
-	.asciz	"Java.Lang.OutOfMemoryError, Mono.Android"
-	.size	.L.managed_type_name.6339, 41
+	.asciz	"Java.Lang.Override, Mono.Android"
+	.size	.L.managed_type_name.6339, 33
 	.section	.rodata.managed_type_name.6340,"aMS",%progbits,1
 	.type	.L.managed_type_name.6340, %object
 .L.managed_type_name.6340:
-	.asciz	"Java.Lang.Override, Mono.Android"
-	.size	.L.managed_type_name.6340, 33
+	.asciz	"Java.Lang.OverrideInvoker, Mono.Android"
+	.size	.L.managed_type_name.6340, 40
 	.section	.rodata.managed_type_name.6341,"aMS",%progbits,1
 	.type	.L.managed_type_name.6341, %object
 .L.managed_type_name.6341:
-	.asciz	"Java.Lang.OverrideInvoker, Mono.Android"
-	.size	.L.managed_type_name.6341, 40
+	.asciz	"Java.Lang.Package, Mono.Android"
+	.size	.L.managed_type_name.6341, 32
 	.section	.rodata.managed_type_name.6342,"aMS",%progbits,1
 	.type	.L.managed_type_name.6342, %object
 .L.managed_type_name.6342:
-	.asciz	"Java.Lang.Package, Mono.Android"
+	.asciz	"Java.Lang.Process, Mono.Android"
 	.size	.L.managed_type_name.6342, 32
 	.section	.rodata.managed_type_name.6343,"aMS",%progbits,1
 	.type	.L.managed_type_name.6343, %object
 .L.managed_type_name.6343:
-	.asciz	"Java.Lang.Process, Mono.Android"
-	.size	.L.managed_type_name.6343, 32
+	.asciz	"Java.Lang.ProcessBuilder+Redirect+Type, Mono.Android"
+	.size	.L.managed_type_name.6343, 53
 	.section	.rodata.managed_type_name.6344,"aMS",%progbits,1
 	.type	.L.managed_type_name.6344, %object
 .L.managed_type_name.6344:
-	.asciz	"Java.Lang.ProcessBuilder+Redirect+Type, Mono.Android"
-	.size	.L.managed_type_name.6344, 53
+	.asciz	"Java.Lang.ProcessBuilder+Redirect, Mono.Android"
+	.size	.L.managed_type_name.6344, 48
 	.section	.rodata.managed_type_name.6345,"aMS",%progbits,1
 	.type	.L.managed_type_name.6345, %object
 .L.managed_type_name.6345:
-	.asciz	"Java.Lang.ProcessBuilder+Redirect, Mono.Android"
-	.size	.L.managed_type_name.6345, 48
+	.asciz	"Java.Lang.ProcessBuilder+RedirectInvoker, Mono.Android"
+	.size	.L.managed_type_name.6345, 55
 	.section	.rodata.managed_type_name.6346,"aMS",%progbits,1
 	.type	.L.managed_type_name.6346, %object
 .L.managed_type_name.6346:
-	.asciz	"Java.Lang.ProcessBuilder+RedirectInvoker, Mono.Android"
-	.size	.L.managed_type_name.6346, 55
+	.asciz	"Java.Lang.ProcessBuilder, Mono.Android"
+	.size	.L.managed_type_name.6346, 39
 	.section	.rodata.managed_type_name.6347,"aMS",%progbits,1
 	.type	.L.managed_type_name.6347, %object
 .L.managed_type_name.6347:
-	.asciz	"Java.Lang.ProcessBuilder, Mono.Android"
+	.asciz	"Java.Lang.ProcessInvoker, Mono.Android"
 	.size	.L.managed_type_name.6347, 39
 	.section	.rodata.managed_type_name.6348,"aMS",%progbits,1
 	.type	.L.managed_type_name.6348, %object
 .L.managed_type_name.6348:
-	.asciz	"Java.Lang.ProcessInvoker, Mono.Android"
-	.size	.L.managed_type_name.6348, 39
+	.asciz	"Java.Lang.Ref.PhantomReference, Mono.Android"
+	.size	.L.managed_type_name.6348, 45
 	.section	.rodata.managed_type_name.6349,"aMS",%progbits,1
 	.type	.L.managed_type_name.6349, %object
 .L.managed_type_name.6349:
-	.asciz	"Java.Lang.Ref.PhantomReference, Mono.Android"
-	.size	.L.managed_type_name.6349, 45
+	.asciz	"Java.Lang.Ref.Reference, Mono.Android"
+	.size	.L.managed_type_name.6349, 38
 	.section	.rodata.managed_type_name.6350,"aMS",%progbits,1
 	.type	.L.managed_type_name.6350, %object
 .L.managed_type_name.6350:
-	.asciz	"Java.Lang.Ref.Reference, Mono.Android"
-	.size	.L.managed_type_name.6350, 38
+	.asciz	"Java.Lang.Ref.ReferenceInvoker, Mono.Android"
+	.size	.L.managed_type_name.6350, 45
 	.section	.rodata.managed_type_name.6351,"aMS",%progbits,1
 	.type	.L.managed_type_name.6351, %object
 .L.managed_type_name.6351:
-	.asciz	"Java.Lang.Ref.ReferenceInvoker, Mono.Android"
-	.size	.L.managed_type_name.6351, 45
+	.asciz	"Java.Lang.Ref.ReferenceQueue, Mono.Android"
+	.size	.L.managed_type_name.6351, 43
 	.section	.rodata.managed_type_name.6352,"aMS",%progbits,1
 	.type	.L.managed_type_name.6352, %object
 .L.managed_type_name.6352:
-	.asciz	"Java.Lang.Ref.ReferenceQueue, Mono.Android"
-	.size	.L.managed_type_name.6352, 43
+	.asciz	"Java.Lang.Ref.SoftReference, Mono.Android"
+	.size	.L.managed_type_name.6352, 42
 	.section	.rodata.managed_type_name.6353,"aMS",%progbits,1
 	.type	.L.managed_type_name.6353, %object
 .L.managed_type_name.6353:
-	.asciz	"Java.Lang.Ref.SoftReference, Mono.Android"
+	.asciz	"Java.Lang.Ref.WeakReference, Mono.Android"
 	.size	.L.managed_type_name.6353, 42
 	.section	.rodata.managed_type_name.6354,"aMS",%progbits,1
 	.type	.L.managed_type_name.6354, %object
 .L.managed_type_name.6354:
-	.asciz	"Java.Lang.Ref.WeakReference, Mono.Android"
-	.size	.L.managed_type_name.6354, 42
+	.asciz	"Java.Lang.Reflect.AccessibleObject, Mono.Android"
+	.size	.L.managed_type_name.6354, 49
 	.section	.rodata.managed_type_name.6355,"aMS",%progbits,1
 	.type	.L.managed_type_name.6355, %object
 .L.managed_type_name.6355:
-	.asciz	"Java.Lang.Reflect.AccessibleObject, Mono.Android"
-	.size	.L.managed_type_name.6355, 49
+	.asciz	"Java.Lang.Reflect.Array, Mono.Android"
+	.size	.L.managed_type_name.6355, 38
 	.section	.rodata.managed_type_name.6356,"aMS",%progbits,1
 	.type	.L.managed_type_name.6356, %object
 .L.managed_type_name.6356:
-	.asciz	"Java.Lang.Reflect.Array, Mono.Android"
-	.size	.L.managed_type_name.6356, 38
+	.asciz	"Java.Lang.Reflect.Constructor, Mono.Android"
+	.size	.L.managed_type_name.6356, 44
 	.section	.rodata.managed_type_name.6357,"aMS",%progbits,1
 	.type	.L.managed_type_name.6357, %object
 .L.managed_type_name.6357:
-	.asciz	"Java.Lang.Reflect.Constructor, Mono.Android"
-	.size	.L.managed_type_name.6357, 44
+	.asciz	"Java.Lang.Reflect.Executable, Mono.Android"
+	.size	.L.managed_type_name.6357, 43
 	.section	.rodata.managed_type_name.6358,"aMS",%progbits,1
 	.type	.L.managed_type_name.6358, %object
 .L.managed_type_name.6358:
-	.asciz	"Java.Lang.Reflect.Executable, Mono.Android"
-	.size	.L.managed_type_name.6358, 43
+	.asciz	"Java.Lang.Reflect.ExecutableInvoker, Mono.Android"
+	.size	.L.managed_type_name.6358, 50
 	.section	.rodata.managed_type_name.6359,"aMS",%progbits,1
 	.type	.L.managed_type_name.6359, %object
 .L.managed_type_name.6359:
-	.asciz	"Java.Lang.Reflect.ExecutableInvoker, Mono.Android"
-	.size	.L.managed_type_name.6359, 50
+	.asciz	"Java.Lang.Reflect.Field, Mono.Android"
+	.size	.L.managed_type_name.6359, 38
 	.section	.rodata.managed_type_name.6360,"aMS",%progbits,1
 	.type	.L.managed_type_name.6360, %object
 .L.managed_type_name.6360:
-	.asciz	"Java.Lang.Reflect.Field, Mono.Android"
-	.size	.L.managed_type_name.6360, 38
+	.asciz	"Java.Lang.Reflect.GenericSignatureFormatError, Mono.Android"
+	.size	.L.managed_type_name.6360, 60
 	.section	.rodata.managed_type_name.6361,"aMS",%progbits,1
 	.type	.L.managed_type_name.6361, %object
 .L.managed_type_name.6361:
-	.asciz	"Java.Lang.Reflect.GenericSignatureFormatError, Mono.Android"
-	.size	.L.managed_type_name.6361, 60
+	.asciz	"Java.Lang.Reflect.IAnnotatedElementInvoker, Mono.Android"
+	.size	.L.managed_type_name.6361, 57
 	.section	.rodata.managed_type_name.6362,"aMS",%progbits,1
 	.type	.L.managed_type_name.6362, %object
 .L.managed_type_name.6362:
-	.asciz	"Java.Lang.Reflect.IAnnotatedElementInvoker, Mono.Android"
+	.asciz	"Java.Lang.Reflect.IGenericArrayTypeInvoker, Mono.Android"
 	.size	.L.managed_type_name.6362, 57
 	.section	.rodata.managed_type_name.6363,"aMS",%progbits,1
 	.type	.L.managed_type_name.6363, %object
 .L.managed_type_name.6363:
-	.asciz	"Java.Lang.Reflect.IGenericArrayTypeInvoker, Mono.Android"
-	.size	.L.managed_type_name.6363, 57
+	.asciz	"Java.Lang.Reflect.IGenericDeclarationInvoker, Mono.Android"
+	.size	.L.managed_type_name.6363, 59
 	.section	.rodata.managed_type_name.6364,"aMS",%progbits,1
 	.type	.L.managed_type_name.6364, %object
 .L.managed_type_name.6364:
-	.asciz	"Java.Lang.Reflect.IGenericDeclarationInvoker, Mono.Android"
-	.size	.L.managed_type_name.6364, 59
+	.asciz	"Java.Lang.Reflect.IInvocationHandlerInvoker, Mono.Android"
+	.size	.L.managed_type_name.6364, 58
 	.section	.rodata.managed_type_name.6365,"aMS",%progbits,1
 	.type	.L.managed_type_name.6365, %object
 .L.managed_type_name.6365:
-	.asciz	"Java.Lang.Reflect.IInvocationHandlerInvoker, Mono.Android"
-	.size	.L.managed_type_name.6365, 58
+	.asciz	"Java.Lang.Reflect.IMemberInvoker, Mono.Android"
+	.size	.L.managed_type_name.6365, 47
 	.section	.rodata.managed_type_name.6366,"aMS",%progbits,1
 	.type	.L.managed_type_name.6366, %object
 .L.managed_type_name.6366:
-	.asciz	"Java.Lang.Reflect.IMemberInvoker, Mono.Android"
-	.size	.L.managed_type_name.6366, 47
+	.asciz	"Java.Lang.Reflect.IParameterizedTypeInvoker, Mono.Android"
+	.size	.L.managed_type_name.6366, 58
 	.section	.rodata.managed_type_name.6367,"aMS",%progbits,1
 	.type	.L.managed_type_name.6367, %object
 .L.managed_type_name.6367:
-	.asciz	"Java.Lang.Reflect.IParameterizedTypeInvoker, Mono.Android"
-	.size	.L.managed_type_name.6367, 58
+	.asciz	"Java.Lang.Reflect.ITypeInvoker, Mono.Android"
+	.size	.L.managed_type_name.6367, 45
 	.section	.rodata.managed_type_name.6368,"aMS",%progbits,1
 	.type	.L.managed_type_name.6368, %object
 .L.managed_type_name.6368:
-	.asciz	"Java.Lang.Reflect.ITypeInvoker, Mono.Android"
-	.size	.L.managed_type_name.6368, 45
+	.asciz	"Java.Lang.Reflect.ITypeVariableInvoker, Mono.Android"
+	.size	.L.managed_type_name.6368, 53
 	.section	.rodata.managed_type_name.6369,"aMS",%progbits,1
 	.type	.L.managed_type_name.6369, %object
 .L.managed_type_name.6369:
-	.asciz	"Java.Lang.Reflect.ITypeVariableInvoker, Mono.Android"
+	.asciz	"Java.Lang.Reflect.IWildcardTypeInvoker, Mono.Android"
 	.size	.L.managed_type_name.6369, 53
 	.section	.rodata.managed_type_name.6370,"aMS",%progbits,1
 	.type	.L.managed_type_name.6370, %object
 .L.managed_type_name.6370:
-	.asciz	"Java.Lang.Reflect.IWildcardTypeInvoker, Mono.Android"
-	.size	.L.managed_type_name.6370, 53
+	.asciz	"Java.Lang.Reflect.InvocationTargetException, Mono.Android"
+	.size	.L.managed_type_name.6370, 58
 	.section	.rodata.managed_type_name.6371,"aMS",%progbits,1
 	.type	.L.managed_type_name.6371, %object
 .L.managed_type_name.6371:
-	.asciz	"Java.Lang.Reflect.InvocationTargetException, Mono.Android"
-	.size	.L.managed_type_name.6371, 58
+	.asciz	"Java.Lang.Reflect.MalformedParameterizedTypeException, Mono.Android"
+	.size	.L.managed_type_name.6371, 68
 	.section	.rodata.managed_type_name.6372,"aMS",%progbits,1
 	.type	.L.managed_type_name.6372, %object
 .L.managed_type_name.6372:
-	.asciz	"Java.Lang.Reflect.MalformedParameterizedTypeException, Mono.Android"
-	.size	.L.managed_type_name.6372, 68
+	.asciz	"Java.Lang.Reflect.MalformedParametersException, Mono.Android"
+	.size	.L.managed_type_name.6372, 61
 	.section	.rodata.managed_type_name.6373,"aMS",%progbits,1
 	.type	.L.managed_type_name.6373, %object
 .L.managed_type_name.6373:
-	.asciz	"Java.Lang.Reflect.MalformedParametersException, Mono.Android"
-	.size	.L.managed_type_name.6373, 61
+	.asciz	"Java.Lang.Reflect.Member, Mono.Android"
+	.size	.L.managed_type_name.6373, 39
 	.section	.rodata.managed_type_name.6374,"aMS",%progbits,1
 	.type	.L.managed_type_name.6374, %object
 .L.managed_type_name.6374:
-	.asciz	"Java.Lang.Reflect.Member, Mono.Android"
+	.asciz	"Java.Lang.Reflect.Method, Mono.Android"
 	.size	.L.managed_type_name.6374, 39
 	.section	.rodata.managed_type_name.6375,"aMS",%progbits,1
 	.type	.L.managed_type_name.6375, %object
 .L.managed_type_name.6375:
-	.asciz	"Java.Lang.Reflect.Method, Mono.Android"
-	.size	.L.managed_type_name.6375, 39
+	.asciz	"Java.Lang.Reflect.Modifier, Mono.Android"
+	.size	.L.managed_type_name.6375, 41
 	.section	.rodata.managed_type_name.6376,"aMS",%progbits,1
 	.type	.L.managed_type_name.6376, %object
 .L.managed_type_name.6376:
-	.asciz	"Java.Lang.Reflect.Modifier, Mono.Android"
-	.size	.L.managed_type_name.6376, 41
+	.asciz	"Java.Lang.Reflect.Parameter, Mono.Android"
+	.size	.L.managed_type_name.6376, 42
 	.section	.rodata.managed_type_name.6377,"aMS",%progbits,1
 	.type	.L.managed_type_name.6377, %object
 .L.managed_type_name.6377:
-	.asciz	"Java.Lang.Reflect.Parameter, Mono.Android"
-	.size	.L.managed_type_name.6377, 42
+	.asciz	"Java.Lang.Reflect.Proxy, Mono.Android"
+	.size	.L.managed_type_name.6377, 38
 	.section	.rodata.managed_type_name.6378,"aMS",%progbits,1
 	.type	.L.managed_type_name.6378, %object
 .L.managed_type_name.6378:
-	.asciz	"Java.Lang.Reflect.Proxy, Mono.Android"
-	.size	.L.managed_type_name.6378, 38
+	.asciz	"Java.Lang.Reflect.ReflectPermission, Mono.Android"
+	.size	.L.managed_type_name.6378, 50
 	.section	.rodata.managed_type_name.6379,"aMS",%progbits,1
 	.type	.L.managed_type_name.6379, %object
 .L.managed_type_name.6379:
-	.asciz	"Java.Lang.Reflect.ReflectPermission, Mono.Android"
-	.size	.L.managed_type_name.6379, 50
+	.asciz	"Java.Lang.Reflect.UndeclaredThrowableException, Mono.Android"
+	.size	.L.managed_type_name.6379, 61
 	.section	.rodata.managed_type_name.6380,"aMS",%progbits,1
 	.type	.L.managed_type_name.6380, %object
 .L.managed_type_name.6380:
-	.asciz	"Java.Lang.Reflect.UndeclaredThrowableException, Mono.Android"
-	.size	.L.managed_type_name.6380, 61
+	.asciz	"Java.Lang.ReflectiveOperationException, Mono.Android"
+	.size	.L.managed_type_name.6380, 53
 	.section	.rodata.managed_type_name.6381,"aMS",%progbits,1
 	.type	.L.managed_type_name.6381, %object
 .L.managed_type_name.6381:
-	.asciz	"Java.Lang.ReflectiveOperationException, Mono.Android"
-	.size	.L.managed_type_name.6381, 53
+	.asciz	"Java.Lang.Runnable, Mono.Android"
+	.size	.L.managed_type_name.6381, 33
 	.section	.rodata.managed_type_name.6382,"aMS",%progbits,1
 	.type	.L.managed_type_name.6382, %object
 .L.managed_type_name.6382:
-	.asciz	"Java.Lang.Runnable, Mono.Android"
-	.size	.L.managed_type_name.6382, 33
+	.asciz	"Java.Lang.Runtime, Mono.Android"
+	.size	.L.managed_type_name.6382, 32
 	.section	.rodata.managed_type_name.6383,"aMS",%progbits,1
 	.type	.L.managed_type_name.6383, %object
 .L.managed_type_name.6383:
-	.asciz	"Java.Lang.Runtime, Mono.Android"
-	.size	.L.managed_type_name.6383, 32
+	.asciz	"Java.Lang.RuntimeException, Mono.Android"
+	.size	.L.managed_type_name.6383, 41
 	.section	.rodata.managed_type_name.6384,"aMS",%progbits,1
 	.type	.L.managed_type_name.6384, %object
 .L.managed_type_name.6384:
-	.asciz	"Java.Lang.RuntimeException, Mono.Android"
-	.size	.L.managed_type_name.6384, 41
+	.asciz	"Java.Lang.RuntimePermission, Mono.Android"
+	.size	.L.managed_type_name.6384, 42
 	.section	.rodata.managed_type_name.6385,"aMS",%progbits,1
 	.type	.L.managed_type_name.6385, %object
 .L.managed_type_name.6385:
-	.asciz	"Java.Lang.RuntimePermission, Mono.Android"
+	.asciz	"Java.Lang.SecurityException, Mono.Android"
 	.size	.L.managed_type_name.6385, 42
 	.section	.rodata.managed_type_name.6386,"aMS",%progbits,1
 	.type	.L.managed_type_name.6386, %object
 .L.managed_type_name.6386:
-	.asciz	"Java.Lang.SecurityException, Mono.Android"
-	.size	.L.managed_type_name.6386, 42
+	.asciz	"Java.Lang.SecurityManager, Mono.Android"
+	.size	.L.managed_type_name.6386, 40
 	.section	.rodata.managed_type_name.6387,"aMS",%progbits,1
 	.type	.L.managed_type_name.6387, %object
 .L.managed_type_name.6387:
-	.asciz	"Java.Lang.SecurityManager, Mono.Android"
-	.size	.L.managed_type_name.6387, 40
+	.asciz	"Java.Lang.Short, Mono.Android"
+	.size	.L.managed_type_name.6387, 30
 	.section	.rodata.managed_type_name.6388,"aMS",%progbits,1
 	.type	.L.managed_type_name.6388, %object
 .L.managed_type_name.6388:
-	.asciz	"Java.Lang.Short, Mono.Android"
-	.size	.L.managed_type_name.6388, 30
+	.asciz	"Java.Lang.StackOverflowError, Mono.Android"
+	.size	.L.managed_type_name.6388, 43
 	.section	.rodata.managed_type_name.6389,"aMS",%progbits,1
 	.type	.L.managed_type_name.6389, %object
 .L.managed_type_name.6389:
-	.asciz	"Java.Lang.StackOverflowError, Mono.Android"
-	.size	.L.managed_type_name.6389, 43
+	.asciz	"Java.Lang.StackTraceElement, Mono.Android"
+	.size	.L.managed_type_name.6389, 42
 	.section	.rodata.managed_type_name.6390,"aMS",%progbits,1
 	.type	.L.managed_type_name.6390, %object
 .L.managed_type_name.6390:
-	.asciz	"Java.Lang.StackTraceElement, Mono.Android"
-	.size	.L.managed_type_name.6390, 42
+	.asciz	"Java.Lang.StrictMath, Mono.Android"
+	.size	.L.managed_type_name.6390, 35
 	.section	.rodata.managed_type_name.6391,"aMS",%progbits,1
 	.type	.L.managed_type_name.6391, %object
 .L.managed_type_name.6391:
-	.asciz	"Java.Lang.StrictMath, Mono.Android"
-	.size	.L.managed_type_name.6391, 35
+	.asciz	"Java.Lang.String, Mono.Android"
+	.size	.L.managed_type_name.6391, 31
 	.section	.rodata.managed_type_name.6392,"aMS",%progbits,1
 	.type	.L.managed_type_name.6392, %object
 .L.managed_type_name.6392:
-	.asciz	"Java.Lang.String, Mono.Android"
-	.size	.L.managed_type_name.6392, 31
+	.asciz	"Java.Lang.StringBuffer, Mono.Android"
+	.size	.L.managed_type_name.6392, 37
 	.section	.rodata.managed_type_name.6393,"aMS",%progbits,1
 	.type	.L.managed_type_name.6393, %object
 .L.managed_type_name.6393:
-	.asciz	"Java.Lang.StringBuffer, Mono.Android"
-	.size	.L.managed_type_name.6393, 37
+	.asciz	"Java.Lang.StringBuilder, Mono.Android"
+	.size	.L.managed_type_name.6393, 38
 	.section	.rodata.managed_type_name.6394,"aMS",%progbits,1
 	.type	.L.managed_type_name.6394, %object
 .L.managed_type_name.6394:
-	.asciz	"Java.Lang.StringBuilder, Mono.Android"
-	.size	.L.managed_type_name.6394, 38
+	.asciz	"Java.Lang.StringIndexOutOfBoundsException, Mono.Android"
+	.size	.L.managed_type_name.6394, 56
 	.section	.rodata.managed_type_name.6395,"aMS",%progbits,1
 	.type	.L.managed_type_name.6395, %object
 .L.managed_type_name.6395:
-	.asciz	"Java.Lang.StringIndexOutOfBoundsException, Mono.Android"
-	.size	.L.managed_type_name.6395, 56
+	.asciz	"Java.Lang.SuppressWarnings, Mono.Android"
+	.size	.L.managed_type_name.6395, 41
 	.section	.rodata.managed_type_name.6396,"aMS",%progbits,1
 	.type	.L.managed_type_name.6396, %object
 .L.managed_type_name.6396:
-	.asciz	"Java.Lang.SuppressWarnings, Mono.Android"
-	.size	.L.managed_type_name.6396, 41
+	.asciz	"Java.Lang.SuppressWarningsInvoker, Mono.Android"
+	.size	.L.managed_type_name.6396, 48
 	.section	.rodata.managed_type_name.6397,"aMS",%progbits,1
 	.type	.L.managed_type_name.6397, %object
 .L.managed_type_name.6397:
-	.asciz	"Java.Lang.SuppressWarningsInvoker, Mono.Android"
-	.size	.L.managed_type_name.6397, 48
+	.asciz	"Java.Lang.Thread+IUncaughtExceptionHandlerInvoker, Mono.Android"
+	.size	.L.managed_type_name.6397, 64
 	.section	.rodata.managed_type_name.6398,"aMS",%progbits,1
 	.type	.L.managed_type_name.6398, %object
 .L.managed_type_name.6398:
-	.asciz	"Java.Lang.Thread+IUncaughtExceptionHandlerInvoker, Mono.Android"
-	.size	.L.managed_type_name.6398, 64
+	.asciz	"Java.Lang.Thread+RunnableImplementor, Mono.Android"
+	.size	.L.managed_type_name.6398, 51
 	.section	.rodata.managed_type_name.6399,"aMS",%progbits,1
 	.type	.L.managed_type_name.6399, %object
 .L.managed_type_name.6399:
-	.asciz	"Java.Lang.Thread+RunnableImplementor, Mono.Android"
-	.size	.L.managed_type_name.6399, 51
+	.asciz	"Java.Lang.Thread+State, Mono.Android"
+	.size	.L.managed_type_name.6399, 37
 	.section	.rodata.managed_type_name.6400,"aMS",%progbits,1
 	.type	.L.managed_type_name.6400, %object
 .L.managed_type_name.6400:
-	.asciz	"Java.Lang.Thread+State, Mono.Android"
-	.size	.L.managed_type_name.6400, 37
+	.asciz	"Java.Lang.Thread, Mono.Android"
+	.size	.L.managed_type_name.6400, 31
 	.section	.rodata.managed_type_name.6401,"aMS",%progbits,1
 	.type	.L.managed_type_name.6401, %object
 .L.managed_type_name.6401:
-	.asciz	"Java.Lang.Thread, Mono.Android"
-	.size	.L.managed_type_name.6401, 31
+	.asciz	"Java.Lang.ThreadDeath, Mono.Android"
+	.size	.L.managed_type_name.6401, 36
 	.section	.rodata.managed_type_name.6402,"aMS",%progbits,1
 	.type	.L.managed_type_name.6402, %object
 .L.managed_type_name.6402:
-	.asciz	"Java.Lang.ThreadDeath, Mono.Android"
+	.asciz	"Java.Lang.ThreadGroup, Mono.Android"
 	.size	.L.managed_type_name.6402, 36
 	.section	.rodata.managed_type_name.6403,"aMS",%progbits,1
 	.type	.L.managed_type_name.6403, %object
 .L.managed_type_name.6403:
-	.asciz	"Java.Lang.ThreadGroup, Mono.Android"
+	.asciz	"Java.Lang.ThreadLocal, Mono.Android"
 	.size	.L.managed_type_name.6403, 36
 	.section	.rodata.managed_type_name.6404,"aMS",%progbits,1
 	.type	.L.managed_type_name.6404, %object
 .L.managed_type_name.6404:
-	.asciz	"Java.Lang.ThreadLocal, Mono.Android"
-	.size	.L.managed_type_name.6404, 36
+	.asciz	"Java.Lang.Throwable, Mono.Android"
+	.size	.L.managed_type_name.6404, 34
 	.section	.rodata.managed_type_name.6405,"aMS",%progbits,1
 	.type	.L.managed_type_name.6405, %object
 .L.managed_type_name.6405:
-	.asciz	"Java.Lang.Throwable, Mono.Android"
-	.size	.L.managed_type_name.6405, 34
+	.asciz	"Java.Lang.TypeNotPresentException, Mono.Android"
+	.size	.L.managed_type_name.6405, 48
 	.section	.rodata.managed_type_name.6406,"aMS",%progbits,1
 	.type	.L.managed_type_name.6406, %object
 .L.managed_type_name.6406:
-	.asciz	"Java.Lang.TypeNotPresentException, Mono.Android"
-	.size	.L.managed_type_name.6406, 48
+	.asciz	"Java.Lang.UnknownError, Mono.Android"
+	.size	.L.managed_type_name.6406, 37
 	.section	.rodata.managed_type_name.6407,"aMS",%progbits,1
 	.type	.L.managed_type_name.6407, %object
 .L.managed_type_name.6407:
-	.asciz	"Java.Lang.UnknownError, Mono.Android"
-	.size	.L.managed_type_name.6407, 37
+	.asciz	"Java.Lang.UnsatisfiedLinkError, Mono.Android"
+	.size	.L.managed_type_name.6407, 45
 	.section	.rodata.managed_type_name.6408,"aMS",%progbits,1
 	.type	.L.managed_type_name.6408, %object
 .L.managed_type_name.6408:
-	.asciz	"Java.Lang.UnsatisfiedLinkError, Mono.Android"
-	.size	.L.managed_type_name.6408, 45
+	.asciz	"Java.Lang.UnsupportedClassVersionError, Mono.Android"
+	.size	.L.managed_type_name.6408, 53
 	.section	.rodata.managed_type_name.6409,"aMS",%progbits,1
 	.type	.L.managed_type_name.6409, %object
 .L.managed_type_name.6409:
-	.asciz	"Java.Lang.UnsupportedClassVersionError, Mono.Android"
-	.size	.L.managed_type_name.6409, 53
+	.asciz	"Java.Lang.UnsupportedOperationException, Mono.Android"
+	.size	.L.managed_type_name.6409, 54
 	.section	.rodata.managed_type_name.6410,"aMS",%progbits,1
 	.type	.L.managed_type_name.6410, %object
 .L.managed_type_name.6410:
-	.asciz	"Java.Lang.UnsupportedOperationException, Mono.Android"
-	.size	.L.managed_type_name.6410, 54
+	.asciz	"Java.Lang.VerifyError, Mono.Android"
+	.size	.L.managed_type_name.6410, 36
 	.section	.rodata.managed_type_name.6411,"aMS",%progbits,1
 	.type	.L.managed_type_name.6411, %object
 .L.managed_type_name.6411:
-	.asciz	"Java.Lang.VerifyError, Mono.Android"
-	.size	.L.managed_type_name.6411, 36
+	.asciz	"Java.Lang.VirtualMachineError, Mono.Android"
+	.size	.L.managed_type_name.6411, 44
 	.section	.rodata.managed_type_name.6412,"aMS",%progbits,1
 	.type	.L.managed_type_name.6412, %object
 .L.managed_type_name.6412:
-	.asciz	"Java.Lang.VirtualMachineError, Mono.Android"
-	.size	.L.managed_type_name.6412, 44
+	.asciz	"Java.Lang.VirtualMachineErrorInvoker, Mono.Android"
+	.size	.L.managed_type_name.6412, 51
 	.section	.rodata.managed_type_name.6413,"aMS",%progbits,1
 	.type	.L.managed_type_name.6413, %object
 .L.managed_type_name.6413:
-	.asciz	"Java.Lang.VirtualMachineErrorInvoker, Mono.Android"
-	.size	.L.managed_type_name.6413, 51
+	.asciz	"Java.Lang.Void, Mono.Android"
+	.size	.L.managed_type_name.6413, 29
 	.section	.rodata.managed_type_name.6414,"aMS",%progbits,1
 	.type	.L.managed_type_name.6414, %object
 .L.managed_type_name.6414:
-	.asciz	"Java.Lang.Void, Mono.Android"
-	.size	.L.managed_type_name.6414, 29
+	.asciz	"Java.Math.BigDecimal, Mono.Android"
+	.size	.L.managed_type_name.6414, 35
 	.section	.rodata.managed_type_name.6415,"aMS",%progbits,1
 	.type	.L.managed_type_name.6415, %object
 .L.managed_type_name.6415:
-	.asciz	"Java.Math.BigDecimal, Mono.Android"
+	.asciz	"Java.Math.BigInteger, Mono.Android"
 	.size	.L.managed_type_name.6415, 35
 	.section	.rodata.managed_type_name.6416,"aMS",%progbits,1
 	.type	.L.managed_type_name.6416, %object
 .L.managed_type_name.6416:
-	.asciz	"Java.Math.BigInteger, Mono.Android"
-	.size	.L.managed_type_name.6416, 35
+	.asciz	"Java.Math.MathContext, Mono.Android"
+	.size	.L.managed_type_name.6416, 36
 	.section	.rodata.managed_type_name.6417,"aMS",%progbits,1
 	.type	.L.managed_type_name.6417, %object
 .L.managed_type_name.6417:
-	.asciz	"Java.Math.MathContext, Mono.Android"
-	.size	.L.managed_type_name.6417, 36
+	.asciz	"Java.Math.RoundingMode, Mono.Android"
+	.size	.L.managed_type_name.6417, 37
 	.section	.rodata.managed_type_name.6418,"aMS",%progbits,1
 	.type	.L.managed_type_name.6418, %object
 .L.managed_type_name.6418:
-	.asciz	"Java.Math.RoundingMode, Mono.Android"
-	.size	.L.managed_type_name.6418, 37
+	.asciz	"Java.Net.Authenticator+RequestorType, Mono.Android"
+	.size	.L.managed_type_name.6418, 51
 	.section	.rodata.managed_type_name.6419,"aMS",%progbits,1
 	.type	.L.managed_type_name.6419, %object
 .L.managed_type_name.6419:
-	.asciz	"Java.Net.Authenticator+RequestorType, Mono.Android"
-	.size	.L.managed_type_name.6419, 51
+	.asciz	"Java.Net.Authenticator, Mono.Android"
+	.size	.L.managed_type_name.6419, 37
 	.section	.rodata.managed_type_name.6420,"aMS",%progbits,1
 	.type	.L.managed_type_name.6420, %object
 .L.managed_type_name.6420:
-	.asciz	"Java.Net.Authenticator, Mono.Android"
-	.size	.L.managed_type_name.6420, 37
+	.asciz	"Java.Net.AuthenticatorInvoker, Mono.Android"
+	.size	.L.managed_type_name.6420, 44
 	.section	.rodata.managed_type_name.6421,"aMS",%progbits,1
 	.type	.L.managed_type_name.6421, %object
 .L.managed_type_name.6421:
-	.asciz	"Java.Net.AuthenticatorInvoker, Mono.Android"
-	.size	.L.managed_type_name.6421, 44
+	.asciz	"Java.Net.BindException, Mono.Android"
+	.size	.L.managed_type_name.6421, 37
 	.section	.rodata.managed_type_name.6422,"aMS",%progbits,1
 	.type	.L.managed_type_name.6422, %object
 .L.managed_type_name.6422:
-	.asciz	"Java.Net.BindException, Mono.Android"
-	.size	.L.managed_type_name.6422, 37
+	.asciz	"Java.Net.CacheRequest, Mono.Android"
+	.size	.L.managed_type_name.6422, 36
 	.section	.rodata.managed_type_name.6423,"aMS",%progbits,1
 	.type	.L.managed_type_name.6423, %object
 .L.managed_type_name.6423:
-	.asciz	"Java.Net.CacheRequest, Mono.Android"
-	.size	.L.managed_type_name.6423, 36
+	.asciz	"Java.Net.CacheRequestInvoker, Mono.Android"
+	.size	.L.managed_type_name.6423, 43
 	.section	.rodata.managed_type_name.6424,"aMS",%progbits,1
 	.type	.L.managed_type_name.6424, %object
 .L.managed_type_name.6424:
-	.asciz	"Java.Net.CacheRequestInvoker, Mono.Android"
-	.size	.L.managed_type_name.6424, 43
+	.asciz	"Java.Net.CacheResponse, Mono.Android"
+	.size	.L.managed_type_name.6424, 37
 	.section	.rodata.managed_type_name.6425,"aMS",%progbits,1
 	.type	.L.managed_type_name.6425, %object
 .L.managed_type_name.6425:
-	.asciz	"Java.Net.CacheResponse, Mono.Android"
-	.size	.L.managed_type_name.6425, 37
+	.asciz	"Java.Net.CacheResponseInvoker, Mono.Android"
+	.size	.L.managed_type_name.6425, 44
 	.section	.rodata.managed_type_name.6426,"aMS",%progbits,1
 	.type	.L.managed_type_name.6426, %object
 .L.managed_type_name.6426:
-	.asciz	"Java.Net.CacheResponseInvoker, Mono.Android"
-	.size	.L.managed_type_name.6426, 44
+	.asciz	"Java.Net.ConnectException, Mono.Android"
+	.size	.L.managed_type_name.6426, 40
 	.section	.rodata.managed_type_name.6427,"aMS",%progbits,1
 	.type	.L.managed_type_name.6427, %object
 .L.managed_type_name.6427:
-	.asciz	"Java.Net.ConnectException, Mono.Android"
-	.size	.L.managed_type_name.6427, 40
+	.asciz	"Java.Net.ContentHandler, Mono.Android"
+	.size	.L.managed_type_name.6427, 38
 	.section	.rodata.managed_type_name.6428,"aMS",%progbits,1
 	.type	.L.managed_type_name.6428, %object
 .L.managed_type_name.6428:
-	.asciz	"Java.Net.ContentHandler, Mono.Android"
-	.size	.L.managed_type_name.6428, 38
+	.asciz	"Java.Net.ContentHandlerInvoker, Mono.Android"
+	.size	.L.managed_type_name.6428, 45
 	.section	.rodata.managed_type_name.6429,"aMS",%progbits,1
 	.type	.L.managed_type_name.6429, %object
 .L.managed_type_name.6429:
-	.asciz	"Java.Net.ContentHandlerInvoker, Mono.Android"
-	.size	.L.managed_type_name.6429, 45
+	.asciz	"Java.Net.CookieHandler, Mono.Android"
+	.size	.L.managed_type_name.6429, 37
 	.section	.rodata.managed_type_name.6430,"aMS",%progbits,1
 	.type	.L.managed_type_name.6430, %object
 .L.managed_type_name.6430:
-	.asciz	"Java.Net.CookieHandler, Mono.Android"
-	.size	.L.managed_type_name.6430, 37
+	.asciz	"Java.Net.CookieHandlerInvoker, Mono.Android"
+	.size	.L.managed_type_name.6430, 44
 	.section	.rodata.managed_type_name.6431,"aMS",%progbits,1
 	.type	.L.managed_type_name.6431, %object
 .L.managed_type_name.6431:
-	.asciz	"Java.Net.CookieHandlerInvoker, Mono.Android"
-	.size	.L.managed_type_name.6431, 44
+	.asciz	"Java.Net.CookieManager, Mono.Android"
+	.size	.L.managed_type_name.6431, 37
 	.section	.rodata.managed_type_name.6432,"aMS",%progbits,1
 	.type	.L.managed_type_name.6432, %object
 .L.managed_type_name.6432:
-	.asciz	"Java.Net.CookieManager, Mono.Android"
-	.size	.L.managed_type_name.6432, 37
+	.asciz	"Java.Net.CookiePolicy, Mono.Android"
+	.size	.L.managed_type_name.6432, 36
 	.section	.rodata.managed_type_name.6433,"aMS",%progbits,1
 	.type	.L.managed_type_name.6433, %object
 .L.managed_type_name.6433:
-	.asciz	"Java.Net.CookiePolicy, Mono.Android"
-	.size	.L.managed_type_name.6433, 36
+	.asciz	"Java.Net.DatagramPacket, Mono.Android"
+	.size	.L.managed_type_name.6433, 38
 	.section	.rodata.managed_type_name.6434,"aMS",%progbits,1
 	.type	.L.managed_type_name.6434, %object
 .L.managed_type_name.6434:
-	.asciz	"Java.Net.DatagramPacket, Mono.Android"
+	.asciz	"Java.Net.DatagramSocket, Mono.Android"
 	.size	.L.managed_type_name.6434, 38
 	.section	.rodata.managed_type_name.6435,"aMS",%progbits,1
 	.type	.L.managed_type_name.6435, %object
 .L.managed_type_name.6435:
-	.asciz	"Java.Net.DatagramSocket, Mono.Android"
-	.size	.L.managed_type_name.6435, 38
+	.asciz	"Java.Net.DatagramSocketImpl, Mono.Android"
+	.size	.L.managed_type_name.6435, 42
 	.section	.rodata.managed_type_name.6436,"aMS",%progbits,1
 	.type	.L.managed_type_name.6436, %object
 .L.managed_type_name.6436:
-	.asciz	"Java.Net.DatagramSocketImpl, Mono.Android"
-	.size	.L.managed_type_name.6436, 42
+	.asciz	"Java.Net.DatagramSocketImplInvoker, Mono.Android"
+	.size	.L.managed_type_name.6436, 49
 	.section	.rodata.managed_type_name.6437,"aMS",%progbits,1
 	.type	.L.managed_type_name.6437, %object
 .L.managed_type_name.6437:
-	.asciz	"Java.Net.DatagramSocketImplInvoker, Mono.Android"
-	.size	.L.managed_type_name.6437, 49
+	.asciz	"Java.Net.HttpCookie, Mono.Android"
+	.size	.L.managed_type_name.6437, 34
 	.section	.rodata.managed_type_name.6438,"aMS",%progbits,1
 	.type	.L.managed_type_name.6438, %object
 .L.managed_type_name.6438:
-	.asciz	"Java.Net.HttpCookie, Mono.Android"
-	.size	.L.managed_type_name.6438, 34
+	.asciz	"Java.Net.HttpRetryException, Mono.Android"
+	.size	.L.managed_type_name.6438, 42
 	.section	.rodata.managed_type_name.6439,"aMS",%progbits,1
 	.type	.L.managed_type_name.6439, %object
 .L.managed_type_name.6439:
-	.asciz	"Java.Net.HttpRetryException, Mono.Android"
-	.size	.L.managed_type_name.6439, 42
+	.asciz	"Java.Net.HttpURLConnection, Mono.Android"
+	.size	.L.managed_type_name.6439, 41
 	.section	.rodata.managed_type_name.6440,"aMS",%progbits,1
 	.type	.L.managed_type_name.6440, %object
 .L.managed_type_name.6440:
-	.asciz	"Java.Net.HttpURLConnection, Mono.Android"
-	.size	.L.managed_type_name.6440, 41
+	.asciz	"Java.Net.HttpURLConnectionInvoker, Mono.Android"
+	.size	.L.managed_type_name.6440, 48
 	.section	.rodata.managed_type_name.6441,"aMS",%progbits,1
 	.type	.L.managed_type_name.6441, %object
 .L.managed_type_name.6441:
-	.asciz	"Java.Net.HttpURLConnectionInvoker, Mono.Android"
-	.size	.L.managed_type_name.6441, 48
+	.asciz	"Java.Net.IContentHandlerFactoryInvoker, Mono.Android"
+	.size	.L.managed_type_name.6441, 53
 	.section	.rodata.managed_type_name.6442,"aMS",%progbits,1
 	.type	.L.managed_type_name.6442, %object
 .L.managed_type_name.6442:
-	.asciz	"Java.Net.IContentHandlerFactoryInvoker, Mono.Android"
-	.size	.L.managed_type_name.6442, 53
+	.asciz	"Java.Net.ICookiePolicyInvoker, Mono.Android"
+	.size	.L.managed_type_name.6442, 44
 	.section	.rodata.managed_type_name.6443,"aMS",%progbits,1
 	.type	.L.managed_type_name.6443, %object
 .L.managed_type_name.6443:
-	.asciz	"Java.Net.ICookiePolicyInvoker, Mono.Android"
-	.size	.L.managed_type_name.6443, 44
+	.asciz	"Java.Net.ICookieStoreInvoker, Mono.Android"
+	.size	.L.managed_type_name.6443, 43
 	.section	.rodata.managed_type_name.6444,"aMS",%progbits,1
 	.type	.L.managed_type_name.6444, %object
 .L.managed_type_name.6444:
-	.asciz	"Java.Net.ICookieStoreInvoker, Mono.Android"
-	.size	.L.managed_type_name.6444, 43
+	.asciz	"Java.Net.IDN, Mono.Android"
+	.size	.L.managed_type_name.6444, 27
 	.section	.rodata.managed_type_name.6445,"aMS",%progbits,1
 	.type	.L.managed_type_name.6445, %object
 .L.managed_type_name.6445:
-	.asciz	"Java.Net.IDN, Mono.Android"
-	.size	.L.managed_type_name.6445, 27
+	.asciz	"Java.Net.IDatagramSocketImplFactoryInvoker, Mono.Android"
+	.size	.L.managed_type_name.6445, 57
 	.section	.rodata.managed_type_name.6446,"aMS",%progbits,1
 	.type	.L.managed_type_name.6446, %object
 .L.managed_type_name.6446:
-	.asciz	"Java.Net.IDatagramSocketImplFactoryInvoker, Mono.Android"
-	.size	.L.managed_type_name.6446, 57
+	.asciz	"Java.Net.IFileNameMapInvoker, Mono.Android"
+	.size	.L.managed_type_name.6446, 43
 	.section	.rodata.managed_type_name.6447,"aMS",%progbits,1
 	.type	.L.managed_type_name.6447, %object
 .L.managed_type_name.6447:
-	.asciz	"Java.Net.IFileNameMapInvoker, Mono.Android"
-	.size	.L.managed_type_name.6447, 43
+	.asciz	"Java.Net.IProtocolFamilyInvoker, Mono.Android"
+	.size	.L.managed_type_name.6447, 46
 	.section	.rodata.managed_type_name.6448,"aMS",%progbits,1
 	.type	.L.managed_type_name.6448, %object
 .L.managed_type_name.6448:
-	.asciz	"Java.Net.IProtocolFamilyInvoker, Mono.Android"
-	.size	.L.managed_type_name.6448, 46
+	.asciz	"Java.Net.ISocketImplFactoryInvoker, Mono.Android"
+	.size	.L.managed_type_name.6448, 49
 	.section	.rodata.managed_type_name.6449,"aMS",%progbits,1
 	.type	.L.managed_type_name.6449, %object
 .L.managed_type_name.6449:
-	.asciz	"Java.Net.ISocketImplFactoryInvoker, Mono.Android"
-	.size	.L.managed_type_name.6449, 49
+	.asciz	"Java.Net.ISocketOptionInvoker, Mono.Android"
+	.size	.L.managed_type_name.6449, 44
 	.section	.rodata.managed_type_name.6450,"aMS",%progbits,1
 	.type	.L.managed_type_name.6450, %object
 .L.managed_type_name.6450:
-	.asciz	"Java.Net.ISocketOptionInvoker, Mono.Android"
-	.size	.L.managed_type_name.6450, 44
+	.asciz	"Java.Net.ISocketOptionsInvoker, Mono.Android"
+	.size	.L.managed_type_name.6450, 45
 	.section	.rodata.managed_type_name.6451,"aMS",%progbits,1
 	.type	.L.managed_type_name.6451, %object
 .L.managed_type_name.6451:
-	.asciz	"Java.Net.ISocketOptionsInvoker, Mono.Android"
-	.size	.L.managed_type_name.6451, 45
+	.asciz	"Java.Net.IURLStreamHandlerFactoryInvoker, Mono.Android"
+	.size	.L.managed_type_name.6451, 55
 	.section	.rodata.managed_type_name.6452,"aMS",%progbits,1
 	.type	.L.managed_type_name.6452, %object
 .L.managed_type_name.6452:
-	.asciz	"Java.Net.IURLStreamHandlerFactoryInvoker, Mono.Android"
-	.size	.L.managed_type_name.6452, 55
+	.asciz	"Java.Net.Inet4Address, Mono.Android"
+	.size	.L.managed_type_name.6452, 36
 	.section	.rodata.managed_type_name.6453,"aMS",%progbits,1
 	.type	.L.managed_type_name.6453, %object
 .L.managed_type_name.6453:
-	.asciz	"Java.Net.Inet4Address, Mono.Android"
+	.asciz	"Java.Net.Inet6Address, Mono.Android"
 	.size	.L.managed_type_name.6453, 36
 	.section	.rodata.managed_type_name.6454,"aMS",%progbits,1
 	.type	.L.managed_type_name.6454, %object
 .L.managed_type_name.6454:
-	.asciz	"Java.Net.Inet6Address, Mono.Android"
-	.size	.L.managed_type_name.6454, 36
+	.asciz	"Java.Net.InetAddress, Mono.Android"
+	.size	.L.managed_type_name.6454, 35
 	.section	.rodata.managed_type_name.6455,"aMS",%progbits,1
 	.type	.L.managed_type_name.6455, %object
 .L.managed_type_name.6455:
-	.asciz	"Java.Net.InetAddress, Mono.Android"
-	.size	.L.managed_type_name.6455, 35
+	.asciz	"Java.Net.InetSocketAddress, Mono.Android"
+	.size	.L.managed_type_name.6455, 41
 	.section	.rodata.managed_type_name.6456,"aMS",%progbits,1
 	.type	.L.managed_type_name.6456, %object
 .L.managed_type_name.6456:
-	.asciz	"Java.Net.InetSocketAddress, Mono.Android"
-	.size	.L.managed_type_name.6456, 41
+	.asciz	"Java.Net.InterfaceAddress, Mono.Android"
+	.size	.L.managed_type_name.6456, 40
 	.section	.rodata.managed_type_name.6457,"aMS",%progbits,1
 	.type	.L.managed_type_name.6457, %object
 .L.managed_type_name.6457:
-	.asciz	"Java.Net.InterfaceAddress, Mono.Android"
+	.asciz	"Java.Net.JarURLConnection, Mono.Android"
 	.size	.L.managed_type_name.6457, 40
 	.section	.rodata.managed_type_name.6458,"aMS",%progbits,1
 	.type	.L.managed_type_name.6458, %object
 .L.managed_type_name.6458:
-	.asciz	"Java.Net.JarURLConnection, Mono.Android"
-	.size	.L.managed_type_name.6458, 40
+	.asciz	"Java.Net.JarURLConnectionInvoker, Mono.Android"
+	.size	.L.managed_type_name.6458, 47
 	.section	.rodata.managed_type_name.6459,"aMS",%progbits,1
 	.type	.L.managed_type_name.6459, %object
 .L.managed_type_name.6459:
-	.asciz	"Java.Net.JarURLConnectionInvoker, Mono.Android"
-	.size	.L.managed_type_name.6459, 47
+	.asciz	"Java.Net.MalformedURLException, Mono.Android"
+	.size	.L.managed_type_name.6459, 45
 	.section	.rodata.managed_type_name.6460,"aMS",%progbits,1
 	.type	.L.managed_type_name.6460, %object
 .L.managed_type_name.6460:
-	.asciz	"Java.Net.MalformedURLException, Mono.Android"
-	.size	.L.managed_type_name.6460, 45
+	.asciz	"Java.Net.MulticastSocket, Mono.Android"
+	.size	.L.managed_type_name.6460, 39
 	.section	.rodata.managed_type_name.6461,"aMS",%progbits,1
 	.type	.L.managed_type_name.6461, %object
 .L.managed_type_name.6461:
-	.asciz	"Java.Net.MulticastSocket, Mono.Android"
-	.size	.L.managed_type_name.6461, 39
+	.asciz	"Java.Net.NetPermission, Mono.Android"
+	.size	.L.managed_type_name.6461, 37
 	.section	.rodata.managed_type_name.6462,"aMS",%progbits,1
 	.type	.L.managed_type_name.6462, %object
 .L.managed_type_name.6462:
-	.asciz	"Java.Net.NetPermission, Mono.Android"
-	.size	.L.managed_type_name.6462, 37
+	.asciz	"Java.Net.NetworkInterface, Mono.Android"
+	.size	.L.managed_type_name.6462, 40
 	.section	.rodata.managed_type_name.6463,"aMS",%progbits,1
 	.type	.L.managed_type_name.6463, %object
 .L.managed_type_name.6463:
-	.asciz	"Java.Net.NetworkInterface, Mono.Android"
-	.size	.L.managed_type_name.6463, 40
+	.asciz	"Java.Net.NoRouteToHostException, Mono.Android"
+	.size	.L.managed_type_name.6463, 46
 	.section	.rodata.managed_type_name.6464,"aMS",%progbits,1
 	.type	.L.managed_type_name.6464, %object
 .L.managed_type_name.6464:
-	.asciz	"Java.Net.NoRouteToHostException, Mono.Android"
+	.asciz	"Java.Net.PasswordAuthentication, Mono.Android"
 	.size	.L.managed_type_name.6464, 46
 	.section	.rodata.managed_type_name.6465,"aMS",%progbits,1
 	.type	.L.managed_type_name.6465, %object
 .L.managed_type_name.6465:
-	.asciz	"Java.Net.PasswordAuthentication, Mono.Android"
-	.size	.L.managed_type_name.6465, 46
+	.asciz	"Java.Net.PortUnreachableException, Mono.Android"
+	.size	.L.managed_type_name.6465, 48
 	.section	.rodata.managed_type_name.6466,"aMS",%progbits,1
 	.type	.L.managed_type_name.6466, %object
 .L.managed_type_name.6466:
-	.asciz	"Java.Net.PortUnreachableException, Mono.Android"
-	.size	.L.managed_type_name.6466, 48
+	.asciz	"Java.Net.ProtocolException, Mono.Android"
+	.size	.L.managed_type_name.6466, 41
 	.section	.rodata.managed_type_name.6467,"aMS",%progbits,1
 	.type	.L.managed_type_name.6467, %object
 .L.managed_type_name.6467:
-	.asciz	"Java.Net.ProtocolException, Mono.Android"
-	.size	.L.managed_type_name.6467, 41
+	.asciz	"Java.Net.Proxy+Type, Mono.Android"
+	.size	.L.managed_type_name.6467, 34
 	.section	.rodata.managed_type_name.6468,"aMS",%progbits,1
 	.type	.L.managed_type_name.6468, %object
 .L.managed_type_name.6468:
-	.asciz	"Java.Net.Proxy+Type, Mono.Android"
-	.size	.L.managed_type_name.6468, 34
+	.asciz	"Java.Net.Proxy, Mono.Android"
+	.size	.L.managed_type_name.6468, 29
 	.section	.rodata.managed_type_name.6469,"aMS",%progbits,1
 	.type	.L.managed_type_name.6469, %object
 .L.managed_type_name.6469:
-	.asciz	"Java.Net.Proxy, Mono.Android"
-	.size	.L.managed_type_name.6469, 29
+	.asciz	"Java.Net.ProxySelector, Mono.Android"
+	.size	.L.managed_type_name.6469, 37
 	.section	.rodata.managed_type_name.6470,"aMS",%progbits,1
 	.type	.L.managed_type_name.6470, %object
 .L.managed_type_name.6470:
-	.asciz	"Java.Net.ProxySelector, Mono.Android"
-	.size	.L.managed_type_name.6470, 37
+	.asciz	"Java.Net.ProxySelectorInvoker, Mono.Android"
+	.size	.L.managed_type_name.6470, 44
 	.section	.rodata.managed_type_name.6471,"aMS",%progbits,1
 	.type	.L.managed_type_name.6471, %object
 .L.managed_type_name.6471:
-	.asciz	"Java.Net.ProxySelectorInvoker, Mono.Android"
-	.size	.L.managed_type_name.6471, 44
+	.asciz	"Java.Net.ResponseCache, Mono.Android"
+	.size	.L.managed_type_name.6471, 37
 	.section	.rodata.managed_type_name.6472,"aMS",%progbits,1
 	.type	.L.managed_type_name.6472, %object
 .L.managed_type_name.6472:
-	.asciz	"Java.Net.ResponseCache, Mono.Android"
-	.size	.L.managed_type_name.6472, 37
+	.asciz	"Java.Net.ResponseCacheInvoker, Mono.Android"
+	.size	.L.managed_type_name.6472, 44
 	.section	.rodata.managed_type_name.6473,"aMS",%progbits,1
 	.type	.L.managed_type_name.6473, %object
 .L.managed_type_name.6473:
-	.asciz	"Java.Net.ResponseCacheInvoker, Mono.Android"
-	.size	.L.managed_type_name.6473, 44
+	.asciz	"Java.Net.SecureCacheResponse, Mono.Android"
+	.size	.L.managed_type_name.6473, 43
 	.section	.rodata.managed_type_name.6474,"aMS",%progbits,1
 	.type	.L.managed_type_name.6474, %object
 .L.managed_type_name.6474:
-	.asciz	"Java.Net.SecureCacheResponse, Mono.Android"
-	.size	.L.managed_type_name.6474, 43
+	.asciz	"Java.Net.SecureCacheResponseInvoker, Mono.Android"
+	.size	.L.managed_type_name.6474, 50
 	.section	.rodata.managed_type_name.6475,"aMS",%progbits,1
 	.type	.L.managed_type_name.6475, %object
 .L.managed_type_name.6475:
-	.asciz	"Java.Net.SecureCacheResponseInvoker, Mono.Android"
-	.size	.L.managed_type_name.6475, 50
+	.asciz	"Java.Net.ServerSocket, Mono.Android"
+	.size	.L.managed_type_name.6475, 36
 	.section	.rodata.managed_type_name.6476,"aMS",%progbits,1
 	.type	.L.managed_type_name.6476, %object
 .L.managed_type_name.6476:
-	.asciz	"Java.Net.ServerSocket, Mono.Android"
-	.size	.L.managed_type_name.6476, 36
+	.asciz	"Java.Net.Socket, Mono.Android"
+	.size	.L.managed_type_name.6476, 30
 	.section	.rodata.managed_type_name.6477,"aMS",%progbits,1
 	.type	.L.managed_type_name.6477, %object
 .L.managed_type_name.6477:
-	.asciz	"Java.Net.Socket, Mono.Android"
-	.size	.L.managed_type_name.6477, 30
+	.asciz	"Java.Net.SocketAddress, Mono.Android"
+	.size	.L.managed_type_name.6477, 37
 	.section	.rodata.managed_type_name.6478,"aMS",%progbits,1
 	.type	.L.managed_type_name.6478, %object
 .L.managed_type_name.6478:
-	.asciz	"Java.Net.SocketAddress, Mono.Android"
-	.size	.L.managed_type_name.6478, 37
+	.asciz	"Java.Net.SocketAddressInvoker, Mono.Android"
+	.size	.L.managed_type_name.6478, 44
 	.section	.rodata.managed_type_name.6479,"aMS",%progbits,1
 	.type	.L.managed_type_name.6479, %object
 .L.managed_type_name.6479:
-	.asciz	"Java.Net.SocketAddressInvoker, Mono.Android"
-	.size	.L.managed_type_name.6479, 44
+	.asciz	"Java.Net.SocketException, Mono.Android"
+	.size	.L.managed_type_name.6479, 39
 	.section	.rodata.managed_type_name.6480,"aMS",%progbits,1
 	.type	.L.managed_type_name.6480, %object
 .L.managed_type_name.6480:
-	.asciz	"Java.Net.SocketException, Mono.Android"
-	.size	.L.managed_type_name.6480, 39
+	.asciz	"Java.Net.SocketImpl, Mono.Android"
+	.size	.L.managed_type_name.6480, 34
 	.section	.rodata.managed_type_name.6481,"aMS",%progbits,1
 	.type	.L.managed_type_name.6481, %object
 .L.managed_type_name.6481:
-	.asciz	"Java.Net.SocketImpl, Mono.Android"
-	.size	.L.managed_type_name.6481, 34
+	.asciz	"Java.Net.SocketImplInvoker, Mono.Android"
+	.size	.L.managed_type_name.6481, 41
 	.section	.rodata.managed_type_name.6482,"aMS",%progbits,1
 	.type	.L.managed_type_name.6482, %object
 .L.managed_type_name.6482:
-	.asciz	"Java.Net.SocketImplInvoker, Mono.Android"
-	.size	.L.managed_type_name.6482, 41
+	.asciz	"Java.Net.SocketOptions, Mono.Android"
+	.size	.L.managed_type_name.6482, 37
 	.section	.rodata.managed_type_name.6483,"aMS",%progbits,1
 	.type	.L.managed_type_name.6483, %object
 .L.managed_type_name.6483:
-	.asciz	"Java.Net.SocketOptions, Mono.Android"
-	.size	.L.managed_type_name.6483, 37
+	.asciz	"Java.Net.SocketPermission, Mono.Android"
+	.size	.L.managed_type_name.6483, 40
 	.section	.rodata.managed_type_name.6484,"aMS",%progbits,1
 	.type	.L.managed_type_name.6484, %object
 .L.managed_type_name.6484:
-	.asciz	"Java.Net.SocketPermission, Mono.Android"
-	.size	.L.managed_type_name.6484, 40
+	.asciz	"Java.Net.SocketTimeoutException, Mono.Android"
+	.size	.L.managed_type_name.6484, 46
 	.section	.rodata.managed_type_name.6485,"aMS",%progbits,1
 	.type	.L.managed_type_name.6485, %object
 .L.managed_type_name.6485:
-	.asciz	"Java.Net.SocketTimeoutException, Mono.Android"
+	.asciz	"Java.Net.StandardProtocolFamily, Mono.Android"
 	.size	.L.managed_type_name.6485, 46
 	.section	.rodata.managed_type_name.6486,"aMS",%progbits,1
 	.type	.L.managed_type_name.6486, %object
 .L.managed_type_name.6486:
-	.asciz	"Java.Net.StandardProtocolFamily, Mono.Android"
-	.size	.L.managed_type_name.6486, 46
+	.asciz	"Java.Net.StandardSocketOptions, Mono.Android"
+	.size	.L.managed_type_name.6486, 45
 	.section	.rodata.managed_type_name.6487,"aMS",%progbits,1
 	.type	.L.managed_type_name.6487, %object
 .L.managed_type_name.6487:
-	.asciz	"Java.Net.StandardSocketOptions, Mono.Android"
-	.size	.L.managed_type_name.6487, 45
+	.asciz	"Java.Net.URI, Mono.Android"
+	.size	.L.managed_type_name.6487, 27
 	.section	.rodata.managed_type_name.6488,"aMS",%progbits,1
 	.type	.L.managed_type_name.6488, %object
 .L.managed_type_name.6488:
-	.asciz	"Java.Net.URI, Mono.Android"
-	.size	.L.managed_type_name.6488, 27
+	.asciz	"Java.Net.URISyntaxException, Mono.Android"
+	.size	.L.managed_type_name.6488, 42
 	.section	.rodata.managed_type_name.6489,"aMS",%progbits,1
 	.type	.L.managed_type_name.6489, %object
 .L.managed_type_name.6489:
-	.asciz	"Java.Net.URISyntaxException, Mono.Android"
-	.size	.L.managed_type_name.6489, 42
+	.asciz	"Java.Net.URL, Mono.Android"
+	.size	.L.managed_type_name.6489, 27
 	.section	.rodata.managed_type_name.6490,"aMS",%progbits,1
 	.type	.L.managed_type_name.6490, %object
 .L.managed_type_name.6490:
-	.asciz	"Java.Net.URL, Mono.Android"
-	.size	.L.managed_type_name.6490, 27
+	.asciz	"Java.Net.URLClassLoader, Mono.Android"
+	.size	.L.managed_type_name.6490, 38
 	.section	.rodata.managed_type_name.6491,"aMS",%progbits,1
 	.type	.L.managed_type_name.6491, %object
 .L.managed_type_name.6491:
-	.asciz	"Java.Net.URLClassLoader, Mono.Android"
-	.size	.L.managed_type_name.6491, 38
+	.asciz	"Java.Net.URLConnection, Mono.Android"
+	.size	.L.managed_type_name.6491, 37
 	.section	.rodata.managed_type_name.6492,"aMS",%progbits,1
 	.type	.L.managed_type_name.6492, %object
 .L.managed_type_name.6492:
-	.asciz	"Java.Net.URLConnection, Mono.Android"
-	.size	.L.managed_type_name.6492, 37
+	.asciz	"Java.Net.URLConnectionInvoker, Mono.Android"
+	.size	.L.managed_type_name.6492, 44
 	.section	.rodata.managed_type_name.6493,"aMS",%progbits,1
 	.type	.L.managed_type_name.6493, %object
 .L.managed_type_name.6493:
-	.asciz	"Java.Net.URLConnectionInvoker, Mono.Android"
-	.size	.L.managed_type_name.6493, 44
+	.asciz	"Java.Net.URLDecoder, Mono.Android"
+	.size	.L.managed_type_name.6493, 34
 	.section	.rodata.managed_type_name.6494,"aMS",%progbits,1
 	.type	.L.managed_type_name.6494, %object
 .L.managed_type_name.6494:
-	.asciz	"Java.Net.URLDecoder, Mono.Android"
+	.asciz	"Java.Net.URLEncoder, Mono.Android"
 	.size	.L.managed_type_name.6494, 34
 	.section	.rodata.managed_type_name.6495,"aMS",%progbits,1
 	.type	.L.managed_type_name.6495, %object
 .L.managed_type_name.6495:
-	.asciz	"Java.Net.URLEncoder, Mono.Android"
-	.size	.L.managed_type_name.6495, 34
+	.asciz	"Java.Net.URLStreamHandler, Mono.Android"
+	.size	.L.managed_type_name.6495, 40
 	.section	.rodata.managed_type_name.6496,"aMS",%progbits,1
 	.type	.L.managed_type_name.6496, %object
 .L.managed_type_name.6496:
-	.asciz	"Java.Net.URLStreamHandler, Mono.Android"
-	.size	.L.managed_type_name.6496, 40
+	.asciz	"Java.Net.URLStreamHandlerInvoker, Mono.Android"
+	.size	.L.managed_type_name.6496, 47
 	.section	.rodata.managed_type_name.6497,"aMS",%progbits,1
 	.type	.L.managed_type_name.6497, %object
 .L.managed_type_name.6497:
-	.asciz	"Java.Net.URLStreamHandlerInvoker, Mono.Android"
-	.size	.L.managed_type_name.6497, 47
+	.asciz	"Java.Net.UnknownHostException, Mono.Android"
+	.size	.L.managed_type_name.6497, 44
 	.section	.rodata.managed_type_name.6498,"aMS",%progbits,1
 	.type	.L.managed_type_name.6498, %object
 .L.managed_type_name.6498:
-	.asciz	"Java.Net.UnknownHostException, Mono.Android"
-	.size	.L.managed_type_name.6498, 44
+	.asciz	"Java.Net.UnknownServiceException, Mono.Android"
+	.size	.L.managed_type_name.6498, 47
 	.section	.rodata.managed_type_name.6499,"aMS",%progbits,1
 	.type	.L.managed_type_name.6499, %object
 .L.managed_type_name.6499:
-	.asciz	"Java.Net.UnknownServiceException, Mono.Android"
-	.size	.L.managed_type_name.6499, 47
+	.asciz	"Java.Nio.Buffer, Mono.Android"
+	.size	.L.managed_type_name.6499, 30
 	.section	.rodata.managed_type_name.6500,"aMS",%progbits,1
 	.type	.L.managed_type_name.6500, %object
 .L.managed_type_name.6500:
-	.asciz	"Java.Nio.Buffer, Mono.Android"
-	.size	.L.managed_type_name.6500, 30
+	.asciz	"Java.Nio.BufferInvoker, Mono.Android"
+	.size	.L.managed_type_name.6500, 37
 	.section	.rodata.managed_type_name.6501,"aMS",%progbits,1
 	.type	.L.managed_type_name.6501, %object
 .L.managed_type_name.6501:
-	.asciz	"Java.Nio.BufferInvoker, Mono.Android"
-	.size	.L.managed_type_name.6501, 37
+	.asciz	"Java.Nio.BufferOverflowException, Mono.Android"
+	.size	.L.managed_type_name.6501, 47
 	.section	.rodata.managed_type_name.6502,"aMS",%progbits,1
 	.type	.L.managed_type_name.6502, %object
 .L.managed_type_name.6502:
-	.asciz	"Java.Nio.BufferOverflowException, Mono.Android"
-	.size	.L.managed_type_name.6502, 47
+	.asciz	"Java.Nio.BufferUnderflowException, Mono.Android"
+	.size	.L.managed_type_name.6502, 48
 	.section	.rodata.managed_type_name.6503,"aMS",%progbits,1
 	.type	.L.managed_type_name.6503, %object
 .L.managed_type_name.6503:
-	.asciz	"Java.Nio.BufferUnderflowException, Mono.Android"
-	.size	.L.managed_type_name.6503, 48
+	.asciz	"Java.Nio.ByteBuffer, Mono.Android"
+	.size	.L.managed_type_name.6503, 34
 	.section	.rodata.managed_type_name.6504,"aMS",%progbits,1
 	.type	.L.managed_type_name.6504, %object
 .L.managed_type_name.6504:
-	.asciz	"Java.Nio.ByteBuffer, Mono.Android"
-	.size	.L.managed_type_name.6504, 34
+	.asciz	"Java.Nio.ByteBufferInvoker, Mono.Android"
+	.size	.L.managed_type_name.6504, 41
 	.section	.rodata.managed_type_name.6505,"aMS",%progbits,1
 	.type	.L.managed_type_name.6505, %object
 .L.managed_type_name.6505:
-	.asciz	"Java.Nio.ByteBufferInvoker, Mono.Android"
-	.size	.L.managed_type_name.6505, 41
+	.asciz	"Java.Nio.ByteOrder, Mono.Android"
+	.size	.L.managed_type_name.6505, 33
 	.section	.rodata.managed_type_name.6506,"aMS",%progbits,1
 	.type	.L.managed_type_name.6506, %object
 .L.managed_type_name.6506:
-	.asciz	"Java.Nio.ByteOrder, Mono.Android"
-	.size	.L.managed_type_name.6506, 33
+	.asciz	"Java.Nio.Channels.AcceptPendingException, Mono.Android"
+	.size	.L.managed_type_name.6506, 55
 	.section	.rodata.managed_type_name.6507,"aMS",%progbits,1
 	.type	.L.managed_type_name.6507, %object
 .L.managed_type_name.6507:
-	.asciz	"Java.Nio.Channels.AcceptPendingException, Mono.Android"
-	.size	.L.managed_type_name.6507, 55
+	.asciz	"Java.Nio.Channels.AlreadyBoundException, Mono.Android"
+	.size	.L.managed_type_name.6507, 54
 	.section	.rodata.managed_type_name.6508,"aMS",%progbits,1
 	.type	.L.managed_type_name.6508, %object
 .L.managed_type_name.6508:
-	.asciz	"Java.Nio.Channels.AlreadyBoundException, Mono.Android"
-	.size	.L.managed_type_name.6508, 54
+	.asciz	"Java.Nio.Channels.AlreadyConnectedException, Mono.Android"
+	.size	.L.managed_type_name.6508, 58
 	.section	.rodata.managed_type_name.6509,"aMS",%progbits,1
 	.type	.L.managed_type_name.6509, %object
 .L.managed_type_name.6509:
-	.asciz	"Java.Nio.Channels.AlreadyConnectedException, Mono.Android"
-	.size	.L.managed_type_name.6509, 58
+	.asciz	"Java.Nio.Channels.AsynchronousChannelGroup, Mono.Android"
+	.size	.L.managed_type_name.6509, 57
 	.section	.rodata.managed_type_name.6510,"aMS",%progbits,1
 	.type	.L.managed_type_name.6510, %object
 .L.managed_type_name.6510:
-	.asciz	"Java.Nio.Channels.AsynchronousChannelGroup, Mono.Android"
-	.size	.L.managed_type_name.6510, 57
+	.asciz	"Java.Nio.Channels.AsynchronousChannelGroupInvoker, Mono.Android"
+	.size	.L.managed_type_name.6510, 64
 	.section	.rodata.managed_type_name.6511,"aMS",%progbits,1
 	.type	.L.managed_type_name.6511, %object
 .L.managed_type_name.6511:
-	.asciz	"Java.Nio.Channels.AsynchronousChannelGroupInvoker, Mono.Android"
-	.size	.L.managed_type_name.6511, 64
+	.asciz	"Java.Nio.Channels.AsynchronousCloseException, Mono.Android"
+	.size	.L.managed_type_name.6511, 59
 	.section	.rodata.managed_type_name.6512,"aMS",%progbits,1
 	.type	.L.managed_type_name.6512, %object
 .L.managed_type_name.6512:
-	.asciz	"Java.Nio.Channels.AsynchronousCloseException, Mono.Android"
-	.size	.L.managed_type_name.6512, 59
+	.asciz	"Java.Nio.Channels.AsynchronousFileChannel, Mono.Android"
+	.size	.L.managed_type_name.6512, 56
 	.section	.rodata.managed_type_name.6513,"aMS",%progbits,1
 	.type	.L.managed_type_name.6513, %object
 .L.managed_type_name.6513:
-	.asciz	"Java.Nio.Channels.AsynchronousFileChannel, Mono.Android"
-	.size	.L.managed_type_name.6513, 56
+	.asciz	"Java.Nio.Channels.AsynchronousFileChannelInvoker, Mono.Android"
+	.size	.L.managed_type_name.6513, 63
 	.section	.rodata.managed_type_name.6514,"aMS",%progbits,1
 	.type	.L.managed_type_name.6514, %object
 .L.managed_type_name.6514:
-	.asciz	"Java.Nio.Channels.AsynchronousFileChannelInvoker, Mono.Android"
-	.size	.L.managed_type_name.6514, 63
+	.asciz	"Java.Nio.Channels.AsynchronousServerSocketChannel, Mono.Android"
+	.size	.L.managed_type_name.6514, 64
 	.section	.rodata.managed_type_name.6515,"aMS",%progbits,1
 	.type	.L.managed_type_name.6515, %object
 .L.managed_type_name.6515:
-	.asciz	"Java.Nio.Channels.AsynchronousServerSocketChannel, Mono.Android"
-	.size	.L.managed_type_name.6515, 64
+	.asciz	"Java.Nio.Channels.AsynchronousServerSocketChannelInvoker, Mono.Android"
+	.size	.L.managed_type_name.6515, 71
 	.section	.rodata.managed_type_name.6516,"aMS",%progbits,1
 	.type	.L.managed_type_name.6516, %object
 .L.managed_type_name.6516:
-	.asciz	"Java.Nio.Channels.AsynchronousServerSocketChannelInvoker, Mono.Android"
-	.size	.L.managed_type_name.6516, 71
+	.asciz	"Java.Nio.Channels.AsynchronousSocketChannel, Mono.Android"
+	.size	.L.managed_type_name.6516, 58
 	.section	.rodata.managed_type_name.6517,"aMS",%progbits,1
 	.type	.L.managed_type_name.6517, %object
 .L.managed_type_name.6517:
-	.asciz	"Java.Nio.Channels.AsynchronousSocketChannel, Mono.Android"
-	.size	.L.managed_type_name.6517, 58
+	.asciz	"Java.Nio.Channels.AsynchronousSocketChannelInvoker, Mono.Android"
+	.size	.L.managed_type_name.6517, 65
 	.section	.rodata.managed_type_name.6518,"aMS",%progbits,1
 	.type	.L.managed_type_name.6518, %object
 .L.managed_type_name.6518:
-	.asciz	"Java.Nio.Channels.AsynchronousSocketChannelInvoker, Mono.Android"
-	.size	.L.managed_type_name.6518, 65
+	.asciz	"Java.Nio.Channels.CancelledKeyException, Mono.Android"
+	.size	.L.managed_type_name.6518, 54
 	.section	.rodata.managed_type_name.6519,"aMS",%progbits,1
 	.type	.L.managed_type_name.6519, %object
 .L.managed_type_name.6519:
-	.asciz	"Java.Nio.Channels.CancelledKeyException, Mono.Android"
-	.size	.L.managed_type_name.6519, 54
+	.asciz	"Java.Nio.Channels.Channels, Mono.Android"
+	.size	.L.managed_type_name.6519, 41
 	.section	.rodata.managed_type_name.6520,"aMS",%progbits,1
 	.type	.L.managed_type_name.6520, %object
 .L.managed_type_name.6520:
-	.asciz	"Java.Nio.Channels.Channels, Mono.Android"
-	.size	.L.managed_type_name.6520, 41
+	.asciz	"Java.Nio.Channels.ClosedByInterruptException, Mono.Android"
+	.size	.L.managed_type_name.6520, 59
 	.section	.rodata.managed_type_name.6521,"aMS",%progbits,1
 	.type	.L.managed_type_name.6521, %object
 .L.managed_type_name.6521:
-	.asciz	"Java.Nio.Channels.ClosedByInterruptException, Mono.Android"
-	.size	.L.managed_type_name.6521, 59
+	.asciz	"Java.Nio.Channels.ClosedChannelException, Mono.Android"
+	.size	.L.managed_type_name.6521, 55
 	.section	.rodata.managed_type_name.6522,"aMS",%progbits,1
 	.type	.L.managed_type_name.6522, %object
 .L.managed_type_name.6522:
-	.asciz	"Java.Nio.Channels.ClosedChannelException, Mono.Android"
-	.size	.L.managed_type_name.6522, 55
+	.asciz	"Java.Nio.Channels.ClosedSelectorException, Mono.Android"
+	.size	.L.managed_type_name.6522, 56
 	.section	.rodata.managed_type_name.6523,"aMS",%progbits,1
 	.type	.L.managed_type_name.6523, %object
 .L.managed_type_name.6523:
-	.asciz	"Java.Nio.Channels.ClosedSelectorException, Mono.Android"
-	.size	.L.managed_type_name.6523, 56
+	.asciz	"Java.Nio.Channels.ConnectionPendingException, Mono.Android"
+	.size	.L.managed_type_name.6523, 59
 	.section	.rodata.managed_type_name.6524,"aMS",%progbits,1
 	.type	.L.managed_type_name.6524, %object
 .L.managed_type_name.6524:
-	.asciz	"Java.Nio.Channels.ConnectionPendingException, Mono.Android"
-	.size	.L.managed_type_name.6524, 59
+	.asciz	"Java.Nio.Channels.DatagramChannel, Mono.Android"
+	.size	.L.managed_type_name.6524, 48
 	.section	.rodata.managed_type_name.6525,"aMS",%progbits,1
 	.type	.L.managed_type_name.6525, %object
 .L.managed_type_name.6525:
-	.asciz	"Java.Nio.Channels.DatagramChannel, Mono.Android"
-	.size	.L.managed_type_name.6525, 48
+	.asciz	"Java.Nio.Channels.DatagramChannelInvoker, Mono.Android"
+	.size	.L.managed_type_name.6525, 55
 	.section	.rodata.managed_type_name.6526,"aMS",%progbits,1
 	.type	.L.managed_type_name.6526, %object
 .L.managed_type_name.6526:
-	.asciz	"Java.Nio.Channels.DatagramChannelInvoker, Mono.Android"
-	.size	.L.managed_type_name.6526, 55
+	.asciz	"Java.Nio.Channels.FileChannel+MapMode, Mono.Android"
+	.size	.L.managed_type_name.6526, 52
 	.section	.rodata.managed_type_name.6527,"aMS",%progbits,1
 	.type	.L.managed_type_name.6527, %object
 .L.managed_type_name.6527:
-	.asciz	"Java.Nio.Channels.FileChannel+MapMode, Mono.Android"
-	.size	.L.managed_type_name.6527, 52
+	.asciz	"Java.Nio.Channels.FileChannel, Mono.Android"
+	.size	.L.managed_type_name.6527, 44
 	.section	.rodata.managed_type_name.6528,"aMS",%progbits,1
 	.type	.L.managed_type_name.6528, %object
 .L.managed_type_name.6528:
-	.asciz	"Java.Nio.Channels.FileChannel, Mono.Android"
-	.size	.L.managed_type_name.6528, 44
+	.asciz	"Java.Nio.Channels.FileChannelInvoker, Mono.Android"
+	.size	.L.managed_type_name.6528, 51
 	.section	.rodata.managed_type_name.6529,"aMS",%progbits,1
 	.type	.L.managed_type_name.6529, %object
 .L.managed_type_name.6529:
-	.asciz	"Java.Nio.Channels.FileChannelInvoker, Mono.Android"
-	.size	.L.managed_type_name.6529, 51
+	.asciz	"Java.Nio.Channels.FileLock, Mono.Android"
+	.size	.L.managed_type_name.6529, 41
 	.section	.rodata.managed_type_name.6530,"aMS",%progbits,1
 	.type	.L.managed_type_name.6530, %object
 .L.managed_type_name.6530:
-	.asciz	"Java.Nio.Channels.FileLock, Mono.Android"
-	.size	.L.managed_type_name.6530, 41
+	.asciz	"Java.Nio.Channels.FileLockInterruptionException, Mono.Android"
+	.size	.L.managed_type_name.6530, 62
 	.section	.rodata.managed_type_name.6531,"aMS",%progbits,1
 	.type	.L.managed_type_name.6531, %object
 .L.managed_type_name.6531:
-	.asciz	"Java.Nio.Channels.FileLockInterruptionException, Mono.Android"
-	.size	.L.managed_type_name.6531, 62
+	.asciz	"Java.Nio.Channels.FileLockInvoker, Mono.Android"
+	.size	.L.managed_type_name.6531, 48
 	.section	.rodata.managed_type_name.6532,"aMS",%progbits,1
 	.type	.L.managed_type_name.6532, %object
 .L.managed_type_name.6532:
-	.asciz	"Java.Nio.Channels.FileLockInvoker, Mono.Android"
-	.size	.L.managed_type_name.6532, 48
+	.asciz	"Java.Nio.Channels.IAsynchronousByteChannelInvoker, Mono.Android"
+	.size	.L.managed_type_name.6532, 64
 	.section	.rodata.managed_type_name.6533,"aMS",%progbits,1
 	.type	.L.managed_type_name.6533, %object
 .L.managed_type_name.6533:
-	.asciz	"Java.Nio.Channels.IAsynchronousByteChannelInvoker, Mono.Android"
-	.size	.L.managed_type_name.6533, 64
+	.asciz	"Java.Nio.Channels.IAsynchronousChannelInvoker, Mono.Android"
+	.size	.L.managed_type_name.6533, 60
 	.section	.rodata.managed_type_name.6534,"aMS",%progbits,1
 	.type	.L.managed_type_name.6534, %object
 .L.managed_type_name.6534:
-	.asciz	"Java.Nio.Channels.IAsynchronousChannelInvoker, Mono.Android"
-	.size	.L.managed_type_name.6534, 60
+	.asciz	"Java.Nio.Channels.IByteChannelInvoker, Mono.Android"
+	.size	.L.managed_type_name.6534, 52
 	.section	.rodata.managed_type_name.6535,"aMS",%progbits,1
 	.type	.L.managed_type_name.6535, %object
 .L.managed_type_name.6535:
-	.asciz	"Java.Nio.Channels.IByteChannelInvoker, Mono.Android"
-	.size	.L.managed_type_name.6535, 52
+	.asciz	"Java.Nio.Channels.IChannelInvoker, Mono.Android"
+	.size	.L.managed_type_name.6535, 48
 	.section	.rodata.managed_type_name.6536,"aMS",%progbits,1
 	.type	.L.managed_type_name.6536, %object
 .L.managed_type_name.6536:
-	.asciz	"Java.Nio.Channels.IChannelInvoker, Mono.Android"
-	.size	.L.managed_type_name.6536, 48
+	.asciz	"Java.Nio.Channels.ICompletionHandlerInvoker, Mono.Android"
+	.size	.L.managed_type_name.6536, 58
 	.section	.rodata.managed_type_name.6537,"aMS",%progbits,1
 	.type	.L.managed_type_name.6537, %object
 .L.managed_type_name.6537:
-	.asciz	"Java.Nio.Channels.ICompletionHandlerInvoker, Mono.Android"
-	.size	.L.managed_type_name.6537, 58
+	.asciz	"Java.Nio.Channels.IGatheringByteChannelInvoker, Mono.Android"
+	.size	.L.managed_type_name.6537, 61
 	.section	.rodata.managed_type_name.6538,"aMS",%progbits,1
 	.type	.L.managed_type_name.6538, %object
 .L.managed_type_name.6538:
-	.asciz	"Java.Nio.Channels.IGatheringByteChannelInvoker, Mono.Android"
+	.asciz	"Java.Nio.Channels.IInterruptibleChannelInvoker, Mono.Android"
 	.size	.L.managed_type_name.6538, 61
 	.section	.rodata.managed_type_name.6539,"aMS",%progbits,1
 	.type	.L.managed_type_name.6539, %object
 .L.managed_type_name.6539:
-	.asciz	"Java.Nio.Channels.IInterruptibleChannelInvoker, Mono.Android"
-	.size	.L.managed_type_name.6539, 61
+	.asciz	"Java.Nio.Channels.IReadableByteChannelInvoker, Mono.Android"
+	.size	.L.managed_type_name.6539, 60
 	.section	.rodata.managed_type_name.6540,"aMS",%progbits,1
 	.type	.L.managed_type_name.6540, %object
 .L.managed_type_name.6540:
-	.asciz	"Java.Nio.Channels.IReadableByteChannelInvoker, Mono.Android"
-	.size	.L.managed_type_name.6540, 60
+	.asciz	"Java.Nio.Channels.IScatteringByteChannelInvoker, Mono.Android"
+	.size	.L.managed_type_name.6540, 62
 	.section	.rodata.managed_type_name.6541,"aMS",%progbits,1
 	.type	.L.managed_type_name.6541, %object
 .L.managed_type_name.6541:
-	.asciz	"Java.Nio.Channels.IScatteringByteChannelInvoker, Mono.Android"
-	.size	.L.managed_type_name.6541, 62
+	.asciz	"Java.Nio.Channels.ISeekableByteChannelInvoker, Mono.Android"
+	.size	.L.managed_type_name.6541, 60
 	.section	.rodata.managed_type_name.6542,"aMS",%progbits,1
 	.type	.L.managed_type_name.6542, %object
 .L.managed_type_name.6542:
-	.asciz	"Java.Nio.Channels.ISeekableByteChannelInvoker, Mono.Android"
+	.asciz	"Java.Nio.Channels.IWritableByteChannelInvoker, Mono.Android"
 	.size	.L.managed_type_name.6542, 60
 	.section	.rodata.managed_type_name.6543,"aMS",%progbits,1
 	.type	.L.managed_type_name.6543, %object
 .L.managed_type_name.6543:
-	.asciz	"Java.Nio.Channels.IWritableByteChannelInvoker, Mono.Android"
-	.size	.L.managed_type_name.6543, 60
+	.asciz	"Java.Nio.Channels.IllegalBlockingModeException, Mono.Android"
+	.size	.L.managed_type_name.6543, 61
 	.section	.rodata.managed_type_name.6544,"aMS",%progbits,1
 	.type	.L.managed_type_name.6544, %object
 .L.managed_type_name.6544:
-	.asciz	"Java.Nio.Channels.IllegalBlockingModeException, Mono.Android"
+	.asciz	"Java.Nio.Channels.IllegalChannelGroupException, Mono.Android"
 	.size	.L.managed_type_name.6544, 61
 	.section	.rodata.managed_type_name.6545,"aMS",%progbits,1
 	.type	.L.managed_type_name.6545, %object
 .L.managed_type_name.6545:
-	.asciz	"Java.Nio.Channels.IllegalChannelGroupException, Mono.Android"
-	.size	.L.managed_type_name.6545, 61
+	.asciz	"Java.Nio.Channels.IllegalSelectorException, Mono.Android"
+	.size	.L.managed_type_name.6545, 57
 	.section	.rodata.managed_type_name.6546,"aMS",%progbits,1
 	.type	.L.managed_type_name.6546, %object
 .L.managed_type_name.6546:
-	.asciz	"Java.Nio.Channels.IllegalSelectorException, Mono.Android"
-	.size	.L.managed_type_name.6546, 57
+	.asciz	"Java.Nio.Channels.InterruptedByTimeoutException, Mono.Android"
+	.size	.L.managed_type_name.6546, 62
 	.section	.rodata.managed_type_name.6547,"aMS",%progbits,1
 	.type	.L.managed_type_name.6547, %object
 .L.managed_type_name.6547:
-	.asciz	"Java.Nio.Channels.InterruptedByTimeoutException, Mono.Android"
-	.size	.L.managed_type_name.6547, 62
+	.asciz	"Java.Nio.Channels.MembershipKey, Mono.Android"
+	.size	.L.managed_type_name.6547, 46
 	.section	.rodata.managed_type_name.6548,"aMS",%progbits,1
 	.type	.L.managed_type_name.6548, %object
 .L.managed_type_name.6548:
-	.asciz	"Java.Nio.Channels.MembershipKey, Mono.Android"
-	.size	.L.managed_type_name.6548, 46
+	.asciz	"Java.Nio.Channels.MembershipKeyInvoker, Mono.Android"
+	.size	.L.managed_type_name.6548, 53
 	.section	.rodata.managed_type_name.6549,"aMS",%progbits,1
 	.type	.L.managed_type_name.6549, %object
 .L.managed_type_name.6549:
-	.asciz	"Java.Nio.Channels.MembershipKeyInvoker, Mono.Android"
-	.size	.L.managed_type_name.6549, 53
+	.asciz	"Java.Nio.Channels.NoConnectionPendingException, Mono.Android"
+	.size	.L.managed_type_name.6549, 61
 	.section	.rodata.managed_type_name.6550,"aMS",%progbits,1
 	.type	.L.managed_type_name.6550, %object
 .L.managed_type_name.6550:
-	.asciz	"Java.Nio.Channels.NoConnectionPendingException, Mono.Android"
-	.size	.L.managed_type_name.6550, 61
+	.asciz	"Java.Nio.Channels.NonReadableChannelException, Mono.Android"
+	.size	.L.managed_type_name.6550, 60
 	.section	.rodata.managed_type_name.6551,"aMS",%progbits,1
 	.type	.L.managed_type_name.6551, %object
 .L.managed_type_name.6551:
-	.asciz	"Java.Nio.Channels.NonReadableChannelException, Mono.Android"
+	.asciz	"Java.Nio.Channels.NonWritableChannelException, Mono.Android"
 	.size	.L.managed_type_name.6551, 60
 	.section	.rodata.managed_type_name.6552,"aMS",%progbits,1
 	.type	.L.managed_type_name.6552, %object
 .L.managed_type_name.6552:
-	.asciz	"Java.Nio.Channels.NonWritableChannelException, Mono.Android"
-	.size	.L.managed_type_name.6552, 60
+	.asciz	"Java.Nio.Channels.NotYetBoundException, Mono.Android"
+	.size	.L.managed_type_name.6552, 53
 	.section	.rodata.managed_type_name.6553,"aMS",%progbits,1
 	.type	.L.managed_type_name.6553, %object
 .L.managed_type_name.6553:
-	.asciz	"Java.Nio.Channels.NotYetBoundException, Mono.Android"
-	.size	.L.managed_type_name.6553, 53
+	.asciz	"Java.Nio.Channels.NotYetConnectedException, Mono.Android"
+	.size	.L.managed_type_name.6553, 57
 	.section	.rodata.managed_type_name.6554,"aMS",%progbits,1
 	.type	.L.managed_type_name.6554, %object
 .L.managed_type_name.6554:
-	.asciz	"Java.Nio.Channels.NotYetConnectedException, Mono.Android"
-	.size	.L.managed_type_name.6554, 57
+	.asciz	"Java.Nio.Channels.OverlappingFileLockException, Mono.Android"
+	.size	.L.managed_type_name.6554, 61
 	.section	.rodata.managed_type_name.6555,"aMS",%progbits,1
 	.type	.L.managed_type_name.6555, %object
 .L.managed_type_name.6555:
-	.asciz	"Java.Nio.Channels.OverlappingFileLockException, Mono.Android"
-	.size	.L.managed_type_name.6555, 61
+	.asciz	"Java.Nio.Channels.Pipe+SinkChannel, Mono.Android"
+	.size	.L.managed_type_name.6555, 49
 	.section	.rodata.managed_type_name.6556,"aMS",%progbits,1
 	.type	.L.managed_type_name.6556, %object
 .L.managed_type_name.6556:
-	.asciz	"Java.Nio.Channels.Pipe+SinkChannel, Mono.Android"
-	.size	.L.managed_type_name.6556, 49
+	.asciz	"Java.Nio.Channels.Pipe+SinkChannelInvoker, Mono.Android"
+	.size	.L.managed_type_name.6556, 56
 	.section	.rodata.managed_type_name.6557,"aMS",%progbits,1
 	.type	.L.managed_type_name.6557, %object
 .L.managed_type_name.6557:
-	.asciz	"Java.Nio.Channels.Pipe+SinkChannelInvoker, Mono.Android"
-	.size	.L.managed_type_name.6557, 56
+	.asciz	"Java.Nio.Channels.Pipe+SourceChannel, Mono.Android"
+	.size	.L.managed_type_name.6557, 51
 	.section	.rodata.managed_type_name.6558,"aMS",%progbits,1
 	.type	.L.managed_type_name.6558, %object
 .L.managed_type_name.6558:
-	.asciz	"Java.Nio.Channels.Pipe+SourceChannel, Mono.Android"
-	.size	.L.managed_type_name.6558, 51
+	.asciz	"Java.Nio.Channels.Pipe+SourceChannelInvoker, Mono.Android"
+	.size	.L.managed_type_name.6558, 58
 	.section	.rodata.managed_type_name.6559,"aMS",%progbits,1
 	.type	.L.managed_type_name.6559, %object
 .L.managed_type_name.6559:
-	.asciz	"Java.Nio.Channels.Pipe+SourceChannelInvoker, Mono.Android"
-	.size	.L.managed_type_name.6559, 58
+	.asciz	"Java.Nio.Channels.Pipe, Mono.Android"
+	.size	.L.managed_type_name.6559, 37
 	.section	.rodata.managed_type_name.6560,"aMS",%progbits,1
 	.type	.L.managed_type_name.6560, %object
 .L.managed_type_name.6560:
-	.asciz	"Java.Nio.Channels.Pipe, Mono.Android"
-	.size	.L.managed_type_name.6560, 37
+	.asciz	"Java.Nio.Channels.PipeInvoker, Mono.Android"
+	.size	.L.managed_type_name.6560, 44
 	.section	.rodata.managed_type_name.6561,"aMS",%progbits,1
 	.type	.L.managed_type_name.6561, %object
 .L.managed_type_name.6561:
-	.asciz	"Java.Nio.Channels.PipeInvoker, Mono.Android"
-	.size	.L.managed_type_name.6561, 44
+	.asciz	"Java.Nio.Channels.ReadPendingException, Mono.Android"
+	.size	.L.managed_type_name.6561, 53
 	.section	.rodata.managed_type_name.6562,"aMS",%progbits,1
 	.type	.L.managed_type_name.6562, %object
 .L.managed_type_name.6562:
-	.asciz	"Java.Nio.Channels.ReadPendingException, Mono.Android"
-	.size	.L.managed_type_name.6562, 53
+	.asciz	"Java.Nio.Channels.SelectableChannel, Mono.Android"
+	.size	.L.managed_type_name.6562, 50
 	.section	.rodata.managed_type_name.6563,"aMS",%progbits,1
 	.type	.L.managed_type_name.6563, %object
 .L.managed_type_name.6563:
-	.asciz	"Java.Nio.Channels.SelectableChannel, Mono.Android"
-	.size	.L.managed_type_name.6563, 50
+	.asciz	"Java.Nio.Channels.SelectableChannelInvoker, Mono.Android"
+	.size	.L.managed_type_name.6563, 57
 	.section	.rodata.managed_type_name.6564,"aMS",%progbits,1
 	.type	.L.managed_type_name.6564, %object
 .L.managed_type_name.6564:
-	.asciz	"Java.Nio.Channels.SelectableChannelInvoker, Mono.Android"
-	.size	.L.managed_type_name.6564, 57
+	.asciz	"Java.Nio.Channels.SelectionKey, Mono.Android"
+	.size	.L.managed_type_name.6564, 45
 	.section	.rodata.managed_type_name.6565,"aMS",%progbits,1
 	.type	.L.managed_type_name.6565, %object
 .L.managed_type_name.6565:
-	.asciz	"Java.Nio.Channels.SelectionKey, Mono.Android"
-	.size	.L.managed_type_name.6565, 45
+	.asciz	"Java.Nio.Channels.SelectionKeyInvoker, Mono.Android"
+	.size	.L.managed_type_name.6565, 52
 	.section	.rodata.managed_type_name.6566,"aMS",%progbits,1
 	.type	.L.managed_type_name.6566, %object
 .L.managed_type_name.6566:
-	.asciz	"Java.Nio.Channels.SelectionKeyInvoker, Mono.Android"
-	.size	.L.managed_type_name.6566, 52
+	.asciz	"Java.Nio.Channels.Selector, Mono.Android"
+	.size	.L.managed_type_name.6566, 41
 	.section	.rodata.managed_type_name.6567,"aMS",%progbits,1
 	.type	.L.managed_type_name.6567, %object
 .L.managed_type_name.6567:
-	.asciz	"Java.Nio.Channels.Selector, Mono.Android"
-	.size	.L.managed_type_name.6567, 41
+	.asciz	"Java.Nio.Channels.SelectorInvoker, Mono.Android"
+	.size	.L.managed_type_name.6567, 48
 	.section	.rodata.managed_type_name.6568,"aMS",%progbits,1
 	.type	.L.managed_type_name.6568, %object
 .L.managed_type_name.6568:
-	.asciz	"Java.Nio.Channels.SelectorInvoker, Mono.Android"
-	.size	.L.managed_type_name.6568, 48
+	.asciz	"Java.Nio.Channels.ServerSocketChannel, Mono.Android"
+	.size	.L.managed_type_name.6568, 52
 	.section	.rodata.managed_type_name.6569,"aMS",%progbits,1
 	.type	.L.managed_type_name.6569, %object
 .L.managed_type_name.6569:
-	.asciz	"Java.Nio.Channels.ServerSocketChannel, Mono.Android"
-	.size	.L.managed_type_name.6569, 52
+	.asciz	"Java.Nio.Channels.ServerSocketChannelInvoker, Mono.Android"
+	.size	.L.managed_type_name.6569, 59
 	.section	.rodata.managed_type_name.6570,"aMS",%progbits,1
 	.type	.L.managed_type_name.6570, %object
 .L.managed_type_name.6570:
-	.asciz	"Java.Nio.Channels.ServerSocketChannelInvoker, Mono.Android"
-	.size	.L.managed_type_name.6570, 59
+	.asciz	"Java.Nio.Channels.ShutdownChannelGroupException, Mono.Android"
+	.size	.L.managed_type_name.6570, 62
 	.section	.rodata.managed_type_name.6571,"aMS",%progbits,1
 	.type	.L.managed_type_name.6571, %object
 .L.managed_type_name.6571:
-	.asciz	"Java.Nio.Channels.ShutdownChannelGroupException, Mono.Android"
-	.size	.L.managed_type_name.6571, 62
+	.asciz	"Java.Nio.Channels.SocketChannel, Mono.Android"
+	.size	.L.managed_type_name.6571, 46
 	.section	.rodata.managed_type_name.6572,"aMS",%progbits,1
 	.type	.L.managed_type_name.6572, %object
 .L.managed_type_name.6572:
-	.asciz	"Java.Nio.Channels.SocketChannel, Mono.Android"
-	.size	.L.managed_type_name.6572, 46
+	.asciz	"Java.Nio.Channels.SocketChannelInvoker, Mono.Android"
+	.size	.L.managed_type_name.6572, 53
 	.section	.rodata.managed_type_name.6573,"aMS",%progbits,1
 	.type	.L.managed_type_name.6573, %object
 .L.managed_type_name.6573:
-	.asciz	"Java.Nio.Channels.SocketChannelInvoker, Mono.Android"
-	.size	.L.managed_type_name.6573, 53
+	.asciz	"Java.Nio.Channels.Spi.AbstractInterruptibleChannel, Mono.Android"
+	.size	.L.managed_type_name.6573, 65
 	.section	.rodata.managed_type_name.6574,"aMS",%progbits,1
 	.type	.L.managed_type_name.6574, %object
 .L.managed_type_name.6574:
-	.asciz	"Java.Nio.Channels.Spi.AbstractInterruptibleChannel, Mono.Android"
-	.size	.L.managed_type_name.6574, 65
+	.asciz	"Java.Nio.Channels.Spi.AbstractInterruptibleChannelInvoker, Mono.Android"
+	.size	.L.managed_type_name.6574, 72
 	.section	.rodata.managed_type_name.6575,"aMS",%progbits,1
 	.type	.L.managed_type_name.6575, %object
 .L.managed_type_name.6575:
-	.asciz	"Java.Nio.Channels.Spi.AbstractInterruptibleChannelInvoker, Mono.Android"
-	.size	.L.managed_type_name.6575, 72
+	.asciz	"Java.Nio.Channels.Spi.AbstractSelectableChannel, Mono.Android"
+	.size	.L.managed_type_name.6575, 62
 	.section	.rodata.managed_type_name.6576,"aMS",%progbits,1
 	.type	.L.managed_type_name.6576, %object
 .L.managed_type_name.6576:
-	.asciz	"Java.Nio.Channels.Spi.AbstractSelectableChannel, Mono.Android"
-	.size	.L.managed_type_name.6576, 62
+	.asciz	"Java.Nio.Channels.Spi.AbstractSelectableChannelInvoker, Mono.Android"
+	.size	.L.managed_type_name.6576, 69
 	.section	.rodata.managed_type_name.6577,"aMS",%progbits,1
 	.type	.L.managed_type_name.6577, %object
 .L.managed_type_name.6577:
-	.asciz	"Java.Nio.Channels.Spi.AbstractSelectableChannelInvoker, Mono.Android"
-	.size	.L.managed_type_name.6577, 69
+	.asciz	"Java.Nio.Channels.Spi.AbstractSelectionKey, Mono.Android"
+	.size	.L.managed_type_name.6577, 57
 	.section	.rodata.managed_type_name.6578,"aMS",%progbits,1
 	.type	.L.managed_type_name.6578, %object
 .L.managed_type_name.6578:
-	.asciz	"Java.Nio.Channels.Spi.AbstractSelectionKey, Mono.Android"
-	.size	.L.managed_type_name.6578, 57
+	.asciz	"Java.Nio.Channels.Spi.AbstractSelectionKeyInvoker, Mono.Android"
+	.size	.L.managed_type_name.6578, 64
 	.section	.rodata.managed_type_name.6579,"aMS",%progbits,1
 	.type	.L.managed_type_name.6579, %object
 .L.managed_type_name.6579:
-	.asciz	"Java.Nio.Channels.Spi.AbstractSelectionKeyInvoker, Mono.Android"
-	.size	.L.managed_type_name.6579, 64
+	.asciz	"Java.Nio.Channels.Spi.AbstractSelector, Mono.Android"
+	.size	.L.managed_type_name.6579, 53
 	.section	.rodata.managed_type_name.6580,"aMS",%progbits,1
 	.type	.L.managed_type_name.6580, %object
 .L.managed_type_name.6580:
-	.asciz	"Java.Nio.Channels.Spi.AbstractSelector, Mono.Android"
-	.size	.L.managed_type_name.6580, 53
+	.asciz	"Java.Nio.Channels.Spi.AbstractSelectorInvoker, Mono.Android"
+	.size	.L.managed_type_name.6580, 60
 	.section	.rodata.managed_type_name.6581,"aMS",%progbits,1
 	.type	.L.managed_type_name.6581, %object
 .L.managed_type_name.6581:
-	.asciz	"Java.Nio.Channels.Spi.AbstractSelectorInvoker, Mono.Android"
-	.size	.L.managed_type_name.6581, 60
+	.asciz	"Java.Nio.Channels.Spi.AsynchronousChannelProvider, Mono.Android"
+	.size	.L.managed_type_name.6581, 64
 	.section	.rodata.managed_type_name.6582,"aMS",%progbits,1
 	.type	.L.managed_type_name.6582, %object
 .L.managed_type_name.6582:
-	.asciz	"Java.Nio.Channels.Spi.AsynchronousChannelProvider, Mono.Android"
-	.size	.L.managed_type_name.6582, 64
+	.asciz	"Java.Nio.Channels.Spi.AsynchronousChannelProviderInvoker, Mono.Android"
+	.size	.L.managed_type_name.6582, 71
 	.section	.rodata.managed_type_name.6583,"aMS",%progbits,1
 	.type	.L.managed_type_name.6583, %object
 .L.managed_type_name.6583:
-	.asciz	"Java.Nio.Channels.Spi.AsynchronousChannelProviderInvoker, Mono.Android"
-	.size	.L.managed_type_name.6583, 71
+	.asciz	"Java.Nio.Channels.Spi.SelectorProvider, Mono.Android"
+	.size	.L.managed_type_name.6583, 53
 	.section	.rodata.managed_type_name.6584,"aMS",%progbits,1
 	.type	.L.managed_type_name.6584, %object
 .L.managed_type_name.6584:
-	.asciz	"Java.Nio.Channels.Spi.SelectorProvider, Mono.Android"
-	.size	.L.managed_type_name.6584, 53
+	.asciz	"Java.Nio.Channels.Spi.SelectorProviderInvoker, Mono.Android"
+	.size	.L.managed_type_name.6584, 60
 	.section	.rodata.managed_type_name.6585,"aMS",%progbits,1
 	.type	.L.managed_type_name.6585, %object
 .L.managed_type_name.6585:
-	.asciz	"Java.Nio.Channels.Spi.SelectorProviderInvoker, Mono.Android"
-	.size	.L.managed_type_name.6585, 60
+	.asciz	"Java.Nio.Channels.UnresolvedAddressException, Mono.Android"
+	.size	.L.managed_type_name.6585, 59
 	.section	.rodata.managed_type_name.6586,"aMS",%progbits,1
 	.type	.L.managed_type_name.6586, %object
 .L.managed_type_name.6586:
-	.asciz	"Java.Nio.Channels.UnresolvedAddressException, Mono.Android"
-	.size	.L.managed_type_name.6586, 59
+	.asciz	"Java.Nio.Channels.UnsupportedAddressTypeException, Mono.Android"
+	.size	.L.managed_type_name.6586, 64
 	.section	.rodata.managed_type_name.6587,"aMS",%progbits,1
 	.type	.L.managed_type_name.6587, %object
 .L.managed_type_name.6587:
-	.asciz	"Java.Nio.Channels.UnsupportedAddressTypeException, Mono.Android"
-	.size	.L.managed_type_name.6587, 64
+	.asciz	"Java.Nio.Channels.WritePendingException, Mono.Android"
+	.size	.L.managed_type_name.6587, 54
 	.section	.rodata.managed_type_name.6588,"aMS",%progbits,1
 	.type	.L.managed_type_name.6588, %object
 .L.managed_type_name.6588:
-	.asciz	"Java.Nio.Channels.WritePendingException, Mono.Android"
-	.size	.L.managed_type_name.6588, 54
+	.asciz	"Java.Nio.CharBuffer, Mono.Android"
+	.size	.L.managed_type_name.6588, 34
 	.section	.rodata.managed_type_name.6589,"aMS",%progbits,1
 	.type	.L.managed_type_name.6589, %object
 .L.managed_type_name.6589:
-	.asciz	"Java.Nio.CharBuffer, Mono.Android"
-	.size	.L.managed_type_name.6589, 34
+	.asciz	"Java.Nio.CharBufferInvoker, Mono.Android"
+	.size	.L.managed_type_name.6589, 41
 	.section	.rodata.managed_type_name.6590,"aMS",%progbits,1
 	.type	.L.managed_type_name.6590, %object
 .L.managed_type_name.6590:
-	.asciz	"Java.Nio.CharBufferInvoker, Mono.Android"
-	.size	.L.managed_type_name.6590, 41
+	.asciz	"Java.Nio.Charset.CharacterCodingException, Mono.Android"
+	.size	.L.managed_type_name.6590, 56
 	.section	.rodata.managed_type_name.6591,"aMS",%progbits,1
 	.type	.L.managed_type_name.6591, %object
 .L.managed_type_name.6591:
-	.asciz	"Java.Nio.Charset.CharacterCodingException, Mono.Android"
-	.size	.L.managed_type_name.6591, 56
+	.asciz	"Java.Nio.Charset.Charset, Mono.Android"
+	.size	.L.managed_type_name.6591, 39
 	.section	.rodata.managed_type_name.6592,"aMS",%progbits,1
 	.type	.L.managed_type_name.6592, %object
 .L.managed_type_name.6592:
-	.asciz	"Java.Nio.Charset.Charset, Mono.Android"
-	.size	.L.managed_type_name.6592, 39
+	.asciz	"Java.Nio.Charset.CharsetDecoder, Mono.Android"
+	.size	.L.managed_type_name.6592, 46
 	.section	.rodata.managed_type_name.6593,"aMS",%progbits,1
 	.type	.L.managed_type_name.6593, %object
 .L.managed_type_name.6593:
-	.asciz	"Java.Nio.Charset.CharsetDecoder, Mono.Android"
-	.size	.L.managed_type_name.6593, 46
+	.asciz	"Java.Nio.Charset.CharsetDecoderInvoker, Mono.Android"
+	.size	.L.managed_type_name.6593, 53
 	.section	.rodata.managed_type_name.6594,"aMS",%progbits,1
 	.type	.L.managed_type_name.6594, %object
 .L.managed_type_name.6594:
-	.asciz	"Java.Nio.Charset.CharsetDecoderInvoker, Mono.Android"
-	.size	.L.managed_type_name.6594, 53
+	.asciz	"Java.Nio.Charset.CharsetEncoder, Mono.Android"
+	.size	.L.managed_type_name.6594, 46
 	.section	.rodata.managed_type_name.6595,"aMS",%progbits,1
 	.type	.L.managed_type_name.6595, %object
 .L.managed_type_name.6595:
-	.asciz	"Java.Nio.Charset.CharsetEncoder, Mono.Android"
-	.size	.L.managed_type_name.6595, 46
+	.asciz	"Java.Nio.Charset.CharsetEncoderInvoker, Mono.Android"
+	.size	.L.managed_type_name.6595, 53
 	.section	.rodata.managed_type_name.6596,"aMS",%progbits,1
 	.type	.L.managed_type_name.6596, %object
 .L.managed_type_name.6596:
-	.asciz	"Java.Nio.Charset.CharsetEncoderInvoker, Mono.Android"
-	.size	.L.managed_type_name.6596, 53
+	.asciz	"Java.Nio.Charset.CharsetInvoker, Mono.Android"
+	.size	.L.managed_type_name.6596, 46
 	.section	.rodata.managed_type_name.6597,"aMS",%progbits,1
 	.type	.L.managed_type_name.6597, %object
 .L.managed_type_name.6597:
-	.asciz	"Java.Nio.Charset.CharsetInvoker, Mono.Android"
-	.size	.L.managed_type_name.6597, 46
+	.asciz	"Java.Nio.Charset.CoderMalfunctionError, Mono.Android"
+	.size	.L.managed_type_name.6597, 53
 	.section	.rodata.managed_type_name.6598,"aMS",%progbits,1
 	.type	.L.managed_type_name.6598, %object
 .L.managed_type_name.6598:
-	.asciz	"Java.Nio.Charset.CoderMalfunctionError, Mono.Android"
-	.size	.L.managed_type_name.6598, 53
+	.asciz	"Java.Nio.Charset.CoderResult, Mono.Android"
+	.size	.L.managed_type_name.6598, 43
 	.section	.rodata.managed_type_name.6599,"aMS",%progbits,1
 	.type	.L.managed_type_name.6599, %object
 .L.managed_type_name.6599:
-	.asciz	"Java.Nio.Charset.CoderResult, Mono.Android"
-	.size	.L.managed_type_name.6599, 43
+	.asciz	"Java.Nio.Charset.CodingErrorAction, Mono.Android"
+	.size	.L.managed_type_name.6599, 49
 	.section	.rodata.managed_type_name.6600,"aMS",%progbits,1
 	.type	.L.managed_type_name.6600, %object
 .L.managed_type_name.6600:
-	.asciz	"Java.Nio.Charset.CodingErrorAction, Mono.Android"
-	.size	.L.managed_type_name.6600, 49
+	.asciz	"Java.Nio.Charset.IllegalCharsetNameException, Mono.Android"
+	.size	.L.managed_type_name.6600, 59
 	.section	.rodata.managed_type_name.6601,"aMS",%progbits,1
 	.type	.L.managed_type_name.6601, %object
 .L.managed_type_name.6601:
-	.asciz	"Java.Nio.Charset.IllegalCharsetNameException, Mono.Android"
-	.size	.L.managed_type_name.6601, 59
+	.asciz	"Java.Nio.Charset.MalformedInputException, Mono.Android"
+	.size	.L.managed_type_name.6601, 55
 	.section	.rodata.managed_type_name.6602,"aMS",%progbits,1
 	.type	.L.managed_type_name.6602, %object
 .L.managed_type_name.6602:
-	.asciz	"Java.Nio.Charset.MalformedInputException, Mono.Android"
-	.size	.L.managed_type_name.6602, 55
+	.asciz	"Java.Nio.Charset.Spi.CharsetProvider, Mono.Android"
+	.size	.L.managed_type_name.6602, 51
 	.section	.rodata.managed_type_name.6603,"aMS",%progbits,1
 	.type	.L.managed_type_name.6603, %object
 .L.managed_type_name.6603:
-	.asciz	"Java.Nio.Charset.Spi.CharsetProvider, Mono.Android"
-	.size	.L.managed_type_name.6603, 51
+	.asciz	"Java.Nio.Charset.Spi.CharsetProviderInvoker, Mono.Android"
+	.size	.L.managed_type_name.6603, 58
 	.section	.rodata.managed_type_name.6604,"aMS",%progbits,1
 	.type	.L.managed_type_name.6604, %object
 .L.managed_type_name.6604:
-	.asciz	"Java.Nio.Charset.Spi.CharsetProviderInvoker, Mono.Android"
-	.size	.L.managed_type_name.6604, 58
+	.asciz	"Java.Nio.Charset.StandardCharsets, Mono.Android"
+	.size	.L.managed_type_name.6604, 48
 	.section	.rodata.managed_type_name.6605,"aMS",%progbits,1
 	.type	.L.managed_type_name.6605, %object
 .L.managed_type_name.6605:
-	.asciz	"Java.Nio.Charset.StandardCharsets, Mono.Android"
-	.size	.L.managed_type_name.6605, 48
+	.asciz	"Java.Nio.Charset.UnmappableCharacterException, Mono.Android"
+	.size	.L.managed_type_name.6605, 60
 	.section	.rodata.managed_type_name.6606,"aMS",%progbits,1
 	.type	.L.managed_type_name.6606, %object
 .L.managed_type_name.6606:
-	.asciz	"Java.Nio.Charset.UnmappableCharacterException, Mono.Android"
-	.size	.L.managed_type_name.6606, 60
+	.asciz	"Java.Nio.Charset.UnsupportedCharsetException, Mono.Android"
+	.size	.L.managed_type_name.6606, 59
 	.section	.rodata.managed_type_name.6607,"aMS",%progbits,1
 	.type	.L.managed_type_name.6607, %object
 .L.managed_type_name.6607:
-	.asciz	"Java.Nio.Charset.UnsupportedCharsetException, Mono.Android"
-	.size	.L.managed_type_name.6607, 59
+	.asciz	"Java.Nio.DoubleBuffer, Mono.Android"
+	.size	.L.managed_type_name.6607, 36
 	.section	.rodata.managed_type_name.6608,"aMS",%progbits,1
 	.type	.L.managed_type_name.6608, %object
 .L.managed_type_name.6608:
-	.asciz	"Java.Nio.DoubleBuffer, Mono.Android"
-	.size	.L.managed_type_name.6608, 36
+	.asciz	"Java.Nio.DoubleBufferInvoker, Mono.Android"
+	.size	.L.managed_type_name.6608, 43
 	.section	.rodata.managed_type_name.6609,"aMS",%progbits,1
 	.type	.L.managed_type_name.6609, %object
 .L.managed_type_name.6609:
-	.asciz	"Java.Nio.DoubleBufferInvoker, Mono.Android"
-	.size	.L.managed_type_name.6609, 43
+	.asciz	"Java.Nio.FileNio.AccessDeniedException, Mono.Android"
+	.size	.L.managed_type_name.6609, 53
 	.section	.rodata.managed_type_name.6610,"aMS",%progbits,1
 	.type	.L.managed_type_name.6610, %object
 .L.managed_type_name.6610:
-	.asciz	"Java.Nio.FileNio.AccessDeniedException, Mono.Android"
-	.size	.L.managed_type_name.6610, 53
+	.asciz	"Java.Nio.FileNio.AccessMode, Mono.Android"
+	.size	.L.managed_type_name.6610, 42
 	.section	.rodata.managed_type_name.6611,"aMS",%progbits,1
 	.type	.L.managed_type_name.6611, %object
 .L.managed_type_name.6611:
-	.asciz	"Java.Nio.FileNio.AccessMode, Mono.Android"
-	.size	.L.managed_type_name.6611, 42
+	.asciz	"Java.Nio.FileNio.AtomicMoveNotSupportedException, Mono.Android"
+	.size	.L.managed_type_name.6611, 63
 	.section	.rodata.managed_type_name.6612,"aMS",%progbits,1
 	.type	.L.managed_type_name.6612, %object
 .L.managed_type_name.6612:
-	.asciz	"Java.Nio.FileNio.AtomicMoveNotSupportedException, Mono.Android"
-	.size	.L.managed_type_name.6612, 63
+	.asciz	"Java.Nio.FileNio.Attributes.AclEntry+Builder, Mono.Android"
+	.size	.L.managed_type_name.6612, 59
 	.section	.rodata.managed_type_name.6613,"aMS",%progbits,1
 	.type	.L.managed_type_name.6613, %object
 .L.managed_type_name.6613:
-	.asciz	"Java.Nio.FileNio.Attributes.AclEntry+Builder, Mono.Android"
-	.size	.L.managed_type_name.6613, 59
+	.asciz	"Java.Nio.FileNio.Attributes.AclEntry, Mono.Android"
+	.size	.L.managed_type_name.6613, 51
 	.section	.rodata.managed_type_name.6614,"aMS",%progbits,1
 	.type	.L.managed_type_name.6614, %object
 .L.managed_type_name.6614:
-	.asciz	"Java.Nio.FileNio.Attributes.AclEntry, Mono.Android"
-	.size	.L.managed_type_name.6614, 51
+	.asciz	"Java.Nio.FileNio.Attributes.AclEntryFlag, Mono.Android"
+	.size	.L.managed_type_name.6614, 55
 	.section	.rodata.managed_type_name.6615,"aMS",%progbits,1
 	.type	.L.managed_type_name.6615, %object
 .L.managed_type_name.6615:
-	.asciz	"Java.Nio.FileNio.Attributes.AclEntryFlag, Mono.Android"
-	.size	.L.managed_type_name.6615, 55
+	.asciz	"Java.Nio.FileNio.Attributes.AclEntryPermission, Mono.Android"
+	.size	.L.managed_type_name.6615, 61
 	.section	.rodata.managed_type_name.6616,"aMS",%progbits,1
 	.type	.L.managed_type_name.6616, %object
 .L.managed_type_name.6616:
-	.asciz	"Java.Nio.FileNio.Attributes.AclEntryPermission, Mono.Android"
-	.size	.L.managed_type_name.6616, 61
+	.asciz	"Java.Nio.FileNio.Attributes.AclEntryType, Mono.Android"
+	.size	.L.managed_type_name.6616, 55
 	.section	.rodata.managed_type_name.6617,"aMS",%progbits,1
 	.type	.L.managed_type_name.6617, %object
 .L.managed_type_name.6617:
-	.asciz	"Java.Nio.FileNio.Attributes.AclEntryType, Mono.Android"
-	.size	.L.managed_type_name.6617, 55
+	.asciz	"Java.Nio.FileNio.Attributes.FileTime, Mono.Android"
+	.size	.L.managed_type_name.6617, 51
 	.section	.rodata.managed_type_name.6618,"aMS",%progbits,1
 	.type	.L.managed_type_name.6618, %object
 .L.managed_type_name.6618:
-	.asciz	"Java.Nio.FileNio.Attributes.FileTime, Mono.Android"
-	.size	.L.managed_type_name.6618, 51
+	.asciz	"Java.Nio.FileNio.Attributes.IAclFileAttributeViewInvoker, Mono.Android"
+	.size	.L.managed_type_name.6618, 71
 	.section	.rodata.managed_type_name.6619,"aMS",%progbits,1
 	.type	.L.managed_type_name.6619, %object
 .L.managed_type_name.6619:
-	.asciz	"Java.Nio.FileNio.Attributes.IAclFileAttributeViewInvoker, Mono.Android"
-	.size	.L.managed_type_name.6619, 71
+	.asciz	"Java.Nio.FileNio.Attributes.IAttributeViewInvoker, Mono.Android"
+	.size	.L.managed_type_name.6619, 64
 	.section	.rodata.managed_type_name.6620,"aMS",%progbits,1
 	.type	.L.managed_type_name.6620, %object
 .L.managed_type_name.6620:
-	.asciz	"Java.Nio.FileNio.Attributes.IAttributeViewInvoker, Mono.Android"
-	.size	.L.managed_type_name.6620, 64
+	.asciz	"Java.Nio.FileNio.Attributes.IBasicFileAttributeViewInvoker, Mono.Android"
+	.size	.L.managed_type_name.6620, 73
 	.section	.rodata.managed_type_name.6621,"aMS",%progbits,1
 	.type	.L.managed_type_name.6621, %object
 .L.managed_type_name.6621:
-	.asciz	"Java.Nio.FileNio.Attributes.IBasicFileAttributeViewInvoker, Mono.Android"
-	.size	.L.managed_type_name.6621, 73
+	.asciz	"Java.Nio.FileNio.Attributes.IBasicFileAttributesInvoker, Mono.Android"
+	.size	.L.managed_type_name.6621, 70
 	.section	.rodata.managed_type_name.6622,"aMS",%progbits,1
 	.type	.L.managed_type_name.6622, %object
 .L.managed_type_name.6622:
-	.asciz	"Java.Nio.FileNio.Attributes.IBasicFileAttributesInvoker, Mono.Android"
-	.size	.L.managed_type_name.6622, 70
+	.asciz	"Java.Nio.FileNio.Attributes.IDosFileAttributeViewInvoker, Mono.Android"
+	.size	.L.managed_type_name.6622, 71
 	.section	.rodata.managed_type_name.6623,"aMS",%progbits,1
 	.type	.L.managed_type_name.6623, %object
 .L.managed_type_name.6623:
-	.asciz	"Java.Nio.FileNio.Attributes.IDosFileAttributeViewInvoker, Mono.Android"
-	.size	.L.managed_type_name.6623, 71
+	.asciz	"Java.Nio.FileNio.Attributes.IDosFileAttributesInvoker, Mono.Android"
+	.size	.L.managed_type_name.6623, 68
 	.section	.rodata.managed_type_name.6624,"aMS",%progbits,1
 	.type	.L.managed_type_name.6624, %object
 .L.managed_type_name.6624:
-	.asciz	"Java.Nio.FileNio.Attributes.IDosFileAttributesInvoker, Mono.Android"
-	.size	.L.managed_type_name.6624, 68
+	.asciz	"Java.Nio.FileNio.Attributes.IFileAttributeInvoker, Mono.Android"
+	.size	.L.managed_type_name.6624, 64
 	.section	.rodata.managed_type_name.6625,"aMS",%progbits,1
 	.type	.L.managed_type_name.6625, %object
 .L.managed_type_name.6625:
-	.asciz	"Java.Nio.FileNio.Attributes.IFileAttributeInvoker, Mono.Android"
-	.size	.L.managed_type_name.6625, 64
+	.asciz	"Java.Nio.FileNio.Attributes.IFileAttributeViewInvoker, Mono.Android"
+	.size	.L.managed_type_name.6625, 68
 	.section	.rodata.managed_type_name.6626,"aMS",%progbits,1
 	.type	.L.managed_type_name.6626, %object
 .L.managed_type_name.6626:
-	.asciz	"Java.Nio.FileNio.Attributes.IFileAttributeViewInvoker, Mono.Android"
-	.size	.L.managed_type_name.6626, 68
+	.asciz	"Java.Nio.FileNio.Attributes.IFileOwnerAttributeViewInvoker, Mono.Android"
+	.size	.L.managed_type_name.6626, 73
 	.section	.rodata.managed_type_name.6627,"aMS",%progbits,1
 	.type	.L.managed_type_name.6627, %object
 .L.managed_type_name.6627:
-	.asciz	"Java.Nio.FileNio.Attributes.IFileOwnerAttributeViewInvoker, Mono.Android"
+	.asciz	"Java.Nio.FileNio.Attributes.IFileStoreAttributeViewInvoker, Mono.Android"
 	.size	.L.managed_type_name.6627, 73
 	.section	.rodata.managed_type_name.6628,"aMS",%progbits,1
 	.type	.L.managed_type_name.6628, %object
 .L.managed_type_name.6628:
-	.asciz	"Java.Nio.FileNio.Attributes.IFileStoreAttributeViewInvoker, Mono.Android"
-	.size	.L.managed_type_name.6628, 73
+	.asciz	"Java.Nio.FileNio.Attributes.IGroupPrincipalInvoker, Mono.Android"
+	.size	.L.managed_type_name.6628, 65
 	.section	.rodata.managed_type_name.6629,"aMS",%progbits,1
 	.type	.L.managed_type_name.6629, %object
 .L.managed_type_name.6629:
-	.asciz	"Java.Nio.FileNio.Attributes.IGroupPrincipalInvoker, Mono.Android"
-	.size	.L.managed_type_name.6629, 65
+	.asciz	"Java.Nio.FileNio.Attributes.IPosixFileAttributeViewInvoker, Mono.Android"
+	.size	.L.managed_type_name.6629, 73
 	.section	.rodata.managed_type_name.6630,"aMS",%progbits,1
 	.type	.L.managed_type_name.6630, %object
 .L.managed_type_name.6630:
-	.asciz	"Java.Nio.FileNio.Attributes.IPosixFileAttributeViewInvoker, Mono.Android"
-	.size	.L.managed_type_name.6630, 73
+	.asciz	"Java.Nio.FileNio.Attributes.IPosixFileAttributesInvoker, Mono.Android"
+	.size	.L.managed_type_name.6630, 70
 	.section	.rodata.managed_type_name.6631,"aMS",%progbits,1
 	.type	.L.managed_type_name.6631, %object
 .L.managed_type_name.6631:
-	.asciz	"Java.Nio.FileNio.Attributes.IPosixFileAttributesInvoker, Mono.Android"
-	.size	.L.managed_type_name.6631, 70
+	.asciz	"Java.Nio.FileNio.Attributes.IUserDefinedFileAttributeViewInvoker, Mono.Android"
+	.size	.L.managed_type_name.6631, 79
 	.section	.rodata.managed_type_name.6632,"aMS",%progbits,1
 	.type	.L.managed_type_name.6632, %object
 .L.managed_type_name.6632:
-	.asciz	"Java.Nio.FileNio.Attributes.IUserDefinedFileAttributeViewInvoker, Mono.Android"
-	.size	.L.managed_type_name.6632, 79
+	.asciz	"Java.Nio.FileNio.Attributes.IUserPrincipalInvoker, Mono.Android"
+	.size	.L.managed_type_name.6632, 64
 	.section	.rodata.managed_type_name.6633,"aMS",%progbits,1
 	.type	.L.managed_type_name.6633, %object
 .L.managed_type_name.6633:
-	.asciz	"Java.Nio.FileNio.Attributes.IUserPrincipalInvoker, Mono.Android"
-	.size	.L.managed_type_name.6633, 64
+	.asciz	"Java.Nio.FileNio.Attributes.PosixFilePermission, Mono.Android"
+	.size	.L.managed_type_name.6633, 62
 	.section	.rodata.managed_type_name.6634,"aMS",%progbits,1
 	.type	.L.managed_type_name.6634, %object
 .L.managed_type_name.6634:
-	.asciz	"Java.Nio.FileNio.Attributes.PosixFilePermission, Mono.Android"
-	.size	.L.managed_type_name.6634, 62
+	.asciz	"Java.Nio.FileNio.Attributes.PosixFilePermissions, Mono.Android"
+	.size	.L.managed_type_name.6634, 63
 	.section	.rodata.managed_type_name.6635,"aMS",%progbits,1
 	.type	.L.managed_type_name.6635, %object
 .L.managed_type_name.6635:
-	.asciz	"Java.Nio.FileNio.Attributes.PosixFilePermissions, Mono.Android"
-	.size	.L.managed_type_name.6635, 63
+	.asciz	"Java.Nio.FileNio.Attributes.UserPrincipalLookupService, Mono.Android"
+	.size	.L.managed_type_name.6635, 69
 	.section	.rodata.managed_type_name.6636,"aMS",%progbits,1
 	.type	.L.managed_type_name.6636, %object
 .L.managed_type_name.6636:
-	.asciz	"Java.Nio.FileNio.Attributes.UserPrincipalLookupService, Mono.Android"
-	.size	.L.managed_type_name.6636, 69
+	.asciz	"Java.Nio.FileNio.Attributes.UserPrincipalLookupServiceInvoker, Mono.Android"
+	.size	.L.managed_type_name.6636, 76
 	.section	.rodata.managed_type_name.6637,"aMS",%progbits,1
 	.type	.L.managed_type_name.6637, %object
 .L.managed_type_name.6637:
-	.asciz	"Java.Nio.FileNio.Attributes.UserPrincipalLookupServiceInvoker, Mono.Android"
-	.size	.L.managed_type_name.6637, 76
+	.asciz	"Java.Nio.FileNio.Attributes.UserPrincipalNotFoundException, Mono.Android"
+	.size	.L.managed_type_name.6637, 73
 	.section	.rodata.managed_type_name.6638,"aMS",%progbits,1
 	.type	.L.managed_type_name.6638, %object
 .L.managed_type_name.6638:
-	.asciz	"Java.Nio.FileNio.Attributes.UserPrincipalNotFoundException, Mono.Android"
-	.size	.L.managed_type_name.6638, 73
+	.asciz	"Java.Nio.FileNio.ClosedDirectoryStreamException, Mono.Android"
+	.size	.L.managed_type_name.6638, 62
 	.section	.rodata.managed_type_name.6639,"aMS",%progbits,1
 	.type	.L.managed_type_name.6639, %object
 .L.managed_type_name.6639:
-	.asciz	"Java.Nio.FileNio.ClosedDirectoryStreamException, Mono.Android"
-	.size	.L.managed_type_name.6639, 62
+	.asciz	"Java.Nio.FileNio.ClosedFileSystemException, Mono.Android"
+	.size	.L.managed_type_name.6639, 57
 	.section	.rodata.managed_type_name.6640,"aMS",%progbits,1
 	.type	.L.managed_type_name.6640, %object
 .L.managed_type_name.6640:
-	.asciz	"Java.Nio.FileNio.ClosedFileSystemException, Mono.Android"
-	.size	.L.managed_type_name.6640, 57
+	.asciz	"Java.Nio.FileNio.ClosedWatchServiceException, Mono.Android"
+	.size	.L.managed_type_name.6640, 59
 	.section	.rodata.managed_type_name.6641,"aMS",%progbits,1
 	.type	.L.managed_type_name.6641, %object
 .L.managed_type_name.6641:
-	.asciz	"Java.Nio.FileNio.ClosedWatchServiceException, Mono.Android"
-	.size	.L.managed_type_name.6641, 59
+	.asciz	"Java.Nio.FileNio.DirectoryIteratorException, Mono.Android"
+	.size	.L.managed_type_name.6641, 58
 	.section	.rodata.managed_type_name.6642,"aMS",%progbits,1
 	.type	.L.managed_type_name.6642, %object
 .L.managed_type_name.6642:
-	.asciz	"Java.Nio.FileNio.DirectoryIteratorException, Mono.Android"
+	.asciz	"Java.Nio.FileNio.DirectoryNotEmptyException, Mono.Android"
 	.size	.L.managed_type_name.6642, 58
 	.section	.rodata.managed_type_name.6643,"aMS",%progbits,1
 	.type	.L.managed_type_name.6643, %object
 .L.managed_type_name.6643:
-	.asciz	"Java.Nio.FileNio.DirectoryNotEmptyException, Mono.Android"
+	.asciz	"Java.Nio.FileNio.FileAlreadyExistsException, Mono.Android"
 	.size	.L.managed_type_name.6643, 58
 	.section	.rodata.managed_type_name.6644,"aMS",%progbits,1
 	.type	.L.managed_type_name.6644, %object
 .L.managed_type_name.6644:
-	.asciz	"Java.Nio.FileNio.FileAlreadyExistsException, Mono.Android"
-	.size	.L.managed_type_name.6644, 58
+	.asciz	"Java.Nio.FileNio.FileStore, Mono.Android"
+	.size	.L.managed_type_name.6644, 41
 	.section	.rodata.managed_type_name.6645,"aMS",%progbits,1
 	.type	.L.managed_type_name.6645, %object
 .L.managed_type_name.6645:
-	.asciz	"Java.Nio.FileNio.FileStore, Mono.Android"
-	.size	.L.managed_type_name.6645, 41
+	.asciz	"Java.Nio.FileNio.FileStoreInvoker, Mono.Android"
+	.size	.L.managed_type_name.6645, 48
 	.section	.rodata.managed_type_name.6646,"aMS",%progbits,1
 	.type	.L.managed_type_name.6646, %object
 .L.managed_type_name.6646:
-	.asciz	"Java.Nio.FileNio.FileStoreInvoker, Mono.Android"
-	.size	.L.managed_type_name.6646, 48
+	.asciz	"Java.Nio.FileNio.FileSystem, Mono.Android"
+	.size	.L.managed_type_name.6646, 42
 	.section	.rodata.managed_type_name.6647,"aMS",%progbits,1
 	.type	.L.managed_type_name.6647, %object
 .L.managed_type_name.6647:
-	.asciz	"Java.Nio.FileNio.FileSystem, Mono.Android"
-	.size	.L.managed_type_name.6647, 42
+	.asciz	"Java.Nio.FileNio.FileSystemAlreadyExistsException, Mono.Android"
+	.size	.L.managed_type_name.6647, 64
 	.section	.rodata.managed_type_name.6648,"aMS",%progbits,1
 	.type	.L.managed_type_name.6648, %object
 .L.managed_type_name.6648:
-	.asciz	"Java.Nio.FileNio.FileSystemAlreadyExistsException, Mono.Android"
-	.size	.L.managed_type_name.6648, 64
+	.asciz	"Java.Nio.FileNio.FileSystemException, Mono.Android"
+	.size	.L.managed_type_name.6648, 51
 	.section	.rodata.managed_type_name.6649,"aMS",%progbits,1
 	.type	.L.managed_type_name.6649, %object
 .L.managed_type_name.6649:
-	.asciz	"Java.Nio.FileNio.FileSystemException, Mono.Android"
-	.size	.L.managed_type_name.6649, 51
+	.asciz	"Java.Nio.FileNio.FileSystemInvoker, Mono.Android"
+	.size	.L.managed_type_name.6649, 49
 	.section	.rodata.managed_type_name.6650,"aMS",%progbits,1
 	.type	.L.managed_type_name.6650, %object
 .L.managed_type_name.6650:
-	.asciz	"Java.Nio.FileNio.FileSystemInvoker, Mono.Android"
-	.size	.L.managed_type_name.6650, 49
+	.asciz	"Java.Nio.FileNio.FileSystemLoopException, Mono.Android"
+	.size	.L.managed_type_name.6650, 55
 	.section	.rodata.managed_type_name.6651,"aMS",%progbits,1
 	.type	.L.managed_type_name.6651, %object
 .L.managed_type_name.6651:
-	.asciz	"Java.Nio.FileNio.FileSystemLoopException, Mono.Android"
-	.size	.L.managed_type_name.6651, 55
+	.asciz	"Java.Nio.FileNio.FileSystemNotFoundException, Mono.Android"
+	.size	.L.managed_type_name.6651, 59
 	.section	.rodata.managed_type_name.6652,"aMS",%progbits,1
 	.type	.L.managed_type_name.6652, %object
 .L.managed_type_name.6652:
-	.asciz	"Java.Nio.FileNio.FileSystemNotFoundException, Mono.Android"
-	.size	.L.managed_type_name.6652, 59
+	.asciz	"Java.Nio.FileNio.FileSystems, Mono.Android"
+	.size	.L.managed_type_name.6652, 43
 	.section	.rodata.managed_type_name.6653,"aMS",%progbits,1
 	.type	.L.managed_type_name.6653, %object
 .L.managed_type_name.6653:
-	.asciz	"Java.Nio.FileNio.FileSystems, Mono.Android"
-	.size	.L.managed_type_name.6653, 43
+	.asciz	"Java.Nio.FileNio.FileVisitOption, Mono.Android"
+	.size	.L.managed_type_name.6653, 47
 	.section	.rodata.managed_type_name.6654,"aMS",%progbits,1
 	.type	.L.managed_type_name.6654, %object
 .L.managed_type_name.6654:
-	.asciz	"Java.Nio.FileNio.FileVisitOption, Mono.Android"
+	.asciz	"Java.Nio.FileNio.FileVisitResult, Mono.Android"
 	.size	.L.managed_type_name.6654, 47
 	.section	.rodata.managed_type_name.6655,"aMS",%progbits,1
 	.type	.L.managed_type_name.6655, %object
 .L.managed_type_name.6655:
-	.asciz	"Java.Nio.FileNio.FileVisitResult, Mono.Android"
-	.size	.L.managed_type_name.6655, 47
+	.asciz	"Java.Nio.FileNio.Files, Mono.Android"
+	.size	.L.managed_type_name.6655, 37
 	.section	.rodata.managed_type_name.6656,"aMS",%progbits,1
 	.type	.L.managed_type_name.6656, %object
 .L.managed_type_name.6656:
-	.asciz	"Java.Nio.FileNio.Files, Mono.Android"
-	.size	.L.managed_type_name.6656, 37
+	.asciz	"Java.Nio.FileNio.ICopyOptionInvoker, Mono.Android"
+	.size	.L.managed_type_name.6656, 50
 	.section	.rodata.managed_type_name.6657,"aMS",%progbits,1
 	.type	.L.managed_type_name.6657, %object
 .L.managed_type_name.6657:
-	.asciz	"Java.Nio.FileNio.ICopyOptionInvoker, Mono.Android"
-	.size	.L.managed_type_name.6657, 50
+	.asciz	"Java.Nio.FileNio.IDirectoryStreamFilterInvoker, Mono.Android"
+	.size	.L.managed_type_name.6657, 61
 	.section	.rodata.managed_type_name.6658,"aMS",%progbits,1
 	.type	.L.managed_type_name.6658, %object
 .L.managed_type_name.6658:
-	.asciz	"Java.Nio.FileNio.IDirectoryStreamFilterInvoker, Mono.Android"
-	.size	.L.managed_type_name.6658, 61
+	.asciz	"Java.Nio.FileNio.IDirectoryStreamInvoker, Mono.Android"
+	.size	.L.managed_type_name.6658, 55
 	.section	.rodata.managed_type_name.6659,"aMS",%progbits,1
 	.type	.L.managed_type_name.6659, %object
 .L.managed_type_name.6659:
-	.asciz	"Java.Nio.FileNio.IDirectoryStreamInvoker, Mono.Android"
-	.size	.L.managed_type_name.6659, 55
+	.asciz	"Java.Nio.FileNio.IFileVisitorInvoker, Mono.Android"
+	.size	.L.managed_type_name.6659, 51
 	.section	.rodata.managed_type_name.6660,"aMS",%progbits,1
 	.type	.L.managed_type_name.6660, %object
 .L.managed_type_name.6660:
-	.asciz	"Java.Nio.FileNio.IFileVisitorInvoker, Mono.Android"
-	.size	.L.managed_type_name.6660, 51
+	.asciz	"Java.Nio.FileNio.IOpenOptionInvoker, Mono.Android"
+	.size	.L.managed_type_name.6660, 50
 	.section	.rodata.managed_type_name.6661,"aMS",%progbits,1
 	.type	.L.managed_type_name.6661, %object
 .L.managed_type_name.6661:
-	.asciz	"Java.Nio.FileNio.IOpenOptionInvoker, Mono.Android"
-	.size	.L.managed_type_name.6661, 50
+	.asciz	"Java.Nio.FileNio.IPathInvoker, Mono.Android"
+	.size	.L.managed_type_name.6661, 44
 	.section	.rodata.managed_type_name.6662,"aMS",%progbits,1
 	.type	.L.managed_type_name.6662, %object
 .L.managed_type_name.6662:
-	.asciz	"Java.Nio.FileNio.IPathInvoker, Mono.Android"
-	.size	.L.managed_type_name.6662, 44
+	.asciz	"Java.Nio.FileNio.IPathMatcherInvoker, Mono.Android"
+	.size	.L.managed_type_name.6662, 51
 	.section	.rodata.managed_type_name.6663,"aMS",%progbits,1
 	.type	.L.managed_type_name.6663, %object
 .L.managed_type_name.6663:
-	.asciz	"Java.Nio.FileNio.IPathMatcherInvoker, Mono.Android"
-	.size	.L.managed_type_name.6663, 51
+	.asciz	"Java.Nio.FileNio.ISecureDirectoryStreamInvoker, Mono.Android"
+	.size	.L.managed_type_name.6663, 61
 	.section	.rodata.managed_type_name.6664,"aMS",%progbits,1
 	.type	.L.managed_type_name.6664, %object
 .L.managed_type_name.6664:
-	.asciz	"Java.Nio.FileNio.ISecureDirectoryStreamInvoker, Mono.Android"
-	.size	.L.managed_type_name.6664, 61
+	.asciz	"Java.Nio.FileNio.IWatchEventInvoker, Mono.Android"
+	.size	.L.managed_type_name.6664, 50
 	.section	.rodata.managed_type_name.6665,"aMS",%progbits,1
 	.type	.L.managed_type_name.6665, %object
 .L.managed_type_name.6665:
-	.asciz	"Java.Nio.FileNio.IWatchEventInvoker, Mono.Android"
-	.size	.L.managed_type_name.6665, 50
+	.asciz	"Java.Nio.FileNio.IWatchEventKindInvoker, Mono.Android"
+	.size	.L.managed_type_name.6665, 54
 	.section	.rodata.managed_type_name.6666,"aMS",%progbits,1
 	.type	.L.managed_type_name.6666, %object
 .L.managed_type_name.6666:
-	.asciz	"Java.Nio.FileNio.IWatchEventKindInvoker, Mono.Android"
-	.size	.L.managed_type_name.6666, 54
+	.asciz	"Java.Nio.FileNio.IWatchEventModifierInvoker, Mono.Android"
+	.size	.L.managed_type_name.6666, 58
 	.section	.rodata.managed_type_name.6667,"aMS",%progbits,1
 	.type	.L.managed_type_name.6667, %object
 .L.managed_type_name.6667:
-	.asciz	"Java.Nio.FileNio.IWatchEventModifierInvoker, Mono.Android"
-	.size	.L.managed_type_name.6667, 58
+	.asciz	"Java.Nio.FileNio.IWatchKeyInvoker, Mono.Android"
+	.size	.L.managed_type_name.6667, 48
 	.section	.rodata.managed_type_name.6668,"aMS",%progbits,1
 	.type	.L.managed_type_name.6668, %object
 .L.managed_type_name.6668:
-	.asciz	"Java.Nio.FileNio.IWatchKeyInvoker, Mono.Android"
-	.size	.L.managed_type_name.6668, 48
+	.asciz	"Java.Nio.FileNio.IWatchServiceInvoker, Mono.Android"
+	.size	.L.managed_type_name.6668, 52
 	.section	.rodata.managed_type_name.6669,"aMS",%progbits,1
 	.type	.L.managed_type_name.6669, %object
 .L.managed_type_name.6669:
-	.asciz	"Java.Nio.FileNio.IWatchServiceInvoker, Mono.Android"
-	.size	.L.managed_type_name.6669, 52
+	.asciz	"Java.Nio.FileNio.IWatchableInvoker, Mono.Android"
+	.size	.L.managed_type_name.6669, 49
 	.section	.rodata.managed_type_name.6670,"aMS",%progbits,1
 	.type	.L.managed_type_name.6670, %object
 .L.managed_type_name.6670:
-	.asciz	"Java.Nio.FileNio.IWatchableInvoker, Mono.Android"
-	.size	.L.managed_type_name.6670, 49
+	.asciz	"Java.Nio.FileNio.InvalidPathException, Mono.Android"
+	.size	.L.managed_type_name.6670, 52
 	.section	.rodata.managed_type_name.6671,"aMS",%progbits,1
 	.type	.L.managed_type_name.6671, %object
 .L.managed_type_name.6671:
-	.asciz	"Java.Nio.FileNio.InvalidPathException, Mono.Android"
-	.size	.L.managed_type_name.6671, 52
+	.asciz	"Java.Nio.FileNio.LinkOption, Mono.Android"
+	.size	.L.managed_type_name.6671, 42
 	.section	.rodata.managed_type_name.6672,"aMS",%progbits,1
 	.type	.L.managed_type_name.6672, %object
 .L.managed_type_name.6672:
-	.asciz	"Java.Nio.FileNio.LinkOption, Mono.Android"
-	.size	.L.managed_type_name.6672, 42
+	.asciz	"Java.Nio.FileNio.LinkPermission, Mono.Android"
+	.size	.L.managed_type_name.6672, 46
 	.section	.rodata.managed_type_name.6673,"aMS",%progbits,1
 	.type	.L.managed_type_name.6673, %object
 .L.managed_type_name.6673:
-	.asciz	"Java.Nio.FileNio.LinkPermission, Mono.Android"
-	.size	.L.managed_type_name.6673, 46
+	.asciz	"Java.Nio.FileNio.NoSuchFileException, Mono.Android"
+	.size	.L.managed_type_name.6673, 51
 	.section	.rodata.managed_type_name.6674,"aMS",%progbits,1
 	.type	.L.managed_type_name.6674, %object
 .L.managed_type_name.6674:
-	.asciz	"Java.Nio.FileNio.NoSuchFileException, Mono.Android"
-	.size	.L.managed_type_name.6674, 51
+	.asciz	"Java.Nio.FileNio.NotDirectoryException, Mono.Android"
+	.size	.L.managed_type_name.6674, 53
 	.section	.rodata.managed_type_name.6675,"aMS",%progbits,1
 	.type	.L.managed_type_name.6675, %object
 .L.managed_type_name.6675:
-	.asciz	"Java.Nio.FileNio.NotDirectoryException, Mono.Android"
-	.size	.L.managed_type_name.6675, 53
+	.asciz	"Java.Nio.FileNio.NotLinkException, Mono.Android"
+	.size	.L.managed_type_name.6675, 48
 	.section	.rodata.managed_type_name.6676,"aMS",%progbits,1
 	.type	.L.managed_type_name.6676, %object
 .L.managed_type_name.6676:
-	.asciz	"Java.Nio.FileNio.NotLinkException, Mono.Android"
-	.size	.L.managed_type_name.6676, 48
+	.asciz	"Java.Nio.FileNio.Paths, Mono.Android"
+	.size	.L.managed_type_name.6676, 37
 	.section	.rodata.managed_type_name.6677,"aMS",%progbits,1
 	.type	.L.managed_type_name.6677, %object
 .L.managed_type_name.6677:
-	.asciz	"Java.Nio.FileNio.Paths, Mono.Android"
-	.size	.L.managed_type_name.6677, 37
+	.asciz	"Java.Nio.FileNio.ProviderMismatchException, Mono.Android"
+	.size	.L.managed_type_name.6677, 57
 	.section	.rodata.managed_type_name.6678,"aMS",%progbits,1
 	.type	.L.managed_type_name.6678, %object
 .L.managed_type_name.6678:
-	.asciz	"Java.Nio.FileNio.ProviderMismatchException, Mono.Android"
+	.asciz	"Java.Nio.FileNio.ProviderNotFoundException, Mono.Android"
 	.size	.L.managed_type_name.6678, 57
 	.section	.rodata.managed_type_name.6679,"aMS",%progbits,1
 	.type	.L.managed_type_name.6679, %object
 .L.managed_type_name.6679:
-	.asciz	"Java.Nio.FileNio.ProviderNotFoundException, Mono.Android"
-	.size	.L.managed_type_name.6679, 57
+	.asciz	"Java.Nio.FileNio.ReadOnlyFileSystemException, Mono.Android"
+	.size	.L.managed_type_name.6679, 59
 	.section	.rodata.managed_type_name.6680,"aMS",%progbits,1
 	.type	.L.managed_type_name.6680, %object
 .L.managed_type_name.6680:
-	.asciz	"Java.Nio.FileNio.ReadOnlyFileSystemException, Mono.Android"
-	.size	.L.managed_type_name.6680, 59
+	.asciz	"Java.Nio.FileNio.SimpleFileVisitor, Mono.Android"
+	.size	.L.managed_type_name.6680, 49
 	.section	.rodata.managed_type_name.6681,"aMS",%progbits,1
 	.type	.L.managed_type_name.6681, %object
 .L.managed_type_name.6681:
-	.asciz	"Java.Nio.FileNio.SimpleFileVisitor, Mono.Android"
-	.size	.L.managed_type_name.6681, 49
+	.asciz	"Java.Nio.FileNio.Spi.FileSystemProvider, Mono.Android"
+	.size	.L.managed_type_name.6681, 54
 	.section	.rodata.managed_type_name.6682,"aMS",%progbits,1
 	.type	.L.managed_type_name.6682, %object
 .L.managed_type_name.6682:
-	.asciz	"Java.Nio.FileNio.Spi.FileSystemProvider, Mono.Android"
-	.size	.L.managed_type_name.6682, 54
+	.asciz	"Java.Nio.FileNio.Spi.FileSystemProviderInvoker, Mono.Android"
+	.size	.L.managed_type_name.6682, 61
 	.section	.rodata.managed_type_name.6683,"aMS",%progbits,1
 	.type	.L.managed_type_name.6683, %object
 .L.managed_type_name.6683:
-	.asciz	"Java.Nio.FileNio.Spi.FileSystemProviderInvoker, Mono.Android"
-	.size	.L.managed_type_name.6683, 61
+	.asciz	"Java.Nio.FileNio.Spi.FileTypeDetector, Mono.Android"
+	.size	.L.managed_type_name.6683, 52
 	.section	.rodata.managed_type_name.6684,"aMS",%progbits,1
 	.type	.L.managed_type_name.6684, %object
 .L.managed_type_name.6684:
-	.asciz	"Java.Nio.FileNio.Spi.FileTypeDetector, Mono.Android"
-	.size	.L.managed_type_name.6684, 52
+	.asciz	"Java.Nio.FileNio.Spi.FileTypeDetectorInvoker, Mono.Android"
+	.size	.L.managed_type_name.6684, 59
 	.section	.rodata.managed_type_name.6685,"aMS",%progbits,1
 	.type	.L.managed_type_name.6685, %object
 .L.managed_type_name.6685:
-	.asciz	"Java.Nio.FileNio.Spi.FileTypeDetectorInvoker, Mono.Android"
-	.size	.L.managed_type_name.6685, 59
+	.asciz	"Java.Nio.FileNio.StandardCopyOption, Mono.Android"
+	.size	.L.managed_type_name.6685, 50
 	.section	.rodata.managed_type_name.6686,"aMS",%progbits,1
 	.type	.L.managed_type_name.6686, %object
 .L.managed_type_name.6686:
-	.asciz	"Java.Nio.FileNio.StandardCopyOption, Mono.Android"
+	.asciz	"Java.Nio.FileNio.StandardOpenOption, Mono.Android"
 	.size	.L.managed_type_name.6686, 50
 	.section	.rodata.managed_type_name.6687,"aMS",%progbits,1
 	.type	.L.managed_type_name.6687, %object
 .L.managed_type_name.6687:
-	.asciz	"Java.Nio.FileNio.StandardOpenOption, Mono.Android"
-	.size	.L.managed_type_name.6687, 50
+	.asciz	"Java.Nio.FileNio.StandardWatchEventKinds, Mono.Android"
+	.size	.L.managed_type_name.6687, 55
 	.section	.rodata.managed_type_name.6688,"aMS",%progbits,1
 	.type	.L.managed_type_name.6688, %object
 .L.managed_type_name.6688:
-	.asciz	"Java.Nio.FileNio.StandardWatchEventKinds, Mono.Android"
-	.size	.L.managed_type_name.6688, 55
+	.asciz	"Java.Nio.FloatBuffer, Mono.Android"
+	.size	.L.managed_type_name.6688, 35
 	.section	.rodata.managed_type_name.6689,"aMS",%progbits,1
 	.type	.L.managed_type_name.6689, %object
 .L.managed_type_name.6689:
-	.asciz	"Java.Nio.FloatBuffer, Mono.Android"
-	.size	.L.managed_type_name.6689, 35
+	.asciz	"Java.Nio.FloatBufferInvoker, Mono.Android"
+	.size	.L.managed_type_name.6689, 42
 	.section	.rodata.managed_type_name.6690,"aMS",%progbits,1
 	.type	.L.managed_type_name.6690, %object
 .L.managed_type_name.6690:
-	.asciz	"Java.Nio.FloatBufferInvoker, Mono.Android"
-	.size	.L.managed_type_name.6690, 42
+	.asciz	"Java.Nio.IntBuffer, Mono.Android"
+	.size	.L.managed_type_name.6690, 33
 	.section	.rodata.managed_type_name.6691,"aMS",%progbits,1
 	.type	.L.managed_type_name.6691, %object
 .L.managed_type_name.6691:
-	.asciz	"Java.Nio.IntBuffer, Mono.Android"
-	.size	.L.managed_type_name.6691, 33
+	.asciz	"Java.Nio.IntBufferInvoker, Mono.Android"
+	.size	.L.managed_type_name.6691, 40
 	.section	.rodata.managed_type_name.6692,"aMS",%progbits,1
 	.type	.L.managed_type_name.6692, %object
 .L.managed_type_name.6692:
-	.asciz	"Java.Nio.IntBufferInvoker, Mono.Android"
-	.size	.L.managed_type_name.6692, 40
+	.asciz	"Java.Nio.InvalidMarkException, Mono.Android"
+	.size	.L.managed_type_name.6692, 44
 	.section	.rodata.managed_type_name.6693,"aMS",%progbits,1
 	.type	.L.managed_type_name.6693, %object
 .L.managed_type_name.6693:
-	.asciz	"Java.Nio.InvalidMarkException, Mono.Android"
-	.size	.L.managed_type_name.6693, 44
+	.asciz	"Java.Nio.LongBuffer, Mono.Android"
+	.size	.L.managed_type_name.6693, 34
 	.section	.rodata.managed_type_name.6694,"aMS",%progbits,1
 	.type	.L.managed_type_name.6694, %object
 .L.managed_type_name.6694:
-	.asciz	"Java.Nio.LongBuffer, Mono.Android"
-	.size	.L.managed_type_name.6694, 34
+	.asciz	"Java.Nio.LongBufferInvoker, Mono.Android"
+	.size	.L.managed_type_name.6694, 41
 	.section	.rodata.managed_type_name.6695,"aMS",%progbits,1
 	.type	.L.managed_type_name.6695, %object
 .L.managed_type_name.6695:
-	.asciz	"Java.Nio.LongBufferInvoker, Mono.Android"
-	.size	.L.managed_type_name.6695, 41
+	.asciz	"Java.Nio.MappedByteBuffer, Mono.Android"
+	.size	.L.managed_type_name.6695, 40
 	.section	.rodata.managed_type_name.6696,"aMS",%progbits,1
 	.type	.L.managed_type_name.6696, %object
 .L.managed_type_name.6696:
-	.asciz	"Java.Nio.MappedByteBuffer, Mono.Android"
-	.size	.L.managed_type_name.6696, 40
+	.asciz	"Java.Nio.MappedByteBufferInvoker, Mono.Android"
+	.size	.L.managed_type_name.6696, 47
 	.section	.rodata.managed_type_name.6697,"aMS",%progbits,1
 	.type	.L.managed_type_name.6697, %object
 .L.managed_type_name.6697:
-	.asciz	"Java.Nio.MappedByteBufferInvoker, Mono.Android"
+	.asciz	"Java.Nio.ReadOnlyBufferException, Mono.Android"
 	.size	.L.managed_type_name.6697, 47
 	.section	.rodata.managed_type_name.6698,"aMS",%progbits,1
 	.type	.L.managed_type_name.6698, %object
 .L.managed_type_name.6698:
-	.asciz	"Java.Nio.ReadOnlyBufferException, Mono.Android"
-	.size	.L.managed_type_name.6698, 47
+	.asciz	"Java.Nio.ShortBuffer, Mono.Android"
+	.size	.L.managed_type_name.6698, 35
 	.section	.rodata.managed_type_name.6699,"aMS",%progbits,1
 	.type	.L.managed_type_name.6699, %object
 .L.managed_type_name.6699:
-	.asciz	"Java.Nio.ShortBuffer, Mono.Android"
-	.size	.L.managed_type_name.6699, 35
+	.asciz	"Java.Nio.ShortBufferInvoker, Mono.Android"
+	.size	.L.managed_type_name.6699, 42
 	.section	.rodata.managed_type_name.6700,"aMS",%progbits,1
 	.type	.L.managed_type_name.6700, %object
 .L.managed_type_name.6700:
-	.asciz	"Java.Nio.ShortBufferInvoker, Mono.Android"
-	.size	.L.managed_type_name.6700, 42
+	.asciz	"Java.Security.AccessControlContext, Mono.Android"
+	.size	.L.managed_type_name.6700, 49
 	.section	.rodata.managed_type_name.6701,"aMS",%progbits,1
 	.type	.L.managed_type_name.6701, %object
 .L.managed_type_name.6701:
-	.asciz	"Java.Security.AccessControlContext, Mono.Android"
-	.size	.L.managed_type_name.6701, 49
+	.asciz	"Java.Security.AccessControlException, Mono.Android"
+	.size	.L.managed_type_name.6701, 51
 	.section	.rodata.managed_type_name.6702,"aMS",%progbits,1
 	.type	.L.managed_type_name.6702, %object
 .L.managed_type_name.6702:
-	.asciz	"Java.Security.AccessControlException, Mono.Android"
-	.size	.L.managed_type_name.6702, 51
+	.asciz	"Java.Security.AccessController, Mono.Android"
+	.size	.L.managed_type_name.6702, 45
 	.section	.rodata.managed_type_name.6703,"aMS",%progbits,1
 	.type	.L.managed_type_name.6703, %object
 .L.managed_type_name.6703:
-	.asciz	"Java.Security.AccessController, Mono.Android"
-	.size	.L.managed_type_name.6703, 45
+	.asciz	"Java.Security.Acl.AclNotFoundException, Mono.Android"
+	.size	.L.managed_type_name.6703, 53
 	.section	.rodata.managed_type_name.6704,"aMS",%progbits,1
 	.type	.L.managed_type_name.6704, %object
 .L.managed_type_name.6704:
-	.asciz	"Java.Security.Acl.AclNotFoundException, Mono.Android"
-	.size	.L.managed_type_name.6704, 53
+	.asciz	"Java.Security.Acl.IAclEntryInvoker, Mono.Android"
+	.size	.L.managed_type_name.6704, 49
 	.section	.rodata.managed_type_name.6705,"aMS",%progbits,1
 	.type	.L.managed_type_name.6705, %object
 .L.managed_type_name.6705:
-	.asciz	"Java.Security.Acl.IAclEntryInvoker, Mono.Android"
-	.size	.L.managed_type_name.6705, 49
+	.asciz	"Java.Security.Acl.IAclInvoker, Mono.Android"
+	.size	.L.managed_type_name.6705, 44
 	.section	.rodata.managed_type_name.6706,"aMS",%progbits,1
 	.type	.L.managed_type_name.6706, %object
 .L.managed_type_name.6706:
-	.asciz	"Java.Security.Acl.IAclInvoker, Mono.Android"
-	.size	.L.managed_type_name.6706, 44
+	.asciz	"Java.Security.Acl.IGroupInvoker, Mono.Android"
+	.size	.L.managed_type_name.6706, 46
 	.section	.rodata.managed_type_name.6707,"aMS",%progbits,1
 	.type	.L.managed_type_name.6707, %object
 .L.managed_type_name.6707:
-	.asciz	"Java.Security.Acl.IGroupInvoker, Mono.Android"
+	.asciz	"Java.Security.Acl.IOwnerInvoker, Mono.Android"
 	.size	.L.managed_type_name.6707, 46
 	.section	.rodata.managed_type_name.6708,"aMS",%progbits,1
 	.type	.L.managed_type_name.6708, %object
 .L.managed_type_name.6708:
-	.asciz	"Java.Security.Acl.IOwnerInvoker, Mono.Android"
-	.size	.L.managed_type_name.6708, 46
+	.asciz	"Java.Security.Acl.IPermissionInvoker, Mono.Android"
+	.size	.L.managed_type_name.6708, 51
 	.section	.rodata.managed_type_name.6709,"aMS",%progbits,1
 	.type	.L.managed_type_name.6709, %object
 .L.managed_type_name.6709:
-	.asciz	"Java.Security.Acl.IPermissionInvoker, Mono.Android"
+	.asciz	"Java.Security.Acl.LastOwnerException, Mono.Android"
 	.size	.L.managed_type_name.6709, 51
 	.section	.rodata.managed_type_name.6710,"aMS",%progbits,1
 	.type	.L.managed_type_name.6710, %object
 .L.managed_type_name.6710:
-	.asciz	"Java.Security.Acl.LastOwnerException, Mono.Android"
-	.size	.L.managed_type_name.6710, 51
+	.asciz	"Java.Security.Acl.NotOwnerException, Mono.Android"
+	.size	.L.managed_type_name.6710, 50
 	.section	.rodata.managed_type_name.6711,"aMS",%progbits,1
 	.type	.L.managed_type_name.6711, %object
 .L.managed_type_name.6711:
-	.asciz	"Java.Security.Acl.NotOwnerException, Mono.Android"
-	.size	.L.managed_type_name.6711, 50
+	.asciz	"Java.Security.AlgorithmParameterGenerator, Mono.Android"
+	.size	.L.managed_type_name.6711, 56
 	.section	.rodata.managed_type_name.6712,"aMS",%progbits,1
 	.type	.L.managed_type_name.6712, %object
 .L.managed_type_name.6712:
-	.asciz	"Java.Security.AlgorithmParameterGenerator, Mono.Android"
-	.size	.L.managed_type_name.6712, 56
+	.asciz	"Java.Security.AlgorithmParameterGeneratorSpi, Mono.Android"
+	.size	.L.managed_type_name.6712, 59
 	.section	.rodata.managed_type_name.6713,"aMS",%progbits,1
 	.type	.L.managed_type_name.6713, %object
 .L.managed_type_name.6713:
-	.asciz	"Java.Security.AlgorithmParameterGeneratorSpi, Mono.Android"
-	.size	.L.managed_type_name.6713, 59
+	.asciz	"Java.Security.AlgorithmParameterGeneratorSpiInvoker, Mono.Android"
+	.size	.L.managed_type_name.6713, 66
 	.section	.rodata.managed_type_name.6714,"aMS",%progbits,1
 	.type	.L.managed_type_name.6714, %object
 .L.managed_type_name.6714:
-	.asciz	"Java.Security.AlgorithmParameterGeneratorSpiInvoker, Mono.Android"
-	.size	.L.managed_type_name.6714, 66
+	.asciz	"Java.Security.AlgorithmParameters, Mono.Android"
+	.size	.L.managed_type_name.6714, 48
 	.section	.rodata.managed_type_name.6715,"aMS",%progbits,1
 	.type	.L.managed_type_name.6715, %object
 .L.managed_type_name.6715:
-	.asciz	"Java.Security.AlgorithmParameters, Mono.Android"
-	.size	.L.managed_type_name.6715, 48
+	.asciz	"Java.Security.AlgorithmParametersSpi, Mono.Android"
+	.size	.L.managed_type_name.6715, 51
 	.section	.rodata.managed_type_name.6716,"aMS",%progbits,1
 	.type	.L.managed_type_name.6716, %object
 .L.managed_type_name.6716:
-	.asciz	"Java.Security.AlgorithmParametersSpi, Mono.Android"
-	.size	.L.managed_type_name.6716, 51
+	.asciz	"Java.Security.AlgorithmParametersSpiInvoker, Mono.Android"
+	.size	.L.managed_type_name.6716, 58
 	.section	.rodata.managed_type_name.6717,"aMS",%progbits,1
 	.type	.L.managed_type_name.6717, %object
 .L.managed_type_name.6717:
-	.asciz	"Java.Security.AlgorithmParametersSpiInvoker, Mono.Android"
-	.size	.L.managed_type_name.6717, 58
+	.asciz	"Java.Security.AllPermission, Mono.Android"
+	.size	.L.managed_type_name.6717, 42
 	.section	.rodata.managed_type_name.6718,"aMS",%progbits,1
 	.type	.L.managed_type_name.6718, %object
 .L.managed_type_name.6718:
-	.asciz	"Java.Security.AllPermission, Mono.Android"
-	.size	.L.managed_type_name.6718, 42
+	.asciz	"Java.Security.AuthProvider, Mono.Android"
+	.size	.L.managed_type_name.6718, 41
 	.section	.rodata.managed_type_name.6719,"aMS",%progbits,1
 	.type	.L.managed_type_name.6719, %object
 .L.managed_type_name.6719:
-	.asciz	"Java.Security.AuthProvider, Mono.Android"
-	.size	.L.managed_type_name.6719, 41
+	.asciz	"Java.Security.AuthProviderInvoker, Mono.Android"
+	.size	.L.managed_type_name.6719, 48
 	.section	.rodata.managed_type_name.6720,"aMS",%progbits,1
 	.type	.L.managed_type_name.6720, %object
 .L.managed_type_name.6720:
-	.asciz	"Java.Security.AuthProviderInvoker, Mono.Android"
-	.size	.L.managed_type_name.6720, 48
+	.asciz	"Java.Security.BasicPermission, Mono.Android"
+	.size	.L.managed_type_name.6720, 44
 	.section	.rodata.managed_type_name.6721,"aMS",%progbits,1
 	.type	.L.managed_type_name.6721, %object
 .L.managed_type_name.6721:
-	.asciz	"Java.Security.BasicPermission, Mono.Android"
-	.size	.L.managed_type_name.6721, 44
+	.asciz	"Java.Security.BasicPermissionInvoker, Mono.Android"
+	.size	.L.managed_type_name.6721, 51
 	.section	.rodata.managed_type_name.6722,"aMS",%progbits,1
 	.type	.L.managed_type_name.6722, %object
 .L.managed_type_name.6722:
-	.asciz	"Java.Security.BasicPermissionInvoker, Mono.Android"
-	.size	.L.managed_type_name.6722, 51
+	.asciz	"Java.Security.Cert.CRL, Mono.Android"
+	.size	.L.managed_type_name.6722, 37
 	.section	.rodata.managed_type_name.6723,"aMS",%progbits,1
 	.type	.L.managed_type_name.6723, %object
 .L.managed_type_name.6723:
-	.asciz	"Java.Security.Cert.CRL, Mono.Android"
-	.size	.L.managed_type_name.6723, 37
+	.asciz	"Java.Security.Cert.CRLException, Mono.Android"
+	.size	.L.managed_type_name.6723, 46
 	.section	.rodata.managed_type_name.6724,"aMS",%progbits,1
 	.type	.L.managed_type_name.6724, %object
 .L.managed_type_name.6724:
-	.asciz	"Java.Security.Cert.CRLException, Mono.Android"
-	.size	.L.managed_type_name.6724, 46
+	.asciz	"Java.Security.Cert.CRLInvoker, Mono.Android"
+	.size	.L.managed_type_name.6724, 44
 	.section	.rodata.managed_type_name.6725,"aMS",%progbits,1
 	.type	.L.managed_type_name.6725, %object
 .L.managed_type_name.6725:
-	.asciz	"Java.Security.Cert.CRLInvoker, Mono.Android"
-	.size	.L.managed_type_name.6725, 44
+	.asciz	"Java.Security.Cert.CRLReason, Mono.Android"
+	.size	.L.managed_type_name.6725, 43
 	.section	.rodata.managed_type_name.6726,"aMS",%progbits,1
 	.type	.L.managed_type_name.6726, %object
 .L.managed_type_name.6726:
-	.asciz	"Java.Security.Cert.CRLReason, Mono.Android"
-	.size	.L.managed_type_name.6726, 43
+	.asciz	"Java.Security.Cert.CertPath+CertPathRep, Mono.Android"
+	.size	.L.managed_type_name.6726, 54
 	.section	.rodata.managed_type_name.6727,"aMS",%progbits,1
 	.type	.L.managed_type_name.6727, %object
 .L.managed_type_name.6727:
-	.asciz	"Java.Security.Cert.CertPath+CertPathRep, Mono.Android"
-	.size	.L.managed_type_name.6727, 54
+	.asciz	"Java.Security.Cert.CertPath, Mono.Android"
+	.size	.L.managed_type_name.6727, 42
 	.section	.rodata.managed_type_name.6728,"aMS",%progbits,1
 	.type	.L.managed_type_name.6728, %object
 .L.managed_type_name.6728:
-	.asciz	"Java.Security.Cert.CertPath, Mono.Android"
-	.size	.L.managed_type_name.6728, 42
+	.asciz	"Java.Security.Cert.CertPathBuilder, Mono.Android"
+	.size	.L.managed_type_name.6728, 49
 	.section	.rodata.managed_type_name.6729,"aMS",%progbits,1
 	.type	.L.managed_type_name.6729, %object
 .L.managed_type_name.6729:
-	.asciz	"Java.Security.Cert.CertPathBuilder, Mono.Android"
-	.size	.L.managed_type_name.6729, 49
+	.asciz	"Java.Security.Cert.CertPathBuilderException, Mono.Android"
+	.size	.L.managed_type_name.6729, 58
 	.section	.rodata.managed_type_name.6730,"aMS",%progbits,1
 	.type	.L.managed_type_name.6730, %object
 .L.managed_type_name.6730:
-	.asciz	"Java.Security.Cert.CertPathBuilderException, Mono.Android"
-	.size	.L.managed_type_name.6730, 58
+	.asciz	"Java.Security.Cert.CertPathBuilderSpi, Mono.Android"
+	.size	.L.managed_type_name.6730, 52
 	.section	.rodata.managed_type_name.6731,"aMS",%progbits,1
 	.type	.L.managed_type_name.6731, %object
 .L.managed_type_name.6731:
-	.asciz	"Java.Security.Cert.CertPathBuilderSpi, Mono.Android"
-	.size	.L.managed_type_name.6731, 52
+	.asciz	"Java.Security.Cert.CertPathBuilderSpiInvoker, Mono.Android"
+	.size	.L.managed_type_name.6731, 59
 	.section	.rodata.managed_type_name.6732,"aMS",%progbits,1
 	.type	.L.managed_type_name.6732, %object
 .L.managed_type_name.6732:
-	.asciz	"Java.Security.Cert.CertPathBuilderSpiInvoker, Mono.Android"
-	.size	.L.managed_type_name.6732, 59
+	.asciz	"Java.Security.Cert.CertPathInvoker, Mono.Android"
+	.size	.L.managed_type_name.6732, 49
 	.section	.rodata.managed_type_name.6733,"aMS",%progbits,1
 	.type	.L.managed_type_name.6733, %object
 .L.managed_type_name.6733:
-	.asciz	"Java.Security.Cert.CertPathInvoker, Mono.Android"
-	.size	.L.managed_type_name.6733, 49
+	.asciz	"Java.Security.Cert.CertPathValidator, Mono.Android"
+	.size	.L.managed_type_name.6733, 51
 	.section	.rodata.managed_type_name.6734,"aMS",%progbits,1
 	.type	.L.managed_type_name.6734, %object
 .L.managed_type_name.6734:
-	.asciz	"Java.Security.Cert.CertPathValidator, Mono.Android"
-	.size	.L.managed_type_name.6734, 51
+	.asciz	"Java.Security.Cert.CertPathValidatorException+BasicReason, Mono.Android"
+	.size	.L.managed_type_name.6734, 72
 	.section	.rodata.managed_type_name.6735,"aMS",%progbits,1
 	.type	.L.managed_type_name.6735, %object
 .L.managed_type_name.6735:
-	.asciz	"Java.Security.Cert.CertPathValidatorException+BasicReason, Mono.Android"
-	.size	.L.managed_type_name.6735, 72
+	.asciz	"Java.Security.Cert.CertPathValidatorException+IReasonInvoker, Mono.Android"
+	.size	.L.managed_type_name.6735, 75
 	.section	.rodata.managed_type_name.6736,"aMS",%progbits,1
 	.type	.L.managed_type_name.6736, %object
 .L.managed_type_name.6736:
-	.asciz	"Java.Security.Cert.CertPathValidatorException+IReasonInvoker, Mono.Android"
-	.size	.L.managed_type_name.6736, 75
+	.asciz	"Java.Security.Cert.CertPathValidatorException, Mono.Android"
+	.size	.L.managed_type_name.6736, 60
 	.section	.rodata.managed_type_name.6737,"aMS",%progbits,1
 	.type	.L.managed_type_name.6737, %object
 .L.managed_type_name.6737:
-	.asciz	"Java.Security.Cert.CertPathValidatorException, Mono.Android"
-	.size	.L.managed_type_name.6737, 60
+	.asciz	"Java.Security.Cert.CertPathValidatorSpi, Mono.Android"
+	.size	.L.managed_type_name.6737, 54
 	.section	.rodata.managed_type_name.6738,"aMS",%progbits,1
 	.type	.L.managed_type_name.6738, %object
 .L.managed_type_name.6738:
-	.asciz	"Java.Security.Cert.CertPathValidatorSpi, Mono.Android"
-	.size	.L.managed_type_name.6738, 54
+	.asciz	"Java.Security.Cert.CertPathValidatorSpiInvoker, Mono.Android"
+	.size	.L.managed_type_name.6738, 61
 	.section	.rodata.managed_type_name.6739,"aMS",%progbits,1
 	.type	.L.managed_type_name.6739, %object
 .L.managed_type_name.6739:
-	.asciz	"Java.Security.Cert.CertPathValidatorSpiInvoker, Mono.Android"
-	.size	.L.managed_type_name.6739, 61
+	.asciz	"Java.Security.Cert.CertStore, Mono.Android"
+	.size	.L.managed_type_name.6739, 43
 	.section	.rodata.managed_type_name.6740,"aMS",%progbits,1
 	.type	.L.managed_type_name.6740, %object
 .L.managed_type_name.6740:
-	.asciz	"Java.Security.Cert.CertStore, Mono.Android"
-	.size	.L.managed_type_name.6740, 43
+	.asciz	"Java.Security.Cert.CertStoreException, Mono.Android"
+	.size	.L.managed_type_name.6740, 52
 	.section	.rodata.managed_type_name.6741,"aMS",%progbits,1
 	.type	.L.managed_type_name.6741, %object
 .L.managed_type_name.6741:
-	.asciz	"Java.Security.Cert.CertStoreException, Mono.Android"
-	.size	.L.managed_type_name.6741, 52
+	.asciz	"Java.Security.Cert.CertStoreSpi, Mono.Android"
+	.size	.L.managed_type_name.6741, 46
 	.section	.rodata.managed_type_name.6742,"aMS",%progbits,1
 	.type	.L.managed_type_name.6742, %object
 .L.managed_type_name.6742:
-	.asciz	"Java.Security.Cert.CertStoreSpi, Mono.Android"
-	.size	.L.managed_type_name.6742, 46
+	.asciz	"Java.Security.Cert.CertStoreSpiInvoker, Mono.Android"
+	.size	.L.managed_type_name.6742, 53
 	.section	.rodata.managed_type_name.6743,"aMS",%progbits,1
 	.type	.L.managed_type_name.6743, %object
 .L.managed_type_name.6743:
-	.asciz	"Java.Security.Cert.CertStoreSpiInvoker, Mono.Android"
-	.size	.L.managed_type_name.6743, 53
+	.asciz	"Java.Security.Cert.Certificate+CertificateRep, Mono.Android"
+	.size	.L.managed_type_name.6743, 60
 	.section	.rodata.managed_type_name.6744,"aMS",%progbits,1
 	.type	.L.managed_type_name.6744, %object
 .L.managed_type_name.6744:
-	.asciz	"Java.Security.Cert.Certificate+CertificateRep, Mono.Android"
-	.size	.L.managed_type_name.6744, 60
+	.asciz	"Java.Security.Cert.Certificate, Mono.Android"
+	.size	.L.managed_type_name.6744, 45
 	.section	.rodata.managed_type_name.6745,"aMS",%progbits,1
 	.type	.L.managed_type_name.6745, %object
 .L.managed_type_name.6745:
-	.asciz	"Java.Security.Cert.Certificate, Mono.Android"
-	.size	.L.managed_type_name.6745, 45
+	.asciz	"Java.Security.Cert.CertificateEncodingException, Mono.Android"
+	.size	.L.managed_type_name.6745, 62
 	.section	.rodata.managed_type_name.6746,"aMS",%progbits,1
 	.type	.L.managed_type_name.6746, %object
 .L.managed_type_name.6746:
-	.asciz	"Java.Security.Cert.CertificateEncodingException, Mono.Android"
-	.size	.L.managed_type_name.6746, 62
+	.asciz	"Java.Security.Cert.CertificateException, Mono.Android"
+	.size	.L.managed_type_name.6746, 54
 	.section	.rodata.managed_type_name.6747,"aMS",%progbits,1
 	.type	.L.managed_type_name.6747, %object
 .L.managed_type_name.6747:
-	.asciz	"Java.Security.Cert.CertificateException, Mono.Android"
-	.size	.L.managed_type_name.6747, 54
+	.asciz	"Java.Security.Cert.CertificateExpiredException, Mono.Android"
+	.size	.L.managed_type_name.6747, 61
 	.section	.rodata.managed_type_name.6748,"aMS",%progbits,1
 	.type	.L.managed_type_name.6748, %object
 .L.managed_type_name.6748:
-	.asciz	"Java.Security.Cert.CertificateExpiredException, Mono.Android"
-	.size	.L.managed_type_name.6748, 61
+	.asciz	"Java.Security.Cert.CertificateFactory, Mono.Android"
+	.size	.L.managed_type_name.6748, 52
 	.section	.rodata.managed_type_name.6749,"aMS",%progbits,1
 	.type	.L.managed_type_name.6749, %object
 .L.managed_type_name.6749:
-	.asciz	"Java.Security.Cert.CertificateFactory, Mono.Android"
-	.size	.L.managed_type_name.6749, 52
+	.asciz	"Java.Security.Cert.CertificateFactorySpi, Mono.Android"
+	.size	.L.managed_type_name.6749, 55
 	.section	.rodata.managed_type_name.6750,"aMS",%progbits,1
 	.type	.L.managed_type_name.6750, %object
 .L.managed_type_name.6750:
-	.asciz	"Java.Security.Cert.CertificateFactorySpi, Mono.Android"
-	.size	.L.managed_type_name.6750, 55
+	.asciz	"Java.Security.Cert.CertificateFactorySpiInvoker, Mono.Android"
+	.size	.L.managed_type_name.6750, 62
 	.section	.rodata.managed_type_name.6751,"aMS",%progbits,1
 	.type	.L.managed_type_name.6751, %object
 .L.managed_type_name.6751:
-	.asciz	"Java.Security.Cert.CertificateFactorySpiInvoker, Mono.Android"
-	.size	.L.managed_type_name.6751, 62
+	.asciz	"Java.Security.Cert.CertificateInvoker, Mono.Android"
+	.size	.L.managed_type_name.6751, 52
 	.section	.rodata.managed_type_name.6752,"aMS",%progbits,1
 	.type	.L.managed_type_name.6752, %object
 .L.managed_type_name.6752:
-	.asciz	"Java.Security.Cert.CertificateInvoker, Mono.Android"
-	.size	.L.managed_type_name.6752, 52
+	.asciz	"Java.Security.Cert.CertificateNotYetValidException, Mono.Android"
+	.size	.L.managed_type_name.6752, 65
 	.section	.rodata.managed_type_name.6753,"aMS",%progbits,1
 	.type	.L.managed_type_name.6753, %object
 .L.managed_type_name.6753:
-	.asciz	"Java.Security.Cert.CertificateNotYetValidException, Mono.Android"
-	.size	.L.managed_type_name.6753, 65
+	.asciz	"Java.Security.Cert.CertificateParsingException, Mono.Android"
+	.size	.L.managed_type_name.6753, 61
 	.section	.rodata.managed_type_name.6754,"aMS",%progbits,1
 	.type	.L.managed_type_name.6754, %object
 .L.managed_type_name.6754:
-	.asciz	"Java.Security.Cert.CertificateParsingException, Mono.Android"
+	.asciz	"Java.Security.Cert.CertificateRevokedException, Mono.Android"
 	.size	.L.managed_type_name.6754, 61
 	.section	.rodata.managed_type_name.6755,"aMS",%progbits,1
 	.type	.L.managed_type_name.6755, %object
 .L.managed_type_name.6755:
-	.asciz	"Java.Security.Cert.CertificateRevokedException, Mono.Android"
-	.size	.L.managed_type_name.6755, 61
+	.asciz	"Java.Security.Cert.CollectionCertStoreParameters, Mono.Android"
+	.size	.L.managed_type_name.6755, 63
 	.section	.rodata.managed_type_name.6756,"aMS",%progbits,1
 	.type	.L.managed_type_name.6756, %object
 .L.managed_type_name.6756:
-	.asciz	"Java.Security.Cert.CollectionCertStoreParameters, Mono.Android"
-	.size	.L.managed_type_name.6756, 63
+	.asciz	"Java.Security.Cert.ICRLSelectorInvoker, Mono.Android"
+	.size	.L.managed_type_name.6756, 53
 	.section	.rodata.managed_type_name.6757,"aMS",%progbits,1
 	.type	.L.managed_type_name.6757, %object
 .L.managed_type_name.6757:
-	.asciz	"Java.Security.Cert.ICRLSelectorInvoker, Mono.Android"
-	.size	.L.managed_type_name.6757, 53
+	.asciz	"Java.Security.Cert.ICertPathBuilderResultInvoker, Mono.Android"
+	.size	.L.managed_type_name.6757, 63
 	.section	.rodata.managed_type_name.6758,"aMS",%progbits,1
 	.type	.L.managed_type_name.6758, %object
 .L.managed_type_name.6758:
-	.asciz	"Java.Security.Cert.ICertPathBuilderResultInvoker, Mono.Android"
-	.size	.L.managed_type_name.6758, 63
+	.asciz	"Java.Security.Cert.ICertPathCheckerInvoker, Mono.Android"
+	.size	.L.managed_type_name.6758, 57
 	.section	.rodata.managed_type_name.6759,"aMS",%progbits,1
 	.type	.L.managed_type_name.6759, %object
 .L.managed_type_name.6759:
-	.asciz	"Java.Security.Cert.ICertPathCheckerInvoker, Mono.Android"
-	.size	.L.managed_type_name.6759, 57
+	.asciz	"Java.Security.Cert.ICertPathParametersInvoker, Mono.Android"
+	.size	.L.managed_type_name.6759, 60
 	.section	.rodata.managed_type_name.6760,"aMS",%progbits,1
 	.type	.L.managed_type_name.6760, %object
 .L.managed_type_name.6760:
-	.asciz	"Java.Security.Cert.ICertPathParametersInvoker, Mono.Android"
-	.size	.L.managed_type_name.6760, 60
+	.asciz	"Java.Security.Cert.ICertPathValidatorResultInvoker, Mono.Android"
+	.size	.L.managed_type_name.6760, 65
 	.section	.rodata.managed_type_name.6761,"aMS",%progbits,1
 	.type	.L.managed_type_name.6761, %object
 .L.managed_type_name.6761:
-	.asciz	"Java.Security.Cert.ICertPathValidatorResultInvoker, Mono.Android"
-	.size	.L.managed_type_name.6761, 65
+	.asciz	"Java.Security.Cert.ICertSelectorInvoker, Mono.Android"
+	.size	.L.managed_type_name.6761, 54
 	.section	.rodata.managed_type_name.6762,"aMS",%progbits,1
 	.type	.L.managed_type_name.6762, %object
 .L.managed_type_name.6762:
-	.asciz	"Java.Security.Cert.ICertSelectorInvoker, Mono.Android"
-	.size	.L.managed_type_name.6762, 54
+	.asciz	"Java.Security.Cert.ICertStoreParametersInvoker, Mono.Android"
+	.size	.L.managed_type_name.6762, 61
 	.section	.rodata.managed_type_name.6763,"aMS",%progbits,1
 	.type	.L.managed_type_name.6763, %object
 .L.managed_type_name.6763:
-	.asciz	"Java.Security.Cert.ICertStoreParametersInvoker, Mono.Android"
-	.size	.L.managed_type_name.6763, 61
+	.asciz	"Java.Security.Cert.IExtensionInvoker, Mono.Android"
+	.size	.L.managed_type_name.6763, 51
 	.section	.rodata.managed_type_name.6764,"aMS",%progbits,1
 	.type	.L.managed_type_name.6764, %object
 .L.managed_type_name.6764:
-	.asciz	"Java.Security.Cert.IExtensionInvoker, Mono.Android"
-	.size	.L.managed_type_name.6764, 51
+	.asciz	"Java.Security.Cert.IPolicyNodeInvoker, Mono.Android"
+	.size	.L.managed_type_name.6764, 52
 	.section	.rodata.managed_type_name.6765,"aMS",%progbits,1
 	.type	.L.managed_type_name.6765, %object
 .L.managed_type_name.6765:
-	.asciz	"Java.Security.Cert.IPolicyNodeInvoker, Mono.Android"
-	.size	.L.managed_type_name.6765, 52
+	.asciz	"Java.Security.Cert.IX509ExtensionInvoker, Mono.Android"
+	.size	.L.managed_type_name.6765, 55
 	.section	.rodata.managed_type_name.6766,"aMS",%progbits,1
 	.type	.L.managed_type_name.6766, %object
 .L.managed_type_name.6766:
-	.asciz	"Java.Security.Cert.IX509ExtensionInvoker, Mono.Android"
-	.size	.L.managed_type_name.6766, 55
+	.asciz	"Java.Security.Cert.LDAPCertStoreParameters, Mono.Android"
+	.size	.L.managed_type_name.6766, 57
 	.section	.rodata.managed_type_name.6767,"aMS",%progbits,1
 	.type	.L.managed_type_name.6767, %object
 .L.managed_type_name.6767:
-	.asciz	"Java.Security.Cert.LDAPCertStoreParameters, Mono.Android"
-	.size	.L.managed_type_name.6767, 57
+	.asciz	"Java.Security.Cert.PKIXBuilderParameters, Mono.Android"
+	.size	.L.managed_type_name.6767, 55
 	.section	.rodata.managed_type_name.6768,"aMS",%progbits,1
 	.type	.L.managed_type_name.6768, %object
 .L.managed_type_name.6768:
-	.asciz	"Java.Security.Cert.PKIXBuilderParameters, Mono.Android"
-	.size	.L.managed_type_name.6768, 55
+	.asciz	"Java.Security.Cert.PKIXCertPathBuilderResult, Mono.Android"
+	.size	.L.managed_type_name.6768, 59
 	.section	.rodata.managed_type_name.6769,"aMS",%progbits,1
 	.type	.L.managed_type_name.6769, %object
 .L.managed_type_name.6769:
-	.asciz	"Java.Security.Cert.PKIXCertPathBuilderResult, Mono.Android"
-	.size	.L.managed_type_name.6769, 59
+	.asciz	"Java.Security.Cert.PKIXCertPathChecker, Mono.Android"
+	.size	.L.managed_type_name.6769, 53
 	.section	.rodata.managed_type_name.6770,"aMS",%progbits,1
 	.type	.L.managed_type_name.6770, %object
 .L.managed_type_name.6770:
-	.asciz	"Java.Security.Cert.PKIXCertPathChecker, Mono.Android"
-	.size	.L.managed_type_name.6770, 53
+	.asciz	"Java.Security.Cert.PKIXCertPathCheckerInvoker, Mono.Android"
+	.size	.L.managed_type_name.6770, 60
 	.section	.rodata.managed_type_name.6771,"aMS",%progbits,1
 	.type	.L.managed_type_name.6771, %object
 .L.managed_type_name.6771:
-	.asciz	"Java.Security.Cert.PKIXCertPathCheckerInvoker, Mono.Android"
-	.size	.L.managed_type_name.6771, 60
+	.asciz	"Java.Security.Cert.PKIXCertPathValidatorResult, Mono.Android"
+	.size	.L.managed_type_name.6771, 61
 	.section	.rodata.managed_type_name.6772,"aMS",%progbits,1
 	.type	.L.managed_type_name.6772, %object
 .L.managed_type_name.6772:
-	.asciz	"Java.Security.Cert.PKIXCertPathValidatorResult, Mono.Android"
-	.size	.L.managed_type_name.6772, 61
+	.asciz	"Java.Security.Cert.PKIXParameters, Mono.Android"
+	.size	.L.managed_type_name.6772, 48
 	.section	.rodata.managed_type_name.6773,"aMS",%progbits,1
 	.type	.L.managed_type_name.6773, %object
 .L.managed_type_name.6773:
-	.asciz	"Java.Security.Cert.PKIXParameters, Mono.Android"
-	.size	.L.managed_type_name.6773, 48
+	.asciz	"Java.Security.Cert.PKIXReason, Mono.Android"
+	.size	.L.managed_type_name.6773, 44
 	.section	.rodata.managed_type_name.6774,"aMS",%progbits,1
 	.type	.L.managed_type_name.6774, %object
 .L.managed_type_name.6774:
-	.asciz	"Java.Security.Cert.PKIXReason, Mono.Android"
-	.size	.L.managed_type_name.6774, 44
+	.asciz	"Java.Security.Cert.PKIXRevocationChecker+Option, Mono.Android"
+	.size	.L.managed_type_name.6774, 62
 	.section	.rodata.managed_type_name.6775,"aMS",%progbits,1
 	.type	.L.managed_type_name.6775, %object
 .L.managed_type_name.6775:
-	.asciz	"Java.Security.Cert.PKIXRevocationChecker+Option, Mono.Android"
-	.size	.L.managed_type_name.6775, 62
+	.asciz	"Java.Security.Cert.PKIXRevocationChecker, Mono.Android"
+	.size	.L.managed_type_name.6775, 55
 	.section	.rodata.managed_type_name.6776,"aMS",%progbits,1
 	.type	.L.managed_type_name.6776, %object
 .L.managed_type_name.6776:
-	.asciz	"Java.Security.Cert.PKIXRevocationChecker, Mono.Android"
-	.size	.L.managed_type_name.6776, 55
+	.asciz	"Java.Security.Cert.PKIXRevocationCheckerInvoker, Mono.Android"
+	.size	.L.managed_type_name.6776, 62
 	.section	.rodata.managed_type_name.6777,"aMS",%progbits,1
 	.type	.L.managed_type_name.6777, %object
 .L.managed_type_name.6777:
-	.asciz	"Java.Security.Cert.PKIXRevocationCheckerInvoker, Mono.Android"
-	.size	.L.managed_type_name.6777, 62
+	.asciz	"Java.Security.Cert.PolicyQualifierInfo, Mono.Android"
+	.size	.L.managed_type_name.6777, 53
 	.section	.rodata.managed_type_name.6778,"aMS",%progbits,1
 	.type	.L.managed_type_name.6778, %object
 .L.managed_type_name.6778:
-	.asciz	"Java.Security.Cert.PolicyQualifierInfo, Mono.Android"
-	.size	.L.managed_type_name.6778, 53
+	.asciz	"Java.Security.Cert.TrustAnchor, Mono.Android"
+	.size	.L.managed_type_name.6778, 45
 	.section	.rodata.managed_type_name.6779,"aMS",%progbits,1
 	.type	.L.managed_type_name.6779, %object
 .L.managed_type_name.6779:
-	.asciz	"Java.Security.Cert.TrustAnchor, Mono.Android"
-	.size	.L.managed_type_name.6779, 45
+	.asciz	"Java.Security.Cert.X509CRL, Mono.Android"
+	.size	.L.managed_type_name.6779, 41
 	.section	.rodata.managed_type_name.6780,"aMS",%progbits,1
 	.type	.L.managed_type_name.6780, %object
 .L.managed_type_name.6780:
-	.asciz	"Java.Security.Cert.X509CRL, Mono.Android"
-	.size	.L.managed_type_name.6780, 41
+	.asciz	"Java.Security.Cert.X509CRLEntry, Mono.Android"
+	.size	.L.managed_type_name.6780, 46
 	.section	.rodata.managed_type_name.6781,"aMS",%progbits,1
 	.type	.L.managed_type_name.6781, %object
 .L.managed_type_name.6781:
-	.asciz	"Java.Security.Cert.X509CRLEntry, Mono.Android"
-	.size	.L.managed_type_name.6781, 46
+	.asciz	"Java.Security.Cert.X509CRLEntryInvoker, Mono.Android"
+	.size	.L.managed_type_name.6781, 53
 	.section	.rodata.managed_type_name.6782,"aMS",%progbits,1
 	.type	.L.managed_type_name.6782, %object
 .L.managed_type_name.6782:
-	.asciz	"Java.Security.Cert.X509CRLEntryInvoker, Mono.Android"
-	.size	.L.managed_type_name.6782, 53
+	.asciz	"Java.Security.Cert.X509CRLInvoker, Mono.Android"
+	.size	.L.managed_type_name.6782, 48
 	.section	.rodata.managed_type_name.6783,"aMS",%progbits,1
 	.type	.L.managed_type_name.6783, %object
 .L.managed_type_name.6783:
-	.asciz	"Java.Security.Cert.X509CRLInvoker, Mono.Android"
-	.size	.L.managed_type_name.6783, 48
+	.asciz	"Java.Security.Cert.X509CRLSelector, Mono.Android"
+	.size	.L.managed_type_name.6783, 49
 	.section	.rodata.managed_type_name.6784,"aMS",%progbits,1
 	.type	.L.managed_type_name.6784, %object
 .L.managed_type_name.6784:
-	.asciz	"Java.Security.Cert.X509CRLSelector, Mono.Android"
-	.size	.L.managed_type_name.6784, 49
+	.asciz	"Java.Security.Cert.X509CertSelector, Mono.Android"
+	.size	.L.managed_type_name.6784, 50
 	.section	.rodata.managed_type_name.6785,"aMS",%progbits,1
 	.type	.L.managed_type_name.6785, %object
 .L.managed_type_name.6785:
-	.asciz	"Java.Security.Cert.X509CertSelector, Mono.Android"
-	.size	.L.managed_type_name.6785, 50
+	.asciz	"Java.Security.Cert.X509Certificate, Mono.Android"
+	.size	.L.managed_type_name.6785, 49
 	.section	.rodata.managed_type_name.6786,"aMS",%progbits,1
 	.type	.L.managed_type_name.6786, %object
 .L.managed_type_name.6786:
-	.asciz	"Java.Security.Cert.X509Certificate, Mono.Android"
-	.size	.L.managed_type_name.6786, 49
+	.asciz	"Java.Security.Cert.X509CertificateInvoker, Mono.Android"
+	.size	.L.managed_type_name.6786, 56
 	.section	.rodata.managed_type_name.6787,"aMS",%progbits,1
 	.type	.L.managed_type_name.6787, %object
 .L.managed_type_name.6787:
-	.asciz	"Java.Security.Cert.X509CertificateInvoker, Mono.Android"
-	.size	.L.managed_type_name.6787, 56
+	.asciz	"Java.Security.CodeSigner, Mono.Android"
+	.size	.L.managed_type_name.6787, 39
 	.section	.rodata.managed_type_name.6788,"aMS",%progbits,1
 	.type	.L.managed_type_name.6788, %object
 .L.managed_type_name.6788:
-	.asciz	"Java.Security.CodeSigner, Mono.Android"
+	.asciz	"Java.Security.CodeSource, Mono.Android"
 	.size	.L.managed_type_name.6788, 39
 	.section	.rodata.managed_type_name.6789,"aMS",%progbits,1
 	.type	.L.managed_type_name.6789, %object
 .L.managed_type_name.6789:
-	.asciz	"Java.Security.CodeSource, Mono.Android"
-	.size	.L.managed_type_name.6789, 39
+	.asciz	"Java.Security.CryptoPrimitive, Mono.Android"
+	.size	.L.managed_type_name.6789, 44
 	.section	.rodata.managed_type_name.6790,"aMS",%progbits,1
 	.type	.L.managed_type_name.6790, %object
 .L.managed_type_name.6790:
-	.asciz	"Java.Security.CryptoPrimitive, Mono.Android"
+	.asciz	"Java.Security.DigestException, Mono.Android"
 	.size	.L.managed_type_name.6790, 44
 	.section	.rodata.managed_type_name.6791,"aMS",%progbits,1
 	.type	.L.managed_type_name.6791, %object
 .L.managed_type_name.6791:
-	.asciz	"Java.Security.DigestException, Mono.Android"
-	.size	.L.managed_type_name.6791, 44
+	.asciz	"Java.Security.DigestInputStream, Mono.Android"
+	.size	.L.managed_type_name.6791, 46
 	.section	.rodata.managed_type_name.6792,"aMS",%progbits,1
 	.type	.L.managed_type_name.6792, %object
 .L.managed_type_name.6792:
-	.asciz	"Java.Security.DigestInputStream, Mono.Android"
-	.size	.L.managed_type_name.6792, 46
+	.asciz	"Java.Security.DigestOutputStream, Mono.Android"
+	.size	.L.managed_type_name.6792, 47
 	.section	.rodata.managed_type_name.6793,"aMS",%progbits,1
 	.type	.L.managed_type_name.6793, %object
 .L.managed_type_name.6793:
-	.asciz	"Java.Security.DigestOutputStream, Mono.Android"
-	.size	.L.managed_type_name.6793, 47
+	.asciz	"Java.Security.DomainLoadStoreParameter, Mono.Android"
+	.size	.L.managed_type_name.6793, 53
 	.section	.rodata.managed_type_name.6794,"aMS",%progbits,1
 	.type	.L.managed_type_name.6794, %object
 .L.managed_type_name.6794:
-	.asciz	"Java.Security.DomainLoadStoreParameter, Mono.Android"
+	.asciz	"Java.Security.GeneralSecurityException, Mono.Android"
 	.size	.L.managed_type_name.6794, 53
 	.section	.rodata.managed_type_name.6795,"aMS",%progbits,1
 	.type	.L.managed_type_name.6795, %object
 .L.managed_type_name.6795:
-	.asciz	"Java.Security.GeneralSecurityException, Mono.Android"
-	.size	.L.managed_type_name.6795, 53
+	.asciz	"Java.Security.GuardedObject, Mono.Android"
+	.size	.L.managed_type_name.6795, 42
 	.section	.rodata.managed_type_name.6796,"aMS",%progbits,1
 	.type	.L.managed_type_name.6796, %object
 .L.managed_type_name.6796:
-	.asciz	"Java.Security.GuardedObject, Mono.Android"
-	.size	.L.managed_type_name.6796, 42
+	.asciz	"Java.Security.IAlgorithmConstraintsInvoker, Mono.Android"
+	.size	.L.managed_type_name.6796, 57
 	.section	.rodata.managed_type_name.6797,"aMS",%progbits,1
 	.type	.L.managed_type_name.6797, %object
 .L.managed_type_name.6797:
-	.asciz	"Java.Security.IAlgorithmConstraintsInvoker, Mono.Android"
-	.size	.L.managed_type_name.6797, 57
+	.asciz	"Java.Security.ICertificateInvoker, Mono.Android"
+	.size	.L.managed_type_name.6797, 48
 	.section	.rodata.managed_type_name.6798,"aMS",%progbits,1
 	.type	.L.managed_type_name.6798, %object
 .L.managed_type_name.6798:
-	.asciz	"Java.Security.ICertificateInvoker, Mono.Android"
-	.size	.L.managed_type_name.6798, 48
+	.asciz	"Java.Security.IDomainCombinerInvoker, Mono.Android"
+	.size	.L.managed_type_name.6798, 51
 	.section	.rodata.managed_type_name.6799,"aMS",%progbits,1
 	.type	.L.managed_type_name.6799, %object
 .L.managed_type_name.6799:
-	.asciz	"Java.Security.IDomainCombinerInvoker, Mono.Android"
-	.size	.L.managed_type_name.6799, 51
+	.asciz	"Java.Security.IGuardInvoker, Mono.Android"
+	.size	.L.managed_type_name.6799, 42
 	.section	.rodata.managed_type_name.6800,"aMS",%progbits,1
 	.type	.L.managed_type_name.6800, %object
 .L.managed_type_name.6800:
-	.asciz	"Java.Security.IGuardInvoker, Mono.Android"
-	.size	.L.managed_type_name.6800, 42
+	.asciz	"Java.Security.IKeyInvoker, Mono.Android"
+	.size	.L.managed_type_name.6800, 40
 	.section	.rodata.managed_type_name.6801,"aMS",%progbits,1
 	.type	.L.managed_type_name.6801, %object
 .L.managed_type_name.6801:
-	.asciz	"Java.Security.IKeyInvoker, Mono.Android"
-	.size	.L.managed_type_name.6801, 40
+	.asciz	"Java.Security.IPrincipalInvoker, Mono.Android"
+	.size	.L.managed_type_name.6801, 46
 	.section	.rodata.managed_type_name.6802,"aMS",%progbits,1
 	.type	.L.managed_type_name.6802, %object
 .L.managed_type_name.6802:
-	.asciz	"Java.Security.IPrincipalInvoker, Mono.Android"
-	.size	.L.managed_type_name.6802, 46
+	.asciz	"Java.Security.IPrivateKeyInvoker, Mono.Android"
+	.size	.L.managed_type_name.6802, 47
 	.section	.rodata.managed_type_name.6803,"aMS",%progbits,1
 	.type	.L.managed_type_name.6803, %object
 .L.managed_type_name.6803:
-	.asciz	"Java.Security.IPrivateKeyInvoker, Mono.Android"
-	.size	.L.managed_type_name.6803, 47
+	.asciz	"Java.Security.IPrivilegedActionInvoker, Mono.Android"
+	.size	.L.managed_type_name.6803, 53
 	.section	.rodata.managed_type_name.6804,"aMS",%progbits,1
 	.type	.L.managed_type_name.6804, %object
 .L.managed_type_name.6804:
-	.asciz	"Java.Security.IPrivilegedActionInvoker, Mono.Android"
-	.size	.L.managed_type_name.6804, 53
+	.asciz	"Java.Security.IPrivilegedExceptionActionInvoker, Mono.Android"
+	.size	.L.managed_type_name.6804, 62
 	.section	.rodata.managed_type_name.6805,"aMS",%progbits,1
 	.type	.L.managed_type_name.6805, %object
 .L.managed_type_name.6805:
-	.asciz	"Java.Security.IPrivilegedExceptionActionInvoker, Mono.Android"
-	.size	.L.managed_type_name.6805, 62
+	.asciz	"Java.Security.IPublicKeyInvoker, Mono.Android"
+	.size	.L.managed_type_name.6805, 46
 	.section	.rodata.managed_type_name.6806,"aMS",%progbits,1
 	.type	.L.managed_type_name.6806, %object
 .L.managed_type_name.6806:
-	.asciz	"Java.Security.IPublicKeyInvoker, Mono.Android"
-	.size	.L.managed_type_name.6806, 46
+	.asciz	"Java.Security.Identity, Mono.Android"
+	.size	.L.managed_type_name.6806, 37
 	.section	.rodata.managed_type_name.6807,"aMS",%progbits,1
 	.type	.L.managed_type_name.6807, %object
 .L.managed_type_name.6807:
-	.asciz	"Java.Security.Identity, Mono.Android"
-	.size	.L.managed_type_name.6807, 37
+	.asciz	"Java.Security.IdentityInvoker, Mono.Android"
+	.size	.L.managed_type_name.6807, 44
 	.section	.rodata.managed_type_name.6808,"aMS",%progbits,1
 	.type	.L.managed_type_name.6808, %object
 .L.managed_type_name.6808:
-	.asciz	"Java.Security.IdentityInvoker, Mono.Android"
-	.size	.L.managed_type_name.6808, 44
+	.asciz	"Java.Security.IdentityScope, Mono.Android"
+	.size	.L.managed_type_name.6808, 42
 	.section	.rodata.managed_type_name.6809,"aMS",%progbits,1
 	.type	.L.managed_type_name.6809, %object
 .L.managed_type_name.6809:
-	.asciz	"Java.Security.IdentityScope, Mono.Android"
-	.size	.L.managed_type_name.6809, 42
+	.asciz	"Java.Security.IdentityScopeInvoker, Mono.Android"
+	.size	.L.managed_type_name.6809, 49
 	.section	.rodata.managed_type_name.6810,"aMS",%progbits,1
 	.type	.L.managed_type_name.6810, %object
 .L.managed_type_name.6810:
-	.asciz	"Java.Security.IdentityScopeInvoker, Mono.Android"
-	.size	.L.managed_type_name.6810, 49
+	.asciz	"Java.Security.Interfaces.DSAPrivateKey, Mono.Android"
+	.size	.L.managed_type_name.6810, 53
 	.section	.rodata.managed_type_name.6811,"aMS",%progbits,1
 	.type	.L.managed_type_name.6811, %object
 .L.managed_type_name.6811:
-	.asciz	"Java.Security.Interfaces.DSAPrivateKey, Mono.Android"
-	.size	.L.managed_type_name.6811, 53
+	.asciz	"Java.Security.Interfaces.DSAPublicKey, Mono.Android"
+	.size	.L.managed_type_name.6811, 52
 	.section	.rodata.managed_type_name.6812,"aMS",%progbits,1
 	.type	.L.managed_type_name.6812, %object
 .L.managed_type_name.6812:
-	.asciz	"Java.Security.Interfaces.DSAPublicKey, Mono.Android"
+	.asciz	"Java.Security.Interfaces.ECPrivateKey, Mono.Android"
 	.size	.L.managed_type_name.6812, 52
 	.section	.rodata.managed_type_name.6813,"aMS",%progbits,1
 	.type	.L.managed_type_name.6813, %object
 .L.managed_type_name.6813:
-	.asciz	"Java.Security.Interfaces.ECPrivateKey, Mono.Android"
-	.size	.L.managed_type_name.6813, 52
+	.asciz	"Java.Security.Interfaces.ECPublicKey, Mono.Android"
+	.size	.L.managed_type_name.6813, 51
 	.section	.rodata.managed_type_name.6814,"aMS",%progbits,1
 	.type	.L.managed_type_name.6814, %object
 .L.managed_type_name.6814:
-	.asciz	"Java.Security.Interfaces.ECPublicKey, Mono.Android"
-	.size	.L.managed_type_name.6814, 51
+	.asciz	"Java.Security.Interfaces.IDSAKeyInvoker, Mono.Android"
+	.size	.L.managed_type_name.6814, 54
 	.section	.rodata.managed_type_name.6815,"aMS",%progbits,1
 	.type	.L.managed_type_name.6815, %object
 .L.managed_type_name.6815:
-	.asciz	"Java.Security.Interfaces.IDSAKeyInvoker, Mono.Android"
-	.size	.L.managed_type_name.6815, 54
+	.asciz	"Java.Security.Interfaces.IDSAKeyPairGeneratorInvoker, Mono.Android"
+	.size	.L.managed_type_name.6815, 67
 	.section	.rodata.managed_type_name.6816,"aMS",%progbits,1
 	.type	.L.managed_type_name.6816, %object
 .L.managed_type_name.6816:
-	.asciz	"Java.Security.Interfaces.IDSAKeyPairGeneratorInvoker, Mono.Android"
-	.size	.L.managed_type_name.6816, 67
+	.asciz	"Java.Security.Interfaces.IDSAParamsInvoker, Mono.Android"
+	.size	.L.managed_type_name.6816, 57
 	.section	.rodata.managed_type_name.6817,"aMS",%progbits,1
 	.type	.L.managed_type_name.6817, %object
 .L.managed_type_name.6817:
-	.asciz	"Java.Security.Interfaces.IDSAParamsInvoker, Mono.Android"
-	.size	.L.managed_type_name.6817, 57
+	.asciz	"Java.Security.Interfaces.IDSAPrivateKeyInvoker, Mono.Android"
+	.size	.L.managed_type_name.6817, 61
 	.section	.rodata.managed_type_name.6818,"aMS",%progbits,1
 	.type	.L.managed_type_name.6818, %object
 .L.managed_type_name.6818:
-	.asciz	"Java.Security.Interfaces.IDSAPrivateKeyInvoker, Mono.Android"
-	.size	.L.managed_type_name.6818, 61
+	.asciz	"Java.Security.Interfaces.IDSAPublicKeyInvoker, Mono.Android"
+	.size	.L.managed_type_name.6818, 60
 	.section	.rodata.managed_type_name.6819,"aMS",%progbits,1
 	.type	.L.managed_type_name.6819, %object
 .L.managed_type_name.6819:
-	.asciz	"Java.Security.Interfaces.IDSAPublicKeyInvoker, Mono.Android"
-	.size	.L.managed_type_name.6819, 60
+	.asciz	"Java.Security.Interfaces.IECKeyInvoker, Mono.Android"
+	.size	.L.managed_type_name.6819, 53
 	.section	.rodata.managed_type_name.6820,"aMS",%progbits,1
 	.type	.L.managed_type_name.6820, %object
 .L.managed_type_name.6820:
-	.asciz	"Java.Security.Interfaces.IECKeyInvoker, Mono.Android"
-	.size	.L.managed_type_name.6820, 53
+	.asciz	"Java.Security.Interfaces.IECPrivateKeyInvoker, Mono.Android"
+	.size	.L.managed_type_name.6820, 60
 	.section	.rodata.managed_type_name.6821,"aMS",%progbits,1
 	.type	.L.managed_type_name.6821, %object
 .L.managed_type_name.6821:
-	.asciz	"Java.Security.Interfaces.IECPrivateKeyInvoker, Mono.Android"
-	.size	.L.managed_type_name.6821, 60
+	.asciz	"Java.Security.Interfaces.IECPublicKeyInvoker, Mono.Android"
+	.size	.L.managed_type_name.6821, 59
 	.section	.rodata.managed_type_name.6822,"aMS",%progbits,1
 	.type	.L.managed_type_name.6822, %object
 .L.managed_type_name.6822:
-	.asciz	"Java.Security.Interfaces.IECPublicKeyInvoker, Mono.Android"
-	.size	.L.managed_type_name.6822, 59
+	.asciz	"Java.Security.Interfaces.IRSAKeyInvoker, Mono.Android"
+	.size	.L.managed_type_name.6822, 54
 	.section	.rodata.managed_type_name.6823,"aMS",%progbits,1
 	.type	.L.managed_type_name.6823, %object
 .L.managed_type_name.6823:
-	.asciz	"Java.Security.Interfaces.IRSAKeyInvoker, Mono.Android"
-	.size	.L.managed_type_name.6823, 54
+	.asciz	"Java.Security.Interfaces.IRSAMultiPrimePrivateCrtKeyInvoker, Mono.Android"
+	.size	.L.managed_type_name.6823, 74
 	.section	.rodata.managed_type_name.6824,"aMS",%progbits,1
 	.type	.L.managed_type_name.6824, %object
 .L.managed_type_name.6824:
-	.asciz	"Java.Security.Interfaces.IRSAMultiPrimePrivateCrtKeyInvoker, Mono.Android"
-	.size	.L.managed_type_name.6824, 74
+	.asciz	"Java.Security.Interfaces.IRSAPrivateCrtKeyInvoker, Mono.Android"
+	.size	.L.managed_type_name.6824, 64
 	.section	.rodata.managed_type_name.6825,"aMS",%progbits,1
 	.type	.L.managed_type_name.6825, %object
 .L.managed_type_name.6825:
-	.asciz	"Java.Security.Interfaces.IRSAPrivateCrtKeyInvoker, Mono.Android"
-	.size	.L.managed_type_name.6825, 64
+	.asciz	"Java.Security.Interfaces.IRSAPrivateKeyInvoker, Mono.Android"
+	.size	.L.managed_type_name.6825, 61
 	.section	.rodata.managed_type_name.6826,"aMS",%progbits,1
 	.type	.L.managed_type_name.6826, %object
 .L.managed_type_name.6826:
-	.asciz	"Java.Security.Interfaces.IRSAPrivateKeyInvoker, Mono.Android"
-	.size	.L.managed_type_name.6826, 61
+	.asciz	"Java.Security.Interfaces.IRSAPublicKeyInvoker, Mono.Android"
+	.size	.L.managed_type_name.6826, 60
 	.section	.rodata.managed_type_name.6827,"aMS",%progbits,1
 	.type	.L.managed_type_name.6827, %object
 .L.managed_type_name.6827:
-	.asciz	"Java.Security.Interfaces.IRSAPublicKeyInvoker, Mono.Android"
-	.size	.L.managed_type_name.6827, 60
+	.asciz	"Java.Security.Interfaces.RSAMultiPrimePrivateCrtKey, Mono.Android"
+	.size	.L.managed_type_name.6827, 66
 	.section	.rodata.managed_type_name.6828,"aMS",%progbits,1
 	.type	.L.managed_type_name.6828, %object
 .L.managed_type_name.6828:
-	.asciz	"Java.Security.Interfaces.RSAMultiPrimePrivateCrtKey, Mono.Android"
-	.size	.L.managed_type_name.6828, 66
+	.asciz	"Java.Security.Interfaces.RSAPrivateCrtKey, Mono.Android"
+	.size	.L.managed_type_name.6828, 56
 	.section	.rodata.managed_type_name.6829,"aMS",%progbits,1
 	.type	.L.managed_type_name.6829, %object
 .L.managed_type_name.6829:
-	.asciz	"Java.Security.Interfaces.RSAPrivateCrtKey, Mono.Android"
-	.size	.L.managed_type_name.6829, 56
+	.asciz	"Java.Security.Interfaces.RSAPrivateKey, Mono.Android"
+	.size	.L.managed_type_name.6829, 53
 	.section	.rodata.managed_type_name.6830,"aMS",%progbits,1
 	.type	.L.managed_type_name.6830, %object
 .L.managed_type_name.6830:
-	.asciz	"Java.Security.Interfaces.RSAPrivateKey, Mono.Android"
-	.size	.L.managed_type_name.6830, 53
+	.asciz	"Java.Security.Interfaces.RSAPublicKey, Mono.Android"
+	.size	.L.managed_type_name.6830, 52
 	.section	.rodata.managed_type_name.6831,"aMS",%progbits,1
 	.type	.L.managed_type_name.6831, %object
 .L.managed_type_name.6831:
-	.asciz	"Java.Security.Interfaces.RSAPublicKey, Mono.Android"
-	.size	.L.managed_type_name.6831, 52
+	.asciz	"Java.Security.InvalidAlgorithmParameterException, Mono.Android"
+	.size	.L.managed_type_name.6831, 63
 	.section	.rodata.managed_type_name.6832,"aMS",%progbits,1
 	.type	.L.managed_type_name.6832, %object
 .L.managed_type_name.6832:
-	.asciz	"Java.Security.InvalidAlgorithmParameterException, Mono.Android"
-	.size	.L.managed_type_name.6832, 63
+	.asciz	"Java.Security.InvalidKeyException, Mono.Android"
+	.size	.L.managed_type_name.6832, 48
 	.section	.rodata.managed_type_name.6833,"aMS",%progbits,1
 	.type	.L.managed_type_name.6833, %object
 .L.managed_type_name.6833:
-	.asciz	"Java.Security.InvalidKeyException, Mono.Android"
-	.size	.L.managed_type_name.6833, 48
+	.asciz	"Java.Security.InvalidParameterException, Mono.Android"
+	.size	.L.managed_type_name.6833, 54
 	.section	.rodata.managed_type_name.6834,"aMS",%progbits,1
 	.type	.L.managed_type_name.6834, %object
 .L.managed_type_name.6834:
-	.asciz	"Java.Security.InvalidParameterException, Mono.Android"
-	.size	.L.managed_type_name.6834, 54
+	.asciz	"Java.Security.Key, Mono.Android"
+	.size	.L.managed_type_name.6834, 32
 	.section	.rodata.managed_type_name.6835,"aMS",%progbits,1
 	.type	.L.managed_type_name.6835, %object
 .L.managed_type_name.6835:
-	.asciz	"Java.Security.Key, Mono.Android"
-	.size	.L.managed_type_name.6835, 32
+	.asciz	"Java.Security.KeyException, Mono.Android"
+	.size	.L.managed_type_name.6835, 41
 	.section	.rodata.managed_type_name.6836,"aMS",%progbits,1
 	.type	.L.managed_type_name.6836, %object
 .L.managed_type_name.6836:
-	.asciz	"Java.Security.KeyException, Mono.Android"
-	.size	.L.managed_type_name.6836, 41
+	.asciz	"Java.Security.KeyFactory, Mono.Android"
+	.size	.L.managed_type_name.6836, 39
 	.section	.rodata.managed_type_name.6837,"aMS",%progbits,1
 	.type	.L.managed_type_name.6837, %object
 .L.managed_type_name.6837:
-	.asciz	"Java.Security.KeyFactory, Mono.Android"
-	.size	.L.managed_type_name.6837, 39
+	.asciz	"Java.Security.KeyFactorySpi, Mono.Android"
+	.size	.L.managed_type_name.6837, 42
 	.section	.rodata.managed_type_name.6838,"aMS",%progbits,1
 	.type	.L.managed_type_name.6838, %object
 .L.managed_type_name.6838:
-	.asciz	"Java.Security.KeyFactorySpi, Mono.Android"
-	.size	.L.managed_type_name.6838, 42
+	.asciz	"Java.Security.KeyFactorySpiInvoker, Mono.Android"
+	.size	.L.managed_type_name.6838, 49
 	.section	.rodata.managed_type_name.6839,"aMS",%progbits,1
 	.type	.L.managed_type_name.6839, %object
 .L.managed_type_name.6839:
-	.asciz	"Java.Security.KeyFactorySpiInvoker, Mono.Android"
-	.size	.L.managed_type_name.6839, 49
+	.asciz	"Java.Security.KeyManagementException, Mono.Android"
+	.size	.L.managed_type_name.6839, 51
 	.section	.rodata.managed_type_name.6840,"aMS",%progbits,1
 	.type	.L.managed_type_name.6840, %object
 .L.managed_type_name.6840:
-	.asciz	"Java.Security.KeyManagementException, Mono.Android"
-	.size	.L.managed_type_name.6840, 51
+	.asciz	"Java.Security.KeyPair, Mono.Android"
+	.size	.L.managed_type_name.6840, 36
 	.section	.rodata.managed_type_name.6841,"aMS",%progbits,1
 	.type	.L.managed_type_name.6841, %object
 .L.managed_type_name.6841:
-	.asciz	"Java.Security.KeyPair, Mono.Android"
-	.size	.L.managed_type_name.6841, 36
+	.asciz	"Java.Security.KeyPairGenerator, Mono.Android"
+	.size	.L.managed_type_name.6841, 45
 	.section	.rodata.managed_type_name.6842,"aMS",%progbits,1
 	.type	.L.managed_type_name.6842, %object
 .L.managed_type_name.6842:
-	.asciz	"Java.Security.KeyPairGenerator, Mono.Android"
-	.size	.L.managed_type_name.6842, 45
+	.asciz	"Java.Security.KeyPairGeneratorInvoker, Mono.Android"
+	.size	.L.managed_type_name.6842, 52
 	.section	.rodata.managed_type_name.6843,"aMS",%progbits,1
 	.type	.L.managed_type_name.6843, %object
 .L.managed_type_name.6843:
-	.asciz	"Java.Security.KeyPairGeneratorInvoker, Mono.Android"
-	.size	.L.managed_type_name.6843, 52
+	.asciz	"Java.Security.KeyPairGeneratorSpi, Mono.Android"
+	.size	.L.managed_type_name.6843, 48
 	.section	.rodata.managed_type_name.6844,"aMS",%progbits,1
 	.type	.L.managed_type_name.6844, %object
 .L.managed_type_name.6844:
-	.asciz	"Java.Security.KeyPairGeneratorSpi, Mono.Android"
-	.size	.L.managed_type_name.6844, 48
+	.asciz	"Java.Security.KeyPairGeneratorSpiInvoker, Mono.Android"
+	.size	.L.managed_type_name.6844, 55
 	.section	.rodata.managed_type_name.6845,"aMS",%progbits,1
 	.type	.L.managed_type_name.6845, %object
 .L.managed_type_name.6845:
-	.asciz	"Java.Security.KeyPairGeneratorSpiInvoker, Mono.Android"
-	.size	.L.managed_type_name.6845, 55
+	.asciz	"Java.Security.KeyRep+Type, Mono.Android"
+	.size	.L.managed_type_name.6845, 40
 	.section	.rodata.managed_type_name.6846,"aMS",%progbits,1
 	.type	.L.managed_type_name.6846, %object
 .L.managed_type_name.6846:
-	.asciz	"Java.Security.KeyRep+Type, Mono.Android"
-	.size	.L.managed_type_name.6846, 40
+	.asciz	"Java.Security.KeyRep, Mono.Android"
+	.size	.L.managed_type_name.6846, 35
 	.section	.rodata.managed_type_name.6847,"aMS",%progbits,1
 	.type	.L.managed_type_name.6847, %object
 .L.managed_type_name.6847:
-	.asciz	"Java.Security.KeyRep, Mono.Android"
-	.size	.L.managed_type_name.6847, 35
+	.asciz	"Java.Security.KeyStore+Builder, Mono.Android"
+	.size	.L.managed_type_name.6847, 45
 	.section	.rodata.managed_type_name.6848,"aMS",%progbits,1
 	.type	.L.managed_type_name.6848, %object
 .L.managed_type_name.6848:
-	.asciz	"Java.Security.KeyStore+Builder, Mono.Android"
-	.size	.L.managed_type_name.6848, 45
+	.asciz	"Java.Security.KeyStore+BuilderInvoker, Mono.Android"
+	.size	.L.managed_type_name.6848, 52
 	.section	.rodata.managed_type_name.6849,"aMS",%progbits,1
 	.type	.L.managed_type_name.6849, %object
 .L.managed_type_name.6849:
-	.asciz	"Java.Security.KeyStore+BuilderInvoker, Mono.Android"
-	.size	.L.managed_type_name.6849, 52
+	.asciz	"Java.Security.KeyStore+CallbackHandlerProtection, Mono.Android"
+	.size	.L.managed_type_name.6849, 63
 	.section	.rodata.managed_type_name.6850,"aMS",%progbits,1
 	.type	.L.managed_type_name.6850, %object
 .L.managed_type_name.6850:
-	.asciz	"Java.Security.KeyStore+CallbackHandlerProtection, Mono.Android"
-	.size	.L.managed_type_name.6850, 63
+	.asciz	"Java.Security.KeyStore+IEntryAttributeInvoker, Mono.Android"
+	.size	.L.managed_type_name.6850, 60
 	.section	.rodata.managed_type_name.6851,"aMS",%progbits,1
 	.type	.L.managed_type_name.6851, %object
 .L.managed_type_name.6851:
-	.asciz	"Java.Security.KeyStore+IEntryAttributeInvoker, Mono.Android"
-	.size	.L.managed_type_name.6851, 60
+	.asciz	"Java.Security.KeyStore+IEntryInvoker, Mono.Android"
+	.size	.L.managed_type_name.6851, 51
 	.section	.rodata.managed_type_name.6852,"aMS",%progbits,1
 	.type	.L.managed_type_name.6852, %object
 .L.managed_type_name.6852:
-	.asciz	"Java.Security.KeyStore+IEntryInvoker, Mono.Android"
-	.size	.L.managed_type_name.6852, 51
+	.asciz	"Java.Security.KeyStore+ILoadStoreParameterInvoker, Mono.Android"
+	.size	.L.managed_type_name.6852, 64
 	.section	.rodata.managed_type_name.6853,"aMS",%progbits,1
 	.type	.L.managed_type_name.6853, %object
 .L.managed_type_name.6853:
-	.asciz	"Java.Security.KeyStore+ILoadStoreParameterInvoker, Mono.Android"
-	.size	.L.managed_type_name.6853, 64
+	.asciz	"Java.Security.KeyStore+IProtectionParameterInvoker, Mono.Android"
+	.size	.L.managed_type_name.6853, 65
 	.section	.rodata.managed_type_name.6854,"aMS",%progbits,1
 	.type	.L.managed_type_name.6854, %object
 .L.managed_type_name.6854:
-	.asciz	"Java.Security.KeyStore+IProtectionParameterInvoker, Mono.Android"
-	.size	.L.managed_type_name.6854, 65
+	.asciz	"Java.Security.KeyStore+PasswordProtection, Mono.Android"
+	.size	.L.managed_type_name.6854, 56
 	.section	.rodata.managed_type_name.6855,"aMS",%progbits,1
 	.type	.L.managed_type_name.6855, %object
 .L.managed_type_name.6855:
-	.asciz	"Java.Security.KeyStore+PasswordProtection, Mono.Android"
-	.size	.L.managed_type_name.6855, 56
+	.asciz	"Java.Security.KeyStore+PrivateKeyEntry, Mono.Android"
+	.size	.L.managed_type_name.6855, 53
 	.section	.rodata.managed_type_name.6856,"aMS",%progbits,1
 	.type	.L.managed_type_name.6856, %object
 .L.managed_type_name.6856:
-	.asciz	"Java.Security.KeyStore+PrivateKeyEntry, Mono.Android"
-	.size	.L.managed_type_name.6856, 53
+	.asciz	"Java.Security.KeyStore+SecretKeyEntry, Mono.Android"
+	.size	.L.managed_type_name.6856, 52
 	.section	.rodata.managed_type_name.6857,"aMS",%progbits,1
 	.type	.L.managed_type_name.6857, %object
 .L.managed_type_name.6857:
-	.asciz	"Java.Security.KeyStore+SecretKeyEntry, Mono.Android"
-	.size	.L.managed_type_name.6857, 52
+	.asciz	"Java.Security.KeyStore+TrustedCertificateEntry, Mono.Android"
+	.size	.L.managed_type_name.6857, 61
 	.section	.rodata.managed_type_name.6858,"aMS",%progbits,1
 	.type	.L.managed_type_name.6858, %object
 .L.managed_type_name.6858:
-	.asciz	"Java.Security.KeyStore+TrustedCertificateEntry, Mono.Android"
-	.size	.L.managed_type_name.6858, 61
+	.asciz	"Java.Security.KeyStore, Mono.Android"
+	.size	.L.managed_type_name.6858, 37
 	.section	.rodata.managed_type_name.6859,"aMS",%progbits,1
 	.type	.L.managed_type_name.6859, %object
 .L.managed_type_name.6859:
-	.asciz	"Java.Security.KeyStore, Mono.Android"
-	.size	.L.managed_type_name.6859, 37
+	.asciz	"Java.Security.KeyStoreException, Mono.Android"
+	.size	.L.managed_type_name.6859, 46
 	.section	.rodata.managed_type_name.6860,"aMS",%progbits,1
 	.type	.L.managed_type_name.6860, %object
 .L.managed_type_name.6860:
-	.asciz	"Java.Security.KeyStoreException, Mono.Android"
-	.size	.L.managed_type_name.6860, 46
+	.asciz	"Java.Security.KeyStoreSpi, Mono.Android"
+	.size	.L.managed_type_name.6860, 40
 	.section	.rodata.managed_type_name.6861,"aMS",%progbits,1
 	.type	.L.managed_type_name.6861, %object
 .L.managed_type_name.6861:
-	.asciz	"Java.Security.KeyStoreSpi, Mono.Android"
-	.size	.L.managed_type_name.6861, 40
+	.asciz	"Java.Security.KeyStoreSpiInvoker, Mono.Android"
+	.size	.L.managed_type_name.6861, 47
 	.section	.rodata.managed_type_name.6862,"aMS",%progbits,1
 	.type	.L.managed_type_name.6862, %object
 .L.managed_type_name.6862:
-	.asciz	"Java.Security.KeyStoreSpiInvoker, Mono.Android"
-	.size	.L.managed_type_name.6862, 47
+	.asciz	"Java.Security.MessageDigest, Mono.Android"
+	.size	.L.managed_type_name.6862, 42
 	.section	.rodata.managed_type_name.6863,"aMS",%progbits,1
 	.type	.L.managed_type_name.6863, %object
 .L.managed_type_name.6863:
-	.asciz	"Java.Security.MessageDigest, Mono.Android"
-	.size	.L.managed_type_name.6863, 42
+	.asciz	"Java.Security.MessageDigestInvoker, Mono.Android"
+	.size	.L.managed_type_name.6863, 49
 	.section	.rodata.managed_type_name.6864,"aMS",%progbits,1
 	.type	.L.managed_type_name.6864, %object
 .L.managed_type_name.6864:
-	.asciz	"Java.Security.MessageDigestInvoker, Mono.Android"
-	.size	.L.managed_type_name.6864, 49
+	.asciz	"Java.Security.MessageDigestSpi, Mono.Android"
+	.size	.L.managed_type_name.6864, 45
 	.section	.rodata.managed_type_name.6865,"aMS",%progbits,1
 	.type	.L.managed_type_name.6865, %object
 .L.managed_type_name.6865:
-	.asciz	"Java.Security.MessageDigestSpi, Mono.Android"
-	.size	.L.managed_type_name.6865, 45
+	.asciz	"Java.Security.MessageDigestSpiInvoker, Mono.Android"
+	.size	.L.managed_type_name.6865, 52
 	.section	.rodata.managed_type_name.6866,"aMS",%progbits,1
 	.type	.L.managed_type_name.6866, %object
 .L.managed_type_name.6866:
-	.asciz	"Java.Security.MessageDigestSpiInvoker, Mono.Android"
-	.size	.L.managed_type_name.6866, 52
+	.asciz	"Java.Security.NoSuchAlgorithmException, Mono.Android"
+	.size	.L.managed_type_name.6866, 53
 	.section	.rodata.managed_type_name.6867,"aMS",%progbits,1
 	.type	.L.managed_type_name.6867, %object
 .L.managed_type_name.6867:
-	.asciz	"Java.Security.NoSuchAlgorithmException, Mono.Android"
-	.size	.L.managed_type_name.6867, 53
+	.asciz	"Java.Security.NoSuchProviderException, Mono.Android"
+	.size	.L.managed_type_name.6867, 52
 	.section	.rodata.managed_type_name.6868,"aMS",%progbits,1
 	.type	.L.managed_type_name.6868, %object
 .L.managed_type_name.6868:
-	.asciz	"Java.Security.NoSuchProviderException, Mono.Android"
-	.size	.L.managed_type_name.6868, 52
+	.asciz	"Java.Security.PKCS12Attribute, Mono.Android"
+	.size	.L.managed_type_name.6868, 44
 	.section	.rodata.managed_type_name.6869,"aMS",%progbits,1
 	.type	.L.managed_type_name.6869, %object
 .L.managed_type_name.6869:
-	.asciz	"Java.Security.PKCS12Attribute, Mono.Android"
-	.size	.L.managed_type_name.6869, 44
+	.asciz	"Java.Security.Permission, Mono.Android"
+	.size	.L.managed_type_name.6869, 39
 	.section	.rodata.managed_type_name.6870,"aMS",%progbits,1
 	.type	.L.managed_type_name.6870, %object
 .L.managed_type_name.6870:
-	.asciz	"Java.Security.Permission, Mono.Android"
-	.size	.L.managed_type_name.6870, 39
+	.asciz	"Java.Security.PermissionCollection, Mono.Android"
+	.size	.L.managed_type_name.6870, 49
 	.section	.rodata.managed_type_name.6871,"aMS",%progbits,1
 	.type	.L.managed_type_name.6871, %object
 .L.managed_type_name.6871:
-	.asciz	"Java.Security.PermissionCollection, Mono.Android"
-	.size	.L.managed_type_name.6871, 49
+	.asciz	"Java.Security.PermissionCollectionInvoker, Mono.Android"
+	.size	.L.managed_type_name.6871, 56
 	.section	.rodata.managed_type_name.6872,"aMS",%progbits,1
 	.type	.L.managed_type_name.6872, %object
 .L.managed_type_name.6872:
-	.asciz	"Java.Security.PermissionCollectionInvoker, Mono.Android"
-	.size	.L.managed_type_name.6872, 56
+	.asciz	"Java.Security.PermissionInvoker, Mono.Android"
+	.size	.L.managed_type_name.6872, 46
 	.section	.rodata.managed_type_name.6873,"aMS",%progbits,1
 	.type	.L.managed_type_name.6873, %object
 .L.managed_type_name.6873:
-	.asciz	"Java.Security.PermissionInvoker, Mono.Android"
-	.size	.L.managed_type_name.6873, 46
+	.asciz	"Java.Security.Permissions, Mono.Android"
+	.size	.L.managed_type_name.6873, 40
 	.section	.rodata.managed_type_name.6874,"aMS",%progbits,1
 	.type	.L.managed_type_name.6874, %object
 .L.managed_type_name.6874:
-	.asciz	"Java.Security.Permissions, Mono.Android"
-	.size	.L.managed_type_name.6874, 40
+	.asciz	"Java.Security.Policy+IParametersInvoker, Mono.Android"
+	.size	.L.managed_type_name.6874, 54
 	.section	.rodata.managed_type_name.6875,"aMS",%progbits,1
 	.type	.L.managed_type_name.6875, %object
 .L.managed_type_name.6875:
-	.asciz	"Java.Security.Policy+IParametersInvoker, Mono.Android"
-	.size	.L.managed_type_name.6875, 54
+	.asciz	"Java.Security.Policy, Mono.Android"
+	.size	.L.managed_type_name.6875, 35
 	.section	.rodata.managed_type_name.6876,"aMS",%progbits,1
 	.type	.L.managed_type_name.6876, %object
 .L.managed_type_name.6876:
-	.asciz	"Java.Security.Policy, Mono.Android"
-	.size	.L.managed_type_name.6876, 35
+	.asciz	"Java.Security.PolicyInvoker, Mono.Android"
+	.size	.L.managed_type_name.6876, 42
 	.section	.rodata.managed_type_name.6877,"aMS",%progbits,1
 	.type	.L.managed_type_name.6877, %object
 .L.managed_type_name.6877:
-	.asciz	"Java.Security.PolicyInvoker, Mono.Android"
-	.size	.L.managed_type_name.6877, 42
+	.asciz	"Java.Security.PolicySpi, Mono.Android"
+	.size	.L.managed_type_name.6877, 38
 	.section	.rodata.managed_type_name.6878,"aMS",%progbits,1
 	.type	.L.managed_type_name.6878, %object
 .L.managed_type_name.6878:
-	.asciz	"Java.Security.PolicySpi, Mono.Android"
-	.size	.L.managed_type_name.6878, 38
+	.asciz	"Java.Security.PolicySpiInvoker, Mono.Android"
+	.size	.L.managed_type_name.6878, 45
 	.section	.rodata.managed_type_name.6879,"aMS",%progbits,1
 	.type	.L.managed_type_name.6879, %object
 .L.managed_type_name.6879:
-	.asciz	"Java.Security.PolicySpiInvoker, Mono.Android"
-	.size	.L.managed_type_name.6879, 45
+	.asciz	"Java.Security.PrivateKey, Mono.Android"
+	.size	.L.managed_type_name.6879, 39
 	.section	.rodata.managed_type_name.6880,"aMS",%progbits,1
 	.type	.L.managed_type_name.6880, %object
 .L.managed_type_name.6880:
-	.asciz	"Java.Security.PrivateKey, Mono.Android"
-	.size	.L.managed_type_name.6880, 39
+	.asciz	"Java.Security.PrivilegedActionException, Mono.Android"
+	.size	.L.managed_type_name.6880, 54
 	.section	.rodata.managed_type_name.6881,"aMS",%progbits,1
 	.type	.L.managed_type_name.6881, %object
 .L.managed_type_name.6881:
-	.asciz	"Java.Security.PrivilegedActionException, Mono.Android"
-	.size	.L.managed_type_name.6881, 54
+	.asciz	"Java.Security.ProtectionDomain, Mono.Android"
+	.size	.L.managed_type_name.6881, 45
 	.section	.rodata.managed_type_name.6882,"aMS",%progbits,1
 	.type	.L.managed_type_name.6882, %object
 .L.managed_type_name.6882:
-	.asciz	"Java.Security.ProtectionDomain, Mono.Android"
+	.asciz	"Java.Security.Provider+Service, Mono.Android"
 	.size	.L.managed_type_name.6882, 45
 	.section	.rodata.managed_type_name.6883,"aMS",%progbits,1
 	.type	.L.managed_type_name.6883, %object
 .L.managed_type_name.6883:
-	.asciz	"Java.Security.Provider+Service, Mono.Android"
-	.size	.L.managed_type_name.6883, 45
+	.asciz	"Java.Security.Provider, Mono.Android"
+	.size	.L.managed_type_name.6883, 37
 	.section	.rodata.managed_type_name.6884,"aMS",%progbits,1
 	.type	.L.managed_type_name.6884, %object
 .L.managed_type_name.6884:
-	.asciz	"Java.Security.Provider, Mono.Android"
-	.size	.L.managed_type_name.6884, 37
+	.asciz	"Java.Security.ProviderException, Mono.Android"
+	.size	.L.managed_type_name.6884, 46
 	.section	.rodata.managed_type_name.6885,"aMS",%progbits,1
 	.type	.L.managed_type_name.6885, %object
 .L.managed_type_name.6885:
-	.asciz	"Java.Security.ProviderException, Mono.Android"
-	.size	.L.managed_type_name.6885, 46
+	.asciz	"Java.Security.ProviderInvoker, Mono.Android"
+	.size	.L.managed_type_name.6885, 44
 	.section	.rodata.managed_type_name.6886,"aMS",%progbits,1
 	.type	.L.managed_type_name.6886, %object
 .L.managed_type_name.6886:
-	.asciz	"Java.Security.ProviderInvoker, Mono.Android"
-	.size	.L.managed_type_name.6886, 44
+	.asciz	"Java.Security.PublicKey, Mono.Android"
+	.size	.L.managed_type_name.6886, 38
 	.section	.rodata.managed_type_name.6887,"aMS",%progbits,1
 	.type	.L.managed_type_name.6887, %object
 .L.managed_type_name.6887:
-	.asciz	"Java.Security.PublicKey, Mono.Android"
-	.size	.L.managed_type_name.6887, 38
+	.asciz	"Java.Security.SecureClassLoader, Mono.Android"
+	.size	.L.managed_type_name.6887, 46
 	.section	.rodata.managed_type_name.6888,"aMS",%progbits,1
 	.type	.L.managed_type_name.6888, %object
 .L.managed_type_name.6888:
-	.asciz	"Java.Security.SecureClassLoader, Mono.Android"
-	.size	.L.managed_type_name.6888, 46
+	.asciz	"Java.Security.SecureRandom, Mono.Android"
+	.size	.L.managed_type_name.6888, 41
 	.section	.rodata.managed_type_name.6889,"aMS",%progbits,1
 	.type	.L.managed_type_name.6889, %object
 .L.managed_type_name.6889:
-	.asciz	"Java.Security.SecureRandom, Mono.Android"
-	.size	.L.managed_type_name.6889, 41
+	.asciz	"Java.Security.SecureRandomSpi, Mono.Android"
+	.size	.L.managed_type_name.6889, 44
 	.section	.rodata.managed_type_name.6890,"aMS",%progbits,1
 	.type	.L.managed_type_name.6890, %object
 .L.managed_type_name.6890:
-	.asciz	"Java.Security.SecureRandomSpi, Mono.Android"
-	.size	.L.managed_type_name.6890, 44
+	.asciz	"Java.Security.SecureRandomSpiInvoker, Mono.Android"
+	.size	.L.managed_type_name.6890, 51
 	.section	.rodata.managed_type_name.6891,"aMS",%progbits,1
 	.type	.L.managed_type_name.6891, %object
 .L.managed_type_name.6891:
-	.asciz	"Java.Security.SecureRandomSpiInvoker, Mono.Android"
-	.size	.L.managed_type_name.6891, 51
+	.asciz	"Java.Security.Security, Mono.Android"
+	.size	.L.managed_type_name.6891, 37
 	.section	.rodata.managed_type_name.6892,"aMS",%progbits,1
 	.type	.L.managed_type_name.6892, %object
 .L.managed_type_name.6892:
-	.asciz	"Java.Security.Security, Mono.Android"
-	.size	.L.managed_type_name.6892, 37
+	.asciz	"Java.Security.SecurityPermission, Mono.Android"
+	.size	.L.managed_type_name.6892, 47
 	.section	.rodata.managed_type_name.6893,"aMS",%progbits,1
 	.type	.L.managed_type_name.6893, %object
 .L.managed_type_name.6893:
-	.asciz	"Java.Security.SecurityPermission, Mono.Android"
-	.size	.L.managed_type_name.6893, 47
+	.asciz	"Java.Security.Signature, Mono.Android"
+	.size	.L.managed_type_name.6893, 38
 	.section	.rodata.managed_type_name.6894,"aMS",%progbits,1
 	.type	.L.managed_type_name.6894, %object
 .L.managed_type_name.6894:
-	.asciz	"Java.Security.Signature, Mono.Android"
-	.size	.L.managed_type_name.6894, 38
+	.asciz	"Java.Security.SignatureException, Mono.Android"
+	.size	.L.managed_type_name.6894, 47
 	.section	.rodata.managed_type_name.6895,"aMS",%progbits,1
 	.type	.L.managed_type_name.6895, %object
 .L.managed_type_name.6895:
-	.asciz	"Java.Security.SignatureException, Mono.Android"
-	.size	.L.managed_type_name.6895, 47
+	.asciz	"Java.Security.SignatureInvoker, Mono.Android"
+	.size	.L.managed_type_name.6895, 45
 	.section	.rodata.managed_type_name.6896,"aMS",%progbits,1
 	.type	.L.managed_type_name.6896, %object
 .L.managed_type_name.6896:
-	.asciz	"Java.Security.SignatureInvoker, Mono.Android"
-	.size	.L.managed_type_name.6896, 45
+	.asciz	"Java.Security.SignatureSpi, Mono.Android"
+	.size	.L.managed_type_name.6896, 41
 	.section	.rodata.managed_type_name.6897,"aMS",%progbits,1
 	.type	.L.managed_type_name.6897, %object
 .L.managed_type_name.6897:
-	.asciz	"Java.Security.SignatureSpi, Mono.Android"
-	.size	.L.managed_type_name.6897, 41
+	.asciz	"Java.Security.SignatureSpiInvoker, Mono.Android"
+	.size	.L.managed_type_name.6897, 48
 	.section	.rodata.managed_type_name.6898,"aMS",%progbits,1
 	.type	.L.managed_type_name.6898, %object
 .L.managed_type_name.6898:
-	.asciz	"Java.Security.SignatureSpiInvoker, Mono.Android"
-	.size	.L.managed_type_name.6898, 48
+	.asciz	"Java.Security.SignedObject, Mono.Android"
+	.size	.L.managed_type_name.6898, 41
 	.section	.rodata.managed_type_name.6899,"aMS",%progbits,1
 	.type	.L.managed_type_name.6899, %object
 .L.managed_type_name.6899:
-	.asciz	"Java.Security.SignedObject, Mono.Android"
-	.size	.L.managed_type_name.6899, 41
+	.asciz	"Java.Security.Signer, Mono.Android"
+	.size	.L.managed_type_name.6899, 35
 	.section	.rodata.managed_type_name.6900,"aMS",%progbits,1
 	.type	.L.managed_type_name.6900, %object
 .L.managed_type_name.6900:
-	.asciz	"Java.Security.Signer, Mono.Android"
-	.size	.L.managed_type_name.6900, 35
+	.asciz	"Java.Security.SignerInvoker, Mono.Android"
+	.size	.L.managed_type_name.6900, 42
 	.section	.rodata.managed_type_name.6901,"aMS",%progbits,1
 	.type	.L.managed_type_name.6901, %object
 .L.managed_type_name.6901:
-	.asciz	"Java.Security.SignerInvoker, Mono.Android"
-	.size	.L.managed_type_name.6901, 42
+	.asciz	"Java.Security.Spec.DSAParameterSpec, Mono.Android"
+	.size	.L.managed_type_name.6901, 50
 	.section	.rodata.managed_type_name.6902,"aMS",%progbits,1
 	.type	.L.managed_type_name.6902, %object
 .L.managed_type_name.6902:
-	.asciz	"Java.Security.Spec.DSAParameterSpec, Mono.Android"
-	.size	.L.managed_type_name.6902, 50
+	.asciz	"Java.Security.Spec.DSAPrivateKeySpec, Mono.Android"
+	.size	.L.managed_type_name.6902, 51
 	.section	.rodata.managed_type_name.6903,"aMS",%progbits,1
 	.type	.L.managed_type_name.6903, %object
 .L.managed_type_name.6903:
-	.asciz	"Java.Security.Spec.DSAPrivateKeySpec, Mono.Android"
-	.size	.L.managed_type_name.6903, 51
+	.asciz	"Java.Security.Spec.DSAPublicKeySpec, Mono.Android"
+	.size	.L.managed_type_name.6903, 50
 	.section	.rodata.managed_type_name.6904,"aMS",%progbits,1
 	.type	.L.managed_type_name.6904, %object
 .L.managed_type_name.6904:
-	.asciz	"Java.Security.Spec.DSAPublicKeySpec, Mono.Android"
-	.size	.L.managed_type_name.6904, 50
+	.asciz	"Java.Security.Spec.ECFieldF2m, Mono.Android"
+	.size	.L.managed_type_name.6904, 44
 	.section	.rodata.managed_type_name.6905,"aMS",%progbits,1
 	.type	.L.managed_type_name.6905, %object
 .L.managed_type_name.6905:
-	.asciz	"Java.Security.Spec.ECFieldF2m, Mono.Android"
-	.size	.L.managed_type_name.6905, 44
+	.asciz	"Java.Security.Spec.ECFieldFp, Mono.Android"
+	.size	.L.managed_type_name.6905, 43
 	.section	.rodata.managed_type_name.6906,"aMS",%progbits,1
 	.type	.L.managed_type_name.6906, %object
 .L.managed_type_name.6906:
-	.asciz	"Java.Security.Spec.ECFieldFp, Mono.Android"
-	.size	.L.managed_type_name.6906, 43
+	.asciz	"Java.Security.Spec.ECGenParameterSpec, Mono.Android"
+	.size	.L.managed_type_name.6906, 52
 	.section	.rodata.managed_type_name.6907,"aMS",%progbits,1
 	.type	.L.managed_type_name.6907, %object
 .L.managed_type_name.6907:
-	.asciz	"Java.Security.Spec.ECGenParameterSpec, Mono.Android"
-	.size	.L.managed_type_name.6907, 52
+	.asciz	"Java.Security.Spec.ECParameterSpec, Mono.Android"
+	.size	.L.managed_type_name.6907, 49
 	.section	.rodata.managed_type_name.6908,"aMS",%progbits,1
 	.type	.L.managed_type_name.6908, %object
 .L.managed_type_name.6908:
-	.asciz	"Java.Security.Spec.ECParameterSpec, Mono.Android"
-	.size	.L.managed_type_name.6908, 49
+	.asciz	"Java.Security.Spec.ECPoint, Mono.Android"
+	.size	.L.managed_type_name.6908, 41
 	.section	.rodata.managed_type_name.6909,"aMS",%progbits,1
 	.type	.L.managed_type_name.6909, %object
 .L.managed_type_name.6909:
-	.asciz	"Java.Security.Spec.ECPoint, Mono.Android"
-	.size	.L.managed_type_name.6909, 41
+	.asciz	"Java.Security.Spec.ECPrivateKeySpec, Mono.Android"
+	.size	.L.managed_type_name.6909, 50
 	.section	.rodata.managed_type_name.6910,"aMS",%progbits,1
 	.type	.L.managed_type_name.6910, %object
 .L.managed_type_name.6910:
-	.asciz	"Java.Security.Spec.ECPrivateKeySpec, Mono.Android"
-	.size	.L.managed_type_name.6910, 50
+	.asciz	"Java.Security.Spec.ECPublicKeySpec, Mono.Android"
+	.size	.L.managed_type_name.6910, 49
 	.section	.rodata.managed_type_name.6911,"aMS",%progbits,1
 	.type	.L.managed_type_name.6911, %object
 .L.managed_type_name.6911:
-	.asciz	"Java.Security.Spec.ECPublicKeySpec, Mono.Android"
-	.size	.L.managed_type_name.6911, 49
+	.asciz	"Java.Security.Spec.EllipticCurve, Mono.Android"
+	.size	.L.managed_type_name.6911, 47
 	.section	.rodata.managed_type_name.6912,"aMS",%progbits,1
 	.type	.L.managed_type_name.6912, %object
 .L.managed_type_name.6912:
-	.asciz	"Java.Security.Spec.EllipticCurve, Mono.Android"
-	.size	.L.managed_type_name.6912, 47
+	.asciz	"Java.Security.Spec.EncodedKeySpec, Mono.Android"
+	.size	.L.managed_type_name.6912, 48
 	.section	.rodata.managed_type_name.6913,"aMS",%progbits,1
 	.type	.L.managed_type_name.6913, %object
 .L.managed_type_name.6913:
-	.asciz	"Java.Security.Spec.EncodedKeySpec, Mono.Android"
-	.size	.L.managed_type_name.6913, 48
+	.asciz	"Java.Security.Spec.EncodedKeySpecInvoker, Mono.Android"
+	.size	.L.managed_type_name.6913, 55
 	.section	.rodata.managed_type_name.6914,"aMS",%progbits,1
 	.type	.L.managed_type_name.6914, %object
 .L.managed_type_name.6914:
-	.asciz	"Java.Security.Spec.EncodedKeySpecInvoker, Mono.Android"
-	.size	.L.managed_type_name.6914, 55
+	.asciz	"Java.Security.Spec.IAlgorithmParameterSpecInvoker, Mono.Android"
+	.size	.L.managed_type_name.6914, 64
 	.section	.rodata.managed_type_name.6915,"aMS",%progbits,1
 	.type	.L.managed_type_name.6915, %object
 .L.managed_type_name.6915:
-	.asciz	"Java.Security.Spec.IAlgorithmParameterSpecInvoker, Mono.Android"
-	.size	.L.managed_type_name.6915, 64
+	.asciz	"Java.Security.Spec.IECFieldInvoker, Mono.Android"
+	.size	.L.managed_type_name.6915, 49
 	.section	.rodata.managed_type_name.6916,"aMS",%progbits,1
 	.type	.L.managed_type_name.6916, %object
 .L.managed_type_name.6916:
-	.asciz	"Java.Security.Spec.IECFieldInvoker, Mono.Android"
+	.asciz	"Java.Security.Spec.IKeySpecInvoker, Mono.Android"
 	.size	.L.managed_type_name.6916, 49
 	.section	.rodata.managed_type_name.6917,"aMS",%progbits,1
 	.type	.L.managed_type_name.6917, %object
 .L.managed_type_name.6917:
-	.asciz	"Java.Security.Spec.IKeySpecInvoker, Mono.Android"
-	.size	.L.managed_type_name.6917, 49
+	.asciz	"Java.Security.Spec.InvalidKeySpecException, Mono.Android"
+	.size	.L.managed_type_name.6917, 57
 	.section	.rodata.managed_type_name.6918,"aMS",%progbits,1
 	.type	.L.managed_type_name.6918, %object
 .L.managed_type_name.6918:
-	.asciz	"Java.Security.Spec.InvalidKeySpecException, Mono.Android"
-	.size	.L.managed_type_name.6918, 57
+	.asciz	"Java.Security.Spec.InvalidParameterSpecException, Mono.Android"
+	.size	.L.managed_type_name.6918, 63
 	.section	.rodata.managed_type_name.6919,"aMS",%progbits,1
 	.type	.L.managed_type_name.6919, %object
 .L.managed_type_name.6919:
-	.asciz	"Java.Security.Spec.InvalidParameterSpecException, Mono.Android"
-	.size	.L.managed_type_name.6919, 63
+	.asciz	"Java.Security.Spec.MGF1ParameterSpec, Mono.Android"
+	.size	.L.managed_type_name.6919, 51
 	.section	.rodata.managed_type_name.6920,"aMS",%progbits,1
 	.type	.L.managed_type_name.6920, %object
 .L.managed_type_name.6920:
-	.asciz	"Java.Security.Spec.MGF1ParameterSpec, Mono.Android"
-	.size	.L.managed_type_name.6920, 51
+	.asciz	"Java.Security.Spec.PKCS8EncodedKeySpec, Mono.Android"
+	.size	.L.managed_type_name.6920, 53
 	.section	.rodata.managed_type_name.6921,"aMS",%progbits,1
 	.type	.L.managed_type_name.6921, %object
 .L.managed_type_name.6921:
-	.asciz	"Java.Security.Spec.PKCS8EncodedKeySpec, Mono.Android"
-	.size	.L.managed_type_name.6921, 53
+	.asciz	"Java.Security.Spec.PSSParameterSpec, Mono.Android"
+	.size	.L.managed_type_name.6921, 50
 	.section	.rodata.managed_type_name.6922,"aMS",%progbits,1
 	.type	.L.managed_type_name.6922, %object
 .L.managed_type_name.6922:
-	.asciz	"Java.Security.Spec.PSSParameterSpec, Mono.Android"
-	.size	.L.managed_type_name.6922, 50
+	.asciz	"Java.Security.Spec.RSAKeyGenParameterSpec, Mono.Android"
+	.size	.L.managed_type_name.6922, 56
 	.section	.rodata.managed_type_name.6923,"aMS",%progbits,1
 	.type	.L.managed_type_name.6923, %object
 .L.managed_type_name.6923:
-	.asciz	"Java.Security.Spec.RSAKeyGenParameterSpec, Mono.Android"
-	.size	.L.managed_type_name.6923, 56
+	.asciz	"Java.Security.Spec.RSAMultiPrimePrivateCrtKeySpec, Mono.Android"
+	.size	.L.managed_type_name.6923, 64
 	.section	.rodata.managed_type_name.6924,"aMS",%progbits,1
 	.type	.L.managed_type_name.6924, %object
 .L.managed_type_name.6924:
-	.asciz	"Java.Security.Spec.RSAMultiPrimePrivateCrtKeySpec, Mono.Android"
-	.size	.L.managed_type_name.6924, 64
+	.asciz	"Java.Security.Spec.RSAOtherPrimeInfo, Mono.Android"
+	.size	.L.managed_type_name.6924, 51
 	.section	.rodata.managed_type_name.6925,"aMS",%progbits,1
 	.type	.L.managed_type_name.6925, %object
 .L.managed_type_name.6925:
-	.asciz	"Java.Security.Spec.RSAOtherPrimeInfo, Mono.Android"
-	.size	.L.managed_type_name.6925, 51
+	.asciz	"Java.Security.Spec.RSAPrivateCrtKeySpec, Mono.Android"
+	.size	.L.managed_type_name.6925, 54
 	.section	.rodata.managed_type_name.6926,"aMS",%progbits,1
 	.type	.L.managed_type_name.6926, %object
 .L.managed_type_name.6926:
-	.asciz	"Java.Security.Spec.RSAPrivateCrtKeySpec, Mono.Android"
-	.size	.L.managed_type_name.6926, 54
+	.asciz	"Java.Security.Spec.RSAPrivateKeySpec, Mono.Android"
+	.size	.L.managed_type_name.6926, 51
 	.section	.rodata.managed_type_name.6927,"aMS",%progbits,1
 	.type	.L.managed_type_name.6927, %object
 .L.managed_type_name.6927:
-	.asciz	"Java.Security.Spec.RSAPrivateKeySpec, Mono.Android"
-	.size	.L.managed_type_name.6927, 51
+	.asciz	"Java.Security.Spec.RSAPublicKeySpec, Mono.Android"
+	.size	.L.managed_type_name.6927, 50
 	.section	.rodata.managed_type_name.6928,"aMS",%progbits,1
 	.type	.L.managed_type_name.6928, %object
 .L.managed_type_name.6928:
-	.asciz	"Java.Security.Spec.RSAPublicKeySpec, Mono.Android"
-	.size	.L.managed_type_name.6928, 50
+	.asciz	"Java.Security.Spec.X509EncodedKeySpec, Mono.Android"
+	.size	.L.managed_type_name.6928, 52
 	.section	.rodata.managed_type_name.6929,"aMS",%progbits,1
 	.type	.L.managed_type_name.6929, %object
 .L.managed_type_name.6929:
-	.asciz	"Java.Security.Spec.X509EncodedKeySpec, Mono.Android"
-	.size	.L.managed_type_name.6929, 52
+	.asciz	"Java.Security.Timestamp, Mono.Android"
+	.size	.L.managed_type_name.6929, 38
 	.section	.rodata.managed_type_name.6930,"aMS",%progbits,1
 	.type	.L.managed_type_name.6930, %object
 .L.managed_type_name.6930:
-	.asciz	"Java.Security.Timestamp, Mono.Android"
-	.size	.L.managed_type_name.6930, 38
+	.asciz	"Java.Security.UnrecoverableEntryException, Mono.Android"
+	.size	.L.managed_type_name.6930, 56
 	.section	.rodata.managed_type_name.6931,"aMS",%progbits,1
 	.type	.L.managed_type_name.6931, %object
 .L.managed_type_name.6931:
-	.asciz	"Java.Security.UnrecoverableEntryException, Mono.Android"
-	.size	.L.managed_type_name.6931, 56
+	.asciz	"Java.Security.UnrecoverableKeyException, Mono.Android"
+	.size	.L.managed_type_name.6931, 54
 	.section	.rodata.managed_type_name.6932,"aMS",%progbits,1
 	.type	.L.managed_type_name.6932, %object
 .L.managed_type_name.6932:
-	.asciz	"Java.Security.UnrecoverableKeyException, Mono.Android"
-	.size	.L.managed_type_name.6932, 54
+	.asciz	"Java.Security.UnresolvedPermission, Mono.Android"
+	.size	.L.managed_type_name.6932, 49
 	.section	.rodata.managed_type_name.6933,"aMS",%progbits,1
 	.type	.L.managed_type_name.6933, %object
 .L.managed_type_name.6933:
-	.asciz	"Java.Security.UnresolvedPermission, Mono.Android"
-	.size	.L.managed_type_name.6933, 49
+	.asciz	"Java.Sql.BatchUpdateException, Mono.Android"
+	.size	.L.managed_type_name.6933, 44
 	.section	.rodata.managed_type_name.6934,"aMS",%progbits,1
 	.type	.L.managed_type_name.6934, %object
 .L.managed_type_name.6934:
-	.asciz	"Java.Sql.BatchUpdateException, Mono.Android"
-	.size	.L.managed_type_name.6934, 44
+	.asciz	"Java.Sql.ClientInfoStatus, Mono.Android"
+	.size	.L.managed_type_name.6934, 40
 	.section	.rodata.managed_type_name.6935,"aMS",%progbits,1
 	.type	.L.managed_type_name.6935, %object
 .L.managed_type_name.6935:
-	.asciz	"Java.Sql.ClientInfoStatus, Mono.Android"
-	.size	.L.managed_type_name.6935, 40
+	.asciz	"Java.Sql.Connection, Mono.Android"
+	.size	.L.managed_type_name.6935, 34
 	.section	.rodata.managed_type_name.6936,"aMS",%progbits,1
 	.type	.L.managed_type_name.6936, %object
 .L.managed_type_name.6936:
-	.asciz	"Java.Sql.Connection, Mono.Android"
-	.size	.L.managed_type_name.6936, 34
+	.asciz	"Java.Sql.DataTruncation, Mono.Android"
+	.size	.L.managed_type_name.6936, 38
 	.section	.rodata.managed_type_name.6937,"aMS",%progbits,1
 	.type	.L.managed_type_name.6937, %object
 .L.managed_type_name.6937:
-	.asciz	"Java.Sql.DataTruncation, Mono.Android"
-	.size	.L.managed_type_name.6937, 38
+	.asciz	"Java.Sql.DatabaseMetaData, Mono.Android"
+	.size	.L.managed_type_name.6937, 40
 	.section	.rodata.managed_type_name.6938,"aMS",%progbits,1
 	.type	.L.managed_type_name.6938, %object
 .L.managed_type_name.6938:
-	.asciz	"Java.Sql.DatabaseMetaData, Mono.Android"
-	.size	.L.managed_type_name.6938, 40
+	.asciz	"Java.Sql.Date, Mono.Android"
+	.size	.L.managed_type_name.6938, 28
 	.section	.rodata.managed_type_name.6939,"aMS",%progbits,1
 	.type	.L.managed_type_name.6939, %object
 .L.managed_type_name.6939:
-	.asciz	"Java.Sql.Date, Mono.Android"
-	.size	.L.managed_type_name.6939, 28
+	.asciz	"Java.Sql.DriverManager, Mono.Android"
+	.size	.L.managed_type_name.6939, 37
 	.section	.rodata.managed_type_name.6940,"aMS",%progbits,1
 	.type	.L.managed_type_name.6940, %object
 .L.managed_type_name.6940:
-	.asciz	"Java.Sql.DriverManager, Mono.Android"
-	.size	.L.managed_type_name.6940, 37
+	.asciz	"Java.Sql.DriverPropertyInfo, Mono.Android"
+	.size	.L.managed_type_name.6940, 42
 	.section	.rodata.managed_type_name.6941,"aMS",%progbits,1
 	.type	.L.managed_type_name.6941, %object
 .L.managed_type_name.6941:
-	.asciz	"Java.Sql.DriverPropertyInfo, Mono.Android"
-	.size	.L.managed_type_name.6941, 42
+	.asciz	"Java.Sql.IArrayInvoker, Mono.Android"
+	.size	.L.managed_type_name.6941, 37
 	.section	.rodata.managed_type_name.6942,"aMS",%progbits,1
 	.type	.L.managed_type_name.6942, %object
 .L.managed_type_name.6942:
-	.asciz	"Java.Sql.IArrayInvoker, Mono.Android"
-	.size	.L.managed_type_name.6942, 37
+	.asciz	"Java.Sql.IBlobInvoker, Mono.Android"
+	.size	.L.managed_type_name.6942, 36
 	.section	.rodata.managed_type_name.6943,"aMS",%progbits,1
 	.type	.L.managed_type_name.6943, %object
 .L.managed_type_name.6943:
-	.asciz	"Java.Sql.IBlobInvoker, Mono.Android"
-	.size	.L.managed_type_name.6943, 36
+	.asciz	"Java.Sql.ICallableStatementInvoker, Mono.Android"
+	.size	.L.managed_type_name.6943, 49
 	.section	.rodata.managed_type_name.6944,"aMS",%progbits,1
 	.type	.L.managed_type_name.6944, %object
 .L.managed_type_name.6944:
-	.asciz	"Java.Sql.ICallableStatementInvoker, Mono.Android"
-	.size	.L.managed_type_name.6944, 49
+	.asciz	"Java.Sql.IClobInvoker, Mono.Android"
+	.size	.L.managed_type_name.6944, 36
 	.section	.rodata.managed_type_name.6945,"aMS",%progbits,1
 	.type	.L.managed_type_name.6945, %object
 .L.managed_type_name.6945:
-	.asciz	"Java.Sql.IClobInvoker, Mono.Android"
-	.size	.L.managed_type_name.6945, 36
+	.asciz	"Java.Sql.IConnectionInvoker, Mono.Android"
+	.size	.L.managed_type_name.6945, 42
 	.section	.rodata.managed_type_name.6946,"aMS",%progbits,1
 	.type	.L.managed_type_name.6946, %object
 .L.managed_type_name.6946:
-	.asciz	"Java.Sql.IConnectionInvoker, Mono.Android"
-	.size	.L.managed_type_name.6946, 42
+	.asciz	"Java.Sql.IDatabaseMetaDataInvoker, Mono.Android"
+	.size	.L.managed_type_name.6946, 48
 	.section	.rodata.managed_type_name.6947,"aMS",%progbits,1
 	.type	.L.managed_type_name.6947, %object
 .L.managed_type_name.6947:
-	.asciz	"Java.Sql.IDatabaseMetaDataInvoker, Mono.Android"
-	.size	.L.managed_type_name.6947, 48
+	.asciz	"Java.Sql.IDriverInvoker, Mono.Android"
+	.size	.L.managed_type_name.6947, 38
 	.section	.rodata.managed_type_name.6948,"aMS",%progbits,1
 	.type	.L.managed_type_name.6948, %object
 .L.managed_type_name.6948:
-	.asciz	"Java.Sql.IDriverInvoker, Mono.Android"
-	.size	.L.managed_type_name.6948, 38
+	.asciz	"Java.Sql.INClobInvoker, Mono.Android"
+	.size	.L.managed_type_name.6948, 37
 	.section	.rodata.managed_type_name.6949,"aMS",%progbits,1
 	.type	.L.managed_type_name.6949, %object
 .L.managed_type_name.6949:
-	.asciz	"Java.Sql.INClobInvoker, Mono.Android"
-	.size	.L.managed_type_name.6949, 37
+	.asciz	"Java.Sql.IParameterMetaDataInvoker, Mono.Android"
+	.size	.L.managed_type_name.6949, 49
 	.section	.rodata.managed_type_name.6950,"aMS",%progbits,1
 	.type	.L.managed_type_name.6950, %object
 .L.managed_type_name.6950:
-	.asciz	"Java.Sql.IParameterMetaDataInvoker, Mono.Android"
+	.asciz	"Java.Sql.IPreparedStatementInvoker, Mono.Android"
 	.size	.L.managed_type_name.6950, 49
 	.section	.rodata.managed_type_name.6951,"aMS",%progbits,1
 	.type	.L.managed_type_name.6951, %object
 .L.managed_type_name.6951:
-	.asciz	"Java.Sql.IPreparedStatementInvoker, Mono.Android"
-	.size	.L.managed_type_name.6951, 49
+	.asciz	"Java.Sql.IRefInvoker, Mono.Android"
+	.size	.L.managed_type_name.6951, 35
 	.section	.rodata.managed_type_name.6952,"aMS",%progbits,1
 	.type	.L.managed_type_name.6952, %object
 .L.managed_type_name.6952:
-	.asciz	"Java.Sql.IRefInvoker, Mono.Android"
-	.size	.L.managed_type_name.6952, 35
+	.asciz	"Java.Sql.IResultSetInvoker, Mono.Android"
+	.size	.L.managed_type_name.6952, 41
 	.section	.rodata.managed_type_name.6953,"aMS",%progbits,1
 	.type	.L.managed_type_name.6953, %object
 .L.managed_type_name.6953:
-	.asciz	"Java.Sql.IResultSetInvoker, Mono.Android"
-	.size	.L.managed_type_name.6953, 41
+	.asciz	"Java.Sql.IResultSetMetaDataInvoker, Mono.Android"
+	.size	.L.managed_type_name.6953, 49
 	.section	.rodata.managed_type_name.6954,"aMS",%progbits,1
 	.type	.L.managed_type_name.6954, %object
 .L.managed_type_name.6954:
-	.asciz	"Java.Sql.IResultSetMetaDataInvoker, Mono.Android"
-	.size	.L.managed_type_name.6954, 49
+	.asciz	"Java.Sql.IRowIdInvoker, Mono.Android"
+	.size	.L.managed_type_name.6954, 37
 	.section	.rodata.managed_type_name.6955,"aMS",%progbits,1
 	.type	.L.managed_type_name.6955, %object
 .L.managed_type_name.6955:
-	.asciz	"Java.Sql.IRowIdInvoker, Mono.Android"
-	.size	.L.managed_type_name.6955, 37
+	.asciz	"Java.Sql.ISQLDataInvoker, Mono.Android"
+	.size	.L.managed_type_name.6955, 39
 	.section	.rodata.managed_type_name.6956,"aMS",%progbits,1
 	.type	.L.managed_type_name.6956, %object
 .L.managed_type_name.6956:
-	.asciz	"Java.Sql.ISQLDataInvoker, Mono.Android"
-	.size	.L.managed_type_name.6956, 39
+	.asciz	"Java.Sql.ISQLInputInvoker, Mono.Android"
+	.size	.L.managed_type_name.6956, 40
 	.section	.rodata.managed_type_name.6957,"aMS",%progbits,1
 	.type	.L.managed_type_name.6957, %object
 .L.managed_type_name.6957:
-	.asciz	"Java.Sql.ISQLInputInvoker, Mono.Android"
-	.size	.L.managed_type_name.6957, 40
+	.asciz	"Java.Sql.ISQLOutputInvoker, Mono.Android"
+	.size	.L.managed_type_name.6957, 41
 	.section	.rodata.managed_type_name.6958,"aMS",%progbits,1
 	.type	.L.managed_type_name.6958, %object
 .L.managed_type_name.6958:
-	.asciz	"Java.Sql.ISQLOutputInvoker, Mono.Android"
-	.size	.L.managed_type_name.6958, 41
+	.asciz	"Java.Sql.ISQLXMLInvoker, Mono.Android"
+	.size	.L.managed_type_name.6958, 38
 	.section	.rodata.managed_type_name.6959,"aMS",%progbits,1
 	.type	.L.managed_type_name.6959, %object
 .L.managed_type_name.6959:
-	.asciz	"Java.Sql.ISQLXMLInvoker, Mono.Android"
-	.size	.L.managed_type_name.6959, 38
+	.asciz	"Java.Sql.ISavepointInvoker, Mono.Android"
+	.size	.L.managed_type_name.6959, 41
 	.section	.rodata.managed_type_name.6960,"aMS",%progbits,1
 	.type	.L.managed_type_name.6960, %object
 .L.managed_type_name.6960:
-	.asciz	"Java.Sql.ISavepointInvoker, Mono.Android"
+	.asciz	"Java.Sql.IStatementInvoker, Mono.Android"
 	.size	.L.managed_type_name.6960, 41
 	.section	.rodata.managed_type_name.6961,"aMS",%progbits,1
 	.type	.L.managed_type_name.6961, %object
 .L.managed_type_name.6961:
-	.asciz	"Java.Sql.IStatementInvoker, Mono.Android"
-	.size	.L.managed_type_name.6961, 41
+	.asciz	"Java.Sql.IStructInvoker, Mono.Android"
+	.size	.L.managed_type_name.6961, 38
 	.section	.rodata.managed_type_name.6962,"aMS",%progbits,1
 	.type	.L.managed_type_name.6962, %object
 .L.managed_type_name.6962:
-	.asciz	"Java.Sql.IStructInvoker, Mono.Android"
-	.size	.L.managed_type_name.6962, 38
+	.asciz	"Java.Sql.IWrapperInvoker, Mono.Android"
+	.size	.L.managed_type_name.6962, 39
 	.section	.rodata.managed_type_name.6963,"aMS",%progbits,1
 	.type	.L.managed_type_name.6963, %object
 .L.managed_type_name.6963:
-	.asciz	"Java.Sql.IWrapperInvoker, Mono.Android"
-	.size	.L.managed_type_name.6963, 39
+	.asciz	"Java.Sql.ParameterMetaData, Mono.Android"
+	.size	.L.managed_type_name.6963, 41
 	.section	.rodata.managed_type_name.6964,"aMS",%progbits,1
 	.type	.L.managed_type_name.6964, %object
 .L.managed_type_name.6964:
-	.asciz	"Java.Sql.ParameterMetaData, Mono.Android"
-	.size	.L.managed_type_name.6964, 41
+	.asciz	"Java.Sql.ResultSet, Mono.Android"
+	.size	.L.managed_type_name.6964, 33
 	.section	.rodata.managed_type_name.6965,"aMS",%progbits,1
 	.type	.L.managed_type_name.6965, %object
 .L.managed_type_name.6965:
-	.asciz	"Java.Sql.ResultSet, Mono.Android"
-	.size	.L.managed_type_name.6965, 33
+	.asciz	"Java.Sql.ResultSetMetaData, Mono.Android"
+	.size	.L.managed_type_name.6965, 41
 	.section	.rodata.managed_type_name.6966,"aMS",%progbits,1
 	.type	.L.managed_type_name.6966, %object
 .L.managed_type_name.6966:
-	.asciz	"Java.Sql.ResultSetMetaData, Mono.Android"
-	.size	.L.managed_type_name.6966, 41
+	.asciz	"Java.Sql.RowIdLifetime, Mono.Android"
+	.size	.L.managed_type_name.6966, 37
 	.section	.rodata.managed_type_name.6967,"aMS",%progbits,1
 	.type	.L.managed_type_name.6967, %object
 .L.managed_type_name.6967:
-	.asciz	"Java.Sql.RowIdLifetime, Mono.Android"
-	.size	.L.managed_type_name.6967, 37
+	.asciz	"Java.Sql.SQLClientInfoException, Mono.Android"
+	.size	.L.managed_type_name.6967, 46
 	.section	.rodata.managed_type_name.6968,"aMS",%progbits,1
 	.type	.L.managed_type_name.6968, %object
 .L.managed_type_name.6968:
-	.asciz	"Java.Sql.SQLClientInfoException, Mono.Android"
-	.size	.L.managed_type_name.6968, 46
+	.asciz	"Java.Sql.SQLDataException, Mono.Android"
+	.size	.L.managed_type_name.6968, 40
 	.section	.rodata.managed_type_name.6969,"aMS",%progbits,1
 	.type	.L.managed_type_name.6969, %object
 .L.managed_type_name.6969:
-	.asciz	"Java.Sql.SQLDataException, Mono.Android"
-	.size	.L.managed_type_name.6969, 40
+	.asciz	"Java.Sql.SQLException, Mono.Android"
+	.size	.L.managed_type_name.6969, 36
 	.section	.rodata.managed_type_name.6970,"aMS",%progbits,1
 	.type	.L.managed_type_name.6970, %object
 .L.managed_type_name.6970:
-	.asciz	"Java.Sql.SQLException, Mono.Android"
-	.size	.L.managed_type_name.6970, 36
+	.asciz	"Java.Sql.SQLFeatureNotSupportedException, Mono.Android"
+	.size	.L.managed_type_name.6970, 55
 	.section	.rodata.managed_type_name.6971,"aMS",%progbits,1
 	.type	.L.managed_type_name.6971, %object
 .L.managed_type_name.6971:
-	.asciz	"Java.Sql.SQLFeatureNotSupportedException, Mono.Android"
-	.size	.L.managed_type_name.6971, 55
+	.asciz	"Java.Sql.SQLIntegrityConstraintViolationException, Mono.Android"
+	.size	.L.managed_type_name.6971, 64
 	.section	.rodata.managed_type_name.6972,"aMS",%progbits,1
 	.type	.L.managed_type_name.6972, %object
 .L.managed_type_name.6972:
-	.asciz	"Java.Sql.SQLIntegrityConstraintViolationException, Mono.Android"
-	.size	.L.managed_type_name.6972, 64
+	.asciz	"Java.Sql.SQLInvalidAuthorizationSpecException, Mono.Android"
+	.size	.L.managed_type_name.6972, 60
 	.section	.rodata.managed_type_name.6973,"aMS",%progbits,1
 	.type	.L.managed_type_name.6973, %object
 .L.managed_type_name.6973:
-	.asciz	"Java.Sql.SQLInvalidAuthorizationSpecException, Mono.Android"
-	.size	.L.managed_type_name.6973, 60
+	.asciz	"Java.Sql.SQLNonTransientConnectionException, Mono.Android"
+	.size	.L.managed_type_name.6973, 58
 	.section	.rodata.managed_type_name.6974,"aMS",%progbits,1
 	.type	.L.managed_type_name.6974, %object
 .L.managed_type_name.6974:
-	.asciz	"Java.Sql.SQLNonTransientConnectionException, Mono.Android"
-	.size	.L.managed_type_name.6974, 58
+	.asciz	"Java.Sql.SQLNonTransientException, Mono.Android"
+	.size	.L.managed_type_name.6974, 48
 	.section	.rodata.managed_type_name.6975,"aMS",%progbits,1
 	.type	.L.managed_type_name.6975, %object
 .L.managed_type_name.6975:
-	.asciz	"Java.Sql.SQLNonTransientException, Mono.Android"
-	.size	.L.managed_type_name.6975, 48
+	.asciz	"Java.Sql.SQLPermission, Mono.Android"
+	.size	.L.managed_type_name.6975, 37
 	.section	.rodata.managed_type_name.6976,"aMS",%progbits,1
 	.type	.L.managed_type_name.6976, %object
 .L.managed_type_name.6976:
-	.asciz	"Java.Sql.SQLPermission, Mono.Android"
-	.size	.L.managed_type_name.6976, 37
+	.asciz	"Java.Sql.SQLRecoverableException, Mono.Android"
+	.size	.L.managed_type_name.6976, 47
 	.section	.rodata.managed_type_name.6977,"aMS",%progbits,1
 	.type	.L.managed_type_name.6977, %object
 .L.managed_type_name.6977:
-	.asciz	"Java.Sql.SQLRecoverableException, Mono.Android"
+	.asciz	"Java.Sql.SQLSyntaxErrorException, Mono.Android"
 	.size	.L.managed_type_name.6977, 47
 	.section	.rodata.managed_type_name.6978,"aMS",%progbits,1
 	.type	.L.managed_type_name.6978, %object
 .L.managed_type_name.6978:
-	.asciz	"Java.Sql.SQLSyntaxErrorException, Mono.Android"
-	.size	.L.managed_type_name.6978, 47
+	.asciz	"Java.Sql.SQLTimeoutException, Mono.Android"
+	.size	.L.managed_type_name.6978, 43
 	.section	.rodata.managed_type_name.6979,"aMS",%progbits,1
 	.type	.L.managed_type_name.6979, %object
 .L.managed_type_name.6979:
-	.asciz	"Java.Sql.SQLTimeoutException, Mono.Android"
-	.size	.L.managed_type_name.6979, 43
+	.asciz	"Java.Sql.SQLTransactionRollbackException, Mono.Android"
+	.size	.L.managed_type_name.6979, 55
 	.section	.rodata.managed_type_name.6980,"aMS",%progbits,1
 	.type	.L.managed_type_name.6980, %object
 .L.managed_type_name.6980:
-	.asciz	"Java.Sql.SQLTransactionRollbackException, Mono.Android"
+	.asciz	"Java.Sql.SQLTransientConnectionException, Mono.Android"
 	.size	.L.managed_type_name.6980, 55
 	.section	.rodata.managed_type_name.6981,"aMS",%progbits,1
 	.type	.L.managed_type_name.6981, %object
 .L.managed_type_name.6981:
-	.asciz	"Java.Sql.SQLTransientConnectionException, Mono.Android"
-	.size	.L.managed_type_name.6981, 55
+	.asciz	"Java.Sql.SQLTransientException, Mono.Android"
+	.size	.L.managed_type_name.6981, 45
 	.section	.rodata.managed_type_name.6982,"aMS",%progbits,1
 	.type	.L.managed_type_name.6982, %object
 .L.managed_type_name.6982:
-	.asciz	"Java.Sql.SQLTransientException, Mono.Android"
-	.size	.L.managed_type_name.6982, 45
+	.asciz	"Java.Sql.SQLWarning, Mono.Android"
+	.size	.L.managed_type_name.6982, 34
 	.section	.rodata.managed_type_name.6983,"aMS",%progbits,1
 	.type	.L.managed_type_name.6983, %object
 .L.managed_type_name.6983:
-	.asciz	"Java.Sql.SQLWarning, Mono.Android"
-	.size	.L.managed_type_name.6983, 34
+	.asciz	"Java.Sql.Statement, Mono.Android"
+	.size	.L.managed_type_name.6983, 33
 	.section	.rodata.managed_type_name.6984,"aMS",%progbits,1
 	.type	.L.managed_type_name.6984, %object
 .L.managed_type_name.6984:
-	.asciz	"Java.Sql.Statement, Mono.Android"
-	.size	.L.managed_type_name.6984, 33
+	.asciz	"Java.Sql.Time, Mono.Android"
+	.size	.L.managed_type_name.6984, 28
 	.section	.rodata.managed_type_name.6985,"aMS",%progbits,1
 	.type	.L.managed_type_name.6985, %object
 .L.managed_type_name.6985:
-	.asciz	"Java.Sql.Time, Mono.Android"
-	.size	.L.managed_type_name.6985, 28
+	.asciz	"Java.Sql.Timestamp, Mono.Android"
+	.size	.L.managed_type_name.6985, 33
 	.section	.rodata.managed_type_name.6986,"aMS",%progbits,1
 	.type	.L.managed_type_name.6986, %object
 .L.managed_type_name.6986:
-	.asciz	"Java.Sql.Timestamp, Mono.Android"
-	.size	.L.managed_type_name.6986, 33
+	.asciz	"Java.Sql.Types, Mono.Android"
+	.size	.L.managed_type_name.6986, 29
 	.section	.rodata.managed_type_name.6987,"aMS",%progbits,1
 	.type	.L.managed_type_name.6987, %object
 .L.managed_type_name.6987:
-	.asciz	"Java.Sql.Types, Mono.Android"
-	.size	.L.managed_type_name.6987, 29
+	.asciz	"Java.Text.Annotation, Mono.Android"
+	.size	.L.managed_type_name.6987, 35
 	.section	.rodata.managed_type_name.6988,"aMS",%progbits,1
 	.type	.L.managed_type_name.6988, %object
 .L.managed_type_name.6988:
-	.asciz	"Java.Text.Annotation, Mono.Android"
-	.size	.L.managed_type_name.6988, 35
+	.asciz	"Java.Text.AttributedCharacterIteratorAttribute, Mono.Android"
+	.size	.L.managed_type_name.6988, 61
 	.section	.rodata.managed_type_name.6989,"aMS",%progbits,1
 	.type	.L.managed_type_name.6989, %object
 .L.managed_type_name.6989:
-	.asciz	"Java.Text.AttributedCharacterIteratorAttribute, Mono.Android"
-	.size	.L.managed_type_name.6989, 61
+	.asciz	"Java.Text.AttributedString, Mono.Android"
+	.size	.L.managed_type_name.6989, 41
 	.section	.rodata.managed_type_name.6990,"aMS",%progbits,1
 	.type	.L.managed_type_name.6990, %object
 .L.managed_type_name.6990:
-	.asciz	"Java.Text.AttributedString, Mono.Android"
-	.size	.L.managed_type_name.6990, 41
+	.asciz	"Java.Text.Bidi, Mono.Android"
+	.size	.L.managed_type_name.6990, 29
 	.section	.rodata.managed_type_name.6991,"aMS",%progbits,1
 	.type	.L.managed_type_name.6991, %object
 .L.managed_type_name.6991:
-	.asciz	"Java.Text.Bidi, Mono.Android"
-	.size	.L.managed_type_name.6991, 29
+	.asciz	"Java.Text.BreakIterator, Mono.Android"
+	.size	.L.managed_type_name.6991, 38
 	.section	.rodata.managed_type_name.6992,"aMS",%progbits,1
 	.type	.L.managed_type_name.6992, %object
 .L.managed_type_name.6992:
-	.asciz	"Java.Text.BreakIterator, Mono.Android"
-	.size	.L.managed_type_name.6992, 38
+	.asciz	"Java.Text.BreakIteratorInvoker, Mono.Android"
+	.size	.L.managed_type_name.6992, 45
 	.section	.rodata.managed_type_name.6993,"aMS",%progbits,1
 	.type	.L.managed_type_name.6993, %object
 .L.managed_type_name.6993:
-	.asciz	"Java.Text.BreakIteratorInvoker, Mono.Android"
-	.size	.L.managed_type_name.6993, 45
+	.asciz	"Java.Text.CharacterIterator, Mono.Android"
+	.size	.L.managed_type_name.6993, 42
 	.section	.rodata.managed_type_name.6994,"aMS",%progbits,1
 	.type	.L.managed_type_name.6994, %object
 .L.managed_type_name.6994:
-	.asciz	"Java.Text.CharacterIterator, Mono.Android"
-	.size	.L.managed_type_name.6994, 42
+	.asciz	"Java.Text.ChoiceFormat, Mono.Android"
+	.size	.L.managed_type_name.6994, 37
 	.section	.rodata.managed_type_name.6995,"aMS",%progbits,1
 	.type	.L.managed_type_name.6995, %object
 .L.managed_type_name.6995:
-	.asciz	"Java.Text.ChoiceFormat, Mono.Android"
-	.size	.L.managed_type_name.6995, 37
+	.asciz	"Java.Text.CollationElementIterator, Mono.Android"
+	.size	.L.managed_type_name.6995, 49
 	.section	.rodata.managed_type_name.6996,"aMS",%progbits,1
 	.type	.L.managed_type_name.6996, %object
 .L.managed_type_name.6996:
-	.asciz	"Java.Text.CollationElementIterator, Mono.Android"
-	.size	.L.managed_type_name.6996, 49
+	.asciz	"Java.Text.CollationKey, Mono.Android"
+	.size	.L.managed_type_name.6996, 37
 	.section	.rodata.managed_type_name.6997,"aMS",%progbits,1
 	.type	.L.managed_type_name.6997, %object
 .L.managed_type_name.6997:
-	.asciz	"Java.Text.CollationKey, Mono.Android"
-	.size	.L.managed_type_name.6997, 37
+	.asciz	"Java.Text.CollationKeyInvoker, Mono.Android"
+	.size	.L.managed_type_name.6997, 44
 	.section	.rodata.managed_type_name.6998,"aMS",%progbits,1
 	.type	.L.managed_type_name.6998, %object
 .L.managed_type_name.6998:
-	.asciz	"Java.Text.CollationKeyInvoker, Mono.Android"
-	.size	.L.managed_type_name.6998, 44
+	.asciz	"Java.Text.Collator, Mono.Android"
+	.size	.L.managed_type_name.6998, 33
 	.section	.rodata.managed_type_name.6999,"aMS",%progbits,1
 	.type	.L.managed_type_name.6999, %object
 .L.managed_type_name.6999:
-	.asciz	"Java.Text.Collator, Mono.Android"
-	.size	.L.managed_type_name.6999, 33
+	.asciz	"Java.Text.CollatorInvoker, Mono.Android"
+	.size	.L.managed_type_name.6999, 40
 	.section	.rodata.managed_type_name.7000,"aMS",%progbits,1
 	.type	.L.managed_type_name.7000, %object
 .L.managed_type_name.7000:
-	.asciz	"Java.Text.CollatorInvoker, Mono.Android"
-	.size	.L.managed_type_name.7000, 40
+	.asciz	"Java.Text.DateFormat+Field, Mono.Android"
+	.size	.L.managed_type_name.7000, 41
 	.section	.rodata.managed_type_name.7001,"aMS",%progbits,1
 	.type	.L.managed_type_name.7001, %object
 .L.managed_type_name.7001:
-	.asciz	"Java.Text.DateFormat+Field, Mono.Android"
-	.size	.L.managed_type_name.7001, 41
+	.asciz	"Java.Text.DateFormat, Mono.Android"
+	.size	.L.managed_type_name.7001, 35
 	.section	.rodata.managed_type_name.7002,"aMS",%progbits,1
 	.type	.L.managed_type_name.7002, %object
 .L.managed_type_name.7002:
-	.asciz	"Java.Text.DateFormat, Mono.Android"
-	.size	.L.managed_type_name.7002, 35
+	.asciz	"Java.Text.DateFormatInvoker, Mono.Android"
+	.size	.L.managed_type_name.7002, 42
 	.section	.rodata.managed_type_name.7003,"aMS",%progbits,1
 	.type	.L.managed_type_name.7003, %object
 .L.managed_type_name.7003:
-	.asciz	"Java.Text.DateFormatInvoker, Mono.Android"
+	.asciz	"Java.Text.DateFormatSymbols, Mono.Android"
 	.size	.L.managed_type_name.7003, 42
 	.section	.rodata.managed_type_name.7004,"aMS",%progbits,1
 	.type	.L.managed_type_name.7004, %object
 .L.managed_type_name.7004:
-	.asciz	"Java.Text.DateFormatSymbols, Mono.Android"
-	.size	.L.managed_type_name.7004, 42
+	.asciz	"Java.Text.DecimalFormat, Mono.Android"
+	.size	.L.managed_type_name.7004, 38
 	.section	.rodata.managed_type_name.7005,"aMS",%progbits,1
 	.type	.L.managed_type_name.7005, %object
 .L.managed_type_name.7005:
-	.asciz	"Java.Text.DecimalFormat, Mono.Android"
-	.size	.L.managed_type_name.7005, 38
+	.asciz	"Java.Text.DecimalFormatSymbols, Mono.Android"
+	.size	.L.managed_type_name.7005, 45
 	.section	.rodata.managed_type_name.7006,"aMS",%progbits,1
 	.type	.L.managed_type_name.7006, %object
 .L.managed_type_name.7006:
-	.asciz	"Java.Text.DecimalFormatSymbols, Mono.Android"
-	.size	.L.managed_type_name.7006, 45
+	.asciz	"Java.Text.FieldPosition, Mono.Android"
+	.size	.L.managed_type_name.7006, 38
 	.section	.rodata.managed_type_name.7007,"aMS",%progbits,1
 	.type	.L.managed_type_name.7007, %object
 .L.managed_type_name.7007:
-	.asciz	"Java.Text.FieldPosition, Mono.Android"
-	.size	.L.managed_type_name.7007, 38
+	.asciz	"Java.Text.IAttributedCharacterIteratorInvoker, Mono.Android"
+	.size	.L.managed_type_name.7007, 60
 	.section	.rodata.managed_type_name.7008,"aMS",%progbits,1
 	.type	.L.managed_type_name.7008, %object
 .L.managed_type_name.7008:
-	.asciz	"Java.Text.IAttributedCharacterIteratorInvoker, Mono.Android"
-	.size	.L.managed_type_name.7008, 60
+	.asciz	"Java.Text.ICharacterIteratorInvoker, Mono.Android"
+	.size	.L.managed_type_name.7008, 50
 	.section	.rodata.managed_type_name.7009,"aMS",%progbits,1
 	.type	.L.managed_type_name.7009, %object
 .L.managed_type_name.7009:
-	.asciz	"Java.Text.ICharacterIteratorInvoker, Mono.Android"
-	.size	.L.managed_type_name.7009, 50
+	.asciz	"Java.Text.MessageFormat+Field, Mono.Android"
+	.size	.L.managed_type_name.7009, 44
 	.section	.rodata.managed_type_name.7010,"aMS",%progbits,1
 	.type	.L.managed_type_name.7010, %object
 .L.managed_type_name.7010:
-	.asciz	"Java.Text.MessageFormat+Field, Mono.Android"
-	.size	.L.managed_type_name.7010, 44
+	.asciz	"Java.Text.MessageFormat, Mono.Android"
+	.size	.L.managed_type_name.7010, 38
 	.section	.rodata.managed_type_name.7011,"aMS",%progbits,1
 	.type	.L.managed_type_name.7011, %object
 .L.managed_type_name.7011:
-	.asciz	"Java.Text.MessageFormat, Mono.Android"
-	.size	.L.managed_type_name.7011, 38
+	.asciz	"Java.Text.Normalizer+Form, Mono.Android"
+	.size	.L.managed_type_name.7011, 40
 	.section	.rodata.managed_type_name.7012,"aMS",%progbits,1
 	.type	.L.managed_type_name.7012, %object
 .L.managed_type_name.7012:
-	.asciz	"Java.Text.Normalizer+Form, Mono.Android"
-	.size	.L.managed_type_name.7012, 40
+	.asciz	"Java.Text.Normalizer, Mono.Android"
+	.size	.L.managed_type_name.7012, 35
 	.section	.rodata.managed_type_name.7013,"aMS",%progbits,1
 	.type	.L.managed_type_name.7013, %object
 .L.managed_type_name.7013:
-	.asciz	"Java.Text.Normalizer, Mono.Android"
-	.size	.L.managed_type_name.7013, 35
+	.asciz	"Java.Text.NumberFormat+Field, Mono.Android"
+	.size	.L.managed_type_name.7013, 43
 	.section	.rodata.managed_type_name.7014,"aMS",%progbits,1
 	.type	.L.managed_type_name.7014, %object
 .L.managed_type_name.7014:
-	.asciz	"Java.Text.NumberFormat+Field, Mono.Android"
-	.size	.L.managed_type_name.7014, 43
+	.asciz	"Java.Text.NumberFormat, Mono.Android"
+	.size	.L.managed_type_name.7014, 37
 	.section	.rodata.managed_type_name.7015,"aMS",%progbits,1
 	.type	.L.managed_type_name.7015, %object
 .L.managed_type_name.7015:
-	.asciz	"Java.Text.NumberFormat, Mono.Android"
-	.size	.L.managed_type_name.7015, 37
+	.asciz	"Java.Text.NumberFormatInvoker, Mono.Android"
+	.size	.L.managed_type_name.7015, 44
 	.section	.rodata.managed_type_name.7016,"aMS",%progbits,1
 	.type	.L.managed_type_name.7016, %object
 .L.managed_type_name.7016:
-	.asciz	"Java.Text.NumberFormatInvoker, Mono.Android"
-	.size	.L.managed_type_name.7016, 44
+	.asciz	"Java.Text.ParseException, Mono.Android"
+	.size	.L.managed_type_name.7016, 39
 	.section	.rodata.managed_type_name.7017,"aMS",%progbits,1
 	.type	.L.managed_type_name.7017, %object
 .L.managed_type_name.7017:
-	.asciz	"Java.Text.ParseException, Mono.Android"
-	.size	.L.managed_type_name.7017, 39
+	.asciz	"Java.Text.ParsePosition, Mono.Android"
+	.size	.L.managed_type_name.7017, 38
 	.section	.rodata.managed_type_name.7018,"aMS",%progbits,1
 	.type	.L.managed_type_name.7018, %object
 .L.managed_type_name.7018:
-	.asciz	"Java.Text.ParsePosition, Mono.Android"
-	.size	.L.managed_type_name.7018, 38
+	.asciz	"Java.Text.RuleBasedCollator, Mono.Android"
+	.size	.L.managed_type_name.7018, 42
 	.section	.rodata.managed_type_name.7019,"aMS",%progbits,1
 	.type	.L.managed_type_name.7019, %object
 .L.managed_type_name.7019:
-	.asciz	"Java.Text.RuleBasedCollator, Mono.Android"
-	.size	.L.managed_type_name.7019, 42
+	.asciz	"Java.Text.SimpleDateFormat, Mono.Android"
+	.size	.L.managed_type_name.7019, 41
 	.section	.rodata.managed_type_name.7020,"aMS",%progbits,1
 	.type	.L.managed_type_name.7020, %object
 .L.managed_type_name.7020:
-	.asciz	"Java.Text.SimpleDateFormat, Mono.Android"
-	.size	.L.managed_type_name.7020, 41
+	.asciz	"Java.Text.StringCharacterIterator, Mono.Android"
+	.size	.L.managed_type_name.7020, 48
 	.section	.rodata.managed_type_name.7021,"aMS",%progbits,1
 	.type	.L.managed_type_name.7021, %object
 .L.managed_type_name.7021:
-	.asciz	"Java.Text.StringCharacterIterator, Mono.Android"
-	.size	.L.managed_type_name.7021, 48
+	.asciz	"Java.Text._Format+Field, Mono.Android"
+	.size	.L.managed_type_name.7021, 38
 	.section	.rodata.managed_type_name.7022,"aMS",%progbits,1
 	.type	.L.managed_type_name.7022, %object
 .L.managed_type_name.7022:
-	.asciz	"Java.Text._Format+Field, Mono.Android"
-	.size	.L.managed_type_name.7022, 38
+	.asciz	"Java.Text._Format, Mono.Android"
+	.size	.L.managed_type_name.7022, 32
 	.section	.rodata.managed_type_name.7023,"aMS",%progbits,1
 	.type	.L.managed_type_name.7023, %object
 .L.managed_type_name.7023:
-	.asciz	"Java.Text._Format, Mono.Android"
-	.size	.L.managed_type_name.7023, 32
+	.asciz	"Java.Text._FormatInvoker, Mono.Android"
+	.size	.L.managed_type_name.7023, 39
 	.section	.rodata.managed_type_name.7024,"aMS",%progbits,1
 	.type	.L.managed_type_name.7024, %object
 .L.managed_type_name.7024:
-	.asciz	"Java.Text._FormatInvoker, Mono.Android"
-	.size	.L.managed_type_name.7024, 39
+	.asciz	"Java.Time.Format.DateTimeFormatter, Mono.Android"
+	.size	.L.managed_type_name.7024, 49
 	.section	.rodata.managed_type_name.7025,"aMS",%progbits,1
 	.type	.L.managed_type_name.7025, %object
 .L.managed_type_name.7025:
-	.asciz	"Java.Time.Format.DateTimeFormatter, Mono.Android"
-	.size	.L.managed_type_name.7025, 49
+	.asciz	"Java.Time.Format.DateTimeFormatterBuilder, Mono.Android"
+	.size	.L.managed_type_name.7025, 56
 	.section	.rodata.managed_type_name.7026,"aMS",%progbits,1
 	.type	.L.managed_type_name.7026, %object
 .L.managed_type_name.7026:
-	.asciz	"Java.Time.Format.DateTimeFormatterBuilder, Mono.Android"
-	.size	.L.managed_type_name.7026, 56
+	.asciz	"Java.Time.Format.DecimalStyle, Mono.Android"
+	.size	.L.managed_type_name.7026, 44
 	.section	.rodata.managed_type_name.7027,"aMS",%progbits,1
 	.type	.L.managed_type_name.7027, %object
 .L.managed_type_name.7027:
-	.asciz	"Java.Time.Format.DecimalStyle, Mono.Android"
-	.size	.L.managed_type_name.7027, 44
+	.asciz	"Java.Time.Format.FormatStyle, Mono.Android"
+	.size	.L.managed_type_name.7027, 43
 	.section	.rodata.managed_type_name.7028,"aMS",%progbits,1
 	.type	.L.managed_type_name.7028, %object
 .L.managed_type_name.7028:
-	.asciz	"Java.Time.Format.FormatStyle, Mono.Android"
-	.size	.L.managed_type_name.7028, 43
+	.asciz	"Java.Time.Format.ResolverStyle, Mono.Android"
+	.size	.L.managed_type_name.7028, 45
 	.section	.rodata.managed_type_name.7029,"aMS",%progbits,1
 	.type	.L.managed_type_name.7029, %object
 .L.managed_type_name.7029:
-	.asciz	"Java.Time.Format.ResolverStyle, Mono.Android"
-	.size	.L.managed_type_name.7029, 45
+	.asciz	"Java.Time.Format.SignStyle, Mono.Android"
+	.size	.L.managed_type_name.7029, 41
 	.section	.rodata.managed_type_name.7030,"aMS",%progbits,1
 	.type	.L.managed_type_name.7030, %object
 .L.managed_type_name.7030:
-	.asciz	"Java.Time.Format.SignStyle, Mono.Android"
+	.asciz	"Java.Time.Format.TextStyle, Mono.Android"
 	.size	.L.managed_type_name.7030, 41
 	.section	.rodata.managed_type_name.7031,"aMS",%progbits,1
 	.type	.L.managed_type_name.7031, %object
 .L.managed_type_name.7031:
-	.asciz	"Java.Time.Format.TextStyle, Mono.Android"
-	.size	.L.managed_type_name.7031, 41
+	.asciz	"Java.Time.Temporal.ChronoField, Mono.Android"
+	.size	.L.managed_type_name.7031, 45
 	.section	.rodata.managed_type_name.7032,"aMS",%progbits,1
 	.type	.L.managed_type_name.7032, %object
 .L.managed_type_name.7032:
-	.asciz	"Java.Time.Temporal.ChronoField, Mono.Android"
-	.size	.L.managed_type_name.7032, 45
+	.asciz	"Java.Time.Temporal.ChronoUnit, Mono.Android"
+	.size	.L.managed_type_name.7032, 44
 	.section	.rodata.managed_type_name.7033,"aMS",%progbits,1
 	.type	.L.managed_type_name.7033, %object
 .L.managed_type_name.7033:
-	.asciz	"Java.Time.Temporal.ChronoUnit, Mono.Android"
-	.size	.L.managed_type_name.7033, 44
+	.asciz	"Java.Time.Temporal.IsoFields, Mono.Android"
+	.size	.L.managed_type_name.7033, 43
 	.section	.rodata.managed_type_name.7034,"aMS",%progbits,1
 	.type	.L.managed_type_name.7034, %object
 .L.managed_type_name.7034:
-	.asciz	"Java.Time.Temporal.IsoFields, Mono.Android"
-	.size	.L.managed_type_name.7034, 43
+	.asciz	"Java.Time.Temporal.JulianFields, Mono.Android"
+	.size	.L.managed_type_name.7034, 46
 	.section	.rodata.managed_type_name.7035,"aMS",%progbits,1
 	.type	.L.managed_type_name.7035, %object
 .L.managed_type_name.7035:
-	.asciz	"Java.Time.Temporal.JulianFields, Mono.Android"
-	.size	.L.managed_type_name.7035, 46
+	.asciz	"Java.Time.Temporal.TemporalAdjusters, Mono.Android"
+	.size	.L.managed_type_name.7035, 51
 	.section	.rodata.managed_type_name.7036,"aMS",%progbits,1
 	.type	.L.managed_type_name.7036, %object
 .L.managed_type_name.7036:
-	.asciz	"Java.Time.Temporal.TemporalAdjusters, Mono.Android"
-	.size	.L.managed_type_name.7036, 51
+	.asciz	"Java.Time.Temporal.TemporalQueries, Mono.Android"
+	.size	.L.managed_type_name.7036, 49
 	.section	.rodata.managed_type_name.7037,"aMS",%progbits,1
 	.type	.L.managed_type_name.7037, %object
 .L.managed_type_name.7037:
-	.asciz	"Java.Time.Temporal.TemporalQueries, Mono.Android"
-	.size	.L.managed_type_name.7037, 49
+	.asciz	"Java.Time.Temporal.ValueRange, Mono.Android"
+	.size	.L.managed_type_name.7037, 44
 	.section	.rodata.managed_type_name.7038,"aMS",%progbits,1
 	.type	.L.managed_type_name.7038, %object
 .L.managed_type_name.7038:
-	.asciz	"Java.Time.Temporal.ValueRange, Mono.Android"
+	.asciz	"Java.Time.Temporal.WeekFields, Mono.Android"
 	.size	.L.managed_type_name.7038, 44
 	.section	.rodata.managed_type_name.7039,"aMS",%progbits,1
 	.type	.L.managed_type_name.7039, %object
 .L.managed_type_name.7039:
-	.asciz	"Java.Time.Temporal.WeekFields, Mono.Android"
-	.size	.L.managed_type_name.7039, 44
+	.asciz	"Java.Time.Zone.ZoneOffsetTransition, Mono.Android"
+	.size	.L.managed_type_name.7039, 50
 	.section	.rodata.managed_type_name.7040,"aMS",%progbits,1
 	.type	.L.managed_type_name.7040, %object
 .L.managed_type_name.7040:
-	.asciz	"Java.Time.Zone.ZoneOffsetTransition, Mono.Android"
-	.size	.L.managed_type_name.7040, 50
+	.asciz	"Java.Time.Zone.ZoneOffsetTransitionRule+TimeDefinition, Mono.Android"
+	.size	.L.managed_type_name.7040, 69
 	.section	.rodata.managed_type_name.7041,"aMS",%progbits,1
 	.type	.L.managed_type_name.7041, %object
 .L.managed_type_name.7041:
-	.asciz	"Java.Time.Zone.ZoneOffsetTransitionRule+TimeDefinition, Mono.Android"
-	.size	.L.managed_type_name.7041, 69
+	.asciz	"Java.Time.Zone.ZoneOffsetTransitionRule, Mono.Android"
+	.size	.L.managed_type_name.7041, 54
 	.section	.rodata.managed_type_name.7042,"aMS",%progbits,1
 	.type	.L.managed_type_name.7042, %object
 .L.managed_type_name.7042:
-	.asciz	"Java.Time.Zone.ZoneOffsetTransitionRule, Mono.Android"
-	.size	.L.managed_type_name.7042, 54
+	.asciz	"Java.Time.Zone.ZoneRules, Mono.Android"
+	.size	.L.managed_type_name.7042, 39
 	.section	.rodata.managed_type_name.7043,"aMS",%progbits,1
 	.type	.L.managed_type_name.7043, %object
 .L.managed_type_name.7043:
-	.asciz	"Java.Time.Zone.ZoneRules, Mono.Android"
-	.size	.L.managed_type_name.7043, 39
+	.asciz	"Java.Util.AbstractCollection, Mono.Android"
+	.size	.L.managed_type_name.7043, 43
 	.section	.rodata.managed_type_name.7044,"aMS",%progbits,1
 	.type	.L.managed_type_name.7044, %object
 .L.managed_type_name.7044:
-	.asciz	"Java.Util.AbstractCollection, Mono.Android"
-	.size	.L.managed_type_name.7044, 43
+	.asciz	"Java.Util.AbstractCollectionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7044, 50
 	.section	.rodata.managed_type_name.7045,"aMS",%progbits,1
 	.type	.L.managed_type_name.7045, %object
 .L.managed_type_name.7045:
-	.asciz	"Java.Util.AbstractCollectionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7045, 50
+	.asciz	"Java.Util.AbstractList, Mono.Android"
+	.size	.L.managed_type_name.7045, 37
 	.section	.rodata.managed_type_name.7046,"aMS",%progbits,1
 	.type	.L.managed_type_name.7046, %object
 .L.managed_type_name.7046:
-	.asciz	"Java.Util.AbstractList, Mono.Android"
-	.size	.L.managed_type_name.7046, 37
+	.asciz	"Java.Util.AbstractListInvoker, Mono.Android"
+	.size	.L.managed_type_name.7046, 44
 	.section	.rodata.managed_type_name.7047,"aMS",%progbits,1
 	.type	.L.managed_type_name.7047, %object
 .L.managed_type_name.7047:
-	.asciz	"Java.Util.AbstractListInvoker, Mono.Android"
-	.size	.L.managed_type_name.7047, 44
+	.asciz	"Java.Util.AbstractMap+SimpleEntry, Mono.Android"
+	.size	.L.managed_type_name.7047, 48
 	.section	.rodata.managed_type_name.7048,"aMS",%progbits,1
 	.type	.L.managed_type_name.7048, %object
 .L.managed_type_name.7048:
-	.asciz	"Java.Util.AbstractMap+SimpleEntry, Mono.Android"
-	.size	.L.managed_type_name.7048, 48
+	.asciz	"Java.Util.AbstractMap+SimpleImmutableEntry, Mono.Android"
+	.size	.L.managed_type_name.7048, 57
 	.section	.rodata.managed_type_name.7049,"aMS",%progbits,1
 	.type	.L.managed_type_name.7049, %object
 .L.managed_type_name.7049:
-	.asciz	"Java.Util.AbstractMap+SimpleImmutableEntry, Mono.Android"
-	.size	.L.managed_type_name.7049, 57
+	.asciz	"Java.Util.AbstractMap, Mono.Android"
+	.size	.L.managed_type_name.7049, 36
 	.section	.rodata.managed_type_name.7050,"aMS",%progbits,1
 	.type	.L.managed_type_name.7050, %object
 .L.managed_type_name.7050:
-	.asciz	"Java.Util.AbstractMap, Mono.Android"
-	.size	.L.managed_type_name.7050, 36
+	.asciz	"Java.Util.AbstractMapInvoker, Mono.Android"
+	.size	.L.managed_type_name.7050, 43
 	.section	.rodata.managed_type_name.7051,"aMS",%progbits,1
 	.type	.L.managed_type_name.7051, %object
 .L.managed_type_name.7051:
-	.asciz	"Java.Util.AbstractMapInvoker, Mono.Android"
-	.size	.L.managed_type_name.7051, 43
+	.asciz	"Java.Util.AbstractQueue, Mono.Android"
+	.size	.L.managed_type_name.7051, 38
 	.section	.rodata.managed_type_name.7052,"aMS",%progbits,1
 	.type	.L.managed_type_name.7052, %object
 .L.managed_type_name.7052:
-	.asciz	"Java.Util.AbstractQueue, Mono.Android"
-	.size	.L.managed_type_name.7052, 38
+	.asciz	"Java.Util.AbstractQueueInvoker, Mono.Android"
+	.size	.L.managed_type_name.7052, 45
 	.section	.rodata.managed_type_name.7053,"aMS",%progbits,1
 	.type	.L.managed_type_name.7053, %object
 .L.managed_type_name.7053:
-	.asciz	"Java.Util.AbstractQueueInvoker, Mono.Android"
-	.size	.L.managed_type_name.7053, 45
+	.asciz	"Java.Util.AbstractSequentialList, Mono.Android"
+	.size	.L.managed_type_name.7053, 47
 	.section	.rodata.managed_type_name.7054,"aMS",%progbits,1
 	.type	.L.managed_type_name.7054, %object
 .L.managed_type_name.7054:
-	.asciz	"Java.Util.AbstractSequentialList, Mono.Android"
-	.size	.L.managed_type_name.7054, 47
+	.asciz	"Java.Util.AbstractSequentialListInvoker, Mono.Android"
+	.size	.L.managed_type_name.7054, 54
 	.section	.rodata.managed_type_name.7055,"aMS",%progbits,1
 	.type	.L.managed_type_name.7055, %object
 .L.managed_type_name.7055:
-	.asciz	"Java.Util.AbstractSequentialListInvoker, Mono.Android"
-	.size	.L.managed_type_name.7055, 54
+	.asciz	"Java.Util.AbstractSet, Mono.Android"
+	.size	.L.managed_type_name.7055, 36
 	.section	.rodata.managed_type_name.7056,"aMS",%progbits,1
 	.type	.L.managed_type_name.7056, %object
 .L.managed_type_name.7056:
-	.asciz	"Java.Util.AbstractSet, Mono.Android"
-	.size	.L.managed_type_name.7056, 36
+	.asciz	"Java.Util.AbstractSetInvoker, Mono.Android"
+	.size	.L.managed_type_name.7056, 43
 	.section	.rodata.managed_type_name.7057,"aMS",%progbits,1
 	.type	.L.managed_type_name.7057, %object
 .L.managed_type_name.7057:
-	.asciz	"Java.Util.AbstractSetInvoker, Mono.Android"
-	.size	.L.managed_type_name.7057, 43
+	.asciz	"Java.Util.ArrayDeque, Mono.Android"
+	.size	.L.managed_type_name.7057, 35
 	.section	.rodata.managed_type_name.7058,"aMS",%progbits,1
 	.type	.L.managed_type_name.7058, %object
 .L.managed_type_name.7058:
-	.asciz	"Java.Util.ArrayDeque, Mono.Android"
-	.size	.L.managed_type_name.7058, 35
+	.asciz	"Java.Util.ArrayList, Mono.Android"
+	.size	.L.managed_type_name.7058, 34
 	.section	.rodata.managed_type_name.7059,"aMS",%progbits,1
 	.type	.L.managed_type_name.7059, %object
 .L.managed_type_name.7059:
-	.asciz	"Java.Util.ArrayList, Mono.Android"
-	.size	.L.managed_type_name.7059, 34
+	.asciz	"Java.Util.Arrays, Mono.Android"
+	.size	.L.managed_type_name.7059, 31
 	.section	.rodata.managed_type_name.7060,"aMS",%progbits,1
 	.type	.L.managed_type_name.7060, %object
 .L.managed_type_name.7060:
-	.asciz	"Java.Util.Arrays, Mono.Android"
-	.size	.L.managed_type_name.7060, 31
+	.asciz	"Java.Util.Base64+Decoder, Mono.Android"
+	.size	.L.managed_type_name.7060, 39
 	.section	.rodata.managed_type_name.7061,"aMS",%progbits,1
 	.type	.L.managed_type_name.7061, %object
 .L.managed_type_name.7061:
-	.asciz	"Java.Util.Base64+Decoder, Mono.Android"
+	.asciz	"Java.Util.Base64+Encoder, Mono.Android"
 	.size	.L.managed_type_name.7061, 39
 	.section	.rodata.managed_type_name.7062,"aMS",%progbits,1
 	.type	.L.managed_type_name.7062, %object
 .L.managed_type_name.7062:
-	.asciz	"Java.Util.Base64+Encoder, Mono.Android"
-	.size	.L.managed_type_name.7062, 39
+	.asciz	"Java.Util.Base64, Mono.Android"
+	.size	.L.managed_type_name.7062, 31
 	.section	.rodata.managed_type_name.7063,"aMS",%progbits,1
 	.type	.L.managed_type_name.7063, %object
 .L.managed_type_name.7063:
-	.asciz	"Java.Util.Base64, Mono.Android"
+	.asciz	"Java.Util.BitSet, Mono.Android"
 	.size	.L.managed_type_name.7063, 31
 	.section	.rodata.managed_type_name.7064,"aMS",%progbits,1
 	.type	.L.managed_type_name.7064, %object
 .L.managed_type_name.7064:
-	.asciz	"Java.Util.BitSet, Mono.Android"
-	.size	.L.managed_type_name.7064, 31
+	.asciz	"Java.Util.Calendar+Builder, Mono.Android"
+	.size	.L.managed_type_name.7064, 41
 	.section	.rodata.managed_type_name.7065,"aMS",%progbits,1
 	.type	.L.managed_type_name.7065, %object
 .L.managed_type_name.7065:
-	.asciz	"Java.Util.Calendar+Builder, Mono.Android"
-	.size	.L.managed_type_name.7065, 41
+	.asciz	"Java.Util.Calendar, Mono.Android"
+	.size	.L.managed_type_name.7065, 33
 	.section	.rodata.managed_type_name.7066,"aMS",%progbits,1
 	.type	.L.managed_type_name.7066, %object
 .L.managed_type_name.7066:
-	.asciz	"Java.Util.Calendar, Mono.Android"
-	.size	.L.managed_type_name.7066, 33
+	.asciz	"Java.Util.CalendarInvoker, Mono.Android"
+	.size	.L.managed_type_name.7066, 40
 	.section	.rodata.managed_type_name.7067,"aMS",%progbits,1
 	.type	.L.managed_type_name.7067, %object
 .L.managed_type_name.7067:
-	.asciz	"Java.Util.CalendarInvoker, Mono.Android"
-	.size	.L.managed_type_name.7067, 40
+	.asciz	"Java.Util.Collections, Mono.Android"
+	.size	.L.managed_type_name.7067, 36
 	.section	.rodata.managed_type_name.7068,"aMS",%progbits,1
 	.type	.L.managed_type_name.7068, %object
 .L.managed_type_name.7068:
-	.asciz	"Java.Util.Collections, Mono.Android"
-	.size	.L.managed_type_name.7068, 36
+	.asciz	"Java.Util.Comparator, Mono.Android"
+	.size	.L.managed_type_name.7068, 35
 	.section	.rodata.managed_type_name.7069,"aMS",%progbits,1
 	.type	.L.managed_type_name.7069, %object
 .L.managed_type_name.7069:
-	.asciz	"Java.Util.Comparator, Mono.Android"
-	.size	.L.managed_type_name.7069, 35
+	.asciz	"Java.Util.Concurrent.AbstractExecutorService, Mono.Android"
+	.size	.L.managed_type_name.7069, 59
 	.section	.rodata.managed_type_name.7070,"aMS",%progbits,1
 	.type	.L.managed_type_name.7070, %object
 .L.managed_type_name.7070:
-	.asciz	"Java.Util.Concurrent.AbstractExecutorService, Mono.Android"
-	.size	.L.managed_type_name.7070, 59
+	.asciz	"Java.Util.Concurrent.AbstractExecutorServiceInvoker, Mono.Android"
+	.size	.L.managed_type_name.7070, 66
 	.section	.rodata.managed_type_name.7071,"aMS",%progbits,1
 	.type	.L.managed_type_name.7071, %object
 .L.managed_type_name.7071:
-	.asciz	"Java.Util.Concurrent.AbstractExecutorServiceInvoker, Mono.Android"
-	.size	.L.managed_type_name.7071, 66
+	.asciz	"Java.Util.Concurrent.ArrayBlockingQueue, Mono.Android"
+	.size	.L.managed_type_name.7071, 54
 	.section	.rodata.managed_type_name.7072,"aMS",%progbits,1
 	.type	.L.managed_type_name.7072, %object
 .L.managed_type_name.7072:
-	.asciz	"Java.Util.Concurrent.ArrayBlockingQueue, Mono.Android"
-	.size	.L.managed_type_name.7072, 54
+	.asciz	"Java.Util.Concurrent.Atomic.AtomicBoolean, Mono.Android"
+	.size	.L.managed_type_name.7072, 56
 	.section	.rodata.managed_type_name.7073,"aMS",%progbits,1
 	.type	.L.managed_type_name.7073, %object
 .L.managed_type_name.7073:
-	.asciz	"Java.Util.Concurrent.Atomic.AtomicBoolean, Mono.Android"
+	.asciz	"Java.Util.Concurrent.Atomic.AtomicInteger, Mono.Android"
 	.size	.L.managed_type_name.7073, 56
 	.section	.rodata.managed_type_name.7074,"aMS",%progbits,1
 	.type	.L.managed_type_name.7074, %object
 .L.managed_type_name.7074:
-	.asciz	"Java.Util.Concurrent.Atomic.AtomicInteger, Mono.Android"
-	.size	.L.managed_type_name.7074, 56
+	.asciz	"Java.Util.Concurrent.Atomic.AtomicIntegerArray, Mono.Android"
+	.size	.L.managed_type_name.7074, 61
 	.section	.rodata.managed_type_name.7075,"aMS",%progbits,1
 	.type	.L.managed_type_name.7075, %object
 .L.managed_type_name.7075:
-	.asciz	"Java.Util.Concurrent.Atomic.AtomicIntegerArray, Mono.Android"
-	.size	.L.managed_type_name.7075, 61
+	.asciz	"Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater, Mono.Android"
+	.size	.L.managed_type_name.7075, 68
 	.section	.rodata.managed_type_name.7076,"aMS",%progbits,1
 	.type	.L.managed_type_name.7076, %object
 .L.managed_type_name.7076:
-	.asciz	"Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater, Mono.Android"
-	.size	.L.managed_type_name.7076, 68
+	.asciz	"Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdaterInvoker, Mono.Android"
+	.size	.L.managed_type_name.7076, 75
 	.section	.rodata.managed_type_name.7077,"aMS",%progbits,1
 	.type	.L.managed_type_name.7077, %object
 .L.managed_type_name.7077:
-	.asciz	"Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdaterInvoker, Mono.Android"
-	.size	.L.managed_type_name.7077, 75
+	.asciz	"Java.Util.Concurrent.Atomic.AtomicLong, Mono.Android"
+	.size	.L.managed_type_name.7077, 53
 	.section	.rodata.managed_type_name.7078,"aMS",%progbits,1
 	.type	.L.managed_type_name.7078, %object
 .L.managed_type_name.7078:
-	.asciz	"Java.Util.Concurrent.Atomic.AtomicLong, Mono.Android"
-	.size	.L.managed_type_name.7078, 53
+	.asciz	"Java.Util.Concurrent.Atomic.AtomicLongArray, Mono.Android"
+	.size	.L.managed_type_name.7078, 58
 	.section	.rodata.managed_type_name.7079,"aMS",%progbits,1
 	.type	.L.managed_type_name.7079, %object
 .L.managed_type_name.7079:
-	.asciz	"Java.Util.Concurrent.Atomic.AtomicLongArray, Mono.Android"
-	.size	.L.managed_type_name.7079, 58
+	.asciz	"Java.Util.Concurrent.Atomic.AtomicLongFieldUpdater, Mono.Android"
+	.size	.L.managed_type_name.7079, 65
 	.section	.rodata.managed_type_name.7080,"aMS",%progbits,1
 	.type	.L.managed_type_name.7080, %object
 .L.managed_type_name.7080:
-	.asciz	"Java.Util.Concurrent.Atomic.AtomicLongFieldUpdater, Mono.Android"
-	.size	.L.managed_type_name.7080, 65
+	.asciz	"Java.Util.Concurrent.Atomic.AtomicLongFieldUpdaterInvoker, Mono.Android"
+	.size	.L.managed_type_name.7080, 72
 	.section	.rodata.managed_type_name.7081,"aMS",%progbits,1
 	.type	.L.managed_type_name.7081, %object
 .L.managed_type_name.7081:
-	.asciz	"Java.Util.Concurrent.Atomic.AtomicLongFieldUpdaterInvoker, Mono.Android"
-	.size	.L.managed_type_name.7081, 72
+	.asciz	"Java.Util.Concurrent.Atomic.AtomicMarkableReference, Mono.Android"
+	.size	.L.managed_type_name.7081, 66
 	.section	.rodata.managed_type_name.7082,"aMS",%progbits,1
 	.type	.L.managed_type_name.7082, %object
 .L.managed_type_name.7082:
-	.asciz	"Java.Util.Concurrent.Atomic.AtomicMarkableReference, Mono.Android"
-	.size	.L.managed_type_name.7082, 66
+	.asciz	"Java.Util.Concurrent.Atomic.AtomicReference, Mono.Android"
+	.size	.L.managed_type_name.7082, 58
 	.section	.rodata.managed_type_name.7083,"aMS",%progbits,1
 	.type	.L.managed_type_name.7083, %object
 .L.managed_type_name.7083:
-	.asciz	"Java.Util.Concurrent.Atomic.AtomicReference, Mono.Android"
-	.size	.L.managed_type_name.7083, 58
+	.asciz	"Java.Util.Concurrent.Atomic.AtomicReferenceArray, Mono.Android"
+	.size	.L.managed_type_name.7083, 63
 	.section	.rodata.managed_type_name.7084,"aMS",%progbits,1
 	.type	.L.managed_type_name.7084, %object
 .L.managed_type_name.7084:
-	.asciz	"Java.Util.Concurrent.Atomic.AtomicReferenceArray, Mono.Android"
-	.size	.L.managed_type_name.7084, 63
+	.asciz	"Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater, Mono.Android"
+	.size	.L.managed_type_name.7084, 70
 	.section	.rodata.managed_type_name.7085,"aMS",%progbits,1
 	.type	.L.managed_type_name.7085, %object
 .L.managed_type_name.7085:
-	.asciz	"Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater, Mono.Android"
-	.size	.L.managed_type_name.7085, 70
+	.asciz	"Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdaterInvoker, Mono.Android"
+	.size	.L.managed_type_name.7085, 77
 	.section	.rodata.managed_type_name.7086,"aMS",%progbits,1
 	.type	.L.managed_type_name.7086, %object
 .L.managed_type_name.7086:
-	.asciz	"Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdaterInvoker, Mono.Android"
-	.size	.L.managed_type_name.7086, 77
+	.asciz	"Java.Util.Concurrent.Atomic.AtomicStampedReference, Mono.Android"
+	.size	.L.managed_type_name.7086, 65
 	.section	.rodata.managed_type_name.7087,"aMS",%progbits,1
 	.type	.L.managed_type_name.7087, %object
 .L.managed_type_name.7087:
-	.asciz	"Java.Util.Concurrent.Atomic.AtomicStampedReference, Mono.Android"
-	.size	.L.managed_type_name.7087, 65
+	.asciz	"Java.Util.Concurrent.Atomic.DoubleAccumulator, Mono.Android"
+	.size	.L.managed_type_name.7087, 60
 	.section	.rodata.managed_type_name.7088,"aMS",%progbits,1
 	.type	.L.managed_type_name.7088, %object
 .L.managed_type_name.7088:
-	.asciz	"Java.Util.Concurrent.Atomic.DoubleAccumulator, Mono.Android"
-	.size	.L.managed_type_name.7088, 60
+	.asciz	"Java.Util.Concurrent.Atomic.DoubleAdder, Mono.Android"
+	.size	.L.managed_type_name.7088, 54
 	.section	.rodata.managed_type_name.7089,"aMS",%progbits,1
 	.type	.L.managed_type_name.7089, %object
 .L.managed_type_name.7089:
-	.asciz	"Java.Util.Concurrent.Atomic.DoubleAdder, Mono.Android"
-	.size	.L.managed_type_name.7089, 54
+	.asciz	"Java.Util.Concurrent.Atomic.LongAccumulator, Mono.Android"
+	.size	.L.managed_type_name.7089, 58
 	.section	.rodata.managed_type_name.7090,"aMS",%progbits,1
 	.type	.L.managed_type_name.7090, %object
 .L.managed_type_name.7090:
-	.asciz	"Java.Util.Concurrent.Atomic.LongAccumulator, Mono.Android"
-	.size	.L.managed_type_name.7090, 58
+	.asciz	"Java.Util.Concurrent.Atomic.LongAdder, Mono.Android"
+	.size	.L.managed_type_name.7090, 52
 	.section	.rodata.managed_type_name.7091,"aMS",%progbits,1
 	.type	.L.managed_type_name.7091, %object
 .L.managed_type_name.7091:
-	.asciz	"Java.Util.Concurrent.Atomic.LongAdder, Mono.Android"
+	.asciz	"Java.Util.Concurrent.Atomic.Striped64, Mono.Android"
 	.size	.L.managed_type_name.7091, 52
 	.section	.rodata.managed_type_name.7092,"aMS",%progbits,1
 	.type	.L.managed_type_name.7092, %object
 .L.managed_type_name.7092:
-	.asciz	"Java.Util.Concurrent.Atomic.Striped64, Mono.Android"
-	.size	.L.managed_type_name.7092, 52
+	.asciz	"Java.Util.Concurrent.Atomic.Striped64Invoker, Mono.Android"
+	.size	.L.managed_type_name.7092, 59
 	.section	.rodata.managed_type_name.7093,"aMS",%progbits,1
 	.type	.L.managed_type_name.7093, %object
 .L.managed_type_name.7093:
-	.asciz	"Java.Util.Concurrent.Atomic.Striped64Invoker, Mono.Android"
-	.size	.L.managed_type_name.7093, 59
+	.asciz	"Java.Util.Concurrent.BrokenBarrierException, Mono.Android"
+	.size	.L.managed_type_name.7093, 58
 	.section	.rodata.managed_type_name.7094,"aMS",%progbits,1
 	.type	.L.managed_type_name.7094, %object
 .L.managed_type_name.7094:
-	.asciz	"Java.Util.Concurrent.BrokenBarrierException, Mono.Android"
-	.size	.L.managed_type_name.7094, 58
+	.asciz	"Java.Util.Concurrent.CancellationException, Mono.Android"
+	.size	.L.managed_type_name.7094, 57
 	.section	.rodata.managed_type_name.7095,"aMS",%progbits,1
 	.type	.L.managed_type_name.7095, %object
 .L.managed_type_name.7095:
-	.asciz	"Java.Util.Concurrent.CancellationException, Mono.Android"
-	.size	.L.managed_type_name.7095, 57
+	.asciz	"Java.Util.Concurrent.CompletableFuture+IAsynchronousCompletionTaskInvoker, Mono.Android"
+	.size	.L.managed_type_name.7095, 88
 	.section	.rodata.managed_type_name.7096,"aMS",%progbits,1
 	.type	.L.managed_type_name.7096, %object
 .L.managed_type_name.7096:
-	.asciz	"Java.Util.Concurrent.CompletableFuture+IAsynchronousCompletionTaskInvoker, Mono.Android"
-	.size	.L.managed_type_name.7096, 88
+	.asciz	"Java.Util.Concurrent.CompletableFuture, Mono.Android"
+	.size	.L.managed_type_name.7096, 53
 	.section	.rodata.managed_type_name.7097,"aMS",%progbits,1
 	.type	.L.managed_type_name.7097, %object
 .L.managed_type_name.7097:
-	.asciz	"Java.Util.Concurrent.CompletableFuture, Mono.Android"
-	.size	.L.managed_type_name.7097, 53
+	.asciz	"Java.Util.Concurrent.CompletionException, Mono.Android"
+	.size	.L.managed_type_name.7097, 55
 	.section	.rodata.managed_type_name.7098,"aMS",%progbits,1
 	.type	.L.managed_type_name.7098, %object
 .L.managed_type_name.7098:
-	.asciz	"Java.Util.Concurrent.CompletionException, Mono.Android"
-	.size	.L.managed_type_name.7098, 55
+	.asciz	"Java.Util.Concurrent.ConcurrentHashMap, Mono.Android"
+	.size	.L.managed_type_name.7098, 53
 	.section	.rodata.managed_type_name.7099,"aMS",%progbits,1
 	.type	.L.managed_type_name.7099, %object
 .L.managed_type_name.7099:
-	.asciz	"Java.Util.Concurrent.ConcurrentHashMap, Mono.Android"
-	.size	.L.managed_type_name.7099, 53
+	.asciz	"Java.Util.Concurrent.ConcurrentLinkedDeque, Mono.Android"
+	.size	.L.managed_type_name.7099, 57
 	.section	.rodata.managed_type_name.7100,"aMS",%progbits,1
 	.type	.L.managed_type_name.7100, %object
 .L.managed_type_name.7100:
-	.asciz	"Java.Util.Concurrent.ConcurrentLinkedDeque, Mono.Android"
+	.asciz	"Java.Util.Concurrent.ConcurrentLinkedQueue, Mono.Android"
 	.size	.L.managed_type_name.7100, 57
 	.section	.rodata.managed_type_name.7101,"aMS",%progbits,1
 	.type	.L.managed_type_name.7101, %object
 .L.managed_type_name.7101:
-	.asciz	"Java.Util.Concurrent.ConcurrentLinkedQueue, Mono.Android"
+	.asciz	"Java.Util.Concurrent.ConcurrentSkipListMap, Mono.Android"
 	.size	.L.managed_type_name.7101, 57
 	.section	.rodata.managed_type_name.7102,"aMS",%progbits,1
 	.type	.L.managed_type_name.7102, %object
 .L.managed_type_name.7102:
-	.asciz	"Java.Util.Concurrent.ConcurrentSkipListMap, Mono.Android"
-	.size	.L.managed_type_name.7102, 57
+	.asciz	"Java.Util.Concurrent.CopyOnWriteArrayList, Mono.Android"
+	.size	.L.managed_type_name.7102, 56
 	.section	.rodata.managed_type_name.7103,"aMS",%progbits,1
 	.type	.L.managed_type_name.7103, %object
 .L.managed_type_name.7103:
-	.asciz	"Java.Util.Concurrent.CopyOnWriteArrayList, Mono.Android"
-	.size	.L.managed_type_name.7103, 56
+	.asciz	"Java.Util.Concurrent.CopyOnWriteArraySet, Mono.Android"
+	.size	.L.managed_type_name.7103, 55
 	.section	.rodata.managed_type_name.7104,"aMS",%progbits,1
 	.type	.L.managed_type_name.7104, %object
 .L.managed_type_name.7104:
-	.asciz	"Java.Util.Concurrent.CopyOnWriteArraySet, Mono.Android"
-	.size	.L.managed_type_name.7104, 55
+	.asciz	"Java.Util.Concurrent.CountDownLatch, Mono.Android"
+	.size	.L.managed_type_name.7104, 50
 	.section	.rodata.managed_type_name.7105,"aMS",%progbits,1
 	.type	.L.managed_type_name.7105, %object
 .L.managed_type_name.7105:
-	.asciz	"Java.Util.Concurrent.CountDownLatch, Mono.Android"
-	.size	.L.managed_type_name.7105, 50
+	.asciz	"Java.Util.Concurrent.CountedCompleter, Mono.Android"
+	.size	.L.managed_type_name.7105, 52
 	.section	.rodata.managed_type_name.7106,"aMS",%progbits,1
 	.type	.L.managed_type_name.7106, %object
 .L.managed_type_name.7106:
-	.asciz	"Java.Util.Concurrent.CountedCompleter, Mono.Android"
-	.size	.L.managed_type_name.7106, 52
+	.asciz	"Java.Util.Concurrent.CountedCompleterInvoker, Mono.Android"
+	.size	.L.managed_type_name.7106, 59
 	.section	.rodata.managed_type_name.7107,"aMS",%progbits,1
 	.type	.L.managed_type_name.7107, %object
 .L.managed_type_name.7107:
-	.asciz	"Java.Util.Concurrent.CountedCompleterInvoker, Mono.Android"
-	.size	.L.managed_type_name.7107, 59
+	.asciz	"Java.Util.Concurrent.CyclicBarrier, Mono.Android"
+	.size	.L.managed_type_name.7107, 49
 	.section	.rodata.managed_type_name.7108,"aMS",%progbits,1
 	.type	.L.managed_type_name.7108, %object
 .L.managed_type_name.7108:
-	.asciz	"Java.Util.Concurrent.CyclicBarrier, Mono.Android"
-	.size	.L.managed_type_name.7108, 49
+	.asciz	"Java.Util.Concurrent.DelayQueue, Mono.Android"
+	.size	.L.managed_type_name.7108, 46
 	.section	.rodata.managed_type_name.7109,"aMS",%progbits,1
 	.type	.L.managed_type_name.7109, %object
 .L.managed_type_name.7109:
-	.asciz	"Java.Util.Concurrent.DelayQueue, Mono.Android"
-	.size	.L.managed_type_name.7109, 46
+	.asciz	"Java.Util.Concurrent.Exchanger, Mono.Android"
+	.size	.L.managed_type_name.7109, 45
 	.section	.rodata.managed_type_name.7110,"aMS",%progbits,1
 	.type	.L.managed_type_name.7110, %object
 .L.managed_type_name.7110:
-	.asciz	"Java.Util.Concurrent.Exchanger, Mono.Android"
-	.size	.L.managed_type_name.7110, 45
+	.asciz	"Java.Util.Concurrent.ExecutionException, Mono.Android"
+	.size	.L.managed_type_name.7110, 54
 	.section	.rodata.managed_type_name.7111,"aMS",%progbits,1
 	.type	.L.managed_type_name.7111, %object
 .L.managed_type_name.7111:
-	.asciz	"Java.Util.Concurrent.ExecutionException, Mono.Android"
-	.size	.L.managed_type_name.7111, 54
+	.asciz	"Java.Util.Concurrent.ExecutorCompletionService, Mono.Android"
+	.size	.L.managed_type_name.7111, 61
 	.section	.rodata.managed_type_name.7112,"aMS",%progbits,1
 	.type	.L.managed_type_name.7112, %object
 .L.managed_type_name.7112:
-	.asciz	"Java.Util.Concurrent.ExecutorCompletionService, Mono.Android"
-	.size	.L.managed_type_name.7112, 61
+	.asciz	"Java.Util.Concurrent.Executors, Mono.Android"
+	.size	.L.managed_type_name.7112, 45
 	.section	.rodata.managed_type_name.7113,"aMS",%progbits,1
 	.type	.L.managed_type_name.7113, %object
 .L.managed_type_name.7113:
-	.asciz	"Java.Util.Concurrent.Executors, Mono.Android"
-	.size	.L.managed_type_name.7113, 45
+	.asciz	"Java.Util.Concurrent.Flow+IProcessorInvoker, Mono.Android"
+	.size	.L.managed_type_name.7113, 58
 	.section	.rodata.managed_type_name.7114,"aMS",%progbits,1
 	.type	.L.managed_type_name.7114, %object
 .L.managed_type_name.7114:
-	.asciz	"Java.Util.Concurrent.Flow+IProcessorInvoker, Mono.Android"
+	.asciz	"Java.Util.Concurrent.Flow+IPublisherInvoker, Mono.Android"
 	.size	.L.managed_type_name.7114, 58
 	.section	.rodata.managed_type_name.7115,"aMS",%progbits,1
 	.type	.L.managed_type_name.7115, %object
 .L.managed_type_name.7115:
-	.asciz	"Java.Util.Concurrent.Flow+IPublisherInvoker, Mono.Android"
-	.size	.L.managed_type_name.7115, 58
+	.asciz	"Java.Util.Concurrent.Flow+ISubscriberInvoker, Mono.Android"
+	.size	.L.managed_type_name.7115, 59
 	.section	.rodata.managed_type_name.7116,"aMS",%progbits,1
 	.type	.L.managed_type_name.7116, %object
 .L.managed_type_name.7116:
-	.asciz	"Java.Util.Concurrent.Flow+ISubscriberInvoker, Mono.Android"
-	.size	.L.managed_type_name.7116, 59
+	.asciz	"Java.Util.Concurrent.Flow+ISubscriptionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7116, 61
 	.section	.rodata.managed_type_name.7117,"aMS",%progbits,1
 	.type	.L.managed_type_name.7117, %object
 .L.managed_type_name.7117:
-	.asciz	"Java.Util.Concurrent.Flow+ISubscriptionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7117, 61
+	.asciz	"Java.Util.Concurrent.Flow, Mono.Android"
+	.size	.L.managed_type_name.7117, 40
 	.section	.rodata.managed_type_name.7118,"aMS",%progbits,1
 	.type	.L.managed_type_name.7118, %object
 .L.managed_type_name.7118:
-	.asciz	"Java.Util.Concurrent.Flow, Mono.Android"
-	.size	.L.managed_type_name.7118, 40
+	.asciz	"Java.Util.Concurrent.ForkJoinPool+IForkJoinWorkerThreadFactoryInvoker, Mono.Android"
+	.size	.L.managed_type_name.7118, 84
 	.section	.rodata.managed_type_name.7119,"aMS",%progbits,1
 	.type	.L.managed_type_name.7119, %object
 .L.managed_type_name.7119:
-	.asciz	"Java.Util.Concurrent.ForkJoinPool+IForkJoinWorkerThreadFactoryInvoker, Mono.Android"
-	.size	.L.managed_type_name.7119, 84
+	.asciz	"Java.Util.Concurrent.ForkJoinPool+IManagedBlockerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7119, 71
 	.section	.rodata.managed_type_name.7120,"aMS",%progbits,1
 	.type	.L.managed_type_name.7120, %object
 .L.managed_type_name.7120:
-	.asciz	"Java.Util.Concurrent.ForkJoinPool+IManagedBlockerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7120, 71
+	.asciz	"Java.Util.Concurrent.ForkJoinPool, Mono.Android"
+	.size	.L.managed_type_name.7120, 48
 	.section	.rodata.managed_type_name.7121,"aMS",%progbits,1
 	.type	.L.managed_type_name.7121, %object
 .L.managed_type_name.7121:
-	.asciz	"Java.Util.Concurrent.ForkJoinPool, Mono.Android"
+	.asciz	"Java.Util.Concurrent.ForkJoinTask, Mono.Android"
 	.size	.L.managed_type_name.7121, 48
 	.section	.rodata.managed_type_name.7122,"aMS",%progbits,1
 	.type	.L.managed_type_name.7122, %object
 .L.managed_type_name.7122:
-	.asciz	"Java.Util.Concurrent.ForkJoinTask, Mono.Android"
-	.size	.L.managed_type_name.7122, 48
+	.asciz	"Java.Util.Concurrent.ForkJoinTaskInvoker, Mono.Android"
+	.size	.L.managed_type_name.7122, 55
 	.section	.rodata.managed_type_name.7123,"aMS",%progbits,1
 	.type	.L.managed_type_name.7123, %object
 .L.managed_type_name.7123:
-	.asciz	"Java.Util.Concurrent.ForkJoinTaskInvoker, Mono.Android"
-	.size	.L.managed_type_name.7123, 55
+	.asciz	"Java.Util.Concurrent.ForkJoinWorkerThread, Mono.Android"
+	.size	.L.managed_type_name.7123, 56
 	.section	.rodata.managed_type_name.7124,"aMS",%progbits,1
 	.type	.L.managed_type_name.7124, %object
 .L.managed_type_name.7124:
-	.asciz	"Java.Util.Concurrent.ForkJoinWorkerThread, Mono.Android"
-	.size	.L.managed_type_name.7124, 56
+	.asciz	"Java.Util.Concurrent.FutureTask, Mono.Android"
+	.size	.L.managed_type_name.7124, 46
 	.section	.rodata.managed_type_name.7125,"aMS",%progbits,1
 	.type	.L.managed_type_name.7125, %object
 .L.managed_type_name.7125:
-	.asciz	"Java.Util.Concurrent.FutureTask, Mono.Android"
-	.size	.L.managed_type_name.7125, 46
+	.asciz	"Java.Util.Concurrent.IBlockingDequeInvoker, Mono.Android"
+	.size	.L.managed_type_name.7125, 57
 	.section	.rodata.managed_type_name.7126,"aMS",%progbits,1
 	.type	.L.managed_type_name.7126, %object
 .L.managed_type_name.7126:
-	.asciz	"Java.Util.Concurrent.IBlockingDequeInvoker, Mono.Android"
+	.asciz	"Java.Util.Concurrent.IBlockingQueueInvoker, Mono.Android"
 	.size	.L.managed_type_name.7126, 57
 	.section	.rodata.managed_type_name.7127,"aMS",%progbits,1
 	.type	.L.managed_type_name.7127, %object
 .L.managed_type_name.7127:
-	.asciz	"Java.Util.Concurrent.IBlockingQueueInvoker, Mono.Android"
-	.size	.L.managed_type_name.7127, 57
+	.asciz	"Java.Util.Concurrent.ICallableInvoker, Mono.Android"
+	.size	.L.managed_type_name.7127, 52
 	.section	.rodata.managed_type_name.7128,"aMS",%progbits,1
 	.type	.L.managed_type_name.7128, %object
 .L.managed_type_name.7128:
-	.asciz	"Java.Util.Concurrent.ICallableInvoker, Mono.Android"
-	.size	.L.managed_type_name.7128, 52
+	.asciz	"Java.Util.Concurrent.ICompletionServiceInvoker, Mono.Android"
+	.size	.L.managed_type_name.7128, 61
 	.section	.rodata.managed_type_name.7129,"aMS",%progbits,1
 	.type	.L.managed_type_name.7129, %object
 .L.managed_type_name.7129:
-	.asciz	"Java.Util.Concurrent.ICompletionServiceInvoker, Mono.Android"
-	.size	.L.managed_type_name.7129, 61
+	.asciz	"Java.Util.Concurrent.ICompletionStageInvoker, Mono.Android"
+	.size	.L.managed_type_name.7129, 59
 	.section	.rodata.managed_type_name.7130,"aMS",%progbits,1
 	.type	.L.managed_type_name.7130, %object
 .L.managed_type_name.7130:
-	.asciz	"Java.Util.Concurrent.ICompletionStageInvoker, Mono.Android"
-	.size	.L.managed_type_name.7130, 59
+	.asciz	"Java.Util.Concurrent.IConcurrentMapInvoker, Mono.Android"
+	.size	.L.managed_type_name.7130, 57
 	.section	.rodata.managed_type_name.7131,"aMS",%progbits,1
 	.type	.L.managed_type_name.7131, %object
 .L.managed_type_name.7131:
-	.asciz	"Java.Util.Concurrent.IConcurrentMapInvoker, Mono.Android"
-	.size	.L.managed_type_name.7131, 57
+	.asciz	"Java.Util.Concurrent.IDelayedInvoker, Mono.Android"
+	.size	.L.managed_type_name.7131, 51
 	.section	.rodata.managed_type_name.7132,"aMS",%progbits,1
 	.type	.L.managed_type_name.7132, %object
 .L.managed_type_name.7132:
-	.asciz	"Java.Util.Concurrent.IDelayedInvoker, Mono.Android"
-	.size	.L.managed_type_name.7132, 51
+	.asciz	"Java.Util.Concurrent.IExecutorInvoker, Mono.Android"
+	.size	.L.managed_type_name.7132, 52
 	.section	.rodata.managed_type_name.7133,"aMS",%progbits,1
 	.type	.L.managed_type_name.7133, %object
 .L.managed_type_name.7133:
-	.asciz	"Java.Util.Concurrent.IExecutorInvoker, Mono.Android"
-	.size	.L.managed_type_name.7133, 52
+	.asciz	"Java.Util.Concurrent.IExecutorServiceInvoker, Mono.Android"
+	.size	.L.managed_type_name.7133, 59
 	.section	.rodata.managed_type_name.7134,"aMS",%progbits,1
 	.type	.L.managed_type_name.7134, %object
 .L.managed_type_name.7134:
-	.asciz	"Java.Util.Concurrent.IExecutorServiceInvoker, Mono.Android"
-	.size	.L.managed_type_name.7134, 59
+	.asciz	"Java.Util.Concurrent.IFutureInvoker, Mono.Android"
+	.size	.L.managed_type_name.7134, 50
 	.section	.rodata.managed_type_name.7135,"aMS",%progbits,1
 	.type	.L.managed_type_name.7135, %object
 .L.managed_type_name.7135:
-	.asciz	"Java.Util.Concurrent.IFutureInvoker, Mono.Android"
-	.size	.L.managed_type_name.7135, 50
+	.asciz	"Java.Util.Concurrent.IRejectedExecutionHandlerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7135, 68
 	.section	.rodata.managed_type_name.7136,"aMS",%progbits,1
 	.type	.L.managed_type_name.7136, %object
 .L.managed_type_name.7136:
-	.asciz	"Java.Util.Concurrent.IRejectedExecutionHandlerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7136, 68
+	.asciz	"Java.Util.Concurrent.IRunnableFutureInvoker, Mono.Android"
+	.size	.L.managed_type_name.7136, 58
 	.section	.rodata.managed_type_name.7137,"aMS",%progbits,1
 	.type	.L.managed_type_name.7137, %object
 .L.managed_type_name.7137:
-	.asciz	"Java.Util.Concurrent.IRunnableFutureInvoker, Mono.Android"
-	.size	.L.managed_type_name.7137, 58
+	.asciz	"Java.Util.Concurrent.IRunnableScheduledFutureInvoker, Mono.Android"
+	.size	.L.managed_type_name.7137, 67
 	.section	.rodata.managed_type_name.7138,"aMS",%progbits,1
 	.type	.L.managed_type_name.7138, %object
 .L.managed_type_name.7138:
-	.asciz	"Java.Util.Concurrent.IRunnableScheduledFutureInvoker, Mono.Android"
-	.size	.L.managed_type_name.7138, 67
+	.asciz	"Java.Util.Concurrent.IScheduledExecutorServiceInvoker, Mono.Android"
+	.size	.L.managed_type_name.7138, 68
 	.section	.rodata.managed_type_name.7139,"aMS",%progbits,1
 	.type	.L.managed_type_name.7139, %object
 .L.managed_type_name.7139:
-	.asciz	"Java.Util.Concurrent.IScheduledExecutorServiceInvoker, Mono.Android"
-	.size	.L.managed_type_name.7139, 68
+	.asciz	"Java.Util.Concurrent.IScheduledFutureInvoker, Mono.Android"
+	.size	.L.managed_type_name.7139, 59
 	.section	.rodata.managed_type_name.7140,"aMS",%progbits,1
 	.type	.L.managed_type_name.7140, %object
 .L.managed_type_name.7140:
-	.asciz	"Java.Util.Concurrent.IScheduledFutureInvoker, Mono.Android"
-	.size	.L.managed_type_name.7140, 59
+	.asciz	"Java.Util.Concurrent.IThreadFactoryInvoker, Mono.Android"
+	.size	.L.managed_type_name.7140, 57
 	.section	.rodata.managed_type_name.7141,"aMS",%progbits,1
 	.type	.L.managed_type_name.7141, %object
 .L.managed_type_name.7141:
-	.asciz	"Java.Util.Concurrent.IThreadFactoryInvoker, Mono.Android"
+	.asciz	"Java.Util.Concurrent.ITransferQueueInvoker, Mono.Android"
 	.size	.L.managed_type_name.7141, 57
 	.section	.rodata.managed_type_name.7142,"aMS",%progbits,1
 	.type	.L.managed_type_name.7142, %object
 .L.managed_type_name.7142:
-	.asciz	"Java.Util.Concurrent.ITransferQueueInvoker, Mono.Android"
-	.size	.L.managed_type_name.7142, 57
+	.asciz	"Java.Util.Concurrent.LinkedBlockingDeque, Mono.Android"
+	.size	.L.managed_type_name.7142, 55
 	.section	.rodata.managed_type_name.7143,"aMS",%progbits,1
 	.type	.L.managed_type_name.7143, %object
 .L.managed_type_name.7143:
-	.asciz	"Java.Util.Concurrent.LinkedBlockingDeque, Mono.Android"
+	.asciz	"Java.Util.Concurrent.LinkedBlockingQueue, Mono.Android"
 	.size	.L.managed_type_name.7143, 55
 	.section	.rodata.managed_type_name.7144,"aMS",%progbits,1
 	.type	.L.managed_type_name.7144, %object
 .L.managed_type_name.7144:
-	.asciz	"Java.Util.Concurrent.LinkedBlockingQueue, Mono.Android"
+	.asciz	"Java.Util.Concurrent.LinkedTransferQueue, Mono.Android"
 	.size	.L.managed_type_name.7144, 55
 	.section	.rodata.managed_type_name.7145,"aMS",%progbits,1
 	.type	.L.managed_type_name.7145, %object
 .L.managed_type_name.7145:
-	.asciz	"Java.Util.Concurrent.LinkedTransferQueue, Mono.Android"
-	.size	.L.managed_type_name.7145, 55
+	.asciz	"Java.Util.Concurrent.Locks.AbstractOwnableSynchronizer, Mono.Android"
+	.size	.L.managed_type_name.7145, 69
 	.section	.rodata.managed_type_name.7146,"aMS",%progbits,1
 	.type	.L.managed_type_name.7146, %object
 .L.managed_type_name.7146:
-	.asciz	"Java.Util.Concurrent.Locks.AbstractOwnableSynchronizer, Mono.Android"
-	.size	.L.managed_type_name.7146, 69
+	.asciz	"Java.Util.Concurrent.Locks.AbstractOwnableSynchronizerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7146, 76
 	.section	.rodata.managed_type_name.7147,"aMS",%progbits,1
 	.type	.L.managed_type_name.7147, %object
 .L.managed_type_name.7147:
-	.asciz	"Java.Util.Concurrent.Locks.AbstractOwnableSynchronizerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7147, 76
+	.asciz	"Java.Util.Concurrent.Locks.AbstractQueuedLongSynchronizer+ConditionObject, Mono.Android"
+	.size	.L.managed_type_name.7147, 88
 	.section	.rodata.managed_type_name.7148,"aMS",%progbits,1
 	.type	.L.managed_type_name.7148, %object
 .L.managed_type_name.7148:
-	.asciz	"Java.Util.Concurrent.Locks.AbstractQueuedLongSynchronizer+ConditionObject, Mono.Android"
-	.size	.L.managed_type_name.7148, 88
+	.asciz	"Java.Util.Concurrent.Locks.AbstractQueuedLongSynchronizer, Mono.Android"
+	.size	.L.managed_type_name.7148, 72
 	.section	.rodata.managed_type_name.7149,"aMS",%progbits,1
 	.type	.L.managed_type_name.7149, %object
 .L.managed_type_name.7149:
-	.asciz	"Java.Util.Concurrent.Locks.AbstractQueuedLongSynchronizer, Mono.Android"
-	.size	.L.managed_type_name.7149, 72
+	.asciz	"Java.Util.Concurrent.Locks.AbstractQueuedLongSynchronizerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7149, 79
 	.section	.rodata.managed_type_name.7150,"aMS",%progbits,1
 	.type	.L.managed_type_name.7150, %object
 .L.managed_type_name.7150:
-	.asciz	"Java.Util.Concurrent.Locks.AbstractQueuedLongSynchronizerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7150, 79
+	.asciz	"Java.Util.Concurrent.Locks.AbstractQueuedSynchronizer+ConditionObject, Mono.Android"
+	.size	.L.managed_type_name.7150, 84
 	.section	.rodata.managed_type_name.7151,"aMS",%progbits,1
 	.type	.L.managed_type_name.7151, %object
 .L.managed_type_name.7151:
-	.asciz	"Java.Util.Concurrent.Locks.AbstractQueuedSynchronizer+ConditionObject, Mono.Android"
-	.size	.L.managed_type_name.7151, 84
+	.asciz	"Java.Util.Concurrent.Locks.AbstractQueuedSynchronizer, Mono.Android"
+	.size	.L.managed_type_name.7151, 68
 	.section	.rodata.managed_type_name.7152,"aMS",%progbits,1
 	.type	.L.managed_type_name.7152, %object
 .L.managed_type_name.7152:
-	.asciz	"Java.Util.Concurrent.Locks.AbstractQueuedSynchronizer, Mono.Android"
-	.size	.L.managed_type_name.7152, 68
+	.asciz	"Java.Util.Concurrent.Locks.AbstractQueuedSynchronizerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7152, 75
 	.section	.rodata.managed_type_name.7153,"aMS",%progbits,1
 	.type	.L.managed_type_name.7153, %object
 .L.managed_type_name.7153:
-	.asciz	"Java.Util.Concurrent.Locks.AbstractQueuedSynchronizerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7153, 75
+	.asciz	"Java.Util.Concurrent.Locks.IConditionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7153, 59
 	.section	.rodata.managed_type_name.7154,"aMS",%progbits,1
 	.type	.L.managed_type_name.7154, %object
 .L.managed_type_name.7154:
-	.asciz	"Java.Util.Concurrent.Locks.IConditionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7154, 59
+	.asciz	"Java.Util.Concurrent.Locks.ILockInvoker, Mono.Android"
+	.size	.L.managed_type_name.7154, 54
 	.section	.rodata.managed_type_name.7155,"aMS",%progbits,1
 	.type	.L.managed_type_name.7155, %object
 .L.managed_type_name.7155:
-	.asciz	"Java.Util.Concurrent.Locks.ILockInvoker, Mono.Android"
-	.size	.L.managed_type_name.7155, 54
+	.asciz	"Java.Util.Concurrent.Locks.IReadWriteLockInvoker, Mono.Android"
+	.size	.L.managed_type_name.7155, 63
 	.section	.rodata.managed_type_name.7156,"aMS",%progbits,1
 	.type	.L.managed_type_name.7156, %object
 .L.managed_type_name.7156:
-	.asciz	"Java.Util.Concurrent.Locks.IReadWriteLockInvoker, Mono.Android"
-	.size	.L.managed_type_name.7156, 63
+	.asciz	"Java.Util.Concurrent.Locks.LockSupport, Mono.Android"
+	.size	.L.managed_type_name.7156, 53
 	.section	.rodata.managed_type_name.7157,"aMS",%progbits,1
 	.type	.L.managed_type_name.7157, %object
 .L.managed_type_name.7157:
-	.asciz	"Java.Util.Concurrent.Locks.LockSupport, Mono.Android"
-	.size	.L.managed_type_name.7157, 53
+	.asciz	"Java.Util.Concurrent.Locks.ReentrantLock, Mono.Android"
+	.size	.L.managed_type_name.7157, 55
 	.section	.rodata.managed_type_name.7158,"aMS",%progbits,1
 	.type	.L.managed_type_name.7158, %object
 .L.managed_type_name.7158:
-	.asciz	"Java.Util.Concurrent.Locks.ReentrantLock, Mono.Android"
-	.size	.L.managed_type_name.7158, 55
+	.asciz	"Java.Util.Concurrent.Locks.ReentrantReadWriteLock+ReentrantReadLock, Mono.Android"
+	.size	.L.managed_type_name.7158, 82
 	.section	.rodata.managed_type_name.7159,"aMS",%progbits,1
 	.type	.L.managed_type_name.7159, %object
 .L.managed_type_name.7159:
-	.asciz	"Java.Util.Concurrent.Locks.ReentrantReadWriteLock+ReentrantReadLock, Mono.Android"
-	.size	.L.managed_type_name.7159, 82
+	.asciz	"Java.Util.Concurrent.Locks.ReentrantReadWriteLock+ReentrantWriteLock, Mono.Android"
+	.size	.L.managed_type_name.7159, 83
 	.section	.rodata.managed_type_name.7160,"aMS",%progbits,1
 	.type	.L.managed_type_name.7160, %object
 .L.managed_type_name.7160:
-	.asciz	"Java.Util.Concurrent.Locks.ReentrantReadWriteLock+ReentrantWriteLock, Mono.Android"
-	.size	.L.managed_type_name.7160, 83
+	.asciz	"Java.Util.Concurrent.Locks.ReentrantReadWriteLock, Mono.Android"
+	.size	.L.managed_type_name.7160, 64
 	.section	.rodata.managed_type_name.7161,"aMS",%progbits,1
 	.type	.L.managed_type_name.7161, %object
 .L.managed_type_name.7161:
-	.asciz	"Java.Util.Concurrent.Locks.ReentrantReadWriteLock, Mono.Android"
-	.size	.L.managed_type_name.7161, 64
+	.asciz	"Java.Util.Concurrent.Locks.StampedLock, Mono.Android"
+	.size	.L.managed_type_name.7161, 53
 	.section	.rodata.managed_type_name.7162,"aMS",%progbits,1
 	.type	.L.managed_type_name.7162, %object
 .L.managed_type_name.7162:
-	.asciz	"Java.Util.Concurrent.Locks.StampedLock, Mono.Android"
-	.size	.L.managed_type_name.7162, 53
+	.asciz	"Java.Util.Concurrent.Phaser, Mono.Android"
+	.size	.L.managed_type_name.7162, 42
 	.section	.rodata.managed_type_name.7163,"aMS",%progbits,1
 	.type	.L.managed_type_name.7163, %object
 .L.managed_type_name.7163:
-	.asciz	"Java.Util.Concurrent.Phaser, Mono.Android"
-	.size	.L.managed_type_name.7163, 42
+	.asciz	"Java.Util.Concurrent.PriorityBlockingQueue, Mono.Android"
+	.size	.L.managed_type_name.7163, 57
 	.section	.rodata.managed_type_name.7164,"aMS",%progbits,1
 	.type	.L.managed_type_name.7164, %object
 .L.managed_type_name.7164:
-	.asciz	"Java.Util.Concurrent.PriorityBlockingQueue, Mono.Android"
-	.size	.L.managed_type_name.7164, 57
+	.asciz	"Java.Util.Concurrent.RecursiveAction, Mono.Android"
+	.size	.L.managed_type_name.7164, 51
 	.section	.rodata.managed_type_name.7165,"aMS",%progbits,1
 	.type	.L.managed_type_name.7165, %object
 .L.managed_type_name.7165:
-	.asciz	"Java.Util.Concurrent.RecursiveAction, Mono.Android"
-	.size	.L.managed_type_name.7165, 51
+	.asciz	"Java.Util.Concurrent.RecursiveActionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7165, 58
 	.section	.rodata.managed_type_name.7166,"aMS",%progbits,1
 	.type	.L.managed_type_name.7166, %object
 .L.managed_type_name.7166:
-	.asciz	"Java.Util.Concurrent.RecursiveActionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7166, 58
+	.asciz	"Java.Util.Concurrent.RecursiveTask, Mono.Android"
+	.size	.L.managed_type_name.7166, 49
 	.section	.rodata.managed_type_name.7167,"aMS",%progbits,1
 	.type	.L.managed_type_name.7167, %object
 .L.managed_type_name.7167:
-	.asciz	"Java.Util.Concurrent.RecursiveTask, Mono.Android"
-	.size	.L.managed_type_name.7167, 49
+	.asciz	"Java.Util.Concurrent.RecursiveTaskInvoker, Mono.Android"
+	.size	.L.managed_type_name.7167, 56
 	.section	.rodata.managed_type_name.7168,"aMS",%progbits,1
 	.type	.L.managed_type_name.7168, %object
 .L.managed_type_name.7168:
-	.asciz	"Java.Util.Concurrent.RecursiveTaskInvoker, Mono.Android"
-	.size	.L.managed_type_name.7168, 56
+	.asciz	"Java.Util.Concurrent.RejectedExecutionException, Mono.Android"
+	.size	.L.managed_type_name.7168, 62
 	.section	.rodata.managed_type_name.7169,"aMS",%progbits,1
 	.type	.L.managed_type_name.7169, %object
 .L.managed_type_name.7169:
-	.asciz	"Java.Util.Concurrent.RejectedExecutionException, Mono.Android"
-	.size	.L.managed_type_name.7169, 62
+	.asciz	"Java.Util.Concurrent.ScheduledThreadPoolExecutor, Mono.Android"
+	.size	.L.managed_type_name.7169, 63
 	.section	.rodata.managed_type_name.7170,"aMS",%progbits,1
 	.type	.L.managed_type_name.7170, %object
 .L.managed_type_name.7170:
-	.asciz	"Java.Util.Concurrent.ScheduledThreadPoolExecutor, Mono.Android"
-	.size	.L.managed_type_name.7170, 63
+	.asciz	"Java.Util.Concurrent.Semaphore, Mono.Android"
+	.size	.L.managed_type_name.7170, 45
 	.section	.rodata.managed_type_name.7171,"aMS",%progbits,1
 	.type	.L.managed_type_name.7171, %object
 .L.managed_type_name.7171:
-	.asciz	"Java.Util.Concurrent.Semaphore, Mono.Android"
-	.size	.L.managed_type_name.7171, 45
+	.asciz	"Java.Util.Concurrent.SynchronousQueue, Mono.Android"
+	.size	.L.managed_type_name.7171, 52
 	.section	.rodata.managed_type_name.7172,"aMS",%progbits,1
 	.type	.L.managed_type_name.7172, %object
 .L.managed_type_name.7172:
-	.asciz	"Java.Util.Concurrent.SynchronousQueue, Mono.Android"
-	.size	.L.managed_type_name.7172, 52
+	.asciz	"Java.Util.Concurrent.ThreadLocalRandom, Mono.Android"
+	.size	.L.managed_type_name.7172, 53
 	.section	.rodata.managed_type_name.7173,"aMS",%progbits,1
 	.type	.L.managed_type_name.7173, %object
 .L.managed_type_name.7173:
-	.asciz	"Java.Util.Concurrent.ThreadLocalRandom, Mono.Android"
-	.size	.L.managed_type_name.7173, 53
+	.asciz	"Java.Util.Concurrent.ThreadPoolExecutor+AbortPolicy, Mono.Android"
+	.size	.L.managed_type_name.7173, 66
 	.section	.rodata.managed_type_name.7174,"aMS",%progbits,1
 	.type	.L.managed_type_name.7174, %object
 .L.managed_type_name.7174:
-	.asciz	"Java.Util.Concurrent.ThreadPoolExecutor+AbortPolicy, Mono.Android"
-	.size	.L.managed_type_name.7174, 66
+	.asciz	"Java.Util.Concurrent.ThreadPoolExecutor+CallerRunsPolicy, Mono.Android"
+	.size	.L.managed_type_name.7174, 71
 	.section	.rodata.managed_type_name.7175,"aMS",%progbits,1
 	.type	.L.managed_type_name.7175, %object
 .L.managed_type_name.7175:
-	.asciz	"Java.Util.Concurrent.ThreadPoolExecutor+CallerRunsPolicy, Mono.Android"
-	.size	.L.managed_type_name.7175, 71
+	.asciz	"Java.Util.Concurrent.ThreadPoolExecutor+DiscardOldestPolicy, Mono.Android"
+	.size	.L.managed_type_name.7175, 74
 	.section	.rodata.managed_type_name.7176,"aMS",%progbits,1
 	.type	.L.managed_type_name.7176, %object
 .L.managed_type_name.7176:
-	.asciz	"Java.Util.Concurrent.ThreadPoolExecutor+DiscardOldestPolicy, Mono.Android"
-	.size	.L.managed_type_name.7176, 74
+	.asciz	"Java.Util.Concurrent.ThreadPoolExecutor+DiscardPolicy, Mono.Android"
+	.size	.L.managed_type_name.7176, 68
 	.section	.rodata.managed_type_name.7177,"aMS",%progbits,1
 	.type	.L.managed_type_name.7177, %object
 .L.managed_type_name.7177:
-	.asciz	"Java.Util.Concurrent.ThreadPoolExecutor+DiscardPolicy, Mono.Android"
-	.size	.L.managed_type_name.7177, 68
+	.asciz	"Java.Util.Concurrent.ThreadPoolExecutor, Mono.Android"
+	.size	.L.managed_type_name.7177, 54
 	.section	.rodata.managed_type_name.7178,"aMS",%progbits,1
 	.type	.L.managed_type_name.7178, %object
 .L.managed_type_name.7178:
-	.asciz	"Java.Util.Concurrent.ThreadPoolExecutor, Mono.Android"
-	.size	.L.managed_type_name.7178, 54
+	.asciz	"Java.Util.Concurrent.TimeUnit, Mono.Android"
+	.size	.L.managed_type_name.7178, 44
 	.section	.rodata.managed_type_name.7179,"aMS",%progbits,1
 	.type	.L.managed_type_name.7179, %object
 .L.managed_type_name.7179:
-	.asciz	"Java.Util.Concurrent.TimeUnit, Mono.Android"
-	.size	.L.managed_type_name.7179, 44
+	.asciz	"Java.Util.Concurrent.TimeoutException, Mono.Android"
+	.size	.L.managed_type_name.7179, 52
 	.section	.rodata.managed_type_name.7180,"aMS",%progbits,1
 	.type	.L.managed_type_name.7180, %object
 .L.managed_type_name.7180:
-	.asciz	"Java.Util.Concurrent.TimeoutException, Mono.Android"
-	.size	.L.managed_type_name.7180, 52
+	.asciz	"Java.Util.ConcurrentModificationException, Mono.Android"
+	.size	.L.managed_type_name.7180, 56
 	.section	.rodata.managed_type_name.7181,"aMS",%progbits,1
 	.type	.L.managed_type_name.7181, %object
 .L.managed_type_name.7181:
-	.asciz	"Java.Util.ConcurrentModificationException, Mono.Android"
-	.size	.L.managed_type_name.7181, 56
+	.asciz	"Java.Util.Currency, Mono.Android"
+	.size	.L.managed_type_name.7181, 33
 	.section	.rodata.managed_type_name.7182,"aMS",%progbits,1
 	.type	.L.managed_type_name.7182, %object
 .L.managed_type_name.7182:
-	.asciz	"Java.Util.Currency, Mono.Android"
-	.size	.L.managed_type_name.7182, 33
+	.asciz	"Java.Util.Date, Mono.Android"
+	.size	.L.managed_type_name.7182, 29
 	.section	.rodata.managed_type_name.7183,"aMS",%progbits,1
 	.type	.L.managed_type_name.7183, %object
 .L.managed_type_name.7183:
-	.asciz	"Java.Util.Date, Mono.Android"
-	.size	.L.managed_type_name.7183, 29
+	.asciz	"Java.Util.Dictionary, Mono.Android"
+	.size	.L.managed_type_name.7183, 35
 	.section	.rodata.managed_type_name.7184,"aMS",%progbits,1
 	.type	.L.managed_type_name.7184, %object
 .L.managed_type_name.7184:
-	.asciz	"Java.Util.Dictionary, Mono.Android"
-	.size	.L.managed_type_name.7184, 35
+	.asciz	"Java.Util.DictionaryInvoker, Mono.Android"
+	.size	.L.managed_type_name.7184, 42
 	.section	.rodata.managed_type_name.7185,"aMS",%progbits,1
 	.type	.L.managed_type_name.7185, %object
 .L.managed_type_name.7185:
-	.asciz	"Java.Util.DictionaryInvoker, Mono.Android"
-	.size	.L.managed_type_name.7185, 42
+	.asciz	"Java.Util.DoubleSummaryStatistics, Mono.Android"
+	.size	.L.managed_type_name.7185, 48
 	.section	.rodata.managed_type_name.7186,"aMS",%progbits,1
 	.type	.L.managed_type_name.7186, %object
 .L.managed_type_name.7186:
-	.asciz	"Java.Util.DoubleSummaryStatistics, Mono.Android"
-	.size	.L.managed_type_name.7186, 48
+	.asciz	"Java.Util.DuplicateFormatFlagsException, Mono.Android"
+	.size	.L.managed_type_name.7186, 54
 	.section	.rodata.managed_type_name.7187,"aMS",%progbits,1
 	.type	.L.managed_type_name.7187, %object
 .L.managed_type_name.7187:
-	.asciz	"Java.Util.DuplicateFormatFlagsException, Mono.Android"
-	.size	.L.managed_type_name.7187, 54
+	.asciz	"Java.Util.EmptyStackException, Mono.Android"
+	.size	.L.managed_type_name.7187, 44
 	.section	.rodata.managed_type_name.7188,"aMS",%progbits,1
 	.type	.L.managed_type_name.7188, %object
 .L.managed_type_name.7188:
-	.asciz	"Java.Util.EmptyStackException, Mono.Android"
-	.size	.L.managed_type_name.7188, 44
+	.asciz	"Java.Util.EnumMap, Mono.Android"
+	.size	.L.managed_type_name.7188, 32
 	.section	.rodata.managed_type_name.7189,"aMS",%progbits,1
 	.type	.L.managed_type_name.7189, %object
 .L.managed_type_name.7189:
-	.asciz	"Java.Util.EnumMap, Mono.Android"
+	.asciz	"Java.Util.EnumSet, Mono.Android"
 	.size	.L.managed_type_name.7189, 32
 	.section	.rodata.managed_type_name.7190,"aMS",%progbits,1
 	.type	.L.managed_type_name.7190, %object
 .L.managed_type_name.7190:
-	.asciz	"Java.Util.EnumSet, Mono.Android"
-	.size	.L.managed_type_name.7190, 32
+	.asciz	"Java.Util.EnumSetInvoker, Mono.Android"
+	.size	.L.managed_type_name.7190, 39
 	.section	.rodata.managed_type_name.7191,"aMS",%progbits,1
 	.type	.L.managed_type_name.7191, %object
 .L.managed_type_name.7191:
-	.asciz	"Java.Util.EnumSetInvoker, Mono.Android"
-	.size	.L.managed_type_name.7191, 39
+	.asciz	"Java.Util.EventListenerProxy, Mono.Android"
+	.size	.L.managed_type_name.7191, 43
 	.section	.rodata.managed_type_name.7192,"aMS",%progbits,1
 	.type	.L.managed_type_name.7192, %object
 .L.managed_type_name.7192:
-	.asciz	"Java.Util.EventListenerProxy, Mono.Android"
-	.size	.L.managed_type_name.7192, 43
+	.asciz	"Java.Util.EventListenerProxyInvoker, Mono.Android"
+	.size	.L.managed_type_name.7192, 50
 	.section	.rodata.managed_type_name.7193,"aMS",%progbits,1
 	.type	.L.managed_type_name.7193, %object
 .L.managed_type_name.7193:
-	.asciz	"Java.Util.EventListenerProxyInvoker, Mono.Android"
-	.size	.L.managed_type_name.7193, 50
+	.asciz	"Java.Util.EventObject, Mono.Android"
+	.size	.L.managed_type_name.7193, 36
 	.section	.rodata.managed_type_name.7194,"aMS",%progbits,1
 	.type	.L.managed_type_name.7194, %object
 .L.managed_type_name.7194:
-	.asciz	"Java.Util.EventObject, Mono.Android"
-	.size	.L.managed_type_name.7194, 36
+	.asciz	"Java.Util.FormatFlagsConversionMismatchException, Mono.Android"
+	.size	.L.managed_type_name.7194, 63
 	.section	.rodata.managed_type_name.7195,"aMS",%progbits,1
 	.type	.L.managed_type_name.7195, %object
 .L.managed_type_name.7195:
-	.asciz	"Java.Util.FormatFlagsConversionMismatchException, Mono.Android"
-	.size	.L.managed_type_name.7195, 63
+	.asciz	"Java.Util.FormattableFlags, Mono.Android"
+	.size	.L.managed_type_name.7195, 41
 	.section	.rodata.managed_type_name.7196,"aMS",%progbits,1
 	.type	.L.managed_type_name.7196, %object
 .L.managed_type_name.7196:
-	.asciz	"Java.Util.FormattableFlags, Mono.Android"
-	.size	.L.managed_type_name.7196, 41
+	.asciz	"Java.Util.Formatter+BigDecimalLayoutForm, Mono.Android"
+	.size	.L.managed_type_name.7196, 55
 	.section	.rodata.managed_type_name.7197,"aMS",%progbits,1
 	.type	.L.managed_type_name.7197, %object
 .L.managed_type_name.7197:
-	.asciz	"Java.Util.Formatter+BigDecimalLayoutForm, Mono.Android"
-	.size	.L.managed_type_name.7197, 55
+	.asciz	"Java.Util.Formatter, Mono.Android"
+	.size	.L.managed_type_name.7197, 34
 	.section	.rodata.managed_type_name.7198,"aMS",%progbits,1
 	.type	.L.managed_type_name.7198, %object
 .L.managed_type_name.7198:
-	.asciz	"Java.Util.Formatter, Mono.Android"
-	.size	.L.managed_type_name.7198, 34
+	.asciz	"Java.Util.FormatterClosedException, Mono.Android"
+	.size	.L.managed_type_name.7198, 49
 	.section	.rodata.managed_type_name.7199,"aMS",%progbits,1
 	.type	.L.managed_type_name.7199, %object
 .L.managed_type_name.7199:
-	.asciz	"Java.Util.FormatterClosedException, Mono.Android"
+	.asciz	"Java.Util.Functions.BinaryOperator, Mono.Android"
 	.size	.L.managed_type_name.7199, 49
 	.section	.rodata.managed_type_name.7200,"aMS",%progbits,1
 	.type	.L.managed_type_name.7200, %object
 .L.managed_type_name.7200:
-	.asciz	"Java.Util.Functions.BinaryOperator, Mono.Android"
-	.size	.L.managed_type_name.7200, 49
+	.asciz	"Java.Util.Functions.DoubleUnaryOperator, Mono.Android"
+	.size	.L.managed_type_name.7200, 54
 	.section	.rodata.managed_type_name.7201,"aMS",%progbits,1
 	.type	.L.managed_type_name.7201, %object
 .L.managed_type_name.7201:
-	.asciz	"Java.Util.Functions.DoubleUnaryOperator, Mono.Android"
-	.size	.L.managed_type_name.7201, 54
+	.asciz	"Java.Util.Functions.Function, Mono.Android"
+	.size	.L.managed_type_name.7201, 43
 	.section	.rodata.managed_type_name.7202,"aMS",%progbits,1
 	.type	.L.managed_type_name.7202, %object
 .L.managed_type_name.7202:
-	.asciz	"Java.Util.Functions.Function, Mono.Android"
-	.size	.L.managed_type_name.7202, 43
+	.asciz	"Java.Util.Functions.IBiConsumerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7202, 53
 	.section	.rodata.managed_type_name.7203,"aMS",%progbits,1
 	.type	.L.managed_type_name.7203, %object
 .L.managed_type_name.7203:
-	.asciz	"Java.Util.Functions.IBiConsumerInvoker, Mono.Android"
+	.asciz	"Java.Util.Functions.IBiFunctionInvoker, Mono.Android"
 	.size	.L.managed_type_name.7203, 53
 	.section	.rodata.managed_type_name.7204,"aMS",%progbits,1
 	.type	.L.managed_type_name.7204, %object
 .L.managed_type_name.7204:
-	.asciz	"Java.Util.Functions.IBiFunctionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7204, 53
+	.asciz	"Java.Util.Functions.IBiPredicateInvoker, Mono.Android"
+	.size	.L.managed_type_name.7204, 54
 	.section	.rodata.managed_type_name.7205,"aMS",%progbits,1
 	.type	.L.managed_type_name.7205, %object
 .L.managed_type_name.7205:
-	.asciz	"Java.Util.Functions.IBiPredicateInvoker, Mono.Android"
-	.size	.L.managed_type_name.7205, 54
+	.asciz	"Java.Util.Functions.IBinaryOperatorInvoker, Mono.Android"
+	.size	.L.managed_type_name.7205, 57
 	.section	.rodata.managed_type_name.7206,"aMS",%progbits,1
 	.type	.L.managed_type_name.7206, %object
 .L.managed_type_name.7206:
-	.asciz	"Java.Util.Functions.IBinaryOperatorInvoker, Mono.Android"
-	.size	.L.managed_type_name.7206, 57
+	.asciz	"Java.Util.Functions.IBooleanSupplierInvoker, Mono.Android"
+	.size	.L.managed_type_name.7206, 58
 	.section	.rodata.managed_type_name.7207,"aMS",%progbits,1
 	.type	.L.managed_type_name.7207, %object
 .L.managed_type_name.7207:
-	.asciz	"Java.Util.Functions.IBooleanSupplierInvoker, Mono.Android"
-	.size	.L.managed_type_name.7207, 58
+	.asciz	"Java.Util.Functions.IConsumerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7207, 51
 	.section	.rodata.managed_type_name.7208,"aMS",%progbits,1
 	.type	.L.managed_type_name.7208, %object
 .L.managed_type_name.7208:
-	.asciz	"Java.Util.Functions.IConsumerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7208, 51
+	.asciz	"Java.Util.Functions.IDoubleBinaryOperatorInvoker, Mono.Android"
+	.size	.L.managed_type_name.7208, 63
 	.section	.rodata.managed_type_name.7209,"aMS",%progbits,1
 	.type	.L.managed_type_name.7209, %object
 .L.managed_type_name.7209:
-	.asciz	"Java.Util.Functions.IDoubleBinaryOperatorInvoker, Mono.Android"
-	.size	.L.managed_type_name.7209, 63
+	.asciz	"Java.Util.Functions.IDoubleConsumerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7209, 57
 	.section	.rodata.managed_type_name.7210,"aMS",%progbits,1
 	.type	.L.managed_type_name.7210, %object
 .L.managed_type_name.7210:
-	.asciz	"Java.Util.Functions.IDoubleConsumerInvoker, Mono.Android"
+	.asciz	"Java.Util.Functions.IDoubleFunctionInvoker, Mono.Android"
 	.size	.L.managed_type_name.7210, 57
 	.section	.rodata.managed_type_name.7211,"aMS",%progbits,1
 	.type	.L.managed_type_name.7211, %object
 .L.managed_type_name.7211:
-	.asciz	"Java.Util.Functions.IDoubleFunctionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7211, 57
+	.asciz	"Java.Util.Functions.IDoublePredicateInvoker, Mono.Android"
+	.size	.L.managed_type_name.7211, 58
 	.section	.rodata.managed_type_name.7212,"aMS",%progbits,1
 	.type	.L.managed_type_name.7212, %object
 .L.managed_type_name.7212:
-	.asciz	"Java.Util.Functions.IDoublePredicateInvoker, Mono.Android"
-	.size	.L.managed_type_name.7212, 58
+	.asciz	"Java.Util.Functions.IDoubleSupplierInvoker, Mono.Android"
+	.size	.L.managed_type_name.7212, 57
 	.section	.rodata.managed_type_name.7213,"aMS",%progbits,1
 	.type	.L.managed_type_name.7213, %object
 .L.managed_type_name.7213:
-	.asciz	"Java.Util.Functions.IDoubleSupplierInvoker, Mono.Android"
-	.size	.L.managed_type_name.7213, 57
+	.asciz	"Java.Util.Functions.IDoubleToIntFunctionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7213, 62
 	.section	.rodata.managed_type_name.7214,"aMS",%progbits,1
 	.type	.L.managed_type_name.7214, %object
 .L.managed_type_name.7214:
-	.asciz	"Java.Util.Functions.IDoubleToIntFunctionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7214, 62
+	.asciz	"Java.Util.Functions.IDoubleToLongFunctionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7214, 63
 	.section	.rodata.managed_type_name.7215,"aMS",%progbits,1
 	.type	.L.managed_type_name.7215, %object
 .L.managed_type_name.7215:
-	.asciz	"Java.Util.Functions.IDoubleToLongFunctionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7215, 63
+	.asciz	"Java.Util.Functions.IDoubleUnaryOperatorInvoker, Mono.Android"
+	.size	.L.managed_type_name.7215, 62
 	.section	.rodata.managed_type_name.7216,"aMS",%progbits,1
 	.type	.L.managed_type_name.7216, %object
 .L.managed_type_name.7216:
-	.asciz	"Java.Util.Functions.IDoubleUnaryOperatorInvoker, Mono.Android"
-	.size	.L.managed_type_name.7216, 62
+	.asciz	"Java.Util.Functions.IFunctionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7216, 51
 	.section	.rodata.managed_type_name.7217,"aMS",%progbits,1
 	.type	.L.managed_type_name.7217, %object
 .L.managed_type_name.7217:
-	.asciz	"Java.Util.Functions.IFunctionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7217, 51
+	.asciz	"Java.Util.Functions.IIntBinaryOperatorInvoker, Mono.Android"
+	.size	.L.managed_type_name.7217, 60
 	.section	.rodata.managed_type_name.7218,"aMS",%progbits,1
 	.type	.L.managed_type_name.7218, %object
 .L.managed_type_name.7218:
-	.asciz	"Java.Util.Functions.IIntBinaryOperatorInvoker, Mono.Android"
-	.size	.L.managed_type_name.7218, 60
+	.asciz	"Java.Util.Functions.IIntConsumerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7218, 54
 	.section	.rodata.managed_type_name.7219,"aMS",%progbits,1
 	.type	.L.managed_type_name.7219, %object
 .L.managed_type_name.7219:
-	.asciz	"Java.Util.Functions.IIntConsumerInvoker, Mono.Android"
+	.asciz	"Java.Util.Functions.IIntFunctionInvoker, Mono.Android"
 	.size	.L.managed_type_name.7219, 54
 	.section	.rodata.managed_type_name.7220,"aMS",%progbits,1
 	.type	.L.managed_type_name.7220, %object
 .L.managed_type_name.7220:
-	.asciz	"Java.Util.Functions.IIntFunctionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7220, 54
+	.asciz	"Java.Util.Functions.IIntPredicateInvoker, Mono.Android"
+	.size	.L.managed_type_name.7220, 55
 	.section	.rodata.managed_type_name.7221,"aMS",%progbits,1
 	.type	.L.managed_type_name.7221, %object
 .L.managed_type_name.7221:
-	.asciz	"Java.Util.Functions.IIntPredicateInvoker, Mono.Android"
-	.size	.L.managed_type_name.7221, 55
+	.asciz	"Java.Util.Functions.IIntSupplierInvoker, Mono.Android"
+	.size	.L.managed_type_name.7221, 54
 	.section	.rodata.managed_type_name.7222,"aMS",%progbits,1
 	.type	.L.managed_type_name.7222, %object
 .L.managed_type_name.7222:
-	.asciz	"Java.Util.Functions.IIntSupplierInvoker, Mono.Android"
-	.size	.L.managed_type_name.7222, 54
+	.asciz	"Java.Util.Functions.IIntToDoubleFunctionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7222, 62
 	.section	.rodata.managed_type_name.7223,"aMS",%progbits,1
 	.type	.L.managed_type_name.7223, %object
 .L.managed_type_name.7223:
-	.asciz	"Java.Util.Functions.IIntToDoubleFunctionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7223, 62
+	.asciz	"Java.Util.Functions.IIntToLongFunctionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7223, 60
 	.section	.rodata.managed_type_name.7224,"aMS",%progbits,1
 	.type	.L.managed_type_name.7224, %object
 .L.managed_type_name.7224:
-	.asciz	"Java.Util.Functions.IIntToLongFunctionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7224, 60
+	.asciz	"Java.Util.Functions.IIntUnaryOperatorInvoker, Mono.Android"
+	.size	.L.managed_type_name.7224, 59
 	.section	.rodata.managed_type_name.7225,"aMS",%progbits,1
 	.type	.L.managed_type_name.7225, %object
 .L.managed_type_name.7225:
-	.asciz	"Java.Util.Functions.IIntUnaryOperatorInvoker, Mono.Android"
-	.size	.L.managed_type_name.7225, 59
+	.asciz	"Java.Util.Functions.ILongBinaryOperatorInvoker, Mono.Android"
+	.size	.L.managed_type_name.7225, 61
 	.section	.rodata.managed_type_name.7226,"aMS",%progbits,1
 	.type	.L.managed_type_name.7226, %object
 .L.managed_type_name.7226:
-	.asciz	"Java.Util.Functions.ILongBinaryOperatorInvoker, Mono.Android"
-	.size	.L.managed_type_name.7226, 61
+	.asciz	"Java.Util.Functions.ILongConsumerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7226, 55
 	.section	.rodata.managed_type_name.7227,"aMS",%progbits,1
 	.type	.L.managed_type_name.7227, %object
 .L.managed_type_name.7227:
-	.asciz	"Java.Util.Functions.ILongConsumerInvoker, Mono.Android"
+	.asciz	"Java.Util.Functions.ILongFunctionInvoker, Mono.Android"
 	.size	.L.managed_type_name.7227, 55
 	.section	.rodata.managed_type_name.7228,"aMS",%progbits,1
 	.type	.L.managed_type_name.7228, %object
 .L.managed_type_name.7228:
-	.asciz	"Java.Util.Functions.ILongFunctionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7228, 55
+	.asciz	"Java.Util.Functions.ILongPredicateInvoker, Mono.Android"
+	.size	.L.managed_type_name.7228, 56
 	.section	.rodata.managed_type_name.7229,"aMS",%progbits,1
 	.type	.L.managed_type_name.7229, %object
 .L.managed_type_name.7229:
-	.asciz	"Java.Util.Functions.ILongPredicateInvoker, Mono.Android"
-	.size	.L.managed_type_name.7229, 56
+	.asciz	"Java.Util.Functions.ILongSupplierInvoker, Mono.Android"
+	.size	.L.managed_type_name.7229, 55
 	.section	.rodata.managed_type_name.7230,"aMS",%progbits,1
 	.type	.L.managed_type_name.7230, %object
 .L.managed_type_name.7230:
-	.asciz	"Java.Util.Functions.ILongSupplierInvoker, Mono.Android"
-	.size	.L.managed_type_name.7230, 55
+	.asciz	"Java.Util.Functions.ILongToDoubleFunctionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7230, 63
 	.section	.rodata.managed_type_name.7231,"aMS",%progbits,1
 	.type	.L.managed_type_name.7231, %object
 .L.managed_type_name.7231:
-	.asciz	"Java.Util.Functions.ILongToDoubleFunctionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7231, 63
+	.asciz	"Java.Util.Functions.ILongToIntFunctionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7231, 60
 	.section	.rodata.managed_type_name.7232,"aMS",%progbits,1
 	.type	.L.managed_type_name.7232, %object
 .L.managed_type_name.7232:
-	.asciz	"Java.Util.Functions.ILongToIntFunctionInvoker, Mono.Android"
+	.asciz	"Java.Util.Functions.ILongUnaryOperatorInvoker, Mono.Android"
 	.size	.L.managed_type_name.7232, 60
 	.section	.rodata.managed_type_name.7233,"aMS",%progbits,1
 	.type	.L.managed_type_name.7233, %object
 .L.managed_type_name.7233:
-	.asciz	"Java.Util.Functions.ILongUnaryOperatorInvoker, Mono.Android"
+	.asciz	"Java.Util.Functions.IObjDoubleConsumerInvoker, Mono.Android"
 	.size	.L.managed_type_name.7233, 60
 	.section	.rodata.managed_type_name.7234,"aMS",%progbits,1
 	.type	.L.managed_type_name.7234, %object
 .L.managed_type_name.7234:
-	.asciz	"Java.Util.Functions.IObjDoubleConsumerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7234, 60
+	.asciz	"Java.Util.Functions.IObjIntConsumerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7234, 57
 	.section	.rodata.managed_type_name.7235,"aMS",%progbits,1
 	.type	.L.managed_type_name.7235, %object
 .L.managed_type_name.7235:
-	.asciz	"Java.Util.Functions.IObjIntConsumerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7235, 57
+	.asciz	"Java.Util.Functions.IObjLongConsumerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7235, 58
 	.section	.rodata.managed_type_name.7236,"aMS",%progbits,1
 	.type	.L.managed_type_name.7236, %object
 .L.managed_type_name.7236:
-	.asciz	"Java.Util.Functions.IObjLongConsumerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7236, 58
+	.asciz	"Java.Util.Functions.IPredicateInvoker, Mono.Android"
+	.size	.L.managed_type_name.7236, 52
 	.section	.rodata.managed_type_name.7237,"aMS",%progbits,1
 	.type	.L.managed_type_name.7237, %object
 .L.managed_type_name.7237:
-	.asciz	"Java.Util.Functions.IPredicateInvoker, Mono.Android"
-	.size	.L.managed_type_name.7237, 52
+	.asciz	"Java.Util.Functions.ISupplierInvoker, Mono.Android"
+	.size	.L.managed_type_name.7237, 51
 	.section	.rodata.managed_type_name.7238,"aMS",%progbits,1
 	.type	.L.managed_type_name.7238, %object
 .L.managed_type_name.7238:
-	.asciz	"Java.Util.Functions.ISupplierInvoker, Mono.Android"
-	.size	.L.managed_type_name.7238, 51
+	.asciz	"Java.Util.Functions.IToDoubleBiFunctionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7238, 61
 	.section	.rodata.managed_type_name.7239,"aMS",%progbits,1
 	.type	.L.managed_type_name.7239, %object
 .L.managed_type_name.7239:
-	.asciz	"Java.Util.Functions.IToDoubleBiFunctionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7239, 61
+	.asciz	"Java.Util.Functions.IToDoubleFunctionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7239, 59
 	.section	.rodata.managed_type_name.7240,"aMS",%progbits,1
 	.type	.L.managed_type_name.7240, %object
 .L.managed_type_name.7240:
-	.asciz	"Java.Util.Functions.IToDoubleFunctionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7240, 59
+	.asciz	"Java.Util.Functions.IToIntBiFunctionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7240, 58
 	.section	.rodata.managed_type_name.7241,"aMS",%progbits,1
 	.type	.L.managed_type_name.7241, %object
 .L.managed_type_name.7241:
-	.asciz	"Java.Util.Functions.IToIntBiFunctionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7241, 58
+	.asciz	"Java.Util.Functions.IToIntFunctionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7241, 56
 	.section	.rodata.managed_type_name.7242,"aMS",%progbits,1
 	.type	.L.managed_type_name.7242, %object
 .L.managed_type_name.7242:
-	.asciz	"Java.Util.Functions.IToIntFunctionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7242, 56
+	.asciz	"Java.Util.Functions.IToLongBiFunctionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7242, 59
 	.section	.rodata.managed_type_name.7243,"aMS",%progbits,1
 	.type	.L.managed_type_name.7243, %object
 .L.managed_type_name.7243:
-	.asciz	"Java.Util.Functions.IToLongBiFunctionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7243, 59
+	.asciz	"Java.Util.Functions.IToLongFunctionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7243, 57
 	.section	.rodata.managed_type_name.7244,"aMS",%progbits,1
 	.type	.L.managed_type_name.7244, %object
 .L.managed_type_name.7244:
-	.asciz	"Java.Util.Functions.IToLongFunctionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7244, 57
+	.asciz	"Java.Util.Functions.IUnaryOperatorInvoker, Mono.Android"
+	.size	.L.managed_type_name.7244, 56
 	.section	.rodata.managed_type_name.7245,"aMS",%progbits,1
 	.type	.L.managed_type_name.7245, %object
 .L.managed_type_name.7245:
-	.asciz	"Java.Util.Functions.IUnaryOperatorInvoker, Mono.Android"
-	.size	.L.managed_type_name.7245, 56
+	.asciz	"Java.Util.Functions.IntUnaryOperator, Mono.Android"
+	.size	.L.managed_type_name.7245, 51
 	.section	.rodata.managed_type_name.7246,"aMS",%progbits,1
 	.type	.L.managed_type_name.7246, %object
 .L.managed_type_name.7246:
-	.asciz	"Java.Util.Functions.IntUnaryOperator, Mono.Android"
-	.size	.L.managed_type_name.7246, 51
+	.asciz	"Java.Util.Functions.LongUnaryOperator, Mono.Android"
+	.size	.L.managed_type_name.7246, 52
 	.section	.rodata.managed_type_name.7247,"aMS",%progbits,1
 	.type	.L.managed_type_name.7247, %object
 .L.managed_type_name.7247:
-	.asciz	"Java.Util.Functions.LongUnaryOperator, Mono.Android"
-	.size	.L.managed_type_name.7247, 52
+	.asciz	"Java.Util.Functions.Predicate, Mono.Android"
+	.size	.L.managed_type_name.7247, 44
 	.section	.rodata.managed_type_name.7248,"aMS",%progbits,1
 	.type	.L.managed_type_name.7248, %object
 .L.managed_type_name.7248:
-	.asciz	"Java.Util.Functions.Predicate, Mono.Android"
-	.size	.L.managed_type_name.7248, 44
+	.asciz	"Java.Util.Functions.UnaryOperator, Mono.Android"
+	.size	.L.managed_type_name.7248, 48
 	.section	.rodata.managed_type_name.7249,"aMS",%progbits,1
 	.type	.L.managed_type_name.7249, %object
 .L.managed_type_name.7249:
-	.asciz	"Java.Util.Functions.UnaryOperator, Mono.Android"
-	.size	.L.managed_type_name.7249, 48
+	.asciz	"Java.Util.GregorianCalendar, Mono.Android"
+	.size	.L.managed_type_name.7249, 42
 	.section	.rodata.managed_type_name.7250,"aMS",%progbits,1
 	.type	.L.managed_type_name.7250, %object
 .L.managed_type_name.7250:
-	.asciz	"Java.Util.GregorianCalendar, Mono.Android"
-	.size	.L.managed_type_name.7250, 42
+	.asciz	"Java.Util.HashMap, Mono.Android"
+	.size	.L.managed_type_name.7250, 32
 	.section	.rodata.managed_type_name.7251,"aMS",%progbits,1
 	.type	.L.managed_type_name.7251, %object
 .L.managed_type_name.7251:
-	.asciz	"Java.Util.HashMap, Mono.Android"
+	.asciz	"Java.Util.HashSet, Mono.Android"
 	.size	.L.managed_type_name.7251, 32
 	.section	.rodata.managed_type_name.7252,"aMS",%progbits,1
 	.type	.L.managed_type_name.7252, %object
 .L.managed_type_name.7252:
-	.asciz	"Java.Util.HashSet, Mono.Android"
-	.size	.L.managed_type_name.7252, 32
+	.asciz	"Java.Util.Hashtable, Mono.Android"
+	.size	.L.managed_type_name.7252, 34
 	.section	.rodata.managed_type_name.7253,"aMS",%progbits,1
 	.type	.L.managed_type_name.7253, %object
 .L.managed_type_name.7253:
-	.asciz	"Java.Util.Hashtable, Mono.Android"
-	.size	.L.managed_type_name.7253, 34
+	.asciz	"Java.Util.ICollectionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7253, 43
 	.section	.rodata.managed_type_name.7254,"aMS",%progbits,1
 	.type	.L.managed_type_name.7254, %object
 .L.managed_type_name.7254:
-	.asciz	"Java.Util.ICollectionInvoker, Mono.Android"
+	.asciz	"Java.Util.IComparatorInvoker, Mono.Android"
 	.size	.L.managed_type_name.7254, 43
 	.section	.rodata.managed_type_name.7255,"aMS",%progbits,1
 	.type	.L.managed_type_name.7255, %object
 .L.managed_type_name.7255:
-	.asciz	"Java.Util.IComparatorInvoker, Mono.Android"
-	.size	.L.managed_type_name.7255, 43
+	.asciz	"Java.Util.IDequeInvoker, Mono.Android"
+	.size	.L.managed_type_name.7255, 38
 	.section	.rodata.managed_type_name.7256,"aMS",%progbits,1
 	.type	.L.managed_type_name.7256, %object
 .L.managed_type_name.7256:
-	.asciz	"Java.Util.IDequeInvoker, Mono.Android"
-	.size	.L.managed_type_name.7256, 38
+	.asciz	"Java.Util.IEnumerationInvoker, Mono.Android"
+	.size	.L.managed_type_name.7256, 44
 	.section	.rodata.managed_type_name.7257,"aMS",%progbits,1
 	.type	.L.managed_type_name.7257, %object
 .L.managed_type_name.7257:
-	.asciz	"Java.Util.IEnumerationInvoker, Mono.Android"
-	.size	.L.managed_type_name.7257, 44
+	.asciz	"Java.Util.IEventListenerImplementor, Mono.Android"
+	.size	.L.managed_type_name.7257, 50
 	.section	.rodata.managed_type_name.7258,"aMS",%progbits,1
 	.type	.L.managed_type_name.7258, %object
 .L.managed_type_name.7258:
-	.asciz	"Java.Util.IEventListenerImplementor, Mono.Android"
-	.size	.L.managed_type_name.7258, 50
+	.asciz	"Java.Util.IEventListenerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7258, 46
 	.section	.rodata.managed_type_name.7259,"aMS",%progbits,1
 	.type	.L.managed_type_name.7259, %object
 .L.managed_type_name.7259:
-	.asciz	"Java.Util.IEventListenerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7259, 46
+	.asciz	"Java.Util.IFormattableInvoker, Mono.Android"
+	.size	.L.managed_type_name.7259, 44
 	.section	.rodata.managed_type_name.7260,"aMS",%progbits,1
 	.type	.L.managed_type_name.7260, %object
 .L.managed_type_name.7260:
-	.asciz	"Java.Util.IFormattableInvoker, Mono.Android"
-	.size	.L.managed_type_name.7260, 44
+	.asciz	"Java.Util.IIteratorInvoker, Mono.Android"
+	.size	.L.managed_type_name.7260, 41
 	.section	.rodata.managed_type_name.7261,"aMS",%progbits,1
 	.type	.L.managed_type_name.7261, %object
 .L.managed_type_name.7261:
-	.asciz	"Java.Util.IIteratorInvoker, Mono.Android"
-	.size	.L.managed_type_name.7261, 41
+	.asciz	"Java.Util.IListInvoker, Mono.Android"
+	.size	.L.managed_type_name.7261, 37
 	.section	.rodata.managed_type_name.7262,"aMS",%progbits,1
 	.type	.L.managed_type_name.7262, %object
 .L.managed_type_name.7262:
-	.asciz	"Java.Util.IListInvoker, Mono.Android"
-	.size	.L.managed_type_name.7262, 37
+	.asciz	"Java.Util.IListIteratorInvoker, Mono.Android"
+	.size	.L.managed_type_name.7262, 45
 	.section	.rodata.managed_type_name.7263,"aMS",%progbits,1
 	.type	.L.managed_type_name.7263, %object
 .L.managed_type_name.7263:
-	.asciz	"Java.Util.IListIteratorInvoker, Mono.Android"
-	.size	.L.managed_type_name.7263, 45
+	.asciz	"Java.Util.IMapEntryInvoker, Mono.Android"
+	.size	.L.managed_type_name.7263, 41
 	.section	.rodata.managed_type_name.7264,"aMS",%progbits,1
 	.type	.L.managed_type_name.7264, %object
 .L.managed_type_name.7264:
-	.asciz	"Java.Util.IMapEntryInvoker, Mono.Android"
-	.size	.L.managed_type_name.7264, 41
+	.asciz	"Java.Util.IMapInvoker, Mono.Android"
+	.size	.L.managed_type_name.7264, 36
 	.section	.rodata.managed_type_name.7265,"aMS",%progbits,1
 	.type	.L.managed_type_name.7265, %object
 .L.managed_type_name.7265:
-	.asciz	"Java.Util.IMapInvoker, Mono.Android"
-	.size	.L.managed_type_name.7265, 36
+	.asciz	"Java.Util.INavigableMapInvoker, Mono.Android"
+	.size	.L.managed_type_name.7265, 45
 	.section	.rodata.managed_type_name.7266,"aMS",%progbits,1
 	.type	.L.managed_type_name.7266, %object
 .L.managed_type_name.7266:
-	.asciz	"Java.Util.INavigableMapInvoker, Mono.Android"
+	.asciz	"Java.Util.INavigableSetInvoker, Mono.Android"
 	.size	.L.managed_type_name.7266, 45
 	.section	.rodata.managed_type_name.7267,"aMS",%progbits,1
 	.type	.L.managed_type_name.7267, %object
 .L.managed_type_name.7267:
-	.asciz	"Java.Util.INavigableSetInvoker, Mono.Android"
-	.size	.L.managed_type_name.7267, 45
+	.asciz	"Java.Util.IObserverInvoker, Mono.Android"
+	.size	.L.managed_type_name.7267, 41
 	.section	.rodata.managed_type_name.7268,"aMS",%progbits,1
 	.type	.L.managed_type_name.7268, %object
 .L.managed_type_name.7268:
-	.asciz	"Java.Util.IObserverInvoker, Mono.Android"
-	.size	.L.managed_type_name.7268, 41
+	.asciz	"Java.Util.IPrimitiveIteratorInvoker, Mono.Android"
+	.size	.L.managed_type_name.7268, 50
 	.section	.rodata.managed_type_name.7269,"aMS",%progbits,1
 	.type	.L.managed_type_name.7269, %object
 .L.managed_type_name.7269:
-	.asciz	"Java.Util.IPrimitiveIteratorInvoker, Mono.Android"
-	.size	.L.managed_type_name.7269, 50
+	.asciz	"Java.Util.IPrimitiveIteratorOfDoubleInvoker, Mono.Android"
+	.size	.L.managed_type_name.7269, 58
 	.section	.rodata.managed_type_name.7270,"aMS",%progbits,1
 	.type	.L.managed_type_name.7270, %object
 .L.managed_type_name.7270:
-	.asciz	"Java.Util.IPrimitiveIteratorOfDoubleInvoker, Mono.Android"
-	.size	.L.managed_type_name.7270, 58
+	.asciz	"Java.Util.IPrimitiveIteratorOfIntInvoker, Mono.Android"
+	.size	.L.managed_type_name.7270, 55
 	.section	.rodata.managed_type_name.7271,"aMS",%progbits,1
 	.type	.L.managed_type_name.7271, %object
 .L.managed_type_name.7271:
-	.asciz	"Java.Util.IPrimitiveIteratorOfIntInvoker, Mono.Android"
-	.size	.L.managed_type_name.7271, 55
+	.asciz	"Java.Util.IPrimitiveIteratorOfLongInvoker, Mono.Android"
+	.size	.L.managed_type_name.7271, 56
 	.section	.rodata.managed_type_name.7272,"aMS",%progbits,1
 	.type	.L.managed_type_name.7272, %object
 .L.managed_type_name.7272:
-	.asciz	"Java.Util.IPrimitiveIteratorOfLongInvoker, Mono.Android"
-	.size	.L.managed_type_name.7272, 56
+	.asciz	"Java.Util.IQueueInvoker, Mono.Android"
+	.size	.L.managed_type_name.7272, 38
 	.section	.rodata.managed_type_name.7273,"aMS",%progbits,1
 	.type	.L.managed_type_name.7273, %object
 .L.managed_type_name.7273:
-	.asciz	"Java.Util.IQueueInvoker, Mono.Android"
-	.size	.L.managed_type_name.7273, 38
+	.asciz	"Java.Util.IRandomAccessInvoker, Mono.Android"
+	.size	.L.managed_type_name.7273, 45
 	.section	.rodata.managed_type_name.7274,"aMS",%progbits,1
 	.type	.L.managed_type_name.7274, %object
 .L.managed_type_name.7274:
-	.asciz	"Java.Util.IRandomAccessInvoker, Mono.Android"
-	.size	.L.managed_type_name.7274, 45
+	.asciz	"Java.Util.ISetInvoker, Mono.Android"
+	.size	.L.managed_type_name.7274, 36
 	.section	.rodata.managed_type_name.7275,"aMS",%progbits,1
 	.type	.L.managed_type_name.7275, %object
 .L.managed_type_name.7275:
-	.asciz	"Java.Util.ISetInvoker, Mono.Android"
-	.size	.L.managed_type_name.7275, 36
+	.asciz	"Java.Util.ISortedMapInvoker, Mono.Android"
+	.size	.L.managed_type_name.7275, 42
 	.section	.rodata.managed_type_name.7276,"aMS",%progbits,1
 	.type	.L.managed_type_name.7276, %object
 .L.managed_type_name.7276:
-	.asciz	"Java.Util.ISortedMapInvoker, Mono.Android"
+	.asciz	"Java.Util.ISortedSetInvoker, Mono.Android"
 	.size	.L.managed_type_name.7276, 42
 	.section	.rodata.managed_type_name.7277,"aMS",%progbits,1
 	.type	.L.managed_type_name.7277, %object
 .L.managed_type_name.7277:
-	.asciz	"Java.Util.ISortedSetInvoker, Mono.Android"
-	.size	.L.managed_type_name.7277, 42
+	.asciz	"Java.Util.ISpliteratorInvoker, Mono.Android"
+	.size	.L.managed_type_name.7277, 44
 	.section	.rodata.managed_type_name.7278,"aMS",%progbits,1
 	.type	.L.managed_type_name.7278, %object
 .L.managed_type_name.7278:
-	.asciz	"Java.Util.ISpliteratorInvoker, Mono.Android"
-	.size	.L.managed_type_name.7278, 44
+	.asciz	"Java.Util.IdentityHashMap, Mono.Android"
+	.size	.L.managed_type_name.7278, 40
 	.section	.rodata.managed_type_name.7279,"aMS",%progbits,1
 	.type	.L.managed_type_name.7279, %object
 .L.managed_type_name.7279:
-	.asciz	"Java.Util.IdentityHashMap, Mono.Android"
-	.size	.L.managed_type_name.7279, 40
+	.asciz	"Java.Util.IllegalFormatCodePointException, Mono.Android"
+	.size	.L.managed_type_name.7279, 56
 	.section	.rodata.managed_type_name.7280,"aMS",%progbits,1
 	.type	.L.managed_type_name.7280, %object
 .L.managed_type_name.7280:
-	.asciz	"Java.Util.IllegalFormatCodePointException, Mono.Android"
-	.size	.L.managed_type_name.7280, 56
+	.asciz	"Java.Util.IllegalFormatConversionException, Mono.Android"
+	.size	.L.managed_type_name.7280, 57
 	.section	.rodata.managed_type_name.7281,"aMS",%progbits,1
 	.type	.L.managed_type_name.7281, %object
 .L.managed_type_name.7281:
-	.asciz	"Java.Util.IllegalFormatConversionException, Mono.Android"
-	.size	.L.managed_type_name.7281, 57
+	.asciz	"Java.Util.IllegalFormatException, Mono.Android"
+	.size	.L.managed_type_name.7281, 47
 	.section	.rodata.managed_type_name.7282,"aMS",%progbits,1
 	.type	.L.managed_type_name.7282, %object
 .L.managed_type_name.7282:
-	.asciz	"Java.Util.IllegalFormatException, Mono.Android"
-	.size	.L.managed_type_name.7282, 47
+	.asciz	"Java.Util.IllegalFormatFlagsException, Mono.Android"
+	.size	.L.managed_type_name.7282, 52
 	.section	.rodata.managed_type_name.7283,"aMS",%progbits,1
 	.type	.L.managed_type_name.7283, %object
 .L.managed_type_name.7283:
-	.asciz	"Java.Util.IllegalFormatFlagsException, Mono.Android"
-	.size	.L.managed_type_name.7283, 52
+	.asciz	"Java.Util.IllegalFormatPrecisionException, Mono.Android"
+	.size	.L.managed_type_name.7283, 56
 	.section	.rodata.managed_type_name.7284,"aMS",%progbits,1
 	.type	.L.managed_type_name.7284, %object
 .L.managed_type_name.7284:
-	.asciz	"Java.Util.IllegalFormatPrecisionException, Mono.Android"
-	.size	.L.managed_type_name.7284, 56
+	.asciz	"Java.Util.IllegalFormatWidthException, Mono.Android"
+	.size	.L.managed_type_name.7284, 52
 	.section	.rodata.managed_type_name.7285,"aMS",%progbits,1
 	.type	.L.managed_type_name.7285, %object
 .L.managed_type_name.7285:
-	.asciz	"Java.Util.IllegalFormatWidthException, Mono.Android"
-	.size	.L.managed_type_name.7285, 52
+	.asciz	"Java.Util.IllformedLocaleException, Mono.Android"
+	.size	.L.managed_type_name.7285, 49
 	.section	.rodata.managed_type_name.7286,"aMS",%progbits,1
 	.type	.L.managed_type_name.7286, %object
 .L.managed_type_name.7286:
-	.asciz	"Java.Util.IllformedLocaleException, Mono.Android"
-	.size	.L.managed_type_name.7286, 49
+	.asciz	"Java.Util.InputMismatchException, Mono.Android"
+	.size	.L.managed_type_name.7286, 47
 	.section	.rodata.managed_type_name.7287,"aMS",%progbits,1
 	.type	.L.managed_type_name.7287, %object
 .L.managed_type_name.7287:
-	.asciz	"Java.Util.InputMismatchException, Mono.Android"
-	.size	.L.managed_type_name.7287, 47
+	.asciz	"Java.Util.IntSummaryStatistics, Mono.Android"
+	.size	.L.managed_type_name.7287, 45
 	.section	.rodata.managed_type_name.7288,"aMS",%progbits,1
 	.type	.L.managed_type_name.7288, %object
 .L.managed_type_name.7288:
-	.asciz	"Java.Util.IntSummaryStatistics, Mono.Android"
-	.size	.L.managed_type_name.7288, 45
+	.asciz	"Java.Util.InvalidPropertiesFormatException, Mono.Android"
+	.size	.L.managed_type_name.7288, 57
 	.section	.rodata.managed_type_name.7289,"aMS",%progbits,1
 	.type	.L.managed_type_name.7289, %object
 .L.managed_type_name.7289:
-	.asciz	"Java.Util.InvalidPropertiesFormatException, Mono.Android"
-	.size	.L.managed_type_name.7289, 57
+	.asciz	"Java.Util.Jar.Attributes+Name, Mono.Android"
+	.size	.L.managed_type_name.7289, 44
 	.section	.rodata.managed_type_name.7290,"aMS",%progbits,1
 	.type	.L.managed_type_name.7290, %object
 .L.managed_type_name.7290:
-	.asciz	"Java.Util.Jar.Attributes+Name, Mono.Android"
-	.size	.L.managed_type_name.7290, 44
+	.asciz	"Java.Util.Jar.Attributes, Mono.Android"
+	.size	.L.managed_type_name.7290, 39
 	.section	.rodata.managed_type_name.7291,"aMS",%progbits,1
 	.type	.L.managed_type_name.7291, %object
 .L.managed_type_name.7291:
-	.asciz	"Java.Util.Jar.Attributes, Mono.Android"
-	.size	.L.managed_type_name.7291, 39
+	.asciz	"Java.Util.Jar.JarEntry, Mono.Android"
+	.size	.L.managed_type_name.7291, 37
 	.section	.rodata.managed_type_name.7292,"aMS",%progbits,1
 	.type	.L.managed_type_name.7292, %object
 .L.managed_type_name.7292:
-	.asciz	"Java.Util.Jar.JarEntry, Mono.Android"
-	.size	.L.managed_type_name.7292, 37
+	.asciz	"Java.Util.Jar.JarException, Mono.Android"
+	.size	.L.managed_type_name.7292, 41
 	.section	.rodata.managed_type_name.7293,"aMS",%progbits,1
 	.type	.L.managed_type_name.7293, %object
 .L.managed_type_name.7293:
-	.asciz	"Java.Util.Jar.JarException, Mono.Android"
-	.size	.L.managed_type_name.7293, 41
+	.asciz	"Java.Util.Jar.JarFile, Mono.Android"
+	.size	.L.managed_type_name.7293, 36
 	.section	.rodata.managed_type_name.7294,"aMS",%progbits,1
 	.type	.L.managed_type_name.7294, %object
 .L.managed_type_name.7294:
-	.asciz	"Java.Util.Jar.JarFile, Mono.Android"
-	.size	.L.managed_type_name.7294, 36
+	.asciz	"Java.Util.Jar.JarInputStream, Mono.Android"
+	.size	.L.managed_type_name.7294, 43
 	.section	.rodata.managed_type_name.7295,"aMS",%progbits,1
 	.type	.L.managed_type_name.7295, %object
 .L.managed_type_name.7295:
-	.asciz	"Java.Util.Jar.JarInputStream, Mono.Android"
-	.size	.L.managed_type_name.7295, 43
+	.asciz	"Java.Util.Jar.JarOutputStream, Mono.Android"
+	.size	.L.managed_type_name.7295, 44
 	.section	.rodata.managed_type_name.7296,"aMS",%progbits,1
 	.type	.L.managed_type_name.7296, %object
 .L.managed_type_name.7296:
-	.asciz	"Java.Util.Jar.JarOutputStream, Mono.Android"
-	.size	.L.managed_type_name.7296, 44
+	.asciz	"Java.Util.Jar.Manifest, Mono.Android"
+	.size	.L.managed_type_name.7296, 37
 	.section	.rodata.managed_type_name.7297,"aMS",%progbits,1
 	.type	.L.managed_type_name.7297, %object
 .L.managed_type_name.7297:
-	.asciz	"Java.Util.Jar.Manifest, Mono.Android"
-	.size	.L.managed_type_name.7297, 37
+	.asciz	"Java.Util.Jar.Pack200+IPackerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7297, 51
 	.section	.rodata.managed_type_name.7298,"aMS",%progbits,1
 	.type	.L.managed_type_name.7298, %object
 .L.managed_type_name.7298:
-	.asciz	"Java.Util.Jar.Pack200+IPackerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7298, 51
+	.asciz	"Java.Util.Jar.Pack200+IUnpackerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7298, 53
 	.section	.rodata.managed_type_name.7299,"aMS",%progbits,1
 	.type	.L.managed_type_name.7299, %object
 .L.managed_type_name.7299:
-	.asciz	"Java.Util.Jar.Pack200+IUnpackerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7299, 53
+	.asciz	"Java.Util.Jar.Pack200+Packer, Mono.Android"
+	.size	.L.managed_type_name.7299, 43
 	.section	.rodata.managed_type_name.7300,"aMS",%progbits,1
 	.type	.L.managed_type_name.7300, %object
 .L.managed_type_name.7300:
-	.asciz	"Java.Util.Jar.Pack200+Packer, Mono.Android"
-	.size	.L.managed_type_name.7300, 43
+	.asciz	"Java.Util.Jar.Pack200+Unpacker, Mono.Android"
+	.size	.L.managed_type_name.7300, 45
 	.section	.rodata.managed_type_name.7301,"aMS",%progbits,1
 	.type	.L.managed_type_name.7301, %object
 .L.managed_type_name.7301:
-	.asciz	"Java.Util.Jar.Pack200+Unpacker, Mono.Android"
-	.size	.L.managed_type_name.7301, 45
+	.asciz	"Java.Util.Jar.Pack200, Mono.Android"
+	.size	.L.managed_type_name.7301, 36
 	.section	.rodata.managed_type_name.7302,"aMS",%progbits,1
 	.type	.L.managed_type_name.7302, %object
 .L.managed_type_name.7302:
-	.asciz	"Java.Util.Jar.Pack200, Mono.Android"
-	.size	.L.managed_type_name.7302, 36
+	.asciz	"Java.Util.Jar.Pack200Invoker, Mono.Android"
+	.size	.L.managed_type_name.7302, 43
 	.section	.rodata.managed_type_name.7303,"aMS",%progbits,1
 	.type	.L.managed_type_name.7303, %object
 .L.managed_type_name.7303:
-	.asciz	"Java.Util.Jar.Pack200Invoker, Mono.Android"
-	.size	.L.managed_type_name.7303, 43
+	.asciz	"Java.Util.LinkedHashMap, Mono.Android"
+	.size	.L.managed_type_name.7303, 38
 	.section	.rodata.managed_type_name.7304,"aMS",%progbits,1
 	.type	.L.managed_type_name.7304, %object
 .L.managed_type_name.7304:
-	.asciz	"Java.Util.LinkedHashMap, Mono.Android"
+	.asciz	"Java.Util.LinkedHashSet, Mono.Android"
 	.size	.L.managed_type_name.7304, 38
 	.section	.rodata.managed_type_name.7305,"aMS",%progbits,1
 	.type	.L.managed_type_name.7305, %object
 .L.managed_type_name.7305:
-	.asciz	"Java.Util.LinkedHashSet, Mono.Android"
-	.size	.L.managed_type_name.7305, 38
+	.asciz	"Java.Util.LinkedList, Mono.Android"
+	.size	.L.managed_type_name.7305, 35
 	.section	.rodata.managed_type_name.7306,"aMS",%progbits,1
 	.type	.L.managed_type_name.7306, %object
 .L.managed_type_name.7306:
-	.asciz	"Java.Util.LinkedList, Mono.Android"
-	.size	.L.managed_type_name.7306, 35
+	.asciz	"Java.Util.List, Mono.Android"
+	.size	.L.managed_type_name.7306, 29
 	.section	.rodata.managed_type_name.7307,"aMS",%progbits,1
 	.type	.L.managed_type_name.7307, %object
 .L.managed_type_name.7307:
-	.asciz	"Java.Util.List, Mono.Android"
-	.size	.L.managed_type_name.7307, 29
+	.asciz	"Java.Util.ListResourceBundle, Mono.Android"
+	.size	.L.managed_type_name.7307, 43
 	.section	.rodata.managed_type_name.7308,"aMS",%progbits,1
 	.type	.L.managed_type_name.7308, %object
 .L.managed_type_name.7308:
-	.asciz	"Java.Util.ListResourceBundle, Mono.Android"
-	.size	.L.managed_type_name.7308, 43
+	.asciz	"Java.Util.ListResourceBundleInvoker, Mono.Android"
+	.size	.L.managed_type_name.7308, 50
 	.section	.rodata.managed_type_name.7309,"aMS",%progbits,1
 	.type	.L.managed_type_name.7309, %object
 .L.managed_type_name.7309:
-	.asciz	"Java.Util.ListResourceBundleInvoker, Mono.Android"
-	.size	.L.managed_type_name.7309, 50
+	.asciz	"Java.Util.Locale+Builder, Mono.Android"
+	.size	.L.managed_type_name.7309, 39
 	.section	.rodata.managed_type_name.7310,"aMS",%progbits,1
 	.type	.L.managed_type_name.7310, %object
 .L.managed_type_name.7310:
-	.asciz	"Java.Util.Locale+Builder, Mono.Android"
-	.size	.L.managed_type_name.7310, 39
+	.asciz	"Java.Util.Locale+Category, Mono.Android"
+	.size	.L.managed_type_name.7310, 40
 	.section	.rodata.managed_type_name.7311,"aMS",%progbits,1
 	.type	.L.managed_type_name.7311, %object
 .L.managed_type_name.7311:
-	.asciz	"Java.Util.Locale+Category, Mono.Android"
-	.size	.L.managed_type_name.7311, 40
+	.asciz	"Java.Util.Locale+FilteringMode, Mono.Android"
+	.size	.L.managed_type_name.7311, 45
 	.section	.rodata.managed_type_name.7312,"aMS",%progbits,1
 	.type	.L.managed_type_name.7312, %object
 .L.managed_type_name.7312:
-	.asciz	"Java.Util.Locale+FilteringMode, Mono.Android"
+	.asciz	"Java.Util.Locale+LanguageRange, Mono.Android"
 	.size	.L.managed_type_name.7312, 45
 	.section	.rodata.managed_type_name.7313,"aMS",%progbits,1
 	.type	.L.managed_type_name.7313, %object
 .L.managed_type_name.7313:
-	.asciz	"Java.Util.Locale+LanguageRange, Mono.Android"
-	.size	.L.managed_type_name.7313, 45
+	.asciz	"Java.Util.Locale, Mono.Android"
+	.size	.L.managed_type_name.7313, 31
 	.section	.rodata.managed_type_name.7314,"aMS",%progbits,1
 	.type	.L.managed_type_name.7314, %object
 .L.managed_type_name.7314:
-	.asciz	"Java.Util.Locale, Mono.Android"
-	.size	.L.managed_type_name.7314, 31
+	.asciz	"Java.Util.Logging.ConsoleHandler, Mono.Android"
+	.size	.L.managed_type_name.7314, 47
 	.section	.rodata.managed_type_name.7315,"aMS",%progbits,1
 	.type	.L.managed_type_name.7315, %object
 .L.managed_type_name.7315:
-	.asciz	"Java.Util.Logging.ConsoleHandler, Mono.Android"
-	.size	.L.managed_type_name.7315, 47
+	.asciz	"Java.Util.Logging.ErrorManager, Mono.Android"
+	.size	.L.managed_type_name.7315, 45
 	.section	.rodata.managed_type_name.7316,"aMS",%progbits,1
 	.type	.L.managed_type_name.7316, %object
 .L.managed_type_name.7316:
-	.asciz	"Java.Util.Logging.ErrorManager, Mono.Android"
-	.size	.L.managed_type_name.7316, 45
+	.asciz	"Java.Util.Logging.FileHandler, Mono.Android"
+	.size	.L.managed_type_name.7316, 44
 	.section	.rodata.managed_type_name.7317,"aMS",%progbits,1
 	.type	.L.managed_type_name.7317, %object
 .L.managed_type_name.7317:
-	.asciz	"Java.Util.Logging.FileHandler, Mono.Android"
-	.size	.L.managed_type_name.7317, 44
+	.asciz	"Java.Util.Logging.Formatter, Mono.Android"
+	.size	.L.managed_type_name.7317, 42
 	.section	.rodata.managed_type_name.7318,"aMS",%progbits,1
 	.type	.L.managed_type_name.7318, %object
 .L.managed_type_name.7318:
-	.asciz	"Java.Util.Logging.Formatter, Mono.Android"
-	.size	.L.managed_type_name.7318, 42
+	.asciz	"Java.Util.Logging.FormatterInvoker, Mono.Android"
+	.size	.L.managed_type_name.7318, 49
 	.section	.rodata.managed_type_name.7319,"aMS",%progbits,1
 	.type	.L.managed_type_name.7319, %object
 .L.managed_type_name.7319:
-	.asciz	"Java.Util.Logging.FormatterInvoker, Mono.Android"
-	.size	.L.managed_type_name.7319, 49
+	.asciz	"Java.Util.Logging.Handler, Mono.Android"
+	.size	.L.managed_type_name.7319, 40
 	.section	.rodata.managed_type_name.7320,"aMS",%progbits,1
 	.type	.L.managed_type_name.7320, %object
 .L.managed_type_name.7320:
-	.asciz	"Java.Util.Logging.Handler, Mono.Android"
-	.size	.L.managed_type_name.7320, 40
+	.asciz	"Java.Util.Logging.HandlerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7320, 47
 	.section	.rodata.managed_type_name.7321,"aMS",%progbits,1
 	.type	.L.managed_type_name.7321, %object
 .L.managed_type_name.7321:
-	.asciz	"Java.Util.Logging.HandlerInvoker, Mono.Android"
+	.asciz	"Java.Util.Logging.IFilterInvoker, Mono.Android"
 	.size	.L.managed_type_name.7321, 47
 	.section	.rodata.managed_type_name.7322,"aMS",%progbits,1
 	.type	.L.managed_type_name.7322, %object
 .L.managed_type_name.7322:
-	.asciz	"Java.Util.Logging.IFilterInvoker, Mono.Android"
-	.size	.L.managed_type_name.7322, 47
+	.asciz	"Java.Util.Logging.ILoggingMXBeanInvoker, Mono.Android"
+	.size	.L.managed_type_name.7322, 54
 	.section	.rodata.managed_type_name.7323,"aMS",%progbits,1
 	.type	.L.managed_type_name.7323, %object
 .L.managed_type_name.7323:
-	.asciz	"Java.Util.Logging.ILoggingMXBeanInvoker, Mono.Android"
-	.size	.L.managed_type_name.7323, 54
+	.asciz	"Java.Util.Logging.Level, Mono.Android"
+	.size	.L.managed_type_name.7323, 38
 	.section	.rodata.managed_type_name.7324,"aMS",%progbits,1
 	.type	.L.managed_type_name.7324, %object
 .L.managed_type_name.7324:
-	.asciz	"Java.Util.Logging.Level, Mono.Android"
-	.size	.L.managed_type_name.7324, 38
+	.asciz	"Java.Util.Logging.LogManager, Mono.Android"
+	.size	.L.managed_type_name.7324, 43
 	.section	.rodata.managed_type_name.7325,"aMS",%progbits,1
 	.type	.L.managed_type_name.7325, %object
 .L.managed_type_name.7325:
-	.asciz	"Java.Util.Logging.LogManager, Mono.Android"
-	.size	.L.managed_type_name.7325, 43
+	.asciz	"Java.Util.Logging.LogRecord, Mono.Android"
+	.size	.L.managed_type_name.7325, 42
 	.section	.rodata.managed_type_name.7326,"aMS",%progbits,1
 	.type	.L.managed_type_name.7326, %object
 .L.managed_type_name.7326:
-	.asciz	"Java.Util.Logging.LogRecord, Mono.Android"
-	.size	.L.managed_type_name.7326, 42
+	.asciz	"Java.Util.Logging.Logger, Mono.Android"
+	.size	.L.managed_type_name.7326, 39
 	.section	.rodata.managed_type_name.7327,"aMS",%progbits,1
 	.type	.L.managed_type_name.7327, %object
 .L.managed_type_name.7327:
-	.asciz	"Java.Util.Logging.Logger, Mono.Android"
-	.size	.L.managed_type_name.7327, 39
+	.asciz	"Java.Util.Logging.LoggingPermission, Mono.Android"
+	.size	.L.managed_type_name.7327, 50
 	.section	.rodata.managed_type_name.7328,"aMS",%progbits,1
 	.type	.L.managed_type_name.7328, %object
 .L.managed_type_name.7328:
-	.asciz	"Java.Util.Logging.LoggingPermission, Mono.Android"
-	.size	.L.managed_type_name.7328, 50
+	.asciz	"Java.Util.Logging.MemoryHandler, Mono.Android"
+	.size	.L.managed_type_name.7328, 46
 	.section	.rodata.managed_type_name.7329,"aMS",%progbits,1
 	.type	.L.managed_type_name.7329, %object
 .L.managed_type_name.7329:
-	.asciz	"Java.Util.Logging.MemoryHandler, Mono.Android"
-	.size	.L.managed_type_name.7329, 46
+	.asciz	"Java.Util.Logging.SimpleFormatter, Mono.Android"
+	.size	.L.managed_type_name.7329, 48
 	.section	.rodata.managed_type_name.7330,"aMS",%progbits,1
 	.type	.L.managed_type_name.7330, %object
 .L.managed_type_name.7330:
-	.asciz	"Java.Util.Logging.SimpleFormatter, Mono.Android"
-	.size	.L.managed_type_name.7330, 48
+	.asciz	"Java.Util.Logging.SocketHandler, Mono.Android"
+	.size	.L.managed_type_name.7330, 46
 	.section	.rodata.managed_type_name.7331,"aMS",%progbits,1
 	.type	.L.managed_type_name.7331, %object
 .L.managed_type_name.7331:
-	.asciz	"Java.Util.Logging.SocketHandler, Mono.Android"
+	.asciz	"Java.Util.Logging.StreamHandler, Mono.Android"
 	.size	.L.managed_type_name.7331, 46
 	.section	.rodata.managed_type_name.7332,"aMS",%progbits,1
 	.type	.L.managed_type_name.7332, %object
 .L.managed_type_name.7332:
-	.asciz	"Java.Util.Logging.StreamHandler, Mono.Android"
-	.size	.L.managed_type_name.7332, 46
+	.asciz	"Java.Util.Logging.XMLFormatter, Mono.Android"
+	.size	.L.managed_type_name.7332, 45
 	.section	.rodata.managed_type_name.7333,"aMS",%progbits,1
 	.type	.L.managed_type_name.7333, %object
 .L.managed_type_name.7333:
-	.asciz	"Java.Util.Logging.XMLFormatter, Mono.Android"
-	.size	.L.managed_type_name.7333, 45
+	.asciz	"Java.Util.LongSummaryStatistics, Mono.Android"
+	.size	.L.managed_type_name.7333, 46
 	.section	.rodata.managed_type_name.7334,"aMS",%progbits,1
 	.type	.L.managed_type_name.7334, %object
 .L.managed_type_name.7334:
-	.asciz	"Java.Util.LongSummaryStatistics, Mono.Android"
-	.size	.L.managed_type_name.7334, 46
+	.asciz	"Java.Util.Map, Mono.Android"
+	.size	.L.managed_type_name.7334, 28
 	.section	.rodata.managed_type_name.7335,"aMS",%progbits,1
 	.type	.L.managed_type_name.7335, %object
 .L.managed_type_name.7335:
-	.asciz	"Java.Util.Map, Mono.Android"
-	.size	.L.managed_type_name.7335, 28
+	.asciz	"Java.Util.MapEntry, Mono.Android"
+	.size	.L.managed_type_name.7335, 33
 	.section	.rodata.managed_type_name.7336,"aMS",%progbits,1
 	.type	.L.managed_type_name.7336, %object
 .L.managed_type_name.7336:
-	.asciz	"Java.Util.MapEntry, Mono.Android"
-	.size	.L.managed_type_name.7336, 33
+	.asciz	"Java.Util.MissingFormatArgumentException, Mono.Android"
+	.size	.L.managed_type_name.7336, 55
 	.section	.rodata.managed_type_name.7337,"aMS",%progbits,1
 	.type	.L.managed_type_name.7337, %object
 .L.managed_type_name.7337:
-	.asciz	"Java.Util.MissingFormatArgumentException, Mono.Android"
-	.size	.L.managed_type_name.7337, 55
+	.asciz	"Java.Util.MissingFormatWidthException, Mono.Android"
+	.size	.L.managed_type_name.7337, 52
 	.section	.rodata.managed_type_name.7338,"aMS",%progbits,1
 	.type	.L.managed_type_name.7338, %object
 .L.managed_type_name.7338:
-	.asciz	"Java.Util.MissingFormatWidthException, Mono.Android"
-	.size	.L.managed_type_name.7338, 52
+	.asciz	"Java.Util.MissingResourceException, Mono.Android"
+	.size	.L.managed_type_name.7338, 49
 	.section	.rodata.managed_type_name.7339,"aMS",%progbits,1
 	.type	.L.managed_type_name.7339, %object
 .L.managed_type_name.7339:
-	.asciz	"Java.Util.MissingResourceException, Mono.Android"
-	.size	.L.managed_type_name.7339, 49
+	.asciz	"Java.Util.NoSuchElementException, Mono.Android"
+	.size	.L.managed_type_name.7339, 47
 	.section	.rodata.managed_type_name.7340,"aMS",%progbits,1
 	.type	.L.managed_type_name.7340, %object
 .L.managed_type_name.7340:
-	.asciz	"Java.Util.NoSuchElementException, Mono.Android"
-	.size	.L.managed_type_name.7340, 47
+	.asciz	"Java.Util.Objects, Mono.Android"
+	.size	.L.managed_type_name.7340, 32
 	.section	.rodata.managed_type_name.7341,"aMS",%progbits,1
 	.type	.L.managed_type_name.7341, %object
 .L.managed_type_name.7341:
-	.asciz	"Java.Util.Objects, Mono.Android"
-	.size	.L.managed_type_name.7341, 32
+	.asciz	"Java.Util.Observable, Mono.Android"
+	.size	.L.managed_type_name.7341, 35
 	.section	.rodata.managed_type_name.7342,"aMS",%progbits,1
 	.type	.L.managed_type_name.7342, %object
 .L.managed_type_name.7342:
-	.asciz	"Java.Util.Observable, Mono.Android"
-	.size	.L.managed_type_name.7342, 35
+	.asciz	"Java.Util.Optional, Mono.Android"
+	.size	.L.managed_type_name.7342, 33
 	.section	.rodata.managed_type_name.7343,"aMS",%progbits,1
 	.type	.L.managed_type_name.7343, %object
 .L.managed_type_name.7343:
-	.asciz	"Java.Util.Optional, Mono.Android"
-	.size	.L.managed_type_name.7343, 33
+	.asciz	"Java.Util.OptionalDouble, Mono.Android"
+	.size	.L.managed_type_name.7343, 39
 	.section	.rodata.managed_type_name.7344,"aMS",%progbits,1
 	.type	.L.managed_type_name.7344, %object
 .L.managed_type_name.7344:
-	.asciz	"Java.Util.OptionalDouble, Mono.Android"
-	.size	.L.managed_type_name.7344, 39
+	.asciz	"Java.Util.OptionalInt, Mono.Android"
+	.size	.L.managed_type_name.7344, 36
 	.section	.rodata.managed_type_name.7345,"aMS",%progbits,1
 	.type	.L.managed_type_name.7345, %object
 .L.managed_type_name.7345:
-	.asciz	"Java.Util.OptionalInt, Mono.Android"
-	.size	.L.managed_type_name.7345, 36
+	.asciz	"Java.Util.OptionalLong, Mono.Android"
+	.size	.L.managed_type_name.7345, 37
 	.section	.rodata.managed_type_name.7346,"aMS",%progbits,1
 	.type	.L.managed_type_name.7346, %object
 .L.managed_type_name.7346:
-	.asciz	"Java.Util.OptionalLong, Mono.Android"
-	.size	.L.managed_type_name.7346, 37
+	.asciz	"Java.Util.Prefs.AbstractPreferences, Mono.Android"
+	.size	.L.managed_type_name.7346, 50
 	.section	.rodata.managed_type_name.7347,"aMS",%progbits,1
 	.type	.L.managed_type_name.7347, %object
 .L.managed_type_name.7347:
-	.asciz	"Java.Util.Prefs.AbstractPreferences, Mono.Android"
-	.size	.L.managed_type_name.7347, 50
+	.asciz	"Java.Util.Prefs.AbstractPreferencesInvoker, Mono.Android"
+	.size	.L.managed_type_name.7347, 57
 	.section	.rodata.managed_type_name.7348,"aMS",%progbits,1
 	.type	.L.managed_type_name.7348, %object
 .L.managed_type_name.7348:
-	.asciz	"Java.Util.Prefs.AbstractPreferencesInvoker, Mono.Android"
-	.size	.L.managed_type_name.7348, 57
+	.asciz	"Java.Util.Prefs.BackingStoreException, Mono.Android"
+	.size	.L.managed_type_name.7348, 52
 	.section	.rodata.managed_type_name.7349,"aMS",%progbits,1
 	.type	.L.managed_type_name.7349, %object
 .L.managed_type_name.7349:
-	.asciz	"Java.Util.Prefs.BackingStoreException, Mono.Android"
-	.size	.L.managed_type_name.7349, 52
+	.asciz	"Java.Util.Prefs.INodeChangeListenerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7349, 57
 	.section	.rodata.managed_type_name.7350,"aMS",%progbits,1
 	.type	.L.managed_type_name.7350, %object
 .L.managed_type_name.7350:
-	.asciz	"Java.Util.Prefs.INodeChangeListenerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7350, 57
+	.asciz	"Java.Util.Prefs.IPreferenceChangeListenerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7350, 63
 	.section	.rodata.managed_type_name.7351,"aMS",%progbits,1
 	.type	.L.managed_type_name.7351, %object
 .L.managed_type_name.7351:
-	.asciz	"Java.Util.Prefs.IPreferenceChangeListenerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7351, 63
+	.asciz	"Java.Util.Prefs.IPreferencesFactoryInvoker, Mono.Android"
+	.size	.L.managed_type_name.7351, 57
 	.section	.rodata.managed_type_name.7352,"aMS",%progbits,1
 	.type	.L.managed_type_name.7352, %object
 .L.managed_type_name.7352:
-	.asciz	"Java.Util.Prefs.IPreferencesFactoryInvoker, Mono.Android"
-	.size	.L.managed_type_name.7352, 57
+	.asciz	"Java.Util.Prefs.InvalidPreferencesFormatException, Mono.Android"
+	.size	.L.managed_type_name.7352, 64
 	.section	.rodata.managed_type_name.7353,"aMS",%progbits,1
 	.type	.L.managed_type_name.7353, %object
 .L.managed_type_name.7353:
-	.asciz	"Java.Util.Prefs.InvalidPreferencesFormatException, Mono.Android"
-	.size	.L.managed_type_name.7353, 64
+	.asciz	"Java.Util.Prefs.NodeChangeEvent, Mono.Android"
+	.size	.L.managed_type_name.7353, 46
 	.section	.rodata.managed_type_name.7354,"aMS",%progbits,1
 	.type	.L.managed_type_name.7354, %object
 .L.managed_type_name.7354:
-	.asciz	"Java.Util.Prefs.NodeChangeEvent, Mono.Android"
-	.size	.L.managed_type_name.7354, 46
+	.asciz	"Java.Util.Prefs.PreferenceChangeEvent, Mono.Android"
+	.size	.L.managed_type_name.7354, 52
 	.section	.rodata.managed_type_name.7355,"aMS",%progbits,1
 	.type	.L.managed_type_name.7355, %object
 .L.managed_type_name.7355:
-	.asciz	"Java.Util.Prefs.PreferenceChangeEvent, Mono.Android"
-	.size	.L.managed_type_name.7355, 52
+	.asciz	"Java.Util.Prefs.Preferences, Mono.Android"
+	.size	.L.managed_type_name.7355, 42
 	.section	.rodata.managed_type_name.7356,"aMS",%progbits,1
 	.type	.L.managed_type_name.7356, %object
 .L.managed_type_name.7356:
-	.asciz	"Java.Util.Prefs.Preferences, Mono.Android"
-	.size	.L.managed_type_name.7356, 42
+	.asciz	"Java.Util.Prefs.PreferencesInvoker, Mono.Android"
+	.size	.L.managed_type_name.7356, 49
 	.section	.rodata.managed_type_name.7357,"aMS",%progbits,1
 	.type	.L.managed_type_name.7357, %object
 .L.managed_type_name.7357:
-	.asciz	"Java.Util.Prefs.PreferencesInvoker, Mono.Android"
-	.size	.L.managed_type_name.7357, 49
+	.asciz	"Java.Util.PriorityQueue, Mono.Android"
+	.size	.L.managed_type_name.7357, 38
 	.section	.rodata.managed_type_name.7358,"aMS",%progbits,1
 	.type	.L.managed_type_name.7358, %object
 .L.managed_type_name.7358:
-	.asciz	"Java.Util.PriorityQueue, Mono.Android"
-	.size	.L.managed_type_name.7358, 38
+	.asciz	"Java.Util.Properties, Mono.Android"
+	.size	.L.managed_type_name.7358, 35
 	.section	.rodata.managed_type_name.7359,"aMS",%progbits,1
 	.type	.L.managed_type_name.7359, %object
 .L.managed_type_name.7359:
-	.asciz	"Java.Util.Properties, Mono.Android"
-	.size	.L.managed_type_name.7359, 35
+	.asciz	"Java.Util.PropertyPermission, Mono.Android"
+	.size	.L.managed_type_name.7359, 43
 	.section	.rodata.managed_type_name.7360,"aMS",%progbits,1
 	.type	.L.managed_type_name.7360, %object
 .L.managed_type_name.7360:
-	.asciz	"Java.Util.PropertyPermission, Mono.Android"
-	.size	.L.managed_type_name.7360, 43
+	.asciz	"Java.Util.PropertyResourceBundle, Mono.Android"
+	.size	.L.managed_type_name.7360, 47
 	.section	.rodata.managed_type_name.7361,"aMS",%progbits,1
 	.type	.L.managed_type_name.7361, %object
 .L.managed_type_name.7361:
-	.asciz	"Java.Util.PropertyResourceBundle, Mono.Android"
-	.size	.L.managed_type_name.7361, 47
+	.asciz	"Java.Util.Random, Mono.Android"
+	.size	.L.managed_type_name.7361, 31
 	.section	.rodata.managed_type_name.7362,"aMS",%progbits,1
 	.type	.L.managed_type_name.7362, %object
 .L.managed_type_name.7362:
-	.asciz	"Java.Util.Random, Mono.Android"
-	.size	.L.managed_type_name.7362, 31
+	.asciz	"Java.Util.Regex.IMatchResultInvoker, Mono.Android"
+	.size	.L.managed_type_name.7362, 50
 	.section	.rodata.managed_type_name.7363,"aMS",%progbits,1
 	.type	.L.managed_type_name.7363, %object
 .L.managed_type_name.7363:
-	.asciz	"Java.Util.Regex.IMatchResultInvoker, Mono.Android"
-	.size	.L.managed_type_name.7363, 50
+	.asciz	"Java.Util.Regex.Matcher, Mono.Android"
+	.size	.L.managed_type_name.7363, 38
 	.section	.rodata.managed_type_name.7364,"aMS",%progbits,1
 	.type	.L.managed_type_name.7364, %object
 .L.managed_type_name.7364:
-	.asciz	"Java.Util.Regex.Matcher, Mono.Android"
+	.asciz	"Java.Util.Regex.Pattern, Mono.Android"
 	.size	.L.managed_type_name.7364, 38
 	.section	.rodata.managed_type_name.7365,"aMS",%progbits,1
 	.type	.L.managed_type_name.7365, %object
 .L.managed_type_name.7365:
-	.asciz	"Java.Util.Regex.Pattern, Mono.Android"
-	.size	.L.managed_type_name.7365, 38
+	.asciz	"Java.Util.Regex.PatternSyntaxException, Mono.Android"
+	.size	.L.managed_type_name.7365, 53
 	.section	.rodata.managed_type_name.7366,"aMS",%progbits,1
 	.type	.L.managed_type_name.7366, %object
 .L.managed_type_name.7366:
-	.asciz	"Java.Util.Regex.PatternSyntaxException, Mono.Android"
-	.size	.L.managed_type_name.7366, 53
+	.asciz	"Java.Util.ResourceBundle+Control, Mono.Android"
+	.size	.L.managed_type_name.7366, 47
 	.section	.rodata.managed_type_name.7367,"aMS",%progbits,1
 	.type	.L.managed_type_name.7367, %object
 .L.managed_type_name.7367:
-	.asciz	"Java.Util.ResourceBundle+Control, Mono.Android"
-	.size	.L.managed_type_name.7367, 47
+	.asciz	"Java.Util.ResourceBundle, Mono.Android"
+	.size	.L.managed_type_name.7367, 39
 	.section	.rodata.managed_type_name.7368,"aMS",%progbits,1
 	.type	.L.managed_type_name.7368, %object
 .L.managed_type_name.7368:
-	.asciz	"Java.Util.ResourceBundle, Mono.Android"
-	.size	.L.managed_type_name.7368, 39
+	.asciz	"Java.Util.ResourceBundleInvoker, Mono.Android"
+	.size	.L.managed_type_name.7368, 46
 	.section	.rodata.managed_type_name.7369,"aMS",%progbits,1
 	.type	.L.managed_type_name.7369, %object
 .L.managed_type_name.7369:
-	.asciz	"Java.Util.ResourceBundleInvoker, Mono.Android"
-	.size	.L.managed_type_name.7369, 46
+	.asciz	"Java.Util.Scanner, Mono.Android"
+	.size	.L.managed_type_name.7369, 32
 	.section	.rodata.managed_type_name.7370,"aMS",%progbits,1
 	.type	.L.managed_type_name.7370, %object
 .L.managed_type_name.7370:
-	.asciz	"Java.Util.Scanner, Mono.Android"
-	.size	.L.managed_type_name.7370, 32
+	.asciz	"Java.Util.ServiceConfigurationError, Mono.Android"
+	.size	.L.managed_type_name.7370, 50
 	.section	.rodata.managed_type_name.7371,"aMS",%progbits,1
 	.type	.L.managed_type_name.7371, %object
 .L.managed_type_name.7371:
-	.asciz	"Java.Util.ServiceConfigurationError, Mono.Android"
-	.size	.L.managed_type_name.7371, 50
+	.asciz	"Java.Util.ServiceLoader, Mono.Android"
+	.size	.L.managed_type_name.7371, 38
 	.section	.rodata.managed_type_name.7372,"aMS",%progbits,1
 	.type	.L.managed_type_name.7372, %object
 .L.managed_type_name.7372:
-	.asciz	"Java.Util.ServiceLoader, Mono.Android"
-	.size	.L.managed_type_name.7372, 38
+	.asciz	"Java.Util.Set, Mono.Android"
+	.size	.L.managed_type_name.7372, 28
 	.section	.rodata.managed_type_name.7373,"aMS",%progbits,1
 	.type	.L.managed_type_name.7373, %object
 .L.managed_type_name.7373:
-	.asciz	"Java.Util.Set, Mono.Android"
-	.size	.L.managed_type_name.7373, 28
+	.asciz	"Java.Util.SimpleTimeZone, Mono.Android"
+	.size	.L.managed_type_name.7373, 39
 	.section	.rodata.managed_type_name.7374,"aMS",%progbits,1
 	.type	.L.managed_type_name.7374, %object
 .L.managed_type_name.7374:
-	.asciz	"Java.Util.SimpleTimeZone, Mono.Android"
-	.size	.L.managed_type_name.7374, 39
+	.asciz	"Java.Util.Spliterator, Mono.Android"
+	.size	.L.managed_type_name.7374, 36
 	.section	.rodata.managed_type_name.7375,"aMS",%progbits,1
 	.type	.L.managed_type_name.7375, %object
 .L.managed_type_name.7375:
-	.asciz	"Java.Util.Spliterator, Mono.Android"
-	.size	.L.managed_type_name.7375, 36
+	.asciz	"Java.Util.Spliterators+AbstractDoubleSpliterator, Mono.Android"
+	.size	.L.managed_type_name.7375, 63
 	.section	.rodata.managed_type_name.7376,"aMS",%progbits,1
 	.type	.L.managed_type_name.7376, %object
 .L.managed_type_name.7376:
-	.asciz	"Java.Util.Spliterators+AbstractDoubleSpliterator, Mono.Android"
-	.size	.L.managed_type_name.7376, 63
+	.asciz	"Java.Util.Spliterators+AbstractDoubleSpliteratorInvoker, Mono.Android"
+	.size	.L.managed_type_name.7376, 70
 	.section	.rodata.managed_type_name.7377,"aMS",%progbits,1
 	.type	.L.managed_type_name.7377, %object
 .L.managed_type_name.7377:
-	.asciz	"Java.Util.Spliterators+AbstractDoubleSpliteratorInvoker, Mono.Android"
-	.size	.L.managed_type_name.7377, 70
+	.asciz	"Java.Util.Spliterators+AbstractIntSpliterator, Mono.Android"
+	.size	.L.managed_type_name.7377, 60
 	.section	.rodata.managed_type_name.7378,"aMS",%progbits,1
 	.type	.L.managed_type_name.7378, %object
 .L.managed_type_name.7378:
-	.asciz	"Java.Util.Spliterators+AbstractIntSpliterator, Mono.Android"
-	.size	.L.managed_type_name.7378, 60
+	.asciz	"Java.Util.Spliterators+AbstractIntSpliteratorInvoker, Mono.Android"
+	.size	.L.managed_type_name.7378, 67
 	.section	.rodata.managed_type_name.7379,"aMS",%progbits,1
 	.type	.L.managed_type_name.7379, %object
 .L.managed_type_name.7379:
-	.asciz	"Java.Util.Spliterators+AbstractIntSpliteratorInvoker, Mono.Android"
-	.size	.L.managed_type_name.7379, 67
+	.asciz	"Java.Util.Spliterators+AbstractLongSpliterator, Mono.Android"
+	.size	.L.managed_type_name.7379, 61
 	.section	.rodata.managed_type_name.7380,"aMS",%progbits,1
 	.type	.L.managed_type_name.7380, %object
 .L.managed_type_name.7380:
-	.asciz	"Java.Util.Spliterators+AbstractLongSpliterator, Mono.Android"
-	.size	.L.managed_type_name.7380, 61
+	.asciz	"Java.Util.Spliterators+AbstractLongSpliteratorInvoker, Mono.Android"
+	.size	.L.managed_type_name.7380, 68
 	.section	.rodata.managed_type_name.7381,"aMS",%progbits,1
 	.type	.L.managed_type_name.7381, %object
 .L.managed_type_name.7381:
-	.asciz	"Java.Util.Spliterators+AbstractLongSpliteratorInvoker, Mono.Android"
-	.size	.L.managed_type_name.7381, 68
+	.asciz	"Java.Util.Spliterators+AbstractSpliterator, Mono.Android"
+	.size	.L.managed_type_name.7381, 57
 	.section	.rodata.managed_type_name.7382,"aMS",%progbits,1
 	.type	.L.managed_type_name.7382, %object
 .L.managed_type_name.7382:
-	.asciz	"Java.Util.Spliterators+AbstractSpliterator, Mono.Android"
-	.size	.L.managed_type_name.7382, 57
+	.asciz	"Java.Util.Spliterators+AbstractSpliteratorInvoker, Mono.Android"
+	.size	.L.managed_type_name.7382, 64
 	.section	.rodata.managed_type_name.7383,"aMS",%progbits,1
 	.type	.L.managed_type_name.7383, %object
 .L.managed_type_name.7383:
-	.asciz	"Java.Util.Spliterators+AbstractSpliteratorInvoker, Mono.Android"
-	.size	.L.managed_type_name.7383, 64
+	.asciz	"Java.Util.Spliterators, Mono.Android"
+	.size	.L.managed_type_name.7383, 37
 	.section	.rodata.managed_type_name.7384,"aMS",%progbits,1
 	.type	.L.managed_type_name.7384, %object
 .L.managed_type_name.7384:
-	.asciz	"Java.Util.Spliterators, Mono.Android"
-	.size	.L.managed_type_name.7384, 37
+	.asciz	"Java.Util.SplittableRandom, Mono.Android"
+	.size	.L.managed_type_name.7384, 41
 	.section	.rodata.managed_type_name.7385,"aMS",%progbits,1
 	.type	.L.managed_type_name.7385, %object
 .L.managed_type_name.7385:
-	.asciz	"Java.Util.SplittableRandom, Mono.Android"
-	.size	.L.managed_type_name.7385, 41
+	.asciz	"Java.Util.Stack, Mono.Android"
+	.size	.L.managed_type_name.7385, 30
 	.section	.rodata.managed_type_name.7386,"aMS",%progbits,1
 	.type	.L.managed_type_name.7386, %object
 .L.managed_type_name.7386:
-	.asciz	"Java.Util.Stack, Mono.Android"
-	.size	.L.managed_type_name.7386, 30
+	.asciz	"Java.Util.Streams.Collector, Mono.Android"
+	.size	.L.managed_type_name.7386, 42
 	.section	.rodata.managed_type_name.7387,"aMS",%progbits,1
 	.type	.L.managed_type_name.7387, %object
 .L.managed_type_name.7387:
-	.asciz	"Java.Util.Streams.Collector, Mono.Android"
-	.size	.L.managed_type_name.7387, 42
+	.asciz	"Java.Util.Streams.CollectorCharacteristics, Mono.Android"
+	.size	.L.managed_type_name.7387, 57
 	.section	.rodata.managed_type_name.7388,"aMS",%progbits,1
 	.type	.L.managed_type_name.7388, %object
 .L.managed_type_name.7388:
-	.asciz	"Java.Util.Streams.CollectorCharacteristics, Mono.Android"
-	.size	.L.managed_type_name.7388, 57
+	.asciz	"Java.Util.Streams.Collectors, Mono.Android"
+	.size	.L.managed_type_name.7388, 43
 	.section	.rodata.managed_type_name.7389,"aMS",%progbits,1
 	.type	.L.managed_type_name.7389, %object
 .L.managed_type_name.7389:
-	.asciz	"Java.Util.Streams.Collectors, Mono.Android"
-	.size	.L.managed_type_name.7389, 43
+	.asciz	"Java.Util.Streams.IBaseStreamInvoker, Mono.Android"
+	.size	.L.managed_type_name.7389, 51
 	.section	.rodata.managed_type_name.7390,"aMS",%progbits,1
 	.type	.L.managed_type_name.7390, %object
 .L.managed_type_name.7390:
-	.asciz	"Java.Util.Streams.IBaseStreamInvoker, Mono.Android"
-	.size	.L.managed_type_name.7390, 51
+	.asciz	"Java.Util.Streams.ICollectorInvoker, Mono.Android"
+	.size	.L.managed_type_name.7390, 50
 	.section	.rodata.managed_type_name.7391,"aMS",%progbits,1
 	.type	.L.managed_type_name.7391, %object
 .L.managed_type_name.7391:
-	.asciz	"Java.Util.Streams.ICollectorInvoker, Mono.Android"
-	.size	.L.managed_type_name.7391, 50
+	.asciz	"Java.Util.Streams.StreamSupport, Mono.Android"
+	.size	.L.managed_type_name.7391, 46
 	.section	.rodata.managed_type_name.7392,"aMS",%progbits,1
 	.type	.L.managed_type_name.7392, %object
 .L.managed_type_name.7392:
-	.asciz	"Java.Util.Streams.StreamSupport, Mono.Android"
-	.size	.L.managed_type_name.7392, 46
+	.asciz	"Java.Util.StringJoiner, Mono.Android"
+	.size	.L.managed_type_name.7392, 37
 	.section	.rodata.managed_type_name.7393,"aMS",%progbits,1
 	.type	.L.managed_type_name.7393, %object
 .L.managed_type_name.7393:
-	.asciz	"Java.Util.StringJoiner, Mono.Android"
-	.size	.L.managed_type_name.7393, 37
+	.asciz	"Java.Util.StringTokenizer, Mono.Android"
+	.size	.L.managed_type_name.7393, 40
 	.section	.rodata.managed_type_name.7394,"aMS",%progbits,1
 	.type	.L.managed_type_name.7394, %object
 .L.managed_type_name.7394:
-	.asciz	"Java.Util.StringTokenizer, Mono.Android"
-	.size	.L.managed_type_name.7394, 40
+	.asciz	"Java.Util.TimeZone, Mono.Android"
+	.size	.L.managed_type_name.7394, 33
 	.section	.rodata.managed_type_name.7395,"aMS",%progbits,1
 	.type	.L.managed_type_name.7395, %object
 .L.managed_type_name.7395:
-	.asciz	"Java.Util.TimeZone, Mono.Android"
-	.size	.L.managed_type_name.7395, 33
+	.asciz	"Java.Util.TimeZoneInvoker, Mono.Android"
+	.size	.L.managed_type_name.7395, 40
 	.section	.rodata.managed_type_name.7396,"aMS",%progbits,1
 	.type	.L.managed_type_name.7396, %object
 .L.managed_type_name.7396:
-	.asciz	"Java.Util.TimeZoneInvoker, Mono.Android"
-	.size	.L.managed_type_name.7396, 40
+	.asciz	"Java.Util.Timer, Mono.Android"
+	.size	.L.managed_type_name.7396, 30
 	.section	.rodata.managed_type_name.7397,"aMS",%progbits,1
 	.type	.L.managed_type_name.7397, %object
 .L.managed_type_name.7397:
-	.asciz	"Java.Util.Timer, Mono.Android"
-	.size	.L.managed_type_name.7397, 30
+	.asciz	"Java.Util.TimerTask, Mono.Android"
+	.size	.L.managed_type_name.7397, 34
 	.section	.rodata.managed_type_name.7398,"aMS",%progbits,1
 	.type	.L.managed_type_name.7398, %object
 .L.managed_type_name.7398:
-	.asciz	"Java.Util.TimerTask, Mono.Android"
-	.size	.L.managed_type_name.7398, 34
+	.asciz	"Java.Util.TimerTaskInvoker, Mono.Android"
+	.size	.L.managed_type_name.7398, 41
 	.section	.rodata.managed_type_name.7399,"aMS",%progbits,1
 	.type	.L.managed_type_name.7399, %object
 .L.managed_type_name.7399:
-	.asciz	"Java.Util.TimerTaskInvoker, Mono.Android"
-	.size	.L.managed_type_name.7399, 41
+	.asciz	"Java.Util.TooManyListenersException, Mono.Android"
+	.size	.L.managed_type_name.7399, 50
 	.section	.rodata.managed_type_name.7400,"aMS",%progbits,1
 	.type	.L.managed_type_name.7400, %object
 .L.managed_type_name.7400:
-	.asciz	"Java.Util.TooManyListenersException, Mono.Android"
-	.size	.L.managed_type_name.7400, 50
+	.asciz	"Java.Util.TreeMap, Mono.Android"
+	.size	.L.managed_type_name.7400, 32
 	.section	.rodata.managed_type_name.7401,"aMS",%progbits,1
 	.type	.L.managed_type_name.7401, %object
 .L.managed_type_name.7401:
-	.asciz	"Java.Util.TreeMap, Mono.Android"
+	.asciz	"Java.Util.TreeSet, Mono.Android"
 	.size	.L.managed_type_name.7401, 32
 	.section	.rodata.managed_type_name.7402,"aMS",%progbits,1
 	.type	.L.managed_type_name.7402, %object
 .L.managed_type_name.7402:
-	.asciz	"Java.Util.TreeSet, Mono.Android"
-	.size	.L.managed_type_name.7402, 32
+	.asciz	"Java.Util.UUID, Mono.Android"
+	.size	.L.managed_type_name.7402, 29
 	.section	.rodata.managed_type_name.7403,"aMS",%progbits,1
 	.type	.L.managed_type_name.7403, %object
 .L.managed_type_name.7403:
-	.asciz	"Java.Util.UUID, Mono.Android"
-	.size	.L.managed_type_name.7403, 29
+	.asciz	"Java.Util.UnknownFormatConversionException, Mono.Android"
+	.size	.L.managed_type_name.7403, 57
 	.section	.rodata.managed_type_name.7404,"aMS",%progbits,1
 	.type	.L.managed_type_name.7404, %object
 .L.managed_type_name.7404:
-	.asciz	"Java.Util.UnknownFormatConversionException, Mono.Android"
-	.size	.L.managed_type_name.7404, 57
+	.asciz	"Java.Util.UnknownFormatFlagsException, Mono.Android"
+	.size	.L.managed_type_name.7404, 52
 	.section	.rodata.managed_type_name.7405,"aMS",%progbits,1
 	.type	.L.managed_type_name.7405, %object
 .L.managed_type_name.7405:
-	.asciz	"Java.Util.UnknownFormatFlagsException, Mono.Android"
-	.size	.L.managed_type_name.7405, 52
+	.asciz	"Java.Util.Vector, Mono.Android"
+	.size	.L.managed_type_name.7405, 31
 	.section	.rodata.managed_type_name.7406,"aMS",%progbits,1
 	.type	.L.managed_type_name.7406, %object
 .L.managed_type_name.7406:
-	.asciz	"Java.Util.Vector, Mono.Android"
-	.size	.L.managed_type_name.7406, 31
+	.asciz	"Java.Util.WeakHashMap, Mono.Android"
+	.size	.L.managed_type_name.7406, 36
 	.section	.rodata.managed_type_name.7407,"aMS",%progbits,1
 	.type	.L.managed_type_name.7407, %object
 .L.managed_type_name.7407:
-	.asciz	"Java.Util.WeakHashMap, Mono.Android"
+	.asciz	"Java.Util.Zip.Adler32, Mono.Android"
 	.size	.L.managed_type_name.7407, 36
 	.section	.rodata.managed_type_name.7408,"aMS",%progbits,1
 	.type	.L.managed_type_name.7408, %object
 .L.managed_type_name.7408:
-	.asciz	"Java.Util.Zip.Adler32, Mono.Android"
-	.size	.L.managed_type_name.7408, 36
+	.asciz	"Java.Util.Zip.CRC32, Mono.Android"
+	.size	.L.managed_type_name.7408, 34
 	.section	.rodata.managed_type_name.7409,"aMS",%progbits,1
 	.type	.L.managed_type_name.7409, %object
 .L.managed_type_name.7409:
-	.asciz	"Java.Util.Zip.CRC32, Mono.Android"
-	.size	.L.managed_type_name.7409, 34
+	.asciz	"Java.Util.Zip.CheckedInputStream, Mono.Android"
+	.size	.L.managed_type_name.7409, 47
 	.section	.rodata.managed_type_name.7410,"aMS",%progbits,1
 	.type	.L.managed_type_name.7410, %object
 .L.managed_type_name.7410:
-	.asciz	"Java.Util.Zip.CheckedInputStream, Mono.Android"
-	.size	.L.managed_type_name.7410, 47
+	.asciz	"Java.Util.Zip.CheckedOutputStream, Mono.Android"
+	.size	.L.managed_type_name.7410, 48
 	.section	.rodata.managed_type_name.7411,"aMS",%progbits,1
 	.type	.L.managed_type_name.7411, %object
 .L.managed_type_name.7411:
-	.asciz	"Java.Util.Zip.CheckedOutputStream, Mono.Android"
+	.asciz	"Java.Util.Zip.DataFormatException, Mono.Android"
 	.size	.L.managed_type_name.7411, 48
 	.section	.rodata.managed_type_name.7412,"aMS",%progbits,1
 	.type	.L.managed_type_name.7412, %object
 .L.managed_type_name.7412:
-	.asciz	"Java.Util.Zip.DataFormatException, Mono.Android"
-	.size	.L.managed_type_name.7412, 48
+	.asciz	"Java.Util.Zip.Deflater, Mono.Android"
+	.size	.L.managed_type_name.7412, 37
 	.section	.rodata.managed_type_name.7413,"aMS",%progbits,1
 	.type	.L.managed_type_name.7413, %object
 .L.managed_type_name.7413:
-	.asciz	"Java.Util.Zip.Deflater, Mono.Android"
-	.size	.L.managed_type_name.7413, 37
+	.asciz	"Java.Util.Zip.DeflaterInputStream, Mono.Android"
+	.size	.L.managed_type_name.7413, 48
 	.section	.rodata.managed_type_name.7414,"aMS",%progbits,1
 	.type	.L.managed_type_name.7414, %object
 .L.managed_type_name.7414:
-	.asciz	"Java.Util.Zip.DeflaterInputStream, Mono.Android"
-	.size	.L.managed_type_name.7414, 48
+	.asciz	"Java.Util.Zip.DeflaterOutputStream, Mono.Android"
+	.size	.L.managed_type_name.7414, 49
 	.section	.rodata.managed_type_name.7415,"aMS",%progbits,1
 	.type	.L.managed_type_name.7415, %object
 .L.managed_type_name.7415:
-	.asciz	"Java.Util.Zip.DeflaterOutputStream, Mono.Android"
-	.size	.L.managed_type_name.7415, 49
+	.asciz	"Java.Util.Zip.GZIPInputStream, Mono.Android"
+	.size	.L.managed_type_name.7415, 44
 	.section	.rodata.managed_type_name.7416,"aMS",%progbits,1
 	.type	.L.managed_type_name.7416, %object
 .L.managed_type_name.7416:
-	.asciz	"Java.Util.Zip.GZIPInputStream, Mono.Android"
-	.size	.L.managed_type_name.7416, 44
+	.asciz	"Java.Util.Zip.GZIPOutputStream, Mono.Android"
+	.size	.L.managed_type_name.7416, 45
 	.section	.rodata.managed_type_name.7417,"aMS",%progbits,1
 	.type	.L.managed_type_name.7417, %object
 .L.managed_type_name.7417:
-	.asciz	"Java.Util.Zip.GZIPOutputStream, Mono.Android"
+	.asciz	"Java.Util.Zip.IChecksumInvoker, Mono.Android"
 	.size	.L.managed_type_name.7417, 45
 	.section	.rodata.managed_type_name.7418,"aMS",%progbits,1
 	.type	.L.managed_type_name.7418, %object
 .L.managed_type_name.7418:
-	.asciz	"Java.Util.Zip.IChecksumInvoker, Mono.Android"
-	.size	.L.managed_type_name.7418, 45
+	.asciz	"Java.Util.Zip.Inflater, Mono.Android"
+	.size	.L.managed_type_name.7418, 37
 	.section	.rodata.managed_type_name.7419,"aMS",%progbits,1
 	.type	.L.managed_type_name.7419, %object
 .L.managed_type_name.7419:
-	.asciz	"Java.Util.Zip.Inflater, Mono.Android"
-	.size	.L.managed_type_name.7419, 37
+	.asciz	"Java.Util.Zip.InflaterInputStream, Mono.Android"
+	.size	.L.managed_type_name.7419, 48
 	.section	.rodata.managed_type_name.7420,"aMS",%progbits,1
 	.type	.L.managed_type_name.7420, %object
 .L.managed_type_name.7420:
-	.asciz	"Java.Util.Zip.InflaterInputStream, Mono.Android"
-	.size	.L.managed_type_name.7420, 48
+	.asciz	"Java.Util.Zip.InflaterOutputStream, Mono.Android"
+	.size	.L.managed_type_name.7420, 49
 	.section	.rodata.managed_type_name.7421,"aMS",%progbits,1
 	.type	.L.managed_type_name.7421, %object
 .L.managed_type_name.7421:
-	.asciz	"Java.Util.Zip.InflaterOutputStream, Mono.Android"
-	.size	.L.managed_type_name.7421, 49
+	.asciz	"Java.Util.Zip.ZipEntry, Mono.Android"
+	.size	.L.managed_type_name.7421, 37
 	.section	.rodata.managed_type_name.7422,"aMS",%progbits,1
 	.type	.L.managed_type_name.7422, %object
 .L.managed_type_name.7422:
-	.asciz	"Java.Util.Zip.ZipEntry, Mono.Android"
+	.asciz	"Java.Util.Zip.ZipError, Mono.Android"
 	.size	.L.managed_type_name.7422, 37
 	.section	.rodata.managed_type_name.7423,"aMS",%progbits,1
 	.type	.L.managed_type_name.7423, %object
 .L.managed_type_name.7423:
-	.asciz	"Java.Util.Zip.ZipError, Mono.Android"
-	.size	.L.managed_type_name.7423, 37
+	.asciz	"Java.Util.Zip.ZipException, Mono.Android"
+	.size	.L.managed_type_name.7423, 41
 	.section	.rodata.managed_type_name.7424,"aMS",%progbits,1
 	.type	.L.managed_type_name.7424, %object
 .L.managed_type_name.7424:
-	.asciz	"Java.Util.Zip.ZipException, Mono.Android"
-	.size	.L.managed_type_name.7424, 41
+	.asciz	"Java.Util.Zip.ZipFile, Mono.Android"
+	.size	.L.managed_type_name.7424, 36
 	.section	.rodata.managed_type_name.7425,"aMS",%progbits,1
 	.type	.L.managed_type_name.7425, %object
 .L.managed_type_name.7425:
-	.asciz	"Java.Util.Zip.ZipFile, Mono.Android"
-	.size	.L.managed_type_name.7425, 36
+	.asciz	"Java.Util.Zip.ZipInputStream, Mono.Android"
+	.size	.L.managed_type_name.7425, 43
 	.section	.rodata.managed_type_name.7426,"aMS",%progbits,1
 	.type	.L.managed_type_name.7426, %object
 .L.managed_type_name.7426:
-	.asciz	"Java.Util.Zip.ZipInputStream, Mono.Android"
-	.size	.L.managed_type_name.7426, 43
+	.asciz	"Java.Util.Zip.ZipOutputStream, Mono.Android"
+	.size	.L.managed_type_name.7426, 44
 	.section	.rodata.managed_type_name.7427,"aMS",%progbits,1
 	.type	.L.managed_type_name.7427, %object
 .L.managed_type_name.7427:
-	.asciz	"Java.Util.Zip.ZipOutputStream, Mono.Android"
-	.size	.L.managed_type_name.7427, 44
+	.asciz	"JavaX.Inject.IInjectInvoker, Xamarin.JavaX.Inject"
+	.size	.L.managed_type_name.7427, 50
 	.section	.rodata.managed_type_name.7428,"aMS",%progbits,1
 	.type	.L.managed_type_name.7428, %object
 .L.managed_type_name.7428:
-	.asciz	"JavaX.Inject.IInjectInvoker, Xamarin.JavaX.Inject"
-	.size	.L.managed_type_name.7428, 50
+	.asciz	"JavaX.Inject.INamedInvoker, Xamarin.JavaX.Inject"
+	.size	.L.managed_type_name.7428, 49
 	.section	.rodata.managed_type_name.7429,"aMS",%progbits,1
 	.type	.L.managed_type_name.7429, %object
 .L.managed_type_name.7429:
-	.asciz	"JavaX.Inject.INamedInvoker, Xamarin.JavaX.Inject"
-	.size	.L.managed_type_name.7429, 49
+	.asciz	"JavaX.Inject.IProviderInvoker, Xamarin.JavaX.Inject"
+	.size	.L.managed_type_name.7429, 52
 	.section	.rodata.managed_type_name.7430,"aMS",%progbits,1
 	.type	.L.managed_type_name.7430, %object
 .L.managed_type_name.7430:
-	.asciz	"JavaX.Inject.IProviderInvoker, Xamarin.JavaX.Inject"
-	.size	.L.managed_type_name.7430, 52
+	.asciz	"JavaX.Inject.IQualifierInvoker, Xamarin.JavaX.Inject"
+	.size	.L.managed_type_name.7430, 53
 	.section	.rodata.managed_type_name.7431,"aMS",%progbits,1
 	.type	.L.managed_type_name.7431, %object
 .L.managed_type_name.7431:
-	.asciz	"JavaX.Inject.IQualifierInvoker, Xamarin.JavaX.Inject"
-	.size	.L.managed_type_name.7431, 53
+	.asciz	"JavaX.Inject.IScopeInvoker, Xamarin.JavaX.Inject"
+	.size	.L.managed_type_name.7431, 49
 	.section	.rodata.managed_type_name.7432,"aMS",%progbits,1
 	.type	.L.managed_type_name.7432, %object
 .L.managed_type_name.7432:
-	.asciz	"JavaX.Inject.IScopeInvoker, Xamarin.JavaX.Inject"
-	.size	.L.managed_type_name.7432, 49
+	.asciz	"JavaX.Inject.ISingletonInvoker, Xamarin.JavaX.Inject"
+	.size	.L.managed_type_name.7432, 53
 	.section	.rodata.managed_type_name.7433,"aMS",%progbits,1
 	.type	.L.managed_type_name.7433, %object
 .L.managed_type_name.7433:
-	.asciz	"JavaX.Inject.ISingletonInvoker, Xamarin.JavaX.Inject"
-	.size	.L.managed_type_name.7433, 53
+	.asciz	"Javax.Crypto.AEADBadTagException, Mono.Android"
+	.size	.L.managed_type_name.7433, 47
 	.section	.rodata.managed_type_name.7434,"aMS",%progbits,1
 	.type	.L.managed_type_name.7434, %object
 .L.managed_type_name.7434:
-	.asciz	"Javax.Crypto.AEADBadTagException, Mono.Android"
+	.asciz	"Javax.Crypto.BadPaddingException, Mono.Android"
 	.size	.L.managed_type_name.7434, 47
 	.section	.rodata.managed_type_name.7435,"aMS",%progbits,1
 	.type	.L.managed_type_name.7435, %object
 .L.managed_type_name.7435:
-	.asciz	"Javax.Crypto.BadPaddingException, Mono.Android"
-	.size	.L.managed_type_name.7435, 47
+	.asciz	"Javax.Crypto.Cipher, Mono.Android"
+	.size	.L.managed_type_name.7435, 34
 	.section	.rodata.managed_type_name.7436,"aMS",%progbits,1
 	.type	.L.managed_type_name.7436, %object
 .L.managed_type_name.7436:
-	.asciz	"Javax.Crypto.Cipher, Mono.Android"
-	.size	.L.managed_type_name.7436, 34
+	.asciz	"Javax.Crypto.CipherInputStream, Mono.Android"
+	.size	.L.managed_type_name.7436, 45
 	.section	.rodata.managed_type_name.7437,"aMS",%progbits,1
 	.type	.L.managed_type_name.7437, %object
 .L.managed_type_name.7437:
-	.asciz	"Javax.Crypto.CipherInputStream, Mono.Android"
-	.size	.L.managed_type_name.7437, 45
+	.asciz	"Javax.Crypto.CipherOutputStream, Mono.Android"
+	.size	.L.managed_type_name.7437, 46
 	.section	.rodata.managed_type_name.7438,"aMS",%progbits,1
 	.type	.L.managed_type_name.7438, %object
 .L.managed_type_name.7438:
-	.asciz	"Javax.Crypto.CipherOutputStream, Mono.Android"
-	.size	.L.managed_type_name.7438, 46
+	.asciz	"Javax.Crypto.CipherSpi, Mono.Android"
+	.size	.L.managed_type_name.7438, 37
 	.section	.rodata.managed_type_name.7439,"aMS",%progbits,1
 	.type	.L.managed_type_name.7439, %object
 .L.managed_type_name.7439:
-	.asciz	"Javax.Crypto.CipherSpi, Mono.Android"
-	.size	.L.managed_type_name.7439, 37
+	.asciz	"Javax.Crypto.CipherSpiInvoker, Mono.Android"
+	.size	.L.managed_type_name.7439, 44
 	.section	.rodata.managed_type_name.7440,"aMS",%progbits,1
 	.type	.L.managed_type_name.7440, %object
 .L.managed_type_name.7440:
-	.asciz	"Javax.Crypto.CipherSpiInvoker, Mono.Android"
-	.size	.L.managed_type_name.7440, 44
+	.asciz	"Javax.Crypto.EncryptedPrivateKeyInfo, Mono.Android"
+	.size	.L.managed_type_name.7440, 51
 	.section	.rodata.managed_type_name.7441,"aMS",%progbits,1
 	.type	.L.managed_type_name.7441, %object
 .L.managed_type_name.7441:
-	.asciz	"Javax.Crypto.EncryptedPrivateKeyInfo, Mono.Android"
-	.size	.L.managed_type_name.7441, 51
+	.asciz	"Javax.Crypto.ExemptionMechanism, Mono.Android"
+	.size	.L.managed_type_name.7441, 46
 	.section	.rodata.managed_type_name.7442,"aMS",%progbits,1
 	.type	.L.managed_type_name.7442, %object
 .L.managed_type_name.7442:
-	.asciz	"Javax.Crypto.ExemptionMechanism, Mono.Android"
-	.size	.L.managed_type_name.7442, 46
+	.asciz	"Javax.Crypto.ExemptionMechanismException, Mono.Android"
+	.size	.L.managed_type_name.7442, 55
 	.section	.rodata.managed_type_name.7443,"aMS",%progbits,1
 	.type	.L.managed_type_name.7443, %object
 .L.managed_type_name.7443:
-	.asciz	"Javax.Crypto.ExemptionMechanismException, Mono.Android"
-	.size	.L.managed_type_name.7443, 55
+	.asciz	"Javax.Crypto.ExemptionMechanismSpi, Mono.Android"
+	.size	.L.managed_type_name.7443, 49
 	.section	.rodata.managed_type_name.7444,"aMS",%progbits,1
 	.type	.L.managed_type_name.7444, %object
 .L.managed_type_name.7444:
-	.asciz	"Javax.Crypto.ExemptionMechanismSpi, Mono.Android"
-	.size	.L.managed_type_name.7444, 49
+	.asciz	"Javax.Crypto.ExemptionMechanismSpiInvoker, Mono.Android"
+	.size	.L.managed_type_name.7444, 56
 	.section	.rodata.managed_type_name.7445,"aMS",%progbits,1
 	.type	.L.managed_type_name.7445, %object
 .L.managed_type_name.7445:
-	.asciz	"Javax.Crypto.ExemptionMechanismSpiInvoker, Mono.Android"
-	.size	.L.managed_type_name.7445, 56
+	.asciz	"Javax.Crypto.ISecretKeyInvoker, Mono.Android"
+	.size	.L.managed_type_name.7445, 45
 	.section	.rodata.managed_type_name.7446,"aMS",%progbits,1
 	.type	.L.managed_type_name.7446, %object
 .L.managed_type_name.7446:
-	.asciz	"Javax.Crypto.ISecretKeyInvoker, Mono.Android"
-	.size	.L.managed_type_name.7446, 45
+	.asciz	"Javax.Crypto.IllegalBlockSizeException, Mono.Android"
+	.size	.L.managed_type_name.7446, 53
 	.section	.rodata.managed_type_name.7447,"aMS",%progbits,1
 	.type	.L.managed_type_name.7447, %object
 .L.managed_type_name.7447:
-	.asciz	"Javax.Crypto.IllegalBlockSizeException, Mono.Android"
-	.size	.L.managed_type_name.7447, 53
+	.asciz	"Javax.Crypto.Interfaces.DHPrivateKey, Mono.Android"
+	.size	.L.managed_type_name.7447, 51
 	.section	.rodata.managed_type_name.7448,"aMS",%progbits,1
 	.type	.L.managed_type_name.7448, %object
 .L.managed_type_name.7448:
-	.asciz	"Javax.Crypto.Interfaces.DHPrivateKey, Mono.Android"
-	.size	.L.managed_type_name.7448, 51
+	.asciz	"Javax.Crypto.Interfaces.DHPublicKey, Mono.Android"
+	.size	.L.managed_type_name.7448, 50
 	.section	.rodata.managed_type_name.7449,"aMS",%progbits,1
 	.type	.L.managed_type_name.7449, %object
 .L.managed_type_name.7449:
-	.asciz	"Javax.Crypto.Interfaces.DHPublicKey, Mono.Android"
-	.size	.L.managed_type_name.7449, 50
+	.asciz	"Javax.Crypto.Interfaces.IDHKeyInvoker, Mono.Android"
+	.size	.L.managed_type_name.7449, 52
 	.section	.rodata.managed_type_name.7450,"aMS",%progbits,1
 	.type	.L.managed_type_name.7450, %object
 .L.managed_type_name.7450:
-	.asciz	"Javax.Crypto.Interfaces.IDHKeyInvoker, Mono.Android"
-	.size	.L.managed_type_name.7450, 52
+	.asciz	"Javax.Crypto.Interfaces.IDHPrivateKeyInvoker, Mono.Android"
+	.size	.L.managed_type_name.7450, 59
 	.section	.rodata.managed_type_name.7451,"aMS",%progbits,1
 	.type	.L.managed_type_name.7451, %object
 .L.managed_type_name.7451:
-	.asciz	"Javax.Crypto.Interfaces.IDHPrivateKeyInvoker, Mono.Android"
-	.size	.L.managed_type_name.7451, 59
+	.asciz	"Javax.Crypto.Interfaces.IDHPublicKeyInvoker, Mono.Android"
+	.size	.L.managed_type_name.7451, 58
 	.section	.rodata.managed_type_name.7452,"aMS",%progbits,1
 	.type	.L.managed_type_name.7452, %object
 .L.managed_type_name.7452:
-	.asciz	"Javax.Crypto.Interfaces.IDHPublicKeyInvoker, Mono.Android"
-	.size	.L.managed_type_name.7452, 58
+	.asciz	"Javax.Crypto.Interfaces.IPBEKeyInvoker, Mono.Android"
+	.size	.L.managed_type_name.7452, 53
 	.section	.rodata.managed_type_name.7453,"aMS",%progbits,1
 	.type	.L.managed_type_name.7453, %object
 .L.managed_type_name.7453:
-	.asciz	"Javax.Crypto.Interfaces.IPBEKeyInvoker, Mono.Android"
-	.size	.L.managed_type_name.7453, 53
+	.asciz	"Javax.Crypto.Interfaces.PBEKey, Mono.Android"
+	.size	.L.managed_type_name.7453, 45
 	.section	.rodata.managed_type_name.7454,"aMS",%progbits,1
 	.type	.L.managed_type_name.7454, %object
 .L.managed_type_name.7454:
-	.asciz	"Javax.Crypto.Interfaces.PBEKey, Mono.Android"
-	.size	.L.managed_type_name.7454, 45
+	.asciz	"Javax.Crypto.KeyAgreement, Mono.Android"
+	.size	.L.managed_type_name.7454, 40
 	.section	.rodata.managed_type_name.7455,"aMS",%progbits,1
 	.type	.L.managed_type_name.7455, %object
 .L.managed_type_name.7455:
-	.asciz	"Javax.Crypto.KeyAgreement, Mono.Android"
-	.size	.L.managed_type_name.7455, 40
+	.asciz	"Javax.Crypto.KeyAgreementSpi, Mono.Android"
+	.size	.L.managed_type_name.7455, 43
 	.section	.rodata.managed_type_name.7456,"aMS",%progbits,1
 	.type	.L.managed_type_name.7456, %object
 .L.managed_type_name.7456:
-	.asciz	"Javax.Crypto.KeyAgreementSpi, Mono.Android"
-	.size	.L.managed_type_name.7456, 43
+	.asciz	"Javax.Crypto.KeyAgreementSpiInvoker, Mono.Android"
+	.size	.L.managed_type_name.7456, 50
 	.section	.rodata.managed_type_name.7457,"aMS",%progbits,1
 	.type	.L.managed_type_name.7457, %object
 .L.managed_type_name.7457:
-	.asciz	"Javax.Crypto.KeyAgreementSpiInvoker, Mono.Android"
-	.size	.L.managed_type_name.7457, 50
+	.asciz	"Javax.Crypto.KeyGenerator, Mono.Android"
+	.size	.L.managed_type_name.7457, 40
 	.section	.rodata.managed_type_name.7458,"aMS",%progbits,1
 	.type	.L.managed_type_name.7458, %object
 .L.managed_type_name.7458:
-	.asciz	"Javax.Crypto.KeyGenerator, Mono.Android"
-	.size	.L.managed_type_name.7458, 40
+	.asciz	"Javax.Crypto.KeyGeneratorSpi, Mono.Android"
+	.size	.L.managed_type_name.7458, 43
 	.section	.rodata.managed_type_name.7459,"aMS",%progbits,1
 	.type	.L.managed_type_name.7459, %object
 .L.managed_type_name.7459:
-	.asciz	"Javax.Crypto.KeyGeneratorSpi, Mono.Android"
-	.size	.L.managed_type_name.7459, 43
+	.asciz	"Javax.Crypto.KeyGeneratorSpiInvoker, Mono.Android"
+	.size	.L.managed_type_name.7459, 50
 	.section	.rodata.managed_type_name.7460,"aMS",%progbits,1
 	.type	.L.managed_type_name.7460, %object
 .L.managed_type_name.7460:
-	.asciz	"Javax.Crypto.KeyGeneratorSpiInvoker, Mono.Android"
-	.size	.L.managed_type_name.7460, 50
+	.asciz	"Javax.Crypto.Mac, Mono.Android"
+	.size	.L.managed_type_name.7460, 31
 	.section	.rodata.managed_type_name.7461,"aMS",%progbits,1
 	.type	.L.managed_type_name.7461, %object
 .L.managed_type_name.7461:
-	.asciz	"Javax.Crypto.Mac, Mono.Android"
-	.size	.L.managed_type_name.7461, 31
+	.asciz	"Javax.Crypto.MacSpi, Mono.Android"
+	.size	.L.managed_type_name.7461, 34
 	.section	.rodata.managed_type_name.7462,"aMS",%progbits,1
 	.type	.L.managed_type_name.7462, %object
 .L.managed_type_name.7462:
-	.asciz	"Javax.Crypto.MacSpi, Mono.Android"
-	.size	.L.managed_type_name.7462, 34
+	.asciz	"Javax.Crypto.MacSpiInvoker, Mono.Android"
+	.size	.L.managed_type_name.7462, 41
 	.section	.rodata.managed_type_name.7463,"aMS",%progbits,1
 	.type	.L.managed_type_name.7463, %object
 .L.managed_type_name.7463:
-	.asciz	"Javax.Crypto.MacSpiInvoker, Mono.Android"
-	.size	.L.managed_type_name.7463, 41
+	.asciz	"Javax.Crypto.NoSuchPaddingException, Mono.Android"
+	.size	.L.managed_type_name.7463, 50
 	.section	.rodata.managed_type_name.7464,"aMS",%progbits,1
 	.type	.L.managed_type_name.7464, %object
 .L.managed_type_name.7464:
-	.asciz	"Javax.Crypto.NoSuchPaddingException, Mono.Android"
-	.size	.L.managed_type_name.7464, 50
+	.asciz	"Javax.Crypto.NullCipher, Mono.Android"
+	.size	.L.managed_type_name.7464, 38
 	.section	.rodata.managed_type_name.7465,"aMS",%progbits,1
 	.type	.L.managed_type_name.7465, %object
 .L.managed_type_name.7465:
-	.asciz	"Javax.Crypto.NullCipher, Mono.Android"
-	.size	.L.managed_type_name.7465, 38
+	.asciz	"Javax.Crypto.SealedObject, Mono.Android"
+	.size	.L.managed_type_name.7465, 40
 	.section	.rodata.managed_type_name.7466,"aMS",%progbits,1
 	.type	.L.managed_type_name.7466, %object
 .L.managed_type_name.7466:
-	.asciz	"Javax.Crypto.SealedObject, Mono.Android"
-	.size	.L.managed_type_name.7466, 40
+	.asciz	"Javax.Crypto.SecretKey, Mono.Android"
+	.size	.L.managed_type_name.7466, 37
 	.section	.rodata.managed_type_name.7467,"aMS",%progbits,1
 	.type	.L.managed_type_name.7467, %object
 .L.managed_type_name.7467:
-	.asciz	"Javax.Crypto.SecretKey, Mono.Android"
-	.size	.L.managed_type_name.7467, 37
+	.asciz	"Javax.Crypto.SecretKeyFactory, Mono.Android"
+	.size	.L.managed_type_name.7467, 44
 	.section	.rodata.managed_type_name.7468,"aMS",%progbits,1
 	.type	.L.managed_type_name.7468, %object
 .L.managed_type_name.7468:
-	.asciz	"Javax.Crypto.SecretKeyFactory, Mono.Android"
-	.size	.L.managed_type_name.7468, 44
+	.asciz	"Javax.Crypto.SecretKeyFactorySpi, Mono.Android"
+	.size	.L.managed_type_name.7468, 47
 	.section	.rodata.managed_type_name.7469,"aMS",%progbits,1
 	.type	.L.managed_type_name.7469, %object
 .L.managed_type_name.7469:
-	.asciz	"Javax.Crypto.SecretKeyFactorySpi, Mono.Android"
-	.size	.L.managed_type_name.7469, 47
+	.asciz	"Javax.Crypto.SecretKeyFactorySpiInvoker, Mono.Android"
+	.size	.L.managed_type_name.7469, 54
 	.section	.rodata.managed_type_name.7470,"aMS",%progbits,1
 	.type	.L.managed_type_name.7470, %object
 .L.managed_type_name.7470:
-	.asciz	"Javax.Crypto.SecretKeyFactorySpiInvoker, Mono.Android"
-	.size	.L.managed_type_name.7470, 54
+	.asciz	"Javax.Crypto.ShortBufferException, Mono.Android"
+	.size	.L.managed_type_name.7470, 48
 	.section	.rodata.managed_type_name.7471,"aMS",%progbits,1
 	.type	.L.managed_type_name.7471, %object
 .L.managed_type_name.7471:
-	.asciz	"Javax.Crypto.ShortBufferException, Mono.Android"
-	.size	.L.managed_type_name.7471, 48
+	.asciz	"Javax.Crypto.Spec.DESKeySpec, Mono.Android"
+	.size	.L.managed_type_name.7471, 43
 	.section	.rodata.managed_type_name.7472,"aMS",%progbits,1
 	.type	.L.managed_type_name.7472, %object
 .L.managed_type_name.7472:
-	.asciz	"Javax.Crypto.Spec.DESKeySpec, Mono.Android"
-	.size	.L.managed_type_name.7472, 43
+	.asciz	"Javax.Crypto.Spec.DESedeKeySpec, Mono.Android"
+	.size	.L.managed_type_name.7472, 46
 	.section	.rodata.managed_type_name.7473,"aMS",%progbits,1
 	.type	.L.managed_type_name.7473, %object
 .L.managed_type_name.7473:
-	.asciz	"Javax.Crypto.Spec.DESedeKeySpec, Mono.Android"
-	.size	.L.managed_type_name.7473, 46
+	.asciz	"Javax.Crypto.Spec.DHGenParameterSpec, Mono.Android"
+	.size	.L.managed_type_name.7473, 51
 	.section	.rodata.managed_type_name.7474,"aMS",%progbits,1
 	.type	.L.managed_type_name.7474, %object
 .L.managed_type_name.7474:
-	.asciz	"Javax.Crypto.Spec.DHGenParameterSpec, Mono.Android"
-	.size	.L.managed_type_name.7474, 51
+	.asciz	"Javax.Crypto.Spec.DHParameterSpec, Mono.Android"
+	.size	.L.managed_type_name.7474, 48
 	.section	.rodata.managed_type_name.7475,"aMS",%progbits,1
 	.type	.L.managed_type_name.7475, %object
 .L.managed_type_name.7475:
-	.asciz	"Javax.Crypto.Spec.DHParameterSpec, Mono.Android"
-	.size	.L.managed_type_name.7475, 48
+	.asciz	"Javax.Crypto.Spec.DHPrivateKeySpec, Mono.Android"
+	.size	.L.managed_type_name.7475, 49
 	.section	.rodata.managed_type_name.7476,"aMS",%progbits,1
 	.type	.L.managed_type_name.7476, %object
 .L.managed_type_name.7476:
-	.asciz	"Javax.Crypto.Spec.DHPrivateKeySpec, Mono.Android"
-	.size	.L.managed_type_name.7476, 49
+	.asciz	"Javax.Crypto.Spec.DHPublicKeySpec, Mono.Android"
+	.size	.L.managed_type_name.7476, 48
 	.section	.rodata.managed_type_name.7477,"aMS",%progbits,1
 	.type	.L.managed_type_name.7477, %object
 .L.managed_type_name.7477:
-	.asciz	"Javax.Crypto.Spec.DHPublicKeySpec, Mono.Android"
-	.size	.L.managed_type_name.7477, 48
+	.asciz	"Javax.Crypto.Spec.GCMParameterSpec, Mono.Android"
+	.size	.L.managed_type_name.7477, 49
 	.section	.rodata.managed_type_name.7478,"aMS",%progbits,1
 	.type	.L.managed_type_name.7478, %object
 .L.managed_type_name.7478:
-	.asciz	"Javax.Crypto.Spec.GCMParameterSpec, Mono.Android"
-	.size	.L.managed_type_name.7478, 49
+	.asciz	"Javax.Crypto.Spec.IvParameterSpec, Mono.Android"
+	.size	.L.managed_type_name.7478, 48
 	.section	.rodata.managed_type_name.7479,"aMS",%progbits,1
 	.type	.L.managed_type_name.7479, %object
 .L.managed_type_name.7479:
-	.asciz	"Javax.Crypto.Spec.IvParameterSpec, Mono.Android"
-	.size	.L.managed_type_name.7479, 48
+	.asciz	"Javax.Crypto.Spec.OAEPParameterSpec, Mono.Android"
+	.size	.L.managed_type_name.7479, 50
 	.section	.rodata.managed_type_name.7480,"aMS",%progbits,1
 	.type	.L.managed_type_name.7480, %object
 .L.managed_type_name.7480:
-	.asciz	"Javax.Crypto.Spec.OAEPParameterSpec, Mono.Android"
-	.size	.L.managed_type_name.7480, 50
+	.asciz	"Javax.Crypto.Spec.PBEKeySpec, Mono.Android"
+	.size	.L.managed_type_name.7480, 43
 	.section	.rodata.managed_type_name.7481,"aMS",%progbits,1
 	.type	.L.managed_type_name.7481, %object
 .L.managed_type_name.7481:
-	.asciz	"Javax.Crypto.Spec.PBEKeySpec, Mono.Android"
-	.size	.L.managed_type_name.7481, 43
+	.asciz	"Javax.Crypto.Spec.PBEParameterSpec, Mono.Android"
+	.size	.L.managed_type_name.7481, 49
 	.section	.rodata.managed_type_name.7482,"aMS",%progbits,1
 	.type	.L.managed_type_name.7482, %object
 .L.managed_type_name.7482:
-	.asciz	"Javax.Crypto.Spec.PBEParameterSpec, Mono.Android"
-	.size	.L.managed_type_name.7482, 49
+	.asciz	"Javax.Crypto.Spec.PSource+PSpecified, Mono.Android"
+	.size	.L.managed_type_name.7482, 51
 	.section	.rodata.managed_type_name.7483,"aMS",%progbits,1
 	.type	.L.managed_type_name.7483, %object
 .L.managed_type_name.7483:
-	.asciz	"Javax.Crypto.Spec.PSource+PSpecified, Mono.Android"
-	.size	.L.managed_type_name.7483, 51
+	.asciz	"Javax.Crypto.Spec.PSource, Mono.Android"
+	.size	.L.managed_type_name.7483, 40
 	.section	.rodata.managed_type_name.7484,"aMS",%progbits,1
 	.type	.L.managed_type_name.7484, %object
 .L.managed_type_name.7484:
-	.asciz	"Javax.Crypto.Spec.PSource, Mono.Android"
-	.size	.L.managed_type_name.7484, 40
+	.asciz	"Javax.Crypto.Spec.RC2ParameterSpec, Mono.Android"
+	.size	.L.managed_type_name.7484, 49
 	.section	.rodata.managed_type_name.7485,"aMS",%progbits,1
 	.type	.L.managed_type_name.7485, %object
 .L.managed_type_name.7485:
-	.asciz	"Javax.Crypto.Spec.RC2ParameterSpec, Mono.Android"
+	.asciz	"Javax.Crypto.Spec.RC5ParameterSpec, Mono.Android"
 	.size	.L.managed_type_name.7485, 49
 	.section	.rodata.managed_type_name.7486,"aMS",%progbits,1
 	.type	.L.managed_type_name.7486, %object
 .L.managed_type_name.7486:
-	.asciz	"Javax.Crypto.Spec.RC5ParameterSpec, Mono.Android"
-	.size	.L.managed_type_name.7486, 49
+	.asciz	"Javax.Crypto.Spec.SecretKeySpec, Mono.Android"
+	.size	.L.managed_type_name.7486, 46
 	.section	.rodata.managed_type_name.7487,"aMS",%progbits,1
 	.type	.L.managed_type_name.7487, %object
 .L.managed_type_name.7487:
-	.asciz	"Javax.Crypto.Spec.SecretKeySpec, Mono.Android"
-	.size	.L.managed_type_name.7487, 46
+	.asciz	"Javax.Microedition.Khronos.Egl.EGL10, Mono.Android"
+	.size	.L.managed_type_name.7487, 51
 	.section	.rodata.managed_type_name.7488,"aMS",%progbits,1
 	.type	.L.managed_type_name.7488, %object
 .L.managed_type_name.7488:
-	.asciz	"Javax.Microedition.Khronos.Egl.EGL10, Mono.Android"
+	.asciz	"Javax.Microedition.Khronos.Egl.EGL11, Mono.Android"
 	.size	.L.managed_type_name.7488, 51
 	.section	.rodata.managed_type_name.7489,"aMS",%progbits,1
 	.type	.L.managed_type_name.7489, %object
 .L.managed_type_name.7489:
-	.asciz	"Javax.Microedition.Khronos.Egl.EGL11, Mono.Android"
-	.size	.L.managed_type_name.7489, 51
+	.asciz	"Javax.Microedition.Khronos.Egl.EGLConfig, Mono.Android"
+	.size	.L.managed_type_name.7489, 55
 	.section	.rodata.managed_type_name.7490,"aMS",%progbits,1
 	.type	.L.managed_type_name.7490, %object
 .L.managed_type_name.7490:
-	.asciz	"Javax.Microedition.Khronos.Egl.EGLConfig, Mono.Android"
-	.size	.L.managed_type_name.7490, 55
+	.asciz	"Javax.Microedition.Khronos.Egl.EGLConfigInvoker, Mono.Android"
+	.size	.L.managed_type_name.7490, 62
 	.section	.rodata.managed_type_name.7491,"aMS",%progbits,1
 	.type	.L.managed_type_name.7491, %object
 .L.managed_type_name.7491:
-	.asciz	"Javax.Microedition.Khronos.Egl.EGLConfigInvoker, Mono.Android"
-	.size	.L.managed_type_name.7491, 62
+	.asciz	"Javax.Microedition.Khronos.Egl.EGLContext, Mono.Android"
+	.size	.L.managed_type_name.7491, 56
 	.section	.rodata.managed_type_name.7492,"aMS",%progbits,1
 	.type	.L.managed_type_name.7492, %object
 .L.managed_type_name.7492:
-	.asciz	"Javax.Microedition.Khronos.Egl.EGLContext, Mono.Android"
-	.size	.L.managed_type_name.7492, 56
+	.asciz	"Javax.Microedition.Khronos.Egl.EGLContextInvoker, Mono.Android"
+	.size	.L.managed_type_name.7492, 63
 	.section	.rodata.managed_type_name.7493,"aMS",%progbits,1
 	.type	.L.managed_type_name.7493, %object
 .L.managed_type_name.7493:
-	.asciz	"Javax.Microedition.Khronos.Egl.EGLContextInvoker, Mono.Android"
-	.size	.L.managed_type_name.7493, 63
+	.asciz	"Javax.Microedition.Khronos.Egl.EGLDisplay, Mono.Android"
+	.size	.L.managed_type_name.7493, 56
 	.section	.rodata.managed_type_name.7494,"aMS",%progbits,1
 	.type	.L.managed_type_name.7494, %object
 .L.managed_type_name.7494:
-	.asciz	"Javax.Microedition.Khronos.Egl.EGLDisplay, Mono.Android"
-	.size	.L.managed_type_name.7494, 56
+	.asciz	"Javax.Microedition.Khronos.Egl.EGLDisplayInvoker, Mono.Android"
+	.size	.L.managed_type_name.7494, 63
 	.section	.rodata.managed_type_name.7495,"aMS",%progbits,1
 	.type	.L.managed_type_name.7495, %object
 .L.managed_type_name.7495:
-	.asciz	"Javax.Microedition.Khronos.Egl.EGLDisplayInvoker, Mono.Android"
-	.size	.L.managed_type_name.7495, 63
+	.asciz	"Javax.Microedition.Khronos.Egl.EGLSurface, Mono.Android"
+	.size	.L.managed_type_name.7495, 56
 	.section	.rodata.managed_type_name.7496,"aMS",%progbits,1
 	.type	.L.managed_type_name.7496, %object
 .L.managed_type_name.7496:
-	.asciz	"Javax.Microedition.Khronos.Egl.EGLSurface, Mono.Android"
-	.size	.L.managed_type_name.7496, 56
+	.asciz	"Javax.Microedition.Khronos.Egl.EGLSurfaceInvoker, Mono.Android"
+	.size	.L.managed_type_name.7496, 63
 	.section	.rodata.managed_type_name.7497,"aMS",%progbits,1
 	.type	.L.managed_type_name.7497, %object
 .L.managed_type_name.7497:
-	.asciz	"Javax.Microedition.Khronos.Egl.EGLSurfaceInvoker, Mono.Android"
-	.size	.L.managed_type_name.7497, 63
+	.asciz	"Javax.Microedition.Khronos.Egl.IEGL10Invoker, Mono.Android"
+	.size	.L.managed_type_name.7497, 59
 	.section	.rodata.managed_type_name.7498,"aMS",%progbits,1
 	.type	.L.managed_type_name.7498, %object
 .L.managed_type_name.7498:
-	.asciz	"Javax.Microedition.Khronos.Egl.IEGL10Invoker, Mono.Android"
+	.asciz	"Javax.Microedition.Khronos.Egl.IEGL11Invoker, Mono.Android"
 	.size	.L.managed_type_name.7498, 59
 	.section	.rodata.managed_type_name.7499,"aMS",%progbits,1
 	.type	.L.managed_type_name.7499, %object
 .L.managed_type_name.7499:
-	.asciz	"Javax.Microedition.Khronos.Egl.IEGL11Invoker, Mono.Android"
-	.size	.L.managed_type_name.7499, 59
+	.asciz	"Javax.Microedition.Khronos.Egl.IEGLInvoker, Mono.Android"
+	.size	.L.managed_type_name.7499, 57
 	.section	.rodata.managed_type_name.7500,"aMS",%progbits,1
 	.type	.L.managed_type_name.7500, %object
 .L.managed_type_name.7500:
-	.asciz	"Javax.Microedition.Khronos.Egl.IEGLInvoker, Mono.Android"
-	.size	.L.managed_type_name.7500, 57
+	.asciz	"Javax.Microedition.Khronos.Opengles.GL10, Mono.Android"
+	.size	.L.managed_type_name.7500, 55
 	.section	.rodata.managed_type_name.7501,"aMS",%progbits,1
 	.type	.L.managed_type_name.7501, %object
 .L.managed_type_name.7501:
-	.asciz	"Javax.Microedition.Khronos.Opengles.GL10, Mono.Android"
+	.asciz	"Javax.Microedition.Khronos.Opengles.GL11, Mono.Android"
 	.size	.L.managed_type_name.7501, 55
 	.section	.rodata.managed_type_name.7502,"aMS",%progbits,1
 	.type	.L.managed_type_name.7502, %object
 .L.managed_type_name.7502:
-	.asciz	"Javax.Microedition.Khronos.Opengles.GL11, Mono.Android"
-	.size	.L.managed_type_name.7502, 55
+	.asciz	"Javax.Microedition.Khronos.Opengles.GL11Ext, Mono.Android"
+	.size	.L.managed_type_name.7502, 58
 	.section	.rodata.managed_type_name.7503,"aMS",%progbits,1
 	.type	.L.managed_type_name.7503, %object
 .L.managed_type_name.7503:
-	.asciz	"Javax.Microedition.Khronos.Opengles.GL11Ext, Mono.Android"
-	.size	.L.managed_type_name.7503, 58
+	.asciz	"Javax.Microedition.Khronos.Opengles.GL11ExtensionPack, Mono.Android"
+	.size	.L.managed_type_name.7503, 68
 	.section	.rodata.managed_type_name.7504,"aMS",%progbits,1
 	.type	.L.managed_type_name.7504, %object
 .L.managed_type_name.7504:
-	.asciz	"Javax.Microedition.Khronos.Opengles.GL11ExtensionPack, Mono.Android"
-	.size	.L.managed_type_name.7504, 68
+	.asciz	"Javax.Microedition.Khronos.Opengles.IGL10ExtInvoker, Mono.Android"
+	.size	.L.managed_type_name.7504, 66
 	.section	.rodata.managed_type_name.7505,"aMS",%progbits,1
 	.type	.L.managed_type_name.7505, %object
 .L.managed_type_name.7505:
-	.asciz	"Javax.Microedition.Khronos.Opengles.IGL10ExtInvoker, Mono.Android"
-	.size	.L.managed_type_name.7505, 66
+	.asciz	"Javax.Microedition.Khronos.Opengles.IGL10Invoker, Mono.Android"
+	.size	.L.managed_type_name.7505, 63
 	.section	.rodata.managed_type_name.7506,"aMS",%progbits,1
 	.type	.L.managed_type_name.7506, %object
 .L.managed_type_name.7506:
-	.asciz	"Javax.Microedition.Khronos.Opengles.IGL10Invoker, Mono.Android"
-	.size	.L.managed_type_name.7506, 63
+	.asciz	"Javax.Microedition.Khronos.Opengles.IGL11ExtInvoker, Mono.Android"
+	.size	.L.managed_type_name.7506, 66
 	.section	.rodata.managed_type_name.7507,"aMS",%progbits,1
 	.type	.L.managed_type_name.7507, %object
 .L.managed_type_name.7507:
-	.asciz	"Javax.Microedition.Khronos.Opengles.IGL11ExtInvoker, Mono.Android"
-	.size	.L.managed_type_name.7507, 66
+	.asciz	"Javax.Microedition.Khronos.Opengles.IGL11ExtensionPackInvoker, Mono.Android"
+	.size	.L.managed_type_name.7507, 76
 	.section	.rodata.managed_type_name.7508,"aMS",%progbits,1
 	.type	.L.managed_type_name.7508, %object
 .L.managed_type_name.7508:
-	.asciz	"Javax.Microedition.Khronos.Opengles.IGL11ExtensionPackInvoker, Mono.Android"
-	.size	.L.managed_type_name.7508, 76
+	.asciz	"Javax.Microedition.Khronos.Opengles.IGL11Invoker, Mono.Android"
+	.size	.L.managed_type_name.7508, 63
 	.section	.rodata.managed_type_name.7509,"aMS",%progbits,1
 	.type	.L.managed_type_name.7509, %object
 .L.managed_type_name.7509:
-	.asciz	"Javax.Microedition.Khronos.Opengles.IGL11Invoker, Mono.Android"
-	.size	.L.managed_type_name.7509, 63
+	.asciz	"Javax.Microedition.Khronos.Opengles.IGLInvoker, Mono.Android"
+	.size	.L.managed_type_name.7509, 61
 	.section	.rodata.managed_type_name.7510,"aMS",%progbits,1
 	.type	.L.managed_type_name.7510, %object
 .L.managed_type_name.7510:
-	.asciz	"Javax.Microedition.Khronos.Opengles.IGLInvoker, Mono.Android"
-	.size	.L.managed_type_name.7510, 61
+	.asciz	"Javax.Net.ServerSocketFactory, Mono.Android"
+	.size	.L.managed_type_name.7510, 44
 	.section	.rodata.managed_type_name.7511,"aMS",%progbits,1
 	.type	.L.managed_type_name.7511, %object
 .L.managed_type_name.7511:
-	.asciz	"Javax.Net.ServerSocketFactory, Mono.Android"
-	.size	.L.managed_type_name.7511, 44
+	.asciz	"Javax.Net.ServerSocketFactoryInvoker, Mono.Android"
+	.size	.L.managed_type_name.7511, 51
 	.section	.rodata.managed_type_name.7512,"aMS",%progbits,1
 	.type	.L.managed_type_name.7512, %object
 .L.managed_type_name.7512:
-	.asciz	"Javax.Net.ServerSocketFactoryInvoker, Mono.Android"
-	.size	.L.managed_type_name.7512, 51
+	.asciz	"Javax.Net.SocketFactory, Mono.Android"
+	.size	.L.managed_type_name.7512, 38
 	.section	.rodata.managed_type_name.7513,"aMS",%progbits,1
 	.type	.L.managed_type_name.7513, %object
 .L.managed_type_name.7513:
-	.asciz	"Javax.Net.SocketFactory, Mono.Android"
-	.size	.L.managed_type_name.7513, 38
+	.asciz	"Javax.Net.SocketFactoryInvoker, Mono.Android"
+	.size	.L.managed_type_name.7513, 45
 	.section	.rodata.managed_type_name.7514,"aMS",%progbits,1
 	.type	.L.managed_type_name.7514, %object
 .L.managed_type_name.7514:
-	.asciz	"Javax.Net.SocketFactoryInvoker, Mono.Android"
-	.size	.L.managed_type_name.7514, 45
+	.asciz	"Javax.Net.Ssl.CertPathTrustManagerParameters, Mono.Android"
+	.size	.L.managed_type_name.7514, 59
 	.section	.rodata.managed_type_name.7515,"aMS",%progbits,1
 	.type	.L.managed_type_name.7515, %object
 .L.managed_type_name.7515:
-	.asciz	"Javax.Net.Ssl.CertPathTrustManagerParameters, Mono.Android"
-	.size	.L.managed_type_name.7515, 59
+	.asciz	"Javax.Net.Ssl.ExtendedSSLSession, Mono.Android"
+	.size	.L.managed_type_name.7515, 47
 	.section	.rodata.managed_type_name.7516,"aMS",%progbits,1
 	.type	.L.managed_type_name.7516, %object
 .L.managed_type_name.7516:
-	.asciz	"Javax.Net.Ssl.ExtendedSSLSession, Mono.Android"
-	.size	.L.managed_type_name.7516, 47
+	.asciz	"Javax.Net.Ssl.ExtendedSSLSessionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7516, 54
 	.section	.rodata.managed_type_name.7517,"aMS",%progbits,1
 	.type	.L.managed_type_name.7517, %object
 .L.managed_type_name.7517:
-	.asciz	"Javax.Net.Ssl.ExtendedSSLSessionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7517, 54
+	.asciz	"Javax.Net.Ssl.HandshakeCompletedEvent, Mono.Android"
+	.size	.L.managed_type_name.7517, 52
 	.section	.rodata.managed_type_name.7518,"aMS",%progbits,1
 	.type	.L.managed_type_name.7518, %object
 .L.managed_type_name.7518:
-	.asciz	"Javax.Net.Ssl.HandshakeCompletedEvent, Mono.Android"
-	.size	.L.managed_type_name.7518, 52
+	.asciz	"Javax.Net.Ssl.HttpsURLConnection, Mono.Android"
+	.size	.L.managed_type_name.7518, 47
 	.section	.rodata.managed_type_name.7519,"aMS",%progbits,1
 	.type	.L.managed_type_name.7519, %object
 .L.managed_type_name.7519:
-	.asciz	"Javax.Net.Ssl.HttpsURLConnection, Mono.Android"
-	.size	.L.managed_type_name.7519, 47
+	.asciz	"Javax.Net.Ssl.HttpsURLConnectionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7519, 54
 	.section	.rodata.managed_type_name.7520,"aMS",%progbits,1
 	.type	.L.managed_type_name.7520, %object
 .L.managed_type_name.7520:
-	.asciz	"Javax.Net.Ssl.HttpsURLConnectionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7520, 54
+	.asciz	"Javax.Net.Ssl.IHandshakeCompletedListenerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7520, 63
 	.section	.rodata.managed_type_name.7521,"aMS",%progbits,1
 	.type	.L.managed_type_name.7521, %object
 .L.managed_type_name.7521:
-	.asciz	"Javax.Net.Ssl.IHandshakeCompletedListenerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7521, 63
+	.asciz	"Javax.Net.Ssl.IHostnameVerifierInvoker, Mono.Android"
+	.size	.L.managed_type_name.7521, 53
 	.section	.rodata.managed_type_name.7522,"aMS",%progbits,1
 	.type	.L.managed_type_name.7522, %object
 .L.managed_type_name.7522:
-	.asciz	"Javax.Net.Ssl.IHostnameVerifierInvoker, Mono.Android"
-	.size	.L.managed_type_name.7522, 53
+	.asciz	"Javax.Net.Ssl.IKeyManagerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7522, 47
 	.section	.rodata.managed_type_name.7523,"aMS",%progbits,1
 	.type	.L.managed_type_name.7523, %object
 .L.managed_type_name.7523:
-	.asciz	"Javax.Net.Ssl.IKeyManagerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7523, 47
+	.asciz	"Javax.Net.Ssl.IManagerFactoryParametersInvoker, Mono.Android"
+	.size	.L.managed_type_name.7523, 61
 	.section	.rodata.managed_type_name.7524,"aMS",%progbits,1
 	.type	.L.managed_type_name.7524, %object
 .L.managed_type_name.7524:
-	.asciz	"Javax.Net.Ssl.IManagerFactoryParametersInvoker, Mono.Android"
-	.size	.L.managed_type_name.7524, 61
+	.asciz	"Javax.Net.Ssl.ISSLSessionBindingListenerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7524, 62
 	.section	.rodata.managed_type_name.7525,"aMS",%progbits,1
 	.type	.L.managed_type_name.7525, %object
 .L.managed_type_name.7525:
-	.asciz	"Javax.Net.Ssl.ISSLSessionBindingListenerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7525, 62
+	.asciz	"Javax.Net.Ssl.ISSLSessionContextInvoker, Mono.Android"
+	.size	.L.managed_type_name.7525, 54
 	.section	.rodata.managed_type_name.7526,"aMS",%progbits,1
 	.type	.L.managed_type_name.7526, %object
 .L.managed_type_name.7526:
-	.asciz	"Javax.Net.Ssl.ISSLSessionContextInvoker, Mono.Android"
-	.size	.L.managed_type_name.7526, 54
+	.asciz	"Javax.Net.Ssl.ISSLSessionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7526, 47
 	.section	.rodata.managed_type_name.7527,"aMS",%progbits,1
 	.type	.L.managed_type_name.7527, %object
 .L.managed_type_name.7527:
-	.asciz	"Javax.Net.Ssl.ISSLSessionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7527, 47
+	.asciz	"Javax.Net.Ssl.ITrustManagerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7527, 49
 	.section	.rodata.managed_type_name.7528,"aMS",%progbits,1
 	.type	.L.managed_type_name.7528, %object
 .L.managed_type_name.7528:
-	.asciz	"Javax.Net.Ssl.ITrustManagerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7528, 49
+	.asciz	"Javax.Net.Ssl.IX509KeyManagerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7528, 51
 	.section	.rodata.managed_type_name.7529,"aMS",%progbits,1
 	.type	.L.managed_type_name.7529, %object
 .L.managed_type_name.7529:
-	.asciz	"Javax.Net.Ssl.IX509KeyManagerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7529, 51
+	.asciz	"Javax.Net.Ssl.IX509TrustManagerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7529, 53
 	.section	.rodata.managed_type_name.7530,"aMS",%progbits,1
 	.type	.L.managed_type_name.7530, %object
 .L.managed_type_name.7530:
-	.asciz	"Javax.Net.Ssl.IX509TrustManagerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7530, 53
+	.asciz	"Javax.Net.Ssl.KeyManagerFactory, Mono.Android"
+	.size	.L.managed_type_name.7530, 46
 	.section	.rodata.managed_type_name.7531,"aMS",%progbits,1
 	.type	.L.managed_type_name.7531, %object
 .L.managed_type_name.7531:
-	.asciz	"Javax.Net.Ssl.KeyManagerFactory, Mono.Android"
-	.size	.L.managed_type_name.7531, 46
+	.asciz	"Javax.Net.Ssl.KeyManagerFactorySpi, Mono.Android"
+	.size	.L.managed_type_name.7531, 49
 	.section	.rodata.managed_type_name.7532,"aMS",%progbits,1
 	.type	.L.managed_type_name.7532, %object
 .L.managed_type_name.7532:
-	.asciz	"Javax.Net.Ssl.KeyManagerFactorySpi, Mono.Android"
-	.size	.L.managed_type_name.7532, 49
+	.asciz	"Javax.Net.Ssl.KeyManagerFactorySpiInvoker, Mono.Android"
+	.size	.L.managed_type_name.7532, 56
 	.section	.rodata.managed_type_name.7533,"aMS",%progbits,1
 	.type	.L.managed_type_name.7533, %object
 .L.managed_type_name.7533:
-	.asciz	"Javax.Net.Ssl.KeyManagerFactorySpiInvoker, Mono.Android"
-	.size	.L.managed_type_name.7533, 56
+	.asciz	"Javax.Net.Ssl.KeyStoreBuilderParameters, Mono.Android"
+	.size	.L.managed_type_name.7533, 54
 	.section	.rodata.managed_type_name.7534,"aMS",%progbits,1
 	.type	.L.managed_type_name.7534, %object
 .L.managed_type_name.7534:
-	.asciz	"Javax.Net.Ssl.KeyStoreBuilderParameters, Mono.Android"
-	.size	.L.managed_type_name.7534, 54
+	.asciz	"Javax.Net.Ssl.SNIHostName, Mono.Android"
+	.size	.L.managed_type_name.7534, 40
 	.section	.rodata.managed_type_name.7535,"aMS",%progbits,1
 	.type	.L.managed_type_name.7535, %object
 .L.managed_type_name.7535:
-	.asciz	"Javax.Net.Ssl.SNIHostName, Mono.Android"
-	.size	.L.managed_type_name.7535, 40
+	.asciz	"Javax.Net.Ssl.SNIMatcher, Mono.Android"
+	.size	.L.managed_type_name.7535, 39
 	.section	.rodata.managed_type_name.7536,"aMS",%progbits,1
 	.type	.L.managed_type_name.7536, %object
 .L.managed_type_name.7536:
-	.asciz	"Javax.Net.Ssl.SNIMatcher, Mono.Android"
-	.size	.L.managed_type_name.7536, 39
+	.asciz	"Javax.Net.Ssl.SNIMatcherInvoker, Mono.Android"
+	.size	.L.managed_type_name.7536, 46
 	.section	.rodata.managed_type_name.7537,"aMS",%progbits,1
 	.type	.L.managed_type_name.7537, %object
 .L.managed_type_name.7537:
-	.asciz	"Javax.Net.Ssl.SNIMatcherInvoker, Mono.Android"
-	.size	.L.managed_type_name.7537, 46
+	.asciz	"Javax.Net.Ssl.SNIServerName, Mono.Android"
+	.size	.L.managed_type_name.7537, 42
 	.section	.rodata.managed_type_name.7538,"aMS",%progbits,1
 	.type	.L.managed_type_name.7538, %object
 .L.managed_type_name.7538:
-	.asciz	"Javax.Net.Ssl.SNIServerName, Mono.Android"
-	.size	.L.managed_type_name.7538, 42
+	.asciz	"Javax.Net.Ssl.SNIServerNameInvoker, Mono.Android"
+	.size	.L.managed_type_name.7538, 49
 	.section	.rodata.managed_type_name.7539,"aMS",%progbits,1
 	.type	.L.managed_type_name.7539, %object
 .L.managed_type_name.7539:
-	.asciz	"Javax.Net.Ssl.SNIServerNameInvoker, Mono.Android"
-	.size	.L.managed_type_name.7539, 49
+	.asciz	"Javax.Net.Ssl.SSLContext, Mono.Android"
+	.size	.L.managed_type_name.7539, 39
 	.section	.rodata.managed_type_name.7540,"aMS",%progbits,1
 	.type	.L.managed_type_name.7540, %object
 .L.managed_type_name.7540:
-	.asciz	"Javax.Net.Ssl.SSLContext, Mono.Android"
-	.size	.L.managed_type_name.7540, 39
+	.asciz	"Javax.Net.Ssl.SSLContextSpi, Mono.Android"
+	.size	.L.managed_type_name.7540, 42
 	.section	.rodata.managed_type_name.7541,"aMS",%progbits,1
 	.type	.L.managed_type_name.7541, %object
 .L.managed_type_name.7541:
-	.asciz	"Javax.Net.Ssl.SSLContextSpi, Mono.Android"
-	.size	.L.managed_type_name.7541, 42
+	.asciz	"Javax.Net.Ssl.SSLContextSpiInvoker, Mono.Android"
+	.size	.L.managed_type_name.7541, 49
 	.section	.rodata.managed_type_name.7542,"aMS",%progbits,1
 	.type	.L.managed_type_name.7542, %object
 .L.managed_type_name.7542:
-	.asciz	"Javax.Net.Ssl.SSLContextSpiInvoker, Mono.Android"
-	.size	.L.managed_type_name.7542, 49
+	.asciz	"Javax.Net.Ssl.SSLEngine, Mono.Android"
+	.size	.L.managed_type_name.7542, 38
 	.section	.rodata.managed_type_name.7543,"aMS",%progbits,1
 	.type	.L.managed_type_name.7543, %object
 .L.managed_type_name.7543:
-	.asciz	"Javax.Net.Ssl.SSLEngine, Mono.Android"
-	.size	.L.managed_type_name.7543, 38
+	.asciz	"Javax.Net.Ssl.SSLEngineInvoker, Mono.Android"
+	.size	.L.managed_type_name.7543, 45
 	.section	.rodata.managed_type_name.7544,"aMS",%progbits,1
 	.type	.L.managed_type_name.7544, %object
 .L.managed_type_name.7544:
-	.asciz	"Javax.Net.Ssl.SSLEngineInvoker, Mono.Android"
-	.size	.L.managed_type_name.7544, 45
+	.asciz	"Javax.Net.Ssl.SSLEngineResult+HandshakeStatus, Mono.Android"
+	.size	.L.managed_type_name.7544, 60
 	.section	.rodata.managed_type_name.7545,"aMS",%progbits,1
 	.type	.L.managed_type_name.7545, %object
 .L.managed_type_name.7545:
-	.asciz	"Javax.Net.Ssl.SSLEngineResult+HandshakeStatus, Mono.Android"
-	.size	.L.managed_type_name.7545, 60
+	.asciz	"Javax.Net.Ssl.SSLEngineResult+Status, Mono.Android"
+	.size	.L.managed_type_name.7545, 51
 	.section	.rodata.managed_type_name.7546,"aMS",%progbits,1
 	.type	.L.managed_type_name.7546, %object
 .L.managed_type_name.7546:
-	.asciz	"Javax.Net.Ssl.SSLEngineResult+Status, Mono.Android"
-	.size	.L.managed_type_name.7546, 51
+	.asciz	"Javax.Net.Ssl.SSLEngineResult, Mono.Android"
+	.size	.L.managed_type_name.7546, 44
 	.section	.rodata.managed_type_name.7547,"aMS",%progbits,1
 	.type	.L.managed_type_name.7547, %object
 .L.managed_type_name.7547:
-	.asciz	"Javax.Net.Ssl.SSLEngineResult, Mono.Android"
-	.size	.L.managed_type_name.7547, 44
+	.asciz	"Javax.Net.Ssl.SSLException, Mono.Android"
+	.size	.L.managed_type_name.7547, 41
 	.section	.rodata.managed_type_name.7548,"aMS",%progbits,1
 	.type	.L.managed_type_name.7548, %object
 .L.managed_type_name.7548:
-	.asciz	"Javax.Net.Ssl.SSLException, Mono.Android"
-	.size	.L.managed_type_name.7548, 41
+	.asciz	"Javax.Net.Ssl.SSLHandshakeException, Mono.Android"
+	.size	.L.managed_type_name.7548, 50
 	.section	.rodata.managed_type_name.7549,"aMS",%progbits,1
 	.type	.L.managed_type_name.7549, %object
 .L.managed_type_name.7549:
-	.asciz	"Javax.Net.Ssl.SSLHandshakeException, Mono.Android"
-	.size	.L.managed_type_name.7549, 50
+	.asciz	"Javax.Net.Ssl.SSLKeyException, Mono.Android"
+	.size	.L.managed_type_name.7549, 44
 	.section	.rodata.managed_type_name.7550,"aMS",%progbits,1
 	.type	.L.managed_type_name.7550, %object
 .L.managed_type_name.7550:
-	.asciz	"Javax.Net.Ssl.SSLKeyException, Mono.Android"
-	.size	.L.managed_type_name.7550, 44
+	.asciz	"Javax.Net.Ssl.SSLParameters, Mono.Android"
+	.size	.L.managed_type_name.7550, 42
 	.section	.rodata.managed_type_name.7551,"aMS",%progbits,1
 	.type	.L.managed_type_name.7551, %object
 .L.managed_type_name.7551:
-	.asciz	"Javax.Net.Ssl.SSLParameters, Mono.Android"
-	.size	.L.managed_type_name.7551, 42
+	.asciz	"Javax.Net.Ssl.SSLPeerUnverifiedException, Mono.Android"
+	.size	.L.managed_type_name.7551, 55
 	.section	.rodata.managed_type_name.7552,"aMS",%progbits,1
 	.type	.L.managed_type_name.7552, %object
 .L.managed_type_name.7552:
-	.asciz	"Javax.Net.Ssl.SSLPeerUnverifiedException, Mono.Android"
-	.size	.L.managed_type_name.7552, 55
+	.asciz	"Javax.Net.Ssl.SSLPermission, Mono.Android"
+	.size	.L.managed_type_name.7552, 42
 	.section	.rodata.managed_type_name.7553,"aMS",%progbits,1
 	.type	.L.managed_type_name.7553, %object
 .L.managed_type_name.7553:
-	.asciz	"Javax.Net.Ssl.SSLPermission, Mono.Android"
-	.size	.L.managed_type_name.7553, 42
+	.asciz	"Javax.Net.Ssl.SSLProtocolException, Mono.Android"
+	.size	.L.managed_type_name.7553, 49
 	.section	.rodata.managed_type_name.7554,"aMS",%progbits,1
 	.type	.L.managed_type_name.7554, %object
 .L.managed_type_name.7554:
-	.asciz	"Javax.Net.Ssl.SSLProtocolException, Mono.Android"
-	.size	.L.managed_type_name.7554, 49
+	.asciz	"Javax.Net.Ssl.SSLServerSocket, Mono.Android"
+	.size	.L.managed_type_name.7554, 44
 	.section	.rodata.managed_type_name.7555,"aMS",%progbits,1
 	.type	.L.managed_type_name.7555, %object
 .L.managed_type_name.7555:
-	.asciz	"Javax.Net.Ssl.SSLServerSocket, Mono.Android"
-	.size	.L.managed_type_name.7555, 44
+	.asciz	"Javax.Net.Ssl.SSLServerSocketFactory, Mono.Android"
+	.size	.L.managed_type_name.7555, 51
 	.section	.rodata.managed_type_name.7556,"aMS",%progbits,1
 	.type	.L.managed_type_name.7556, %object
 .L.managed_type_name.7556:
-	.asciz	"Javax.Net.Ssl.SSLServerSocketFactory, Mono.Android"
-	.size	.L.managed_type_name.7556, 51
+	.asciz	"Javax.Net.Ssl.SSLServerSocketFactoryInvoker, Mono.Android"
+	.size	.L.managed_type_name.7556, 58
 	.section	.rodata.managed_type_name.7557,"aMS",%progbits,1
 	.type	.L.managed_type_name.7557, %object
 .L.managed_type_name.7557:
-	.asciz	"Javax.Net.Ssl.SSLServerSocketFactoryInvoker, Mono.Android"
-	.size	.L.managed_type_name.7557, 58
+	.asciz	"Javax.Net.Ssl.SSLServerSocketInvoker, Mono.Android"
+	.size	.L.managed_type_name.7557, 51
 	.section	.rodata.managed_type_name.7558,"aMS",%progbits,1
 	.type	.L.managed_type_name.7558, %object
 .L.managed_type_name.7558:
-	.asciz	"Javax.Net.Ssl.SSLServerSocketInvoker, Mono.Android"
+	.asciz	"Javax.Net.Ssl.SSLSessionBindingEvent, Mono.Android"
 	.size	.L.managed_type_name.7558, 51
 	.section	.rodata.managed_type_name.7559,"aMS",%progbits,1
 	.type	.L.managed_type_name.7559, %object
 .L.managed_type_name.7559:
-	.asciz	"Javax.Net.Ssl.SSLSessionBindingEvent, Mono.Android"
-	.size	.L.managed_type_name.7559, 51
+	.asciz	"Javax.Net.Ssl.SSLSocket, Mono.Android"
+	.size	.L.managed_type_name.7559, 38
 	.section	.rodata.managed_type_name.7560,"aMS",%progbits,1
 	.type	.L.managed_type_name.7560, %object
 .L.managed_type_name.7560:
-	.asciz	"Javax.Net.Ssl.SSLSocket, Mono.Android"
-	.size	.L.managed_type_name.7560, 38
+	.asciz	"Javax.Net.Ssl.SSLSocketFactory, Mono.Android"
+	.size	.L.managed_type_name.7560, 45
 	.section	.rodata.managed_type_name.7561,"aMS",%progbits,1
 	.type	.L.managed_type_name.7561, %object
 .L.managed_type_name.7561:
-	.asciz	"Javax.Net.Ssl.SSLSocketFactory, Mono.Android"
-	.size	.L.managed_type_name.7561, 45
+	.asciz	"Javax.Net.Ssl.SSLSocketFactoryInvoker, Mono.Android"
+	.size	.L.managed_type_name.7561, 52
 	.section	.rodata.managed_type_name.7562,"aMS",%progbits,1
 	.type	.L.managed_type_name.7562, %object
 .L.managed_type_name.7562:
-	.asciz	"Javax.Net.Ssl.SSLSocketFactoryInvoker, Mono.Android"
-	.size	.L.managed_type_name.7562, 52
+	.asciz	"Javax.Net.Ssl.SSLSocketInvoker, Mono.Android"
+	.size	.L.managed_type_name.7562, 45
 	.section	.rodata.managed_type_name.7563,"aMS",%progbits,1
 	.type	.L.managed_type_name.7563, %object
 .L.managed_type_name.7563:
-	.asciz	"Javax.Net.Ssl.SSLSocketInvoker, Mono.Android"
-	.size	.L.managed_type_name.7563, 45
+	.asciz	"Javax.Net.Ssl.StandardConstants, Mono.Android"
+	.size	.L.managed_type_name.7563, 46
 	.section	.rodata.managed_type_name.7564,"aMS",%progbits,1
 	.type	.L.managed_type_name.7564, %object
 .L.managed_type_name.7564:
-	.asciz	"Javax.Net.Ssl.StandardConstants, Mono.Android"
-	.size	.L.managed_type_name.7564, 46
+	.asciz	"Javax.Net.Ssl.TrustManagerFactory, Mono.Android"
+	.size	.L.managed_type_name.7564, 48
 	.section	.rodata.managed_type_name.7565,"aMS",%progbits,1
 	.type	.L.managed_type_name.7565, %object
 .L.managed_type_name.7565:
-	.asciz	"Javax.Net.Ssl.TrustManagerFactory, Mono.Android"
-	.size	.L.managed_type_name.7565, 48
+	.asciz	"Javax.Net.Ssl.TrustManagerFactorySpi, Mono.Android"
+	.size	.L.managed_type_name.7565, 51
 	.section	.rodata.managed_type_name.7566,"aMS",%progbits,1
 	.type	.L.managed_type_name.7566, %object
 .L.managed_type_name.7566:
-	.asciz	"Javax.Net.Ssl.TrustManagerFactorySpi, Mono.Android"
-	.size	.L.managed_type_name.7566, 51
+	.asciz	"Javax.Net.Ssl.TrustManagerFactorySpiInvoker, Mono.Android"
+	.size	.L.managed_type_name.7566, 58
 	.section	.rodata.managed_type_name.7567,"aMS",%progbits,1
 	.type	.L.managed_type_name.7567, %object
 .L.managed_type_name.7567:
-	.asciz	"Javax.Net.Ssl.TrustManagerFactorySpiInvoker, Mono.Android"
-	.size	.L.managed_type_name.7567, 58
+	.asciz	"Javax.Net.Ssl.X509ExtendedKeyManager, Mono.Android"
+	.size	.L.managed_type_name.7567, 51
 	.section	.rodata.managed_type_name.7568,"aMS",%progbits,1
 	.type	.L.managed_type_name.7568, %object
 .L.managed_type_name.7568:
-	.asciz	"Javax.Net.Ssl.X509ExtendedKeyManager, Mono.Android"
-	.size	.L.managed_type_name.7568, 51
+	.asciz	"Javax.Net.Ssl.X509ExtendedKeyManagerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7568, 58
 	.section	.rodata.managed_type_name.7569,"aMS",%progbits,1
 	.type	.L.managed_type_name.7569, %object
 .L.managed_type_name.7569:
-	.asciz	"Javax.Net.Ssl.X509ExtendedKeyManagerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7569, 58
+	.asciz	"Javax.Net.Ssl.X509ExtendedTrustManager, Mono.Android"
+	.size	.L.managed_type_name.7569, 53
 	.section	.rodata.managed_type_name.7570,"aMS",%progbits,1
 	.type	.L.managed_type_name.7570, %object
 .L.managed_type_name.7570:
-	.asciz	"Javax.Net.Ssl.X509ExtendedTrustManager, Mono.Android"
-	.size	.L.managed_type_name.7570, 53
+	.asciz	"Javax.Net.Ssl.X509ExtendedTrustManagerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7570, 60
 	.section	.rodata.managed_type_name.7571,"aMS",%progbits,1
 	.type	.L.managed_type_name.7571, %object
 .L.managed_type_name.7571:
-	.asciz	"Javax.Net.Ssl.X509ExtendedTrustManagerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7571, 60
+	.asciz	"Javax.Security.Auth.AuthPermission, Mono.Android"
+	.size	.L.managed_type_name.7571, 49
 	.section	.rodata.managed_type_name.7572,"aMS",%progbits,1
 	.type	.L.managed_type_name.7572, %object
 .L.managed_type_name.7572:
-	.asciz	"Javax.Security.Auth.AuthPermission, Mono.Android"
-	.size	.L.managed_type_name.7572, 49
+	.asciz	"Javax.Security.Auth.Callback.ICallbackHandlerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7572, 67
 	.section	.rodata.managed_type_name.7573,"aMS",%progbits,1
 	.type	.L.managed_type_name.7573, %object
 .L.managed_type_name.7573:
-	.asciz	"Javax.Security.Auth.Callback.ICallbackHandlerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7573, 67
+	.asciz	"Javax.Security.Auth.Callback.ICallbackInvoker, Mono.Android"
+	.size	.L.managed_type_name.7573, 60
 	.section	.rodata.managed_type_name.7574,"aMS",%progbits,1
 	.type	.L.managed_type_name.7574, %object
 .L.managed_type_name.7574:
-	.asciz	"Javax.Security.Auth.Callback.ICallbackInvoker, Mono.Android"
+	.asciz	"Javax.Security.Auth.Callback.PasswordCallback, Mono.Android"
 	.size	.L.managed_type_name.7574, 60
 	.section	.rodata.managed_type_name.7575,"aMS",%progbits,1
 	.type	.L.managed_type_name.7575, %object
 .L.managed_type_name.7575:
-	.asciz	"Javax.Security.Auth.Callback.PasswordCallback, Mono.Android"
-	.size	.L.managed_type_name.7575, 60
+	.asciz	"Javax.Security.Auth.Callback.UnsupportedCallbackException, Mono.Android"
+	.size	.L.managed_type_name.7575, 72
 	.section	.rodata.managed_type_name.7576,"aMS",%progbits,1
 	.type	.L.managed_type_name.7576, %object
 .L.managed_type_name.7576:
-	.asciz	"Javax.Security.Auth.Callback.UnsupportedCallbackException, Mono.Android"
-	.size	.L.managed_type_name.7576, 72
+	.asciz	"Javax.Security.Auth.DestroyFailedException, Mono.Android"
+	.size	.L.managed_type_name.7576, 57
 	.section	.rodata.managed_type_name.7577,"aMS",%progbits,1
 	.type	.L.managed_type_name.7577, %object
 .L.managed_type_name.7577:
-	.asciz	"Javax.Security.Auth.DestroyFailedException, Mono.Android"
-	.size	.L.managed_type_name.7577, 57
+	.asciz	"Javax.Security.Auth.IDestroyableInvoker, Mono.Android"
+	.size	.L.managed_type_name.7577, 54
 	.section	.rodata.managed_type_name.7578,"aMS",%progbits,1
 	.type	.L.managed_type_name.7578, %object
 .L.managed_type_name.7578:
-	.asciz	"Javax.Security.Auth.IDestroyableInvoker, Mono.Android"
-	.size	.L.managed_type_name.7578, 54
+	.asciz	"Javax.Security.Auth.Login.LoginException, Mono.Android"
+	.size	.L.managed_type_name.7578, 55
 	.section	.rodata.managed_type_name.7579,"aMS",%progbits,1
 	.type	.L.managed_type_name.7579, %object
 .L.managed_type_name.7579:
-	.asciz	"Javax.Security.Auth.Login.LoginException, Mono.Android"
-	.size	.L.managed_type_name.7579, 55
+	.asciz	"Javax.Security.Auth.PrivateCredentialPermission, Mono.Android"
+	.size	.L.managed_type_name.7579, 62
 	.section	.rodata.managed_type_name.7580,"aMS",%progbits,1
 	.type	.L.managed_type_name.7580, %object
 .L.managed_type_name.7580:
-	.asciz	"Javax.Security.Auth.PrivateCredentialPermission, Mono.Android"
-	.size	.L.managed_type_name.7580, 62
+	.asciz	"Javax.Security.Auth.Subject, Mono.Android"
+	.size	.L.managed_type_name.7580, 42
 	.section	.rodata.managed_type_name.7581,"aMS",%progbits,1
 	.type	.L.managed_type_name.7581, %object
 .L.managed_type_name.7581:
-	.asciz	"Javax.Security.Auth.Subject, Mono.Android"
-	.size	.L.managed_type_name.7581, 42
+	.asciz	"Javax.Security.Auth.SubjectDomainCombiner, Mono.Android"
+	.size	.L.managed_type_name.7581, 56
 	.section	.rodata.managed_type_name.7582,"aMS",%progbits,1
 	.type	.L.managed_type_name.7582, %object
 .L.managed_type_name.7582:
-	.asciz	"Javax.Security.Auth.SubjectDomainCombiner, Mono.Android"
-	.size	.L.managed_type_name.7582, 56
+	.asciz	"Javax.Security.Auth.X500.X500Principal, Mono.Android"
+	.size	.L.managed_type_name.7582, 53
 	.section	.rodata.managed_type_name.7583,"aMS",%progbits,1
 	.type	.L.managed_type_name.7583, %object
 .L.managed_type_name.7583:
-	.asciz	"Javax.Security.Auth.X500.X500Principal, Mono.Android"
-	.size	.L.managed_type_name.7583, 53
+	.asciz	"Javax.Security.Cert.Certificate, Mono.Android"
+	.size	.L.managed_type_name.7583, 46
 	.section	.rodata.managed_type_name.7584,"aMS",%progbits,1
 	.type	.L.managed_type_name.7584, %object
 .L.managed_type_name.7584:
-	.asciz	"Javax.Security.Cert.Certificate, Mono.Android"
-	.size	.L.managed_type_name.7584, 46
+	.asciz	"Javax.Security.Cert.CertificateEncodingException, Mono.Android"
+	.size	.L.managed_type_name.7584, 63
 	.section	.rodata.managed_type_name.7585,"aMS",%progbits,1
 	.type	.L.managed_type_name.7585, %object
 .L.managed_type_name.7585:
-	.asciz	"Javax.Security.Cert.CertificateEncodingException, Mono.Android"
-	.size	.L.managed_type_name.7585, 63
+	.asciz	"Javax.Security.Cert.CertificateException, Mono.Android"
+	.size	.L.managed_type_name.7585, 55
 	.section	.rodata.managed_type_name.7586,"aMS",%progbits,1
 	.type	.L.managed_type_name.7586, %object
 .L.managed_type_name.7586:
-	.asciz	"Javax.Security.Cert.CertificateException, Mono.Android"
-	.size	.L.managed_type_name.7586, 55
+	.asciz	"Javax.Security.Cert.CertificateExpiredException, Mono.Android"
+	.size	.L.managed_type_name.7586, 62
 	.section	.rodata.managed_type_name.7587,"aMS",%progbits,1
 	.type	.L.managed_type_name.7587, %object
 .L.managed_type_name.7587:
-	.asciz	"Javax.Security.Cert.CertificateExpiredException, Mono.Android"
-	.size	.L.managed_type_name.7587, 62
+	.asciz	"Javax.Security.Cert.CertificateInvoker, Mono.Android"
+	.size	.L.managed_type_name.7587, 53
 	.section	.rodata.managed_type_name.7588,"aMS",%progbits,1
 	.type	.L.managed_type_name.7588, %object
 .L.managed_type_name.7588:
-	.asciz	"Javax.Security.Cert.CertificateInvoker, Mono.Android"
-	.size	.L.managed_type_name.7588, 53
+	.asciz	"Javax.Security.Cert.CertificateNotYetValidException, Mono.Android"
+	.size	.L.managed_type_name.7588, 66
 	.section	.rodata.managed_type_name.7589,"aMS",%progbits,1
 	.type	.L.managed_type_name.7589, %object
 .L.managed_type_name.7589:
-	.asciz	"Javax.Security.Cert.CertificateNotYetValidException, Mono.Android"
-	.size	.L.managed_type_name.7589, 66
+	.asciz	"Javax.Security.Cert.CertificateParsingException, Mono.Android"
+	.size	.L.managed_type_name.7589, 62
 	.section	.rodata.managed_type_name.7590,"aMS",%progbits,1
 	.type	.L.managed_type_name.7590, %object
 .L.managed_type_name.7590:
-	.asciz	"Javax.Security.Cert.CertificateParsingException, Mono.Android"
-	.size	.L.managed_type_name.7590, 62
+	.asciz	"Javax.Security.Cert.X509Certificate, Mono.Android"
+	.size	.L.managed_type_name.7590, 50
 	.section	.rodata.managed_type_name.7591,"aMS",%progbits,1
 	.type	.L.managed_type_name.7591, %object
 .L.managed_type_name.7591:
-	.asciz	"Javax.Security.Cert.X509Certificate, Mono.Android"
-	.size	.L.managed_type_name.7591, 50
+	.asciz	"Javax.Security.Cert.X509CertificateInvoker, Mono.Android"
+	.size	.L.managed_type_name.7591, 57
 	.section	.rodata.managed_type_name.7592,"aMS",%progbits,1
 	.type	.L.managed_type_name.7592, %object
 .L.managed_type_name.7592:
-	.asciz	"Javax.Security.Cert.X509CertificateInvoker, Mono.Android"
-	.size	.L.managed_type_name.7592, 57
+	.asciz	"Javax.Sql.ConnectionEvent, Mono.Android"
+	.size	.L.managed_type_name.7592, 40
 	.section	.rodata.managed_type_name.7593,"aMS",%progbits,1
 	.type	.L.managed_type_name.7593, %object
 .L.managed_type_name.7593:
-	.asciz	"Javax.Sql.ConnectionEvent, Mono.Android"
-	.size	.L.managed_type_name.7593, 40
+	.asciz	"Javax.Sql.ICommonDataSourceInvoker, Mono.Android"
+	.size	.L.managed_type_name.7593, 49
 	.section	.rodata.managed_type_name.7594,"aMS",%progbits,1
 	.type	.L.managed_type_name.7594, %object
 .L.managed_type_name.7594:
-	.asciz	"Javax.Sql.ICommonDataSourceInvoker, Mono.Android"
-	.size	.L.managed_type_name.7594, 49
+	.asciz	"Javax.Sql.IConnectionEventListenerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7594, 56
 	.section	.rodata.managed_type_name.7595,"aMS",%progbits,1
 	.type	.L.managed_type_name.7595, %object
 .L.managed_type_name.7595:
-	.asciz	"Javax.Sql.IConnectionEventListenerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7595, 56
+	.asciz	"Javax.Sql.IConnectionPoolDataSourceInvoker, Mono.Android"
+	.size	.L.managed_type_name.7595, 57
 	.section	.rodata.managed_type_name.7596,"aMS",%progbits,1
 	.type	.L.managed_type_name.7596, %object
 .L.managed_type_name.7596:
-	.asciz	"Javax.Sql.IConnectionPoolDataSourceInvoker, Mono.Android"
-	.size	.L.managed_type_name.7596, 57
+	.asciz	"Javax.Sql.IDataSourceInvoker, Mono.Android"
+	.size	.L.managed_type_name.7596, 43
 	.section	.rodata.managed_type_name.7597,"aMS",%progbits,1
 	.type	.L.managed_type_name.7597, %object
 .L.managed_type_name.7597:
-	.asciz	"Javax.Sql.IDataSourceInvoker, Mono.Android"
-	.size	.L.managed_type_name.7597, 43
+	.asciz	"Javax.Sql.IPooledConnectionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7597, 49
 	.section	.rodata.managed_type_name.7598,"aMS",%progbits,1
 	.type	.L.managed_type_name.7598, %object
 .L.managed_type_name.7598:
-	.asciz	"Javax.Sql.IPooledConnectionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7598, 49
+	.asciz	"Javax.Sql.IRowSetInternalInvoker, Mono.Android"
+	.size	.L.managed_type_name.7598, 47
 	.section	.rodata.managed_type_name.7599,"aMS",%progbits,1
 	.type	.L.managed_type_name.7599, %object
 .L.managed_type_name.7599:
-	.asciz	"Javax.Sql.IRowSetInternalInvoker, Mono.Android"
-	.size	.L.managed_type_name.7599, 47
+	.asciz	"Javax.Sql.IRowSetInvoker, Mono.Android"
+	.size	.L.managed_type_name.7599, 39
 	.section	.rodata.managed_type_name.7600,"aMS",%progbits,1
 	.type	.L.managed_type_name.7600, %object
 .L.managed_type_name.7600:
-	.asciz	"Javax.Sql.IRowSetInvoker, Mono.Android"
-	.size	.L.managed_type_name.7600, 39
+	.asciz	"Javax.Sql.IRowSetListenerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7600, 47
 	.section	.rodata.managed_type_name.7601,"aMS",%progbits,1
 	.type	.L.managed_type_name.7601, %object
 .L.managed_type_name.7601:
-	.asciz	"Javax.Sql.IRowSetListenerInvoker, Mono.Android"
+	.asciz	"Javax.Sql.IRowSetMetaDataInvoker, Mono.Android"
 	.size	.L.managed_type_name.7601, 47
 	.section	.rodata.managed_type_name.7602,"aMS",%progbits,1
 	.type	.L.managed_type_name.7602, %object
 .L.managed_type_name.7602:
-	.asciz	"Javax.Sql.IRowSetMetaDataInvoker, Mono.Android"
-	.size	.L.managed_type_name.7602, 47
+	.asciz	"Javax.Sql.IRowSetReaderInvoker, Mono.Android"
+	.size	.L.managed_type_name.7602, 45
 	.section	.rodata.managed_type_name.7603,"aMS",%progbits,1
 	.type	.L.managed_type_name.7603, %object
 .L.managed_type_name.7603:
-	.asciz	"Javax.Sql.IRowSetReaderInvoker, Mono.Android"
+	.asciz	"Javax.Sql.IRowSetWriterInvoker, Mono.Android"
 	.size	.L.managed_type_name.7603, 45
 	.section	.rodata.managed_type_name.7604,"aMS",%progbits,1
 	.type	.L.managed_type_name.7604, %object
 .L.managed_type_name.7604:
-	.asciz	"Javax.Sql.IRowSetWriterInvoker, Mono.Android"
-	.size	.L.managed_type_name.7604, 45
+	.asciz	"Javax.Sql.IStatementEventListenerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7604, 55
 	.section	.rodata.managed_type_name.7605,"aMS",%progbits,1
 	.type	.L.managed_type_name.7605, %object
 .L.managed_type_name.7605:
-	.asciz	"Javax.Sql.IStatementEventListenerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7605, 55
+	.asciz	"Javax.Sql.RowSetEvent, Mono.Android"
+	.size	.L.managed_type_name.7605, 36
 	.section	.rodata.managed_type_name.7606,"aMS",%progbits,1
 	.type	.L.managed_type_name.7606, %object
 .L.managed_type_name.7606:
-	.asciz	"Javax.Sql.RowSetEvent, Mono.Android"
-	.size	.L.managed_type_name.7606, 36
+	.asciz	"Javax.Sql.StatementEvent, Mono.Android"
+	.size	.L.managed_type_name.7606, 39
 	.section	.rodata.managed_type_name.7607,"aMS",%progbits,1
 	.type	.L.managed_type_name.7607, %object
 .L.managed_type_name.7607:
-	.asciz	"Javax.Sql.StatementEvent, Mono.Android"
-	.size	.L.managed_type_name.7607, 39
+	.asciz	"Javax.Xml.Datatype.DatatypeConfigurationException, Mono.Android"
+	.size	.L.managed_type_name.7607, 64
 	.section	.rodata.managed_type_name.7608,"aMS",%progbits,1
 	.type	.L.managed_type_name.7608, %object
 .L.managed_type_name.7608:
-	.asciz	"Javax.Xml.Datatype.DatatypeConfigurationException, Mono.Android"
-	.size	.L.managed_type_name.7608, 64
+	.asciz	"Javax.Xml.Datatype.DatatypeConstants+Field, Mono.Android"
+	.size	.L.managed_type_name.7608, 57
 	.section	.rodata.managed_type_name.7609,"aMS",%progbits,1
 	.type	.L.managed_type_name.7609, %object
 .L.managed_type_name.7609:
-	.asciz	"Javax.Xml.Datatype.DatatypeConstants+Field, Mono.Android"
-	.size	.L.managed_type_name.7609, 57
+	.asciz	"Javax.Xml.Datatype.DatatypeConstants, Mono.Android"
+	.size	.L.managed_type_name.7609, 51
 	.section	.rodata.managed_type_name.7610,"aMS",%progbits,1
 	.type	.L.managed_type_name.7610, %object
 .L.managed_type_name.7610:
-	.asciz	"Javax.Xml.Datatype.DatatypeConstants, Mono.Android"
-	.size	.L.managed_type_name.7610, 51
+	.asciz	"Javax.Xml.Datatype.DatatypeFactory, Mono.Android"
+	.size	.L.managed_type_name.7610, 49
 	.section	.rodata.managed_type_name.7611,"aMS",%progbits,1
 	.type	.L.managed_type_name.7611, %object
 .L.managed_type_name.7611:
-	.asciz	"Javax.Xml.Datatype.DatatypeFactory, Mono.Android"
-	.size	.L.managed_type_name.7611, 49
+	.asciz	"Javax.Xml.Datatype.DatatypeFactoryInvoker, Mono.Android"
+	.size	.L.managed_type_name.7611, 56
 	.section	.rodata.managed_type_name.7612,"aMS",%progbits,1
 	.type	.L.managed_type_name.7612, %object
 .L.managed_type_name.7612:
-	.asciz	"Javax.Xml.Datatype.DatatypeFactoryInvoker, Mono.Android"
-	.size	.L.managed_type_name.7612, 56
+	.asciz	"Javax.Xml.Datatype.Duration, Mono.Android"
+	.size	.L.managed_type_name.7612, 42
 	.section	.rodata.managed_type_name.7613,"aMS",%progbits,1
 	.type	.L.managed_type_name.7613, %object
 .L.managed_type_name.7613:
-	.asciz	"Javax.Xml.Datatype.Duration, Mono.Android"
-	.size	.L.managed_type_name.7613, 42
+	.asciz	"Javax.Xml.Datatype.DurationInvoker, Mono.Android"
+	.size	.L.managed_type_name.7613, 49
 	.section	.rodata.managed_type_name.7614,"aMS",%progbits,1
 	.type	.L.managed_type_name.7614, %object
 .L.managed_type_name.7614:
-	.asciz	"Javax.Xml.Datatype.DurationInvoker, Mono.Android"
-	.size	.L.managed_type_name.7614, 49
+	.asciz	"Javax.Xml.Datatype.XMLGregorianCalendar, Mono.Android"
+	.size	.L.managed_type_name.7614, 54
 	.section	.rodata.managed_type_name.7615,"aMS",%progbits,1
 	.type	.L.managed_type_name.7615, %object
 .L.managed_type_name.7615:
-	.asciz	"Javax.Xml.Datatype.XMLGregorianCalendar, Mono.Android"
-	.size	.L.managed_type_name.7615, 54
+	.asciz	"Javax.Xml.Datatype.XMLGregorianCalendarInvoker, Mono.Android"
+	.size	.L.managed_type_name.7615, 61
 	.section	.rodata.managed_type_name.7616,"aMS",%progbits,1
 	.type	.L.managed_type_name.7616, %object
 .L.managed_type_name.7616:
-	.asciz	"Javax.Xml.Datatype.XMLGregorianCalendarInvoker, Mono.Android"
-	.size	.L.managed_type_name.7616, 61
+	.asciz	"Javax.Xml.Namespace.INamespaceContextInvoker, Mono.Android"
+	.size	.L.managed_type_name.7616, 59
 	.section	.rodata.managed_type_name.7617,"aMS",%progbits,1
 	.type	.L.managed_type_name.7617, %object
 .L.managed_type_name.7617:
-	.asciz	"Javax.Xml.Namespace.INamespaceContextInvoker, Mono.Android"
-	.size	.L.managed_type_name.7617, 59
+	.asciz	"Javax.Xml.Namespace.QName, Mono.Android"
+	.size	.L.managed_type_name.7617, 40
 	.section	.rodata.managed_type_name.7618,"aMS",%progbits,1
 	.type	.L.managed_type_name.7618, %object
 .L.managed_type_name.7618:
-	.asciz	"Javax.Xml.Namespace.QName, Mono.Android"
-	.size	.L.managed_type_name.7618, 40
+	.asciz	"Javax.Xml.Parsers.DocumentBuilder, Mono.Android"
+	.size	.L.managed_type_name.7618, 48
 	.section	.rodata.managed_type_name.7619,"aMS",%progbits,1
 	.type	.L.managed_type_name.7619, %object
 .L.managed_type_name.7619:
-	.asciz	"Javax.Xml.Parsers.DocumentBuilder, Mono.Android"
-	.size	.L.managed_type_name.7619, 48
+	.asciz	"Javax.Xml.Parsers.DocumentBuilderFactory, Mono.Android"
+	.size	.L.managed_type_name.7619, 55
 	.section	.rodata.managed_type_name.7620,"aMS",%progbits,1
 	.type	.L.managed_type_name.7620, %object
 .L.managed_type_name.7620:
-	.asciz	"Javax.Xml.Parsers.DocumentBuilderFactory, Mono.Android"
-	.size	.L.managed_type_name.7620, 55
+	.asciz	"Javax.Xml.Parsers.DocumentBuilderFactoryInvoker, Mono.Android"
+	.size	.L.managed_type_name.7620, 62
 	.section	.rodata.managed_type_name.7621,"aMS",%progbits,1
 	.type	.L.managed_type_name.7621, %object
 .L.managed_type_name.7621:
-	.asciz	"Javax.Xml.Parsers.DocumentBuilderFactoryInvoker, Mono.Android"
-	.size	.L.managed_type_name.7621, 62
+	.asciz	"Javax.Xml.Parsers.DocumentBuilderInvoker, Mono.Android"
+	.size	.L.managed_type_name.7621, 55
 	.section	.rodata.managed_type_name.7622,"aMS",%progbits,1
 	.type	.L.managed_type_name.7622, %object
 .L.managed_type_name.7622:
-	.asciz	"Javax.Xml.Parsers.DocumentBuilderInvoker, Mono.Android"
-	.size	.L.managed_type_name.7622, 55
+	.asciz	"Javax.Xml.Parsers.FactoryConfigurationError, Mono.Android"
+	.size	.L.managed_type_name.7622, 58
 	.section	.rodata.managed_type_name.7623,"aMS",%progbits,1
 	.type	.L.managed_type_name.7623, %object
 .L.managed_type_name.7623:
-	.asciz	"Javax.Xml.Parsers.FactoryConfigurationError, Mono.Android"
-	.size	.L.managed_type_name.7623, 58
+	.asciz	"Javax.Xml.Parsers.ParserConfigurationException, Mono.Android"
+	.size	.L.managed_type_name.7623, 61
 	.section	.rodata.managed_type_name.7624,"aMS",%progbits,1
 	.type	.L.managed_type_name.7624, %object
 .L.managed_type_name.7624:
-	.asciz	"Javax.Xml.Parsers.ParserConfigurationException, Mono.Android"
-	.size	.L.managed_type_name.7624, 61
+	.asciz	"Javax.Xml.Parsers.SAXParser, Mono.Android"
+	.size	.L.managed_type_name.7624, 42
 	.section	.rodata.managed_type_name.7625,"aMS",%progbits,1
 	.type	.L.managed_type_name.7625, %object
 .L.managed_type_name.7625:
-	.asciz	"Javax.Xml.Parsers.SAXParser, Mono.Android"
-	.size	.L.managed_type_name.7625, 42
+	.asciz	"Javax.Xml.Parsers.SAXParserFactory, Mono.Android"
+	.size	.L.managed_type_name.7625, 49
 	.section	.rodata.managed_type_name.7626,"aMS",%progbits,1
 	.type	.L.managed_type_name.7626, %object
 .L.managed_type_name.7626:
-	.asciz	"Javax.Xml.Parsers.SAXParserFactory, Mono.Android"
-	.size	.L.managed_type_name.7626, 49
+	.asciz	"Javax.Xml.Parsers.SAXParserFactoryInvoker, Mono.Android"
+	.size	.L.managed_type_name.7626, 56
 	.section	.rodata.managed_type_name.7627,"aMS",%progbits,1
 	.type	.L.managed_type_name.7627, %object
 .L.managed_type_name.7627:
-	.asciz	"Javax.Xml.Parsers.SAXParserFactoryInvoker, Mono.Android"
-	.size	.L.managed_type_name.7627, 56
+	.asciz	"Javax.Xml.Parsers.SAXParserInvoker, Mono.Android"
+	.size	.L.managed_type_name.7627, 49
 	.section	.rodata.managed_type_name.7628,"aMS",%progbits,1
 	.type	.L.managed_type_name.7628, %object
 .L.managed_type_name.7628:
-	.asciz	"Javax.Xml.Parsers.SAXParserInvoker, Mono.Android"
-	.size	.L.managed_type_name.7628, 49
+	.asciz	"Javax.Xml.Transform.Dom.DOMResult, Mono.Android"
+	.size	.L.managed_type_name.7628, 48
 	.section	.rodata.managed_type_name.7629,"aMS",%progbits,1
 	.type	.L.managed_type_name.7629, %object
 .L.managed_type_name.7629:
-	.asciz	"Javax.Xml.Transform.Dom.DOMResult, Mono.Android"
+	.asciz	"Javax.Xml.Transform.Dom.DOMSource, Mono.Android"
 	.size	.L.managed_type_name.7629, 48
 	.section	.rodata.managed_type_name.7630,"aMS",%progbits,1
 	.type	.L.managed_type_name.7630, %object
 .L.managed_type_name.7630:
-	.asciz	"Javax.Xml.Transform.Dom.DOMSource, Mono.Android"
-	.size	.L.managed_type_name.7630, 48
+	.asciz	"Javax.Xml.Transform.Dom.IDOMLocatorInvoker, Mono.Android"
+	.size	.L.managed_type_name.7630, 57
 	.section	.rodata.managed_type_name.7631,"aMS",%progbits,1
 	.type	.L.managed_type_name.7631, %object
 .L.managed_type_name.7631:
-	.asciz	"Javax.Xml.Transform.Dom.IDOMLocatorInvoker, Mono.Android"
-	.size	.L.managed_type_name.7631, 57
+	.asciz	"Javax.Xml.Transform.IErrorListenerImplementor, Mono.Android"
+	.size	.L.managed_type_name.7631, 60
 	.section	.rodata.managed_type_name.7632,"aMS",%progbits,1
 	.type	.L.managed_type_name.7632, %object
 .L.managed_type_name.7632:
-	.asciz	"Javax.Xml.Transform.IErrorListenerImplementor, Mono.Android"
-	.size	.L.managed_type_name.7632, 60
+	.asciz	"Javax.Xml.Transform.IErrorListenerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7632, 56
 	.section	.rodata.managed_type_name.7633,"aMS",%progbits,1
 	.type	.L.managed_type_name.7633, %object
 .L.managed_type_name.7633:
-	.asciz	"Javax.Xml.Transform.IErrorListenerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7633, 56
+	.asciz	"Javax.Xml.Transform.IResultInvoker, Mono.Android"
+	.size	.L.managed_type_name.7633, 49
 	.section	.rodata.managed_type_name.7634,"aMS",%progbits,1
 	.type	.L.managed_type_name.7634, %object
 .L.managed_type_name.7634:
-	.asciz	"Javax.Xml.Transform.IResultInvoker, Mono.Android"
+	.asciz	"Javax.Xml.Transform.ISourceInvoker, Mono.Android"
 	.size	.L.managed_type_name.7634, 49
 	.section	.rodata.managed_type_name.7635,"aMS",%progbits,1
 	.type	.L.managed_type_name.7635, %object
 .L.managed_type_name.7635:
-	.asciz	"Javax.Xml.Transform.ISourceInvoker, Mono.Android"
-	.size	.L.managed_type_name.7635, 49
+	.asciz	"Javax.Xml.Transform.ISourceLocatorInvoker, Mono.Android"
+	.size	.L.managed_type_name.7635, 56
 	.section	.rodata.managed_type_name.7636,"aMS",%progbits,1
 	.type	.L.managed_type_name.7636, %object
 .L.managed_type_name.7636:
-	.asciz	"Javax.Xml.Transform.ISourceLocatorInvoker, Mono.Android"
-	.size	.L.managed_type_name.7636, 56
+	.asciz	"Javax.Xml.Transform.ITemplatesInvoker, Mono.Android"
+	.size	.L.managed_type_name.7636, 52
 	.section	.rodata.managed_type_name.7637,"aMS",%progbits,1
 	.type	.L.managed_type_name.7637, %object
 .L.managed_type_name.7637:
-	.asciz	"Javax.Xml.Transform.ITemplatesInvoker, Mono.Android"
-	.size	.L.managed_type_name.7637, 52
+	.asciz	"Javax.Xml.Transform.IURIResolverInvoker, Mono.Android"
+	.size	.L.managed_type_name.7637, 54
 	.section	.rodata.managed_type_name.7638,"aMS",%progbits,1
 	.type	.L.managed_type_name.7638, %object
 .L.managed_type_name.7638:
-	.asciz	"Javax.Xml.Transform.IURIResolverInvoker, Mono.Android"
-	.size	.L.managed_type_name.7638, 54
+	.asciz	"Javax.Xml.Transform.OutputKeys, Mono.Android"
+	.size	.L.managed_type_name.7638, 45
 	.section	.rodata.managed_type_name.7639,"aMS",%progbits,1
 	.type	.L.managed_type_name.7639, %object
 .L.managed_type_name.7639:
-	.asciz	"Javax.Xml.Transform.OutputKeys, Mono.Android"
-	.size	.L.managed_type_name.7639, 45
+	.asciz	"Javax.Xml.Transform.Result, Mono.Android"
+	.size	.L.managed_type_name.7639, 41
 	.section	.rodata.managed_type_name.7640,"aMS",%progbits,1
 	.type	.L.managed_type_name.7640, %object
 .L.managed_type_name.7640:
-	.asciz	"Javax.Xml.Transform.Result, Mono.Android"
-	.size	.L.managed_type_name.7640, 41
+	.asciz	"Javax.Xml.Transform.Sax.ITemplatesHandlerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7640, 63
 	.section	.rodata.managed_type_name.7641,"aMS",%progbits,1
 	.type	.L.managed_type_name.7641, %object
 .L.managed_type_name.7641:
-	.asciz	"Javax.Xml.Transform.Sax.ITemplatesHandlerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7641, 63
+	.asciz	"Javax.Xml.Transform.Sax.ITransformerHandlerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7641, 65
 	.section	.rodata.managed_type_name.7642,"aMS",%progbits,1
 	.type	.L.managed_type_name.7642, %object
 .L.managed_type_name.7642:
-	.asciz	"Javax.Xml.Transform.Sax.ITransformerHandlerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7642, 65
+	.asciz	"Javax.Xml.Transform.Sax.SAXResult, Mono.Android"
+	.size	.L.managed_type_name.7642, 48
 	.section	.rodata.managed_type_name.7643,"aMS",%progbits,1
 	.type	.L.managed_type_name.7643, %object
 .L.managed_type_name.7643:
-	.asciz	"Javax.Xml.Transform.Sax.SAXResult, Mono.Android"
+	.asciz	"Javax.Xml.Transform.Sax.SAXSource, Mono.Android"
 	.size	.L.managed_type_name.7643, 48
 	.section	.rodata.managed_type_name.7644,"aMS",%progbits,1
 	.type	.L.managed_type_name.7644, %object
 .L.managed_type_name.7644:
-	.asciz	"Javax.Xml.Transform.Sax.SAXSource, Mono.Android"
-	.size	.L.managed_type_name.7644, 48
+	.asciz	"Javax.Xml.Transform.Sax.SAXTransformerFactory, Mono.Android"
+	.size	.L.managed_type_name.7644, 60
 	.section	.rodata.managed_type_name.7645,"aMS",%progbits,1
 	.type	.L.managed_type_name.7645, %object
 .L.managed_type_name.7645:
-	.asciz	"Javax.Xml.Transform.Sax.SAXTransformerFactory, Mono.Android"
-	.size	.L.managed_type_name.7645, 60
+	.asciz	"Javax.Xml.Transform.Sax.SAXTransformerFactoryInvoker, Mono.Android"
+	.size	.L.managed_type_name.7645, 67
 	.section	.rodata.managed_type_name.7646,"aMS",%progbits,1
 	.type	.L.managed_type_name.7646, %object
 .L.managed_type_name.7646:
-	.asciz	"Javax.Xml.Transform.Sax.SAXTransformerFactoryInvoker, Mono.Android"
-	.size	.L.managed_type_name.7646, 67
+	.asciz	"Javax.Xml.Transform.Stream.StreamResult, Mono.Android"
+	.size	.L.managed_type_name.7646, 54
 	.section	.rodata.managed_type_name.7647,"aMS",%progbits,1
 	.type	.L.managed_type_name.7647, %object
 .L.managed_type_name.7647:
-	.asciz	"Javax.Xml.Transform.Stream.StreamResult, Mono.Android"
+	.asciz	"Javax.Xml.Transform.Stream.StreamSource, Mono.Android"
 	.size	.L.managed_type_name.7647, 54
 	.section	.rodata.managed_type_name.7648,"aMS",%progbits,1
 	.type	.L.managed_type_name.7648, %object
 .L.managed_type_name.7648:
-	.asciz	"Javax.Xml.Transform.Stream.StreamSource, Mono.Android"
-	.size	.L.managed_type_name.7648, 54
+	.asciz	"Javax.Xml.Transform.Transformer, Mono.Android"
+	.size	.L.managed_type_name.7648, 46
 	.section	.rodata.managed_type_name.7649,"aMS",%progbits,1
 	.type	.L.managed_type_name.7649, %object
 .L.managed_type_name.7649:
-	.asciz	"Javax.Xml.Transform.Transformer, Mono.Android"
-	.size	.L.managed_type_name.7649, 46
+	.asciz	"Javax.Xml.Transform.TransformerConfigurationException, Mono.Android"
+	.size	.L.managed_type_name.7649, 68
 	.section	.rodata.managed_type_name.7650,"aMS",%progbits,1
 	.type	.L.managed_type_name.7650, %object
 .L.managed_type_name.7650:
-	.asciz	"Javax.Xml.Transform.TransformerConfigurationException, Mono.Android"
-	.size	.L.managed_type_name.7650, 68
+	.asciz	"Javax.Xml.Transform.TransformerException, Mono.Android"
+	.size	.L.managed_type_name.7650, 55
 	.section	.rodata.managed_type_name.7651,"aMS",%progbits,1
 	.type	.L.managed_type_name.7651, %object
 .L.managed_type_name.7651:
-	.asciz	"Javax.Xml.Transform.TransformerException, Mono.Android"
-	.size	.L.managed_type_name.7651, 55
+	.asciz	"Javax.Xml.Transform.TransformerFactory, Mono.Android"
+	.size	.L.managed_type_name.7651, 53
 	.section	.rodata.managed_type_name.7652,"aMS",%progbits,1
 	.type	.L.managed_type_name.7652, %object
 .L.managed_type_name.7652:
-	.asciz	"Javax.Xml.Transform.TransformerFactory, Mono.Android"
-	.size	.L.managed_type_name.7652, 53
+	.asciz	"Javax.Xml.Transform.TransformerFactoryConfigurationError, Mono.Android"
+	.size	.L.managed_type_name.7652, 71
 	.section	.rodata.managed_type_name.7653,"aMS",%progbits,1
 	.type	.L.managed_type_name.7653, %object
 .L.managed_type_name.7653:
-	.asciz	"Javax.Xml.Transform.TransformerFactoryConfigurationError, Mono.Android"
-	.size	.L.managed_type_name.7653, 71
+	.asciz	"Javax.Xml.Transform.TransformerFactoryInvoker, Mono.Android"
+	.size	.L.managed_type_name.7653, 60
 	.section	.rodata.managed_type_name.7654,"aMS",%progbits,1
 	.type	.L.managed_type_name.7654, %object
 .L.managed_type_name.7654:
-	.asciz	"Javax.Xml.Transform.TransformerFactoryInvoker, Mono.Android"
-	.size	.L.managed_type_name.7654, 60
+	.asciz	"Javax.Xml.Transform.TransformerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7654, 53
 	.section	.rodata.managed_type_name.7655,"aMS",%progbits,1
 	.type	.L.managed_type_name.7655, %object
 .L.managed_type_name.7655:
-	.asciz	"Javax.Xml.Transform.TransformerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7655, 53
+	.asciz	"Javax.Xml.Validation.Schema, Mono.Android"
+	.size	.L.managed_type_name.7655, 42
 	.section	.rodata.managed_type_name.7656,"aMS",%progbits,1
 	.type	.L.managed_type_name.7656, %object
 .L.managed_type_name.7656:
-	.asciz	"Javax.Xml.Validation.Schema, Mono.Android"
-	.size	.L.managed_type_name.7656, 42
+	.asciz	"Javax.Xml.Validation.SchemaFactory, Mono.Android"
+	.size	.L.managed_type_name.7656, 49
 	.section	.rodata.managed_type_name.7657,"aMS",%progbits,1
 	.type	.L.managed_type_name.7657, %object
 .L.managed_type_name.7657:
-	.asciz	"Javax.Xml.Validation.SchemaFactory, Mono.Android"
-	.size	.L.managed_type_name.7657, 49
+	.asciz	"Javax.Xml.Validation.SchemaFactoryInvoker, Mono.Android"
+	.size	.L.managed_type_name.7657, 56
 	.section	.rodata.managed_type_name.7658,"aMS",%progbits,1
 	.type	.L.managed_type_name.7658, %object
 .L.managed_type_name.7658:
-	.asciz	"Javax.Xml.Validation.SchemaFactoryInvoker, Mono.Android"
-	.size	.L.managed_type_name.7658, 56
+	.asciz	"Javax.Xml.Validation.SchemaFactoryLoader, Mono.Android"
+	.size	.L.managed_type_name.7658, 55
 	.section	.rodata.managed_type_name.7659,"aMS",%progbits,1
 	.type	.L.managed_type_name.7659, %object
 .L.managed_type_name.7659:
-	.asciz	"Javax.Xml.Validation.SchemaFactoryLoader, Mono.Android"
-	.size	.L.managed_type_name.7659, 55
+	.asciz	"Javax.Xml.Validation.SchemaFactoryLoaderInvoker, Mono.Android"
+	.size	.L.managed_type_name.7659, 62
 	.section	.rodata.managed_type_name.7660,"aMS",%progbits,1
 	.type	.L.managed_type_name.7660, %object
 .L.managed_type_name.7660:
-	.asciz	"Javax.Xml.Validation.SchemaFactoryLoaderInvoker, Mono.Android"
-	.size	.L.managed_type_name.7660, 62
+	.asciz	"Javax.Xml.Validation.SchemaInvoker, Mono.Android"
+	.size	.L.managed_type_name.7660, 49
 	.section	.rodata.managed_type_name.7661,"aMS",%progbits,1
 	.type	.L.managed_type_name.7661, %object
 .L.managed_type_name.7661:
-	.asciz	"Javax.Xml.Validation.SchemaInvoker, Mono.Android"
-	.size	.L.managed_type_name.7661, 49
+	.asciz	"Javax.Xml.Validation.TypeInfoProvider, Mono.Android"
+	.size	.L.managed_type_name.7661, 52
 	.section	.rodata.managed_type_name.7662,"aMS",%progbits,1
 	.type	.L.managed_type_name.7662, %object
 .L.managed_type_name.7662:
-	.asciz	"Javax.Xml.Validation.TypeInfoProvider, Mono.Android"
-	.size	.L.managed_type_name.7662, 52
+	.asciz	"Javax.Xml.Validation.TypeInfoProviderInvoker, Mono.Android"
+	.size	.L.managed_type_name.7662, 59
 	.section	.rodata.managed_type_name.7663,"aMS",%progbits,1
 	.type	.L.managed_type_name.7663, %object
 .L.managed_type_name.7663:
-	.asciz	"Javax.Xml.Validation.TypeInfoProviderInvoker, Mono.Android"
-	.size	.L.managed_type_name.7663, 59
+	.asciz	"Javax.Xml.Validation.Validator, Mono.Android"
+	.size	.L.managed_type_name.7663, 45
 	.section	.rodata.managed_type_name.7664,"aMS",%progbits,1
 	.type	.L.managed_type_name.7664, %object
 .L.managed_type_name.7664:
-	.asciz	"Javax.Xml.Validation.Validator, Mono.Android"
-	.size	.L.managed_type_name.7664, 45
+	.asciz	"Javax.Xml.Validation.ValidatorHandler, Mono.Android"
+	.size	.L.managed_type_name.7664, 52
 	.section	.rodata.managed_type_name.7665,"aMS",%progbits,1
 	.type	.L.managed_type_name.7665, %object
 .L.managed_type_name.7665:
-	.asciz	"Javax.Xml.Validation.ValidatorHandler, Mono.Android"
-	.size	.L.managed_type_name.7665, 52
+	.asciz	"Javax.Xml.Validation.ValidatorHandlerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7665, 59
 	.section	.rodata.managed_type_name.7666,"aMS",%progbits,1
 	.type	.L.managed_type_name.7666, %object
 .L.managed_type_name.7666:
-	.asciz	"Javax.Xml.Validation.ValidatorHandlerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7666, 59
+	.asciz	"Javax.Xml.Validation.ValidatorInvoker, Mono.Android"
+	.size	.L.managed_type_name.7666, 52
 	.section	.rodata.managed_type_name.7667,"aMS",%progbits,1
 	.type	.L.managed_type_name.7667, %object
 .L.managed_type_name.7667:
-	.asciz	"Javax.Xml.Validation.ValidatorInvoker, Mono.Android"
-	.size	.L.managed_type_name.7667, 52
+	.asciz	"Javax.Xml.XMLConstants, Mono.Android"
+	.size	.L.managed_type_name.7667, 37
 	.section	.rodata.managed_type_name.7668,"aMS",%progbits,1
 	.type	.L.managed_type_name.7668, %object
 .L.managed_type_name.7668:
-	.asciz	"Javax.Xml.XMLConstants, Mono.Android"
-	.size	.L.managed_type_name.7668, 37
+	.asciz	"Javax.Xml.Xpath.IXPathExpressionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7668, 54
 	.section	.rodata.managed_type_name.7669,"aMS",%progbits,1
 	.type	.L.managed_type_name.7669, %object
 .L.managed_type_name.7669:
-	.asciz	"Javax.Xml.Xpath.IXPathExpressionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7669, 54
+	.asciz	"Javax.Xml.Xpath.IXPathFunctionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7669, 52
 	.section	.rodata.managed_type_name.7670,"aMS",%progbits,1
 	.type	.L.managed_type_name.7670, %object
 .L.managed_type_name.7670:
-	.asciz	"Javax.Xml.Xpath.IXPathFunctionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7670, 52
+	.asciz	"Javax.Xml.Xpath.IXPathFunctionResolverInvoker, Mono.Android"
+	.size	.L.managed_type_name.7670, 60
 	.section	.rodata.managed_type_name.7671,"aMS",%progbits,1
 	.type	.L.managed_type_name.7671, %object
 .L.managed_type_name.7671:
-	.asciz	"Javax.Xml.Xpath.IXPathFunctionResolverInvoker, Mono.Android"
-	.size	.L.managed_type_name.7671, 60
+	.asciz	"Javax.Xml.Xpath.IXPathInvoker, Mono.Android"
+	.size	.L.managed_type_name.7671, 44
 	.section	.rodata.managed_type_name.7672,"aMS",%progbits,1
 	.type	.L.managed_type_name.7672, %object
 .L.managed_type_name.7672:
-	.asciz	"Javax.Xml.Xpath.IXPathInvoker, Mono.Android"
-	.size	.L.managed_type_name.7672, 44
+	.asciz	"Javax.Xml.Xpath.IXPathVariableResolverInvoker, Mono.Android"
+	.size	.L.managed_type_name.7672, 60
 	.section	.rodata.managed_type_name.7673,"aMS",%progbits,1
 	.type	.L.managed_type_name.7673, %object
 .L.managed_type_name.7673:
-	.asciz	"Javax.Xml.Xpath.IXPathVariableResolverInvoker, Mono.Android"
-	.size	.L.managed_type_name.7673, 60
+	.asciz	"Javax.Xml.Xpath.XPathConstants, Mono.Android"
+	.size	.L.managed_type_name.7673, 45
 	.section	.rodata.managed_type_name.7674,"aMS",%progbits,1
 	.type	.L.managed_type_name.7674, %object
 .L.managed_type_name.7674:
-	.asciz	"Javax.Xml.Xpath.XPathConstants, Mono.Android"
+	.asciz	"Javax.Xml.Xpath.XPathException, Mono.Android"
 	.size	.L.managed_type_name.7674, 45
 	.section	.rodata.managed_type_name.7675,"aMS",%progbits,1
 	.type	.L.managed_type_name.7675, %object
 .L.managed_type_name.7675:
-	.asciz	"Javax.Xml.Xpath.XPathException, Mono.Android"
-	.size	.L.managed_type_name.7675, 45
+	.asciz	"Javax.Xml.Xpath.XPathExpressionException, Mono.Android"
+	.size	.L.managed_type_name.7675, 55
 	.section	.rodata.managed_type_name.7676,"aMS",%progbits,1
 	.type	.L.managed_type_name.7676, %object
 .L.managed_type_name.7676:
-	.asciz	"Javax.Xml.Xpath.XPathExpressionException, Mono.Android"
-	.size	.L.managed_type_name.7676, 55
+	.asciz	"Javax.Xml.Xpath.XPathFactory, Mono.Android"
+	.size	.L.managed_type_name.7676, 43
 	.section	.rodata.managed_type_name.7677,"aMS",%progbits,1
 	.type	.L.managed_type_name.7677, %object
 .L.managed_type_name.7677:
-	.asciz	"Javax.Xml.Xpath.XPathFactory, Mono.Android"
-	.size	.L.managed_type_name.7677, 43
+	.asciz	"Javax.Xml.Xpath.XPathFactoryConfigurationException, Mono.Android"
+	.size	.L.managed_type_name.7677, 65
 	.section	.rodata.managed_type_name.7678,"aMS",%progbits,1
 	.type	.L.managed_type_name.7678, %object
 .L.managed_type_name.7678:
-	.asciz	"Javax.Xml.Xpath.XPathFactoryConfigurationException, Mono.Android"
-	.size	.L.managed_type_name.7678, 65
+	.asciz	"Javax.Xml.Xpath.XPathFactoryInvoker, Mono.Android"
+	.size	.L.managed_type_name.7678, 50
 	.section	.rodata.managed_type_name.7679,"aMS",%progbits,1
 	.type	.L.managed_type_name.7679, %object
 .L.managed_type_name.7679:
-	.asciz	"Javax.Xml.Xpath.XPathFactoryInvoker, Mono.Android"
-	.size	.L.managed_type_name.7679, 50
+	.asciz	"Javax.Xml.Xpath.XPathFunctionException, Mono.Android"
+	.size	.L.managed_type_name.7679, 53
 	.section	.rodata.managed_type_name.7680,"aMS",%progbits,1
 	.type	.L.managed_type_name.7680, %object
 .L.managed_type_name.7680:
-	.asciz	"Javax.Xml.Xpath.XPathFunctionException, Mono.Android"
+	.asciz	"Org.Apache.Commons.Logging.ILogInvoker, Mono.Android"
 	.size	.L.managed_type_name.7680, 53
 	.section	.rodata.managed_type_name.7681,"aMS",%progbits,1
 	.type	.L.managed_type_name.7681, %object
 .L.managed_type_name.7681:
-	.asciz	"Org.Apache.Commons.Logging.ILogInvoker, Mono.Android"
+	.asciz	"Org.Apache.Http.Auth.Params.AuthPNames, Mono.Android"
 	.size	.L.managed_type_name.7681, 53
 	.section	.rodata.managed_type_name.7682,"aMS",%progbits,1
 	.type	.L.managed_type_name.7682, %object
 .L.managed_type_name.7682:
-	.asciz	"Org.Apache.Http.Auth.Params.AuthPNames, Mono.Android"
-	.size	.L.managed_type_name.7682, 53
+	.asciz	"Org.Apache.Http.Auth.Params.AuthParamBean, Mono.Android"
+	.size	.L.managed_type_name.7682, 56
 	.section	.rodata.managed_type_name.7683,"aMS",%progbits,1
 	.type	.L.managed_type_name.7683, %object
 .L.managed_type_name.7683:
-	.asciz	"Org.Apache.Http.Auth.Params.AuthParamBean, Mono.Android"
-	.size	.L.managed_type_name.7683, 56
+	.asciz	"Org.Apache.Http.Auth.Params.AuthParams, Mono.Android"
+	.size	.L.managed_type_name.7683, 53
 	.section	.rodata.managed_type_name.7684,"aMS",%progbits,1
 	.type	.L.managed_type_name.7684, %object
 .L.managed_type_name.7684:
-	.asciz	"Org.Apache.Http.Auth.Params.AuthParams, Mono.Android"
-	.size	.L.managed_type_name.7684, 53
+	.asciz	"Org.Apache.Http.Authentication.AUTH, Mono.Android"
+	.size	.L.managed_type_name.7684, 50
 	.section	.rodata.managed_type_name.7685,"aMS",%progbits,1
 	.type	.L.managed_type_name.7685, %object
 .L.managed_type_name.7685:
-	.asciz	"Org.Apache.Http.Authentication.AUTH, Mono.Android"
-	.size	.L.managed_type_name.7685, 50
+	.asciz	"Org.Apache.Http.Authentication.AuthSchemeRegistry, Mono.Android"
+	.size	.L.managed_type_name.7685, 64
 	.section	.rodata.managed_type_name.7686,"aMS",%progbits,1
 	.type	.L.managed_type_name.7686, %object
 .L.managed_type_name.7686:
-	.asciz	"Org.Apache.Http.Authentication.AuthSchemeRegistry, Mono.Android"
-	.size	.L.managed_type_name.7686, 64
+	.asciz	"Org.Apache.Http.Authentication.AuthScope, Mono.Android"
+	.size	.L.managed_type_name.7686, 55
 	.section	.rodata.managed_type_name.7687,"aMS",%progbits,1
 	.type	.L.managed_type_name.7687, %object
 .L.managed_type_name.7687:
-	.asciz	"Org.Apache.Http.Authentication.AuthScope, Mono.Android"
+	.asciz	"Org.Apache.Http.Authentication.AuthState, Mono.Android"
 	.size	.L.managed_type_name.7687, 55
 	.section	.rodata.managed_type_name.7688,"aMS",%progbits,1
 	.type	.L.managed_type_name.7688, %object
 .L.managed_type_name.7688:
-	.asciz	"Org.Apache.Http.Authentication.AuthState, Mono.Android"
-	.size	.L.managed_type_name.7688, 55
+	.asciz	"Org.Apache.Http.Authentication.AuthenticationException, Mono.Android"
+	.size	.L.managed_type_name.7688, 69
 	.section	.rodata.managed_type_name.7689,"aMS",%progbits,1
 	.type	.L.managed_type_name.7689, %object
 .L.managed_type_name.7689:
-	.asciz	"Org.Apache.Http.Authentication.AuthenticationException, Mono.Android"
-	.size	.L.managed_type_name.7689, 69
+	.asciz	"Org.Apache.Http.Authentication.BasicUserPrincipal, Mono.Android"
+	.size	.L.managed_type_name.7689, 64
 	.section	.rodata.managed_type_name.7690,"aMS",%progbits,1
 	.type	.L.managed_type_name.7690, %object
 .L.managed_type_name.7690:
-	.asciz	"Org.Apache.Http.Authentication.BasicUserPrincipal, Mono.Android"
-	.size	.L.managed_type_name.7690, 64
+	.asciz	"Org.Apache.Http.Authentication.IAuthSchemeFactoryInvoker, Mono.Android"
+	.size	.L.managed_type_name.7690, 71
 	.section	.rodata.managed_type_name.7691,"aMS",%progbits,1
 	.type	.L.managed_type_name.7691, %object
 .L.managed_type_name.7691:
-	.asciz	"Org.Apache.Http.Authentication.IAuthSchemeFactoryInvoker, Mono.Android"
-	.size	.L.managed_type_name.7691, 71
+	.asciz	"Org.Apache.Http.Authentication.IAuthSchemeInvoker, Mono.Android"
+	.size	.L.managed_type_name.7691, 64
 	.section	.rodata.managed_type_name.7692,"aMS",%progbits,1
 	.type	.L.managed_type_name.7692, %object
 .L.managed_type_name.7692:
-	.asciz	"Org.Apache.Http.Authentication.IAuthSchemeInvoker, Mono.Android"
-	.size	.L.managed_type_name.7692, 64
+	.asciz	"Org.Apache.Http.Authentication.ICredentialsInvoker, Mono.Android"
+	.size	.L.managed_type_name.7692, 65
 	.section	.rodata.managed_type_name.7693,"aMS",%progbits,1
 	.type	.L.managed_type_name.7693, %object
 .L.managed_type_name.7693:
-	.asciz	"Org.Apache.Http.Authentication.ICredentialsInvoker, Mono.Android"
-	.size	.L.managed_type_name.7693, 65
+	.asciz	"Org.Apache.Http.Authentication.InvalidCredentialsException, Mono.Android"
+	.size	.L.managed_type_name.7693, 73
 	.section	.rodata.managed_type_name.7694,"aMS",%progbits,1
 	.type	.L.managed_type_name.7694, %object
 .L.managed_type_name.7694:
-	.asciz	"Org.Apache.Http.Authentication.InvalidCredentialsException, Mono.Android"
+	.asciz	"Org.Apache.Http.Authentication.MalformedChallengeException, Mono.Android"
 	.size	.L.managed_type_name.7694, 73
 	.section	.rodata.managed_type_name.7695,"aMS",%progbits,1
 	.type	.L.managed_type_name.7695, %object
 .L.managed_type_name.7695:
-	.asciz	"Org.Apache.Http.Authentication.MalformedChallengeException, Mono.Android"
-	.size	.L.managed_type_name.7695, 73
+	.asciz	"Org.Apache.Http.Authentication.NTCredentials, Mono.Android"
+	.size	.L.managed_type_name.7695, 59
 	.section	.rodata.managed_type_name.7696,"aMS",%progbits,1
 	.type	.L.managed_type_name.7696, %object
 .L.managed_type_name.7696:
-	.asciz	"Org.Apache.Http.Authentication.NTCredentials, Mono.Android"
-	.size	.L.managed_type_name.7696, 59
+	.asciz	"Org.Apache.Http.Authentication.NTUserPrincipal, Mono.Android"
+	.size	.L.managed_type_name.7696, 61
 	.section	.rodata.managed_type_name.7697,"aMS",%progbits,1
 	.type	.L.managed_type_name.7697, %object
 .L.managed_type_name.7697:
-	.asciz	"Org.Apache.Http.Authentication.NTUserPrincipal, Mono.Android"
-	.size	.L.managed_type_name.7697, 61
+	.asciz	"Org.Apache.Http.Authentication.UsernamePasswordCredentials, Mono.Android"
+	.size	.L.managed_type_name.7697, 73
 	.section	.rodata.managed_type_name.7698,"aMS",%progbits,1
 	.type	.L.managed_type_name.7698, %object
 .L.managed_type_name.7698:
-	.asciz	"Org.Apache.Http.Authentication.UsernamePasswordCredentials, Mono.Android"
-	.size	.L.managed_type_name.7698, 73
+	.asciz	"Org.Apache.Http.Client.CircularRedirectException, Mono.Android"
+	.size	.L.managed_type_name.7698, 63
 	.section	.rodata.managed_type_name.7699,"aMS",%progbits,1
 	.type	.L.managed_type_name.7699, %object
 .L.managed_type_name.7699:
-	.asciz	"Org.Apache.Http.Client.CircularRedirectException, Mono.Android"
-	.size	.L.managed_type_name.7699, 63
+	.asciz	"Org.Apache.Http.Client.ClientProtocolException, Mono.Android"
+	.size	.L.managed_type_name.7699, 61
 	.section	.rodata.managed_type_name.7700,"aMS",%progbits,1
 	.type	.L.managed_type_name.7700, %object
 .L.managed_type_name.7700:
-	.asciz	"Org.Apache.Http.Client.ClientProtocolException, Mono.Android"
-	.size	.L.managed_type_name.7700, 61
+	.asciz	"Org.Apache.Http.Client.Entity.UrlEncodedFormEntity, Mono.Android"
+	.size	.L.managed_type_name.7700, 65
 	.section	.rodata.managed_type_name.7701,"aMS",%progbits,1
 	.type	.L.managed_type_name.7701, %object
 .L.managed_type_name.7701:
-	.asciz	"Org.Apache.Http.Client.Entity.UrlEncodedFormEntity, Mono.Android"
-	.size	.L.managed_type_name.7701, 65
+	.asciz	"Org.Apache.Http.Client.HttpResponseException, Mono.Android"
+	.size	.L.managed_type_name.7701, 59
 	.section	.rodata.managed_type_name.7702,"aMS",%progbits,1
 	.type	.L.managed_type_name.7702, %object
 .L.managed_type_name.7702:
-	.asciz	"Org.Apache.Http.Client.HttpResponseException, Mono.Android"
-	.size	.L.managed_type_name.7702, 59
+	.asciz	"Org.Apache.Http.Client.IAuthenticationHandlerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7702, 67
 	.section	.rodata.managed_type_name.7703,"aMS",%progbits,1
 	.type	.L.managed_type_name.7703, %object
 .L.managed_type_name.7703:
-	.asciz	"Org.Apache.Http.Client.IAuthenticationHandlerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7703, 67
+	.asciz	"Org.Apache.Http.Client.ICookieStoreInvoker, Mono.Android"
+	.size	.L.managed_type_name.7703, 57
 	.section	.rodata.managed_type_name.7704,"aMS",%progbits,1
 	.type	.L.managed_type_name.7704, %object
 .L.managed_type_name.7704:
-	.asciz	"Org.Apache.Http.Client.ICookieStoreInvoker, Mono.Android"
-	.size	.L.managed_type_name.7704, 57
+	.asciz	"Org.Apache.Http.Client.ICredentialsProviderInvoker, Mono.Android"
+	.size	.L.managed_type_name.7704, 65
 	.section	.rodata.managed_type_name.7705,"aMS",%progbits,1
 	.type	.L.managed_type_name.7705, %object
 .L.managed_type_name.7705:
-	.asciz	"Org.Apache.Http.Client.ICredentialsProviderInvoker, Mono.Android"
-	.size	.L.managed_type_name.7705, 65
+	.asciz	"Org.Apache.Http.Client.IHttpClientInvoker, Mono.Android"
+	.size	.L.managed_type_name.7705, 56
 	.section	.rodata.managed_type_name.7706,"aMS",%progbits,1
 	.type	.L.managed_type_name.7706, %object
 .L.managed_type_name.7706:
-	.asciz	"Org.Apache.Http.Client.IHttpClientInvoker, Mono.Android"
-	.size	.L.managed_type_name.7706, 56
+	.asciz	"Org.Apache.Http.Client.IHttpRequestRetryHandlerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7706, 69
 	.section	.rodata.managed_type_name.7707,"aMS",%progbits,1
 	.type	.L.managed_type_name.7707, %object
 .L.managed_type_name.7707:
-	.asciz	"Org.Apache.Http.Client.IHttpRequestRetryHandlerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7707, 69
+	.asciz	"Org.Apache.Http.Client.IRedirectHandlerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7707, 61
 	.section	.rodata.managed_type_name.7708,"aMS",%progbits,1
 	.type	.L.managed_type_name.7708, %object
 .L.managed_type_name.7708:
-	.asciz	"Org.Apache.Http.Client.IRedirectHandlerInvoker, Mono.Android"
+	.asciz	"Org.Apache.Http.Client.IRequestDirectorInvoker, Mono.Android"
 	.size	.L.managed_type_name.7708, 61
 	.section	.rodata.managed_type_name.7709,"aMS",%progbits,1
 	.type	.L.managed_type_name.7709, %object
 .L.managed_type_name.7709:
-	.asciz	"Org.Apache.Http.Client.IRequestDirectorInvoker, Mono.Android"
+	.asciz	"Org.Apache.Http.Client.IResponseHandlerInvoker, Mono.Android"
 	.size	.L.managed_type_name.7709, 61
 	.section	.rodata.managed_type_name.7710,"aMS",%progbits,1
 	.type	.L.managed_type_name.7710, %object
 .L.managed_type_name.7710:
-	.asciz	"Org.Apache.Http.Client.IResponseHandlerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7710, 61
+	.asciz	"Org.Apache.Http.Client.IUserTokenHandlerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7710, 62
 	.section	.rodata.managed_type_name.7711,"aMS",%progbits,1
 	.type	.L.managed_type_name.7711, %object
 .L.managed_type_name.7711:
-	.asciz	"Org.Apache.Http.Client.IUserTokenHandlerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7711, 62
+	.asciz	"Org.Apache.Http.Client.Methods.HttpDelete, Mono.Android"
+	.size	.L.managed_type_name.7711, 56
 	.section	.rodata.managed_type_name.7712,"aMS",%progbits,1
 	.type	.L.managed_type_name.7712, %object
 .L.managed_type_name.7712:
-	.asciz	"Org.Apache.Http.Client.Methods.HttpDelete, Mono.Android"
-	.size	.L.managed_type_name.7712, 56
+	.asciz	"Org.Apache.Http.Client.Methods.HttpEntityEnclosingRequestBase, Mono.Android"
+	.size	.L.managed_type_name.7712, 76
 	.section	.rodata.managed_type_name.7713,"aMS",%progbits,1
 	.type	.L.managed_type_name.7713, %object
 .L.managed_type_name.7713:
-	.asciz	"Org.Apache.Http.Client.Methods.HttpEntityEnclosingRequestBase, Mono.Android"
-	.size	.L.managed_type_name.7713, 76
+	.asciz	"Org.Apache.Http.Client.Methods.HttpEntityEnclosingRequestBaseInvoker, Mono.Android"
+	.size	.L.managed_type_name.7713, 83
 	.section	.rodata.managed_type_name.7714,"aMS",%progbits,1
 	.type	.L.managed_type_name.7714, %object
 .L.managed_type_name.7714:
-	.asciz	"Org.Apache.Http.Client.Methods.HttpEntityEnclosingRequestBaseInvoker, Mono.Android"
-	.size	.L.managed_type_name.7714, 83
+	.asciz	"Org.Apache.Http.Client.Methods.HttpGet, Mono.Android"
+	.size	.L.managed_type_name.7714, 53
 	.section	.rodata.managed_type_name.7715,"aMS",%progbits,1
 	.type	.L.managed_type_name.7715, %object
 .L.managed_type_name.7715:
-	.asciz	"Org.Apache.Http.Client.Methods.HttpGet, Mono.Android"
-	.size	.L.managed_type_name.7715, 53
+	.asciz	"Org.Apache.Http.Client.Methods.HttpHead, Mono.Android"
+	.size	.L.managed_type_name.7715, 54
 	.section	.rodata.managed_type_name.7716,"aMS",%progbits,1
 	.type	.L.managed_type_name.7716, %object
 .L.managed_type_name.7716:
-	.asciz	"Org.Apache.Http.Client.Methods.HttpHead, Mono.Android"
-	.size	.L.managed_type_name.7716, 54
+	.asciz	"Org.Apache.Http.Client.Methods.HttpOptions, Mono.Android"
+	.size	.L.managed_type_name.7716, 57
 	.section	.rodata.managed_type_name.7717,"aMS",%progbits,1
 	.type	.L.managed_type_name.7717, %object
 .L.managed_type_name.7717:
-	.asciz	"Org.Apache.Http.Client.Methods.HttpOptions, Mono.Android"
-	.size	.L.managed_type_name.7717, 57
+	.asciz	"Org.Apache.Http.Client.Methods.HttpPost, Mono.Android"
+	.size	.L.managed_type_name.7717, 54
 	.section	.rodata.managed_type_name.7718,"aMS",%progbits,1
 	.type	.L.managed_type_name.7718, %object
 .L.managed_type_name.7718:
-	.asciz	"Org.Apache.Http.Client.Methods.HttpPost, Mono.Android"
-	.size	.L.managed_type_name.7718, 54
+	.asciz	"Org.Apache.Http.Client.Methods.HttpPut, Mono.Android"
+	.size	.L.managed_type_name.7718, 53
 	.section	.rodata.managed_type_name.7719,"aMS",%progbits,1
 	.type	.L.managed_type_name.7719, %object
 .L.managed_type_name.7719:
-	.asciz	"Org.Apache.Http.Client.Methods.HttpPut, Mono.Android"
-	.size	.L.managed_type_name.7719, 53
+	.asciz	"Org.Apache.Http.Client.Methods.HttpRequestBase, Mono.Android"
+	.size	.L.managed_type_name.7719, 61
 	.section	.rodata.managed_type_name.7720,"aMS",%progbits,1
 	.type	.L.managed_type_name.7720, %object
 .L.managed_type_name.7720:
-	.asciz	"Org.Apache.Http.Client.Methods.HttpRequestBase, Mono.Android"
-	.size	.L.managed_type_name.7720, 61
+	.asciz	"Org.Apache.Http.Client.Methods.HttpRequestBaseInvoker, Mono.Android"
+	.size	.L.managed_type_name.7720, 68
 	.section	.rodata.managed_type_name.7721,"aMS",%progbits,1
 	.type	.L.managed_type_name.7721, %object
 .L.managed_type_name.7721:
-	.asciz	"Org.Apache.Http.Client.Methods.HttpRequestBaseInvoker, Mono.Android"
-	.size	.L.managed_type_name.7721, 68
+	.asciz	"Org.Apache.Http.Client.Methods.HttpTrace, Mono.Android"
+	.size	.L.managed_type_name.7721, 55
 	.section	.rodata.managed_type_name.7722,"aMS",%progbits,1
 	.type	.L.managed_type_name.7722, %object
 .L.managed_type_name.7722:
-	.asciz	"Org.Apache.Http.Client.Methods.HttpTrace, Mono.Android"
-	.size	.L.managed_type_name.7722, 55
+	.asciz	"Org.Apache.Http.Client.Methods.IAbortableHttpRequestInvoker, Mono.Android"
+	.size	.L.managed_type_name.7722, 74
 	.section	.rodata.managed_type_name.7723,"aMS",%progbits,1
 	.type	.L.managed_type_name.7723, %object
 .L.managed_type_name.7723:
-	.asciz	"Org.Apache.Http.Client.Methods.IAbortableHttpRequestInvoker, Mono.Android"
-	.size	.L.managed_type_name.7723, 74
+	.asciz	"Org.Apache.Http.Client.Methods.IHttpUriRequestInvoker, Mono.Android"
+	.size	.L.managed_type_name.7723, 68
 	.section	.rodata.managed_type_name.7724,"aMS",%progbits,1
 	.type	.L.managed_type_name.7724, %object
 .L.managed_type_name.7724:
-	.asciz	"Org.Apache.Http.Client.Methods.IHttpUriRequestInvoker, Mono.Android"
-	.size	.L.managed_type_name.7724, 68
+	.asciz	"Org.Apache.Http.Client.NonRepeatableRequestException, Mono.Android"
+	.size	.L.managed_type_name.7724, 67
 	.section	.rodata.managed_type_name.7725,"aMS",%progbits,1
 	.type	.L.managed_type_name.7725, %object
 .L.managed_type_name.7725:
-	.asciz	"Org.Apache.Http.Client.NonRepeatableRequestException, Mono.Android"
-	.size	.L.managed_type_name.7725, 67
+	.asciz	"Org.Apache.Http.Client.Params.AuthPolicy, Mono.Android"
+	.size	.L.managed_type_name.7725, 55
 	.section	.rodata.managed_type_name.7726,"aMS",%progbits,1
 	.type	.L.managed_type_name.7726, %object
 .L.managed_type_name.7726:
-	.asciz	"Org.Apache.Http.Client.Params.AuthPolicy, Mono.Android"
-	.size	.L.managed_type_name.7726, 55
+	.asciz	"Org.Apache.Http.Client.Params.ClientPNames, Mono.Android"
+	.size	.L.managed_type_name.7726, 57
 	.section	.rodata.managed_type_name.7727,"aMS",%progbits,1
 	.type	.L.managed_type_name.7727, %object
 .L.managed_type_name.7727:
-	.asciz	"Org.Apache.Http.Client.Params.ClientPNames, Mono.Android"
-	.size	.L.managed_type_name.7727, 57
+	.asciz	"Org.Apache.Http.Client.Params.ClientParamBean, Mono.Android"
+	.size	.L.managed_type_name.7727, 60
 	.section	.rodata.managed_type_name.7728,"aMS",%progbits,1
 	.type	.L.managed_type_name.7728, %object
 .L.managed_type_name.7728:
-	.asciz	"Org.Apache.Http.Client.Params.ClientParamBean, Mono.Android"
-	.size	.L.managed_type_name.7728, 60
+	.asciz	"Org.Apache.Http.Client.Params.CookiePolicy, Mono.Android"
+	.size	.L.managed_type_name.7728, 57
 	.section	.rodata.managed_type_name.7729,"aMS",%progbits,1
 	.type	.L.managed_type_name.7729, %object
 .L.managed_type_name.7729:
-	.asciz	"Org.Apache.Http.Client.Params.CookiePolicy, Mono.Android"
-	.size	.L.managed_type_name.7729, 57
+	.asciz	"Org.Apache.Http.Client.Params.HttpClientParams, Mono.Android"
+	.size	.L.managed_type_name.7729, 61
 	.section	.rodata.managed_type_name.7730,"aMS",%progbits,1
 	.type	.L.managed_type_name.7730, %object
 .L.managed_type_name.7730:
-	.asciz	"Org.Apache.Http.Client.Params.HttpClientParams, Mono.Android"
-	.size	.L.managed_type_name.7730, 61
+	.asciz	"Org.Apache.Http.Client.Protocol.ClientContext, Mono.Android"
+	.size	.L.managed_type_name.7730, 60
 	.section	.rodata.managed_type_name.7731,"aMS",%progbits,1
 	.type	.L.managed_type_name.7731, %object
 .L.managed_type_name.7731:
-	.asciz	"Org.Apache.Http.Client.Protocol.ClientContext, Mono.Android"
-	.size	.L.managed_type_name.7731, 60
+	.asciz	"Org.Apache.Http.Client.Protocol.ClientContextConfigurer, Mono.Android"
+	.size	.L.managed_type_name.7731, 70
 	.section	.rodata.managed_type_name.7732,"aMS",%progbits,1
 	.type	.L.managed_type_name.7732, %object
 .L.managed_type_name.7732:
-	.asciz	"Org.Apache.Http.Client.Protocol.ClientContextConfigurer, Mono.Android"
-	.size	.L.managed_type_name.7732, 70
+	.asciz	"Org.Apache.Http.Client.Protocol.RequestAddCookies, Mono.Android"
+	.size	.L.managed_type_name.7732, 64
 	.section	.rodata.managed_type_name.7733,"aMS",%progbits,1
 	.type	.L.managed_type_name.7733, %object
 .L.managed_type_name.7733:
-	.asciz	"Org.Apache.Http.Client.Protocol.RequestAddCookies, Mono.Android"
-	.size	.L.managed_type_name.7733, 64
+	.asciz	"Org.Apache.Http.Client.Protocol.RequestDefaultHeaders, Mono.Android"
+	.size	.L.managed_type_name.7733, 68
 	.section	.rodata.managed_type_name.7734,"aMS",%progbits,1
 	.type	.L.managed_type_name.7734, %object
 .L.managed_type_name.7734:
-	.asciz	"Org.Apache.Http.Client.Protocol.RequestDefaultHeaders, Mono.Android"
-	.size	.L.managed_type_name.7734, 68
+	.asciz	"Org.Apache.Http.Client.Protocol.RequestProxyAuthentication, Mono.Android"
+	.size	.L.managed_type_name.7734, 73
 	.section	.rodata.managed_type_name.7735,"aMS",%progbits,1
 	.type	.L.managed_type_name.7735, %object
 .L.managed_type_name.7735:
-	.asciz	"Org.Apache.Http.Client.Protocol.RequestProxyAuthentication, Mono.Android"
-	.size	.L.managed_type_name.7735, 73
+	.asciz	"Org.Apache.Http.Client.Protocol.RequestTargetAuthentication, Mono.Android"
+	.size	.L.managed_type_name.7735, 74
 	.section	.rodata.managed_type_name.7736,"aMS",%progbits,1
 	.type	.L.managed_type_name.7736, %object
 .L.managed_type_name.7736:
-	.asciz	"Org.Apache.Http.Client.Protocol.RequestTargetAuthentication, Mono.Android"
-	.size	.L.managed_type_name.7736, 74
+	.asciz	"Org.Apache.Http.Client.Protocol.ResponseProcessCookies, Mono.Android"
+	.size	.L.managed_type_name.7736, 69
 	.section	.rodata.managed_type_name.7737,"aMS",%progbits,1
 	.type	.L.managed_type_name.7737, %object
 .L.managed_type_name.7737:
-	.asciz	"Org.Apache.Http.Client.Protocol.ResponseProcessCookies, Mono.Android"
-	.size	.L.managed_type_name.7737, 69
+	.asciz	"Org.Apache.Http.Client.RedirectException, Mono.Android"
+	.size	.L.managed_type_name.7737, 55
 	.section	.rodata.managed_type_name.7738,"aMS",%progbits,1
 	.type	.L.managed_type_name.7738, %object
 .L.managed_type_name.7738:
-	.asciz	"Org.Apache.Http.Client.RedirectException, Mono.Android"
-	.size	.L.managed_type_name.7738, 55
+	.asciz	"Org.Apache.Http.Client.Utils.CloneUtils, Mono.Android"
+	.size	.L.managed_type_name.7738, 54
 	.section	.rodata.managed_type_name.7739,"aMS",%progbits,1
 	.type	.L.managed_type_name.7739, %object
 .L.managed_type_name.7739:
-	.asciz	"Org.Apache.Http.Client.Utils.CloneUtils, Mono.Android"
-	.size	.L.managed_type_name.7739, 54
+	.asciz	"Org.Apache.Http.Client.Utils.URIUtils, Mono.Android"
+	.size	.L.managed_type_name.7739, 52
 	.section	.rodata.managed_type_name.7740,"aMS",%progbits,1
 	.type	.L.managed_type_name.7740, %object
 .L.managed_type_name.7740:
-	.asciz	"Org.Apache.Http.Client.Utils.URIUtils, Mono.Android"
-	.size	.L.managed_type_name.7740, 52
+	.asciz	"Org.Apache.Http.Client.Utils.URLEncodedUtils, Mono.Android"
+	.size	.L.managed_type_name.7740, 59
 	.section	.rodata.managed_type_name.7741,"aMS",%progbits,1
 	.type	.L.managed_type_name.7741, %object
 .L.managed_type_name.7741:
-	.asciz	"Org.Apache.Http.Client.Utils.URLEncodedUtils, Mono.Android"
-	.size	.L.managed_type_name.7741, 59
+	.asciz	"Org.Apache.Http.Conn.BasicEofSensorWatcher, Mono.Android"
+	.size	.L.managed_type_name.7741, 57
 	.section	.rodata.managed_type_name.7742,"aMS",%progbits,1
 	.type	.L.managed_type_name.7742, %object
 .L.managed_type_name.7742:
-	.asciz	"Org.Apache.Http.Conn.BasicEofSensorWatcher, Mono.Android"
-	.size	.L.managed_type_name.7742, 57
+	.asciz	"Org.Apache.Http.Conn.BasicManagedEntity, Mono.Android"
+	.size	.L.managed_type_name.7742, 54
 	.section	.rodata.managed_type_name.7743,"aMS",%progbits,1
 	.type	.L.managed_type_name.7743, %object
 .L.managed_type_name.7743:
-	.asciz	"Org.Apache.Http.Conn.BasicManagedEntity, Mono.Android"
-	.size	.L.managed_type_name.7743, 54
+	.asciz	"Org.Apache.Http.Conn.ConnectTimeoutException, Mono.Android"
+	.size	.L.managed_type_name.7743, 59
 	.section	.rodata.managed_type_name.7744,"aMS",%progbits,1
 	.type	.L.managed_type_name.7744, %object
 .L.managed_type_name.7744:
-	.asciz	"Org.Apache.Http.Conn.ConnectTimeoutException, Mono.Android"
-	.size	.L.managed_type_name.7744, 59
+	.asciz	"Org.Apache.Http.Conn.ConnectionPoolTimeoutException, Mono.Android"
+	.size	.L.managed_type_name.7744, 66
 	.section	.rodata.managed_type_name.7745,"aMS",%progbits,1
 	.type	.L.managed_type_name.7745, %object
 .L.managed_type_name.7745:
-	.asciz	"Org.Apache.Http.Conn.ConnectionPoolTimeoutException, Mono.Android"
-	.size	.L.managed_type_name.7745, 66
+	.asciz	"Org.Apache.Http.Conn.EofSensorInputStream, Mono.Android"
+	.size	.L.managed_type_name.7745, 56
 	.section	.rodata.managed_type_name.7746,"aMS",%progbits,1
 	.type	.L.managed_type_name.7746, %object
 .L.managed_type_name.7746:
-	.asciz	"Org.Apache.Http.Conn.EofSensorInputStream, Mono.Android"
-	.size	.L.managed_type_name.7746, 56
+	.asciz	"Org.Apache.Http.Conn.HttpHostConnectException, Mono.Android"
+	.size	.L.managed_type_name.7746, 60
 	.section	.rodata.managed_type_name.7747,"aMS",%progbits,1
 	.type	.L.managed_type_name.7747, %object
 .L.managed_type_name.7747:
-	.asciz	"Org.Apache.Http.Conn.HttpHostConnectException, Mono.Android"
-	.size	.L.managed_type_name.7747, 60
+	.asciz	"Org.Apache.Http.Conn.IClientConnectionManagerFactoryInvoker, Mono.Android"
+	.size	.L.managed_type_name.7747, 74
 	.section	.rodata.managed_type_name.7748,"aMS",%progbits,1
 	.type	.L.managed_type_name.7748, %object
 .L.managed_type_name.7748:
-	.asciz	"Org.Apache.Http.Conn.IClientConnectionManagerFactoryInvoker, Mono.Android"
-	.size	.L.managed_type_name.7748, 74
+	.asciz	"Org.Apache.Http.Conn.IClientConnectionManagerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7748, 67
 	.section	.rodata.managed_type_name.7749,"aMS",%progbits,1
 	.type	.L.managed_type_name.7749, %object
 .L.managed_type_name.7749:
-	.asciz	"Org.Apache.Http.Conn.IClientConnectionManagerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7749, 67
+	.asciz	"Org.Apache.Http.Conn.IClientConnectionOperatorInvoker, Mono.Android"
+	.size	.L.managed_type_name.7749, 68
 	.section	.rodata.managed_type_name.7750,"aMS",%progbits,1
 	.type	.L.managed_type_name.7750, %object
 .L.managed_type_name.7750:
-	.asciz	"Org.Apache.Http.Conn.IClientConnectionOperatorInvoker, Mono.Android"
-	.size	.L.managed_type_name.7750, 68
+	.asciz	"Org.Apache.Http.Conn.IClientConnectionRequestInvoker, Mono.Android"
+	.size	.L.managed_type_name.7750, 67
 	.section	.rodata.managed_type_name.7751,"aMS",%progbits,1
 	.type	.L.managed_type_name.7751, %object
 .L.managed_type_name.7751:
-	.asciz	"Org.Apache.Http.Conn.IClientConnectionRequestInvoker, Mono.Android"
-	.size	.L.managed_type_name.7751, 67
+	.asciz	"Org.Apache.Http.Conn.IConnectionKeepAliveStrategyInvoker, Mono.Android"
+	.size	.L.managed_type_name.7751, 71
 	.section	.rodata.managed_type_name.7752,"aMS",%progbits,1
 	.type	.L.managed_type_name.7752, %object
 .L.managed_type_name.7752:
-	.asciz	"Org.Apache.Http.Conn.IConnectionKeepAliveStrategyInvoker, Mono.Android"
-	.size	.L.managed_type_name.7752, 71
+	.asciz	"Org.Apache.Http.Conn.IConnectionReleaseTriggerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7752, 68
 	.section	.rodata.managed_type_name.7753,"aMS",%progbits,1
 	.type	.L.managed_type_name.7753, %object
 .L.managed_type_name.7753:
-	.asciz	"Org.Apache.Http.Conn.IConnectionReleaseTriggerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7753, 68
+	.asciz	"Org.Apache.Http.Conn.IEofSensorWatcherInvoker, Mono.Android"
+	.size	.L.managed_type_name.7753, 60
 	.section	.rodata.managed_type_name.7754,"aMS",%progbits,1
 	.type	.L.managed_type_name.7754, %object
 .L.managed_type_name.7754:
-	.asciz	"Org.Apache.Http.Conn.IEofSensorWatcherInvoker, Mono.Android"
-	.size	.L.managed_type_name.7754, 60
+	.asciz	"Org.Apache.Http.Conn.IManagedClientConnectionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7754, 67
 	.section	.rodata.managed_type_name.7755,"aMS",%progbits,1
 	.type	.L.managed_type_name.7755, %object
 .L.managed_type_name.7755:
-	.asciz	"Org.Apache.Http.Conn.IManagedClientConnectionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7755, 67
+	.asciz	"Org.Apache.Http.Conn.IOperatedClientConnectionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7755, 68
 	.section	.rodata.managed_type_name.7756,"aMS",%progbits,1
 	.type	.L.managed_type_name.7756, %object
 .L.managed_type_name.7756:
-	.asciz	"Org.Apache.Http.Conn.IOperatedClientConnectionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7756, 68
+	.asciz	"Org.Apache.Http.Conn.MultihomePlainSocketFactory, Mono.Android"
+	.size	.L.managed_type_name.7756, 63
 	.section	.rodata.managed_type_name.7757,"aMS",%progbits,1
 	.type	.L.managed_type_name.7757, %object
 .L.managed_type_name.7757:
-	.asciz	"Org.Apache.Http.Conn.MultihomePlainSocketFactory, Mono.Android"
+	.asciz	"Org.Apache.Http.Conn.Params.ConnConnectionPNames, Mono.Android"
 	.size	.L.managed_type_name.7757, 63
 	.section	.rodata.managed_type_name.7758,"aMS",%progbits,1
 	.type	.L.managed_type_name.7758, %object
 .L.managed_type_name.7758:
-	.asciz	"Org.Apache.Http.Conn.Params.ConnConnectionPNames, Mono.Android"
-	.size	.L.managed_type_name.7758, 63
+	.asciz	"Org.Apache.Http.Conn.Params.ConnConnectionParamBean, Mono.Android"
+	.size	.L.managed_type_name.7758, 66
 	.section	.rodata.managed_type_name.7759,"aMS",%progbits,1
 	.type	.L.managed_type_name.7759, %object
 .L.managed_type_name.7759:
-	.asciz	"Org.Apache.Http.Conn.Params.ConnConnectionParamBean, Mono.Android"
-	.size	.L.managed_type_name.7759, 66
+	.asciz	"Org.Apache.Http.Conn.Params.ConnManagerPNames, Mono.Android"
+	.size	.L.managed_type_name.7759, 60
 	.section	.rodata.managed_type_name.7760,"aMS",%progbits,1
 	.type	.L.managed_type_name.7760, %object
 .L.managed_type_name.7760:
-	.asciz	"Org.Apache.Http.Conn.Params.ConnManagerPNames, Mono.Android"
-	.size	.L.managed_type_name.7760, 60
+	.asciz	"Org.Apache.Http.Conn.Params.ConnManagerParamBean, Mono.Android"
+	.size	.L.managed_type_name.7760, 63
 	.section	.rodata.managed_type_name.7761,"aMS",%progbits,1
 	.type	.L.managed_type_name.7761, %object
 .L.managed_type_name.7761:
-	.asciz	"Org.Apache.Http.Conn.Params.ConnManagerParamBean, Mono.Android"
-	.size	.L.managed_type_name.7761, 63
+	.asciz	"Org.Apache.Http.Conn.Params.ConnManagerParams, Mono.Android"
+	.size	.L.managed_type_name.7761, 60
 	.section	.rodata.managed_type_name.7762,"aMS",%progbits,1
 	.type	.L.managed_type_name.7762, %object
 .L.managed_type_name.7762:
-	.asciz	"Org.Apache.Http.Conn.Params.ConnManagerParams, Mono.Android"
-	.size	.L.managed_type_name.7762, 60
+	.asciz	"Org.Apache.Http.Conn.Params.ConnPerRouteBean, Mono.Android"
+	.size	.L.managed_type_name.7762, 59
 	.section	.rodata.managed_type_name.7763,"aMS",%progbits,1
 	.type	.L.managed_type_name.7763, %object
 .L.managed_type_name.7763:
-	.asciz	"Org.Apache.Http.Conn.Params.ConnPerRouteBean, Mono.Android"
-	.size	.L.managed_type_name.7763, 59
+	.asciz	"Org.Apache.Http.Conn.Params.ConnRoutePNames, Mono.Android"
+	.size	.L.managed_type_name.7763, 58
 	.section	.rodata.managed_type_name.7764,"aMS",%progbits,1
 	.type	.L.managed_type_name.7764, %object
 .L.managed_type_name.7764:
-	.asciz	"Org.Apache.Http.Conn.Params.ConnRoutePNames, Mono.Android"
-	.size	.L.managed_type_name.7764, 58
+	.asciz	"Org.Apache.Http.Conn.Params.ConnRouteParamBean, Mono.Android"
+	.size	.L.managed_type_name.7764, 61
 	.section	.rodata.managed_type_name.7765,"aMS",%progbits,1
 	.type	.L.managed_type_name.7765, %object
 .L.managed_type_name.7765:
-	.asciz	"Org.Apache.Http.Conn.Params.ConnRouteParamBean, Mono.Android"
-	.size	.L.managed_type_name.7765, 61
+	.asciz	"Org.Apache.Http.Conn.Params.ConnRouteParams, Mono.Android"
+	.size	.L.managed_type_name.7765, 58
 	.section	.rodata.managed_type_name.7766,"aMS",%progbits,1
 	.type	.L.managed_type_name.7766, %object
 .L.managed_type_name.7766:
-	.asciz	"Org.Apache.Http.Conn.Params.ConnRouteParams, Mono.Android"
-	.size	.L.managed_type_name.7766, 58
+	.asciz	"Org.Apache.Http.Conn.Params.IConnPerRouteInvoker, Mono.Android"
+	.size	.L.managed_type_name.7766, 63
 	.section	.rodata.managed_type_name.7767,"aMS",%progbits,1
 	.type	.L.managed_type_name.7767, %object
 .L.managed_type_name.7767:
-	.asciz	"Org.Apache.Http.Conn.Params.IConnPerRouteInvoker, Mono.Android"
-	.size	.L.managed_type_name.7767, 63
+	.asciz	"Org.Apache.Http.Conn.Routing.BasicRouteDirector, Mono.Android"
+	.size	.L.managed_type_name.7767, 62
 	.section	.rodata.managed_type_name.7768,"aMS",%progbits,1
 	.type	.L.managed_type_name.7768, %object
 .L.managed_type_name.7768:
-	.asciz	"Org.Apache.Http.Conn.Routing.BasicRouteDirector, Mono.Android"
-	.size	.L.managed_type_name.7768, 62
+	.asciz	"Org.Apache.Http.Conn.Routing.HttpRoute, Mono.Android"
+	.size	.L.managed_type_name.7768, 53
 	.section	.rodata.managed_type_name.7769,"aMS",%progbits,1
 	.type	.L.managed_type_name.7769, %object
 .L.managed_type_name.7769:
-	.asciz	"Org.Apache.Http.Conn.Routing.HttpRoute, Mono.Android"
-	.size	.L.managed_type_name.7769, 53
+	.asciz	"Org.Apache.Http.Conn.Routing.HttpRouteDirector, Mono.Android"
+	.size	.L.managed_type_name.7769, 61
 	.section	.rodata.managed_type_name.7770,"aMS",%progbits,1
 	.type	.L.managed_type_name.7770, %object
 .L.managed_type_name.7770:
-	.asciz	"Org.Apache.Http.Conn.Routing.HttpRouteDirector, Mono.Android"
-	.size	.L.managed_type_name.7770, 61
+	.asciz	"Org.Apache.Http.Conn.Routing.IHttpRouteDirectorInvoker, Mono.Android"
+	.size	.L.managed_type_name.7770, 69
 	.section	.rodata.managed_type_name.7771,"aMS",%progbits,1
 	.type	.L.managed_type_name.7771, %object
 .L.managed_type_name.7771:
-	.asciz	"Org.Apache.Http.Conn.Routing.IHttpRouteDirectorInvoker, Mono.Android"
-	.size	.L.managed_type_name.7771, 69
+	.asciz	"Org.Apache.Http.Conn.Routing.IHttpRoutePlannerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7771, 68
 	.section	.rodata.managed_type_name.7772,"aMS",%progbits,1
 	.type	.L.managed_type_name.7772, %object
 .L.managed_type_name.7772:
-	.asciz	"Org.Apache.Http.Conn.Routing.IHttpRoutePlannerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7772, 68
+	.asciz	"Org.Apache.Http.Conn.Routing.IRouteInfoInvoker, Mono.Android"
+	.size	.L.managed_type_name.7772, 61
 	.section	.rodata.managed_type_name.7773,"aMS",%progbits,1
 	.type	.L.managed_type_name.7773, %object
 .L.managed_type_name.7773:
-	.asciz	"Org.Apache.Http.Conn.Routing.IRouteInfoInvoker, Mono.Android"
-	.size	.L.managed_type_name.7773, 61
+	.asciz	"Org.Apache.Http.Conn.Routing.RouteInfoLayerType, Mono.Android"
+	.size	.L.managed_type_name.7773, 62
 	.section	.rodata.managed_type_name.7774,"aMS",%progbits,1
 	.type	.L.managed_type_name.7774, %object
 .L.managed_type_name.7774:
-	.asciz	"Org.Apache.Http.Conn.Routing.RouteInfoLayerType, Mono.Android"
-	.size	.L.managed_type_name.7774, 62
+	.asciz	"Org.Apache.Http.Conn.Routing.RouteInfoTunnelType, Mono.Android"
+	.size	.L.managed_type_name.7774, 63
 	.section	.rodata.managed_type_name.7775,"aMS",%progbits,1
 	.type	.L.managed_type_name.7775, %object
 .L.managed_type_name.7775:
-	.asciz	"Org.Apache.Http.Conn.Routing.RouteInfoTunnelType, Mono.Android"
-	.size	.L.managed_type_name.7775, 63
+	.asciz	"Org.Apache.Http.Conn.Routing.RouteTracker, Mono.Android"
+	.size	.L.managed_type_name.7775, 56
 	.section	.rodata.managed_type_name.7776,"aMS",%progbits,1
 	.type	.L.managed_type_name.7776, %object
 .L.managed_type_name.7776:
-	.asciz	"Org.Apache.Http.Conn.Routing.RouteTracker, Mono.Android"
-	.size	.L.managed_type_name.7776, 56
+	.asciz	"Org.Apache.Http.Conn.Schemes.IHostNameResolverInvoker, Mono.Android"
+	.size	.L.managed_type_name.7776, 68
 	.section	.rodata.managed_type_name.7777,"aMS",%progbits,1
 	.type	.L.managed_type_name.7777, %object
 .L.managed_type_name.7777:
-	.asciz	"Org.Apache.Http.Conn.Schemes.IHostNameResolverInvoker, Mono.Android"
-	.size	.L.managed_type_name.7777, 68
+	.asciz	"Org.Apache.Http.Conn.Schemes.ILayeredSocketFactoryInvoker, Mono.Android"
+	.size	.L.managed_type_name.7777, 72
 	.section	.rodata.managed_type_name.7778,"aMS",%progbits,1
 	.type	.L.managed_type_name.7778, %object
 .L.managed_type_name.7778:
-	.asciz	"Org.Apache.Http.Conn.Schemes.ILayeredSocketFactoryInvoker, Mono.Android"
-	.size	.L.managed_type_name.7778, 72
+	.asciz	"Org.Apache.Http.Conn.Schemes.ISocketFactoryInvoker, Mono.Android"
+	.size	.L.managed_type_name.7778, 65
 	.section	.rodata.managed_type_name.7779,"aMS",%progbits,1
 	.type	.L.managed_type_name.7779, %object
 .L.managed_type_name.7779:
-	.asciz	"Org.Apache.Http.Conn.Schemes.ISocketFactoryInvoker, Mono.Android"
-	.size	.L.managed_type_name.7779, 65
+	.asciz	"Org.Apache.Http.Conn.Schemes.PlainSocketFactory, Mono.Android"
+	.size	.L.managed_type_name.7779, 62
 	.section	.rodata.managed_type_name.7780,"aMS",%progbits,1
 	.type	.L.managed_type_name.7780, %object
 .L.managed_type_name.7780:
-	.asciz	"Org.Apache.Http.Conn.Schemes.PlainSocketFactory, Mono.Android"
-	.size	.L.managed_type_name.7780, 62
+	.asciz	"Org.Apache.Http.Conn.Schemes.Scheme, Mono.Android"
+	.size	.L.managed_type_name.7780, 50
 	.section	.rodata.managed_type_name.7781,"aMS",%progbits,1
 	.type	.L.managed_type_name.7781, %object
 .L.managed_type_name.7781:
-	.asciz	"Org.Apache.Http.Conn.Schemes.Scheme, Mono.Android"
-	.size	.L.managed_type_name.7781, 50
+	.asciz	"Org.Apache.Http.Conn.Schemes.SchemeRegistry, Mono.Android"
+	.size	.L.managed_type_name.7781, 58
 	.section	.rodata.managed_type_name.7782,"aMS",%progbits,1
 	.type	.L.managed_type_name.7782, %object
 .L.managed_type_name.7782:
-	.asciz	"Org.Apache.Http.Conn.Schemes.SchemeRegistry, Mono.Android"
-	.size	.L.managed_type_name.7782, 58
+	.asciz	"Org.Apache.Http.Conn.Ssl.AbstractVerifier, Mono.Android"
+	.size	.L.managed_type_name.7782, 56
 	.section	.rodata.managed_type_name.7783,"aMS",%progbits,1
 	.type	.L.managed_type_name.7783, %object
 .L.managed_type_name.7783:
-	.asciz	"Org.Apache.Http.Conn.Ssl.AbstractVerifier, Mono.Android"
-	.size	.L.managed_type_name.7783, 56
+	.asciz	"Org.Apache.Http.Conn.Ssl.AbstractVerifierInvoker, Mono.Android"
+	.size	.L.managed_type_name.7783, 63
 	.section	.rodata.managed_type_name.7784,"aMS",%progbits,1
 	.type	.L.managed_type_name.7784, %object
 .L.managed_type_name.7784:
-	.asciz	"Org.Apache.Http.Conn.Ssl.AbstractVerifierInvoker, Mono.Android"
-	.size	.L.managed_type_name.7784, 63
+	.asciz	"Org.Apache.Http.Conn.Ssl.AllowAllHostnameVerifier, Mono.Android"
+	.size	.L.managed_type_name.7784, 64
 	.section	.rodata.managed_type_name.7785,"aMS",%progbits,1
 	.type	.L.managed_type_name.7785, %object
 .L.managed_type_name.7785:
-	.asciz	"Org.Apache.Http.Conn.Ssl.AllowAllHostnameVerifier, Mono.Android"
-	.size	.L.managed_type_name.7785, 64
+	.asciz	"Org.Apache.Http.Conn.Ssl.BrowserCompatHostnameVerifier, Mono.Android"
+	.size	.L.managed_type_name.7785, 69
 	.section	.rodata.managed_type_name.7786,"aMS",%progbits,1
 	.type	.L.managed_type_name.7786, %object
 .L.managed_type_name.7786:
-	.asciz	"Org.Apache.Http.Conn.Ssl.BrowserCompatHostnameVerifier, Mono.Android"
-	.size	.L.managed_type_name.7786, 69
+	.asciz	"Org.Apache.Http.Conn.Ssl.IX509HostnameVerifierInvoker, Mono.Android"
+	.size	.L.managed_type_name.7786, 68
 	.section	.rodata.managed_type_name.7787,"aMS",%progbits,1
 	.type	.L.managed_type_name.7787, %object
 .L.managed_type_name.7787:
-	.asciz	"Org.Apache.Http.Conn.Ssl.IX509HostnameVerifierInvoker, Mono.Android"
-	.size	.L.managed_type_name.7787, 68
+	.asciz	"Org.Apache.Http.Conn.Ssl.SSLSocketFactory, Mono.Android"
+	.size	.L.managed_type_name.7787, 56
 	.section	.rodata.managed_type_name.7788,"aMS",%progbits,1
 	.type	.L.managed_type_name.7788, %object
 .L.managed_type_name.7788:
-	.asciz	"Org.Apache.Http.Conn.Ssl.SSLSocketFactory, Mono.Android"
-	.size	.L.managed_type_name.7788, 56
+	.asciz	"Org.Apache.Http.Conn.Ssl.StrictHostnameVerifier, Mono.Android"
+	.size	.L.managed_type_name.7788, 62
 	.section	.rodata.managed_type_name.7789,"aMS",%progbits,1
 	.type	.L.managed_type_name.7789, %object
 .L.managed_type_name.7789:
-	.asciz	"Org.Apache.Http.Conn.Ssl.StrictHostnameVerifier, Mono.Android"
-	.size	.L.managed_type_name.7789, 62
+	.asciz	"Org.Apache.Http.Conn.Util.InetAddressUtils, Mono.Android"
+	.size	.L.managed_type_name.7789, 57
 	.section	.rodata.managed_type_name.7790,"aMS",%progbits,1
 	.type	.L.managed_type_name.7790, %object
 .L.managed_type_name.7790:
-	.asciz	"Org.Apache.Http.Conn.Util.InetAddressUtils, Mono.Android"
-	.size	.L.managed_type_name.7790, 57
+	.asciz	"Org.Apache.Http.ConnectionClosedException, Mono.Android"
+	.size	.L.managed_type_name.7790, 56
 	.section	.rodata.managed_type_name.7791,"aMS",%progbits,1
 	.type	.L.managed_type_name.7791, %object
 .L.managed_type_name.7791:
-	.asciz	"Org.Apache.Http.ConnectionClosedException, Mono.Android"
-	.size	.L.managed_type_name.7791, 56
+	.asciz	"Org.Apache.Http.Cookie.Params.CookieSpecPNames, Mono.Android"
+	.size	.L.managed_type_name.7791, 61
 	.section	.rodata.managed_type_name.7792,"aMS",%progbits,1
 	.type	.L.managed_type_name.7792, %object
 .L.managed_type_name.7792:
-	.asciz	"Org.Apache.Http.Cookie.Params.CookieSpecPNames, Mono.Android"
-	.size	.L.managed_type_name.7792, 61
+	.asciz	"Org.Apache.Http.Cookie.Params.CookieSpecParamBean, Mono.Android"
+	.size	.L.managed_type_name.7792, 64
 	.section	.rodata.managed_type_name.7793,"aMS",%progbits,1
 	.type	.L.managed_type_name.7793, %object
 .L.managed_type_name.7793:
-	.asciz	"Org.Apache.Http.Cookie.Params.CookieSpecParamBean, Mono.Android"
-	.size	.L.managed_type_name.7793, 64
+	.asciz	"Org.Apache.Http.Cookies.ClientCookie, Mono.Android"
+	.size	.L.managed_type_name.7793, 51
 	.section	.rodata.managed_type_name.7794,"aMS",%progbits,1
 	.type	.L.managed_type_name.7794, %object
 .L.managed_type_name.7794:
-	.asciz	"Org.Apache.Http.Cookies.ClientCookie, Mono.Android"
+	.asciz	"Org.Apache.Http.Cookies.CookieOrigin, Mono.Android"
 	.size	.L.managed_type_name.7794, 51
 	.section	.rodata.managed_type_name.7795,"aMS",%progbits,1
 	.type	.L.managed_type_name.7795, %object
 .L.managed_type_name.7795:
-	.asciz	"Org.Apache.Http.Cookies.CookieOrigin, Mono.Android"
-	.size	.L.managed_type_name.7795, 51
+	.asciz	"Org.Apache.Http.Cookies.CookieSpecRegistry, Mono.Android"
+	.size	.L.managed_type_name.7795, 57
 	.section	.rodata.managed_type_name.7796,"aMS",%progbits,1
 	.type	.L.managed_type_name.7796, %object
 .L.managed_type_name.7796:
-	.asciz	"Org.Apache.Http.Cookies.CookieSpecRegistry, Mono.Android"
-	.size	.L.managed_type_name.7796, 57
+	.asciz	"Org.Apache.Http.Cookies.IClientCookieInvoker, Mono.Android"
+	.size	.L.managed_type_name.7796, 59
 	.section	.rodata.managed_type_name.7797,"aMS",%progbits,1
 	.type	.L.managed_type_name.7797, %object
 .L.managed_type_name.7797:
-	.asciz	"Org.Apache.Http.Cookies.IClientCookieInvoker, Mono.Android"
-	.size	.L.managed_type_name.7797, 59
+	.asciz	"Org.Apache.Http.Cookies.ICookieAttributeHandlerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7797, 69
 	.section	.rodata.managed_type_name.7798,"aMS",%progbits,1
 	.type	.L.managed_type_name.7798, %object
 .L.managed_type_name.7798:
-	.asciz	"Org.Apache.Http.Cookies.ICookieAttributeHandlerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7798, 69
+	.asciz	"Org.Apache.Http.Cookies.ICookieInvoker, Mono.Android"
+	.size	.L.managed_type_name.7798, 53
 	.section	.rodata.managed_type_name.7799,"aMS",%progbits,1
 	.type	.L.managed_type_name.7799, %object
 .L.managed_type_name.7799:
-	.asciz	"Org.Apache.Http.Cookies.ICookieInvoker, Mono.Android"
-	.size	.L.managed_type_name.7799, 53
+	.asciz	"Org.Apache.Http.Cookies.ICookieSpecFactoryInvoker, Mono.Android"
+	.size	.L.managed_type_name.7799, 64
 	.section	.rodata.managed_type_name.7800,"aMS",%progbits,1
 	.type	.L.managed_type_name.7800, %object
 .L.managed_type_name.7800:
-	.asciz	"Org.Apache.Http.Cookies.ICookieSpecFactoryInvoker, Mono.Android"
-	.size	.L.managed_type_name.7800, 64
+	.asciz	"Org.Apache.Http.Cookies.ICookieSpecInvoker, Mono.Android"
+	.size	.L.managed_type_name.7800, 57
 	.section	.rodata.managed_type_name.7801,"aMS",%progbits,1
 	.type	.L.managed_type_name.7801, %object
 .L.managed_type_name.7801:
-	.asciz	"Org.Apache.Http.Cookies.ICookieSpecInvoker, Mono.Android"
+	.asciz	"Org.Apache.Http.Cookies.ISetCookie2Invoker, Mono.Android"
 	.size	.L.managed_type_name.7801, 57
 	.section	.rodata.managed_type_name.7802,"aMS",%progbits,1
 	.type	.L.managed_type_name.7802, %object
 .L.managed_type_name.7802:
-	.asciz	"Org.Apache.Http.Cookies.ISetCookie2Invoker, Mono.Android"
-	.size	.L.managed_type_name.7802, 57
+	.asciz	"Org.Apache.Http.Cookies.ISetCookieInvoker, Mono.Android"
+	.size	.L.managed_type_name.7802, 56
 	.section	.rodata.managed_type_name.7803,"aMS",%progbits,1
 	.type	.L.managed_type_name.7803, %object
 .L.managed_type_name.7803:
-	.asciz	"Org.Apache.Http.Cookies.ISetCookieInvoker, Mono.Android"
-	.size	.L.managed_type_name.7803, 56
+	.asciz	"Org.Apache.Http.Cookies.MalformedCookieException, Mono.Android"
+	.size	.L.managed_type_name.7803, 63
 	.section	.rodata.managed_type_name.7804,"aMS",%progbits,1
 	.type	.L.managed_type_name.7804, %object
 .L.managed_type_name.7804:
-	.asciz	"Org.Apache.Http.Cookies.MalformedCookieException, Mono.Android"
-	.size	.L.managed_type_name.7804, 63
+	.asciz	"Org.Apache.Http.Cookies.SM, Mono.Android"
+	.size	.L.managed_type_name.7804, 41
 	.section	.rodata.managed_type_name.7805,"aMS",%progbits,1
 	.type	.L.managed_type_name.7805, %object
 .L.managed_type_name.7805:
-	.asciz	"Org.Apache.Http.Cookies.SM, Mono.Android"
-	.size	.L.managed_type_name.7805, 41
+	.asciz	"Org.Apache.Http.Entity.AbstractHttpEntity, Mono.Android"
+	.size	.L.managed_type_name.7805, 56
 	.section	.rodata.managed_type_name.7806,"aMS",%progbits,1
 	.type	.L.managed_type_name.7806, %object
 .L.managed_type_name.7806:
-	.asciz	"Org.Apache.Http.Entity.AbstractHttpEntity, Mono.Android"
-	.size	.L.managed_type_name.7806, 56
+	.asciz	"Org.Apache.Http.Entity.AbstractHttpEntityInvoker, Mono.Android"
+	.size	.L.managed_type_name.7806, 63
 	.section	.rodata.managed_type_name.7807,"aMS",%progbits,1
 	.type	.L.managed_type_name.7807, %object
 .L.managed_type_name.7807:
-	.asciz	"Org.Apache.Http.Entity.AbstractHttpEntityInvoker, Mono.Android"
-	.size	.L.managed_type_name.7807, 63
+	.asciz	"Org.Apache.Http.Entity.BasicHttpEntity, Mono.Android"
+	.size	.L.managed_type_name.7807, 53
 	.section	.rodata.managed_type_name.7808,"aMS",%progbits,1
 	.type	.L.managed_type_name.7808, %object
 .L.managed_type_name.7808:
-	.asciz	"Org.Apache.Http.Entity.BasicHttpEntity, Mono.Android"
-	.size	.L.managed_type_name.7808, 53
+	.asciz	"Org.Apache.Http.Entity.BufferedHttpEntity, Mono.Android"
+	.size	.L.managed_type_name.7808, 56
 	.section	.rodata.managed_type_name.7809,"aMS",%progbits,1
 	.type	.L.managed_type_name.7809, %object
 .L.managed_type_name.7809:
-	.asciz	"Org.Apache.Http.Entity.BufferedHttpEntity, Mono.Android"
-	.size	.L.managed_type_name.7809, 56
+	.asciz	"Org.Apache.Http.Entity.ByteArrayEntity, Mono.Android"
+	.size	.L.managed_type_name.7809, 53
 	.section	.rodata.managed_type_name.7810,"aMS",%progbits,1
 	.type	.L.managed_type_name.7810, %object
 .L.managed_type_name.7810:
-	.asciz	"Org.Apache.Http.Entity.ByteArrayEntity, Mono.Android"
-	.size	.L.managed_type_name.7810, 53
+	.asciz	"Org.Apache.Http.Entity.ContentLengthStrategy, Mono.Android"
+	.size	.L.managed_type_name.7810, 59
 	.section	.rodata.managed_type_name.7811,"aMS",%progbits,1
 	.type	.L.managed_type_name.7811, %object
 .L.managed_type_name.7811:
-	.asciz	"Org.Apache.Http.Entity.ContentLengthStrategy, Mono.Android"
-	.size	.L.managed_type_name.7811, 59
+	.asciz	"Org.Apache.Http.Entity.EntityTemplate, Mono.Android"
+	.size	.L.managed_type_name.7811, 52
 	.section	.rodata.managed_type_name.7812,"aMS",%progbits,1
 	.type	.L.managed_type_name.7812, %object
 .L.managed_type_name.7812:
-	.asciz	"Org.Apache.Http.Entity.EntityTemplate, Mono.Android"
-	.size	.L.managed_type_name.7812, 52
+	.asciz	"Org.Apache.Http.Entity.FileEntity, Mono.Android"
+	.size	.L.managed_type_name.7812, 48
 	.section	.rodata.managed_type_name.7813,"aMS",%progbits,1
 	.type	.L.managed_type_name.7813, %object
 .L.managed_type_name.7813:
-	.asciz	"Org.Apache.Http.Entity.FileEntity, Mono.Android"
-	.size	.L.managed_type_name.7813, 48
+	.asciz	"Org.Apache.Http.Entity.HttpEntityWrapper, Mono.Android"
+	.size	.L.managed_type_name.7813, 55
 	.section	.rodata.managed_type_name.7814,"aMS",%progbits,1
 	.type	.L.managed_type_name.7814, %object
 .L.managed_type_name.7814:
-	.asciz	"Org.Apache.Http.Entity.HttpEntityWrapper, Mono.Android"
-	.size	.L.managed_type_name.7814, 55
+	.asciz	"Org.Apache.Http.Entity.IContentLengthStrategyInvoker, Mono.Android"
+	.size	.L.managed_type_name.7814, 67
 	.section	.rodata.managed_type_name.7815,"aMS",%progbits,1
 	.type	.L.managed_type_name.7815, %object
 .L.managed_type_name.7815:
-	.asciz	"Org.Apache.Http.Entity.IContentLengthStrategyInvoker, Mono.Android"
-	.size	.L.managed_type_name.7815, 67
+	.asciz	"Org.Apache.Http.Entity.IContentProducerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7815, 61
 	.section	.rodata.managed_type_name.7816,"aMS",%progbits,1
 	.type	.L.managed_type_name.7816, %object
 .L.managed_type_name.7816:
-	.asciz	"Org.Apache.Http.Entity.IContentProducerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7816, 61
+	.asciz	"Org.Apache.Http.Entity.InputStreamEntity, Mono.Android"
+	.size	.L.managed_type_name.7816, 55
 	.section	.rodata.managed_type_name.7817,"aMS",%progbits,1
 	.type	.L.managed_type_name.7817, %object
 .L.managed_type_name.7817:
-	.asciz	"Org.Apache.Http.Entity.InputStreamEntity, Mono.Android"
-	.size	.L.managed_type_name.7817, 55
+	.asciz	"Org.Apache.Http.Entity.SerializableEntity, Mono.Android"
+	.size	.L.managed_type_name.7817, 56
 	.section	.rodata.managed_type_name.7818,"aMS",%progbits,1
 	.type	.L.managed_type_name.7818, %object
 .L.managed_type_name.7818:
-	.asciz	"Org.Apache.Http.Entity.SerializableEntity, Mono.Android"
-	.size	.L.managed_type_name.7818, 56
+	.asciz	"Org.Apache.Http.Entity.StringEntity, Mono.Android"
+	.size	.L.managed_type_name.7818, 50
 	.section	.rodata.managed_type_name.7819,"aMS",%progbits,1
 	.type	.L.managed_type_name.7819, %object
 .L.managed_type_name.7819:
-	.asciz	"Org.Apache.Http.Entity.StringEntity, Mono.Android"
-	.size	.L.managed_type_name.7819, 50
+	.asciz	"Org.Apache.Http.HttpException, Mono.Android"
+	.size	.L.managed_type_name.7819, 44
 	.section	.rodata.managed_type_name.7820,"aMS",%progbits,1
 	.type	.L.managed_type_name.7820, %object
 .L.managed_type_name.7820:
-	.asciz	"Org.Apache.Http.HttpException, Mono.Android"
-	.size	.L.managed_type_name.7820, 44
+	.asciz	"Org.Apache.Http.HttpHost, Mono.Android"
+	.size	.L.managed_type_name.7820, 39
 	.section	.rodata.managed_type_name.7821,"aMS",%progbits,1
 	.type	.L.managed_type_name.7821, %object
 .L.managed_type_name.7821:
-	.asciz	"Org.Apache.Http.HttpHost, Mono.Android"
-	.size	.L.managed_type_name.7821, 39
+	.asciz	"Org.Apache.Http.HttpStatus, Mono.Android"
+	.size	.L.managed_type_name.7821, 41
 	.section	.rodata.managed_type_name.7822,"aMS",%progbits,1
 	.type	.L.managed_type_name.7822, %object
 .L.managed_type_name.7822:
-	.asciz	"Org.Apache.Http.HttpStatus, Mono.Android"
-	.size	.L.managed_type_name.7822, 41
+	.asciz	"Org.Apache.Http.HttpVersion, Mono.Android"
+	.size	.L.managed_type_name.7822, 42
 	.section	.rodata.managed_type_name.7823,"aMS",%progbits,1
 	.type	.L.managed_type_name.7823, %object
 .L.managed_type_name.7823:
-	.asciz	"Org.Apache.Http.HttpVersion, Mono.Android"
-	.size	.L.managed_type_name.7823, 42
+	.asciz	"Org.Apache.Http.IConnectionReuseStrategyInvoker, Mono.Android"
+	.size	.L.managed_type_name.7823, 62
 	.section	.rodata.managed_type_name.7824,"aMS",%progbits,1
 	.type	.L.managed_type_name.7824, %object
 .L.managed_type_name.7824:
-	.asciz	"Org.Apache.Http.IConnectionReuseStrategyInvoker, Mono.Android"
-	.size	.L.managed_type_name.7824, 62
+	.asciz	"Org.Apache.Http.IFormattedHeaderInvoker, Mono.Android"
+	.size	.L.managed_type_name.7824, 54
 	.section	.rodata.managed_type_name.7825,"aMS",%progbits,1
 	.type	.L.managed_type_name.7825, %object
 .L.managed_type_name.7825:
-	.asciz	"Org.Apache.Http.IFormattedHeaderInvoker, Mono.Android"
-	.size	.L.managed_type_name.7825, 54
+	.asciz	"Org.Apache.Http.IHeaderElementInvoker, Mono.Android"
+	.size	.L.managed_type_name.7825, 52
 	.section	.rodata.managed_type_name.7826,"aMS",%progbits,1
 	.type	.L.managed_type_name.7826, %object
 .L.managed_type_name.7826:
-	.asciz	"Org.Apache.Http.IHeaderElementInvoker, Mono.Android"
-	.size	.L.managed_type_name.7826, 52
+	.asciz	"Org.Apache.Http.IHeaderElementIteratorInvoker, Mono.Android"
+	.size	.L.managed_type_name.7826, 60
 	.section	.rodata.managed_type_name.7827,"aMS",%progbits,1
 	.type	.L.managed_type_name.7827, %object
 .L.managed_type_name.7827:
-	.asciz	"Org.Apache.Http.IHeaderElementIteratorInvoker, Mono.Android"
-	.size	.L.managed_type_name.7827, 60
+	.asciz	"Org.Apache.Http.IHeaderInvoker, Mono.Android"
+	.size	.L.managed_type_name.7827, 45
 	.section	.rodata.managed_type_name.7828,"aMS",%progbits,1
 	.type	.L.managed_type_name.7828, %object
 .L.managed_type_name.7828:
-	.asciz	"Org.Apache.Http.IHeaderInvoker, Mono.Android"
-	.size	.L.managed_type_name.7828, 45
+	.asciz	"Org.Apache.Http.IHeaderIteratorInvoker, Mono.Android"
+	.size	.L.managed_type_name.7828, 53
 	.section	.rodata.managed_type_name.7829,"aMS",%progbits,1
 	.type	.L.managed_type_name.7829, %object
 .L.managed_type_name.7829:
-	.asciz	"Org.Apache.Http.IHeaderIteratorInvoker, Mono.Android"
-	.size	.L.managed_type_name.7829, 53
+	.asciz	"Org.Apache.Http.IHttpClientConnectionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7829, 59
 	.section	.rodata.managed_type_name.7830,"aMS",%progbits,1
 	.type	.L.managed_type_name.7830, %object
 .L.managed_type_name.7830:
-	.asciz	"Org.Apache.Http.IHttpClientConnectionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7830, 59
+	.asciz	"Org.Apache.Http.IHttpConnectionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7830, 53
 	.section	.rodata.managed_type_name.7831,"aMS",%progbits,1
 	.type	.L.managed_type_name.7831, %object
 .L.managed_type_name.7831:
-	.asciz	"Org.Apache.Http.IHttpConnectionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7831, 53
+	.asciz	"Org.Apache.Http.IHttpConnectionMetricsInvoker, Mono.Android"
+	.size	.L.managed_type_name.7831, 60
 	.section	.rodata.managed_type_name.7832,"aMS",%progbits,1
 	.type	.L.managed_type_name.7832, %object
 .L.managed_type_name.7832:
-	.asciz	"Org.Apache.Http.IHttpConnectionMetricsInvoker, Mono.Android"
-	.size	.L.managed_type_name.7832, 60
+	.asciz	"Org.Apache.Http.IHttpEntityEnclosingRequestInvoker, Mono.Android"
+	.size	.L.managed_type_name.7832, 65
 	.section	.rodata.managed_type_name.7833,"aMS",%progbits,1
 	.type	.L.managed_type_name.7833, %object
 .L.managed_type_name.7833:
-	.asciz	"Org.Apache.Http.IHttpEntityEnclosingRequestInvoker, Mono.Android"
-	.size	.L.managed_type_name.7833, 65
+	.asciz	"Org.Apache.Http.IHttpEntityInvoker, Mono.Android"
+	.size	.L.managed_type_name.7833, 49
 	.section	.rodata.managed_type_name.7834,"aMS",%progbits,1
 	.type	.L.managed_type_name.7834, %object
 .L.managed_type_name.7834:
-	.asciz	"Org.Apache.Http.IHttpEntityInvoker, Mono.Android"
-	.size	.L.managed_type_name.7834, 49
+	.asciz	"Org.Apache.Http.IHttpInetConnectionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7834, 57
 	.section	.rodata.managed_type_name.7835,"aMS",%progbits,1
 	.type	.L.managed_type_name.7835, %object
 .L.managed_type_name.7835:
-	.asciz	"Org.Apache.Http.IHttpInetConnectionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7835, 57
+	.asciz	"Org.Apache.Http.IHttpMessageInvoker, Mono.Android"
+	.size	.L.managed_type_name.7835, 50
 	.section	.rodata.managed_type_name.7836,"aMS",%progbits,1
 	.type	.L.managed_type_name.7836, %object
 .L.managed_type_name.7836:
-	.asciz	"Org.Apache.Http.IHttpMessageInvoker, Mono.Android"
-	.size	.L.managed_type_name.7836, 50
+	.asciz	"Org.Apache.Http.IHttpRequestFactoryInvoker, Mono.Android"
+	.size	.L.managed_type_name.7836, 57
 	.section	.rodata.managed_type_name.7837,"aMS",%progbits,1
 	.type	.L.managed_type_name.7837, %object
 .L.managed_type_name.7837:
-	.asciz	"Org.Apache.Http.IHttpRequestFactoryInvoker, Mono.Android"
-	.size	.L.managed_type_name.7837, 57
+	.asciz	"Org.Apache.Http.IHttpRequestInterceptorInvoker, Mono.Android"
+	.size	.L.managed_type_name.7837, 61
 	.section	.rodata.managed_type_name.7838,"aMS",%progbits,1
 	.type	.L.managed_type_name.7838, %object
 .L.managed_type_name.7838:
-	.asciz	"Org.Apache.Http.IHttpRequestInterceptorInvoker, Mono.Android"
-	.size	.L.managed_type_name.7838, 61
+	.asciz	"Org.Apache.Http.IHttpRequestInvoker, Mono.Android"
+	.size	.L.managed_type_name.7838, 50
 	.section	.rodata.managed_type_name.7839,"aMS",%progbits,1
 	.type	.L.managed_type_name.7839, %object
 .L.managed_type_name.7839:
-	.asciz	"Org.Apache.Http.IHttpRequestInvoker, Mono.Android"
-	.size	.L.managed_type_name.7839, 50
+	.asciz	"Org.Apache.Http.IHttpResponseFactoryInvoker, Mono.Android"
+	.size	.L.managed_type_name.7839, 58
 	.section	.rodata.managed_type_name.7840,"aMS",%progbits,1
 	.type	.L.managed_type_name.7840, %object
 .L.managed_type_name.7840:
-	.asciz	"Org.Apache.Http.IHttpResponseFactoryInvoker, Mono.Android"
-	.size	.L.managed_type_name.7840, 58
+	.asciz	"Org.Apache.Http.IHttpResponseInterceptorInvoker, Mono.Android"
+	.size	.L.managed_type_name.7840, 62
 	.section	.rodata.managed_type_name.7841,"aMS",%progbits,1
 	.type	.L.managed_type_name.7841, %object
 .L.managed_type_name.7841:
-	.asciz	"Org.Apache.Http.IHttpResponseInterceptorInvoker, Mono.Android"
-	.size	.L.managed_type_name.7841, 62
+	.asciz	"Org.Apache.Http.IHttpResponseInvoker, Mono.Android"
+	.size	.L.managed_type_name.7841, 51
 	.section	.rodata.managed_type_name.7842,"aMS",%progbits,1
 	.type	.L.managed_type_name.7842, %object
 .L.managed_type_name.7842:
-	.asciz	"Org.Apache.Http.IHttpResponseInvoker, Mono.Android"
-	.size	.L.managed_type_name.7842, 51
+	.asciz	"Org.Apache.Http.IHttpServerConnectionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7842, 59
 	.section	.rodata.managed_type_name.7843,"aMS",%progbits,1
 	.type	.L.managed_type_name.7843, %object
 .L.managed_type_name.7843:
-	.asciz	"Org.Apache.Http.IHttpServerConnectionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7843, 59
+	.asciz	"Org.Apache.Http.INameValuePairInvoker, Mono.Android"
+	.size	.L.managed_type_name.7843, 52
 	.section	.rodata.managed_type_name.7844,"aMS",%progbits,1
 	.type	.L.managed_type_name.7844, %object
 .L.managed_type_name.7844:
-	.asciz	"Org.Apache.Http.INameValuePairInvoker, Mono.Android"
-	.size	.L.managed_type_name.7844, 52
+	.asciz	"Org.Apache.Http.IO.IHttpMessageParserInvoker, Mono.Android"
+	.size	.L.managed_type_name.7844, 59
 	.section	.rodata.managed_type_name.7845,"aMS",%progbits,1
 	.type	.L.managed_type_name.7845, %object
 .L.managed_type_name.7845:
-	.asciz	"Org.Apache.Http.IO.IHttpMessageParserInvoker, Mono.Android"
+	.asciz	"Org.Apache.Http.IO.IHttpMessageWriterInvoker, Mono.Android"
 	.size	.L.managed_type_name.7845, 59
 	.section	.rodata.managed_type_name.7846,"aMS",%progbits,1
 	.type	.L.managed_type_name.7846, %object
 .L.managed_type_name.7846:
-	.asciz	"Org.Apache.Http.IO.IHttpMessageWriterInvoker, Mono.Android"
-	.size	.L.managed_type_name.7846, 59
+	.asciz	"Org.Apache.Http.IO.IHttpTransportMetricsInvoker, Mono.Android"
+	.size	.L.managed_type_name.7846, 62
 	.section	.rodata.managed_type_name.7847,"aMS",%progbits,1
 	.type	.L.managed_type_name.7847, %object
 .L.managed_type_name.7847:
-	.asciz	"Org.Apache.Http.IO.IHttpTransportMetricsInvoker, Mono.Android"
-	.size	.L.managed_type_name.7847, 62
+	.asciz	"Org.Apache.Http.IO.ISessionInputBufferInvoker, Mono.Android"
+	.size	.L.managed_type_name.7847, 60
 	.section	.rodata.managed_type_name.7848,"aMS",%progbits,1
 	.type	.L.managed_type_name.7848, %object
 .L.managed_type_name.7848:
-	.asciz	"Org.Apache.Http.IO.ISessionInputBufferInvoker, Mono.Android"
-	.size	.L.managed_type_name.7848, 60
+	.asciz	"Org.Apache.Http.IO.ISessionOutputBufferInvoker, Mono.Android"
+	.size	.L.managed_type_name.7848, 61
 	.section	.rodata.managed_type_name.7849,"aMS",%progbits,1
 	.type	.L.managed_type_name.7849, %object
 .L.managed_type_name.7849:
-	.asciz	"Org.Apache.Http.IO.ISessionOutputBufferInvoker, Mono.Android"
-	.size	.L.managed_type_name.7849, 61
+	.asciz	"Org.Apache.Http.IReasonPhraseCatalogInvoker, Mono.Android"
+	.size	.L.managed_type_name.7849, 58
 	.section	.rodata.managed_type_name.7850,"aMS",%progbits,1
 	.type	.L.managed_type_name.7850, %object
 .L.managed_type_name.7850:
-	.asciz	"Org.Apache.Http.IReasonPhraseCatalogInvoker, Mono.Android"
-	.size	.L.managed_type_name.7850, 58
+	.asciz	"Org.Apache.Http.IRequestLineInvoker, Mono.Android"
+	.size	.L.managed_type_name.7850, 50
 	.section	.rodata.managed_type_name.7851,"aMS",%progbits,1
 	.type	.L.managed_type_name.7851, %object
 .L.managed_type_name.7851:
-	.asciz	"Org.Apache.Http.IRequestLineInvoker, Mono.Android"
-	.size	.L.managed_type_name.7851, 50
+	.asciz	"Org.Apache.Http.IStatusLineInvoker, Mono.Android"
+	.size	.L.managed_type_name.7851, 49
 	.section	.rodata.managed_type_name.7852,"aMS",%progbits,1
 	.type	.L.managed_type_name.7852, %object
 .L.managed_type_name.7852:
-	.asciz	"Org.Apache.Http.IStatusLineInvoker, Mono.Android"
-	.size	.L.managed_type_name.7852, 49
+	.asciz	"Org.Apache.Http.ITokenIteratorInvoker, Mono.Android"
+	.size	.L.managed_type_name.7852, 52
 	.section	.rodata.managed_type_name.7853,"aMS",%progbits,1
 	.type	.L.managed_type_name.7853, %object
 .L.managed_type_name.7853:
-	.asciz	"Org.Apache.Http.ITokenIteratorInvoker, Mono.Android"
-	.size	.L.managed_type_name.7853, 52
+	.asciz	"Org.Apache.Http.Impl.AbstractHttpClientConnection, Mono.Android"
+	.size	.L.managed_type_name.7853, 64
 	.section	.rodata.managed_type_name.7854,"aMS",%progbits,1
 	.type	.L.managed_type_name.7854, %object
 .L.managed_type_name.7854:
-	.asciz	"Org.Apache.Http.Impl.AbstractHttpClientConnection, Mono.Android"
-	.size	.L.managed_type_name.7854, 64
+	.asciz	"Org.Apache.Http.Impl.AbstractHttpClientConnectionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7854, 71
 	.section	.rodata.managed_type_name.7855,"aMS",%progbits,1
 	.type	.L.managed_type_name.7855, %object
 .L.managed_type_name.7855:
-	.asciz	"Org.Apache.Http.Impl.AbstractHttpClientConnectionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7855, 71
+	.asciz	"Org.Apache.Http.Impl.AbstractHttpServerConnection, Mono.Android"
+	.size	.L.managed_type_name.7855, 64
 	.section	.rodata.managed_type_name.7856,"aMS",%progbits,1
 	.type	.L.managed_type_name.7856, %object
 .L.managed_type_name.7856:
-	.asciz	"Org.Apache.Http.Impl.AbstractHttpServerConnection, Mono.Android"
-	.size	.L.managed_type_name.7856, 64
+	.asciz	"Org.Apache.Http.Impl.AbstractHttpServerConnectionInvoker, Mono.Android"
+	.size	.L.managed_type_name.7856, 71
 	.section	.rodata.managed_type_name.7857,"aMS",%progbits,1
 	.type	.L.managed_type_name.7857, %object
 .L.managed_type_name.7857:
-	.asciz	"Org.Apache.Http.Impl.AbstractHttpServerConnectionInvoker, Mono.Android"
-	.size	.L.managed_type_name.7857, 71
+	.asciz	"Org.Apache.Http.Impl.Auth.AuthSchemeBase, Mono.Android"
+	.size	.L.managed_type_name.7857, 55
 	.section	.rodata.managed_type_name.7858,"aMS",%progbits,1
 	.type	.L.managed_type_name.7858, %object
 .L.managed_type_name.7858:
-	.asciz	"Org.Apache.Http.Impl.Auth.AuthSchemeBase, Mono.Android"
-	.size	.L.managed_type_name.7858, 55
+	.asciz	"Org.Apache.Http.Impl.Auth.AuthSchemeBaseInvoker, Mono.Android"
+	.size	.L.managed_type_name.7858, 62
 	.section	.rodata.managed_type_name.7859,"aMS",%progbits,1
 	.type	.L.managed_type_name.7859, %object
 .L.managed_type_name.7859:
-	.asciz	"Org.Apache.Http.Impl.Auth.AuthSchemeBaseInvoker, Mono.Android"
-	.size	.L.managed_type_name.7859, 62
+	.asciz	"Org.Apache.Http.Impl.Auth.BasicScheme, Mono.Android"
+	.size	.L.managed_type_name.7859, 52
 	.section	.rodata.managed_type_name.7860,"aMS",%progbits,1
 	.type	.L.managed_type_name.7860, %object
 .L.managed_type_name.7860:
-	.asciz	"Org.Apache.Http.Impl.Auth.BasicScheme, Mono.Android"
-	.size	.L.managed_type_name.7860, 52
+	.asciz	"Org.Apache.Http.Impl.Auth.BasicSchemeFactory, Mono.Android"
+	.size	.L.managed_type_name.7860, 59
 	.section	.rodata.managed_type_name.7861,"aMS",%progbits,1
 	.type	.L.managed_type_name.7861, %object
 .L.managed_type_name.7861:
-	.asciz	"Org.Apache.Http.Impl.Auth.BasicSchemeFactory, Mono.Android"
-	.size	.L.managed_type_name.7861, 59
+	.asciz	"Org.Apache.Http.Impl.Auth.DigestScheme, Mono.Android"
+	.size	.L.managed_type_name.7861, 53
 	.section	.rodata.managed_type_name.7862,"aMS",%progbits,1
 	.type	.L.managed_type_name.7862, %object
 .L.managed_type_name.7862:
-	.asciz	"Org.Apache.Http.Impl.Auth.DigestScheme, Mono.Android"
-	.size	.L.managed_type_name.7862, 53
+	.asciz	"Org.Apache.Http.Impl.Auth.DigestSchemeFactory, Mono.Android"
+	.size	.L.managed_type_name.7862, 60
 	.section	.rodata.managed_type_name.7863,"aMS",%progbits,1
 	.type	.L.managed_type_name.7863, %object
 .L.managed_type_name.7863:
-	.asciz	"Org.Apache.Http.Impl.Auth.DigestSchemeFactory, Mono.Android"
-	.size	.L.managed_type_name.7863, 60
+	.asciz	"Org.Apache.Http.Impl.Auth.INTLMEngineInvoker, Mono.Android"
+	.size	.L.managed_type_name.7863, 59
 	.section	.rodata.managed_type_name.7864,"aMS",%progbits,1
 	.type	.L.managed_type_name.7864, %object
 .L.managed_type_name.7864:
-	.asciz	"Org.Apache.Http.Impl.Auth.INTLMEngineInvoker, Mono.Android"
-	.size	.L.managed_type_name.7864, 59
+	.asciz	"Org.Apache.Http.Impl.Auth.NTLMEngineException, Mono.Android"
+	.size	.L.managed_type_name.7864, 60
 	.section	.rodata.managed_type_name.7865,"aMS",%progbits,1
 	.type	.L.managed_type_name.7865, %object
 .L.managed_type_name.7865:
-	.asciz	"Org.Apache.Http.Impl.Auth.NTLMEngineException, Mono.Android"
-	.size	.L.managed_type_name.7865, 60
+	.asciz	"Org.Apache.Http.Impl.Auth.NTLMScheme, Mono.Android"
+	.size	.L.managed_type_name.7865, 51
 	.section	.rodata.managed_type_name.7866,"aMS",%progbits,1
 	.type	.L.managed_type_name.7866, %object
 .L.managed_type_name.7866:
-	.asciz	"Org.Apache.Http.Impl.Auth.NTLMScheme, Mono.Android"
-	.size	.L.managed_type_name.7866, 51
+	.asciz	"Org.Apache.Http.Impl.Auth.RFC2617Scheme, Mono.Android"
+	.size	.L.managed_type_name.7866, 54
 	.section	.rodata.managed_type_name.7867,"aMS",%progbits,1
 	.type	.L.managed_type_name.7867, %object
 .L.managed_type_name.7867:
-	.asciz	"Org.Apache.Http.Impl.Auth.RFC2617Scheme, Mono.Android"
-	.size	.L.managed_type_name.7867, 54
+	.asciz	"Org.Apache.Http.Impl.Auth.RFC2617SchemeInvoker, Mono.Android"
+	.size	.L.managed_type_name.7867, 61
 	.section	.rodata.managed_type_name.7868,"aMS",%progbits,1
 	.type	.L.managed_type_name.7868, %object
 .L.managed_type_name.7868:
-	.asciz	"Org.Apache.Http.Impl.Auth.RFC2617SchemeInvoker, Mono.Android"
-	.size	.L.managed_type_name.7868, 61
+	.asciz	"Org.Apache.Http.Impl.Auth.UnsupportedDigestAlgorithmException, Mono.Android"
+	.size	.L.managed_type_name.7868, 76
 	.section	.rodata.managed_type_name.7869,"aMS",%progbits,1
 	.type	.L.managed_type_name.7869, %object
 .L.managed_type_name.7869:
-	.asciz	"Org.Apache.Http.Impl.Auth.UnsupportedDigestAlgorithmException, Mono.Android"
-	.size	.L.managed_type_name.7869, 76
+	.asciz	"Org.Apache.Http.Impl.Client.AbstractAuthenticationHandler, Mono.Android"
+	.size	.L.managed_type_name.7869, 72
 	.section	.rodata.managed_type_name.7870,"aMS",%progbits,1
 	.type	.L.managed_type_name.7870, %object
 .L.managed_type_name.7870:
-	.asciz	"Org.Apache.Http.Impl.Client.AbstractAuthenticationHandler, Mono.Android"
-	.size	.L.managed_type_name.7870, 72
+	.asciz	"Org.Apache.Http.Impl.Client.AbstractAuthenticationHandlerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7870, 79
 	.section	.rodata.managed_type_name.7871,"aMS",%progbits,1
 	.type	.L.managed_type_name.7871, %object
 .L.managed_type_name.7871:
-	.asciz	"Org.Apache.Http.Impl.Client.AbstractAuthenticationHandlerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7871, 79
+	.asciz	"Org.Apache.Http.Impl.Client.AbstractHttpClient, Mono.Android"
+	.size	.L.managed_type_name.7871, 61
 	.section	.rodata.managed_type_name.7872,"aMS",%progbits,1
 	.type	.L.managed_type_name.7872, %object
 .L.managed_type_name.7872:
-	.asciz	"Org.Apache.Http.Impl.Client.AbstractHttpClient, Mono.Android"
-	.size	.L.managed_type_name.7872, 61
+	.asciz	"Org.Apache.Http.Impl.Client.AbstractHttpClientInvoker, Mono.Android"
+	.size	.L.managed_type_name.7872, 68
 	.section	.rodata.managed_type_name.7873,"aMS",%progbits,1
 	.type	.L.managed_type_name.7873, %object
 .L.managed_type_name.7873:
-	.asciz	"Org.Apache.Http.Impl.Client.AbstractHttpClientInvoker, Mono.Android"
-	.size	.L.managed_type_name.7873, 68
+	.asciz	"Org.Apache.Http.Impl.Client.BasicCookieStore, Mono.Android"
+	.size	.L.managed_type_name.7873, 59
 	.section	.rodata.managed_type_name.7874,"aMS",%progbits,1
 	.type	.L.managed_type_name.7874, %object
 .L.managed_type_name.7874:
-	.asciz	"Org.Apache.Http.Impl.Client.BasicCookieStore, Mono.Android"
-	.size	.L.managed_type_name.7874, 59
+	.asciz	"Org.Apache.Http.Impl.Client.BasicCredentialsProvider, Mono.Android"
+	.size	.L.managed_type_name.7874, 67
 	.section	.rodata.managed_type_name.7875,"aMS",%progbits,1
 	.type	.L.managed_type_name.7875, %object
 .L.managed_type_name.7875:
-	.asciz	"Org.Apache.Http.Impl.Client.BasicCredentialsProvider, Mono.Android"
-	.size	.L.managed_type_name.7875, 67
+	.asciz	"Org.Apache.Http.Impl.Client.BasicResponseHandler, Mono.Android"
+	.size	.L.managed_type_name.7875, 63
 	.section	.rodata.managed_type_name.7876,"aMS",%progbits,1
 	.type	.L.managed_type_name.7876, %object
 .L.managed_type_name.7876:
-	.asciz	"Org.Apache.Http.Impl.Client.BasicResponseHandler, Mono.Android"
-	.size	.L.managed_type_name.7876, 63
+	.asciz	"Org.Apache.Http.Impl.Client.ClientParamsStack, Mono.Android"
+	.size	.L.managed_type_name.7876, 60
 	.section	.rodata.managed_type_name.7877,"aMS",%progbits,1
 	.type	.L.managed_type_name.7877, %object
 .L.managed_type_name.7877:
-	.asciz	"Org.Apache.Http.Impl.Client.ClientParamsStack, Mono.Android"
-	.size	.L.managed_type_name.7877, 60
+	.asciz	"Org.Apache.Http.Impl.Client.DefaultConnectionKeepAliveStrategy, Mono.Android"
+	.size	.L.managed_type_name.7877, 77
 	.section	.rodata.managed_type_name.7878,"aMS",%progbits,1
 	.type	.L.managed_type_name.7878, %object
 .L.managed_type_name.7878:
-	.asciz	"Org.Apache.Http.Impl.Client.DefaultConnectionKeepAliveStrategy, Mono.Android"
-	.size	.L.managed_type_name.7878, 77
+	.asciz	"Org.Apache.Http.Impl.Client.DefaultHttpClient, Mono.Android"
+	.size	.L.managed_type_name.7878, 60
 	.section	.rodata.managed_type_name.7879,"aMS",%progbits,1
 	.type	.L.managed_type_name.7879, %object
 .L.managed_type_name.7879:
-	.asciz	"Org.Apache.Http.Impl.Client.DefaultHttpClient, Mono.Android"
-	.size	.L.managed_type_name.7879, 60
+	.asciz	"Org.Apache.Http.Impl.Client.DefaultHttpRequestRetryHandler, Mono.Android"
+	.size	.L.managed_type_name.7879, 73
 	.section	.rodata.managed_type_name.7880,"aMS",%progbits,1
 	.type	.L.managed_type_name.7880, %object
 .L.managed_type_name.7880:
-	.asciz	"Org.Apache.Http.Impl.Client.DefaultHttpRequestRetryHandler, Mono.Android"
-	.size	.L.managed_type_name.7880, 73
+	.asciz	"Org.Apache.Http.Impl.Client.DefaultProxyAuthenticationHandler, Mono.Android"
+	.size	.L.managed_type_name.7880, 76
 	.section	.rodata.managed_type_name.7881,"aMS",%progbits,1
 	.type	.L.managed_type_name.7881, %object
 .L.managed_type_name.7881:
-	.asciz	"Org.Apache.Http.Impl.Client.DefaultProxyAuthenticationHandler, Mono.Android"
-	.size	.L.managed_type_name.7881, 76
+	.asciz	"Org.Apache.Http.Impl.Client.DefaultRedirectHandler, Mono.Android"
+	.size	.L.managed_type_name.7881, 65
 	.section	.rodata.managed_type_name.7882,"aMS",%progbits,1
 	.type	.L.managed_type_name.7882, %object
 .L.managed_type_name.7882:
-	.asciz	"Org.Apache.Http.Impl.Client.DefaultRedirectHandler, Mono.Android"
+	.asciz	"Org.Apache.Http.Impl.Client.DefaultRequestDirector, Mono.Android"
 	.size	.L.managed_type_name.7882, 65
 	.section	.rodata.managed_type_name.7883,"aMS",%progbits,1
 	.type	.L.managed_type_name.7883, %object
 .L.managed_type_name.7883:
-	.asciz	"Org.Apache.Http.Impl.Client.DefaultRequestDirector, Mono.Android"
-	.size	.L.managed_type_name.7883, 65
+	.asciz	"Org.Apache.Http.Impl.Client.DefaultTargetAuthenticationHandler, Mono.Android"
+	.size	.L.managed_type_name.7883, 77
 	.section	.rodata.managed_type_name.7884,"aMS",%progbits,1
 	.type	.L.managed_type_name.7884, %object
 .L.managed_type_name.7884:
-	.asciz	"Org.Apache.Http.Impl.Client.DefaultTargetAuthenticationHandler, Mono.Android"
-	.size	.L.managed_type_name.7884, 77
+	.asciz	"Org.Apache.Http.Impl.Client.DefaultUserTokenHandler, Mono.Android"
+	.size	.L.managed_type_name.7884, 66
 	.section	.rodata.managed_type_name.7885,"aMS",%progbits,1
 	.type	.L.managed_type_name.7885, %object
 .L.managed_type_name.7885:
-	.asciz	"Org.Apache.Http.Impl.Client.DefaultUserTokenHandler, Mono.Android"
-	.size	.L.managed_type_name.7885, 66
+	.asciz	"Org.Apache.Http.Impl.Client.EntityEnclosingRequestWrapper, Mono.Android"
+	.size	.L.managed_type_name.7885, 72
 	.section	.rodata.managed_type_name.7886,"aMS",%progbits,1
 	.type	.L.managed_type_name.7886, %object
 .L.managed_type_name.7886:
-	.asciz	"Org.Apache.Http.Impl.Client.EntityEnclosingRequestWrapper, Mono.Android"
-	.size	.L.managed_type_name.7886, 72
+	.asciz	"Org.Apache.Http.Impl.Client.RedirectLocations, Mono.Android"
+	.size	.L.managed_type_name.7886, 60
 	.section	.rodata.managed_type_name.7887,"aMS",%progbits,1
 	.type	.L.managed_type_name.7887, %object
 .L.managed_type_name.7887:
-	.asciz	"Org.Apache.Http.Impl.Client.RedirectLocations, Mono.Android"
-	.size	.L.managed_type_name.7887, 60
+	.asciz	"Org.Apache.Http.Impl.Client.RequestWrapper, Mono.Android"
+	.size	.L.managed_type_name.7887, 57
 	.section	.rodata.managed_type_name.7888,"aMS",%progbits,1
 	.type	.L.managed_type_name.7888, %object
 .L.managed_type_name.7888:
-	.asciz	"Org.Apache.Http.Impl.Client.RequestWrapper, Mono.Android"
-	.size	.L.managed_type_name.7888, 57
+	.asciz	"Org.Apache.Http.Impl.Client.RoutedRequest, Mono.Android"
+	.size	.L.managed_type_name.7888, 56
 	.section	.rodata.managed_type_name.7889,"aMS",%progbits,1
 	.type	.L.managed_type_name.7889, %object
 .L.managed_type_name.7889:
-	.asciz	"Org.Apache.Http.Impl.Client.RoutedRequest, Mono.Android"
-	.size	.L.managed_type_name.7889, 56
+	.asciz	"Org.Apache.Http.Impl.Client.TunnelRefusedException, Mono.Android"
+	.size	.L.managed_type_name.7889, 65
 	.section	.rodata.managed_type_name.7890,"aMS",%progbits,1
 	.type	.L.managed_type_name.7890, %object
 .L.managed_type_name.7890:
-	.asciz	"Org.Apache.Http.Impl.Client.TunnelRefusedException, Mono.Android"
-	.size	.L.managed_type_name.7890, 65
+	.asciz	"Org.Apache.Http.Impl.Conn.AbstractClientConnAdapter, Mono.Android"
+	.size	.L.managed_type_name.7890, 66
 	.section	.rodata.managed_type_name.7891,"aMS",%progbits,1
 	.type	.L.managed_type_name.7891, %object
 .L.managed_type_name.7891:
-	.asciz	"Org.Apache.Http.Impl.Conn.AbstractClientConnAdapter, Mono.Android"
-	.size	.L.managed_type_name.7891, 66
+	.asciz	"Org.Apache.Http.Impl.Conn.AbstractClientConnAdapterInvoker, Mono.Android"
+	.size	.L.managed_type_name.7891, 73
 	.section	.rodata.managed_type_name.7892,"aMS",%progbits,1
 	.type	.L.managed_type_name.7892, %object
 .L.managed_type_name.7892:
-	.asciz	"Org.Apache.Http.Impl.Conn.AbstractClientConnAdapterInvoker, Mono.Android"
-	.size	.L.managed_type_name.7892, 73
+	.asciz	"Org.Apache.Http.Impl.Conn.AbstractPoolEntry, Mono.Android"
+	.size	.L.managed_type_name.7892, 58
 	.section	.rodata.managed_type_name.7893,"aMS",%progbits,1
 	.type	.L.managed_type_name.7893, %object
 .L.managed_type_name.7893:
-	.asciz	"Org.Apache.Http.Impl.Conn.AbstractPoolEntry, Mono.Android"
-	.size	.L.managed_type_name.7893, 58
+	.asciz	"Org.Apache.Http.Impl.Conn.AbstractPoolEntryInvoker, Mono.Android"
+	.size	.L.managed_type_name.7893, 65
 	.section	.rodata.managed_type_name.7894,"aMS",%progbits,1
 	.type	.L.managed_type_name.7894, %object
 .L.managed_type_name.7894:
-	.asciz	"Org.Apache.Http.Impl.Conn.AbstractPoolEntryInvoker, Mono.Android"
-	.size	.L.managed_type_name.7894, 65
+	.asciz	"Org.Apache.Http.Impl.Conn.AbstractPooledConnAdapter, Mono.Android"
+	.size	.L.managed_type_name.7894, 66
 	.section	.rodata.managed_type_name.7895,"aMS",%progbits,1
 	.type	.L.managed_type_name.7895, %object
 .L.managed_type_name.7895:
-	.asciz	"Org.Apache.Http.Impl.Conn.AbstractPooledConnAdapter, Mono.Android"
-	.size	.L.managed_type_name.7895, 66
+	.asciz	"Org.Apache.Http.Impl.Conn.AbstractPooledConnAdapterInvoker, Mono.Android"
+	.size	.L.managed_type_name.7895, 73
 	.section	.rodata.managed_type_name.7896,"aMS",%progbits,1
 	.type	.L.managed_type_name.7896, %object
 .L.managed_type_name.7896:
-	.asciz	"Org.Apache.Http.Impl.Conn.AbstractPooledConnAdapterInvoker, Mono.Android"
-	.size	.L.managed_type_name.7896, 73
+	.asciz	"Org.Apache.Http.Impl.Conn.DefaultClientConnection, Mono.Android"
+	.size	.L.managed_type_name.7896, 64
 	.section	.rodata.managed_type_name.7897,"aMS",%progbits,1
 	.type	.L.managed_type_name.7897, %object
 .L.managed_type_name.7897:
-	.asciz	"Org.Apache.Http.Impl.Conn.DefaultClientConnection, Mono.Android"
-	.size	.L.managed_type_name.7897, 64
+	.asciz	"Org.Apache.Http.Impl.Conn.DefaultClientConnectionOperator, Mono.Android"
+	.size	.L.managed_type_name.7897, 72
 	.section	.rodata.managed_type_name.7898,"aMS",%progbits,1
 	.type	.L.managed_type_name.7898, %object
 .L.managed_type_name.7898:
-	.asciz	"Org.Apache.Http.Impl.Conn.DefaultClientConnectionOperator, Mono.Android"
-	.size	.L.managed_type_name.7898, 72
+	.asciz	"Org.Apache.Http.Impl.Conn.DefaultHttpRoutePlanner, Mono.Android"
+	.size	.L.managed_type_name.7898, 64
 	.section	.rodata.managed_type_name.7899,"aMS",%progbits,1
 	.type	.L.managed_type_name.7899, %object
 .L.managed_type_name.7899:
-	.asciz	"Org.Apache.Http.Impl.Conn.DefaultHttpRoutePlanner, Mono.Android"
-	.size	.L.managed_type_name.7899, 64
+	.asciz	"Org.Apache.Http.Impl.Conn.DefaultResponseParser, Mono.Android"
+	.size	.L.managed_type_name.7899, 62
 	.section	.rodata.managed_type_name.7900,"aMS",%progbits,1
 	.type	.L.managed_type_name.7900, %object
 .L.managed_type_name.7900:
-	.asciz	"Org.Apache.Http.Impl.Conn.DefaultResponseParser, Mono.Android"
+	.asciz	"Org.Apache.Http.Impl.Conn.IdleConnectionHandler, Mono.Android"
 	.size	.L.managed_type_name.7900, 62
 	.section	.rodata.managed_type_name.7901,"aMS",%progbits,1
 	.type	.L.managed_type_name.7901, %object
 .L.managed_type_name.7901:
-	.asciz	"Org.Apache.Http.Impl.Conn.IdleConnectionHandler, Mono.Android"
-	.size	.L.managed_type_name.7901, 62
+	.asciz	"Org.Apache.Http.Impl.Conn.LoggingSessionInputBuffer, Mono.Android"
+	.size	.L.managed_type_name.7901, 66
 	.section	.rodata.managed_type_name.7902,"aMS",%progbits,1
 	.type	.L.managed_type_name.7902, %object
 .L.managed_type_name.7902:
-	.asciz	"Org.Apache.Http.Impl.Conn.LoggingSessionInputBuffer, Mono.Android"
-	.size	.L.managed_type_name.7902, 66
+	.asciz	"Org.Apache.Http.Impl.Conn.LoggingSessionOutputBuffer, Mono.Android"
+	.size	.L.managed_type_name.7902, 67
 	.section	.rodata.managed_type_name.7903,"aMS",%progbits,1
 	.type	.L.managed_type_name.7903, %object
 .L.managed_type_name.7903:
-	.asciz	"Org.Apache.Http.Impl.Conn.LoggingSessionOutputBuffer, Mono.Android"
-	.size	.L.managed_type_name.7903, 67
+	.asciz	"Org.Apache.Http.Impl.Conn.ProxySelectorRoutePlanner, Mono.Android"
+	.size	.L.managed_type_name.7903, 66
 	.section	.rodata.managed_type_name.7904,"aMS",%progbits,1
 	.type	.L.managed_type_name.7904, %object
 .L.managed_type_name.7904:
-	.asciz	"Org.Apache.Http.Impl.Conn.ProxySelectorRoutePlanner, Mono.Android"
-	.size	.L.managed_type_name.7904, 66
+	.asciz	"Org.Apache.Http.Impl.Conn.SingleClientConnManager+ConnAdapter, Mono.Android"
+	.size	.L.managed_type_name.7904, 76
 	.section	.rodata.managed_type_name.7905,"aMS",%progbits,1
 	.type	.L.managed_type_name.7905, %object
 .L.managed_type_name.7905:
-	.asciz	"Org.Apache.Http.Impl.Conn.SingleClientConnManager+ConnAdapter, Mono.Android"
-	.size	.L.managed_type_name.7905, 76
+	.asciz	"Org.Apache.Http.Impl.Conn.SingleClientConnManager+PoolEntry, Mono.Android"
+	.size	.L.managed_type_name.7905, 74
 	.section	.rodata.managed_type_name.7906,"aMS",%progbits,1
 	.type	.L.managed_type_name.7906, %object
 .L.managed_type_name.7906:
-	.asciz	"Org.Apache.Http.Impl.Conn.SingleClientConnManager+PoolEntry, Mono.Android"
-	.size	.L.managed_type_name.7906, 74
+	.asciz	"Org.Apache.Http.Impl.Conn.SingleClientConnManager, Mono.Android"
+	.size	.L.managed_type_name.7906, 64
 	.section	.rodata.managed_type_name.7907,"aMS",%progbits,1
 	.type	.L.managed_type_name.7907, %object
 .L.managed_type_name.7907:
-	.asciz	"Org.Apache.Http.Impl.Conn.SingleClientConnManager, Mono.Android"
-	.size	.L.managed_type_name.7907, 64
+	.asciz	"Org.Apache.Http.Impl.Conn.Tsccm.AbstractConnPool, Mono.Android"
+	.size	.L.managed_type_name.7907, 63
 	.section	.rodata.managed_type_name.7908,"aMS",%progbits,1
 	.type	.L.managed_type_name.7908, %object
 .L.managed_type_name.7908:
-	.asciz	"Org.Apache.Http.Impl.Conn.Tsccm.AbstractConnPool, Mono.Android"
-	.size	.L.managed_type_name.7908, 63
+	.asciz	"Org.Apache.Http.Impl.Conn.Tsccm.AbstractConnPoolInvoker, Mono.Android"
+	.size	.L.managed_type_name.7908, 70
 	.section	.rodata.managed_type_name.7909,"aMS",%progbits,1
 	.type	.L.managed_type_name.7909, %object
 .L.managed_type_name.7909:
-	.asciz	"Org.Apache.Http.Impl.Conn.Tsccm.AbstractConnPoolInvoker, Mono.Android"
-	.size	.L.managed_type_name.7909, 70
+	.asciz	"Org.Apache.Http.Impl.Conn.Tsccm.BasicPoolEntry, Mono.Android"
+	.size	.L.managed_type_name.7909, 61
 	.section	.rodata.managed_type_name.7910,"aMS",%progbits,1
 	.type	.L.managed_type_name.7910, %object
 .L.managed_type_name.7910:
-	.asciz	"Org.Apache.Http.Impl.Conn.Tsccm.BasicPoolEntry, Mono.Android"
-	.size	.L.managed_type_name.7910, 61
+	.asciz	"Org.Apache.Http.Impl.Conn.Tsccm.BasicPoolEntryRef, Mono.Android"
+	.size	.L.managed_type_name.7910, 64
 	.section	.rodata.managed_type_name.7911,"aMS",%progbits,1
 	.type	.L.managed_type_name.7911, %object
 .L.managed_type_name.7911:
-	.asciz	"Org.Apache.Http.Impl.Conn.Tsccm.BasicPoolEntryRef, Mono.Android"
-	.size	.L.managed_type_name.7911, 64
+	.asciz	"Org.Apache.Http.Impl.Conn.Tsccm.BasicPooledConnAdapter, Mono.Android"
+	.size	.L.managed_type_name.7911, 69
 	.section	.rodata.managed_type_name.7912,"aMS",%progbits,1
 	.type	.L.managed_type_name.7912, %object
 .L.managed_type_name.7912:
-	.asciz	"Org.Apache.Http.Impl.Conn.Tsccm.BasicPooledConnAdapter, Mono.Android"
-	.size	.L.managed_type_name.7912, 69
+	.asciz	"Org.Apache.Http.Impl.Conn.Tsccm.ConnPoolByRoute, Mono.Android"
+	.size	.L.managed_type_name.7912, 62
 	.section	.rodata.managed_type_name.7913,"aMS",%progbits,1
 	.type	.L.managed_type_name.7913, %object
 .L.managed_type_name.7913:
-	.asciz	"Org.Apache.Http.Impl.Conn.Tsccm.ConnPoolByRoute, Mono.Android"
-	.size	.L.managed_type_name.7913, 62
+	.asciz	"Org.Apache.Http.Impl.Conn.Tsccm.IPoolEntryRequestInvoker, Mono.Android"
+	.size	.L.managed_type_name.7913, 71
 	.section	.rodata.managed_type_name.7914,"aMS",%progbits,1
 	.type	.L.managed_type_name.7914, %object
 .L.managed_type_name.7914:
-	.asciz	"Org.Apache.Http.Impl.Conn.Tsccm.IPoolEntryRequestInvoker, Mono.Android"
-	.size	.L.managed_type_name.7914, 71
+	.asciz	"Org.Apache.Http.Impl.Conn.Tsccm.IRefQueueHandlerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7914, 70
 	.section	.rodata.managed_type_name.7915,"aMS",%progbits,1
 	.type	.L.managed_type_name.7915, %object
 .L.managed_type_name.7915:
-	.asciz	"Org.Apache.Http.Impl.Conn.Tsccm.IRefQueueHandlerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7915, 70
+	.asciz	"Org.Apache.Http.Impl.Conn.Tsccm.RefQueueWorker, Mono.Android"
+	.size	.L.managed_type_name.7915, 61
 	.section	.rodata.managed_type_name.7916,"aMS",%progbits,1
 	.type	.L.managed_type_name.7916, %object
 .L.managed_type_name.7916:
-	.asciz	"Org.Apache.Http.Impl.Conn.Tsccm.RefQueueWorker, Mono.Android"
-	.size	.L.managed_type_name.7916, 61
+	.asciz	"Org.Apache.Http.Impl.Conn.Tsccm.RouteSpecificPool, Mono.Android"
+	.size	.L.managed_type_name.7916, 64
 	.section	.rodata.managed_type_name.7917,"aMS",%progbits,1
 	.type	.L.managed_type_name.7917, %object
 .L.managed_type_name.7917:
-	.asciz	"Org.Apache.Http.Impl.Conn.Tsccm.RouteSpecificPool, Mono.Android"
-	.size	.L.managed_type_name.7917, 64
+	.asciz	"Org.Apache.Http.Impl.Conn.Tsccm.ThreadSafeClientConnManager, Mono.Android"
+	.size	.L.managed_type_name.7917, 74
 	.section	.rodata.managed_type_name.7918,"aMS",%progbits,1
 	.type	.L.managed_type_name.7918, %object
 .L.managed_type_name.7918:
-	.asciz	"Org.Apache.Http.Impl.Conn.Tsccm.ThreadSafeClientConnManager, Mono.Android"
-	.size	.L.managed_type_name.7918, 74
+	.asciz	"Org.Apache.Http.Impl.Conn.Tsccm.WaitingThread, Mono.Android"
+	.size	.L.managed_type_name.7918, 60
 	.section	.rodata.managed_type_name.7919,"aMS",%progbits,1
 	.type	.L.managed_type_name.7919, %object
 .L.managed_type_name.7919:
-	.asciz	"Org.Apache.Http.Impl.Conn.Tsccm.WaitingThread, Mono.Android"
-	.size	.L.managed_type_name.7919, 60
+	.asciz	"Org.Apache.Http.Impl.Conn.Tsccm.WaitingThreadAborter, Mono.Android"
+	.size	.L.managed_type_name.7919, 67
 	.section	.rodata.managed_type_name.7920,"aMS",%progbits,1
 	.type	.L.managed_type_name.7920, %object
 .L.managed_type_name.7920:
-	.asciz	"Org.Apache.Http.Impl.Conn.Tsccm.WaitingThreadAborter, Mono.Android"
-	.size	.L.managed_type_name.7920, 67
+	.asciz	"Org.Apache.Http.Impl.Conn.Wire, Mono.Android"
+	.size	.L.managed_type_name.7920, 45
 	.section	.rodata.managed_type_name.7921,"aMS",%progbits,1
 	.type	.L.managed_type_name.7921, %object
 .L.managed_type_name.7921:
-	.asciz	"Org.Apache.Http.Impl.Conn.Wire, Mono.Android"
-	.size	.L.managed_type_name.7921, 45
+	.asciz	"Org.Apache.Http.Impl.Cookie.AbstractCookieAttributeHandler, Mono.Android"
+	.size	.L.managed_type_name.7921, 73
 	.section	.rodata.managed_type_name.7922,"aMS",%progbits,1
 	.type	.L.managed_type_name.7922, %object
 .L.managed_type_name.7922:
-	.asciz	"Org.Apache.Http.Impl.Cookie.AbstractCookieAttributeHandler, Mono.Android"
-	.size	.L.managed_type_name.7922, 73
+	.asciz	"Org.Apache.Http.Impl.Cookie.AbstractCookieAttributeHandlerInvoker, Mono.Android"
+	.size	.L.managed_type_name.7922, 80
 	.section	.rodata.managed_type_name.7923,"aMS",%progbits,1
 	.type	.L.managed_type_name.7923, %object
 .L.managed_type_name.7923:
-	.asciz	"Org.Apache.Http.Impl.Cookie.AbstractCookieAttributeHandlerInvoker, Mono.Android"
-	.size	.L.managed_type_name.7923, 80
+	.asciz	"Org.Apache.Http.Impl.Cookie.AbstractCookieSpec, Mono.Android"
+	.size	.L.managed_type_name.7923, 61
 	.section	.rodata.managed_type_name.7924,"aMS",%progbits,1
 	.type	.L.managed_type_name.7924, %object
 .L.managed_type_name.7924:
-	.asciz	"Org.Apache.Http.Impl.Cookie.AbstractCookieSpec, Mono.Android"
-	.size	.L.managed_type_name.7924, 61
+	.asciz	"Org.Apache.Http.Impl.Cookie.AbstractCookieSpecInvoker, Mono.Android"
+	.size	.L.managed_type_name.7924, 68
 	.section	.rodata.managed_type_name.7925,"aMS",%progbits,1
 	.type	.L.managed_type_name.7925, %object
 .L.managed_type_name.7925:
-	.asciz	"Org.Apache.Http.Impl.Cookie.AbstractCookieSpecInvoker, Mono.Android"
-	.size	.L.managed_type_name.7925, 68
+	.asciz	"Org.Apache.Http.Impl.Cookie.BasicClientCookie, Mono.Android"
+	.size	.L.managed_type_name.7925, 60
 	.section	.rodata.managed_type_name.7926,"aMS",%progbits,1
 	.type	.L.managed_type_name.7926, %object
 .L.managed_type_name.7926:
-	.asciz	"Org.Apache.Http.Impl.Cookie.BasicClientCookie, Mono.Android"
-	.size	.L.managed_type_name.7926, 60
+	.asciz	"Org.Apache.Http.Impl.Cookie.BasicClientCookie2, Mono.Android"
+	.size	.L.managed_type_name.7926, 61
 	.section	.rodata.managed_type_name.7927,"aMS",%progbits,1
 	.type	.L.managed_type_name.7927, %object
 .L.managed_type_name.7927:
-	.asciz	"Org.Apache.Http.Impl.Cookie.BasicClientCookie2, Mono.Android"
-	.size	.L.managed_type_name.7927, 61
+	.asciz	"Org.Apache.Http.Impl.Cookie.BasicCommentHandler, Mono.Android"
+	.size	.L.managed_type_name.7927, 62
 	.section	.rodata.managed_type_name.7928,"aMS",%progbits,1
 	.type	.L.managed_type_name.7928, %object
 .L.managed_type_name.7928:
-	.asciz	"Org.Apache.Http.Impl.Cookie.BasicCommentHandler, Mono.Android"
-	.size	.L.managed_type_name.7928, 62
+	.asciz	"Org.Apache.Http.Impl.Cookie.BasicDomainHandler, Mono.Android"
+	.size	.L.managed_type_name.7928, 61
 	.section	.rodata.managed_type_name.7929,"aMS",%progbits,1
 	.type	.L.managed_type_name.7929, %object
 .L.managed_type_name.7929:
-	.asciz	"Org.Apache.Http.Impl.Cookie.BasicDomainHandler, Mono.Android"
-	.size	.L.managed_type_name.7929, 61
+	.asciz	"Org.Apache.Http.Impl.Cookie.BasicExpiresHandler, Mono.Android"
+	.size	.L.managed_type_name.7929, 62
 	.section	.rodata.managed_type_name.7930,"aMS",%progbits,1
 	.type	.L.managed_type_name.7930, %object
 .L.managed_type_name.7930:
-	.asciz	"Org.Apache.Http.Impl.Cookie.BasicExpiresHandler, Mono.Android"
-	.size	.L.managed_type_name.7930, 62
+	.asciz	"Org.Apache.Http.Impl.Cookie.BasicMaxAgeHandler, Mono.Android"
+	.size	.L.managed_type_name.7930, 61
 	.section	.rodata.managed_type_name.7931,"aMS",%progbits,1
 	.type	.L.managed_type_name.7931, %object
 .L.managed_type_name.7931:
-	.asciz	"Org.Apache.Http.Impl.Cookie.BasicMaxAgeHandler, Mono.Android"
-	.size	.L.managed_type_name.7931, 61
+	.asciz	"Org.Apache.Http.Impl.Cookie.BasicPathHandler, Mono.Android"
+	.size	.L.managed_type_name.7931, 59
 	.section	.rodata.managed_type_name.7932,"aMS",%progbits,1
 	.type	.L.managed_type_name.7932, %object
 .L.managed_type_name.7932:
-	.asciz	"Org.Apache.Http.Impl.Cookie.BasicPathHandler, Mono.Android"
-	.size	.L.managed_type_name.7932, 59
+	.asciz	"Org.Apache.Http.Impl.Cookie.BasicSecureHandler, Mono.Android"
+	.size	.L.managed_type_name.7932, 61
 	.section	.rodata.managed_type_name.7933,"aMS",%progbits,1
 	.type	.L.managed_type_name.7933, %object
 .L.managed_type_name.7933:
-	.asciz	"Org.Apache.Http.Impl.Cookie.BasicSecureHandler, Mono.Android"
-	.size	.L.managed_type_name.7933, 61
+	.asciz	"Org.Apache.Http.Impl.Cookie.BestMatchSpec, Mono.Android"
+	.size	.L.managed_type_name.7933, 56
 	.section	.rodata.managed_type_name.7934,"aMS",%progbits,1
 	.type	.L.managed_type_name.7934, %object
 .L.managed_type_name.7934:
-	.asciz	"Org.Apache.Http.Impl.Cookie.BestMatchSpec, Mono.Android"
-	.size	.L.managed_type_name.7934, 56
+	.asciz	"Org.Apache.Http.Impl.Cookie.BestMatchSpecFactory, Mono.Android"
+	.size	.L.managed_type_name.7934, 63
 	.section	.rodata.managed_type_name.7935,"aMS",%progbits,1
 	.type	.L.managed_type_name.7935, %object
 .L.managed_type_name.7935:
-	.asciz	"Org.Apache.Http.Impl.Cookie.BestMatchSpecFactory, Mono.Android"
-	.size	.L.managed_type_name.7935, 63
+	.asciz	"Org.Apache.Http.Impl.Cookie.BrowserCompatSpec, Mono.Android"
+	.size	.L.managed_type_name.7935, 60
 	.section	.rodata.managed_type_name.7936,"aMS",%progbits,1
 	.type	.L.managed_type_name.7936, %object
 .L.managed_type_name.7936:
-	.asciz	"Org.Apache.Http.Impl.Cookie.BrowserCompatSpec, Mono.Android"
-	.size	.L.managed_type_name.7936, 60
+	.asciz	"Org.Apache.Http.Impl.Cookie.BrowserCompatSpecFactory, Mono.Android"
+	.size	.L.managed_type_name.7936, 67
 	.section	.rodata.managed_type_name.7937,"aMS",%progbits,1
 	.type	.L.managed_type_name.7937, %object
 .L.managed_type_name.7937:
-	.asciz	"Org.Apache.Http.Impl.Cookie.BrowserCompatSpecFactory, Mono.Android"
-	.size	.L.managed_type_name.7937, 67
+	.asciz	"Org.Apache.Http.Impl.Cookie.CookieSpecBase, Mono.Android"
+	.size	.L.managed_type_name.7937, 57
 	.section	.rodata.managed_type_name.7938,"aMS",%progbits,1
 	.type	.L.managed_type_name.7938, %object
 .L.managed_type_name.7938:
-	.asciz	"Org.Apache.Http.Impl.Cookie.CookieSpecBase, Mono.Android"
-	.size	.L.managed_type_name.7938, 57
+	.asciz	"Org.Apache.Http.Impl.Cookie.CookieSpecBaseInvoker, Mono.Android"
+	.size	.L.managed_type_name.7938, 64
 	.section	.rodata.managed_type_name.7939,"aMS",%progbits,1
 	.type	.L.managed_type_name.7939, %object
 .L.managed_type_name.7939:
-	.asciz	"Org.Apache.Http.Impl.Cookie.CookieSpecBaseInvoker, Mono.Android"
-	.size	.L.managed_type_name.7939, 64
+	.asciz	"Org.Apache.Http.Impl.Cookie.DateParseException, Mono.Android"
+	.size	.L.managed_type_name.7939, 61
 	.section	.rodata.managed_type_name.7940,"aMS",%progbits,1
 	.type	.L.managed_type_name.7940, %object
 .L.managed_type_name.7940:
-	.asciz	"Org.Apache.Http.Impl.Cookie.DateParseException, Mono.Android"
-	.size	.L.managed_type_name.7940, 61
+	.asciz	"Org.Apache.Http.Impl.Cookie.DateUtils, Mono.Android"
+	.size	.L.managed_type_name.7940, 52
 	.section	.rodata.managed_type_name.7941,"aMS",%progbits,1
 	.type	.L.managed_type_name.7941, %object
 .L.managed_type_name.7941:
-	.asciz	"Org.Apache.Http.Impl.Cookie.DateUtils, Mono.Android"
-	.size	.L.managed_type_name.7941, 52
+	.asciz	"Org.Apache.Http.Impl.Cookie.NetscapeDomainHandler, Mono.Android"
+	.size	.L.managed_type_name.7941, 64
 	.section	.rodata.managed_type_name.7942,"aMS",%progbits,1
 	.type	.L.managed_type_name.7942, %object
 .L.managed_type_name.7942:
-	.asciz	"Org.Apache.Http.Impl.Cookie.NetscapeDomainHandler, Mono.Android"
-	.size	.L.managed_type_name.7942, 64
+	.asciz	"Org.Apache.Http.Impl.Cookie.NetscapeDraftHeaderParser, Mono.Android"
+	.size	.L.managed_type_name.7942, 68
 	.section	.rodata.managed_type_name.7943,"aMS",%progbits,1
 	.type	.L.managed_type_name.7943, %object
 .L.managed_type_name.7943:
-	.asciz	"Org.Apache.Http.Impl.Cookie.NetscapeDraftHeaderParser, Mono.Android"
-	.size	.L.managed_type_name.7943, 68
+	.asciz	"Org.Apache.Http.Impl.Cookie.NetscapeDraftSpec, Mono.Android"
+	.size	.L.managed_type_name.7943, 60
 	.section	.rodata.managed_type_name.7944,"aMS",%progbits,1
 	.type	.L.managed_type_name.7944, %object
 .L.managed_type_name.7944:
-	.asciz	"Org.Apache.Http.Impl.Cookie.NetscapeDraftSpec, Mono.Android"
-	.size	.L.managed_type_name.7944, 60
+	.asciz	"Org.Apache.Http.Impl.Cookie.NetscapeDraftSpecFactory, Mono.Android"
+	.size	.L.managed_type_name.7944, 67
 	.section	.rodata.managed_type_name.7945,"aMS",%progbits,1
 	.type	.L.managed_type_name.7945, %object
 .L.managed_type_name.7945:
-	.asciz	"Org.Apache.Http.Impl.Cookie.NetscapeDraftSpecFactory, Mono.Android"
-	.size	.L.managed_type_name.7945, 67
+	.asciz	"Org.Apache.Http.Impl.Cookie.RFC2109DomainHandler, Mono.Android"
+	.size	.L.managed_type_name.7945, 63
 	.section	.rodata.managed_type_name.7946,"aMS",%progbits,1
 	.type	.L.managed_type_name.7946, %object
 .L.managed_type_name.7946:
-	.asciz	"Org.Apache.Http.Impl.Cookie.RFC2109DomainHandler, Mono.Android"
-	.size	.L.managed_type_name.7946, 63
+	.asciz	"Org.Apache.Http.Impl.Cookie.RFC2109Spec, Mono.Android"
+	.size	.L.managed_type_name.7946, 54
 	.section	.rodata.managed_type_name.7947,"aMS",%progbits,1
 	.type	.L.managed_type_name.7947, %object
 .L.managed_type_name.7947:
-	.asciz	"Org.Apache.Http.Impl.Cookie.RFC2109Spec, Mono.Android"
-	.size	.L.managed_type_name.7947, 54
+	.asciz	"Org.Apache.Http.Impl.Cookie.RFC2109SpecFactory, Mono.Android"
+	.size	.L.managed_type_name.7947, 61
 	.section	.rodata.managed_type_name.7948,"aMS",%progbits,1
 	.type	.L.managed_type_name.7948, %object
 .L.managed_type_name.7948:
-	.asciz	"Org.Apache.Http.Impl.Cookie.RFC2109SpecFactory, Mono.Android"
-	.size	.L.managed_type_name.7948, 61
+	.asciz	"Org.Apache.Http.Impl.Cookie.RFC2109VersionHandler, Mono.Android"
+	.size	.L.managed_type_name.7948, 64
 	.section	.rodata.managed_type_name.7949,"aMS",%progbits,1
 	.type	.L.managed_type_name.7949, %object
 .L.managed_type_name.7949:
-	.asciz	"Org.Apache.Http.Impl.Cookie.RFC2109VersionHandler, Mono.Android"
-	.size	.L.managed_type_name.7949, 64
+	.asciz	"Org.Apache.Http.Impl.Cookie.RFC2965CommentUrlAttributeHandler, Mono.Android"
+	.size	.L.managed_type_name.7949, 76
 	.section	.rodata.managed_type_name.7950,"aMS",%progbits,1
 	.type	.L.managed_type_name.7950, %object
 .L.managed_type_name.7950:
-	.asciz	"Org.Apache.Http.Impl.Cookie.RFC2965CommentUrlAttributeHandler, Mono.Android"
-	.size	.L.managed_type_name.7950, 76
+	.asciz	"Org.Apache.Http.Impl.Cookie.RFC2965DiscardAttributeHandler, Mono.Android"
+	.size	.L.managed_type_name.7950, 73
 	.section	.rodata.managed_type_name.7951,"aMS",%progbits,1
 	.type	.L.managed_type_name.7951, %object
 .L.managed_type_name.7951:
-	.asciz	"Org.Apache.Http.Impl.Cookie.RFC2965DiscardAttributeHandler, Mono.Android"
-	.size	.L.managed_type_name.7951, 73
+	.asciz	"Org.Apache.Http.Impl.Cookie.RFC2965DomainAttributeHandler, Mono.Android"
+	.size	.L.managed_type_name.7951, 72
 	.section	.rodata.managed_type_name.7952,"aMS",%progbits,1
 	.type	.L.managed_type_name.7952, %object
 .L.managed_type_name.7952:
-	.asciz	"Org.Apache.Http.Impl.Cookie.RFC2965DomainAttributeHandler, Mono.Android"
-	.size	.L.managed_type_name.7952, 72
+	.asciz	"Org.Apache.Http.Impl.Cookie.RFC2965PortAttributeHandler, Mono.Android"
+	.size	.L.managed_type_name.7952, 70
 	.section	.rodata.managed_type_name.7953,"aMS",%progbits,1
 	.type	.L.managed_type_name.7953, %object
 .L.managed_type_name.7953:
-	.asciz	"Org.Apache.Http.Impl.Cookie.RFC2965PortAttributeHandler, Mono.Android"
-	.size	.L.managed_type_name.7953, 70
+	.asciz	"Org.Apache.Http.Impl.Cookie.RFC2965Spec, Mono.Android"
+	.size	.L.managed_type_name.7953, 54
 	.section	.rodata.managed_type_name.7954,"aMS",%progbits,1
 	.type	.L.managed_type_name.7954, %object
 .L.managed_type_name.7954:
-	.asciz	"Org.Apache.Http.Impl.Cookie.RFC2965Spec, Mono.Android"
-	.size	.L.managed_type_name.7954, 54
+	.asciz	"Org.Apache.Http.Impl.Cookie.RFC2965SpecFactory, Mono.Android"
+	.size	.L.managed_type_name.7954, 61
 	.section	.rodata.managed_type_name.7955,"aMS",%progbits,1
 	.type	.L.managed_type_name.7955, %object
 .L.managed_type_name.7955:
-	.asciz	"Org.Apache.Http.Impl.Cookie.RFC2965SpecFactory, Mono.Android"
-	.size	.L.managed_type_name.7955, 61
+	.asciz	"Org.Apache.Http.Impl.Cookie.RFC2965VersionAttributeHandler, Mono.Android"
+	.size	.L.managed_type_name.7955, 73
 	.section	.rodata.managed_type_name.7956,"aMS",%progbits,1
 	.type	.L.managed_type_name.7956, %object
 .L.managed_type_name.7956:
-	.asciz	"Org.Apache.Http.Impl.Cookie.RFC2965VersionAttributeHandler, Mono.Android"
-	.size	.L.managed_type_name.7956, 73
+	.asciz	"Org.Apache.Http.Impl.DefaultConnectionReuseStrategy, Mono.Android"
+	.size	.L.managed_type_name.7956, 66
 	.section	.rodata.managed_type_name.7957,"aMS",%progbits,1
 	.type	.L.managed_type_name.7957, %object
 .L.managed_type_name.7957:
-	.asciz	"Org.Apache.Http.Impl.DefaultConnectionReuseStrategy, Mono.Android"
-	.size	.L.managed_type_name.7957, 66
+	.asciz	"Org.Apache.Http.Impl.DefaultHttpClientConnection, Mono.Android"
+	.size	.L.managed_type_name.7957, 63
 	.section	.rodata.managed_type_name.7958,"aMS",%progbits,1
 	.type	.L.managed_type_name.7958, %object
 .L.managed_type_name.7958:
-	.asciz	"Org.Apache.Http.Impl.DefaultHttpClientConnection, Mono.Android"
-	.size	.L.managed_type_name.7958, 63
+	.asciz	"Org.Apache.Http.Impl.DefaultHttpRequestFactory, Mono.Android"
+	.size	.L.managed_type_name.7958, 61
 	.section	.rodata.managed_type_name.7959,"aMS",%progbits,1
 	.type	.L.managed_type_name.7959, %object
 .L.managed_type_name.7959:
-	.asciz	"Org.Apache.Http.Impl.DefaultHttpRequestFactory, Mono.Android"
-	.size	.L.managed_type_name.7959, 61
+	.asciz	"Org.Apache.Http.Impl.DefaultHttpResponseFactory, Mono.Android"
+	.size	.L.managed_type_name.7959, 62
 	.section	.rodata.managed_type_name.7960,"aMS",%progbits,1
 	.type	.L.managed_type_name.7960, %object
 .L.managed_type_name.7960:
-	.asciz	"Org.Apache.Http.Impl.DefaultHttpResponseFactory, Mono.Android"
-	.size	.L.managed_type_name.7960, 62
+	.asciz	"Org.Apache.Http.Impl.DefaultHttpServerConnection, Mono.Android"
+	.size	.L.managed_type_name.7960, 63
 	.section	.rodata.managed_type_name.7961,"aMS",%progbits,1
 	.type	.L.managed_type_name.7961, %object
 .L.managed_type_name.7961:
-	.asciz	"Org.Apache.Http.Impl.DefaultHttpServerConnection, Mono.Android"
-	.size	.L.managed_type_name.7961, 63
+	.asciz	"Org.Apache.Http.Impl.EnglishReasonPhraseCatalog, Mono.Android"
+	.size	.L.managed_type_name.7961, 62
 	.section	.rodata.managed_type_name.7962,"aMS",%progbits,1
 	.type	.L.managed_type_name.7962, %object
 .L.managed_type_name.7962:
-	.asciz	"Org.Apache.Http.Impl.EnglishReasonPhraseCatalog, Mono.Android"
-	.size	.L.managed_type_name.7962, 62
+	.asciz	"Org.Apache.Http.Impl.Entity.EntityDeserializer, Mono.Android"
+	.size	.L.managed_type_name.7962, 61
 	.section	.rodata.managed_type_name.7963,"aMS",%progbits,1
 	.type	.L.managed_type_name.7963, %object
 .L.managed_type_name.7963:
-	.asciz	"Org.Apache.Http.Impl.Entity.EntityDeserializer, Mono.Android"
-	.size	.L.managed_type_name.7963, 61
+	.asciz	"Org.Apache.Http.Impl.Entity.EntitySerializer, Mono.Android"
+	.size	.L.managed_type_name.7963, 59
 	.section	.rodata.managed_type_name.7964,"aMS",%progbits,1
 	.type	.L.managed_type_name.7964, %object
 .L.managed_type_name.7964:
-	.asciz	"Org.Apache.Http.Impl.Entity.EntitySerializer, Mono.Android"
-	.size	.L.managed_type_name.7964, 59
+	.asciz	"Org.Apache.Http.Impl.Entity.LaxContentLengthStrategy, Mono.Android"
+	.size	.L.managed_type_name.7964, 67
 	.section	.rodata.managed_type_name.7965,"aMS",%progbits,1
 	.type	.L.managed_type_name.7965, %object
 .L.managed_type_name.7965:
-	.asciz	"Org.Apache.Http.Impl.Entity.LaxContentLengthStrategy, Mono.Android"
-	.size	.L.managed_type_name.7965, 67
+	.asciz	"Org.Apache.Http.Impl.Entity.StrictContentLengthStrategy, Mono.Android"
+	.size	.L.managed_type_name.7965, 70
 	.section	.rodata.managed_type_name.7966,"aMS",%progbits,1
 	.type	.L.managed_type_name.7966, %object
 .L.managed_type_name.7966:
-	.asciz	"Org.Apache.Http.Impl.Entity.StrictContentLengthStrategy, Mono.Android"
-	.size	.L.managed_type_name.7966, 70
+	.asciz	"Org.Apache.Http.Impl.HttpConnectionMetricsImpl, Mono.Android"
+	.size	.L.managed_type_name.7966, 61
 	.section	.rodata.managed_type_name.7967,"aMS",%progbits,1
 	.type	.L.managed_type_name.7967, %object
 .L.managed_type_name.7967:
-	.asciz	"Org.Apache.Http.Impl.HttpConnectionMetricsImpl, Mono.Android"
-	.size	.L.managed_type_name.7967, 61
+	.asciz	"Org.Apache.Http.Impl.IO.AbstractMessageParser, Mono.Android"
+	.size	.L.managed_type_name.7967, 60
 	.section	.rodata.managed_type_name.7968,"aMS",%progbits,1
 	.type	.L.managed_type_name.7968, %object
 .L.managed_type_name.7968:
-	.asciz	"Org.Apache.Http.Impl.IO.AbstractMessageParser, Mono.Android"
-	.size	.L.managed_type_name.7968, 60
+	.asciz	"Org.Apache.Http.Impl.IO.AbstractMessageParserInvoker, Mono.Android"
+	.size	.L.managed_type_name.7968, 67
 	.section	.rodata.managed_type_name.7969,"aMS",%progbits,1
 	.type	.L.managed_type_name.7969, %object
 .L.managed_type_name.7969:
-	.asciz	"Org.Apache.Http.Impl.IO.AbstractMessageParserInvoker, Mono.Android"
-	.size	.L.managed_type_name.7969, 67
+	.asciz	"Org.Apache.Http.Impl.IO.AbstractMessageWriter, Mono.Android"
+	.size	.L.managed_type_name.7969, 60
 	.section	.rodata.managed_type_name.7970,"aMS",%progbits,1
 	.type	.L.managed_type_name.7970, %object
 .L.managed_type_name.7970:
-	.asciz	"Org.Apache.Http.Impl.IO.AbstractMessageWriter, Mono.Android"
-	.size	.L.managed_type_name.7970, 60
+	.asciz	"Org.Apache.Http.Impl.IO.AbstractMessageWriterInvoker, Mono.Android"
+	.size	.L.managed_type_name.7970, 67
 	.section	.rodata.managed_type_name.7971,"aMS",%progbits,1
 	.type	.L.managed_type_name.7971, %object
 .L.managed_type_name.7971:
-	.asciz	"Org.Apache.Http.Impl.IO.AbstractMessageWriterInvoker, Mono.Android"
-	.size	.L.managed_type_name.7971, 67
+	.asciz	"Org.Apache.Http.Impl.IO.AbstractSessionInputBuffer, Mono.Android"
+	.size	.L.managed_type_name.7971, 65
 	.section	.rodata.managed_type_name.7972,"aMS",%progbits,1
 	.type	.L.managed_type_name.7972, %object
 .L.managed_type_name.7972:
-	.asciz	"Org.Apache.Http.Impl.IO.AbstractSessionInputBuffer, Mono.Android"
-	.size	.L.managed_type_name.7972, 65
+	.asciz	"Org.Apache.Http.Impl.IO.AbstractSessionInputBufferInvoker, Mono.Android"
+	.size	.L.managed_type_name.7972, 72
 	.section	.rodata.managed_type_name.7973,"aMS",%progbits,1
 	.type	.L.managed_type_name.7973, %object
 .L.managed_type_name.7973:
-	.asciz	"Org.Apache.Http.Impl.IO.AbstractSessionInputBufferInvoker, Mono.Android"
-	.size	.L.managed_type_name.7973, 72
+	.asciz	"Org.Apache.Http.Impl.IO.AbstractSessionOutputBuffer, Mono.Android"
+	.size	.L.managed_type_name.7973, 66
 	.section	.rodata.managed_type_name.7974,"aMS",%progbits,1
 	.type	.L.managed_type_name.7974, %object
 .L.managed_type_name.7974:
-	.asciz	"Org.Apache.Http.Impl.IO.AbstractSessionOutputBuffer, Mono.Android"
-	.size	.L.managed_type_name.7974, 66
+	.asciz	"Org.Apache.Http.Impl.IO.AbstractSessionOutputBufferInvoker, Mono.Android"
+	.size	.L.managed_type_name.7974, 73
 	.section	.rodata.managed_type_name.7975,"aMS",%progbits,1
 	.type	.L.managed_type_name.7975, %object
 .L.managed_type_name.7975:
-	.asciz	"Org.Apache.Http.Impl.IO.AbstractSessionOutputBufferInvoker, Mono.Android"
-	.size	.L.managed_type_name.7975, 73
+	.asciz	"Org.Apache.Http.Impl.IO.ChunkedInputStream, Mono.Android"
+	.size	.L.managed_type_name.7975, 57
 	.section	.rodata.managed_type_name.7976,"aMS",%progbits,1
 	.type	.L.managed_type_name.7976, %object
 .L.managed_type_name.7976:
-	.asciz	"Org.Apache.Http.Impl.IO.ChunkedInputStream, Mono.Android"
-	.size	.L.managed_type_name.7976, 57
+	.asciz	"Org.Apache.Http.Impl.IO.ChunkedOutputStream, Mono.Android"
+	.size	.L.managed_type_name.7976, 58
 	.section	.rodata.managed_type_name.7977,"aMS",%progbits,1
 	.type	.L.managed_type_name.7977, %object
 .L.managed_type_name.7977:
-	.asciz	"Org.Apache.Http.Impl.IO.ChunkedOutputStream, Mono.Android"
-	.size	.L.managed_type_name.7977, 58
+	.asciz	"Org.Apache.Http.Impl.IO.ContentLengthInputStream, Mono.Android"
+	.size	.L.managed_type_name.7977, 63
 	.section	.rodata.managed_type_name.7978,"aMS",%progbits,1
 	.type	.L.managed_type_name.7978, %object
 .L.managed_type_name.7978:
-	.asciz	"Org.Apache.Http.Impl.IO.ContentLengthInputStream, Mono.Android"
-	.size	.L.managed_type_name.7978, 63
+	.asciz	"Org.Apache.Http.Impl.IO.ContentLengthOutputStream, Mono.Android"
+	.size	.L.managed_type_name.7978, 64
 	.section	.rodata.managed_type_name.7979,"aMS",%progbits,1
 	.type	.L.managed_type_name.7979, %object
 .L.managed_type_name.7979:
-	.asciz	"Org.Apache.Http.Impl.IO.ContentLengthOutputStream, Mono.Android"
-	.size	.L.managed_type_name.7979, 64
+	.asciz	"Org.Apache.Http.Impl.IO.HttpRequestParser, Mono.Android"
+	.size	.L.managed_type_name.7979, 56
 	.section	.rodata.managed_type_name.7980,"aMS",%progbits,1
 	.type	.L.managed_type_name.7980, %object
 .L.managed_type_name.7980:
-	.asciz	"Org.Apache.Http.Impl.IO.HttpRequestParser, Mono.Android"
+	.asciz	"Org.Apache.Http.Impl.IO.HttpRequestWriter, Mono.Android"
 	.size	.L.managed_type_name.7980, 56
 	.section	.rodata.managed_type_name.7981,"aMS",%progbits,1
 	.type	.L.managed_type_name.7981, %object
 .L.managed_type_name.7981:
-	.asciz	"Org.Apache.Http.Impl.IO.HttpRequestWriter, Mono.Android"
-	.size	.L.managed_type_name.7981, 56
+	.asciz	"Org.Apache.Http.Impl.IO.HttpResponseParser, Mono.Android"
+	.size	.L.managed_type_name.7981, 57
 	.section	.rodata.managed_type_name.7982,"aMS",%progbits,1
 	.type	.L.managed_type_name.7982, %object
 .L.managed_type_name.7982:
-	.asciz	"Org.Apache.Http.Impl.IO.HttpResponseParser, Mono.Android"
+	.asciz	"Org.Apache.Http.Impl.IO.HttpResponseWriter, Mono.Android"
 	.size	.L.managed_type_name.7982, 57
 	.section	.rodata.managed_type_name.7983,"aMS",%progbits,1
 	.type	.L.managed_type_name.7983, %object
 .L.managed_type_name.7983:
-	.asciz	"Org.Apache.Http.Impl.IO.HttpResponseWriter, Mono.Android"
-	.size	.L.managed_type_name.7983, 57
+	.asciz	"Org.Apache.Http.Impl.IO.HttpTransportMetricsImpl, Mono.Android"
+	.size	.L.managed_type_name.7983, 63
 	.section	.rodata.managed_type_name.7984,"aMS",%progbits,1
 	.type	.L.managed_type_name.7984, %object
 .L.managed_type_name.7984:
-	.asciz	"Org.Apache.Http.Impl.IO.HttpTransportMetricsImpl, Mono.Android"
-	.size	.L.managed_type_name.7984, 63
+	.asciz	"Org.Apache.Http.Impl.IO.IdentityInputStream, Mono.Android"
+	.size	.L.managed_type_name.7984, 58
 	.section	.rodata.managed_type_name.7985,"aMS",%progbits,1
 	.type	.L.managed_type_name.7985, %object
 .L.managed_type_name.7985:
-	.asciz	"Org.Apache.Http.Impl.IO.IdentityInputStream, Mono.Android"
-	.size	.L.managed_type_name.7985, 58
+	.asciz	"Org.Apache.Http.Impl.IO.IdentityOutputStream, Mono.Android"
+	.size	.L.managed_type_name.7985, 59
 	.section	.rodata.managed_type_name.7986,"aMS",%progbits,1
 	.type	.L.managed_type_name.7986, %object
 .L.managed_type_name.7986:
-	.asciz	"Org.Apache.Http.Impl.IO.IdentityOutputStream, Mono.Android"
-	.size	.L.managed_type_name.7986, 59
+	.asciz	"Org.Apache.Http.Impl.IO.SocketInputBuffer, Mono.Android"
+	.size	.L.managed_type_name.7986, 56
 	.section	.rodata.managed_type_name.7987,"aMS",%progbits,1
 	.type	.L.managed_type_name.7987, %object
 .L.managed_type_name.7987:
-	.asciz	"Org.Apache.Http.Impl.IO.SocketInputBuffer, Mono.Android"
-	.size	.L.managed_type_name.7987, 56
+	.asciz	"Org.Apache.Http.Impl.IO.SocketOutputBuffer, Mono.Android"
+	.size	.L.managed_type_name.7987, 57
 	.section	.rodata.managed_type_name.7988,"aMS",%progbits,1
 	.type	.L.managed_type_name.7988, %object
 .L.managed_type_name.7988:
-	.asciz	"Org.Apache.Http.Impl.IO.SocketOutputBuffer, Mono.Android"
-	.size	.L.managed_type_name.7988, 57
+	.asciz	"Org.Apache.Http.Impl.NoConnectionReuseStrategy, Mono.Android"
+	.size	.L.managed_type_name.7988, 61
 	.section	.rodata.managed_type_name.7989,"aMS",%progbits,1
 	.type	.L.managed_type_name.7989, %object
 .L.managed_type_name.7989:
-	.asciz	"Org.Apache.Http.Impl.NoConnectionReuseStrategy, Mono.Android"
-	.size	.L.managed_type_name.7989, 61
+	.asciz	"Org.Apache.Http.Impl.SocketHttpClientConnection, Mono.Android"
+	.size	.L.managed_type_name.7989, 62
 	.section	.rodata.managed_type_name.7990,"aMS",%progbits,1
 	.type	.L.managed_type_name.7990, %object
 .L.managed_type_name.7990:
-	.asciz	"Org.Apache.Http.Impl.SocketHttpClientConnection, Mono.Android"
+	.asciz	"Org.Apache.Http.Impl.SocketHttpServerConnection, Mono.Android"
 	.size	.L.managed_type_name.7990, 62
 	.section	.rodata.managed_type_name.7991,"aMS",%progbits,1
 	.type	.L.managed_type_name.7991, %object
 .L.managed_type_name.7991:
-	.asciz	"Org.Apache.Http.Impl.SocketHttpServerConnection, Mono.Android"
-	.size	.L.managed_type_name.7991, 62
+	.asciz	"Org.Apache.Http.MalformedChunkCodingException, Mono.Android"
+	.size	.L.managed_type_name.7991, 60
 	.section	.rodata.managed_type_name.7992,"aMS",%progbits,1
 	.type	.L.managed_type_name.7992, %object
 .L.managed_type_name.7992:
-	.asciz	"Org.Apache.Http.MalformedChunkCodingException, Mono.Android"
-	.size	.L.managed_type_name.7992, 60
+	.asciz	"Org.Apache.Http.Message.AbstractHttpMessage, Mono.Android"
+	.size	.L.managed_type_name.7992, 58
 	.section	.rodata.managed_type_name.7993,"aMS",%progbits,1
 	.type	.L.managed_type_name.7993, %object
 .L.managed_type_name.7993:
-	.asciz	"Org.Apache.Http.Message.AbstractHttpMessage, Mono.Android"
-	.size	.L.managed_type_name.7993, 58
+	.asciz	"Org.Apache.Http.Message.AbstractHttpMessageInvoker, Mono.Android"
+	.size	.L.managed_type_name.7993, 65
 	.section	.rodata.managed_type_name.7994,"aMS",%progbits,1
 	.type	.L.managed_type_name.7994, %object
 .L.managed_type_name.7994:
-	.asciz	"Org.Apache.Http.Message.AbstractHttpMessageInvoker, Mono.Android"
-	.size	.L.managed_type_name.7994, 65
+	.asciz	"Org.Apache.Http.Message.BasicHeader, Mono.Android"
+	.size	.L.managed_type_name.7994, 50
 	.section	.rodata.managed_type_name.7995,"aMS",%progbits,1
 	.type	.L.managed_type_name.7995, %object
 .L.managed_type_name.7995:
-	.asciz	"Org.Apache.Http.Message.BasicHeader, Mono.Android"
-	.size	.L.managed_type_name.7995, 50
+	.asciz	"Org.Apache.Http.Message.BasicHeaderElement, Mono.Android"
+	.size	.L.managed_type_name.7995, 57
 	.section	.rodata.managed_type_name.7996,"aMS",%progbits,1
 	.type	.L.managed_type_name.7996, %object
 .L.managed_type_name.7996:
-	.asciz	"Org.Apache.Http.Message.BasicHeaderElement, Mono.Android"
-	.size	.L.managed_type_name.7996, 57
+	.asciz	"Org.Apache.Http.Message.BasicHeaderElementIterator, Mono.Android"
+	.size	.L.managed_type_name.7996, 65
 	.section	.rodata.managed_type_name.7997,"aMS",%progbits,1
 	.type	.L.managed_type_name.7997, %object
 .L.managed_type_name.7997:
-	.asciz	"Org.Apache.Http.Message.BasicHeaderElementIterator, Mono.Android"
-	.size	.L.managed_type_name.7997, 65
+	.asciz	"Org.Apache.Http.Message.BasicHeaderIterator, Mono.Android"
+	.size	.L.managed_type_name.7997, 58
 	.section	.rodata.managed_type_name.7998,"aMS",%progbits,1
 	.type	.L.managed_type_name.7998, %object
 .L.managed_type_name.7998:
-	.asciz	"Org.Apache.Http.Message.BasicHeaderIterator, Mono.Android"
-	.size	.L.managed_type_name.7998, 58
+	.asciz	"Org.Apache.Http.Message.BasicHeaderValueFormatter, Mono.Android"
+	.size	.L.managed_type_name.7998, 64
 	.section	.rodata.managed_type_name.7999,"aMS",%progbits,1
 	.type	.L.managed_type_name.7999, %object
 .L.managed_type_name.7999:
-	.asciz	"Org.Apache.Http.Message.BasicHeaderValueFormatter, Mono.Android"
-	.size	.L.managed_type_name.7999, 64
+	.asciz	"Org.Apache.Http.Message.BasicHeaderValueParser, Mono.Android"
+	.size	.L.managed_type_name.7999, 61
 	.section	.rodata.managed_type_name.8000,"aMS",%progbits,1
 	.type	.L.managed_type_name.8000, %object
 .L.managed_type_name.8000:
-	.asciz	"Org.Apache.Http.Message.BasicHeaderValueParser, Mono.Android"
-	.size	.L.managed_type_name.8000, 61
+	.asciz	"Org.Apache.Http.Message.BasicHttpEntityEnclosingRequest, Mono.Android"
+	.size	.L.managed_type_name.8000, 70
 	.section	.rodata.managed_type_name.8001,"aMS",%progbits,1
 	.type	.L.managed_type_name.8001, %object
 .L.managed_type_name.8001:
-	.asciz	"Org.Apache.Http.Message.BasicHttpEntityEnclosingRequest, Mono.Android"
-	.size	.L.managed_type_name.8001, 70
+	.asciz	"Org.Apache.Http.Message.BasicHttpRequest, Mono.Android"
+	.size	.L.managed_type_name.8001, 55
 	.section	.rodata.managed_type_name.8002,"aMS",%progbits,1
 	.type	.L.managed_type_name.8002, %object
 .L.managed_type_name.8002:
-	.asciz	"Org.Apache.Http.Message.BasicHttpRequest, Mono.Android"
-	.size	.L.managed_type_name.8002, 55
+	.asciz	"Org.Apache.Http.Message.BasicHttpResponse, Mono.Android"
+	.size	.L.managed_type_name.8002, 56
 	.section	.rodata.managed_type_name.8003,"aMS",%progbits,1
 	.type	.L.managed_type_name.8003, %object
 .L.managed_type_name.8003:
-	.asciz	"Org.Apache.Http.Message.BasicHttpResponse, Mono.Android"
-	.size	.L.managed_type_name.8003, 56
+	.asciz	"Org.Apache.Http.Message.BasicLineFormatter, Mono.Android"
+	.size	.L.managed_type_name.8003, 57
 	.section	.rodata.managed_type_name.8004,"aMS",%progbits,1
 	.type	.L.managed_type_name.8004, %object
 .L.managed_type_name.8004:
-	.asciz	"Org.Apache.Http.Message.BasicLineFormatter, Mono.Android"
-	.size	.L.managed_type_name.8004, 57
+	.asciz	"Org.Apache.Http.Message.BasicLineParser, Mono.Android"
+	.size	.L.managed_type_name.8004, 54
 	.section	.rodata.managed_type_name.8005,"aMS",%progbits,1
 	.type	.L.managed_type_name.8005, %object
 .L.managed_type_name.8005:
-	.asciz	"Org.Apache.Http.Message.BasicLineParser, Mono.Android"
-	.size	.L.managed_type_name.8005, 54
+	.asciz	"Org.Apache.Http.Message.BasicListHeaderIterator, Mono.Android"
+	.size	.L.managed_type_name.8005, 62
 	.section	.rodata.managed_type_name.8006,"aMS",%progbits,1
 	.type	.L.managed_type_name.8006, %object
 .L.managed_type_name.8006:
-	.asciz	"Org.Apache.Http.Message.BasicListHeaderIterator, Mono.Android"
-	.size	.L.managed_type_name.8006, 62
+	.asciz	"Org.Apache.Http.Message.BasicNameValuePair, Mono.Android"
+	.size	.L.managed_type_name.8006, 57
 	.section	.rodata.managed_type_name.8007,"aMS",%progbits,1
 	.type	.L.managed_type_name.8007, %object
 .L.managed_type_name.8007:
-	.asciz	"Org.Apache.Http.Message.BasicNameValuePair, Mono.Android"
-	.size	.L.managed_type_name.8007, 57
+	.asciz	"Org.Apache.Http.Message.BasicRequestLine, Mono.Android"
+	.size	.L.managed_type_name.8007, 55
 	.section	.rodata.managed_type_name.8008,"aMS",%progbits,1
 	.type	.L.managed_type_name.8008, %object
 .L.managed_type_name.8008:
-	.asciz	"Org.Apache.Http.Message.BasicRequestLine, Mono.Android"
-	.size	.L.managed_type_name.8008, 55
+	.asciz	"Org.Apache.Http.Message.BasicStatusLine, Mono.Android"
+	.size	.L.managed_type_name.8008, 54
 	.section	.rodata.managed_type_name.8009,"aMS",%progbits,1
 	.type	.L.managed_type_name.8009, %object
 .L.managed_type_name.8009:
-	.asciz	"Org.Apache.Http.Message.BasicStatusLine, Mono.Android"
-	.size	.L.managed_type_name.8009, 54
+	.asciz	"Org.Apache.Http.Message.BasicTokenIterator, Mono.Android"
+	.size	.L.managed_type_name.8009, 57
 	.section	.rodata.managed_type_name.8010,"aMS",%progbits,1
 	.type	.L.managed_type_name.8010, %object
 .L.managed_type_name.8010:
-	.asciz	"Org.Apache.Http.Message.BasicTokenIterator, Mono.Android"
-	.size	.L.managed_type_name.8010, 57
+	.asciz	"Org.Apache.Http.Message.BufferedHeader, Mono.Android"
+	.size	.L.managed_type_name.8010, 53
 	.section	.rodata.managed_type_name.8011,"aMS",%progbits,1
 	.type	.L.managed_type_name.8011, %object
 .L.managed_type_name.8011:
-	.asciz	"Org.Apache.Http.Message.BufferedHeader, Mono.Android"
-	.size	.L.managed_type_name.8011, 53
+	.asciz	"Org.Apache.Http.Message.HeaderGroup, Mono.Android"
+	.size	.L.managed_type_name.8011, 50
 	.section	.rodata.managed_type_name.8012,"aMS",%progbits,1
 	.type	.L.managed_type_name.8012, %object
 .L.managed_type_name.8012:
-	.asciz	"Org.Apache.Http.Message.HeaderGroup, Mono.Android"
-	.size	.L.managed_type_name.8012, 50
+	.asciz	"Org.Apache.Http.Message.IHeaderValueFormatterInvoker, Mono.Android"
+	.size	.L.managed_type_name.8012, 67
 	.section	.rodata.managed_type_name.8013,"aMS",%progbits,1
 	.type	.L.managed_type_name.8013, %object
 .L.managed_type_name.8013:
-	.asciz	"Org.Apache.Http.Message.IHeaderValueFormatterInvoker, Mono.Android"
-	.size	.L.managed_type_name.8013, 67
+	.asciz	"Org.Apache.Http.Message.IHeaderValueParserInvoker, Mono.Android"
+	.size	.L.managed_type_name.8013, 64
 	.section	.rodata.managed_type_name.8014,"aMS",%progbits,1
 	.type	.L.managed_type_name.8014, %object
 .L.managed_type_name.8014:
-	.asciz	"Org.Apache.Http.Message.IHeaderValueParserInvoker, Mono.Android"
-	.size	.L.managed_type_name.8014, 64
+	.asciz	"Org.Apache.Http.Message.ILineFormatterInvoker, Mono.Android"
+	.size	.L.managed_type_name.8014, 60
 	.section	.rodata.managed_type_name.8015,"aMS",%progbits,1
 	.type	.L.managed_type_name.8015, %object
 .L.managed_type_name.8015:
-	.asciz	"Org.Apache.Http.Message.ILineFormatterInvoker, Mono.Android"
-	.size	.L.managed_type_name.8015, 60
+	.asciz	"Org.Apache.Http.Message.ILineParserInvoker, Mono.Android"
+	.size	.L.managed_type_name.8015, 57
 	.section	.rodata.managed_type_name.8016,"aMS",%progbits,1
 	.type	.L.managed_type_name.8016, %object
 .L.managed_type_name.8016:
-	.asciz	"Org.Apache.Http.Message.ILineParserInvoker, Mono.Android"
-	.size	.L.managed_type_name.8016, 57
+	.asciz	"Org.Apache.Http.Message.ParserCursor, Mono.Android"
+	.size	.L.managed_type_name.8016, 51
 	.section	.rodata.managed_type_name.8017,"aMS",%progbits,1
 	.type	.L.managed_type_name.8017, %object
 .L.managed_type_name.8017:
-	.asciz	"Org.Apache.Http.Message.ParserCursor, Mono.Android"
-	.size	.L.managed_type_name.8017, 51
+	.asciz	"Org.Apache.Http.MethodNotSupportedException, Mono.Android"
+	.size	.L.managed_type_name.8017, 58
 	.section	.rodata.managed_type_name.8018,"aMS",%progbits,1
 	.type	.L.managed_type_name.8018, %object
 .L.managed_type_name.8018:
-	.asciz	"Org.Apache.Http.MethodNotSupportedException, Mono.Android"
-	.size	.L.managed_type_name.8018, 58
+	.asciz	"Org.Apache.Http.NoHttpResponseException, Mono.Android"
+	.size	.L.managed_type_name.8018, 54
 	.section	.rodata.managed_type_name.8019,"aMS",%progbits,1
 	.type	.L.managed_type_name.8019, %object
 .L.managed_type_name.8019:
-	.asciz	"Org.Apache.Http.NoHttpResponseException, Mono.Android"
-	.size	.L.managed_type_name.8019, 54
+	.asciz	"Org.Apache.Http.Params.AbstractHttpParams, Mono.Android"
+	.size	.L.managed_type_name.8019, 56
 	.section	.rodata.managed_type_name.8020,"aMS",%progbits,1
 	.type	.L.managed_type_name.8020, %object
 .L.managed_type_name.8020:
-	.asciz	"Org.Apache.Http.Params.AbstractHttpParams, Mono.Android"
-	.size	.L.managed_type_name.8020, 56
+	.asciz	"Org.Apache.Http.Params.AbstractHttpParamsInvoker, Mono.Android"
+	.size	.L.managed_type_name.8020, 63
 	.section	.rodata.managed_type_name.8021,"aMS",%progbits,1
 	.type	.L.managed_type_name.8021, %object
 .L.managed_type_name.8021:
-	.asciz	"Org.Apache.Http.Params.AbstractHttpParamsInvoker, Mono.Android"
-	.size	.L.managed_type_name.8021, 63
+	.asciz	"Org.Apache.Http.Params.BasicHttpParams, Mono.Android"
+	.size	.L.managed_type_name.8021, 53
 	.section	.rodata.managed_type_name.8022,"aMS",%progbits,1
 	.type	.L.managed_type_name.8022, %object
 .L.managed_type_name.8022:
-	.asciz	"Org.Apache.Http.Params.BasicHttpParams, Mono.Android"
-	.size	.L.managed_type_name.8022, 53
+	.asciz	"Org.Apache.Http.Params.CoreConnectionPNames, Mono.Android"
+	.size	.L.managed_type_name.8022, 58
 	.section	.rodata.managed_type_name.8023,"aMS",%progbits,1
 	.type	.L.managed_type_name.8023, %object
 .L.managed_type_name.8023:
-	.asciz	"Org.Apache.Http.Params.CoreConnectionPNames, Mono.Android"
-	.size	.L.managed_type_name.8023, 58
+	.asciz	"Org.Apache.Http.Params.CoreProtocolPNames, Mono.Android"
+	.size	.L.managed_type_name.8023, 56
 	.section	.rodata.managed_type_name.8024,"aMS",%progbits,1
 	.type	.L.managed_type_name.8024, %object
 .L.managed_type_name.8024:
-	.asciz	"Org.Apache.Http.Params.CoreProtocolPNames, Mono.Android"
-	.size	.L.managed_type_name.8024, 56
+	.asciz	"Org.Apache.Http.Params.DefaultedHttpParams, Mono.Android"
+	.size	.L.managed_type_name.8024, 57
 	.section	.rodata.managed_type_name.8025,"aMS",%progbits,1
 	.type	.L.managed_type_name.8025, %object
 .L.managed_type_name.8025:
-	.asciz	"Org.Apache.Http.Params.DefaultedHttpParams, Mono.Android"
-	.size	.L.managed_type_name.8025, 57
+	.asciz	"Org.Apache.Http.Params.HttpAbstractParamBean, Mono.Android"
+	.size	.L.managed_type_name.8025, 59
 	.section	.rodata.managed_type_name.8026,"aMS",%progbits,1
 	.type	.L.managed_type_name.8026, %object
 .L.managed_type_name.8026:
-	.asciz	"Org.Apache.Http.Params.HttpAbstractParamBean, Mono.Android"
-	.size	.L.managed_type_name.8026, 59
+	.asciz	"Org.Apache.Http.Params.HttpAbstractParamBeanInvoker, Mono.Android"
+	.size	.L.managed_type_name.8026, 66
 	.section	.rodata.managed_type_name.8027,"aMS",%progbits,1
 	.type	.L.managed_type_name.8027, %object
 .L.managed_type_name.8027:
-	.asciz	"Org.Apache.Http.Params.HttpAbstractParamBeanInvoker, Mono.Android"
-	.size	.L.managed_type_name.8027, 66
+	.asciz	"Org.Apache.Http.Params.HttpConnectionParamBean, Mono.Android"
+	.size	.L.managed_type_name.8027, 61
 	.section	.rodata.managed_type_name.8028,"aMS",%progbits,1
 	.type	.L.managed_type_name.8028, %object
 .L.managed_type_name.8028:
-	.asciz	"Org.Apache.Http.Params.HttpConnectionParamBean, Mono.Android"
-	.size	.L.managed_type_name.8028, 61
+	.asciz	"Org.Apache.Http.Params.HttpConnectionParams, Mono.Android"
+	.size	.L.managed_type_name.8028, 58
 	.section	.rodata.managed_type_name.8029,"aMS",%progbits,1
 	.type	.L.managed_type_name.8029, %object
 .L.managed_type_name.8029:
-	.asciz	"Org.Apache.Http.Params.HttpConnectionParams, Mono.Android"
-	.size	.L.managed_type_name.8029, 58
+	.asciz	"Org.Apache.Http.Params.HttpProtocolParamBean, Mono.Android"
+	.size	.L.managed_type_name.8029, 59
 	.section	.rodata.managed_type_name.8030,"aMS",%progbits,1
 	.type	.L.managed_type_name.8030, %object
 .L.managed_type_name.8030:
-	.asciz	"Org.Apache.Http.Params.HttpProtocolParamBean, Mono.Android"
-	.size	.L.managed_type_name.8030, 59
+	.asciz	"Org.Apache.Http.Params.HttpProtocolParams, Mono.Android"
+	.size	.L.managed_type_name.8030, 56
 	.section	.rodata.managed_type_name.8031,"aMS",%progbits,1
 	.type	.L.managed_type_name.8031, %object
 .L.managed_type_name.8031:
-	.asciz	"Org.Apache.Http.Params.HttpProtocolParams, Mono.Android"
+	.asciz	"Org.Apache.Http.Params.IHttpParamsInvoker, Mono.Android"
 	.size	.L.managed_type_name.8031, 56
 	.section	.rodata.managed_type_name.8032,"aMS",%progbits,1
 	.type	.L.managed_type_name.8032, %object
 .L.managed_type_name.8032:
-	.asciz	"Org.Apache.Http.Params.IHttpParamsInvoker, Mono.Android"
-	.size	.L.managed_type_name.8032, 56
+	.asciz	"Org.Apache.Http.ParseException, Mono.Android"
+	.size	.L.managed_type_name.8032, 45
 	.section	.rodata.managed_type_name.8033,"aMS",%progbits,1
 	.type	.L.managed_type_name.8033, %object
 .L.managed_type_name.8033:
-	.asciz	"Org.Apache.Http.ParseException, Mono.Android"
-	.size	.L.managed_type_name.8033, 45
+	.asciz	"Org.Apache.Http.Protocol.BasicHttpContext, Mono.Android"
+	.size	.L.managed_type_name.8033, 56
 	.section	.rodata.managed_type_name.8034,"aMS",%progbits,1
 	.type	.L.managed_type_name.8034, %object
 .L.managed_type_name.8034:
-	.asciz	"Org.Apache.Http.Protocol.BasicHttpContext, Mono.Android"
-	.size	.L.managed_type_name.8034, 56
+	.asciz	"Org.Apache.Http.Protocol.BasicHttpProcessor, Mono.Android"
+	.size	.L.managed_type_name.8034, 58
 	.section	.rodata.managed_type_name.8035,"aMS",%progbits,1
 	.type	.L.managed_type_name.8035, %object
 .L.managed_type_name.8035:
-	.asciz	"Org.Apache.Http.Protocol.BasicHttpProcessor, Mono.Android"
-	.size	.L.managed_type_name.8035, 58
+	.asciz	"Org.Apache.Http.Protocol.DefaultedHttpContext, Mono.Android"
+	.size	.L.managed_type_name.8035, 60
 	.section	.rodata.managed_type_name.8036,"aMS",%progbits,1
 	.type	.L.managed_type_name.8036, %object
 .L.managed_type_name.8036:
-	.asciz	"Org.Apache.Http.Protocol.DefaultedHttpContext, Mono.Android"
-	.size	.L.managed_type_name.8036, 60
+	.asciz	"Org.Apache.Http.Protocol.ExecutionContext, Mono.Android"
+	.size	.L.managed_type_name.8036, 56
 	.section	.rodata.managed_type_name.8037,"aMS",%progbits,1
 	.type	.L.managed_type_name.8037, %object
 .L.managed_type_name.8037:
-	.asciz	"Org.Apache.Http.Protocol.ExecutionContext, Mono.Android"
-	.size	.L.managed_type_name.8037, 56
+	.asciz	"Org.Apache.Http.Protocol.HTTP, Mono.Android"
+	.size	.L.managed_type_name.8037, 44
 	.section	.rodata.managed_type_name.8038,"aMS",%progbits,1
 	.type	.L.managed_type_name.8038, %object
 .L.managed_type_name.8038:
-	.asciz	"Org.Apache.Http.Protocol.HTTP, Mono.Android"
-	.size	.L.managed_type_name.8038, 44
+	.asciz	"Org.Apache.Http.Protocol.HttpContext, Mono.Android"
+	.size	.L.managed_type_name.8038, 51
 	.section	.rodata.managed_type_name.8039,"aMS",%progbits,1
 	.type	.L.managed_type_name.8039, %object
 .L.managed_type_name.8039:
-	.asciz	"Org.Apache.Http.Protocol.HttpContext, Mono.Android"
-	.size	.L.managed_type_name.8039, 51
+	.asciz	"Org.Apache.Http.Protocol.HttpDateGenerator, Mono.Android"
+	.size	.L.managed_type_name.8039, 57
 	.section	.rodata.managed_type_name.8040,"aMS",%progbits,1
 	.type	.L.managed_type_name.8040, %object
 .L.managed_type_name.8040:
-	.asciz	"Org.Apache.Http.Protocol.HttpDateGenerator, Mono.Android"
-	.size	.L.managed_type_name.8040, 57
+	.asciz	"Org.Apache.Http.Protocol.HttpRequestExecutor, Mono.Android"
+	.size	.L.managed_type_name.8040, 59
 	.section	.rodata.managed_type_name.8041,"aMS",%progbits,1
 	.type	.L.managed_type_name.8041, %object
 .L.managed_type_name.8041:
-	.asciz	"Org.Apache.Http.Protocol.HttpRequestExecutor, Mono.Android"
-	.size	.L.managed_type_name.8041, 59
+	.asciz	"Org.Apache.Http.Protocol.HttpRequestHandlerRegistry, Mono.Android"
+	.size	.L.managed_type_name.8041, 66
 	.section	.rodata.managed_type_name.8042,"aMS",%progbits,1
 	.type	.L.managed_type_name.8042, %object
 .L.managed_type_name.8042:
-	.asciz	"Org.Apache.Http.Protocol.HttpRequestHandlerRegistry, Mono.Android"
-	.size	.L.managed_type_name.8042, 66
+	.asciz	"Org.Apache.Http.Protocol.HttpService, Mono.Android"
+	.size	.L.managed_type_name.8042, 51
 	.section	.rodata.managed_type_name.8043,"aMS",%progbits,1
 	.type	.L.managed_type_name.8043, %object
 .L.managed_type_name.8043:
-	.asciz	"Org.Apache.Http.Protocol.HttpService, Mono.Android"
-	.size	.L.managed_type_name.8043, 51
+	.asciz	"Org.Apache.Http.Protocol.IHttpContextInvoker, Mono.Android"
+	.size	.L.managed_type_name.8043, 59
 	.section	.rodata.managed_type_name.8044,"aMS",%progbits,1
 	.type	.L.managed_type_name.8044, %object
 .L.managed_type_name.8044:
-	.asciz	"Org.Apache.Http.Protocol.IHttpContextInvoker, Mono.Android"
-	.size	.L.managed_type_name.8044, 59
+	.asciz	"Org.Apache.Http.Protocol.IHttpExpectationVerifierInvoker, Mono.Android"
+	.size	.L.managed_type_name.8044, 71
 	.section	.rodata.managed_type_name.8045,"aMS",%progbits,1
 	.type	.L.managed_type_name.8045, %object
 .L.managed_type_name.8045:
-	.asciz	"Org.Apache.Http.Protocol.IHttpExpectationVerifierInvoker, Mono.Android"
-	.size	.L.managed_type_name.8045, 71
+	.asciz	"Org.Apache.Http.Protocol.IHttpProcessorInvoker, Mono.Android"
+	.size	.L.managed_type_name.8045, 61
 	.section	.rodata.managed_type_name.8046,"aMS",%progbits,1
 	.type	.L.managed_type_name.8046, %object
 .L.managed_type_name.8046:
-	.asciz	"Org.Apache.Http.Protocol.IHttpProcessorInvoker, Mono.Android"
-	.size	.L.managed_type_name.8046, 61
+	.asciz	"Org.Apache.Http.Protocol.IHttpRequestHandlerInvoker, Mono.Android"
+	.size	.L.managed_type_name.8046, 66
 	.section	.rodata.managed_type_name.8047,"aMS",%progbits,1
 	.type	.L.managed_type_name.8047, %object
 .L.managed_type_name.8047:
-	.asciz	"Org.Apache.Http.Protocol.IHttpRequestHandlerInvoker, Mono.Android"
-	.size	.L.managed_type_name.8047, 66
+	.asciz	"Org.Apache.Http.Protocol.IHttpRequestHandlerResolverInvoker, Mono.Android"
+	.size	.L.managed_type_name.8047, 74
 	.section	.rodata.managed_type_name.8048,"aMS",%progbits,1
 	.type	.L.managed_type_name.8048, %object
 .L.managed_type_name.8048:
-	.asciz	"Org.Apache.Http.Protocol.IHttpRequestHandlerResolverInvoker, Mono.Android"
+	.asciz	"Org.Apache.Http.Protocol.IHttpRequestInterceptorListInvoker, Mono.Android"
 	.size	.L.managed_type_name.8048, 74
 	.section	.rodata.managed_type_name.8049,"aMS",%progbits,1
 	.type	.L.managed_type_name.8049, %object
 .L.managed_type_name.8049:
-	.asciz	"Org.Apache.Http.Protocol.IHttpRequestInterceptorListInvoker, Mono.Android"
-	.size	.L.managed_type_name.8049, 74
+	.asciz	"Org.Apache.Http.Protocol.IHttpResponseInterceptorListInvoker, Mono.Android"
+	.size	.L.managed_type_name.8049, 75
 	.section	.rodata.managed_type_name.8050,"aMS",%progbits,1
 	.type	.L.managed_type_name.8050, %object
 .L.managed_type_name.8050:
-	.asciz	"Org.Apache.Http.Protocol.IHttpResponseInterceptorListInvoker, Mono.Android"
-	.size	.L.managed_type_name.8050, 75
+	.asciz	"Org.Apache.Http.Protocol.RequestConnControl, Mono.Android"
+	.size	.L.managed_type_name.8050, 58
 	.section	.rodata.managed_type_name.8051,"aMS",%progbits,1
 	.type	.L.managed_type_name.8051, %object
 .L.managed_type_name.8051:
-	.asciz	"Org.Apache.Http.Protocol.RequestConnControl, Mono.Android"
-	.size	.L.managed_type_name.8051, 58
+	.asciz	"Org.Apache.Http.Protocol.RequestContent, Mono.Android"
+	.size	.L.managed_type_name.8051, 54
 	.section	.rodata.managed_type_name.8052,"aMS",%progbits,1
 	.type	.L.managed_type_name.8052, %object
 .L.managed_type_name.8052:
-	.asciz	"Org.Apache.Http.Protocol.RequestContent, Mono.Android"
-	.size	.L.managed_type_name.8052, 54
+	.asciz	"Org.Apache.Http.Protocol.RequestDate, Mono.Android"
+	.size	.L.managed_type_name.8052, 51
 	.section	.rodata.managed_type_name.8053,"aMS",%progbits,1
 	.type	.L.managed_type_name.8053, %object
 .L.managed_type_name.8053:
-	.asciz	"Org.Apache.Http.Protocol.RequestDate, Mono.Android"
-	.size	.L.managed_type_name.8053, 51
+	.asciz	"Org.Apache.Http.Protocol.RequestExpectContinue, Mono.Android"
+	.size	.L.managed_type_name.8053, 61
 	.section	.rodata.managed_type_name.8054,"aMS",%progbits,1
 	.type	.L.managed_type_name.8054, %object
 .L.managed_type_name.8054:
-	.asciz	"Org.Apache.Http.Protocol.RequestExpectContinue, Mono.Android"
-	.size	.L.managed_type_name.8054, 61
+	.asciz	"Org.Apache.Http.Protocol.RequestTargetHost, Mono.Android"
+	.size	.L.managed_type_name.8054, 57
 	.section	.rodata.managed_type_name.8055,"aMS",%progbits,1
 	.type	.L.managed_type_name.8055, %object
 .L.managed_type_name.8055:
-	.asciz	"Org.Apache.Http.Protocol.RequestTargetHost, Mono.Android"
-	.size	.L.managed_type_name.8055, 57
+	.asciz	"Org.Apache.Http.Protocol.RequestUserAgent, Mono.Android"
+	.size	.L.managed_type_name.8055, 56
 	.section	.rodata.managed_type_name.8056,"aMS",%progbits,1
 	.type	.L.managed_type_name.8056, %object
 .L.managed_type_name.8056:
-	.asciz	"Org.Apache.Http.Protocol.RequestUserAgent, Mono.Android"
-	.size	.L.managed_type_name.8056, 56
+	.asciz	"Org.Apache.Http.Protocol.ResponseConnControl, Mono.Android"
+	.size	.L.managed_type_name.8056, 59
 	.section	.rodata.managed_type_name.8057,"aMS",%progbits,1
 	.type	.L.managed_type_name.8057, %object
 .L.managed_type_name.8057:
-	.asciz	"Org.Apache.Http.Protocol.ResponseConnControl, Mono.Android"
-	.size	.L.managed_type_name.8057, 59
+	.asciz	"Org.Apache.Http.Protocol.ResponseContent, Mono.Android"
+	.size	.L.managed_type_name.8057, 55
 	.section	.rodata.managed_type_name.8058,"aMS",%progbits,1
 	.type	.L.managed_type_name.8058, %object
 .L.managed_type_name.8058:
-	.asciz	"Org.Apache.Http.Protocol.ResponseContent, Mono.Android"
-	.size	.L.managed_type_name.8058, 55
+	.asciz	"Org.Apache.Http.Protocol.ResponseDate, Mono.Android"
+	.size	.L.managed_type_name.8058, 52
 	.section	.rodata.managed_type_name.8059,"aMS",%progbits,1
 	.type	.L.managed_type_name.8059, %object
 .L.managed_type_name.8059:
-	.asciz	"Org.Apache.Http.Protocol.ResponseDate, Mono.Android"
-	.size	.L.managed_type_name.8059, 52
+	.asciz	"Org.Apache.Http.Protocol.ResponseServer, Mono.Android"
+	.size	.L.managed_type_name.8059, 54
 	.section	.rodata.managed_type_name.8060,"aMS",%progbits,1
 	.type	.L.managed_type_name.8060, %object
 .L.managed_type_name.8060:
-	.asciz	"Org.Apache.Http.Protocol.ResponseServer, Mono.Android"
-	.size	.L.managed_type_name.8060, 54
+	.asciz	"Org.Apache.Http.Protocol.SyncBasicHttpContext, Mono.Android"
+	.size	.L.managed_type_name.8060, 60
 	.section	.rodata.managed_type_name.8061,"aMS",%progbits,1
 	.type	.L.managed_type_name.8061, %object
 .L.managed_type_name.8061:
-	.asciz	"Org.Apache.Http.Protocol.SyncBasicHttpContext, Mono.Android"
-	.size	.L.managed_type_name.8061, 60
+	.asciz	"Org.Apache.Http.Protocol.UriPatternMatcher, Mono.Android"
+	.size	.L.managed_type_name.8061, 57
 	.section	.rodata.managed_type_name.8062,"aMS",%progbits,1
 	.type	.L.managed_type_name.8062, %object
 .L.managed_type_name.8062:
-	.asciz	"Org.Apache.Http.Protocol.UriPatternMatcher, Mono.Android"
-	.size	.L.managed_type_name.8062, 57
+	.asciz	"Org.Apache.Http.ProtocolException, Mono.Android"
+	.size	.L.managed_type_name.8062, 48
 	.section	.rodata.managed_type_name.8063,"aMS",%progbits,1
 	.type	.L.managed_type_name.8063, %object
 .L.managed_type_name.8063:
-	.asciz	"Org.Apache.Http.ProtocolException, Mono.Android"
-	.size	.L.managed_type_name.8063, 48
+	.asciz	"Org.Apache.Http.ProtocolVersion, Mono.Android"
+	.size	.L.managed_type_name.8063, 46
 	.section	.rodata.managed_type_name.8064,"aMS",%progbits,1
 	.type	.L.managed_type_name.8064, %object
 .L.managed_type_name.8064:
-	.asciz	"Org.Apache.Http.ProtocolVersion, Mono.Android"
-	.size	.L.managed_type_name.8064, 46
+	.asciz	"Org.Apache.Http.UnsupportedHttpVersionException, Mono.Android"
+	.size	.L.managed_type_name.8064, 62
 	.section	.rodata.managed_type_name.8065,"aMS",%progbits,1
 	.type	.L.managed_type_name.8065, %object
 .L.managed_type_name.8065:
-	.asciz	"Org.Apache.Http.UnsupportedHttpVersionException, Mono.Android"
-	.size	.L.managed_type_name.8065, 62
+	.asciz	"Org.Apache.Http.Util.ByteArrayBuffer, Mono.Android"
+	.size	.L.managed_type_name.8065, 51
 	.section	.rodata.managed_type_name.8066,"aMS",%progbits,1
 	.type	.L.managed_type_name.8066, %object
 .L.managed_type_name.8066:
-	.asciz	"Org.Apache.Http.Util.ByteArrayBuffer, Mono.Android"
+	.asciz	"Org.Apache.Http.Util.CharArrayBuffer, Mono.Android"
 	.size	.L.managed_type_name.8066, 51
 	.section	.rodata.managed_type_name.8067,"aMS",%progbits,1
 	.type	.L.managed_type_name.8067, %object
 .L.managed_type_name.8067:
-	.asciz	"Org.Apache.Http.Util.CharArrayBuffer, Mono.Android"
-	.size	.L.managed_type_name.8067, 51
+	.asciz	"Org.Apache.Http.Util.EncodingUtils, Mono.Android"
+	.size	.L.managed_type_name.8067, 49
 	.section	.rodata.managed_type_name.8068,"aMS",%progbits,1
 	.type	.L.managed_type_name.8068, %object
 .L.managed_type_name.8068:
-	.asciz	"Org.Apache.Http.Util.EncodingUtils, Mono.Android"
-	.size	.L.managed_type_name.8068, 49
+	.asciz	"Org.Apache.Http.Util.EntityUtils, Mono.Android"
+	.size	.L.managed_type_name.8068, 47
 	.section	.rodata.managed_type_name.8069,"aMS",%progbits,1
 	.type	.L.managed_type_name.8069, %object
 .L.managed_type_name.8069:
-	.asciz	"Org.Apache.Http.Util.EntityUtils, Mono.Android"
-	.size	.L.managed_type_name.8069, 47
+	.asciz	"Org.Apache.Http.Util.ExceptionUtils, Mono.Android"
+	.size	.L.managed_type_name.8069, 50
 	.section	.rodata.managed_type_name.8070,"aMS",%progbits,1
 	.type	.L.managed_type_name.8070, %object
 .L.managed_type_name.8070:
-	.asciz	"Org.Apache.Http.Util.ExceptionUtils, Mono.Android"
-	.size	.L.managed_type_name.8070, 50
+	.asciz	"Org.Apache.Http.Util.LangUtils, Mono.Android"
+	.size	.L.managed_type_name.8070, 45
 	.section	.rodata.managed_type_name.8071,"aMS",%progbits,1
 	.type	.L.managed_type_name.8071, %object
 .L.managed_type_name.8071:
-	.asciz	"Org.Apache.Http.Util.LangUtils, Mono.Android"
-	.size	.L.managed_type_name.8071, 45
+	.asciz	"Org.Apache.Http.Util.VersionInfo, Mono.Android"
+	.size	.L.managed_type_name.8071, 47
 	.section	.rodata.managed_type_name.8072,"aMS",%progbits,1
 	.type	.L.managed_type_name.8072, %object
 .L.managed_type_name.8072:
-	.asciz	"Org.Apache.Http.Util.VersionInfo, Mono.Android"
-	.size	.L.managed_type_name.8072, 47
+	.asciz	"Org.Json.JSONArray, Mono.Android"
+	.size	.L.managed_type_name.8072, 33
 	.section	.rodata.managed_type_name.8073,"aMS",%progbits,1
 	.type	.L.managed_type_name.8073, %object
 .L.managed_type_name.8073:
-	.asciz	"Org.Json.JSONArray, Mono.Android"
-	.size	.L.managed_type_name.8073, 33
+	.asciz	"Org.Json.JSONException, Mono.Android"
+	.size	.L.managed_type_name.8073, 37
 	.section	.rodata.managed_type_name.8074,"aMS",%progbits,1
 	.type	.L.managed_type_name.8074, %object
 .L.managed_type_name.8074:
-	.asciz	"Org.Json.JSONException, Mono.Android"
-	.size	.L.managed_type_name.8074, 37
+	.asciz	"Org.Json.JSONObject, Mono.Android"
+	.size	.L.managed_type_name.8074, 34
 	.section	.rodata.managed_type_name.8075,"aMS",%progbits,1
 	.type	.L.managed_type_name.8075, %object
 .L.managed_type_name.8075:
-	.asciz	"Org.Json.JSONObject, Mono.Android"
-	.size	.L.managed_type_name.8075, 34
+	.asciz	"Org.Json.JSONStringer, Mono.Android"
+	.size	.L.managed_type_name.8075, 36
 	.section	.rodata.managed_type_name.8076,"aMS",%progbits,1
 	.type	.L.managed_type_name.8076, %object
 .L.managed_type_name.8076:
-	.asciz	"Org.Json.JSONStringer, Mono.Android"
-	.size	.L.managed_type_name.8076, 36
+	.asciz	"Org.Json.JSONTokener, Mono.Android"
+	.size	.L.managed_type_name.8076, 35
 	.section	.rodata.managed_type_name.8077,"aMS",%progbits,1
 	.type	.L.managed_type_name.8077, %object
 .L.managed_type_name.8077:
-	.asciz	"Org.Json.JSONTokener, Mono.Android"
+	.asciz	"Org.W3c.Dom.DOMError, Mono.Android"
 	.size	.L.managed_type_name.8077, 35
 	.section	.rodata.managed_type_name.8078,"aMS",%progbits,1
 	.type	.L.managed_type_name.8078, %object
 .L.managed_type_name.8078:
-	.asciz	"Org.W3c.Dom.DOMError, Mono.Android"
-	.size	.L.managed_type_name.8078, 35
+	.asciz	"Org.W3c.Dom.DOMException, Mono.Android"
+	.size	.L.managed_type_name.8078, 39
 	.section	.rodata.managed_type_name.8079,"aMS",%progbits,1
 	.type	.L.managed_type_name.8079, %object
 .L.managed_type_name.8079:
-	.asciz	"Org.W3c.Dom.DOMException, Mono.Android"
+	.asciz	"Org.W3c.Dom.IAttrInvoker, Mono.Android"
 	.size	.L.managed_type_name.8079, 39
 	.section	.rodata.managed_type_name.8080,"aMS",%progbits,1
 	.type	.L.managed_type_name.8080, %object
 .L.managed_type_name.8080:
-	.asciz	"Org.W3c.Dom.IAttrInvoker, Mono.Android"
-	.size	.L.managed_type_name.8080, 39
+	.asciz	"Org.W3c.Dom.ICDATASectionInvoker, Mono.Android"
+	.size	.L.managed_type_name.8080, 47
 	.section	.rodata.managed_type_name.8081,"aMS",%progbits,1
 	.type	.L.managed_type_name.8081, %object
 .L.managed_type_name.8081:
-	.asciz	"Org.W3c.Dom.ICDATASectionInvoker, Mono.Android"
-	.size	.L.managed_type_name.8081, 47
+	.asciz	"Org.W3c.Dom.ICharacterDataInvoker, Mono.Android"
+	.size	.L.managed_type_name.8081, 48
 	.section	.rodata.managed_type_name.8082,"aMS",%progbits,1
 	.type	.L.managed_type_name.8082, %object
 .L.managed_type_name.8082:
-	.asciz	"Org.W3c.Dom.ICharacterDataInvoker, Mono.Android"
-	.size	.L.managed_type_name.8082, 48
+	.asciz	"Org.W3c.Dom.ICommentInvoker, Mono.Android"
+	.size	.L.managed_type_name.8082, 42
 	.section	.rodata.managed_type_name.8083,"aMS",%progbits,1
 	.type	.L.managed_type_name.8083, %object
 .L.managed_type_name.8083:
-	.asciz	"Org.W3c.Dom.ICommentInvoker, Mono.Android"
-	.size	.L.managed_type_name.8083, 42
+	.asciz	"Org.W3c.Dom.IDOMConfigurationInvoker, Mono.Android"
+	.size	.L.managed_type_name.8083, 51
 	.section	.rodata.managed_type_name.8084,"aMS",%progbits,1
 	.type	.L.managed_type_name.8084, %object
 .L.managed_type_name.8084:
-	.asciz	"Org.W3c.Dom.IDOMConfigurationInvoker, Mono.Android"
-	.size	.L.managed_type_name.8084, 51
+	.asciz	"Org.W3c.Dom.IDOMErrorHandlerInvoker, Mono.Android"
+	.size	.L.managed_type_name.8084, 50
 	.section	.rodata.managed_type_name.8085,"aMS",%progbits,1
 	.type	.L.managed_type_name.8085, %object
 .L.managed_type_name.8085:
-	.asciz	"Org.W3c.Dom.IDOMErrorHandlerInvoker, Mono.Android"
-	.size	.L.managed_type_name.8085, 50
+	.asciz	"Org.W3c.Dom.IDOMErrorInvoker, Mono.Android"
+	.size	.L.managed_type_name.8085, 43
 	.section	.rodata.managed_type_name.8086,"aMS",%progbits,1
 	.type	.L.managed_type_name.8086, %object
 .L.managed_type_name.8086:
-	.asciz	"Org.W3c.Dom.IDOMErrorInvoker, Mono.Android"
-	.size	.L.managed_type_name.8086, 43
+	.asciz	"Org.W3c.Dom.IDOMImplementationInvoker, Mono.Android"
+	.size	.L.managed_type_name.8086, 52
 	.section	.rodata.managed_type_name.8087,"aMS",%progbits,1
 	.type	.L.managed_type_name.8087, %object
 .L.managed_type_name.8087:
-	.asciz	"Org.W3c.Dom.IDOMImplementationInvoker, Mono.Android"
-	.size	.L.managed_type_name.8087, 52
+	.asciz	"Org.W3c.Dom.IDOMImplementationListInvoker, Mono.Android"
+	.size	.L.managed_type_name.8087, 56
 	.section	.rodata.managed_type_name.8088,"aMS",%progbits,1
 	.type	.L.managed_type_name.8088, %object
 .L.managed_type_name.8088:
-	.asciz	"Org.W3c.Dom.IDOMImplementationListInvoker, Mono.Android"
-	.size	.L.managed_type_name.8088, 56
+	.asciz	"Org.W3c.Dom.IDOMImplementationSourceInvoker, Mono.Android"
+	.size	.L.managed_type_name.8088, 58
 	.section	.rodata.managed_type_name.8089,"aMS",%progbits,1
 	.type	.L.managed_type_name.8089, %object
 .L.managed_type_name.8089:
-	.asciz	"Org.W3c.Dom.IDOMImplementationSourceInvoker, Mono.Android"
-	.size	.L.managed_type_name.8089, 58
+	.asciz	"Org.W3c.Dom.IDOMLocatorInvoker, Mono.Android"
+	.size	.L.managed_type_name.8089, 45
 	.section	.rodata.managed_type_name.8090,"aMS",%progbits,1
 	.type	.L.managed_type_name.8090, %object
 .L.managed_type_name.8090:
-	.asciz	"Org.W3c.Dom.IDOMLocatorInvoker, Mono.Android"
-	.size	.L.managed_type_name.8090, 45
+	.asciz	"Org.W3c.Dom.IDOMStringListInvoker, Mono.Android"
+	.size	.L.managed_type_name.8090, 48
 	.section	.rodata.managed_type_name.8091,"aMS",%progbits,1
 	.type	.L.managed_type_name.8091, %object
 .L.managed_type_name.8091:
-	.asciz	"Org.W3c.Dom.IDOMStringListInvoker, Mono.Android"
-	.size	.L.managed_type_name.8091, 48
+	.asciz	"Org.W3c.Dom.IDocumentFragmentInvoker, Mono.Android"
+	.size	.L.managed_type_name.8091, 51
 	.section	.rodata.managed_type_name.8092,"aMS",%progbits,1
 	.type	.L.managed_type_name.8092, %object
 .L.managed_type_name.8092:
-	.asciz	"Org.W3c.Dom.IDocumentFragmentInvoker, Mono.Android"
-	.size	.L.managed_type_name.8092, 51
+	.asciz	"Org.W3c.Dom.IDocumentInvoker, Mono.Android"
+	.size	.L.managed_type_name.8092, 43
 	.section	.rodata.managed_type_name.8093,"aMS",%progbits,1
 	.type	.L.managed_type_name.8093, %object
 .L.managed_type_name.8093:
-	.asciz	"Org.W3c.Dom.IDocumentInvoker, Mono.Android"
-	.size	.L.managed_type_name.8093, 43
+	.asciz	"Org.W3c.Dom.IDocumentTypeInvoker, Mono.Android"
+	.size	.L.managed_type_name.8093, 47
 	.section	.rodata.managed_type_name.8094,"aMS",%progbits,1
 	.type	.L.managed_type_name.8094, %object
 .L.managed_type_name.8094:
-	.asciz	"Org.W3c.Dom.IDocumentTypeInvoker, Mono.Android"
-	.size	.L.managed_type_name.8094, 47
+	.asciz	"Org.W3c.Dom.IElementInvoker, Mono.Android"
+	.size	.L.managed_type_name.8094, 42
 	.section	.rodata.managed_type_name.8095,"aMS",%progbits,1
 	.type	.L.managed_type_name.8095, %object
 .L.managed_type_name.8095:
-	.asciz	"Org.W3c.Dom.IElementInvoker, Mono.Android"
-	.size	.L.managed_type_name.8095, 42
+	.asciz	"Org.W3c.Dom.IEntityInvoker, Mono.Android"
+	.size	.L.managed_type_name.8095, 41
 	.section	.rodata.managed_type_name.8096,"aMS",%progbits,1
 	.type	.L.managed_type_name.8096, %object
 .L.managed_type_name.8096:
-	.asciz	"Org.W3c.Dom.IEntityInvoker, Mono.Android"
-	.size	.L.managed_type_name.8096, 41
+	.asciz	"Org.W3c.Dom.IEntityReferenceInvoker, Mono.Android"
+	.size	.L.managed_type_name.8096, 50
 	.section	.rodata.managed_type_name.8097,"aMS",%progbits,1
 	.type	.L.managed_type_name.8097, %object
 .L.managed_type_name.8097:
-	.asciz	"Org.W3c.Dom.IEntityReferenceInvoker, Mono.Android"
-	.size	.L.managed_type_name.8097, 50
+	.asciz	"Org.W3c.Dom.INameListInvoker, Mono.Android"
+	.size	.L.managed_type_name.8097, 43
 	.section	.rodata.managed_type_name.8098,"aMS",%progbits,1
 	.type	.L.managed_type_name.8098, %object
 .L.managed_type_name.8098:
-	.asciz	"Org.W3c.Dom.INameListInvoker, Mono.Android"
-	.size	.L.managed_type_name.8098, 43
+	.asciz	"Org.W3c.Dom.INamedNodeMapInvoker, Mono.Android"
+	.size	.L.managed_type_name.8098, 47
 	.section	.rodata.managed_type_name.8099,"aMS",%progbits,1
 	.type	.L.managed_type_name.8099, %object
 .L.managed_type_name.8099:
-	.asciz	"Org.W3c.Dom.INamedNodeMapInvoker, Mono.Android"
-	.size	.L.managed_type_name.8099, 47
+	.asciz	"Org.W3c.Dom.INodeInvoker, Mono.Android"
+	.size	.L.managed_type_name.8099, 39
 	.section	.rodata.managed_type_name.8100,"aMS",%progbits,1
 	.type	.L.managed_type_name.8100, %object
 .L.managed_type_name.8100:
-	.asciz	"Org.W3c.Dom.INodeInvoker, Mono.Android"
-	.size	.L.managed_type_name.8100, 39
+	.asciz	"Org.W3c.Dom.INodeListInvoker, Mono.Android"
+	.size	.L.managed_type_name.8100, 43
 	.section	.rodata.managed_type_name.8101,"aMS",%progbits,1
 	.type	.L.managed_type_name.8101, %object
 .L.managed_type_name.8101:
-	.asciz	"Org.W3c.Dom.INodeListInvoker, Mono.Android"
+	.asciz	"Org.W3c.Dom.INotationInvoker, Mono.Android"
 	.size	.L.managed_type_name.8101, 43
 	.section	.rodata.managed_type_name.8102,"aMS",%progbits,1
 	.type	.L.managed_type_name.8102, %object
 .L.managed_type_name.8102:
-	.asciz	"Org.W3c.Dom.INotationInvoker, Mono.Android"
-	.size	.L.managed_type_name.8102, 43
+	.asciz	"Org.W3c.Dom.IProcessingInstructionInvoker, Mono.Android"
+	.size	.L.managed_type_name.8102, 56
 	.section	.rodata.managed_type_name.8103,"aMS",%progbits,1
 	.type	.L.managed_type_name.8103, %object
 .L.managed_type_name.8103:
-	.asciz	"Org.W3c.Dom.IProcessingInstructionInvoker, Mono.Android"
-	.size	.L.managed_type_name.8103, 56
+	.asciz	"Org.W3c.Dom.ITextInvoker, Mono.Android"
+	.size	.L.managed_type_name.8103, 39
 	.section	.rodata.managed_type_name.8104,"aMS",%progbits,1
 	.type	.L.managed_type_name.8104, %object
 .L.managed_type_name.8104:
-	.asciz	"Org.W3c.Dom.ITextInvoker, Mono.Android"
-	.size	.L.managed_type_name.8104, 39
+	.asciz	"Org.W3c.Dom.ITypeInfoInvoker, Mono.Android"
+	.size	.L.managed_type_name.8104, 43
 	.section	.rodata.managed_type_name.8105,"aMS",%progbits,1
 	.type	.L.managed_type_name.8105, %object
 .L.managed_type_name.8105:
-	.asciz	"Org.W3c.Dom.ITypeInfoInvoker, Mono.Android"
-	.size	.L.managed_type_name.8105, 43
+	.asciz	"Org.W3c.Dom.IUserDataHandlerInvoker, Mono.Android"
+	.size	.L.managed_type_name.8105, 50
 	.section	.rodata.managed_type_name.8106,"aMS",%progbits,1
 	.type	.L.managed_type_name.8106, %object
 .L.managed_type_name.8106:
-	.asciz	"Org.W3c.Dom.IUserDataHandlerInvoker, Mono.Android"
-	.size	.L.managed_type_name.8106, 50
+	.asciz	"Org.W3c.Dom.LS.DOMImplementationLS, Mono.Android"
+	.size	.L.managed_type_name.8106, 49
 	.section	.rodata.managed_type_name.8107,"aMS",%progbits,1
 	.type	.L.managed_type_name.8107, %object
 .L.managed_type_name.8107:
-	.asciz	"Org.W3c.Dom.LS.DOMImplementationLS, Mono.Android"
-	.size	.L.managed_type_name.8107, 49
+	.asciz	"Org.W3c.Dom.LS.IDOMImplementationLSInvoker, Mono.Android"
+	.size	.L.managed_type_name.8107, 57
 	.section	.rodata.managed_type_name.8108,"aMS",%progbits,1
 	.type	.L.managed_type_name.8108, %object
 .L.managed_type_name.8108:
-	.asciz	"Org.W3c.Dom.LS.IDOMImplementationLSInvoker, Mono.Android"
-	.size	.L.managed_type_name.8108, 57
+	.asciz	"Org.W3c.Dom.LS.ILSInputInvoker, Mono.Android"
+	.size	.L.managed_type_name.8108, 45
 	.section	.rodata.managed_type_name.8109,"aMS",%progbits,1
 	.type	.L.managed_type_name.8109, %object
 .L.managed_type_name.8109:
-	.asciz	"Org.W3c.Dom.LS.ILSInputInvoker, Mono.Android"
-	.size	.L.managed_type_name.8109, 45
+	.asciz	"Org.W3c.Dom.LS.ILSOutputInvoker, Mono.Android"
+	.size	.L.managed_type_name.8109, 46
 	.section	.rodata.managed_type_name.8110,"aMS",%progbits,1
 	.type	.L.managed_type_name.8110, %object
 .L.managed_type_name.8110:
-	.asciz	"Org.W3c.Dom.LS.ILSOutputInvoker, Mono.Android"
-	.size	.L.managed_type_name.8110, 46
+	.asciz	"Org.W3c.Dom.LS.ILSParserFilterInvoker, Mono.Android"
+	.size	.L.managed_type_name.8110, 52
 	.section	.rodata.managed_type_name.8111,"aMS",%progbits,1
 	.type	.L.managed_type_name.8111, %object
 .L.managed_type_name.8111:
-	.asciz	"Org.W3c.Dom.LS.ILSParserFilterInvoker, Mono.Android"
-	.size	.L.managed_type_name.8111, 52
+	.asciz	"Org.W3c.Dom.LS.ILSParserInvoker, Mono.Android"
+	.size	.L.managed_type_name.8111, 46
 	.section	.rodata.managed_type_name.8112,"aMS",%progbits,1
 	.type	.L.managed_type_name.8112, %object
 .L.managed_type_name.8112:
-	.asciz	"Org.W3c.Dom.LS.ILSParserInvoker, Mono.Android"
-	.size	.L.managed_type_name.8112, 46
+	.asciz	"Org.W3c.Dom.LS.ILSResourceResolverInvoker, Mono.Android"
+	.size	.L.managed_type_name.8112, 56
 	.section	.rodata.managed_type_name.8113,"aMS",%progbits,1
 	.type	.L.managed_type_name.8113, %object
 .L.managed_type_name.8113:
-	.asciz	"Org.W3c.Dom.LS.ILSResourceResolverInvoker, Mono.Android"
-	.size	.L.managed_type_name.8113, 56
+	.asciz	"Org.W3c.Dom.LS.ILSSerializerInvoker, Mono.Android"
+	.size	.L.managed_type_name.8113, 50
 	.section	.rodata.managed_type_name.8114,"aMS",%progbits,1
 	.type	.L.managed_type_name.8114, %object
 .L.managed_type_name.8114:
-	.asciz	"Org.W3c.Dom.LS.ILSSerializerInvoker, Mono.Android"
-	.size	.L.managed_type_name.8114, 50
+	.asciz	"Org.W3c.Dom.LS.LSException, Mono.Android"
+	.size	.L.managed_type_name.8114, 41
 	.section	.rodata.managed_type_name.8115,"aMS",%progbits,1
 	.type	.L.managed_type_name.8115, %object
 .L.managed_type_name.8115:
-	.asciz	"Org.W3c.Dom.LS.LSException, Mono.Android"
-	.size	.L.managed_type_name.8115, 41
+	.asciz	"Org.W3c.Dom.LS.LSParser, Mono.Android"
+	.size	.L.managed_type_name.8115, 38
 	.section	.rodata.managed_type_name.8116,"aMS",%progbits,1
 	.type	.L.managed_type_name.8116, %object
 .L.managed_type_name.8116:
-	.asciz	"Org.W3c.Dom.LS.LSParser, Mono.Android"
-	.size	.L.managed_type_name.8116, 38
+	.asciz	"Org.W3c.Dom.LS.LSParserFilter, Mono.Android"
+	.size	.L.managed_type_name.8116, 44
 	.section	.rodata.managed_type_name.8117,"aMS",%progbits,1
 	.type	.L.managed_type_name.8117, %object
 .L.managed_type_name.8117:
-	.asciz	"Org.W3c.Dom.LS.LSParserFilter, Mono.Android"
-	.size	.L.managed_type_name.8117, 44
+	.asciz	"Org.W3c.Dom.Node, Mono.Android"
+	.size	.L.managed_type_name.8117, 31
 	.section	.rodata.managed_type_name.8118,"aMS",%progbits,1
 	.type	.L.managed_type_name.8118, %object
 .L.managed_type_name.8118:
-	.asciz	"Org.W3c.Dom.Node, Mono.Android"
-	.size	.L.managed_type_name.8118, 31
+	.asciz	"Org.W3c.Dom.TypeInfo, Mono.Android"
+	.size	.L.managed_type_name.8118, 35
 	.section	.rodata.managed_type_name.8119,"aMS",%progbits,1
 	.type	.L.managed_type_name.8119, %object
 .L.managed_type_name.8119:
-	.asciz	"Org.W3c.Dom.TypeInfo, Mono.Android"
-	.size	.L.managed_type_name.8119, 35
+	.asciz	"Org.W3c.Dom.UserDataHandler, Mono.Android"
+	.size	.L.managed_type_name.8119, 42
 	.section	.rodata.managed_type_name.8120,"aMS",%progbits,1
 	.type	.L.managed_type_name.8120, %object
 .L.managed_type_name.8120:
-	.asciz	"Org.W3c.Dom.UserDataHandler, Mono.Android"
-	.size	.L.managed_type_name.8120, 42
+	.asciz	"Org.Xml.Sax.Ext.Attributes2Impl, Mono.Android"
+	.size	.L.managed_type_name.8120, 46
 	.section	.rodata.managed_type_name.8121,"aMS",%progbits,1
 	.type	.L.managed_type_name.8121, %object
 .L.managed_type_name.8121:
-	.asciz	"Org.Xml.Sax.Ext.Attributes2Impl, Mono.Android"
+	.asciz	"Org.Xml.Sax.Ext.DefaultHandler2, Mono.Android"
 	.size	.L.managed_type_name.8121, 46
 	.section	.rodata.managed_type_name.8122,"aMS",%progbits,1
 	.type	.L.managed_type_name.8122, %object
 .L.managed_type_name.8122:
-	.asciz	"Org.Xml.Sax.Ext.DefaultHandler2, Mono.Android"
-	.size	.L.managed_type_name.8122, 46
+	.asciz	"Org.Xml.Sax.Ext.IAttributes2Invoker, Mono.Android"
+	.size	.L.managed_type_name.8122, 50
 	.section	.rodata.managed_type_name.8123,"aMS",%progbits,1
 	.type	.L.managed_type_name.8123, %object
 .L.managed_type_name.8123:
-	.asciz	"Org.Xml.Sax.Ext.IAttributes2Invoker, Mono.Android"
+	.asciz	"Org.Xml.Sax.Ext.IDeclHandlerInvoker, Mono.Android"
 	.size	.L.managed_type_name.8123, 50
 	.section	.rodata.managed_type_name.8124,"aMS",%progbits,1
 	.type	.L.managed_type_name.8124, %object
 .L.managed_type_name.8124:
-	.asciz	"Org.Xml.Sax.Ext.IDeclHandlerInvoker, Mono.Android"
-	.size	.L.managed_type_name.8124, 50
+	.asciz	"Org.Xml.Sax.Ext.IEntityResolver2Invoker, Mono.Android"
+	.size	.L.managed_type_name.8124, 54
 	.section	.rodata.managed_type_name.8125,"aMS",%progbits,1
 	.type	.L.managed_type_name.8125, %object
 .L.managed_type_name.8125:
-	.asciz	"Org.Xml.Sax.Ext.IEntityResolver2Invoker, Mono.Android"
-	.size	.L.managed_type_name.8125, 54
+	.asciz	"Org.Xml.Sax.Ext.ILexicalHandlerInvoker, Mono.Android"
+	.size	.L.managed_type_name.8125, 53
 	.section	.rodata.managed_type_name.8126,"aMS",%progbits,1
 	.type	.L.managed_type_name.8126, %object
 .L.managed_type_name.8126:
-	.asciz	"Org.Xml.Sax.Ext.ILexicalHandlerInvoker, Mono.Android"
-	.size	.L.managed_type_name.8126, 53
+	.asciz	"Org.Xml.Sax.Ext.ILocator2Invoker, Mono.Android"
+	.size	.L.managed_type_name.8126, 47
 	.section	.rodata.managed_type_name.8127,"aMS",%progbits,1
 	.type	.L.managed_type_name.8127, %object
 .L.managed_type_name.8127:
-	.asciz	"Org.Xml.Sax.Ext.ILocator2Invoker, Mono.Android"
-	.size	.L.managed_type_name.8127, 47
+	.asciz	"Org.Xml.Sax.Ext.Locator2Impl, Mono.Android"
+	.size	.L.managed_type_name.8127, 43
 	.section	.rodata.managed_type_name.8128,"aMS",%progbits,1
 	.type	.L.managed_type_name.8128, %object
 .L.managed_type_name.8128:
-	.asciz	"Org.Xml.Sax.Ext.Locator2Impl, Mono.Android"
-	.size	.L.managed_type_name.8128, 43
+	.asciz	"Org.Xml.Sax.HandlerBase, Mono.Android"
+	.size	.L.managed_type_name.8128, 38
 	.section	.rodata.managed_type_name.8129,"aMS",%progbits,1
 	.type	.L.managed_type_name.8129, %object
 .L.managed_type_name.8129:
-	.asciz	"Org.Xml.Sax.HandlerBase, Mono.Android"
-	.size	.L.managed_type_name.8129, 38
+	.asciz	"Org.Xml.Sax.Helpers.AttributeListImpl, Mono.Android"
+	.size	.L.managed_type_name.8129, 52
 	.section	.rodata.managed_type_name.8130,"aMS",%progbits,1
 	.type	.L.managed_type_name.8130, %object
 .L.managed_type_name.8130:
-	.asciz	"Org.Xml.Sax.Helpers.AttributeListImpl, Mono.Android"
-	.size	.L.managed_type_name.8130, 52
+	.asciz	"Org.Xml.Sax.Helpers.AttributesImpl, Mono.Android"
+	.size	.L.managed_type_name.8130, 49
 	.section	.rodata.managed_type_name.8131,"aMS",%progbits,1
 	.type	.L.managed_type_name.8131, %object
 .L.managed_type_name.8131:
-	.asciz	"Org.Xml.Sax.Helpers.AttributesImpl, Mono.Android"
+	.asciz	"Org.Xml.Sax.Helpers.DefaultHandler, Mono.Android"
 	.size	.L.managed_type_name.8131, 49
 	.section	.rodata.managed_type_name.8132,"aMS",%progbits,1
 	.type	.L.managed_type_name.8132, %object
 .L.managed_type_name.8132:
-	.asciz	"Org.Xml.Sax.Helpers.DefaultHandler, Mono.Android"
-	.size	.L.managed_type_name.8132, 49
+	.asciz	"Org.Xml.Sax.Helpers.LocatorImpl, Mono.Android"
+	.size	.L.managed_type_name.8132, 46
 	.section	.rodata.managed_type_name.8133,"aMS",%progbits,1
 	.type	.L.managed_type_name.8133, %object
 .L.managed_type_name.8133:
-	.asciz	"Org.Xml.Sax.Helpers.LocatorImpl, Mono.Android"
-	.size	.L.managed_type_name.8133, 46
+	.asciz	"Org.Xml.Sax.Helpers.NamespaceSupport, Mono.Android"
+	.size	.L.managed_type_name.8133, 51
 	.section	.rodata.managed_type_name.8134,"aMS",%progbits,1
 	.type	.L.managed_type_name.8134, %object
 .L.managed_type_name.8134:
-	.asciz	"Org.Xml.Sax.Helpers.NamespaceSupport, Mono.Android"
-	.size	.L.managed_type_name.8134, 51
+	.asciz	"Org.Xml.Sax.Helpers.ParserAdapter, Mono.Android"
+	.size	.L.managed_type_name.8134, 48
 	.section	.rodata.managed_type_name.8135,"aMS",%progbits,1
 	.type	.L.managed_type_name.8135, %object
 .L.managed_type_name.8135:
-	.asciz	"Org.Xml.Sax.Helpers.ParserAdapter, Mono.Android"
+	.asciz	"Org.Xml.Sax.Helpers.ParserFactory, Mono.Android"
 	.size	.L.managed_type_name.8135, 48
 	.section	.rodata.managed_type_name.8136,"aMS",%progbits,1
 	.type	.L.managed_type_name.8136, %object
 .L.managed_type_name.8136:
-	.asciz	"Org.Xml.Sax.Helpers.ParserFactory, Mono.Android"
+	.asciz	"Org.Xml.Sax.Helpers.XMLFilterImpl, Mono.Android"
 	.size	.L.managed_type_name.8136, 48
 	.section	.rodata.managed_type_name.8137,"aMS",%progbits,1
 	.type	.L.managed_type_name.8137, %object
 .L.managed_type_name.8137:
-	.asciz	"Org.Xml.Sax.Helpers.XMLFilterImpl, Mono.Android"
-	.size	.L.managed_type_name.8137, 48
+	.asciz	"Org.Xml.Sax.Helpers.XMLReaderAdapter, Mono.Android"
+	.size	.L.managed_type_name.8137, 51
 	.section	.rodata.managed_type_name.8138,"aMS",%progbits,1
 	.type	.L.managed_type_name.8138, %object
 .L.managed_type_name.8138:
-	.asciz	"Org.Xml.Sax.Helpers.XMLReaderAdapter, Mono.Android"
+	.asciz	"Org.Xml.Sax.Helpers.XMLReaderFactory, Mono.Android"
 	.size	.L.managed_type_name.8138, 51
 	.section	.rodata.managed_type_name.8139,"aMS",%progbits,1
 	.type	.L.managed_type_name.8139, %object
 .L.managed_type_name.8139:
-	.asciz	"Org.Xml.Sax.Helpers.XMLReaderFactory, Mono.Android"
-	.size	.L.managed_type_name.8139, 51
+	.asciz	"Org.Xml.Sax.IAttributeListInvoker, Mono.Android"
+	.size	.L.managed_type_name.8139, 48
 	.section	.rodata.managed_type_name.8140,"aMS",%progbits,1
 	.type	.L.managed_type_name.8140, %object
 .L.managed_type_name.8140:
-	.asciz	"Org.Xml.Sax.IAttributeListInvoker, Mono.Android"
-	.size	.L.managed_type_name.8140, 48
+	.asciz	"Org.Xml.Sax.IAttributesInvoker, Mono.Android"
+	.size	.L.managed_type_name.8140, 45
 	.section	.rodata.managed_type_name.8141,"aMS",%progbits,1
 	.type	.L.managed_type_name.8141, %object
 .L.managed_type_name.8141:
-	.asciz	"Org.Xml.Sax.IAttributesInvoker, Mono.Android"
-	.size	.L.managed_type_name.8141, 45
+	.asciz	"Org.Xml.Sax.IContentHandlerInvoker, Mono.Android"
+	.size	.L.managed_type_name.8141, 49
 	.section	.rodata.managed_type_name.8142,"aMS",%progbits,1
 	.type	.L.managed_type_name.8142, %object
 .L.managed_type_name.8142:
-	.asciz	"Org.Xml.Sax.IContentHandlerInvoker, Mono.Android"
-	.size	.L.managed_type_name.8142, 49
+	.asciz	"Org.Xml.Sax.IDTDHandlerInvoker, Mono.Android"
+	.size	.L.managed_type_name.8142, 45
 	.section	.rodata.managed_type_name.8143,"aMS",%progbits,1
 	.type	.L.managed_type_name.8143, %object
 .L.managed_type_name.8143:
-	.asciz	"Org.Xml.Sax.IDTDHandlerInvoker, Mono.Android"
-	.size	.L.managed_type_name.8143, 45
+	.asciz	"Org.Xml.Sax.IDocumentHandlerInvoker, Mono.Android"
+	.size	.L.managed_type_name.8143, 50
 	.section	.rodata.managed_type_name.8144,"aMS",%progbits,1
 	.type	.L.managed_type_name.8144, %object
 .L.managed_type_name.8144:
-	.asciz	"Org.Xml.Sax.IDocumentHandlerInvoker, Mono.Android"
-	.size	.L.managed_type_name.8144, 50
+	.asciz	"Org.Xml.Sax.IEntityResolverInvoker, Mono.Android"
+	.size	.L.managed_type_name.8144, 49
 	.section	.rodata.managed_type_name.8145,"aMS",%progbits,1
 	.type	.L.managed_type_name.8145, %object
 .L.managed_type_name.8145:
-	.asciz	"Org.Xml.Sax.IEntityResolverInvoker, Mono.Android"
-	.size	.L.managed_type_name.8145, 49
+	.asciz	"Org.Xml.Sax.IErrorHandlerInvoker, Mono.Android"
+	.size	.L.managed_type_name.8145, 47
 	.section	.rodata.managed_type_name.8146,"aMS",%progbits,1
 	.type	.L.managed_type_name.8146, %object
 .L.managed_type_name.8146:
-	.asciz	"Org.Xml.Sax.IErrorHandlerInvoker, Mono.Android"
-	.size	.L.managed_type_name.8146, 47
+	.asciz	"Org.Xml.Sax.ILocatorInvoker, Mono.Android"
+	.size	.L.managed_type_name.8146, 42
 	.section	.rodata.managed_type_name.8147,"aMS",%progbits,1
 	.type	.L.managed_type_name.8147, %object
 .L.managed_type_name.8147:
-	.asciz	"Org.Xml.Sax.ILocatorInvoker, Mono.Android"
-	.size	.L.managed_type_name.8147, 42
+	.asciz	"Org.Xml.Sax.IParserInvoker, Mono.Android"
+	.size	.L.managed_type_name.8147, 41
 	.section	.rodata.managed_type_name.8148,"aMS",%progbits,1
 	.type	.L.managed_type_name.8148, %object
 .L.managed_type_name.8148:
-	.asciz	"Org.Xml.Sax.IParserInvoker, Mono.Android"
-	.size	.L.managed_type_name.8148, 41
+	.asciz	"Org.Xml.Sax.IXMLFilterInvoker, Mono.Android"
+	.size	.L.managed_type_name.8148, 44
 	.section	.rodata.managed_type_name.8149,"aMS",%progbits,1
 	.type	.L.managed_type_name.8149, %object
 .L.managed_type_name.8149:
-	.asciz	"Org.Xml.Sax.IXMLFilterInvoker, Mono.Android"
+	.asciz	"Org.Xml.Sax.IXMLReaderInvoker, Mono.Android"
 	.size	.L.managed_type_name.8149, 44
 	.section	.rodata.managed_type_name.8150,"aMS",%progbits,1
 	.type	.L.managed_type_name.8150, %object
 .L.managed_type_name.8150:
-	.asciz	"Org.Xml.Sax.IXMLReaderInvoker, Mono.Android"
-	.size	.L.managed_type_name.8150, 44
+	.asciz	"Org.Xml.Sax.InputSource, Mono.Android"
+	.size	.L.managed_type_name.8150, 38
 	.section	.rodata.managed_type_name.8151,"aMS",%progbits,1
 	.type	.L.managed_type_name.8151, %object
 .L.managed_type_name.8151:
-	.asciz	"Org.Xml.Sax.InputSource, Mono.Android"
-	.size	.L.managed_type_name.8151, 38
+	.asciz	"Org.Xml.Sax.SAXException, Mono.Android"
+	.size	.L.managed_type_name.8151, 39
 	.section	.rodata.managed_type_name.8152,"aMS",%progbits,1
 	.type	.L.managed_type_name.8152, %object
 .L.managed_type_name.8152:
-	.asciz	"Org.Xml.Sax.SAXException, Mono.Android"
-	.size	.L.managed_type_name.8152, 39
+	.asciz	"Org.Xml.Sax.SAXNotRecognizedException, Mono.Android"
+	.size	.L.managed_type_name.8152, 52
 	.section	.rodata.managed_type_name.8153,"aMS",%progbits,1
 	.type	.L.managed_type_name.8153, %object
 .L.managed_type_name.8153:
-	.asciz	"Org.Xml.Sax.SAXNotRecognizedException, Mono.Android"
-	.size	.L.managed_type_name.8153, 52
+	.asciz	"Org.Xml.Sax.SAXNotSupportedException, Mono.Android"
+	.size	.L.managed_type_name.8153, 51
 	.section	.rodata.managed_type_name.8154,"aMS",%progbits,1
 	.type	.L.managed_type_name.8154, %object
 .L.managed_type_name.8154:
-	.asciz	"Org.Xml.Sax.SAXNotSupportedException, Mono.Android"
-	.size	.L.managed_type_name.8154, 51
+	.asciz	"Org.Xml.Sax.SAXParseException, Mono.Android"
+	.size	.L.managed_type_name.8154, 44
 	.section	.rodata.managed_type_name.8155,"aMS",%progbits,1
 	.type	.L.managed_type_name.8155, %object
 .L.managed_type_name.8155:
-	.asciz	"Org.Xml.Sax.SAXParseException, Mono.Android"
-	.size	.L.managed_type_name.8155, 44
+	.asciz	"Org.XmlPull.V1.IXmlPullParserInvoker, Mono.Android"
+	.size	.L.managed_type_name.8155, 51
 	.section	.rodata.managed_type_name.8156,"aMS",%progbits,1
 	.type	.L.managed_type_name.8156, %object
 .L.managed_type_name.8156:
-	.asciz	"Org.XmlPull.V1.IXmlPullParserInvoker, Mono.Android"
+	.asciz	"Org.XmlPull.V1.IXmlSerializerInvoker, Mono.Android"
 	.size	.L.managed_type_name.8156, 51
 	.section	.rodata.managed_type_name.8157,"aMS",%progbits,1
 	.type	.L.managed_type_name.8157, %object
 .L.managed_type_name.8157:
-	.asciz	"Org.XmlPull.V1.IXmlSerializerInvoker, Mono.Android"
-	.size	.L.managed_type_name.8157, 51
+	.asciz	"Org.XmlPull.V1.XmlPullParser, Mono.Android"
+	.size	.L.managed_type_name.8157, 43
 	.section	.rodata.managed_type_name.8158,"aMS",%progbits,1
 	.type	.L.managed_type_name.8158, %object
 .L.managed_type_name.8158:
-	.asciz	"Org.XmlPull.V1.XmlPullParser, Mono.Android"
-	.size	.L.managed_type_name.8158, 43
+	.asciz	"Org.XmlPull.V1.XmlPullParserException, Mono.Android"
+	.size	.L.managed_type_name.8158, 52
 	.section	.rodata.managed_type_name.8159,"aMS",%progbits,1
 	.type	.L.managed_type_name.8159, %object
 .L.managed_type_name.8159:
-	.asciz	"Org.XmlPull.V1.XmlPullParserException, Mono.Android"
-	.size	.L.managed_type_name.8159, 52
+	.asciz	"Org.XmlPull.V1.XmlPullParserFactory, Mono.Android"
+	.size	.L.managed_type_name.8159, 50
 	.section	.rodata.managed_type_name.8160,"aMS",%progbits,1
 	.type	.L.managed_type_name.8160, %object
 .L.managed_type_name.8160:
-	.asciz	"Org.XmlPull.V1.XmlPullParserFactory, Mono.Android"
-	.size	.L.managed_type_name.8160, 50
+	.asciz	"Org.Xmlpull.V1.Sax2.Driver, Mono.Android"
+	.size	.L.managed_type_name.8160, 41
 	.section	.rodata.managed_type_name.8161,"aMS",%progbits,1
 	.type	.L.managed_type_name.8161, %object
 .L.managed_type_name.8161:
-	.asciz	"Org.Xmlpull.V1.Sax2.Driver, Mono.Android"
-	.size	.L.managed_type_name.8161, 41
+	.asciz	"Plugin.SharedTransitions.Platforms.Android.NavigationTransitionListener, Plugin.SharedTransitions"
+	.size	.L.managed_type_name.8161, 98
 	.section	.rodata.managed_type_name.8162,"aMS",%progbits,1
 	.type	.L.managed_type_name.8162, %object
 .L.managed_type_name.8162:
-	.asciz	"Plugin.SharedTransitions.Platforms.Android.NavigationTransitionListener, Plugin.SharedTransitions"
-	.size	.L.managed_type_name.8162, 98
+	.asciz	"Plugin.SharedTransitions.Platforms.Android.SharedTransitionNavigationPageRenderer, Plugin.SharedTransitions"
+	.size	.L.managed_type_name.8162, 108
 	.section	.rodata.managed_type_name.8163,"aMS",%progbits,1
 	.type	.L.managed_type_name.8163, %object
 .L.managed_type_name.8163:
-	.asciz	"Plugin.SharedTransitions.Platforms.Android.SharedTransitionNavigationPageRenderer, Plugin.SharedTransitions"
-	.size	.L.managed_type_name.8163, 108
+	.asciz	"Plugin.SharedTransitions.Platforms.Android.SharedTransitionPageRenderer, Plugin.SharedTransitions"
+	.size	.L.managed_type_name.8163, 98
 	.section	.rodata.managed_type_name.8164,"aMS",%progbits,1
 	.type	.L.managed_type_name.8164, %object
 .L.managed_type_name.8164:
-	.asciz	"Plugin.SharedTransitions.Platforms.Android.SharedTransitionPageRenderer, Plugin.SharedTransitions"
-	.size	.L.managed_type_name.8164, 98
+	.asciz	"Plugin.SharedTransitions.Platforms.Android.SharedTransitionShellItemRenderer, Plugin.SharedTransitions"
+	.size	.L.managed_type_name.8164, 103
 	.section	.rodata.managed_type_name.8165,"aMS",%progbits,1
 	.type	.L.managed_type_name.8165, %object
 .L.managed_type_name.8165:
-	.asciz	"Plugin.SharedTransitions.Platforms.Android.SharedTransitionShellItemRenderer, Plugin.SharedTransitions"
-	.size	.L.managed_type_name.8165, 103
+	.asciz	"ProjetGroupe.Droid.AndroidFireBaseMessagingService, ProjetGroupe.Android"
+	.size	.L.managed_type_name.8165, 73
 	.section	.rodata.managed_type_name.8166,"aMS",%progbits,1
 	.type	.L.managed_type_name.8166, %object
 .L.managed_type_name.8166:
-	.asciz	"ProjetGroupe.Droid.AndroidFireBaseMessagingService, ProjetGroupe.Android"
-	.size	.L.managed_type_name.8166, 73
+	.asciz	"ProjetGroupe.Droid.AzureListener, ProjetGroupe.Android"
+	.size	.L.managed_type_name.8166, 55
 	.section	.rodata.managed_type_name.8167,"aMS",%progbits,1
 	.type	.L.managed_type_name.8167, %object
 .L.managed_type_name.8167:
-	.asciz	"ProjetGroupe.Droid.AzureListener, ProjetGroupe.Android"
-	.size	.L.managed_type_name.8167, 55
+	.asciz	"ProjetGroupe.Droid.MainActivity, ProjetGroupe.Android"
+	.size	.L.managed_type_name.8167, 54
 	.section	.rodata.managed_type_name.8168,"aMS",%progbits,1
 	.type	.L.managed_type_name.8168, %object
 .L.managed_type_name.8168:
-	.asciz	"ProjetGroupe.Droid.MainActivity, ProjetGroupe.Android"
-	.size	.L.managed_type_name.8168, 54
+	.asciz	"ProjetGroupe.Droid.MyFirebaseMessagingService, ProjetGroupe.Android"
+	.size	.L.managed_type_name.8168, 68
 	.section	.rodata.managed_type_name.8169,"aMS",%progbits,1
 	.type	.L.managed_type_name.8169, %object
 .L.managed_type_name.8169:
-	.asciz	"ProjetGroupe.Droid.MyFirebaseMessagingService, ProjetGroupe.Android"
-	.size	.L.managed_type_name.8169, 68
+	.asciz	"ProjetGroupe.Droid.Services.PushNotificationFirebaseMessagingService, ProjetGroupe.Android"
+	.size	.L.managed_type_name.8169, 91
 	.section	.rodata.managed_type_name.8170,"aMS",%progbits,1
 	.type	.L.managed_type_name.8170, %object
 .L.managed_type_name.8170:

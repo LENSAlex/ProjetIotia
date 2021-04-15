@@ -35,15 +35,33 @@ namespace ProjetGroupe.Views
 
         public void OnImageButtonClicked(object sender, EventArgs e)
         {
-           // Application.Current.MainPage = new AppShell();
-            SecureStorage.Remove("CapteurId");
-            this.Navigation.PopAsync();
+            var liste = SecureStorage.GetAsync("Liste").Result;
+            if(liste!=null)
+            {
+                Shell.Current.GoToAsync($"{nameof(eCovidPage)}");
+                SecureStorage.Remove("Liste");
+                SecureStorage.Remove("CapteurId");
+            }
+            else
+            {
+                Shell.Current.GoToAsync($"{nameof(SmartBuildingPage)}");
+                SecureStorage.Remove("CapteurId");
+            }
         }
         public void OnImageButtonClicked2(object sender, EventArgs e)
         {
-           // Application.Current.MainPage = new AppShell();
-            SecureStorage.Remove("CapteurId");
-            this.Navigation.PopAsync();
+            var liste = SecureStorage.GetAsync("Liste").Result;
+            if (liste != null)
+            {
+                Shell.Current.GoToAsync($"{nameof(eCovidPage)}");
+                SecureStorage.Remove("Liste");
+                SecureStorage.Remove("CapteurId");
+            }
+            else
+            {
+                Shell.Current.GoToAsync($"{nameof(SmartBuildingPage)}");
+                SecureStorage.Remove("CapteurId");
+            }
         }
 
         protected override void OnAppearing()
@@ -56,18 +74,19 @@ namespace ProjetGroupe.Views
         { 
             base.OnDisappearing();
             SecureStorage.Remove("CapteurId");
+            SecureStorage.Remove("Liste");
         }
-        public void TapGestureRecognizer_Tapped(Object sender, EventArgs e)
-        {
-            var mainDisplayInfo = DeviceDisplay.MainDisplayInfo;
-            Action<double> callback = input => DetailsView.HeightRequest = input;
-            double startHeight = mainDisplayInfo.Height / 3;
-            double endiendHeight = 0;
-            uint rate = 32;
-            uint length = 500;
-            Easing easing = Easing.SinOut;
-            DetailsView.Animate("anim", callback, startHeight, endiendHeight, rate, length, easing);
-        }
+        //public void TapGestureRecognizer_Tapped(Object sender, EventArgs e)
+        //{
+        //    var mainDisplayInfo = DeviceDisplay.MainDisplayInfo;
+        //    Action<double> callback = input => DetailsView.HeightRequest = input;
+        //    double startHeight = mainDisplayInfo.Height / 3;
+        //    double endiendHeight = 0;
+        //    uint rate = 32;
+        //    uint length = 500;
+        //    Easing easing = Easing.SinOut;
+        //    DetailsView.Animate("anim", callback, startHeight, endiendHeight, rate, length, easing);
+        //}
    
     }
 

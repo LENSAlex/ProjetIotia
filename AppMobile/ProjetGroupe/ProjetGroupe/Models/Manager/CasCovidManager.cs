@@ -1,9 +1,12 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace ProjetGroupe.Models.Manager
 {
@@ -47,6 +50,81 @@ namespace ProjetGroupe.Models.Manager
             {
                 return "ErreurNull";
             }
+        }
+        internal static async Task<List<CasCovid>> ListCasCovid()
+        {
+            var httpClient = new HttpClient();
+            List<CasCovid> list = new List<CasCovid>();
+            if (Device.RuntimePlatform == Device.Android)
+            {
+                httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
+                httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            }
+            string WebAPIUrl = Config.WebServiceURI + "/Covid/CasCovid";
+            var uri = new Uri(WebAPIUrl);
+            try
+            {
+                var response = await httpClient.GetAsync(uri);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var content = await response.Content.ReadAsStringAsync();
+                    list = JsonConvert.DeserializeObject<List<CasCovid>>(content);
+                    return list;
+                }
+            }
+            catch (Exception ex) { }
+            return null;
+        }
+        internal static async Task<List<CasCovid>> ListCasCovidFormation()
+        {
+            var httpClient = new HttpClient();
+            List<CasCovid> list = new List<CasCovid>();
+            if (Device.RuntimePlatform == Device.Android)
+            {
+                httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
+                httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            }
+            string WebAPIUrl = Config.WebServiceURI + "/Covid/Count/CasCovid/Formation";
+            var uri = new Uri(WebAPIUrl);
+            try
+            {
+                var response = await httpClient.GetAsync(uri);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var content = await response.Content.ReadAsStringAsync();
+                    list = JsonConvert.DeserializeObject<List<CasCovid>>(content);
+                    return list;
+                }
+            }
+            catch (Exception ex) { }
+            return null;
+        }
+        internal static async Task<List<CasCovid>> ListCasCovidDepartement()
+        {
+            var httpClient = new HttpClient();
+            List<CasCovid> list = new List<CasCovid>();
+            if (Device.RuntimePlatform == Device.Android)
+            {
+                httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
+                httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            }
+            string WebAPIUrl = Config.WebServiceURI + "/Covid/Count/CasCovid/Departement";
+            var uri = new Uri(WebAPIUrl);
+            try
+            {
+                var response = await httpClient.GetAsync(uri);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var content = await response.Content.ReadAsStringAsync();
+                    list = JsonConvert.DeserializeObject<List<CasCovid>>(content);
+                    return list;
+                }
+            }
+            catch (Exception ex) { }
+            return null;
         }
     }
 }

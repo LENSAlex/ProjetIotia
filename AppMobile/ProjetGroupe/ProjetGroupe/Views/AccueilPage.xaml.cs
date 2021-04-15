@@ -19,16 +19,13 @@ namespace ProjetGroupe.Views
         {
             InitializeComponent();
             this.BindingContext = new AccueilViewModel();
-            //Page accueil faire trois boutons pour 1)eCovid => sur alerte/notifcation ou je ne notifie moi même en envoyant une alerte.
-
-            //2)SmartBuilding => affichage des énergie, Co2, température 
-            //3)SmartOffice => alerte à pénurie de produit avec choix du produit.
-            //Page de login
-            //page de logout
-            //Managers 
-
-
         }
-       
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            FrameAccueil.TranslationY = 600;
+            FrameAccueil.TranslateTo(0, 0, 500, Easing.BounceIn);
+        }
+
     }
 }

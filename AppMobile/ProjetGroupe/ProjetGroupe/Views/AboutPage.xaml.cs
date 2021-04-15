@@ -24,26 +24,35 @@ namespace ProjetGroupe.Views
         {
             InitializeComponent();
             this.BindingContext = new AboutViewModel();
-        }
 
-        private void GoBack(object sender, EventArgs e)
+            ListCasCovidDep.RefreshCommand = new Command(() => {
+                ListCasCovidDep.IsRefreshing = true;
+                GetDataDep();
+                ListCasCovidDep.IsRefreshing = false;
+            });
+
+            ListCasCovidForm.RefreshCommand = new Command(() => {
+                ListCasCovidForm.IsRefreshing = true;
+                GetDataForm();
+                ListCasCovidForm.IsRefreshing = false;
+            });
+        }
+        protected override void OnAppearing()
         {
-            this.Navigation.PopAsync();
+            base.OnAppearing();
+            ListCasCovidDep.TranslationY = 600;
+            ListCasCovidDep.TranslateTo(0, 0, 500, Easing.SinInOut);
+            ListCasCovidForm.TranslationY = 600;
+            ListCasCovidForm.TranslateTo(0, 0, 500, Easing.SinInOut);
         }
-
-        private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        public async void GetDataForm()
         {
-            var obj = (Equiquement)e.SelectedItem;
-            var ide = Convert.ToInt32(obj.Id);
-            //Application.Current.MainPage.DisplayAlert("Capteur:", "Informations "+ ide, "Ok");
-            Xamarin.Essentials.SecureStorage.SetAsync("CapteurId", ide.ToString());
-            Xamarin.Forms.Application.Current.MainPage = new CapteursDetailsPage();
-           // Shell.Current.GoToAsync("/CapteursDetailsPage")
-           //;
-           //Permettre la recherche via numéro de salle
+            ListCasCovidForm.ItemsSource = await CasCovid.ListCasCovidFormation();
         }
-        //
-
+        public async void GetDataDep()
+        {
+            ListCasCovidDep.ItemsSource = await CasCovid.ListCasCovidDepartement();
+        }
     }
 }
 

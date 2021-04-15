@@ -63,51 +63,7 @@ namespace ProjetGroupe.Models
         {
             get; set;
         }
-
-        private int _ValueTypeId;
-        public int ValueTypeId
-        {
-            get
-            {
-                return _ValueTypeId;
-            }
-            set
-            {
-                _ValueTypeId = value;
-                _valueType = null;
-            }
-        }
-
-        private ValueType _valueType;
-        public ValueType ValueType
-        {
-            get
-            {
-                if (_valueType == null && ValueTypeId != 0)
-                    _valueType = ValueType.Load(ValueTypeId);
-                return _valueType;
-            }
-            set
-            {
-                _valueType = value;
-                _ValueTypeId = value?.Id ?? 0;
-            }
-        }
         public decimal seuil_min { get; set; }
         public decimal seuil_max { get; set; }
-
-        public static Task<Capteur> Load(int Id)
-        {
-            return CapteurManager.LoadCapteur(Id);
-        }
-
-        public static Task<string> Save(Capteur capteur)
-        {
-            return CapteurManager.Save(capteur);
-        }
-        public Task<string> Save()
-        {
-            return CapteurManager.Save(this);
-        }
     }
 }

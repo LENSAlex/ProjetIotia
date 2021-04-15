@@ -49,13 +49,11 @@ namespace ProjetGroupe.ViewModels
         private string temp;
         public string Temp { get => temp; set => SetProperty(ref temp, value); }
         public List<Personne> Weathers { get => GetPersonne(); }
-        public Command PerformSearch;
-        public string SearchResults { get; set; }
+        public List<CapteurType> SearchResults { get; set; }
         public SmartBuildingViewModel()
         {
             Device.BeginInvokeOnMainThread(() => GetData());
         }
-
         public Command OnRefresh;
         private string Personnes(string query)
         {
@@ -86,24 +84,12 @@ namespace ProjetGroupe.ViewModels
             }
             return listPersonne;
         }
-    }
-    public class Equiquement
-    {
-        [JsonProperty("Id")]
-        public int Id { get; set; }
-        [JsonProperty("name")]
-        public string Name { get; set; }
-        [JsonProperty("disponible")]
-        public bool Disponible { get; set; }
-        public static Task<ObservableCollection<Equiquement>> List()
-        {
-            return CapteurManager.RefreshDataAsync();
-        }
-        public static Task<Equiquement> Load(int id)
-        {
-            return CapteurManager.Load(id);
-        }
+        public event PropertyChangedEventHandler PropertyChanged2;
 
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            this.PropertyChanged2?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
     }
 }
 

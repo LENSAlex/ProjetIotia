@@ -32,11 +32,6 @@ namespace ProjetGroupe.Models
         }
         public bool Is_Penurie { get; set; }
         public DateTime date_maj { get; set; }
-
-        //public static Penurie Load(int Id)
-        //{
-        //    return new Penurie();
-        //}
         public static Task<string> UpdateStock(Penurie penurie)
         {
             return PenurieManager.UpdateStock(penurie);

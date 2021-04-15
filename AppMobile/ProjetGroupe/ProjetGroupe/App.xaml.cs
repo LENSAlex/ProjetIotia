@@ -1,6 +1,9 @@
 ﻿using Plugin.SharedTransitions;
+using ProjetGroupe.Tools;
+using ProjetGroupe.Tools.Services;
 using ProjetGroupe.Views;
 using System;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,10 +15,18 @@ namespace ProjetGroupe
 {
     public partial class App : Application
     {
+        void NotificationActionTriggered(object sender, PushAction e) => ShowActionAlert(e);
+
+        void ShowActionAlert(PushAction action)
+            => MainThread.BeginInvokeOnMainThread(()
+                => MainPage?.DisplayAlert("Alert Covid", $"{action} Cas covid alerté", "OK")
+                    .ContinueWith((task) => { if (task.IsFaulted) throw task.Exception; }));
         public App()
         {
             InitializeComponent();
-            var isLoogged = Xamarin.Essentials.SecureStorage.GetAsync("isLogged").Result;
+            ServiceContainer.Resolve<IPushDemoNotificationActionService>().ActionTriggered += NotificationActionTriggered;
+
+            var isLoogged = SecureStorage.GetAsync("isLogged").Result;
             if (isLoogged == "1")
             {
             

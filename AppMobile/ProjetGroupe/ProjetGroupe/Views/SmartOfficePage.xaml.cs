@@ -20,7 +20,8 @@ namespace ProjetGroupe.Views
     {
         RestService _restService;
         public event PropertyChangedEventHandler PropertyChanged;
-
+        public List<Salle> _Salle { get; set; }
+        public Salle _SalleId { get; set; }
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChangedEventHandler handler = PropertyChanged;
@@ -35,16 +36,16 @@ namespace ProjetGroupe.Views
             Label1.IsVisible = false;
             this.BindingContext = new SmartOfficeViewModel();
             _restService = new RestService();
-          
-            WeathersList.RefreshCommand = new Command(() => {
-                WeathersList.IsRefreshing = true;
+
+            ListEquipement.RefreshCommand = new Command(() => {
+                ListEquipement.IsRefreshing = true;
                 GetData();
-                WeathersList.IsRefreshing = false;
+                ListEquipement.IsRefreshing = false;
             });
         }
         public async void GetData()
         {
-            WeathersList.ItemsSource = await Equipement.ListEquipement();
+            ListEquipement.ItemsSource = await Equipement.ListEquipement();
         }
         //3)SmartOffice => alerte à pénurie de produit avec choix du produit.
         private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -53,10 +54,10 @@ namespace ProjetGroupe.Views
             var ide = Convert.ToInt32(obj.Id);
             if(ide != 0)
             {
-                Personne personne = Personne.Load(ide);
+                Personne personne = Personne.IsLogged();
                 if (personne != null)
                 {
-                    GetDisplayChoiceAsync();
+                    GetDisplayChoiceAsync(ide);
                 }
                 else
                 {
@@ -64,23 +65,16 @@ namespace ProjetGroupe.Views
                 }
             }
         }
-        public async Task UpdateStockAsync()
+        public async Task UpdateStockAsync(int idSalle, int idEquip)
         {
 
             List<Salle> salle = await Salle.ListSalleOfEleve();
-            foreach(Salle s in salle)
-            {
-                //Indiquer la salle a choisir
-                //If la salle existe
-            }
-            Equipement equipement = new Equipement();
-
             Penurie penurie = new Penurie()
             {
                 date_maj = DateTime.Now,
                 Is_Penurie = true,
-                Id_Equipement = 1,
-                SalleId = 1
+                Id_Equipement = idEquip,
+                SalleId = idSalle
             };
             var result = await Penurie.UpdateStock(penurie);
             if(result=="Ok")
@@ -93,31 +87,44 @@ namespace ProjetGroupe.Views
             }
          
         }
-        public async Task GetDisplayChoiceAsync()
+        public async void GetSalle(string numsalle)
         {
-            var result = await DisplayAlert("Attention!", "Voulez vous vraiment alterter que ce produit est en pénurie?", "Valider", "Annuler");
-            if (result == true)
+            _Salle = await Salle.LoadSalleByNom(numsalle);
+        }
+        public async Task GetDisplayChoiceAsync(int idEquip)        
+        {
+            var resultPrompt = await DisplayPromptAsync("Choisissez une salle","Numéro de la salle:");
+            GetSalle(resultPrompt);
+            if (_Salle != null)
             {
-                UpdateStockAsync();
-                //result = false;
-            }
-            else
-            {
-                return;
-            }
+                Salle laSalle = new Salle();
+                laSalle.Id_salle = _Salle[0].Id_salle;
+                var result = await DisplayAlert("Attention!", "Voulez vous vraiment alterter que ce produit est en pénurie?", "Valider", "Annuler");
+                if (result == true)
+                {
+                    UpdateStockAsync(laSalle.Id_salle, idEquip);
+                }
+                else
+                {
+                    return;
+                }
+            }        
         }
 
         public void SetInfo()
         {
-            //personne.RappelMail(personne);
+            Personne personne = Personne.IsLogged();
+            personne.RappelMail(personne);
             Label1.Text = "Alerte envoyée avec succès";
             Label1.IsVisible = true;
         }
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            WeathersList.TranslationY = 600;
-            WeathersList.TranslateTo(0, 0, 500, Easing.SinInOut);
+            Label1.IsVisible = false;
+            Label1.Text = "";
+            ListEquipement.TranslationY = 600;
+            ListEquipement.TranslateTo(0, 0, 500, Easing.SinInOut);
         }
         //public void OnPickerSelectedIndexChanged(object sender, EventArgs e)
         //{

@@ -32,7 +32,7 @@
         <!--<Picker FontFamily="ThemeFontBold" x:Name="Picker" Grid.Row="2" Title="Choisir un produit" Margin="20,10,20,10" BackgroundColor="AliceBlue"  TitleColor="#96d1ff" SelectedIndexChanged="OnPickerSelectedIndexChanged" ItemsSource="{Binding ListEquipement}" SelectedItem="{Binding 
                     Id, Mode=TwoWay}"  TextColor="Black" ItemDisplayBinding="{Binding Libelle}">
         </Picker>-->
-        <ListView x:Name="WeathersList" ItemsSource="{Binding Items}" HeightRequest="170" SeparatorVisibility="None" ItemSelected="OnItemSelected" IsPullToRefreshEnabled="True" RefreshCommand="{Binding RefreshCommand}"
+        <ListView x:Name="ListEquipement" ItemsSource="{Binding Items}" HeightRequest="170" SeparatorVisibility="None" ItemSelected="OnItemSelected" IsPullToRefreshEnabled="True" RefreshCommand="{Binding RefreshCommand}"
            IsRefreshing="{Binding IsRefreshing}"
                   Grid.Row="2" Margin="20,10,20,10">
             <ListView.ItemTemplate StyleClass="ListViewCustom">
@@ -45,14 +45,13 @@
                                     <ColumnDefinition Width="Auto"/>
                                     <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
-                                <Image Grid.Column="2" Source="data.png" WidthRequest="18" HeightRequest="18" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                <!--<Image Grid.Column="2" Source="data.png" WidthRequest="18" HeightRequest="18" HorizontalOptions="Center" VerticalOptions="Center"/>-->
                                 <Label FontFamily="ThemeFontBold" Text="ID #" TextColor="Black" FontSize="10" VerticalOptions="Center"/>
                                 <Label FontFamily="ThemeFontBold" Text="{Binding Id}" TextColor="Black" FontSize="10" Margin="20,0" FontAttributes="Bold" VerticalOptions="Center"/>
                                 <BoxView Grid.Column="0" BackgroundColor="#FFC396" WidthRequest="8" Margin="-14,-10" HorizontalOptions="Start" 
                                                  VerticalOptions="FillAndExpand"/>
                                 <Label FontFamily="ThemeFontBold" Text="{Binding Libelle}" TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="50,0,20,0"/>
-
-                                <StackLayout Grid.Column="2" Orientation="Horizontal" Margin="20,0" HorizontalOptions="End" VerticalOptions="Center">
+                                <StackLayout Grid.Column="2" Orientation="Horizontal" Margin="0,0" HorizontalOptions="End" VerticalOptions="Center">
                                     <Label FontFamily="ThemeFontBold" Text="{Binding Description}" TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="20,0"/>
                                 </StackLayout>
                             </Grid>
@@ -61,6 +60,6 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Label x:Name="Label1" Text="" TextColor="green" IsVisible="False" FontSize="16" HorizontalOptions="Center"/>
+        <Label Grid.Row="4" x:Name="Label1" Text="" TextColor="green" IsVisible="False" FontSize="16" HorizontalOptions="Center"/>
     </Grid>
 </ContentPage>

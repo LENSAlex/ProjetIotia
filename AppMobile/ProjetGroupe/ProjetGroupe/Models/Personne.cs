@@ -98,12 +98,10 @@ namespace ProjetGroupe.Models
         }
         public bool RappelMail(Personne personne)
         {
-            //juste ici verifier que le mail existe bien
             using (MailMessage mail = new MailMessage())
             {
-                mail.From = new MailAddress("soignantsniriotia@gmail.com");
-                //Changer par Email
-                mail.To.Add("lkjumbyr@gmail.com");
+                mail.From = new MailAddress(Config.Mail);
+                mail.To.Add(Config.MailTo);
                 mail.Subject = "Une alerte à été envoyé par un utilisateur à: " + DateTime.Now;
                 mail.Body = "<h1 style='text-align:center'>Une alerte vous a été envoyé par l'application Smart E-Covid IUT.</h1>" +
                     "<p>Merci de prévenir les personnes présentent autour de lui au plus vite.</p>" + "Envoyé par: " + personne.Email;
@@ -112,10 +110,34 @@ namespace ProjetGroupe.Models
                 mail.Headers.Add("MIME-Version", "1.0");
 
                 mail.IsBodyHtml = true;
-                using (SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587))
+                using (SmtpClient smtp = new SmtpClient(Config.MailServer, Convert.ToInt32(Config.MailPort)))
                 {
                     smtp.UseDefaultCredentials = false;
-                    smtp.Credentials = new NetworkCredential("soignantsniriotia@gmail.com", "testtest25.");
+                    smtp.Credentials = new NetworkCredential(Config.Mail, Config.MailPw);
+                    smtp.EnableSsl = true;
+                    smtp.Send(mail);
+                }
+                return true;
+            }
+        }
+        public bool RappelMailPenurie(Personne personne)
+        {
+            using (MailMessage mail = new MailMessage())
+            {
+                mail.From = new MailAddress(Config.Mail);
+                mail.To.Add(Config.MailTo);
+                mail.Subject = "Une alerte de pénurie d'un produit à été envoyé par un utilisateur à: " + DateTime.Now;
+                mail.Body = "<h1 style='text-align:center'>Une alerte de pénurie d'un produit vous a été envoyé par l'application Smart E-Covid IUT.</h1>" +
+                    "<p>Envoyé par: " + personne.Email + "</p>";
+
+                mail.Headers.Add("Content-Type", "text/html; charset=utf-8");
+                mail.Headers.Add("MIME-Version", "1.0");
+
+                mail.IsBodyHtml = true;
+                using (SmtpClient smtp = new SmtpClient(Config.MailServer, Convert.ToInt32(Config.MailPort)))
+                {
+                    smtp.UseDefaultCredentials = false;
+                    smtp.Credentials = new NetworkCredential(Config.Mail,Config.MailPw);
                     smtp.EnableSsl = true;
                     smtp.Send(mail);
                 }

@@ -14,18 +14,29 @@ using System.Net.Http.Headers;
 using Newtonsoft.Json.Linq;
 using System.Linq;
 using ProjetGroupe.Models.Manager;
+using ProjetGroupe.Models;
 
 namespace ProjetGroupe.ViewModels
 {
     public class AboutViewModel : INotifyPropertyChanged
     {
-        public string CasAll { get; set; } = "12";
-        public string CasBat { get; set; } = "14";
-        public string CasSalle { get; set; } = "16";
+        public string countcovid;
+        public string CountCovid
+        {
+            get
+            {
+                return countcovid;
+            }
+            set
+            {
+                countcovid = value;
+                RaisepropertyChanged("CountCovid");
+            }
+        }
 
         public event PropertyChangedEventHandler PropertyChanged;
-        public ObservableCollection<Equiquement> items { get; set; }
-        public ObservableCollection<Equiquement> Items
+        public List<CasCovid> items { get; set; }
+        public List<CasCovid> Items
         {
             get
             {
@@ -37,13 +48,38 @@ namespace ProjetGroupe.ViewModels
                 RaisepropertyChanged("Items");
             }
         }
+        public List<CasCovid> itemsB { get; set; }
+        public List<CasCovid> ItemsB
+        {
+            get
+            {
+                return itemsB;
+            }
+            set
+            {
+                itemsB = value;
+                RaisepropertyChanged("ItemsB");
+            }
+        }
         public AboutViewModel()
         {
-            Device.BeginInvokeOnMainThread(() => GetData());
+            Device.BeginInvokeOnMainThread(() => GetCovidDep());
+            Device.BeginInvokeOnMainThread(() => GetCovidForm());
+            Device.BeginInvokeOnMainThread(() => GetCovidAll());
+       
         }
-        public async void GetData()
+        public async void GetCovidDep()
         {
-            Items = await Equiquement.List();
+            Items = await CasCovid.ListCasCovidDepartement();
+        }
+        public async void GetCovidForm()
+        {
+            ItemsB = await CasCovid.ListCasCovidFormation();
+        }
+        public async Task<string> GetCovidAll()
+        {
+            var result = await CasCovid.Count();
+            return CountCovid+=result;
         }
         public void RaisepropertyChanged(string propertyName)
         {
@@ -52,21 +88,4 @@ namespace ProjetGroupe.ViewModels
         }
 
     }
-    //public class Equipes
-    //{
-    //    [JsonProperty("Id")]
-    //    public int Id { get; set; }
-    //    [JsonProperty("name")]
-    //    public string Name { get; set; }
-    //    [JsonProperty("disponible")]
-    //    public bool Disponible { get; set; }
-    //    public static Task<ObservableCollection<Equipes>> List()
-    //    {
-    //        return CapteurManager.RefreshDataAsync();
-    //    }
-    //    public static Task<Equipes> Load(int id)
-    //    {
-    //        return CapteurManager.Load(id);
-    //    }
-    //}
 }
