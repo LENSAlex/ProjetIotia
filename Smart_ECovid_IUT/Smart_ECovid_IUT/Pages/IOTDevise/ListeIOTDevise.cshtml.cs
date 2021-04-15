@@ -47,7 +47,7 @@ namespace Smart_ECovid_IUT.Pages.IOTDevise
             }
 
             var request2 = new HttpRequestMessage(HttpMethod.Get,
-          "http://51.75.125.121:3001/Personne/ListDevice");
+          "http://51.75.125.121:3001/Personne/ListDevice/All");
             request2.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
             request2.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
 

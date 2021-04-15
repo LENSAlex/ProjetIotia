@@ -43,14 +43,18 @@ namespace ClasseE_Covid.IOTDevise
         /// <summary>
         /// liste Capteur
         /// </summary>
-        [JsonPropertyName("IDBoxCapteur")]
+        [JsonPropertyName("id_devicetype")]
         public int IDBoxCapteur { get; set; }
 
-        [JsonPropertyName("id_devicetype")]
+        [JsonPropertyName("IDBoxCapteur")] 
         public int IdCapteur { get; set; }
 
         [JsonPropertyName("libelle_type")]
         public string NomCapteur { get; set; }
+
+        [JsonPropertyName("TypeCapteur")]
+        public int TypeCapteur { get; set; }
+        
 
     }
 }
