@@ -73,7 +73,7 @@ Il y a également la valeur du capteur affiché sur l'écran du M5StickC
 === Voir d'autres documentations
 
 [role="language"]
-* #LANGUAGE# link:../Speaker/SpeakerBeep[Documentation Haut Parleur]
-* #LANGUAGE# link:../../../porte[Documentation Porte]
-* #LIEN# link:https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationPIR.adoc[Documentation PIR]
+* #LIEN :# link:https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationHaut_parleur.adoc[Documentation Haut Parleur]
+* #LIEN :# link:https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationPorte.adoc[Documentation Porte]
+* #LIEN :# link:https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationPIR.adoc[Documentation PIR]
 
