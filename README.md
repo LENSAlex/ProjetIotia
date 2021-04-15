@@ -85,7 +85,11 @@ Pour que l'application puisse atteindre le serveur nodejs, il faut lui donner un
 - Pour pouvoir envoyer des notifications push à tout le monde lors d'une alerte de covid-19. Il faut créer une API application web sur Visual Studio.
 Voici un tutoriel d'installation de l'api sur Azure via votre compte Etudiant ou Entreprise.
 https://docs.microsoft.com/en-us/azure/developer/mobile-apps/notification-hubs-backend-service-xamarin-forms
- 
+
+- Attention ! A chaque nouveau projet (ou changement d'ordinateur pour la compilation) vous devez remettre les user-secrets. Vous devez vous positionner dans votre répertoire "NotificationAPI" et executé en ligne de commande (via GitBash par exemple) :
+```dotnet user-secrets set "NotificationHub:ConnectionString" "Endpoint=sb://suitedevotreendpoint"```
+```dotnet user-secrets set "NotificationHub:Name" "NomDuProjet"```
+
 Après avoir mit en ligne l'API, il est possible de tester l'envoie de notification avec postman:
 Envoyez une requête POST sur https://nomduprojet.azurewebsites.net/api/notifications/requests avec votre body un json tel que
 ```
