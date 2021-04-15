@@ -1,16 +1,3 @@
----
-title: Documentation Haut parleur
-title_expanded: Documentation Haut parleur
-categories: [ "Structure" ]
-subCategories: [ "Subcategory Name" ]
----
-// ARDUINO LANGUAGE REFERENCE TAGS (above)   ►►►►► ALWAYS INCLUDE IN YOUR FILE ◄◄◄◄◄
-// title will show up in the Index of all Reference terms
-// If the title is an operator write it out in words in title_expanded
-// categories: Pick between Structure, Variable or Function
-// The subcategory within the ones available in the index ("Digital I/O", "Arithmetic Operators")
-
-
 
 // PAGE TITLE
 = Documentation Haut parleur
