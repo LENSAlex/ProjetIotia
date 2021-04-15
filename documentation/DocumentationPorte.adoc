@@ -80,6 +80,7 @@ Programme qui tourne en permanance sur le M5StickC. Il lis les valeurs du pin 0 
 === Voir d'autres documentations
 
 [role="language"]
-* #LANGUAGE# link:../Speaker/SpeakerBeep[Documentation Haut Parleur]
-* #LANGUAGE# link:../gaz/gaz/GAZ[Documentation détecteur de gaz]
+* #LIEN :# link:https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationHaut_parleur.adoc[Documentation Haut Parleur]
+* #LIEN :# link:https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationGaz.adoc[Documentation détecteur de gaz]
+* #LIEN :# link:https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationPIR.adoc[Documentation PIR]
 
