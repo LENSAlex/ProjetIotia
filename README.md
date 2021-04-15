@@ -14,7 +14,8 @@ Pour utiliser le code de l'application, le modifier vous devez:
 
 - 1] Pour créer un nouveau projet vous devez "Créer un nouveau projet", "Suivant" et choisir "Application Shell Cross Platform", veuillez à bien vérifier si Android, IOS et UWP sont présent dans la description du type du projet choisis.
 - 2] Valider les choix. Un projet s'ouvre, les fichiers principaux sont: App.xaml / App.xaml.cs et AppShell.xaml / AppShell.cs.xaml. Ce sont les pages "coeurs" du projet.
-- 3] La solution du projet est composé avec 1 bibliothèque de classe contenant ces fichiers annoncés précédements et 1 projet runable par OS (android, ios, uwp). Sachant que pour IOS et UWP vous devez posséder un MacOs ou un Windows Phone pour le débugage.
+- 3] La solution du projet est composé avec 1 bibliothèque de classe contenant ces fichiers annoncés précédements et 1 projet runable par OS (android, ios, uwp). Sachant que pour IOS et UWP vous devez posséder un MacOs ou un Windows Phone pour le débugage. Effectivement, Apple ne permet pas l'émulation et la compilation sur des machines Windows. Si vous choisissez les environements Windows Phone (UWP), il est fort probable que les émulateurs soient téléchargeables directement dans visual studio.
+
 - 4] Vous devez ensuite installer plusieur librairies disponible dans les Packages NuGet (clique droit sur le projet dans l'explorateur de solution)
 - 5] Liste des Lib: 
 
@@ -48,6 +49,8 @@ Notification via AzureHub: https://docs.microsoft.com/en-us/azure/developer/mobi
 - 7] Pour obtenir l'application compiler vous devez ensuite: Clique droit sur le projet (Android, Ios ou UWP) et choisir "Publier". Le projet va se compiler et dans le dossier de destination vous aurez l'application que vous pourrez partager aux utilisateurs via un lien de téléchargement ou une plateforme tel que le PlayStore.
 - 8] Vous devez ensuite accepter les "Applications de source inconnu" si l'application est obtenu via un lien de téléchargement sur un site internet par exemple.
 
+- 9] Autres: Lors de la compilation du projet sur le smartphone veillez à ce que vos images, frames et pages, soient responsives, c'est à dire qu'elle s'affichent bien (margin, padding) sur chaque Device. 
+
 # Installation du projet:
 
 - 1] Téléchargez le .zip et décompressez le dans votre dossier ou est contenu vos projets visual studio
@@ -65,11 +68,23 @@ Notification via AzureHub: https://docs.microsoft.com/en-us/azure/developer/mobi
 - 6.3] Il est aussi important de définir des permissions utilisateurs notament l'accès à internet, la lecture et l'écriture. ```[assembly:UsesPermission(Android.Manifest.Permission.Internet)]```
 ```[assembly:UsesPermission(Android.Manifest.Permission.WriteExternalStorage)]```
 
+- 6.4] Dans le fichier "AndroidManifest.xml" se trouvant dans le dossier "Properties"; Il vous faudra ajouter les permissions suivantes:
+
+```
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+```
+
 - 7] Le fichier MainActivity.cs est le fichier source ou vous mettrez toutes vos initialisations de plugin par exemple pour les notifications. N'hésitez pas à récupérer celui déjà existant. Vous allez devoir modifier les informations concernant le Hub de notification par vos informations que vous avez pu obtenir en suivant le tutoriel d'installation de Firebase et d'Azure.
 - 8] Dans le fichier appsettings.json vous trouverez également les informations de liaison et les token/clé permettant les accès à certain service de l'application. Là aussi, vous alleze devoir les modifier par les votre. La classe "Config.cs" vous permet  de récupérer depuis n'importe ou, via un Getter/Setter, la chaîne récupérée par le JsonReader du fichier appsettings.json. (le appsettings.json est compilé dans la dll du projet. (Pour modifier les valeur il faut charger le projet dans Visual Studio puis recompiler)
 - 8.1] 2 types de mails sont présents dans l'application, vous pouvez modifier la configuration du server smtp et les mail d'envois et de réceptions
 - 9] Concernant le bibliothèque de classe, vous avez une hiérarchie qui a été utilisée: Les classes métiers et les classes internes. Les classes métiers sont l'équivalent des tables de la base de données. Les classes internes sont les classes ou se trouvent les méthodes (Get, post, put) vers le serveur nodejs. Grâce au service RESTFul de Xamarin, nous pouvons récupérer un chaîne json et la parser pour remplir les Getter/Setter des classes métiers. Les méthodes sont ensuite récupéré dans les classes métiers étant données que se sont des méthodes "static". Ce qui nous permet de les appeler directement depuis le backend. Ici, chaque méthode (Get, Post, Put) est symbolisé par une méthode (Get => List() (pour une liste) ou Load() pour une ligne spécifique, Post => Save(), Put => Update()). Le principe est de ne pas avoir de requête vers la base de données directement dans le code, donc il faut passer par des webservices, ce sont eux qui font les requêtes SQL.
-Pour que l'application puisse atteindre le serveur nodejs, il faut lui donner une permission à rajouter dans "AssemblyInfo.cs": ```[assembly: Application(UsesCleartextTraffic = true)]```
+Pour que l'application puisse atteindre le serveur nodejs, il faut lui donner une permission à rajouter dans "AssemblyInfo.cs": 
+```[assembly: Application(UsesCleartextTraffic = true)]```
 
 - 10] Installation du serveur nodejs (Autres collaborateurs)
 
@@ -87,7 +102,9 @@ Voici un tutoriel d'installation de l'api sur Azure via votre compte Etudiant ou
 https://docs.microsoft.com/en-us/azure/developer/mobile-apps/notification-hubs-backend-service-xamarin-forms
 
 - Attention ! A chaque nouveau projet (ou changement d'ordinateur pour la compilation) vous devez remettre les user-secrets. Vous devez vous positionner dans votre répertoire "NotificationAPI" et executé en ligne de commande (via GitBash par exemple) :
+
 ```dotnet user-secrets set "NotificationHub:ConnectionString" "Endpoint=sb://suitedevotreendpoint"```
+
 ```dotnet user-secrets set "NotificationHub:Name" "NomDuProjet"```
 
 Après avoir mit en ligne l'API, il est possible de tester l'envoie de notification avec postman:
