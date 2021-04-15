@@ -1,4 +1,9 @@
-
+---
+title: Documentation Détection Gaz
+title_expanded: Documentation Détection Gaz
+categories: [ "Structure" ]
+subCategories: [ "Subcategory Name" ]
+---
 // ARDUINO LANGUAGE REFERENCE TAGS (above)   ►►►►► ALWAYS INCLUDE IN YOUR FILE ◄◄◄◄◄
 // title will show up in the Index of all Reference terms
 // If the title is an operator write it out in words in title_expanded
@@ -41,7 +46,8 @@ Initialisation du M5StickC auquel est relié ce capteur, la lecture de données 
 ----
  M5.begin();
  SerialBT.begin("BtGaz"); //Bluetooth device name
- //Serial.begin(115200);
+ M5.Lcd.setCursor(10, 10);
+ M5.Lcd.println(" Taux Gaz :");
  pinMode(36,INPUT);
 ----
 [%hardbreaks]
@@ -56,16 +62,19 @@ Initialisation du M5StickC auquel est relié ce capteur, la lecture de données 
 [float]
 === Code Loop
 Programme qui tourne en permanance sur le M5StickC. Il lis les valeurs du pin 36 et les transmet via Bluetooth
+Il y a également la valeur du capteur affiché sur l'écran du M5StickC
 
 [source,arduino]
 ----
-int gaz;
-
-gaz=analogRead(36);
-Serial.println("GAZ Level :");
-Serial.println(gaz);
-SerialBT.println(gaz);
-delay(2000);
+  int gaz;
+  
+  gaz=analogRead(36);
+  Serial.println("GAZ Level :");
+  Serial.println(gaz);
+  SerialBT.println(gaz);
+  M5.Lcd.setCursor(25, 70);
+  M5.Lcd.print(gaz);
+  delay(2000);
 ----
 [%hardbreaks]
 
