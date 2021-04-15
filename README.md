@@ -21,7 +21,7 @@ Vous trouverez la documentation [Ici](https://nodejs.org/en/)
 Le capteur de fenêtre est directement relié à un M5StickC sur le pin 0
 Vous trouverez la documentation [Ici](https://nodejs.org/en/)
 
-# Code pyhton : 
+# Code python : 
 Vous trouverez un code python utilisé sur un raspberry Pi pour collecter les différentes valeurs des capteurs, envoyer les données au Broker MQTT ainsi que r'envoyer des alertes au M5Stack pour qu'il puisse jouer un son d'alerte. 
 Vous trouverez la documentation [Ici](https://nodejs.org/en/)
 
