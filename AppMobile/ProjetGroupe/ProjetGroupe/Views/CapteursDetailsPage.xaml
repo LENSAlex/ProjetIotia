@@ -4,7 +4,7 @@
              x:Class="ProjetGroupe.Views.CapteursDetailsPage"
              xmlns:vm="clr-namespace:ProjetGroupe.Views"
              xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
-             xmlns:st="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions" xmlns:viewmodels="clr-namespace:ProjetGroupe.Views"
+             xmlns:viewmodels="clr-namespace:ProjetGroupe.Views"
              x:DataType="viewmodels:CapteursDetailsPage"
              Title="Contacts et Autres"
              Shell.NavBarIsVisible="False"
@@ -73,12 +73,12 @@
                             </pv:PancakeView>
                             <Label Text="Hier" TextColor="Black" FontSize="12" FontFamily="ThemeFontMedium" HorizontalTextAlignment="Center"/>
                         </StackLayout>
-                        <StackLayout>
+                        <!--<StackLayout>
                             <pv:PancakeView BackgroundColor="#FFC396" HeightRequest="50" WidthRequest="50" CornerRadius="30" HorizontalOptions="Center">
                                 <Label Margin="17,15,8,0" Text="53°" FontSize="12" FontAttributes="Bold" TextColor="AliceBlue"/>
                             </pv:PancakeView>
                             <Label Text="Seuil" TextColor="Black" FontSize="12" FontFamily="ThemeFontMedium" HorizontalTextAlignment="Center"/>
-                        </StackLayout>
+                        </StackLayout>-->
                         <StackLayout>
                             <pv:PancakeView BackgroundColor="#FFC396" HeightRequest="50" WidthRequest="50" CornerRadius="30" HorizontalOptions="Center">
                                 <Label Margin="17,15,8,0" Text="53°" FontSize="12" FontAttributes="Bold" TextColor="AliceBlue"/>

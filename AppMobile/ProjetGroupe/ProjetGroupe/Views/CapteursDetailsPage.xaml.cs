@@ -18,6 +18,7 @@ namespace ProjetGroupe.Views
 
         public Capteur Capteur { get; set; }
         public string CapteurId { get; set; }
+        public string ValMoy { get; set; }
 
         public DateTime Date { get; set; } = DateTime.Now;
         public async Task GetCapteur()
@@ -32,7 +33,26 @@ namespace ProjetGroupe.Views
             this.BindingContext = this;
 
         }
+        public async void GetValeur()
+        {
+            List<Historique> histoList = new List<Historique>();
+            histoList = await Historique.ListValeurSpecifique(Convert.ToInt32(CapteurId));
+            foreach (Historique histo in histoList)
+            {
 
+            }
+        }
+        public async void GetValeurMoyenne()
+        {
+            List<Historique> histoList = new List<Historique>();
+            histoList = await Historique.ListValeurSpecifique(Convert.ToInt32(CapteurId));
+        }
+        public async void GetValeurLast()
+        {
+            List<Historique> histoList = new List<Historique>();
+            histoList = await Historique.ListValeurSpecifique(Convert.ToInt32(CapteurId));
+            //ValMoy = Convert.ToString(histoList[0].Valeur);
+        }
         public void OnImageButtonClicked(object sender, EventArgs e)
         {
             var liste = SecureStorage.GetAsync("Liste").Result;

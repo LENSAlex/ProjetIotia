@@ -63,9 +63,8 @@ namespace ProjetGroupe.Droid
                     pendingIntent = PendingIntent.GetActivity(this, 0, intent, PendingIntentFlags.OneShot);
 
                     var notificationBuilder = new NotificationCompat.Builder(this, Config.NotificationChannelID);
-
-                    notificationBuilder.SetContentTitle("Message Title");
-                    notificationBuilder.SetSmallIcon(Resource.Drawable.ic_launcher);
+                    notificationBuilder.SetContentTitle("E-Covid !");
+                    notificationBuilder.SetSmallIcon(Resource.Drawable.icon_about);
 
                     if (p_values.ContainsKey("Title"))
                     {

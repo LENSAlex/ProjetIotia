@@ -1,0 +1,15 @@
+C:\Users\bl005314\Source\Repos\ProjetIotiaV2\AppMobile\NotificationAPI\obj\Release\netcoreapp3.1\PubTmp\Out\NotificationAPI.exe
+C:\Users\bl005314\Source\Repos\ProjetIotiaV2\AppMobile\NotificationAPI\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.Development.json
+C:\Users\bl005314\Source\Repos\ProjetIotiaV2\AppMobile\NotificationAPI\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.json
+C:\Users\bl005314\Source\Repos\ProjetIotiaV2\AppMobile\NotificationAPI\obj\Release\netcoreapp3.1\PubTmp\Out\NotificationAPI.dll
+C:\Users\bl005314\Source\Repos\ProjetIotiaV2\AppMobile\NotificationAPI\obj\Release\netcoreapp3.1\PubTmp\Out\NotificationAPI.deps.json
+C:\Users\bl005314\Source\Repos\ProjetIotiaV2\AppMobile\NotificationAPI\obj\Release\netcoreapp3.1\PubTmp\Out\NotificationAPI.runtimeconfig.json
+C:\Users\bl005314\Source\Repos\ProjetIotiaV2\AppMobile\NotificationAPI\obj\Release\netcoreapp3.1\PubTmp\Out\NotificationAPI.pdb
+C:\Users\bl005314\Source\Repos\ProjetIotiaV2\AppMobile\NotificationAPI\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.Azure.NotificationHubs.dll
+C:\Users\bl005314\Source\Repos\ProjetIotiaV2\AppMobile\NotificationAPI\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\bl005314\Source\Repos\ProjetIotiaV2\AppMobile\NotificationAPI\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\bl005314\Source\Repos\ProjetIotiaV2\AppMobile\NotificationAPI\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\bl005314\Source\Repos\ProjetIotiaV2\AppMobile\NotificationAPI\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\bl005314\Source\Repos\ProjetIotiaV2\AppMobile\NotificationAPI\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.Extensions.Options.dll
+C:\Users\bl005314\Source\Repos\ProjetIotiaV2\AppMobile\NotificationAPI\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.Extensions.Primitives.dll
+C:\Users\bl005314\Source\Repos\ProjetIotiaV2\AppMobile\NotificationAPI\obj\Release\netcoreapp3.1\PubTmp\Out\Newtonsoft.Json.dll

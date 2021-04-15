@@ -18,11 +18,10 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Image Source="overlay.png" Aspect="Fill" HeightRequest="300" VerticalOptions="StartAndExpand"/>
+        <Image Source="overlay.png" Aspect="Fill" HeightRequest="250" VerticalOptions="StartAndExpand"/>
         <StackLayout Orientation="Vertical" Margin="0,20" HorizontalOptions="Center" VerticalOptions="Center">
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                 <Label FontFamily="ThemeFontBold" Text="Contacts et Autres" TextColor="White" FontSize="36" FontAttributes="Bold" VerticalOptions="Center"/>
@@ -34,7 +33,7 @@
                 <Label Text="Alertez quand un produit est en pérunie" TextColor="White" FontSize="52" FontAttributes="Bold" VerticalOptions="Center"/>
                 <Label Text="Email: contact@iut-cote-dazur.fr" FontFamily="ThemeFontBold" HorizontalOptions="Start" TextColor="#C4263E" FontSize="12" Margin="20,20,10,20" VerticalOptions="Start"/>
                 <Label Text="Nombre de malade atteind du covid à l'IUT:" FontFamily="ThemeFontBold" HorizontalOptions="Start" TextColor="DarkGray" FontSize="12" Margin="20,40,10,20" VerticalOptions="Start"/>
-                <Label Text="{Binding CountCovid}" FontFamily="ThemeFontBold" HorizontalOptions="Start" TextColor="#C4263E" FontSize="12" Margin="25,40,10,20" VerticalOptions="Start"/>
+                <Label Text="{Binding CountCovid}" FontFamily="ThemeFontBold" HorizontalOptions="Start" TextColor="#C4263E" FontSize="12" Margin="20,55,10,20" VerticalOptions="Start"/>
             </Grid>
         </Frame>
         <Label  Grid.Row="2" Text="Liste des cas présents dans chaque départements: " FontFamily="ThemeFontBold" HorizontalOptions="Start" TextColor="DarkGray" FontSize="12" Margin="20,4,10,20" VerticalOptions="Start"/>
@@ -51,7 +50,7 @@
                                     <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
                                 <Label FontFamily="ThemeFontBold" Text="Département:" TextColor="Black" FontSize="10" VerticalOptions="Center"/>
-                                <Label FontFamily="ThemeFontBold" Text="{Binding Nom}" TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="80,0,20,0"/>
+                                <Label FontFamily="ThemeFontBold" Text="{Binding NomDep}" TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="80,0,20,0"/>
                                 <BoxView Grid.Column="0" BackgroundColor="#C4263E" WidthRequest="8" Margin="-14,-10" HorizontalOptions="Start" VerticalOptions="FillAndExpand"/>
                                 <StackLayout Grid.Column="2" Orientation="Horizontal" Margin="0,0" HorizontalOptions="End" VerticalOptions="Center">
                                     <Label FontFamily="ThemeFontBold" Text="Nbr de cas: " TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="-20,0"/>
@@ -77,7 +76,7 @@
                                     <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
                                 <Label FontFamily="ThemeFontBold" Text="Formation:" TextColor="Black" FontSize="10" VerticalOptions="Center"/>
-                                <Label FontFamily="ThemeFontBold" Text="{Binding Nom2}" TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="80,0,20,0"/>
+                                <Label FontFamily="ThemeFontBold" Text="{Binding Nom}" TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="80,0,20,0"/>
                                 <BoxView Grid.Column="0" BackgroundColor="#C4263E" WidthRequest="8" Margin="-14,-10" HorizontalOptions="Start" VerticalOptions="FillAndExpand"/>
                                 <StackLayout Grid.Column="2" Orientation="Horizontal" Margin="0,0" HorizontalOptions="End" VerticalOptions="Center">
                                     <Label FontFamily="ThemeFontBold" Text="Nbr de cas: " TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="-20,0"/>

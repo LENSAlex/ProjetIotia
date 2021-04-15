@@ -14,7 +14,7 @@ namespace ProjetGroupe.Models
         [JsonProperty("NbCasCovid")]
         public int NbCasCovid { get; set; }
         [JsonProperty("name")]
-        public string Nom2 { get; set; }
+        public string NomDep { get; set; }
 
         public int Id { get; set; }
         public DateTime DateDeContamination { get; set; }
