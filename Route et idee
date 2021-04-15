@@ -88,3 +88,9 @@ Put Alerte pénurie (Update un produit en stock par un 0 (donc pas en stock))
 Get Capteur de la salle via search (Cherche les capteurs d'une salle via le numéro de salle)
 Get Count des malades d'un salle, bâtiment et iut (Récupère le nombre de malade en fonction de ce qu'on a choisit)
 Get list des équipements pour le stock (Liste les équipements disponible dans l'établissement)
+
+
+Faire des routes qui demande un token (pour dorian) authentification a l entree du Site qui demande un token utilisateur si il est bon et sur chaque route regarde le token si il est
+bon renvoie ou modifie l info.
+Utiliser JWT , laisser la session a 2h devoir se reconnecter a chaque fois et generer un nouveau token , car les route post ne doivent pas etre modifiable par tous le monde , exemple avec
+postman on peut changer les info de la bdd .
