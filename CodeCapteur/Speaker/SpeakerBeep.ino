@@ -6,8 +6,7 @@
 #endif
 
 BluetoothSerial SerialBT;
-BluetoothSerial SerialBT_fenetre;
-
+//Pour jouer différentes notes 
 #define NOTE_D0 -1
 #define NOTE_D1 294
 #define NOTE_D2 330
@@ -38,9 +37,11 @@ void setup() {
   // Initialize the M5Stack object
   M5.begin();
   M5.Power.begin();
+  //Initialise le BT 
   SerialBT.begin("Haut_parleur_BT"); //Bluetooth device name
 }
 char result[255];
+//Compteur pour le nombre de personnes 
 int cptPersonnes =0;
 void loop() {
   M5.Lcd.setCursor(0, 0, 2);
@@ -50,23 +51,27 @@ void loop() {
   {
     Serial.println(SerialBT.readString());
   }
+  //Reception d'alerte lorsqu'une personne est rentré 
   if(SerialBT.readString()=="PirEntreeBL")
-  //if(M5.BtnB.wasPressed())
   {
+    //Incrémentation du compteur
     cptPersonnes++;
     //M5.Speaker.tone(NOTE_DH3, 200); //frequency 3000, with a duration of 200ms
   }
+  //Reception d'alerte lorsqu'une personne est sortie 
   if(SerialBT.readString()=="PirSortieBL")
-  //if(M5.BtnB.wasPressed())
   {
+    //reduit valeur du compteur 
     cptPersonnes--;
     //M5.Speaker.tone(NOTE_DL3, 200); //frequency 3000, with a duration of 200ms
   }
+  //Réception de l'alerte pour le taux de gaz 
   if(SerialBT.readString()=="GazAlerte")
   {
     //M5.Lcd.printf("B gazal \r\n");
     M5.Speaker.tone(NOTE_D1, 200); //frequency 3000, with a duration of 200ms
   }
+  //Pour ne pas avoir d'affichage comme "Il y a -5 personnes " 
   if(cptPersonnes < 0){
     M5.Lcd.printf("Il y a 0 personnes");
   }else{

@@ -17,12 +17,16 @@ void setup() {
 
 void loop() {
   int gaz;
-  
+  //Récupération de la valeur du capteur sur le pin 36
   gaz=analogRead(36);
   Serial.println("GAZ Level :");
+  // Affichage dans le terminal pour vérification 
   Serial.println(gaz);
+  // Envoi de la donnée en bluetooth 
   SerialBT.println(gaz);
+  //Placement du curseur sur l'écran LCD
   M5.Lcd.setCursor(25, 70);
+  //Affichage de la donnée sur l'écran LCD
   M5.Lcd.print(gaz);
   delay(2000);
 }
