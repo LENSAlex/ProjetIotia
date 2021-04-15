@@ -78,7 +78,21 @@ app.get("/Batiment/ListSite", (req, res) => {
 
 //List des Batiment
 app.get("/Batiment/ListBatiment", (req, res) => {
-    conn.query("select id_batiment ,id_site , nom from Batiment", function(err, result) {
+    conn.query("select id_batiment ,id_site , nom as NomBatiment from Batiment", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+
+//DORIAN
+//lIST des etagesID
+app.get("/Batiment/ListEtage", (req, res) => {
+    conn.query("select Etage.id_etage , Batiment.nom , Etage.num from Etage , Batiment WHERE Batiment.id_batiment = Etage.id_batiment", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -201,6 +215,19 @@ app.get("/Personne/GetIdEleve/:Ine", (req, res) => {
     });
 })
 
+//DORIAN
+//LIST des professeur
+app.get("/Personne/ListProf", (req, res) => {
+    var id;
+    conn.query("select distinct Promotion.id_professeur , Personne.nom , Personne.prenom from Promotion , Personne where Promotion.id_professeur = Personne.id_personne", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+        }
+    });
+})
+
 
 
 //Covid---------
@@ -218,9 +245,8 @@ app.get("/Covid/CasCovid", (req, res) => {
     });
 })
 
-app.get("/Covid/Count/CasCovid/Formation" , (req,res) =>
-{
-    conn.query("select F.nom , count(*) as NbCasCovid from CasCovid CC , Personne P , Contenir C , Promotion Po , Formation F    where     CC.id_personne = P.id_personne    and     P.id_personne = C.id_eleve    AND    Po.id_promotion = C.id_promotion    and     Po.id_formation = F.id_formation    group by F.nom" , function(err, result) {
+app.get("/Covid/Count/CasCovid/Formation", (req, res) => {
+    conn.query("select F.nom , count(*) as NbCasCovid from CasCovid CC , Personne P , Contenir C , Promotion Po , Formation F    where     CC.id_personne = P.id_personne    and     P.id_personne = C.id_eleve    AND    Po.id_promotion = C.id_promotion    and     Po.id_formation = F.id_formation    group by F.nom", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -231,8 +257,7 @@ app.get("/Covid/Count/CasCovid/Formation" , (req,res) =>
 })
 
 
-app.get("/Covid/Count/CasCovid/Departement" , (req,res) =>
-{
+app.get("/Covid/Count/CasCovid/Departement", (req, res) => {
     conn.query("select D.name , count(*) as NbCasCovid from CasCovid CC , Personne P , Contenir C , Promotion Po , Formation F , Departement D    where     CC.id_personne = P.id_personne    and     P.id_personne = C.id_eleve    AND    Po.id_promotion = C.id_promotion    and     Po.id_formation = F.id_formation AND F.id_departement = D.id_departement group by D.name", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
@@ -243,8 +268,7 @@ app.get("/Covid/Count/CasCovid/Departement" , (req,res) =>
     });
 })
 
-app.get("/Covid/Count/CasCovid/Formation/:IdFormation" , (req,res) =>
-{
+app.get("/Covid/Count/CasCovid/Formation/:IdFormation", (req, res) => {
     conn.query("select F.nom , count(*) as NbCasCovid from CasCovid CC , Personne P , Contenir C , Promotion Po , Formation F    where     CC.id_personne = P.id_personne    and     P.id_personne = C.id_eleve    AND    Po.id_promotion = C.id_promotion    and     Po.id_formation = F.id_formation  and F.id_formation='" + req.params.IdFormation + "'  group by F.nom", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
@@ -256,8 +280,7 @@ app.get("/Covid/Count/CasCovid/Formation/:IdFormation" , (req,res) =>
 })
 
 
-app.get("/Covid/Count/CasCovid/Departement/:IdDepartement" , (req,res) =>
-{
+app.get("/Covid/Count/CasCovid/Departement/:IdDepartement", (req, res) => {
     conn.query("select D.name , count(*) as NbCasCovid from CasCovid CC , Personne P , Contenir C , Promotion Po , Formation F , Departement D   where     CC.id_personne = P.id_personne    and     P.id_personne = C.id_eleve    AND    Po.id_promotion = C.id_promotion    and     Po.id_formation = F.id_formation AND F.id_departement = D.id_departement and D.id_departement= '" + req.params.IdDepartement + "' group by D.name", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
@@ -271,8 +294,7 @@ app.get("/Covid/Count/CasCovid/Departement/:IdDepartement" , (req,res) =>
 
 //Capteur-----
 //List des ValueType
-app.get("/Capteur/ListValueType" , (req,res) =>
-{
+app.get("/Capteur/ListValueType", (req, res) => {
     conn.query("SELECT `id_valuetype`, `libelle`, `unite` FROM `ValueType`", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
@@ -361,6 +383,7 @@ app.get("/Capteur/ListCapteur", (req, res) => {
     });
 })
 
+//List capteur dernieres de DORIAN
 app.get("/Capteur/ListCapteur/All", (req, res) => {
 
     conn.query("select D.id_device ,VT.libelle , B.id_box from ValueType VT , Device D , Box B where VT.id_valuetype = D.id_valuetype and D.id_box = B.id_box order by D.id_device", function(err, result) {
@@ -375,8 +398,7 @@ app.get("/Capteur/ListCapteur/All", (req, res) => {
 
 
 //Affichage des salles comme ca pour avoir id_box
-app.get("/Capteur/ListSalle" , (req,res) =>
-{
+app.get("/Capteur/ListSalle", (req, res) => {
     conn.query("select S.nom , B.id_box , B.id_salle from Box B , Salle S where B.id_salle = S.id_salle", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
@@ -388,8 +410,7 @@ app.get("/Capteur/ListSalle" , (req,res) =>
 })
 
 //Chercher les valeurs d une salle
-app.get("/Capteur/Valeur/:IdSalle" , (req,res) =>
-{
+app.get("/Capteur/Valeur/:IdSalle", (req, res) => {
     conn.query("select H.valeur , VT.libelle , S.nom from Historique H , ValueType VT , Box B , Salle S where H.id_valuetype = VT.id_valuetype and H.id_box = B.id_box and B.id_salle = S.id_salle AND S.id_salle = '" + req.params.IdSalle + "'", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
@@ -401,8 +422,7 @@ app.get("/Capteur/Valeur/:IdSalle" , (req,res) =>
 })
 
 //Chercher une valeur precise dans une salle garce a son type 
-app.get("/Capteur/Valeur/:IdSalle/:IdValueType" , (req,res) =>
-{
+app.get("/Capteur/Valeur/:IdSalle/:IdValueType", (req, res) => {
     conn.query("select H.valeur , VT.libelle , S.nom from Historique H , ValueType VT , Box B , Salle S where H.id_valuetype = VT.id_valuetype and H.id_box = B.id_box and B.id_salle = S.id_salle AND S.id_salle = '" + req.params.IdSalle + "' and H.id_valuetype = '" + req.params.IdValueType + "'", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
@@ -414,12 +434,10 @@ app.get("/Capteur/Valeur/:IdSalle/:IdValueType" , (req,res) =>
 })
 
 
-//Pas fait attente nouvelle insert -------------------------------------
 //Recup valeur d un capteur specifique
-app.get("/Capteur/ValeurSpecifique/:IdDevice" , (req,res) =>
-{
+app.get("/Capteur/ValeurSpecifique/:IdDevice", (req, res) => {
     //les jointures ne fonctionait pas
-    var id_box , id_valuetype;
+    var id_box, id_valuetype;
     conn.query("select id_box , id_valuetype from Device where id_device = '" + req.params.IdDevice + "'", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
@@ -428,7 +446,7 @@ app.get("/Capteur/ValeurSpecifique/:IdDevice" , (req,res) =>
                 id_box = result.id_box;
                 id_valuetype = result.id_valuetype;
             });
-            conn.query("select * from Historique where id_box = '" + id_box+ "' and id_valuetype = '" + id_valuetype + "'", function(err, result) {
+            conn.query("select * from Historique where id_box = '" + id_box + "' and id_valuetype = '" + id_valuetype + "'", function(err, result) {
                 if (err)
                     res.status(400).json({ ErrorRequete: 'Requete invalid' });
                 else {
@@ -438,12 +456,10 @@ app.get("/Capteur/ValeurSpecifique/:IdDevice" , (req,res) =>
         }
     });
 })
-// En attendant des nouveau insert
-// SELECT S.id_salle , D.id_devicetype FROM Device D, Box B , Salle S WHERE D.id_box = B.id_box AND B.id_salle = S.id_salle AND D.id_device = 1
 
-app.get("/Capteur/ValeurSpecifique/Last/:IdDevice" , (req,res) =>
-{
-    conn.query("", function(err, result) {
+
+app.get("/Capteur/List/Historique", (req, res) => {
+    conn.query("select ValueType.libelle , Device.id_device , Historique.valeur , ValueType.unite from Historique , Device , ValueType WHERE Historique.id_device = Device.id_device AND Device.id_valuetype = ValueType.id_valuetype ", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -453,9 +469,19 @@ app.get("/Capteur/ValeurSpecifique/Last/:IdDevice" , (req,res) =>
     });
 })
 
-app.get("/Capteur/ValeurSpecifique/Moyenne/:IdDevice" , (req,res) =>
-{
-    conn.query("", function(err, result) {
+app.get("/Capteur/ValeurSpecifique/Last/:IdDevice", (req, res) => {
+    conn.query("select Historique.valeur , ValueType.unite , ValueType.libelle from Historique , Device , ValueType WHERE Historique.id_device = Device.id_device AND Device.id_valuetype = ValueType.id_valuetype AND Historique.id_device = 1 order by Historique.valeur desc LIMIT 1", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+app.get("/Capteur/ValeurSpecifique/Moyenne/:IdDevice", (req, res) => {
+    conn.query("select AVG(Historique.valeur) as Moyenne , ValueType.unite , ValueType.libelle from Historique , Device , ValueType WHERE Historique.id_device = Device.id_device AND Device.id_valuetype = ValueType.id_valuetype AND Historique.id_device = 1 order by Historique.valeur desc LIMIT 1", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -491,6 +517,8 @@ app.put("/Alerte/NotPenurie/:IdEquipement/:IdSalle", (req, res) => {
 
 //-----------------------------------POST--------------------------------
 
+//Personne --------------------
+//Ajout personne
 app.post("/Personne/Add/:NumRef/:IdPersType/:Password/:Email/:Tel/:Sexe/:Nom/:Prenom/:Birth/:IdPromo", (req, res) => {
 
     var idUser;
@@ -539,7 +567,6 @@ app.post("/Personne/Add/:NumRef/:IdPersType/:Password/:Email/:Tel/:Sexe/:Nom/:Pr
 
 })
 
-
 //Ajout d'un utilisateur rapide
 app.post("/Personne/Add/Test/:Nom/:Prenom", (req, res) => {
 
@@ -552,7 +579,21 @@ app.post("/Personne/Add/Test/:Nom/:Prenom", (req, res) => {
     });
 })
 
+//DORIAN
+//Creation d'une promo AFAIRE TODO: Choisir idFormation avec dropdown LIST , idProfesseur avec dropdown LIST faite
+app.post("/Personne/Add/Promo/:IdFormation/:Annee/:IdProfesseur", (req, res) => {
 
+    conn.query("INSERT INTO `Promotion`(`id_formation`, `id_professeur`, `annee`) VALUES ('" + req.params.IdFormation + "','" + req.params.IdProfesseur + "','" + req.params.Annee + "')", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json("Promotion cree");
+        }
+    });
+})
+
+
+//Covid-------------------
 //Envoie nouveau covid vers CasCovid
 app.post("/Alerte/Covid/:IdPersonne", (req, res) => {
 
@@ -561,6 +602,95 @@ app.post("/Alerte/Covid/:IdPersonne", (req, res) => {
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
             res.status(200).json("Utilisateur test cree");
+        }
+    });
+})
+
+
+//Capteur --------------
+
+//DORIAN
+//creation box , Voir nouveau parametre //DropDwn Salle et deviceType
+app.post("/Capteur/Add/Box/:IdSalle/:IdDeviceType/:AddrMac/:AddrIp/:Libelle/:Description/:DateInstallation", (req, res) => {
+
+    conn.query("INSERT INTO `Box`(`id_salle`, `id_devicetype`, `adr_mac`, `adr_ip`, `libelle`, `description`, `date_installation`) VALUES ('" + req.params.IdSalle + "','" + req.params.IdDeviceType + "','" + req.params.AddrMac + "','" + req.params.AddrIp + "','" + req.params.Libelle + "','" + req.params.Description + "','" + req.params.DateInstallation + "')", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json("Box cree");
+        }
+    });
+})
+
+//DORIAN
+//Creation capteur (nom , capteur , box) il faut IdBox , IdDeviceType , idValueType , libelle , SeuilMin , SeuilMax
+//Sinon mettre des valeur defini pour ne pas mettre de seuil genre 99 et 99 puis faire traitement en dessous.
+app.post("/Capteur/Add/Capteur/:IdBox/:IdDeviceType/:idValueType/:libelle/:SeuilMin?/:SeuilMax?", (req, res) => {
+
+    //Traitement seuil min et seuil max
+    var SeuilMin = req.params.SeuilMin != undefined ? req.params.SeuilMin : ''
+    var SeuilMax = req.params.SeuilMax != undefined ? req.params.SeuilMax : ''
+
+    conn.query("INSERT INTO `Device`(`id_box`, `id_devicetype`, `id_valuetype`, `libelle`, `seuil_min`, `seuil_max`) VALUES ('" + req.params.IdBox + "','" + req.params.IdDeviceType + "','" + req.params.idValueType + "','" + req.params.libelle + "','" + SeuilMin + "','" + SeuilMax + "')", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json("Capteur cree");
+        }
+    });
+})
+
+//DORIAN
+//creation actionneur peut etre capteur bouton dans Devicetype = 11 Voir dropdown ValueType je ne sais pas celui d un actionneur
+app.post("/Capteur/Add/Actionneur/:IdBox/:IdValueType/:Libelle", (req, res) => {
+
+    conn.query("INSERT INTO `Device`(`id_box`, `id_devicetype`, `id_valuetype`, `libelle`) VALUES ('" + req.params.IdBox + "', 11 ,'" + req.params.IdValueType + "','" + req.params.libelle + "')", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json("Actionneur cree");
+        }
+    });
+})
+
+//DORIAN
+//creation panneau solaire peut etre capteur bouton dans Devicetype = 17 , 7 en ValueType (Lumens)
+app.post("/Capteur/Add/PanneauSolaire/:IdBox/:Libelle", (req, res) => {
+
+    conn.query("INSERT INTO `Device`(`id_box`, `id_devicetype`, `id_valuetype`, `libelle`) VALUES ('" + req.params.IdBox + "', 17 ,7,'" + req.params.libelle + "')", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: err });
+        else {
+            res.status(200).json("Panneau solaire cree");
+        }
+    });
+})
+
+
+//Batiment --------------
+
+//DORIAN
+//Creation d'un batiment (nom , superficie , idCampus) //Juste besoin de ca 
+app.post("/Batiment/Add/Batiment/:Nom/:Superficie/:IdCampus", (req, res) => {
+
+    conn.query("INSERT INTO `Batiment`(`id_site`, `nom`, `surface`) VALUES ('" + req.params.IdCampus + "','" + req.params.Nom + "','" + req.params.Superficie + "')", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json("Batiment cree");
+        }
+    });
+})
+
+//DORIAN
+//Creation dune salle (IdEtage , Nom , ...) //Revoir les parametres releves , Faire avec dropdown pour etage faites
+app.post("/Batiment/Add/Salle/:IdEtage/:Nom/:CapaciteMax/:Surface/:Volume", (req, res) => {
+
+    conn.query("INSERT INTO `Salle`(`id_etage`, `nom`, `capacite_max`, `surface`, `volume`) VALUES ('" + req.params.IdEtage + "','" + req.params.Nom + "','" + req.params.CapaciteMax + "','" + req.params.Surface + "','" + req.params.Volume + "')", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json("Salle cree");
         }
     });
 })
