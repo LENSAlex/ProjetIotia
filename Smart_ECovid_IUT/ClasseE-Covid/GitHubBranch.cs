@@ -20,6 +20,5 @@ namespace ClasseE_Covid
 
         [JsonPropertyName("disponible")]
         public bool Disponible { get; set; }
-
     } 
 }

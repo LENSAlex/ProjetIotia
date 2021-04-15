@@ -15,5 +15,11 @@ namespace ClasseE_Covid.Promotion
 
         [JsonPropertyName("duree")]
         public int Duree { get; set; }
+
+        [JsonPropertyName("...")]
+        public int idProf { get; set; }
+
+        [JsonPropertyName("...")]
+        public string nomProf { get; set; }
     }
 }

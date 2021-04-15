@@ -16,32 +16,32 @@
                 <div class="card-body border-bottom">
                     <form>
                         <div class="form-row">
-                            <div class="col-md-4 mb-3">
+                            <div class="col-md-6 mb-3">
                                 <label for="Nom">Nom</label>
-                                <input type="text" class="form-control" id="Nom" placeholder="Nom" required />
+                                <input type="text" class="form-control leNom" id="Nom" placeholder="Nom" required />
                             </div>
-                            <div class="col-md-4 mb-3">
+                            <div class="col-md-6 mb-3">
                                 <label for="Nom">Km²</label>
-                                <input type="text" class="form-control" id="Ip" placeholder="200" required />
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <label for="Nom">Description</label>
-                                <input type="text" class="form-control" id="Ip" placeholder="Description" required />
+                                <input type="text" class="form-control laSurface" id="surface" name="surface" placeholder="200" required />
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label for="Nom">Etage</label>
-                                <input type="text" class="form-control" id="Etage" placeholder="8" required />
+                                <input type="text" class="form-control lEtage" id="etage" name="etage" placeholder="8" required />
                             </div>
                             <div class="col-md-6 mb-3 ">
                                 <label for="Batiment">Campus</label>
-                                <select class="form-control select2-multiple" aria-hidden="true">
+                                <select class="form-control select2-multiple leCampus" name="campus" aria-hidden="true">
                                     <option data-tokens="ketchup mustard">Sophia </option>
                                     <option data-tokens="mustard">Fabron</option>
                                     <option data-tokens="frosting">Carlone</option>
                                 </select>
                             </div>
+                            <div class="etageenplus">
+
+                            </div>
+
                         </div>
-                        <button class="btn btn-primary" type="submit">Submit form</button>
+                        <button class="btn btn-primary envoie" type="submit">Envoie</button>
                     </form>
                 </div>
             </div>
@@ -77,3 +77,30 @@
         </div>
     </div>
 </div>
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
+    $(".lEtage").keyup(function (e) {
+
+        $(this).val($(this).val().replace(/[a-zA-Z]/, ""));
+
+        if ($(this).val() == "0") {
+            $(this).val("1");
+        }
+
+        if ($(this).val() >= 6) {
+            $(this).val("6");
+        }
+
+        for (var i = 0; i >= $(this).val(); i++)
+        {
+            var txt1 = '<div class="col-md-12 mb-3">\
+                            <label for= "Nom">Superfice</label> \
+                            <input type="text" class="form-control" id="Superfice'+ i + '" placeholder="Superfice' + i + '" required /> \
+                        </div >';
+        }
+
+    $(".etageenplus").append(txt1);
+    })
+</script>

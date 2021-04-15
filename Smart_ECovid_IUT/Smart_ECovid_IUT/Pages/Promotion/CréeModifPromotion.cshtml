@@ -11,7 +11,7 @@
         <div class="col-md-12 mb-4">
             <div class="card mb-4">
                 <div class="card-header border-bottom">
-                    <h3>Création une Promotion</h3>
+                    <h3>Création une Formation</h3>
                 </div>
                 <div class="card-body border-bottom">
 
@@ -23,14 +23,18 @@
                             </div>
                             <div class="col-md-4 mb-3">
                                 <label for="Nom">Année</label>
-                                <input type="text" class="form-control" id="id" name="id" placeholder="Ip" required />
+                                <input type="text" class="form-control" id="id" name="id" placeholder="2020" required />
                             </div>
                             <div class="col-md-4 mb-3">
-                              <label for="Batiment">Durée</label>
-                                <select class="form-control select" aria-hidden="true" id="duree" name="duree">
+                                <label for="Batiment">Durée</label>
+                                <input type="text" class="form-control" id="duree" name="duree" placeholder="1" required />
+
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="Batiment">Prof principale</label>
+                                <select class="form-control select" aria-hidden="true" id="prof" name="prof">
                                     <option value="1">True</option>
-                                    <option value="0">False</option>
-                                </select>/>
+                                </select>
                             </div>
                         </div>
                         <button class="btn btn-primary" type="submit" asp-page-handler="EnvoieDonne">Ajouter</button>
