@@ -11,15 +11,19 @@ Vous trouverez la documentation [Ici](https://nodejs.org/en/)
 
 # Capteur "Gaz" : 
 Le Capteur de gaz est un MH MQ Sensor, qui capte le taux de gaz présent dans une salle. Plus la valeur augmente, moins il y aura d'oxygène. Il est relié à un M5StickC et les données sont transmises par le pin 36
+Vous trouverez la documentation [Ici](https://nodejs.org/en/)
 
 # Haut Parleur : 
 L'haut parleur fonctionne sur un M5Stack, il jouera différents sons en fonction des données reçus. 
+Vous trouverez la documentation [Ici](https://nodejs.org/en/)
 
 # Capteur "fenêtre" :
 Le capteur de fenêtre est directement relié à un M5StickC sur le pin 0
+Vous trouverez la documentation [Ici](https://nodejs.org/en/)
 
 # Code pyhton : 
 Vous trouverez un code python utilisé sur un raspberry Pi pour collecter les différentes valeurs des capteurs, envoyer les données au Broker MQTT ainsi que r'envoyer des alertes au M5Stack pour qu'il puisse jouer un son d'alerte. 
+Vous trouverez la documentation [Ici](https://nodejs.org/en/)
 
 # Installation Capteurs :
 Pour le bon fonctionnement de l'ensemble des capteurs/haut parleur, veuillez téléverser les différents codes sur les bon appareils. 
