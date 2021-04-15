@@ -1,0 +1,25 @@
+# Memo fresh install Rasp 
+
+Stqrting with fresh install of raspb lite 
+
+
+## NETWORKING 
+
+By default wifi is blocked on fres install (http://www.geekmind.net/2011/01/linux-wifi-operation-not-possible-due.html#:~:text=Linux%20WiFi%3A%20operation%20not%20possible%20due%20to%20RF-kill,rfkill%27s%20soft%20and%20hard%20block%20from%20syncing%20correctly.)
+```rfkill unblock wifi```
+
+Wifi might be soft blocked to(https://unix.stackexchange.com/questions/45338/iwlist-interface-doesnt-support-scanning-ubuntu-lts-10-04)
+
+bring down/ mode managed / up 
+```
+sudo ifconfig wlan0 down
+sudo iwconfig wlan0 mode Managed
+sudo ifconfig wlan0 up
+sudo iwlist wlan0 scan
+```
+
+To configure wpa suplicant(https://linuxconfig.org/how-to-connect-to-wifi-from-the-cli-on-debian-10-buster)
+
+/!\ interface reseau par defaut : p2p-interfqce, l'enlever dans /var/run/wpa_supplicant/p2p...
+
+

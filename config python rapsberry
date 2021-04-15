@@ -1,0 +1,9 @@
+librairie python à installer :
+-sudo -H pip3 install paho-mqtt opencv-python bluepy
+
+-sudo -H pip install paho-mqtt pi-rc522
+
+
+-git clone https://github.com/the-raspberry-pi-guy/lcd
+#copier le fichier driver et le mettre dans le dossier avec le programme python qui l'écran lcd
+-cp -r lcd/driver "chemin ou se trouve le programme python"
