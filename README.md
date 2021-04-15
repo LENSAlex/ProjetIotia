@@ -116,6 +116,7 @@ Envoyez une requête POST sur https://nomduprojet.azurewebsites.net/api/notifica
 }
 ```
 Pour envoyer une notification, envoyez simplement un requête post via la librairie HttpClient de Visual Studio et en lui envoyant votre chaîne json.
+Il est aussi important de noter que pour recevoir convenablement les notifications, il faut que votre smartphone aie la dernière version de l'application, sinon le Hub de Notification n'arrive pas à vous retrouver étant donnée que la compilation et l'installation change certaines données uniques dont l'API a besoin. Il va aussi de soit que si vous avez l'application ouverte, vous ne recevrai pas de notification. 
 
 # Définitions des WebServices:
 
