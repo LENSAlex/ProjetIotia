@@ -15,7 +15,7 @@ Ce WebService est décomposé en plusieurs services voir le tableau ci dessous:
 | Nom du service | Port | Remarque |
 | --- | --- | --- |
 | Infrastructure  | 3000 | Service pour avoir des informations sur les infrastructures |
-| Personne| 3001 | Service pour avoir des informations sur les membres de l'iut (etudiant , professeur , ..)|
+| Usager | 3001 | Service pour avoir des informations sur les membres de l'iut (etudiant , professeur , ..)|
 | Covid | 3002 | Service pour gérer les cas covid |
 | Capteur  | 3003 | Service qui traite les informations des capteurs (derniere valeur , moyenne , max , min) |
 
