@@ -40,11 +40,5 @@ namespace ProjetGroupe.Models
         {
             return HistoriqueManager.Load(CapteurId);
         }
-        //TODO Generation PDF donnees capteur + Affichage données capteur 
-        //Manque le num de la salle
-        //Changement des routes
-        //Voir pour la Fonction update stock + fonction request load by id
-        //Les modifs alex pour page list capteur
     }
-
 }

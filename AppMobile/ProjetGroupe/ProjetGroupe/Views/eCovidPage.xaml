@@ -55,34 +55,5 @@
             </ListView.ItemTemplate>
         </ListView>
         <Label Grid.Row="2" x:Name="Label1" Text="{Binding Erreur}" Margin="20,-30,20,20"  TextColor="red" IsVisible="False" FontSize="14" HorizontalOptions="Center"/>
-        <!--<ScrollView Grid.Row="3">
-            <StackLayout BindableLayout.ItemsSource="{Binding Items}">
-                <BindableLayout.ItemTemplate>
-                    <DataTemplate>
-                        <Frame BackgroundColor="White" BorderColor="#F0F0F0" Padding="5" Margin="0,0,0,5" HasShadow="true">
-                            <Grid HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="Start"  Padding="10,-5,0,0">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="Auto"/>
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
-
-                                <Image Grid.Column="2" Source="data.png" WidthRequest="18" HeightRequest="18" HorizontalOptions="Center" VerticalOptions="Center"/>
-
-                                <Label FontFamily="ThemeFontBold" Text="ID #" TextColor="Black" FontSize="10" VerticalOptions="Center"/>
-                                <Label FontFamily="ThemeFontBold" Text="{Binding Id}" TextColor="Black" FontSize="10" Margin="20,0" FontAttributes="Bold" VerticalOptions="Center"/>
-                                <BoxView Grid.Column="0" BackgroundColor="#FFC396" WidthRequest="8" Margin="-14,-10" HorizontalOptions="Start" 
-                                                 VerticalOptions="FillAndExpand"/>
-                                <Label FontFamily="ThemeFontBold" Text="{Binding LibelleType}" TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="50,0,20,0"/>
-
-                                <StackLayout Grid.Column="2" Orientation="Horizontal" Margin="20,0" HorizontalOptions="End" VerticalOptions="Center">
-                                    <Label FontFamily="ThemeFontBold" Text="{Binding Description}" TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="20,0"/>
-                                </StackLayout>
-                            </Grid>
-                        </Frame>
-                    </DataTemplate>
-                </BindableLayout.ItemTemplate>
-            </StackLayout>
-        </ScrollView>-->
     </Grid>
 </ContentPage>

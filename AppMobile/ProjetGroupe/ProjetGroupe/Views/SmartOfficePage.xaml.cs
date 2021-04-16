@@ -89,15 +89,10 @@ namespace ProjetGroupe.Views
             }
          
         }
-        //public async void GetSalle(string numsalle)
-        //{
-        //    _Salle = await Salle.LoadSalleByNom(numsalle);
-        //}
         public async Task GetDisplayChoiceAsync(int idEquip)        
         {
             var resultPrompt = await DisplayPromptAsync("Choisissez une salle","Numéro de la salle:");
             _Salle = await Salle.LoadSalleByNom(resultPrompt);
-            //GetSalle(resultPrompt);
             if (_Salle != null)
             {
                 Salle laSalle = new Salle();
@@ -116,7 +111,6 @@ namespace ProjetGroupe.Views
                 }
             }        
         }
-
         public void SetInfo()
         {
             Personne personne = Personne.IsLogged();

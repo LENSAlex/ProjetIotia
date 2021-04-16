@@ -17,22 +17,11 @@ namespace ProjetGroupe.Droid
     [Activity(Theme = "@style/splashscreen", NoHistory = true, MainLauncher = true)]
     public class SplashActivity : AppCompatActivity
     {
-        // Launches the startup task
-        //protected override void OnResume()
-        //{
-        //    base.OnResume();
-        //    Task startupWork = new Task(() => { SimulateStartup(); });
-        //    startupWork.Start();
-        //}
         protected override void OnResume()
         {
             base.OnResume();
             StartActivity(typeof(MainActivity));
         }
-
-        // Prevent the back button from canceling the startup process
         public override void OnBackPressed() { }
-
-        // Simulates background work that happens behind the splash screen
     }
 }

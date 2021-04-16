@@ -55,7 +55,6 @@ namespace ProjetGroupe.Views
             Xamarin.Essentials.SecureStorage.SetAsync("BoxName", obj.Libelle.ToString());
             Xamarin.Essentials.SecureStorage.SetAsync("NomBat", obj.Nom.ToString());
             Application.Current.MainPage = new CapteursDetailsPage();
-            //Shell.Current.GoToAsync($"{nameof(CapteursDetailsPage)}");
             searchResults.ItemsSource = null;
             searchBar.Text = "";
         }

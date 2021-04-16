@@ -53,8 +53,6 @@ namespace ProjetGroupe.Views
             SecureStorage.SetAsync("NomBat", obj.Nom.ToString());
             SecureStorage.SetAsync("Liste", "Liste");
             Application.Current.MainPage = new CapteursDetailsPage();
-
-       //     Shell.Current.GoToAsync($"{nameof(CapteursDetailsPage)}");
         }
         protected override void OnAppearing()
         {

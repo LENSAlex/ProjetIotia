@@ -200,26 +200,6 @@ namespace ProjetGroupe.Views
                 SecureStorage.Remove("NomBat");
             }
         }
-        //public void OnImageButtonClicked2(object sender, EventArgs e)
-        //{
-        //    var liste = SecureStorage.GetAsync("Liste").Result;
-        //    if (liste != null)
-        //    {
-        //        Shell.Current.GoToAsync($"{nameof(eCovidPage)}");
-        //        SecureStorage.Remove("Liste");
-        //        SecureStorage.Remove("CapteurId");
-        //        SecureStorage.Remove("BoxName");
-        //        SecureStorage.Remove("NomBat");
-        //    }
-        //    else
-        //    {
-        //        Shell.Current.GoToAsync($"{nameof(SmartBuildingPage)}");
-        //        SecureStorage.Remove("CapteurId");
-        //        SecureStorage.Remove("BoxName");
-        //        SecureStorage.Remove("NomBat");
-        //    }
-        //}
-
         protected override void OnAppearing()
         {
             base.OnAppearing();

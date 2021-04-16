@@ -43,7 +43,6 @@ namespace ProjetGroupe.Droid
 
             FirebaseApp.InitializeApp(this.ApplicationContext);
             var fb = FirebaseApp.InitializeApp(this.ApplicationContext);
-            //NotificationHub.SetListener(new AzureListener());
             NotificationHub.Start(this.Application, Config.NotificationHubName, Config.NotificationEndPoint);
         }
 
@@ -53,21 +52,6 @@ namespace ProjetGroupe.Droid
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
-        //void CreateNotificationChannel()
-        //{
-        //    if (Build.VERSION.SdkInt < BuildVersionCodes.O)
-        //    {
-        //        return;
-        //    }
-
-        //    var channel = new NotificationChannel(Config.NotificationChannelID, "Notification", NotificationImportance.Default)
-        //    {
-        //        Description = "Test de notification via firebase"
-        //    };
-        //    var notificationManager = (NotificationManager)GetSystemService(Android.Content.Context.NotificationService);
-        //    notificationManager.CreateNotificationChannel(channel);
-        //}
-
         public void OnSuccess(Java.Lang.Object result)
             => DeviceInstallationService.Token =
                 result.Class.GetMethod("getToken").Invoke(result).ToString();
@@ -112,7 +96,6 @@ namespace ProjetGroupe.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             FirebaseApp.InitializeApp(this.ApplicationContext);
-            //NotificationHub.SetListener(new AzureListener());
             NotificationHub.Start(this.Application, Config.NotificationHubName, Config.NotificationEndPoint);
         }
     }
