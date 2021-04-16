@@ -19,29 +19,24 @@ namespace ProjetGroupe.ViewModels
     {
         public Command LoginCommand { get; }
         public Command SaveCommand { get; }
-        // public string userPref = "userPref";
-        // public ISharedPreferences session = GetSharedPreferences(userPref, FileCreationMode.Private);
-        public static CookieContainer CookieContainer = new CookieContainer();
-
-        private string identifiant;
-        private string password;
-        public LoginViewModel()
-        {
-            LoginCommand = new Command(OnLoginClicked);
-        }
-
         public string Erreur { get; set; }
 
+        private string identifiant;
         public string Identifiant
         {
             get => identifiant;
             set => SetProperty(ref identifiant, value);
         }
-
+        private string password;
         public string Password
         {
             get => password;
             set => SetProperty(ref password, value);
+        }
+
+        public LoginViewModel()
+        {
+            LoginCommand = new Command(OnLoginClicked);
         }
 
         private async void OnLoginClicked(object obj)
@@ -75,15 +70,10 @@ namespace ProjetGroupe.ViewModels
 
             if (tags != null)
             {
-                token = Xamarin.Essentials.SecureStorage.GetAsync("HubToken").Result;
-                //  tagList.Add(App.Current.ToString());
-                //  tagList.Add("DCW");
-               
+                token = Xamarin.Essentials.SecureStorage.GetAsync("HubToken").Result;              
                 tagList.Add(tags);
-                tagList.Add("DCW");
-          
+                tagList.Add("DCW");         
                 reg = Xamarin.Forms.DependencyService.Get<IRegisterNotifications>();
-
                 reg.RegisterDevice(token, tagList);
             }
         }

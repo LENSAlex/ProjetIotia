@@ -36,7 +36,9 @@ namespace ProjetGroupe.ViewModels
         }
         public async void SendNotification()
         {
+            await Xamarin.Essentials.SecureStorage.SetAsync("SendNotif", "1");
             await Alerte.SendNotification();
+
         }
     }
 }

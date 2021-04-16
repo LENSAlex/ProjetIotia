@@ -19,25 +19,18 @@ namespace ProjetGroupe.Models
 
         [JsonProperty("id_personne")]
         public int Id_personne { get; set; }  
-        public int CapaciteMax { get; set; }
-        public int surface { get; set; }
-        public int Volume { get; set; }
-
         public static Salle Load(int Id)
         {
             return new Salle();
         }
-        //Pour la recherche
         public static Task<List<Salle>> LoadSalleByNom(string nomSalle)
         {
             return SalleManager.LoadSalleByNom(nomSalle);
         }
-        //Pour la pénurie
         public static Task<List<Salle>> ListSalleOfEleve()
         {
             return SalleManager.ListSalleOfEleve();
         }
-
         public static Task<List<CapteurType>> ListCapteurBySalleId(string nomSalle)
         {
             return SalleManager.ListCapteurBySalleId(nomSalle);

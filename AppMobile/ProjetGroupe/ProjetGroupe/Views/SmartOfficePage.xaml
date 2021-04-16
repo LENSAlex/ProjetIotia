@@ -25,14 +25,11 @@
         <Frame Grid.Row="1" HasShadow="True" CornerRadius="15" Margin="20,-30,20,0" Padding="0" HeightRequest="120" VerticalOptions="Start">
             <Grid HorizontalOptions="Center" VerticalOptions="Center">
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                    <Label FontFamily="ThemeFontBold" Margin="0,20,0,20" Padding="10,5,10,5" Text="En cas de pénurie de gel hydro-alcoolique, panne du verseur, ou autres, veuillez l'indiquer en sélectionnant le produit dans la liste ci-dessous" TextColor="#96d1ff" FontSize="12" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    <Label FontFamily="ThemeFontBold" Margin="20,20,20,20" Padding="10,5,10,5" Text="En cas de pénurie de gel hydro-alcoolique, panne du verseur, ou autres, veuillez l'indiquer en sélectionnant le produit dans la liste ci-dessous" TextColor="#96d1ff" FontSize="12" HorizontalOptions="Center" VerticalOptions="Center"/>
                 </StackLayout>
             </Grid>
         </Frame>
-        <!--<Picker FontFamily="ThemeFontBold" x:Name="Picker" Grid.Row="2" Title="Choisir un produit" Margin="20,10,20,10" BackgroundColor="AliceBlue"  TitleColor="#96d1ff" SelectedIndexChanged="OnPickerSelectedIndexChanged" ItemsSource="{Binding ListEquipement}" SelectedItem="{Binding 
-                    Id, Mode=TwoWay}"  TextColor="Black" ItemDisplayBinding="{Binding Libelle}">
-        </Picker>-->
-        <ListView x:Name="ListEquipement" ItemsSource="{Binding Items}" HeightRequest="170" SeparatorVisibility="None" ItemSelected="OnItemSelected" IsPullToRefreshEnabled="True" RefreshCommand="{Binding RefreshCommand}"
+        <ListView x:Name="ListEquipement" ItemsSource="{Binding Items}" HeightRequest="120" SeparatorVisibility="None" ItemSelected="OnItemSelected" IsPullToRefreshEnabled="True" RefreshCommand="{Binding RefreshCommand}"
            IsRefreshing="{Binding IsRefreshing}"
                   Grid.Row="2" Margin="20,10,20,10">
             <ListView.ItemTemplate StyleClass="ListViewCustom">
@@ -45,7 +42,6 @@
                                     <ColumnDefinition Width="Auto"/>
                                     <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
-                                <!--<Image Grid.Column="2" Source="data.png" WidthRequest="18" HeightRequest="18" HorizontalOptions="Center" VerticalOptions="Center"/>-->
                                 <Label FontFamily="ThemeFontBold" Text="ID #" TextColor="Black" FontSize="10" VerticalOptions="Center"/>
                                 <Label FontFamily="ThemeFontBold" Text="{Binding Id}" TextColor="Black" FontSize="10" Margin="20,0" FontAttributes="Bold" VerticalOptions="Center"/>
                                 <BoxView Grid.Column="0" BackgroundColor="#FFC396" WidthRequest="8" Margin="-14,-10" HorizontalOptions="Start" 
@@ -60,6 +56,6 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Label Grid.Row="4" x:Name="Label1" Text="" TextColor="green" IsVisible="False" FontSize="16" HorizontalOptions="Center"/>
+        <Label Grid.Row="2" x:Name="Label1" Text="" Margin="20,-30,20,20"  TextColor="green" IsVisible="False" FontSize="14" HorizontalOptions="Center"/>
     </Grid>
 </ContentPage>

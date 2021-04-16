@@ -12,8 +12,6 @@ namespace ProjetGroupe.Models
     {
         [JsonProperty("id_device")]
         public int Id { get; set; }
-        [JsonProperty("libelle_type")]
-        public string LibelleType { get; set; }
         [JsonProperty("libelle")]
         public string Libelle { get; set; }
         [JsonProperty("nom")]

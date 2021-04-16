@@ -2,11 +2,13 @@
 using Syncfusion.Drawing;
 using Syncfusion.Pdf;
 using Syncfusion.Pdf.Graphics;
+using Syncfusion.Pdf.Grid;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
+using System.Linq;
 using System.Text;
 using Xamarin.Forms;
 
@@ -15,6 +17,7 @@ namespace ProjetGroupe.ViewModels
     public class eCovidViewModel : BaseViewModel
     {
         public event PropertyChangedEventHandler PropertyChanged;
+
         public ObservableCollection<CapteurType> items { get; set; }
         public ObservableCollection<CapteurType> Items
         {
@@ -41,34 +44,29 @@ namespace ProjetGroupe.ViewModels
         public eCovidViewModel()
         {
             Device.BeginInvokeOnMainThread(() => GetData());
-            ClickedTest = new Command(OnClickedTestClicked);
+            ClickedTest = new Command(OnClickedTestClickedAsync);
         }
 
-        private void OnClickedTestClicked(object obj)
+        private async void OnClickedTestClickedAsync(object obj)
         {
-            PdfDocument document = new PdfDocument();
-
-            //Add a page to the document
-            PdfPage page = document.Pages.Add();
-
-            //Create PDF graphics for the page
-            PdfGraphics graphics = page.Graphics;
-             
-            //Set the standard font
-            PdfFont font = new PdfStandardFont(PdfFontFamily.Helvetica, 20);
-
-            //Draw the text
-            graphics.DrawString("Données des capteurs", font, PdfBrushes.Black, new PointF(0, 0));
-
-            //Save the document to the stream
-            MemoryStream stream = new MemoryStream();
-            document.Save(stream);
-
-            //Close the document
-            document.Close(true);
-
-            //Save the stream as a file in the device and invoke it for viewing
-            DependencyService.Get<ISave>().SaveAndView("Output.pdf", "application/pdf", stream);
+            List<Historique> listeHisto = new List<Historique>();
+            listeHisto = await Historique.ListHistorique();
+            if (listeHisto != null)
+            {
+                List<Historique> data = new List<Historique>();
+                foreach (Historique histo in listeHisto)
+                {
+                    data.Add(new Historique
+                    {
+                        Id_device = histo.Id_device,
+                        Libelle = histo.Libelle,
+                        LibelleType = histo.LibelleType,
+                        Valeur = histo.Valeur,
+                        Unite = histo.Unite
+                    });
+                }
+                Personne.GeneratePdfAsync(40, data);                
+            }
         }
     }
 }

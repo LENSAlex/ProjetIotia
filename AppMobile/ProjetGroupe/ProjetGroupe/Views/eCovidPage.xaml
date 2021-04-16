@@ -17,12 +17,6 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Image Source="overlay.png" Aspect="Fill" HeightRequest="100" VerticalOptions="StartAndExpand"/>
-        <!--<StackLayout Orientation="Vertical" Margin="0,20" HorizontalOptions="Center" VerticalOptions="Center">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                <Label Text="/!\ E-Covid /!\" TextColor="White" FontSize="52" FontAttributes="Bold" VerticalOptions="Center"/>
-            </StackLayout>
-            <Label Text="Alertez l'établissement si vous avez des symptomes" TextColor="White" FontSize="16" HorizontalOptions="Center"/>
-        </StackLayout>-->
         <Frame BorderColor="AntiqueWhite" Grid.Row="0" HasShadow="True" CornerRadius="15" Margin="20,30,20,0" Padding="0" HeightRequest="120" VerticalOptions="Start">
             <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
                 <StackLayout Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
@@ -60,6 +54,7 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <Label Grid.Row="2" x:Name="Label1" Text="{Binding Erreur}" Margin="20,-30,20,20"  TextColor="red" IsVisible="False" FontSize="14" HorizontalOptions="Center"/>
         <!--<ScrollView Grid.Row="3">
             <StackLayout BindableLayout.ItemsSource="{Binding Items}">
                 <BindableLayout.ItemTemplate>

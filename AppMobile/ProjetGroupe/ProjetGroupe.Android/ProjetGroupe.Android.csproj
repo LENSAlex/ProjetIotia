@@ -93,10 +93,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AndroidFireBaseMessagingService.cs" />
-    <Compile Include="AzureListener.cs" />
     <Compile Include="MainActivity.cs" />
-    <Compile Include="MyFirebaseMessagingService .cs" />
     <Compile Include="RegisterNotifications.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -246,6 +243,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\mipmap-xxhdpi\splashscreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\xml\filepath.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>

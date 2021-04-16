@@ -11,8 +11,6 @@ namespace ProjetGroupe.Models.Manager
 {
     internal static class SalleManager
     {
-
-        //Cette fonction doit nous donner la liste des données (capteurs, co2, consommation de la salle à un instanté)
         internal static async Task<List<Salle>> LoadSalleByNom(string nomSalle)
         {
             var httpClient = new HttpClient();

@@ -10,7 +10,7 @@
              Shell.NavBarIsVisible="False"
              Shell.TabBarIsVisible="False"
              Shell.FlyoutItemIsVisible="False">
-    
+
     <ContentPage.Resources>
         <ResourceDictionary>
             <Color x:Key="Accent">#96d1ff</Color>
@@ -46,13 +46,14 @@
                         <StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="FillAndExpand">
 
                             <Image HeightRequest="22" WidthRequest="12" Source="address.png" VerticalOptions="Center" HorizontalOptions="Start"/>
-                            <Label FontFamily="ThemeFontBold" Text="Salle 209 Bâtiment IUT" FontSize="15" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center"/>
+                            <Label FontFamily="ThemeFontBold" Text="{Binding BoxName}" FontSize="12" TextColor="#96d1ff" HorizontalOptions="Start" VerticalOptions="Center"/>
+                            <Label FontFamily="ThemeFontBold" Text="Bâtiment:" FontSize="12" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center"/>
+                            <Label FontFamily="ThemeFontBold" Text="{Binding NomBat}" FontSize="12" TextColor="#96d1ff" HorizontalOptions="Start" VerticalOptions="Center"/>
+                            <Label FontFamily="ThemeFontBold" Text="Mesure:" FontSize="12" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center"/>
+                            <Label FontFamily="ThemeFontBold" Text="{Binding Libelle}" FontSize="12" TextColor="#96d1ff" HorizontalOptions="Start" VerticalOptions="Center"/>
                         </StackLayout>
                         <Label Text="Sortir" Margin="0,0,8,-5" FontSize="12" FontAttributes="Bold" TextColor="Black" FontFamily="ThemeFontBold" HorizontalOptions="End" VerticalOptions="End"/>
                         <ImageButton BackgroundColor="Transparent" HeightRequest="55" WidthRequest="55" Source="back.png" VerticalOptions="Center" Clicked="OnImageButtonClicked" HorizontalOptions="End"/>
-                        <!--<Grid.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
-                        </Grid.GestureRecognizers>-->
                     </Grid>
                     <StackLayout Grid.Row="1" Spacing="15" >
                         <Label Text="{Binding Date}" FontAttributes="Bold" FontSize="20" FontFamily="ThemeFontRegular" TextColor="Black"/>
@@ -60,30 +61,17 @@
                         </StackLayout>
                     </StackLayout>
                     <BoxView HeightRequest="1" VerticalOptions="Start" HorizontalOptions="FillAndExpand" BackgroundColor="AliceBlue"/>
-                    <StackLayout Orientation="Horizontal" Spacing="30" HorizontalOptions="Center">
+                    <StackLayout Orientation="Horizontal" Spacing="50" HorizontalOptions="Center">
                         <StackLayout>
-                            <pv:PancakeView BackgroundColor="#FFC396" HeightRequest="50" WidthRequest="50" CornerRadius="30" HorizontalOptions="Center">
-                                <Label Margin="17,15,8,0" Text="{Binding ValMoy}" FontSize="12" FontAttributes="Bold" TextColor="AliceBlue"/>
+                            <pv:PancakeView BackgroundColor="#96d1ff" HeightRequest="60" WidthRequest="60" CornerRadius="35" HorizontalOptions="Center">
+                                <Label Margin="19,22,8,0" Text="{Binding ValLast}" FontSize="10" FontAttributes="Bold" TextColor="Black"/>
                             </pv:PancakeView>
                             <Label Text="Maintenant" TextColor="Black" FontSize="12" FontFamily="ThemeFontMedium" HorizontalTextAlignment="Center"/>
-                            <Label Margin="17,15,8,0" Text="{Binding Unite}" FontSize="12" FontAttributes="Bold" TextColor="AliceBlue" />
-                     
+
                         </StackLayout>
                         <StackLayout>
-                            <pv:PancakeView BackgroundColor="#FFC396"  HeightRequest="50" WidthRequest="50" CornerRadius="30" HorizontalOptions="Center">
-                                <Label Margin="17,15,8,0" Text="53°" FontSize="12" FontAttributes="Bold" TextColor="AliceBlue"/>
-                            </pv:PancakeView>
-                            <Label Text="Hier" TextColor="Black" FontSize="12" FontFamily="ThemeFontMedium" HorizontalTextAlignment="Center"/>
-                        </StackLayout>
-                        <!--<StackLayout>
-                            <pv:PancakeView BackgroundColor="#FFC396" HeightRequest="50" WidthRequest="50" CornerRadius="30" HorizontalOptions="Center">
-                                <Label Margin="17,15,8,0" Text="53°" FontSize="12" FontAttributes="Bold" TextColor="AliceBlue"/>
-                            </pv:PancakeView>
-                            <Label Text="Seuil" TextColor="Black" FontSize="12" FontFamily="ThemeFontMedium" HorizontalTextAlignment="Center"/>
-                        </StackLayout>-->
-                        <StackLayout>
-                            <pv:PancakeView BackgroundColor="#FFC396" HeightRequest="50" WidthRequest="50" CornerRadius="30" HorizontalOptions="Center">
-                                <Label Margin="17,15,8,0" Text="{Binding ValMoy}" FontSize="12" FontAttributes="Bold" TextColor="AliceBlue"/>
+                            <pv:PancakeView BackgroundColor="#96d1ff" HeightRequest="60" WidthRequest="60" CornerRadius="35" HorizontalOptions="Center">
+                                <Label Margin="16,22,8,0" Text="{Binding ValMoy}" FontSize="10" FontAttributes="Bold" TextColor="Black"/>
                             </pv:PancakeView>
                             <Label Text="Moyenne" TextColor="Black" FontSize="12" FontFamily="ThemeFontMedium" HorizontalTextAlignment="Center"/>
                         </StackLayout>

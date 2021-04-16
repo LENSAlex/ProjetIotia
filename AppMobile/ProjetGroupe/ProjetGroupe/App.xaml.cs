@@ -17,15 +17,25 @@ namespace ProjetGroupe
     {
         void NotificationActionTriggered(object sender, PushAction e) => ShowActionAlert(e);
 
-        void ShowActionAlert(PushAction action)
-            => MainThread.BeginInvokeOnMainThread(()
-                => MainPage?.DisplayAlert("Alert Covid", $"{action} Cas covid alerté", "OK")
-                    .ContinueWith((task) => { if (task.IsFaulted) throw task.Exception; }));
+        async void ShowActionAlert(PushAction action)
+        {
+            string sendnotif = SecureStorage.GetAsync("SendNotif").Result;
+            if(sendnotif == "1")
+            {
+                SecureStorage.Remove("SendNotif");
+                return;
+            }
+            else
+            {
+                MainThread.BeginInvokeOnMainThread(() => MainPage?.DisplayAlert("Alerte Covid:", $"Un cas covid a été alerté", "OK").ContinueWith((task) => { if (task.IsFaulted) throw task.Exception; }));
+            }
+        }
+
         public App()
         {
             InitializeComponent();
             ServiceContainer.Resolve<IPushDemoNotificationActionService>().ActionTriggered += NotificationActionTriggered;
-
+           // SecureStorage.Remove("SendNotif");
             var isLoogged = SecureStorage.GetAsync("isLogged").Result;
             if (isLoogged == "1")
             {

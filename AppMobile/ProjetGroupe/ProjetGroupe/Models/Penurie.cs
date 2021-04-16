@@ -10,8 +10,8 @@ namespace ProjetGroupe.Models
     {
         public int Id { get; set; }
         public int Id_Equipement { get; set; }
+
         private int _SalleId;
-        //Id_Box
         public int SalleId
         {
             get

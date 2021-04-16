@@ -47,7 +47,6 @@ namespace ProjetGroupe.Views
         {
             ListEquipement.ItemsSource = await Equipement.ListEquipement();
         }
-        //3)SmartOffice => alerte à pénurie de produit avec choix du produit.
         private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var obj = (Equipement)e.SelectedItem;
@@ -83,18 +82,22 @@ namespace ProjetGroupe.Views
             }
             else
             {
+                Label1.TextColor = Color.Red;
+                Label1.Text = "Erreur";
+                Label1.IsVisible = true;
                 return;
             }
          
         }
-        public async void GetSalle(string numsalle)
-        {
-            _Salle = await Salle.LoadSalleByNom(numsalle);
-        }
+        //public async void GetSalle(string numsalle)
+        //{
+        //    _Salle = await Salle.LoadSalleByNom(numsalle);
+        //}
         public async Task GetDisplayChoiceAsync(int idEquip)        
         {
             var resultPrompt = await DisplayPromptAsync("Choisissez une salle","Numéro de la salle:");
-            GetSalle(resultPrompt);
+            _Salle = await Salle.LoadSalleByNom(resultPrompt);
+            //GetSalle(resultPrompt);
             if (_Salle != null)
             {
                 Salle laSalle = new Salle();
@@ -106,6 +109,9 @@ namespace ProjetGroupe.Views
                 }
                 else
                 {
+                    Label1.TextColor = Color.Red;
+                    Label1.Text = "Erreur";
+                    Label1.IsVisible = true;
                     return;
                 }
             }        
@@ -126,23 +132,5 @@ namespace ProjetGroupe.Views
             ListEquipement.TranslationY = 600;
             ListEquipement.TranslateTo(0, 0, 500, Easing.SinInOut);
         }
-        //public void OnPickerSelectedIndexChanged(object sender, EventArgs e)
-        //{
-        //    var picker = (Picker)sender;
-        //    var selectedIndex = (Personne)picker.SelectedItem;
-        //    int Id = Convert.ToInt32(selectedIndex.Id);
-        //    if (Id != 0)
-        //    {
-        //        Personne personne = Personne.Load(Id);
-        //        if (personne != null)
-        //        {
-        //            GetDisplayChoiceAsync();
-        //        }
-        //        else
-        //        {
-        //            return;
-        //        }
-        //    }
-        //}
     }
 }

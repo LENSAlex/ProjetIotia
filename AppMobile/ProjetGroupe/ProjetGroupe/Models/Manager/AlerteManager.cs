@@ -15,7 +15,6 @@ namespace ProjetGroupe.Models.Manager
             string WebAPIUrl = Configuration.BackendServiceEndpoint + "api/notifications/requests";
             Uri uri = new Uri(WebAPIUrl);
             httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
-            //httpClient.DefaultRequestHeaders.Add("Content-Type", "application/problem+json; charset=utf-8");
             StringBuilder sb = new StringBuilder();
 
             sb.Append(@"{""text"" : ""Attention, une personne a été signalé ayant la covid"",");

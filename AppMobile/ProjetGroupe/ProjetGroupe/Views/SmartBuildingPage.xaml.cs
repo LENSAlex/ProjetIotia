@@ -52,7 +52,10 @@ namespace ProjetGroupe.Views
             var obj = (CapteurType)e.SelectedItem;
             var ide = Convert.ToInt32(obj.Id);
             Xamarin.Essentials.SecureStorage.SetAsync("CapteurId", ide.ToString());
-            Shell.Current.GoToAsync($"{nameof(CapteursDetailsPage)}");
+            Xamarin.Essentials.SecureStorage.SetAsync("BoxName", obj.Libelle.ToString());
+            Xamarin.Essentials.SecureStorage.SetAsync("NomBat", obj.Nom.ToString());
+            Application.Current.MainPage = new CapteursDetailsPage();
+            //Shell.Current.GoToAsync($"{nameof(CapteursDetailsPage)}");
             searchResults.ItemsSource = null;
             searchBar.Text = "";
         }
@@ -83,17 +86,4 @@ namespace ProjetGroupe.Views
             searchResults.ItemsSource = _CapteurType;
         }
     }
-    //ScrollViews
-
-    //Voir si on peut mettre en place l'Excpander + Animation et background page CapteurDetails + animation listeview
-}      //Notification Hub plz
-      
-    //2)SmartBuilding => affichage des énergie, Co2, température 
-
-    //Recherche de données en fonction de la salle entrée
-
-
-//arrangé la listviews de façon a voir la liste entière
-
-//Une page complète de la liste des capteurs
-//Une page pour la recherche des capteurs
+}   

@@ -15,8 +15,14 @@ namespace ProjetGroupe.Views
 
     public partial class CapteursDetailsPage : ContentPage, INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler PropertyChanged;
+        public void RaisepropertyChanged(string propertyName)
+        {
+            if (PropertyChanged != null)
+                PropertyChanged.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
 
-        public Capteur Capteur { get; set; }
+        public DateTime Date { get; set; } = DateTime.Now;
         public string CapteurId { get; set; }
 
         public string valmoy;
@@ -30,6 +36,19 @@ namespace ProjetGroupe.Views
             {
                 valmoy = value;
                 RaisepropertyChanged("ValMoy");
+            }
+        }
+        public string vallast;
+        public string ValLast
+        {
+            get
+            {
+                return vallast;
+            }
+            set
+            {
+                vallast = value;
+                RaisepropertyChanged("ValLast");
             }
         }
         public string unit;
@@ -71,23 +90,41 @@ namespace ProjetGroupe.Views
                 RaisepropertyChanged("LibelleType");
             }
         }
-        public event PropertyChangedEventHandler PropertyChanged;
-        public void RaisepropertyChanged(string propertyName)
+        public string boxname;
+        public string BoxName
         {
-            if (PropertyChanged != null)
-                PropertyChanged.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            get
+            {
+                return boxname;
+            }
+            set
+            {
+                boxname = value;
+                RaisepropertyChanged("BoxName");
+            }
         }
-
-        public DateTime Date { get; set; } = DateTime.Now;
-        public async Task GetCapteur()
+        public string nombat;
+        public string NomBat
         {
-           // Capteur = await Capteur.Load(Convert.ToInt32(CapteurId));
+            get
+            {
+                return nombat;
+            }
+            set
+            {
+                nombat = value;
+                RaisepropertyChanged("NomBat");
+            }
         }
         public CapteursDetailsPage()
         {
             CapteurId = SecureStorage.GetAsync("CapteurId").Result;
-            //Device.BeginInvokeOnMainThread(() => GetCapteur());
+            BoxName = SecureStorage.GetAsync("BoxName").Result;
+            NomBat = SecureStorage.GetAsync("NomBat").Result;
             GetValeurLast();
+            GetLibel();
+            GetLibelType();
+            GetValeurMoyenne();
             InitializeComponent();
             this.BindingContext = this;
 
@@ -105,46 +142,83 @@ namespace ProjetGroupe.Views
         {
             List<Historique> histoList = new List<Historique>();
             histoList = await Historique.ListValeurMoyenne(Convert.ToInt32(CapteurId));
+            if (histoList != null)
+            {
+                string val = Convert.ToString(histoList[0].Moyenne);
+                string unit = Convert.ToString(histoList[0].Unite);
+                ValMoy = val + " " + unit;
+            }
         }
         public async void GetValeurLast()
         {
             List<Historique> histoList = new List<Historique>();
             histoList = await Historique.ListValeurLast(Convert.ToInt32(CapteurId));
-            ValMoy = Convert.ToString(histoList[0].Valeur);
-            Libelle = Convert.ToString(histoList[0].Libelle);
-            Unite = Convert.ToString(histoList[0].Unite);
-            LibelleType = Convert.ToString(histoList[0].LibelleType);
+            if (histoList!= null)
+            {
+                string val = Convert.ToString(histoList[0].Valeur);
+                string unit = Convert.ToString(histoList[0].Unite);
+                ValLast = val + " " + unit;
+            }
+
+        }
+        public async void GetLibelType()
+        {
+            List<Historique> histoList = new List<Historique>();
+            histoList = await Historique.Load(Convert.ToInt32(CapteurId));
+            if (histoList != null)
+            {
+                LibelleType = Convert.ToString(histoList[0].LibelleType);
+            }
+        }
+        public async void GetLibel()
+        {
+            List<Historique> histoList = new List<Historique>();
+            histoList = await Historique.Load(Convert.ToInt32(CapteurId));
+            if (histoList != null)
+            {
+                Libelle = Convert.ToString(histoList[0].Libelle);
+            }
         }
         public void OnImageButtonClicked(object sender, EventArgs e)
         {
             var liste = SecureStorage.GetAsync("Liste").Result;
             if(liste!=null)
             {
+                Application.Current.MainPage = new AppShell();
                 Shell.Current.GoToAsync($"{nameof(eCovidPage)}");
                 SecureStorage.Remove("Liste");
                 SecureStorage.Remove("CapteurId");
+                SecureStorage.Remove("BoxName");
+                SecureStorage.Remove("NomBat");
             }
             else
             {
+                Application.Current.MainPage = new AppShell();
                 Shell.Current.GoToAsync($"{nameof(SmartBuildingPage)}");
                 SecureStorage.Remove("CapteurId");
+                SecureStorage.Remove("BoxName");
+                SecureStorage.Remove("NomBat");
             }
         }
-        public void OnImageButtonClicked2(object sender, EventArgs e)
-        {
-            var liste = SecureStorage.GetAsync("Liste").Result;
-            if (liste != null)
-            {
-                Shell.Current.GoToAsync($"{nameof(eCovidPage)}");
-                SecureStorage.Remove("Liste");
-                SecureStorage.Remove("CapteurId");
-            }
-            else
-            {
-                Shell.Current.GoToAsync($"{nameof(SmartBuildingPage)}");
-                SecureStorage.Remove("CapteurId");
-            }
-        }
+        //public void OnImageButtonClicked2(object sender, EventArgs e)
+        //{
+        //    var liste = SecureStorage.GetAsync("Liste").Result;
+        //    if (liste != null)
+        //    {
+        //        Shell.Current.GoToAsync($"{nameof(eCovidPage)}");
+        //        SecureStorage.Remove("Liste");
+        //        SecureStorage.Remove("CapteurId");
+        //        SecureStorage.Remove("BoxName");
+        //        SecureStorage.Remove("NomBat");
+        //    }
+        //    else
+        //    {
+        //        Shell.Current.GoToAsync($"{nameof(SmartBuildingPage)}");
+        //        SecureStorage.Remove("CapteurId");
+        //        SecureStorage.Remove("BoxName");
+        //        SecureStorage.Remove("NomBat");
+        //    }
+        //}
 
         protected override void OnAppearing()
         {
@@ -157,21 +231,9 @@ namespace ProjetGroupe.Views
             base.OnDisappearing();
             SecureStorage.Remove("CapteurId");
             SecureStorage.Remove("Liste");
+            SecureStorage.Remove("BoxName");
+            SecureStorage.Remove("NomBat");
         }
-        //public void TapGestureRecognizer_Tapped(Object sender, EventArgs e)
-        //{
-        //    var mainDisplayInfo = DeviceDisplay.MainDisplayInfo;
-        //    Action<double> callback = input => DetailsView.HeightRequest = input;
-        //    double startHeight = mainDisplayInfo.Height / 3;
-        //    double endiendHeight = 0;
-        //    uint rate = 32;
-        //    uint length = 500;
-        //    Easing easing = Easing.SinOut;
-        //    DetailsView.Animate("anim", callback, startHeight, endiendHeight, rate, length, easing);
-        //}
-   
     }
-
-
 }
 

@@ -4,6 +4,13 @@ using System.Collections.Generic;
 using System.Net;
 using System.Net.Mail;
 using System.Text;
+using Syncfusion.Pdf;
+using Syncfusion.Pdf.Graphics;
+using Syncfusion.Pdf.Grid;
+using Syncfusion.Drawing;
+using System.IO;
+using Xamarin.Forms;
+using System.Linq;
 
 namespace ProjetGroupe.Models
 {
@@ -67,13 +74,6 @@ namespace ProjetGroupe.Models
         {
             return PersonneManager.Count();
         }
-
-
-
-        //public void Delete()
-        //{
-        //    UtilisateurManager.Delete(this);
-        //}
 
         public static Personne IsLogged()
         {
@@ -143,6 +143,60 @@ namespace ProjetGroupe.Models
                 }
                 return true;
             }
+        }
+        public static async void GeneratePdfAsync(int size, List<Historique> data)
+        {
+            PdfDocument document = new PdfDocument();
+            PdfPage page = document.Pages.Add();
+            PdfGrid pdfGrid = new PdfGrid();
+            PdfGraphics graphics = page.Graphics;
+            PdfBrush solidBrush = new PdfSolidBrush(new PdfColor(126, 151, 173));
+            RectangleF bounds = new RectangleF(100, 0, 290, 130);
+            PdfFont font = new PdfStandardFont(PdfFontFamily.Helvetica, 16);
+            graphics.DrawString("Historique des données 40 dernières données:", font, PdfBrushes.Black, new PointF(0, 0));
+            pdfGrid.Draw(page, new PointF(10, 10));
+
+            bounds = new RectangleF(0, bounds.Top + 32, graphics.ClientSize.Width, 30);
+            graphics.DrawRectangle(solidBrush, bounds);
+            PdfFont subHeadingFont = new PdfStandardFont(PdfFontFamily.TimesRoman, 14);
+            PdfTextElement element = new PdfTextElement("Liste des données avec informations: ", subHeadingFont);
+            element.Brush = PdfBrushes.White;
+            PdfLayoutResult result = element.Draw(page, new PointF(10, bounds.Top + 8));
+            string currentDate = "Date: " + DateTime.Now.ToString("dd/MM/yyyy");
+            SizeF textSize = subHeadingFont.MeasureString(currentDate);
+            PointF textPosition = new PointF(graphics.ClientSize.Width - textSize.Width - 10, result.Bounds.Y);
+            graphics.DrawString(currentDate, subHeadingFont, element.Brush, textPosition);
+            PdfFont timesRoman = new PdfStandardFont(PdfFontFamily.TimesRoman, 10);
+            element = new PdfTextElement("Données: ", timesRoman);
+            element.Brush = new PdfSolidBrush(new PdfColor(126, 155, 203));
+            result = element.Draw(page, new PointF(10, result.Bounds.Bottom + 25));
+            foreach (Historique histo in data.OrderByDescending(x => x.Id_device).Take(size))
+            {
+                element = new PdfTextElement("#ID: " + histo.Id_device + " | " + "Libelle: " + histo.Libelle + " | " + "LibelleType: " + histo.LibelleType + " | " + "Valeur: " + histo.Valeur + " | " + "Unité: " + histo.Unite, timesRoman);
+                element.Brush = new PdfSolidBrush(new PdfColor(126, 155, 203));
+                result = element.Draw(page, new PointF(10, result.Bounds.Bottom + 5));
+            }
+            PdfPen linePen = new PdfPen(new PdfColor(126, 151, 173), 0.70f);
+            PointF startPoint = new PointF(0, result.Bounds.Bottom + 3);
+            PointF endPoint = new PointF(graphics.ClientSize.Width, result.Bounds.Bottom + 3);
+            graphics.DrawLine(linePen, startPoint, endPoint);
+            PdfGridCellStyle cellStyle = new PdfGridCellStyle();
+            cellStyle.Borders.All = PdfPens.White;
+            PdfGridCellStyle headerStyle = new PdfGridCellStyle();
+            headerStyle.Borders.All = new PdfPen(new PdfColor(126, 151, 173));
+            headerStyle.BackgroundBrush = new PdfSolidBrush(new PdfColor(126, 151, 173));
+            headerStyle.TextBrush = PdfBrushes.White;
+            headerStyle.Font = new PdfStandardFont(PdfFontFamily.TimesRoman, 14f, PdfFontStyle.Regular);
+            cellStyle.Borders.Bottom = new PdfPen(new PdfColor(217, 217, 217), 0.70f);
+            cellStyle.Font = new PdfStandardFont(PdfFontFamily.TimesRoman, 12f);
+            cellStyle.TextBrush = new PdfSolidBrush(new PdfColor(131, 130, 136));
+            PdfGridLayoutFormat layoutFormat = new PdfGridLayoutFormat();
+            layoutFormat.Layout = PdfLayoutType.Paginate;
+            PdfGridLayoutResult gridResult = pdfGrid.Draw(page, new RectangleF(new PointF(0, result.Bounds.Bottom + 40), new SizeF(graphics.ClientSize.Width, graphics.ClientSize.Height - 100)), layoutFormat);
+            MemoryStream stream = new MemoryStream();
+            document.Save(stream);
+            document.Close(true);
+            await DependencyService.Get<ISave>().SaveAndView("DonneesCapteurs-" + Personne.IsLogged().RFID + "-" + DateTime.Now.Day + DateTime.Now.Minute + DateTime.Now.Millisecond + ".pdf", "application/pdf", stream);
         }
     }
 }

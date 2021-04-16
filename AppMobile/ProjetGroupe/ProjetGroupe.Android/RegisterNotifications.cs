@@ -16,12 +16,12 @@ namespace ProjetGroupe.Droid
     {
         public void RegisterDevice(string p_psnHandle, List<string> p_tags)
         {
-            AndroidFireBaseMessagingService.SendRegistrationToServer(p_psnHandle, p_tags);
+            //AndroidFireBaseMessagingService.SendRegistrationToServer(p_psnHandle, p_tags);
         }
 
         void IRegisterNotifications.UnRegisterDevice()
         {
-            AndroidFireBaseMessagingService.UnRegisterDevice();
+            //AndroidFireBaseMessagingService.UnRegisterDevice();
         }
     }
 }
