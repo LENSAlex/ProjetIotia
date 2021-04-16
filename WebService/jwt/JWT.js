@@ -7,8 +7,6 @@ const fs = require('fs');
 //https://etienner.github.io/api-json-web-token-authentication-jwt-sur-express-js/
 
 
-var TokenSession;
-
 
 //Fonction du token
 /* Récupération du header bearer */
@@ -56,7 +54,6 @@ app.get('/jwt', (req, res) => {
     let privateKey = fs.readFileSync('./private.pem', 'utf8');
     let token = jwt.sign({ "ID": "iotia" }, privateKey , { expiresIn: '1 hours' });
     res.send(token);
-    TokenSession = token;
 })
 
 // let's first add a /secret api endpoint that we will be protecting
@@ -69,11 +66,6 @@ app.get('/secret', checkTokenMiddleware , (req, res) => {
     // return res.json({ content: decoded })
 })
 
-app.get('/GetTokenSession' , (req,res) =>
-{
-
-    //Ici je retransmet le dernier token creer
-})
 
 // and a /readme endpoint which will be open for the world to see 
 app.get('/readme', (req, res) => {
@@ -101,3 +93,6 @@ Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6ImlvdGlhIiwi
 
 Voir Variable de session .net core ou l on stockera le token
 */
+
+
+//Je pense il faut ajouter ca request.Headers["Authorization"] = "Bearer "+ token ;
