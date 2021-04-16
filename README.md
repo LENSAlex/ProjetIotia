@@ -66,11 +66,12 @@ Notification via AzureHub: https://docs.microsoft.com/en-us/azure/developer/mobi
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 ```
 - 9.5] Pour la génération de pdf il vous faudra renseigner à l'application l'endroit ou se trouve les dossiers ou s'ouvriront les fichers de l'Intent (action d'ouverture de pdf ou autres depuis l'application). Toujours dans l'AndroidManisfest placez ce bout de code dans la balise application tel que:
-``` <application>
-	<provider android:name="androidx.core.content.FileProvider" android:authorities="com.company.projetgroupe" android:exported="false" 				                         android:grantUriPermissions="true">
+``` 
+<application>
+  	<provider android:name="androidx.core.content.FileProvider" android:authorities="com.company.projetgroupe" android:exported="false" android:grantUriPermissions="true">
 		<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepath"></meta-data>
 	</provider>
-    </application>
+</application>
 ```
 Vous allez maintenant devoir créer un dossier xml dans votre dossier Ressource de votre Projet.Droid et y placer filepath.xml qui est un fichier que vous allez aussi créer et mettre:
 ```
