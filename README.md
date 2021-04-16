@@ -26,7 +26,7 @@ Pour la bibliothèque de classe:
 - ```Newtonsoft.Json``` (Json Parser)
 - ```MySqlConnector``` (Liaison MySQL (falc))
 - ```Microsoft.Azure.NotificationHubs``` (Notification)
-- ```Syncfusion.Xamarin.pdf``` (Facultatif)
+- ```Syncfusion.Xamarin.pdf``` (Generation de Pdf)
 
 Pour le projet Android Ios & UWP:
 
@@ -94,6 +94,8 @@ Pour que l'application puisse atteindre le serveur nodejs, il faut lui donner un
 - 2] Vous arrivez ensuite sur une page d'authentification, utiliser vos identifiants de connexion (Ici nous utilisons ceux de l'IUT)
 - 3] Vous avez ensuite accès aux pages de l'application
 - 4] Il est important de noter qu'à votre connexion à l'application (une fois le bouton connexion pressé), vous serrez ammener à accepter les notifications push car votre smartphone sera enregistré au Hub de Notification Azure via Firebase. Egalement si vous voulez générer un pdf, on vous demandera d'activté ou non les droits d'écriture.
+
+Les fichiers générés sont engeristé dans: "android/data/com.company.projetgroupe/files/SmartCovid/" pour les appareis Android.
 
 # Notification API
 
