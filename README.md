@@ -160,6 +160,11 @@ Il est aussi important de noter que pour recevoir convenablement les notificatio
 # Documentation 
 
 - Vous allez pouvoir trouver la documentation XML de la bibliothèque de classe nommée "ProjetGroupe" et celle du ProjetDroid dans le dossier Documentation/AppMobile
-- Vous allez pouvoir télécharger la document Doxygen du projet global via Github sinon vous pouvez vous rendre sur ce lien:
-[Documentation Doxygen](http://51.77.137.170/lpiotia/AppMobile/ProjetDroid_Documentation/index.html)
+- Vous allez pouvoir télécharger la document Doxygen du projet global via Github.
+
+Liens vers la différentes documentations en ligne:
+
+- [Documentation Doxygen](http://51.77.137.170/lpiotia/AppMobile/ProjetGroupe_Documentation/annotated.html)
+- [Documentation XML Projet Android](http://51.77.137.170/lpiotia/AppMobile/ProjetDroid.xml)
+- [Documentation XML Bibliothèque de classe](http://51.77.137.170/lpiotia/AppMobile/ProjetGroupe.xml)
 
