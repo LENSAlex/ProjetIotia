@@ -192,7 +192,7 @@ app.get("/Personne/ListTypePersonne", (req, res) => {
 })
 
 //List Promo
-app.get("/Personne/ListPromo", (req, res) => {
+app.get("/Personne/ListPromo/Simple", (req, res) => {
     conn.query("select id_promotion , Formation.nom from Promotion , Formation where Promotion.id_formation = Formation.id_formation", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
@@ -430,13 +430,12 @@ app.get("/Capteur/ListCapteur", (req, res) => {
 
 //List capteur dernieres de DORIAN
 app.get("/Capteur/ListCapteur/All", (req, res) => {
-
     conn.query("select D.id_device ,VT.libelle as nom, B.id_box from ValueType VT , Device D , Box B where VT.id_valuetype = D.id_valuetype and D.id_box = B.id_box order by D.id_device", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
-            res.status(200).json(result);
             console.log(result);
+            res.status(200).json(result);
         }
     });
 })
@@ -538,7 +537,7 @@ app.get("/Capteur/ValeurSpecifique/Moyenne/:IdDevice", (req, res) => {
 
 //List des capteur temps dans l historique plus recent au plus vieux
 app.get("/Capteur/List/Historique/Temp", (req, res) => {
-    conn.query("select DT.libelle_type , D.id_box , H.valeur from Historique H , Device D , DeviceType DT WHERE H.id_device = D.id_device and DT.id_devicetype = D.id_devicetype AND DT.id_devicetype = 4 order by H.date_historique DESC ", function(err, result) {
+    conn.query("select DT.libelle_type , B.libelle , H.valeur from Historique H , Device D , DeviceType DT , Box B WHERE H.id_device = D.id_device and DT.id_devicetype = D.id_devicetype AND D.id_box = B.id_box and DT.id_devicetype = 4 order by H.date_historique DESC ", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -550,7 +549,7 @@ app.get("/Capteur/List/Historique/Temp", (req, res) => {
 
 //List des capteur co2 dans l historique plus recent au plus vieux
 app.get("/Capteur/List/Historique/CO2", (req, res) => {
-    conn.query("select DT.libelle_type , D.id_box , H.valeur from Historique H , Device D , DeviceType DT WHERE H.id_device = D.id_device and DT.id_devicetype = D.id_devicetype AND DT.id_devicetype = 3 order by H.date_historique DESC ", function(err, result) {
+    conn.query("select DT.libelle_type , B.libelle , H.valeur from Historique H , Device D , DeviceType DT, Box B WHERE H.id_device = D.id_device and DT.id_devicetype = D.id_devicetype AND D.id_box = B.id_box AND DT.id_devicetype = 3 order by H.date_historique DESC ", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -563,7 +562,7 @@ app.get("/Capteur/List/Historique/CO2", (req, res) => {
 //List des capteur energie dans l historique plus recent au plus vieux
 //A voir avec dorian
 app.get("/Capteur/List/Historique/Energie", (req, res) => {
-    conn.query("", function(err, result) {
+    conn.query("select VT.libelle , B.libelle , H.valeur from Historique H , Device D , ValueType VT, Box B WHERE H.id_device = D.id_device and VT.id_valuetype = D.id_valuetype AND D.id_box = B.id_box AND VT.id_valuetype = 9 order by H.date_historique DESC", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -814,6 +813,33 @@ app.post("/Batiment/Add/Salle/:IdEtage/:Nom/:CapaciteMax/:Surface/:Volume", (req
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
             res.status(200).json("Salle cree");
+        }
+    });
+})
+
+
+//Delete --------------------------------------------------
+
+//Supp user 
+app.delete("/Personne/Delete/:IdUser", (req, res) => {
+
+    conn.query("DELETE FROM `Contenir` WHERE id_eleve = " + req.params.IdUser + "", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: err });
+        else {
+            conn.query("DELETE FROM `CasCovid` WHERE id_personne = " + req.params.IdUser + "", function(err, result) {
+                if (err)
+                    res.status(400).json({ ErrorRequete: err });
+                else {
+                    conn.query("DELETE FROM `Personne` WHERE id_personne = " + req.params.IdUser + "", function(err, result) {
+                        if (err)
+                            res.status(400).json({ ErrorRequete: err });
+                        else {
+                            res.status(200).json("Utilisateur avec id = " + req.params.IdUser + " a ete supprimer");
+                        }
+                    });
+                }
+            });
         }
     });
 })

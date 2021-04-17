@@ -10,6 +10,7 @@ const https = require('https')
 // const swaggerJsDoc = require('swagger-jsdoc');
 
 const port = 3001;
+//https://localhost:4040/Batiment/ListEquipement
 
 // BDD--------------------
 console.log('Get connection ...');
