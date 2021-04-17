@@ -1,0 +1,1609 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProjetGroupe</name>
+    </assembly>
+    <members>
+        <member name="T:ProjetGroupe.App">
+            <summary>
+            Classe "Coeur" de l'application
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.App.NotificationActionTriggered(System.Object,ProjetGroupe.Tools.PushAction)">
+            <summary>
+            Actin de notification
+            </summary>
+            <param name="sender">L'action de notifier</param>
+            <param name="e">L'action en question</param>
+        </member>
+        <member name="M:ProjetGroupe.App.ShowActionAlert(ProjetGroupe.Tools.PushAction)">
+            <summary>
+            Methode appelée si un utilisateur à l'application ouverte au lieu de lui envoyé une notification sur le téléphone, il affiche juste un popup dans l'application.
+            </summary>
+            <param name="action">L'action en question</param>
+        </member>
+        <member name="M:ProjetGroupe.App.#ctor">
+            <summary>
+            Constructeur de la classe
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.App.OnStart">
+            <summary>
+            Quand l'application démarre
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.App.OnSleep">
+            <summary>
+            Quand l'application est en veille
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.App.OnResume">
+            <summary>
+            Quand l'application se réouvre
+            </summary>
+        </member>
+        <member name="T:ProjetGroupe.AppShell">
+            <summary>
+            Classe "Gestion du Shell" de l'application
+            </summary>
+        </member>
+        <member name="F:ProjetGroupe.AppShell._notificationRegistrationService">
+            <summary>
+            INotificationRegistrationService
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.AppShell.Email">
+            <summary>
+            Affichage du mail de la personne dans le FlyoutHeader
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.AppShell.UserType">
+            <summary>
+            Affichage du type de la personne dans le FlyoutHeader
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.AppShell.#ctor">
+            <summary>
+            Constructeur de la classe
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.AppShell.OnMenuItemClicked(System.Object,System.EventArgs)">
+            <summary>
+            Click sur le Logout
+            </summary>
+            <param name="sender">Le click</param>
+            <param name="e">L'action du click</param>
+        </member>
+        <member name="M:ProjetGroupe.AppShell.OnSmartOfficePageClicked(System.Object,System.EventArgs)">
+            <summary>
+            Click sur le SmartOfficePage
+            </summary>
+            <param name="sender">Le click</param>
+            <param name="e">L'action du click</param>
+        </member>
+        <member name="M:ProjetGroupe.AppShell.OnSmartBuildingPageClicked(System.Object,System.EventArgs)">
+            <summary>
+            Click sur le SmartBuildingPage
+            </summary>
+            <param name="sender">Le click</param>
+            <param name="e">L'action du click</param>
+        </member>
+        <member name="M:ProjetGroupe.AppShell.OnContactPageClicked(System.Object,System.EventArgs)">
+            <summary>
+            Click sur le AboutPage
+            </summary>
+            <param name="sender">Le click</param>
+            <param name="e">L'action du click</param>
+        </member>
+        <member name="M:ProjetGroupe.AppShell.OneCovidPageClicked(System.Object,System.EventArgs)">
+            <summary>
+            Click sur le eCovidPage
+            </summary>
+            <param name="sender">Le click</param>
+            <param name="e">L'action du click</param>
+        </member>
+        <member name="M:ProjetGroupe.AppShell.GetMail">
+            <summary>
+            Récupération du mail de la personne
+            </summary>
+            <returns>Le mail si existe sinon null</returns>
+        </member>
+        <member name="M:ProjetGroupe.AppShell.GetUserType">
+            <summary>
+            Récupération du type de la personne
+            </summary>
+            <returns>Le Type de la personne si existe sinon null</returns>
+        </member>
+        <member name="T:ProjetGroupe.Bootstrap">
+            <summary>
+            Classe de lancement du système de notification sur l'appareil
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Bootstrap.Begin(System.Func{ProjetGroupe.Tools.Services.IDeviceInstallationService})">
+            <summary>
+            Lacement
+            </summary>
+            <param name="deviceInstallationService">appareil</param>
+        </member>
+        <member name="T:ProjetGroupe.Config">
+            <summary>
+            Classe de configuration de l'application
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Config.ConnectionString">
+            <summary>
+            Base de données
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Config.NotificationEndPoint">
+            <summary>
+            Endpoint
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Config.NotificationHubName">
+            <summary>
+            HubName
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Config.NotificationChannelID">
+            <summary>
+            ChannelID
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Config.Mail">
+            <summary>
+            Mail send
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Config.MailTo">
+            <summary>
+            Mail To
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Config.MailPw">
+            <summary>
+            Mot de passe du compte de mail
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Config.MailServer">
+            <summary>
+            Serveur de mail
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Config.MailPort">
+            <summary>
+            Port du serveur de mail
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Config.WebServiceURI">
+            <summary>
+            Uri de l'API REST
+            </summary>
+        </member>
+        <member name="T:ProjetGroupe.RestService">
+            <summary>
+            Classe RestService
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.RestService.#ctor">
+            <summary>
+            Constructeur de la classe
+            </summary>
+        </member>
+        <member name="F:ProjetGroupe.Configuration.BackendServiceEndpoint">
+            <summary>
+            BackendServiceEndpoint
+            </summary>
+        </member>
+        <member name="T:ProjetGroupe.IRegisterNotifications">
+            <summary>
+            Interface pour les notifications
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.IRegisterNotifications.RegisterDevice(System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            RegisterDevice
+            </summary>
+            <param name="p_psnHandle">p_psnHandle</param>
+            <param name="p_tags">p_tags</param>
+        </member>
+        <member name="M:ProjetGroupe.IRegisterNotifications.UnRegisterDevice">
+            <summary>
+            UnRegisterDevice
+            </summary>
+        </member>
+        <member name="T:ProjetGroupe.ISave">
+            <summary>
+            Interface pour Save un document PDF sur le smartphone
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.ISave.SaveAndView(System.String,System.String,System.IO.MemoryStream)">
+            <summary>
+            Méthode de save et d'ouverture PDF
+            </summary>
+            <param name="filename">nom du fichier</param>
+            <param name="contentType">content-type (application/pdf)</param>
+            <param name="stream">le fichier sous stream</param>
+            <returns></returns>
+        </member>
+        <member name="T:ProjetGroupe.Models.Alerte">
+            <summary>
+            Classe Alerte
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.Alerte.SendNotification">
+            <summary>
+            Methode statique pouvant être appellé de n'importe ou pour envoyer une notification push
+            </summary>
+            <returns>true si envoyée sinon false</returns>
+        </member>
+        <member name="T:ProjetGroupe.Models.CapteurType">
+            <summary>
+            Classe CapteurType
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.CapteurType.Id">
+            <summary>
+            Id du capteur
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.CapteurType.Libelle">
+            <summary>
+            Description du capteur
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.CapteurType.Nom">
+            <summary>
+            Nom du bâtiment ou il se trouve
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.CapteurType.SalleId">
+            <summary>
+            Id de la salle ou se trouve
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.CapteurType.List">
+            <summary>
+            Méthode statique permettant de listé les capteurs
+            </summary>
+            <returns>Une ObservableCollection de CapteurType</returns>
+        </member>
+        <member name="T:ProjetGroupe.Models.CasCovid">
+            <summary>
+            Classe CasCovid
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.CasCovid.Nom">
+            <summary>
+            Nom du bâtiment
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.CasCovid.NbCasCovid">
+            <summary>
+            Nombre de cas
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.CasCovid.NomDep">
+            <summary>
+            Nom du département
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.CasCovid.DateDeContamination">
+            <summary>
+            Date de la contamination
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.CasCovid.PersonneId">
+            <summary>
+            Id de la personne ayant été signalé
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.CasCovid.Personne">
+            <summary>
+            Getter/Setter permattant de récupéré l'id de la personne
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.CasCovid.SendAlert(ProjetGroupe.Models.CasCovid)">
+            <summary>
+            Méthode statique qui contacte le manager pour établir la requête POST vers l'API REST
+            </summary>
+            <param name="cas">Objet CasCovid</param>
+            <returns>"Ok" si code = 200 sinon erreur</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.CasCovid.Count">
+            <summary>
+            Methode renvoyer le nombre de CasCovid
+            </summary>
+            <returns>le nombre de cas en string (pour l'affichage)</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.CasCovid.ListCasCovidFormation">
+            <summary>
+            Méthode statique donnant la liste des cas par formation en contactant l'API REST
+            </summary>
+            <returns>liste de CasCovid si code = 200 sinon erreur</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.CasCovid.ListCasCovidDepartement">
+            <summary>
+            Méthode statique donnant la liste des cas par département en contactant l'API REST
+            </summary>
+            <returns>liste de CasCovid si code = 200 sinon erreur</returns>
+        </member>
+        <member name="T:ProjetGroupe.Models.Equipement">
+            <summary>
+            Classe Equipement
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Equipement.Id">
+            <summary>
+            Id de l'équipement
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Equipement.Libelle">
+            <summary>
+            Libelle de l'équipement
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Equipement.Description">
+            <summary>
+            Description de celui-ci
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Equipement.EquipementType">
+            <summary>
+            Type d'équipement
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.Equipement.ListEquipement">
+            <summary>
+            Methode statique qui contacte l'API REST
+            </summary>
+            <returns>une ObservableCollection d'équipement</returns>
+        </member>
+        <member name="T:ProjetGroupe.Models.Historique">
+            <summary>
+            Classe Historique des valeurs des capteurs
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Historique.Id_device">
+            <summary>
+            Id du capteur
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Historique.Libelle">
+            <summary>
+            Libelle du capteur
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Historique.Unite">
+            <summary>
+            Unité de ses mesures
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Historique.Valeur">
+            <summary>
+            Valeur enregistrée
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Historique.Moyenne">
+            <summary>
+            Moyenne des valeurs enregistrées
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Historique.LibelleType">
+            <summary>
+            LibelleType des unités
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.Historique.ListHistorique">
+            <summary>
+            Méthoed statique contactant l'API REST 
+            </summary>
+            <returns>une liste d'historique</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Historique.ListValeurLast(System.Int32)">
+            <summary>
+            Méthoed statique contactant l'API REST prenant un Id de capteur en paramètre pour cibler un capteur 
+            </summary>
+            <param name="CapteurId">Id du capteur</param>
+            <returns>liste d'historique</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Historique.ListValeurMoyenne(System.Int32)">
+            <summary>
+            Méthoed statique contactant l'API REST prenant un Id de capteur en paramètre pour cibler la moyenne des valeurs d'un capteur 
+            </summary>
+            <param name="CapteurId">Id du capteur</param>
+            <returns>liste d'historique</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Historique.Load(System.Int32)">
+            <summary>
+            Méthoed statique contactant l'API REST prenant un Id de capteur en paramètre pour cibler un capteur précis
+            </summary>
+            <param name="CapteurId">Id du capteur</param>
+            <returns>liste d'historique</returns>
+        </member>
+        <member name="T:ProjetGroupe.Models.Manager.AlerteManager">
+            <summary>
+            Classe Manager Alerte (Envoie d'une notification push)
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.AlerteManager.SendAlert">
+            <summary>
+            Fonction qui établie une requête POST vers le Hub de Notification d'Azure.
+            </summary>
+            <returns>true or false selon la réponse du Hub de notification</returns>
+        </member>
+        <member name="T:ProjetGroupe.Models.Manager.CapteurManager">
+            <summary>
+            Classe Manager Capteur
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.CapteurManager.ListCapteur">
+            <summary>
+            Requête GET vers le serveur NodeJS permettant de lister les capteurs
+            </summary>
+            <returns>Une liste de CapteurType ou null si erreur</returns>
+        </member>
+        <member name="T:ProjetGroupe.Models.Manager.CasCovidManager">
+            <summary>
+            Classe CasCovid Manager
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.CasCovidManager.SendAlert(ProjetGroupe.Models.CasCovid)">
+            <summary>
+            Méthode prenant un CasCovid en paramètre contenant les informations à POST vers l'API REST
+            </summary>
+            <param name="cas"></param>
+            <returns>"OK" si code réponse = 200 sinon erreur</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.CasCovidManager.ListCasCovid">
+            <summary>
+            Méthode faisant un GET vers l'API REST
+            </summary>
+            <returns>Une liste de CasCovid ou null si erreur</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.CasCovidManager.ListCasCovidFormation">
+            <summary>
+            Méthode faisant un GET vers l'API REST
+            </summary>
+            <returns>Une liste de CasCovid par formation ou null si erreur</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.CasCovidManager.ListCasCovidDepartement">
+            <summary>
+            Méthode faisant un GET vers l'API REST
+            </summary>
+            <returns>Une liste de CasCovid par département ou null si erreur</returns>
+        </member>
+        <member name="T:ProjetGroupe.Models.Manager.EquipementManager">
+            <summary>
+            Classe Manager Equipement
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.EquipementManager.ListEquipement">
+            <summary>
+            Méthode faisant un GET vers l'API REST
+            </summary>
+            <returns>Une ObservableCollection d'Equipement (Equivalent d'une liste mais utilisé pour un composant spécial Xamarin) si code = 200 ou null si erreur</returns>
+        </member>
+        <member name="T:ProjetGroupe.Models.Manager.HistoriqueManager">
+            <summary>
+            Classe Manager Historique des valeurs des capteurs
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.HistoriqueManager.ListHistorique">
+            <summary>
+            Fonction qui fait une requête GET vers l'API REST
+            </summary>
+            <returns>Une liste d'Historique si code = 200 sinon erreur</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.HistoriqueManager.ListValeurLast(System.Int32)">
+            <summary>
+            Fonction qui donne la ligne la plus récente de l'historique du capteur choisit
+            GET vers l'API REST
+            </summary>
+            <param name="CapteurId">Id du capteur</param>
+            <returns>Une liste d'Historique (d'une ligne) si code = 200 sinon erreur</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.HistoriqueManager.ListValeurMoyenne(System.Int32)">
+            <summary>
+            Fonction qui donne les lignes les valeurs moyennes du capteur choisit
+            GET vers l'API REST
+            </summary>
+            <param name="CapteurId">Id du capteur</param>
+            <returns>Une liste d'Historique si code = 200 sinon erreur</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.HistoriqueManager.Load(System.Int32)">
+            <summary>
+            Fonction qui donne les données du capteur choisit via son Id (Identique a moyenne mais nomage changé pour plus de perception dans le code)
+            GET vers l'API REST
+            </summary>
+            <param name="CapteurId">Id du capteur</param>
+            <returns>Une liste d'Historique si code = 200 sinon erreur</returns>
+        </member>
+        <member name="T:ProjetGroupe.Models.Manager.PenurieManager">
+            <summary>
+            Classe Manager Pénurie
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.PenurieManager.UpdateStock(ProjetGroupe.Models.Penurie)">
+            <summary>
+            Fonction faisant une requête PUT vers l'API REST en prenant en param un objet Pénurie contenant l'id de l'équipement et l'id de la salle ou se trouve la pénurie
+            </summary>
+            <param name="item">Objet Penurie</param>
+            <returns>"Ok" si code = 200 sinon erreur</returns>
+        </member>
+        <member name="T:ProjetGroupe.Models.Manager.PersonneManager">
+            <summary>
+            Classe Manager Utilisateur (Personne)
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.PersonneManager.Load(System.Int32)">
+            <summary>
+            Fonction Load permettant de charger une utilisateur via son Id en faisant une requête SELECT vers la Base de données MySQL sur RaspberryPI
+            </summary>
+            <param name="id">Id de la personne</param>
+            <returns>Un objet Personne</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.PersonneManager.Search(System.String,System.String)">
+            <summary>
+            Methode permettant de rechercher un utilisateur via son rfid (identifiant) et son password en faisant une requête select dans la bdd
+            </summary>
+            <param name="rfid">Identifiant de la personne</param>
+            <param name="password">mdp de la personne</param>
+            <returns>un objet personne</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.PersonneManager.fill(ProjetGroupe.Models.Personne,MySqlConnector.MySqlDataReader)">
+            <summary>
+            fill permet de "d'insérer" le contenu des colonnes MySQL dans les getter/setter de la classe Personne
+            </summary>
+            <param name="item">Objet Personne</param>
+            <param name="dr">Classe MySqlDataReader</param>
+        </member>
+        <member name="T:ProjetGroupe.Models.Manager.SalleManager">
+            <summary>
+            Classe Mannager Salle
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.SalleManager.ListCapteurBySalleName(System.String)">
+            <summary>
+            Méthoed permettant de charger une liste de capteur via le nom de la salle donnant l'id de la salle, le nom du bâtiment etc..
+            </summary>
+            <param name="nomSalle">nom de la salle saisie</param>
+            <returns>Une liste de CapteurType</returns>
+        </member>
+        <member name="T:ProjetGroupe.Models.Penurie">
+            <summary>
+            Class Pénurie
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Penurie.Id_Equipement">
+            <summary>
+            Id de l'équipement
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Penurie.SalleId">
+            <summary>
+            Id de la salle ou se trouve la pénurie
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Penurie.Is_Penurie">
+            <summary>
+            Pénurie ou non
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Penurie.date_maj">
+            <summary>
+            Date de la pénurie
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.Penurie.UpdateStock(ProjetGroupe.Models.Penurie)">
+            <summary>
+            Méthode statique prenant en paramètre les objets de la classe pénurie pour faire les PUT avec ses valeurs vers l'API REST
+            </summary>
+            <param name="penurie">Objet Pénurie</param>
+            <returns></returns>
+        </member>
+        <member name="T:ProjetGroupe.Models.PersonneType">
+            <summary>
+            Enum du Type de personne
+            </summary>
+        </member>
+        <member name="F:ProjetGroupe.Models.PersonneType.Etudiant">
+            <summary>
+            Etudiant
+            </summary>
+        </member>
+        <member name="F:ProjetGroupe.Models.PersonneType.Professeur">
+            <summary>
+            Professeur
+            </summary>
+        </member>
+        <member name="F:ProjetGroupe.Models.PersonneType.Personnel">
+            <summary>
+            Personnel Administration / Agent d'entretien
+            </summary>
+        </member>
+        <member name="T:ProjetGroupe.Models.Personne">
+            <summary>
+            Classe personne
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Personne.Id">
+            <summary>
+            Id de la personne
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Personne.Email">
+            <summary>
+            Email de la personne
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Personne.Sexe">
+            <summary>
+            Sexe de la personne
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Personne.Password">
+            <summary>
+            Mot de passe de la personne
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Personne.PersonneType">
+            <summary>
+            Type de la personne
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Personne.Anniversaire">
+            <summary>
+            anniversaire de la personne
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Personne.RFID">
+            <summary>
+            Identifiant de la personne
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.Personne.Load(System.Int32)">
+            <summary>
+            Méthode statique permettant de charger une personne spéficique via son Id en contactant la base de données par le biai de la classe Manager
+            </summary>
+            <param name="id"></param>
+            <returns>Une personne</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Personne.Search(System.String,System.String)">
+            <summary>
+            Méthode statique permettant de charger une personne spéficique via son Email et son mot de passe en contactant la base de données par le biai de la classe Manager
+            </summary>
+            <param name="rfid">Identifiant de la personne</param>
+            <param name="password">mdp de la personne</param>
+            <returns>Une personne</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Personne.IsLogged">
+            <summary>
+            Methode Static vérifiant si une personne est connecté ou non à l'application en regardant si son Id est bien en cookie de session
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Personne.RappelMail(ProjetGroupe.Models.Personne)">
+            <summary>
+            Envoie d'un mail vers le secrétariat avec les informations de la personne en cas de CasCovid
+            </summary>
+            <param name="personne">Objet Personne</param>
+            <returns>true si mail envoyé</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Personne.RappelMailPenurie(ProjetGroupe.Models.Personne,ProjetGroupe.Models.Penurie)">
+            <summary>
+            Méthode permettant d'nevoyer une mail au secrétariat avec les informations de l'équipement et de la personne concernant l'information sur la pénurie qu'il a émit
+            </summary>
+            <param name="personne">Objet Personne</param>
+            <param name="penurie">Objet Penurie</param>
+            <returns>true si mail envoyé</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Personne.GeneratePdfAsync(System.Int32,System.Collections.Generic.List{ProjetGroupe.Models.Historique})">
+            <summary>
+            Méthode static asynchrone générant un PDF et demandanr l'ouverture de celui-ci (avec demande de permission)
+            </summary>
+            <param name="size">Le nombre de ligne voulu</param>
+            <param name="data">La Liste d'historique de valeur à afficher dans le pdf</param>
+        </member>
+        <member name="T:ProjetGroupe.Models.Salle">
+            <summary>
+            Classe Salle
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.Salle.ListCapteurBySalleName(System.String)">
+            <summary>
+            Méthode statique permettant de lister les capteurs d'une salle en contactant l'API REST
+            </summary>
+            <param name="nomSalle">nom de la salle</param>
+            <returns>une liste d'objet de CapteurType</returns>
+        </member>
+        <member name="T:ProjetGroupe.Tools.DeviceInstallation">
+            <summary>
+            Pour les notifications
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Tools.DeviceInstallation.InstallationId">
+            <summary>
+            installationId
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Tools.DeviceInstallation.Platform">
+            <summary>
+            platform
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Tools.DeviceInstallation.PushChannel">
+            <summary>
+            pushChannel
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Tools.DeviceInstallation.Tags">
+            <summary>
+            tags
+            </summary>
+        </member>
+        <member name="T:ProjetGroupe.Tools.MHash">
+            <summary>
+            Classe MHash
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Tools.MHash.HashString(System.String)">
+            <summary>
+            Méthode statique permettant de hash un mot de passe en SHA256bits
+            </summary>
+            <param name="rawData">chaîne a hasher</param>
+            <returns>le hash en string</returns>
+        </member>
+        <member name="T:ProjetGroupe.Tools.PushAction">
+            <summary>
+            Enum des actions pour les notifications
+            </summary>
+        </member>
+        <member name="F:ProjetGroupe.Tools.PushAction.ActionA">
+            <summary>
+            No silent
+            </summary>
+        </member>
+        <member name="F:ProjetGroupe.Tools.PushAction.ActionB">
+            <summary>
+            Silent
+            </summary>
+        </member>
+        <member name="T:ProjetGroupe.Tools.Services.CovidNotificationActionService">
+            <summary>
+            Classe d'invoquation de la notification
+            </summary>
+        </member>
+        <member name="E:ProjetGroupe.Tools.Services.CovidNotificationActionService.ActionTriggered">
+            <summary>
+            Appel de l'évènement
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Tools.Services.CovidNotificationActionService.TriggerAction(System.String)">
+            <summary>
+            Action d'invoquation
+            </summary>
+            <param name="action">nom de l'action</param>
+        </member>
+        <member name="T:ProjetGroupe.Tools.Services.ICovidNotificationActionService">
+            <summary>
+            Infertace pour l'évènement d'envoie d'une notification
+            </summary>
+        </member>
+        <member name="E:ProjetGroupe.Tools.Services.ICovidNotificationActionService.ActionTriggered">
+            <summary>
+            Nom de l'évènement
+            </summary>
+        </member>
+        <member name="T:ProjetGroupe.Tools.Services.IDeviceInstallationService">
+            <summary>
+            Interface pour les notifications
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Tools.Services.IDeviceInstallationService.Token">
+            <summary>
+            Token
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Tools.Services.IDeviceInstallationService.NotificationsSupported">
+            <summary>
+            NotificationsSupported
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Tools.Services.IDeviceInstallationService.GetDeviceId">
+            <summary>
+            Id du smartphone
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProjetGroupe.Tools.Services.IDeviceInstallationService.GetDeviceInstallation(System.String[])">
+            <summary>
+            Informations appareil
+            </summary>
+            <param name="tags">tags</param>
+            <returns>DeviceInstallation</returns>
+        </member>
+        <member name="T:ProjetGroupe.Tools.Services.INotificationActionService">
+            <summary>
+            Interface pour les notifications
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Tools.Services.INotificationActionService.TriggerAction(System.String)">
+            <summary>
+            Fonction pour l'évènement d'envoie de la notification sur le smartphone
+            </summary>
+            <param name="action"></param>
+        </member>
+        <member name="T:ProjetGroupe.Tools.Services.INotificationRegistrationService">
+            <summary>
+            Interface pour l'enregistrement du smartphone au channel de notification
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Tools.Services.INotificationRegistrationService.DeregisterDeviceAsync">
+            <summary>
+            Unregister
+            </summary>
+            <returns>task</returns>
+        </member>
+        <member name="M:ProjetGroupe.Tools.Services.INotificationRegistrationService.RegisterDeviceAsync(System.String[])">
+            <summary>
+            Enregistrement de l'appareil
+            </summary>
+            <param name="tags">tags</param>
+            <returns>task</returns>
+        </member>
+        <member name="M:ProjetGroupe.Tools.Services.INotificationRegistrationService.RefreshRegistrationAsync">
+            <summary>
+            Vérifie les enregistrements des appareils
+            </summary>
+            <returns>task</returns>
+        </member>
+        <member name="T:ProjetGroupe.Tools.Services.NotificationRegistrationService">
+            <summary>
+            Classe d'enregistrement au channel de notification 
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Tools.Services.NotificationRegistrationService.#ctor(System.String)">
+            <summary>
+            Enregistrement
+            </summary>
+            <param name="baseApiUri">url de l'api de notification</param>
+        </member>
+        <member name="P:ProjetGroupe.Tools.Services.NotificationRegistrationService.DeviceInstallationService">
+            <summary>
+            DeviceInstallationService
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Tools.Services.NotificationRegistrationService.DeregisterDeviceAsync">
+            <summary>
+            Unregistrement du channel de notification
+            </summary>
+            <returns>task</returns>
+        </member>
+        <member name="M:ProjetGroupe.Tools.Services.NotificationRegistrationService.RegisterDeviceAsync(System.String[])">
+            <summary>
+            Enregisterement de l'appreil au hub de notification
+            </summary>
+            <param name="tags">tags</param>
+            <returns>task</returns>
+        </member>
+        <member name="M:ProjetGroupe.Tools.Services.NotificationRegistrationService.RefreshRegistrationAsync">
+            <summary>
+            Refresh des appareils enregistrées
+            </summary>
+            <returns>task</returns>
+        </member>
+        <member name="M:ProjetGroupe.Tools.Services.NotificationRegistrationService.SendAsync``1(System.Net.Http.HttpMethod,System.String,``0)">
+            <summary>
+            SendAsync
+            </summary>
+            <typeparam name="T">T</typeparam>
+            <param name="requestType">requestType</param>
+            <param name="requestUri">requestUri</param>
+            <param name="obj">obj</param>
+            <returns>task</returns>
+        </member>
+        <member name="M:ProjetGroupe.Tools.Services.NotificationRegistrationService.SendAsync(System.Net.Http.HttpMethod,System.String,System.String)">
+            <summary>
+            SendAsync
+            </summary>
+            <param name="requestType">requestType</param>
+            <param name="requestUri">requestUri</param>
+            <param name="jsonRequest">jsonRequest</param>
+            <returns>task</returns>
+        </member>
+        <member name="T:ProjetGroupe.Tools.Services.ServiceContainer">
+            <summary>
+            Service Container
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Tools.Services.ServiceContainer.Register``1(System.Func{``0})">
+            <summary>
+            Register
+            </summary>
+            <typeparam name="T">T</typeparam>
+            <param name="function">fonction</param>
+        </member>
+        <member name="M:ProjetGroupe.Tools.Services.ServiceContainer.Resolve``1">
+            <summary>
+            Resolve
+            </summary>
+            <typeparam name="T">T</typeparam>
+            <returns>T</returns>
+        </member>
+        <member name="M:ProjetGroupe.Tools.Services.ServiceContainer.Resolve(System.Type)">
+            <summary>
+            Resolve surchargé
+            </summary>
+            <param name="type">Objet Type</param>
+            <returns>object</returns>
+        </member>
+        <member name="T:ProjetGroupe.ViewModels.AboutViewModel">
+            <summary>
+            View de la page About
+            </summary>
+        </member>
+        <member name="F:ProjetGroupe.ViewModels.AboutViewModel.countcovid">
+            <summary>
+            var countcovid
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.ViewModels.AboutViewModel.CountCovid">
+            <summary>
+            Affichage du nombre de cas
+            </summary>
+        </member>
+        <member name="E:ProjetGroupe.ViewModels.AboutViewModel.PropertyChanged">
+            <summary>
+            Event de changement de string sur le front
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.ViewModels.AboutViewModel.items">
+            <summary>
+            var item
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.ViewModels.AboutViewModel.Items">
+            <summary>
+            Affichage de la liste de CasCovid
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.ViewModels.AboutViewModel.itemsB">
+            <summary>
+            var itemB
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.ViewModels.AboutViewModel.ItemsB">
+            <summary>
+            Affichage de la liste de CasCovid numéro 2
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.ViewModels.AboutViewModel.#ctor">
+            <summary>
+            Constructeur de la classe
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.ViewModels.AboutViewModel.GetCovidDep">
+            <summary>
+            Méthode asynchrone chargeant la liste 1 par le liste de cascovid par dépatement
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.ViewModels.AboutViewModel.GetCovidForm">
+            <summary>
+            Méthode asynchrone chargeant la liste 2 par le liste de cascovid par formation
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.ViewModels.AboutViewModel.GetCovidAll">
+            <summary>
+            Méthode asynchrone chargeant le nombre de cas covid
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.ViewModels.AboutViewModel.RaisepropertyChanged(System.String)">
+            <summary>
+            Event de changement back/front de Xamarin
+            </summary>
+            <param name="propertyName">nom de la propriété a changer</param>
+        </member>
+        <member name="T:ProjetGroupe.ViewModels.AccueilViewModel">
+            <summary>
+            View de la page d'Accueil
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.ViewModels.AccueilViewModel.AlertCovid">
+            <summary>
+            Command au click du bouton
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.ViewModels.AccueilViewModel.#ctor">
+            <summary>
+            Constructeur de la classe
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.ViewModels.AccueilViewModel.NotifCovid">
+            <summary>
+            Méthode éxecuté par la commande lors du click du bouton
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.ViewModels.AccueilViewModel.SendNotification">
+            <summary>
+            Méthoed asynchrone pour envoyé la notification
+            </summary>
+        </member>
+        <member name="T:ProjetGroupe.ViewModels.BaseViewModel">
+            <summary>
+            Généré automatiquement lors de la création du projet
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.ViewModels.BaseViewModel.IsBusy">
+            <summary>
+            Refresh On/Off
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.ViewModels.BaseViewModel.Title">
+            <summary>
+            Titre de la page
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.ViewModels.BaseViewModel.SetProperty``1(``0@,``0,System.String,System.Action)">
+            <summary>
+            Changement d'état
+            </summary>
+            <typeparam name="T">T</typeparam>
+            <param name="backingStore">backingStore</param>
+            <param name="value">value</param>
+            <param name="propertyName">nom de la propriété</param>
+            <param name="onChanged">action de changement</param>
+            <returns></returns>
+        </member>
+        <member name="E:ProjetGroupe.ViewModels.BaseViewModel.PropertyChanged">
+            <summary>
+            PropertyChangedEventHandler
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.ViewModels.BaseViewModel.OnPropertyChanged(System.String)">
+            <summary>
+            Méthode appelé lors du changement d'état d'une prpriété
+            </summary>
+            <param name="propertyName">nom de la propriété a changer</param>
+        </member>
+        <member name="T:ProjetGroupe.ViewModels.CapteursDetailsViewModel">
+            <summary>
+            View Off de la page cApteur (parce que hors Shell)
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.ViewModels.CapteursDetailsViewModel.#ctor">
+            <summary>
+            Constructeur
+            </summary>
+        </member>
+        <member name="T:ProjetGroupe.ViewModels.eCovidViewModel">
+            <summary>
+            View SmartBuilding 2 
+            </summary>
+        </member>
+        <member name="E:ProjetGroupe.ViewModels.eCovidViewModel.PropertyChanged">
+            <summary>
+            PropertyChangedEventHandler
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.ViewModels.eCovidViewModel.items">
+            <summary>
+            var item
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.ViewModels.eCovidViewModel.Items">
+            <summary>
+            Affichage de l'ObservableCollection de CapteurType
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.ViewModels.eCovidViewModel.GetData">
+            <summary>
+            Méthode asynchrone permettant de remplir Items de la liste d'ObservableCollection de CapteurType
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.ViewModels.eCovidViewModel.RaisepropertyChanged(System.String)">
+            <summary>
+            Evènement de changement de propriété
+            </summary>
+            <param name="propertyName">nom de la propriété</param>
+        </member>
+        <member name="P:ProjetGroupe.ViewModels.eCovidViewModel.ClickedTest">
+            <summary>
+            Commande de click sur un bouton
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.ViewModels.eCovidViewModel.#ctor">
+            <summary>
+            Constructeur de la classe
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.ViewModels.eCovidViewModel.OnClickedTestClickedAsync(System.Object)">
+            <summary>
+            Méthoed exécuté lors du click sur le bouton de génération de Pdf
+            </summary>
+            <param name="obj">Le click</param>
+        </member>
+        <member name="T:ProjetGroupe.ViewModels.LoginViewModel">
+            <summary>
+            View de la page login
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.ViewModels.LoginViewModel.LoginCommand">
+            <summary>
+            Commande lors du clique sur le bouton connexion
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.ViewModels.LoginViewModel.Identifiant">
+            <summary>
+            Récupération de l'identifiant saisie par l'utilisateur
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.ViewModels.LoginViewModel.Password">
+            <summary>
+            Récupération du mdp saisie par l'utilisateur
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.ViewModels.LoginViewModel.#ctor">
+            <summary>
+            Constructeur de la classe
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.ViewModels.LoginViewModel.OnLoginClicked(System.Object)">
+            <summary>
+            Méthode exécuté lors du click sur le bouton connexion
+            </summary>
+            <param name="obj">Le click</param>
+        </member>
+        <member name="M:ProjetGroupe.ViewModels.LoginViewModel.RegisterDeviceForPushNotifications">
+            <summary>
+            Méthode permettant d'enregistrer un appareil au channel de notification FireBase
+            </summary>
+        </member>
+        <member name="T:ProjetGroupe.ViewModels.SmartBuildingViewModel">
+            <summary>
+            View de la page SmartBuilding
+            </summary>
+        </member>
+        <member name="E:ProjetGroupe.ViewModels.SmartBuildingViewModel.PropertyChanged">
+            <summary>
+            PropertyChangedEventHandler
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.ViewModels.SmartBuildingViewModel.items">
+            <summary>
+            var item
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.ViewModels.SmartBuildingViewModel.Items">
+            <summary>
+            ObservableCollection d'item a affiché sur le front
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.ViewModels.SmartBuildingViewModel.GetData">
+            <summary>
+            Méthode permettant de charger l'ObservableCollection avec des CapteurType
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.ViewModels.SmartBuildingViewModel.RaisepropertyChanged(System.String)">
+            <summary>
+            Méthode de changement d'une propriété sur le front
+            </summary>
+            <param name="propertyName">nom de la propriété</param>
+        </member>
+        <member name="P:ProjetGroupe.ViewModels.SmartBuildingViewModel.SearchResults">
+            <summary>
+            Affichage des résultat de la recherche
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.ViewModels.SmartBuildingViewModel.#ctor">
+            <summary>
+            Constructeur de la classe
+            </summary>
+        </member>
+        <member name="E:ProjetGroupe.ViewModels.SmartBuildingViewModel.PropertyChanged2">
+            <summary>
+            PropertyChangedEventHandler
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.ViewModels.SmartBuildingViewModel.OnPropertyChanged(System.String)">
+            <summary>
+            Méthode de changement d'une propriété sur le front
+            </summary>
+            <param name="propertyName">nom de la propriété</param>
+        </member>
+        <member name="T:ProjetGroupe.ViewModels.SmartOfficeViewModel">
+            <summary>
+            View de la page SmartOffice
+            </summary>
+        </member>
+        <member name="E:ProjetGroupe.ViewModels.SmartOfficeViewModel.PropertyChanged">
+            <summary>
+            PropertyChangedEventHandler
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.ViewModels.SmartOfficeViewModel.items">
+            <summary>
+            var items
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.ViewModels.SmartOfficeViewModel.Items">
+            <summary>
+            Affichage de l'ObservableCollection d'Equipement sur le front
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.ViewModels.SmartOfficeViewModel.RaisepropertyChanged(System.String)">
+            <summary>
+            Méthode de changement d'une propriété sur le front
+            </summary>
+            <param name="propertyName">nom de la propriété</param>
+        </member>
+        <member name="M:ProjetGroupe.ViewModels.SmartOfficeViewModel.#ctor">
+            <summary>
+            Constructeur de la classe
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.ViewModels.SmartOfficeViewModel.GetData">
+            <summary>
+            Méthoed asynchrone permettant de charger la liste d'équipement 
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Views.AboutPage.#ctor">
+            <summary>
+            Constructeur de la classe
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Views.AboutPage.OnAppearing">
+            <summary>
+            Evènement "Quand la page apparaît"
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Views.AboutPage.GetDataForm">
+            <summary>
+            Méthode permettant de remplir la liste des cascovid sur le front par formation lors du refresh de la liste
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Views.AboutPage.GetDataDep">
+            <summary>
+            Méthode permettant de remplir la liste des cascovid sur le front par département lors du refresh de la liste
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Views.AccueilPage.#ctor">
+            <summary>
+            Constructeur de la classe
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Views.AccueilPage.OnAppearing">
+            <summary>
+            Evènement "Quand la page apparaît"
+            </summary>
+        </member>
+        <member name="E:ProjetGroupe.Views.CapteursDetailsPage.PropertyChanged">
+            <summary>
+            PropertyChangedEventHandler
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Views.CapteursDetailsPage.RaisepropertyChanged(System.String)">
+            <summary>
+            Méthode de changement d'une propriété sur le front
+            </summary>
+            <param name="propertyName">nom de la propriété</param>
+        </member>
+        <member name="P:ProjetGroupe.Views.CapteursDetailsPage.Date">
+            <summary>
+            Date 
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Views.CapteursDetailsPage.CapteurId">
+            <summary>
+            Id du capteur
+            </summary>
+        </member>
+        <member name="F:ProjetGroupe.Views.CapteursDetailsPage.valmoy">
+            <summary>
+            valmoy
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Views.CapteursDetailsPage.ValMoy">
+            <summary>
+            ValeurMoyenne à afficher
+            </summary>
+        </member>
+        <member name="F:ProjetGroupe.Views.CapteursDetailsPage.vallast">
+            <summary>
+            vallast
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Views.CapteursDetailsPage.ValLast">
+            <summary>
+            Dernière valeur à afficher
+            </summary>
+        </member>
+        <member name="F:ProjetGroupe.Views.CapteursDetailsPage.unit">
+            <summary>
+            unit
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Views.CapteursDetailsPage.Unite">
+            <summary>
+            Unité à afficher
+            </summary>
+        </member>
+        <member name="F:ProjetGroupe.Views.CapteursDetailsPage.libel">
+            <summary>
+            libel
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Views.CapteursDetailsPage.Libelle">
+            <summary>
+            Libellé à affiché
+            </summary>
+        </member>
+        <member name="F:ProjetGroupe.Views.CapteursDetailsPage.libeltype">
+            <summary>
+            libeltype
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Views.CapteursDetailsPage.LibelleType">
+            <summary>
+            LibelleType à afficher
+            </summary>
+        </member>
+        <member name="F:ProjetGroupe.Views.CapteursDetailsPage.boxname">
+            <summary>
+            boxname
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Views.CapteursDetailsPage.BoxName">
+            <summary>
+            Nom de la box à afficher
+            </summary>
+        </member>
+        <member name="F:ProjetGroupe.Views.CapteursDetailsPage.nombat">
+            <summary>
+            nombat
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Views.CapteursDetailsPage.NomBat">
+            <summary>
+            Nom du bâtiment à afficher
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Views.CapteursDetailsPage.#ctor">
+            <summary>
+            Constructeur de la classe
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Views.CapteursDetailsPage.GetValeurMoyenne">
+            <summary>
+            Méthode permettrant de remplir la ValMoy
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Views.CapteursDetailsPage.GetValeurLast">
+            <summary>
+            Méthode permettrant de remplir la ValLast
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Views.CapteursDetailsPage.GetLibelType">
+            <summary>
+            Méthode permettrant de remplir le LibelType
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Views.CapteursDetailsPage.GetLibel">
+            <summary>
+            Méthode permettrant de remplir le Libelle
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Views.CapteursDetailsPage.OnImageButtonClicked(System.Object,System.EventArgs)">
+            <summary>
+            Action au click de l'ImageButton sur le front
+            </summary>
+            <param name="sender">l'ImageButton</param>
+            <param name="e">L'Event Click</param>
+        </member>
+        <member name="M:ProjetGroupe.Views.CapteursDetailsPage.OnAppearing">
+            <summary>
+            Evènement "Quand la page apparaît"
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Views.CapteursDetailsPage.OnDisappearing">
+            <summary>
+            Evènement "Quand la page disparaît"
+            </summary>
+        </member>
+        <member name="T:ProjetGroupe.Views.eCovidPage">
+            <summary>
+            Back du front de la page SmartBuilding 2
+            </summary>
+        </member>
+        <member name="E:ProjetGroupe.Views.eCovidPage.PropertyChanged">
+            <summary>
+            PropertyChangedEventHandler
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Views.eCovidPage.OnPropertyChanged(System.String)">
+            <summary>
+            Méthode de changement d'une propriété sur le front
+            </summary>
+            <param name="propertyName">nom de la propriété</param>
+        </member>
+        <member name="P:ProjetGroupe.Views.eCovidPage._Salle">
+            <summary>
+            Getter/Setter Liste de salle
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Views.eCovidPage._CapteurType">
+            <summary>
+            Getter/Setter Liste de CapteurType
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Views.eCovidPage.#ctor">
+            <summary>
+            Constructeur de la classe
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Views.eCovidPage.GetData">
+            <summary>
+            Méthode permettant de remplir la liste par la liste de CapteurType au refresh de celle-ci
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Views.eCovidPage.OnItemSelected(System.Object,Xamarin.Forms.SelectedItemChangedEventArgs)">
+            <summary>
+            Evènement lors de la sélection d'un item de la liste
+            </summary>
+            <param name="sender">La sélection</param>
+            <param name="e">L'évènement de sélection</param>
+        </member>
+        <member name="M:ProjetGroupe.Views.eCovidPage.OnAppearing">
+            <summary>
+            Evènement exécuté quand la page apparaît
+            </summary>
+        </member>
+        <member name="T:ProjetGroupe.Views.LoginPage">
+            <summary>
+            Back du front de la page de login
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Views.LoginPage.#ctor">
+            <summary>
+            Constructeur de la classe
+            </summary>
+        </member>
+        <member name="T:ProjetGroupe.Views.SmartBuildingPage">
+            <summary>
+            Back deu front de la page SmartBuilding
+            </summary>
+        </member>
+        <member name="E:ProjetGroupe.Views.SmartBuildingPage.PropertyChanged">
+            <summary>
+            PropertyChangedEventHandler
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Views.SmartBuildingPage.OnPropertyChanged(System.String)">
+            <summary>
+            Méthode appellée lors du changement d'état d'une propriété
+            </summary>
+            <param name="propertyName">propertyName</param>
+        </member>
+        <member name="P:ProjetGroupe.Views.SmartBuildingPage._Salle">
+            <summary>
+            Liste de Salle
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Views.SmartBuildingPage._CapteurType">
+            <summary>
+            Liste de CapteurType
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Views.SmartBuildingPage.SearchResults">
+            <summary>
+            Résultat de la recherche
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Views.SmartBuildingPage.#ctor">
+            <summary>
+            Constructeur de la classe
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Views.SmartBuildingPage.searchBar_TextChanged(System.Object,Xamarin.Forms.TextChangedEventArgs)">
+            <summary>
+            Evènement lors du changement d'un texte dans la TextBox du front
+            </summary>
+            <param name="sender">L'utilisateur qui rentre le texte</param>
+            <param name="e">Le texte qui change</param>
+        </member>
+        <member name="M:ProjetGroupe.Views.SmartBuildingPage.GetResultAsync(System.String)">
+            <summary>
+            Remplissage de la liste à chaquement de lettre/chiffre dans la TextBox du front
+            </summary>
+            <param name="query">texte dans la TextBox</param>
+        </member>
+        <member name="M:ProjetGroupe.Views.SmartBuildingPage.OnItemSelected2(System.Object,Xamarin.Forms.SelectedItemChangedEventArgs)">
+            <summary>
+            Evènement lors de la sélection d'un item de la liste 
+            </summary>
+            <param name="sender">La sélection</param>
+            <param name="e">L'évènement de sélection</param>
+        </member>
+        <member name="M:ProjetGroupe.Views.SmartBuildingPage.OnAppearing">
+            <summary>
+            Méthode exécuté lors de l'apparition de la page
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Views.SmartBuildingPage.OnDisappearing">
+            <summary>
+            Méthode exécuté lors de la disparition de la page
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Views.SmartBuildingPage.searchBar_SearchButtonPressed(System.Object,System.EventArgs)">
+            <summary>
+            Méthode appelé lors du click sur le bouton rechercher du clavier
+            </summary>
+            <param name="sender">Le click sur rechercher</param>
+            <param name="e">L'évènement de click sur celui-ci</param>
+        </member>
+        <member name="T:ProjetGroupe.Views.SmartOfficePage">
+            <summary>
+            Back du front de la page SmartOffice
+            </summary>
+        </member>
+        <member name="E:ProjetGroupe.Views.SmartOfficePage.PropertyChanged">
+            <summary>
+            PropertyChangedEventHandler
+            </summary>
+        </member>
+        <member name="F:ProjetGroupe.Views.SmartOfficePage._Salle">
+            <summary>
+            Liste de CapteurType
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Views.SmartOfficePage.OnPropertyChanged(System.String)">
+            <summary>
+            Méthode de changement d'une propriété sur le front
+            </summary>
+            <param name="propertyName">nom de la propriété</param>
+        </member>
+        <member name="M:ProjetGroupe.Views.SmartOfficePage.#ctor">
+            <summary>
+            Constructeur de la classe
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Views.SmartOfficePage.GetData">
+            <summary>
+            Méthode permettrant de charger la liste d'équipement lors dfu refresh de la liste
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Views.SmartOfficePage.OnItemSelected(System.Object,Xamarin.Forms.SelectedItemChangedEventArgs)">
+            <summary>
+            Méthode appelée lors de la sélection d'un item de la liste d'équipement
+            </summary>
+            <param name="sender">La sélection</param>
+            <param name="e">L'évènement de sélection</param>
+        </member>
+        <member name="M:ProjetGroupe.Views.SmartOfficePage.UpdateStockAsync(System.Int32,System.Int32)">
+            <summary>
+            Méthode qui va mettre la pénurie du produit choisi 
+            </summary>
+            <param name="idSalle">Id de la salle en question</param>
+            <param name="idEquip">Id de l'équipement en question</param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjetGroupe.Views.SmartOfficePage.GetDisplayChoiceAsync(System.Int32)">
+            <summary>
+            Méthode appelée lors de la sélection de l'équipement
+            </summary>
+            <param name="idEquip">Récupère l'id de l'équipement grâce à l'évènement OnItemSelected</param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjetGroupe.Views.SmartOfficePage.SetInfo(ProjetGroupe.Models.Penurie)">
+            <summary>
+            Méthode appelée à la fin du traitement de l'envoie de la pénurie dans la base de donnée
+            </summary>
+            <param name="penurie">Objet Penurie</param>
+        </member>
+        <member name="M:ProjetGroupe.Views.SmartOfficePage.OnAppearing">
+            <summary>
+            Méthode exécuté lors de l'apparition de la page
+            </summary>
+        </member>
+    </members>
+</doc>

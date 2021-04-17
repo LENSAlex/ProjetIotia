@@ -8,6 +8,9 @@ using Xamarin.Essentials;
 
 namespace ProjetGroupe.Tools.Services
 {
+    /// <summary>
+    /// Classe d'enregistrement au channel de notification 
+    /// </summary>
     public class NotificationRegistrationService : INotificationRegistrationService
     {
         const string RequestUrl = "api/notifications/installations";
@@ -18,6 +21,10 @@ namespace ProjetGroupe.Tools.Services
         HttpClient _client;
         IDeviceInstallationService _deviceInstallationService;
 
+        /// <summary>
+        /// Enregistrement
+        /// </summary>
+        /// <param name="baseApiUri">url de l'api de notification</param>
         public NotificationRegistrationService(string baseApiUri)
         {
             _client = new HttpClient();
@@ -25,11 +32,17 @@ namespace ProjetGroupe.Tools.Services
 
             _baseApiUrl = baseApiUri;
         }
-
+        /// <summary>
+        /// DeviceInstallationService
+        /// </summary>
         IDeviceInstallationService DeviceInstallationService
             => _deviceInstallationService ??
                 (_deviceInstallationService = ServiceContainer.Resolve<IDeviceInstallationService>());
 
+        /// <summary>
+        /// Unregistrement du channel de notification
+        /// </summary>
+        /// <returns>task</returns>
         public async Task DeregisterDeviceAsync()
         {
             var cachedToken = await SecureStorage.GetAsync(CachedDeviceTokenKey)
@@ -49,7 +62,11 @@ namespace ProjetGroupe.Tools.Services
             SecureStorage.Remove(CachedDeviceTokenKey);
             SecureStorage.Remove(CachedTagsKey);
         }
-
+        /// <summary>
+        /// Enregisterement de l'appreil au hub de notification
+        /// </summary>
+        /// <param name="tags">tags</param>
+        /// <returns>task</returns>
         public async Task RegisterDeviceAsync(params string[] tags)
         {
             var deviceInstallation = DeviceInstallationService?.GetDeviceInstallation(tags);
@@ -62,7 +79,10 @@ namespace ProjetGroupe.Tools.Services
 
             await SecureStorage.SetAsync(CachedTagsKey, JsonConvert.SerializeObject(tags));
         }
-
+        /// <summary>
+        /// Refresh des appareils enregistrées
+        /// </summary>
+        /// <returns>task</returns>
         public async Task RefreshRegistrationAsync()
         {
             var cachedToken = await SecureStorage.GetAsync(CachedDeviceTokenKey)
@@ -82,6 +102,14 @@ namespace ProjetGroupe.Tools.Services
             await RegisterDeviceAsync(tags);
         }
 
+        /// <summary>
+        /// SendAsync
+        /// </summary>
+        /// <typeparam name="T">T</typeparam>
+        /// <param name="requestType">requestType</param>
+        /// <param name="requestUri">requestUri</param>
+        /// <param name="obj">obj</param>
+        /// <returns>task</returns>
         async Task SendAsync<T>(HttpMethod requestType, string requestUri, T obj)
         {
             string serializedContent = null;
@@ -91,7 +119,13 @@ namespace ProjetGroupe.Tools.Services
 
             await SendAsync(requestType, requestUri, serializedContent);
         }
-
+        /// <summary>
+        /// SendAsync
+        /// </summary>
+        /// <param name="requestType">requestType</param>
+        /// <param name="requestUri">requestUri</param>
+        /// <param name="jsonRequest">jsonRequest</param>
+        /// <returns>task</returns>
         async Task SendAsync(
             HttpMethod requestType,
             string requestUri,

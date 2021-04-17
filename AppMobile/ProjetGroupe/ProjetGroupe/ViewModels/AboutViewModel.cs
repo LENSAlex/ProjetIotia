@@ -18,9 +18,18 @@ using ProjetGroupe.Models;
 
 namespace ProjetGroupe.ViewModels
 {
+    /// <summary>
+    /// View de la page About
+    /// </summary>
     public class AboutViewModel : INotifyPropertyChanged
     {
+        /// <summary>
+        /// var countcovid
+        /// </summary>
         public string countcovid;
+        /// <summary>
+        /// Affichage du nombre de cas
+        /// </summary>
         public string CountCovid
         {
             get
@@ -33,9 +42,18 @@ namespace ProjetGroupe.ViewModels
                 RaisepropertyChanged("CountCovid");
             }
         }
+        /// <summary>
+        /// Event de changement de string sur le front
+        /// </summary>
 
         public event PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// var item
+        /// </summary>
         public List<CasCovid> items { get; set; }
+        /// <summary>
+        /// Affichage de la liste de CasCovid
+        /// </summary>
         public List<CasCovid> Items
         {
             get
@@ -48,7 +66,13 @@ namespace ProjetGroupe.ViewModels
                 RaisepropertyChanged("Items");
             }
         }
+        /// <summary>
+        /// var itemB
+        /// </summary>
         public List<CasCovid> itemsB { get; set; }
+        /// <summary>
+        /// Affichage de la liste de CasCovid numéro 2
+        /// </summary>
         public List<CasCovid> ItemsB
         {
             get
@@ -61,6 +85,9 @@ namespace ProjetGroupe.ViewModels
                 RaisepropertyChanged("ItemsB");
             }
         }
+        /// <summary>
+        /// Constructeur de la classe
+        /// </summary>
         public AboutViewModel()
         {
             Device.BeginInvokeOnMainThread(() => GetCovidDep());
@@ -68,19 +95,32 @@ namespace ProjetGroupe.ViewModels
             Device.BeginInvokeOnMainThread(() => GetCovidAll());
        
         }
+        /// <summary>
+        /// Méthode asynchrone chargeant la liste 1 par le liste de cascovid par dépatement
+        /// </summary>
         public async void GetCovidDep()
         {
             Items = await CasCovid.ListCasCovidDepartement();
         }
+        /// <summary>
+        /// Méthode asynchrone chargeant la liste 2 par le liste de cascovid par formation
+        /// </summary>
         public async void GetCovidForm()
         {
             ItemsB = await CasCovid.ListCasCovidFormation();
         }
+        /// <summary>
+        /// Méthode asynchrone chargeant le nombre de cas covid
+        /// </summary>
         public async Task<string> GetCovidAll()
         {
             var result = await CasCovid.Count();
             return CountCovid+=result;
         }
+        /// <summary>
+        /// Event de changement back/front de Xamarin
+        /// </summary>
+        /// <param name="propertyName">nom de la propriété a changer</param>
         public void RaisepropertyChanged(string propertyName)
         {
             if (PropertyChanged != null)

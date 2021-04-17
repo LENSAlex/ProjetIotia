@@ -14,6 +14,13 @@ using AndroidX.Core.Content;
 [assembly: Dependency(typeof(SaveAndroid))]
 class SaveAndroid : ISave
 {
+    /// <summary>
+    /// Action réalisée après la génération du PDF
+    /// </summary>
+    /// <param name="fileName">nom du fichier</param>
+    /// <param name="contentType">application/pdf</param>
+    /// <param name="stream">le fichier sous forme de stream</param>
+    /// <returns></returns>
     [Obsolete]
     public async Task SaveAndView(string fileName, String contentType, MemoryStream stream)
     {

@@ -13,10 +13,22 @@ using Xamarin.Forms.Xaml;
 [assembly: ExportFont("NunitoSans-Bold.ttf", Alias = "ThemeFontBold")]
 namespace ProjetGroupe
 {
+    /// <summary>
+    /// Classe "Coeur" de l'application
+    /// </summary>
     public partial class App : Application
     {
+        /// <summary>
+        /// Actin de notification
+        /// </summary>
+        /// <param name="sender">L'action de notifier</param>
+        /// <param name="e">L'action en question</param>
         void NotificationActionTriggered(object sender, PushAction e) => ShowActionAlert(e);
 
+        /// <summary>
+        /// Methode appelée si un utilisateur à l'application ouverte au lieu de lui envoyé une notification sur le téléphone, il affiche juste un popup dans l'application.
+        /// </summary>
+        /// <param name="action">L'action en question</param>
         async void ShowActionAlert(PushAction action)
         {
             string sendnotif = SecureStorage.GetAsync("SendNotif").Result;
@@ -31,11 +43,13 @@ namespace ProjetGroupe
             }
         }
 
+        /// <summary>
+        /// Constructeur de la classe
+        /// </summary>
         public App()
         {
             InitializeComponent();
-            ServiceContainer.Resolve<IPushDemoNotificationActionService>().ActionTriggered += NotificationActionTriggered;
-           // SecureStorage.Remove("SendNotif");
+            ServiceContainer.Resolve<ICovidNotificationActionService>().ActionTriggered += NotificationActionTriggered;
             var isLoogged = SecureStorage.GetAsync("isLogged").Result;
             if (isLoogged == "1")
             {
@@ -47,16 +61,22 @@ namespace ProjetGroupe
                 MainPage = new LoginPage();
             }
         }
-
+        /// <summary>
+        /// Quand l'application démarre
+        /// </summary>
         protected override void OnStart()
         {
 
         }
-
+        /// <summary>
+        /// Quand l'application est en veille
+        /// </summary>
         protected override void OnSleep()
         {
         }
-
+        /// <summary>
+        /// Quand l'application se réouvre
+        /// </summary>
         protected override void OnResume()
         {
         }

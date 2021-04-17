@@ -9,67 +9,17 @@ using Xamarin.Forms;
 
 namespace ProjetGroupe.Models.Manager
 {
+    /// <summary>
+    /// Classe Mannager Salle
+    /// </summary>
     internal static class SalleManager
     {
-        internal static async Task<List<Salle>> LoadSalleByNom(string nomSalle)
-        {
-            var httpClient = new HttpClient();
-            List<Salle> Items = new List<Salle>();
-
-            if (Device.RuntimePlatform == Device.Android)
-            {
-                httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
-                httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            }
-
-            string WebAPIUrl = Config.WebServiceURI + "/Personne/ListSalleEleve/" + nomSalle;
-            var uri = new Uri(WebAPIUrl);
-
-            try
-            {
-                var response = await httpClient.GetAsync(uri);
-
-                if (response.IsSuccessStatusCode)
-                {
-                    var content = await response.Content.ReadAsStringAsync();
-                    Items = JsonConvert.DeserializeObject<List<Salle>>(content);
-
-                    return Items;
-                }
-            }
-            catch (Exception ex) { }
-            return null;
-        }
-        internal static async Task<List<Salle>> ListSalleOfEleve()
-        {
-            var httpClient = new HttpClient();
-            List<Salle> Items = new List<Salle>();
-
-            if (Device.RuntimePlatform == Device.Android)
-            {
-                httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
-                httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            }
-
-            string WebAPIUrl = Config.WebServiceURI + "/Personne/ListSalleEleve/" + Personne.IsLogged().Id;
-            var uri = new Uri(WebAPIUrl);
-
-            try
-            {
-                var response = await httpClient.GetAsync(uri);
-
-                if (response.IsSuccessStatusCode)
-                {
-                    var content = await response.Content.ReadAsStringAsync();
-                    Items = JsonConvert.DeserializeObject<List<Salle>>(content);
-
-                    return Items;
-                }
-            }
-            catch (Exception ex) { }
-            return null;
-        }
-        internal static async Task<List<CapteurType>> ListCapteurBySalleId(string nomSalle)
+        /// <summary>
+        /// Méthoed permettant de charger une liste de capteur via le nom de la salle donnant l'id de la salle, le nom du bâtiment etc..
+        /// </summary>
+        /// <param name="nomSalle">nom de la salle saisie</param>
+        /// <returns>Une liste de CapteurType</returns>
+        internal static async Task<List<CapteurType>> ListCapteurBySalleName(string nomSalle)
         {
             var httpClient = new HttpClient();
             List<CapteurType> Items = new List<CapteurType>();

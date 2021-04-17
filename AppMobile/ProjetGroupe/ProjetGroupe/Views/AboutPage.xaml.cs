@@ -18,8 +18,9 @@ namespace ProjetGroupe.Views
 {
     public partial class AboutPage : ContentPage, INotifyPropertyChanged
     {
-
-        public event PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// Constructeur de la classe
+        /// </summary>
         public AboutPage( )
         {
             InitializeComponent();
@@ -37,6 +38,9 @@ namespace ProjetGroupe.Views
                 ListCasCovidForm.IsRefreshing = false;
             });
         }
+        /// <summary>
+        /// Evènement "Quand la page apparaît"
+        /// </summary>
         protected override void OnAppearing()
         {
             base.OnAppearing();
@@ -45,10 +49,16 @@ namespace ProjetGroupe.Views
             ListCasCovidForm.TranslationY = 600;
             ListCasCovidForm.TranslateTo(0, 0, 500, Easing.SinInOut);
         }
+        /// <summary>
+        /// Méthode permettant de remplir la liste des cascovid sur le front par formation lors du refresh de la liste
+        /// </summary>
         public async void GetDataForm()
         {
             ListCasCovidForm.ItemsSource = await CasCovid.ListCasCovidFormation();
         }
+        /// <summary>
+        /// Méthode permettant de remplir la liste des cascovid sur le front par département lors du refresh de la liste
+        /// </summary>
         public async void GetDataDep()
         {
             ListCasCovidDep.ItemsSource = await CasCovid.ListCasCovidDepartement();

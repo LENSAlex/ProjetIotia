@@ -10,9 +10,15 @@ using Xamarin.Forms.Xaml;
 
 namespace ProjetGroupe.Views
 {
+    /// <summary>
+    /// Back du front de la page de login
+    /// </summary>
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
     {
+        /// <summary>
+        /// Constructeur de la classe
+        /// </summary>
         public LoginPage()
         {
             InitializeComponent();

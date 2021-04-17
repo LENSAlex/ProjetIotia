@@ -15,17 +15,35 @@ using static Android.Provider.Settings;
 
 namespace ProjetGroupe.Droid.Services
 {
+    /// <summary>
+    /// Classe d'installation des notifications sur l'appareil
+    /// </summary>
     public class DeviceInstallationService : IDeviceInstallationService
     {
+        /// <summary>
+        /// Token
+        /// </summary>
         public string Token { get; set; }
 
+        /// <summary>
+        /// NotificationsSupported
+        /// </summary>
         public bool NotificationsSupported
             => GoogleApiAvailability.Instance
                 .IsGooglePlayServicesAvailable(Application.Context) == ConnectionResult.Success;
 
+        /// <summary>
+        /// Régupère l'id de l'appareil
+        /// </summary>
+        /// <returns></returns>
         public string GetDeviceId()
             => Secure.GetString(Application.Context.ContentResolver, Secure.AndroidId);
 
+        /// <summary>
+        /// Récupère l'installation de l'appareil
+        /// </summary>
+        /// <param name="tags">tags</param>
+        /// <returns>DeviceInstallation</returns>
         public DeviceInstallation GetDeviceInstallation(params string[] tags)
         {
             if (!NotificationsSupported)
@@ -45,7 +63,10 @@ namespace ProjetGroupe.Droid.Services
 
             return installation;
         }
-
+        /// <summary>
+        /// Récupère les erreurs GooglePlayService de notification
+        /// </summary>
+        /// <returns></returns>
         string GetPlayServicesError()
         {
             int resultCode = GoogleApiAvailability.Instance.IsGooglePlayServicesAvailable(Application.Context);

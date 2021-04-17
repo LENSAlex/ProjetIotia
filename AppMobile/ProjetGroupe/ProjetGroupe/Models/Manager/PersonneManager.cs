@@ -10,8 +10,16 @@ using Xamarin.Forms;
 
 namespace ProjetGroupe.Models.Manager
 {
+    /// <summary>
+    /// Classe Manager Utilisateur (Personne)
+    /// </summary>
     internal static class PersonneManager
     {
+        /// <summary>
+        /// Fonction Load permettant de charger une utilisateur via son Id en faisant une requête SELECT vers la Base de données MySQL sur RaspberryPI
+        /// </summary>
+        /// <param name="id">Id de la personne</param>
+        /// <returns>Un objet Personne</returns>
         internal static Personne Load(int id)
         {
             Personne item = null;
@@ -35,55 +43,12 @@ namespace ProjetGroupe.Models.Manager
 
             return item;
         }
-
-        internal static Personne Search(string email)
-        {
-            Personne item = null;
-            using (MySqlConnection cnx = new MySqlConnection(Config.ConnectionString))
-            {
-                using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM Personne WHERE email=@email", cnx))
-                {
-                    cmd.Parameters.Add(new MySqlParameter("@email", email));
-
-                    cnx.Open();
-                    using (MySqlDataReader dr = cmd.ExecuteReader())
-                    {
-                        if (dr.Read())
-                        {
-                            item = new Personne();
-                            fill(item, dr);
-                        }
-                    }
-                }
-            }
-
-            return item;
-        }
-        internal static List<Personne> SearchLike(string query)
-        {
-            List<Personne> list = new List<Personne>();
-            using (MySqlConnection cnx = new MySqlConnection(Config.ConnectionString))
-            {
-                using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM Personne WHERE email LIKE @email", cnx))
-                {
-                    cmd.Parameters.Add(new MySqlParameter("@email", "%" + query + "%"));
-
-                    cnx.Open();
-                    using (MySqlDataReader dr = cmd.ExecuteReader())
-                    {
-                        while (dr.Read())
-                        {
-                            Personne item = new Personne();
-                            fill(item, dr);
-                            list.Add(item);
-                        }
-                    }
-                }
-            }
-
-            return list;
-        }
-
+        /// <summary>
+        /// Methode permettant de rechercher un utilisateur via son rfid (identifiant) et son password en faisant une requête select dans la bdd
+        /// </summary>
+        /// <param name="rfid">Identifiant de la personne</param>
+        /// <param name="password">mdp de la personne</param>
+        /// <returns>un objet personne</returns>
         internal static Personne Search(string rfid, string password)
         {
             Personne item = null;
@@ -108,31 +73,11 @@ namespace ProjetGroupe.Models.Manager
 
             return item;
         }
-
-        internal static List<Personne> List()
-        {
-            List<Personne> list = new List<Personne>();
-            using (MySqlConnection cnx = new MySqlConnection(Config.ConnectionString))
-            {
-                using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM Personne ORDER BY id_personne", cnx))
-                {
-
-                    cnx.Open();
-                    using (MySqlDataReader dr = cmd.ExecuteReader())
-                    {
-                        while (dr.Read())
-                        {
-                            Personne item = new Personne();
-                            fill(item, dr);
-                            list.Add(item);
-                        }
-                    }
-                }
-            }
-
-            return list;
-        }
-
+        /// <summary>
+        /// fill permet de "d'insérer" le contenu des colonnes MySQL dans les getter/setter de la classe Personne
+        /// </summary>
+        /// <param name="item">Objet Personne</param>
+        /// <param name="dr">Classe MySqlDataReader</param>
         private static void fill(Personne item, MySqlDataReader dr)
         {
             item.Id = (int)dr["id_personne"];
@@ -142,78 +87,6 @@ namespace ProjetGroupe.Models.Manager
             item.RFID = (string)dr["rfid"];
             item.PersonneType = (PersonneType)dr["id_pers_type"];
             item.Anniversaire = (DateTime)dr["date_anniversaire"];
-        }
-
-        internal static void Save(Personne personne)
-        {
-            if (personne.Id == 0)
-            {
-                using (MySqlConnection cnx = new MySqlConnection(Config.ConnectionString))
-                {
-                    using (MySqlCommand cmd = new MySqlCommand("INSERT INTO Personne ( sexe, email, password, id_pers_type, date_anniversaire, rfid) VALUES ( @sexe, @email, @password, @type, @dateAnniv, @rfid)", cnx))
-                    {
-                        FillSql(cmd, personne);
-
-                        cnx.Open();
-                        cmd.ExecuteNonQuery();
-
-                        personne.Id = Convert.ToInt32(new MySqlCommand("SELECT @@IDENTITY", cnx).ExecuteScalar());
-                    }
-                }
-            }
-            else
-            {
-                using (MySqlConnection cnx = new MySqlConnection(Config.ConnectionString))
-                {
-                    using (MySqlCommand cmd = new MySqlCommand("UPDATE Personne SET sexe=@sexe, email=@email, password=@password, id_pers_type=@type, date_anniversaire=@dateAnniv, rfid=@rfid WHERE id_personne=@id", cnx))
-                    {
-                        FillSql(cmd, personne);
-
-                        cnx.Open();
-                        cmd.ExecuteNonQuery();
-                    }
-                }
-            }
-        }
-
-        internal static void FillSql(MySqlCommand cmd, Personne item)
-        {
-            cmd.Parameters.Add(new MySqlParameter("@id", item.Id));
-            cmd.Parameters.Add(new MySqlParameter("@sexe", item.Sexe));
-            cmd.Parameters.Add(new MySqlParameter("@email", item.Email));
-            cmd.Parameters.Add(new MySqlParameter("@password", item.Password));
-            cmd.Parameters.Add(new MySqlParameter("@type", item.PersonneType));
-            cmd.Parameters.Add(new MySqlParameter("@dateAnniv", item.Anniversaire));
-            cmd.Parameters.Add(new MySqlParameter("@rfid", item.RFID));
-        }
-
-        internal static void Delete(Personne personne)
-        {
-            using (MySqlConnection cnx = new MySqlConnection(Config.ConnectionString))
-            {
-                using (MySqlCommand cmd = new MySqlCommand("DELETE FROM Personne WHERE id_personne=@id", cnx))
-                {
-                    cmd.Parameters.Add(new MySqlParameter("@id", personne.Id));
-
-                    cnx.Open();
-                    cmd.ExecuteNonQuery();
-
-                    personne.Id = 0;
-                }
-            }
-        }
-        internal static int Count()
-        {
-
-            using (MySqlConnection cnx = new MySqlConnection(Config.ConnectionString))
-            {
-                using (MySqlCommand cmd = new MySqlCommand("SELECT COUNT(*) FROM Personne", cnx))
-                {
-
-                    cnx.Open();
-                    return Convert.ToInt32(cmd.ExecuteScalar());
-                }
-            }
         }
     }
 }

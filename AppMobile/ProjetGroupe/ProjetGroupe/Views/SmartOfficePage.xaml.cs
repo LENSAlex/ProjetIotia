@@ -16,12 +16,24 @@ using static ProjetGroupe.Views.AboutPage;
 
 namespace ProjetGroupe.Views
 {
+    /// <summary>
+    /// Back du front de la page SmartOffice
+    /// </summary>
     public partial class SmartOfficePage : ContentPage
     {
         RestService _restService;
+        /// <summary>
+        /// PropertyChangedEventHandler
+        /// </summary>
         public event PropertyChangedEventHandler PropertyChanged;
-        public List<Salle> _Salle { get; set; }
-        public Salle _SalleId { get; set; }
+        /// <summary>
+        /// Liste de CapteurType
+        /// </summary>
+        public List<CapteurType> _Salle = new List<CapteurType>();
+        /// <summary>
+        /// Méthode de changement d'une propriété sur le front
+        /// </summary>
+        /// <param name="propertyName">nom de la propriété</param>
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChangedEventHandler handler = PropertyChanged;
@@ -30,6 +42,9 @@ namespace ProjetGroupe.Views
                 handler(this, new PropertyChangedEventArgs(propertyName));
             }
         }
+        /// <summary>
+        /// Constructeur de la classe
+        /// </summary>
         public SmartOfficePage()
         {
             InitializeComponent();
@@ -43,10 +58,18 @@ namespace ProjetGroupe.Views
                 ListEquipement.IsRefreshing = false;
             });
         }
+        /// <summary>
+        /// Méthode permettrant de charger la liste d'équipement lors dfu refresh de la liste
+        /// </summary>
         public async void GetData()
         {
             ListEquipement.ItemsSource = await Equipement.ListEquipement();
         }
+        /// <summary>
+        /// Méthode appelée lors de la sélection d'un item de la liste d'équipement
+        /// </summary>
+        /// <param name="sender">La sélection</param>
+        /// <param name="e">L'évènement de sélection</param>
         private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var obj = (Equipement)e.SelectedItem;
@@ -64,10 +87,15 @@ namespace ProjetGroupe.Views
                 }
             }
         }
+        /// <summary>
+        /// Méthode qui va mettre la pénurie du produit choisi 
+        /// </summary>
+        /// <param name="idSalle">Id de la salle en question</param>
+        /// <param name="idEquip">Id de l'équipement en question</param>
+        /// <returns></returns>
         public async Task UpdateStockAsync(int idSalle, int idEquip)
         {
 
-            List<Salle> salle = await Salle.ListSalleOfEleve();
             Penurie penurie = new Penurie()
             {
                 date_maj = DateTime.Now,
@@ -78,7 +106,7 @@ namespace ProjetGroupe.Views
             var result = await Penurie.UpdateStock(penurie);
             if(result=="Ok")
             {
-                SetInfo();
+                SetInfo(penurie);
             }
             else
             {
@@ -89,18 +117,24 @@ namespace ProjetGroupe.Views
             }
          
         }
+        /// <summary>
+        /// Méthode appelée lors de la sélection de l'équipement
+        /// </summary>
+        /// <param name="idEquip">Récupère l'id de l'équipement grâce à l'évènement OnItemSelected</param>
+        /// <returns></returns>
         public async Task GetDisplayChoiceAsync(int idEquip)        
         {
             var resultPrompt = await DisplayPromptAsync("Choisissez une salle","Numéro de la salle:");
-            _Salle = await Salle.LoadSalleByNom(resultPrompt);
+
+            _Salle = await Salle.ListCapteurBySalleName(resultPrompt); 
             if (_Salle != null)
             {
-                Salle laSalle = new Salle();
-                laSalle.Id_salle = _Salle[0].Id_salle;
+                CapteurType laSalle = new CapteurType();
+                laSalle.SalleId = _Salle[0].SalleId;
                 var result = await DisplayAlert("Attention!", "Voulez vous vraiment alterter que ce produit est en pénurie?", "Valider", "Annuler");
                 if (result == true)
                 {
-                    UpdateStockAsync(laSalle.Id_salle, idEquip);
+                    UpdateStockAsync(laSalle.SalleId, idEquip);
                 }
                 else
                 {
@@ -111,13 +145,20 @@ namespace ProjetGroupe.Views
                 }
             }        
         }
-        public void SetInfo()
+        /// <summary>
+        /// Méthode appelée à la fin du traitement de l'envoie de la pénurie dans la base de donnée
+        /// </summary>
+        /// <param name="penurie">Objet Penurie</param>
+        public void SetInfo(Penurie penurie)
         {
             Personne personne = Personne.IsLogged();
-            personne.RappelMail(personne);
+            personne.RappelMailPenurie(personne, penurie);
             Label1.Text = "Alerte envoyée avec succès";
             Label1.IsVisible = true;
         }
+        /// <summary>
+        /// Méthode exécuté lors de l'apparition de la page
+        /// </summary>
         protected override void OnAppearing()
         {
             base.OnAppearing();

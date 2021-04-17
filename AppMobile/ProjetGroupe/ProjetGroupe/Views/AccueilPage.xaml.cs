@@ -15,11 +15,17 @@ namespace ProjetGroupe.Views
     [DesignTimeVisible(false)]
     public partial class AccueilPage : ContentPage
     {
+        /// <summary>
+        /// Constructeur de la classe
+        /// </summary>
         public AccueilPage()
         {
             InitializeComponent();
             this.BindingContext = new AccueilViewModel();
         }
+        /// <summary>
+        /// Evènement "Quand la page apparaît"
+        /// </summary>
         protected override void OnAppearing()
         {
             base.OnAppearing();

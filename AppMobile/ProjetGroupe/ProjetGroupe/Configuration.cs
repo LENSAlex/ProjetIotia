@@ -6,6 +6,9 @@ namespace ProjetGroupe
 {
     public static partial class Configuration
     {
+        /// <summary>
+        /// BackendServiceEndpoint
+        /// </summary>
         public static string BackendServiceEndpoint = "BACKEND_SERVICE_ENDPOINT";
     }
 }

@@ -119,3 +119,4 @@ C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\ProjetGroupe\ProjetGroupe\bi
 C:\Users\bl005314\Source\Repos\ProjetIotiaV2\AppMobile\ProjetGroupe\ProjetGroupe\bin\Debug\netstandard2.0\Java.Interop.dll
 C:\Users\bl005314\Source\Repos\ProjetIotiaV2\AppMobile\ProjetGroupe\ProjetGroupe\bin\Debug\netstandard2.0\Xamarin.AndroidX.Core.dll
 C:\Users\bl005314\Source\Repos\ProjetIotiaV2\AppMobile\ProjetGroupe\ProjetGroupe\bin\Debug\netstandard2.0\Xamarin.AndroidX.Core.pdb
+C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\ProjetGroupe\ProjetGroupe\bin\Debug\netstandard2.0\ProjetGroupe.xml

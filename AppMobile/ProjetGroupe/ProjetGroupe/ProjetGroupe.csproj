@@ -5,6 +5,10 @@
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\Poste\Source\Repos\ProjetIotiaV4\Documentation\AppMobile\ProjetGroupe.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <None Remove="Fonts\NunitoSans-Bold.ttf" />
     <None Remove="Fonts\NunitoSans-Regular.ttf" />

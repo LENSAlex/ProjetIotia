@@ -14,12 +14,27 @@ using System.Linq;
 
 namespace ProjetGroupe.Models
 {
+    /// <summary>
+    /// Enum du Type de personne
+    /// </summary>
     public enum PersonneType
     {
+        /// <summary>
+        /// Etudiant
+        /// </summary>
         Etudiant = 1,
+        /// <summary>
+        /// Professeur
+        /// </summary>
         Professeur = 2,
+        /// <summary>
+        /// Personnel Administration / Agent d'entretien
+        /// </summary>
         Personnel = 3
     }
+    /// <summary>
+    /// Classe personne
+    /// </summary>
 
     public class Personne
     {
@@ -31,50 +46,57 @@ namespace ProjetGroupe.Models
         private DateTime anniversaire;
         private string rfid;
 
+        /// <summary>
+        /// Id de la personne
+        /// </summary>
         public int Id { get => id; set => id = value; }
+        /// <summary>
+        /// Email de la personne
+        /// </summary>
         public string Email { get => email; set => email = value; }
+        /// <summary>
+        /// Sexe de la personne
+        /// </summary>
         public string Sexe { get => sexe; set => sexe = value; }
+        /// <summary>
+        /// Mot de passe de la personne
+        /// </summary>
         public string Password { get => password; set => password = value; }
+        /// <summary>
+        /// Type de la personne
+        /// </summary>
         public PersonneType PersonneType { get => persType; set => persType = value; }
+        /// <summary>
+        /// anniversaire de la personne
+        /// </summary>
         public DateTime Anniversaire { get => anniversaire; set => anniversaire = value; }
+        /// <summary>
+        /// Identifiant de la personne
+        /// </summary>
         public string RFID { get => rfid; set => rfid = value; }
-        public void Save()
-        {
-            PersonneManager.Save(this);
-        }
-
+        /// <summary>
+        /// Méthode statique permettant de charger une personne spéficique via son Id en contactant la base de données par le biai de la classe Manager
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Une personne</returns>
         public static Personne Load(int id)
         {
             return PersonneManager.Load(id);
         }
-
-        public static List<Personne> List()
-        {
-            return PersonneManager.List();
-        }
-
-        public static Personne Search(string email)
-        {
-            return PersonneManager.Search(email);
-        }
-        public Personne SearchMail(string email)
-        {
-            return PersonneManager.Search(email);
-        }
-        public static List<Personne> SearchLike(string query)
-        {
-            return PersonneManager.SearchLike(query);
-        }
+        /// <summary>
+        /// Méthode statique permettant de charger une personne spéficique via son Email et son mot de passe en contactant la base de données par le biai de la classe Manager
+        /// </summary>
+        /// <param name="rfid">Identifiant de la personne</param>
+        /// <param name="password">mdp de la personne</param>
+        /// <returns>Une personne</returns>
         public static Personne Search(string rfid, string password)
         {
             return PersonneManager.Search(rfid, password);
         }
-
-        public static int Count()
-        {
-            return PersonneManager.Count();
-        }
-
+        /// <summary>
+        /// Methode Static vérifiant si une personne est connecté ou non à l'application en regardant si son Id est bien en cookie de session
+        /// </summary>
+        /// <returns></returns>
         public static Personne IsLogged()
         {
             int result = Convert.ToInt32(Xamarin.Essentials.SecureStorage.GetAsync("isLogged").Result);
@@ -96,6 +118,11 @@ namespace ProjetGroupe.Models
                 return null;
             }
         }
+        /// <summary>
+        /// Envoie d'un mail vers le secrétariat avec les informations de la personne en cas de CasCovid
+        /// </summary>
+        /// <param name="personne">Objet Personne</param>
+        /// <returns>true si mail envoyé</returns>
         public bool RappelMail(Personne personne)
         {
             using (MailMessage mail = new MailMessage())
@@ -120,7 +147,13 @@ namespace ProjetGroupe.Models
                 return true;
             }
         }
-        public bool RappelMailPenurie(Personne personne)
+        /// <summary>
+        /// Méthode permettant d'nevoyer une mail au secrétariat avec les informations de l'équipement et de la personne concernant l'information sur la pénurie qu'il a émit
+        /// </summary>
+        /// <param name="personne">Objet Personne</param>
+        /// <param name="penurie">Objet Penurie</param>
+        /// <returns>true si mail envoyé</returns>
+        public bool RappelMailPenurie(Personne personne, Penurie penurie)
         {
             using (MailMessage mail = new MailMessage())
             {
@@ -128,7 +161,9 @@ namespace ProjetGroupe.Models
                 mail.To.Add(Config.MailTo);
                 mail.Subject = "Une alerte de pénurie d'un produit à été envoyé par un utilisateur à: " + DateTime.Now;
                 mail.Body = "<h1 style='text-align:center'>Une alerte de pénurie d'un produit vous a été envoyé par l'application Smart E-Covid IUT.</h1>" +
-                    "<p>Envoyé par: " + personne.Email + "</p>";
+                    "<p>Envoyé par: " + personne.Email + "</p>" +
+                    "<p>Equipement : " + penurie.Id_Equipement + "</p>" +
+                    "<p>Salle : " + penurie.SalleId + "</p>";
 
                 mail.Headers.Add("Content-Type", "text/html; charset=utf-8");
                 mail.Headers.Add("MIME-Version", "1.0");
@@ -144,6 +179,11 @@ namespace ProjetGroupe.Models
                 return true;
             }
         }
+        /// <summary>
+        /// Méthode static asynchrone générant un PDF et demandanr l'ouverture de celui-ci (avec demande de permission)
+        /// </summary>
+        /// <param name="size">Le nombre de ligne voulu</param>
+        /// <param name="data">La Liste d'historique de valeur à afficher dans le pdf</param>
         public static async void GeneratePdfAsync(int size, List<Historique> data)
         {
             PdfDocument document = new PdfDocument();

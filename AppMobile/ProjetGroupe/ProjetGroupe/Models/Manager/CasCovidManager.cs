@@ -10,8 +10,16 @@ using Xamarin.Forms;
 
 namespace ProjetGroupe.Models.Manager
 {
+    /// <summary>
+    /// Classe CasCovid Manager
+    /// </summary>
     internal static class CasCovidManager
     {
+        /// <summary>
+        /// Méthode prenant un CasCovid en paramètre contenant les informations à POST vers l'API REST
+        /// </summary>
+        /// <param name="cas"></param>
+        /// <returns>"OK" si code réponse = 200 sinon erreur</returns>
         internal static async Task<string> SendAlert(CasCovid cas)
         {
             var httpClient = new HttpClient();
@@ -51,6 +59,10 @@ namespace ProjetGroupe.Models.Manager
                 return "ErreurNull";
             }
         }
+        /// <summary>
+        /// Méthode faisant un GET vers l'API REST
+        /// </summary>
+        /// <returns>Une liste de CasCovid ou null si erreur</returns>
         internal static async Task<List<CasCovid>> ListCasCovid()
         {
             var httpClient = new HttpClient();
@@ -76,6 +88,11 @@ namespace ProjetGroupe.Models.Manager
             catch (Exception ex) { }
             return null;
         }
+
+        /// <summary>
+        /// Méthode faisant un GET vers l'API REST
+        /// </summary>
+        /// <returns>Une liste de CasCovid par formation ou null si erreur</returns>
         internal static async Task<List<CasCovid>> ListCasCovidFormation()
         {
             var httpClient = new HttpClient();
@@ -101,6 +118,10 @@ namespace ProjetGroupe.Models.Manager
             catch (Exception ex) { }
             return null;
         }
+        /// <summary>
+        /// Méthode faisant un GET vers l'API REST
+        /// </summary>
+        /// <returns>Une liste de CasCovid par département ou null si erreur</returns>
         internal static async Task<List<CasCovid>> ListCasCovidDepartement()
         {
             var httpClient = new HttpClient();

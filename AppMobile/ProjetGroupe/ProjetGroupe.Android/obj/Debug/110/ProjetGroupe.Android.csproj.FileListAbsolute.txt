@@ -3583,3 +3583,5 @@ C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\ProjetGroupe\ProjetGroupe.An
 C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Debug\110\res\mipmap-xxxhdpi\splashscreen.png
 C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Debug\110\res\mipmap-xxhdpi\splashscreen.png
 C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\ProjetGroupe\ProjetGroupe.Android\obj\Debug\110\res\xml\filepath.xml
+C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\ProjetGroupe\ProjetGroupe.Android\bin\Debug\ProjetGroupe.xml
+C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\ProjetGroupe\ProjetGroupe.Android\bin\Debug\ProjetDroid.xml

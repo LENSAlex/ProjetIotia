@@ -13,11 +13,21 @@ using Xamarin.Forms.Xaml;
 
 namespace ProjetGroupe.Views
 {
+    /// <summary>
+    /// Back du front de la page SmartBuilding 2
+    /// </summary>
     public partial class eCovidPage : ContentPage, INotifyPropertyChanged
     {
+        /// <summary>
+        /// PropertyChangedEventHandler
+        /// </summary>
 
         public event PropertyChangedEventHandler PropertyChanged;
 
+        /// <summary>
+        /// Méthode de changement d'une propriété sur le front
+        /// </summary>
+        /// <param name="propertyName">nom de la propriété</param>
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChangedEventHandler handler = PropertyChanged;
@@ -26,9 +36,17 @@ namespace ProjetGroupe.Views
                 handler(this, new PropertyChangedEventArgs(propertyName));
             }
         }
+        /// <summary>
+        /// Getter/Setter Liste de salle
+        /// </summary>
         public List<Salle> _Salle { get; set; }
+        /// <summary>
+        /// Getter/Setter Liste de CapteurType
+        /// </summary>
         public List<CapteurType> _CapteurType { get; set; }
-        public string SearchResults { get; set; }
+        /// <summary>
+        /// Constructeur de la classe
+        /// </summary>
         public eCovidPage()
         {
             InitializeComponent();
@@ -40,10 +58,18 @@ namespace ProjetGroupe.Views
                 ListCapteur.IsRefreshing = false;
             });
         }
+        /// <summary>
+        /// Méthode permettant de remplir la liste par la liste de CapteurType au refresh de celle-ci
+        /// </summary>
         public async void GetData()
         {
             ListCapteur.ItemsSource = await CapteurType.List();
         }
+        /// <summary>
+        /// Evènement lors de la sélection d'un item de la liste
+        /// </summary>
+        /// <param name="sender">La sélection</param>
+        /// <param name="e">L'évènement de sélection</param>
         private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var obj = (CapteurType)e.SelectedItem;
@@ -54,6 +80,9 @@ namespace ProjetGroupe.Views
             SecureStorage.SetAsync("Liste", "Liste");
             Application.Current.MainPage = new CapteursDetailsPage();
         }
+        /// <summary>
+        /// Evènement exécuté quand la page apparaît
+        /// </summary>
         protected override void OnAppearing()
         {
             base.OnAppearing();

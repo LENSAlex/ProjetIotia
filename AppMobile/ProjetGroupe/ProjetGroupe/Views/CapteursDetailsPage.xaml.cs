@@ -15,17 +15,35 @@ namespace ProjetGroupe.Views
 
     public partial class CapteursDetailsPage : ContentPage, INotifyPropertyChanged
     {
+        /// <summary>
+        /// PropertyChangedEventHandler
+        /// </summary>
         public event PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// Méthode de changement d'une propriété sur le front
+        /// </summary>
+        /// <param name="propertyName">nom de la propriété</param>
         public void RaisepropertyChanged(string propertyName)
         {
             if (PropertyChanged != null)
                 PropertyChanged.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-
+        /// <summary>
+        /// Date 
+        /// </summary>
         public DateTime Date { get; set; } = DateTime.Now;
+        /// <summary>
+        /// Id du capteur
+        /// </summary>
         public string CapteurId { get; set; }
+        /// <summary>
+        /// valmoy
+        /// </summary>
 
         public string valmoy;
+        /// <summary>
+        /// ValeurMoyenne à afficher
+        /// </summary>
         public string ValMoy
         {
             get
@@ -38,7 +56,13 @@ namespace ProjetGroupe.Views
                 RaisepropertyChanged("ValMoy");
             }
         }
+        /// <summary>
+        /// vallast
+        /// </summary>
         public string vallast;
+        /// <summary>
+        /// Dernière valeur à afficher
+        /// </summary>
         public string ValLast
         {
             get
@@ -51,7 +75,13 @@ namespace ProjetGroupe.Views
                 RaisepropertyChanged("ValLast");
             }
         }
+        /// <summary>
+        /// unit
+        /// </summary>
         public string unit;
+        /// <summary>
+        /// Unité à afficher
+        /// </summary>
         public string Unite
         {
             get
@@ -64,7 +94,13 @@ namespace ProjetGroupe.Views
                 RaisepropertyChanged("Unite");
             }
         }
+        /// <summary>
+        /// libel
+        /// </summary>
         public string libel;
+        /// <summary>
+        /// Libellé à affiché
+        /// </summary>
         public string Libelle
         {
             get
@@ -77,7 +113,13 @@ namespace ProjetGroupe.Views
                 RaisepropertyChanged("Libelle");
             }
         }
+        /// <summary>
+        /// libeltype
+        /// </summary>
         public string libeltype;
+        /// <summary>
+        /// LibelleType à afficher
+        /// </summary>
         public string LibelleType
         {
             get
@@ -90,7 +132,13 @@ namespace ProjetGroupe.Views
                 RaisepropertyChanged("LibelleType");
             }
         }
+        /// <summary>
+        /// boxname
+        /// </summary>
         public string boxname;
+        /// <summary>
+        /// Nom de la box à afficher
+        /// </summary>
         public string BoxName
         {
             get
@@ -103,7 +151,13 @@ namespace ProjetGroupe.Views
                 RaisepropertyChanged("BoxName");
             }
         }
+        /// <summary>
+        /// nombat
+        /// </summary>
         public string nombat;
+        /// <summary>
+        /// Nom du bâtiment à afficher
+        /// </summary>
         public string NomBat
         {
             get
@@ -116,6 +170,9 @@ namespace ProjetGroupe.Views
                 RaisepropertyChanged("NomBat");
             }
         }
+        /// <summary>
+        /// Constructeur de la classe
+        /// </summary>
         public CapteursDetailsPage()
         {
             CapteurId = SecureStorage.GetAsync("CapteurId").Result;
@@ -129,15 +186,9 @@ namespace ProjetGroupe.Views
             this.BindingContext = this;
 
         }
-        public async void GetValeur()
-        {
-            List<Historique> histoList = new List<Historique>();
-            histoList = await Historique.ListValeurLast(Convert.ToInt32(CapteurId));
-            foreach (Historique histo in histoList)
-            {
-
-            }
-        }
+        /// <summary>
+        /// Méthode permettrant de remplir la ValMoy
+        /// </summary>
         public async void GetValeurMoyenne()
         {
             List<Historique> histoList = new List<Historique>();
@@ -149,6 +200,9 @@ namespace ProjetGroupe.Views
                 ValMoy = val + " " + unit;
             }
         }
+        /// <summary>
+        /// Méthode permettrant de remplir la ValLast
+        /// </summary>
         public async void GetValeurLast()
         {
             List<Historique> histoList = new List<Historique>();
@@ -161,6 +215,9 @@ namespace ProjetGroupe.Views
             }
 
         }
+        /// <summary>
+        /// Méthode permettrant de remplir le LibelType
+        /// </summary>
         public async void GetLibelType()
         {
             List<Historique> histoList = new List<Historique>();
@@ -170,6 +227,9 @@ namespace ProjetGroupe.Views
                 LibelleType = Convert.ToString(histoList[0].LibelleType);
             }
         }
+        /// <summary>
+        /// Méthode permettrant de remplir le Libelle
+        /// </summary>
         public async void GetLibel()
         {
             List<Historique> histoList = new List<Historique>();
@@ -179,6 +239,11 @@ namespace ProjetGroupe.Views
                 Libelle = Convert.ToString(histoList[0].Libelle);
             }
         }
+        /// <summary>
+        /// Action au click de l'ImageButton sur le front
+        /// </summary>
+        /// <param name="sender">l'ImageButton</param>
+        /// <param name="e">L'Event Click</param>
         public void OnImageButtonClicked(object sender, EventArgs e)
         {
             var liste = SecureStorage.GetAsync("Liste").Result;
@@ -200,12 +265,18 @@ namespace ProjetGroupe.Views
                 SecureStorage.Remove("NomBat");
             }
         }
+        /// <summary>
+        /// Evènement "Quand la page apparaît"
+        /// </summary>
         protected override void OnAppearing()
         {
             base.OnAppearing();
             DetailsView.TranslationY = 600;
             DetailsView.TranslateTo(0, 0, 500, Easing.SinInOut);
         }
+        /// <summary>
+        /// Evènement "Quand la page disparaît"
+        /// </summary>
         protected override void OnDisappearing() 
         { 
             base.OnDisappearing();

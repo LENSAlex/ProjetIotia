@@ -14,11 +14,22 @@ using Xamarin.Forms;
 
 namespace ProjetGroupe.ViewModels
 {
+    /// <summary>
+    /// View SmartBuilding 2 
+    /// </summary>
     public class eCovidViewModel : BaseViewModel
     {
+        /// <summary>
+        /// PropertyChangedEventHandler
+        /// </summary>
         public event PropertyChangedEventHandler PropertyChanged;
-
+        /// <summary>
+        /// var item
+        /// </summary>
         public ObservableCollection<CapteurType> items { get; set; }
+        /// <summary>
+        /// Affichage de l'ObservableCollection de CapteurType
+        /// </summary>
         public ObservableCollection<CapteurType> Items
         {
             get
@@ -31,22 +42,38 @@ namespace ProjetGroupe.ViewModels
                 RaisepropertyChanged("Items");
             }
         }
+        /// <summary>
+        /// Méthode asynchrone permettant de remplir Items de la liste d'ObservableCollection de CapteurType
+        /// </summary>
         public async void GetData()
         {
             Items = await CapteurType.List();
         }
+        /// <summary>
+        /// Evènement de changement de propriété
+        /// </summary>
+        /// <param name="propertyName">nom de la propriété</param>
         public void RaisepropertyChanged(string propertyName)
         {
             if (PropertyChanged != null)
                 PropertyChanged.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+        /// <summary>
+        /// Commande de click sur un bouton
+        /// </summary>
         public Command ClickedTest { get; }
+        /// <summary>
+        /// Constructeur de la classe
+        /// </summary>
         public eCovidViewModel()
         {
             Device.BeginInvokeOnMainThread(() => GetData());
             ClickedTest = new Command(OnClickedTestClickedAsync);
         }
-
+        /// <summary>
+        /// Méthoed exécuté lors du click sur le bouton de génération de Pdf
+        /// </summary>
+        /// <param name="obj">Le click</param>
         private async void OnClickedTestClickedAsync(object obj)
         {
             List<Historique> listeHisto = new List<Historique>();

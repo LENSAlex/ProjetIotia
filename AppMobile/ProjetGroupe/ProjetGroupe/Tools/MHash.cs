@@ -7,8 +7,16 @@ using System.Threading.Tasks;
 
 namespace ProjetGroupe.Tools
 {    
+    /// <summary>
+    /// Classe MHash
+    /// </summary>
     public static class MHash
     {
+        /// <summary>
+        /// Méthode statique permettant de hash un mot de passe en SHA256bits
+        /// </summary>
+        /// <param name="rawData">chaîne a hasher</param>
+        /// <returns>le hash en string</returns>
         public static string HashString(string rawData)
         {
             using (SHA256 sha256Hash = SHA256.Create())

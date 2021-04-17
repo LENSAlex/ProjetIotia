@@ -7,8 +7,16 @@ using System.Threading.Tasks;
 
 namespace ProjetGroupe.Models.Manager
 {
+    /// <summary>
+    /// Classe Manager Pénurie
+    /// </summary>
     internal static class PenurieManager
     {
+        /// <summary>
+        /// Fonction faisant une requête PUT vers l'API REST en prenant en param un objet Pénurie contenant l'id de l'équipement et l'id de la salle ou se trouve la pénurie
+        /// </summary>
+        /// <param name="item">Objet Penurie</param>
+        /// <returns>"Ok" si code = 200 sinon erreur</returns>
         internal static async Task<string> UpdateStock(Penurie item)
         {
             var httpClient = new HttpClient();

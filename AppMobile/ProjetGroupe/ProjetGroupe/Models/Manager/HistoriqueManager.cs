@@ -9,8 +9,15 @@ using Xamarin.Forms;
 
 namespace ProjetGroupe.Models.Manager
 {
+    /// <summary>
+    /// Classe Manager Historique des valeurs des capteurs
+    /// </summary>
     internal static class HistoriqueManager
     {
+        /// <summary>
+        /// Fonction qui fait une requête GET vers l'API REST
+        /// </summary>
+        /// <returns>Une liste d'Historique si code = 200 sinon erreur</returns>
         internal static async Task<List<Historique>> ListHistorique()
         {
             var httpClient = new HttpClient();
@@ -36,6 +43,12 @@ namespace ProjetGroupe.Models.Manager
             catch (Exception ex) { }
             return null;
         }
+        /// <summary>
+        /// Fonction qui donne la ligne la plus récente de l'historique du capteur choisit
+        /// GET vers l'API REST
+        /// </summary>
+        /// <param name="CapteurId">Id du capteur</param>
+        /// <returns>Une liste d'Historique (d'une ligne) si code = 200 sinon erreur</returns>
         internal static async Task<List<Historique>> ListValeurLast(int CapteurId)
         {
             var httpClient = new HttpClient();
@@ -61,6 +74,12 @@ namespace ProjetGroupe.Models.Manager
             catch (Exception ex) { }
             return null;
         }
+        /// <summary>
+        /// Fonction qui donne les lignes les valeurs moyennes du capteur choisit
+        /// GET vers l'API REST
+        /// </summary>
+        /// <param name="CapteurId">Id du capteur</param>
+        /// <returns>Une liste d'Historique si code = 200 sinon erreur</returns>
         internal static async Task<List<Historique>> ListValeurMoyenne(int CapteurId)
         {
             var httpClient = new HttpClient();
@@ -86,6 +105,12 @@ namespace ProjetGroupe.Models.Manager
             catch (Exception ex) { }
             return null;
         }
+        /// <summary>
+        /// Fonction qui donne les données du capteur choisit via son Id (Identique a moyenne mais nomage changé pour plus de perception dans le code)
+        /// GET vers l'API REST
+        /// </summary>
+        /// <param name="CapteurId">Id du capteur</param>
+        /// <returns>Une liste d'Historique si code = 200 sinon erreur</returns>
         internal static async Task<List<Historique>> Load(int CapteurId)
         {
             var httpClient = new HttpClient();

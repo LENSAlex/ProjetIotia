@@ -12,18 +12,50 @@ using Xamarin.Forms;
 
 namespace ProjetGroupe
 {
+    /// <summary>
+    /// Classe de configuration de l'application
+    /// </summary>
     public class Config
     {
+        /// <summary>
+        /// Base de données
+        /// </summary>
         public static string ConnectionString { get; set; }
+        /// <summary>
+        /// Endpoint
+        /// </summary>
         public static string NotificationEndPoint { get; set; }
+        /// <summary>
+        /// HubName
+        /// </summary>
         public static string NotificationHubName { get; set; }
+        /// <summary>
+        /// ChannelID
+        /// </summary>
         public static string NotificationChannelID { get; set; }
-
+        /// <summary>
+        /// Mail send
+        /// </summary>
         public static string Mail { get; set; }
+        /// <summary>
+        /// Mail To
+        /// </summary>
         public static string MailTo { get; set; }
+        /// <summary>
+        /// Mot de passe du compte de mail
+        /// </summary>
         public static string MailPw { get; set; }
+        /// <summary>
+        /// Serveur de mail
+        /// </summary>
         public static string MailServer { get; set; }
+        /// <summary>
+        /// Port du serveur de mail
+        /// </summary>
         public static string MailPort { get; set; }
+        /// <summary>
+        /// Uri de l'API REST
+        /// </summary>
         public static string WebServiceURI { get; set; }
         static Config()
         {
@@ -47,10 +79,16 @@ namespace ProjetGroupe
             MailPort = j.SelectToken("MailPort").ToString();
         }
     }
+    /// <summary>
+    /// Classe RestService
+    /// </summary>
     public class RestService
     {
         HttpClient _client;
 
+        /// <summary>
+        /// Constructeur de la classe
+        /// </summary>
         public RestService()
         {
             _client = new HttpClient();

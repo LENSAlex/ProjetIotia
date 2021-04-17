@@ -1,0 +1,499 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProjetGroupe</name>
+    </assembly>
+    <members>
+        <member name="T:ProjetGroupe.Models.Alerte">
+            <summary>
+            Classe Alerte
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.Alerte.SendNotification">
+            <summary>
+            Methode statique pouvant être appellé de n'importe ou pour envoyer une notification push
+            </summary>
+            <returns>true si envoyée sinon false</returns>
+        </member>
+        <member name="T:ProjetGroupe.Models.CapteurType">
+            <summary>
+            Classe CapteurType
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.CapteurType.Id">
+            <summary>
+            Id du capteur
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.CapteurType.Libelle">
+            <summary>
+            Description du capteur
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.CapteurType.Nom">
+            <summary>
+            Nom du bâtiment ou il se trouve
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.CapteurType.SalleId">
+            <summary>
+            Id de la salle ou se trouve
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.CapteurType.List">
+            <summary>
+            Méthode statique permettant de listé les capteurs
+            </summary>
+            <returns>Une ObservableCollection de CapteurType</returns>
+        </member>
+        <member name="T:ProjetGroupe.Models.CasCovid">
+            <summary>
+            Classe CasCovid
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.CasCovid.Nom">
+            <summary>
+            Nom du bâtiment
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.CasCovid.NbCasCovid">
+            <summary>
+            Nombre de cas
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.CasCovid.NomDep">
+            <summary>
+            Nom du département
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.CasCovid.DateDeContamination">
+            <summary>
+            Date de la contamination
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.CasCovid.PersonneId">
+            <summary>
+            Id de la personne ayant été signalé
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.CasCovid.Personne">
+            <summary>
+            Getter/Setter permattant de récupéré l'id de la personne
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.CasCovid.SendAlert(ProjetGroupe.Models.CasCovid)">
+            <summary>
+            Méthode statique qui contacte le manager pour établir la requête POST vers l'API REST
+            </summary>
+            <param name="cas">Objet CasCovid</param>
+            <returns>"Ok" si code = 200 sinon erreur</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.CasCovid.Count">
+            <summary>
+            Methode renvoyer le nombre de CasCovid
+            </summary>
+            <returns>le nombre de cas en string (pour l'affichage)</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.CasCovid.ListCasCovidFormation">
+            <summary>
+            Méthode statique donnant la liste des cas par formation en contactant l'API REST
+            </summary>
+            <returns>liste de CasCovid si code = 200 sinon erreur</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.CasCovid.ListCasCovidDepartement">
+            <summary>
+            Méthode statique donnant la liste des cas par département en contactant l'API REST
+            </summary>
+            <returns>liste de CasCovid si code = 200 sinon erreur</returns>
+        </member>
+        <member name="T:ProjetGroupe.Models.Equipement">
+            <summary>
+            Classe Equipement
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Equipement.Id">
+            <summary>
+            Id de l'équipement
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Equipement.Libelle">
+            <summary>
+            Libelle de l'équipement
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Equipement.Description">
+            <summary>
+            Description de celui-ci
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Equipement.EquipementType">
+            <summary>
+            Type d'équipement
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.Equipement.ListEquipement">
+            <summary>
+            Methode statique qui contacte l'API REST
+            </summary>
+            <returns>une ObservableCollection d'équipement</returns>
+        </member>
+        <member name="T:ProjetGroupe.Models.Historique">
+            <summary>
+            Classe Historique des valeurs des capteurs
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Historique.Id_device">
+            <summary>
+            Id du capteur
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Historique.Libelle">
+            <summary>
+            Libelle du capteur
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Historique.Unite">
+            <summary>
+            Unité de ses mesures
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Historique.Valeur">
+            <summary>
+            Valeur enregistrée
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Historique.Moyenne">
+            <summary>
+            Moyenne des valeurs enregistrées
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Historique.LibelleType">
+            <summary>
+            LibelleType des unités
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.Historique.ListHistorique">
+            <summary>
+            Méthoed statique contactant l'API REST 
+            </summary>
+            <returns>une liste d'historique</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Historique.ListValeurLast(System.Int32)">
+            <summary>
+            Méthoed statique contactant l'API REST prenant un Id de capteur en paramètre pour cibler un capteur 
+            </summary>
+            <param name="CapteurId">Id du capteur</param>
+            <returns>liste d'historique</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Historique.ListValeurMoyenne(System.Int32)">
+            <summary>
+            Méthoed statique contactant l'API REST prenant un Id de capteur en paramètre pour cibler la moyenne des valeurs d'un capteur 
+            </summary>
+            <param name="CapteurId">Id du capteur</param>
+            <returns>liste d'historique</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Historique.Load(System.Int32)">
+            <summary>
+            Méthoed statique contactant l'API REST prenant un Id de capteur en paramètre pour cibler un capteur précis
+            </summary>
+            <param name="CapteurId">Id du capteur</param>
+            <returns>liste d'historique</returns>
+        </member>
+        <member name="T:ProjetGroupe.Models.Manager.AlerteManager">
+            <summary>
+            Classe Manager Alerte (Envoie d'une notification push)
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.AlerteManager.SendAlert">
+            <summary>
+            Fonction qui établie une requête POST vers le Hub de Notification d'Azure.
+            </summary>
+            <returns>true or false selon la réponse du Hub de notification</returns>
+        </member>
+        <member name="T:ProjetGroupe.Models.Manager.CapteurManager">
+            <summary>
+            Classe Manager Capteur
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.CapteurManager.ListCapteur">
+            <summary>
+            Requête GET vers le serveur NodeJS permettant de lister les capteurs
+            </summary>
+            <returns>Une liste de CapteurType ou null si erreur</returns>
+        </member>
+        <member name="T:ProjetGroupe.Models.Manager.CasCovidManager">
+            <summary>
+            Classe CasCovid Manager
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.CasCovidManager.SendAlert(ProjetGroupe.Models.CasCovid)">
+            <summary>
+            Méthode prenant un CasCovid en paramètre contenant les informations à POST vers l'API REST
+            </summary>
+            <param name="cas"></param>
+            <returns>"OK" si code réponse = 200 sinon erreur</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.CasCovidManager.ListCasCovid">
+            <summary>
+            Méthode faisant un GET vers l'API REST
+            </summary>
+            <returns>Une liste de CasCovid ou null si erreur</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.CasCovidManager.ListCasCovidFormation">
+            <summary>
+            Méthode faisant un GET vers l'API REST
+            </summary>
+            <returns>Une liste de CasCovid par formation ou null si erreur</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.CasCovidManager.ListCasCovidDepartement">
+            <summary>
+            Méthode faisant un GET vers l'API REST
+            </summary>
+            <returns>Une liste de CasCovid par département ou null si erreur</returns>
+        </member>
+        <member name="T:ProjetGroupe.Models.Manager.EquipementManager">
+            <summary>
+            Classe Manager Equipement
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.EquipementManager.ListEquipement">
+            <summary>
+            Méthode faisant un GET vers l'API REST
+            </summary>
+            <returns>Une ObservableCollection d'Equipement (Equivalent d'une liste mais utilisé pour un composant spécial Xamarin) si code = 200 ou null si erreur</returns>
+        </member>
+        <member name="T:ProjetGroupe.Models.Manager.HistoriqueManager">
+            <summary>
+            Classe Manager Historique des valeurs des capteurs
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.HistoriqueManager.ListHistorique">
+            <summary>
+            Fonction qui fait une requête GET vers l'API REST
+            </summary>
+            <returns>Une liste d'Historique si code = 200 sinon erreur</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.HistoriqueManager.ListValeurLast(System.Int32)">
+            <summary>
+            Fonction qui donne la ligne la plus récente de l'historique du capteur choisit
+            GET vers l'API REST
+            </summary>
+            <param name="CapteurId">Id du capteur</param>
+            <returns>Une liste d'Historique (d'une ligne) si code = 200 sinon erreur</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.HistoriqueManager.ListValeurMoyenne(System.Int32)">
+            <summary>
+            Fonction qui donne les lignes les valeurs moyennes du capteur choisit
+            GET vers l'API REST
+            </summary>
+            <param name="CapteurId">Id du capteur</param>
+            <returns>Une liste d'Historique si code = 200 sinon erreur</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.HistoriqueManager.Load(System.Int32)">
+            <summary>
+            Fonction qui donne les données du capteur choisit via son Id (Identique a moyenne mais nomage changé pour plus de perception dans le code)
+            GET vers l'API REST
+            </summary>
+            <param name="CapteurId">Id du capteur</param>
+            <returns>Une liste d'Historique si code = 200 sinon erreur</returns>
+        </member>
+        <member name="T:ProjetGroupe.Models.Manager.PenurieManager">
+            <summary>
+            Classe Manager Pénurie
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.PenurieManager.UpdateStock(ProjetGroupe.Models.Penurie)">
+            <summary>
+            Fonction faisant une requête PUT vers l'API REST en prenant en param un objet Pénurie contenant l'id de l'équipement et l'id de la salle ou se trouve la pénurie
+            </summary>
+            <param name="item">Objet Penurie</param>
+            <returns>"Ok" si code = 200 sinon erreur</returns>
+        </member>
+        <member name="T:ProjetGroupe.Models.Manager.PersonneManager">
+            <summary>
+            Classe Manager Utilisateur (Personne)
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.PersonneManager.Load(System.Int32)">
+            <summary>
+            Fonction Load permettant de charger une utilisateur via son Id en faisant une requête SELECT vers la Base de données MySQL sur RaspberryPI
+            </summary>
+            <param name="id">Id de la personne</param>
+            <returns>Un objet Personne</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.PersonneManager.Search(System.String,System.String)">
+            <summary>
+            Methode permettant de rechercher un utilisateur via son rfid (identifiant) et son password en faisant une requête select dans la bdd
+            </summary>
+            <param name="rfid">Identifiant de la personne</param>
+            <param name="password">mdp de la personne</param>
+            <returns>un objet personne</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.PersonneManager.fill(ProjetGroupe.Models.Personne,MySqlConnector.MySqlDataReader)">
+            <summary>
+            fill permet de "d'insérer" le contenu des colonnes MySQL dans les getter/setter de la classe Personne
+            </summary>
+            <param name="item">Objet Personne</param>
+            <param name="dr">Classe MySqlDataReader</param>
+        </member>
+        <member name="T:ProjetGroupe.Models.Manager.SalleManager">
+            <summary>
+            Classe Mannager Salle
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.Manager.SalleManager.ListCapteurBySalleName(System.String)">
+            <summary>
+            Méthoed permettant de charger une liste de capteur via le nom de la salle donnant l'id de la salle, le nom du bâtiment etc..
+            </summary>
+            <param name="nomSalle">nom de la salle saisie</param>
+            <returns>Une liste de CapteurType</returns>
+        </member>
+        <member name="T:ProjetGroupe.Models.Penurie">
+            <summary>
+            Class Pénurie
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Penurie.Id_Equipement">
+            <summary>
+            Id de l'équipement
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Penurie.SalleId">
+            <summary>
+            Id de la salle ou se trouve la pénurie
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Penurie.Is_Penurie">
+            <summary>
+            Pénurie ou non
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Penurie.date_maj">
+            <summary>
+            Date de la pénurie
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.Penurie.UpdateStock(ProjetGroupe.Models.Penurie)">
+            <summary>
+            Méthode statique prenant en paramètre les objets de la classe pénurie pour faire les PUT avec ses valeurs vers l'API REST
+            </summary>
+            <param name="penurie">Objet Pénurie</param>
+            <returns></returns>
+        </member>
+        <member name="T:ProjetGroupe.Models.PersonneType">
+            <summary>
+            Enum du Type de personne
+            </summary>
+        </member>
+        <member name="F:ProjetGroupe.Models.PersonneType.Etudiant">
+            <summary>
+            Etudiant
+            </summary>
+        </member>
+        <member name="F:ProjetGroupe.Models.PersonneType.Professeur">
+            <summary>
+            Professeur
+            </summary>
+        </member>
+        <member name="F:ProjetGroupe.Models.PersonneType.Personnel">
+            <summary>
+            Personnel Administration / Agent d'entretien
+            </summary>
+        </member>
+        <member name="T:ProjetGroupe.Models.Personne">
+            <summary>
+            Classe personne
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Personne.Id">
+            <summary>
+            Id de la personne
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Personne.Email">
+            <summary>
+            Email de la personne
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Personne.Sexe">
+            <summary>
+            Sexe de la personne
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Personne.Password">
+            <summary>
+            Mot de passe de la personne
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Personne.PersonneType">
+            <summary>
+            Type de la personne
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Personne.Anniversaire">
+            <summary>
+            anniversaire de la personne
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Models.Personne.RFID">
+            <summary>
+            Identifiant de la personne
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.Personne.Load(System.Int32)">
+            <summary>
+            Méthode statique permettant de charger une personne spéficique via son Id en contactant la base de données par le biai de la classe Manager
+            </summary>
+            <param name="id"></param>
+            <returns>Une personne</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Personne.Search(System.String,System.String)">
+            <summary>
+            Méthode statique permettant de charger une personne spéficique via son Email et son mot de passe en contactant la base de données par le biai de la classe Manager
+            </summary>
+            <param name="rfid">Identifiant de la personne</param>
+            <param name="password">mdp de la personne</param>
+            <returns>Une personne</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Personne.IsLogged">
+            <summary>
+            Methode Static vérifiant si une personne est connecté ou non à l'application en regardant si son Id est bien en cookie de session
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Personne.RappelMail(ProjetGroupe.Models.Personne)">
+            <summary>
+            Envoie d'un mail vers le secrétariat avec les informations de la personne en cas de CasCovid
+            </summary>
+            <param name="personne">Objet Personne</param>
+            <returns>true si mail envoyé</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Personne.RappelMailPenurie(ProjetGroupe.Models.Personne,ProjetGroupe.Models.Penurie)">
+            <summary>
+            Méthode permettant d'nevoyer une mail au secrétariat avec les informations de l'équipement et de la personne concernant l'information sur la pénurie qu'il a émit
+            </summary>
+            <param name="personne">Objet Personne</param>
+            <param name="penurie">Objet Penurie</param>
+            <returns>true si mail envoyé</returns>
+        </member>
+        <member name="M:ProjetGroupe.Models.Personne.GeneratePdfAsync(System.Int32,System.Collections.Generic.List{ProjetGroupe.Models.Historique})">
+            <summary>
+            Méthode static asynchrone générant un PDF et demandanr l'ouverture de celui-ci (avec demande de permission)
+            </summary>
+            <param name="size">Le nombre de ligne voulu</param>
+            <param name="data">La Liste d'historique de valeur à afficher dans le pdf</param>
+        </member>
+        <member name="T:ProjetGroupe.Models.Salle">
+            <summary>
+            Classe Salle
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Models.Salle.ListCapteurBySalleName(System.String)">
+            <summary>
+            Méthode statique permettant de lister les capteurs d'une salle en contactant l'API REST
+            </summary>
+            <param name="nomSalle">nom de la salle</param>
+            <returns>une liste d'objet de CapteurType</returns>
+        </member>
+    </members>
+</doc>

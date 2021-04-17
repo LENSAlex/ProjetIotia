@@ -216,13 +216,7 @@ C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\ProjetGroupe\ProjetGroupe.iO
 C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\ProjetGroupe\ProjetGroupe.iOS\bin\iPhone\Debug\Xamarin.Forms.PancakeView.dll
 C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\ProjetGroupe\ProjetGroupe.iOS\bin\iPhone\Debug\Plugin.SharedTransitions.dll
 C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\ProjetGroupe\ProjetGroupe.iOS\bin\iPhone\Debug\ProjetGroupe.dll
-C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\ProjetGroupe\ProjetGroupe.iOS\bin\iPhone\Debug\Mono.Android.dll
-C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\ProjetGroupe\ProjetGroupe.iOS\bin\iPhone\Debug\Xamarin.AndroidX.Core.dll
-C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\ProjetGroupe\ProjetGroupe.iOS\bin\iPhone\Debug\Java.Interop.dll
 C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\ProjetGroupe\ProjetGroupe.iOS\bin\iPhone\Debug\ProjetGroupe.pdb
-C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\ProjetGroupe\ProjetGroupe.iOS\bin\iPhone\Debug\Mono.Android.pdb
-C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\ProjetGroupe\ProjetGroupe.iOS\bin\iPhone\Debug\Mono.Android.xml
-C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\ProjetGroupe\ProjetGroupe.iOS\bin\iPhone\Debug\Xamarin.AndroidX.Core.pdb
 C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\ProjetGroupe\ProjetGroupe.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
 C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\ProjetGroupe\ProjetGroupe.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
 C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\ProjetGroupe\ProjetGroupe.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
@@ -330,3 +324,6 @@ C:\Users\bl005314\Source\Repos\ProjetIotiaV2\AppMobile\ProjetGroupe\ProjetGroupe
 C:\Users\bl005314\Source\Repos\ProjetIotiaV2\AppMobile\ProjetGroupe\ProjetGroupe.iOS\obj\iPhone\Debug\ProjetGroupe.iOS.csproj.CopyComplete
 C:\Users\bl005314\Source\Repos\ProjetIotiaV2\AppMobile\ProjetGroupe\ProjetGroupe.iOS\obj\iPhone\Debug\ProjetGroupe.iOS.exe
 C:\Users\bl005314\Source\Repos\ProjetIotiaV2\AppMobile\ProjetGroupe\ProjetGroupe.iOS\obj\iPhone\Debug\ProjetGroupe.iOS.pdb
+C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\ProjetGroupe\ProjetGroupe.iOS\bin\iPhone\Debug\Syncfusion.Expander.XForms.dll
+C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\ProjetGroupe\ProjetGroupe.iOS\bin\iPhone\Debug\Syncfusion.Expander.XForms.iOS.dll
+C:\Users\Poste\Source\Repos\ProjetIotiaV4\AppMobile\ProjetGroupe\ProjetGroupe.iOS\bin\iPhone\Debug\ProjetGroupe.xml

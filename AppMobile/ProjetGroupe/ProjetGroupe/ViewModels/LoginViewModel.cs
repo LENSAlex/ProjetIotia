@@ -15,30 +15,45 @@ using Xamarin.Forms;
 
 namespace ProjetGroupe.ViewModels
 {
+    /// <summary>
+    /// View de la page login
+    /// </summary>
     public class LoginViewModel : BaseViewModel
     {
+        /// <summary>
+        /// Commande lors du clique sur le bouton connexion
+        /// </summary>
         public Command LoginCommand { get; }
-        public Command SaveCommand { get; }
-        public string Erreur { get; set; }
 
         private string identifiant;
+        /// <summary>
+        /// Récupération de l'identifiant saisie par l'utilisateur
+        /// </summary>
         public string Identifiant
         {
             get => identifiant;
             set => SetProperty(ref identifiant, value);
         }
         private string password;
+        /// <summary>
+        /// Récupération du mdp saisie par l'utilisateur
+        /// </summary>
         public string Password
         {
             get => password;
             set => SetProperty(ref password, value);
         }
-
+        /// <summary>
+        /// Constructeur de la classe
+        /// </summary>
         public LoginViewModel()
         {
             LoginCommand = new Command(OnLoginClicked);
         }
-
+        /// <summary>
+        /// Méthode exécuté lors du click sur le bouton connexion
+        /// </summary>
+        /// <param name="obj">Le click</param>
         private async void OnLoginClicked(object obj)
         {
             if (!String.IsNullOrEmpty(identifiant) && !String.IsNullOrEmpty(password))
@@ -59,6 +74,9 @@ namespace ProjetGroupe.ViewModels
                 }
             }
         }
+        /// <summary>
+        /// Méthode permettant d'enregistrer un appareil au channel de notification FireBase
+        /// </summary>
         public static void RegisterDeviceForPushNotifications()
         {
             IRegisterNotifications reg = null;

@@ -7,8 +7,15 @@ using System.Threading.Tasks;
 
 namespace ProjetGroupe.Models.Manager
 {
+    /// <summary>
+    /// Classe Manager Alerte (Envoie d'une notification push)
+    /// </summary>
     internal static class AlerteManager
     {
+        /// <summary>
+        /// Fonction qui établie une requête POST vers le Hub de Notification d'Azure.
+        /// </summary>
+        /// <returns>true or false selon la réponse du Hub de notification</returns>
         internal static async Task<bool> SendAlert()
         {
             var httpClient = new HttpClient();

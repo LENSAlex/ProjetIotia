@@ -10,8 +10,15 @@ using Xamarin.Forms;
 
 namespace ProjetGroupe.Models.Manager
 {
+    /// <summary>
+    /// Classe Manager Equipement
+    /// </summary>
     internal static class EquipementManager
     {
+        /// <summary>
+        /// Méthode faisant un GET vers l'API REST
+        /// </summary>
+        /// <returns>Une ObservableCollection d'Equipement (Equivalent d'une liste mais utilisé pour un composant spécial Xamarin) si code = 200 ou null si erreur</returns>
         internal static async Task<ObservableCollection<Equipement>> ListEquipement()
         {
             var httpClient = new HttpClient();
