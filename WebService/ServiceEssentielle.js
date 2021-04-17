@@ -429,7 +429,7 @@ app.get("/Capteur/ListCapteur", (req, res) => {
 })
 
 //List capteur dernieres de DORIAN
-app.get("/Capteur/ListCapteur/All", (req, res) => {
+app.get("/Capteur/ListComplete", (req, res) => {
     conn.query("select D.id_device ,VT.libelle as nom, B.id_box from ValueType VT , Device D , Box B where VT.id_valuetype = D.id_valuetype and D.id_box = B.id_box order by D.id_device", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
