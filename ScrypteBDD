@@ -146,7 +146,8 @@ CREATE OR REPLACE TABLE DeviceType (
 	id_devicetype INTEGER PRIMARY KEY AUTO_INCREMENT,
 	libelle_type VARCHAR(50) NOT NULL,
 	description VARCHAR(250),
-	reference VARCHAR(200) NOT NULL
+	reference VARCHAR(200) NOT NULL,
+	consomation INTEGER NOT NULL
 	);
 	
 CREATE OR REPLACE TABLE Box (
@@ -1374,24 +1375,26 @@ INSERT INTO ValueType (libelle, unite) VALUES
 ('Tension', 'V'),
 ('Pression', 'mB');
 
-INSERT INTO DeviceType (libelle_type, description, reference) VALUES
-('Arduino', '', '123B123C1456F125478'),
-('Rasbery', '', '123B123C2586F125478'),  
-('Capteur CO2', '', '123B123C3696F125478'),
-('Capteur Température', '', '123B123C1236F125478'),
-('Haut parleur', '', '123B123C4566F125478'),
-('Moteur store', '', '123B123C147F125478'),
-('Relai chauffage', '', '123B123C7896F125478'),
-('Led', '', '123B123C1596F125478'),
-('Lampe UV', '', '456B123C3576F125478'),
-('Detecteur de mouvement', '', '789B123C3576F125478'),
-('Capteur bouton', '', '147B123C3576F125478'),
-('Camera', '', '258B123C3576F125478'),
-('Camera thermique', '', '369B123C3576F125478'),
-('capteur prise', '', '159B123C3576F125478'),
-('capteur de RFID', '', '357B123C3576F125478'),
-('BOX', 'contient une chier de capteurs', 'BOX'),
-('Panneau solaire' , 'tout est dans le titre ...' , '124844G5844T654654' );
+
+
+INSERT INTO DeviceType (libelle_type, description, reference, consomation) VALUES
+('Arduino', '', '123B123C1456F125478', 20),
+('Rasbery', '', '123B123C2586F125478', 35),  
+('Capteur CO2', '', '123B123C3696F125478', 25),
+('Capteur Température', '', '123B123C1236F125478', 58),
+('Haut parleur', '', '123B123C4566F125478', 94),
+('Moteur store', '', '123B123C147F125478', 230),
+('Relai chauffage', '', '123B123C7896F125478', 51),
+('Led', '', '123B123C1596F125478', 85),
+('Lampe UV', '', '456B123C3576F125478', 56),
+('Detecteur de mouvement', '', '789B123C3576F125478', 19),
+('Capteur bouton', '', '147B123C3576F125478', 84),
+('Camera', '', '258B123C3576F125478', 95),
+('Camera thermique', '', '369B123C3576F125478', 36),
+('capteur prise', '', '159B123C3576F125478', 125),
+('capteur de RFID', '', '357B123C3576F125478', 145),
+('BOX', 'contient une chier de capteurs', 'BOX', 20),
+('Panneau solaire' , 'tout est dans le titre ...' , '124844G5844T654654', 60 );
 
 INSERT INTO Box (id_salle, id_devicetype, adr_mac, adr_ip, libelle, description, date_installation) VALUES
 ( 1, 16, '50:02:91:8D:10:36', NULL, 'Box 1', NULL, '2021-01-01 01:00:00'), 
