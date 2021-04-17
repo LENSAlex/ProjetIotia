@@ -156,3 +156,10 @@ Il est aussi important de noter que pour recevoir convenablement les notificatio
 - Get Historique Valeur Moyenne d'un Capteur (donne la ligne du capteur avec sa moyenne via son Id) OK 
 - Get Historique Dernière Valeur d'un Capteur (donne la ligne du capteur avec sa dernière valeur (la plus récente) via son Id) OK
 - Post (envoie un text et une action à une API en ligne sur les service d'azure) OK
+
+# Documentation 
+
+- Vous allez pouvoir trouver la documentation XML de la bibliothèque de classe nommée "ProjetGroupe" et celle du ProjetDroid dans le dossier Documentation/AppMobile
+- Vous allez pouvoir télécharger la document Doxygen du projet global via Github sinon vous pouvez vous rendre sur ce lien:
+[http://51.77.137.170/lpiotia/AppMobile/ProjetDroid_Documentation/index.html](Documentation Doxygen)
+
