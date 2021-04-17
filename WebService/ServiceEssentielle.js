@@ -363,7 +363,7 @@ app.get("/Capteur/ListDevice", (req, res) => {
 
 // Get Capteur de la salle via search (Cherche les capteurs d'une salle via le numéro de salle)
 app.get("/Capteur/Search/:NomSalle", (req, res) => {
-    conn.query("select D.id_device ,B.libelle , B.adr_ip , B.description ,Ba.nom , S.id_etage from Box B , Salle S , Etage E , Batiment Ba , Device D where B.id_salle = S.id_salle and S.id_etage = E.id_etage AND E.id_batiment = Ba.id_batiment and B.id_box = D.id_box and S.nom = '" + req.params.NomSalle + "'", function(err, result) {
+    conn.query("select S.id_salle ,S.nom ,D.id_device ,B.libelle , B.adr_ip , B.description ,Ba.nom , S.id_etage from Box B , Salle S , Etage E , Batiment Ba , Device D where B.id_salle = S.id_salle and S.id_etage = E.id_etage AND E.id_batiment = Ba.id_batiment and B.id_box = D.id_box and S.nom = '" + req.params.NomSalle + "'", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -400,20 +400,22 @@ app.get("/Capteur/ListCapteur/:Salle", (req, res) => {
 })
 
 //Liste des devices sans arduino et rasp pour dorian
-app.get("/Capteur/ListDevice/All", (req, res) => {
+//Attend confirmation de dorian car la elle sert a rien
+// app.get("/Capteur/ListDevice/All", (req, res) => {
 
-    //List device sans rpi et arduino 
-    conn.query("select Device.id_devicetype as TypeCapteur , Box.id_box as IDBoxCapteur, DeviceType.id_devicetype, libelle_type from DeviceType, Box , Device where Box.id_devicetype = DeviceType.id_devicetype AND Box.id_box = Device.id_box and DeviceType.id_devicetype <> 1 and DeviceType.id_devicetype <> 2", function(err, result) {
-        if (err)
-            res.status(400).json({ ErrorRequete: 'Requete invalid' });
-        else {
-            res.status(200).json(result);
-            console.log(result);
-        }
-    });
-})
+//     //List device sans rpi et arduino 
+//     conn.query("select Device.id_devicetype as TypeCapteur , Box.id_box as IDBoxCapteur, DeviceType.id_devicetype, libelle_type from DeviceType, Box , Device where Box.id_devicetype = DeviceType.id_devicetype AND Box.id_box = Device.id_box and DeviceType.id_devicetype <> 1 and DeviceType.id_devicetype <> 2", function(err, result) {
+//         if (err)
+//             res.status(400).json({ ErrorRequete: 'Requete invalid' });
+//         else {
+//             res.status(200).json(result);
+//             console.log(result);
+//         }
+//     });
+// })
 
 //List des capteurs (device)
+//Utilisés par loris
 app.get("/Capteur/ListCapteur", (req, res) => {
 
     conn.query("select D.id_device ,DT.libelle_type , B.libelle from DeviceType DT , Device D , Box B where DT.id_devicetype = D.id_devicetype and D.id_box = B.id_box", function(err, result) {
@@ -429,7 +431,7 @@ app.get("/Capteur/ListCapteur", (req, res) => {
 //List capteur dernieres de DORIAN
 app.get("/Capteur/ListCapteur/All", (req, res) => {
 
-    conn.query("select D.id_device ,VT.libelle , B.id_box from ValueType VT , Device D , Box B where VT.id_valuetype = D.id_valuetype and D.id_box = B.id_box order by D.id_device", function(err, result) {
+    conn.query("select D.id_device ,VT.libelle as nom, B.id_box from ValueType VT , Device D , Box B where VT.id_valuetype = D.id_valuetype and D.id_box = B.id_box order by D.id_device", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -525,6 +527,57 @@ app.get("/Capteur/ValeurSpecifique/Last/:IdDevice", (req, res) => {
 
 app.get("/Capteur/ValeurSpecifique/Moyenne/:IdDevice", (req, res) => {
     conn.query("select AVG(Historique.valeur) as Moyenne , ValueType.unite , ValueType.libelle , DeviceType.libelle_type from Historique , Device , ValueType , DeviceType WHERE Historique.id_device = Device.id_device AND Device.id_valuetype = ValueType.id_valuetype AND Historique.id_device = 1 and DeviceType.id_devicetype = Device.id_devicetype order by Historique.valeur desc LIMIT 1", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+//List des capteur temps dans l historique plus recent au plus vieux
+app.get("/Capteur/List/Historique/Temp", (req, res) => {
+    conn.query("select DT.libelle_type , D.id_box , H.valeur from Historique H , Device D , DeviceType DT WHERE H.id_device = D.id_device and DT.id_devicetype = D.id_devicetype AND DT.id_devicetype = 4 order by H.date_historique DESC ", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+//List des capteur co2 dans l historique plus recent au plus vieux
+app.get("/Capteur/List/Historique/CO2", (req, res) => {
+    conn.query("select DT.libelle_type , D.id_box , H.valeur from Historique H , Device D , DeviceType DT WHERE H.id_device = D.id_device and DT.id_devicetype = D.id_devicetype AND DT.id_devicetype = 3 order by H.date_historique DESC ", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+//List des capteur energie dans l historique plus recent au plus vieux
+//A voir avec dorian
+app.get("/Capteur/List/Historique/Energie", (req, res) => {
+    conn.query("", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+//List du taux occupation par salle
+//select distinct id_personne , statut  from Badgeuse where statut = 1  
+//Commencé mais trop dure faudra que tu demande a pierre
+app.get("/Capteur/List/TauxOccupation", (req, res) => {
+    conn.query("", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
