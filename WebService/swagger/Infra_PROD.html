@@ -214,6 +214,9 @@ font-style: italic;
   <li><a href="#getValeurSpecifique"><code><span class="http-method">get</span> /Capteur/ValeurSpecifique/{IdDevice}</code></a></li>
   <li><a href="#getValeursIdSalle"><code><span class="http-method">get</span> /Capteur/Valeur/{IdSalle}</code></a></li>
   <li><a href="#getValeursIdSalleIdValType"><code><span class="http-method">get</span> /Capteur/Valeur/{IdSalle}/{IdValueType}</code></a></li>
+  <li><a href="#insertActionneur"><code><span class="http-method">post</span> /Capteur/Add/Actionneur/{IdBox}/{IdValueType}/{Libelle}</code></a></li>
+  <li><a href="#insertCapteur"><code><span class="http-method">post</span> /Capteur/Add/BoxDevice/{IdSalle}/{IdDeviceType}/{AddrMac}/{AddrIp}/{LibelleBox}/{DescriptionBox}/{DateInstallation}/{IdValueType}/{LibelleDevice}/{SeuilMin}/{SeuilMax}</code></a></li>
+  <li><a href="#insertPanneauSolaire"><code><span class="http-method">post</span> /Capteur/Add/PanneauSolaire/{IdBox}/{Libelle}</code></a></li>
   </ul>
 
   <h1><a name="Capteur">Capteur</a></h1>
@@ -1075,6 +1078,149 @@ font-style: italic;
     successful operation
         <a href="#ValeurId">ValeurId</a>
     <h4 class="field-label">400</h4>
+    Requete invalid
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="insertActionneur"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /Capteur/Add/Actionneur/{IdBox}/{IdValueType}/{Libelle}</code></pre></div>
+    <div class="method-summary">Ajout d'actionneur (<span class="nickname">insertActionneur</span>)</div>
+    <div class="method-notes"></div>
+
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">IdBox (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; Id de la box format: int64</div><div class="param">IdValueType (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; Id du type de valeur </div><div class="param">Libelle (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; Le libelle </div>
+    </div>  <!-- field-items -->
+
+
+
+
+
+
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Actionneur crée
+        <a href="#"></a>
+    <h4 class="field-label">405</h4>
+    Requete invalid
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="insertCapteur"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /Capteur/Add/BoxDevice/{IdSalle}/{IdDeviceType}/{AddrMac}/{AddrIp}/{LibelleBox}/{DescriptionBox}/{DateInstallation}/{IdValueType}/{LibelleDevice}/{SeuilMin}/{SeuilMax}</code></pre></div>
+    <div class="method-summary">Ajout de capteur (<span class="nickname">insertCapteur</span>)</div>
+    <div class="method-notes"></div>
+
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">IdSalle (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; Id de la salle format: int64</div><div class="param">IdDeviceType (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; Id du type de device </div><div class="param">AddrMac (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; Adresse MAC </div><div class="param">AddrIp (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; Adresse IP </div><div class="param">LibelleBox (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; Le libelle de la box </div><div class="param">DescriptionBox (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; La description de la box </div><div class="param">DateInstallation (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; La date d'installation </div><div class="param">IdValueType (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; Id du type de valeur </div><div class="param">LibelleDevice (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; Le libelle du device </div><div class="param">SeuilMin (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; Le seuil min </div><div class="param">SeuilMax (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; Le seuil max </div>
+    </div>  <!-- field-items -->
+
+
+
+
+
+
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Box et capteur crée
+        <a href="#"></a>
+    <h4 class="field-label">405</h4>
+    Requete invalid
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="insertPanneauSolaire"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /Capteur/Add/PanneauSolaire/{IdBox}/{Libelle}</code></pre></div>
+    <div class="method-summary">Ajout d'actionneur (<span class="nickname">insertPanneauSolaire</span>)</div>
+    <div class="method-notes"></div>
+
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">IdBox (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; Id de la box format: int64</div><div class="param">Libelle (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; Le libelle </div>
+    </div>  <!-- field-items -->
+
+
+
+
+
+
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Panneau solaire cree
+        <a href="#"></a>
+    <h4 class="field-label">405</h4>
     Requete invalid
         <a href="#"></a>
   </div> <!-- method -->
