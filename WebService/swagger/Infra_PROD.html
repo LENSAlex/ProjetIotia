@@ -1,0 +1,1281 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Web Service Infra PROD</title>
+    <style type="text/css">
+      body {
+	font-family: Trebuchet MS, sans-serif;
+	font-size: 15px;
+	color: #444;
+	margin-right: 24px;
+}
+
+h1	{
+	font-size: 25px;
+}
+h2	{
+	font-size: 20px;
+}
+h3	{
+	font-size: 16px;
+	font-weight: bold;
+}
+hr	{
+	height: 1px;
+	border: 0;
+	color: #ddd;
+	background-color: #ddd;
+}
+
+.app-desc {
+  clear: both;
+  margin-left: 20px;
+}
+.param-name {
+  width: 100%;
+}
+.license-info {
+  margin-left: 20px;
+}
+
+.license-url {
+  margin-left: 20px;
+}
+
+.model {
+  margin: 0 0 0px 20px;
+}
+
+.method {
+  margin-left: 20px;
+}
+
+.method-notes	{
+	margin: 10px 0 20px 0;
+	font-size: 90%;
+	color: #555;
+}
+
+pre {
+  padding: 10px;
+  margin-bottom: 2px;
+}
+
+.http-method {
+ text-transform: uppercase;
+}
+
+pre.get {
+  background-color: #0f6ab4;
+}
+
+pre.post {
+  background-color: #10a54a;
+}
+
+pre.put {
+  background-color: #c5862b;
+}
+
+pre.delete {
+  background-color: #a41e22;
+}
+
+.huge	{
+	color: #fff;
+}
+
+pre.example {
+  background-color: #f3f3f3;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+code {
+  white-space: pre;
+}
+
+.nickname {
+  font-weight: bold;
+}
+
+.method-path {
+  font-size: 1.5em;
+  background-color: #0f6ab4;
+}
+
+.up {
+  float:right;
+}
+
+.parameter {
+  width: 500px;
+}
+
+.param {
+  width: 500px;
+  padding: 10px 0 0 20px;
+  font-weight: bold;
+}
+
+.param-desc {
+  width: 700px;
+  padding: 0 0 0 20px;
+  color: #777;
+}
+
+.param-type {
+  font-style: italic;
+}
+
+.param-enum-header {
+width: 700px;
+padding: 0 0 0 60px;
+color: #777;
+font-weight: bold;
+}
+
+.param-enum {
+width: 700px;
+padding: 0 0 0 80px;
+color: #777;
+font-style: italic;
+}
+
+.field-label {
+  padding: 0;
+  margin: 0;
+  clear: both;
+}
+
+.field-items	{
+	padding: 0 0 15px 0;
+	margin-bottom: 15px;
+}
+
+.return-type {
+  clear: both;
+  padding-bottom: 10px;
+}
+
+.param-header {
+  font-weight: bold;
+}
+
+.method-tags {
+  text-align: right;
+}
+
+.method-tag {
+  background: none repeat scroll 0% 0% #24A600;
+  border-radius: 3px;
+  padding: 2px 10px;
+  margin: 2px;
+  color: #FFF;
+  display: inline-block;
+  text-decoration: none;
+}
+
+    </style>
+  </head>
+  <body>
+  <h1>Web Service Infra PROD</h1>
+    <div class="app-desc">Description du service &quot;Infra PROD&quot;</div>
+    <div class="app-desc">More information: <a href="https://helloreverb.com">https://helloreverb.com</a></div>
+    <div class="app-desc">Contact Info: <a href="hello@helloreverb.com">hello@helloreverb.com</a></div>
+    <div class="app-desc">Version: 1.0.0</div>
+    <div class="app-desc">BasePath:/thibaud-iotia/Infra_Prod/1.0.0</div>
+    <div class="license-info">All rights reserved</div>
+    <div class="license-url">http://apache.org/licenses/LICENSE-2.0.html</div>
+  <h2>Access</h2>
+
+  <h2><a name="__Methods">Methods</a></h2>
+  [ Jump to <a href="#__Models">Models</a> ]
+
+  <h3>Table of Contents </h3>
+  <div class="method-summary"></div>
+  <h4><a href="#Capteur">Capteur</a></h4>
+  <ul>
+  <li><a href="#getBoxInfo"><code><span class="http-method">get</span> /Capteur/Box/Info</code></a></li>
+  <li><a href="#getCapteursViaNum"><code><span class="http-method">get</span> /Capteur/Search/{NomSalle}</code></a></li>
+  <li><a href="#getCapteursViaSalle"><code><span class="http-method">get</span> /Capteur/ListCapteur/{Salle}</code></a></li>
+  <li><a href="#getInfoCapteurs"><code><span class="http-method">get</span> /Capteur/ListValueType</code></a></li>
+  <li><a href="#getInfoDevices"><code><span class="http-method">get</span> /Capteur/ListDevice</code></a></li>
+  <li><a href="#getLastValeurSpecifique"><code><span class="http-method">get</span> /Capteur/ValeurSpecifique/Last/{IdDevice}</code></a></li>
+  <li><a href="#getListeCapteurs"><code><span class="http-method">get</span> /Capteur/ListCapteur</code></a></li>
+  <li><a href="#getListeCapteursWeb"><code><span class="http-method">get</span> /Capteur/ListComplete</code></a></li>
+  <li><a href="#getListeHistorique"><code><span class="http-method">get</span> /Capteur/List/Historique</code></a></li>
+  <li><a href="#getListeHistoriqueCO2"><code><span class="http-method">get</span> /Capteur/List/Historique/CO2</code></a></li>
+  <li><a href="#getListeHistoriqueEnergie"><code><span class="http-method">get</span> /Capteur/List/Historique/Energie</code></a></li>
+  <li><a href="#getListeHistoriqueTemp"><code><span class="http-method">get</span> /Capteur/List/Historique/Temp</code></a></li>
+  <li><a href="#getListeSalle"><code><span class="http-method">get</span> /Capteur/ListSalle</code></a></li>
+  <li><a href="#getListeTauxOccup"><code><span class="http-method">get</span> /Capteur/List/TauxOccupation</code></a></li>
+  <li><a href="#getMoyValeurSpecifique"><code><span class="http-method">get</span> /Capteur/ValeurSpecifique/Moyenne/{IdDevice}</code></a></li>
+  <li><a href="#getValeurSpecifique"><code><span class="http-method">get</span> /Capteur/ValeurSpecifique/{IdDevice}</code></a></li>
+  <li><a href="#getValeursIdSalle"><code><span class="http-method">get</span> /Capteur/Valeur/{IdSalle}</code></a></li>
+  <li><a href="#getValeursIdSalleIdValType"><code><span class="http-method">get</span> /Capteur/Valeur/{IdSalle}/{IdValueType}</code></a></li>
+  </ul>
+
+  <h1><a name="Capteur">Capteur</a></h1>
+  <div class="method"><a name="getBoxInfo"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /Capteur/Box/Info</code></pre></div>
+    <div class="method-summary">Retourne les informations d'une Box (<span class="nickname">getBoxInfo</span>)</div>
+    <div class="method-notes">Retourne les informations d'une Box avec l'id de la salle, l'id de la box, le libelle, l'addr IP, le nom etc ...</div>
+
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#BoxInfo">BoxInfo</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "NomSalle" : "C237",
+  "libelle" : "un libelle",
+  "description" : "une description",
+  "id_salle" : 0,
+  "adr_ip" : "127.0.0.1",
+  "id_box" : 6
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    successful operation
+        <a href="#BoxInfo">BoxInfo</a>
+    <h4 class="field-label">400</h4>
+    Requete invalid
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="getCapteursViaNum"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /Capteur/Search/{NomSalle}</code></pre></div>
+    <div class="method-summary">Cherche les capteurs d'une salle (<span class="nickname">getCapteursViaNum</span>)</div>
+    <div class="method-notes">Cherche les capteurs d'une salle via le numéro de salle</div>
+
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">NomSalle (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; le numéro de la salle format: int64</div>
+    </div>  <!-- field-items -->
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#SearchCapteurs">SearchCapteurs</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "id_etage" : 1,
+  "libelle" : "Co2",
+  "id_device" : 6,
+  "description" : "une description",
+  "id_salle" : 0,
+  "nomBat" : "un nom",
+  "adr_ip" : "127.0.0.1",
+  "nom" : "IUT"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    successful operation
+        <a href="#SearchCapteurs">SearchCapteurs</a>
+    <h4 class="field-label">400</h4>
+    Requete invalid
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="getCapteursViaSalle"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /Capteur/ListCapteur/{Salle}</code></pre></div>
+    <div class="method-summary">Cherche les capteurs d'une salle (<span class="nickname">getCapteursViaSalle</span>)</div>
+    <div class="method-notes">Cherche les capteurs d'une salle via le nom de salle</div>
+
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">Salle (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; le nom de la salle format: int64</div>
+    </div>  <!-- field-items -->
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#ListCapteur_salle">ListCapteur_salle</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "libelle" : "Co2",
+  "id_valuetype" : 0
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    successful operation
+        <a href="#ListCapteur_salle">ListCapteur_salle</a>
+    <h4 class="field-label">400</h4>
+    Requete invalid
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="getInfoCapteurs"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /Capteur/ListValueType</code></pre></div>
+    <div class="method-summary">Retourne des informations une liste de capteurs. (<span class="nickname">getInfoCapteurs</span>)</div>
+    <div class="method-notes">Retourne l'id, le libelle d'une liste de capteurs ainsi que son unité de mesure.</div>
+
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#ListValueType">ListValueType</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "unite" : "°C",
+  "libelle" : "Temperature",
+  "id_valuetype" : 0
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    successful operation
+        <a href="#ListValueType">ListValueType</a>
+    <h4 class="field-label">400</h4>
+    Requete invalid
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="getInfoDevices"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /Capteur/ListDevice</code></pre></div>
+    <div class="method-summary">Retourne les devices sans arduino et raspberry pi (<span class="nickname">getInfoDevices</span>)</div>
+    <div class="method-notes">Retourne l'id, le type de libelle d'une liste de capteurs</div>
+
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#ListDevice">ListDevice</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "libelle_type" : 6,
+  "id_valuetype" : 0
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    successful operation
+        <a href="#ListDevice">ListDevice</a>
+    <h4 class="field-label">400</h4>
+    Requete invalid
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="getLastValeurSpecifique"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /Capteur/ValeurSpecifique/Last/{IdDevice}</code></pre></div>
+    <div class="method-summary">Cherche la dernière valeur d'un capteur spécifique (<span class="nickname">getLastValeurSpecifique</span>)</div>
+    <div class="method-notes">Cherche la dernière valeur d'un capteur spécifique</div>
+
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">IdDevice (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; l'id du device format: int64</div>
+    </div>  <!-- field-items -->
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#ValeurLastSpecifique">ValeurLastSpecifique</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "libelle_type" : "type",
+  "valeur" : 0,
+  "unite" : "Temperature",
+  "libelle" : "°C"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    successful operation
+        <a href="#ValeurLastSpecifique">ValeurLastSpecifique</a>
+    <h4 class="field-label">400</h4>
+    Requete invalid
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="getListeCapteurs"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /Capteur/ListCapteur</code></pre></div>
+    <div class="method-summary">Retourne liste de capteurs (<span class="nickname">getListeCapteurs</span>)</div>
+    <div class="method-notes">Retourne une liste de capteurs avec l'id_device, le type de libelle et le libelle</div>
+
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#ListCapteur">ListCapteur</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "libelle_type" : "type",
+  "libelle" : "temp",
+  "id_device" : 0
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    successful operation
+        <a href="#ListCapteur">ListCapteur</a>
+    <h4 class="field-label">400</h4>
+    Requete invalid
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="getListeCapteursWeb"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /Capteur/ListComplete</code></pre></div>
+    <div class="method-summary">Retourne liste de capteurs pour le site web (<span class="nickname">getListeCapteursWeb</span>)</div>
+    <div class="method-notes">Retourne une liste de capteurs avec l'id_device, le type de libelle et l'id de la box</div>
+
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#ListComplete">ListComplete</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "libelle" : "libelle",
+  "id_device" : 0,
+  "id_box" : 6
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    successful operation
+        <a href="#ListComplete">ListComplete</a>
+    <h4 class="field-label">400</h4>
+    Requete invalid
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="getListeHistorique"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /Capteur/List/Historique</code></pre></div>
+    <div class="method-summary">Retourne l'historique des valeurs des capteurs (<span class="nickname">getListeHistorique</span>)</div>
+    <div class="method-notes">Retourne l'historique des valeurs des capteurs avec le libelle, l'id du device, la valeur, l'unite et le type de libelle</div>
+
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#ListHistorique">ListHistorique</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "libelle_type" : "le type",
+  "valeur" : 12.0,
+  "unite" : "°C",
+  "libelle" : "Temp",
+  "id_device" : 0
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    successful operation
+        <a href="#ListHistorique">ListHistorique</a>
+    <h4 class="field-label">400</h4>
+    Requete invalid
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="getListeHistoriqueCO2"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /Capteur/List/Historique/CO2</code></pre></div>
+    <div class="method-summary">Retourne l'historique des valeurs des capteurs de CO2 du plus récent au plus vieux (<span class="nickname">getListeHistoriqueCO2</span>)</div>
+    <div class="method-notes">Retourne l'historique des valeurs des capteurs de CO2 du plus récent au plus vieux avec le type de libelle, le libelle et la valeur</div>
+
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#ListeHistorique">ListeHistorique</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "libelle_type" : "libelle_type",
+  "valeur" : 12.0,
+  "libelle" : "Temperature"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    successful operation
+        <a href="#ListeHistorique">ListeHistorique</a>
+    <h4 class="field-label">400</h4>
+    Requete invalid
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="getListeHistoriqueEnergie"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /Capteur/List/Historique/Energie</code></pre></div>
+    <div class="method-summary">Retourne l'historique des valeurs des capteurs de Energie du plus récent au plus vieux (<span class="nickname">getListeHistoriqueEnergie</span>)</div>
+    <div class="method-notes">Retourne l'historique des valeurs des capteurs de Energie du plus récent au plus vieux avec le type de libelle, le libelle et la valeur</div>
+
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#ListeHistorique">ListeHistorique</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "libelle_type" : "libelle_type",
+  "valeur" : 12.0,
+  "libelle" : "Temperature"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    successful operation
+        <a href="#ListeHistorique">ListeHistorique</a>
+    <h4 class="field-label">400</h4>
+    Requete invalid
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="getListeHistoriqueTemp"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /Capteur/List/Historique/Temp</code></pre></div>
+    <div class="method-summary">Retourne l'historique des valeurs des capteurs de temp du plus récent au plus vieux (<span class="nickname">getListeHistoriqueTemp</span>)</div>
+    <div class="method-notes">Retourne l'historique des valeurs des capteurs de temp du plus récent au plus vieux avec le type de libelle, le libelle et la valeur</div>
+
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#ListeHistorique">ListeHistorique</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "libelle_type" : "libelle_type",
+  "valeur" : 12.0,
+  "libelle" : "Temperature"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    successful operation
+        <a href="#ListeHistorique">ListeHistorique</a>
+    <h4 class="field-label">400</h4>
+    Requete invalid
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="getListeSalle"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /Capteur/ListSalle</code></pre></div>
+    <div class="method-summary">Retourne une liste des salles pour avoir l'id_box (<span class="nickname">getListeSalle</span>)</div>
+    <div class="method-notes">Retourne une liste des salles avec le nom, l'id de la box et l'id de la salle</div>
+
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#ListSalle">ListSalle</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "id_salle" : 6,
+  "nom" : "C237",
+  "id_box" : 0
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    successful operation
+        <a href="#ListSalle">ListSalle</a>
+    <h4 class="field-label">400</h4>
+    Requete invalid
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="getListeTauxOccup"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /Capteur/List/TauxOccupation</code></pre></div>
+    <div class="method-summary">Retourne le taux d'occupation (<span class="nickname">getListeTauxOccup</span>)</div>
+    <div class="method-notes">Retourne le taux d'occupation avec l'id de la personne et le statut</div>
+
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#ListeTauxOccup">ListeTauxOccup</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "id_personne" : 0,
+  "statut" : "le statut"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    successful operation
+        <a href="#ListeTauxOccup">ListeTauxOccup</a>
+    <h4 class="field-label">400</h4>
+    Requete invalid
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="getMoyValeurSpecifique"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /Capteur/ValeurSpecifique/Moyenne/{IdDevice}</code></pre></div>
+    <div class="method-summary">Cherche la moyenne des valeurs d'un capteur spécifique (<span class="nickname">getMoyValeurSpecifique</span>)</div>
+    <div class="method-notes">Cherche la moyenne des valeurs d'un capteur spécifique</div>
+
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">IdDevice (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; l'id du device format: int64</div>
+    </div>  <!-- field-items -->
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#ValeurMoySpecifique">ValeurMoySpecifique</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "libelle_type" : "libelle_type",
+  "valeur" : 12.0,
+  "libelle" : "Temperature"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    successful operation
+        <a href="#ValeurMoySpecifique">ValeurMoySpecifique</a>
+    <h4 class="field-label">400</h4>
+    Requete invalid
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="getValeurSpecifique"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /Capteur/ValeurSpecifique/{IdDevice}</code></pre></div>
+    <div class="method-summary">Cherche les valeurs d'un capteur spécifique (<span class="nickname">getValeurSpecifique</span>)</div>
+    <div class="method-notes">Cherche les valeurs d'un capteur spécifique</div>
+
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">IdDevice (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; l'id du device format: int64</div>
+    </div>  <!-- field-items -->
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#ValeurSpecifique">ValeurSpecifique</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "libelle_type" : "type libelle",
+  "id_valuetype" : 6,
+  "id_box" : 0
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    successful operation
+        <a href="#ValeurSpecifique">ValeurSpecifique</a>
+    <h4 class="field-label">400</h4>
+    Requete invalid
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="getValeursIdSalle"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /Capteur/Valeur/{IdSalle}</code></pre></div>
+    <div class="method-summary">Cherche les valeurs d'une salle (<span class="nickname">getValeursIdSalle</span>)</div>
+    <div class="method-notes">Cherche les valeurs d'une salle via l'id de la salle</div>
+
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">IdSalle (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; l'id de la salle format: int64</div>
+    </div>  <!-- field-items -->
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#ValeurId">ValeurId</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "valeur" : 12.0,
+  "libelle" : "Temperature",
+  "nom" : "le nom"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    successful operation
+        <a href="#ValeurId">ValeurId</a>
+    <h4 class="field-label">400</h4>
+    Requete invalid
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="getValeursIdSalleIdValType"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /Capteur/Valeur/{IdSalle}/{IdValueType}</code></pre></div>
+    <div class="method-summary">Cherche les valeurs d'un capteur grâce à son type (<span class="nickname">getValeursIdSalleIdValType</span>)</div>
+    <div class="method-notes">Cherche les valeurs d'un capteur grâce à son type. On y retrouve la valeur, le libelle et le nom.</div>
+
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">IdSalle (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; l'id de la salle format: int64</div><div class="param">IdValueType (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; l'id du type de valeur format: int64</div>
+    </div>  <!-- field-items -->
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#ValeurId">ValeurId</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "valeur" : 12.0,
+  "libelle" : "Temperature",
+  "nom" : "le nom"
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    successful operation
+        <a href="#ValeurId">ValeurId</a>
+    <h4 class="field-label">400</h4>
+    Requete invalid
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
+
+  <h2><a name="__Models">Models</a></h2>
+  [ Jump to <a href="#__Methods">Methods</a> ]
+
+  <h3>Table of Contents</h3>
+  <ol>
+    <li><a href="#BoxInfo"><code>BoxInfo</code> - </a></li>
+    <li><a href="#ListCapteur"><code>ListCapteur</code> - </a></li>
+    <li><a href="#ListCapteur_salle"><code>ListCapteur_salle</code> - </a></li>
+    <li><a href="#ListComplete"><code>ListComplete</code> - </a></li>
+    <li><a href="#ListDevice"><code>ListDevice</code> - </a></li>
+    <li><a href="#ListHistorique"><code>ListHistorique</code> - </a></li>
+    <li><a href="#ListSalle"><code>ListSalle</code> - </a></li>
+    <li><a href="#ListValueType"><code>ListValueType</code> - </a></li>
+    <li><a href="#ListeHistorique"><code>ListeHistorique</code> - </a></li>
+    <li><a href="#ListeTauxOccup"><code>ListeTauxOccup</code> - </a></li>
+    <li><a href="#SearchCapteurs"><code>SearchCapteurs</code> - </a></li>
+    <li><a href="#ValeurId"><code>ValeurId</code> - </a></li>
+    <li><a href="#ValeurLastSpecifique"><code>ValeurLastSpecifique</code> - </a></li>
+    <li><a href="#ValeurMoySpecifique"><code>ValeurMoySpecifique</code> - </a></li>
+    <li><a href="#ValeurSpecifique"><code>ValeurSpecifique</code> - </a></li>
+  </ol>
+
+  <div class="model">
+    <h3><a name="BoxInfo"><code>BoxInfo</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">id_salle </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">id_box </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">libelle (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: un libelle</span></div>
+<div class="param">adr_ip (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 127.0.0.1</span></div>
+<div class="param">description (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: une description</span></div>
+<div class="param">NomSalle (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: C237</span></div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="ListCapteur"><code>ListCapteur</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">id_device </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">libelle_type (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: type</span></div>
+<div class="param">libelle (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: temp</span></div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="ListCapteur_salle"><code>ListCapteur_salle</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">id_valuetype (optional)</div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">libelle </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: Co2</span></div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="ListComplete"><code>ListComplete</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">id_device </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">libelle (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: libelle</span></div>
+<div class="param">id_box </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="ListDevice"><code>ListDevice</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">id_valuetype (optional)</div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">libelle_type </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="ListHistorique"><code>ListHistorique</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">libelle (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: Temp</span></div>
+<div class="param">id_device </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">valeur (optional)</div><div class="param-desc"><span class="param-type"><a href="#number">BigDecimal</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 12.0</span></div>
+<div class="param">unite (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: °C</span></div>
+<div class="param">libelle_type (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: le type</span></div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="ListSalle"><code>ListSalle</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">nom (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: C237</span></div>
+<div class="param">id_box </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">id_salle </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="ListValueType"><code>ListValueType</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">id_valuetype </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">libelle </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: Temperature</span></div>
+<div class="param">unite (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: °C</span></div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="ListeHistorique"><code>ListeHistorique</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">libelle_type (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">libelle (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: Temperature</span></div>
+<div class="param">valeur </div><div class="param-desc"><span class="param-type"><a href="#number">BigDecimal</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 12.0</span></div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="ListeTauxOccup"><code>ListeTauxOccup</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">id_personne </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">statut (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: le statut</span></div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="SearchCapteurs"><code>SearchCapteurs</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">id_salle </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">nom (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: IUT</span></div>
+<div class="param">id_device </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">libelle (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: Co2</span></div>
+<div class="param">adr_ip (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 127.0.0.1</span></div>
+<div class="param">description (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: une description</span></div>
+<div class="param">nomBat (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: un nom</span></div>
+<div class="param">id_etage </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="ValeurId"><code>ValeurId</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">valeur </div><div class="param-desc"><span class="param-type"><a href="#number">BigDecimal</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 12.0</span></div>
+<div class="param">libelle </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: Temperature</span></div>
+<div class="param">nom (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: le nom</span></div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="ValeurLastSpecifique"><code>ValeurLastSpecifique</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">valeur </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">unite (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: Temperature</span></div>
+<div class="param">libelle (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: °C</span></div>
+<div class="param">libelle_type (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: type</span></div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="ValeurMoySpecifique"><code>ValeurMoySpecifique</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">libelle_type (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">libelle (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: Temperature</span></div>
+<div class="param">valeur </div><div class="param-desc"><span class="param-type"><a href="#number">BigDecimal</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: 12.0</span></div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="ValeurSpecifique"><code>ValeurSpecifique</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">id_box </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">id_valuetype </div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">libelle_type (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: type libelle</span></div>
+    </div>  <!-- field-items -->
+  </div>
+  </body>
+</html>
