@@ -203,6 +203,7 @@ font-style: italic;
   <li><a href="#personneListPersonneGet"><code><span class="http-method">get</span> /Personne/ListPersonne</code></a></li>
   <li><a href="#personneListProfGet"><code><span class="http-method">get</span> /Personne/ListProf</code></a></li>
   <li><a href="#personneListPromoGet"><code><span class="http-method">get</span> /Personne/ListPromo</code></a></li>
+  <li><a href="#personneListPromoSimpleGet"><code><span class="http-method">get</span> /Personne/ListPromo/Simple</code></a></li>
   <li><a href="#personneListTypePersonneGet"><code><span class="http-method">get</span> /Personne/ListTypePersonne</code></a></li>
   </ul>
 
@@ -580,6 +581,53 @@ font-style: italic;
         <a href="#"></a>
   </div> <!-- method -->
   <hr/>
+  <div class="method"><a name="personneListPromoSimpleGet"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /Personne/ListPromo/Simple</code></pre></div>
+    <div class="method-summary">Affichage de la liste de promo (<span class="nickname">personneListPromoSimpleGet</span>)</div>
+    <div class="method-notes">Affichage de la liste de promo avec l'id et le nom</div>
+
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      array[<a href="#Personne_Liste_Promo_Simple">Personne_Liste_Promo_Simple</a>]
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>[ {
+  "nom" : "Canva",
+  "id_promotion" : 0
+}, {
+  "nom" : "Canva",
+  "id_promotion" : 0
+} ]</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="header">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    successful operation
+        
+    <h4 class="field-label">400</h4>
+    Requete invalid
+        <a href="#"></a>
+  </div> <!-- method -->
+  <hr/>
   <div class="method"><a name="personneListTypePersonneGet"/>
     <div class="method-path">
     <a class="up" href="#__Methods">Up</a>
@@ -639,6 +687,7 @@ font-style: italic;
     <li><a href="#Personne_Liste_Personne"><code>Personne_Liste_Personne</code> - </a></li>
     <li><a href="#Personne_Liste_Prof"><code>Personne_Liste_Prof</code> - </a></li>
     <li><a href="#Personne_Liste_Promo"><code>Personne_Liste_Promo</code> - </a></li>
+    <li><a href="#Personne_Liste_Promo_Simple"><code>Personne_Liste_Promo_Simple</code> - </a></li>
     <li><a href="#Personne_Liste_TypePersonne"><code>Personne_Liste_TypePersonne</code> - </a></li>
   </ol>
 
@@ -716,6 +765,15 @@ font-style: italic;
           <div class="param-desc"><span class="param-type">example: 2021-01-01T01:00:00.000Z</span></div>
 <div class="param">duree </div><div class="param-desc"><span class="param-type"><a href="#integer">Integer</a></span>  </div>
           <div class="param-desc"><span class="param-type">example: 1</span></div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3><a name="Personne_Liste_Promo_Simple"><code>Personne_Liste_Promo_Simple</code> - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">id_promotion (optional)</div><div class="param-desc"><span class="param-type"><a href="#long">Long</a></span>  format: int64</div>
+<div class="param">nom </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+          <div class="param-desc"><span class="param-type">example: Canva</span></div>
     </div>  <!-- field-items -->
   </div>
   <div class="model">
