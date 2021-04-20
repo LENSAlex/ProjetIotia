@@ -95,7 +95,7 @@ while True:
         print("ferme")
         msg=("GazAlerte").encode('utf-8'); 
         client_socket_haut_parleur.send(msg);
-        time.sleep(5)
+        time.sleep(3)
     
     print("Pir" + data_pir)
     print("Pir sortie" + data_pir_sortie)
