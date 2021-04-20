@@ -106,13 +106,6 @@ while True:
         msg=("PirEntreeBL").encode('utf-8'); 
         client_socket_haut_parleur.send(msg);
         time.sleep(2)
-        #print("dedans");
-        #Sinon ca beep tous le temps on beep on premier et on attent que ca revienne a 0.
-        #while data_pir != "0" :
-        #    data_pir = str(client_socket_pir.recv(size))
-            #data_pir = data_pir[0:1];
-        #    print("attente 0")
-        #    time.sleep(2)
     if data_pir_sortie == "1":
         print("dedans pir sortie");
         msg=("PirSortieBL").encode('utf-8'); 
