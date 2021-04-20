@@ -60,7 +60,7 @@ client_socket_pir_sortie=socket.socket(socket.AF_BLUETOOTH,socket.SOCK_STREAM, s
 client_socket_pir_sortie.connect(("50:02:91:8D:DC:56",1))#modifier l'adresse mac en fonction 
 
 mqtt.connect("192.168.143.136")
-mqtt.loop_start()
+#mqtt.loop_start()
 
 while True:
     size = 1024
