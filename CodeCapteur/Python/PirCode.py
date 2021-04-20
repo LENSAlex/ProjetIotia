@@ -12,12 +12,6 @@ Adress : MAC: 50:02:91:8D:DC:56
          NameServerBL : PirEntreeBL
 Adress : MAC: 50:02:91:8D:10:36
          NameServerBL : GazBt         
-
-Action: En fonction du retour du capteur (0 ou 1) --> bool
-On va actionner un avertisseur sonore pour avertir l entrée d'une personne
-Et on va egalement incrementer un compteur pour compter le nombre de personne local
-Mais requete bdd pour savoir personne dans cette salle
-
 """
 
 from bluetooth import *
@@ -50,7 +44,7 @@ for name, addr in nearby_devices:
         print("OK_adr_mac\n")
         break
 
-
+#Different client socket pour recevoir les données en bluetooth 
 client_socket_haut_parleur=socket.socket(socket.AF_BLUETOOTH,socket.SOCK_STREAM, socket.BTPROTO_RFCOMM) #m5Stack
 client_socket_haut_parleur.connect(("84:0D:8E:3D:3C:56",1))
 
@@ -90,15 +84,19 @@ while True:
     res_pir_sortie = re.sub(r"[^Z0-9]","",data_pir_sortie)
     data_pir_sortie = res_pir_sortie[0:1]
     #print(datafentre)
-    #mqtt.publish("data/temperature", 5) 
+    #Envoi sur le broker MQTT
+    mqtt.publish("data/pir_sortie", data_pir_sortie) 
+    mqtt.publish("data/pir_entree", data_pir) 
+    mqtt.publish("data/gaz", dataGaz) 
+    mqtt.publish("data/fenetre", datafentre) 
     
-    """
+    
     if datafentre == "0" and dataGaz > "210":
         print("ferme")
         msg=("GazAlerte").encode('utf-8'); 
         client_socket_haut_parleur.send(msg);
         time.sleep(5)
-    """
+    
     print("Pir" + data_pir)
     print("Pir sortie" + data_pir_sortie)
     if data_pir == "1":
@@ -106,6 +104,13 @@ while True:
         msg=("PirEntreeBL").encode('utf-8'); 
         client_socket_haut_parleur.send(msg);
         time.sleep(2)
+        #print("dedans");
+        #Sinon ca beep tous le temps on beep on premier et on attent que ca revienne a 0.
+        #while data_pir != "0" :
+        #    data_pir = str(client_socket_pir.recv(size))
+            #data_pir = data_pir[0:1];
+        #    print("attente 0")
+        #    time.sleep(2)
     if data_pir_sortie == "1":
         print("dedans pir sortie");
         msg=("PirSortieBL").encode('utf-8'); 
