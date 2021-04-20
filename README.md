@@ -7,7 +7,7 @@ Ils ont tous été programmé avec l'interface Arduino.
 
 # Capteur "PIR" :  
 Le PIR est un capteur qui détecte l'infrarouge provenant du corps humain. Il permet de savoir si une personne est rentrée ou sortie. De type AS312 adapté pour le M5StickC. Il est donc relié à un M5StickC et les données sont transmises par le pin 36
-Vous trouverez la documentation [Ici](https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationPIR.adoc)
+Vous trouverez la documentation [Ici](https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationPIR.adoc)(PIR Sortie)</br> ou </br> [Ici](https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationPIR_sortie.adoc)
 
 # Capteur "Gaz" : 
 Le Capteur de gaz est un MH MQ Sensor, qui capte le taux de gaz présent dans une salle. Plus la valeur augmente, moins il y aura d'oxygène. Il est relié à un M5StickC et les données sont transmises par le pin 36
@@ -28,21 +28,21 @@ Vous trouverez la documentation [Ici](https://github.com/LENSAlex/ProjetIotia/bl
 # Installation Capteurs/Haut parleur :
 ## Capteur Gaz :
 Veuillez réaliser les actions suivantes : (Avoir un M5StickC)</br>
-**1°** : Dans *Fichier* -> *Préférences* -> ajouté "https://dl.espressif.com/dl/package_esp32_index.json" dans le *Gestionnaire de cartes supplémentaires*
+**1°** : Dans *Fichier* -> *Préférences* -> ajoutez "https://dl.espressif.com/dl/package_esp32_index.json" dans le *Gestionnaire de cartes supplémentaires*
 **2°** : Dans *Croquis* -> *Gestionnaire de bibliothèque* -> Recherchez "*ESP32 Lite Pack Library*" et installez là, faites de même pour "*M5StickC*"</br>
 **3°** : Dans *Outils* -> *Type de cartes* -> *Gestionnaire de Carte* -> Recherchez "*esp32*"</br>
 **4°** : Toujours dans *Outils* -> *Type de cartes* -> *Gestionnaire de Carte* -> *ESP32 Arduino* -> Sélectionnez "*ESP 32 Dev Module*"</br>
 **5°** : Choissez le port de votre M5StickC puis téléverser votre programme. 
-## Capteur PIR :
+## Capteur PIR Entrée/Sortie:
 Veuillez réaliser les actions suivantes : (Avoir un M5StickC)</br>
-**1°** : Dans *Fichier* -> *Préférences* -> ajouté "https://dl.espressif.com/dl/package_esp32_index.json" dans le *Gestionnaire de cartes supplémentaires*
+**1°** : Dans *Fichier* -> *Préférences* -> ajoutez "https://dl.espressif.com/dl/package_esp32_index.json" dans le *Gestionnaire de cartes supplémentaires*
 **2°** : Dans *Croquis* -> *Gestionnaire de bibliothèque* -> Recherchez "*ESP32 Lite Pack Library*" et installez là, faites de même pour "*M5StickC*"</br>
 **3°** : Dans *Outils* -> *Type de cartes* -> *Gestionnaire de Carte* -> Recherchez "*esp32*"</br>
 **4°** : Toujours dans *Outils* -> *Type de cartes* -> *Gestionnaire de Carte* -> *ESP32 Arduino* -> Sélectionnez "*ESP 32 Dev Module*"</br>
 **5°** : Choissez le port de votre M5StickC puis téléverser votre programme. 
 ## Capteur fenêtre :
 Veuillez réaliser les actions suivantes : (Avoir un M5StickC)</br>
-**1°** : Dans *Fichier* -> *Préférences* -> ajouté "https://dl.espressif.com/dl/package_esp32_index.json" dans le *Gestionnaire de cartes supplémentaires*
+**1°** : Dans *Fichier* -> *Préférences* -> ajoutez "https://dl.espressif.com/dl/package_esp32_index.json" dans le *Gestionnaire de cartes supplémentaires*
 **2°** : Dans *Croquis* -> *Gestionnaire de bibliothèque* -> Recherchez "*ESP32 Lite Pack Library*" et installez là, faites de même pour "*M5StickC*"</br>
 **3°** : Dans *Outils* -> *Type de cartes* -> *Gestionnaire de Carte* -> Recherchez "*esp32*"</br>
 **4°** : Toujours dans *Outils* -> *Type de cartes* -> *Gestionnaire de Carte* -> *ESP32 Arduino* -> Sélectionnez "*ESP 32 Dev Module*"</br>
@@ -50,7 +50,7 @@ Veuillez réaliser les actions suivantes : (Avoir un M5StickC)</br>
 ***Important !*** : Veuillez bien téléverser votre programme avant de brancher le capteur de fenêtre à votre M5StickC. 
 ## Haut Parleur :
 Veuillez réaliser les actions suivantes : (Avoir un M5Stack)</br>
-**1°** : Dans *Fichier* -> *Préférences* -> ajouté "https://dl.espressif.com/dl/package_esp32_index.json" dans le *Gestionnaire de cartes supplémentaires*
+**1°** : Dans *Fichier* -> *Préférences* -> ajoutez "https://dl.espressif.com/dl/package_esp32_index.json" dans le *Gestionnaire de cartes supplémentaires*
 **2°** : Dans *Croquis* -> *Gestionnaire de bibliothèque* -> Recherchez "*ESP32 Lite Pack Library*" et installez là, faites de même pour "*M5Stack*"</br>
 **3°** : Dans *Outils* -> *Type de cartes* -> *Gestionnaire de Carte* -> Recherchez "*esp32*"</br>
 **4°** : Toujours dans *Outils* -> *Type de cartes* -> *Gestionnaire de Carte* -> *ESP32 Arduino* -> Sélectionnez "*M5Stack-core-ESP 32*"</br>
