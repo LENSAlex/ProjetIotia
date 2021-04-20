@@ -96,22 +96,22 @@ while True:
     
     if datafentre == "0" and dataGaz > "210":
         print("ferme")
-        msg=("GazAlerte").encode('utf-8'); 
-        client_socket_haut_parleur.send(msg);
+        msg=("GazAlerte").encode('utf-8') 
+        client_socket_haut_parleur.send(msg)
         time.sleep(3)
     
     print("Pir" + data_pir)
     print("Pir sortie" + data_pir_sortie)
     if data_pir == "1":
-        print("dedans pir");
-        msg=("PirEntreeBL").encode('utf-8'); 
-        client_socket_haut_parleur.send(msg);
+        print("dedans pir")
+        msg=("PirEntreeBL").encode('utf-8')
+        client_socket_haut_parleur.send(msg)
         time.sleep(2)
 
     if data_pir_sortie == "1":
-        print("dedans pir sortie");
-        msg=("PirSortieBL").encode('utf-8'); 
-        client_socket_haut_parleur.send(msg);
+        print("dedans pir sortie")
+        msg=("PirSortieBL").encode('utf-8') 
+        client_socket_haut_parleur.send(msg)
         time.sleep(2)
 
 
