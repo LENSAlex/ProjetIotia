@@ -1,9 +1,4 @@
----
-title: Documentation Haut parleur
-title_expanded: Documentation Haut parleur
-categories: [ "Structure" ]
-subCategories: [ "Subcategory Name" ]
----
+
 // PAGE TITLE
 = Documentation Haut parleur
 
