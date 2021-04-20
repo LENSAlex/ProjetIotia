@@ -70,7 +70,7 @@ Programme qui tourne en permanance sur le M5StickC. Il lis les valeurs du pin 0 
     M5.Lcd.setCursor(0,10);
     M5.Lcd.print("Ouvert");
   }
-// envoi si la porte est ouverte ou non. 1== ouvert / 0 == fermé
+// envoi si la porte est ouverte ou non. 1== ouvert / 0 ==  fermé
   SerialBT.println(info);
   delay(1000);
 ----
