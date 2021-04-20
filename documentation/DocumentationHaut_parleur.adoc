@@ -1,4 +1,9 @@
-
+---
+title: Documentation Haut parleur
+title_expanded: Documentation Haut parleur
+categories: [ "Structure" ]
+subCategories: [ "Subcategory Name" ]
+---
 // PAGE TITLE
 = Documentation Haut parleur
 
@@ -10,7 +15,6 @@
 
 [float]
 === Description
-// Describe what this Reference term does, and what it is used for	►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 Le haut parleur joue différents sons en fonction des données qu'il reçoit en Bluetooth. Il y a un son pour un taux de gaz trop élevé, un son pour indiquer qu'une personne est entrée ou qu'une fenêtre est ouverte par exemple
 [%hardbreaks]
 
@@ -20,10 +24,8 @@ image::M5Stack.jpg[caption="", title="M5Stack classique"]
 
 [float]
 === Setup
-// Enter Reference term syntax, please specify all available parameters  ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 `void setup()`
 
-// HOW TO USE SECTION STARTS
 [#howtouse]
 --
 
@@ -33,18 +35,18 @@ Initialisation du M5Stack et du Bluetooth
 
 [source,arduino]
 ----
+  // Initialize the M5Stack object
   M5.begin();
   M5.Power.begin();
+  //Initialise le BT 
   SerialBT.begin("Haut_parleur_BT"); //Bluetooth device name
 ----
 [%hardbreaks]
 
 [float]
 === Loop
-// Enter Reference term syntax, please specify all available parameters  ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 `void loop()`
 
-// HOW TO USE SECTION STARTS
 [#howtouse]
 --
 
@@ -61,23 +63,26 @@ Programme qui tourne en permanance sur le M5Stack. En fonction de ce qui est re�
   {
     Serial.println(SerialBT.readString());
   }
+  //Reception d'alerte lorsqu'une personne est rentré 
   if(SerialBT.readString()=="PirEntreeBL")
-  //if(M5.BtnB.wasPressed())
   {
+    //Incrémentation du compteur
     cptPersonnes++;
     M5.Speaker.tone(NOTE_DH3, 200); //frequency 3000, with a duration of 200ms
   }
+  //Reception d'alerte lorsqu'une personne est sortie 
   if(SerialBT.readString()=="PirSortieBL")
-  //if(M5.BtnB.wasPressed())
   {
+    //reduit valeur du compteur 
     cptPersonnes--;
     M5.Speaker.tone(NOTE_DL3, 200); //frequency 3000, with a duration of 200ms
   }
+  //Réception de l'alerte pour le taux de gaz 
   if(SerialBT.readString()=="GazAlerte")
   {
-    //M5.Lcd.printf("B gazal \r\n");
     M5.Speaker.tone(NOTE_D1, 200); //frequency 3000, with a duration of 200ms
   }
+  //Pour ne pas avoir d'affichage comme "Il y a -5 personnes " 
   if(cptPersonnes < 0){
     M5.Lcd.printf("Il y a 0 personnes");
   }else{
@@ -98,7 +103,7 @@ Programme qui tourne en permanance sur le M5Stack. En fonction de ce qui est re�
 [role="language"]
 * #LIEN :# link:https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationPorte.adoc[Documentation Porte]
 * #LIEN :# link:https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationGaz.adoc[Documentation détecteur de Gaz]
-* #LIEN :# link:https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationPIR.adoc[Documentation PIR]
+* #LIEN :# link:https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationPIR.adoc[Documentation PIR Entrée]
 * #LIEN :# link:https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationPIR_sortie.adoc[Documentation PIR Sortie]
 
 

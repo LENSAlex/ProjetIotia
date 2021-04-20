@@ -1,3 +1,16 @@
+---
+title: Documentation Détection Porte 
+title_expanded: Documentation Détection Porte 
+categories: [ "Structure" ]
+subCategories: [ "Subcategory Name" ]
+---
+// ARDUINO LANGUAGE REFERENCE TAGS (above)   ►►►►► ALWAYS INCLUDE IN YOUR FILE ◄◄◄◄◄
+// title will show up in the Index of all Reference terms
+// If the title is an operator write it out in words in title_expanded
+// categories: Pick between Structure, Variable or Function
+// The subcategory within the ones available in the index ("Digital I/O", "Arithmetic Operators")
+
+
 
 // PAGE TITLE
 = Documentation Détection Porte 
@@ -31,11 +44,12 @@ Initialisation du M5StickC auquel est relié ce capteur, la lecture de données 
 
 [source,arduino]
 ----
-  // Initialize the M5StickC object
+  // Initialise le M5StickC
   M5.begin();
   SerialBT.begin("fenetreBt"); //Bluetooth device name
   // LCD display
   M5.Lcd.setCursor(0,10);
+  //Initialisation recupération valeur sur le pin 0
   pinMode(0, INPUT);
 ----
 [%hardbreaks]
@@ -56,17 +70,20 @@ Programme qui tourne en permanance sur le M5StickC. Il lis les valeurs du pin 0 
   int info = 0;
   // read the state of the pushbutton value
   Serial.println("Port A0: ");
+  //Lecture de la donnée sur le pin 0
   info = digitalRead(0);
   Serial.println(info);
   if(info == 0){
+    //Affichage pour informer l'utilisateur
     M5.Lcd.setCursor(0,10);
     M5.Lcd.print("Fermer");
   }
   if(info == 1){
+    //Affichage pour informer l'utilisateur
     M5.Lcd.setCursor(0,10);
     M5.Lcd.print("Ouvert");
   }
-// envoi si la porte est ouverte ou non. 1== ouvert/ 0 == fermé
+// envoi si la porte est ouverte ou non. 1== ouvert / 0 == fermé
   SerialBT.println(info);
   delay(1000);
 ----
@@ -80,8 +97,6 @@ Programme qui tourne en permanance sur le M5StickC. Il lis les valeurs du pin 0 
 === Voir d'autres documentations
 
 [role="language"]
-* #LIEN :# link:https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationHaut_parleur.adoc[Documentation Haut Parleur]
-* #LIEN :# link:https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationGaz.adoc[Documentation détecteur de gaz]
-* #LIEN :# link:https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationPIR.adoc[Documentation PIR]
-* #LIEN :# link:https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationPIR_sortie.adoc[Documentation PIR Sortie]
+* #LANGUAGE# link:../Speaker/SpeakerBeep[Documentation Haut Parleur]
+* #LANGUAGE# link:../gaz/gaz/GAZ[Documentation détecteur de gaz]
 
