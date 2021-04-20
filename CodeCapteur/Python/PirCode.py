@@ -16,14 +16,15 @@ Adress : MAC: 50:02:91:8D:10:36
 
 from bluetooth import *
 import socket
-import tkinter as tk
 from datetime import datetime
 import time
 import re
 import paho.mqtt.client as mqtt
 
+#pour le broker
+broker_address = "192.168.143.136"
+client = mqtt.Client("capteur")
 #date de prise
-
 
 now=datetime.now()
 date_time=now.strftime("%Y/%d/%m %H:%M:%S")
@@ -59,8 +60,6 @@ client_socket_pir.connect(("24:A1:60:46:AD:3E",1))
 client_socket_pir_sortie=socket.socket(socket.AF_BLUETOOTH,socket.SOCK_STREAM, socket.BTPROTO_RFCOMM)
 client_socket_pir_sortie.connect(("50:02:91:8D:DC:56",1))#modifier l'adresse mac en fonction 
 
-mqtt.connect("192.168.143.136")
-#mqtt.loop_start()
 
 while True:
     size = 1024
@@ -85,10 +84,14 @@ while True:
     data_pir_sortie = res_pir_sortie[0:1]
     #print(datafentre)
     #Envoi sur le broker MQTT
-    mqtt.publish("data/pir_sortie", data_pir_sortie) 
-    mqtt.publish("data/pir_entree", data_pir) 
-    mqtt.publish("data/gaz", dataGaz) 
-    mqtt.publish("data/fenetre", datafentre) 
+    client.connect(broker_address) #connect to broker
+    mqtt.publish("/batiment/etages/salles/pir_sortie", data_pir_sortie) 
+    #client.connect(broker_address) #connect to broker
+    mqtt.publish("/batiment/etages/salles/pir_entree", data_pir) 
+    #client.connect(broker_address) #connect to broker
+    mqtt.publish("/batiment/etages/salles/gaz", dataGaz) 
+    #client.connect(broker_address) #connect to broker
+    mqtt.publish("/batiment/etages/salles/fenetre", datafentre) 
     
     
     if datafentre == "0" and dataGaz > "210":
