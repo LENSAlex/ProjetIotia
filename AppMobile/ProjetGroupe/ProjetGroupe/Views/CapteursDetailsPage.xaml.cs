@@ -156,7 +156,7 @@ namespace ProjetGroupe.Views
         /// </summary>
         public string nombat;
         /// <summary>
-        /// Nom du bâtiment à afficher
+        /// Nom du bâtiment à afficher // Type
         /// </summary>
         public string NomBat
         {
@@ -171,20 +171,51 @@ namespace ProjetGroupe.Views
             }
         }
         /// <summary>
+        /// textinfo
+        /// </summary>
+        public string textinfo;
+        /// <summary>
+        /// Information a afficher
+        /// </summary>
+        public string TextInfo
+        {
+            get
+            {
+                return textinfo;
+            }
+            set
+            {
+                textinfo = value;
+                RaisepropertyChanged("TextInfo");
+            } 
+        }
+
+        /// <summary>
         /// Constructeur de la classe
         /// </summary>
         public CapteursDetailsPage()
         {
+            var liste = SecureStorage.GetAsync("Liste").Result;
+            if (liste != null)
+            {
+                TextInfo = "Type:";
+            }
+            else
+            {
+                TextInfo = "Bâtiment: ";
+            }
+
             CapteurId = SecureStorage.GetAsync("CapteurId").Result;
             BoxName = SecureStorage.GetAsync("BoxName").Result;
             NomBat = SecureStorage.GetAsync("NomBat").Result;
+
             GetValeurLast();
             GetLibel();
             GetLibelType();
             GetValeurMoyenne();
+
             InitializeComponent();
             this.BindingContext = this;
-
         }
         /// <summary>
         /// Méthode permettrant de remplir la ValMoy

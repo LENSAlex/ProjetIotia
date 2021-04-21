@@ -31,7 +31,7 @@
                 <Frame Padding="10" BorderColor="#91B3FB" CornerRadius="8">
                     <Entry PlaceholderColor="#96d1ff" FontFamily="ThemeFontBold" TextColor="#96d1ff" IsPassword="true" Text="{Binding Password, Mode=TwoWay}" Placeholder="Mot de passe" FontSize="Medium" Margin="0" />
                 </Frame>
-                <Button FontFamily="ThemeFontBold" VerticalOptions="Center" CornerRadius="8" Text="Connexion" Command="{Binding LoginCommand}"/>
+                <Button FontFamily="ThemeFontBold" VerticalOptions="Center" CornerRadius="8" Text="Connexion" Command="{Binding LoginCommand}" />
                 <Label HorizontalTextAlignment="Center" TextColor="Red" Text="{Binding Erreur}" FontSize="16" />
             </StackLayout>
         </ScrollView>

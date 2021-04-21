@@ -31,7 +31,7 @@
             <Style Class="ListViewCustom" TargetType="DatePicker">
                 <Setter Property="BackgroundColor" Value="Red"></Setter>
             </Style>
-      
+
             <Style Class="FlyoutItemLabelStyle" TargetType="Label">
                 <Setter Property="TextColor" Value="white"></Setter>
             </Style>
@@ -73,7 +73,7 @@
             </Style>
         </ResourceDictionary>
     </Shell.Resources>
-   
+
     <Shell.FlyoutHeaderTemplate>
         <DataTemplate>
             <Grid BackgroundColor="#96BCE3" Padding="20">
@@ -90,89 +90,9 @@
         <ShellContent Icon="warning3.png" Title="Pénurie" ContentTemplate="{DataTemplate local:SmartOfficePage}" />
         <ShellContent Icon="data2.png" Title="Recherche" ContentTemplate="{DataTemplate local:SmartBuildingPage}" />
         <ShellContent Icon="contact.png" Title="Capteurs" ContentTemplate="{DataTemplate local:eCovidPage}" />
+        <ShellContent Icon="add.png" Title="A propos" ContentTemplate="{DataTemplate local:AboutPage}" />
     </FlyoutItem>
 
-    <!--<MenuItem Icon="data.png" Text="Liste des capteurs" StyleClass="MenuItemLayoutStyle" Clicked="OneCovidPageClicked">
-    </MenuItem>-->
-    <MenuItem Icon="contact2.png" Text="Contacts et Autres" StyleClass="MenuItemLayoutStyle" Clicked="OnContactPageClicked">
-    </MenuItem>
     <MenuItem Icon="logout.png" Text="Déconnexion" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">
     </MenuItem>
-    <!-- 
-        When the Flyout is visible this defines the content to display in the flyout.
-        FlyoutDisplayOptions="AsMultipleItems" will create a separate flyout item for each child element    
-        https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
-    -->
-
-    <!--<ShellItem Icon="dashboard.png" Title="Navigation">
-        <ShellContent Icon="dashboard.png" Title="Navigation" ContentTemplate="{DataTemplate local:AccueilPage}" />
-    </ShellItem>-->
-
-    <!--<MenuItem  Icon="warning.png" Text="Alerte Pénurie" StyleClass="MenuItemLayoutStyle" Clicked="OnSmartOfficePageClicked">
-    </MenuItem>
-
-    <MenuItem  Icon="datalayout.png" Text="Alerte E-Covid" StyleClass="MenuItemLayoutStyle" Clicked="OnSmartBuildingPageClicked">
-    </MenuItem>
-    <MenuItem  Icon="data.png" Text="Consulter les données" StyleClass="MenuItemLayoutStyle" Clicked="OneCovidPageClicked">
-    </MenuItem>-->
-
-    <!--<ShellItem Route="SmartOfficePage">
-        <ShellContent ContentTemplate="{DataTemplate local:SmartOfficePage}" />
-    </ShellItem>-->
-    <!--<FlyoutItem Title="Connexion" Icon="iut.png">
-        <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
-    </FlyoutItem>-->
-
-    <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->
-
-    <!--<MenuItem Text="SmartOfficePage" StyleClass="MenuItemLayoutStyle" Clicked="OnSmartOfficePageClicked">
-    </MenuItem>-->
-
-
-    <!--
-    <TabBar>
-        <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
-    </TabBar>
-    <TabBar>
-        <ShellContent Route="SmartOfficePage" ContentTemplate="{DataTemplate local:SmartOfficePage}" />
-    </TabBar>
-    <TabBar>
-        <ShellContent  Route="SmartBuildingPage" ContentTemplate="{DataTemplate local:SmartBuildingPage}" />
-    </TabBar>
-    <TabBar>
-        <ShellContent Route="AccueilPage" ContentTemplate="{DataTemplate local:AccueilPage}" />
-    </TabBar>-->
-    <!-- Optional Templates 
-    // These may be provided inline as below or as separate classes.
-
-    // This header appears at the top of the Flyout.
-    // https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/flyout#flyout-header
-    <Shell.FlyoutHeaderTemplate>
-        <DataTemplate>
-            <Grid>ContentHere</Grid>
-        </DataTemplate>
-    </Shell.FlyoutHeaderTemplate>
-
-    // ItemTemplate is for ShellItems as displayed in a Flyout
-    // https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/flyout#define-flyoutitem-appearance
-    <Shell.ItemTemplate>
-        <DataTemplate>
-            <ContentView>
-                Bindable Properties: Title, Icon
-            </ContentView>
-        </DataTemplate>
-    </Shell.ItemTemplate>
-
-    // MenuItemTemplate is for MenuItems as displayed in a Flyout
-    // https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/flyout#define-menuitem-appearance
-    <Shell.MenuItemTemplate>
-        <DataTemplate>
-            <ContentView>
-                Bindable Properties: Text, Icon
-            </ContentView>
-        </DataTemplate>
-    </Shell.MenuItemTemplate>
-
-    -->
-
 </Shell>

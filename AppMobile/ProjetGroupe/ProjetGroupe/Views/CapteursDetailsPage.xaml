@@ -47,7 +47,7 @@
 
                             <Image HeightRequest="22" WidthRequest="12" Source="address.png" VerticalOptions="Center" HorizontalOptions="Start"/>
                             <Label FontFamily="ThemeFontBold" Text="{Binding BoxName}" FontSize="12" TextColor="#96d1ff" HorizontalOptions="Start" VerticalOptions="Center"/>
-                            <Label FontFamily="ThemeFontBold" Text="Bâtiment:" FontSize="12" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center"/>
+                            <Label FontFamily="ThemeFontBold" Text="{Binding TextInfo}" FontSize="12" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center"/>
                             <Label FontFamily="ThemeFontBold" Text="{Binding NomBat}" FontSize="12" TextColor="#96d1ff" HorizontalOptions="Start" VerticalOptions="Center"/>
                             <Label FontFamily="ThemeFontBold" Text="Mesure:" FontSize="12" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Center"/>
                             <Label FontFamily="ThemeFontBold" Text="{Binding Libelle}" FontSize="12" TextColor="#96d1ff" HorizontalOptions="Start" VerticalOptions="Center"/>

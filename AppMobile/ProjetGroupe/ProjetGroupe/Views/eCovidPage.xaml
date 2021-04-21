@@ -54,6 +54,5 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Label Grid.Row="2" x:Name="Label1" Text="{Binding Erreur}" Margin="20,-30,20,20"  TextColor="red" IsVisible="False" FontSize="14" HorizontalOptions="Center"/>
     </Grid>
 </ContentPage>

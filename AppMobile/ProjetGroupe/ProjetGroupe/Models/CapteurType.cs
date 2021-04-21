@@ -24,6 +24,11 @@ namespace ProjetGroupe.Models
         [JsonProperty("libelle")]
         public string Libelle { get; set; }
         /// <summary>
+        /// LibelleType du capteur
+        /// </summary>
+        [JsonProperty("libelle_type")]
+        public string LibelleType { get; set; }
+        /// <summary>
         /// Nom du bâtiment ou il se trouve
         /// </summary>
         [JsonProperty("nom")]

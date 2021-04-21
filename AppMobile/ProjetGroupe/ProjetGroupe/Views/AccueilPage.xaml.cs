@@ -30,7 +30,7 @@ namespace ProjetGroupe.Views
         {
             base.OnAppearing();
             FrameAccueil.TranslationY = 600;
-            FrameAccueil.TranslateTo(0, 0, 500, Easing.BounceIn);
+            FrameAccueil.TranslateTo(0, 0, 500, Easing.BounceIn);  
         }
 
     }

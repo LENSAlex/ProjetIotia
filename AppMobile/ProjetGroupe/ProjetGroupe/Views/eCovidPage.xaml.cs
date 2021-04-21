@@ -76,7 +76,7 @@ namespace ProjetGroupe.Views
             var ide = Convert.ToInt32(obj.Id);
             SecureStorage.SetAsync("CapteurId", ide.ToString());
             SecureStorage.SetAsync("BoxName", obj.Libelle.ToString());
-            SecureStorage.SetAsync("NomBat", obj.Nom.ToString());
+            SecureStorage.SetAsync("NomBat", obj.LibelleType.ToString());
             SecureStorage.SetAsync("Liste", "Liste");
             Application.Current.MainPage = new CapteursDetailsPage();
         }

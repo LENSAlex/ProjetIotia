@@ -252,6 +252,11 @@
             Description du capteur
             </summary>
         </member>
+        <member name="P:ProjetGroupe.Models.CapteurType.LibelleType">
+            <summary>
+            LibelleType du capteur
+            </summary>
+        </member>
         <member name="P:ProjetGroupe.Models.CapteurType.Nom">
             <summary>
             Nom du bâtiment ou il se trouve
@@ -1014,6 +1019,31 @@
             Command au click du bouton
             </summary>
         </member>
+        <member name="F:ProjetGroupe.ViewModels.AccueilViewModel.displaymsg">
+            <summary>
+            displaymsg
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.ViewModels.AccueilViewModel.DisplayMsg">
+            <summary>
+            Binding du message affiché sur le front lros de l'envois d'une alerte
+            </summary>
+        </member>
+        <member name="F:ProjetGroupe.ViewModels.AccueilViewModel.textcolor">
+            <summary>
+            textcolor
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.ViewModels.AccueilViewModel.TextColor">
+            <summary>
+            Couleur de ce-dernier
+            </summary>
+        </member>
+        <member name="E:ProjetGroupe.ViewModels.AccueilViewModel.PropertyChanged">
+            <summary>
+            Event de changement de string sur le front
+            </summary>
+        </member>
         <member name="M:ProjetGroupe.ViewModels.AccueilViewModel.#ctor">
             <summary>
             Constructeur de la classe
@@ -1028,6 +1058,23 @@
             <summary>
             Méthoed asynchrone pour envoyé la notification
             </summary>
+        </member>
+        <member name="M:ProjetGroupe.ViewModels.AccueilViewModel.RaisepropertyChanged(System.String)">
+            <summary>
+            Event de changement back/front de Xamarin
+            </summary>
+            <param name="propertyName">nom de la propriété a changer</param>
+        </member>
+        <member name="E:ProjetGroupe.ViewModels.AccueilViewModel.PropertyChanged2">
+            <summary>
+            PropertyChangedEventHandler
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.ViewModels.AccueilViewModel.OnPropertyChanged(System.String)">
+            <summary>
+            Méthode de changement d'une propriété sur le front
+            </summary>
+            <param name="propertyName">nom de la propriété</param>
         </member>
         <member name="T:ProjetGroupe.ViewModels.BaseViewModel">
             <summary>
@@ -1365,7 +1412,17 @@
         </member>
         <member name="P:ProjetGroupe.Views.CapteursDetailsPage.NomBat">
             <summary>
-            Nom du bâtiment à afficher
+            Nom du bâtiment à afficher // Type
+            </summary>
+        </member>
+        <member name="F:ProjetGroupe.Views.CapteursDetailsPage.textinfo">
+            <summary>
+            textinfo
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Views.CapteursDetailsPage.TextInfo">
+            <summary>
+            Information a afficher
             </summary>
         </member>
         <member name="M:ProjetGroupe.Views.CapteursDetailsPage.#ctor">
