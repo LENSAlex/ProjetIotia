@@ -153,7 +153,7 @@ app.get("/Personne/:Prenom/:Nom", (req, res) => {
 app.get("/Personne/ListPromo", (req, res) => {
 
     //Affichage formation avec departement et duree
-    conn.query("select F.nom , P.annee ,F.duree from Promotion P , Formation F , Departement D where P.id_formation = F.id_formation and D.id_departement = F.id_departement", function(err, result) {
+    conn.query("select P.id_promotion , F.nom , P.annee ,F.duree from Promotion P , Formation F , Departement D where P.id_formation = F.id_formation and D.id_departement = F.id_departement ", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -549,7 +549,7 @@ app.get("/Capteur/List/Historique/Temp", (req, res) => {
 
 //List des capteur co2 dans l historique plus recent au plus vieux
 app.get("/Capteur/List/Historique/CO2", (req, res) => {
-    conn.query("select DT.libelle_type , B.libelle , H.valeur from Historique H , Device D , DeviceType DT, Box B WHERE H.id_device = D.id_device and DT.id_devicetype = D.id_devicetype AND D.id_box = B.id_box AND DT.id_devicetype = 3 order by H.date_historique DESC ", function(err, result) {
+    conn.query("select DT.libelle_type , B.libelle , H.valeur , S.nom as NomSalle , E.num as NomEtage, Bat.nom as NomBatiment, Site.nom as NomSite , H.date_historique from Historique H , Device D , DeviceType DT, Box B , Salle S , Etage E , Batiment Bat , Site WHERE H.id_device = D.id_device and DT.id_devicetype = D.id_devicetype AND D.id_box = B.id_box and B.id_salle = S.id_salle and E.id_etage = S.id_etage AND Bat.id_batiment = E.id_batiment AND Bat.id_site = Site.id_site AND DT.id_devicetype = 3 order by H.date_historique DESC", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -607,6 +607,61 @@ app.put("/Alerte/NotPenurie/:IdEquipement/:IdSalle", (req, res) => {
             console.log(result);
         }
     });
+})
+
+//Modifs eleve
+app.put("/Personne/Modifs/:NumRef/:IdPersType/:Password/:Email/:Tel/:Sexe/:Nom/:Prenom/:Birth/:IdPromo/:IdPersonne", (req, res) => {
+
+    //localhost:3001/Personne/Add/125/1/test/alex.@gmail.com/0607070705/F/LENS/AL/1908-08-11 01:00:00/1
+    conn.query("UPDATE `Personne` SET `num_ref` = '" + req.params.NumRef + "', `id_pers_type` = '" + req.params.IdPersType + "', `password` = '" + req.params.Password + "', `email` = '" + req.params.Email + "', `telephone` = '" + req.params.Tel + "', `sexe`= '" + req.params.Sexe + "', `nom` = '" + req.params.Nom + "', `prenom` = '" + req.params.Prenom + "', `date_anniversaire` = '" + req.params.Birth + "' where id_personne = '" + req.params.IdPersonne + "' ", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            // res.status(200).json("Personne Creer");
+        }
+    });
+
+    //La je vais chercher la requete que je viens d envoyer pour avoir l id de l utilisateur cree
+    //Que si eleve
+    if ( req.params.IdPersType == 1) {
+            //La je vais chercher la requete que je viens d envoyer pour avoir l id de l utilisateur cree
+        conn.query("UPDATE `Contenir` set `id_promotion` = " + req.params.IdPromo + " where id_eleve= " + req.params.IdPersonne + "", function(err, result) {
+            if (err)
+                res.status(400).json({ ErrorRequete: 'Requete invalid' });
+            else {
+                res.status(200).json("Etudiant modifier");
+            }
+        });
+    } else {
+        res.status(200);
+    }
+
+})
+
+//Modif Formation
+app.put("/Personne/Modifs/Formation/:IdDepartement/:NomFormation/:DureeFormation/IdFormation", (req, res) => {
+
+    //liée la table formation et promotion 
+    //Creation d'une formation:
+    conn.query("update `Formation` set `id_departement`='" + req.params.IdDepartement + "' ,  `nom` = '" + req.params.NomFormation + "', `duree` = '" + req.params.DureeFormation + "' where id_formation = '" + req.params.IdFormation + "'", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: err });
+        else {
+            res.status(200).json("Formation modifié");
+        }
+    })
+
+})
+
+//Modifs Promo
+app.put("/Personne/Modifs/Promo/:AnneePromotion/:IdProfesseurPromotion/:IdPromo", (req, res) => {
+    conn.query("update `Promotion` set `id_professeur` = '" + req.params.IdProfesseurPromotion + "', `annee` = '" + req.params.AnneePromotion + "' where id_promotion = '" + req.params.IdPromo + "' ", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json("Promotion modifié");
+        }
+    })
 })
 
 
@@ -674,8 +729,7 @@ app.post("/Personne/Add/Test/:Nom/:Prenom", (req, res) => {
     });
 })
 
-//DORIAN
-//Creation d'une promo AFAIRE TODO: Liaison de Formation avec Promotion , utilisés une dropdown pour IdDepartement et IdProfesseur
+//Add promo
 app.post("/Personne/Add/Promo/:IdDepartement/:NomFormation/:DureeFormation/:AnneePromotion/:IdProfesseurPromotion", (req, res) => {
 
     //liée la table formation et promotion 
@@ -831,11 +885,60 @@ app.delete("/Personne/Delete/:IdUser", (req, res) => {
                 if (err)
                     res.status(400).json({ ErrorRequete: err });
                 else {
-                    conn.query("DELETE FROM `Personne` WHERE id_personne = " + req.params.IdUser + "", function(err, result) {
+                    conn.query("DELETE FROM `Absence` WHERE id_personne = " + req.params.IdUser + "", function(err, result) {
                         if (err)
                             res.status(400).json({ ErrorRequete: err });
                         else {
-                            res.status(200).json("Utilisateur avec id = " + req.params.IdUser + " a ete supprimer");
+                            conn.query("DELETE FROM `Presentiel` WHERE id_personne = " + req.params.IdUser + "", function(err, result) {
+                                if (err)
+                                    res.status(400).json({ ErrorRequete: err });
+                                else {
+                                    conn.query("DELETE FROM `Personne` WHERE id_personne = " + req.params.IdUser + "", function(err, result) {
+                                        if (err)
+                                            res.status(400).json({ ErrorRequete: err });
+                                        else {
+                                            res.status(200).json("Utilisateur avec id = " + req.params.IdUser + " a ete supprimer");
+                                        }
+                                    });
+                                }
+                            });
+                        }
+                    });
+                    
+                }
+            });
+        }
+    });
+})
+
+//Supp promotion 
+app.delete("/Personne/Delete/:IdPromo", (req, res) => {
+
+    conn.query("DELETE FROM `Contenir` WHERE id_eleve = " + req.params.IdUser + "", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: err });
+        else {
+         
+        }
+    });
+})
+
+//Supp Campus 
+app.delete("/Batiment/Delete/:IdCampus", (req, res) => {
+
+    conn.query("DELETE FROM `AccesSite` WHERE id_site = " + req.params.IdCampus + "", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: err });
+        else {
+            conn.query("DELETE FROM `Batiment` WHERE id_site = " + req.params.IdCampus + "", function(err, result) {
+                if (err)
+                    res.status(400).json({ ErrorRequete: err });
+                else {
+                    conn.query("DELETE FROM `Site` WHERE id_site = " + req.params.IdCampus + "", function(err, result) {
+                        if (err)
+                            res.status(400).json({ ErrorRequete: err });
+                        else {
+                            res.status(200).json("Campus avec id = " + req.params.IdCampus + " a ete supprimer");
                         }
                     });
                 }
@@ -843,6 +946,22 @@ app.delete("/Personne/Delete/:IdUser", (req, res) => {
         }
     });
 })
+
+
+//Supp Device 
+app.delete("/Capteur/Delete/:IdDevice", (req, res) => {
+
+    conn.query("DELETE FROM `Contenir` WHERE id_eleve = " + req.params.IdUser + "", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: err });
+        else {
+         
+        }
+    });
+})
+
+
+
 
 app.listen(port, () => {
     // console.log(`Example app listening at http://localhost:${port}`)
