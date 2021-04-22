@@ -1,0 +1,480 @@
+swagger: '2.0'
+info:
+  description: |
+    Description du service "Usager"
+  version: 1.0.0
+  title: Web Service Usager 
+tags:
+- name: Personne
+  description: Informations sur une/des personnes
+paths:
+  /Personne/{Prenom}/{Nom}:
+    get:
+      tags:
+      - Personne
+      summary: Retourne des informations sur une personne
+      description: Retourne le nom, prénom et email d'une personne
+      operationId: getInfoPersonne
+      produces:
+      - application/json
+      parameters:
+      - name: Prenom
+        in: path
+        description: Prenom d'une personne
+        required: true
+        type: string
+        format: UTF-8
+      - name: Nom
+        in: path
+        description: Nom d'une personne
+        required: true
+        type: string
+        format: UTF-8
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/Personne'
+        400:
+          description: Requete invalid
+  /Personne/ListPromo:
+    get:
+      tags:
+      - Personne
+      summary: Affichage les informations d'une promotion
+      description: Affichage du nom, l'année, la durée d'une promotion 
+      produces:
+      - application/json
+      responses:
+        200:
+          description: successful operation
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Personne_Liste_Promo'
+        400:
+          description: Requete invalid
+  /Personne/ListPersonne:
+    get:
+      tags:
+      - Personne
+      summary: Affichage des informations des personnes
+      description: Affichage du nom, du mot de passe ou encore de l'email
+      produces:
+      - application/json
+      responses:
+        200:
+          description: successful operation
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Personne_Liste_Personne'
+        400:
+          description: Requete invalid
+  /Personne/ListTypePersonne:
+    get:
+      tags:
+      - Personne
+      summary: Affichage de type de personnes
+      description: Affichage de type de personnes avec l'id du type et le libelle
+      produces:
+      - application/json
+      responses:
+        200:
+          description: successful operation
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Personne_Liste_TypePersonne'
+        400:
+          description: Requete invalid
+  /Personne/ListPromo/Simple:
+    get:
+      tags:
+      - Personne
+      summary: Affichage de la liste de promo
+      description: Affichage de la liste de promo avec l'id et le nom
+      produces:
+      - application/json
+      responses:
+        200:
+          description: successful operation
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Personne_Liste_Promo_Simple'
+        400:
+          description: Requete invalid
+  /Personne/ListSalleEleve/{Id}:
+    get:
+      tags:
+      - Personne
+      summary: Retourne les salles pour une élève
+      description: Retourne l'id de salle et l'id de l'élève 
+      operationId: getInfoSalle
+      produces:
+      - application/json
+      parameters:
+      - name: Id
+        in: path
+        description: Id 
+        required: true
+        type: integer
+        format: int64
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/Personne_ListeSalle'
+        400:
+          description: Requete invalid
+  /Personne/GetIdEleve/{Nom}/{Prenom}/{Email}:
+    get:
+      tags:
+      - Personne
+      summary: Retourne l'id d'une personne en fonction de 3 paramètres
+      description: Retourne l'id d'une personne en fonction du nom, du prénom et de son email
+      operationId: getPersonneId
+      produces:
+      - application/json
+      parameters:
+      - name: Nom
+        in: path
+        description: le nom de la personne
+        required: true
+        type: string
+        format: UTF-8
+      - name: Prenom
+        in: path
+        description: le Prenom de la personne
+        required: true
+        type: string
+        format: UTF-8
+      - name: Email
+        in: path
+        description: l'email de la personne
+        required: true
+        type: string
+        format: UTF-8
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/Personne_GetIdPersonne'
+        400:
+          description: Requete invalid
+  /Personne/GetIdEleve/{Ine}:
+    get:
+      tags:
+      - Personne
+      summary: Retourne l'id d'une personne en fonction de 1 paramètre
+      description: Retourne l'id d'une personne en fonction de l'INE
+      operationId: getPersonneId_Ine
+      produces:
+      - application/json
+      parameters:
+      - name: Ine
+        in: path
+        description: l'INE
+        required: true
+        type: string
+        format: UTF-8
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/Personne_GetIdPersonne'
+        400:
+          description: Requete invalid
+  /Personne/ListProf:
+    get:
+      tags:
+      - Personne
+      summary: Obtenir la liste des professeurs 
+      description: Obtenir la liste des professeurs avec l'id, le nom et le prénom.
+      produces:
+      - application/json
+      responses:
+        200:
+          description: successful operation
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Personne_Liste_Prof'
+        400:
+          description: Requete invalid
+  /Personne/Add/{NumRef}/{IdPersType}/{Password}/{Email}/{Tel}/{Sexe}/{Nom}/{Prenom}/{Birth}/{IdPromo}:
+    post:
+      tags:
+      - Personne
+      summary: Ajout d'une personne
+      operationId: InsertPers
+      produces:
+      - application/json
+      parameters:
+      - name: NumRef
+        in: path
+        description: Numero de reférence de la personne
+        required: true
+        type: integer
+        format: int64
+      - name: IdPersType
+        in: path
+        description: Id de la personne
+        required: true
+        type: integer
+      - name: Password
+        in: path
+        description: Mot de passe de la personne
+        required: true
+        type: string
+      - name: Email
+        in: path
+        description: Email de la personne
+        required: true
+        type: string
+      - name: Tel
+        in: path
+        description: Téléphone de la personne
+        required: true
+        type: string
+      - name: Sexe
+        in: path
+        description: Sexe de la personne
+        required: true
+        type: string
+      - name: Nom
+        in: path
+        description: Nom de la personne
+        required: true
+        type: string
+      - name: Prenom
+        in: path
+        description: Prenom de la personne
+        required: true
+        type: string
+      - name: Birth
+        in: path
+        description: Date de naissance de la personne
+        required: true
+        type: string
+      - name: IdPromo
+        in: path
+        description: Id de la promo
+        required: true
+        type: integer
+      responses:
+        200:
+          description: Etudiant integrer dans la table Contenir
+        405:
+          description: Requete invalid
+  /Personne/Add/Promo/{IdDepartement}/{NomFormation}/{DureeFormation}/{AnneePromotion}/{IdProfesseurPromotion}:
+    post:
+      tags:
+      - Personne
+      summary: Création d'une promotion
+      operationId: InsertPromo
+      produces:
+      - application/json
+      parameters:
+      - name: IdDepartement
+        in: path
+        description: Id du département
+        required: true
+        type: integer
+        format: int64
+      - name: NomFormation
+        in: path
+        description: Nom de la formation
+        required: true
+        type: string
+      - name: DureeFormation
+        in: path
+        description: Durée de la formation
+        required: true
+        type: integer
+      - name: AnneePromotion
+        in: path
+        description: Année de la promotion
+        required: true
+        type: string
+      - name: IdProfesseurPromotion
+        in: path
+        description: Id du professeur de la promotion
+        required: true
+        type: integer
+      responses:
+        200:
+          description: Promotion crée
+        405:
+          description: Requete invalid
+  /Personne/Delete/{IdUser}:
+    delete:
+      tags:
+      - Personne
+      summary: Supprimer un utilisateur
+      operationId: deleteUser
+      produces:
+      - application/json
+      parameters:
+      - name: IdUser
+        in: path
+        required: true
+        type: integer
+      responses:
+        400:
+          description: Invalid ID supplied
+definitions:
+  Personne:
+    type: object
+    required:
+    - nom
+    - prenom
+    - email
+    properties:
+      id:
+        type: integer
+        format: int64
+      nom:
+        type: string
+        example: Cola
+      prenom:
+        type: string
+        example: "Clément"
+      email:
+        type: string
+        example: unePersonne@iotia.com
+  Personne_GetIdPersonne:
+    type: object
+    required:
+    - id_personne
+    properties:
+      id_personne:
+        type: integer
+        format: int64
+  Personne_Liste_Prof:
+    type: object
+    required:
+    - id_professeur
+    - nom
+    - prenom
+    properties:
+      id_personne:
+        type: integer
+        format: int64
+      nom:
+        type: string
+        example: Canva
+      prenom:
+        type: string
+        example: Julie
+  Personne_Liste_Promo_Simple:
+    type: object
+    required:
+    - id_professeur
+    - nom
+    properties:
+      id_promotion:
+        type: integer
+        format: int64
+      nom:
+        type: string
+        example: Canva
+  Personne_ListeSalle:
+    type: object
+    required:
+    - id_personne
+    - id_salle
+    properties:
+      id_personne:
+        type: integer
+        format: int64
+      id_salle:
+        type: integer
+        format: int64
+  Personne_Liste_Promo:
+    type: object
+    required:
+    - nom
+    - annee
+    - duree
+    properties:
+      id:
+        type: integer
+        format: int64
+      nom:
+        type: string
+        example: "IOTIA"
+      annee:
+        type: string
+        example: 2021-01-01 01:00:00
+      duree:
+        type: integer
+        example: 1
+  Personne_Liste_TypePersonne:
+    type: object
+    required:
+    - libelle
+    properties:
+      id_pers_type:
+        type: integer
+        format: int64
+      libelle:
+        type: string
+        example: "un libelle"
+  Personne_Liste_Personne:
+    type: object
+    required:
+    - num_ref
+    - password
+    - email
+    - telephone
+    - sexe
+    - nom
+    - prenom
+    - date_anniversaire
+    - rfid
+    - libelle
+    - description
+    properties:
+      id_personne:
+        type: integer
+        format: int64
+      id_pers_type:
+        type: integer
+        format: int64
+      password:
+        type: string
+      email:
+        type: string
+        example: "unePersonne@iotia.com"
+      telephone:
+        type: string 
+        example: 06 11 74 56 94
+      sexe:
+        type: string 
+        example: homme 
+      nom:
+        type: string 
+        example: Mainpon 
+      prenom:
+        type: string 
+        example: Charles 
+      date_anniversaire:
+        type: string 
+        example: 2000-01-01 01:00:00 
+      rfid:
+        type: string 
+      libelle:
+        type: string 
+      description:
+        type: string 
+# Added by API Auto Mocking Plugin
+host: virtserver.swaggerhub.com
+# basePath: /thibaud-iotia/Covid/1.0.0
+schemes:
+ - https
+# Added by API Auto Mocking Plugin
+# basePath: /thibaud-iotia/Usager/1.0.0
+# Added by API Auto Mocking Plugin
+basePath: /docProjetIotia/Usager/1.0.0

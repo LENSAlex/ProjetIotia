@@ -1,0 +1,116 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Description du service \"Alerte\"\n",
+    "version": "1.0.0",
+    "title": "Web Service Alerte"
+  },
+  "tags": [
+    {
+      "name": "Alerte",
+      "description": "Alerte à signaler"
+    }
+  ],
+  "paths": {
+    "/Alerte/IsPenurie/{IdEquipement}/{IdSalle}": {
+      "put": {
+        "tags": [
+          "Alerte"
+        ],
+        "summary": "Mise à jour de la table Penurie",
+        "description": "Met à jour la table pénurie pour indiquer une alerte",
+        "operationId": "updatePenurie",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "IdEquipement",
+            "in": "path",
+            "description": "Id de l'equipement",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "name": "IdSalle",
+            "in": "path",
+            "description": "Id de la salle",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Requete invalid"
+          }
+        }
+      }
+    },
+    "/Alerte/NotPenurie/{IdEquipement}/{IdSalle}": {
+      "put": {
+        "tags": [
+          "Alerte"
+        ],
+        "summary": "Mise à jour de la table Penurie",
+        "description": "Met à jour la table pénurie pour annuler/enlever une alerte",
+        "operationId": "updatePenurieCancel",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "IdEquipement",
+            "in": "path",
+            "description": "Id de l'equipement",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "name": "IdSalle",
+            "in": "path",
+            "description": "Id de la salle",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Requete invalid"
+          }
+        }
+      }
+    },
+    "/Alerte/Covid/{IdPersonne}": {
+      "post": {
+        "tags": [
+          "Alerte"
+        ],
+        "summary": "Ajout d'un cas covid",
+        "description": "Ajout d'un cas covid en fonction de l'id d'une personne",
+        "operationId": "InsertCasCovid",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "IdPersonne",
+            "in": "path",
+            "description": "Id de la personne",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Requete invalid"
+          }
+        }
+      }
+    }
+  },
+  "host": "virtserver.swaggerhub.com",
+  "schemes": [
+    "https"
+  ],
+  "basePath": "/docProjetIotia/Alerte/1.0.0"
+}

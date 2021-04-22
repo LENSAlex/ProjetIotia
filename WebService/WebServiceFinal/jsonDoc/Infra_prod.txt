@@ -1,0 +1,730 @@
+swagger: '2.0'
+info:
+  description: |
+    Description du service "Infra PROD"
+  version: 1.0.0
+  title: Web Service Infra PROD 
+tags:
+- name: Capteur
+  description: Tout ce qui concerne les capteurs
+paths:
+  /Capteur/ListValueType:
+    get:
+      tags:
+      - Capteur
+      summary: Retourne des informations une liste de capteurs.
+      description: Retourne l'id, le libelle d'une liste de capteurs ainsi que son unité de mesure.
+      operationId: getInfoCapteurs
+      produces:
+      - application/json
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/ListValueType'
+        400:
+          description: Requete invalid
+  /Capteur/ListDevice:
+    get:
+      tags:
+      - Capteur
+      summary: Retourne les devices sans arduino et raspberry pi 
+      description: Retourne l'id, le type de libelle d'une liste de capteurs
+      operationId: getInfoDevices
+      produces:
+      - application/json
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/ListDevice'
+        400:
+          description: Requete invalid
+  /Capteur/Search/{NomSalle}:
+    get:
+      tags:
+      - Capteur
+      summary: Cherche les capteurs d'une salle
+      description: Cherche les capteurs d'une salle via le numéro de salle
+      operationId: getCapteursViaNum
+      produces:
+      - application/json
+      parameters:
+      - name: NomSalle
+        in: path
+        description: le numéro de la salle 
+        required: true
+        type: integer
+        format: int64
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/SearchCapteurs'
+        400:
+          description: Requete invalid
+  /Capteur/ListCapteur/{Salle}:
+    get:
+      tags:
+      - Capteur
+      summary: Cherche les capteurs d'une salle
+      description: Cherche les capteurs d'une salle via le nom de salle
+      operationId: getCapteursViaSalle
+      produces:
+      - application/json
+      parameters:
+      - name: Salle
+        in: path
+        description: le nom de la salle 
+        required: true
+        type: integer
+        format: int64
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/ListCapteur_salle'
+        400:
+          description: Requete invalid
+  /Capteur/Box/Info:
+    get:
+      tags:
+      - Capteur
+      summary: Retourne les informations d'une Box
+      description: Retourne les informations d'une Box avec l'id de la salle, l'id de la box, le libelle, l'addr IP, le nom etc ... 
+      operationId: getBoxInfo
+      produces:
+      - application/json
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/BoxInfo'
+        400:
+          description: Requete invalid
+  /Capteur/ListCapteur:
+    get:
+      tags:
+      - Capteur
+      summary: Retourne liste de capteurs
+      description: Retourne une liste de capteurs avec l'id_device, le type de libelle et le libelle
+      operationId: getListeCapteurs
+      produces:
+      - application/json
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/ListCapteur'
+        400:
+          description: Requete invalid
+  /Capteur/ListComplete:
+    get:
+      tags:
+      - Capteur
+      summary: Retourne liste de capteurs pour le site web
+      description: Retourne une liste de capteurs avec l'id_device, le type de libelle et l'id de la box
+      operationId: getListeCapteursWeb
+      produces:
+      - application/json
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/ListComplete'
+        400:
+          description: Requete invalid
+  /Capteur/ListSalle:
+    get:
+      tags:
+      - Capteur
+      summary: Retourne une liste des salles pour avoir l'id_box
+      description: Retourne une liste des salles avec le nom, l'id de la box et l'id de la salle
+      operationId: getListeSalle
+      produces:
+      - application/json
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/ListSalle'
+        400:
+          description: Requete invalid
+  /Capteur/Valeur/{IdSalle}:
+    get:
+      tags:
+      - Capteur
+      summary: Cherche les valeurs d'une salle
+      description: Cherche les valeurs d'une salle via l'id de la salle
+      operationId: getValeursIdSalle
+      produces:
+      - application/json
+      parameters:
+      - name: IdSalle
+        in: path
+        description: l'id de la salle 
+        required: true
+        type: integer
+        format: int64
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/ValeurId'
+        400:
+          description: Requete invalid
+  /Capteur/Valeur/{IdSalle}/{IdValueType}:
+    get:
+      tags:
+      - Capteur
+      summary: Cherche les valeurs d'un capteur grâce à son type
+      description: Cherche les valeurs d'un capteur grâce à son type. On y retrouve la valeur, le libelle et le nom.
+      operationId: getValeursIdSalle_IdValType
+      produces:
+      - application/json
+      parameters:
+      - name: IdSalle
+        in: path
+        description: l'id de la salle 
+        required: true
+        type: integer
+        format: int64
+      - name: IdValueType
+        in: path
+        description: l'id du type de valeur
+        required: true
+        type: integer
+        format: int64
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/ValeurId'
+        400:
+          description: Requete invalid
+  /Capteur/ValeurSpecifique/{IdDevice}:
+    get:
+      tags:
+      - Capteur
+      summary: Cherche les valeurs d'un capteur spécifique
+      description: Cherche les valeurs d'un capteur spécifique
+      operationId: getValeurSpecifique
+      produces:
+      - application/json
+      parameters:
+      - name: IdDevice
+        in: path
+        description: l'id du device
+        required: true
+        type: integer
+        format: int64
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/ValeurSpecifique'
+        400:
+          description: Requete invalid
+  /Capteur/List/Historique:
+    get:
+      tags:
+      - Capteur
+      summary: Retourne l'historique des valeurs des capteurs
+      description: Retourne l'historique des valeurs des capteurs avec le libelle, l'id du device, la valeur, l'unite et le type de libelle
+      operationId: getListeHistorique
+      produces:
+      - application/json
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/ListHistorique'
+        400:
+          description: Requete invalid
+  /Capteur/ValeurSpecifique/Last/{IdDevice}:
+    get:
+      tags:
+      - Capteur
+      summary: Cherche la dernière valeur d'un capteur spécifique
+      description: Cherche la dernière valeur d'un capteur spécifique
+      operationId: getLastValeurSpecifique
+      produces:
+      - application/json
+      parameters:
+      - name: IdDevice
+        in: path
+        description: l'id du device
+        required: true
+        type: integer
+        format: int64
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/ValeurLastSpecifique'
+        400:
+          description: Requete invalid
+  /Capteur/ValeurSpecifique/Moyenne/{IdDevice}:
+    get:
+      tags:
+      - Capteur
+      summary: Cherche la moyenne des valeurs d'un capteur spécifique
+      description: Cherche la moyenne des valeurs d'un capteur spécifique
+      operationId: getMoyValeurSpecifique
+      produces:
+      - application/json
+      parameters:
+      - name: IdDevice
+        in: path
+        description: l'id du device
+        required: true
+        type: integer
+        format: int64
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/ValeurMoySpecifique'
+        400:
+          description: Requete invalid
+  /Capteur/List/Historique/Temp:
+    get:
+      tags:
+      - Capteur
+      summary: Retourne l'historique des valeurs des capteurs de temp du plus récent au plus vieux 
+      description: Retourne l'historique des valeurs des capteurs de temp du plus récent au plus vieux avec le type de libelle, le libelle et la valeur
+      operationId: getListeHistoriqueTemp
+      produces:
+      - application/json
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/ListeHistorique'
+        400:
+          description: Requete invalid
+  /Capteur/List/Historique/CO2:
+    get:
+      tags:
+      - Capteur
+      summary: Retourne l'historique des valeurs des capteurs de CO2 du plus récent au plus vieux 
+      description: Retourne l'historique des valeurs des capteurs de CO2 du plus récent au plus vieux avec le type de libelle, le libelle et la valeur
+      operationId: getListeHistoriqueCO2
+      produces:
+      - application/json
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/ListeHistorique'
+        400:
+          description: Requete invalid
+  /Capteur/List/Historique/Energie:
+    get:
+      tags:
+      - Capteur
+      summary: Retourne l'historique des valeurs des capteurs de Energie du plus récent au plus vieux 
+      description: Retourne l'historique des valeurs des capteurs de Energie du plus récent au plus vieux avec le type de libelle, le libelle et la valeur
+      operationId: getListeHistoriqueEnergie
+      produces:
+      - application/json
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/ListeHistorique'
+        400:
+          description: Requete invalid
+  /Capteur/List/TauxOccupation:
+    get:
+      tags:
+      - Capteur
+      summary: Retourne le taux d'occupation
+      description: Retourne le taux d'occupation avec l'id de la personne et le statut
+      operationId: getListeTauxOccup
+      produces:
+      - application/json
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/ListeTauxOccup'
+        400:
+          description: Requete invalid
+  /Capteur/Add/BoxDevice/{IdSalle}/{IdDeviceType}/{AddrMac}/{AddrIp}/{LibelleBox}/{DescriptionBox}/{DateInstallation}/{IdValueType}/{LibelleDevice}/{SeuilMin}/{SeuilMax}:
+    post:
+      tags:
+      - Capteur
+      summary: Ajout de capteur
+      operationId: InsertCapteur
+      produces:
+      - application/json
+      parameters:
+      - name: IdSalle
+        in: path
+        description: Id de la salle
+        required: true
+        type: integer
+        format: int64
+      - name: IdDeviceType
+        in: path
+        description: Id du type de device
+        required: true
+        type: integer
+      - name: AddrMac
+        in: path
+        description: Adresse MAC
+        required: true
+        type: string
+      - name: AddrIp
+        in: path
+        description: Adresse IP
+        required: true
+        type: string
+      - name: LibelleBox
+        in: path
+        description: Le libelle de la box
+        required: true
+        type: string
+      - name: DescriptionBox
+        in: path
+        description: La description de la box
+        required: true
+        type: string
+      - name: DateInstallation
+        in: path
+        description: La date d'installation
+        required: true
+        type: string
+      - name: IdValueType
+        in: path
+        description: Id du type de valeur
+        required: true
+        type: integer
+      - name: LibelleDevice
+        in: path
+        description: Le libelle du device
+        required: true
+        type: string
+      - name: SeuilMin
+        in: path
+        description: Le seuil min 
+        required: true
+        type: integer
+      - name: SeuilMax
+        in: path
+        description: Le seuil max 
+        required: true
+        type: integer
+      responses:
+        200:
+          description: Box et capteur crée
+        405:
+          description: Requete invalid
+  /Capteur/Add/Actionneur/{IdBox}/{IdValueType}/{Libelle}:
+    post:
+      tags:
+      - Capteur
+      summary: Ajout d'actionneur
+      operationId: InsertActionneur
+      produces:
+      - application/json
+      parameters:
+      - name: IdBox
+        in: path
+        description: Id de la box
+        required: true
+        type: integer
+        format: int64
+      - name: IdValueType
+        in: path
+        description: Id du type de valeur
+        required: true
+        type: integer
+      - name: Libelle
+        in: path
+        description: Le libelle
+        required: true
+        type: string
+      responses:
+        200:
+          description: Actionneur crée
+        405:
+          description: Requete invalid
+  /Capteur/Add/PanneauSolaire/{IdBox}/{Libelle}:
+    post:
+      tags:
+      - Capteur
+      summary: Ajout d'actionneur
+      operationId: InsertPanneauSolaire
+      produces:
+      - application/json
+      parameters:
+      - name: IdBox
+        in: path
+        description: Id de la box
+        required: true
+        type: integer
+        format: int64
+      - name: Libelle
+        in: path
+        description: Le libelle
+        required: true
+        type: string
+      responses:
+        200:
+          description: Panneau solaire cree
+        405:
+          description: Requete invalid
+definitions:
+  ListValueType:
+    type: object
+    required:
+    - id_valuetype
+    - libelle
+    properties:
+      id_valuetype:
+        type: integer
+        format: int64
+      libelle:
+        type: string
+        example: Temperature
+      unite:
+        type: string
+        example: °C
+  ListeTauxOccup:
+    type: object
+    required:
+    - id_personne
+    properties:
+      id_personne:
+        type: integer
+        format: int64
+      statut:
+        type: string
+        example: le statut
+  ListeHistorique:
+    type: object
+    required:
+    - valeur
+    properties:
+      libelle_type:
+        type: string
+      libelle:
+        type: string
+        example: Temperature
+      valeur:
+        type: number
+        example: 12.0
+  ValeurLastSpecifique:
+    type: object
+    required:
+    - valeur
+    properties:
+      valeur:
+        type: integer
+        format: int64
+      unite:
+        type: string
+        example: Temperature
+      libelle:
+        type: string
+        example: °C
+      libelle_type:
+        type: string
+        example: type
+  ValeurMoySpecifique:
+    type: object
+    required:
+    - valeur
+    properties:
+      libelle_type:
+        type: string
+      libelle:
+        type: string
+        example: Temperature
+      valeur:
+        type: number
+        example: 12.0
+  ValeurId:
+    type: object
+    required:
+    - valeur
+    - libelle
+    properties:
+      valeur:
+        type: number
+        example: 12.0
+      libelle:
+        type: string
+        example: Temperature
+      nom:
+        type: string
+        example: le nom
+  ListHistorique:
+    type: object
+    required:
+    - id_device
+    properties:
+      libelle:
+        type: string
+        example: Temp
+      id_device:
+        type: integer
+        format: int64
+      valeur:
+        type: number
+        example: 12.0
+      unite:
+        type: string
+        example: °C
+      libelle_type:
+        type: string
+        example: le type
+  ValeurSpecifique:
+    type: object
+    required:
+    - id_box
+    - id_valuetype
+    properties:
+      id_box:
+        type: integer
+        format: int64
+      id_valuetype:
+        type: integer
+        format: int64
+      libelle_type:
+        type: string
+        example: type libelle
+  ListSalle:
+    type: object
+    required:
+    - id_box
+    - id_salle
+    properties:
+      nom:
+        type: string
+        example: C237
+      id_box:
+        type: integer
+        format: int64
+      id_salle:
+        type: integer
+        format: int64
+  ListComplete:
+    type: object
+    required:
+    - id_device
+    - id_box
+    properties:
+      id_device:
+        type: integer
+        format: int64
+      libelle:
+        type: string
+        example: libelle
+      id_box:
+        type: integer
+        format: int64
+  ListCapteur_salle:
+    type: object
+    required:
+    - id_device
+    - libelle
+    properties:
+      id_valuetype:
+        type: integer
+        format: int64
+      libelle:
+        type: string
+        example: Co2
+  ListCapteur:
+    type: object
+    required:
+    - id_device
+    properties:
+      id_device:
+        type: integer
+        format: int64
+      libelle_type:
+        type: string
+        example: type
+      libelle:
+        type: string
+        example: temp
+  BoxInfo:
+    type: object
+    required:
+    - id_salle
+    - id_box
+    properties:
+      id_salle:
+        type: integer
+        format: int64
+      id_box:
+        type: integer
+        format: int64
+      libelle:
+        type: string
+        example: un libelle
+      adr_ip:
+        type: string
+        example: 127.0.0.1
+      description:
+        type: string
+        example: une description
+      NomSalle:
+        type: string
+        example: C237
+  ListDevice:
+    type: object
+    required:
+    - id_devicetype
+    - libelle_type
+    properties:
+      id_valuetype:
+        type: integer
+        format: int64
+      libelle_type:
+        type: integer
+        format: int64
+  SearchCapteurs:
+    type: object
+    required:
+    - id_salle
+    - id_device
+    - id_etage
+    properties:
+      id_salle:
+        type: integer
+        format: int64
+      nom:
+        type: string
+        example: IUT
+      id_device:
+        type: integer
+        format: int64    
+      libelle:
+        type: string
+        example: Co2 
+      adr_ip:
+        type: string
+        example: 127.0.0.1
+      description:
+        type: string
+        example: une description
+      nomBat:
+        type: string
+        example: un nom
+      id_etage:
+        type: integer
+        format: int64   
+# Added by API Auto Mocking Plugin
+host: virtserver.swaggerhub.com
+# basePath: /thibaud-iotia/Covid/1.0.0
+schemes:
+ - https
+# Added by API Auto Mocking Plugin
+# basePath: /thibaud-iotia/Usager/1.0.0
+# Added by API Auto Mocking Plugin
+basePath: /thibaud-iotia/Infra_Prod/1.0.0
