@@ -10,11 +10,12 @@ var searchData=
   ['getdeviceid_257',['GetDeviceId',['../interface_projet_groupe_1_1_tools_1_1_services_1_1_i_device_installation_service.html#a456b9e01a9361d7453c0b2cf2a2da32b',1,'ProjetGroupe::Tools::Services::IDeviceInstallationService']]],
   ['getdeviceinstallation_258',['GetDeviceInstallation',['../interface_projet_groupe_1_1_tools_1_1_services_1_1_i_device_installation_service.html#a93a23735575689564e3a0c98866d1755',1,'ProjetGroupe::Tools::Services::IDeviceInstallationService']]],
   ['getdisplaychoiceasync_259',['GetDisplayChoiceAsync',['../class_projet_groupe_1_1_views_1_1_smart_office_page.html#aaa6e5d65e6ca82a9d5c2b570519ab424',1,'ProjetGroupe::Views::SmartOfficePage']]],
-  ['getlibel_260',['GetLibel',['../class_projet_groupe_1_1_views_1_1_capteurs_details_page.html#abc9b54670368fb3e4e34f84ed1dcbfba',1,'ProjetGroupe::Views::CapteursDetailsPage']]],
-  ['getlibeltype_261',['GetLibelType',['../class_projet_groupe_1_1_views_1_1_capteurs_details_page.html#a83118c4e9703876d83a6e171a772344a',1,'ProjetGroupe::Views::CapteursDetailsPage']]],
-  ['getmail_262',['GetMail',['../class_projet_groupe_1_1_app_shell.html#ac12461cae7961c51ac348d1cda0083d8',1,'ProjetGroupe::AppShell']]],
-  ['getresultasync_263',['GetResultAsync',['../class_projet_groupe_1_1_views_1_1_smart_building_page.html#a5def51d89a909f4409f2565442c600e2',1,'ProjetGroupe::Views::SmartBuildingPage']]],
-  ['getusertype_264',['GetUserType',['../class_projet_groupe_1_1_app_shell.html#a73c195fbbda9e34733d6f471ebeb5f07',1,'ProjetGroupe::AppShell']]],
-  ['getvaleurlast_265',['GetValeurLast',['../class_projet_groupe_1_1_views_1_1_capteurs_details_page.html#a88bdf703a4a3b13461adfae123d4389b',1,'ProjetGroupe::Views::CapteursDetailsPage']]],
-  ['getvaleurmoyenne_266',['GetValeurMoyenne',['../class_projet_groupe_1_1_views_1_1_capteurs_details_page.html#aded0345ae1c19747e8498399c9816f3f',1,'ProjetGroupe::Views::CapteursDetailsPage']]]
+  ['getimagepath_260',['GetImagePath',['../class_projet_groupe_1_1_app_shell.html#aef8a0d3683eeb8fd6c33a26caba34cd4',1,'ProjetGroupe::AppShell']]],
+  ['getlibel_261',['GetLibel',['../class_projet_groupe_1_1_views_1_1_capteurs_details_page.html#abc9b54670368fb3e4e34f84ed1dcbfba',1,'ProjetGroupe::Views::CapteursDetailsPage']]],
+  ['getlibeltype_262',['GetLibelType',['../class_projet_groupe_1_1_views_1_1_capteurs_details_page.html#a83118c4e9703876d83a6e171a772344a',1,'ProjetGroupe::Views::CapteursDetailsPage']]],
+  ['getmail_263',['GetMail',['../class_projet_groupe_1_1_app_shell.html#ac12461cae7961c51ac348d1cda0083d8',1,'ProjetGroupe::AppShell']]],
+  ['getresultasync_264',['GetResultAsync',['../class_projet_groupe_1_1_views_1_1_smart_building_page.html#a5def51d89a909f4409f2565442c600e2',1,'ProjetGroupe::Views::SmartBuildingPage']]],
+  ['getusertype_265',['GetUserType',['../class_projet_groupe_1_1_app_shell.html#a73c195fbbda9e34733d6f471ebeb5f07',1,'ProjetGroupe::AppShell']]],
+  ['getvaleurlast_266',['GetValeurLast',['../class_projet_groupe_1_1_views_1_1_capteurs_details_page.html#a88bdf703a4a3b13461adfae123d4389b',1,'ProjetGroupe::Views::CapteursDetailsPage']]],
+  ['getvaleurmoyenne_267',['GetValeurMoyenne',['../class_projet_groupe_1_1_views_1_1_capteurs_details_page.html#aded0345ae1c19747e8498399c9816f3f',1,'ProjetGroupe::Views::CapteursDetailsPage']]]
 ];

@@ -9,10 +9,9 @@ var searchData=
   ['actionb_8',['ActionB',['../namespace_projet_groupe_1_1_tools.html#ad40c67a437f97492ec4c6500d526c202a34fd7f37ba1e1a4e65c6bcba053f515a',1,'ProjetGroupe::Tools']]],
   ['actiontriggered_9',['ActionTriggered',['../class_projet_groupe_1_1_tools_1_1_services_1_1_covid_notification_action_service.html#ae5e91b4a471fa21ea9762ac2775a83bf',1,'ProjetGroupe.Tools.Services.CovidNotificationActionService.ActionTriggered()'],['../interface_projet_groupe_1_1_tools_1_1_services_1_1_i_covid_notification_action_service.html#ade3c9325beddc2027f25348980544b31',1,'ProjetGroupe.Tools.Services.ICovidNotificationActionService.ActionTriggered()']]],
   ['affichagedonnees_10',['AffichageDonnees',['../class_projet_groupe_1_1_views_1_1_affichage_donnees.html',1,'ProjetGroupe::Views']]],
-  ['alertcovid_11',['AlertCovid',['../class_projet_groupe_1_1_view_models_1_1_accueil_view_model.html#aca626b2a2996b4edf7a48994a8b0a61d',1,'ProjetGroupe::ViewModels::AccueilViewModel']]],
-  ['alerte_12',['Alerte',['../class_projet_groupe_1_1_models_1_1_alerte.html',1,'ProjetGroupe::Models']]],
-  ['alertecovid_13',['AlerteCovid',['../class_projet_groupe_1_1_views_1_1_alerte_covid.html',1,'ProjetGroupe::Views']]],
-  ['anniversaire_14',['Anniversaire',['../class_projet_groupe_1_1_models_1_1_personne.html#a1b8540210043ade0d10fc00d17becabe',1,'ProjetGroupe::Models::Personne']]],
-  ['app_15',['App',['../class_projet_groupe_1_1_app.html#aeb8a58ff49720004afc6d03c0f54b920',1,'ProjetGroupe.App.App()'],['../class_projet_groupe_1_1_app.html',1,'ProjetGroupe.App']]],
-  ['appshell_16',['AppShell',['../class_projet_groupe_1_1_app_shell.html#aed194ea1c69e5a5acb275a48c4b40b5c',1,'ProjetGroupe.AppShell.AppShell()'],['../class_projet_groupe_1_1_app_shell.html',1,'ProjetGroupe.AppShell']]]
+  ['alerte_11',['Alerte',['../class_projet_groupe_1_1_models_1_1_alerte.html',1,'ProjetGroupe::Models']]],
+  ['alertecovid_12',['AlerteCovid',['../class_projet_groupe_1_1_views_1_1_alerte_covid.html',1,'ProjetGroupe::Views']]],
+  ['anniversaire_13',['Anniversaire',['../class_projet_groupe_1_1_models_1_1_personne.html#a1b8540210043ade0d10fc00d17becabe',1,'ProjetGroupe::Models::Personne']]],
+  ['app_14',['App',['../class_projet_groupe_1_1_app.html#aeb8a58ff49720004afc6d03c0f54b920',1,'ProjetGroupe.App.App()'],['../class_projet_groupe_1_1_app.html',1,'ProjetGroupe.App']]],
+  ['appshell_15',['AppShell',['../class_projet_groupe_1_1_app_shell.html#aed194ea1c69e5a5acb275a48c4b40b5c',1,'ProjetGroupe.AppShell.AppShell()'],['../class_projet_groupe_1_1_app_shell.html',1,'ProjetGroupe.AppShell']]]
 ];

@@ -36,10 +36,10 @@ var menudata={children:[
 {text:"g",url:"functions_g.html#index_g"},
 {text:"n",url:"functions_n.html#index_n"},
 {text:"o",url:"functions_o.html#index_o"},
-{text:"r",url:"functions_r.html#index_r"},
 {text:"s",url:"functions_s.html#index_s"},
 {text:"t",url:"functions_t.html#index_t"}]},
 {text:"Functions",url:"functions_func.html"},
 {text:"Variables",url:"functions_vars.html",children:[
-{text:"_",url:"functions_vars.html#index__5F"}]},
+{text:"_",url:"functions_vars.html#index__5F"},
+{text:"o",url:"functions_vars_o.html#index_o"}]},
 {text:"Properties",url:"functions_prop.html"}]}]}]}
