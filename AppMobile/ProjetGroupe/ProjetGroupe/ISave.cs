@@ -16,6 +16,11 @@ namespace ProjetGroupe
         /// <param name="stream">le fichier sous stream</param>
         /// <returns></returns>
         Task SaveAndView(string filename, string contentType, MemoryStream stream);
+        /// <summary>
+        /// Méthode pour ouvrir la galerie du smartphone
+        /// </summary>
+        /// <returns>task</returns>
+        Task OpenGallery();
     }
 }
 

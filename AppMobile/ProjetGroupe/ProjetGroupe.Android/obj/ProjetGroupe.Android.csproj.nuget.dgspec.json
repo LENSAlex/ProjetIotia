@@ -42,6 +42,10 @@
       "frameworks": {
         "monoandroid11.0": {
           "dependencies": {
+            "Plugin.Permissions": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
             "Syncfusion.Xamarin.Pdf": {
               "target": "Package",
               "version": "[18.4.0.49, )"

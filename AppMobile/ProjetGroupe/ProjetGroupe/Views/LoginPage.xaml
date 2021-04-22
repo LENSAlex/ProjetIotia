@@ -25,14 +25,13 @@
         <ScrollView Grid.Row="1">
             <StackLayout Orientation="Vertical" Padding="40,0,40,24" Spacing="15">
                 <Label FontFamily="ThemeFontBold" Margin="0,-3,0,10" HorizontalTextAlignment="Center" TextColor="#91B3FB" Text="Veuillez entrer vos informations de connexion" FontSize="16" />
-                <Frame Padding="10" BorderColor="#91B3FB" CornerRadius="8">
-                    <Entry TextColor="#96d1ff" FontFamily="ThemeFontBold" PlaceholderColor="#96d1ff" Text="{Binding Identifiant, Mode=TwoWay}" Placeholder="Identifiant" FontSize="Medium"   />
+                <Frame Padding="10" Margin="0,5,0,0" BorderColor="#91B3FB" CornerRadius="8">
+                    <Entry x:Name="Identifiant" TextColor="#96d1ff" FontFamily="ThemeFontBold" PlaceholderColor="#96d1ff"  Placeholder="Identifiant" FontSize="Medium" ClearButtonVisibility="WhileEditing" IsTextPredictionEnabled="false" Completed="Entry_Completed_1" />
                 </Frame>
-                <Frame Padding="10" BorderColor="#91B3FB" CornerRadius="8">
-                    <Entry PlaceholderColor="#96d1ff" FontFamily="ThemeFontBold" TextColor="#96d1ff" IsPassword="true" Text="{Binding Password, Mode=TwoWay}" Placeholder="Mot de passe" FontSize="Medium" Margin="0" />
+                <Frame x:Name="FramePsw" Padding="10" BackgroundColor="LightGray" BorderColor="#91B3FB" CornerRadius="8">
+                    <Entry x:Name="Password" PlaceholderColor="#96d1ff" IsEnabled="False" FontFamily="ThemeFontBold" TextColor="#96d1ff" IsPassword="true"  Placeholder="" FontSize="Medium" Margin="0" ClearButtonVisibility="WhileEditing" IsTextPredictionEnabled="false" Completed="Entry_Completed"  />
                 </Frame>
-                <Button FontFamily="ThemeFontBold" VerticalOptions="Center" CornerRadius="8" Text="Connexion" Command="{Binding LoginCommand}" />
-                <Label HorizontalTextAlignment="Center" TextColor="Red" Text="{Binding Erreur}" FontSize="16" />
+                <ProgressBar x:Name="ProgressBar" IsVisible="False" ProgressColor="#96d1ff" HeightRequest="20" Progress="0.0" />
             </StackLayout>
         </ScrollView>
     </Grid>

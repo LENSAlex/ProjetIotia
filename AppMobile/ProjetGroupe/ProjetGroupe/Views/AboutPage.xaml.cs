@@ -16,6 +16,9 @@ using static ProjetGroupe.Views.CapteursDetailsPage;
 
 namespace ProjetGroupe.Views
 {
+    /// <summary>
+    /// View de la page A propos
+    /// </summary>
     public partial class AboutPage : ContentPage, INotifyPropertyChanged
     {
         /// <summary>

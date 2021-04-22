@@ -51,23 +51,6 @@
             </summary>
             <param name="intent"></param>
         </member>
-        <member name="T:ProjetGroupe.Droid.RegisterNotifications">
-            <summary>
-            Classe RegisterNotifications
-            </summary>
-        </member>
-        <member name="M:ProjetGroupe.Droid.RegisterNotifications.RegisterDevice(System.String,System.Collections.Generic.List{System.String})">
-            <summary>
-            RegisterDevice
-            </summary>
-            <param name="p_psnHandle">p_psnHandle</param>
-            <param name="p_tags">p_tags</param>
-        </member>
-        <member name="M:ProjetGroupe.Droid.RegisterNotifications.ProjetGroupe#IRegisterNotifications#UnRegisterDevice">
-            <summary>
-            UnRegisterDevice
-            </summary>
-        </member>
         <member name="T:ProjetGroupe.Droid.Services.DeviceInstallationService">
             <summary>
             Classe d'installation des notifications sur l'appareil

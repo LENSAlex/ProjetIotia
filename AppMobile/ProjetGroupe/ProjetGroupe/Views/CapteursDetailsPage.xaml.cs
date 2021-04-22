@@ -12,7 +12,9 @@ using Xamarin.Forms;
 
 namespace ProjetGroupe.Views
 {
-
+    /// <summary>
+    /// La Page du détails des données des capteurs
+    /// </summary>
     public partial class CapteursDetailsPage : ContentPage, INotifyPropertyChanged
     {
         /// <summary>

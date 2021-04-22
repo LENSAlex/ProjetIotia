@@ -23,6 +23,7 @@ public class MonoPackageManager_Resources {
 		"MySqlConnector.dll",
 		"Newtonsoft.Json.Bson.dll",
 		"Newtonsoft.Json.dll",
+		"Plugin.Permissions.dll",
 		"Plugin.SharedTransitions.dll",
 		"ProjetGroupe.dll",
 		"Syncfusion.Compression.Portable.dll",

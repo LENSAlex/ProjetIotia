@@ -62,6 +62,16 @@
             Affichage du type de la personne dans le FlyoutHeader
             </summary>
         </member>
+        <member name="F:ProjetGroupe.AppShell.imgpath">
+            <summary>
+            var imgpath
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.AppShell.ImagePath">
+            <summary>
+            URI de l'image du profil
+            </summary>
+        </member>
         <member name="M:ProjetGroupe.AppShell.#ctor">
             <summary>
             Constructeur de la classe
@@ -113,6 +123,17 @@
             Récupération du type de la personne
             </summary>
             <returns>Le Type de la personne si existe sinon null</returns>
+        </member>
+        <member name="M:ProjetGroupe.AppShell.RaisepropertyChanged(System.String)">
+            <summary>
+            Méthode de changement d'une propriété sur le front
+            </summary>
+            <param name="propertyName">nom de la propriété</param>
+        </member>
+        <member name="E:ProjetGroupe.AppShell.PropertyChanged">
+            <summary>
+            PropertyChangedEventHandler
+            </summary>
         </member>
         <member name="T:ProjetGroupe.Bootstrap">
             <summary>
@@ -193,23 +214,6 @@
         <member name="F:ProjetGroupe.Configuration.BackendServiceEndpoint">
             <summary>
             BackendServiceEndpoint
-            </summary>
-        </member>
-        <member name="T:ProjetGroupe.IRegisterNotifications">
-            <summary>
-            Interface pour les notifications
-            </summary>
-        </member>
-        <member name="M:ProjetGroupe.IRegisterNotifications.RegisterDevice(System.String,System.Collections.Generic.List{System.String})">
-            <summary>
-            RegisterDevice
-            </summary>
-            <param name="p_psnHandle">p_psnHandle</param>
-            <param name="p_tags">p_tags</param>
-        </member>
-        <member name="M:ProjetGroupe.IRegisterNotifications.UnRegisterDevice">
-            <summary>
-            UnRegisterDevice
             </summary>
         </member>
         <member name="T:ProjetGroupe.ISave">
@@ -1014,67 +1018,10 @@
             View de la page d'Accueil
             </summary>
         </member>
-        <member name="P:ProjetGroupe.ViewModels.AccueilViewModel.AlertCovid">
-            <summary>
-            Command au click du bouton
-            </summary>
-        </member>
-        <member name="F:ProjetGroupe.ViewModels.AccueilViewModel.displaymsg">
-            <summary>
-            displaymsg
-            </summary>
-        </member>
-        <member name="P:ProjetGroupe.ViewModels.AccueilViewModel.DisplayMsg">
-            <summary>
-            Binding du message affiché sur le front lros de l'envois d'une alerte
-            </summary>
-        </member>
-        <member name="F:ProjetGroupe.ViewModels.AccueilViewModel.textcolor">
-            <summary>
-            textcolor
-            </summary>
-        </member>
-        <member name="P:ProjetGroupe.ViewModels.AccueilViewModel.TextColor">
-            <summary>
-            Couleur de ce-dernier
-            </summary>
-        </member>
-        <member name="E:ProjetGroupe.ViewModels.AccueilViewModel.PropertyChanged">
-            <summary>
-            Event de changement de string sur le front
-            </summary>
-        </member>
         <member name="M:ProjetGroupe.ViewModels.AccueilViewModel.#ctor">
             <summary>
             Constructeur de la classe
             </summary>
-        </member>
-        <member name="M:ProjetGroupe.ViewModels.AccueilViewModel.NotifCovid">
-            <summary>
-            Méthode éxecuté par la commande lors du click du bouton
-            </summary>
-        </member>
-        <member name="M:ProjetGroupe.ViewModels.AccueilViewModel.SendNotification">
-            <summary>
-            Méthoed asynchrone pour envoyé la notification
-            </summary>
-        </member>
-        <member name="M:ProjetGroupe.ViewModels.AccueilViewModel.RaisepropertyChanged(System.String)">
-            <summary>
-            Event de changement back/front de Xamarin
-            </summary>
-            <param name="propertyName">nom de la propriété a changer</param>
-        </member>
-        <member name="E:ProjetGroupe.ViewModels.AccueilViewModel.PropertyChanged2">
-            <summary>
-            PropertyChangedEventHandler
-            </summary>
-        </member>
-        <member name="M:ProjetGroupe.ViewModels.AccueilViewModel.OnPropertyChanged(System.String)">
-            <summary>
-            Méthode de changement d'une propriété sur le front
-            </summary>
-            <param name="propertyName">nom de la propriété</param>
         </member>
         <member name="T:ProjetGroupe.ViewModels.BaseViewModel">
             <summary>
@@ -1175,35 +1122,9 @@
             View de la page login
             </summary>
         </member>
-        <member name="P:ProjetGroupe.ViewModels.LoginViewModel.LoginCommand">
-            <summary>
-            Commande lors du clique sur le bouton connexion
-            </summary>
-        </member>
-        <member name="P:ProjetGroupe.ViewModels.LoginViewModel.Identifiant">
-            <summary>
-            Récupération de l'identifiant saisie par l'utilisateur
-            </summary>
-        </member>
-        <member name="P:ProjetGroupe.ViewModels.LoginViewModel.Password">
-            <summary>
-            Récupération du mdp saisie par l'utilisateur
-            </summary>
-        </member>
         <member name="M:ProjetGroupe.ViewModels.LoginViewModel.#ctor">
             <summary>
             Constructeur de la classe
-            </summary>
-        </member>
-        <member name="M:ProjetGroupe.ViewModels.LoginViewModel.OnLoginClicked(System.Object)">
-            <summary>
-            Méthode exécuté lors du click sur le bouton connexion
-            </summary>
-            <param name="obj">Le click</param>
-        </member>
-        <member name="M:ProjetGroupe.ViewModels.LoginViewModel.RegisterDeviceForPushNotifications">
-            <summary>
-            Méthode permettant d'enregistrer un appareil au channel de notification FireBase
             </summary>
         </member>
         <member name="T:ProjetGroupe.ViewModels.SmartBuildingViewModel">
@@ -1314,6 +1235,11 @@
             Méthode permettant de remplir la liste des cascovid sur le front par département lors du refresh de la liste
             </summary>
         </member>
+        <member name="T:ProjetGroupe.Views.AccueilPage">
+            <summary>
+            La page d'accueil du shell
+            </summary>
+        </member>
         <member name="M:ProjetGroupe.Views.AccueilPage.#ctor">
             <summary>
             Constructeur de la classe
@@ -1322,6 +1248,37 @@
         <member name="M:ProjetGroupe.Views.AccueilPage.OnAppearing">
             <summary>
             Evènement "Quand la page apparaît"
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Views.AccueilPage.Button_Clicked(System.Object,System.EventArgs)">
+            <summary>
+            Evènement du click sur le bouton alerte
+            </summary>
+            <param name="sender">La personne qui click</param>
+            <param name="e">L'evènement du click</param>
+        </member>
+        <member name="M:ProjetGroupe.Views.AccueilPage.NotifyAdmin(ProjetGroupe.Models.CasCovid,ProjetGroupe.Models.Personne)">
+            <summary>
+            Traitement de la requête vers l'API REST
+            </summary>
+            <param name="cas">Le cas covid</param>
+            <param name="personne">La personne qui emet l'alerte</param>
+            <returns>task</returns>
+        </member>
+        <member name="M:ProjetGroupe.Views.AccueilPage.SetInfo(ProjetGroupe.Models.Personne)">
+            <summary>
+            Méthode pour envoyé le mail et le message d'erreur ou non ainsi que la notification
+            </summary>
+            <param name="personne">La personne qui emet l'alerte</param>
+        </member>
+        <member name="M:ProjetGroupe.Views.AccueilPage.SendNotification">
+            <summary>
+            Méthode asynchrone pour envoyé la requête de notification
+            </summary>
+        </member>
+        <member name="T:ProjetGroupe.Views.CapteursDetailsPage">
+            <summary>
+            La Page du détails des données des capteurs
             </summary>
         </member>
         <member name="E:ProjetGroupe.Views.CapteursDetailsPage.PropertyChanged">
@@ -1524,6 +1481,20 @@
             <summary>
             Constructeur de la classe
             </summary>
+        </member>
+        <member name="M:ProjetGroupe.Views.LoginPage.Entry_Completed(System.Object,System.EventArgs)">
+            <summary>
+            TextBox Password entrée validée
+            </summary>
+            <param name="sender">L'utilisateur</param>
+            <param name="e">L'action</param>
+        </member>
+        <member name="M:ProjetGroupe.Views.LoginPage.Entry_Completed_1(System.Object,System.EventArgs)">
+            <summary>
+            TextBox Identifiant entrée validée
+            </summary>
+            <param name="sender">L'utilisateur</param>
+            <param name="e">L'action</param>
         </member>
         <member name="T:ProjetGroupe.Views.SmartBuildingPage">
             <summary>

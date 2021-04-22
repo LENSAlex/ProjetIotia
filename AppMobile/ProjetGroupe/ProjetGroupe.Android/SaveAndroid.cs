@@ -10,6 +10,12 @@ using Android;
 using Android.App;
 using AndroidX.Core.App;
 using AndroidX.Core.Content;
+using System.Drawing;
+using Plugin.Permissions;
+using Android.Widget;
+using Plugin.Permissions.Abstractions;
+using ProjetGroupe.Droid;
+using Permission = Android.Content.PM.Permission;
 
 [assembly: Dependency(typeof(SaveAndroid))]
 class SaveAndroid : ISave
@@ -20,7 +26,7 @@ class SaveAndroid : ISave
     /// <param name="fileName">nom du fichier</param>
     /// <param name="contentType">application/pdf</param>
     /// <param name="stream">le fichier sous forme de stream</param>
-    /// <returns></returns>
+    /// <returns>task</returns>
     [Obsolete]
     public async Task SaveAndView(string fileName, String contentType, MemoryStream stream)
     {
@@ -49,7 +55,49 @@ class SaveAndroid : ISave
             Intent intent = new Intent(Intent.ActionView);
             intent.SetDataAndType(path, mimeType);
             intent.AddFlags(ActivityFlags.GrantReadUriPermission);
-            Forms.Context.StartActivity(Intent.CreateChooser(intent, "Choose App"));
+            Forms.Context.StartActivity(Intent.CreateChooser(intent, "Choisir l'application"));
+        }
+    }
+    /// <summary>
+    /// Méthode pour ouvrir la galerie du smartphone
+    /// </summary>
+    /// <returns>task</returns>
+    public async Task OpenGallery()
+    {
+        try
+        {
+            var status = await CrossPermissions.Current.CheckPermissionStatusAsync(Plugin.Permissions.Abstractions.Permission.Storage);
+            if (status != PermissionStatus.Granted)
+            {
+                if (await CrossPermissions.Current.ShouldShowRequestPermissionRationaleAsync(Plugin.Permissions.Abstractions.Permission.Storage))
+                {
+                    Toast.MakeText(Forms.Context, "Besoin de la permission de stockage activée", ToastLength.Long).Show();
+                }
+
+                var results = await CrossPermissions.Current.RequestPermissionsAsync(new[] { Plugin.Permissions.Abstractions.Permission.Storage });
+                status = results[Plugin.Permissions.Abstractions.Permission.Storage];
+            }
+
+            if (status == PermissionStatus.Granted)
+            {
+                Toast.MakeText(Forms.Context, "Sélectionnez une photo", ToastLength.Long).Show();
+                var imageIntent = new Intent(
+                    Intent.ActionPick);
+                imageIntent.SetType("image/*");
+                imageIntent.PutExtra(Intent.ExtraAllowMultiple, true);
+                imageIntent.SetAction(Intent.ActionGetContent);
+                ((Activity)Forms.Context).StartActivityForResult(
+                    Intent.CreateChooser(imageIntent, "Select photo"), MainActivity.OPENGALLERYCODE);
+
+            }
+            else if (status != PermissionStatus.Unknown)
+            {
+                Toast.MakeText(Forms.Context, "Permission refusée", ToastLength.Long).Show();
+            }
+        }
+        catch (Exception ex)
+        {
+            Toast.MakeText(Forms.Context, "Erreur lors de l'upload de la photo", ToastLength.Long).Show();
         }
     }
 }

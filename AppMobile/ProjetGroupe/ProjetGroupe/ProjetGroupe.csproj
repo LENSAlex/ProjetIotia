@@ -10,6 +10,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Properties\**" />
+    <EmbeddedResource Remove="Properties\**" />
+    <None Remove="Properties\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Fonts\NunitoSans-Bold.ttf" />
     <None Remove="Fonts\NunitoSans-Regular.ttf" />
     <None Remove="Fonts\NunitoSans-SemiBold.ttf" />
@@ -80,8 +86,5 @@
     <EmbeddedResource Update="Views\SmartOfficePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Properties\" />
   </ItemGroup>
 </Project>

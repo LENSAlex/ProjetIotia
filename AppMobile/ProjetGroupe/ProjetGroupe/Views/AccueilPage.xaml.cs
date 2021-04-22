@@ -9,9 +9,14 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using System.Runtime.CompilerServices;
 using System.ComponentModel;
+using ProjetGroupe.Models;
+using Xamarin.Essentials;
 
 namespace ProjetGroupe.Views
 {
+    /// <summary>
+    /// La page d'accueil du shell
+    /// </summary>
     [DesignTimeVisible(false)]
     public partial class AccueilPage : ContentPage
     {
@@ -30,8 +35,67 @@ namespace ProjetGroupe.Views
         {
             base.OnAppearing();
             FrameAccueil.TranslationY = 600;
-            FrameAccueil.TranslateTo(0, 0, 500, Easing.BounceIn);  
+            FrameAccueil.TranslateTo(0, 0, 500, Easing.BounceIn);
+            LabelErreur.IsVisible = false;
+            LabelErreur.Text = "";
         }
-
+        /// <summary>
+        /// Evènement du click sur le bouton alerte
+        /// </summary>
+        /// <param name="sender">La personne qui click</param>
+        /// <param name="e">L'evènement du click</param>
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            Personne personne = Personne.IsLogged();
+            if (personne != null)
+            {
+                CasCovid cas = new CasCovid()
+                {
+                    DateDeContamination = DateTime.Now,
+                    PersonneId = personne.Id
+                };
+                SecureStorage.SetAsync("SendNotif", "1");
+                NotifyAdmin(cas, personne);
+            }
+        }
+        /// <summary>
+        /// Traitement de la requête vers l'API REST
+        /// </summary>
+        /// <param name="cas">Le cas covid</param>
+        /// <param name="personne">La personne qui emet l'alerte</param>
+        /// <returns>task</returns>
+        public async Task NotifyAdmin(CasCovid cas, Personne personne)
+        {
+            var result = await CasCovid.SendAlert(cas);
+            if(result == "Ok")
+            {
+                SetInfo(personne);
+            }
+            else
+            {
+                LabelErreur.IsVisible = true;
+                LabelErreur.TextColor = Color.Red;
+                LabelErreur.Text = "Erreur lors de l'envois de l'alerte";
+            }
+        }
+        /// <summary>
+        /// Méthode pour envoyé le mail et le message d'erreur ou non ainsi que la notification
+        /// </summary>
+        /// <param name="personne">La personne qui emet l'alerte</param>
+        public void SetInfo(Personne personne)
+        {
+            LabelErreur.IsVisible = true;
+            LabelErreur.TextColor = Color.Green;
+            LabelErreur.Text = "Alerte envoyé avec succès";
+            personne.RappelMail(personne);
+            SendNotification();
+        }
+        /// <summary>
+        /// Méthode asynchrone pour envoyé la requête de notification
+        /// </summary>
+        public async void SendNotification()
+        {
+            await Alerte.SendNotification();
+        }
     }
 }

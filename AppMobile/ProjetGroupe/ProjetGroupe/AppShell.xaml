@@ -4,13 +4,7 @@
        xmlns:local="clr-namespace:ProjetGroupe.Views"
        Title="ProjetGroupe"
        x:Class="ProjetGroupe.AppShell" FlyoutBackgroundColor="#FFFFFF">
-
-    <!--
-        The overall app visual hierarchy is defined here, along with navigation.
     
-        https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/
-    -->
-
     <Shell.Resources>
         <ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
             <Style x:Key="BaseStyle" TargetType="Element">
@@ -77,15 +71,16 @@
     <Shell.FlyoutHeaderTemplate>
         <DataTemplate>
             <Grid BackgroundColor="#96BCE3" Padding="20">
-                <Image Source="profil2.png" Margin="-170,0,20,0" WidthRequest="125" HeightRequest="125" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Label Text="Photo" Margin="-190,100,20,0" TextColor="#DFDBED" FontSize="16" FontAttributes="Italic" TextDecorations="Underline" HorizontalTextAlignment="Center" />
+                <ImageButton Source="{Binding ImagePath}" Margin="-200,0,0,0" Command="{Binding ImgClicked}" WidthRequest="100" BackgroundColor="Transparent" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <ImageButton Source="ic_close.png" Margin="-90,-80,0,0" Command="{Binding DelPhoto}" WidthRequest="30" BackgroundColor="Transparent" HeightRequest="30" HorizontalOptions="Center" VerticalOptions="Center"/>
                 <Label Text="{Binding Email}" Margin="-160,170,20,0" TextColor="#DFDBED" FontSize="16" HorizontalTextAlignment="Center" />
                 <Label Text="{Binding UserType}" Margin="-220,190,20,0" TextColor="White" FontAttributes="Italic" FontSize="16" HorizontalTextAlignment="Center" />
             </Grid>
         </DataTemplate>
     </Shell.FlyoutHeaderTemplate>
 
-
-    <FlyoutItem Icon="accueil.png" Title="Accueil">
+    <FlyoutItem Icon="accueil.png" Title="Naviguation">
         <ShellContent Icon="accueil.png" Title="Accueil" ContentTemplate="{DataTemplate local:AccueilPage}" />
         <ShellContent Icon="warning3.png" Title="Pénurie" ContentTemplate="{DataTemplate local:SmartOfficePage}" />
         <ShellContent Icon="data2.png" Title="Recherche" ContentTemplate="{DataTemplate local:SmartBuildingPage}" />

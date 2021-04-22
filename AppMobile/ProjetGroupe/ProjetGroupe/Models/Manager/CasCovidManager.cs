@@ -30,8 +30,8 @@ namespace ProjetGroupe.Models.Manager
 
             if (cas != null)
             {
-                sb.Append(@"{""date_declaration"" : """ + cas.DateDeContamination + @""",");
-                sb.Append(@"""id_personne"" : " + cas.PersonneId);
+             //   sb.Append(@"{""date_declaration"" : """ + cas.DateDeContamination + @""",");
+                sb.Append(@"{""id_personne"" : " + cas.PersonneId);
                 sb.Append("}");
 
                 string jsonData = sb.ToString();
