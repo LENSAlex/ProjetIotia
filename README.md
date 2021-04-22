@@ -41,6 +41,7 @@ Pour le projet Android Ios & UWP:
 - ```Xamarin.Google.Dagger``` (Service)
 - ```Xamarin.GooglePlayServices.Base``` (Service Google)
 - ```Xamarin.GooglePlayServices.Basement``` (Service Google)
+- ```Plugin.Permissions``` (Accès à la galerie photo)
 
 - 6] Vous devez également vous munir d'un compte Firebase & Azure Notification pour permettre à vos applications de recevoir des notifications push sur le téléphone. 
 https://cedgabrang.wixsite.com/xamarintipsandtricks/post/xamarin-forms-implementing-push-notification-using-firebase-cloud-messaging
@@ -116,6 +117,7 @@ Notification via AzureHub: https://docs.microsoft.com/en-us/azure/developer/mobi
 - 2] Vous arrivez ensuite sur une page d'authentification, utiliser vos identifiants de connexion (Ici nous utilisons ceux de l'IUT)
 - 3] Vous avez ensuite accès aux pages de l'application
 - 4] Il est important de noter qu'à votre connexion à l'application (une fois le bouton connexion pressé), vous serrez ammener à accepter les notifications push car votre smartphone sera enregistré au Hub de Notification Azure via Firebase. Egalement si vous voulez générer un pdf, on vous demandera d'activté ou non les droits d'écriture.
+- 5] Vous pouvez upload une photo de profil depuis votre galerie, qui sera stockée dans les dossiers de votre application. 
 
 Les fichiers générés sont engeristé dans: "android/data/com.company.projetgroupe/files/SmartCovid/" pour les appareis Android.
 
@@ -162,9 +164,16 @@ Il est aussi important de noter que pour recevoir convenablement les notificatio
 - Vous allez pouvoir trouver la documentation XML de la bibliothèque de classe nommée "ProjetGroupe" et celle du ProjetDroid dans le dossier Documentation/AppMobile
 - Vous allez pouvoir télécharger la document Doxygen du projet global via Github.
 
-Liens vers la différentes documentations en ligne:
+Liens vers les différentes documentations en ligne:
 
 - [Documentation Doxygen](http://51.77.137.170/lpiotia/AppMobile/ProjetGroupe_Documentation/annotated.html)
 - [Documentation XML Projet Android](http://51.77.137.170/lpiotia/AppMobile/ProjetDroid.xml)
 - [Documentation XML Bibliothèque de classe](http://51.77.137.170/lpiotia/AppMobile/ProjetGroupe.xml)
+
+# Download 
+
+Cliquez sur ce lien pour télécharger l'application au format APK:
+
+- [Téléchargement de l'application](http://51.77.137.170/lpiotia/AppMobile/Ecovid.apk)
+
 
