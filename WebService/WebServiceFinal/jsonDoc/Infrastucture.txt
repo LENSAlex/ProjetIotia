@@ -1,0 +1,307 @@
+swagger: '2.0'
+info:
+  description: |
+    Description du service "Infrastructure"
+  version: 1.0.0
+  title: Web Service Usager 
+tags:
+- name: Batiment
+  description: Informations sur l'infrastructure
+paths:
+  /Batiment/CountInfo/Campus:
+    get:
+      tags:
+      - Batiment
+      summary: Affiche le nombre d'étages et de salles par campus
+      description: Affiche le nombre d'étages et de salles par campus avec le nom également
+      operationId: getInfoCampus
+      produces:
+      - application/json
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/CountInfo'
+        400:
+          description: Requete invalid
+  /Batiment/ListEquipement:
+    get:
+      tags:
+      - Batiment
+      summary: Affiche la liste d'equipements
+      description: Affiche la liste d'equipements avec l'id de l'equipement, le libelle et la description
+      operationId: getInfoEquipement
+      produces:
+      - application/json
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/InfoEquipement'
+        400:
+          description: Requete invalid
+  /Batiment/ListSite:
+    get:
+      tags:
+      - Batiment
+      summary: Affiche la liste des sites
+      description: Affiche la liste des sites avec l'id du site et le nom.
+      operationId: getInfoSite
+      produces:
+      - application/json
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/ListeSite'
+        400:
+          description: Requete invalid
+  /Batiment/ListBatiment:
+    get:
+      tags:
+      - Batiment
+      summary: Affiche la liste des batiments
+      description: Affiche la liste des batiments avec l'id du batiment, l'id du site et le nom du batiment.
+      operationId: getListBatiment
+      produces:
+      - application/json
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/ListeBatiment'
+        400:
+          description: Requete invalid
+  /Batiment/ListEtage:
+    get:
+      tags:
+      - Batiment
+      summary: Affiche la liste des étages
+      description: Affiche la liste des étages avec l'id de l'étage, le nom du batiment et le numéro de l'étage
+      operationId: getListEtage
+      produces:
+      - application/json
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/ListeEtage'
+        400:
+          description: Requete invalid
+  /Batiment/ListEtage/{IdBatiment}:
+    get:
+      tags:
+      - Batiment
+      summary: Retourne la liste d'étage par rapport en un id de batiment
+      description: Retourne la liste d'étage par rapport en un id de batiment avec le numéro d'étage.
+      operationId: getListEtageById
+      produces:
+      - application/json
+      parameters:
+      - name: IdBatiment
+        in: path
+        description: l'id du batiment
+        required: true
+        type: integer
+        format: int64
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/ListeEtageById'
+        400:
+          description: Requete invalid
+  /Batiment/ListSalle/{IdEtage}:
+    get:
+      tags:
+      - Batiment
+      summary: Retourne la liste d'étage par rapport en un id de batiment
+      description: Retourne la liste d'étage par rapport en un id de batiment avec le numéro d'étage.
+      operationId: getListSalleById
+      produces:
+      - application/json
+      parameters:
+      - name: IdEtage
+        in: path
+        description: l'id de l'étage
+        required: true
+        type: integer
+        format: int64
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/ListeSalleById'
+        400:
+          description: Requete invalid
+  /Batiment/Add/Batiment/{Nom}/{Superficie}/{IdCampus}/{EtageSuperficie}:
+    post:
+      tags:
+      - Batiment
+      summary: Ajout d'un batiment et étage
+      operationId: InsertBatEtage
+      produces:
+      - application/json
+      parameters:
+      - name: Nom
+        in: path
+        description: Nom du batiment 
+        required: true
+        type: string
+        format: UTF-8
+      - name: Superficie
+        in: path
+        description: La superficie du batiment
+        required: true
+        type: integer
+      - name: IdCampus
+        in: path
+        description: Id du campus
+        required: true
+        type: integer
+      - name: EtageSuperficie
+        in: path
+        description: La superficie de l'étage
+        required: true
+        type: integer
+      responses:
+        200:
+          description: Batiment et etage creer
+        405:
+          description: Requete invalid
+  /Batiment/Add/Salle/{IdEtage}/{Nom}/{CapaciteMax}/{Surface}/{Volume}:
+    post:
+      tags:
+      - Batiment
+      summary: Ajout d'une salle
+      operationId: InsertSalle
+      produces:
+      - application/json
+      parameters:
+      - name: IdEtage
+        in: path
+        description: l'id de l'étage
+        required: true
+        type: integer
+      - name: Nom
+        in: path
+        description: Le nom d'une salle
+        required: true
+        type: string
+      - name: CapaciteMax
+        in: path
+        description: Capacité maximum
+        required: true
+        type: integer
+      - name: Surface
+        in: path
+        description: La superficie de la salle
+        required: true
+        type: integer
+      - name: Volume
+        in: path
+        description: Le volume de la salle
+        required: true
+        type: integer
+      responses:
+        200:
+          description: Salle cree
+        405:
+          description: Requete invalid
+definitions:
+  CountInfo:
+    type: object
+    required:
+    - nom
+    properties:
+      nom:
+        type: string
+        example: un bat
+      nbetage:
+        type: integer
+        format: int64
+      nbsalle:
+        type: integer
+        format: int64
+  ListeSite:
+    type: object
+    required:
+    - id_site
+    properties:
+      id_site:
+        type: integer
+        format: int64
+      nom:
+        type: string
+        example: un nom
+  ListeBatiment:
+    type: object
+    required:
+    - id_batiment
+    - id_site
+    properties:
+      id_batiment:
+        type: integer
+        format: int64
+      id_site:
+        type: integer
+        format: int64
+      nom:
+        type: string
+        example: le nom
+  ListeEtage:
+    type: object
+    required:
+    - id_etage
+    properties:
+      id_etage:
+        type: integer
+        format: int64
+      nom:
+        type: string
+        example: le nom du bat    
+      num:
+        type: integer
+        format: int64  
+  ListeEtageById:
+    type: object
+    required:
+    - id_etage
+    properties:
+      id_etage:
+        type: integer
+        format: int64
+      num:
+        type: integer
+        format: int64 
+  ListeSalleById:
+    type: object
+    required:
+    - id_salle
+    properties:
+      id_salle:
+        type: integer
+        format: int64
+      nom:
+        type: string
+        example: un nom de salle 
+  InfoEquipement:
+    type: object
+    required:
+    - id_equipement
+    properties:
+      id_equipement:
+        type: integer
+        format: int64
+      libelle:
+        type: string
+        example: un equipement
+      description:
+        type: string
+        example: la description
+# Added by API Auto Mocking Plugin
+host: virtserver.swaggerhub.com
+# basePath: /thibaud-iotia/Covid/1.0.0
+schemes:
+ - https
+basePath: /docProjetIotia/Infrastructure/1.0.0
