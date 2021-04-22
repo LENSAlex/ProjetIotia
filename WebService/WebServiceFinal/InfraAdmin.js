@@ -36,7 +36,7 @@ swaggerTools.initializeMiddleware(swaggerDoc, function (middleware) {
 
 //PUT--------------------------------------------------
 //Modifs eleve
-app.put("/Personne/Modifs/:NumRef/:IdPersType/:Password/:Email/:Tel/:Sexe/:Nom/:Prenom/:Birth/:IdPromo/:IdPersonne", (req, res) => {
+app.put("/InfraAdmin/Personne/Modifs/:NumRef/:IdPersType/:Password/:Email/:Tel/:Sexe/:Nom/:Prenom/:Birth/:IdPromo/:IdPersonne", (req, res) => {
 
     //localhost:3001/Personne/Add/125/1/test/alex.@gmail.com/0607070705/F/LENS/AL/1908-08-11 01:00:00/1
     conn.query("UPDATE `Personne` SET `num_ref` = '" + req.params.NumRef + "', `id_pers_type` = '" + req.params.IdPersType + "', `password` = '" + req.params.Password + "', `email` = '" + req.params.Email + "', `telephone` = '" + req.params.Tel + "', `sexe`= '" + req.params.Sexe + "', `nom` = '" + req.params.Nom + "', `prenom` = '" + req.params.Prenom + "', `date_anniversaire` = '" + req.params.Birth + "' where id_personne = '" + req.params.IdPersonne + "' ", function(err, result) {
@@ -65,7 +65,7 @@ app.put("/Personne/Modifs/:NumRef/:IdPersType/:Password/:Email/:Tel/:Sexe/:Nom/:
 })
 
 //Modif Formation
-app.put("/Personne/Modifs/Formation/:IdDepartement/:NomFormation/:DureeFormation/IdFormation", (req, res) => {
+app.put("/InfraAdmin/Personne/Modifs/Formation/:IdDepartement/:NomFormation/:DureeFormation/IdFormation", (req, res) => {
 
     //liée la table formation et promotion 
     //Creation d'une formation:
@@ -80,7 +80,7 @@ app.put("/Personne/Modifs/Formation/:IdDepartement/:NomFormation/:DureeFormation
 })
 
 //Modifs Promo
-app.put("/Personne/Modifs/Promo/:AnneePromotion/:IdProfesseurPromotion/:IdPromo", (req, res) => {
+app.put("/InfraAdmin/Personne/Modifs/Promo/:AnneePromotion/:IdProfesseurPromotion/:IdPromo", (req, res) => {
     conn.query("update `Promotion` set `id_professeur` = '" + req.params.IdProfesseurPromotion + "', `annee` = '" + req.params.AnneePromotion + "' where id_promotion = '" + req.params.IdPromo + "' ", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
@@ -90,12 +90,58 @@ app.put("/Personne/Modifs/Promo/:AnneePromotion/:IdProfesseurPromotion/:IdPromo"
     })
 })
 
+//A COMPLETER
+//Modifs Batiment
+app.put("/InfraAdmin/Batiment/Modifs/:Nom/:SurfaceBat/:", (req, res) => {
+    conn.query("", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json("Promotion modifié");
+        }
+    })
+})
+
+
+//Modif box
+app.put("/InfraAdmin/Capteur/Modifs/Box/:IdBox/:Nom/:DateInstalle/:Description/:IdSalle/:AddrMac/:AddrIp", (req, res) => {
+    conn.query("UPDATE `Box` SET `id_salle`='" + req.params.IdSalle + "',`adr_mac`='" + req.params.AddrMac + "',`adr_ip`='" + req.params.AddrIp + "',`description`='" + req.params.Description + "',`date_installation`='" + req.params.DateInstalle + "', `libelle`='" + req.params.Nom + "' WHERE id_box='" + req.params.IdBox + "'", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json("Box modifié");
+        }
+    })
+})
+
+//Modif Capteur
+app.put("/InfraAdmin/Capteur/Modifs/Capteur/:Nom/:Box/:TypeActionneur/:IdCapteur", (req, res) => {
+    conn.query("UPDATE `Device` SET `id_box`='" + req.params.Box + "',`id_devicetype`='" + req.params.TypeActionneur + "',`libelle`='" + req.params.Nom + "' WHERE id_device = '" + req.params.IdCapteur + "'", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json("Capteur modifié");
+        }
+    })
+})
+
+//Modif Panneau Solaire
+app.put("/InfraAdmin/Capteur/Modifs/Capteur/PanneauSolaire/:Nom/:Box/:TypeActionneur/:IdPanneauSolaire", (req, res) => {
+    conn.query("UPDATE `Device` SET `id_box`='" + req.params.Box + "',`libelle`='" + req.params.Nom + "' WHERE id_device = '" + req.params.IdPanneauSolaire + "'", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json("Panneau solaire modifié");
+        }
+    })
+})
+
 
 
 //POST-----------------------------------------------
 //Personne --------------------
 //Ajout personne
-app.post("/Personne/Add/:NumRef/:IdPersType/:Password/:Email/:Tel/:Sexe/:Nom/:Prenom/:Birth/:IdPromo", (req, res) => {
+app.post("/InfraAdmin/Personne/Add/:NumRef/:IdPersType/:Password/:Email/:Tel/:Sexe/:Nom/:Prenom/:Birth/:IdPromo", (req, res) => {
 
     var idUser;
     var TypePers;
@@ -144,7 +190,7 @@ app.post("/Personne/Add/:NumRef/:IdPersType/:Password/:Email/:Tel/:Sexe/:Nom/:Pr
 })
 
 //Ajout d'un utilisateur rapide
-app.post("/Personne/Add/Test/:Nom/:Prenom", (req, res) => {
+app.post("/InfraAdmin/Personne/Add/Test/:Nom/:Prenom", (req, res) => {
 
     conn.query("INSERT INTO `Personne`(`nom`, `prenom` , `num_ref` , `id_pers_type` , `password` ) VALUES ('" + req.params.Nom + "' , '" + req.params.Prenom + "' , '25416' , '1' , 'password')", function(err, result) {
         if (err)
@@ -156,7 +202,7 @@ app.post("/Personne/Add/Test/:Nom/:Prenom", (req, res) => {
 })
 
 //Add promo
-app.post("/Personne/Add/Promo/:IdDepartement/:NomFormation/:DureeFormation/:AnneePromotion/:IdProfesseurPromotion", (req, res) => {
+app.post("/InfraAdmin/Personne/Add/Promo/:IdDepartement/:NomFormation/:DureeFormation/:AnneePromotion/:IdProfesseurPromotion", (req, res) => {
 
     //liée la table formation et promotion 
     //Creation d'une formation:
@@ -185,7 +231,7 @@ app.post("/Personne/Add/Promo/:IdDepartement/:NomFormation/:DureeFormation/:Anne
 //Faire la meme chose avec batiment , puis etage et salle pour mettre la box donc Choisir son batiment , puis son etage , puis sa salle
 //Donc quand on a la salle on peut remplir la box et device
 //Dropdown id_devicetype , batiment , etage , salle , id_valuetype
-app.post("/Capteur/Add/BoxDevice/:IdSalle/:IdDeviceType/:AddrMac/:AddrIp/:LibelleBox/:DescriptionBox/:DateInstallation/:IdValueType/:LibelleDevice/:SeuilMin?/:SeuilMax?", (req, res) => {
+app.post("/InfraAdmin/Capteur/Add/BoxDevice/:IdSalle/:IdDeviceType/:AddrMac/:AddrIp/:LibelleBox/:DescriptionBox/:DateInstallation/:IdValueType/:LibelleDevice/:SeuilMin?/:SeuilMax?", (req, res) => {
 
     //D'abord requete Box
     conn.query("INSERT INTO `Box`(`id_salle`, `id_devicetype`, `adr_mac`, `adr_ip`, `libelle`, `description`, `date_installation`) VALUES ('" + req.params.IdSalle + "','" + req.params.IdDeviceType + "','" + req.params.AddrMac + "','" + req.params.AddrIp + "','" + req.params.Libelle + "','" + req.params.Description + "','" + req.params.DateInstallation + "')", function(err, result) {
@@ -209,7 +255,7 @@ app.post("/Capteur/Add/BoxDevice/:IdSalle/:IdDeviceType/:AddrMac/:AddrIp/:Libell
 
 //DORIAN
 //creation actionneur peut etre capteur bouton dans Devicetype = 11 Voir dropdown ValueType je ne sais pas celui d un actionneur
-app.post("/Capteur/Add/Actionneur/:IdBox/:IdValueType/:Libelle", (req, res) => {
+app.post("/InfraAdmin/Capteur/Add/Actionneur/:IdBox/:IdValueType/:Libelle", (req, res) => {
 
     conn.query("INSERT INTO `Device`(`id_box`, `id_devicetype`, `id_valuetype`, `libelle`) VALUES ('" + req.params.IdBox + "', 11 ,'" + req.params.IdValueType + "','" + req.params.libelle + "')", function(err, result) {
         if (err)
@@ -222,7 +268,7 @@ app.post("/Capteur/Add/Actionneur/:IdBox/:IdValueType/:Libelle", (req, res) => {
 
 //DORIAN
 //creation panneau solaire peut etre capteur bouton dans Devicetype = 17 , 7 en ValueType (Lumens)
-app.post("/Capteur/Add/PanneauSolaire/:IdBox/:Libelle", (req, res) => {
+app.post("/InfraAdmin/Capteur/Add/PanneauSolaire/:IdBox/:Libelle", (req, res) => {
 
     conn.query("INSERT INTO `Device`(`id_box`, `id_devicetype`, `id_valuetype`, `libelle`) VALUES ('" + req.params.IdBox + "', 17 ,7,'" + req.params.libelle + "')", function(err, result) {
         if (err)
@@ -238,7 +284,7 @@ app.post("/Capteur/Add/PanneauSolaire/:IdBox/:Libelle", (req, res) => {
 
 //DORIAN
 //Creation d'un batiment et des etages correspondant : DropDown IdCampus , envoie du nombre de batiment et superficie etage
-app.post("/Batiment/Add/Batiment/:Nom/:Superficie/:IdCampus/:EtageSuperficie", (req, res) => {
+app.post("/InfraAdmin/Batiment/Add/Batiment/:Nom/:Superficie/:IdCampus/:EtageSuperficie", (req, res) => {
     // console.log(req.params.EtageSuperficie.SuperficieEtage)
 
     conn.query("INSERT INTO `Batiment`(`id_site`, `nom`, `surface`) VALUES ('" + req.params.IdCampus + "','" + req.params.Nom + "','" + req.params.Superficie + "')", function(err, result) {
@@ -272,7 +318,7 @@ app.post("/Batiment/Add/Batiment/:Nom/:Superficie/:IdCampus/:EtageSuperficie", (
 //Du coup on choisit son batiment et en fonction de ca on a les Etage du batiment
 //Utilisés cette route pour avoir les etages /Batiment/ListEtage/:IdBatiment
 //DOnc apres choisir son etage et inserer ca salle
-app.post("/Batiment/Add/Salle/:IdEtage/:Nom/:CapaciteMax/:Surface/:Volume", (req, res) => {
+app.post("/InfraAdmin/Batiment/Add/Salle/:IdEtage/:Nom/:CapaciteMax/:Surface/:Volume", (req, res) => {
 
     conn.query("INSERT INTO `Salle`(`id_etage`, `nom`, `capacite_max`, `surface`, `volume`) VALUES ('" + req.params.IdEtage + "','" + req.params.Nom + "','" + req.params.CapaciteMax + "','" + req.params.Surface + "','" + req.params.Volume + "')", function(err, result) {
         if (err)
@@ -287,7 +333,7 @@ app.post("/Batiment/Add/Salle/:IdEtage/:Nom/:CapaciteMax/:Surface/:Volume", (req
 //Delete --------------------------------------------------
 
 //Supp user 
-app.delete("/Personne/Delete/:IdUser", (req, res) => {
+app.delete("/InfraAdmin/Personne/Delete/:IdUser", (req, res) => {
 
     conn.query("DELETE FROM `Contenir` WHERE id_eleve = " + req.params.IdUser + "", function(err, result) {
         if (err)
@@ -324,7 +370,7 @@ app.delete("/Personne/Delete/:IdUser", (req, res) => {
 })
 
 //Supp promotion 
-app.delete("/Personne/Delete/:IdPromo", (req, res) => {
+app.delete("/InfraAdmin/Personne/Delete/:IdPromo", (req, res) => {
 
     conn.query("DELETE FROM `Contenir` WHERE id_eleve = " + req.params.IdUser + "", function(err, result) {
         if (err)
@@ -336,7 +382,7 @@ app.delete("/Personne/Delete/:IdPromo", (req, res) => {
 })
 
 //Supp Campus 
-app.delete("/Batiment/Delete/:IdCampus", (req, res) => {
+app.delete("/InfraAdmin/Batiment/Delete/:IdCampus", (req, res) => {
 
     conn.query("DELETE FROM `AccesSite` WHERE id_site = " + req.params.IdCampus + "", function(err, result) {
         if (err)

@@ -125,6 +125,30 @@ app.get("/Infrastructure/ListSalle/:IdEtage", (req, res) => {
     });
 })
 
+//List de tous les elements d un batiment
+app.get("/Infrastructure/Info/:IdBatiment", (req, res) => {
+    conn.query("select B.nom , B.surface as SurfaceM2 , count(E.id_etage) , E.surface , S.nom , count(Salle.id_salle) , Salle.surface from Batiment B , Site S , Etage E , Salle where B.id_site = S.id_site AND B.id_batiment = E.id_batiment AND E.id_etage = Salle.id_etage AND B.id_batiment = '" + req.params.IdBatiment + "' group by Salle.id_salle ", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+//AVoir nb etage d un batiment
+app.get("/Infrastructure/Info/NBEtage/:IdBatiment", (req, res) => {
+    conn.query("select count(Etage.id_etage) as NBEtage from Batiment , Etage where Batiment.id_batiment = Etage.id_batiment AND Batiment.id_batiment = '" + req.params.IdBatiment + "' group by Batiment.id_batiment ", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
 
 
 

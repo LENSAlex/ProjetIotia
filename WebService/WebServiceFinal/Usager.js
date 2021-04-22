@@ -49,10 +49,10 @@ app.get("/Usager/:Prenom/:Nom", (req, res) => {
     })
 })
 
-app.get("/Usager/ListPromo", (req, res) => {
+app.get("/Personne/ListPromo", (req, res) => {
 
     //Affichage formation avec departement et duree
-    conn.query("select P.id_promotion , F.nom , P.annee ,F.duree from Promotion P , Formation F , Departement D where P.id_formation = F.id_formation and D.id_departement = F.id_departement ", function(err, result) {
+    conn.query("select P.id_professeur ,Pers.nom , P.id_promotion , F.nom , P.annee ,F.duree from Promotion P , Formation F , Departement D , Personne Pers where P.id_formation = F.id_formation and D.id_departement = F.id_departement and P.id_professeur = Pers.id_personne", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -165,6 +165,30 @@ app.get("/Usager/ListProf", (req, res) => {
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
             res.status(200).json(result);
+        }
+    });
+})
+
+//Taux occupation BATIMENT
+app.get("/Usager/List/TauxOccupation/Batiment", (req, res) => {
+    conn.query("SELECT b.id_batiment, b.nom, ROUND(IFNULL((COUNT(DISTINCT p.id_personne) / SUM(s.capacite_max)) * 100, 0), 2) AS taux_occupation, SUM(IFNULL(s.capacite_max, 0)) AS capacite_max_batiment,  TIMESTAMPDIFF(MONTH, CONCAT(YEAR(CURRENT_DATE), '-01-01'),  CURRENT_DATE) AS nbMois,  TIMESTAMPDIFF(DAY, CONCAT(YEAR(CURRENT_DATE), '-01-01'),  CURRENT_DATE) AS nbJours FROM Batiment AS b  LEFT JOIN Salle AS s ON s.id_etage IN (SELECT id_etage FROM Etage AS e WHERE e.id_batiment = b.id_batiment) LEFT JOIN Cours AS c ON c.id_salle = s.id_salle LEFT JOIN Presentiel AS p ON p.id_cours = c.id_cours AND p.presence = 1 WHERE c.heure_debut IS NULL OR (DATE_FORMAT(c.heure_debut, '%Y') = YEAR(CURRENT_DATE)) GROUP BY b.id_batiment, b.nom", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+//Taux occupation Site
+app.get("/Usager/List/TauxOccupation/Site", (req, res) => {
+    conn.query("SELECT si.id_site, si.nom,    ROUND(IFNULL((COUNT(DISTINCT p.id_personne) / SUM(s.capacite_max)) * 100, 0), 2) AS taux_occupation,    SUM(IFNULL(s.capacite_max, 0)) AS capacite_max_site,  TIMESTAMPDIFF(MONTH, CONCAT(YEAR(CURRENT_DATE), '-01-01'),  CURRENT_DATE) AS nbMois, TIMESTAMPDIFF(DAY, CONCAT(YEAR(CURRENT_DATE), '-01-01'),  CURRENT_DATE) AS nbJours FROM Site AS si LEFT JOIN Batiment AS b ON b.id_site = si.id_site LEFT JOIN Salle AS s ON s.id_etage IN (SELECT id_etage FROM Etage AS e WHERE e.id_batiment = b.id_batiment) LEFT JOIN Cours AS c ON c.id_salle = s.id_salle LEFT JOIN Presentiel AS p ON p.id_cours = c.id_cours AND p.presence = 1 WHERE c.heure_debut IS NULL OR (DATE_FORMAT(c.heure_debut, '%Y') = YEAR(CURRENT_DATE)) GROUP BY si.id_site, si.nom", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
         }
     });
 })
