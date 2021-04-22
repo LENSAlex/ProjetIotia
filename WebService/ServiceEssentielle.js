@@ -133,6 +133,32 @@ app.get("/Batiment/ListSalle/:IdEtage", (req, res) => {
 })
 
 
+//MODIF
+//List de tous les elements d un batiment
+app.get("/Batiment/Info/:IdBatiment", (req, res) => {
+    conn.query("select B.nom , B.surface as SurfaceM2 , count(E.id_etage) , E.surface , S.nom , count(Salle.id_salle) , Salle.surface from Batiment B , Site S , Etage E , Salle where B.id_site = S.id_site AND B.id_batiment = E.id_batiment AND E.id_etage = Salle.id_etage AND B.id_batiment = '" + req.params.IdBatiment + "' group by Salle.id_salle ", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+//MODIF
+//AVoir nb etage d un batiment
+app.get("/Batiment/Info/NBEtage/:IdBatiment", (req, res) => {
+    conn.query("select count(Etage.id_etage) as NBEtage from Batiment , Etage where Batiment.id_batiment = Etage.id_batiment AND Batiment.id_batiment = '" + req.params.IdBatiment + "' group by Batiment.id_batiment ", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
 
 
 //Personne------
@@ -150,10 +176,11 @@ app.get("/Personne/:Prenom/:Nom", (req, res) => {
     })
 })
 
+//MODIF
 app.get("/Personne/ListPromo", (req, res) => {
 
     //Affichage formation avec departement et duree
-    conn.query("select P.id_promotion , F.nom , P.annee ,F.duree from Promotion P , Formation F , Departement D where P.id_formation = F.id_formation and D.id_departement = F.id_departement ", function(err, result) {
+    conn.query("select P.id_professeur ,Pers.nom , P.id_promotion , F.nom , P.annee ,F.duree from Promotion P , Formation F , Departement D , Personne Pers where P.id_formation = F.id_formation and D.id_departement = F.id_departement and P.id_professeur = Pers.id_personne", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -572,11 +599,10 @@ app.get("/Capteur/List/Historique/Energie", (req, res) => {
     });
 })
 
-//List du taux occupation par salle
-//select distinct id_personne , statut  from Badgeuse where statut = 1  
-//Commencé mais trop dure faudra que tu demande a pierre
-app.get("/Capteur/List/TauxOccupation", (req, res) => {
-    conn.query("", function(err, result) {
+//MODIF
+//Taux occupation BATIMENT
+app.get("/Capteur/List/TauxOccupation/Batiment", (req, res) => {
+    conn.query("SELECT b.id_batiment, b.nom, ROUND(IFNULL((COUNT(DISTINCT p.id_personne) / SUM(s.capacite_max)) * 100, 0), 2) AS taux_occupation, SUM(IFNULL(s.capacite_max, 0)) AS capacite_max_batiment,  TIMESTAMPDIFF(MONTH, CONCAT(YEAR(CURRENT_DATE), '-01-01'),  CURRENT_DATE) AS nbMois,  TIMESTAMPDIFF(DAY, CONCAT(YEAR(CURRENT_DATE), '-01-01'),  CURRENT_DATE) AS nbJours FROM Batiment AS b  LEFT JOIN Salle AS s ON s.id_etage IN (SELECT id_etage FROM Etage AS e WHERE e.id_batiment = b.id_batiment) LEFT JOIN Cours AS c ON c.id_salle = s.id_salle LEFT JOIN Presentiel AS p ON p.id_cours = c.id_cours AND p.presence = 1 WHERE c.heure_debut IS NULL OR (DATE_FORMAT(c.heure_debut, '%Y') = YEAR(CURRENT_DATE)) GROUP BY b.id_batiment, b.nom", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -585,6 +611,59 @@ app.get("/Capteur/List/TauxOccupation", (req, res) => {
         }
     });
 })
+
+//MODIF
+//Taux occupation Site
+app.get("/Capteur/List/TauxOccupation/Site", (req, res) => {
+    conn.query("SELECT si.id_site, si.nom,    ROUND(IFNULL((COUNT(DISTINCT p.id_personne) / SUM(s.capacite_max)) * 100, 0), 2) AS taux_occupation,    SUM(IFNULL(s.capacite_max, 0)) AS capacite_max_site,  TIMESTAMPDIFF(MONTH, CONCAT(YEAR(CURRENT_DATE), '-01-01'),  CURRENT_DATE) AS nbMois, TIMESTAMPDIFF(DAY, CONCAT(YEAR(CURRENT_DATE), '-01-01'),  CURRENT_DATE) AS nbJours FROM Site AS si LEFT JOIN Batiment AS b ON b.id_site = si.id_site LEFT JOIN Salle AS s ON s.id_etage IN (SELECT id_etage FROM Etage AS e WHERE e.id_batiment = b.id_batiment) LEFT JOIN Cours AS c ON c.id_salle = s.id_salle LEFT JOIN Presentiel AS p ON p.id_cours = c.id_cours AND p.presence = 1 WHERE c.heure_debut IS NULL OR (DATE_FORMAT(c.heure_debut, '%Y') = YEAR(CURRENT_DATE)) GROUP BY si.id_site, si.nom", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+//MODIF
+//Tous les capteurs d une box
+app.get("/Capteur/Box/:IdBox", (req, res) => {
+    conn.query("select Device.id_device , Device.libelle from Device , Box WHERE Device.id_box = Box.id_box AND Box.id_box = '" + req.params.IdBox + "'", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+//MODIF
+//Tous les actionneur d une box
+app.get("/Capteur/Box/Actionneur/:IdBox", (req, res) => {
+    conn.query("select Device.id_device , Device.libelle from Device , Box , DeviceType WHERE Device.id_box = Box.id_box AND Box.id_box = '" + req.params.IdBox + "' AND Box.id_devicetype = DeviceType.id_devicetype AND DeviceType.id_devicetype = 11", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+//MODIF
+//Tous les panneau solaire d une box
+app.get("/Capteur/Box/PanneauSolaire/:IdBox", (req, res) => {
+    conn.query("select Device.id_device , Device.libelle from Device , Box , DeviceType WHERE Device.id_box = Box.id_box AND Box.id_box = '" + req.params.IdBox + "' AND Box.id_devicetype = DeviceType.id_devicetype AND DeviceType.id_devicetype = 17", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
 
 //-----------------------------------PUT-----------------------------
 app.put("/Alerte/IsPenurie/:IdEquipement/:IdSalle", (req, res) => {
@@ -664,7 +743,54 @@ app.put("/Personne/Modifs/Promo/:AnneePromotion/:IdProfesseurPromotion/:IdPromo"
     })
 })
 
+//MODIF
+//Modifs Batiment
+app.put("/Batiment/Modifs/:Nom/:SurfaceBat/:", (req, res) => {
+    conn.query("", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json("Promotion modifié");
+        }
+    })
+})
 
+
+//MODIF
+//Modif box
+app.put("/Capteur/Modifs/Box/:IdBox/:Nom/:DateInstalle/:Description/:IdSalle/:AddrMac/:AddrIp", (req, res) => {
+    conn.query("UPDATE `Box` SET `id_salle`='" + req.params.IdSalle + "',`adr_mac`='" + req.params.AddrMac + "',`adr_ip`='" + req.params.AddrIp + "',`description`='" + req.params.Description + "',`date_installation`='" + req.params.DateInstalle + "', `libelle`='" + req.params.Nom + "' WHERE id_box='" + req.params.IdBox + "'", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json("Box modifié");
+        }
+    })
+})
+
+//MODIF
+//Modif Capteur
+app.put("/Capteur/Modifs/Capteur/:Nom/:Box/:TypeActionneur/:IdCapteur", (req, res) => {
+    conn.query("UPDATE `Device` SET `id_box`='" + req.params.Box + "',`id_devicetype`='" + req.params.TypeActionneur + "',`libelle`='" + req.params.Nom + "' WHERE id_device = '" + req.params.IdCapteur + "'", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json("Capteur modifié");
+        }
+    })
+})
+
+//MODIF
+//Modif Panneau Solaire
+app.put("/Capteur/Modifs/Capteur/PanneauSolaire/:Nom/:Box/:TypeActionneur/:IdPanneauSolaire", (req, res) => {
+    conn.query("UPDATE `Device` SET `id_box`='" + req.params.Box + "',`libelle`='" + req.params.Nom + "' WHERE id_device = '" + req.params.IdPanneauSolaire + "'", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json("Panneau solaire modifié");
+        }
+    })
+})
 //-----------------------------------POST--------------------------------
 
 //Personne --------------------
