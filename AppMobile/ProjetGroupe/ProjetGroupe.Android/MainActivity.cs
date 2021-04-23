@@ -18,6 +18,9 @@ using Android.Provider;
 using System.Collections.Generic;
 using ProjetGroupe.Droid.Tools;
 using Xamarin.Essentials;
+using Android;
+using AndroidX.Core.App;
+using AndroidX.Core.Content;
 
 namespace ProjetGroupe.Droid
 {
@@ -144,6 +147,7 @@ namespace ProjetGroupe.Droid
         {
             base.OnActivityResult(requestCode, resultCode, data);
 
+            ActivityCompat.RequestPermissions((Activity)Forms.Context, new string[] { (string)Manifest.Permission.WriteExternalStorage }, 1);
             if (requestCode == OPENGALLERYCODE && resultCode == Result.Ok)
             {
                 List<string> images = new List<string>();
@@ -153,6 +157,7 @@ namespace ProjetGroupe.Droid
                 if (data != null)
                 {
                     uri = data.Data;
+
                     path = GetRealPathFromURI(uri);
                     if (path != null)
                     {
@@ -207,7 +212,6 @@ namespace ProjetGroupe.Droid
             catch (Exception ex)
             {
                 Toast.MakeText(Forms.Context, "Récupération du chemin", ToastLength.Long).Show();
-
             }
             return null;
         }

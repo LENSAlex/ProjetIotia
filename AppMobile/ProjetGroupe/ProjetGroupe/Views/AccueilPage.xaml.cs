@@ -11,6 +11,8 @@ using System.Runtime.CompilerServices;
 using System.ComponentModel;
 using ProjetGroupe.Models;
 using Xamarin.Essentials;
+using Android.Widget;
+using Android.Content;
 
 namespace ProjetGroupe.Views
 {
@@ -36,8 +38,6 @@ namespace ProjetGroupe.Views
             base.OnAppearing();
             FrameAccueil.TranslationY = 600;
             FrameAccueil.TranslateTo(0, 0, 500, Easing.BounceIn);
-            LabelErreur.IsVisible = false;
-            LabelErreur.Text = "";
         }
         /// <summary>
         /// Evènement du click sur le bouton alerte
@@ -73,9 +73,7 @@ namespace ProjetGroupe.Views
             }
             else
             {
-                LabelErreur.IsVisible = true;
-                LabelErreur.TextColor = Color.Red;
-                LabelErreur.Text = "Erreur lors de l'envois de l'alerte";
+                DependencyService.Get<ISave>().DisplayAlert("Erreur lors de l'envois de l'alerte");
             }
         }
         /// <summary>
@@ -84,9 +82,7 @@ namespace ProjetGroupe.Views
         /// <param name="personne">La personne qui emet l'alerte</param>
         public void SetInfo(Personne personne)
         {
-            LabelErreur.IsVisible = true;
-            LabelErreur.TextColor = Color.Green;
-            LabelErreur.Text = "Alerte envoyé avec succès";
+            DependencyService.Get<ISave>().DisplayAlert("Alerte envoyé avec succès");
             personne.RappelMail(personne);
             SendNotification();
         }

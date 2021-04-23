@@ -48,8 +48,8 @@ namespace ProjetGroupe.Views
         public SmartOfficePage()
         {
             InitializeComponent();
-            Label1.IsVisible = false;
             this.BindingContext = new SmartOfficeViewModel();
+
             _restService = new RestService();
 
             ListEquipement.RefreshCommand = new Command(() => {
@@ -110,9 +110,7 @@ namespace ProjetGroupe.Views
             }
             else
             {
-                Label1.TextColor = Color.Red;
-                Label1.Text = "Erreur";
-                Label1.IsVisible = true;
+                DependencyService.Get<ISave>().DisplayAlert("Erreur dans la requête pénurie");
                 return;
             }
          
@@ -138,9 +136,7 @@ namespace ProjetGroupe.Views
                 }
                 else
                 {
-                    Label1.TextColor = Color.Red;
-                    Label1.Text = "Erreur";
-                    Label1.IsVisible = true;
+                    DependencyService.Get<ISave>().DisplayAlert("Erreur lors de l'envois de l'alerte pénurie");
                     return;
                 }
             }        
@@ -153,8 +149,7 @@ namespace ProjetGroupe.Views
         {
             Personne personne = Personne.IsLogged();
             personne.RappelMailPenurie(personne, penurie);
-            Label1.Text = "Alerte envoyée avec succès";
-            Label1.IsVisible = true;
+            DependencyService.Get<ISave>().DisplayAlert("Alerte pénurie envoyée avec succès");
         }
         /// <summary>
         /// Méthode exécuté lors de l'apparition de la page
@@ -162,8 +157,6 @@ namespace ProjetGroupe.Views
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            Label1.IsVisible = false;
-            Label1.Text = "";
             ListEquipement.TranslationY = 600;
             ListEquipement.TranslateTo(0, 0, 500, Easing.SinInOut);
         }

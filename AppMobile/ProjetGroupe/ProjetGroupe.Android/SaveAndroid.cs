@@ -66,6 +66,7 @@ class SaveAndroid : ISave
     {
         try
         {
+            ActivityCompat.RequestPermissions((Activity)Forms.Context, new string[] { Manifest.Permission.WriteExternalStorage }, 1);
             var status = await CrossPermissions.Current.CheckPermissionStatusAsync(Plugin.Permissions.Abstractions.Permission.Storage);
             if (status != PermissionStatus.Granted)
             {
@@ -100,5 +101,13 @@ class SaveAndroid : ISave
             Toast.MakeText(Forms.Context, "Erreur lors de l'upload de la photo", ToastLength.Long).Show();
         }
     }
+    /// <summary>
+    /// Permet d'envoyer un message d'erreur ou non qui disparaît juste après
+    /// </summary>
+    public void DisplayAlert(string message)
+    {
+        Toast.MakeText(Forms.Context, message, ToastLength.Short).Show();
+    }
+
 }
 

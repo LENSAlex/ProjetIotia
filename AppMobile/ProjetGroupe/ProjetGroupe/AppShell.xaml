@@ -70,12 +70,22 @@
 
     <Shell.FlyoutHeaderTemplate>
         <DataTemplate>
-            <Grid BackgroundColor="#96BCE3" Padding="20">
-                <Label Text="Photo" Margin="-190,100,20,0" TextColor="#DFDBED" FontSize="16" FontAttributes="Italic" TextDecorations="Underline" HorizontalTextAlignment="Center" />
-                <ImageButton Source="{Binding ImagePath}" Margin="-200,0,0,0" Command="{Binding ImgClicked}" WidthRequest="100" BackgroundColor="Transparent" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Center"/>
-                <ImageButton Source="ic_close.png" Margin="-90,-80,0,0" Command="{Binding DelPhoto}" WidthRequest="30" BackgroundColor="Transparent" HeightRequest="30" HorizontalOptions="Center" VerticalOptions="Center"/>
-                <Label Text="{Binding Email}" Margin="-160,170,20,0" TextColor="#DFDBED" FontSize="16" HorizontalTextAlignment="Center" />
-                <Label Text="{Binding UserType}" Margin="-220,190,20,0" TextColor="White" FontAttributes="Italic" FontSize="16" HorizontalTextAlignment="Center" />
+            <Grid BackgroundColor="#96BCE3" Padding="50">
+                <Grid Grid.Row="0" Grid.Column="0">
+                    <Label Text="Photo" Margin="0,70,20,0" TextColor="#DFDBED" FontSize="16" FontAttributes="Italic" TextDecorations="Underline" HorizontalTextAlignment="Center" />
+                    <ImageButton Source="{Binding ImagePath}" Command="{Binding ImgClicked}" Aspect="AspectFill" WidthRequest="100" BackgroundColor="Transparent" HeightRequest="100" />
+                </Grid>
+                <ImageButton BackgroundColor="White" Source="ic_close.png" Margin="170,-160,0,0" Command="{Binding DelPhoto}" WidthRequest="30" CornerRadius="8" HeightRequest="30" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <BoxView IsVisible="{Binding isVisible}" Margin="0,145,0,0" HeightRequest="50" Opacity="0.7" VerticalOptions="Start" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                    <BoxView.Background IsVisible="{Binding isVisible}">
+                        <LinearGradientBrush StartPoint="1,1" EndPoint="0,0">
+                            <GradientStop Color="White" Offset="2.0" />
+                            <GradientStop Color="#96BCE3" Offset="0.2" />
+                        </LinearGradientBrush>
+                    </BoxView.Background>
+                </BoxView>
+                <Label Text="{Binding UserType}"  Margin="-110,150,20,0" TextColor="Black" FontAttributes="Italic" FontSize="16" HorizontalTextAlignment="Center" />
+                <Label Text="{Binding Email}" Margin="-53,170,20,0" TextColor="Black" FontSize="16" HorizontalTextAlignment="Center" />
             </Grid>
         </DataTemplate>
     </Shell.FlyoutHeaderTemplate>

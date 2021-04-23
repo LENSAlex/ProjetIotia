@@ -21,6 +21,12 @@ namespace ProjetGroupe
         /// </summary>
         /// <returns>task</returns>
         Task OpenGallery();
+
+        /// <summary>
+        /// Affiche un message Toast qui disparaît après
+        /// </summary>
+        /// <param name="message">Le message</param>
+        void DisplayAlert(string message);
     }
 }
 

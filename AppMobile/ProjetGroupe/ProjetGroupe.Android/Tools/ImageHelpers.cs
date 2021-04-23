@@ -1,5 +1,7 @@
-﻿using Android.App;
+﻿using Android;
+using Android.App;
 using Android.Content;
+using Android.Content.PM;
 using Android.Graphics;
 using Android.Media;
 using Android.OS;
@@ -7,12 +9,14 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using AndroidX.Core.App;
+using AndroidX.Core.Content;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using Xamarin.Forms;
 using Bitmap = Android.Graphics.Bitmap;
 
 namespace ProjetGroupe.Droid.Tools
@@ -31,7 +35,8 @@ namespace ProjetGroupe.Droid.Tools
 		/// <returns>l'uri de l'image</returns>
 		public static string SaveFile(string collectionName, byte[] imageByte, string fileName)
 		{
-			string newRoot = Application.Context.GetExternalFilesDir(null).AbsolutePath;
+			ActivityCompat.RequestPermissions((Activity)Forms.Context, new String[] { Manifest.Permission.WriteExternalStorage }, 1);
+			string newRoot = Android.App.Application.Context.GetExternalFilesDir(null).AbsolutePath;
 			Java.IO.File myDir = new Java.IO.File(newRoot + "/Images");
 			Directory.CreateDirectory(myDir.ToString());
 			Java.IO.File file = new Java.IO.File(myDir, fileName);
@@ -59,14 +64,14 @@ namespace ProjetGroupe.Droid.Tools
 			{
 				var matrix = new Matrix();
 				matrix.PostRotate(rotation);
-				rotatedImage = Android.Graphics.Bitmap.CreateBitmap(scaledImage, 0, 0, scaledImage.Width, scaledImage.Height, matrix, true);
+				rotatedImage = Bitmap.CreateBitmap(scaledImage, 0, 0, scaledImage.Width, scaledImage.Height, matrix, true);
 				scaledImage.Recycle();
 				scaledImage.Dispose();
 			}
 
 			using (var ms = new MemoryStream())
 			{
-				rotatedImage.Compress(Android.Graphics.Bitmap.CompressFormat.Jpeg, 90, ms);
+				rotatedImage.Compress(Bitmap.CompressFormat.Jpeg, 90, ms);
 				imageBytes = ms.ToArray();
 			}
 

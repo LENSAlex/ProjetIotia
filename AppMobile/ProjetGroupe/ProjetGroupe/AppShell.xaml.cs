@@ -62,6 +62,22 @@ namespace ProjetGroupe
                 RaisepropertyChanged("ImagePath");
             }
         }
+        public string isvisible;
+        /// <summary>
+        /// URI de l'image du profil
+        /// </summary>
+        public string isVisible
+        {
+            get
+            {
+                return isvisible;
+            }
+            set
+            {
+                isvisible = value;
+                RaisepropertyChanged("isVisible");
+            }
+        }
         /// <summary>
         /// Command d'excécution du click sur l'image
         /// </summary>
@@ -179,7 +195,14 @@ namespace ProjetGroupe
         /// </summary>
         public void GetImagePath()
         {
-            ImagePath = SecureStorage.GetAsync("PathProfil").Result;
+            if(ImagePath != "")
+            {
+                ImagePath = SecureStorage.GetAsync("PathProfil").Result;
+            }
+            else
+            {
+                ImagePath = "";
+            }
         }
         /// <summary>
         /// Quand on click pour mettre l'image (click sur photo)
@@ -188,6 +211,7 @@ namespace ProjetGroupe
         private async void SetImgAsync(object obj)
         {
             DependencyService.Get<ISave>().OpenGallery();
+            isVisible = "true";
         }
         /// <summary>
         /// Au click de la croix pour supprimer la photo
@@ -195,8 +219,25 @@ namespace ProjetGroupe
         /// <param name="obj">le Click</param>
         private async void DeleteImage(object obj)
         {
-            SecureStorage.Remove("PathProfil");
-            ImagePath = "";
+            if(ImagePath != "")
+            {
+                var result = await DisplayAlert("Attention!", "Voulez vous vraiment supprimer votre photo de profil", "Oui", "Non");
+                if (result == true)
+                {
+                    DependencyService.Get<ISave>().DisplayAlert("Supprimée");
+                    SecureStorage.Remove("PathProfil");
+                    ImagePath = "";
+                    isVisible = "false";
+                }
+                else
+                {
+                    return;
+                }
+            }
+            else
+            {
+                return;
+            }
         }
     }
 }

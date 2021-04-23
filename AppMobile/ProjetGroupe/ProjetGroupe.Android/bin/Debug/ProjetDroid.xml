@@ -9,6 +9,11 @@
             Classe principale de l'application sous Android
             </summary>
         </member>
+        <member name="F:ProjetGroupe.Droid.MainActivity.OPENGALLERYCODE">
+            <summary>
+            Code gallerie
+            </summary>
+        </member>
         <member name="M:ProjetGroupe.Droid.MainActivity.OnCreate(Android.OS.Bundle)">
             <summary>
             Méthode appelée la création de l'application
@@ -50,6 +55,21 @@
             Méthode appelée quand il y a une nouvelle Intent 
             </summary>
             <param name="intent"></param>
+        </member>
+        <member name="M:ProjetGroupe.Droid.MainActivity.OnActivityResult(System.Int32,Android.App.Result,Android.Content.Intent)">
+            <summary>
+            Evènement Android qui s'active quand la galerie se ferme
+            </summary>
+            <param name="requestCode">Code Gallerie (200)</param>
+            <param name="resultCode">Code Gallerie (200)</param>
+            <param name="data">D'ou il vient</param>
+        </member>
+        <member name="M:ProjetGroupe.Droid.MainActivity.GetRealPathFromURI(Android.Net.Uri)">
+            <summary>
+            Méthode qui permet de récupérer l'URI de l'image choisi
+            </summary>
+            <param name="contentURI">URI</param>
+            <returns>l'uri en string</returns>
         </member>
         <member name="T:ProjetGroupe.Droid.Services.DeviceInstallationService">
             <summary>
@@ -132,6 +152,34 @@
             Bouton BackPressed Action (appareil pas application)
             </summary>
         </member>
+        <member name="T:ProjetGroupe.Droid.Tools.ImageHelpers">
+            <summary>
+            Classe Permettant de gérer l'upload des images de profil
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Droid.Tools.ImageHelpers.SaveFile(System.String,System.Byte[],System.String)">
+            <summary>
+            Méthoqui permet de sauvegarder la photo dans les dossiers de l'application
+            </summary>
+            <param name="collectionName">collectionName</param>
+            <param name="imageByte">L'image au format binaire</param>
+            <param name="fileName">le nom de l'image</param>
+            <returns>l'uri de l'image</returns>
+        </member>
+        <member name="M:ProjetGroupe.Droid.Tools.ImageHelpers.RotateImage(System.String)">
+            <summary>
+            Permet de choisir la rotation de l'image
+            </summary>
+            <param name="path"></param>
+            <returns>l'image au format binaire</returns>
+        </member>
+        <member name="M:ProjetGroupe.Droid.Tools.ImageHelpers.GetRotation(System.String)">
+            <summary>
+            Méthode qui récupère les type de rotations
+            </summary>
+            <param name="filePath">URI de l'image</param>
+            <returns>int (Rotation)</returns>
+        </member>
         <member name="M:SaveAndroid.SaveAndView(System.String,System.String,System.IO.MemoryStream)">
             <summary>
             Action réalisée après la génération du PDF
@@ -139,7 +187,18 @@
             <param name="fileName">nom du fichier</param>
             <param name="contentType">application/pdf</param>
             <param name="stream">le fichier sous forme de stream</param>
-            <returns></returns>
+            <returns>task</returns>
+        </member>
+        <member name="M:SaveAndroid.OpenGallery">
+            <summary>
+            Méthode pour ouvrir la galerie du smartphone
+            </summary>
+            <returns>task</returns>
+        </member>
+        <member name="M:SaveAndroid.DisplayAlert(System.String)">
+            <summary>
+            Permet d'envoyer un message d'erreur ou non qui disparaît juste après
+            </summary>
         </member>
     </members>
 </doc>
