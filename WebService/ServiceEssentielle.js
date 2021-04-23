@@ -83,7 +83,7 @@ app.get("/Batiment/ListSite", (req, res) => {
 
 //List des Batiment
 app.get("/Batiment/ListBatiment", (req, res) => {
-    conn.query("select id_batiment ,id_site , nom as NomBatiment from Batiment", function(err, result) {
+    conn.query("select Batiment.id_batiment ,id_site , Batiment.nom as NomBatiment , count(Etage.id_etage) as NBEtage from Batiment , Etage where Batiment.id_batiment = Etage.id_batiment group by Batiment.id_batiment", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
