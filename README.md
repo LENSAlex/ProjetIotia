@@ -74,6 +74,10 @@ Notification via AzureHub: https://docs.microsoft.com/en-us/azure/developer/mobi
 	</provider>
 </application>
 ```
+- 9.6] Pour donner la permission d'utilier les images du smartphone lors du choix de la photo de profil vous devez rajouter ceci dans la balise <application>
+```
+	<application android:requestLegacyExternalStorage="true"></application>
+```
 Vous allez maintenant devoir créer un dossier xml dans votre dossier Ressource de votre Projet.Droid et y placer filepath.xml qui est un fichier que vous allez aussi créer et mettre:
 ```
 <?xml version="1.0" encoding="utf-8"?>
