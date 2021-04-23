@@ -47,7 +47,7 @@ Initialisation du M5Stack et du Bluetooth
 
 [float]
 === Code Loop
-Programme qui tourne en permanance sur le M5Stack. En fonction de ce qui est reçus. Il y a un son différent qui est joué 
+Programme qui tourne en permanance sur le M5Stack. En fonction de ce qui est reçus. Il y a un son différent qui est joué. Il affiche également le nombre de personnes présentes 
 
 [source,arduino]
 ----
