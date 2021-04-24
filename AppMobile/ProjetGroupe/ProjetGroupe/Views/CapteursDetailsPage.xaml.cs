@@ -228,6 +228,7 @@ namespace ProjetGroupe.Views
             histoList = await Historique.ListValeurMoyenne(Convert.ToInt32(CapteurId));
             if (histoList != null)
             {
+                //Récupération de la valeur moyenne et de l'unité puis concaténation
                 string val = Convert.ToString(histoList[0].Moyenne);
                 string unit = Convert.ToString(histoList[0].Unite);
                 ValMoy = val + " " + unit;
@@ -282,8 +283,10 @@ namespace ProjetGroupe.Views
             var liste = SecureStorage.GetAsync("Liste").Result;
             if(liste!=null)
             {
+                //On retourne dans l'AppShell 
                 Application.Current.MainPage = new AppShell();
                 Shell.Current.GoToAsync($"{nameof(eCovidPage)}");
+                //On supprime les variables de session
                 SecureStorage.Remove("Liste");
                 SecureStorage.Remove("CapteurId");
                 SecureStorage.Remove("BoxName");
@@ -304,6 +307,7 @@ namespace ProjetGroupe.Views
         protected override void OnAppearing()
         {
             base.OnAppearing();
+            //Animation 
             DetailsView.TranslationY = 600;
             DetailsView.TranslateTo(0, 0, 500, Easing.SinInOut);
         }

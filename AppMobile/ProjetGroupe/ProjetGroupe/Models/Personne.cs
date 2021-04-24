@@ -102,6 +102,7 @@ namespace ProjetGroupe.Models
             int result = Convert.ToInt32(Xamarin.Essentials.SecureStorage.GetAsync("isLogged").Result);
             if (result == 1)
             {
+                //Récupération de l'id stocker en viariable de session pour vérifier s'il est bien connecté
                 int id = Convert.ToInt32(Xamarin.Essentials.SecureStorage.GetAsync("Id").Result);
                 Personne Personne = Personne.Load(id);
                 if(Personne != null)
@@ -137,6 +138,7 @@ namespace ProjetGroupe.Models
                 mail.Headers.Add("MIME-Version", "1.0");
 
                 mail.IsBodyHtml = true;
+                //utilisation de la bibliothèque SmtpClient pour l'envois de mail
                 using (SmtpClient smtp = new SmtpClient(Config.MailServer, Convert.ToInt32(Config.MailPort)))
                 {
                     smtp.UseDefaultCredentials = false;
@@ -186,6 +188,7 @@ namespace ProjetGroupe.Models
         /// <param name="data">La Liste d'historique de valeur à afficher dans le pdf</param>
         public static async void GeneratePdfAsync(int size, List<Historique> data)
         {
+            //Création du pdf (ici c'est du design de pdf
             PdfDocument document = new PdfDocument();
             PdfPage page = document.Pages.Add();
             PdfGrid pdfGrid = new PdfGrid();
@@ -236,6 +239,7 @@ namespace ProjetGroupe.Models
             MemoryStream stream = new MemoryStream();
             document.Save(stream);
             document.Close(true);
+            //Ouverture et fermeture du fichier et enregistrement dans le smartphone
             await DependencyService.Get<ISave>().SaveAndView("DonneesCapteurs-" + Personne.IsLogged().RFID + "-" + DateTime.Now.Day + DateTime.Now.Minute + DateTime.Now.Millisecond + ".pdf", "application/pdf", stream);
         }
     }

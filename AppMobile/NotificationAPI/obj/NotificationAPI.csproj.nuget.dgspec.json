@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Poste\\Source\\Repos\\ProjetIotiaV4\\AppMobile\\NotificationAPI\\NotificationAPI.csproj": {}
+    "C:\\Users\\Poste\\Source\\Repos\\ProjetV5\\AppMobile\\NotificationAPI\\NotificationAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Poste\\Source\\Repos\\ProjetIotiaV4\\AppMobile\\NotificationAPI\\NotificationAPI.csproj": {
+    "C:\\Users\\Poste\\Source\\Repos\\ProjetV5\\AppMobile\\NotificationAPI\\NotificationAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Poste\\Source\\Repos\\ProjetIotiaV4\\AppMobile\\NotificationAPI\\NotificationAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Poste\\Source\\Repos\\ProjetV5\\AppMobile\\NotificationAPI\\NotificationAPI.csproj",
         "projectName": "NotificationAPI",
-        "projectPath": "C:\\Users\\Poste\\Source\\Repos\\ProjetIotiaV4\\AppMobile\\NotificationAPI\\NotificationAPI.csproj",
+        "projectPath": "C:\\Users\\Poste\\Source\\Repos\\ProjetV5\\AppMobile\\NotificationAPI\\NotificationAPI.csproj",
         "packagesPath": "C:\\Users\\Poste\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Poste\\Source\\Repos\\ProjetIotiaV4\\AppMobile\\NotificationAPI\\obj\\",
+        "outputPath": "C:\\Users\\Poste\\Source\\Repos\\ProjetV5\\AppMobile\\NotificationAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",

@@ -55,6 +55,11 @@ namespace ProjetGroupe.Views
             this.BindingContext = new SmartBuildingViewModel();
             searchResults.ItemsSource = null;
             searchBar.Text = "";
+            searchResults.RefreshCommand = new Command(() => {
+                searchResults.IsRefreshing = true;
+                GetData();
+                searchResults.IsRefreshing = false;
+            });
         }
         /// <summary>
         /// Evènement lors du changement d'un texte dans la TextBox du front
@@ -74,8 +79,16 @@ namespace ProjetGroupe.Views
         public async void GetResultAsync(string query)
         {
             string result = query += " ";
+            SearchResults = query;
             _CapteurType = await Salle.ListCapteurBySalleName(result);
 
+        }
+        /// <summary>
+        /// Méthode qui permet de refresh les résultats de la recherche par la même recherche
+        /// </summary>
+        public async void GetData()
+        {
+            _CapteurType = await Salle.ListCapteurBySalleName(SearchResults);
         }
         /// <summary>
         /// Evènement lors de la sélection d'un item de la liste 

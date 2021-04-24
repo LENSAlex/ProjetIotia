@@ -60,6 +60,7 @@ namespace ProjetGroupe
         static Config()
         {
             var assembly = Assembly.GetExecutingAssembly();
+            //On lit dans le fichier json
             var resName = assembly.GetManifestResourceNames()?.FirstOrDefault(r => r.EndsWith("appsettings.json", StringComparison.OrdinalIgnoreCase));
             var file = assembly.GetManifestResourceStream(resName);
             var sr = new StreamReader(file);
@@ -92,7 +93,7 @@ namespace ProjetGroupe
         public RestService()
         {
             _client = new HttpClient();
-
+            //Header pour la rest api
             if (Device.RuntimePlatform == Device.Android)
             {
                 _client.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");

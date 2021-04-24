@@ -74,6 +74,7 @@ namespace ProjetGroupe.Views
         {
             var obj = (CapteurType)e.SelectedItem;
             var ide = Convert.ToInt32(obj.Id);
+            //Récupération des données du capteur sélection et on les met dans des variables de session
             SecureStorage.SetAsync("CapteurId", ide.ToString());
             SecureStorage.SetAsync("BoxName", obj.Libelle.ToString());
             SecureStorage.SetAsync("NomBat", obj.LibelleType.ToString());

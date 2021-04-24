@@ -47,6 +47,17 @@
             Classe "Gestion du Shell" de l'application
             </summary>
         </member>
+        <member name="M:ProjetGroupe.AppShell.RaisepropertyChanged(System.String)">
+            <summary>
+            Méthode de changement d'une propriété sur le front
+            </summary>
+            <param name="propertyName">nom de la propriété</param>
+        </member>
+        <member name="E:ProjetGroupe.AppShell.PropertyChanged">
+            <summary>
+            PropertyChangedEventHandler
+            </summary>
+        </member>
         <member name="F:ProjetGroupe.AppShell._notificationRegistrationService">
             <summary>
             INotificationRegistrationService
@@ -64,12 +75,27 @@
         </member>
         <member name="F:ProjetGroupe.AppShell.imgpath">
             <summary>
-            var countcovid
+            var imgpath
             </summary>
         </member>
         <member name="P:ProjetGroupe.AppShell.ImagePath">
             <summary>
-            Affichage du nombre de cas
+            URI de l'image du profil
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.AppShell.isVisible">
+            <summary>
+            URI de l'image du profil
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.AppShell.ImgClicked">
+            <summary>
+            Command d'excécution du click sur l'image
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.AppShell.DelPhoto">
+            <summary>
+            Command d'exécution du click sur la croix
             </summary>
         </member>
         <member name="M:ProjetGroupe.AppShell.#ctor">
@@ -124,16 +150,22 @@
             </summary>
             <returns>Le Type de la personne si existe sinon null</returns>
         </member>
-        <member name="M:ProjetGroupe.AppShell.RaisepropertyChanged(System.String)">
+        <member name="M:ProjetGroupe.AppShell.GetImagePath">
             <summary>
-            Méthode de changement d'une propriété sur le front
+            Méthode qui change l'URI de l'image de profil par la nouvelle
             </summary>
-            <param name="propertyName">nom de la propriété</param>
         </member>
-        <member name="E:ProjetGroupe.AppShell.PropertyChanged">
+        <member name="M:ProjetGroupe.AppShell.SetImgAsync(System.Object)">
             <summary>
-            PropertyChangedEventHandler
+            Quand on click pour mettre l'image (click sur photo)
             </summary>
+            <param name="obj">Le click</param>
+        </member>
+        <member name="M:ProjetGroupe.AppShell.DeleteImage(System.Object)">
+            <summary>
+            Au click de la croix pour supprimer la photo
+            </summary>
+            <param name="obj">le Click</param>
         </member>
         <member name="T:ProjetGroupe.Bootstrap">
             <summary>
@@ -229,6 +261,18 @@
             <param name="contentType">content-type (application/pdf)</param>
             <param name="stream">le fichier sous stream</param>
             <returns></returns>
+        </member>
+        <member name="M:ProjetGroupe.ISave.OpenGallery">
+            <summary>
+            Méthode pour ouvrir la galerie du smartphone
+            </summary>
+            <returns>task</returns>
+        </member>
+        <member name="M:ProjetGroupe.ISave.DisplayAlert(System.String)">
+            <summary>
+            Affiche un message Toast qui disparaît après
+            </summary>
+            <param name="message">Le message</param>
         </member>
         <member name="T:ProjetGroupe.Models.Alerte">
             <summary>
@@ -1215,6 +1259,11 @@
             Méthoed asynchrone permettant de charger la liste d'équipement 
             </summary>
         </member>
+        <member name="T:ProjetGroupe.Views.AboutPage">
+            <summary>
+            View de la page A propos
+            </summary>
+        </member>
         <member name="M:ProjetGroupe.Views.AboutPage.#ctor">
             <summary>
             Constructeur de la classe
@@ -1544,6 +1593,11 @@
             Remplissage de la liste à chaquement de lettre/chiffre dans la TextBox du front
             </summary>
             <param name="query">texte dans la TextBox</param>
+        </member>
+        <member name="M:ProjetGroupe.Views.SmartBuildingPage.GetData">
+            <summary>
+            Méthode qui permet de refresh les résultats de la recherche par la même recherche
+            </summary>
         </member>
         <member name="M:ProjetGroupe.Views.SmartBuildingPage.OnItemSelected2(System.Object,Xamarin.Forms.SelectedItemChangedEventArgs)">
             <summary>

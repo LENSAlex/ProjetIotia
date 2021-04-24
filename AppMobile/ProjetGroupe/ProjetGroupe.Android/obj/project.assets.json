@@ -4703,11 +4703,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Poste\\Source\\Repos\\ProjetIotiaV4\\AppMobile\\ProjetGroupe\\ProjetGroupe.Android\\ProjetGroupe.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Poste\\Source\\Repos\\ProjetV5\\AppMobile\\ProjetGroupe\\ProjetGroupe.Android\\ProjetGroupe.Android.csproj",
       "projectName": "ProjetGroupe.Android",
-      "projectPath": "C:\\Users\\Poste\\Source\\Repos\\ProjetIotiaV4\\AppMobile\\ProjetGroupe\\ProjetGroupe.Android\\ProjetGroupe.Android.csproj",
+      "projectPath": "C:\\Users\\Poste\\Source\\Repos\\ProjetV5\\AppMobile\\ProjetGroupe\\ProjetGroupe.Android\\ProjetGroupe.Android.csproj",
       "packagesPath": "C:\\Users\\Poste\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Poste\\Source\\Repos\\ProjetIotiaV4\\AppMobile\\ProjetGroupe\\ProjetGroupe.Android\\obj\\",
+      "outputPath": "C:\\Users\\Poste\\Source\\Repos\\ProjetV5\\AppMobile\\ProjetGroupe\\ProjetGroupe.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -4728,8 +4728,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Users\\Poste\\Source\\Repos\\ProjetIotiaV4\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj": {
-              "projectPath": "C:\\Users\\Poste\\Source\\Repos\\ProjetIotiaV4\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj"
+            "C:\\Users\\Poste\\Source\\Repos\\ProjetV5\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj": {
+              "projectPath": "C:\\Users\\Poste\\Source\\Repos\\ProjetV5\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj"
             }
           }
         }

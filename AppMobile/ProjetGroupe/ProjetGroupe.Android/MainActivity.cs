@@ -112,7 +112,7 @@ namespace ProjetGroupe.Droid
                 {
                     var action = intent.GetStringExtra("action");
 
-                    if (!string.IsNullOrEmpty(action))
+                    if (!string.IsNullOrEmpty(action))                  
                         NotificationActionService.TriggerAction(action);
                 }
             }
@@ -146,7 +146,7 @@ namespace ProjetGroupe.Droid
         protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
         {
             base.OnActivityResult(requestCode, resultCode, data);
-
+            //Demande de permission
             ActivityCompat.RequestPermissions((Activity)Forms.Context, new string[] { (string)Manifest.Permission.WriteExternalStorage }, 1);
             if (requestCode == OPENGALLERYCODE && resultCode == Result.Ok)
             {
@@ -157,14 +157,14 @@ namespace ProjetGroupe.Droid
                 if (data != null)
                 {
                     uri = data.Data;
-
+                    //Récupère la pth de l'image
                     path = GetRealPathFromURI(uri);
                     if (path != null)
-                    {
+                    {               
                         var imageRotated = ImageHelpers.RotateImage((string)path);
                         newPath = ImageHelpers.SaveFile("TmpPictures", imageRotated, System.DateTime.Now.ToString("yyyyMMddHHmmssfff"));
-                        images.Add(newPath);
                     }
+                    //Met le path en variable de profil pour être récupéré par le Shell
                     SecureStorage.SetAsync("PathProfil", newPath);
                     Xamarin.Forms.Application.Current.MainPage = new AppShell();
                 }
@@ -207,10 +207,11 @@ namespace ProjetGroupe.Droid
                     cursor.MoveToFirst();
                     fullPathToImage = cursor.GetString(colData);
                 }
+                //Donne le path de l'image sélectionnée
                 return (string)fullPathToImage;
             }
             catch (Exception ex)
-            {
+            {       
                 Toast.MakeText(Forms.Context, "Récupération du chemin", ToastLength.Long).Show();
             }
             return null;

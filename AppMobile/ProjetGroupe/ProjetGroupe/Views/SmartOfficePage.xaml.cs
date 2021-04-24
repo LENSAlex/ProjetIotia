@@ -95,7 +95,7 @@ namespace ProjetGroupe.Views
         /// <returns></returns>
         public async Task UpdateStockAsync(int idSalle, int idEquip)
         {
-
+            //Création d'un objet pénurie
             Penurie penurie = new Penurie()
             {
                 date_maj = DateTime.Now,
@@ -128,8 +128,9 @@ namespace ProjetGroupe.Views
             if (_Salle != null)
             {
                 CapteurType laSalle = new CapteurType();
+                //On récupère l'id de la salle
                 laSalle.SalleId = _Salle[0].SalleId;
-                var result = await DisplayAlert("Attention!", "Voulez vous vraiment alterter que ce produit est en pénurie?", "Valider", "Annuler");
+                var result = await DisplayAlert("Attention!", "Voulez-vous vraiment alterter que ce produit est en pénurie?", "Valider", "Annuler");
                 if (result == true)
                 {
                     UpdateStockAsync(laSalle.SalleId, idEquip);

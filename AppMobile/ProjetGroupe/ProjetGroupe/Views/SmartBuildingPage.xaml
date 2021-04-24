@@ -34,15 +34,14 @@
            FontSize="16"
            FontFamily="ThemeFontBold"
            FontAttributes="Italic" 
-                   SearchCommandParameter="{Binding Text, Source={x:Reference searchBar}}"/>
+                   SearchCommandParameter="{Binding Text, Source={x:Reference searchBar}}" />
             </Grid>
         </Frame>
         <Grid Grid.Row="3">
-            <BoxView Margin="20,-8,20,0" HeightRequest="3" VerticalOptions="Start" HorizontalOptions="FillAndExpand" BackgroundColor="LightGray"/>
-            <Label FontFamily="ThemeFontBold" Margin="20,-8,20,0" Text="Résultat de la recherche:" TextColor="DarkGray" FontSize="12" HorizontalOptions="FillAndExpand"/>
+            <Label FontFamily="ThemeFontBold" Margin="20,-10,20,0" Text="Résultat de la recherche:" TextColor="DarkGray" FontSize="14" HorizontalOptions="FillAndExpand"/>
         </Grid>
-        <ListView x:Name="searchResults" ItemsSource="{Binding SearchResults}" ItemSelected="OnItemSelected2" SeparatorVisibility="None"
-                  Grid.Row="3" Margin="20,10" HeightRequest="320">
+        <ListView x:Name="searchResults" ItemsSource="{Binding SearchResults}" ItemSelected="OnItemSelected2" SeparatorVisibility="None" IsPullToRefreshEnabled="True" RefreshCommand="{Binding RefreshCommand}"
+           IsRefreshing="{Binding IsRefreshing}" Grid.Row="3" Margin="20,10" HeightRequest="320">
             <ListView.ItemTemplate StyleClass="ListViewCustom">
                 <DataTemplate>
                     <ViewCell>

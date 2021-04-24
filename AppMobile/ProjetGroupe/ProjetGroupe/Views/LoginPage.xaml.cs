@@ -38,10 +38,12 @@ namespace ProjetGroupe.Views
             var entry = (Entry)sender;
             if((!string.IsNullOrEmpty(Identifiant.Text) && !string.IsNullOrEmpty(entry.Text)))
             {
+                //Requête search de connexion
                 Personne utilisateur = Personne.Search(Identifiant.Text, MHash.HashString(entry.Text));
 
                 if (utilisateur != null)
                 {
+                    //On met la variable de session dans de l'id de l'utilsiateur 
                     SecureStorage.SetAsync("isLogged", "1");
                     SecureStorage.SetAsync("Id", utilisateur.Id.ToString());
                     await ProgressBar.ProgressTo(1, 500, Easing.Linear);
@@ -64,6 +66,7 @@ namespace ProjetGroupe.Views
             var entry = (Entry)sender;
             if(entry.Text != "")
             {
+                //Changement d'input text 
                 FramePsw.BackgroundColor = Color.Transparent;
                 Password.Placeholder = "Mot de passe";
                 Password.IsEnabled = true;

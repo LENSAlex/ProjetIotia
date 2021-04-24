@@ -97,7 +97,7 @@ namespace ProjetGroupe
             InitializeComponent();
             this.BindingContext = this;
             _notificationRegistrationService = ServiceContainer.Resolve<INotificationRegistrationService>();
-
+            //Toutes nos pages enregistrées dans le shell
             Routing.RegisterRoute(nameof(AccueilPage), typeof(AccueilPage));
             Routing.RegisterRoute(nameof(SmartOfficePage), typeof(SmartOfficePage));
             Routing.RegisterRoute(nameof(SmartBuildingPage), typeof(SmartBuildingPage));
@@ -116,6 +116,7 @@ namespace ProjetGroupe
         /// <param name="e">L'action du click</param>
         private void OnMenuItemClicked(object sender, EventArgs e)
         {
+            //Logout on supprime toutes les variables
             SecureStorage.Remove("CapteurId");
             SecureStorage.Remove("isLogged");
             Application.Current.MainPage = new LoginPage();
@@ -210,6 +211,7 @@ namespace ProjetGroupe
         /// <param name="obj">Le click</param>
         private async void SetImgAsync(object obj)
         {
+            //On ouvre la galerie pour choisir la photo
             DependencyService.Get<ISave>().OpenGallery();
             isVisible = "true";
         }

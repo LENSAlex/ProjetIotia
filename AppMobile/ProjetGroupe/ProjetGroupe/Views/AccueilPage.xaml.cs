@@ -66,14 +66,18 @@ namespace ProjetGroupe.Views
         /// <returns>task</returns>
         public async Task NotifyAdmin(CasCovid cas, Personne personne)
         {
-            var result = await CasCovid.SendAlert(cas);
-            if(result == "Ok")
+            var resultBool = await DisplayAlert("Attention!", "Envoyer l'alerte ?", "Oui", "Non");
+            if (resultBool == true)
             {
-                SetInfo(personne);
-            }
-            else
-            {
-                DependencyService.Get<ISave>().DisplayAlert("Erreur lors de l'envois de l'alerte");
+                var result = await CasCovid.SendAlert(cas);
+                if (result == "Ok")
+                {
+                    SetInfo(personne);
+                }
+                else
+                {
+                    DependencyService.Get<ISave>().DisplayAlert("Erreur lors de l'envois de l'alerte");
+                }
             }
         }
         /// <summary>
@@ -82,7 +86,7 @@ namespace ProjetGroupe.Views
         /// <param name="personne">La personne qui emet l'alerte</param>
         public void SetInfo(Personne personne)
         {
-            DependencyService.Get<ISave>().DisplayAlert("Alerte envoyé avec succès");
+            DependencyService.Get<ISave>().DisplayAlert("Alerte envoyée avec succès");
             personne.RappelMail(personne);
             SendNotification();
         }

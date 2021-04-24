@@ -68,6 +68,7 @@ namespace ProjetGroupe.ViewModels
         public eCovidViewModel()
         {
             Device.BeginInvokeOnMainThread(() => GetData());
+            //Commande de click sur le bouton Générer PDF
             ClickedTest = new Command(OnClickedTestClickedAsync);
         }
         /// <summary>
@@ -81,8 +82,10 @@ namespace ProjetGroupe.ViewModels
             if (listeHisto != null)
             {
                 List<Historique> data = new List<Historique>();
+                //on récupère toutes les lignes de notre historique de mesures
                 foreach (Historique histo in listeHisto)
                 {
+                    //On en fait une nouvelle liste
                     data.Add(new Historique
                     {
                         Id_device = histo.Id_device,
@@ -92,6 +95,7 @@ namespace ProjetGroupe.ViewModels
                         Unite = histo.Unite
                     });
                 }
+                //Qu'on envoie dans la fonction de génération de pdf qu'il va ensuite utiliser
                 Personne.GeneratePdfAsync(40, data);                
             }
         }

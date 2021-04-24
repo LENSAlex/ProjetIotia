@@ -11,8 +11,6 @@ using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using static ProjetGroupe.ViewModels.AboutViewModel;
-using static ProjetGroupe.Views.CapteursDetailsPage;
 
 namespace ProjetGroupe.Views
 {

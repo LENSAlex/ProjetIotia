@@ -34,7 +34,7 @@ class SaveAndroid : ISave
         {
             ActivityCompat.RequestPermissions((Activity)Forms.Context, new String[] { Manifest.Permission.WriteExternalStorage }, 1);
         }
-
+        //Création de dossier SmartCovid 
         string newRoot = Android.App.Application.Context.GetExternalFilesDir(null).AbsolutePath;
         Java.IO.File myDir = new Java.IO.File(newRoot + "/SmartCovid");
         Directory.CreateDirectory(myDir.ToString());

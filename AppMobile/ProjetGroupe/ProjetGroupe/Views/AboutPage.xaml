@@ -32,7 +32,7 @@
             <Grid HorizontalOptions="Center" VerticalOptions="Center">
                 <Label Text="Alertez quand un produit est en pérunie" TextColor="White" FontSize="52" FontAttributes="Bold" VerticalOptions="Center"/>
                 <Label Text="Tel: 04 97 25 82 00" FontFamily="ThemeFontBold" HorizontalOptions="Start" TextColor="DarkGray" FontSize="12" Margin="20,10,10,20" VerticalOptions="Start"/>
-                <Label Text="Adresse: 650 route des Colles, Site de Sophia-Antipolis" FontFamily="ThemeFontBold" HorizontalOptions="Start" TextColor="DarkGray" FontSize="12" Margin="20,25,10,20" VerticalOptions="Start"/>
+                <Label Text="Adresse: 650 route des Colles" FontFamily="ThemeFontBold" HorizontalOptions="Start" TextColor="DarkGray" FontSize="12" Margin="20,25,10,20" VerticalOptions="Start"/>
                 <Label Text="06560 Valbonne" FontFamily="ThemeFontBold" HorizontalOptions="Start" TextColor="DarkGray" FontSize="12" Margin="20,40,10,20" VerticalOptions="Start"/>
                 <Label Text="Email: contact@iut-cote-dazur.fr" FontFamily="ThemeFontBold" HorizontalOptions="Start" TextColor="DarkGray" FontSize="12" Margin="20,55,10,20" VerticalOptions="Start"/>
                 <Label Text="Nombre de malade atteind du covid à l'IUT:" FontFamily="ThemeFontBold" HorizontalOptions="Start" TextColor="DarkGray" FontSize="12" Margin="20,70,10,20" VerticalOptions="Start"/>

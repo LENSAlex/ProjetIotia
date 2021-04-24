@@ -1594,6 +1594,11 @@
             </summary>
             <param name="query">texte dans la TextBox</param>
         </member>
+        <member name="M:ProjetGroupe.Views.SmartBuildingPage.GetData">
+            <summary>
+            Méthode qui permet de refresh les résultats de la recherche par la même recherche
+            </summary>
+        </member>
         <member name="M:ProjetGroupe.Views.SmartBuildingPage.OnItemSelected2(System.Object,Xamarin.Forms.SelectedItemChangedEventArgs)">
             <summary>
             Evènement lors de la sélection d'un item de la liste 

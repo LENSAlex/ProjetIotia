@@ -3846,11 +3846,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Poste\\Source\\Repos\\ProjetIotiaV4\\AppMobile\\ProjetGroupe\\ProjetGroupe.iOS\\ProjetGroupe.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Poste\\Source\\Repos\\ProjetV5\\AppMobile\\ProjetGroupe\\ProjetGroupe.iOS\\ProjetGroupe.iOS.csproj",
       "projectName": "ProjetGroupe.iOS",
-      "projectPath": "C:\\Users\\Poste\\Source\\Repos\\ProjetIotiaV4\\AppMobile\\ProjetGroupe\\ProjetGroupe.iOS\\ProjetGroupe.iOS.csproj",
+      "projectPath": "C:\\Users\\Poste\\Source\\Repos\\ProjetV5\\AppMobile\\ProjetGroupe\\ProjetGroupe.iOS\\ProjetGroupe.iOS.csproj",
       "packagesPath": "C:\\Users\\Poste\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Poste\\Source\\Repos\\ProjetIotiaV4\\AppMobile\\ProjetGroupe\\ProjetGroupe.iOS\\obj\\",
+      "outputPath": "C:\\Users\\Poste\\Source\\Repos\\ProjetV5\\AppMobile\\ProjetGroupe\\ProjetGroupe.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -3871,8 +3871,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Poste\\Source\\Repos\\ProjetIotiaV4\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj": {
-              "projectPath": "C:\\Users\\Poste\\Source\\Repos\\ProjetIotiaV4\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj"
+            "C:\\Users\\Poste\\Source\\Repos\\ProjetV5\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj": {
+              "projectPath": "C:\\Users\\Poste\\Source\\Repos\\ProjetV5\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj"
             }
           }
         }

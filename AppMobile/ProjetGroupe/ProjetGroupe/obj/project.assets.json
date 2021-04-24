@@ -2983,11 +2983,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Poste\\Source\\Repos\\ProjetIotiaV4\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj",
+      "projectUniqueName": "C:\\Users\\Poste\\Source\\Repos\\ProjetV5\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj",
       "projectName": "ProjetGroupe",
-      "projectPath": "C:\\Users\\Poste\\Source\\Repos\\ProjetIotiaV4\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj",
+      "projectPath": "C:\\Users\\Poste\\Source\\Repos\\ProjetV5\\AppMobile\\ProjetGroupe\\ProjetGroupe\\ProjetGroupe.csproj",
       "packagesPath": "C:\\Users\\Poste\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Poste\\Source\\Repos\\ProjetIotiaV4\\AppMobile\\ProjetGroupe\\ProjetGroupe\\obj\\",
+      "outputPath": "C:\\Users\\Poste\\Source\\Repos\\ProjetV5\\AppMobile\\ProjetGroupe\\ProjetGroupe\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",

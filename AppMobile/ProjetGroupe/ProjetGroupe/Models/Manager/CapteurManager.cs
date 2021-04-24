@@ -39,6 +39,7 @@ namespace ProjetGroupe.Models.Manager
                 if (response.IsSuccessStatusCode)
                 {
                     var content = await response.Content.ReadAsStringAsync();
+                    //Déserialisation de la chaîne json au format ObservableCollection<CapteurType>
                     list = JsonConvert.DeserializeObject<ObservableCollection<CapteurType>>(content);
                     return list;
                 }

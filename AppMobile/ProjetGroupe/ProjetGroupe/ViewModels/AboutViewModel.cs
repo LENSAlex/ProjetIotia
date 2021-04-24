@@ -90,6 +90,7 @@ namespace ProjetGroupe.ViewModels
         /// </summary>
         public AboutViewModel()
         {
+            //On charge nos liste sur le thread principal
             Device.BeginInvokeOnMainThread(() => GetCovidDep());
             Device.BeginInvokeOnMainThread(() => GetCovidForm());
             Device.BeginInvokeOnMainThread(() => GetCovidAll());

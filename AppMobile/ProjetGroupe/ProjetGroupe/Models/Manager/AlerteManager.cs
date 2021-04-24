@@ -24,6 +24,7 @@ namespace ProjetGroupe.Models.Manager
             httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
             StringBuilder sb = new StringBuilder();
 
+            //Mise en place de la chaîne json à envoyer
             sb.Append(@"{""text"" : ""Attention, une personne a été signalé ayant la covid"",");
             sb.Append(@"""action"" : ""action_a""");
             sb.Append("}");
@@ -32,6 +33,7 @@ namespace ProjetGroupe.Models.Manager
             StringContent content = new StringContent(jsonData, Encoding.UTF8, "application/json");
             try
             {
+                //Post de la chaîne json sur l'uri
                 var response = await httpClient.PostAsync(uri, content);
                 return true;
             }
