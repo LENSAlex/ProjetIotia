@@ -149,6 +149,18 @@ app.get("/Infrastructure/Info/NBEtage/:IdBatiment", (req, res) => {
     });
 })
 
+//List batiment simple
+app.get("/Infrastructure/ListSalle", (req, res) => {
+    conn.query("select Salle.id_salle , Batiment.nom from Salle , Etage , Batiment where Salle.id_etage = Etage.id_etage and Batiment.id_batiment = Etage.id_batiment ", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
 
 
 
