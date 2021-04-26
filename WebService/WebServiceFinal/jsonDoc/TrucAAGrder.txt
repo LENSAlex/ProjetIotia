@@ -1,0 +1,211 @@
+Truc a Garder Doc WebService:
+
+
+POST Infrastcructure:--------------------
+/Infrastructure/Add/Batiment/{Nom}/{Superficie}/{IdCampus}/{EtageSuperficie}:
+    post:
+      tags:
+      - Infrastructure
+      summary: Ajout d'un batiment et étage
+      operationId: InsertBatEtage
+      produces:
+      - application/json
+      parameters:
+      - name: Nom
+        in: path
+        description: Nom du batiment 
+        required: true
+        type: string
+        format: UTF-8
+      - name: Superficie
+        in: path
+        description: La superficie du batiment
+        required: true
+        type: integer
+      - name: IdCampus
+        in: path
+        description: Id du campus
+        required: true
+        type: integer
+      - name: EtageSuperficie
+        in: path
+        description: La superficie de l'étage
+        required: true
+        type: integer
+      responses:
+        200:
+          description: Batiment et etage creer
+        405:
+          description: Requete invalid
+  /Infrastructure/Add/Salle/{IdEtage}/{Nom}/{CapaciteMax}/{Surface}/{Volume}:
+    post:
+      tags:
+      - Batiment
+      summary: Ajout d'une salle
+      operationId: InsertSalle
+      produces:
+      - application/json
+      parameters:
+      - name: IdEtage
+        in: path
+        description: l'id de l'étage
+        required: true
+        type: integer
+      - name: Nom
+        in: path
+        description: Le nom d'une salle
+        required: true
+        type: string
+      - name: CapaciteMax
+        in: path
+        description: Capacité maximum
+        required: true
+        type: integer
+      - name: Surface
+        in: path
+        description: La superficie de la salle
+        required: true
+        type: integer
+      - name: Volume
+        in: path
+        description: Le volume de la salle
+        required: true
+        type: integer
+      responses:
+        200:
+          description: Salle cree
+        405:
+          description: Requete invalid
+
+
+
+
+
+
+
+
+
+
+
+POST et delete des Usagers--------------------------
+/Usager/Add/{NumRef}/{IdPersType}/{Password}/{Email}/{Tel}/{Sexe}/{Nom}/{Prenom}/{Birth}/{IdPromo}:
+    post:
+      tags:
+      - Usager
+      summary: Ajout d'une personne
+      operationId: InsertPers
+      produces:
+      - application/json
+      parameters:
+      - name: NumRef
+        in: path
+        description: Numero de reférence de la personne
+        required: true
+        type: integer
+        format: int64
+      - name: IdPersType
+        in: path
+        description: Id de la personne
+        required: true
+        type: integer
+      - name: Password
+        in: path
+        description: Mot de passe de la personne
+        required: true
+        type: string
+      - name: Email
+        in: path
+        description: Email de la personne
+        required: true
+        type: string
+      - name: Tel
+        in: path
+        description: Téléphone de la personne
+        required: true
+        type: string
+      - name: Sexe
+        in: path
+        description: Sexe de la personne
+        required: true
+        type: string
+      - name: Nom
+        in: path
+        description: Nom de la personne
+        required: true
+        type: string
+      - name: Prenom
+        in: path
+        description: Prenom de la personne
+        required: true
+        type: string
+      - name: Birth
+        in: path
+        description: Date de naissance de la personne
+        required: true
+        type: string
+      - name: IdPromo
+        in: path
+        description: Id de la promo
+        required: true
+        type: integer
+      responses:
+        200:
+          description: Etudiant integrer dans la table Contenir
+        405:
+          description: Requete invalid
+  /Usager/Add/Promo/{IdDepartement}/{NomFormation}/{DureeFormation}/{AnneePromotion}/{IdProfesseurPromotion}:
+    post:
+      tags:
+      - Usager
+      summary: Création d'une promotion
+      operationId: InsertPromo
+      produces:
+      - application/json
+      parameters:
+      - name: IdDepartement
+        in: path
+        description: Id du département
+        required: true
+        type: integer
+        format: int64
+      - name: NomFormation
+        in: path
+        description: Nom de la formation
+        required: true
+        type: string
+      - name: DureeFormation
+        in: path
+        description: Durée de la formation
+        required: true
+        type: integer
+      - name: AnneePromotion
+        in: path
+        description: Année de la promotion
+        required: true
+        type: string
+      - name: IdProfesseurPromotion
+        in: path
+        description: Id du professeur de la promotion
+        required: true
+        type: integer
+      responses:
+        200:
+          description: Promotion crée
+        405:
+          description: Requete invalid
+  /Usager/Delete/{IdUser}:
+    delete:
+      tags:
+      - Usager
+      summary: Supprimer un utilisateur
+      operationId: deleteUser
+      produces:
+      - application/json
+      parameters:
+      - name: IdUser
+        in: path
+        required: true
+        type: integer
+      responses:
+        400:
+          description: Invalid ID supplied
