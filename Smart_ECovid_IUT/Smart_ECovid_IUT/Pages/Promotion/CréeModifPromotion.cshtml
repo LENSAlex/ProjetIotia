@@ -1,7 +1,8 @@
-﻿@page
+﻿@page 
 @model Smart_ECovid_IUT.Pages.Promotion.CréeModifPromotionModel
+@using ClasseE_Covid.Utilisateur
 @{
-    ViewData["Title"] = "Home page";
+    //ViewData["Title"] = "Home page";
 }
 <div class="container">
     <div class="border-bottom mb-4">
@@ -23,7 +24,7 @@
                             </div>
                             <div class="col-md-4 mb-3">
                                 <label for="Nom">Année</label>
-                                <input type="text" class="form-control" id="id" name="id" placeholder="2020" required />
+                                <input type="text" class="form-control" id="annee" name="annee" placeholder="2020" required />
                             </div>
                             <div class="col-md-4 mb-3">
                                 <label for="Batiment">Durée</label>
@@ -31,9 +32,24 @@
 
                             </div>
                             <div class="col-md-4 mb-3">
+                                <label for="Batiment">Nom du Département</label>
+                                <select class="form-control select" aria-hidden="true" id="departement" name="departement">
+                                    <option value="1">INFO</option>
+                                    <option value="2">QLIO</option>
+                                    <option value="2">R&T</option>
+                                    <option value="4">INFOCOM</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 mb-3">
                                 <label for="Batiment">Prof principale</label>
                                 <select class="form-control select" aria-hidden="true" id="prof" name="prof">
-                                    <option value="1">True</option>
+                                    @if (Model.DDProf != null)
+                                    {
+                                        @foreach (Prof prof in Model.DDProf)
+                                        {
+                                            <option value="@prof.IdProf">@prof.NomProf @prof.PrenomProf</option>
+                                        }
+                                    }
                                 </select>
                             </div>
                         </div>

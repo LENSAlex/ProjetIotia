@@ -1,5 +1,6 @@
 ﻿@page
 @model Smart_ECovid_IUT.Pages.Capteur.AfficheCapteurModel
+@using ClasseE_Covid.Capteur;
 @{
 
 }
@@ -23,21 +24,14 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">Température</th>
-                                <td>Box - 1</td>
-                                <td>12 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Température</th>
-                                <td>Box - 52</td>
-                                <td>52</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Température</th>
-                                <td>Box - 628</td>
-                                <td>25</td>
-                            </tr>
+                            @foreach (Temperature temperature in Model.Temperature)
+                            {
+                                <tr>
+                                    <td>@temperature.NomTemp</td>
+                                    <td>@temperature.NomBox</td>
+                                    <td>@temperature.ValeurTemp</td>
+                                </tr>
+                            }
 
                         </tbody>
                     </table>
@@ -59,21 +53,14 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">Co2</th>
-                                <td>Box - 1</td>
-                                <td>626<td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Co2</th>
-                                <td>Box - 52</td>
-                                <td>542</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Co2</th>
-                                <td>Box - 628</td>
-                                <td>225</td>
-                            </tr>
+                            @foreach (Co2 co2 in Model.Co2)
+                            {
+                                <tr>
+                                    <td>@co2.NomCo2</td>
+                                    <td>@co2.NomBox</td>
+                                    <td>@co2.ValeurCo2</td>
+                                </tr>
+                            }
 
                         </tbody>
                     </table>
@@ -83,32 +70,24 @@
         <div class="col-md-6 mb-4">
             <div class="card">
                 <div class="card-header border-bottom">
-                    <h3>Liste Capteur Energie</h3>
+                    <h3>Liste Box Energie</h3>
                 </div>
                 <div class="table-responsive">
                     <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th scope="col">Nom</th>
                                 <th scope="col">Box</th>
                                 <th scope="col">Watt</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">Co2</th>
-                                <td>Box - 1</td>
-                                <td>3047 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Température</th>
-                                <td>Box - 52</td>
-                                <td>2562</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">RFID</th>
-                                <td>Box - 628</td>
-                                <td>5893</td>
+                            @foreach (Energie nrj in Model.Energie)
+                            {
+                                <tr>
+                                    <td>@nrj.NomBox</td>
+                                    <td>@nrj.ValeurEnergie</td>
+                                </tr>
+                            }
                             </tr>
 
                         </tbody>

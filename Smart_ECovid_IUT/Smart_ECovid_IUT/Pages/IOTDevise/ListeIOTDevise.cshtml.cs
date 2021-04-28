@@ -14,8 +14,8 @@ namespace Smart_ECovid_IUT.Pages.IOTDevise
     {
         private readonly IHttpClientFactory _clientFactory;
 
-        public IEnumerable<ClasseE_Covid.IOTDevise.IOTDevise> Branches { get; private set; } //IOTDevise et une class
-        public IEnumerable<ClasseE_Covid.IOTDevise.IOTDevise> Branches2 { get; private set; } //IOTDevise et une class
+        public IEnumerable<ClasseE_Covid.IOTDevise.IOTDevise> Devise { get; private set; } //IOTDevise et une class
+        public IEnumerable<ListeCapteur> Capteur { get; private set; } //IOTDevise et une class
 
         public bool GetBranchesError { get; private set; }
 
@@ -25,8 +25,13 @@ namespace Smart_ECovid_IUT.Pages.IOTDevise
         }
         public async Task OnGet()
         {
+            await LoadIOTDevise();
+            await LoadCapteur();
+        }
+        public async Task LoadIOTDevise()
+        {
             var request = new HttpRequestMessage(HttpMethod.Get,
-           "http://51.75.125.121:3001/Personne/Box/Info"); 
+           "http://51.75.125.121:3001/Capteur/Box/Info");
             request.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
             request.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
 
@@ -37,34 +42,37 @@ namespace Smart_ECovid_IUT.Pages.IOTDevise
             if (response.IsSuccessStatusCode)
             {
                 using var responseStream = await response.Content.ReadAsStreamAsync(); // recupaire les donnée de api et les mette dans le responseStream
-                Branches = await JsonSerializer.DeserializeAsync
+                Devise = await JsonSerializer.DeserializeAsync
                 <IEnumerable<ClasseE_Covid.IOTDevise.IOTDevise>>(responseStream); // remplie la class Campus 
             }
             else
             {
                 GetBranchesError = true;
-                Branches = Array.Empty<ClasseE_Covid.IOTDevise.IOTDevise>();
+                Devise = Array.Empty<ClasseE_Covid.IOTDevise.IOTDevise>();
             }
+        }
 
-            var request2 = new HttpRequestMessage(HttpMethod.Get,
-          "http://51.75.125.121:3001/Personne/ListDevice/All");
-            request2.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
-            request2.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
+        public async Task LoadCapteur()
+        {
+            var request = new HttpRequestMessage(HttpMethod.Get,
+           "http://51.75.125.121:3001/Capteur/ListCapteur");
+            request.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
+            request.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
 
-            var client2 = _clientFactory.CreateClient();
+            var client = _clientFactory.CreateClient();
 
-            var response2 = await client.SendAsync(request2); // vus que la fonction est async elle vas s'arreter ici pour attendre une reponce 
+            var response = await client.SendAsync(request); // vus que la fonction est async elle vas s'arreter ici pour attendre une reponce 
 
             if (response.IsSuccessStatusCode)
             {
-                using var responseStream2 = await response2.Content.ReadAsStreamAsync(); // recupaire les donnée de api et les mette dans le responseStream
-                Branches2 = await JsonSerializer.DeserializeAsync
-                <IEnumerable<ClasseE_Covid.IOTDevise.IOTDevise>>(responseStream2); // remplie la class Campus 
+                using var responseStream2 = await response.Content.ReadAsStreamAsync(); // recupaire les donnée de api et les mette dans le responseStream
+                Capteur = await JsonSerializer.DeserializeAsync
+                <IEnumerable<ListeCapteur>>(responseStream2); // remplie la class Campus 
             }
             else
             {
                 GetBranchesError = true;
-                Branches2 = Array.Empty<ClasseE_Covid.IOTDevise.IOTDevise>();
+                Capteur = Array.Empty<ListeCapteur>();
             }
         }
     }

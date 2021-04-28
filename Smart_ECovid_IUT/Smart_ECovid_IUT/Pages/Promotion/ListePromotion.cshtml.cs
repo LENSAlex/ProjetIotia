@@ -24,8 +24,13 @@ namespace Smart_ECovid_IUT.Pages.Promotion
         }
         public async Task OnGet()
         {
+            await Load();
+        }
+
+        public async Task Load()
+        {
             var request = new HttpRequestMessage(HttpMethod.Get,
-           "http://51.75.125.121:3001/Personne/ListPromo");
+         "http://51.75.125.121:3001/Personne/ListPromo");
             request.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
             request.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
 
@@ -43,6 +48,33 @@ namespace Smart_ECovid_IUT.Pages.Promotion
             {
                 GetBranchesError = true;
                 Branches = Array.Empty<PromotionClass>();
+            }
+        }
+        public async void OnGetDeleteUser(int id)
+        {
+            var httpClient = new HttpClient();
+            string WebAPIUrl = "http://51.75.125.121:3001/Personne/Delete/" + Convert.ToString(id);
+            Uri uri = new Uri(WebAPIUrl);
+
+            var response = await httpClient.DeleteAsync(uri);
+
+            await Load();
+            try
+            {
+                if (response.IsSuccessStatusCode)
+                {
+                    var result = await response.Content.ReadAsStringAsync();
+                    Console.WriteLine(result);
+                }
+                else
+                {
+                    Console.WriteLine("ErreurStatusCode");
+                }
+            }
+            catch (Exception e)
+            {
+                //Debug.WriteLine(e.Message);
+                Console.WriteLine("ErreurTryCatch");
             }
         }
     }

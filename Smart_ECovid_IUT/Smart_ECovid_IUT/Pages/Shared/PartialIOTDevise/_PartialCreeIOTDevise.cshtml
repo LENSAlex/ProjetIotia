@@ -1,0 +1,61 @@
+﻿@model Smart_ECovid_IUT.Pages.Campus.CreeModifCampusModel
+@using ClasseE_Covid.Campus;
+
+<div class="row">
+    <div class="col-md-6 mb-3 ">
+        <label for="etage">Nombre d'etage</label>
+        <select class="form-control select2-multiple" name="etage" aria-hidden="true">
+            <option value="null">"-- Selection de l'étage --"</option>
+            @{
+                if (Model.DDEtage != null)
+                    foreach (DDEtage etage in Model.DDEtage)
+                    {
+                        <option value="@etage.DDIdEtage">@etage.DDNumEtage</option>
+                    }
+            }
+        </select>
+    </div>
+
+    <div class="col-md-6 mb-3 ">
+        <label for="etage">Nombe de Salle</label>
+        <input type="text" class="form-control label nbSalle" id="nbEtage" name="nbEtage" placeholder="200" required />
+    </div>
+
+    <div class="col-md-4 mb-3 salleenplus">
+    </div>
+
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
+
+    $(".nbSalle").keyup(function (e) {
+
+        $(this).val($(this).val().replace(/[a-zA-Z]/, ""));
+
+        if ($(this).val() == "0") {
+            $(this).val("1");
+        }
+
+        if ($(this).val() >= 6) {
+            $(this).val("6");
+        }
+
+        var salle = $(this).val();
+
+        var intetage = parseInt(salle);
+
+        var i;
+        for (i = 0; i < intetage; i++) {
+
+            var leclass = "superfice" + i.toString();
+
+            var txt1 = '<div class="col-md-12 mb-3">\
+            <label for="' + leclass + '" class="' + leclass + '">Superfice Salle ' + i.toString() + '</label> \
+            <input type="text" class="form-control ' + leclass + ' " id="' + leclass + '" placeholder="200" name="' + leclass + '" required /> \
+                    </div > ';
+            $(".salleenplus").append(txt1);
+        }
+    })
+
+</script>

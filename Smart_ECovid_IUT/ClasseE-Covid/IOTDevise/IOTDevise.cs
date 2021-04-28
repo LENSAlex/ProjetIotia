@@ -32,29 +32,10 @@ namespace ClasseE_Covid.IOTDevise
         [JsonPropertyName("NomSalle")]
         public string IdSalleBox { get; set; }
 
-        //[JsonPropertyName("PanneauSolaire")]
-        //public int NbPanneauSolaire { get; set; }
+        [JsonPropertyName("PanneauSolaire")]
+        public int NbPanneauSolaire { get; set; }
 
-        //[JsonPropertyName("NbBouton")]
-        //public int NbBouton { get; set; }
-
-
-
-        /// <summary>
-        /// liste Capteur
-        /// </summary>
-        [JsonPropertyName("id_devicetype")]
-        public int IDBoxCapteur { get; set; }
-
-        [JsonPropertyName("IDBoxCapteur")] 
-        public int IdCapteur { get; set; }
-
-        [JsonPropertyName("libelle_type")]
-        public string NomCapteur { get; set; }
-
-        [JsonPropertyName("TypeCapteur")]
-        public int TypeCapteur { get; set; }
-        
-
+        [JsonPropertyName("NbBouton")]
+        public int NbBouton { get; set; }
     }
 }

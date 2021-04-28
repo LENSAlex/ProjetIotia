@@ -1,5 +1,8 @@
 ﻿@page
 @model Smart_ECovid_IUT.Pages.IOTDevise.CreeModifIOTDeviseModel
+@using ClasseE_Covid.Capteur;
+@using ClasseE_Covid.Campus;
+
 @{
     ViewData["Title"] = "Home page";
 }
@@ -11,135 +14,198 @@
         <div class="col-md-12 mb-4">
             <div class="card mb-4">
                 <div class="card-header border-bottom">
-                    <h3>Création Box</h3>
+                    <h3>Création Box et Capteur</h3>
                 </div>
                 <div class="card-body border-bottom">
-                    <form>
+                    <form method="post">
                         <div class="form-row">
                             <div class="col-md-4 mb-3">
                                 <label for="Nom">Nom</label>
-                                <input type="text" class="form-control" id="Nom" placeholder="Nom" required />
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <label for="Nom">Ip</label>
-                                <input type="text" class="form-control" id="Ip" placeholder="Ip" required />
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <label for="Nom">Description</label>
-                                <input type="text" class="form-control" id="Ip" placeholder="Ip" required />
-                            </div>
-                            <div class="col-md-6 mb-3 ">
-                                <label for="Batiment">Batiment</label>
-                                <select class="form-control select2-multiple" aria-hidden="true">
-                                    <option data-tokens="ketchup mustard">INFORMATIQUE </option>
-                                    <option data-tokens="mustard">INFO COM</option>
-                                    <option data-tokens="frosting">Cyber</option>
-                                </select>
-                            </div>
-                            <div class="col-md-6 mb-3 ">
-                                <label for="Etage">Etage</label>
-                                <select class="form-control select2-multiple" aria-hidden="true">
-                                    <option data-tokens="ketchup mustard">1</option>
-                                    <option data-tokens="mustard">2</option>
-                                    <option data-tokens="frosting">3</option>
-                                </select>
-                            </div>
-                            <div class="col-md-6 mb-3 ">
-                                <label for="validationDefault03">Salle</label>
-                                <select class="form-control select2-multiple" aria-hidden="true">
-                                    <option data-tokens="ketchup mustard">102</option>
-                                    <option data-tokens="mustard">202</option>
-                                    <option data-tokens="frosting">306</option>
-                                </select>
-                            </div>
-                        </div>
-                        <button class="btn btn-primary" type="submit">Submit form</button>
-                    </form>
-                </div>
-            </div>
-
-            <div class="card mb-4">
-                <div class="card-header border-bottom">
-                    <h3>Création Capteur</h3>
-                </div>
-                <div class="card-body border-bottom">
-                    <form>
-                        <div class="form-row">
-                            <div class="col-md-4 mb-3">
-                                <label for="Nom">Nom</label>
-                                <input type="text" class="form-control" id="Nom" placeholder="Nom" required />
+                                <input type="text" class="form-control" id="nom" name="nom" placeholder="nom" required />
                             </div>
                             <div class="col-md-4 mb-3 ">
-                                <label for="Batiment">Capteur</label>
-                                <select class="form-control select2-multiple" aria-hidden="true">
-                                    <option data-tokens="ketchup mustard">Tepérature</option>
-                                    <option data-tokens="mustard">Caméra</option>
-                                    <option data-tokens="frosting">Présion</option>
+                                <label for="Batiment">Type Capteur</label>
+                                <select class="form-control select2-multiple" name="type" aria-hidden="true">
+                                    @{
+                                        if (Model.DDTypeCapteur != null)
+                                        {
+                                            foreach (TypeCapteur typeCapteur in Model.DDTypeCapteur)
+                                            {
+                                                if (typeCapteur.NomTypeDevice != "BOX" && typeCapteur.NomTypeDevice != "BOX" && typeCapteur.NomTypeDevice != "Panneau solaire" && typeCapteur.NomTypeDevice != "Capteur bouton")
+                                                {
+                                                    <option value="@typeCapteur.IdTypeDevice">@typeCapteur.NomTypeDevice</option>
+                                                }
+                                            }
+                                        }
+                                    }
                                 </select>
                             </div>
                             <div class="col-md-4 mb-3 ">
-                                <label for="Batiment">Box</label>
-                                <select class="form-control select2-multiple" aria-hidden="true">
-                                    <option data-tokens="ketchup mustard">Box - IOTIA </option>
-                                    <option data-tokens="mustard">Box - DAM</option>
-                                    <option data-tokens="frosting">Box - Cyber</option>
+                                <label for="Batiment">Date Installation</label>
+                                <input type="text" class="form-control date" id="installation" name="installation" placeholder="installation" required />
+                            </div>
+                            <div class="col-md-4 mb-3 ">
+                                <label for="Batiment">Description Box</label>
+                                <input type="text" class="form-control" id="descriptionBox" name="descriptionBox" placeholder="descriptionBox" required />
+                            </div>
+                            <div class="col-md-4 mb-3 ">
+                                <label for="Batiment">Nom Box</label>
+                                <input type="text" class="form-control" id="nomBox" name="nomBox" placeholder="nomBox" required />
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="Nom">Salle</label>
+                                <select class="form-control select2-multiple" name="idSale" aria-hidden="true">
+                                    @{
+                                        if (Model.DDSalle != null)
+                                        {
+                                            foreach (Salle salle in Model.DDSalle)
+                                            {
+                                                
+                                                    <option value="@salle.IdSalle">@salle.NomBatiment</option>
+                                                
+                                            }
+                                        }
+                                    }
                                 </select>
                             </div>
+                            <div class="col-md-4 mb-3 ">
+                                <label for="Batiment">Addr Mac</label>
+                                <input type="text" class="form-control" id="mac" name="mac" placeholder="mac" required />
+                            </div>
+                            <div class="col-md-4 mb-3 ">
+                                <label for="Batiment">Addr Ip</label>
+                                <input type="text" class="form-control" id="ip" name="ip" placeholder="ip" required />
+                            </div>
+                            <div class="col-md-4 mb-3 ">
+                                <label for="Batiment">Seuil Min</label>
+                                <input type="text" class="form-control" id="seuilMin" name="seuilMin" placeholder="seuilMin" required />
+                            </div>
+                            <div class="col-md-4 mb-3 ">
+                                <label for="Batiment">SeuilMax</label>
+                                <input type="text" class="form-control" id="seuilMax" name="seuilMax" placeholder="seuilMax" required />
+                            </div>
                         </div>
-                        <button class="btn btn-primary" type="submit">Submit form</button>
+                        <button class="btn btn-primary" asp-page-handler="EnvoieCapteur" type="submit">Envoie</button>
                     </form>
                 </div>
             </div>
-
             <div class="card mb-4">
                 <div class="card-header border-bottom">
                     <h3>Création Actionneur</h3>
                 </div>
                 <div class="card-body border-bottom">
-                    <form>
+                    <form method="post">
                         <div class="form-row">
-                            <div class="col-md-6 mb-3">
+                            <div class="col-md-4 mb-3">
                                 <label for="Nom">Nom</label>
-                                <input type="text" class="form-control" id="Nom" placeholder="Nom" required />
+                                <input type="text" class="form-control" id="nom" name="nom" placeholder="nom" required />
                             </div>
-                            <div class="col-md-6 mb-3 ">
+                            <div class="col-md-4 mb-3 ">
                                 <label for="Batiment">Box</label>
-                                <select class="form-control select2-multiple" aria-hidden="true">
-                                    <option data-tokens="ketchup mustard">Box - IOTIA </option>
-                                    <option data-tokens="mustard">Box - DAM</option>
-                                    <option data-tokens="frosting">Box - Cyber</option>
+                                <select class="form-control select2-multiple" name="idBox" aria-hidden="true">
+                                    @{
+                                        if (Model.DDBox != null)
+                                        {
+                                            foreach (ClasseE_Covid.IOTDevise.IOTDevise box in Model.DDBox)
+                                            {
+                                                //if (typeCapteur.NomTypeDevice == "capteur de RFID" && typeCapteur.NomTypeDevice == "Capteur bouton")
+                                                //{
+                                                <option value="@box.Id_box">@box.NomBox</option>
+                                                //}
+                                            }
+                                        }
+                                    }
+
+                                </select>
+                            </div>
+                            <div class="col-md-4 mb-3 ">
+                                <label for="Batiment">Type actionneur</label>
+                                <select class="form-control select2-multiple" name="type" aria-hidden="true">
+                                    @{
+                                        if (Model.DDTypeCapteur != null)
+                                        {
+                                            foreach (TypeCapteur typeCapteur in Model.DDTypeCapteur)
+                                            {
+                                                //if (typeCapteur.NomTypeDevice == "capteur de RFID" && typeCapteur.NomTypeDevice == "Capteur bouton")
+                                                //{
+                                                <option value="@typeCapteur.IdTypeDevice">@typeCapteur.NomTypeDevice</option>
+                                                //}
+                                            }
+                                        }
+                                    }
                                 </select>
                             </div>
                         </div>
-                        <button class="btn btn-primary" type="submit">Submit form</button>
+                        <button class="btn btn-primary" asp-page-handler="EnvoieActionneur" type="submit">Envoie</button>
                     </form>
                 </div>
             </div>
-
             <div class="card  mb-4">
                 <div class="card-header border-bottom">
                     <h3>Création Pannaux Solaire</h3>
                 </div>
                 <div class="card-body border-bottom">
-                    <form>
+                    <form method="post">
                         <div class="form-row">
                             <div class="col-md-6 mb-3">
                                 <label for="Nom">Nom</label>
-                                <input type="text" class="form-control" id="Nom" placeholder="Nom" required />
+                                <input type="text" class="form-control" id="nom" name="nom" placeholder="nom" required />
                             </div>
                             <div class="col-md-6 mb-3 ">
                                 <label for="Batiment">Box</label>
-                                <select class="form-control select2-multiple" aria-hidden="true">
-                                    <option data-tokens="ketchup mustard">Box - IOTIA </option>
-                                    <option data-tokens="mustard">Box - DAM</option>
-                                    <option data-tokens="frosting">Box - Cyber</option>
+                                <select class="form-control select2-multiple" name="idBox" aria-hidden="true">
+                                    @{
+                                        if (Model.DDBox != null)
+                                        {
+                                            foreach (ClasseE_Covid.IOTDevise.IOTDevise box in Model.DDBox)
+                                            {
+                                                //if (typeCapteur.NomTypeDevice == "capteur de RFID" && typeCapteur.NomTypeDevice == "Capteur bouton")
+                                                //{
+                                                <option value="@box.Id_box">@box.NomBox</option>
+                                                //}
+                                            }
+                                        }
+                                    }
                                 </select>
                             </div>
                         </div>
-                        <button class="btn btn-primary" type="submit">Submit form</button>
+                        <button class="btn btn-primary" asp-page-handler="EnvoiePannauxSolaire" type="submit">Envoie</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript">
+
+    $(".date").keyup(function (e) {
+        var rech = $(this).val();
+
+        var max = 10;
+
+        if ($(this).val().length >= max) {
+            $(this).val(rech.substr(0, max));
+        }
+
+        $(this).val($(this).val().replace(/[a-zA-Z]/, ""));
+
+        var max = parseInt($(this).attr('max'));
+        var min = "01";
+
+        if ($(this).val().length == 11) {
+            $(this).val($(this).val().replace(/./, ""));
+        }
+
+        if (($(this).val().length == 4 && $(this).val()[1] != "-" && event.which != 11) || ($(this).val().length == 7 && $(this).val()[1] != "-" && event.which != 11)) {
+            if ($(this).val() > max) {
+                $(this).val(max);
+            }
+            else if ($(this).val() < min) {
+                $(this).val(min);
+            }
+            $(this).val($(this).val() + "-");
+        }
+    })
+</script>

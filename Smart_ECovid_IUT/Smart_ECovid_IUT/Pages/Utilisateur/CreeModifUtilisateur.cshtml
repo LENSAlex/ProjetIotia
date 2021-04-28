@@ -1,5 +1,7 @@
 ﻿@page
 @model Smart_ECovid_IUT.Pages.Utilisateur.CreeModifUtilisateurModel
+@using ClasseE_Covid.Utilisateur;
+@using ClasseE_Covid.Promotion;
 @{
     ViewData["Title"] = "Home page";
 }
@@ -43,22 +45,29 @@
                             <div class="col-md-4 mb-3">
                                 <label for="validationDefault03">Formation</label>
                                 <select class="form-control select" aria-hidden="true" id="formation" name="formation">
-                                    <option value="1">DUT informatique</option>
-                                    <option value="2">LP DAM</option>
-                                    <option value="3">LP IOTIA</option>
-                                    <option value="4">DUT QLIO</option>
-                                    <option value="5">DUT R&T</option>
-                                    <option value="6">DUT INFOCOM</option>
+                                    @{
+                                        if (Model.DDPromotion != null)
+                                        {
+                                            foreach (PromotionClass promo in Model.DDPromotion)
+                                            {
+                                                <option value="@promo.Id">@promo.Nom</option>
+                                            }
+                                        }
+                                    }
                                 </select>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <label for="validationDefault04">Niveau</label>
                                 <select class="form-control select" aria-hidden="true" id="niveau" name="niveau">
-                                    <option value="1">Etudiant</option>
-                                    <option value="2">Enseignant</option>
-                                    <option value="3">Personnel administratif</option>
-                                    <option value="4">Personnel entretient</option>
-                                    <option value="5">Administrateur</option>
+                                    @{
+                                        if (Model.DDNiveau != null)
+                                        {
+                                            foreach (Niveau niveau in Model.DDNiveau)
+                                            {
+                                                <option value="@niveau.IdNiveau">@niveau.LeNiveau</option>
+                                            }
+                                        }
+                                    }
                                 </select>
                             </div>
                             <div class="col-md-4 mb-3">
@@ -92,7 +101,7 @@
 </div>
 
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script  type="text/javascript">
+<script type="text/javascript">
 
     $(".verif2").keyup(function (e) {
         var verif = $(this).val();

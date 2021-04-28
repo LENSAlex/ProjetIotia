@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using ClasseE_Covid.Utilisateur;
 using System.Text.Json;
+using System.Text;
 
 namespace Smart_ECovid_IUT.Pages.Utilisateur
 {
@@ -24,14 +25,19 @@ namespace Smart_ECovid_IUT.Pages.Utilisateur
         }
         public async Task OnGet()
         {
+            await Load();
+        }
+
+        public async Task Load()
+        {
             var request = new HttpRequestMessage(HttpMethod.Get,
-           "http://51.75.125.121:3001/Personne/ListPersonne");
+          "http://51.75.125.121:3001/Personne/ListPersonne");
             request.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
             request.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
 
             var client = _clientFactory.CreateClient();
 
-            var response = await client.SendAsync(request); // vus que la fonction est async elle vas s'arreter ici pour attendre une reponce 
+            var response = await client.SendAsync(request); // vus que la fonction est async elle vas s'arreter ici pour attendre une reponce DeleteAsync
 
             if (response.IsSuccessStatusCode)
             {
@@ -43,6 +49,35 @@ namespace Smart_ECovid_IUT.Pages.Utilisateur
             {
                 GetBranchesError = true;
                 Branches = Array.Empty<ClasseE_Covid.Utilisateur.Utilisateur>();
+            }
+        }
+
+        public async void OnGetDeleteUser(int id)
+        {
+            var httpClient = new HttpClient();
+            // / Personne / Add / NumRef / IdPersType / Password / Email / Tel / Sexe / Nom / Prenom / Birth / IdPromo
+            string WebAPIUrl = "http://51.75.125.121:3001/Personne/Delete/"+Convert.ToString(id);
+            Uri uri = new Uri(WebAPIUrl);
+
+            var response = await httpClient.DeleteAsync(uri);
+            
+            await Load();
+            try
+            {
+                if (response.IsSuccessStatusCode)
+                {
+                    var result = await response.Content.ReadAsStringAsync();
+                    Console.WriteLine(result);
+                }
+                else
+                {
+                    Console.WriteLine("ErreurStatusCode");
+                }
+            }
+            catch (Exception e)
+            {
+                //Debug.WriteLine(e.Message);
+                Console.WriteLine("ErreurTryCatch");
             }
         }
     }

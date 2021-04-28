@@ -11,6 +11,9 @@ namespace ClasseE_Covid.Campus
         /// <summary>
         /// liste campus
         /// </summary>
+        [JsonPropertyName("id_site")]
+        public int IdCampus { get; set; }
+
         [JsonPropertyName("nbetage")]
         public int NBEtageCampus { get; set; }
 
@@ -20,8 +23,6 @@ namespace ClasseE_Covid.Campus
         [JsonPropertyName("nbsalle")]
         public int NBSalleCampus { get; set; }
 
-        //[JsonPropertyName("nbetage")]
-        //public int NBEtageCampus { get; set; }
 
         /// <summary>
         /// liste Batiment
@@ -30,11 +31,29 @@ namespace ClasseE_Covid.Campus
         [JsonPropertyName("id_batiment")]
         public int IdBatiment { get; set; }
 
-        [JsonPropertyName("id_site")]
-        public int IdCampusBatiment { get; set; }
+        //[JsonPropertyName("id_site")]
+        //public int IdCampusBatiment { get; set; }
 
-        //[JsonPropertyName("nom")]
-        //public string NomduBatimen { get; set; }
+        [JsonPropertyName("NomBatiment")]
+        public string NomBatimen { get; set; }
+
+
+        /// <summary>
+        /// liste Etage
+        /// </summary>
+        [JsonPropertyName("id_etage")]
+        public int IdEtage { get; set; }
+
+        [JsonPropertyName("nomff")]
+        public string NomBatEtage { get; set; }
+
+        [JsonPropertyName("num")]
+        public int NumEtage { get; set; }
+
+
+        /// <summary>
+        /// variavle Post
+        /// </summary>
 
     }
 }

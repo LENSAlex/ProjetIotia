@@ -31,28 +31,28 @@
                             </tr>
                         </thead>
                         <tbody>
-
-                            @foreach (Utilisateur user in Model.Branches)
+                            @if (Model.Branches != null)
                             {
-                                <tr>
+                                @foreach (Utilisateur user in Model.Branches)
+                                {
+                                    <tr>
 
-                                    <td>@user.Nom</td>
-                                    <td>@user.Prenom</td>
-                                    <td>@user.Sexe</td>
-                                    <td>@user.Anniv</td>
-                                    <td>@user.Email</td>
-                                    <td>@user.NomFormation</td>
-                                    <td>@user.Niveau</td>
-                                    <td>@user.Telephone</td>
-                                    <td>@user.NumRef</td>
-                                    <td>
-                                        <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-edit"></i>"</a>
-                                        <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-trash-alt"></i>"</a>
-                                    </td>
-                                </tr>
-
+                                        <td>@user.Nom</td>
+                                        <td>@user.Prenom</td>
+                                        <td>@user.Sexe</td>
+                                        <td>@user.Anniv</td>
+                                        <td>@user.Email</td>
+                                        <td>@user.NomFormation</td>
+                                        <td>@user.Niveau</td>
+                                        <td>@user.Telephone</td>
+                                        <td>@user.NumRef</td>
+                                        <td>
+                                            <a asp-action="/Utilisateur/ListeUtilisateur/@user.Id"><i class="far fa-edit"></i></a>
+                                            <a asp-action="/Utilisateur/ListeUtilisateur" data-id="@user.Id" class="supp"><i class="far fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                }
                             }
-
                         </tbody>
                     </table>
                 </div>
@@ -60,3 +60,27 @@
         </div>
     </div>
 </div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(".supp").click(function (e) {
+
+        var id = $(this).data('id');
+        var res = confirm("Êtes-vous sûr de vouloir supprimer?");
+        if (res) {
+            $.ajax({
+                type: "GET",
+                url: "?handler=DeleteUser",
+                data: {
+                    id: id,
+                }
+            }).done(function (result) {
+                window.location.href("/Utilisateur/ListeUtilisateur");
+            })
+        }
+        else {
+            alert("vous n'aver rien supprimer")
+        }
+    })
+</script>

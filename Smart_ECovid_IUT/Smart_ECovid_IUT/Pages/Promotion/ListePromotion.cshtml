@@ -21,18 +21,27 @@
                                 <th scope="col">Nom</th>
                                 <th scope="col">Année</th>
                                 <th scope="col">Durée</th>
+                                <th scope="col">Action</th>
+
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach (PromotionClass promotion in Model.Branches)
-                            {
-
-
-                                <tr>
-                                    <td>@promotion.Nom</td>
-                                    <td>@promotion.Annee</td>
-                                    <td>@promotion.Duree</td>
-                                </tr>
+                            @{
+                                if (Model.Branches != null)
+                                {
+                                    foreach (PromotionClass promotion in Model.Branches)
+                                    {
+                                        <tr>
+                                            <td>@promotion.Nom</td>
+                                            <td>@promotion.Annee</td>
+                                            <td>@promotion.Duree</td>
+                                            <td>
+                                                <a asp-action="/Promotion/CréeModifPromotion/@promotion.Id"><i class="far fa-edit"></i></a>
+                                                <a asp-action="/Promotion/ListePromotion" data-id="@promotion.Id" class="supp"><i class="far fa-trash-alt"></i></a>
+                                            </td>
+                                        </tr>
+                                    }
+                                }
                             }
                         </tbody>
                     </table>
@@ -41,3 +50,28 @@
         </div>
     </div>
 </div>
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(".supp").click(function (e) {
+
+        var id = $(this).data('id');
+        var res = confirm("Êtes-vous sûr de vouloir supprimer?");
+        if (res) {
+            $.ajax({
+                type: "GET",
+                url: "?handler=DeleteUser",
+                data: {
+                    id: id,
+                }
+            }).done(function (result) {
+                window.location.href("/Promotion/ListePromotio");
+            })
+        }
+        else {
+            alert("vous n'aver rien supprimer")
+        }
+    })
+</script>

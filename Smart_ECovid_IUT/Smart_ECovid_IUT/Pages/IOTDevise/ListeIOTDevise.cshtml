@@ -24,39 +24,37 @@
                                 <th scope="col">Etage</th>
                                 <th scope="col">Salle</th>
                                 <th scope="col">Capteur</th>
-                                @*<th scope="col">Actionneur</th>
-                                <th scope="col">Création Pannaux Solaire</th*@>
+                                <th scope="col">Actionneur</th>
+                                <th scope="col">Création Pannaux Solaire</th>
                                 <th scope="col">Action</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach (IOTDevise devise in Model.Branches)
+                            @foreach (IOTDevise devise in Model.Devise)
                             {
-                                <tr>
-
-                                    <td>@devise.NomBox</td>
-                                    <td>@devise.AdrIpBox</td>
-                                    <td>@devise.DescriptionBox</td>
-                                    <td>@devise.NomBatimentBox</td>
-                                    <td>@devise.IdEtageBox</td>
-                                    <td>@devise.IdSalleBox</td>
-                                    <td>
-                                        @foreach (IOTDevise devise2 in Model.Branches2)
+                            <tr>
+                                <td>@devise.NomBox</td>
+                                <td>@devise.AdrIpBox</td>
+                                <td>@devise.DescriptionBox</td>
+                                <td>@devise.NomBatimentBox</td>
+                                <td>@devise.IdEtageBox</td>
+                                <td>@devise.IdSalleBox</td>
+                                <td>
+                                    @foreach (ListeCapteur devise2 in Model.Capteur)
+                                    {
+                                        if (devise2.NomBox == devise.NomBox)
                                         {
-                                            if (devise2.TypeCapteur == devise.Id_box)
-                                            {
-                                             <p>@devise2.NomCapteur</p>;
-                                            }
+                                            <p>@devise2.NomCapteur</p>;
                                         }
-                                        </td>
-                                            
-                                    @*<td>@devise.NbBouton</td>*@ 
-                                    @*<td>@devise?.NbPanneauSolaire</td>*@
-                                    <td>
-                                        <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-edit"></i>"</a>
-                                        <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-trash-alt"></i>"</a>
-                                    </td>
-                                </tr>
+                                    }
+                                </td>
+                                <td>@devise.NbBouton</td>
+                                <td>@devise.NbPanneauSolaire</td>
+                                <td>
+                                    <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-edit"></i>"</a>
+                                    <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-trash-alt"></i>"</a>
+                                </td>
+                            </tr>
 
                             }
                         </tbody>

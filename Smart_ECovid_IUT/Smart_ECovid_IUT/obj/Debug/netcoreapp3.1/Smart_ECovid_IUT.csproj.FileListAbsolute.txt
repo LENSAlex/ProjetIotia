@@ -345,3 +345,11 @@ D:\TAFF\IOTIATravaille\CourAcctuelle\ProjetFinAnnee\Smart_ECovid_IUT\Smart_ECovi
 D:\TAFF\IOTIATravaille\CourAcctuelle\ProjetFinAnnee\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Smart_ECovid_IUT.pdb
 D:\TAFF\IOTIATravaille\CourAcctuelle\ProjetFinAnnee\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Smart_ECovid_IUT.genruntimeconfig.cache
 >>>>>>> 5cd3ddd4b3b69115ab54b9a23f9b9bea1149d48e
+D:\TAFF\IOTIATravaille\CourAcctuelle\ProjetFinAnnee\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+D:\TAFF\IOTIATravaille\CourAcctuelle\ProjetFinAnnee\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+D:\TAFF\IOTIATravaille\CourAcctuelle\ProjetFinAnnee\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Smart_ECovid_IUT.MvcApplicationPartsAssemblyInfo.cs
+D:\TAFF\IOTIATravaille\CourAcctuelle\ProjetFinAnnee\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\IOTDevise\_PartialCreeIOTDevise.cshtml.g.cs
+D:\TAFF\IOTIATravaille\CourAcctuelle\ProjetFinAnnee\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\IOTDevise\_PartialCreeModifIOTDevise.cshtml.g.cs
+D:\TAFF\IOTIATravaille\CourAcctuelle\ProjetFinAnnee\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\PartialIOTDevise\_PartialCreeIOTDevise.cshtml.g.cs
+D:\TAFF\IOTIATravaille\CourAcctuelle\ProjetFinAnnee\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\PartialIOTDevise\_PartialCreeModifIOTDevise.cshtml.g.cs
+D:\TAFF\IOTIATravaille\CourAcctuelle\ProjetFinAnnee\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\PartialIOTDevise\_ViewImports.cshtml.g.cs
