@@ -1,17 +1,19 @@
 swagger: '2.0'
 info:
   description: |
-    Description du service "Infra PROD"
+    Description du service "Infra PROD" projet IOTIA
   version: 1.0.0
   title: Web Service Infra PROD 
-tags:
-- name: Capteur
-  description: Tout ce qui concerne les capteurs
+  contact:
+    email: alex.lens@etu.unice.fr
+host: webservice.lensalex.fr:3004
+
+
 paths:
-  /Capteur/ListValueType:
+  /InfraProd/ListValueType:
     get:
       tags:
-      - Capteur
+      - InfraProd
       summary: Retourne des informations une liste de capteurs.
       description: Retourne l'id, le libelle d'une liste de capteurs ainsi que son unité de mesure.
       operationId: getInfoCapteurs
@@ -24,10 +26,10 @@ paths:
             $ref: '#/definitions/ListValueType'
         400:
           description: Requete invalid
-  /Capteur/ListDevice:
+  /InfraProd/ListDevice:
     get:
       tags:
-      - Capteur
+      - InfraProd
       summary: Retourne les devices sans arduino et raspberry pi 
       description: Retourne l'id, le type de libelle d'une liste de capteurs
       operationId: getInfoDevices
@@ -40,10 +42,10 @@ paths:
             $ref: '#/definitions/ListDevice'
         400:
           description: Requete invalid
-  /Capteur/Search/{NomSalle}:
+  /InfraProd/Search/{NomSalle}:
     get:
       tags:
-      - Capteur
+      - InfraProd
       summary: Cherche les capteurs d'une salle
       description: Cherche les capteurs d'une salle via le numéro de salle
       operationId: getCapteursViaNum
@@ -63,10 +65,26 @@ paths:
             $ref: '#/definitions/SearchCapteurs'
         400:
           description: Requete invalid
-  /Capteur/ListCapteur/{Salle}:
+  /InfraProd/Box/Info:
     get:
       tags:
-      - Capteur
+      - InfraProd
+      summary: Retourne les informations de chaque box 
+      description: Retourne les informations de chaque box avec l'ip, l'étage, la description ou encore le batiment
+      operationId: getInfoBox
+      produces:
+      - application/json
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/BoxInfo'
+        400:
+          description: Requete invalid
+  /InfraProd/ListCapteur/{Salle}:
+    get:
+      tags:
+      - InfraProd
       summary: Cherche les capteurs d'une salle
       description: Cherche les capteurs d'une salle via le nom de salle
       operationId: getCapteursViaSalle
@@ -86,26 +104,10 @@ paths:
             $ref: '#/definitions/ListCapteur_salle'
         400:
           description: Requete invalid
-  /Capteur/Box/Info:
+  /InfraProd/ListCapteur:
     get:
       tags:
-      - Capteur
-      summary: Retourne les informations d'une Box
-      description: Retourne les informations d'une Box avec l'id de la salle, l'id de la box, le libelle, l'addr IP, le nom etc ... 
-      operationId: getBoxInfo
-      produces:
-      - application/json
-      responses:
-        200:
-          description: successful operation
-          schema:
-            $ref: '#/definitions/BoxInfo'
-        400:
-          description: Requete invalid
-  /Capteur/ListCapteur:
-    get:
-      tags:
-      - Capteur
+      - InfraProd
       summary: Retourne liste de capteurs
       description: Retourne une liste de capteurs avec l'id_device, le type de libelle et le libelle
       operationId: getListeCapteurs
@@ -118,10 +120,10 @@ paths:
             $ref: '#/definitions/ListCapteur'
         400:
           description: Requete invalid
-  /Capteur/ListComplete:
+  /InfraProd/ListComplete:
     get:
       tags:
-      - Capteur
+      - InfraProd
       summary: Retourne liste de capteurs pour le site web
       description: Retourne une liste de capteurs avec l'id_device, le type de libelle et l'id de la box
       operationId: getListeCapteursWeb
@@ -134,10 +136,10 @@ paths:
             $ref: '#/definitions/ListComplete'
         400:
           description: Requete invalid
-  /Capteur/ListSalle:
+  /InfraProd/ListSalle:
     get:
       tags:
-      - Capteur
+      - InfraProd
       summary: Retourne une liste des salles pour avoir l'id_box
       description: Retourne une liste des salles avec le nom, l'id de la box et l'id de la salle
       operationId: getListeSalle
@@ -150,10 +152,10 @@ paths:
             $ref: '#/definitions/ListSalle'
         400:
           description: Requete invalid
-  /Capteur/Valeur/{IdSalle}:
+  /InfraProd/Valeur/{IdSalle}:
     get:
       tags:
-      - Capteur
+      - InfraProd
       summary: Cherche les valeurs d'une salle
       description: Cherche les valeurs d'une salle via l'id de la salle
       operationId: getValeursIdSalle
@@ -173,10 +175,10 @@ paths:
             $ref: '#/definitions/ValeurId'
         400:
           description: Requete invalid
-  /Capteur/Valeur/{IdSalle}/{IdValueType}:
+  /InfraProd/Valeur/{IdSalle}/{IdValueType}:
     get:
       tags:
-      - Capteur
+      - InfraProd
       summary: Cherche les valeurs d'un capteur grâce à son type
       description: Cherche les valeurs d'un capteur grâce à son type. On y retrouve la valeur, le libelle et le nom.
       operationId: getValeursIdSalle_IdValType
@@ -202,10 +204,10 @@ paths:
             $ref: '#/definitions/ValeurId'
         400:
           description: Requete invalid
-  /Capteur/ValeurSpecifique/{IdDevice}:
+  /InfraProd/ValeurSpecifique/{IdDevice}:
     get:
       tags:
-      - Capteur
+      - InfraProd
       summary: Cherche les valeurs d'un capteur spécifique
       description: Cherche les valeurs d'un capteur spécifique
       operationId: getValeurSpecifique
@@ -225,10 +227,10 @@ paths:
             $ref: '#/definitions/ValeurSpecifique'
         400:
           description: Requete invalid
-  /Capteur/List/Historique:
+  /InfraProd/List/Historique:
     get:
       tags:
-      - Capteur
+      - InfraProd
       summary: Retourne l'historique des valeurs des capteurs
       description: Retourne l'historique des valeurs des capteurs avec le libelle, l'id du device, la valeur, l'unite et le type de libelle
       operationId: getListeHistorique
@@ -241,10 +243,10 @@ paths:
             $ref: '#/definitions/ListHistorique'
         400:
           description: Requete invalid
-  /Capteur/ValeurSpecifique/Last/{IdDevice}:
+  /InfraProd/ValeurSpecifique/Last/{IdDevice}:
     get:
       tags:
-      - Capteur
+      - InfraProd
       summary: Cherche la dernière valeur d'un capteur spécifique
       description: Cherche la dernière valeur d'un capteur spécifique
       operationId: getLastValeurSpecifique
@@ -264,10 +266,10 @@ paths:
             $ref: '#/definitions/ValeurLastSpecifique'
         400:
           description: Requete invalid
-  /Capteur/ValeurSpecifique/Moyenne/{IdDevice}:
+  /InfraProd/ValeurSpecifique/Moyenne/{IdDevice}:
     get:
       tags:
-      - Capteur
+      - InfraProd
       summary: Cherche la moyenne des valeurs d'un capteur spécifique
       description: Cherche la moyenne des valeurs d'un capteur spécifique
       operationId: getMoyValeurSpecifique
@@ -287,10 +289,10 @@ paths:
             $ref: '#/definitions/ValeurMoySpecifique'
         400:
           description: Requete invalid
-  /Capteur/List/Historique/Temp:
+  /InfraProd/List/Historique/Temp:
     get:
       tags:
-      - Capteur
+      - InfraProd
       summary: Retourne l'historique des valeurs des capteurs de temp du plus récent au plus vieux 
       description: Retourne l'historique des valeurs des capteurs de temp du plus récent au plus vieux avec le type de libelle, le libelle et la valeur
       operationId: getListeHistoriqueTemp
@@ -303,10 +305,10 @@ paths:
             $ref: '#/definitions/ListeHistorique'
         400:
           description: Requete invalid
-  /Capteur/List/Historique/CO2:
+  /InfraProd/List/Historique/CO2:
     get:
       tags:
-      - Capteur
+      - InfraProd
       summary: Retourne l'historique des valeurs des capteurs de CO2 du plus récent au plus vieux 
       description: Retourne l'historique des valeurs des capteurs de CO2 du plus récent au plus vieux avec le type de libelle, le libelle et la valeur
       operationId: getListeHistoriqueCO2
@@ -319,10 +321,10 @@ paths:
             $ref: '#/definitions/ListeHistorique'
         400:
           description: Requete invalid
-  /Capteur/List/Historique/Energie:
+  /InfraProd/List/Historique/Energie:
     get:
       tags:
-      - Capteur
+      - InfraProd
       summary: Retourne l'historique des valeurs des capteurs de Energie du plus récent au plus vieux 
       description: Retourne l'historique des valeurs des capteurs de Energie du plus récent au plus vieux avec le type de libelle, le libelle et la valeur
       operationId: getListeHistoriqueEnergie
@@ -335,146 +337,74 @@ paths:
             $ref: '#/definitions/ListeHistorique'
         400:
           description: Requete invalid
-  /Capteur/List/TauxOccupation:
+  /InfraProd/Box/{IdBox}:
     get:
       tags:
-      - Capteur
-      summary: Retourne le taux d'occupation
-      description: Retourne le taux d'occupation avec l'id de la personne et le statut
-      operationId: getListeTauxOccup
+      - InfraProd
+      summary: Cherche tous les capteurs d'une box
+      description: Cherche tous les capteurs d'une box via l'id de la box et retourne l'id et le libelle.
+      operationId: getCapteursIdBox
       produces:
       - application/json
+      parameters:
+      - name: IdBox
+        in: path
+        description: l'id de la box 
+        required: true
+        type: integer
+        format: int64
       responses:
         200:
           description: successful operation
           schema:
-            $ref: '#/definitions/ListeTauxOccup'
+            $ref: '#/definitions/Box'
         400:
           description: Requete invalid
-  /Capteur/Add/BoxDevice/{IdSalle}/{IdDeviceType}/{AddrMac}/{AddrIp}/{LibelleBox}/{DescriptionBox}/{DateInstallation}/{IdValueType}/{LibelleDevice}/{SeuilMin}/{SeuilMax}:
-    post:
+  /InfraProd/Box/Actionneur/{IdBox}:
+    get:
       tags:
-      - Capteur
-      summary: Ajout de capteur
-      operationId: InsertCapteur
-      produces:
-      - application/json
-      parameters:
-      - name: IdSalle
-        in: path
-        description: Id de la salle
-        required: true
-        type: integer
-        format: int64
-      - name: IdDeviceType
-        in: path
-        description: Id du type de device
-        required: true
-        type: integer
-      - name: AddrMac
-        in: path
-        description: Adresse MAC
-        required: true
-        type: string
-      - name: AddrIp
-        in: path
-        description: Adresse IP
-        required: true
-        type: string
-      - name: LibelleBox
-        in: path
-        description: Le libelle de la box
-        required: true
-        type: string
-      - name: DescriptionBox
-        in: path
-        description: La description de la box
-        required: true
-        type: string
-      - name: DateInstallation
-        in: path
-        description: La date d'installation
-        required: true
-        type: string
-      - name: IdValueType
-        in: path
-        description: Id du type de valeur
-        required: true
-        type: integer
-      - name: LibelleDevice
-        in: path
-        description: Le libelle du device
-        required: true
-        type: string
-      - name: SeuilMin
-        in: path
-        description: Le seuil min 
-        required: true
-        type: integer
-      - name: SeuilMax
-        in: path
-        description: Le seuil max 
-        required: true
-        type: integer
-      responses:
-        200:
-          description: Box et capteur crée
-        405:
-          description: Requete invalid
-  /Capteur/Add/Actionneur/{IdBox}/{IdValueType}/{Libelle}:
-    post:
-      tags:
-      - Capteur
-      summary: Ajout d'actionneur
-      operationId: InsertActionneur
+      - InfraProd
+      summary: Cherche tous les actionneurs d'une box
+      description: Cherche tous les actionneurs d'une box via l'id de la box et retourne l'id et le libelle.
+      operationId: getActionneursIdBox
       produces:
       - application/json
       parameters:
       - name: IdBox
         in: path
-        description: Id de la box
+        description: l'id de la box 
         required: true
         type: integer
         format: int64
-      - name: IdValueType
-        in: path
-        description: Id du type de valeur
-        required: true
-        type: integer
-      - name: Libelle
-        in: path
-        description: Le libelle
-        required: true
-        type: string
       responses:
         200:
-          description: Actionneur crée
-        405:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/Box'
+        400:
           description: Requete invalid
-  /Capteur/Add/PanneauSolaire/{IdBox}/{Libelle}:
-    post:
+  /InfraProd/Box/PanneauSolaire/{IdBox}:
+    get:
       tags:
-      - Capteur
-      summary: Ajout d'actionneur
-      operationId: InsertPanneauSolaire
+      - InfraProd
+      summary: Cherche tous les panneaux solaire d'une box
+      description: Cherche tous les actionneurs d'une box via l'id de la box et retourne l'id et le libelle.
+      operationId: getPanneauSolaireIdBox
       produces:
       - application/json
       parameters:
       - name: IdBox
         in: path
-        description: Id de la box
+        description: l'id de la box 
         required: true
         type: integer
         format: int64
-      - name: Libelle
-        in: path
-        description: Le libelle
-        required: true
-        type: string
       responses:
         200:
-          description: Panneau solaire cree
-        405:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/Box'
+        400:
           description: Requete invalid
 definitions:
   ListValueType:
@@ -492,17 +422,17 @@ definitions:
       unite:
         type: string
         example: °C
-  ListeTauxOccup:
+  Box:
     type: object
     required:
-    - id_personne
+    - id_device
     properties:
-      id_personne:
+      id_device:
         type: integer
         format: int64
-      statut:
+      libelle:
         type: string
-        example: le statut
+        example: Temperature
   ListeHistorique:
     type: object
     required:
@@ -657,6 +587,7 @@ definitions:
     required:
     - id_salle
     - id_box
+    - id_etage
     properties:
       id_salle:
         type: integer
@@ -673,9 +604,21 @@ definitions:
       description:
         type: string
         example: une description
+      nom:
+        type: string
+        example: un nom
+      id_etage:
+        type: integer
+        format: int64
       NomSalle:
         type: string
-        example: C237
+        example: nom de salle
+      PanneauSolaire:
+        type: integer
+        format: int64
+      NbBouton:
+        type: integer
+        format: int64
   ListDevice:
     type: object
     required:
@@ -719,12 +662,5 @@ definitions:
       id_etage:
         type: integer
         format: int64   
-# Added by API Auto Mocking Plugin
-host: virtserver.swaggerhub.com
-# basePath: /thibaud-iotia/Covid/1.0.0
 schemes:
- - https
-# Added by API Auto Mocking Plugin
-# basePath: /thibaud-iotia/Usager/1.0.0
-# Added by API Auto Mocking Plugin
-basePath: /thibaud-iotia/Infra_Prod/1.0.0
+ - http
