@@ -36,7 +36,7 @@ swaggerTools.initializeMiddleware(swaggerDoc, function (middleware) {
 
 //PUT--------------------------------------------------
 //Modifs eleve
-app.put("/InfraAdmin/Personne/Modifs/:NumRef/:IdPersType/:Password/:Email/:Tel/:Sexe/:Nom/:Prenom/:Birth/:IdPromo/:IdPersonne", (req, res) => {
+app.put("/InfraAdmin/Usager/Modifs/:NumRef/:IdPersType/:Password/:Email/:Tel/:Sexe/:Nom/:Prenom/:Birth/:IdPromo/:IdPersonne", (req, res) => {
 
     //localhost:3001/Personne/Add/125/1/test/alex.@gmail.com/0607070705/F/LENS/AL/1908-08-11 01:00:00/1
     conn.query("UPDATE `Personne` SET `num_ref` = '" + req.params.NumRef + "', `id_pers_type` = '" + req.params.IdPersType + "', `password` = '" + req.params.Password + "', `email` = '" + req.params.Email + "', `telephone` = '" + req.params.Tel + "', `sexe`= '" + req.params.Sexe + "', `nom` = '" + req.params.Nom + "', `prenom` = '" + req.params.Prenom + "', `date_anniversaire` = '" + req.params.Birth + "' where id_personne = '" + req.params.IdPersonne + "' ", function(err, result) {
@@ -65,7 +65,7 @@ app.put("/InfraAdmin/Personne/Modifs/:NumRef/:IdPersType/:Password/:Email/:Tel/:
 })
 
 //Modif Formation
-app.put("/InfraAdmin/Personne/Modifs/Formation/:IdDepartement/:NomFormation/:DureeFormation/IdFormation", (req, res) => {
+app.put("/InfraAdmin/Usager/Modifs/Formation/:IdDepartement/:NomFormation/:DureeFormation/:IdFormation", (req, res) => {
 
     //liée la table formation et promotion 
     //Creation d'une formation:
@@ -80,7 +80,7 @@ app.put("/InfraAdmin/Personne/Modifs/Formation/:IdDepartement/:NomFormation/:Dur
 })
 
 //Modifs Promo
-app.put("/InfraAdmin/Personne/Modifs/Promo/:AnneePromotion/:IdProfesseurPromotion/:IdPromo", (req, res) => {
+app.put("/InfraAdmin/Usager/Modifs/Promo/:AnneePromotion/:IdProfesseurPromotion/:IdPromo", (req, res) => {
     conn.query("update `Promotion` set `id_professeur` = '" + req.params.IdProfesseurPromotion + "', `annee` = '" + req.params.AnneePromotion + "' where id_promotion = '" + req.params.IdPromo + "' ", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
@@ -92,15 +92,15 @@ app.put("/InfraAdmin/Personne/Modifs/Promo/:AnneePromotion/:IdProfesseurPromotio
 
 //A COMPLETER
 //Modifs Batiment
-app.put("/InfraAdmin/Batiment/Modifs/:Nom/:SurfaceBat/:", (req, res) => {
-    conn.query("", function(err, result) {
-        if (err)
-            res.status(400).json({ ErrorRequete: 'Requete invalid' });
-        else {
-            res.status(200).json("Promotion modifié");
-        }
-    })
-})
+// app.put("/InfraAdmin/Infrastructure/Modifs/:Nom/:SurfaceBat/", (req, res) => {
+//     conn.query("", function(err, result) {
+//         if (err)
+//             res.status(400).json({ ErrorRequete: 'Requete invalid' });
+//         else {
+//             res.status(200).json("Promotion modifié");
+//         }
+//     })
+// })
 
 
 //Modif box
@@ -115,7 +115,7 @@ app.put("/InfraAdmin/Capteur/Modifs/Box/:IdBox/:Nom/:DateInstalle/:Description/:
 })
 
 //Modif Capteur
-app.put("/InfraAdmin/Capteur/Modifs/Capteur/:Nom/:Box/:TypeActionneur/:IdCapteur", (req, res) => {
+app.put("/InfraAdmin/Capteur/Modifs/Capteur/:Nom/:IdBox/:TypeActionneur/:IdCapteur", (req, res) => {
     conn.query("UPDATE `Device` SET `id_box`='" + req.params.Box + "',`id_devicetype`='" + req.params.TypeActionneur + "',`libelle`='" + req.params.Nom + "' WHERE id_device = '" + req.params.IdCapteur + "'", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
@@ -126,7 +126,7 @@ app.put("/InfraAdmin/Capteur/Modifs/Capteur/:Nom/:Box/:TypeActionneur/:IdCapteur
 })
 
 //Modif Panneau Solaire
-app.put("/InfraAdmin/Capteur/Modifs/Capteur/PanneauSolaire/:Nom/:Box/:TypeActionneur/:IdPanneauSolaire", (req, res) => {
+app.put("/InfraAdmin/Capteur/Modifs/Capteur/PanneauSolaire/:Nom/:IdBox/:TypeActionneur/:IdPanneauSolaire", (req, res) => {
     conn.query("UPDATE `Device` SET `id_box`='" + req.params.Box + "',`libelle`='" + req.params.Nom + "' WHERE id_device = '" + req.params.IdPanneauSolaire + "'", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
@@ -141,7 +141,7 @@ app.put("/InfraAdmin/Capteur/Modifs/Capteur/PanneauSolaire/:Nom/:Box/:TypeAction
 //POST-----------------------------------------------
 //Personne --------------------
 //Ajout personne
-app.post("/InfraAdmin/Personne/Add/:NumRef/:IdPersType/:Password/:Email/:Tel/:Sexe/:Nom/:Prenom/:Birth/:IdPromo", (req, res) => {
+app.post("/InfraAdmin/Usager/Add/:NumRef/:IdPersType/:Password/:Email/:Tel/:Sexe/:Nom/:Prenom/:Birth/:IdPromo", (req, res) => {
 
     var idUser;
     var TypePers;
@@ -190,19 +190,19 @@ app.post("/InfraAdmin/Personne/Add/:NumRef/:IdPersType/:Password/:Email/:Tel/:Se
 })
 
 //Ajout d'un utilisateur rapide
-app.post("/InfraAdmin/Personne/Add/Test/:Nom/:Prenom", (req, res) => {
+app.post("/InfraAdmin/Usager/Add/Rapide/:Nom/:Prenom", (req, res) => {
 
     conn.query("INSERT INTO `Personne`(`nom`, `prenom` , `num_ref` , `id_pers_type` , `password` ) VALUES ('" + req.params.Nom + "' , '" + req.params.Prenom + "' , '25416' , '1' , 'password')", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
-            res.status(200).json("Cas covid cree");
+            res.status(200).json("Utilisateur cree");
         }
     });
 })
 
 //Add promo
-app.post("/InfraAdmin/Personne/Add/Promo/:IdDepartement/:NomFormation/:DureeFormation/:AnneePromotion/:IdProfesseurPromotion", (req, res) => {
+app.post("/InfraAdmin/Usager/Add/Promo/:IdDepartement/:NomFormation/:DureeFormation/:AnneePromotion/:IdProfesseurPromotion", (req, res) => {
 
     //liée la table formation et promotion 
     //Creation d'une formation:
@@ -284,7 +284,7 @@ app.post("/InfraAdmin/Capteur/Add/PanneauSolaire/:IdBox/:Libelle", (req, res) =>
 
 //DORIAN
 //Creation d'un batiment et des etages correspondant : DropDown IdCampus , envoie du nombre de batiment et superficie etage
-app.post("/InfraAdmin/Batiment/Add/Batiment/:Nom/:Superficie/:IdCampus/:EtageSuperficie", (req, res) => {
+app.post("/InfraAdmin/Infrastructure/Add/Batiment/:Nom/:Superficie/:IdCampus/:EtageSuperficie", (req, res) => {
     // console.log(req.params.EtageSuperficie.SuperficieEtage)
 
     conn.query("INSERT INTO `Batiment`(`id_site`, `nom`, `surface`) VALUES ('" + req.params.IdCampus + "','" + req.params.Nom + "','" + req.params.Superficie + "')", function(err, result) {
@@ -318,7 +318,7 @@ app.post("/InfraAdmin/Batiment/Add/Batiment/:Nom/:Superficie/:IdCampus/:EtageSup
 //Du coup on choisit son batiment et en fonction de ca on a les Etage du batiment
 //Utilisés cette route pour avoir les etages /Batiment/ListEtage/:IdBatiment
 //DOnc apres choisir son etage et inserer ca salle
-app.post("/InfraAdmin/Batiment/Add/Salle/:IdEtage/:Nom/:CapaciteMax/:Surface/:Volume", (req, res) => {
+app.post("/InfraAdmin/Infrastructure/Add/Salle/:IdEtage/:Nom/:CapaciteMax/:Surface/:Volume", (req, res) => {
 
     conn.query("INSERT INTO `Salle`(`id_etage`, `nom`, `capacite_max`, `surface`, `volume`) VALUES ('" + req.params.IdEtage + "','" + req.params.Nom + "','" + req.params.CapaciteMax + "','" + req.params.Surface + "','" + req.params.Volume + "')", function(err, result) {
         if (err)
@@ -333,7 +333,7 @@ app.post("/InfraAdmin/Batiment/Add/Salle/:IdEtage/:Nom/:CapaciteMax/:Surface/:Vo
 //Delete --------------------------------------------------
 
 //Supp user 
-app.delete("/InfraAdmin/Personne/Delete/:IdUser", (req, res) => {
+app.delete("/InfraAdmin/Usager/Delete/:IdUser", (req, res) => {
 
     conn.query("DELETE FROM `Contenir` WHERE id_eleve = " + req.params.IdUser + "", function(err, result) {
         if (err)
@@ -370,19 +370,19 @@ app.delete("/InfraAdmin/Personne/Delete/:IdUser", (req, res) => {
 })
 
 //Supp promotion 
-app.delete("/InfraAdmin/Personne/Delete/:IdPromo", (req, res) => {
+// app.delete("/InfraAdmin/Usager/Delete/:IdPromo", (req, res) => {
 
-    conn.query("DELETE FROM `Contenir` WHERE id_eleve = " + req.params.IdUser + "", function(err, result) {
-        if (err)
-            res.status(400).json({ ErrorRequete: err });
-        else {
+//     conn.query("DELETE FROM `Contenir` WHERE id_eleve = " + req.params.IdUser + "", function(err, result) {
+//         if (err)
+//             res.status(400).json({ ErrorRequete: err });
+//         else {
          
-        }
-    });
-})
+//         }
+//     });
+// })
 
 //Supp Campus 
-app.delete("/InfraAdmin/Batiment/Delete/:IdCampus", (req, res) => {
+app.delete("/InfraAdmin/Infrastructure/Delete/:IdCampus", (req, res) => {
 
     conn.query("DELETE FROM `AccesSite` WHERE id_site = " + req.params.IdCampus + "", function(err, result) {
         if (err)

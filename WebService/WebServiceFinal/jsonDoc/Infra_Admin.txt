@@ -1,0 +1,652 @@
+swagger: '2.0'
+info:
+  description: |
+    Description du service "Infra Admin" projet IOTIA
+  version: 1.0.0
+  title: Web Service Infra ADMIN 
+  contact:
+    email: alex.lens@etu.unice.fr
+host: webservice.lensalex.fr:3004
+
+
+paths:
+
+  /InfraAdmin/Infrastructure/Add/Batiment/{Nom}/{Superficie}/{IdCampus}/{EtageSuperficie}:
+    post:
+      tags:
+      - Infrastructure
+      summary: Ajout d'un batiment et étage
+      operationId: InsertBatEtage
+      produces:
+      - application/json
+      parameters:
+      - name: Nom
+        in: path
+        description: Nom du batiment 
+        required: true
+        type: string
+        format: UTF-8
+      - name: Superficie
+        in: path
+        description: La superficie du batiment
+        required: true
+        type: integer
+      - name: IdCampus
+        in: path
+        description: Id du campus
+        required: true
+        type: integer
+      - name: EtageSuperficie
+        in: path
+        description: La superficie de l'étage
+        required: true
+        type: integer
+      responses:
+        200:
+          description: Batiment et etage creer
+        400:
+          description: Requete invalid
+          
+  /InfraAdmin/Infrastructure/Add/Salle/{IdEtage}/{Nom}/{CapaciteMax}/{Surface}/{Volume}:
+    post:
+      tags:
+      - Infrastructure
+      summary: Ajout d'une salle
+      operationId: InsertSalle
+      produces:
+      - application/json
+      parameters:
+      - name: IdEtage
+        in: path
+        description: l'id de l'étage
+        required: true
+        type: integer
+      - name: Nom
+        in: path
+        description: Le nom d'une salle
+        required: true
+        type: string
+      - name: CapaciteMax
+        in: path
+        description: Capacité maximum
+        required: true
+        type: integer
+      - name: Surface
+        in: path
+        description: La superficie de la salle
+        required: true
+        type: integer
+      - name: Volume
+        in: path
+        description: Le volume de la salle
+        required: true
+        type: integer
+      responses:
+        200:
+          description: Salle cree
+        400:
+          description: Requete invalid
+          
+  /InfraAdmin/Infrastructure/Delete/{IdCampus}:
+    delete:
+      tags:
+      - Infrastructure
+      summary: Suppression d'un Campus (Site)
+      operationId: DeleteCampus
+      produces:
+      - application/json
+      parameters:
+      - name: IdCampus
+        in: path
+        description: l'id du campus
+        required: true
+        type: integer
+      responses:
+        200:
+          description: Campus avec id .. à ete supprimer
+        400:
+          description: Requete invalid
+
+  
+  
+  /InfraAdmin/Usager/Modifs/{NumRef}/{IdPersType}/{Password}/{Email}/{Tel}/{Sexe}/{Nom}/{Prenom}/{Birth}/{IdPromo}/{IdPersonne}:
+    put:
+      tags:
+      - Usager
+      summary: Modification d'une personne
+      operationId: ModifPers
+      produces:
+      - application/json
+      parameters:
+      - name: NumRef
+        in: path
+        description: Numero de reférence de la personne
+        required: true
+        type: integer
+        format: int64
+      - name: IdPersType
+        in: path
+        description: Id de la personne
+        required: true
+        type: integer
+      - name: Password
+        in: path
+        description: Mot de passe de la personne
+        required: true
+        type: string
+      - name: Email
+        in: path
+        description: Email de la personne
+        required: true
+        type: string
+      - name: Tel
+        in: path
+        description: Téléphone de la personne
+        required: true
+        type: string
+      - name: Sexe
+        in: path
+        description: Sexe de la personne
+        required: true
+        type: string
+      - name: Nom
+        in: path
+        description: Nom de la personne
+        required: true
+        type: string
+      - name: Prenom
+        in: path
+        description: Prenom de la personne
+        required: true
+        type: string
+      - name: Birth
+        in: path
+        description: Date de naissance de la personne
+        required: true
+        type: string
+      - name: IdPromo
+        in: path
+        description: Id de la promo
+        required: true
+        type: integer
+      - name: IdPersonne
+        in: path
+        description: Id de la personne
+        required: true
+        type: integer
+      responses:
+        200:
+          description: Etudiant modifier
+        400:
+          description: Requete invalid
+  
+  /InfraAdmin/Usager/Modifs/Formation/{IdDepartement}/{NomFormation}/{DureeFormation}/{IdFormation}:
+    put:
+      tags:
+      - Usager
+      summary: Modification d'une formation
+      operationId: ModifFormation
+      produces:
+      - application/json
+      parameters:
+      - name: IdDepartement
+        in: path
+        description: IdDepartement
+        required: true
+        type: integer
+        format: int64
+      - name: NomFormation
+        in: path
+        description: Nom de la formation
+        required: true
+        type: string
+      - name: DureeFormation
+        in: path
+        description: Duree formation (annee)
+        required: true
+        type: integer
+      - name: IdFormation
+        in: path
+        description: Id de la formation
+        required: true
+        type: integer
+      responses:
+        200:
+          description: Formation modifié
+        400:
+          description: Requete invalid
+          
+  /InfraAdmin/Usager/Modifs/Promo/{AnneePromotion}/{IdProfesseurPromotion}/{IdPromo}:
+    put:
+      tags:
+      - Usager
+      summary: Modification d'une promotion
+      operationId: ModifPromo
+      produces:
+      - application/json
+      parameters:
+      - name: AnneePromotion
+        in: path
+        description: Annee de la promo
+        required: true
+        type: integer
+        format: int64
+      - name: IdProfesseurPromotion
+        in: path
+        description: Id du professeur principal de la promo
+        required: true
+        type: integer
+      - name: IdPromo
+        in: path
+        description: Id de la promotion
+        required: true
+        type: integer
+      responses:
+        200:
+          description: Promotion modifié
+        400:
+          description: Requete invalid
+    
+  
+  
+  /InfraAdmin/Usager/Add/{NumRef}/{IdPersType}/{Password}/{Email}/{Tel}/{Sexe}/{Nom}/{Prenom}/{Birth}/{IdPromo}:
+    post:
+      tags:
+      - Usager
+      summary: Ajout d'une personne
+      operationId: InsertPers
+      produces:
+      - application/json
+      parameters:
+      - name: NumRef
+        in: path
+        description: Numero de reférence de la personne
+        required: true
+        type: integer
+        format: int64
+      - name: IdPersType
+        in: path
+        description: Id de la personne
+        required: true
+        type: integer
+      - name: Password
+        in: path
+        description: Mot de passe de la personne
+        required: true
+        type: string
+      - name: Email
+        in: path
+        description: Email de la personne
+        required: true
+        type: string
+      - name: Tel
+        in: path
+        description: Téléphone de la personne
+        required: true
+        type: string
+      - name: Sexe
+        in: path
+        description: Sexe de la personne
+        required: true
+        type: string
+      - name: Nom
+        in: path
+        description: Nom de la personne
+        required: true
+        type: string
+      - name: Prenom
+        in: path
+        description: Prenom de la personne
+        required: true
+        type: string
+      - name: Birth
+        in: path
+        description: Date de naissance de la personne
+        required: true
+        type: string
+      - name: IdPromo
+        in: path
+        description: Id de la promo
+        required: true
+        type: integer
+      responses:
+        200:
+          description: Etudiant integrer dans la table Contenir
+        400:
+          description: Requete invalid
+          
+  /InfraAdmin/Usager/Add/Promo/{IdDepartement}/{NomFormation}/{DureeFormation}/{AnneePromotion}/{IdProfesseurPromotion}:
+    post:
+      tags:
+      - Usager
+      summary: Création d'une promotion
+      operationId: InsertPromo
+      produces:
+      - application/json
+      parameters:
+      - name: IdDepartement
+        in: path
+        description: Id du département
+        required: true
+        type: integer
+        format: int64
+      - name: NomFormation
+        in: path
+        description: Nom de la formation
+        required: true
+        type: string
+      - name: DureeFormation
+        in: path
+        description: Durée de la formation
+        required: true
+        type: integer
+      - name: AnneePromotion
+        in: path
+        description: Année de la promotion
+        required: true
+        type: string
+      - name: IdProfesseurPromotion
+        in: path
+        description: Id du professeur de la promotion
+        required: true
+        type: integer
+      responses:
+        200:
+          description: Promotion crée
+        400:
+          description: Requete invalid
+          
+  /InfraAdmin/Usager/Add/Rapide/{Nom}/{Prenom}:
+    post:
+      tags:
+      - Usager
+      summary: Ajout d un utilisateur rapide
+      operationId: AjoutUser
+      produces:
+      - application/json
+      parameters:
+      - name: Nom
+        in: path
+        description: Nom Usager
+        required: true
+        type: string
+        format: int64
+      - name: Prenom
+        in: path
+        description: Prenom Usager
+        required: true
+        type: string
+      responses:
+        200:
+          description: Utilisateur cree
+        400:
+          description: Requete invalid
+  
+  /InfraAdmin/Usager/Delete/{IdUser}:
+    delete:
+      tags:
+      - Usager
+      summary: Supprimer un utilisateur
+      operationId: deleteUser
+      produces:
+      - application/json
+      parameters:
+      - name: IdUser
+        in: path
+        required: true
+        type: integer
+      responses:
+        200:
+          description: Utilisateur supprimer
+        400:
+          description: Invalid ID supplied
+          
+          
+  /InfraAdmin/Capteur/Modifs/Box/{IdBox}/{Nom}/{DateInstalle}/{Description}/{IdSalle}/{AddrMac}/{AddrIp}:
+    put:
+      tags:
+      - Capteur
+      summary: Modifs d'une box
+      operationId: ModifBox
+      produces:
+      - application/json
+      parameters:
+      - name: IdBox
+        in: path
+        description: Id de la bpx a modifié
+        required: true
+        type: integer
+      - name: Nom
+        in: path
+        description: Nom de la box
+        required: true
+        type: string
+      - name: DateInstalle
+        in: path
+        description: Date de l installation
+        required: true
+        type: string
+      - name: Description
+        in: path
+        description: Descrition de la box
+        required: true
+        type: string
+      - name: IdSalle
+        in: path
+        description: Id de la salle ou est la box
+        required: true
+        type: integer
+      - name: AddrMac
+        in: path
+        description: AddrMac
+        required: true
+        type: string
+      - name: AddrIp
+        in: path
+        description: AddrIp
+        required: true
+        type: string
+      responses:
+        200:
+          description: Box modifié
+        400:
+          description: Invalid ID supplied
+          
+  /InfraAdmin/Capteur/Modifs/Capteur/{Nom}/{IdBox}/{TypeActionneur}/{IdCapteur}:
+    put:
+      tags:
+      - Capteur
+      summary: Modifs d'une capteur
+      operationId: ModifCapteur
+      produces:
+      - application/json
+      parameters:
+      - name: Nom
+        in: path
+        description: Id de la bpx a modifié
+        required: true
+        type: integer
+      - name: IdBox
+        in: path
+        description: Id de la box
+        required: true
+        type: integer
+      - name: TypeActionneur
+        in: path
+        description: Id du device type de l actionneur 
+        required: true
+        type: integer
+      - name: IdCapteur
+        in: path
+        description: Id du capteur
+        required: true
+        type: integer
+      responses:
+        200:
+          description: Box modifié
+        400:
+          description: Invalid ID supplied
+    
+  /InfraAdmin/Capteur/Modifs/Capteur/PanneauSolaire/{Nom}/{IdBox}/{TypeActionneur}/{IdPanneauSolaire}:
+    put:
+      tags:
+      - Capteur
+      summary: Modifs d'un panneau solaire
+      operationId: ModifPanneauSolaire
+      produces:
+      - application/json
+      parameters:
+      - name: Nom
+        in: path
+        description: Id de la bpx a modifié
+        required: true
+        type: integer
+      - name: IdBox
+        in: path
+        description: Id de la box
+        required: true
+        type: integer
+      - name: TypeActionneur
+        in: path
+        description: Id du device type de l actionneur 
+        required: true
+        type: integer
+      - name: IdPanneauSolaire
+        in: path
+        description: Id du capteur (apnneau solaire)
+        required: true
+        type: integer
+      responses:
+        200:
+          description: Box modifié
+        400:
+          description: Invalid ID supplied
+          
+  /InfraAdmin/Capteur/Add/BoxDevice/{IdSalle}/{IdDeviceType}/:{AddrMac}/{AddrIp}/{LibelleBox}/{DescriptionBox}/{DateInstallation}/{IdValueType}/{LibelleDevice}/{SeuilMin}/{SeuilMax}:
+    post:
+      tags:
+      - Capteur
+      summary: Ajout Box et capteur
+      operationId: AddBoxCapteur
+      produces:
+      - application/json
+      parameters:
+      - name: IdSalle
+        in: path
+        description: Id de la salle associé a la box et au capteur
+        required: true
+        type: integer
+      - name: IdDeviceType
+        in: path
+        description: Id de la device type du capteur
+        required: true
+        type: integer
+      - name: AddrMac
+        in: path
+        description: AddrMac 
+        required: true
+        type: string
+      - name: AddrIp
+        in: path
+        description: AddrIp
+        required: true
+        type: string
+      - name: LibelleBox
+        in: path
+        description: Libelle de la box
+        required: true
+        type: string
+      - name: DescriptionBox
+        in: path
+        description: Description de la bpx
+        required: true
+        type: string
+      - name: DateInstallation
+        in: path
+        description: Date de l installation
+        required: true
+        type: string
+      - name: IdValueType
+        in: path
+        description: Id value type du capteur (unite)
+        required: true
+        type: integer
+      - name: LibelleDevice
+        in: path
+        description: Libelle du device
+        required: true
+        type: string
+      - name: SeuilMin
+        in: path
+        required: true
+        description: Seuil min
+        type: integer
+      - name: SeuilMax
+        in: path
+        required: true
+        description: Seuil max
+        type: integer
+      responses:
+        200:
+          description: Box et capteur cree
+        400:
+          description: Invalid ID supplied
+          
+  /InfraAdmin/Capteur/Add/Actionneur/{IdBox}/{IdValueType}/{Libelle}:
+    post:
+      tags:
+      - Capteur
+      summary: Ajout actionneur
+      operationId: AddActionneur
+      produces:
+      - application/json
+      parameters:
+      - name: IdBox
+        in: path
+        description: Id de la box
+        required: true
+        type: integer
+      - name: IdValueType
+        in: path
+        description: Id ValueType (unite)
+        required: true
+        type: integer
+      - name: Libelle
+        in: path
+        description: Libelle de l actionneur
+        required: true
+        type: string
+      responses:
+        200:
+          description: Actionneur cree
+        400:
+          description: Invalid ID supplied
+    
+  /InfraAdmin/Capteur/Add/PanneauSolaire/{IdBox}/{Libelle}:
+    post:
+      tags:
+      - Capteur
+      summary: Ajout d'un panneau solaire
+      operationId: AddPanneauSolaire
+      produces:
+      - application/json
+      parameters:
+      - name: IdBox
+        in: path
+        description: Id de la box
+        required: true
+        type: integer
+      - name: Libelle
+        in: path
+        description: Libelle du panneau solaire
+        required: true
+        type: string
+      responses:
+        200:
+          description: Panneau Solaire cree
+        400:
+          description: Invalid ID supplied
+  
+    
+schemes:
+ - https
