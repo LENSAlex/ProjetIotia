@@ -292,18 +292,17 @@ app.post("/InfraAdmin/Infrastructure/Add/Batiment/:Nom/:Superficie/:IdCampus/:Et
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
             var IdBatiment = result.insertId; //Id du batiment
+            console.log("id du batiment creer " + IdBatiment)
             var json = JSON.parse(req.params.EtageSuperficie) //json 
             var numEtage = ['RDC', '1er', '2eme', '3eme', '4eme', '5eme']; //nom etage
             var compteur = 0;
             json.SuperficieEtage.forEach((result) => {
-                // console.log(result);
-                // console.log("Etage = " + result.Etage);
-                // console.log("Superficie = " + result.Superficie);
+                compteur++;
                 conn.query("INSERT INTO `Etage`(`id_batiment`, `num`, `surface`) VALUES ('" + IdBatiment + "','" + numEtage[compteur] + "','" + result.Superficie + "')", function(err, result) {
                     if (err)
-                        res.status(400).json({ ErrorRequete: 'Requete invalid' });
+                        res.status(400).json({ ErrorRequete: err });
                     else {
-                        compteur++;
+                        // res.status(200).json("Batiment et etage creer");
                     }
                 });
             });
