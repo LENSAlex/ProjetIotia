@@ -292,7 +292,7 @@ definitions:
     - nom
     - prenom
     properties:
-      id_personne:
+      id_professeur:
         type: integer
         format: int64
       nom:
@@ -307,7 +307,7 @@ definitions:
     - id_professeur
     - nom
     properties:
-      id_promotion:
+      id_professeur:
         type: integer
         format: int64
       nom:
@@ -370,10 +370,7 @@ definitions:
     - libelle
     - description
     properties:
-      id_personne:
-        type: integer
-        format: int64
-      id_pers_type:
+      num_ref:
         type: integer
         format: int64
       password:

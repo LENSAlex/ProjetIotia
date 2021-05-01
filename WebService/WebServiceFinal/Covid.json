@@ -1,21 +1,19 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "Description du service \"Covid\"\n",
-    "version": "1.0.0",
-    "title": "Web Service Covid"
-  },
-  "tags": [
-    {
-      "name": "Covid/Count/CasCovid",
-      "description": "Recensement des cas Covid"
+    "description": "Description du service \"Covid\" projet IOTIA",
+    "version": "1.0.5",
+    "title": "Web Service Covid",
+    "contact": {
+      "email": "alex.lens@etu.unice.fr"
     }
-  ],
+  },
+  "host": "webservice.lensalex.fr:3002",
   "paths": {
-    "/Covid/Count/CasCovid": {
+    "/Covid/CasCovid": {
       "get": {
         "tags": [
-          "Covid/Count/CasCovid"
+          "Covid/CasCovid"
         ],
         "summary": "Affichage de toutes les personnes qui ont la covid",
         "description": "Affichage de toutes les personne qui ont la covid avec leur prénom, nom et la date",
@@ -28,7 +26,7 @@
             "schema": {
               "type": "array",
               "items": {
-                "$ref": "#/definitions/Covid_Count_CasCovid"
+                "$ref": "#/definitions/CasCovid"
               }
             }
           },
@@ -160,13 +158,8 @@
     }
   },
   "definitions": {
-    "Covid_Count_CasCovid": {
+    "CasCovid": {
       "type": "object",
-      "required": [
-        "nom",
-        "prenom",
-        "date"
-      ],
       "properties": {
         "id": {
           "type": "integer",
@@ -229,9 +222,7 @@
       }
     }
   },
-  "host": "virtserver.swaggerhub.com",
-  "basePath": "/thibaud-iotia/Covid/1.0.0",
   "schemes": [
-    "https"
+    "http"
   ]
 }

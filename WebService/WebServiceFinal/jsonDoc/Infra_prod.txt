@@ -562,7 +562,7 @@ definitions:
     - id_device
     - libelle
     properties:
-      id_valuetype:
+      id_device:
         type: integer
         format: int64
       libelle:
@@ -625,7 +625,7 @@ definitions:
     - id_devicetype
     - libelle_type
     properties:
-      id_valuetype:
+      id_devicetype:
         type: integer
         format: int64
       libelle_type:

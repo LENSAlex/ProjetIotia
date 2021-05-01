@@ -26,17 +26,23 @@ conn.connect(function(err) {
 //     passphrase: 'jessicalex' //mettre mdp certif
 // }
 
-// const options = {
-//     key: fs.readFileSync(__dirname + 'key.pem'),
-//     cert: fs.readFileSync(__dirname + 'cert.pem')
-//   };
+// Certificate
+const privateKey = fs.readFileSync('/etc/letsencrypt/live/webservice.lensalex.fr/privkey.pem', 'utf8');
+const certificate = fs.readFileSync('/etc/letsencrypt/live/webservice.lensalex.fr/cert.pem', 'utf8');
+const ca = fs.readFileSync('/etc/letsencrypt/live/webservice.lensalex.fr/chain.pem', 'utf8');
 
-var server = https.createServer(function (req, res) {
+const credentials = {
+	key: privateKey,
+	cert: certificate,
+	ca: ca
+};
+
+var server = https.createServer(credentials , function (req, res) {
     // res.writeHead(200,{'Content-Type': 'text/plain'})
     // res.end('Hello World\n')
 
 
-    if (req.url == "/Batiment/CountInfo/Campus") {
+    if (req.url == "/InfraAdmin/Usager/Modifs/:NumRef/:IdPersType/:Password/:Email/:Tel/:Sexe/:Nom/:Prenom/:Birth/:IdPromo/:IdPersonne") {
         conn.query("select a.nom , nbetage , nbsalle from (select Site.nom, count(id_salle) as nbsalle from Site, Batiment, Etage, Salle where Site.id_site = Batiment.id_site and Batiment.id_batiment = Etage.id_batiment and Etage.id_etage = Salle.id_etage group by Site.nom) a, (select Site.nom, count(Etage.id_etage) as nbetage from Site, Batiment, Etage where Site.id_site = Batiment.id_site and Batiment.id_batiment = Etage.id_batiment group by Site.nom) b where a.nom = b.nom", function(err, result) {
             if (err)
             {

@@ -1,21 +1,19 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "Description du service \"Usager\"\n",
-    "version": "1.0.0",
-    "title": "Web Service Usager"
-  },
-  "tags": [
-    {
-      "name": "Personne",
-      "description": "Informations sur une/des personnes"
+    "description": "Description du service \"Infrastructure\" projet IOTIA",
+    "version": "1.0.5",
+    "title": "Web Service Usager",
+    "contact": {
+      "email": "alex.lens@etu.unice.fr"
     }
-  ],
+  },
+  "host": "webservice.lensalex.fr:3001",
   "paths": {
-    "/Personne/{Prenom}/{Nom}": {
+    "/Usager/{Prenom}/{Nom}": {
       "get": {
         "tags": [
-          "Personne"
+          "Usager"
         ],
         "summary": "Retourne des informations sur une personne",
         "description": "Retourne le nom, prénom et email d'une personne",
@@ -54,10 +52,10 @@
         }
       }
     },
-    "/Personne/ListPromo": {
+    "/Usager/ListPromo": {
       "get": {
         "tags": [
-          "Personne"
+          "Usager"
         ],
         "summary": "Affichage les informations d'une promotion",
         "description": "Affichage du nom, l'année, la durée d'une promotion",
@@ -80,10 +78,10 @@
         }
       }
     },
-    "/Personne/ListPersonne": {
+    "/Usager/ListPersonne": {
       "get": {
         "tags": [
-          "Personne"
+          "Usager"
         ],
         "summary": "Affichage des informations des personnes",
         "description": "Affichage du nom, du mot de passe ou encore de l'email",
@@ -106,10 +104,10 @@
         }
       }
     },
-    "/Personne/ListTypePersonne": {
+    "/Usager/ListTypePersonne": {
       "get": {
         "tags": [
-          "Personne"
+          "Usager"
         ],
         "summary": "Affichage de type de personnes",
         "description": "Affichage de type de personnes avec l'id du type et le libelle",
@@ -132,10 +130,10 @@
         }
       }
     },
-    "/Personne/ListPromo/Simple": {
+    "/Usager/ListPromo/Simple": {
       "get": {
         "tags": [
-          "Personne"
+          "Usager"
         ],
         "summary": "Affichage de la liste de promo",
         "description": "Affichage de la liste de promo avec l'id et le nom",
@@ -158,10 +156,10 @@
         }
       }
     },
-    "/Personne/ListSalleEleve/{Id}": {
+    "/Usager/ListSalleEleve/{Id}": {
       "get": {
         "tags": [
-          "Personne"
+          "Usager"
         ],
         "summary": "Retourne les salles pour une élève",
         "description": "Retourne l'id de salle et l'id de l'élève",
@@ -192,10 +190,10 @@
         }
       }
     },
-    "/Personne/GetIdEleve/{Nom}/{Prenom}/{Email}": {
+    "/Usager/GetIdEleve/{Nom}/{Prenom}/{Email}": {
       "get": {
         "tags": [
-          "Personne"
+          "Usager"
         ],
         "summary": "Retourne l'id d'une personne en fonction de 3 paramètres",
         "description": "Retourne l'id d'une personne en fonction du nom, du prénom et de son email",
@@ -242,10 +240,10 @@
         }
       }
     },
-    "/Personne/GetIdEleve/{Ine}": {
+    "/Usager/GetIdEleve/{Ine}": {
       "get": {
         "tags": [
-          "Personne"
+          "Usager"
         ],
         "summary": "Retourne l'id d'une personne en fonction de 1 paramètre",
         "description": "Retourne l'id d'une personne en fonction de l'INE",
@@ -276,10 +274,10 @@
         }
       }
     },
-    "/Personne/ListProf": {
+    "/Usager/ListProf": {
       "get": {
         "tags": [
-          "Personne"
+          "Usager"
         ],
         "summary": "Obtenir la liste des professeurs",
         "description": "Obtenir la liste des professeurs avec l'id, le nom et le prénom.",
@@ -302,184 +300,86 @@
         }
       }
     },
-    "/Personne/Add/{NumRef}/{IdPersType}/{Password}/{Email}/{Tel}/{Sexe}/{Nom}/{Prenom}/{Birth}/{IdPromo}": {
-      "post": {
+    "/Usager/List/TauxOccupation/Batiment": {
+      "get": {
         "tags": [
-          "Personne"
+          "Usager"
         ],
-        "summary": "Ajout d'une personne",
-        "operationId": "InsertPers",
+        "summary": "Obtenir la taux occupation Batiment",
+        "description": "Obtenir un suivi sur le taux d occupation sur chaque batiment",
         "produces": [
           "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "NumRef",
-            "in": "path",
-            "description": "Numero de reférence de la personne",
-            "required": true,
-            "type": "integer",
-            "format": "int64"
-          },
-          {
-            "name": "IdPersType",
-            "in": "path",
-            "description": "Id de la personne",
-            "required": true,
-            "type": "integer"
-          },
-          {
-            "name": "Password",
-            "in": "path",
-            "description": "Mot de passe de la personne",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "Email",
-            "in": "path",
-            "description": "Email de la personne",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "Tel",
-            "in": "path",
-            "description": "Téléphone de la personne",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "Sexe",
-            "in": "path",
-            "description": "Sexe de la personne",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "Nom",
-            "in": "path",
-            "description": "Nom de la personne",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "Prenom",
-            "in": "path",
-            "description": "Prenom de la personne",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "Birth",
-            "in": "path",
-            "description": "Date de naissance de la personne",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "IdPromo",
-            "in": "path",
-            "description": "Id de la promo",
-            "required": true,
-            "type": "integer"
-          }
         ],
         "responses": {
           "200": {
-            "description": "Etudiant integrer dans la table Contenir"
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Personne_TauxOccupation_Bat"
+              }
+            }
           },
-          "405": {
-            "description": "Requete invalid"
-          }
-        }
-      }
-    },
-    "/Personne/Add/Promo/{IdDepartement}/{NomFormation}/{DureeFormation}/{AnneePromotion}/{IdProfesseurPromotion}": {
-      "post": {
-        "tags": [
-          "Personne"
-        ],
-        "summary": "Création d'une promotion",
-        "operationId": "InsertPromo",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "IdDepartement",
-            "in": "path",
-            "description": "Id du département",
-            "required": true,
-            "type": "integer",
-            "format": "int64"
-          },
-          {
-            "name": "NomFormation",
-            "in": "path",
-            "description": "Nom de la formation",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "DureeFormation",
-            "in": "path",
-            "description": "Durée de la formation",
-            "required": true,
-            "type": "integer"
-          },
-          {
-            "name": "AnneePromotion",
-            "in": "path",
-            "description": "Année de la promotion",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "IdProfesseurPromotion",
-            "in": "path",
-            "description": "Id du professeur de la promotion",
-            "required": true,
-            "type": "integer"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Promotion crée"
-          },
-          "405": {
-            "description": "Requete invalid"
-          }
-        }
-      }
-    },
-    "/Personne/Delete/{IdUser}": {
-      "delete": {
-        "tags": [
-          "Personne"
-        ],
-        "summary": "Supprimer un utilisateur",
-        "operationId": "deleteUser",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "IdUser",
-            "in": "path",
-            "required": true,
-            "type": "integer"
-          }
-        ],
-        "responses": {
           "400": {
-            "description": "Invalid ID supplied"
+            "description": "Requete invalid"
+          }
+        }
+      }
+    },
+    "/Usager/List/TauxOccupation/Site": {
+      "get": {
+        "tags": [
+          "Usager"
+        ],
+        "summary": "Obtenir la taux occupation Batiment",
+        "description": "Obtenir un suivi sur le taux d occupation sur chaque site",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Personne_TauxOccupation_Site"
+              }
+            }
+          },
+          "400": {
+            "description": "Requete invalid"
           }
         }
       }
     }
   },
   "definitions": {
+    "Personne_TauxOccupation_Bat": {
+      "type": "object",
+      "properties": {
+        "id_pers_type": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "libelle": {
+          "type": "string",
+          "example": "un libelle"
+        }
+      }
+    },
+    "Personne_TauxOccupation_Site": {
+      "type": "object",
+      "properties": {
+        "id_pers_type": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "libelle": {
+          "type": "string",
+          "example": "un libelle"
+        }
+      }
+    },
     "Personne": {
       "type": "object",
       "required": [
@@ -526,7 +426,7 @@
         "prenom"
       ],
       "properties": {
-        "id_personne": {
+        "id_professeur": {
           "type": "integer",
           "format": "int64"
         },
@@ -547,7 +447,7 @@
         "nom"
       ],
       "properties": {
-        "id_promotion": {
+        "id_professeur": {
           "type": "integer",
           "format": "int64"
         },
@@ -632,11 +532,7 @@
         "description"
       ],
       "properties": {
-        "id_personne": {
-          "type": "integer",
-          "format": "int64"
-        },
-        "id_pers_type": {
+        "num_ref": {
           "type": "integer",
           "format": "int64"
         },
@@ -679,9 +575,7 @@
       }
     }
   },
-  "host": "virtserver.swaggerhub.com",
   "schemes": [
-    "https"
-  ],
-  "basePath": "/docProjetIotia/Usager/1.0.0"
+    "http"
+  ]
 }

@@ -1,21 +1,19 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "Description du service \"Infra PROD\"\n",
+    "description": "Description du service \"Infra PROD\" projet IOTIA\n",
     "version": "1.0.0",
-    "title": "Web Service Infra PROD"
-  },
-  "tags": [
-    {
-      "name": "Capteur",
-      "description": "Tout ce qui concerne les capteurs"
+    "title": "Web Service Infra PROD",
+    "contact": {
+      "email": "alex.lens@etu.unice.fr"
     }
-  ],
+  },
+  "host": "webservice.lensalex.fr:3005",
   "paths": {
-    "/Capteur/ListValueType": {
+    "/InfraProd/ListValueType": {
       "get": {
         "tags": [
-          "Capteur"
+          "InfraProd"
         ],
         "summary": "Retourne des informations une liste de capteurs.",
         "description": "Retourne l'id, le libelle d'une liste de capteurs ainsi que son unité de mesure.",
@@ -36,10 +34,10 @@
         }
       }
     },
-    "/Capteur/ListDevice": {
+    "/InfraProd/ListDevice": {
       "get": {
         "tags": [
-          "Capteur"
+          "InfraProd"
         ],
         "summary": "Retourne les devices sans arduino et raspberry pi",
         "description": "Retourne l'id, le type de libelle d'une liste de capteurs",
@@ -60,10 +58,10 @@
         }
       }
     },
-    "/Capteur/Search/{NomSalle}": {
+    "/InfraProd/Search/{NomSalle}": {
       "get": {
         "tags": [
-          "Capteur"
+          "InfraProd"
         ],
         "summary": "Cherche les capteurs d'une salle",
         "description": "Cherche les capteurs d'une salle via le numéro de salle",
@@ -94,10 +92,34 @@
         }
       }
     },
-    "/Capteur/ListCapteur/{Salle}": {
+    "/InfraProd/Box/Info": {
       "get": {
         "tags": [
-          "Capteur"
+          "InfraProd"
+        ],
+        "summary": "Retourne les informations de chaque box",
+        "description": "Retourne les informations de chaque box avec l'ip, l'étage, la description ou encore le batiment",
+        "operationId": "getInfoBox",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/BoxInfo"
+            }
+          },
+          "400": {
+            "description": "Requete invalid"
+          }
+        }
+      }
+    },
+    "/InfraProd/ListCapteur/{Salle}": {
+      "get": {
+        "tags": [
+          "InfraProd"
         ],
         "summary": "Cherche les capteurs d'une salle",
         "description": "Cherche les capteurs d'une salle via le nom de salle",
@@ -128,34 +150,10 @@
         }
       }
     },
-    "/Capteur/Box/Info": {
+    "/InfraProd/ListCapteur": {
       "get": {
         "tags": [
-          "Capteur"
-        ],
-        "summary": "Retourne les informations d'une Box",
-        "description": "Retourne les informations d'une Box avec l'id de la salle, l'id de la box, le libelle, l'addr IP, le nom etc ...",
-        "operationId": "getBoxInfo",
-        "produces": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "successful operation",
-            "schema": {
-              "$ref": "#/definitions/BoxInfo"
-            }
-          },
-          "400": {
-            "description": "Requete invalid"
-          }
-        }
-      }
-    },
-    "/Capteur/ListCapteur": {
-      "get": {
-        "tags": [
-          "Capteur"
+          "InfraProd"
         ],
         "summary": "Retourne liste de capteurs",
         "description": "Retourne une liste de capteurs avec l'id_device, le type de libelle et le libelle",
@@ -176,10 +174,10 @@
         }
       }
     },
-    "/Capteur/ListComplete": {
+    "/InfraProd/ListComplete": {
       "get": {
         "tags": [
-          "Capteur"
+          "InfraProd"
         ],
         "summary": "Retourne liste de capteurs pour le site web",
         "description": "Retourne une liste de capteurs avec l'id_device, le type de libelle et l'id de la box",
@@ -200,10 +198,10 @@
         }
       }
     },
-    "/Capteur/ListSalle": {
+    "/InfraProd/ListSalle": {
       "get": {
         "tags": [
-          "Capteur"
+          "InfraProd"
         ],
         "summary": "Retourne une liste des salles pour avoir l'id_box",
         "description": "Retourne une liste des salles avec le nom, l'id de la box et l'id de la salle",
@@ -224,10 +222,10 @@
         }
       }
     },
-    "/Capteur/Valeur/{IdSalle}": {
+    "/InfraProd/Valeur/{IdSalle}": {
       "get": {
         "tags": [
-          "Capteur"
+          "InfraProd"
         ],
         "summary": "Cherche les valeurs d'une salle",
         "description": "Cherche les valeurs d'une salle via l'id de la salle",
@@ -258,10 +256,10 @@
         }
       }
     },
-    "/Capteur/Valeur/{IdSalle}/{IdValueType}": {
+    "/InfraProd/Valeur/{IdSalle}/{IdValueType}": {
       "get": {
         "tags": [
-          "Capteur"
+          "InfraProd"
         ],
         "summary": "Cherche les valeurs d'un capteur grâce à son type",
         "description": "Cherche les valeurs d'un capteur grâce à son type. On y retrouve la valeur, le libelle et le nom.",
@@ -300,10 +298,10 @@
         }
       }
     },
-    "/Capteur/ValeurSpecifique/{IdDevice}": {
+    "/InfraProd/ValeurSpecifique/{IdDevice}": {
       "get": {
         "tags": [
-          "Capteur"
+          "InfraProd"
         ],
         "summary": "Cherche les valeurs d'un capteur spécifique",
         "description": "Cherche les valeurs d'un capteur spécifique",
@@ -334,10 +332,10 @@
         }
       }
     },
-    "/Capteur/List/Historique": {
+    "/InfraProd/List/Historique": {
       "get": {
         "tags": [
-          "Capteur"
+          "InfraProd"
         ],
         "summary": "Retourne l'historique des valeurs des capteurs",
         "description": "Retourne l'historique des valeurs des capteurs avec le libelle, l'id du device, la valeur, l'unite et le type de libelle",
@@ -358,10 +356,10 @@
         }
       }
     },
-    "/Capteur/ValeurSpecifique/Last/{IdDevice}": {
+    "/InfraProd/ValeurSpecifique/Last/{IdDevice}": {
       "get": {
         "tags": [
-          "Capteur"
+          "InfraProd"
         ],
         "summary": "Cherche la dernière valeur d'un capteur spécifique",
         "description": "Cherche la dernière valeur d'un capteur spécifique",
@@ -392,10 +390,10 @@
         }
       }
     },
-    "/Capteur/ValeurSpecifique/Moyenne/{IdDevice}": {
+    "/InfraProd/ValeurSpecifique/Moyenne/{IdDevice}": {
       "get": {
         "tags": [
-          "Capteur"
+          "InfraProd"
         ],
         "summary": "Cherche la moyenne des valeurs d'un capteur spécifique",
         "description": "Cherche la moyenne des valeurs d'un capteur spécifique",
@@ -426,10 +424,10 @@
         }
       }
     },
-    "/Capteur/List/Historique/Temp": {
+    "/InfraProd/List/Historique/Temp": {
       "get": {
         "tags": [
-          "Capteur"
+          "InfraProd"
         ],
         "summary": "Retourne l'historique des valeurs des capteurs de temp du plus récent au plus vieux",
         "description": "Retourne l'historique des valeurs des capteurs de temp du plus récent au plus vieux avec le type de libelle, le libelle et la valeur",
@@ -450,10 +448,10 @@
         }
       }
     },
-    "/Capteur/List/Historique/CO2": {
+    "/InfraProd/List/Historique/CO2": {
       "get": {
         "tags": [
-          "Capteur"
+          "InfraProd"
         ],
         "summary": "Retourne l'historique des valeurs des capteurs de CO2 du plus récent au plus vieux",
         "description": "Retourne l'historique des valeurs des capteurs de CO2 du plus récent au plus vieux avec le type de libelle, le libelle et la valeur",
@@ -474,10 +472,10 @@
         }
       }
     },
-    "/Capteur/List/Historique/Energie": {
+    "/InfraProd/List/Historique/Energie": {
       "get": {
         "tags": [
-          "Capteur"
+          "InfraProd"
         ],
         "summary": "Retourne l'historique des valeurs des capteurs de Energie du plus récent au plus vieux",
         "description": "Retourne l'historique des valeurs des capteurs de Energie du plus récent au plus vieux avec le type de libelle, le libelle et la valeur",
@@ -498,22 +496,32 @@
         }
       }
     },
-    "/Capteur/List/TauxOccupation": {
+    "/InfraProd/Box/{IdBox}": {
       "get": {
         "tags": [
-          "Capteur"
+          "InfraProd"
         ],
-        "summary": "Retourne le taux d'occupation",
-        "description": "Retourne le taux d'occupation avec l'id de la personne et le statut",
-        "operationId": "getListeTauxOccup",
+        "summary": "Cherche tous les capteurs d'une box",
+        "description": "Cherche tous les capteurs d'une box via l'id de la box et retourne l'id et le libelle.",
+        "operationId": "getCapteursIdBox",
         "produces": [
           "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "IdBox",
+            "in": "path",
+            "description": "l'id de la box",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          }
         ],
         "responses": {
           "200": {
             "description": "successful operation",
             "schema": {
-              "$ref": "#/definitions/ListeTauxOccup"
+              "$ref": "#/definitions/Box"
             }
           },
           "400": {
@@ -522,113 +530,14 @@
         }
       }
     },
-    "/Capteur/Add/BoxDevice/{IdSalle}/{IdDeviceType}/{AddrMac}/{AddrIp}/{LibelleBox}/{DescriptionBox}/{DateInstallation}/{IdValueType}/{LibelleDevice}/{SeuilMin}/{SeuilMax}": {
-      "post": {
+    "/InfraProd/Box/Actionneur/{IdBox}": {
+      "get": {
         "tags": [
-          "Capteur"
+          "InfraProd"
         ],
-        "summary": "Ajout de capteur",
-        "operationId": "InsertCapteur",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "IdSalle",
-            "in": "path",
-            "description": "Id de la salle",
-            "required": true,
-            "type": "integer",
-            "format": "int64"
-          },
-          {
-            "name": "IdDeviceType",
-            "in": "path",
-            "description": "Id du type de device",
-            "required": true,
-            "type": "integer"
-          },
-          {
-            "name": "AddrMac",
-            "in": "path",
-            "description": "Adresse MAC",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "AddrIp",
-            "in": "path",
-            "description": "Adresse IP",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "LibelleBox",
-            "in": "path",
-            "description": "Le libelle de la box",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "DescriptionBox",
-            "in": "path",
-            "description": "La description de la box",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "DateInstallation",
-            "in": "path",
-            "description": "La date d'installation",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "IdValueType",
-            "in": "path",
-            "description": "Id du type de valeur",
-            "required": true,
-            "type": "integer"
-          },
-          {
-            "name": "LibelleDevice",
-            "in": "path",
-            "description": "Le libelle du device",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "SeuilMin",
-            "in": "path",
-            "description": "Le seuil min",
-            "required": true,
-            "type": "integer"
-          },
-          {
-            "name": "SeuilMax",
-            "in": "path",
-            "description": "Le seuil max",
-            "required": true,
-            "type": "integer"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Box et capteur crée"
-          },
-          "405": {
-            "description": "Requete invalid"
-          }
-        }
-      }
-    },
-    "/Capteur/Add/Actionneur/{IdBox}/{IdValueType}/{Libelle}": {
-      "post": {
-        "tags": [
-          "Capteur"
-        ],
-        "summary": "Ajout d'actionneur",
-        "operationId": "InsertActionneur",
+        "summary": "Cherche tous les actionneurs d'une box",
+        "description": "Cherche tous les actionneurs d'une box via l'id de la box et retourne l'id et le libelle.",
+        "operationId": "getActionneursIdBox",
         "produces": [
           "application/json"
         ],
@@ -636,43 +545,33 @@
           {
             "name": "IdBox",
             "in": "path",
-            "description": "Id de la box",
+            "description": "l'id de la box",
             "required": true,
             "type": "integer",
             "format": "int64"
-          },
-          {
-            "name": "IdValueType",
-            "in": "path",
-            "description": "Id du type de valeur",
-            "required": true,
-            "type": "integer"
-          },
-          {
-            "name": "Libelle",
-            "in": "path",
-            "description": "Le libelle",
-            "required": true,
-            "type": "string"
           }
         ],
         "responses": {
           "200": {
-            "description": "Actionneur crée"
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/Box"
+            }
           },
-          "405": {
+          "400": {
             "description": "Requete invalid"
           }
         }
       }
     },
-    "/Capteur/Add/PanneauSolaire/{IdBox}/{Libelle}": {
-      "post": {
+    "/InfraProd/Box/PanneauSolaire/{IdBox}": {
+      "get": {
         "tags": [
-          "Capteur"
+          "InfraProd"
         ],
-        "summary": "Ajout d'actionneur",
-        "operationId": "InsertPanneauSolaire",
+        "summary": "Cherche tous les panneaux solaire d'une box",
+        "description": "Cherche tous les actionneurs d'une box via l'id de la box et retourne l'id et le libelle.",
+        "operationId": "getPanneauSolaireIdBox",
         "produces": [
           "application/json"
         ],
@@ -680,24 +579,20 @@
           {
             "name": "IdBox",
             "in": "path",
-            "description": "Id de la box",
+            "description": "l'id de la box",
             "required": true,
             "type": "integer",
             "format": "int64"
-          },
-          {
-            "name": "Libelle",
-            "in": "path",
-            "description": "Le libelle",
-            "required": true,
-            "type": "string"
           }
         ],
         "responses": {
           "200": {
-            "description": "Panneau solaire cree"
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/Box"
+            }
           },
-          "405": {
+          "400": {
             "description": "Requete invalid"
           }
         }
@@ -726,19 +621,19 @@
         }
       }
     },
-    "ListeTauxOccup": {
+    "Box": {
       "type": "object",
       "required": [
-        "id_personne"
+        "id_device"
       ],
       "properties": {
-        "id_personne": {
+        "id_device": {
           "type": "integer",
           "format": "int64"
         },
-        "statut": {
+        "libelle": {
           "type": "string",
-          "example": "le statut"
+          "example": "Temperature"
         }
       }
     },
@@ -923,7 +818,7 @@
         "libelle"
       ],
       "properties": {
-        "id_valuetype": {
+        "id_device": {
           "type": "integer",
           "format": "int64"
         },
@@ -957,7 +852,8 @@
       "type": "object",
       "required": [
         "id_salle",
-        "id_box"
+        "id_box",
+        "id_etage"
       ],
       "properties": {
         "id_salle": {
@@ -980,9 +876,25 @@
           "type": "string",
           "example": "une description"
         },
+        "nom": {
+          "type": "string",
+          "example": "un nom"
+        },
+        "id_etage": {
+          "type": "integer",
+          "format": "int64"
+        },
         "NomSalle": {
           "type": "string",
-          "example": "C237"
+          "example": "nom de salle"
+        },
+        "PanneauSolaire": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "NbBouton": {
+          "type": "integer",
+          "format": "int64"
         }
       }
     },
@@ -993,7 +905,7 @@
         "libelle_type"
       ],
       "properties": {
-        "id_valuetype": {
+        "id_devicetype": {
           "type": "integer",
           "format": "int64"
         },
@@ -1046,9 +958,7 @@
       }
     }
   },
-  "host": "virtserver.swaggerhub.com",
   "schemes": [
-    "https"
-  ],
-  "basePath": "/thibaud-iotia/Infra_Prod/1.0.0"
+    "http"
+  ]
 }
