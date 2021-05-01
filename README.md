@@ -174,6 +174,14 @@ Liens vers les différentes documentations en ligne:
 - [Documentation XML Projet Android](http://51.77.137.170/lpiotia/AppMobile/ProjetDroid.xml)
 - [Documentation XML Bibliothèque de classe](http://51.77.137.170/lpiotia/AppMobile/ProjetGroupe.xml)
 
+# Naviguation dans le repository:
+
+Lien vers les classes de la bibliothèque: [Cliquez ici](https://github.com/LENSAlex/ProjetIotia/tree/DevAppMobileLoris/AppMobile/ProjetGroupe/ProjetGroupe)
+Lien vers le projet Android: [Cliquez ici](https://github.com/LENSAlex/ProjetIotia/tree/DevAppMobileLoris/AppMobile/ProjetGroupe/ProjetGroupe.Android)
+Lien vers le projet de Notification: [Cliquez ici](https://github.com/LENSAlex/ProjetIotia/tree/DevAppMobileLoris/AppMobile/NotificationAPI)
+Lien vers les Managers: [Cliquez ici](https://github.com/LENSAlex/ProjetIotia/tree/DevAppMobileLoris/AppMobile/ProjetGroupe/ProjetGroupe/Models/Manager)
+Lien vers les Pages Front/Back: [Cliquez ici](https://github.com/LENSAlex/ProjetIotia/tree/DevAppMobileLoris/AppMobile/ProjetGroupe/ProjetGroupe/Views)
+
 # Download 
 
 Cliquez sur ce lien pour télécharger l'application au format APK:
