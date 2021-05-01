@@ -1,14 +1,17 @@
-# Projet E-Covid
+# Projet E-Covid:
 
 Application Mobile:
 
 Cette application mobile à été développé en C# sous Windows grâce au logiciel Visual Studio. 
 Pour utiliser le code de l'application, le modifier vous devez:
 
+# Prérequis:
+
 - 1] Installer Visual Studio Community 
 - 2] Installer les Packages Xamarin cross Platform dans le "Visual Studio Installer"
 - 3] Vous devez avoir un smartphone Android en mode développeur qui accepte le débeugage par USB.
 - 4] Un câble pour le brancher à votre ordinateur. Si vous n'avez pas de smartphone, vous pouvez installer des Émulateurs Android via Visual Studio.
+
 
 # Création du projet:
 
@@ -125,7 +128,7 @@ Notification via AzureHub: https://docs.microsoft.com/en-us/azure/developer/mobi
 
 Les fichiers générés sont engeristé dans: "android/data/com.company.projetgroupe/files/SmartCovid/" pour les appareis Android.
 
-# Notification API
+# Notification API:
 
 - Pour pouvoir envoyer des notifications push à tout le monde lors d'une alerte de covid-19. Il faut créer une API application web sur Visual Studio.
 Voici un tutoriel d'installation de l'api sur Azure via votre compte Etudiant ou Entreprise.
@@ -163,7 +166,15 @@ Il est aussi important de noter que pour recevoir convenablement les notificatio
 - Get Historique Dernière Valeur d'un Capteur (donne la ligne du capteur avec sa dernière valeur (la plus récente) via son Id) OK
 - Post (envoie un text et une action à une API en ligne sur les service d'azure) OK
 
-# Documentation 
+# Naviguation dans le repository:
+
+- Lien vers les classes de la bibliothèque: [Cliquez ici](https://github.com/LENSAlex/ProjetIotia/tree/DevAppMobileLoris/AppMobile/ProjetGroupe/ProjetGroupe)
+- Lien vers le projet Android: [Cliquez ici](https://github.com/LENSAlex/ProjetIotia/tree/DevAppMobileLoris/AppMobile/ProjetGroupe/ProjetGroupe.Android)
+- Lien vers le projet de Notification: [Cliquez ici](https://github.com/LENSAlex/ProjetIotia/tree/DevAppMobileLoris/AppMobile/NotificationAPI)
+- Lien vers les Managers: [Cliquez ici](https://github.com/LENSAlex/ProjetIotia/tree/DevAppMobileLoris/AppMobile/ProjetGroupe/ProjetGroupe/Models/Manager)
+- Lien vers les Pages Front/Back: [Cliquez ici](https://github.com/LENSAlex/ProjetIotia/tree/DevAppMobileLoris/AppMobile/ProjetGroupe/ProjetGroupe/Views)
+
+# Documentation:
 
 - Vous allez pouvoir trouver la documentation XML de la bibliothèque de classe nommée "ProjetGroupe" et celle du ProjetDroid dans le dossier Documentation/AppMobile
 - Vous allez pouvoir télécharger la document Doxygen du projet global via Github.
@@ -173,11 +184,4 @@ Liens vers les différentes documentations en ligne:
 - [Documentation Doxygen](http://51.77.137.170/lpiotia/AppMobile/ProjetGroupe_Documentation/annotated.html)
 - [Documentation XML Projet Android](http://51.77.137.170/lpiotia/AppMobile/ProjetDroid.xml)
 - [Documentation XML Bibliothèque de classe](http://51.77.137.170/lpiotia/AppMobile/ProjetGroupe.xml)
-
-# Download 
-
-Cliquez sur ce lien pour télécharger l'application au format APK:
-
-- [Téléchargement de l'application](http://51.77.137.170/lpiotia/AppMobile/Ecovid.apk)
-
 
