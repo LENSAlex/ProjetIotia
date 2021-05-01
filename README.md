@@ -185,10 +185,3 @@ Liens vers les différentes documentations en ligne:
 - [Documentation XML Projet Android](http://51.77.137.170/lpiotia/AppMobile/ProjetDroid.xml)
 - [Documentation XML Bibliothèque de classe](http://51.77.137.170/lpiotia/AppMobile/ProjetGroupe.xml)
 
-# Download:
-
-Cliquez sur ce lien pour télécharger l'application au format APK:
-
-- [Téléchargement de l'application](http://51.77.137.170/lpiotia/AppMobile/Ecovid.apk)
-
-
