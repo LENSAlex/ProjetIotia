@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['unite_384',['Unite',['../class_projet_groupe_1_1_models_1_1_historique.html#ae347d237bc25ec4c43d3d919f9960a61',1,'ProjetGroupe.Models.Historique.Unite()'],['../class_projet_groupe_1_1_views_1_1_capteurs_details_page.html#a02fc581c5eae1eb4f1559ce69f1425f9',1,'ProjetGroupe.Views.CapteursDetailsPage.Unite()']]],
-  ['usertype_385',['UserType',['../class_projet_groupe_1_1_app_shell.html#aa985bf0761a4c6f8c5e9ccb2dda442b0',1,'ProjetGroupe::AppShell']]]
+  ['unite_391',['Unite',['../class_projet_groupe_1_1_models_1_1_historique.html#ae347d237bc25ec4c43d3d919f9960a61',1,'ProjetGroupe.Models.Historique.Unite()'],['../class_projet_groupe_1_1_views_1_1_capteurs_details_page.html#a02fc581c5eae1eb4f1559ce69f1425f9',1,'ProjetGroupe.Views.CapteursDetailsPage.Unite()']]],
+  ['urialerte_392',['URIAlerte',['../class_projet_groupe_1_1_config.html#a281524e6a81877a8656eeae5a277c7f1',1,'ProjetGroupe::Config']]],
+  ['uricovid_393',['URICovid',['../class_projet_groupe_1_1_config.html#a98b156c6120f2d79f9174da5418f42b3',1,'ProjetGroupe::Config']]],
+  ['uriinfraprod_394',['URIInfraProd',['../class_projet_groupe_1_1_config.html#a30025464ee47b8f406ae9ccc19690d06',1,'ProjetGroupe::Config']]],
+  ['uriinfrastructure_395',['URIInfrastructure',['../class_projet_groupe_1_1_config.html#ae2e08b749c9c983f2d05b3e2db01edb1',1,'ProjetGroupe::Config']]],
+  ['usertype_396',['UserType',['../class_projet_groupe_1_1_app_shell.html#aa985bf0761a4c6f8c5e9ccb2dda442b0',1,'ProjetGroupe::AppShell']]]
 ];

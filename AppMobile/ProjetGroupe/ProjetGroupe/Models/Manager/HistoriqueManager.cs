@@ -27,7 +27,7 @@ namespace ProjetGroupe.Models.Manager
                 httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
                 httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             }
-            string WebAPIUrl = Config.WebServiceURI + "/Capteur/List/Historique";
+            string WebAPIUrl = Config.URIInfraProd + "/List/Historique";
             var uri = new Uri(WebAPIUrl);
             try
             {
@@ -58,7 +58,7 @@ namespace ProjetGroupe.Models.Manager
                 httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
                 httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             }
-            string WebAPIUrl = Config.WebServiceURI + "/Capteur/ValeurSpecifique/Last/" + CapteurId;
+            string WebAPIUrl = Config.URIInfraProd + "/ValeurSpecifique/Last/" + CapteurId;
             var uri = new Uri(WebAPIUrl);
             try
             {
@@ -89,7 +89,7 @@ namespace ProjetGroupe.Models.Manager
                 httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
                 httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             }
-            string WebAPIUrl = Config.WebServiceURI + "/Capteur/ValeurSpecifique/Moyenne/" + CapteurId;
+            string WebAPIUrl = Config.URIInfraProd + "/ValeurSpecifique/Moyenne/" + CapteurId;
             var uri = new Uri(WebAPIUrl);
             try
             {
@@ -120,7 +120,7 @@ namespace ProjetGroupe.Models.Manager
                 httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
                 httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             }
-            string WebAPIUrl = Config.WebServiceURI + "/Capteur/ValeurSpecifique/Moyenne/" + CapteurId;
+            string WebAPIUrl = Config.URIInfraProd + "/ValeurSpecifique/Moyenne/" + CapteurId;
             var uri = new Uri(WebAPIUrl);
             try
             {

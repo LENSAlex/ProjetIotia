@@ -30,7 +30,7 @@ namespace ProjetGroupe.Models.Manager
                 httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             }
 
-            string WebAPIUrl = Config.WebServiceURI + "/Capteur/Search/" + nomSalle;
+            string WebAPIUrl = Config.URIInfraProd + "/Search/" + nomSalle;
             var uri = new Uri(WebAPIUrl);
 
             try

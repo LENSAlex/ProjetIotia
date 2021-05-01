@@ -152,7 +152,7 @@
         </member>
         <member name="M:ProjetGroupe.AppShell.GetImagePath">
             <summary>
-            Méthode qui change l'URI de l'image de profil par la nouvelle
+            Méthode qui change l'URI de l'image de profil par la nouvelle 
             </summary>
         </member>
         <member name="M:ProjetGroupe.AppShell.SetImgAsync(System.Object)">
@@ -228,7 +228,22 @@
             Port du serveur de mail
             </summary>
         </member>
-        <member name="P:ProjetGroupe.Config.WebServiceURI">
+        <member name="P:ProjetGroupe.Config.URIAlerte">
+            <summary>
+            Uri de l'API REST
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Config.URIInfraProd">
+            <summary>
+            Uri de l'API REST
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Config.URIInfrastructure">
+            <summary>
+            Uri de l'API REST
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Config.URICovid">
             <summary>
             Uri de l'API REST
             </summary>
@@ -1593,6 +1608,11 @@
             Remplissage de la liste à chaquement de lettre/chiffre dans la TextBox du front
             </summary>
             <param name="query">texte dans la TextBox</param>
+        </member>
+        <member name="M:ProjetGroupe.Views.SmartBuildingPage.GetData">
+            <summary>
+            Méthode qui permet de refresh les résultats de la recherche par la même recherche
+            </summary>
         </member>
         <member name="M:ProjetGroupe.Views.SmartBuildingPage.OnItemSelected2(System.Object,Xamarin.Forms.SelectedItemChangedEventArgs)">
             <summary>

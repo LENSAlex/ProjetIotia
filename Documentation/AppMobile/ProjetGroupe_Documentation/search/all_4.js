@@ -7,7 +7,8 @@ var searchData=
   ['deregisterdeviceasync_36',['DeregisterDeviceAsync',['../interface_projet_groupe_1_1_tools_1_1_services_1_1_i_notification_registration_service.html#ad24e59518c85004a579d2002bbcc9076',1,'ProjetGroupe.Tools.Services.INotificationRegistrationService.DeregisterDeviceAsync()'],['../class_projet_groupe_1_1_tools_1_1_services_1_1_notification_registration_service.html#af790f1b986fb8511548e628acb70c825',1,'ProjetGroupe.Tools.Services.NotificationRegistrationService.DeregisterDeviceAsync()']]],
   ['description_37',['Description',['../class_projet_groupe_1_1_models_1_1_equipement.html#acb16dca77fb65775fea8b64692079249',1,'ProjetGroupe::Models::Equipement']]],
   ['deviceinstallation_38',['DeviceInstallation',['../class_projet_groupe_1_1_tools_1_1_device_installation.html',1,'ProjetGroupe::Tools']]],
-  ['dropdownmenu_39',['DropdownMenu',['../namespace_dropdown_menu.html',1,'']]],
-  ['dropmenu_40',['DropMenu',['../class_dropdown_menu_1_1_user_controls_1_1_drop_menu.html',1,'DropdownMenu::UserControls']]],
-  ['usercontrols_41',['UserControls',['../namespace_dropdown_menu_1_1_user_controls.html',1,'DropdownMenu']]]
+  ['displayalert_39',['DisplayAlert',['../interface_projet_groupe_1_1_i_save.html#ad9951ea5f311b3ac2140d485fd0cf19a',1,'ProjetGroupe::ISave']]],
+  ['dropdownmenu_40',['DropdownMenu',['../namespace_dropdown_menu.html',1,'']]],
+  ['dropmenu_41',['DropMenu',['../class_dropdown_menu_1_1_user_controls_1_1_drop_menu.html',1,'DropdownMenu::UserControls']]],
+  ['usercontrols_42',['UserControls',['../namespace_dropdown_menu_1_1_user_controls.html',1,'DropdownMenu']]]
 ];

@@ -56,7 +56,19 @@ namespace ProjetGroupe
         /// <summary>
         /// Uri de l'API REST
         /// </summary>
-        public static string WebServiceURI { get; set; }
+        public static string URIAlerte { get; set; }
+        /// <summary>
+        /// Uri de l'API REST
+        /// </summary>
+        public static string URIInfraProd { get; set; }
+        /// <summary>
+        /// Uri de l'API REST
+        /// </summary>
+        public static string URIInfrastructure { get; set; }
+        /// <summary>
+        /// Uri de l'API REST
+        /// </summary>
+        public static string URICovid { get; set; }
         static Config()
         {
             var assembly = Assembly.GetExecutingAssembly();
@@ -71,13 +83,17 @@ namespace ProjetGroupe
             NotificationEndPoint = j.SelectToken("NotificationEndPoint").ToString();
             NotificationHubName = j.SelectToken("NotificationHubName").ToString();
             NotificationChannelID = j.SelectToken("NotificationChannelID").ToString();
-            WebServiceURI = j.SelectToken("WebServiceURI").ToString();
 
             Mail = j.SelectToken("Mail").ToString();
             MailTo = j.SelectToken("MailTo").ToString();
             MailPw = j.SelectToken("MailPw").ToString();
             MailServer = j.SelectToken("MailServer").ToString();
             MailPort = j.SelectToken("MailPort").ToString();
+
+            URIAlerte = j.SelectToken("URIAlerte").ToString();
+            URIInfraProd = j.SelectToken("URIInfraProd").ToString();
+            URIInfrastructure = j.SelectToken("URIInfrastructure").ToString();
+            URICovid = j.SelectToken("URICovid").ToString();
         }
     }
     /// <summary>

@@ -29,9 +29,8 @@
                 </StackLayout>
             </Grid>
         </Frame>
-        <ListView x:Name="ListEquipement" ItemsSource="{Binding Items}" HeightRequest="120" SeparatorVisibility="None" ItemSelected="OnItemSelected" IsPullToRefreshEnabled="True" RefreshCommand="{Binding RefreshCommand}"
-           IsRefreshing="{Binding IsRefreshing}"
-                  Grid.Row="2" Margin="20,10,20,10">
+        <ListView x:Name="ListEquipement" ItemsSource="{Binding Items}" HeightRequest="120" SeparatorVisibility="None" ItemSelected="OnItemSelected" IsPullToRefreshEnabled="True" 
+                  RefreshCommand="{Binding RefreshCommand}" IsRefreshing="{Binding IsRefreshing}" Grid.Row="2" Margin="20,10,20,10">
             <ListView.ItemTemplate StyleClass="ListViewCustom">
                 <DataTemplate>
                     <ViewCell>
@@ -56,6 +55,5 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Label Grid.Row="2" x:Name="Label1" Text="" Margin="20,-30,20,20"  TextColor="green" IsVisible="False" FontSize="14" HorizontalOptions="Center"/>
     </Grid>
 </ContentPage>

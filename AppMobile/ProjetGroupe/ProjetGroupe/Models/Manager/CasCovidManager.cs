@@ -23,7 +23,7 @@ namespace ProjetGroupe.Models.Manager
         internal static async Task<string> SendAlert(CasCovid cas)
         {
             var httpClient = new HttpClient();
-            string WebAPIUrl = Config.WebServiceURI + "/Alerte/Covid/" + cas.PersonneId;
+            string WebAPIUrl = Config.URIAlerte + "/Covid/" + cas.PersonneId;
             Uri uri = new Uri(WebAPIUrl);
             httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
             StringBuilder sb = new StringBuilder();
@@ -71,7 +71,7 @@ namespace ProjetGroupe.Models.Manager
                 httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
                 httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             }
-            string WebAPIUrl = Config.WebServiceURI + "/Covid/CasCovid";
+            string WebAPIUrl = Config.URICovid + "/CasCovid";
             var uri = new Uri(WebAPIUrl);
             try
             {
@@ -101,7 +101,7 @@ namespace ProjetGroupe.Models.Manager
                 httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
                 httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             }
-            string WebAPIUrl = Config.WebServiceURI + "/Covid/Count/CasCovid/Formation";
+            string WebAPIUrl = Config.URICovid + "/Count/CasCovid/Formation";
             var uri = new Uri(WebAPIUrl);
             try
             {
@@ -130,7 +130,7 @@ namespace ProjetGroupe.Models.Manager
                 httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
                 httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             }
-            string WebAPIUrl = Config.WebServiceURI + "/Covid/Count/CasCovid/Departement";
+            string WebAPIUrl = Config.URICovid + "/Count/CasCovid/Departement";
             var uri = new Uri(WebAPIUrl);
             try
             {

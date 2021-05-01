@@ -20,7 +20,7 @@ namespace ProjetGroupe.Models.Manager
         internal static async Task<string> UpdateStock(Penurie item)
         {
             var httpClient = new HttpClient();
-            string WebAPIUrl = Config.WebServiceURI + "/Alerte/IsPenurie/" + item.Id_Equipement + "/" + item.SalleId;
+            string WebAPIUrl = Config.URIAlerte + "/IsPenurie/" + item.Id_Equipement + "/" + item.SalleId;
             Uri uri = new Uri(WebAPIUrl);
             httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
             StringBuilder sb = new StringBuilder();

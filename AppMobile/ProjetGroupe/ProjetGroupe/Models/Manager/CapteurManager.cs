@@ -30,7 +30,7 @@ namespace ProjetGroupe.Models.Manager
                 httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
                 httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             }
-            string WebAPIUrl = Config.WebServiceURI + "/Capteur/ListCapteur";
+            string WebAPIUrl = Config.URIInfraProd + "/ListCapteur";
             var uri = new Uri(WebAPIUrl);
             try
             {

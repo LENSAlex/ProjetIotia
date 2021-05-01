@@ -106,9 +106,7 @@ namespace ProjetGroupe
             Routing.RegisterRoute(nameof(CapteursDetailsPage), typeof(CapteursDetailsPage));
 
             Device.BeginInvokeOnMainThread(() => _notificationRegistrationService.RegisterDeviceAsync());
-
         }
-
         /// <summary>
         /// Click sur le Logout
         /// </summary>
@@ -192,7 +190,7 @@ namespace ProjetGroupe
             }
         }
         /// <summary>
-        /// Méthode qui change l'URI de l'image de profil par la nouvelle
+        /// Méthode qui change l'URI de l'image de profil par la nouvelle 
         /// </summary>
         public void GetImagePath()
         {
