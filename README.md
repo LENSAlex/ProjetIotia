@@ -189,6 +189,7 @@ Afin d'ajouter un serveur de base de données distant a phpMyAdmin il faut confi
 ```
 	/*
 	 * First server
+	 * Incrémenter la variable i a chaque ajout de serveur
 	 */
 	$i++;
 	/* Authentication type */
@@ -200,3 +201,4 @@ Afin d'ajouter un serveur de base de données distant a phpMyAdmin il faut confi
 	$cfg['Servers'][$i]['connect_type'] = 'tcp';
 	$cfg['Servers'][$i]['port'] = '3306';
 ```
+PhpMyAdmin est désormais installer et configurer, il faut désormais ajouter le site IIS en répétant la manipulation expliqué ci-dessus.
