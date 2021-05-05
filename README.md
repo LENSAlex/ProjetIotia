@@ -159,6 +159,30 @@ Exécuter les commandes suivantes pour interdire toutes réception de paquets :
 
 # Configuration du serveur web :
 
-Dans un premier temps il faut activer IIS sur le serveur (si ce n'est pas déjà fait), pour cela il suffit de suivre la procédure indiqué ici : https://enterprise.arcgis.com/fr/web-adaptor/latest/install/iis/enable-iis-2016-components-server.htm
+Dans un premier temps il faut activer IIS sur le serveur (si ce n'est pas déjà fait), pour cela il suffit de suivre la procédure indiqué ici : https://enterprise.arcgis.com/fr/web-adaptor/latest/install/iis/enable-iis-2016-components-server.htm .
+
+Si vous voulez gérer le serveur à l'aide de l'accès a distance vous devez l'activer en suivant les étapes décrite ici, https://docs.microsoft.com/fr-fr/windows-server/remote/remote-desktop-services/rds-activate-license-server .
+
+Afin d'héberger une application web développer en .Net Core il faut : 
+	
+	- 1) Installer les dépendances nécessaire a l'éxecution d'une application .Net Core en suivant les instruction suivante : https://docs.microsoft.com/fr-fr/aspnet/core/tutorials/publish-to-iis?view=aspnetcore-5.0&tabs=visual-studio
+	- 2) Créer un site dans IIS : 
+ Ouvrir IIS et cliquer sur ajouter un site : 
+ [2021-05-05_21h22_20](https://user-images.githubusercontent.com/77000544/117197447-22098800-ade8-11eb-9c5e-d5808ba58b32.png)
+	 
+ Remplisser le formulaire avec les informations du nouveau site puis valider : 
+ ![2021-05-05_21h23_21](https://user-images.githubusercontent.com/77000544/117197615-4f563600-ade8-11eb-9ad0-1fe8a8e18100.png)
+
+ Ajouter le module Asp .Net core dans le mappage de gestionnaire du nouveau site :  
+![2021-05-05_21h26_31](https://user-images.githubusercontent.com/77000544/117197825-90e6e100-ade8-11eb-9c81-38d91c6ee550.png)
+
+	- 3) Ouvrir le port pour le protocole tcp pour le site que l'on vient de définir : 
+Pour cela il faut ajouter dans le pare-feu windows, une règle pour le trafic entrant et une règle pour le trafic sortant. Veillez a renseigner le bon port et le protocole tcp puis redémarer le serveur une fois paramétré.
+
+		
+	- 4) Installer et configurer phpMyAdmin
+Avant de télécharger la dernière version de phpMyAdmin vous devez installer la dernière version stable de php sur le site officiel : https://www.php.net/downloads.php. 
+
+Veillez a modifier les variables d'environement et ajouter l'emplacement du dossier de php puis modifier le fichier php.ini dans celui-ci en vous basant sur le fichier php.ini de cette branche.
 
 
