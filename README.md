@@ -183,6 +183,20 @@ Pour cela il faut ajouter dans le pare-feu windows, une règle pour le trafic en
 	- 4) Installer et configurer phpMyAdmin
 Avant de télécharger la dernière version de phpMyAdmin vous devez installer la dernière version stable de php sur le site officiel : https://www.php.net/downloads.php. 
 
-Veillez a modifier les variables d'environement et ajouter l'emplacement du dossier de php puis modifier le fichier php.ini dans celui-ci en vous basant sur le fichier php.ini de cette branche.
+Veillez a modifier les variables d'environement et ajouter l'emplacement du dossier de php puis modifier le fichier php.ini dans celui-ci en vous basant sur le fichier php.ini de cette branche. L'installation de php est minimaliste et uniquement faite pour que phpMyAdmin fonctionne.
 
-
+Afin d'ajouter un serveur de base de données distant a phpMyAdmin il faut configurer le fichier config.inc.php comme suit et ajouter les informations du serveur distant  :
+```
+	/*
+	 * First server
+	 */
+	$i++;
+	/* Authentication type */
+	$cfg['Servers'][$i]['auth_type'] = 'cookie';
+	/* Server parameters */
+	$cfg['Servers'][$i]['host'] = '192.168.143.144';
+	$cfg['Servers'][$i]['compress'] = false;
+	$cfg['Servers'][$i]['AllowNoPassword'] = false;
+	$cfg['Servers'][$i]['connect_type'] = 'tcp';
+	$cfg['Servers'][$i]['port'] = '3306';
+```
