@@ -41,25 +41,22 @@ Avant toute chose il faut installer le système d'exploitation raspbian sur notr
 
 Une fois installer il faut connecter le raspberry à internet afin de vérifier s'il existe des mises a jour. Pour cela taper en ligne de commande : 
 - Pour mettre à jour uniquement les paquets : 
-	``` 
+``` 
 	sudo apt-get update	
-	``` 
+``` 
 -  Pour mettre à jour les paquest ainsi que la distribution : 
-	``` 
+``` 
 	sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade
-	``` 
+``` 
 
 Installer OpenSsh : 
-	``` 
-	
+``` 
 	sudo apt-get update && sudo apt-get install openssh-client	
-	
-	``` 
+``` 
 A partir de cet instant vous pouvez vous connecter en SSH au raspberry avec un autre ordinateur en utilisant la commande suivante : 
-	``` 
-	
+``` 
 	ssh pi@192.168.1.143 -p
-	```  
+```  
 
 ATTENTION l'utilisateur "pi" et l'adresse ip "192.168.1.143" sont données a titre d'exemple, adapter cette ligne de commande a votre configuration.
 
@@ -144,19 +141,24 @@ Pour l'utilisateur iotia et de n'importe qu'elle adresse ip ``` TO 'iotia'@'%' `
 Configuration d'IpTables : 
 
 Commencer par installer iptables sur le raspberry ``` sudo apt install iptables.
-```
+	```
 En suite vérifier s'il existe des règles en exécutant la commande : ``` sudo iptables -nL ```, s'il existe déjà des règles dans iptables il vaut mieux rénitialiser le tout en tapant les commandes suivante : 
 ```
 	sudo iptables -F && sudo iptables -X && sudo iptables -t nat -D POSTROUTING 1
-```.
+```
 
 Exécuter les commandes suivantes pour interdire toutes réception de paquets : 
 
-!! ATTENTION, si vous êtes connecter en ssh ces commandes vont vous déconnecter automatiquement. En effet cette commande interdis toutes entrées et sorties qui ne respectent pas les règles iptables. 
+ ATTENTION, si vous êtes connecter en ssh ces commandes vont vous déconnecter automatiquement. En effet cette commande interdis toutes entrées et sorties qui ne respectent pas les règles iptables. 
 	Il est conseiller dans ce cas de créer un script shell a exécuter une fois que l'ensemble des règles sont décrite.
-!!
+
 
 ```
 	sudo iptables -P INPUT DROP && sudo iptables OUTPUT DROP && sudo iptables FORWARD DROP
-	
 ```
+
+# Configuration du serveur web :
+
+Dans un premier temps il faut activer IIS sur le serveur (si ce n'est pas déjà fait), pour cela il suffit de suivre la procédure indiqué ici : https://enterprise.arcgis.com/fr/web-adaptor/latest/install/iis/enable-iis-2016-components-server.htm
+
+
