@@ -52,7 +52,20 @@ app.get("/Usager/:Prenom/:Nom", (req, res) => {
 app.get("/Usager/ListPromo", (req, res) => {
 
     //Affichage formation avec departement et duree
-    conn.query("select P.id_professeur ,Pers.nom , P.id_promotion , F.nom , P.annee ,F.duree from Promotion P , Formation F , Departement D , Personne Pers where P.id_formation = F.id_formation and D.id_departement = F.id_departement and P.id_professeur = Pers.id_personne", function(err, result) {
+    conn.query("select P.id_professeur ,Pers.nom ,Pers.prenom, P.id_promotion , F.nom , P.annee ,F.duree from Promotion P , Formation F , Departement D , Personne Pers where P.id_formation = F.id_formation and D.id_departement = F.id_departement and P.id_professeur = Pers.id_personne", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    })
+})
+
+app.get("/Usager/ListPromo/:id", (req, res) => {
+
+    //Affichage formation avec departement et duree
+    conn.query("select P.id_professeur ,Pers.nom ,Pers.prenom, P.id_promotion , F.nom as NomPromo , P.annee ,F.duree , D.name as NomDepartement , D.id_departement from Promotion P , Formation F , Departement D , Personne Pers where P.id_formation = F.id_formation and D.id_departement = F.id_departement and P.id_professeur = Pers.id_personne and F.id_formation = '" + req.params.id + "'", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -68,6 +81,22 @@ app.get("/Usager/ListPersonne", (req, res) => {
 
     //Affichage formation avec departement et duree
     conn.query("select * from (select Personne.id_personne, num_ref, Personne.id_pers_type, password, email, telephone, sexe, nom, prenom, date_anniversaire, rfid, libelle, description from Personne, PersonneType where Personne.id_pers_type = PersonneType.id_pers_type) pers LEFT JOIN (select nom as NomFormation, Contenir.id_promotion, id_eleve from (select id_promotion, nom from Promotion, Formation where Promotion.id_formation = Formation.id_formation and (annee + duree) >= (SELECT YEAR(NOW()))) a, Contenir where a.id_promotion = Contenir.id_promotion) b on pers.id_personne = b.id_eleve", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+//AFAIRE
+app.get("/Usager/ListPersonne/:Id", (req, res) => {
+
+    //Prof faisable aussi voir demain
+
+    //Affichage formation avec departement et duree
+    conn.query("select * from Personne where Personne.id_personne = '" + req.params.Id + "'", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {

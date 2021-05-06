@@ -63,6 +63,23 @@ app.get("/InfraProd/ListDevice", (req, res) => {
     });
 })
 
+
+
+app.get("/InfraProd/Device/:id", (req, res) => {
+    //List device sans rpi et arduino 
+    conn.query("select Device.libelle , DeviceType.description , DeviceType.id_devicetype , Box.date_installation , Box.description , Box.libelle , Salle.nom , Salle.id_salle , Box.adr_mac , Box.adr_ip , Device.seuil_min , Device.seuil_max from Device , DeviceType , Box , Salle where Device.id_devicetype = DeviceType.id_devicetype AND Device.id_box = Box.id_box AND Box.id_salle = Salle.id_salle AND Device.id_device = '" + req.params.id + "'", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    });
+})
+
+
+
+
 // Get Capteur de la salle via search (Cherche les capteurs d'une salle via le numéro de salle)
 app.get("/InfraProd/Search/:NomSalle", (req, res) => {
     conn.query("select S.id_salle ,S.nom ,D.id_device ,B.libelle , B.adr_ip , B.description ,Ba.nom , S.id_etage from Box B , Salle S , Etage E , Batiment Ba , Device D where B.id_salle = S.id_salle and S.id_etage = E.id_etage AND E.id_batiment = Ba.id_batiment and B.id_box = D.id_box and S.nom = '" + req.params.NomSalle + "'", function(err, result) {

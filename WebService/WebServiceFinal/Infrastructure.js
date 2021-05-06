@@ -51,6 +51,17 @@ app.get("/Infrastructure/CountInfo/Campus", (req, res) => {
     })
 })
 
+app.get("/Infrastructure/CountInfo/Campus/:id", (req, res) => {
+    conn.query("select a.nom , nbetage , nbsalle from (select Site.nom, count(id_salle) as nbsalle from Site, Batiment, Etage, Salle where Site.id_site = Batiment.id_site and Batiment.id_batiment = Etage.id_batiment and Etage.id_etage = Salle.id_etage group by Site.nom) a, (select Site.nom, count(Etage.id_etage) as nbetage from Site, Batiment, Etage where Site.id_site = Batiment.id_site and Batiment.id_batiment = Etage.id_batiment and Site.id_site = '" + req.params.id + "' group by Site.nom) b where a.nom = b.nom", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    })
+})
+
 //List des equipement
 app.get("/Infrastructure/ListEquipement", (req, res) => {
     conn.query("select id_equipement , libelle , description from Equipement", function(err, result) {
@@ -77,7 +88,7 @@ app.get("/Infrastructure/ListSite", (req, res) => {
 
 //List des Batiment
 app.get("/Infrastructure/ListBatiment", (req, res) => {
-    conn.query("select Batiment.id_batiment ,id_site , Batiment.nom as NomBatiment , count(Etage.id_etage) as NBEtage from Batiment , Etage where Batiment.id_batiment = Etage.id_batiment group by Batiment.id_batiment", function(err, result) {
+    conn.query("select Site.nom , Batiment.id_batiment ,Batiment.id_site , Batiment.nom as NomBatiment , count(Etage.id_etage) as NBEtage from Site, Batiment , Etage where Site.id_site = Batiment.id_site and Batiment.id_batiment = Etage.id_batiment group by Batiment.id_batiment", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -86,6 +97,7 @@ app.get("/Infrastructure/ListBatiment", (req, res) => {
         }
     });
 })
+
 
 
 //lIST des etagesID
