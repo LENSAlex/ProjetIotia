@@ -17,7 +17,7 @@ Ce WebService est décomposé en plusieurs services voir le tableau ci dessous:
 | Infrastructure | 3000 | Service pour avoir des informations sur les infrastructures |
 | Usager | 3001 | Service pour avoir des informations sur les membres de l'iut (etudiant , professeur , ..)|
 | Covid | 3002 | Service pour gérer les cas covid |
-| Infra admin  | 3004 | Modifs , gateways  |
+| Infra admin  | 3004 | Modification de valeur , usager , capteur , ...  |
 | Infra PROD  | 3005 | Capteur et actionneurs |
 | Alerte  | 3006 | Alerte (covid , personne , actionneur)  |
 
