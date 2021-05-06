@@ -14,12 +14,11 @@ Pour **utiliser** les service cela se passe pour l'instant sur l'ip ```http://51
 Ce WebService est décomposé en plusieurs services voir le tableau ci dessous:
 | Nom du service | Port | Remarque |
 | --- | --- | --- |
-| Infrastructure a enlever  | 3000 | Service pour avoir des informations sur les infrastructures |
+| Infrastructure | 3000 | Service pour avoir des informations sur les infrastructures |
 | Usager | 3001 | Service pour avoir des informations sur les membres de l'iut (etudiant , professeur , ..)|
 | Covid | 3002 | Service pour gérer les cas covid |
-| Capteur a enlever | 3003 | Service qui traite les informations des capteurs (derniere valeur , moyenne , max , min) |
-| Infra PROD  | 3004 | Capteur et actionneurs |
-| Infra admin  | 3005 | Modifs , gateways  |
+| Infra admin  | 3004 | Modifs , gateways  |
+| Infra PROD  | 3005 | Capteur et actionneurs |
 | Alerte  | 3006 | Alerte (covid , personne , actionneur)  |
 
 A remplacer infrastcture et capteurs et mettre alerte.
