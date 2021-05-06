@@ -29,7 +29,9 @@ Quel id ??? j ai mis formation
 donne : NomBatiment / Km² / nbEtage /Km²Pour chaque etage/ Campus / idCapmus / le  Km² de chaque Salle 
 fait id site j imagine 
 
-
+/InfraProd/Device/:id
 IOT Devise{
-	- get ...:id
+	- get ...:id id_device j imagine
 	donne NomCapteur / TypeCapteur / idTypeCapteur /DateInstallation / DescriptionBox / NomBox / Salle /idSalle/ AddrMac / AddrIp / SeuilMin / SeuilMax 
+
+PUT ou POST demande a maxime ou pierre trop chaint a faire
