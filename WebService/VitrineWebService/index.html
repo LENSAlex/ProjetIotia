@@ -7,79 +7,125 @@
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
+    <title>WebService</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!-- Bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-
-    <title>WebService</title>
+    <script type="text/javascript">
+    $(window).ready(function() {
+      $(".loader").fadeOut("3000"); 
+    })
+    </script>
 </head>
+<style>
+  body{
+    background-color: cornsilk;
+  }
+
+  img
+  {
+    margin-top: 3%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .loader {
+    position : fixed;
+    z-index: 9999;
+    background : url('icon-loader.gif') 50% 50% no-repeat;
+    top : 0px;
+    left : 0px;
+    height : 100%;
+    width : 100%;
+    cursor : wait;
+    background-color: white;
+  }
+
+</style>
+
 <body>
+    <div class="loader"></div>
+
     <h1 style="text-align: center;">Web Service</h1>
     <p style="text-align: center;">Projet fin d'année iotia (projet covid) <br>
     Ce web service est une api de type REST , codé grace a Node JS.</p>
+  <div class="container-fluid">
 
-    <h2>Utilisation du WebService</h2>
-    <table class="table table-striped">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Nom du service</th>
-            <th scope="col">Port</th>
-            <th scope="col">Remarque</th>
-            <th scope="col">Acceder a la documentation</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Infrastructure</td>
-            <td>3000</td>
-            <td>Service pour avoir des informations sur les infrastructures</td>
-            <td><a href="http://webservice.lensalex.fr:3000/docs">Documentation Infrastructure</a></td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Usager</td>
-            <td>3001</td>
-            <td>Service pour avoir des informations sur les membres de l'iut (etudiant , professeur , ..)</td>
-            <td><a href="http://webservice.lensalex.fr:3001/docs">Documentation Usager</a></td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Covid</td>
-            <td>3002</td>
-            <td>Service pour gérer les cas covid</td>
-            <td><a href="http://webservice.lensalex.fr:3002/docs">Documentation Covid</a></td>
-          </tr>
-          <tr>
-            <th scope="row">5</th>
-            <td>Infra Admin</td>
-            <td>3004</td>
-            <td>Modifs , gateways</td>
-            <td><a href="http://webservice.lensalex.fr:3004/docs">Documentation Infra admin</a></td>
-          </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td>Infra Prod</td>
-            <td>3005</td>
-            <td>Capteur et actionneurs</td>
-            <td><a href="http://webservice.lensalex.fr:3005/docs">Documentation Infra prod</a></td>
-          </tr>
-          <tr>
-            <th scope="row">6</th>
-            <td>Alerte</td>
-            <td>3006</td>
-            <td>Alerte (covid , personne , actionneur)</td>
-            <td><a href="http://webservice.lensalex.fr:3006/docs">Documentation Alerte</a></td>
-          </tr>
-          <tr>
-            <th scope="row">6</th>
-            <td>ServiceEssentielle</td>
-            <td>3007</td>
-            <td>Version Test des web Service</td>
-            <td><a href="http://webservice.lensalex.fr:3007/">Acces au service</a></td>
-          </tr>
-        </tbody>
-      </table>
-      <p style="text-align: center;">Tous les services possede leur propre documentation ou va pouvais tester les requetes</p>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <h2>Utilisation du WebService</h2>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nom du service</th>
+              <th scope="col">Port</th>
+              <th scope="col">Remarque</th>
+              <th scope="col">Acceder a la documentation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Infrastructure</td>
+              <td>3000</td>
+              <td>Service pour avoir des informations sur les infrastructures</td>
+              <td><a href="http://webservice.lensalex.fr:3000/docs">Documentation Infrastructure</a></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Usager</td>
+              <td>3001</td>
+              <td>Service pour avoir des informations sur les membres de l'iut (etudiant , professeur , ..)</td>
+              <td><a href="http://webservice.lensalex.fr:3001/docs">Documentation Usager</a></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Covid</td>
+              <td>3002</td>
+              <td>Service pour gérer les cas covid</td>
+              <td><a href="http://webservice.lensalex.fr:3002/docs">Documentation Covid</a></td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Infra Admin</td>
+              <td>3004</td>
+              <td>Modifs , gateways</td>
+              <td><a href="http://webservice.lensalex.fr:3004/docs">Documentation Infra admin</a></td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Infra Prod</td>
+              <td>3005</td>
+              <td>Capteur et actionneurs</td>
+              <td><a href="http://webservice.lensalex.fr:3005/docs">Documentation Infra prod</a></td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>Alerte</td>
+              <td>3006</td>
+              <td>Alerte (covid , personne , actionneur)</td>
+              <td><a href="http://webservice.lensalex.fr:3006/docs">Documentation Alerte</a></td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>ServiceEssentielle</td>
+              <td>3007</td>
+              <td>Version Test des web Service (bientot supprimer)</td>
+              <td><a href="http://webservice.lensalex.fr:3007/">Acces au service</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+    
+    <p style="text-align: center;">Tous les services possedent leur propre documentation ou vous pouvez tester les requetes</p>
+    <p style="text-align: center;">Retrouver les codes des services sur <a href="https://github.com/LENSAlex/ProjetIotia/tree/WebService">Github</a></p>
+    <img src="sophia.png">
 </body>
 </html>

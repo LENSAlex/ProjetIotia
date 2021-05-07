@@ -81,7 +81,7 @@ app.get('/', (req, res) => {
     res.send('Pour utiliser ce service vous devez avoir un token rendez-vous sur /login !')
 })
 
-app.get('InfraAdmin/login/:Nom/:Mpd',(req, res) => {
+app.get('/InfraAdmin/login/:Nom/:Mpd',(req, res) => {
     //Voir une colonne admin et verifier si admin a true dans requete
     conn.query("select nom , prenom from Personne where nom = '" + req.params.Nom + "' and password = '" + req.params.Mpd + "' and id_pers_type = 5", function(err, result) {
         if (err)

@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "Description du service \"Infra Admin\" projet IOTIA\n",
+    "description": "Description du service \"Infra Admin\" projet IOTIA\nIMPORTANT: Service sécurisé par token avant de faire des requetes vous devez vous identifier sur la route http://webservice.lensalex.fr:3004/InfraAdmin/login avec un login et mot de passe correspondant à l'administrateur.\nPuis placer le token dans le header.\nExemple --> \"Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6ImlvdGlhIiwiaWF0IjoxNjE4NTk3MjI2LCJleHAiOjE2MTg2MDA4MjZ9.8-PV7QJtWAbK2wWKSGnPhAi6CxKW_z3jfzXvpDkjcoE\"\n",
     "version": "1.0.0",
     "title": "Web Service Infra ADMIN",
     "contact": {
@@ -10,6 +10,46 @@
   },
   "host": "webservice.lensalex.fr:3004",
   "paths": {
+    "/InfraAdmin/login/{login}/{Password}": {
+      "get": {
+        "tags": [
+          "Login"
+        ],
+        "summary": "Retourne un token",
+        "description": "Retourne un token si le login et le mot de passe corresponde à celui de l'administrateur",
+        "operationId": "getLogin",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "login",
+            "in": "path",
+            "description": "le login de l'administrateur",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "Password",
+            "in": "path",
+            "description": "le password de l'administrateur",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/Login"
+            }
+          },
+          "400": {
+            "description": "Requete invalid"
+          }
+        }
+      }
+    },
     "/InfraAdmin/Infrastructure/Add/Batiment/{Nom}/{Superficie}/{IdCampus}/{EtageSuperficie}": {
       "post": {
         "tags": [
@@ -908,7 +948,25 @@
       }
     }
   },
+  "definitions": {
+    "Login": {
+      "type": "object",
+      "required": [
+        "login",
+        "Password"
+      ],
+      "properties": {
+        "login": {
+          "type": "string",
+          "format": "int64"
+        },
+        "Password": {
+          "type": "string"
+        }
+      }
+    }
+  },
   "schemes": [
-    "https"
+    "http"
   ]
 }
