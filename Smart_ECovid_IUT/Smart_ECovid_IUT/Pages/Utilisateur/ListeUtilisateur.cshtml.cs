@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using ClasseE_Covid.Utilisateur;
 using System.Text.Json;
 using System.Text;
+using ClasseE_Covid;
 
 namespace Smart_ECovid_IUT.Pages.Utilisateur
 {
@@ -25,13 +26,18 @@ namespace Smart_ECovid_IUT.Pages.Utilisateur
         }
         public async Task OnGet()
         {
+            string login = Login.Current(HttpContext);
+            if (login == null)
+            {
+                Response.Redirect("/login");
+            }
             await Load();
         }
 
         public async Task Load()
         {
             var request = new HttpRequestMessage(HttpMethod.Get,
-          "http://51.75.125.121:3001/Personne/ListPersonne");
+          "http://51.75.125.121:3007/Personne/ListPersonne");
             request.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
             request.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
 
@@ -56,7 +62,7 @@ namespace Smart_ECovid_IUT.Pages.Utilisateur
         {
             var httpClient = new HttpClient();
             // / Personne / Add / NumRef / IdPersType / Password / Email / Tel / Sexe / Nom / Prenom / Birth / IdPromo
-            string WebAPIUrl = "http://51.75.125.121:3001/Personne/Delete/"+Convert.ToString(id);
+            string WebAPIUrl = "http://51.75.125.121:3007/Personne/Delete/"+Convert.ToString(id);
             Uri uri = new Uri(WebAPIUrl);
 
             var response = await httpClient.DeleteAsync(uri);

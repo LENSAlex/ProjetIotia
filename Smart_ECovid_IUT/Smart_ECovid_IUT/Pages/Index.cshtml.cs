@@ -6,11 +6,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ClasseE_Covid.LogAlerte;
+using ClasseE_Covid;
 using System.Net.Http;
 using System.Text.Json;
-using System.Net.Http;
-
-
+//using System.Net.Http;
+using Microsoft.AspNetCore.Http;
 
 namespace Smart_ECovid_IUT.Pages
 {
@@ -28,8 +28,23 @@ namespace Smart_ECovid_IUT.Pages
         }
         public async Task OnGet()
         {
+            
+          //  HttpContext.Session.SetInt32("UtilisateurId", 1);
+           // HttpContext.Session.SetString("Token", "test");
+
+            string login = Login.Current(HttpContext);
+            if (login == null)
+            {
+                Response.Redirect("/login");
+            }
+
+            await Load();
+        }
+
+        public async Task Load()
+        {
             var request = new HttpRequestMessage(HttpMethod.Get,
-           "http://51.75.125.121:3001/Covid/Count/CasCovid/Departement"); // /Covid/CasCovid
+           "http://51.75.125.121:3002/Covid/Count/CasCovid/Departement"); // /Covid/CasCovid
             request.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
             request.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
 

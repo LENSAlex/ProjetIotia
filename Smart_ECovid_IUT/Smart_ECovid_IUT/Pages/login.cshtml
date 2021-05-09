@@ -1,0 +1,49 @@
+﻿@page
+@model Smart_ECovid_IUT.Pages.loginModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="~/fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/custom.css" />
+    <link rel="stylesheet" href="~/select2-bootstrap-theme-0.1.0-beta.10/dist/select2-bootstrap.css" />
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="fontEcrant">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="card card-custom loginPosition col-6">
+            <div class=" card-custom row">
+                <div class="imgLeft col-4">
+                    <h3 class="cb">Login</h3>
+                </div>
+                <div class="col-8 lecentre" >
+                    <img class="imgcentre" src="~/img/unsNormal.png" width="300" />
+                    <form method="post" class="">
+                        <div class="form-row ">
+                            <div class="col-md-12 mb-3">
+                                <label for="Nom">Nom</label>
+                                <input type="text" class="form-control" id="nom" name="nom" placeholder="Nom" required />
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label for="Prenom">Mot de passe</label>
+                                <input type="password" class="form-control" id="mdp" name="mdp" placeholder="Mot de passse" required />
+                            </div>
+                        </div>
+                        <button class="btn btn-primary " type="submit" asp-page-handler="Login">Envoier</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</body>
+
+
+</html>

@@ -1,4 +1,4 @@
-﻿@page
+﻿@page "{id:int?}"
 @model Smart_ECovid_IUT.Pages.Utilisateur.CreeModifUtilisateurModel
 @using ClasseE_Covid.Utilisateur;
 @using ClasseE_Covid.Promotion;
@@ -7,7 +7,7 @@
 }
 <div class="container">
     <div class="border-bottom mb-4">
-        <h1 class="letest"> Création Utilisateur</h1>
+        <h1 class="letest"> @(Model.ModifUser != null ? "Modifer une Utilisateur" : "Création une Utilisateur")</h1>
     </div>
     <div class="row">
         <div class="col-md-12 mb-4">

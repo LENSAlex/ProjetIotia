@@ -25,6 +25,12 @@ namespace Smart_ECovid_IUT
         {
             services.AddRazorPages();
             services.AddHttpClient();
+
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(20);//You can set Time   
+                options.Cookie.IsEssential = true; // make the session cookie Essential
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,7 +53,7 @@ namespace Smart_ECovid_IUT
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.UseSession();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();

@@ -9,6 +9,8 @@ using ClasseE_Covid.Utilisateur;
 using ClasseE_Covid.Promotion;
 using System.Text;
 using System.Text.Json;
+using ClasseE_Covid;
+using System.Net.Http.Headers;
 
 namespace Smart_ECovid_IUT.Pages.Utilisateur
 {
@@ -17,7 +19,9 @@ namespace Smart_ECovid_IUT.Pages.Utilisateur
         private readonly IHttpClientFactory _clientFactory;
 
         public IEnumerable<Niveau> DDNiveau { get; private set; } 
-        public IEnumerable<PromotionClass> DDPromotion { get; private set; } 
+        public IEnumerable<PromotionClass> DDPromotion { get; private set; }
+
+        public IEnumerable<PromotionClass> ModifUser { get; private set; }
 
         public bool GetBranchesError { get; private set; }
 
@@ -25,16 +29,53 @@ namespace Smart_ECovid_IUT.Pages.Utilisateur
         {
             _clientFactory = clientFactory;
         }
-        public async Task OnGet()
+        public async Task OnGet(int? id)
         {
-            await LoadDDNiveau();
-            await LoadFormation();
+            string login = Login.Current(HttpContext);
+            if (login == null)
+            {
+                Response.Redirect("/login");
+            }
+
+            if (id.HasValue)
+            {
+                await LoadUtilisateur();
+            }
+            else
+            {
+                await LoadDDNiveau();
+                await LoadFormation();
+            }
+        }
+
+        public async Task LoadUtilisateur()
+        {
+            var request = new HttpRequestMessage(HttpMethod.Get,
+          "http://webservice.lensalex.fr:3001/Usager/ListTypePersonne");
+            request.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
+            request.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
+
+            var client = _clientFactory.CreateClient();
+
+            var response = await client.SendAsync(request); // vus que la fonction est async elle vas s'arreter ici pour attendre une reponce 
+
+            if (response.IsSuccessStatusCode)
+            {
+                using var responseStream2 = await response.Content.ReadAsStreamAsync(); // recupaire les donnée de api et les mette dans le responseStream
+                DDNiveau = await JsonSerializer.DeserializeAsync
+                <IEnumerable<Niveau>>(responseStream2); // remplie la class Campus 
+            }
+            else
+            {
+                GetBranchesError = true;
+                DDNiveau = Array.Empty<Niveau>();
+            }
         }
 
         public async Task LoadDDNiveau()
         {
             var request = new HttpRequestMessage(HttpMethod.Get,
-          "http://51.75.125.121:3001/Personne/ListTypePersonne");
+          "http://webservice.lensalex.fr:3001/Usager/ListTypePersonne");
             request.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
             request.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
 
@@ -57,7 +98,7 @@ namespace Smart_ECovid_IUT.Pages.Utilisateur
         public async Task LoadFormation()
         {
             var request = new HttpRequestMessage(HttpMethod.Get,
-         "http://51.75.125.121:3001/Personne/ListPromo");
+         "http://webservice.lensalex.fr:3001/Usager/ListPromo");
             request.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
             request.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
 
@@ -80,12 +121,10 @@ namespace Smart_ECovid_IUT.Pages.Utilisateur
 
         internal async Task<string> Save(ClasseE_Covid.Utilisateur.Utilisateur item)
         {
+            
             var httpClient = new HttpClient();
-            // / Personne / Add / NumRef / IdPersType / Password / Email / Tel / Sexe / Nom / Prenom / Birth / IdPromo
-            string WebAPIUrl = "http://51.75.125.121:3001/Personne/Add/"+ item.NumRef + "/"+ item.IdPersType + "/"+ item.Pwd + "/" + item.Email + "/"+ item.Telephone + "/"+ item.Sexe + "/"+ item.Nom + "/"+ item.Prenom + "/"+ item.Anniv + "/"+ item.Promotion;
-            // string WebAPIUrl = "http://51.75.125.121:3001/Personne/Add/Test/"+ item.Nom + "/"+ item.Prenom;
-            Uri uri = new Uri(WebAPIUrl);
-            httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
+            string WebAPIUrl = "http://webservice.lensalex.fr:3004/InfraAdmin/Usager/Add/" + item.NumRef + "/" + item.IdPersType + "/" + item.Pwd + "/" + item.Email + "/" + item.Telephone + "/" + item.Sexe + "/" + item.Nom + "/" + item.Prenom + "/" + item.Anniv + "/" + item.Promotion;
+            
             StringBuilder sb = new StringBuilder();
             if (item != null)
             {
@@ -103,15 +142,23 @@ namespace Smart_ECovid_IUT.Pages.Utilisateur
                 string jsonData = sb.ToString();
                 await LoadFormation();
                 await LoadDDNiveau();
-                //string json = JsonConvert.SerializeObject(item); // A utiliser que si envoie d'une liste complète dès le départ.
-                StringContent content = new StringContent(jsonData, Encoding.UTF8, "application/json");
+
+                var requestMessage = new HttpRequestMessage
+                {
+                    Method = HttpMethod.Post,
+                    Content = new StringContent(jsonData, Encoding.UTF8, "application/json"),
+                    RequestUri = new Uri(WebAPIUrl)
+                };
+
+                requestMessage.Headers.Authorization = new AuthenticationHeaderValue("Bearer", Login.Token);
+                
                 try
                 {
-                    var response = await httpClient.PostAsync(uri, content);
-                    //var response = await httpClient.PostAsync(uri, formData).Result;
+                    var response = await httpClient.SendAsync(requestMessage);
                     if (response.IsSuccessStatusCode)
                     {
-                        return "Ok";
+                        Response.Redirect("/Index");
+                        return "ok";
                     }
                     else
                     {

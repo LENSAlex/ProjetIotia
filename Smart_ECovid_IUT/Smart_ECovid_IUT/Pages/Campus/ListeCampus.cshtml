@@ -18,28 +18,21 @@
                     <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th scope="col">Campus</th>
                                 <th scope="col">Batiment</th>
+                                <th scope="col">Campus</th>
                                 <th scope="col">N°Etage</th>
                                 <th scope="col">N°Salle</th>
                                 <th scope="col">Action</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach (Campus campus in Model.Branches)
+                            @foreach (Campus campus in Model.Branches2)
                             {
                                 <tr>
 
-                                    <td>@campus.NomCampus</td>
+                                    <td>@campus.NomBatimen</td>
                                     <td>
-                                        @foreach (Campus campus2 in Model.Branches2)
-                                        {
-                                            if (campus2.IdBatiment == campus.IdCampus)
-                                            {
-                                                <p>@campus2.NomBatimen</p>
-                                            }
-
-                                        }
+                                        @campus.IdCampus
                                     </td>
                                     <td>@campus.NBEtageCampus</td>
                                     <td>@campus.NBSalleCampus</td>

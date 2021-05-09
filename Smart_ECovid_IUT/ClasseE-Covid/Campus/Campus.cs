@@ -14,9 +14,6 @@ namespace ClasseE_Covid.Campus
         [JsonPropertyName("id_site")]
         public int IdCampus { get; set; }
 
-        [JsonPropertyName("nbetage")]
-        public int NBEtageCampus { get; set; }
-
         [JsonPropertyName("nom")]
         public string NomCampus { get; set; }
 
@@ -36,6 +33,9 @@ namespace ClasseE_Covid.Campus
 
         [JsonPropertyName("NomBatiment")]
         public string NomBatimen { get; set; }
+
+        [JsonPropertyName("NBEtage")]
+        public int NBEtageCampus { get; set; }
 
 
         /// <summary>

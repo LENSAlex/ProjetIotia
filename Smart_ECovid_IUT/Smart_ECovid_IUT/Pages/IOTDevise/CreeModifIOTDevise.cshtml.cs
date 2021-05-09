@@ -10,6 +10,8 @@ using ClasseE_Covid.IOTDevise;
 using ClasseE_Covid.Capteur;
 using ClasseE_Covid.Campus;
 using System.Text.Json;
+using ClasseE_Covid;
+using System.Net.Http.Headers;
 
 namespace Smart_ECovid_IUT.Pages.IOTDevise
 {
@@ -30,6 +32,12 @@ namespace Smart_ECovid_IUT.Pages.IOTDevise
         }
         public async Task OnGet()
         {
+            string login = Login.Current(HttpContext);
+            if (login == null)
+            {
+                Response.Redirect("/login");
+            }
+
             await LoadTypeCapteur();
             await LoadIOTDevise();
             await LoadSale();
@@ -37,7 +45,7 @@ namespace Smart_ECovid_IUT.Pages.IOTDevise
         public  async Task LoadIOTDevise()
         {
             var request = new HttpRequestMessage(HttpMethod.Get,
-           "http://51.75.125.121:3001/Capteur/Box/Info");
+           "http://webservice.lensalex.fr:3005/InfraProd/Box/Info");
             request.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
             request.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
 
@@ -60,7 +68,7 @@ namespace Smart_ECovid_IUT.Pages.IOTDevise
         public async Task LoadSale()
         {
             var request = new HttpRequestMessage(HttpMethod.Get,
-           "http://51.75.125.121:3001/Batiment/ListSalle");
+           "http://webservice.lensalex.fr:3000/Infrastructure/ListSalle");
             request.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
             request.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
 
@@ -83,7 +91,7 @@ namespace Smart_ECovid_IUT.Pages.IOTDevise
         public  async Task LoadTypeCapteur()
         {
             var request = new HttpRequestMessage(HttpMethod.Get,
-           "http://51.75.125.121:3001/Capteur/ListDevice");
+           "http://webservice.lensalex.fr:3005/InfraProd/ListDevice");
             request.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
             request.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
 
@@ -107,14 +115,17 @@ namespace Smart_ECovid_IUT.Pages.IOTDevise
         {
             var httpClient = new HttpClient();
             StringBuilder sb = new StringBuilder();
-            string uriBase = "http://51.75.125.121:3001";
-            Uri uri = new Uri(uriBase);
+            string WebAPIUrl = "http://webservice.lensalex.fr:3004/InfraAdmin/";
+           // Uri uri = new Uri(uriBase);
+
            
             if (capteur != null)
             {
                 // /app.post("/Capteur/Add/BoxDevice/:IdSalle/:IdDeviceType/:AddrMac/:AddrIp/:LibelleBox/:DescriptionBox/:DateInstallation/:IdValueType/:LibelleDevice/:SeuilMin?/:SeuilMax?", (req, res) => {
-                string WebAPIUrl = "http://51.75.125.121:3001/Capteur/Add/BoxDevice/" + capteur.IdSalle + "/" + capteur.IdDeviceType + "/" + capteur.AddrMac + "/" + capteur.AddrIp + "/" + capteur.LibelleBox + "/" + capteur.DescriptionBox + "/"+ capteur.DateInstallation + "/" + capteur.IdValueType + "/" + capteur.LibelleDevice + "/" + capteur.SeuilMin + "/" + capteur.SeuilMax;
-                uri = new Uri(WebAPIUrl);
+                 WebAPIUrl = "http://webservice.lensalex.fr:3004/InfraAdmin/Capteur/Add/BoxDevice/" + capteur.IdSalle + "/" + capteur.IdDeviceType + "/" + capteur.AddrMac + "/" + capteur.AddrIp + "/" + capteur.LibelleBox + "/" + capteur.DescriptionBox + "/" + capteur.DateInstallation + "/" + capteur.IdValueType + "/" + capteur.LibelleDevice + "/" + capteur.SeuilMin + "/" + capteur.SeuilMax;
+
+                //string WebAPIUrl = "http://51.75.125.121:3001/Capteur/Add/BoxDevice/" + capteur.IdSalle + "/" + capteur.IdDeviceType + "/" + capteur.AddrMac + "/" + capteur.AddrIp + "/" + capteur.LibelleBox + "/" + capteur.DescriptionBox + "/"+ capteur.DateInstallation + "/" + capteur.IdValueType + "/" + capteur.LibelleDevice + "/" + capteur.SeuilMin + "/" + capteur.SeuilMax;
+                //uri = new Uri(WebAPIUrl);
                 sb.Append(@"{""IdSalle"" : " + capteur.IdSalle + ",");
                 sb.Append(@"""IdDeviceType"" : " + capteur.IdDeviceType + ",");
                 sb.Append(@"""AddrMac"" : """ + capteur.AddrMac + @""",");
@@ -131,8 +142,8 @@ namespace Smart_ECovid_IUT.Pages.IOTDevise
             }
             else if (actionneur != null)
             {
-                string WebAPIUrl = "http://51.75.125.121:3001/Capteur/Add/Actionneur/" + actionneur.IdBox + "/" + actionneur.IdValueType + "/" + actionneur.Libelle;
-                uri = new Uri(WebAPIUrl);
+                WebAPIUrl = "http://webservice.lensalex.fr:3004/InfraAdmin/Capteur/Add/Actionneur/" + actionneur.IdBox + "/" + actionneur.IdValueType + "/" + actionneur.Libelle;
+                //uri = new Uri(WebAPIUrl);
                 sb.Append(@"{""IdBox"" : " + actionneur.IdBox + ",");
                 sb.Append(@"""IdValueType"" : " + actionneur.IdValueType + ",");
                 sb.Append(@"""Libelle"" : """ + actionneur.Libelle + @""",");
@@ -140,25 +151,35 @@ namespace Smart_ECovid_IUT.Pages.IOTDevise
             }
             else if (panneauSolaire != null)
             {
-                string WebAPIUrl = "http://51.75.125.121:3001/Capteur/Add/PanneauSolaire/" + panneauSolaire.IdBox + "/" + panneauSolaire.Libelle;
-                uri = new Uri(WebAPIUrl);
+                 WebAPIUrl = "http://webservice.lensalex.fr:3004/InfraAdmin/Capteur/Add/PanneauSolaire/" + panneauSolaire.IdBox + "/" + panneauSolaire.Libelle;
+                //uri = new Uri(WebAPIUrl);
                 sb.Append(@"{""IdSalle"" : " + panneauSolaire.IdBox + ",");
                 sb.Append(@"""IdDeviceType"" : """ + panneauSolaire.Libelle + @""",");
                 sb.Append("}");
 
             }            
-            httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
+           // httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
            
             if (capteur!= null || actionneur != null || panneauSolaire != null)
             {
                 await LoadTypeCapteur();
                 await LoadIOTDevise();
                 string jsonData = sb.ToString();
+
+                var requestMessage = new HttpRequestMessage
+                {
+                    Method = HttpMethod.Post,
+                    Content = new StringContent(jsonData, Encoding.UTF8, "application/json"),
+                    RequestUri = new Uri(WebAPIUrl)
+                };
+
+                requestMessage.Headers.Authorization = new AuthenticationHeaderValue("Bearer", Login.Token);
+
                 //string json = JsonConvert.SerializeObject(item); // A utiliser que si envoie d'une liste complète dès le départ.
-                StringContent content = new StringContent(jsonData, Encoding.UTF8, "application/json");
+                // StringContent content = new StringContent(jsonData, Encoding.UTF8, "application/json");
                 try
                 {
-                    var response = await httpClient.PostAsync(uri, content);
+                    var response = await httpClient.SendAsync(requestMessage);
                     //var response = await httpClient.PostAsync(uri, formData).Result;
                     if (response.IsSuccessStatusCode)
                     {
@@ -188,7 +209,7 @@ namespace Smart_ECovid_IUT.Pages.IOTDevise
 
             capteur.LibelleDevice = Request.Form["nom"];
             capteur.IdValueType = Convert.ToInt32(Request.Form["type"]);
-            //capteur. = Request.Form["idBox"];
+            capteur.IdDeviceType = Convert.ToInt32(Request.Form["idTypeDevice"]);
             capteur.DescriptionBox = Request.Form["descriptionBox"];
             capteur.LibelleBox = Request.Form["nomBox"];
             capteur.IdSalle = Convert.ToInt32(Request.Form["idSale"]);

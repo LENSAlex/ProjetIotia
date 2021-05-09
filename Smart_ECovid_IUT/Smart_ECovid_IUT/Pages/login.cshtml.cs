@@ -4,37 +4,38 @@ using System.Linq;
 using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
-using ClasseE_Covid;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using ClasseE_Covid;
+using Microsoft.AspNetCore.Http;
 
-namespace Smart_ECovid_IUT.Pages.LogAlerte
+namespace Smart_ECovid_IUT.Pages
 {
-    public class AfficheLogAlerteModel : PageModel
+    public class loginModel : PageModel
     {
         private readonly IHttpClientFactory _clientFactory;
-
-        public IEnumerable<ClasseE_Covid.LogAlerte.LogAlerte> Branches { get; private set; } //GitHubBranch et une class
-
-        public bool GetBranchesError { get; private set; }
-
-        public AfficheLogAlerteModel(IHttpClientFactory clientFactory)
+        public loginModel(IHttpClientFactory clientFactory)
         {
             _clientFactory = clientFactory;
         }
-        public async Task OnGet()
+        public void OnGet()
         {
-            string login = Login.Current(HttpContext);
-            if (login == null)
-            {
-                Response.Redirect("/login");
-            }
-            await LoadCasCovid();
+
         }
-        public async Task LoadCasCovid()
+
+        public async Task OnPostLogin()
         {
+            Login.NomLogin = Request.Form["nom"];
+            Login.Mdp = Request.Form["mdp"];
+
+            await LoadToken();
+        }
+
+        public async Task LoadToken()
+        {
+           // Login login = new Login();
             var request = new HttpRequestMessage(HttpMethod.Get,
-            "http://webservice.lensalex.fr:3002/Covid/CasCovid");
+            "http://webservice.lensalex.fr:3004/InfraAdmin/login/"+ Login.NomLogin + "/" + Login.Mdp);
             request.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
             request.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
 
@@ -45,13 +46,17 @@ namespace Smart_ECovid_IUT.Pages.LogAlerte
             if (response.IsSuccessStatusCode)
             {
                 using var responseStream = await response.Content.ReadAsStreamAsync(); // recupaire les donnée de api et les mette dans le responseStream
-                Branches = await JsonSerializer.DeserializeAsync
-                <IEnumerable<ClasseE_Covid.LogAlerte.LogAlerte>>(responseStream); // remplie la class GitHubBranch 
+                Login.Token = await JsonSerializer.DeserializeAsync<string>(responseStream); // remplie la class GitHubBranch 
+                HttpContext.Session.SetInt32("UtilisateurId", 1);
+                HttpContext.Session.SetString("Token", Login.Token);
+                HttpContext.Session.SetString("Nom", Login.NomLogin);
+
+                Response.Redirect("/Index");
             }
             else
             {
-                GetBranchesError = true;
-                Branches = Array.Empty<ClasseE_Covid.LogAlerte.LogAlerte>();
+                //GetBranchesError = true;
+                //Login.Token = Array.Empty<string>();
             }
         }
     }

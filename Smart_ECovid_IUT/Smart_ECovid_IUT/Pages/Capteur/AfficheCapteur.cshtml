@@ -1,6 +1,7 @@
 ﻿@page
 @model Smart_ECovid_IUT.Pages.Capteur.AfficheCapteurModel
 @using ClasseE_Covid.Capteur;
+@using ClasseE_Covid.Campus;
 @{
 
 }
@@ -95,39 +96,62 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-6 mb-4">
+        <div class="col-md-12 mb-4">
             <div class="card">
                 <div class="card-header border-bottom">
-                    <h3>Liste Capteur Taux occupation</h3>
+                    <h3>Liste Taux occupation</h3>
                 </div>
-                <div class="table-responsive">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th scope="col">Nom</th>
-                                <th scope="col">Box</th>
-                                <th scope="col">°C</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">CO2</th>
-                                <td>Box - 1</td>
-                                <td>95%</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Température</th>
-                                <td>Box - 52</td>
-                                <td>10%</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">RFIS</th>
-                                <td>Box - 628</td>
-                                <td>36%</td>
-                            </tr>
+                <div class="row">
+                    <div class="table-responsive col-md-6">
+                        <h5>Liste Taux occupation Site</h5>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Batiment</th>
+                                    <th scope="col">Taux ocupation</th>
+                                    <th scope="col">Capacité Max</th>
 
-                        </tbody>
-                    </table>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    foreach (OccupationSite taux in Model.occupationSite)
+                                    {
+                                        <tr>
+                                            <td>@taux.NomSite</td>
+                                            <td>@taux.TauxOccupation</td>
+                                            <td>@taux.CapaciteMaxSite</td>
+                                        </tr>
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-responsive col-md-6">
+                        <h5>Liste Taux occupation Batiment</h5>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Batiment</th>
+                                    <th scope="col">Taux ocupation</th>
+                                    <th scope="col">Capacité Max</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    foreach (OccupationBatiment taux in Model.occupationBatiment)
+                                    {
+                                        <tr>
+                                            <td>@taux.NomBatiment</td>
+                                            <td>@taux.TauxOccupation</td>
+                                            <td>@taux.CapaciteMaxBat</td>
+                                        </tr>
+                                    }
+                                }
+
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>

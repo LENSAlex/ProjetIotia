@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using ClasseE_Covid.Campus;
 using System.Text.Json;
+using ClasseE_Covid;
 
 namespace Smart_ECovid_IUT.Pages.Campus
 {
@@ -25,8 +26,19 @@ namespace Smart_ECovid_IUT.Pages.Campus
         }
         public async Task OnGet()
         {
+            string login = Login.Current(HttpContext);
+            if (login == null)
+            {
+                Response.Redirect("/login");
+            }
+            // await LoadCampus();
+            await LoadBati();
+        }
+
+        public async Task LoadCampus()
+        {
             var request = new HttpRequestMessage(HttpMethod.Get,
-           "http://51.75.125.121:3001/Batiment/CountInfo/Campus");
+           "http://51.75.125.121:3000/Batiment/CountInfo/Campus");
             request.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
             request.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
 
@@ -45,19 +57,22 @@ namespace Smart_ECovid_IUT.Pages.Campus
                 GetBranchesError = true;
                 Branches = Array.Empty<ClasseE_Covid.Campus.Campus>();
             }
+        }
 
-            var request2 = new HttpRequestMessage(HttpMethod.Get,
-          "http://51.75.125.121:3001/Batiment/ListBatiment");
-            request2.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
-            request2.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
+        public async Task LoadBati()
+        {
+            var request = new HttpRequestMessage(HttpMethod.Get,
+           "http://webservice.lensalex.fr:3000/Infrastructure/ListBatiment");
+            request.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
+            request.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
 
-            var client2 = _clientFactory.CreateClient();
+            var client = _clientFactory.CreateClient();
 
-            var response2 = await client.SendAsync(request2); // vus que la fonction est async elle vas s'arreter ici pour attendre une reponce 
+            var response = await client.SendAsync(request); // vus que la fonction est async elle vas s'arreter ici pour attendre une reponce 
 
             if (response.IsSuccessStatusCode)
             {
-                using var responseStream2 = await response2.Content.ReadAsStreamAsync(); // recupaire les donnée de api et les mette dans le responseStream
+                using var responseStream2 = await response.Content.ReadAsStreamAsync(); // recupaire les donnée de api et les mette dans le responseStream
                 Branches2 = await JsonSerializer.DeserializeAsync
                 <IEnumerable<ClasseE_Covid.Campus.Campus>>(responseStream2); // remplie la class Campus 
             }

@@ -9,7 +9,7 @@ namespace ClasseE_Covid.Promotion
 {
     public class Formation
     {
-        ManagerFormation managerFormation;
+      //  ManagerFormation managerFormation;
         public int IdDepartement { get; set; }
 
         public string NomFormation { get; set; }
@@ -20,10 +20,10 @@ namespace ClasseE_Covid.Promotion
 
         public int IdProfesseurPromotion { get; set; }
 
-        public static async Task PostFormation(Formation formation)
-        {
-            await ManagerFormation.Save(formation);
-        }
+        //public static async Task PostFormation(Formation formation)
+        //{
+        //    await ManagerFormation.Save(formation);
+        //}
 
     }
 }

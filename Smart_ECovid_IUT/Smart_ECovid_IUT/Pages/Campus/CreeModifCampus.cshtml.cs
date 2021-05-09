@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using ClasseE_Covid.Campus;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
+using ClasseE_Covid;
+using System.Net.Http.Headers;
 //using Newtonsoft.Json;
 
 namespace Smart_ECovid_IUT.Pages.Campus
@@ -34,6 +36,11 @@ namespace Smart_ECovid_IUT.Pages.Campus
 
         public async Task OnGet()
         {
+            string login = Login.Current(HttpContext);
+            if (login == null)
+            {
+                Response.Redirect("/login");
+            }
             await LoadDDBatiment();
             await LoadDDCampus();
             //await LoadDDEtage();
@@ -42,7 +49,7 @@ namespace Smart_ECovid_IUT.Pages.Campus
         public async Task LoadDDEtage()
         {
             var request = new HttpRequestMessage(HttpMethod.Get,
-           "http://51.75.125.121:3001/Batiment/ListEtage");
+           "http://webservice.lensalex.fr:3000/Infrastructure/ListEtage");
             request.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
             request.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
 
@@ -66,7 +73,7 @@ namespace Smart_ECovid_IUT.Pages.Campus
         public async Task LoadDDCampus()
         {
             var request = new HttpRequestMessage(HttpMethod.Get,
-           "http://51.75.125.121:3001/Batiment/ListSite");
+           "http://webservice.lensalex.fr:3000/Infrastructure/ListSite");
             request.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
             request.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
 
@@ -90,7 +97,7 @@ namespace Smart_ECovid_IUT.Pages.Campus
         public async Task LoadDDBatiment()
         {
             var request = new HttpRequestMessage(HttpMethod.Get,
-          "http://51.75.125.121:3001/Batiment/ListBatiment");
+          "http://webservice.lensalex.fr:3000/Infrastructure/ListBatiment");
             request.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
             request.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
 
@@ -114,8 +121,6 @@ namespace Smart_ECovid_IUT.Pages.Campus
 
         internal  async Task<string> SaveBatiment(PostBatiementEtage item)
         {
-           // await LoadDDBatiment();
-          //  await LoadDDCampus();
             var httpClient = new HttpClient();
             StringBuilder lesEtage = new StringBuilder();
 
@@ -137,9 +142,11 @@ namespace Smart_ECovid_IUT.Pages.Campus
             var lejson = Newtonsoft.Json.JsonConvert.DeserializeObject(jsonEtage);
 
             StringContent EtageSuperficie = new StringContent(jsonEtage, Encoding.UTF8, "application/json");
-            
+
             // /Batiment / Add / Batiment / :Nom / :Superficie / :IdCampus / :EtageSuperficie
-            string WebAPIUrl = "http://51.75.125.121:3001/Batiment/Add/Batiment/" + item.Nom + "/" + item.Superficie + "/" + item.IdCampus + "/" + lejson;
+            string WebAPIUrl = "http://webservice.lensalex.fr:3004/InfraAdmin/Infrastructure/Add/Batiment/" + item.Nom + "/" + item.Superficie + "/" + item.IdCampus + "/" + lejson;
+
+            //string WebAPIUrl = "http://51.75.125.121:3000/Batiment/Add/Batiment/" + item.Nom + "/" + item.Superficie + "/" + item.IdCampus + "/" + lejson;
             Uri uri = new Uri(WebAPIUrl);
             httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
             StringBuilder sb = new StringBuilder();
@@ -163,14 +170,21 @@ namespace Smart_ECovid_IUT.Pages.Campus
                 sb.Append(@"]");
                 sb.Append("}");
 
-              //  await LoadDDBatiment();
-              //  await LoadDDCampus();
-
                 string jsonData = sb.ToString();
-                StringContent content = new StringContent(jsonData, Encoding.UTF8, "application/json");
+                await LoadDDBatiment();
+                await LoadDDCampus();
+
+                var requestMessage = new HttpRequestMessage
+                {
+                    Method = HttpMethod.Post,
+                    Content = new StringContent(jsonData, Encoding.UTF8, "application/json"),
+                    RequestUri = new Uri(WebAPIUrl)
+                };
+
+                requestMessage.Headers.Authorization = new AuthenticationHeaderValue("Bearer", Login.Token);
                 try
                 {
-                    var response = await httpClient.PostAsync(uri, content);
+                    var response = await httpClient.SendAsync(requestMessage);
                     //var response = await httpClient.PostAsync(uri, formData).Result;
                     if (response.IsSuccessStatusCode)
                     {
@@ -237,8 +251,5 @@ namespace Smart_ECovid_IUT.Pages.Campus
 
             return Partial("PartialIOTDevise/_PartialCreeIOTDevise", this);
         }
-
-
-
     }
 }

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using ClasseE_Covid.IOTDevise;
 using System.Text.Json;
+using ClasseE_Covid;
 
 namespace Smart_ECovid_IUT.Pages.IOTDevise
 {
@@ -25,13 +26,18 @@ namespace Smart_ECovid_IUT.Pages.IOTDevise
         }
         public async Task OnGet()
         {
+            string login = Login.Current(HttpContext);
+            if (login == null)
+            {
+                Response.Redirect("/login");
+            }
             await LoadIOTDevise();
             await LoadCapteur();
         }
         public async Task LoadIOTDevise()
         {
             var request = new HttpRequestMessage(HttpMethod.Get,
-           "http://51.75.125.121:3001/Capteur/Box/Info");
+           "http://webservice.lensalex.fr:3005/InfraProd/Box/Info");
             request.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
             request.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
 
@@ -55,7 +61,7 @@ namespace Smart_ECovid_IUT.Pages.IOTDevise
         public async Task LoadCapteur()
         {
             var request = new HttpRequestMessage(HttpMethod.Get,
-           "http://51.75.125.121:3001/Capteur/ListCapteur");
+           "http://webservice.lensalex.fr:3005/InfraProd/ListCapteur");
             request.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
             request.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
 

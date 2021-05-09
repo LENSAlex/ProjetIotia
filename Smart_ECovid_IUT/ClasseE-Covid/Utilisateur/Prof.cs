@@ -20,13 +20,13 @@ namespace ClasseE_Covid.Utilisateur
         [JsonPropertyName("prenom")]
         public string PrenomProf { get; set; }
 
-        public static IEnumerable<Prof> _DDProf;
+       // public static IEnumerable<Prof> _DDProf;
 
-        public IEnumerable<Prof> DDProf { get => _DDProf; set => _DDProf = value; }
+        //public IEnumerable<Prof> DDProf { get => _DDProf; set => _DDProf = value; }
 
-        public static Task<IEnumerable<Prof>> GetProf()
-        {
-            return ManagerUtilisateur.LoadDDProf();
-        }
+        //public static Task<IEnumerable<Prof>> GetProf()
+        //{
+        //    return ManagerUtilisateur.LoadDDProf();
+        //}
     }
 }

@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http;
+@using ClasseE_Covid;
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -22,14 +24,16 @@
                     <a class="nav-link text-dark letest" asp-area="" asp-page="/Index"><img src="~/img/Logo-couple-IUT-horizontal-CMJN-05-07.png" width="200" /></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark mar-top-40" asp-area="" asp-page="/Privacy">Nom Utilisateur</a>
+                    <a class="nav-link text-dark mar-top-40" asp-area="" asp-page="/Privacy">@Login.NomLogin </a>
+
+                    @*<a class="nav-link text-dark mar-top-40" asp-area="" asp-page="" asp-action="@Login.logout(HttpContext)"><i class="fas fa-sign-out-alt"></i> </a>*@
                 </li>
             </ul>
         </div>
     </header>
     <div class="vertical-nav bg-white" id="sidebar">
         <ul class="nav flex-column mb-0 mar-top-100">
-            <li class="nav-item" style="padding-bottom:30px";>
+            <li class="nav-item" style="padding-bottom:30px" ;>
                 <a class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0"><i class="fas fa-user-circle">Utilisateurs</i></a>
                 <ul>
                     <li>
@@ -46,7 +50,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="nav-item"  style="padding-bottom:30px ">
+            <li class="nav-item" style="padding-bottom:30px ">
                 <a class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0"><i class="fas fa-graduation-cap">Promotion</i></a>
                 <ul>
                     <li>
@@ -64,7 +68,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="nav-item "  style="padding-bottom:30px ">
+            <li class="nav-item " style="padding-bottom:30px ">
                 <a class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0"><i class="fas fa-school">Campus</i></a>
                 <ul>
                     <li>
@@ -81,7 +85,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="nav-item "  style="padding-bottom:30px ">
+            <li class="nav-item " style="padding-bottom:30px ">
                 <a class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">
                     <i class="fas fa-microchip">
                         IOT Devis
