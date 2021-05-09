@@ -83,5 +83,17 @@ namespace Smart_ECovid_IUT.Pages.Promotion
                 Console.WriteLine("ErreurTryCatch");
             }
         }
+        public async Task<IActionResult> OnGetRecherche(string seach)
+        {
+            await Load();
+            //var movies = from m in _context.Movie
+            //             select m;
+
+            if (!String.IsNullOrEmpty(seach))
+            {
+                Branches = Branches.Where(s => s.Nom.Contains(seach));
+            }
+            return Partial("PartialIOTDevise/_PatialListPromotion", this);
+        }
     }
 }

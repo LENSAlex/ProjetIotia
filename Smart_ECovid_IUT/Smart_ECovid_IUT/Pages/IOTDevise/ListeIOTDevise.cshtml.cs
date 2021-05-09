@@ -81,5 +81,18 @@ namespace Smart_ECovid_IUT.Pages.IOTDevise
                 Capteur = Array.Empty<ListeCapteur>();
             }
         }
+        public async Task<IActionResult> OnGetRecherche(string nomBox)
+        {
+            await LoadIOTDevise();
+            await LoadCapteur();
+            //var movies = from m in _context.Movie
+            //             select m;
+
+            if (!String.IsNullOrEmpty(nomBox))
+            {
+                Devise = Devise.Where(s => s.NomBox.Contains(nomBox));
+            }
+            return Partial("PartialIOTDevise/_PartialListIOT", this);
+        }
     }
 }

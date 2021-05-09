@@ -1,0 +1,35 @@
+﻿@model Smart_ECovid_IUT.Pages.Campus.ListeCampusModel
+@using ClasseE_Covid.Campus;
+<div class=" table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Batiment</th>
+                <th scope="col">Campus</th>
+                <th scope="col">N°Etage</th>
+                <th scope="col">N°Salle</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Campus campus in Model.Branches2)
+            {
+                <tr>
+
+                    <td>@campus.NomBatimen</td>
+                    <td>
+                        @campus.NomCampus
+                    </td>
+                    <td>@campus.NBEtageCampus</td>
+                    <td>@campus.NBSalleCampus</td>
+                    <td>
+                        <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-edit"></i>"</a>
+                        <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-trash-alt"></i>"</a>
+                    </td>
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+</div>

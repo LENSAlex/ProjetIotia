@@ -28,7 +28,7 @@ namespace Smart_ECovid_IUT
 
             services.AddSession(options =>
             {
-                options.IdleTimeout = TimeSpan.FromMinutes(20);//You can set Time   
+                options.IdleTimeout = TimeSpan.FromMinutes(120);//You can set Time   
                 options.Cookie.IsEssential = true; // make the session cookie Essential
             });
         }

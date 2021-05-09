@@ -6,55 +6,23 @@
 }
 <div>
     <div class="border-bottom mb-4">
+
         <h1>Liste Utilisateur</h1>
     </div>
     <div class="row">
         <div class="col-md-12 mb-4">
             <div class="card">
-                <div class="card-header border-bottom">
-                    <h3>Liste Utilisateur</h3>
-                </div>
-                <div class="table-responsive">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th scope="col">Nom</th>
-                                <th scope="col">Prénom</th>
-                                <th scope="col">Sexe</th>
-                                <th scope="col">Anniversere</th>
-                                <th scope="col">EMail</th>
-                                <th scope="col">Formation</th>
-                                <th scope="col">Niveau</th>
-                                <th scope="col">Téléphone</th>
-                                <th scope="col">INE / NUMEN</th>
-                                <th scope="col">Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @if (Model.Branches != null)
-                            {
-                                @foreach (Utilisateur user in Model.Branches)
-                                {
-                                    <tr>
+                <div class="card-header border-bottom row">
+                    <div class="col-3">
+                        <h3>Liste Utilisateur</h3>
+                    </div>
+                    <div class="col-9">
+                        <input type="text" class="form-control label recher" id="recher" name="recher" placeholder="Rechercher nom utilisateur" />
+                    </div>
 
-                                        <td>@user.Nom</td>
-                                        <td>@user.Prenom</td>
-                                        <td>@user.Sexe</td>
-                                        <td>@user.Anniv</td>
-                                        <td>@user.Email</td>
-                                        <td>@user.NomFormation</td>
-                                        <td>@user.Niveau</td>
-                                        <td>@user.Telephone</td>
-                                        <td>@user.NumRef</td>
-                                        <td>
-                                            <a asp-action="/Utilisateur/ListeUtilisateur/@user.Id"><i class="far fa-edit"></i></a>
-                                            <a asp-action="/Utilisateur/ListeUtilisateur" data-id="@user.Id" class="supp"><i class="far fa-trash-alt"></i></a>
-                                        </td>
-                                    </tr>
-                                }
-                            }
-                        </tbody>
-                    </table>
+                </div>
+                <div id="ListUser">
+                    <partial name="PartialIOTDevise/_PatialListUtilisateur" />
                 </div>
             </div>
         </div>
@@ -62,25 +30,20 @@
 </div>
 
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
+    $(".recher").keyup(function (e) {
 
-<script type="text/javascript">
-    $(".supp").click(function (e) {
+        var seach = $(this).val();
 
-        var id = $(this).data('id');
-        var res = confirm("Êtes-vous sûr de vouloir supprimer?");
-        if (res) {
-            $.ajax({
-                type: "GET",
-                url: "?handler=DeleteUser",
-                data: {
-                    id: id,
-                }
-            }).done(function (result) {
-                window.location.href("/Utilisateur/ListeUtilisateur");
-            })
-        }
-        else {
-            alert("vous n'aver rien supprimer")
-        }
-    })
+        $.ajax({
+            type: "GET",
+            url: "?handler=Recherche",
+            data: {
+                seach: seach,
+            }
+        }).done(function (result) {
+            $("#ListUser").html(result);
+        })
+    });
+
 </script>

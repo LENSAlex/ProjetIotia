@@ -1,0 +1,68 @@
+﻿@model Smart_ECovid_IUT.Pages.Utilisateur.ListeUtilisateurModel
+@using ClasseE_Covid.Utilisateur;
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Nom</th>
+                <th scope="col">Prénom</th>
+                <th scope="col">Sexe</th>
+                <th scope="col">Anniversere</th>
+                <th scope="col">EMail</th>
+                <th scope="col">Formation</th>
+                <th scope="col">Niveau</th>
+                <th scope="col">Téléphone</th>
+                <th scope="col">INE / NUMEN</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Branches != null)
+            {
+                @foreach (Utilisateur user in Model.Branches)
+                {
+                    <tr>
+
+                        <td>@user.Nom</td>
+                        <td>@user.Prenom</td>
+                        <td>@user.Sexe</td>
+                        <td>@user.Anniv</td>
+                        <td>@user.Email</td>
+                        <td>@user.NomFormation</td>
+                        <td>@user.Niveau</td>
+                        <td>@user.Telephone</td>
+                        <td>@user.NumRef</td>
+                        <td>
+                            <a asp-action="/Utilisateur/ListeUtilisateur/@user.Id"><i class="far fa-edit"></i></a>
+                            <a asp-action="/Utilisateur/ListeUtilisateur" data-id="@user.Id" class="supp"><i class="far fa-trash-alt"></i></a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(".supp").click(function (e) {
+
+        var id = $(this).data('id');
+        var res = confirm("Êtes-vous sûr de vouloir supprimer?");
+        if (res) {
+            $.ajax({
+                type: "GET",
+                url: "?handler=DeleteUser",
+                data: {
+                    id: id,
+                }
+            }).done(function (result) {
+                window.location.href("/Utilisateur/ListeUtilisateur");
+            })
+        }
+        else {
+            alert("vous n'aver rien supprimer")
+        }
+    })
+</script>

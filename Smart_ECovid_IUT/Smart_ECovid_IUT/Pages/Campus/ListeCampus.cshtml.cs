@@ -51,6 +51,7 @@ namespace Smart_ECovid_IUT.Pages.Campus
                 using var responseStream = await response.Content.ReadAsStreamAsync(); // recupaire les donnée de api et les mette dans le responseStream
                 Branches = await JsonSerializer.DeserializeAsync
                 <IEnumerable<ClasseE_Covid.Campus.Campus>>(responseStream); // remplie la class Campus 
+               
             }
             else
             {
@@ -81,6 +82,18 @@ namespace Smart_ECovid_IUT.Pages.Campus
                 GetBranchesError = true;
                 Branches2 = Array.Empty<ClasseE_Covid.Campus.Campus>();
             }
+        }
+        public async Task<IActionResult> OnGetRecherche(string seach)
+        {
+            await LoadBati();
+            //var movies = from m in _context.Movie
+            //             select m;
+
+            if (!String.IsNullOrEmpty(seach))
+            {
+                Branches2 = Branches2.Where(s => s.NomBatimen.Contains(seach));
+            }
+            return Partial("PartialIOTDevise/_PatialListCampus", this);
         }
     }
 }

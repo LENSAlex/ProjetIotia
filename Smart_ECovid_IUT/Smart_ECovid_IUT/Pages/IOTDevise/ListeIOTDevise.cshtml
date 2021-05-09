@@ -6,61 +6,44 @@
 <div>
     <div class="border-bottom mb-4">
         <h1>Liste IOT DEVISE</h1>
+
     </div>
     <div class="row">
         <div class="col-md-12 mb-4">
             <div class="card">
-                <div class="card-header border-bottom">
-                    <h3>Liste IOT DEVISE</h3>
+                <div class="card-header border-bottom row">
+                    <div class="col-3">
+                        <h3>Liste IOT DEVISE</h3>
+                    </div>
+                    <div class="col-9">
+                        <input type="text" class="form-control label recher" id="recher" name="recher" placeholder="Rechercher nom box" />
+                    </div>
                 </div>
-                <div class=" table-responsive">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th scope="col">BOX</th>
-                                <th scope="col">IP</th>
-                                <th scope="col">Description</th>
-                                <th scope="col">Batiment</th>
-                                <th scope="col">Etage</th>
-                                <th scope="col">Salle</th>
-                                <th scope="col">Capteur</th>
-                                <th scope="col">Actionneur</th>
-                                <th scope="col">Création Pannaux Solaire</th>
-                                <th scope="col">Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach (IOTDevise devise in Model.Devise)
-                            {
-                            <tr>
-                                <td>@devise.NomBox</td>
-                                <td>@devise.AdrIpBox</td>
-                                <td>@devise.DescriptionBox</td>
-                                <td>@devise.NomBatimentBox</td>
-                                <td>@devise.IdEtageBox</td>
-                                <td>@devise.IdSalleBox</td>
-                                <td>
-                                    @foreach (ListeCapteur devise2 in Model.Capteur)
-                                    {
-                                        if (devise2.NomBox == devise.NomBox)
-                                        {
-                                            <p>@devise2.NomCapteur</p>;
-                                        }
-                                    }
-                                </td>
-                                <td>@devise.NbBouton</td>
-                                <td>@devise.NbPanneauSolaire</td>
-                                <td>
-                                    <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-edit"></i>"</a>
-                                    <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-trash-alt"></i>"</a>
-                                </td>
-                            </tr>
 
-                            }
-                        </tbody>
-                    </table>
+                <div id="ListIOT">
+                    <partial name="PartialIOTDevise/_PartialListIOT" />
                 </div>
+
             </div>
         </div>
     </div>
 </div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
+    $(".recher").keyup(function (e) {
+
+        var nomBox = $(this).val();
+
+        $.ajax({
+            type: "GET",
+            url: "?handler=Recherche",
+            data: {
+                nomBox: nomBox,
+            }
+        }).done(function (result) {
+            $("#ListIOT").html(result);
+        })
+    });
+
+</script>

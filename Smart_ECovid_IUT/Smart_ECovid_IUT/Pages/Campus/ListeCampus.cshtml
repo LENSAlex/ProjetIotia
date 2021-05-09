@@ -11,43 +11,38 @@
     <div class="row">
         <div class="col-md-12 mb-4">
             <div class="card">
-                <div class="card-header border-bottom">
-                    <h3>Liste Campus</h3>
+                <div class="card-header border-bottom row">
+                    <div class="col-3">
+                        <h3>Liste Campus</h3>
+                    </div>
+                    <div class="col-9">
+                        <input type="text" class="form-control label recher" id="recher" name="recher" placeholder="Rechercher nom batiment" />
+                    </div>
                 </div>
-                <div class=" table-responsive">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th scope="col">Batiment</th>
-                                <th scope="col">Campus</th>
-                                <th scope="col">N°Etage</th>
-                                <th scope="col">N°Salle</th>
-                                <th scope="col">Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach (Campus campus in Model.Branches2)
-                            {
-                                <tr>
-
-                                    <td>@campus.NomBatimen</td>
-                                    <td>
-                                        @campus.IdCampus
-                                    </td>
-                                    <td>@campus.NBEtageCampus</td>
-                                    <td>@campus.NBSalleCampus</td>
-                                    <td>
-                                        <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-edit"></i>"</a>
-                                        <a asp-page="/Utilisateur/CreeModifUtilisateur"><i class="far fa-trash-alt"></i>"</a>
-                                    </td>
-                                </tr>
-
-                            }
-
-                        </tbody>
-                    </table>
+                <div id="ListCampus">
+                    <partial name="PartialIOTDevise/_PatialListCampus" />
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
+
+    $(".recher").keyup(function (e) {
+
+        var seach = $(this).val();
+
+        $.ajax({
+            type: "GET",
+            url: "?handler=Recherche",
+            data: {
+                seach: seach,
+            }
+        }).done(function (result) {
+            $("#ListCampus").html(result);
+        })
+    });
+
+</script>

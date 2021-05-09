@@ -11,40 +11,16 @@
     <div class="row">
         <div class="col-md-12 mb-4">
             <div class="card">
-                <div class="card-header border-bottom">
-                    <h3>Liste Promotion</h3>
+                <div class="card-header border-bottom row">
+                    <div class="col-3">
+                        <h3>Liste Promotion</h3>
+                    </div>
+                    <div class="col-9">
+                        <input type="text" class="form-control label recher" id="recher" name="recher" placeholder="Rechercher nom promotion" />
+                    </div>
                 </div>
-                <div class=" table-responsive">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th scope="col">Nom</th>
-                                <th scope="col">Année</th>
-                                <th scope="col">Durée</th>
-                                <th scope="col">Action</th>
-
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @{
-                                if (Model.Branches != null)
-                                {
-                                    foreach (PromotionClass promotion in Model.Branches)
-                                    {
-                                        <tr>
-                                            <td>@promotion.Nom</td>
-                                            <td>@promotion.Annee</td>
-                                            <td>@promotion.Duree</td>
-                                            <td>
-                                                <a asp-action="/Promotion/CréeModifPromotion/@promotion.Id"><i class="far fa-edit"></i></a>
-                                                <a asp-action="/Promotion/ListePromotion" data-id="@promotion.Id" class="supp"><i class="far fa-trash-alt"></i></a>
-                                            </td>
-                                        </tr>
-                                    }
-                                }
-                            }
-                        </tbody>
-                    </table>
+                <div id="ListPromotion">
+                    <partial name="PartialIOTDevise/_PatialListPromotion" />
                 </div>
             </div>
         </div>
@@ -52,26 +28,19 @@
 </div>
 
 
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script><script>
 
-<script type="text/javascript">
-    $(".supp").click(function (e) {
+    $(".recher").keyup(function (e) {
+        var seach = $(this).val();
+        $.ajax({
+            type: "GET",
+            url: "?handler=Recherche",
+            data: {
+                seach: seach,
+            }
+        }).done(function (result) {
+            $("#ListPromotion").html(result);
+        })
+    });
 
-        var id = $(this).data('id');
-        var res = confirm("Êtes-vous sûr de vouloir supprimer?");
-        if (res) {
-            $.ajax({
-                type: "GET",
-                url: "?handler=DeleteUser",
-                data: {
-                    id: id,
-                }
-            }).done(function (result) {
-                window.location.href("/Promotion/ListePromotio");
-            })
-        }
-        else {
-            alert("vous n'aver rien supprimer")
-        }
-    })
 </script>
