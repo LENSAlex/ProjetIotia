@@ -156,6 +156,42 @@
         }
       }
     },
+    "/Usager/Load/{IdUser}": {
+      "get": {
+        "tags": [
+          "Usager"
+        ],
+        "summary": "Cherche avec son id",
+        "description": "Releve les informations principal d un etudiant",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "IdUser",
+            "in": "path",
+            "description": "Id Usager",
+            "required": true,
+            "type": "integer",
+            "format": "UTF-8"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Personne_Load"
+              }
+            }
+          },
+          "400": {
+            "description": "Requete invalid"
+          }
+        }
+      }
+    },
     "/Usager/ListSalleEleve/{Id}": {
       "get": {
         "tags": [
@@ -497,6 +533,60 @@
         "duree": {
           "type": "integer",
           "example": 1
+        }
+      }
+    },
+    "Personne_Load": {
+      "type": "object",
+      "required": [
+        "num_ref",
+        "email",
+        "telephone",
+        "sexe",
+        "nom",
+        "prenom",
+        "date_anniversaire",
+        "rfid",
+        "libelle",
+        "description"
+      ],
+      "properties": {
+        "num_ref": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "email": {
+          "type": "string",
+          "example": "unePersonne@iotia.com"
+        },
+        "telephone": {
+          "type": "string",
+          "example": "06 11 74 56 94"
+        },
+        "sexe": {
+          "type": "string",
+          "example": "homme"
+        },
+        "nom": {
+          "type": "string",
+          "example": "Mainpon"
+        },
+        "prenom": {
+          "type": "string",
+          "example": "Charles"
+        },
+        "date_anniversaire": {
+          "type": "string",
+          "example": "2000-01-01T01:00:00.000Z"
+        },
+        "rfid": {
+          "type": "string"
+        },
+        "libelle": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
         }
       }
     },

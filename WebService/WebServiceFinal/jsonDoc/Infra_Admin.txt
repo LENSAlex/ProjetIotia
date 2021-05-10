@@ -211,43 +211,8 @@ paths:
         400:
           description: Requete invalid
   
-  /InfraAdmin/Usager/Modifs/Formation/{IdDepartement}/{NomFormation}/{DureeFormation}/{IdFormation}:
-    put:
-      tags:
-      - Usager
-      summary: Modification d'une formation
-      operationId: ModifFormation
-      produces:
-      - application/json
-      parameters:
-      - name: IdDepartement
-        in: path
-        description: IdDepartement
-        required: true
-        type: integer
-        format: int64
-      - name: NomFormation
-        in: path
-        description: Nom de la formation
-        required: true
-        type: string
-      - name: DureeFormation
-        in: path
-        description: Duree formation (annee)
-        required: true
-        type: integer
-      - name: IdFormation
-        in: path
-        description: Id de la formation
-        required: true
-        type: integer
-      responses:
-        200:
-          description: Formation modifié
-        400:
-          description: Requete invalid
           
-  /InfraAdmin/Usager/Modifs/Promo/{AnneePromotion}/{IdProfesseurPromotion}/{IdPromo}:
+  /InfraAdmin/Usager/Modif/Promo/{IdDepartement}/{NomFormation}/{DureeFormation}/{AnneePromo}/{IdProfesseurPromotion}/{IdFormation}/{IdPromo}:
     put:
       tags:
       - Usager
@@ -256,7 +221,7 @@ paths:
       produces:
       - application/json
       parameters:
-      - name: AnneePromotion
+      - name: AnneePromo
         in: path
         description: Annee de la promo
         required: true
@@ -270,6 +235,26 @@ paths:
       - name: IdPromo
         in: path
         description: Id de la promotion
+        required: true
+        type: integer
+      - name: IdDepartement
+        in: path
+        description: Id du departement
+        required: true
+        type: integer
+      - name: NomFormation
+        in: path
+        description: Nom de la formation
+        required: true
+        type: string
+      - name: DureeFormation
+        in: path
+        description: duree formation
+        required: true
+        type: integer
+      - name: IdFormation
+        in: path
+        description: id formation
         required: true
         type: integer
       responses:
