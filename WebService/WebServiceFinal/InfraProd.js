@@ -268,7 +268,7 @@ app.get("/InfraProd/List/Historique/Temp", (req, res) => {
 
 //List des capteur co2 dans l historique plus recent au plus vieux
 app.get("/InfraProd/List/Historique/CO2", (req, res) => {
-    conn.query("select DT.libelle_type , B.libelle , H.valeur , S.nom as NomSalle , E.num as NomEtage, Bat.nom as NomBatiment, Site.nom as NomSite , H.date_historique from Historique H , Device D , DeviceType DT, Box B , Salle S , Etage E , Batiment Bat , Site WHERE H.id_device = D.id_device and DT.id_devicetype = D.id_devicetype AND D.id_box = B.id_box and B.id_salle = S.id_salle and E.id_etage = S.id_etage AND Bat.id_batiment = E.id_batiment AND Bat.id_site = Site.id_site AND DT.id_devicetype = 3 order by H.date_historique DESC", function(err, result) {
+    conn.query("select Site.nom ,Bat.nom , S.nom , DT.libelle_type , B.libelle , H.valeur , S.nom as NomSalle , E.num as NomEtage, Bat.nom as NomBatiment, Site.nom as NomSite , H.date_historique , H.date_historique from Historique H , Device D , DeviceType DT, Box B , Salle S , Etage E , Batiment Bat , Site WHERE H.id_device = D.id_device and DT.id_devicetype = D.id_devicetype AND D.id_box = B.id_box and B.id_salle = S.id_salle and E.id_etage = S.id_etage AND Bat.id_batiment = E.id_batiment AND Bat.id_site = Site.id_site AND DT.id_devicetype = 3 order by H.date_historique DESC", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {

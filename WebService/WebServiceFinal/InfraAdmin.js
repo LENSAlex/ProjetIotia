@@ -136,43 +136,37 @@ app.put("/InfraAdmin/Usager/Modifs/:NumRef/:IdPersType/:Password/:Email/:Tel/:Se
 
 })
 
-//Modif Formation
-app.put("/InfraAdmin/Usager/Modifs/Formation/:IdDepartement/:NomFormation/:DureeFormation/:IdFormation",checkTokenMiddleware, (req, res) => {
+// //Modif Formation
+// app.put("/InfraAdmin/Usager/Modifs/Formation/:IdDepartement/:NomFormation/:DureeFormation/:IdFormation",checkTokenMiddleware, (req, res) => {
 
-    //liée la table formation et promotion 
-    //Creation d'une formation:
-    conn.query("update `Formation` set `id_departement`='" + req.params.IdDepartement + "' ,  `nom` = '" + req.params.NomFormation + "', `duree` = '" + req.params.DureeFormation + "' where id_formation = '" + req.params.IdFormation + "'", function(err, result) {
+//     //liée la table formation et promotion 
+//     //Creation d'une formation:
+//     conn.query("update `Formation` set `id_departement`='" + req.params.IdDepartement + "' ,  `nom` = '" + req.params.NomFormation + "', `duree` = '" + req.params.DureeFormation + "' where id_formation = '" + req.params.IdFormation + "'", function(err, result) {
+//         if (err)
+//             res.status(400).json({ ErrorRequete: err });
+//         else {
+//             res.status(200).json("Formation modifié");
+//         }
+//     })
+
+// })
+
+//Modifs Promo
+app.put("/InfraAdmin/Usager/Modif/Promo/:IdDepartement/:NomFormation/:DureeFormation/:AnneePromotion/:IdProfesseurPromotion/:IdFormation/:IdPromo",checkTokenMiddleware, (req, res) => {
+    conn.query("update `Formation` set `id_departement` = '" + req.params.IdDepartement + "', `nom` = '" + req.params.NomFormation + "', `duree` = '" + req.params.DureeFormation + "' where id_formation = '" + req.params.IdFormation + "'", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: err });
         else {
-            res.status(200).json("Formation modifié");
-        }
-    })
-
-})
-
-//Modifs Promo
-app.put("/InfraAdmin/Usager/Modifs/Promo/:AnneePromotion/:IdProfesseurPromotion/:IdPromo",checkTokenMiddleware, (req, res) => {
-    conn.query("update `Promotion` set `id_professeur` = '" + req.params.IdProfesseurPromotion + "', `annee` = '" + req.params.AnneePromotion + "' where id_promotion = '" + req.params.IdPromo + "' ", function(err, result) {
-        if (err)
-            res.status(400).json({ ErrorRequete: 'Requete invalid' });
-        else {
-            res.status(200).json("Promotion modifié");
+            conn.query("update `Promotion`(`id_formation` = '" + req.params.IdFormation  + "', `id_professeur` = '" + req.params.IdProfesseurPromotion + "', `annee` = '" + req.params.AnneePromotion + "' where id_promotion = '" + req.params.IdPromo + "'", function(err, result) {
+                if (err)
+                    res.status(400).json({ ErrorRequete: 'Requete invalid' });
+                else {
+                    res.status(200).json("Promotion cree");
+                }
+            })
         }
     })
 })
-
-//A COMPLETER
-//Modifs Batiment
-// app.put("/InfraAdmin/Infrastructure/Modifs/:Nom/:SurfaceBat/", (req, res) => {
-//     conn.query("", function(err, result) {
-//         if (err)
-//             res.status(400).json({ ErrorRequete: 'Requete invalid' });
-//         else {
-//             res.status(200).json("Promotion modifié");
-//         }
-//     })
-// })
 
 
 //Modif box
@@ -295,7 +289,6 @@ app.post("/InfraAdmin/Usager/Add/Promo/:IdDepartement/:NomFormation/:DureeFormat
     })
 
 })
-
 
 
 //DORIAN

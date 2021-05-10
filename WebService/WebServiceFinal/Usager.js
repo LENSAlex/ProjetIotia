@@ -49,6 +49,19 @@ app.get("/Usager/:Prenom/:Nom", (req, res) => {
     })
 })
 
+app.get("/Usager/Load/:IdUser", (req, res) => {
+
+    //Affichage formation avec departement et duree
+    conn.query("select id_personne , num_ref , id_pers_type ,email , telephone , sexe , nom , prenom, date_anniversaire , rfid from Personne where id_personne = '" + req.params.IdUser + "'", function(err, result) {
+        if (err)
+            res.status(400).json({ ErrorRequete: 'Requete invalid' });
+        else {
+            res.status(200).json(result);
+            console.log(result);
+        }
+    })
+})
+
 app.get("/Usager/ListPromo", (req, res) => {
 
     //Affichage formation avec departement et duree
