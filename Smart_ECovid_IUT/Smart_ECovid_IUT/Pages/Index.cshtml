@@ -1,9 +1,10 @@
 ﻿@page
 @model IndexModel
-@using ClasseE_Covid.LogAlerte;
+@using ClasseE_Covid.LogAlerte
+@using ClasseE_Covid.Capteur;
 @{
     ViewData["Title"] = "Home page";
-    
+
 }
 <div>
     <div class="border-bottom mb-4">
@@ -44,6 +45,27 @@
                         </div>
                         <div class="col-6">
                             <h5>dépasse Co2</h5>
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Nombre de depassement</th>
+                                            @*<th scope="col">Nombre cas covid</th>*@
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+
+                                        <tr>
+                                            <td>@(Model.ListCo2 != null ? Model.ListCo2.Count() : 0 ) </td>
+                                            @*<td>@co2.NbCasCovid</td>*@
+                                        </tr>
+
+
+
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>

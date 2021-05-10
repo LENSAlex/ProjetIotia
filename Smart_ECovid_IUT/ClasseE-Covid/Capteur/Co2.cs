@@ -15,5 +15,20 @@ namespace ClasseE_Covid.Capteur
 
         [JsonPropertyName("valeur")]
         public int ValeurCo2 { get; set; }
+
+        [JsonPropertyName("NomSalle")]
+        public string NomSalle { get; set; }
+
+        [JsonPropertyName("NomEtage")]
+        public string NomEtage { get; set; }
+
+        [JsonPropertyName("NomBatiment")]
+        public string NomBatiment { get; set; }
+
+        [JsonPropertyName("NomSite")]
+        public string NomSite { get; set; }
+
+        [JsonPropertyName("date_historique")]
+        public DateTime Date { get; set; }
     }
 }

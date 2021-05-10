@@ -1,6 +1,7 @@
 ﻿@page
 @model Smart_ECovid_IUT.Pages.LogAlerte.AfficheLogAlerteModel
 @using ClasseE_Covid.LogAlerte;
+@using ClasseE_Covid.Capteur;
 @{
 
 }
@@ -50,31 +51,22 @@
                                 <th scope="col">etage</th>
                                 <th scope="col">Salle</th>
                                 <th scope="col">Horaire</th>
+                                <th scope="col">valuer</th>
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach (Co2 co2  in Model.ListCo2)
+                            {
                             <tr>
-                                <th scope="row">Carlone</th>
-                                <td><p>Phycologie</p></td>
-                                <td>3</td>
-                                <td>305</td>
-                                <td>12/02/2021 14:25:23</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Shophia</th>
-                                <td><p>Informatique</p></td>
-                                <td>1</td>
-                                <td>206</td>
-                                <td>28/11/2020 9:23:59</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Fabron</th>
-                                <td><p>Reseau</p></td>
-                                <td>2</td>
-                                <td>305</td>
-                                <td>07/03/2021 17:56:43</td>
+                                <td>@co2.NomSite</td>
+                                <td>@co2.NomBatiment</td>
+                                <td>@co2.NomEtage</td>
+                                <td>@co2.NomSalle</td>
+                                <td>@co2.Date</td>
+                                <td>@co2.ValeurCo2</td>
                             </tr>
 
+                            }
                         </tbody>
                     </table>
                 </div>

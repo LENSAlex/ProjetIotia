@@ -18,7 +18,10 @@ namespace Smart_ECovid_IUT.Pages.Utilisateur
     {
         private readonly IHttpClientFactory _clientFactory;
 
-        public IEnumerable<Niveau> DDNiveau { get; private set; } 
+        public ClasseE_Covid.Utilisateur.Utilisateur utilisateur = new ClasseE_Covid.Utilisateur.Utilisateur();
+
+        public IEnumerable<Niveau> DDNiveau { get; private set; }
+        public IEnumerable<ClasseE_Covid.Utilisateur.Utilisateur> User { get; private set; }
         public IEnumerable<PromotionClass> DDPromotion { get; private set; }
 
         public IEnumerable<PromotionClass> ModifUser { get; private set; }
@@ -39,7 +42,7 @@ namespace Smart_ECovid_IUT.Pages.Utilisateur
 
             if (id.HasValue)
             {
-                await LoadUtilisateur();
+                await LoadUtilisateur(id);
             }
             else
             {
@@ -48,10 +51,10 @@ namespace Smart_ECovid_IUT.Pages.Utilisateur
             }
         }
 
-        public async Task LoadUtilisateur()
+        public async Task LoadUtilisateur(int? id)
         {
             var request = new HttpRequestMessage(HttpMethod.Get,
-          "http://webservice.lensalex.fr:3001/Usager/ListTypePersonne");
+          "http://webservice.lensalex.fr:3001/Usager/Load/"+ id);
             request.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
             request.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
 
@@ -62,13 +65,29 @@ namespace Smart_ECovid_IUT.Pages.Utilisateur
             if (response.IsSuccessStatusCode)
             {
                 using var responseStream2 = await response.Content.ReadAsStreamAsync(); // recupaire les donnée de api et les mette dans le responseStream
-                DDNiveau = await JsonSerializer.DeserializeAsync
-                <IEnumerable<Niveau>>(responseStream2); // remplie la class Campus 
+                User = await JsonSerializer.DeserializeAsync
+                <IEnumerable<ClasseE_Covid.Utilisateur.Utilisateur>>(responseStream2); // remplie la class Campus 
+                foreach(ClasseE_Covid.Utilisateur.Utilisateur user in User)
+                {
+                    utilisateur.Anniv = user.Anniv;
+                    utilisateur.Email = user.Email;
+                    utilisateur.IdPersType = user.IdPersType ;
+                    utilisateur.Niveau = user.Niveau;
+                    utilisateur.Nom = user.Nom;
+                    utilisateur.NomFormation = user.NomFormation;
+                    utilisateur.NumRef = user.NumRef;
+                    utilisateur.Prenom =user.Prenom;
+                    utilisateur.Sexe = user.Sexe;
+                    utilisateur.Telephone = user.Telephone;
+                    utilisateur.Promotion = user.Promotion;
+                    utilisateur.Pwd = user.Pwd;
+                    utilisateur.Pwd = user.Pwd;
+                }
             }
             else
             {
                 GetBranchesError = true;
-                DDNiveau = Array.Empty<Niveau>();
+                User = Array.Empty<ClasseE_Covid.Utilisateur.Utilisateur>();
             }
         }
 

@@ -40,6 +40,22 @@
                                     }
                                 </select>
                             </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="Nom">Valeur Capteur</label>
+                                <select class="form-control select2-multiple" name="valeurCapteur" aria-hidden="true">
+                                    @{
+                                        if (Model.DDValeurCapteur != null)
+                                        {
+                                            foreach (ValeurCapteur valeur in Model.DDValeurCapteur)
+                                            {
+
+                                                <option value="@valeur.IdValuetype">@valeur.NomValuetype - @valeur.UniterValuetype</option>
+
+                                            }
+                                        }
+                                    }
+                                </select>
+                            </div>
                             <div class="col-md-4 mb-3 ">
                                 <label for="Batiment">Date Installation</label>
                                 <input type="text" class="form-control date" id="installation" name="installation" placeholder="installation" required />
@@ -60,9 +76,9 @@
                                         {
                                             foreach (Salle salle in Model.DDSalle)
                                             {
-                                                
-                                                    <option value="@salle.IdSalle">@salle.NomBatiment</option>
-                                                
+
+                                                <option value="@salle.IdSalle">@salle.NomBatiment</option>
+
                                             }
                                         }
                                     }

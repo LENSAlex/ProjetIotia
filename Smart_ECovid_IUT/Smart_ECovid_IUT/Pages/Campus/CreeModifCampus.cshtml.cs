@@ -119,46 +119,52 @@ namespace Smart_ECovid_IUT.Pages.Campus
         }
 
 
-        internal  async Task<string> SaveBatiment(PostBatiementEtage item)
+        internal async Task<string> SaveBatiment(PostBatiementEtage item = null, PostBatimentSalle salle = null)
         {
             var httpClient = new HttpClient();
             StringBuilder lesEtage = new StringBuilder();
 
-            lesEtage.Append(@"{""SuperficieEtage"" : [");
-            for (int i = 0; i < item.NbEtage; i++)
-            {
-                int cnt = 1 + i;
-                string virgule = "";
-                if(i < (item.NbEtage - 1))
-                {
-                    virgule = ",";
-                }
-                lesEtage.Append(@"{""Etage"" : """ + Convert.ToString(i) + @""",");
-                lesEtage.Append(@"""Superficie"" : """ + item.EtageSuperficie[i] + @"""}"+virgule+"");
-            }
-            lesEtage.Append(@"]}");
+            // StringContent EtageSuperficie = new StringContent(jsonEtage, Encoding.UTF8, "application/json");
 
-            string jsonEtage = lesEtage.ToString();
-            var lejson = Newtonsoft.Json.JsonConvert.DeserializeObject(jsonEtage);
-
-            StringContent EtageSuperficie = new StringContent(jsonEtage, Encoding.UTF8, "application/json");
-
-            // /Batiment / Add / Batiment / :Nom / :Superficie / :IdCampus / :EtageSuperficie
-            string WebAPIUrl = "http://webservice.lensalex.fr:3004/InfraAdmin/Infrastructure/Add/Batiment/" + item.Nom + "/" + item.Superficie + "/" + item.IdCampus + "/" + lejson;
-
-            //string WebAPIUrl = "http://51.75.125.121:3000/Batiment/Add/Batiment/" + item.Nom + "/" + item.Superficie + "/" + item.IdCampus + "/" + lejson;
-            Uri uri = new Uri(WebAPIUrl);
-            httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
             StringBuilder sb = new StringBuilder();
-            if (item != null)
+
+            string WebAPIUrl = "";
+            if (salle != null)
             {
+                WebAPIUrl = "http://webservice.lensalex.fr:3004/InfraAdmin/Infrastructure/Add/Salle/" + salle.IdEtage + "/" + salle.NomSalle + "/" + salle.CapaciteMax + "/" + salle.SalleSurface + "/" + salle.Volume;
+                sb.Append(@"{""Nom"" : " + salle.IdEtage + ",");
+                sb.Append(@"""Superficie"" : """ + salle.NomSalle + @""",");
+                sb.Append(@"""IdCampus"" : " + salle.CapaciteMax + ",");
+                sb.Append(@"""Superficie"" : " + salle.SalleSurface + ",");
+                sb.Append(@"""IdCampus"" : " + salle.Volume + "}");
+            }
+            else
+            {
+                lesEtage.Append(@"{""SuperficieEtage"" : [");
+                for (int i = 0; i < item.NbEtage; i++)
+                {
+                    int cnt = 1 + i;
+                    string virgule = "";
+                    if (i < (item.NbEtage - 1))
+                    {
+                        virgule = ",";
+                    }
+                    lesEtage.Append(@"{""Etage"" : """ + Convert.ToString(i) + @""",");
+                    lesEtage.Append(@"""Superficie"" : """ + item.EtageSuperficie[i] + @"""}" + virgule + "");
+                }
+                lesEtage.Append(@"]}");
+
+                string jsonEtage = lesEtage.ToString();
+                var lejson = Newtonsoft.Json.JsonConvert.DeserializeObject(jsonEtage);
+
+                WebAPIUrl = "http://webservice.lensalex.fr:3004/InfraAdmin/Infrastructure/Add/Batiment/" + item.Nom + "/" + item.Superficie + "/" + item.IdCampus + "/" + lejson;
                 sb.Append(@"{""Nom"" : """ + item.Nom + @""",");
                 sb.Append(@"""Superficie"" : " + item.Superficie + ",");
                 sb.Append(@"""IdCampus"" : " + item.IdCampus + ",");
                 sb.Append(@"""SuperifieEtage"" : [");
                 for (int i = 0; i < item.NbEtage; i++)
                 {
-                    
+
                     string virgule = "";
                     if (i < (item.NbEtage - 1))
                     {
@@ -169,6 +175,14 @@ namespace Smart_ECovid_IUT.Pages.Campus
                 }
                 sb.Append(@"]");
                 sb.Append("}");
+            }
+
+            //string WebAPIUrl = "http://51.75.125.121:3000/Batiment/Add/Batiment/" + item.Nom + "/" + item.Superficie + "/" + item.IdCampus + "/" + lejson;
+            //Uri uri = new Uri(WebAPIUrl);
+            httpClient.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
+         
+            if (item != null || salle != null)
+            {
 
                 string jsonData = sb.ToString();
                 await LoadDDBatiment();
@@ -221,16 +235,34 @@ namespace Smart_ECovid_IUT.Pages.Campus
 
             for (int i = 0; i < campus.NbEtage; i++)
             {
-                
+
                 campus.EtageSuperficie[i] = Request.Form["superfice" + i + ""];
             }
 
             GetDataAsync(campus);
         }
 
-        public async Task GetDataAsync(PostBatiementEtage campus)
+        public void OnPostEnvoieDonneSalle()
         {
-            await SaveBatiment(campus);
+            PostBatimentSalle salle = new PostBatimentSalle();
+
+            salle.IdEtage = Convert.ToInt32(Request.Form["etage"]);
+            salle.NomSalle = Request.Form["nomSalle"];
+            salle.CapaciteMax = Convert.ToInt32(Request.Form["capacite"]);
+            salle.SalleSurface = Convert.ToInt32(Request.Form["surface"]);
+            salle.Volume = Convert.ToInt32(Request.Form["volume"]);
+
+
+            GetDataAsync(null, salle);
+        }
+
+
+        public async Task GetDataAsync(PostBatiementEtage campus = null, PostBatimentSalle salle = null)
+        {
+            if (campus != null)
+                await SaveBatiment(campus);
+            else
+                await SaveBatiment(null, salle);
             await LoadDDBatiment();
             await LoadDDCampus();
         }

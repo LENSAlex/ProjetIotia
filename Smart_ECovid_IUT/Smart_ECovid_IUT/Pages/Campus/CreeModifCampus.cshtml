@@ -64,7 +64,7 @@
                         <div class="form-row">
                             <div class="col-md-4 mb-3">
                                 <label for="Batiment">Batiment</label>
-                                <select class="form-control select2-multiple selectBat" name="batiment" aria-hidden="true">
+                                <select class="form-control select2-multiple selectBat" name="nom" aria-hidden="true">
                                     @{
                                         <option value="">-- Seletct Batiment --</option>
                                         if (Model.DDCampus != null)
@@ -84,7 +84,7 @@
                             </div>
 
                         </div>
-                        <button class="btn btn-primary" asp-page-handler="EnvoieDonneSalle" type="submit">Submit form</button>
+                        <button class="btn btn-primary" asp-page-handler="EnvoieDonneSalle" type="submit">Envoie</button>
                     </form>
                 </div>
             </div>

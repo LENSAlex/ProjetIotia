@@ -22,15 +22,15 @@
                         <div class="form-row">
                             <div class="col-md-4 mb-3">
                                 <label for="Nom">Nom</label>
-                                <input type="text" class="form-control" id="nom" name="nom" value="@Model?.Nom"  placeholder="nom" required/>
+                                <input type="text" class="form-control" id="nom" name="nom" value="@(Model.ModifPromo != null ? Model?.Nom : null)"  placeholder="nom" required/>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <label for="Nom">Année</label>
-                                <input type="text" class="form-control" id="annee" name="annee" value="@Model?.Annee"  placeholder="2020" required />
+                                <input type="text" class="form-control" id="annee" name="annee" value="@(Model.ModifPromo != null ? Model?.Annee : null)"  placeholder="2020" required />
                             </div>
                             <div class="col-md-4 mb-3">
                                 <label for="Batiment">Durée</label>
-                                <input type="text" class="form-control" id="duree" name="duree" value="@Model?.Duree"  placeholder="2" required />
+                                <input type="text" class="form-control" id="duree" name="duree" value="@(Model.ModifPromo != null ? Model?.Duree : null)"  placeholder="2" required />
 
                             </div>
                             <div class="col-md-4 mb-3">

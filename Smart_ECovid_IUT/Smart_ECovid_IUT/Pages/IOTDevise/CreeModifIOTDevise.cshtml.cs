@@ -15,11 +15,14 @@ using System.Net.Http.Headers;
 
 namespace Smart_ECovid_IUT.Pages.IOTDevise
 {
+   
     public class CreeModifIOTDeviseModel : PageModel
     {
         private readonly IHttpClientFactory _clientFactory;
 
         public IEnumerable<TypeCapteur> DDTypeCapteur { get; private set; }
+
+        public IEnumerable<ValeurCapteur> DDValeurCapteur { get; private set; }
         public IEnumerable<ClasseE_Covid.IOTDevise.IOTDevise> DDBox { get; private set; }
 
         public IEnumerable<Salle> DDSalle { get; private set; }
@@ -41,6 +44,7 @@ namespace Smart_ECovid_IUT.Pages.IOTDevise
             await LoadTypeCapteur();
             await LoadIOTDevise();
             await LoadSale();
+            await LoadDDValuerCapteur();
         }
         public  async Task LoadIOTDevise()
         {
@@ -63,6 +67,29 @@ namespace Smart_ECovid_IUT.Pages.IOTDevise
             {
                 GetBranchesError = true;
                 DDBox = Array.Empty<ClasseE_Covid.IOTDevise.IOTDevise>();
+            }
+        }
+        public async Task LoadDDValuerCapteur()
+        {
+            var request = new HttpRequestMessage(HttpMethod.Get,
+           "http://webservice.lensalex.fr:3005/InfraProd/ListValueType");
+            request.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
+            request.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
+
+            var client = _clientFactory.CreateClient();
+
+            var response = await client.SendAsync(request); // vus que la fonction est async elle vas s'arreter ici pour attendre une reponce 
+
+            if (response.IsSuccessStatusCode)
+            {
+                using var responseStream = await response.Content.ReadAsStreamAsync(); // recupaire les donnée de api et les mette dans le responseStream
+                DDValeurCapteur = await JsonSerializer.DeserializeAsync
+                <IEnumerable<ValeurCapteur>>(responseStream); // remplie la class Campus 
+            }
+            else
+            {
+                GetBranchesError = true;
+                DDValeurCapteur = Array.Empty<ValeurCapteur>();
             }
         }
         public async Task LoadSale()
@@ -118,11 +145,10 @@ namespace Smart_ECovid_IUT.Pages.IOTDevise
             string WebAPIUrl = "http://webservice.lensalex.fr:3004/InfraAdmin/";
            // Uri uri = new Uri(uriBase);
 
-           
             if (capteur != null)
             {
                 // /app.post("/Capteur/Add/BoxDevice/:IdSalle/:IdDeviceType/:AddrMac/:AddrIp/:LibelleBox/:DescriptionBox/:DateInstallation/:IdValueType/:LibelleDevice/:SeuilMin?/:SeuilMax?", (req, res) => {
-                 WebAPIUrl = "http://webservice.lensalex.fr:3004/InfraAdmin/Capteur/Add/BoxDevice/" + capteur.IdSalle + "/" + capteur.IdDeviceType + "/" + capteur.AddrMac + "/" + capteur.AddrIp + "/" + capteur.LibelleBox + "/" + capteur.DescriptionBox + "/" + capteur.DateInstallation + "/" + capteur.IdValueType + "/" + capteur.LibelleDevice + "/" + capteur.SeuilMin + "/" + capteur.SeuilMax;
+                 WebAPIUrl = "http://webservice.lensalex.fr:3004/InfraAdmin/Capteur/Add/BoxDevice/" + capteur.IdSalle + "/" + capteur.IdDeviceType + "/" + capteur.AddrMac + "/" + capteur.AddrIp + "/" + capteur.LibelleBox + "/" + capteur.DescriptionBox + "/" + capteur.DateInstallation + "/" + capteur.IdValeurType + "/" + capteur.LibelleDevice + "/" + capteur.SeuilMin + "/" + capteur.SeuilMax;
 
                 //string WebAPIUrl = "http://51.75.125.121:3001/Capteur/Add/BoxDevice/" + capteur.IdSalle + "/" + capteur.IdDeviceType + "/" + capteur.AddrMac + "/" + capteur.AddrIp + "/" + capteur.LibelleBox + "/" + capteur.DescriptionBox + "/"+ capteur.DateInstallation + "/" + capteur.IdValueType + "/" + capteur.LibelleDevice + "/" + capteur.SeuilMin + "/" + capteur.SeuilMax;
                 //uri = new Uri(WebAPIUrl);
@@ -133,7 +159,7 @@ namespace Smart_ECovid_IUT.Pages.IOTDevise
                 sb.Append(@"""LibelleBox"" : """ + capteur.LibelleBox + @""",");
                 sb.Append(@"""DescriptionBox"" : """ + capteur.DescriptionBox + @""",");
                 sb.Append(@"""DateInstallation"" : """ + capteur.DateInstallation + @""",");
-                sb.Append(@"""IdValueType"" : " + capteur.IdValueType + ",");
+                sb.Append(@"""IdValueType"" : " + capteur.IdValeurType + ",");
                 sb.Append(@"""LibelleDevice"" : """ + capteur.LibelleDevice + @""",");
                 sb.Append(@"""SeuilMin"" : " + capteur.SeuilMin + ",");
                 sb.Append(@"""SeuilMax"" : " + capteur.SeuilMax);
@@ -208,7 +234,7 @@ namespace Smart_ECovid_IUT.Pages.IOTDevise
             ClasseE_Covid.IOTDevise.Capteur capteur = new ClasseE_Covid.IOTDevise.Capteur();
 
             capteur.LibelleDevice = Request.Form["nom"];
-            capteur.IdValueType = Convert.ToInt32(Request.Form["type"]);
+            capteur.IdValeurType = Convert.ToInt32(Request.Form["valeurCapteur"]);
             capteur.IdDeviceType = Convert.ToInt32(Request.Form["idTypeDevice"]);
             capteur.DescriptionBox = Request.Form["descriptionBox"];
             capteur.LibelleBox = Request.Form["nomBox"];

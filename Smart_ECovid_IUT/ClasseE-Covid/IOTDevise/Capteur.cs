@@ -20,12 +20,12 @@ namespace ClasseE_Covid.IOTDevise
 
         public string DateInstallation { get; set; }
 
-        public int IdValueType { get; set; }
-
         public string LibelleDevice { get; set; }
 
         public int SeuilMin { get; set; }
 
         public int SeuilMax { get; set; }
+
+        public int IdValeurType { get; set; }
     }
 }
