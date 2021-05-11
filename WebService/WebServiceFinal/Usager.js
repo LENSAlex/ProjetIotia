@@ -35,6 +35,8 @@ swaggerTools.initializeMiddleware(swaggerDoc, function (middleware) {
     app.use(middleware.swaggerUi());
   });
 
+
+
 //GET------------------------
 //list personne(nom , prenom)
 app.get("/Usager/:Prenom/:Nom", (req, res) => {
@@ -49,10 +51,11 @@ app.get("/Usager/:Prenom/:Nom", (req, res) => {
     })
 })
 
-app.get("/Usager/Load/:IdUser", (req, res) => {
-
+app.get("/Usager/Load/User/:id", (req, res) => {
+    console.log("test");
     //Affichage formation avec departement et duree
-    conn.query("select id_personne , num_ref , id_pers_type ,email , telephone , sexe , nom , prenom, date_anniversaire , rfid from Personne where id_personne = '" + req.params.IdUser + "'", function(err, result) {
+    console.log(req.params.id);
+    conn.query("select * from Personne where id_personne = '" + req.params.id + "'", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -65,7 +68,7 @@ app.get("/Usager/Load/:IdUser", (req, res) => {
 app.get("/Usager/ListPromo", (req, res) => {
 
     //Affichage formation avec departement et duree
-    conn.query("select P.id_professeur ,Pers.nom ,Pers.prenom, P.id_promotion , F.nom , P.annee ,F.duree from Promotion P , Formation F , Departement D , Personne Pers where P.id_formation = F.id_formation and D.id_departement = F.id_departement and P.id_professeur = Pers.id_personne", function(err, result) {
+    conn.query("select P.id_professeur ,Pers.nom as nomProf ,Pers.prenom, P.id_promotion , F.nom , P.annee ,F.duree from Promotion P , Formation F , Departement D , Personne Pers where P.id_formation = F.id_formation and D.id_departement = F.id_departement and P.id_professeur = Pers.id_personne", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
