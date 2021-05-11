@@ -36,7 +36,7 @@ namespace Smart_ECovid_IUT.Pages.Promotion
         public async Task Load()
         {
             var request = new HttpRequestMessage(HttpMethod.Get,
-         "http://webservice.lensalex.fr/Personne/ListPromo");
+         "http://webservice.lensalex.fr:3001/Usager/ListPromo");
             request.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
             request.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
 

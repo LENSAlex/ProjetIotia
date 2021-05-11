@@ -12,6 +12,8 @@ using System.Text.Json;
 //using System.Net.Http;
 using Microsoft.AspNetCore.Http;
 using ClasseE_Covid.Capteur;
+using ClasseE_Covid.Campus;
+
 
 namespace Smart_ECovid_IUT.Pages
 {
@@ -21,6 +23,11 @@ namespace Smart_ECovid_IUT.Pages
 
         public IEnumerable<ClasseE_Covid.LogAlerte.LogAlerte> Branches { get; private set; } //GitHubBranch et une class
         public IEnumerable<Co2> ListCo2 { get; private set; } //GitHubBranch et une class
+        public IEnumerable<Co2> cntCo2 { get; private set; } //GitHubBranch et une class
+        public IEnumerable<Temperature> ListTemp { get; private set; } //GitHubBranch et une class
+
+        public IEnumerable<OccupationBatiment> ListOccu { get; private set; } //GitHubBranch et une class
+
 
         public bool GetBranchesError { get; private set; }
 
@@ -42,6 +49,8 @@ namespace Smart_ECovid_IUT.Pages
 
             await Load();
             await LoadCO2();
+            await LoadOccupation();
+            await LoadTemp();
         }
 
         public async Task Load()
@@ -83,12 +92,60 @@ namespace Smart_ECovid_IUT.Pages
                 using var responseStream = await response.Content.ReadAsStreamAsync(); // recupaire les donnée de api et les mette dans le responseStream
                 ListCo2 = await JsonSerializer.DeserializeAsync
                 <IEnumerable<Co2>>(responseStream); // remplie la class GitHubBranch 
-                
+                cntCo2 = ListCo2.Where(s => s.ValeurCo2 > 80);
+
+
             }
             else
             {
                 GetBranchesError = true;
                 ListCo2 = Array.Empty<Co2>();
+            }
+        }
+        public async Task LoadTemp()
+        {
+            var request = new HttpRequestMessage(HttpMethod.Get,
+            "http://webservice.lensalex.fr:3005/InfraProd/List/Historique/Temp");
+            request.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
+            request.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
+
+            var client = _clientFactory.CreateClient();
+
+            var response = await client.SendAsync(request); // vus que la fonction est async elle vas s'arreter ici pour attendre une reponce 
+
+            if (response.IsSuccessStatusCode)
+            {
+                using var responseStream = await response.Content.ReadAsStreamAsync(); // recupaire les donnée de api et les mette dans le responseStream
+                ListTemp = await JsonSerializer.DeserializeAsync
+                <IEnumerable<Temperature>>(responseStream); // remplie la class GitHubBranch 
+            }
+            else
+            {
+                GetBranchesError = true;
+                ListTemp = Array.Empty<Temperature>();
+            }
+        }
+        public async Task LoadOccupation()
+        {
+            var request = new HttpRequestMessage(HttpMethod.Get,
+            "http://webservice.lensalex.fr:3001/Usager/List/TauxOccupation/Batiment");
+            request.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
+            request.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
+
+            var client = _clientFactory.CreateClient();
+
+            var response = await client.SendAsync(request); // vus que la fonction est async elle vas s'arreter ici pour attendre une reponce 
+
+            if (response.IsSuccessStatusCode)
+            {
+                using var responseStream = await response.Content.ReadAsStreamAsync(); // recupaire les donnée de api et les mette dans le responseStream
+                ListOccu = await JsonSerializer.DeserializeAsync
+                <IEnumerable<OccupationBatiment>>(responseStream); // remplie la class GitHubBranch 
+            }
+            else
+            {
+                GetBranchesError = true;
+                ListOccu = Array.Empty<OccupationBatiment>();
             }
         }
     }

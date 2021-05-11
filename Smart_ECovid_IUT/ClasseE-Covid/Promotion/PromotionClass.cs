@@ -19,20 +19,14 @@ namespace ClasseE_Covid.Promotion
         [JsonPropertyName("id_promotion")]
         public int Id { get; set; }
 
-        //[JsonPropertyName("nom")]
-        //public string nomProf { get; set; }
+        [JsonPropertyName("id_professeur")]
+        public int IdProf { get; set; }
 
-        //[JsonPropertyName("prenom")]
-        //public string pernomProf { get; set; }
+        [JsonPropertyName("prenom")]
+        public string PernomProf { get; set; }
 
-        //[JsonPropertyName("id")]
-        //public int IdProf { get; set; }
-
-        //[JsonPropertyName("prenom")]
-        //public string Departemnt { get; set; }
-
-        //[JsonPropertyName("id")]
-        //public int IdDepartemnt { get; set; }
+        [JsonPropertyName("nomProf")]
+        public string NomProf { get; set; }
 
     }
 }

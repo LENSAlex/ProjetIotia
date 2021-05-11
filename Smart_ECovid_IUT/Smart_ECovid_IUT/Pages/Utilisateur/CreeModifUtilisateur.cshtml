@@ -7,7 +7,7 @@
 }
 <div class="container">
     <div class="border-bottom mb-4">
-        <h1 class="letest"> @(Model.ModifUser != null ? "Modifer une Utilisateur" : "Création une Utilisateur")</h1>
+        <h1 class="letest"> @(Model.utilisateur != null ? "Modifer une Utilisateur" : "Création une Utilisateur")</h1>
     </div>
     <div class="row">
         <div class="col-md-12 mb-4">
@@ -20,25 +20,25 @@
                         <div class="form-row">
                             <div class="col-md-4 mb-3">
                                 <label for="Nom">Nom</label>
-                                <input type="text" class="form-control" id="nom" name="nom" value="@(Model.ModifUser != null ? Model.utilisateur?.Nom : null)"  placeholder="Nom" required />
+                                <input type="text" class="form-control" id="nom" name="nom" value="@(Model.utilisateur != null ? Model.utilisateur?.Nom : null)"  placeholder="Nom" required />
                             </div>
                             <div class="col-md-4 mb-3">
                                 <label for="Prenom">Prénom</label>
-                                <input type="text" class="form-control" id="prenom" value="@(Model.ModifUser != null ? Model.utilisateur?.Prenom :null)" name="prenom" placeholder="Prénom" required />
+                                <input type="text" class="form-control" id="prenom" value="@(Model.utilisateur != null ? Model.utilisateur?.Prenom :null)" name="prenom" placeholder="Prénom" required />
                             </div>
                             <div class="col-md-4 mb-3">
                                 <label for="validationDefault03">Email</label>
-                                <input type="text" class="form-control" id="email" value="@(Model.ModifUser != null ? Model.utilisateur?.Email : null)" name="email" placeholder="coco@iut-nice.fr" required>
+                                <input type="text" class="form-control" id="email" value="@(Model.utilisateur != null ? Model.utilisateur?.Email : null)" name="email" placeholder="coco@iut-nice.fr" required>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-md-6 mb-3">
                                 <label for="validationDefault04">Mot de passe</label>
-                                <input type="password" class="form-control verif" id="pwd" name="pwd" placeholder="Mf65$" required>
+                                <input type="password" class="form-control verif"  value="@(Model.utilisateur != null ? Model.utilisateur?.Pwd : null)" id="pwd" name="pwd" placeholder="Mf65$" required>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label for="validationDefault04">Vérification mot de passe</label>
-                                <input type="password" class="form-control verif2" id="pwd2" name="pwd2" placeholder="Mf65$" required>
+                                <input type="password" class="form-control verif2" value="@(Model.utilisateur != null ? Model.utilisateur?.Pwd : null)" id="pwd2" name="pwd2" placeholder="Mf65$" required>
                             </div>
                         </div>
                         <div class="form-row">
@@ -46,7 +46,7 @@
                                 <label for="validationDefault03">Formation</label>
                                 <select class="form-control select" aria-hidden="true" id="formation" name="formation">
                                     @{
-                                        <option value="@(Model.ModifUser != null ? Model.utilisateur?.Promotion : null)">@(Model.ModifUser != null ? Model.utilisateur?.Promotion : 0)</option>
+                                        <option value="@(Model.utilisateur != null ? Model.utilisateur?.Promotion : null)">@(Model.utilisateur != null ? Model.utilisateur?.Promotion : 0)</option>
                                         if (Model.DDPromotion != null)
                                         {
                                             foreach (PromotionClass promo in Model.DDPromotion)
@@ -61,7 +61,7 @@
                                 <label for="validationDefault04">Niveau</label>
                                 <select class="form-control select" aria-hidden="true" id="niveau" name="niveau">
                                     @{
-                                        <option value="@(Model.ModifUser != null ? Model.utilisateur?.Niveau : null)"> @(Model.ModifUser != null ? Model.utilisateur?.Niveau : "--Selectionner Niveau--")</option>
+                                        <option value="@(Model.utilisateur != null ? Model.utilisateur?.IdPersType : null)"> @(Model.utilisateur != null ? Model.utilisateur?.IdPersType : 0)</option>
 
                                         if (Model.DDNiveau != null)
                                         {
@@ -75,25 +75,25 @@
                             </div>
                             <div class="col-md-4 mb-3">
                                 <label for="validationDefault04">Numéro référencielle </label>
-                                <input type="text" class="form-control" value="@(Model.ModifUser != null ? Model.utilisateur?.Niveau : null)" id="num_ref" name="num_ref" placeholder="Num_ref" required>
+                                <input type="text" class="form-control" value="@(Model.utilisateur != null ? Model.utilisateur?.NumRef : null)" id="num_ref" name="num_ref" placeholder="Num_ref" required>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-md-4 mb-3">
                                 <label for="validationDefault03">Tel </label>
-                                <input type="text" class="form-control" id="tel" name="tel" value="@(Model.ModifUser != null ? Model.utilisateur?.Telephone : null)" placeholder="0625639874" required>
+                                <input type="text" class="form-control" id="tel" name="tel" value="@(Model.utilisateur != null ? Model.utilisateur?.Telephone : null)" placeholder="0625639874" required>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <label for="validationDefault04">Sexe</label>
                                 <select class="form-control select" aria-hidden="true" id="sexe" name="sexe">
-                                    <option value="@(Model.ModifUser != null ? Model.utilisateur?.Sexe : null)">"@(Model.ModifUser != null ? Model.utilisateur?.Sexe : "--Selectionner Sexe--")"</option>
+                                    <option value="@(Model.utilisateur != null ? Model.utilisateur?.Sexe : null)">"@(Model.utilisateur != null ? Model.utilisateur?.Sexe : "--Selectionner Sexe--")"</option>
                                     <option value="F">Femme</option>
                                     <option value="H">Homme</option>
                                 </select>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <label for="validationDefault04">Anniversaire</label>
-                                <input type="text"  value="@(Model.ModifUser != null ? Model.utilisateur?.Anniv : null)" class="form-control dateAnniv" id="anniv" name="anniv" placeholder="1968-08-11" required>
+                                <input type="text"  value="@(Model.utilisateur != null ? Model.utilisateur?.Anniv : null)" class="form-control dateAnniv" id="anniv" name="anniv" placeholder="1968-08-11" required>
                             </div>
                         </div>
                         <button class="btn btn-primary " type="submit" asp-page-handler="EnvoieDonne">Envoier</button>

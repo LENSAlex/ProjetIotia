@@ -29,7 +29,6 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-
                                         @foreach (ClasseE_Covid.LogAlerte.LogAlerte logAlerte in Model.Branches)
                                         {
                                             <tr>
@@ -38,7 +37,6 @@
                                             </tr>
 
                                         }
-
                                     </tbody>
                                 </table>
                             </div>
@@ -54,15 +52,10 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-
-
                                         <tr>
-                                            <td>@(Model.ListCo2 != null ? Model.ListCo2.Count() : 0 ) </td>
+                                            <td>@(Model.ListCo2 != null ? Model.cntCo2.Count() : 0 ) </td>
                                             @*<td>@co2.NbCasCovid</td>*@
                                         </tr>
-
-
-
                                     </tbody>
                                 </table>
                             </div>
@@ -78,6 +71,34 @@
                 </div>
                 <div class="card-body border-bottom">
                     <h5>capteur</h5>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Nom capteur</th>
+                                    <th scope="col">Nombre de capteur</th>
+                                    @*<th scope="col">Nombre cas covid</th>*@
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td> Co2 </td>
+                                    <td>@(Model.ListCo2 != null ? Model.ListCo2.Count() : 0 ) </td>
+                                    @*<td>@co2.NbCasCovid</td>*@
+                                </tr>
+                                <tr>
+                                    <td> Température </td>
+                                    <td>@(Model.ListTemp != null ? Model.ListTemp.Count() : 0 ) </td>
+                                    @*<td>@co2.NbCasCovid</td>*@
+                                </tr>
+                                <tr>
+                                    <td> Occupation </td>
+                                    <td>@(Model.ListOccu != null ? Model.ListOccu.Count() : 0 ) </td>
+                                    @*<td>@co2.NbCasCovid</td>*@
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>

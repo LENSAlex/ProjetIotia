@@ -33,7 +33,7 @@
                         <td>@user.Telephone</td>
                         <td>@user.NumRef</td>
                         <td>
-                            <a asp-action="/Utilisateur/ListeUtilisateur/@user.Id"><i class="far fa-edit"></i></a>
+                            <a href="/Utilisateur/CreeModifUtilisateur/@user.Id"><i class="far fa-edit"></i></a>
                             <a asp-action="/Utilisateur/ListeUtilisateur" data-id="@user.Id" class="supp"><i class="far fa-trash-alt"></i></a>
                         </td>
                     </tr>

@@ -22,6 +22,7 @@
                             <td>@promotion.Nom</td>
                             <td>@promotion.Annee</td>
                             <td>@promotion.Duree</td>
+                            <td>@promotion.NomProf @promotion.PernomProf</td>
                             <td>
                                 <a asp-action="/Promotion/CréeModifPromotion/@promotion.Id"><i class="far fa-edit"></i></a>
                                 <a asp-action="/Promotion/ListePromotion" data-id="@promotion.Id" class="supp"><i class="far fa-trash-alt"></i></a>

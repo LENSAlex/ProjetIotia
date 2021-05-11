@@ -18,7 +18,7 @@ namespace Smart_ECovid_IUT.Pages.Utilisateur
     {
         private readonly IHttpClientFactory _clientFactory;
 
-        public ClasseE_Covid.Utilisateur.Utilisateur utilisateur = new ClasseE_Covid.Utilisateur.Utilisateur();
+        public ClasseE_Covid.Utilisateur.Utilisateur utilisateur;
 
         public IEnumerable<Niveau> DDNiveau { get; private set; }
         public IEnumerable<ClasseE_Covid.Utilisateur.Utilisateur> User { get; private set; }
@@ -42,19 +42,19 @@ namespace Smart_ECovid_IUT.Pages.Utilisateur
 
             if (id.HasValue)
             {
+                GetUtilisateurById.Id = id;
                 await LoadUtilisateur(id);
             }
-            else
-            {
-                await LoadDDNiveau();
-                await LoadFormation();
-            }
+            await LoadDDNiveau();
+            await LoadFormation();
+
         }
 
         public async Task LoadUtilisateur(int? id)
         {
+           
             var request = new HttpRequestMessage(HttpMethod.Get,
-          "http://webservice.lensalex.fr:3001/Usager/Load/"+ id);
+          "http://webservice.lensalex.fr:3001/Usager/Load/User/" + id);
             request.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
             request.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
 
@@ -67,16 +67,18 @@ namespace Smart_ECovid_IUT.Pages.Utilisateur
                 using var responseStream2 = await response.Content.ReadAsStreamAsync(); // recupaire les donnée de api et les mette dans le responseStream
                 User = await JsonSerializer.DeserializeAsync
                 <IEnumerable<ClasseE_Covid.Utilisateur.Utilisateur>>(responseStream2); // remplie la class Campus 
-                foreach(ClasseE_Covid.Utilisateur.Utilisateur user in User)
+
+                utilisateur = new ClasseE_Covid.Utilisateur.Utilisateur();
+                foreach (ClasseE_Covid.Utilisateur.Utilisateur user in User)
                 {
                     utilisateur.Anniv = user.Anniv;
                     utilisateur.Email = user.Email;
-                    utilisateur.IdPersType = user.IdPersType ;
+                    utilisateur.IdPersType = user.IdPersType;
                     utilisateur.Niveau = user.Niveau;
                     utilisateur.Nom = user.Nom;
                     utilisateur.NomFormation = user.NomFormation;
                     utilisateur.NumRef = user.NumRef;
-                    utilisateur.Prenom =user.Prenom;
+                    utilisateur.Prenom = user.Prenom;
                     utilisateur.Sexe = user.Sexe;
                     utilisateur.Telephone = user.Telephone;
                     utilisateur.Promotion = user.Promotion;
@@ -140,10 +142,8 @@ namespace Smart_ECovid_IUT.Pages.Utilisateur
 
         internal async Task<string> Save(ClasseE_Covid.Utilisateur.Utilisateur item)
         {
-            
             var httpClient = new HttpClient();
-            string WebAPIUrl = "http://webservice.lensalex.fr:3004/InfraAdmin/Usager/Add/" + item.NumRef + "/" + item.IdPersType + "/" + item.Pwd + "/" + item.Email + "/" + item.Telephone + "/" + item.Sexe + "/" + item.Nom + "/" + item.Prenom + "/" + item.Anniv + "/" + item.Promotion;
-            
+
             StringBuilder sb = new StringBuilder();
             if (item != null)
             {
@@ -162,15 +162,35 @@ namespace Smart_ECovid_IUT.Pages.Utilisateur
                 await LoadFormation();
                 await LoadDDNiveau();
 
-                var requestMessage = new HttpRequestMessage
+                var requestMessage = new HttpRequestMessage();
+
+                if (GetUtilisateurById.Id != null)
                 {
-                    Method = HttpMethod.Post,
-                    Content = new StringContent(jsonData, Encoding.UTF8, "application/json"),
-                    RequestUri = new Uri(WebAPIUrl)
-                };
+                    string WebAPIUrl = "http://webservice.lensalex.fr:3004/InfraAdmin/Usager/Modifs/" + item.NumRef + "/" + item.IdPersType + "/" + item.Pwd + "/" + item.Email + "/" + item.Telephone + "/" + item.Sexe + "/" + item.Nom + "/" + item.Prenom + "/" + item.Anniv + "/" + item.Promotion + "/" + GetUtilisateurById.Id;
+
+                    requestMessage = new HttpRequestMessage
+                    {
+                        Method = HttpMethod.Put,
+                        Content = new StringContent(jsonData, Encoding.UTF8, "application/json"),
+                        RequestUri = new Uri(WebAPIUrl)
+                    };
+
+                    utilisateur = null;
+                }
+                else
+                {
+                    string WebAPIUrl = "http://webservice.lensalex.fr:3004/InfraAdmin/Usager/Add/" + item.NumRef + "/" + item.IdPersType + "/" + item.Pwd + "/" + item.Email + "/" + item.Telephone + "/" + item.Sexe + "/" + item.Nom + "/" + item.Prenom + "/" + item.Anniv + "/" + item.Promotion;
+
+                    requestMessage = new HttpRequestMessage
+                    {
+                        Method = HttpMethod.Post,
+                        Content = new StringContent(jsonData, Encoding.UTF8, "application/json"),
+                        RequestUri = new Uri(WebAPIUrl)
+                    };
+                }
 
                 requestMessage.Headers.Authorization = new AuthenticationHeaderValue("Bearer", Login.Token);
-                
+
                 try
                 {
                     var response = await httpClient.SendAsync(requestMessage);
@@ -199,26 +219,26 @@ namespace Smart_ECovid_IUT.Pages.Utilisateur
 
         public void OnPostEnvoieDonne()
         {
-            ClasseE_Covid.Utilisateur.Utilisateur utilisateur = new ClasseE_Covid.Utilisateur.Utilisateur();
+            ClasseE_Covid.Utilisateur.Utilisateur user = new ClasseE_Covid.Utilisateur.Utilisateur(); ;
 
-            utilisateur.Prenom =Request.Form["prenom"];
-            utilisateur.Nom = Request.Form["nom"];
-            utilisateur.NumRef = Request.Form["num_ref"];
-            utilisateur.IdPersType = Convert.ToInt32( Request.Form["niveau"]);
-            utilisateur.Pwd = Request.Form["pwd"];
-            string pwd  = Request.Form["pwd2"];
-            utilisateur.Email = Request.Form["email"];
-            utilisateur.Telephone = Request.Form["tel"];
-            utilisateur.Sexe = Request.Form["sexe"];
-            utilisateur.Anniv = Request.Form["anniv"];
-            utilisateur.Promotion = Convert.ToInt32(Request.Form["formation"]);
+            user.Prenom = Request.Form["prenom"];
+            user.Nom = Request.Form["nom"];
+            user.NumRef = Request.Form["num_ref"];
+            user.IdPersType = Convert.ToInt32(Request.Form["niveau"]);
+            user.Pwd = Request.Form["pwd"];
+            string pwd = Request.Form["pwd2"];
+            user.Email = Request.Form["email"];
+            user.Telephone = Request.Form["tel"];
+            user.Sexe = Request.Form["sexe"];
+            user.Anniv = Request.Form["anniv"];
+            user.Promotion = Convert.ToInt32(Request.Form["formation"]);
 
-            GetDataAsync(utilisateur);
+            GetDataAsync(user);
         }
-        public async Task GetDataAsync(ClasseE_Covid.Utilisateur.Utilisateur utilisateur)
+        public async Task GetDataAsync(ClasseE_Covid.Utilisateur.Utilisateur user)
         {
-            await Save(utilisateur);
-            Response.Redirect("/Utilisateur/ListeUtilisateur");
+            await Save(user);
+             Response.Redirect("/Utilisateur/ListeUtilisateur");
         }
     }
 }

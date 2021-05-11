@@ -8,7 +8,7 @@ namespace ClasseE_Covid.Utilisateur
     public class Utilisateur
     {
         [JsonPropertyName("id_personne")]
-        public int Id { get; set; }
+        public int? Id { get; set; }
 
         [JsonPropertyName("num_ref")]
         public string NumRef { get; set; }
