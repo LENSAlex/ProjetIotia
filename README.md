@@ -9,9 +9,7 @@ Ce web service est une api de type REST , codé grace a Node JS.
 
 Les codes qui constitue le WebService ce trouve [ici](https://github.com/LENSAlex/ProjetIotia/tree/WebService/WebService)
 
-Pour **utiliser** les service cela se passe pour l'instant sur ce site  ```http://webservice.lensalex.fr/```
-
-Vous pouvez vous rendre sur ce [lien](http://webservice.lensalex.fr)  il y a une page d'acceuil qui ramene sur les **documentations des services**.
+Vous pouvez vous rendre sur le site [webservice.lensalex.fr](http://webservice.lensalex.fr)  il y a une page d'acceuil qui ramene sur les **documentations des services**.
 Il est également possible de **tester** ces requetes avec la documentation swagger en renseignant les parametres requis si il y en a.
 
 Ce WebService est décomposé en plusieurs services voir le tableau ci dessous:
