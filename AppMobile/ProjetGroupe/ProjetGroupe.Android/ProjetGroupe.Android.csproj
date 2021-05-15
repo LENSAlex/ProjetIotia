@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7D463F2F-2086-4D3E-8421-338A36C4D9FD}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{6968b3a4-1835-46a3-ac5c-1ae33b475983}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ProjetGroupe.Droid</RootNamespace>
+    <AssemblyName>ProjetGroupe.Android</AssemblyName>
+    <Deterministic>True</Deterministic>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
+    <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
+    <AndroidUseAapt2>true</AndroidUseAapt2>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <BundleAssemblies>false</BundleAssemblies>
+    <MandroidI18n />
+    <DocumentationFile>C:\Users\Poste\source\repos\ProjetIotiaV4\Documentation\AppMobile\ProjetDroid.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Plugin.Permissions">
+      <Version>6.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.Pdf">
+      <Version>18.4.0.49</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfPopupLayout">
+      <Version>18.4.0.49</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Azure.NotificationHubs.Android">
+      <Version>1.1.4.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Firebase.Analytics.Impl">
+      <Version>116.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Firebase.Common">
+      <Version>119.5.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Firebase.Messaging">
+      <Version>121.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="Xamarin.Google.Dagger">
+      <Version>2.27.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Base">
+      <Version>117.6.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Basement">
+      <Version>117.6.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.MySql.Data">
+      <Version>1.0.1</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaveAndroid.cs" />
+    <Compile Include="Services\DeviceInstallationService.cs" />
+    <Compile Include="Services\PushNotificationFirebaseMessagingService.cs" />
+    <Compile Include="SplashActivity.cs" />
+    <Compile Include="Tools\ImageHelpers.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="appsettings.json" />
+    <GoogleServicesJson Include="google-services.json" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\icon.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\icon_round.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\drawable\xamarin_logo.png" />
+    <AndroidResource Include="Resources\drawable\icon_about.png" />
+    <AndroidResource Include="Resources\drawable\icon_feed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProjetGroupe\ProjetGroupe.csproj">
+      <Project>{D932AF97-1179-4B85-81D6-90FD5A812E15}</Project>
+      <Name>ProjetGroupe</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\iut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\dashboard.png" />
+    <AndroidResource Include="Resources\drawable\grid.png" />
+    <AndroidResource Include="Resources\drawable\gridColor.png" />
+    <AndroidResource Include="Resources\drawable\humidity.png" />
+    <AndroidResource Include="Resources\drawable\list.png" />
+    <AndroidResource Include="Resources\drawable\listColor.png" />
+    <AndroidResource Include="Resources\drawable\menu.png" />
+    <AndroidResource Include="Resources\drawable\overlay.png" />
+    <AndroidResource Include="Resources\drawable\place.png" />
+    <AndroidResource Include="Resources\drawable\pressure.png" />
+    <AndroidResource Include="Resources\drawable\settings.png" />
+    <AndroidResource Include="Resources\drawable\weather.png" />
+    <AndroidResource Include="Resources\drawable\wind.png" />
+    <AndroidResource Include="Resources\drawable\add.png" />
+    <AndroidResource Include="Resources\drawable\bg.png" />
+    <AndroidResource Include="Resources\drawable\cloudiness.png" />
+    <AndroidResource Include="Resources\layout\Tabbar.axml" />
+    <AndroidResource Include="Resources\layout\Toolbar.axml" />
+    <AndroidResource Include="Resources\drawable\alert.png" />
+    <AndroidResource Include="Resources\drawable\logohoiut.png" />
+    <AndroidResource Include="Resources\drawable\logoveiut.png" />
+    <AndroidResource Include="Resources\drawable\accueil.png" />
+    <AndroidResource Include="Resources\drawable\profil.png" />
+    <AndroidResource Include="Resources\drawable\warning.png" />
+    <AndroidResource Include="Resources\drawable\data.png" />
+    <AndroidResource Include="Resources\drawable\logout.png" />
+    <AndroidResource Include="Resources\drawable\profil2.png" />
+    <AndroidResource Include="Resources\drawable\accueil2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\logoiut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\alertcovid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\contact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\data2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\datalayout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\warning2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\contact2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\warning3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\address.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\bookmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\more.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResourceAnalysisConfig Include="Resources\drawable\splash_screen.xml">
+      <SubType>Designer</SubType>
+    </AndroidResourceAnalysisConfig>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\bgcapteur2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\splashscreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xhdpi\splashscreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-mdpi\splashscreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-hdpi\splashscreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\splashscreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxhdpi\splashscreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\xml\filepath.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_close.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties XamarinHotReloadDebuggerTimeoutExceptionProjetGroupeAndroidHideInfoBar="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

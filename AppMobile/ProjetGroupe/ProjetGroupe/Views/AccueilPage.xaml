@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetGroupe.Views.AccueilPage"
+             xmlns:vm="clr-namespace:ProjetGroupe.ViewModels"
+             Shell.NavBarIsVisible="True"
+             Title="Accueil">
+    <ContentPage.BindingContext>
+        <vm:AccueilViewModel />
+    </ContentPage.BindingContext>
+    <Grid VerticalOptions="FillAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Image Source="overlay.png" Aspect="Fill" HeightRequest="300" VerticalOptions="StartAndExpand"/>
+        <Image Source="logoiut.png" Margin="0,-160,0,0" WidthRequest="475" HeightRequest="475" HorizontalOptions="Center" VerticalOptions="Center"/>
+        <StackLayout Orientation="Vertical" Margin="0,40,0,0" HorizontalOptions="Center" VerticalOptions="Center">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="Smart E-Covid IUT" FontFamily="ThemeFontBold" HorizontalOptions="Center" TextColor="#DFDBED" FontSize="36" FontAttributes="Bold" VerticalOptions="Center"/>
+            </StackLayout>
+        </StackLayout>
+        <Frame Grid.Row="1" HasShadow="True" CornerRadius="15" Margin="20,-80,20,20" Padding="0" HeightRequest="150" VerticalOptions="Start">
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackLayout Orientation="Vertical" Spacing="1000" HorizontalOptions="CenterAndExpand">
+                    <StackLayout Spacing="20" HorizontalOptions="CenterAndExpand">
+                        <Label FontFamily="ThemeFontBold" Text="Pensez aux autres en les avertissant au plus vite"  HorizontalOptions="Center" TextColor="#AF001A" FontSize="12" VerticalOptions="Center"/>
+                        <Button FontFamily="ThemeFontBold" VerticalOptions="Center" CornerRadius="32" BackgroundColor="#AF001A" BorderWidth="2" BorderColor="#D6586D" WidthRequest="300" TextColor="White" Text="J'ai la Covid-19" Clicked="Button_Clicked" />
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+        </Frame>
+        <Frame x:Name="FrameAccueil" Grid.Row="3" HasShadow="True" CornerRadius="15" Margin="20,-10,20,20" Padding="0" HeightRequest="300" VerticalOptions="Start" BackgroundColor="White">
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Row="0">
+                    <StackLayout Orientation="Horizontal" Spacing="1" HorizontalOptions="Start">
+                        <StackLayout Spacing="20" HorizontalOptions="CenterAndExpand">
+                            <Label FontFamily="ThemeFontBold" Text="Projet LP-IOTIA : Une application mobile permettant d'alerter, et faire un suivi de la pandémie au sein de l'IUT." HorizontalOptions="Start" TextColor="#C4263E" FontSize="12" Margin="10,20,10,20" VerticalOptions="Start"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Grid>
+            </Grid>
+        </Frame>
+    </Grid>
+</ContentPage>   

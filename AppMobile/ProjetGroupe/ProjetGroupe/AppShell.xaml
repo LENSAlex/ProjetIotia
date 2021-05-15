@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:ProjetGroupe.Views"
+       Title="ProjetGroupe"
+       x:Class="ProjetGroupe.AppShell" FlyoutBackgroundColor="#FFFFFF">
+    
+    <Shell.Resources>
+        <ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.ForegroundColor" Value="White" />
+                <Setter Property="Shell.TitleColor" Value="White" />
+                <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
+                <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="White"/>
+                <Setter Property="Shell.TabBarUnselectedColor" Value="#95FFFFFF"/>
+                <Setter Property="Shell.TabBarTitleColor" Value="White" />
+                <Setter Property="Shell.FlyoutBackgroundColor" Value="White" />
+            </Style>
+            <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
+            <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
+
+            <Style Class="ListViewCustom" TargetType="DatePicker">
+                <Setter Property="BackgroundColor" Value="Red"></Setter>
+            </Style>
+
+            <Style Class="FlyoutItemLabelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="white"></Setter>
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="FontFamily" Value="ThemeFontBold"></Setter>
+            </Style>
+            <Style Class="FlyoutItemLayoutStyle" TargetType="Layout" ApplyToDerivedTypes="True">
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="{x:OnPlatform UWP=Transparent, iOS=White}" />
+                                    <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor" Value="{StaticResource Primary}" />
+                                </VisualState.Setters>
+                            </VisualState>
+                            <VisualState x:Name="Selected">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>
+
+            <Style Class="MenuItemLayoutStyle" TargetType="Layout" ApplyToDerivedTypes="True">
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor" Value="{StaticResource Primary}" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
+    </Shell.Resources>
+
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <Grid BackgroundColor="#96BCE3" Padding="50">
+                <Grid Grid.Row="0" Grid.Column="0">
+                    <Label Text="Photo" Margin="0,70,20,0" TextColor="#DFDBED" FontSize="16" FontAttributes="Italic" TextDecorations="Underline" HorizontalTextAlignment="Center" />
+                    <ImageButton Source="{Binding ImagePath}" Command="{Binding ImgClicked}" Aspect="AspectFill" WidthRequest="100" BackgroundColor="Transparent" HeightRequest="100" />
+                </Grid>
+                <ImageButton BackgroundColor="White" Source="ic_close.png" Command="{Binding DelPhoto}" WidthRequest="30" CornerRadius="8" HeightRequest="30" HorizontalOptions="End" VerticalOptions="Start" />
+                <BoxView Margin="0,145,0,0" HeightRequest="50" Opacity="0.7" VerticalOptions="Start" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                    <BoxView.Background>
+                        <LinearGradientBrush StartPoint="1,1" EndPoint="0,0">
+                            <GradientStop Color="White" Offset="2.0" />
+                            <GradientStop Color="#96BCE3" Offset="0.2" />
+                        </LinearGradientBrush>
+                    </BoxView.Background>
+                </BoxView>
+                <Label Grid.Row="0" Text="{Binding UserType}" Margin="5,0,0,0" TextColor="Black" FontAttributes="Italic" FontSize="16" VerticalOptions="End" HorizontalOptions="Start" HorizontalTextAlignment="Center" />
+                <Label Text="{Binding Email}" Margin="5,150,0,0" TextColor="Black" FontSize="16" VerticalOptions="Start" HorizontalOptions="Start" HorizontalTextAlignment="Center" />
+            </Grid>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
+
+    <FlyoutItem Icon="accueil.png" Title="Naviguation">
+        <ShellContent Icon="accueil.png" Title="Accueil" ContentTemplate="{DataTemplate local:AccueilPage}" />
+        <ShellContent Icon="warning3.png" Title="Pénurie" ContentTemplate="{DataTemplate local:SmartOfficePage}" />
+        <ShellContent Icon="data2.png" Title="Recherche" ContentTemplate="{DataTemplate local:SmartBuildingPage}" />
+        <ShellContent Icon="contact.png" Title="Capteurs" ContentTemplate="{DataTemplate local:eCovidPage}" />
+        <ShellContent Icon="add.png" Title="A propos" ContentTemplate="{DataTemplate local:AboutPage}" />
+    </FlyoutItem>
+
+    <MenuItem Icon="logout.png" Text="Déconnexion" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">
+    </MenuItem>
+</Shell>

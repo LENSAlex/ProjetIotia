@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetGroupe.Views.SmartBuildingPage"
+             xmlns:vm="clr-namespace:ProjetGroupe.ViewModels" 
+             Shell.NavBarIsVisible="True"
+             Title="SmartBuilding - Visionnage des données">
+    <ContentPage.BindingContext>
+        <vm:SmartBuildingViewModel />
+    </ContentPage.BindingContext>
+    <Grid VerticalOptions="FillAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Image Source="overlay.png" Aspect="Fill" HeightRequest="300" VerticalOptions="StartAndExpand"/>
+        <StackLayout Orientation="Vertical" Margin="0,20" HorizontalOptions="Center" VerticalOptions="Center">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label FontFamily="ThemeFontBold" Text="SmartBuilding" TextColor="White" FontSize="36" FontAttributes="Bold" VerticalOptions="Center"/>
+            </StackLayout>
+            <Label FontFamily="ThemeFontBold" Text="Visionner les données des capteurs" TextColor="White" FontSize="16" HorizontalOptions="Center"/>
+        </StackLayout>
+        <Frame Grid.Row="1" HasShadow="True" CornerRadius="15" Margin="20,-40,20,0" Padding="0" HeightRequest="100" VerticalOptions="Start">
+            <Grid HorizontalOptions="FillAndExpand" Margin="0,0,30,0" VerticalOptions="CenterAndExpand">
+
+                <SearchBar x:Name="searchBar" TextChanged="searchBar_TextChanged" SearchButtonPressed="searchBar_SearchButtonPressed" Placeholder="Recheche les capteurs d'une salle..."
+           CancelButtonColor="black"
+           PlaceholderColor="#96d1ff"
+           TextColor="#96d1ff"
+           TextTransform="Lowercase"
+           HorizontalTextAlignment="Center"
+           FontSize="16"
+           FontFamily="ThemeFontBold"
+           FontAttributes="Italic" 
+                   SearchCommandParameter="{Binding Text, Source={x:Reference searchBar}}" />
+            </Grid>
+        </Frame>
+        <Grid Grid.Row="3">
+            <Label FontFamily="ThemeFontBold" Margin="20,-10,20,0" Text="Résultat de la recherche:" TextColor="DarkGray" FontSize="14" HorizontalOptions="FillAndExpand"/>
+        </Grid>
+        <ListView x:Name="searchResults" ItemsSource="{Binding SearchResults}" ItemSelected="OnItemSelected2" SeparatorVisibility="None" IsPullToRefreshEnabled="True" RefreshCommand="{Binding RefreshCommand}"
+           IsRefreshing="{Binding IsRefreshing}" Grid.Row="3" Margin="20,10" HeightRequest="320">
+            <ListView.ItemTemplate StyleClass="ListViewCustom">
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame BackgroundColor="White" BorderColor="#F0F0F0" Padding="5" Margin="0,0,0,5" HasShadow="true">
+                            <Grid HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="Start"  Padding="10,-5,0,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Label FontFamily="ThemeFontBold" Text="ID #" TextColor="Black" FontSize="10" VerticalOptions="Center"/>
+                                <Label FontFamily="ThemeFontBold" Text="{Binding Id}" TextColor="Black" FontSize="10" Margin="20,0" FontAttributes="Bold" VerticalOptions="Center"/>
+                                <BoxView Grid.Column="0" BackgroundColor="#96d1ff" WidthRequest="8" Margin="-14,-10" HorizontalOptions="Start" 
+                                                 VerticalOptions="FillAndExpand"/>
+                                <Label FontFamily="ThemeFontBold" Text="{Binding Libelle}" TextColor="#757575" FontSize="10" VerticalOptions="Center" Margin="50,0,10,0"/>
+                                <StackLayout Grid.Column="2" Orientation="Horizontal" Margin="55,0" HorizontalOptions="End" VerticalOptions="Center">
+                                    <Label FontFamily="ThemeFontMedium" Text="Bâtiment: " TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="20,0"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="2" Orientation="Horizontal" Margin="25,0" HorizontalOptions="End" VerticalOptions="Center">
+                                    <Label FontFamily="ThemeFontBold" Text="{Binding Nom}" TextColor="#FFC396" FontSize="12" VerticalOptions="Center" Margin="20,0"/>
+                                </StackLayout>
+                            </Grid>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</ContentPage>

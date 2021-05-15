@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetGroupe.Views.SmartOfficePage"
+             xmlns:vm="clr-namespace:ProjetGroupe.ViewModels"
+             Shell.NavBarIsVisible="True"
+             Title="SmartOffice - Alerte pénurie">
+    <ContentPage.BindingContext>
+        <vm:SmartOfficeViewModel />
+    </ContentPage.BindingContext>
+    <Grid VerticalOptions="FillAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Image Source="overlay.png" Aspect="Fill" HeightRequest="300" VerticalOptions="StartAndExpand"/>
+        <StackLayout Orientation="Vertical" Margin="0,20" HorizontalOptions="Center" VerticalOptions="Center">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label FontFamily="ThemeFontBold" Text="SmartOffice" TextColor="White" FontSize="36" FontAttributes="Bold" VerticalOptions="Center"/>
+            </StackLayout>
+            <Label FontFamily="ThemeFontBold" Text="Définissez le ou les produit(s) en pénurie" TextColor="White" FontSize="16" HorizontalOptions="Center"/>
+        </StackLayout>
+        <Frame Grid.Row="1" HasShadow="True" CornerRadius="15" Margin="20,-30,20,0" Padding="0" HeightRequest="120" VerticalOptions="Start">
+            <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Label FontFamily="ThemeFontBold" Margin="20,20,20,20" Padding="10,5,10,5" Text="En cas de pénurie de gel hydro-alcoolique, panne du verseur, ou autres, veuillez l'indiquer en sélectionnant le produit dans la liste ci-dessous" TextColor="#96d1ff" FontSize="12" HorizontalOptions="Center" VerticalOptions="Center"/>
+                </StackLayout>
+            </Grid>
+        </Frame>
+        <ListView x:Name="ListEquipement" ItemsSource="{Binding Items}" HeightRequest="120" SeparatorVisibility="None" ItemSelected="OnItemSelected" IsPullToRefreshEnabled="True" 
+                  RefreshCommand="{Binding RefreshCommand}" IsRefreshing="{Binding IsRefreshing}" Grid.Row="2" Margin="20,10,20,10">
+            <ListView.ItemTemplate StyleClass="ListViewCustom">
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame BackgroundColor="White" BorderColor="#F0F0F0" Padding="5" Margin="0,0,0,5" HasShadow="true">
+                            <Grid HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="Start"  Padding="10,-5,0,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label FontFamily="ThemeFontBold" Text="ID #" TextColor="Black" FontSize="10" VerticalOptions="Center"/>
+                                <Label FontFamily="ThemeFontBold" Text="{Binding Id}" TextColor="Black" FontSize="10" Margin="20,0" FontAttributes="Bold" VerticalOptions="Center"/>
+                                <BoxView Grid.Column="0" BackgroundColor="#FFC396" WidthRequest="8" Margin="-14,-10" HorizontalOptions="Start" 
+                                                 VerticalOptions="FillAndExpand"/>
+                                <Label FontFamily="ThemeFontBold" Text="{Binding Libelle}" TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="50,0,20,0"/>
+                                <StackLayout Grid.Column="2" Orientation="Horizontal" Margin="0,0" HorizontalOptions="End" VerticalOptions="Center">
+                                    <Label FontFamily="ThemeFontBold" Text="{Binding Description}" TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="20,0"/>
+                                </StackLayout>
+                            </Grid>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProjetGroupe.Android</name>
+    </assembly>
+    <members>
+        <member name="T:ProjetGroupe.Droid.MainActivity">
+            <summary>
+            Classe principale de l'application sous Android
+            </summary>
+        </member>
+        <member name="F:ProjetGroupe.Droid.MainActivity.OPENGALLERYCODE">
+            <summary>
+            Code gallerie
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Droid.MainActivity.OnCreate(Android.OS.Bundle)">
+            <summary>
+            Méthode appelée la création de l'application
+            </summary>
+            <param name="savedInstanceState">Les pages</param>
+        </member>
+        <member name="M:ProjetGroupe.Droid.MainActivity.OnRequestPermissionsResult(System.Int32,System.String[],Android.Content.PM.Permission[])">
+            <summary>
+            Récupère les permissions données à l'application
+            </summary>
+            <param name="requestCode">requestCode</param>
+            <param name="permissions">permissions</param>
+            <param name="grantResults">grantResults</param>
+        </member>
+        <member name="M:ProjetGroupe.Droid.MainActivity.OnSuccess(Java.Lang.Object)">
+            <summary>
+            Méthode appelée lors du succès de l'installation de l'application
+            </summary>
+            <param name="result"></param>
+        </member>
+        <member name="P:ProjetGroupe.Droid.MainActivity.NotificationActionService">
+            <summary>
+            NotificationActionService
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Droid.MainActivity.DeviceInstallationService">
+            <summary>
+            DeviceInstallationService
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Droid.MainActivity.ProcessNotificationActions(Android.Content.Intent)">
+            <summary>
+            Méthode exécuté dans le OnCreate
+            </summary>
+            <param name="intent">Les Intents</param>
+        </member>
+        <member name="M:ProjetGroupe.Droid.MainActivity.OnNewIntent(Android.Content.Intent)">
+            <summary>
+            Méthode appelée quand il y a une nouvelle Intent 
+            </summary>
+            <param name="intent"></param>
+        </member>
+        <member name="M:ProjetGroupe.Droid.MainActivity.OnActivityResult(System.Int32,Android.App.Result,Android.Content.Intent)">
+            <summary>
+            Evènement Android qui s'active quand la galerie se ferme
+            </summary>
+            <param name="requestCode">Code Gallerie (200)</param>
+            <param name="resultCode">Code Gallerie (200)</param>
+            <param name="data">D'ou il vient</param>
+        </member>
+        <member name="M:ProjetGroupe.Droid.MainActivity.GetRealPathFromURI(Android.Net.Uri)">
+            <summary>
+            Méthode qui permet de récupérer l'URI de l'image choisi
+            </summary>
+            <param name="contentURI">URI</param>
+            <returns>l'uri en string</returns>
+        </member>
+        <member name="T:ProjetGroupe.Droid.Services.DeviceInstallationService">
+            <summary>
+            Classe d'installation des notifications sur l'appareil
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Droid.Services.DeviceInstallationService.Token">
+            <summary>
+            Token
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Droid.Services.DeviceInstallationService.NotificationsSupported">
+            <summary>
+            NotificationsSupported
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Droid.Services.DeviceInstallationService.GetDeviceId">
+            <summary>
+            Régupère l'id de l'appareil
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProjetGroupe.Droid.Services.DeviceInstallationService.GetDeviceInstallation(System.String[])">
+            <summary>
+            Récupère l'installation de l'appareil
+            </summary>
+            <param name="tags">tags</param>
+            <returns>DeviceInstallation</returns>
+        </member>
+        <member name="M:ProjetGroupe.Droid.Services.DeviceInstallationService.GetPlayServicesError">
+            <summary>
+            Récupère les erreurs GooglePlayService de notification
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ProjetGroupe.Droid.Services.PushNotificationFirebaseMessagingService">
+            <summary>
+            Classe permettant de lier FireBase à l'appareil
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Droid.Services.PushNotificationFirebaseMessagingService.NotificationActionService">
+            <summary>
+            NotificationActionService
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Droid.Services.PushNotificationFirebaseMessagingService.NotificationRegistrationService">
+            <summary>
+            NotificationRegistrationService
+            </summary>
+        </member>
+        <member name="P:ProjetGroupe.Droid.Services.PushNotificationFirebaseMessagingService.DeviceInstallationService">
+            <summary>
+            DeviceInstallationService
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Droid.Services.PushNotificationFirebaseMessagingService.OnNewToken(System.String)">
+            <summary>
+            Méthode éxecuté lors de la génération d'un nouveau token par l'appareil
+            </summary>
+            <param name="token"></param>
+        </member>
+        <member name="M:ProjetGroupe.Droid.Services.PushNotificationFirebaseMessagingService.OnMessageReceived(Firebase.Messaging.RemoteMessage)">
+            <summary>
+            Méthode exécuté lors de la réception d'une notification
+            </summary>
+            <param name="message">Informations du message (titre, corps etc)</param>
+        </member>
+        <member name="T:ProjetGroupe.Droid.SplashActivity">
+            <summary>
+            Classe utilisé à la place de MainActivy lorsqu'on réouvre l'application. Elle monte un background pendant le chargement 
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Droid.SplashActivity.OnResume">
+            <summary>
+            Charge le MainActivity 
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Droid.SplashActivity.OnBackPressed">
+            <summary>
+            Bouton BackPressed Action (appareil pas application)
+            </summary>
+        </member>
+        <member name="T:ProjetGroupe.Droid.Tools.ImageHelpers">
+            <summary>
+            Classe Permettant de gérer l'upload des images de profil
+            </summary>
+        </member>
+        <member name="M:ProjetGroupe.Droid.Tools.ImageHelpers.SaveFile(System.String,System.Byte[],System.String)">
+            <summary>
+            Méthoqui permet de sauvegarder la photo dans les dossiers de l'application
+            </summary>
+            <param name="collectionName">collectionName</param>
+            <param name="imageByte">L'image au format binaire</param>
+            <param name="fileName">le nom de l'image</param>
+            <returns>l'uri de l'image</returns>
+        </member>
+        <member name="M:ProjetGroupe.Droid.Tools.ImageHelpers.RotateImage(System.String)">
+            <summary>
+            Permet de choisir la rotation de l'image
+            </summary>
+            <param name="path"></param>
+            <returns>l'image au format binaire</returns>
+        </member>
+        <member name="M:ProjetGroupe.Droid.Tools.ImageHelpers.GetRotation(System.String)">
+            <summary>
+            Méthode qui récupère les type de rotations
+            </summary>
+            <param name="filePath">URI de l'image</param>
+            <returns>int (Rotation)</returns>
+        </member>
+        <member name="M:SaveAndroid.SaveAndView(System.String,System.String,System.IO.MemoryStream)">
+            <summary>
+            Action réalisée après la génération du PDF
+            </summary>
+            <param name="fileName">nom du fichier</param>
+            <param name="contentType">application/pdf</param>
+            <param name="stream">le fichier sous forme de stream</param>
+            <returns>task</returns>
+        </member>
+        <member name="M:SaveAndroid.OpenGallery">
+            <summary>
+            Méthode pour ouvrir la galerie du smartphone
+            </summary>
+            <returns>task</returns>
+        </member>
+        <member name="M:SaveAndroid.DisplayAlert(System.String)">
+            <summary>
+            Permet d'envoyer un message d'erreur ou non qui disparaît juste après
+            </summary>
+        </member>
+    </members>
+</doc>
