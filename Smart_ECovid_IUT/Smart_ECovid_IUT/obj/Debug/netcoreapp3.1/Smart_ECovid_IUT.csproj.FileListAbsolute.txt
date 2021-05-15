@@ -359,3 +359,4 @@ D:\TAFF\IOTIATravaille\CourAcctuelle\ProjetFinAnnee\Smart_ECovid_IUT\Smart_ECovi
 D:\TAFF\IOTIATravaille\CourAcctuelle\ProjetFinAnnee\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\PartialIOTDevise\_PatialListCampus.cshtml.g.cs
 D:\TAFF\IOTIATravaille\CourAcctuelle\ProjetFinAnnee\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\PartialIOTDevise\_PatialListPromotion.cshtml.g.cs
 D:\TAFF\IOTIATravaille\CourAcctuelle\ProjetFinAnnee\Smart_ECovid_IUT\Smart_ECovid_IUT\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\PartialIOTDevise\_PatialListUtilisateur.cshtml.g.cs
+D:\TAFF\IOTIATravaille\CourAcctuelle\ProjetFinAnnee\Smart_ECovid_IUT\Smart_ECovid_IUT\bin\Debug\netcoreapp3.1\Smart_ECovid_IUT.xml

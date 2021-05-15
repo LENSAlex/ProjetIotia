@@ -14,30 +14,58 @@ using System.Net.Http.Headers;
 
 namespace Smart_ECovid_IUT.Pages.Promotion
 {
+    /// <summary>
+    /// CréeModifPromotionModel est la class principale du back " CréeModif.cshtml.c" de la page web " CréeModif.cshtml"
+    /// c'est dans cette class que les requette sur API sont faite et retenu dans des methode Get Set pour les utiliser dans le 
+    /// front
+    /// </summary>
     public class CréeModifPromotionModel : PageModel
     {
         private readonly IHttpClientFactory _clientFactory;
+
+        /// <summary>
+        /// Constructeur qui permet de charger un http client pour faire des requete (utiliser pour les Getsur API)
+        /// </summary>
+        /// <param name="clientFactory">Parametre charger</param>
         public CréeModifPromotionModel(IHttpClientFactory clientFactory)
         {
             _clientFactory = clientFactory;
         }
+
+        /// <summary>
+        /// ModifPromo Méthode Get/Set de type PromotionClass et une méthode qui vas etre charger de la liste de promotion pour etre 
+        /// ensuit utiliser dans un foreach
+        /// </summary>
         public IEnumerable<PromotionClass> ModifPromo { get; private set; }
 
+        /// <summary>
+        /// DDBat Méthode Get/Set de type IEnumerable Campus   qui me permet de charger les DDBat(nom ,id) et de les afficher dans une DropDown 
+        /// pour faire mon formulaire.Il est afficher grace a un foreach qui boucle dessu sur le front
+        /// </summary>
         public IEnumerable<ClasseE_Covid.Campus.Campus> DDBat { get; private set; }
-        //Prof prof;
+
+        /// <summary>
+        /// DDProf Méthode Get/Set de type IEnumerable Prof  qui me permet de charger les DDBat(nom ,id) et de les afficher dans une DropDown 
+        /// pour faire mon formulaire.Il est afficher grace a un foreach qui boucle dessu sur le front
+        /// </summary>
         public IEnumerable<Prof> DDProf { get; private set; }
-        public string Nom { get; set; }
-        public int Annee { get; set; }
 
-        public int Duree { get; set; }
+        /// <summary>
+        /// objet de type PromotionClass qui me permetra d'afficher les valeur de la promotion que l'on veut modifier
+        /// </summary>
+        public PromotionClass promo;
 
-        public string Département { get; set; }
-
-        public int idDepartement { get; set; }
-        public string NomProf { get; set; }
-
-        public int idProf { get; set; }
-
+        /// <summary>
+        /// OnGet Méthode qui est utiliser des lors de l'ouverture de la page. c'est la premier méhode a etre utiliser 
+        /// elle est de type  async Task pour utiliser les méhtode   await LoadDDProf(); await LoadBati();
+        /// ces méthode on un await car elle attende une reponce de API.
+        /// Puis que c'est la permier méthode utiliser il y a une verification si la personne qui veut rentrait dans 
+        /// cette page c'est bien login alor elle pourrat voir la page sionn elle sera rediriger vers la page de login 
+        /// si id est non null je charge la methode  await LoadCampus(id); et les méthode de PutFormationId pour pouvoir 
+        /// fait une requette put
+        /// </summary>
+        /// <param name="id">parametre qui peut etre null. ce parametre est non null quan il y a un id dans URL</param>
+        /// <returns></returns>
         public async Task OnGet(int? id)
         {
             string login = Login.Current(HttpContext);
@@ -49,16 +77,20 @@ namespace Smart_ECovid_IUT.Pages.Promotion
             if (id.HasValue)
             {
                 await LoadCampus(id);
+                PutFormationId.IdPromo = id;
+                PutFormationId.IdFormation = 1;
             }
-            else
-            {
-                await LoadDDProf();
-                await LoadBati();
-            }
-            //  Prof.GetProf();
-            //  DDProf = Prof._DDProf;
+            
+            await LoadDDProf();
+            await LoadBati();
         }
 
+        /// <summary>
+        /// OnPostEnvoieDonne est une méthode qui appler lors de l'envoie du formulaire grace  "asp-page-handler" 
+        /// le OnPost devent le nom est obligatoire en .Net core il indicque que le form et en Post
+        /// il vas donc recupérait les reponce ranplie dans le formulaire et les charger dans un objer 
+        /// elle apple la méthode Save et lui donne un objet de type Formation en parametre
+        /// </summary>
         public async void OnPostEnvoieDonne()
         {
             Formation formation = new Formation();
@@ -121,10 +153,22 @@ namespace Smart_ECovid_IUT.Pages.Promotion
         //    }
         //}
 
+
+
+        /// <summary>
+        /// LoadCampus est une méthode qui est de type  async Task car elle attende une reponce de l'API
+        /// elle fait une requette Get sur l'API est charge la méthode ModifPromo .
+        /// il y a une verification si la requtte c'est bien fait. 
+        /// la methode recupaire id de la promotion que l'on veut modifer pour pouvoir boucler sur la liste 
+        /// de la promotion et recupéraer les bonne information de la promotion voulu . pour pouvoir les afficher dans 
+        /// les Dropdwon et input 
+        /// </summary>
+        /// <param name="id">id dans URL</param>
+        /// <returns></returns>
         public async Task LoadCampus(int? id)
         {
             var request = new HttpRequestMessage(HttpMethod.Get,
-           "http://51.75.125.121:3000/Covid/Count/CasCovid/Formation/" + Convert.ToString(id));
+           "http://webservice.lensalex.fr:3001/Usager/ListPromo");
             request.Headers.Add("Accept", "application/json");  //application/vnd.github.v3+json"
             request.Headers.Add("User-Agent", ".NET Foundation Repository Reporter");   //"HttpClientFactory-Sample"
 
@@ -137,16 +181,20 @@ namespace Smart_ECovid_IUT.Pages.Promotion
                 using var responseStream = await response.Content.ReadAsStreamAsync(); // recupaire les donnée de api et les mette dans le responseStream
                 ModifPromo = await JsonSerializer.DeserializeAsync
                 <IEnumerable<PromotionClass>>(responseStream); // remplie la class Campus 
-
+                promo = new PromotionClass();
                 foreach (PromotionClass promotion in ModifPromo)
                 {
-                    Nom = promotion.Nom;
-                    Annee = promotion.Annee;
-                    Duree = promotion.Duree;
-                    //Département = promotion.Departemnt;
-                    //idDepartement = promotion.IdDepartemnt;
-                    //NomProf = promotion.nomProf;
-                    //idProf = promotion.IdProf;
+                    if (promotion.Id == id)
+                    {
+                        promo.Nom = promotion.Nom;
+                        promo.Annee = promotion.Annee;
+                        promo.Duree = promotion.Duree;
+                        //Département = promotion.Departemnt;
+                        //idDepartement = promotion.IdDepartemnt;
+                        promo.NomProf = promotion.NomProf;
+                        promo.IdProf = promotion.IdProf;
+                        promo.PernomProf = promotion.PernomProf;
+                    }
                 }
             }
             else
@@ -155,15 +203,24 @@ namespace Smart_ECovid_IUT.Pages.Promotion
                 ModifPromo = Array.Empty<PromotionClass>();
             }
         }
+
+        /// <summary>
+        /// Save est une méthode qui est de type async Task car elle attende une reponce de l'API
+        /// elle fait une requette Post ou put  sur l'API en fonction du param PutFormationId.IdProm .
+        /// il y a une verification si la requtte c'est bien fait.
+        /// pour les requette post et put les valuer sont mit dans url et le jsonData ne ce doit pas d'est correcte 
+        /// mais il est obligatoire. toute les post et put ce doit d'avoir un Headers.Authorization qui comporte "Bearer"et le Token
+        /// qui a etait recuppérait dans le login. la différence du put c'est qu'il faut metre l'id a la fin de la requette 
+        /// </summary>
+        /// <param name="item">un objet de type Formation fait un post avec c'est parametre si il n'y pas null</param>
+        /// <returns>Message (théoriquemet redirige sur la page web des list campus)</returns>
         internal async Task<string> Save(Formation item)
         {
             string WebAPIUrl = "";
             var httpClient = new HttpClient();
-            if (ModifPromo == null)
-                WebAPIUrl = "http://webservice.lensalex.fr:3004/InfraAdmin/Usager/Add/Promo/" + item.IdDepartement + "/" + item.NomFormation + "/" + item.DureeFormation + "/" + item.AnneePromotion + "/" + item.IdProfesseurPromotion;
-            // WebAPIUrl = "http://51.75.125.121:3007/Personne/Add/Promo/" + item.IdDepartement + "/" + item.NomFormation + "/" + item.DureeFormation + "/" + item.AnneePromotion + "/" + item.IdProfesseurPromotion;
-            else
-                WebAPIUrl = "http://51.75.125.121:3007/Personne/Modifs/Formation/" + item.IdDepartement + "/" + item.NomFormation + "/" + item.DureeFormation + "/" + item.AnneePromotion;
+
+           
+
 
             StringBuilder sb = new StringBuilder();
             if (item != null)
@@ -176,27 +233,41 @@ namespace Smart_ECovid_IUT.Pages.Promotion
                 sb.Append(@"""}");
 
                 string jsonData = sb.ToString();
+                var requestMessage = new HttpRequestMessage();
 
                 await LoadDDProf();
-
-                var requestMessage = new HttpRequestMessage
+                if (PutFormationId.IdPromo == null)
                 {
-                    Method = HttpMethod.Post,
-                    Content = new StringContent(jsonData, Encoding.UTF8, "application/json"),
-                    RequestUri = new Uri(WebAPIUrl)
-                };
+                    WebAPIUrl = "http://webservice.lensalex.fr:3004/InfraAdmin/Usager/Add/Promo/" + item.IdDepartement + "/" + item.NomFormation + "/" + item.DureeFormation + "/" + item.AnneePromotion + "/" + item.IdProfesseurPromotion;
+                    requestMessage = new HttpRequestMessage
+                    {
+                        Method = HttpMethod.Post,
+                        Content = new StringContent(jsonData, Encoding.UTF8, "application/json"),
+                        RequestUri = new Uri(WebAPIUrl)
+                    };
+
+                }
+                else
+                {
+                    WebAPIUrl = "http://webservice.lensalex.fr:3004/InfraAdmin/Usager/Modif/Promo/" + item.IdDepartement + "/" + item.NomFormation + "/" + item.DureeFormation + "/" + item.AnneePromotion + "/" + item.IdProfesseurPromotion + "/" + PutFormationId.IdFormation  + "/" + PutFormationId.IdPromo;
+                    requestMessage = new HttpRequestMessage
+                    {
+                        Method = HttpMethod.Put,
+                        Content = new StringContent(jsonData, Encoding.UTF8, "application/json"),
+                        RequestUri = new Uri(WebAPIUrl)
+                    };
+                }
+              
 
                 requestMessage.Headers.Authorization = new AuthenticationHeaderValue("Bearer", Login.Token);
 
                 try
                 {
                     var response = await httpClient.SendAsync(requestMessage);
-                    //if (ModifPromo != null)
-                    // response = await httpClient.PutAsync(uri, content);
 
                     if (response.IsSuccessStatusCode)
                     {
-                        // Index();
+                        
                         return "Ok";
                     }
                     else
@@ -216,11 +287,19 @@ namespace Smart_ECovid_IUT.Pages.Promotion
                 return "ErreurCapteurNull";
             }
         }
-        public static RedirectResult Index()
-        {
-            return new RedirectResult(url: "/Index", permanent: true,
-                                      preserveMethod: true);
-        }
+
+        //public static RedirectResult Index()
+        //{
+        //    return new RedirectResult(url: "/Index", permanent: true,
+        //                              preserveMethod: true);
+        //}
+
+        /// <summary>
+        /// LoadDDProf est une méthode qui est de type  async Task car elle attende une reponce de l'API
+        /// elle fait une requette Get sur l'API est charge la méthode DDProf .
+        /// il y a une verification si la requtte c'est bien fait.
+        /// </summary>
+        /// <returns></returns>
         public async Task<IEnumerable<Prof>> LoadDDProf()
         {
             var request = new HttpRequestMessage(HttpMethod.Get,
@@ -247,6 +326,12 @@ namespace Smart_ECovid_IUT.Pages.Promotion
             }
         }
 
+        /// <summary>
+        /// LoadBati est une méthode qui est de type  async Task car elle attende une reponce de l'API
+        /// elle fait une requette Get sur l'API est charge la méthode DDBat .
+        /// il y a une verification si la requtte c'est bien fait.
+        /// </summary>
+        /// <returns></returns>
         public async Task LoadBati()
         {
             var request = new HttpRequestMessage(HttpMethod.Get,

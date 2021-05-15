@@ -22,21 +22,21 @@
                         <div class="form-row">
                             <div class="col-md-4 mb-3">
                                 <label for="Nom">Nom</label>
-                                <input type="text" class="form-control" id="nom" name="nom" value="@(Model.ModifPromo != null ? Model?.Nom : null)"  placeholder="nom" required/>
+                                <input type="text" class="form-control" id="nom" name="nom" value="@(PutFormationId.IdPromo != null ? Model?.promo?.Nom : null)"  placeholder="nom" required/>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <label for="Nom">Année</label>
-                                <input type="text" class="form-control" id="annee" name="annee" value="@(Model.ModifPromo != null ? Model?.Annee : null)"  placeholder="2020" required />
+                                <input type="text" class="form-control" id="annee" name="annee" value="@(PutFormationId.IdPromo != null ? Model?.promo?.Annee : null)"  placeholder="2020" required />
                             </div>
                             <div class="col-md-4 mb-3">
                                 <label for="Batiment">Durée</label>
-                                <input type="text" class="form-control" id="duree" name="duree" value="@(Model.ModifPromo != null ? Model?.Duree : null)"  placeholder="2" required />
+                                <input type="text" class="form-control" id="duree" name="duree" value="@(PutFormationId.IdPromo != null ? Model?.promo?.Duree : null)"  placeholder="2" required />
 
                             </div>
                             <div class="col-md-4 mb-3">
                                 <label for="Batiment">Nom du Département</label>
                                 <select class="form-control select" aria-hidden="true" id="departement" name="departement">
-                                    <option value="@(Model?.idDepartement ?? 0)">@(Model.ModifPromo != null ? Model.Département : "--Selectionner Département--")</option>
+                                    <option value="0">--Selectionner Département--</option>
                                     @{
                                         if (Model.DDBat != null)
                                         {
@@ -51,7 +51,7 @@
                             <div class="col-md-4 mb-3">
                                 <label for="Batiment">Prof principale</label>
                                 <select class="form-control select" aria-hidden="true" id="prof" name="prof">
-                                    <option value="@(Model?.idProf ?? 0)">@(Model.ModifPromo != null ? Model.NomProf : "--Selectionner Prof--")</option>
+                                    <option value="@(Model?.promo?.IdProf ?? 0)">@(PutFormationId.IdPromo != null ? Model?.promo?.NomProf : "--Selectionner Prof--")</option>
                                     @{
                                         if (Model.DDProf != null)
                                         {

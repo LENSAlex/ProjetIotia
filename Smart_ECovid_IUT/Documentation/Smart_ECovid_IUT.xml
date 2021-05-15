@@ -1,0 +1,968 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Smart_ECovid_IUT</name>
+    </assembly>
+    <members>
+        <member name="T:Smart_ECovid_IUT.Pages.Campus.CreeModifCampusModel">
+            <summary>
+            CreeModifCampusModel est la class principale du back "CreeModifCampus.cshtml.c" de la page web "CreeModifCampus.cshtml"
+            c'est dans cette class que les requette sur API sont faite et retenu dans des methode Get Set pour les utiliser dans le 
+            front
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.Campus.CreeModifCampusModel.DDBatiment">
+            <summary>  DDBatiment Méthode Get/Set de type IEnumerable Campus  qui me permet de charger les batiment(nom ,id) et de les afficher dans une DropDown 
+            pour faire mon formulaire.Il est afficher grace a un foreach qui boucle dessu sur le front
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.Campus.CreeModifCampusModel.DDCampus">
+            <summary>
+            DDCampus Méthode Get/Set de type IEnumerable Campus   qui me permet de charger les DDCampus(nom ,id) et de les afficher dans une DropDown 
+            pour faire mon formulaire.Il est afficher grace a un foreach qui boucle dessu sur le front
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.Campus.CreeModifCampusModel.etage">
+            <summary>
+            etage  Méthode Get/Set de type  IEnumerable Etage qui me permet de charger les DDCampus(nom ,id) et de les afficher dans une DropDown 
+            pour faire mon formulaire. Il est afficher grace a un foreach qui boucle dessu sur le front
+            </summary>
+        </member>
+        <member name="F:Smart_ECovid_IUT.Pages.Campus.CreeModifCampusModel.DDEtage">
+            <summary>
+            DDEtage Méthode Get/Set de type DDEtage qui me permet de charger les Etage(nom ,id) et de les afficher dans une DropDown dans le partial _PartialCreeIOTDevise
+            pour faire mon formulaire.Il est afficher grace a un foreach qui boucle dessu sur le front
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.Campus.CreeModifCampusModel.GetBranchesError">
+            <summary>
+            GetBranchesError Méthode Get/Set de type bool qui me permet de verifier si la requette et faus
+            </summary>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Campus.CreeModifCampusModel.#ctor(System.Net.Http.IHttpClientFactory)">
+            <summary>
+            Constructeur qui permet de charger un http client pour faire des requete (utiliser pour les Getsur API)
+            </summary>
+            <param name="clientFactory">Parametre charger</param>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Campus.CreeModifCampusModel.OnGet">
+            <summary>
+            OnGet Méthode qui est utiliser des lors de l'ouverture de la page. c'est la premier méhode a etre utiliser 
+            elle est de type  async Task pour utiliser les méhtode await LoadDDBatiment(); await LoadDDCampus();. 
+            ces méthode on un await car elle attende une reponce de API.
+            Puis que c'est la permier méthode utiliser il y a une verification si la personne qui veut rentrait dans 
+            cette page c'est bien login alor elle pourrat voir la page sionn elle sera rediriger vers la page de login
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Campus.CreeModifCampusModel.LoadDDEtage">
+            <summary>
+            LoadDDEtage est une méthode qui est de type  async Task car elle attende une reponce de l'API
+            elle fait une requette Get sur l'API est charge la méthode etage .
+            il y a une verification si la requtte c'est bien fait.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Campus.CreeModifCampusModel.LoadDDCampus">
+            <summary>
+            LoadDDCampus est une méthode qui est de type  async Task car elle attende une reponce de l'API
+            elle fait une requette Get sur l'API est charge la méthode DDCampus .
+            il y a une verification si la requtte c'est bien fait.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Campus.CreeModifCampusModel.LoadDDBatiment">
+            <summary>
+            LoadDDBatiment est une méthode qui est de type  async Task car elle attende une reponce de l'API
+            elle fait une requette Get sur l'API est charge la méthode DDBatiment .
+            il y a une verification si la requtte c'est bien fait.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Campus.CreeModifCampusModel.SaveBatiment(ClasseE_Covid.Campus.PostBatiementEtage,ClasseE_Covid.Campus.PostBatimentSalle)">
+            <summary>
+            SaveBatiment est une méthode qui est de type async Task car elle attende une reponce de l'API
+            elle fait une requette Post sur l'API en fonction du param qui n'est pas null.
+            il y a une verification si la requtte c'est bien fait.
+            le post de l'objet item attent une json pour crée la superfici des etage. il et ensuite mit dans url 
+            pour les requette post les valuer post sont mit dans url le jsonData ne ce doit pas d'est correcte 
+            mais il est obligatoire. toute les post ce doit d'avoir un Headers.Authorization qui comporte "Bearer"et le Token
+            qui a etait recuppérait dans le login
+            </summary>
+            <param name="item">un objet de type PostBatiementEtage fait un post avec c'est parametre si il n'y pas null</param>
+            <param name="salle">un objet de type PostBatimentSalle fait un post avec c'est parametre si il n'y pas null</param>
+            <returns>Message (théoriquemet redirige sur la page web des list campus)</returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Campus.CreeModifCampusModel.OnPostEnvoieDonne">
+            <summary>
+            OnPostEnvoieDonne est une méthode qui appler lors de l'envoie du formulaire grace  "asp-page-handler" 
+            le OnPost devent le nom est obligatoire en .Net core il indicque que le form et en Post
+            il vas donc recupérait les reponce ranplie dans le formulaire et les charger dans un objer 
+            elle apple la méthode GetDataAsync et lui donne un objet de type PostBatiementEtage en parametre
+            sont dexieme parametre n'a pas besoin etre ecrit car il est null de base
+            </summary>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Campus.CreeModifCampusModel.OnPostEnvoieDonneSalle">
+            <summary>
+            OnPostEnvoieDonneSalle est une méthode qui appler lors de l'envoie du formulaire grace  "asp-page-handler" 
+            le OnPost devent le nom est obligatoire en .Net core il indicque que le form et en Post
+            il vas donc recupérait les reponce ranplie dans le formulaire et les charger dans un objer 
+            elle apple la méthode GetDataAsync et lui donne un objet de type PostBatimentSalle en parametre 
+            </summary>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Campus.CreeModifCampusModel.GetDataAsync(ClasseE_Covid.Campus.PostBatiementEtage,ClasseE_Covid.Campus.PostBatimentSalle)">
+            <summary>
+            cette méthode sert de passerelle entre les methode du from et celui du save pour mettre les bon parametre 
+            </summary>
+            <param name="campus"></param>
+            <param name="salle"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Campus.CreeModifCampusModel.OnGetEtageCharge(System.String)">
+            <summary>
+            OnGetEtageCharge et une methode qui est utiliser pour charger une DropDown en fonction du batiment choise 
+            cette méthode et activer par de l'ajax dans le front qui recuper le nom du batiment et vas charger tout les 
+            etage du batiment dans la methode. la list d'etage sera utiliser ensut dan le partial _PartialCreeIOTDevise
+            </summary>
+            <param name="nomBatiment">Nom du batiment choisi dans le form</param>
+            <returns>elle retune le resulta dans le partial PartialIOTDevise/_PartialCreeIOTDevise</returns>
+        </member>
+        <member name="T:Smart_ECovid_IUT.Pages.Campus.ListeCampusModel">
+            <summary>
+            ListeCampusModel est la class principale du back "ListeCampus.cshtml.c" de la page web "ListeCampus.cshtml"
+            c'est dans cette class que les requette sur API sont faite et retenu dans des methode Get Set pour les utiliser dans le front 
+            il posible aussi de faire une modification ou une suppression de batiment front
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.Campus.ListeCampusModel.Branches">
+            <summary>
+            Branches Méthode Get/Set de type IEnumerable Campus qui me permet de charger tout les donner des batiement et de les afficher dans un tableau 
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.Campus.ListeCampusModel.GetBranchesError">
+            <summary>
+            GetBranchesError Méthode Get/Set de type bool qui me permet de verifier si la requette et faus
+            </summary>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Campus.ListeCampusModel.#ctor(System.Net.Http.IHttpClientFactory)">
+            <summary>
+            Constructeur qui permet de charger un http client pour faire des requete (utiliser pour les Getsur API)
+            </summary>
+            <param name="clientFactory">Parametre charger</param>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Campus.ListeCampusModel.OnGet">
+            <summary>
+            OnGet Méthode qui est utiliser des lors de l'ouverture de la page. c'est la premier méhode a etre utiliser 
+            elle est de type  async Task pour utiliser les méhtode await LoadBati();
+            ces méthode on un await car elle attende une reponce de API.
+            Puis que c'est la permier méthode utiliser il y a une verification si la personne qui veut rentrait dans 
+            cette page c'est bien login alor elle pourrat voir la page sionn elle sera rediriger vers la page de login
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Campus.ListeCampusModel.LoadBati">
+            <summary>
+            LoadBati est une méthode qui est de type  async Task car elle attende une reponce de l'API
+            elle fait une requette Get sur l'API est charge la méthode Branches .
+            il y a une verification si la requtte c'est bien fait.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Campus.ListeCampusModel.OnGetRecherche(System.String)">
+            <summary>
+            OnGetRecherche et une methode qui permet de faire une recherche sur la liste . elle modifi donc la liste ù
+            en fonction de ce qu'il a dans les parametre pour cela je charge la methode Branches par une requette Get 
+            cette méthode et activer par de l'ajax dans le front qui recuper le text inscrit dans input et vas charger la 
+            list . la nouvelle list sera utiliser ensuit dans le partial _PatialListCampus
+            </summary>
+            <param name="seach">la rechere choisi dans input</param>
+            <returns>elle retune le resulta dans le partial PartialIOTDevise/_PatialListCampus</returns>
+        </member>
+        <member name="T:Smart_ECovid_IUT.Pages.Capteur.AfficheCapteurModel">
+            <summary>
+            ListeCampusModel est la class principale du back "AfficheCapteur.cshtml.c" de la page web "AfficheCapteur.cshtml"
+            c'est dans cette class que les requette sur API sont faite et retenu dans des methode Get Set pour les utiliser dans le front 
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.Capteur.AfficheCapteurModel.Temperature">
+            <summary>
+            Temperature Méthode Get/Set de type IEnumerable Temperature qui me permet de charger tout les donner des Temperature et de les afficher dans un tableau 
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.Capteur.AfficheCapteurModel.Co2">
+            <summary>
+            Co2 Méthode Get/Set de type IEnumerable Co2 qui me permet de charger tout les donner des Co2 et de les afficher dans un tableau 
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.Capteur.AfficheCapteurModel.Energie">
+            <summary>
+            Energie Méthode Get/Set de type IEnumerable Energie qui me permet de charger tout les donner des Energie et de les afficher dans un tableau 
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.Capteur.AfficheCapteurModel.occupationSite">
+            <summary>
+            occupationSite Méthode Get/Set de type IEnumerable OccupationSite qui me permet de charger tout les donner des Occupation Site et de les afficher dans un tableau 
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.Capteur.AfficheCapteurModel.occupationBatiment">
+            <summary>
+            occupationBatiment Méthode Get/Set de type IEnumerable OccupationBatiment qui me permet de charger tout les donner des Occupation Batiment et de les afficher dans un tableau 
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.Capteur.AfficheCapteurModel.GetBranchesError">
+            <summary>
+            GetBranchesError Méthode Get/Set de type bool qui me permet de verifier si la requette et faus
+            </summary>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Capteur.AfficheCapteurModel.#ctor(System.Net.Http.IHttpClientFactory)">
+            <summary>
+            Constructeur qui permet de charger un http client pour faire des requete (utiliser pour les Getsur API)
+            </summary>
+            <param name="clientFactory">Parametre charger</param>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Capteur.AfficheCapteurModel.OnGet">
+            <summary>
+            OnGet Méthode qui est utiliser des lors de l'ouverture de la page. c'est la premier méhode a etre utiliser 
+            elle est de type  async Task pour utiliser les méhtode  await LoadCo2(); await LoadTemperatuer(); await LoadEnergie();  await LoadOccupationBatiment(); await LoadOccupationSite();
+            ces méthode on un await car elle attende une reponce de API.
+            Puis que c'est la permier méthode utiliser il y a une verification si la personne qui veut rentrait dans 
+            cette page c'est bien login alor elle pourrat voir la page sionn elle sera rediriger vers la page de login
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Capteur.AfficheCapteurModel.LoadEnergie">
+            <summary>
+            LoadEnergie est une méthode qui est de type  async Task car elle attende une reponce de l'API
+            elle fait une requette Get sur l'API est charge la méthode Energie .
+            il y a une verification si la requtte c'est bien fait.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Capteur.AfficheCapteurModel.LoadOccupationBatiment">
+            <summary>
+            LoadOccupationBatiment est une méthode qui est de type  async Task car elle attende une reponce de l'API
+            elle fait une requette Get sur l'API est charge la méthode occupationBatiment .
+            il y a une verification si la requtte c'est bien fait.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Capteur.AfficheCapteurModel.LoadOccupationSite">
+            <summary>
+            LoadOccupationSite est une méthode qui est de type  async Task car elle attende une reponce de l'API
+            elle fait une requette Get sur l'API est charge la méthode occupationSite .
+            il y a une verification si la requtte c'est bien fait.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Capteur.AfficheCapteurModel.LoadTemperatuer">
+            <summary>
+            LoadTemperatuer est une méthode qui est de type  async Task car elle attende une reponce de l'API
+            elle fait une requette Get sur l'API est charge la méthode Temperature .
+            il y a une verification si la requtte c'est bien fait.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Capteur.AfficheCapteurModel.LoadCo2">
+            <summary>
+            LoadCo2 est une méthode qui est de type  async Task car elle attende une reponce de l'API
+            elle fait une requette Get sur l'API est charge la méthode Co2 .
+            il y a une verification si la requtte c'est bien fait.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Smart_ECovid_IUT.Pages.IndexModel">
+            <summary>
+            IndexModel est la class principale du back " Index.cshtml.c" de la page web " Index.cshtml"
+            c'est dans cette class que les requette sur API sont faite et retenu dans des methode Get Set pour les utiliser dans le front 
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.IndexModel.Branches">
+            <summary>
+            Branches Méthode Get/Set de type IEnumerable LogAlerte qui me permet de charger tout les donner des cas covid et de les afficher dans un tableau 
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.IndexModel.ListCo2">
+            <summary>
+            ListCo2 Méthode Get/Set de type IEnumerable Co2 qui me permet de charger tout les donner du Co2 et de les afficher dans un tableau 
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.IndexModel.cntCo2">
+            <summary>
+            cntCo2 Méthode Get/Set de type IEnumerable IEnumerable qui me permet de charger tout les donner du Co2 et fait un count sur celle qui on une valeut supp a 80 
+            et de les afficher dans un tableau 
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.IndexModel.ListTemp">
+            <summary>
+            ListTemp Méthode Get/Set de type IEnumerable Temperature qui me permet de charger tout les donner des Temperature , fait un count  et de les afficher dans un tableau 
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.IndexModel.ListOccu">
+            <summary>
+            ListOccu Méthode Get/Set de type IEnumerable OccupationBatiment qui me permet de charger tout les donner des Occupation Batiment , fait un count et de les afficher dans un tableau 
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.IndexModel.GetBranchesError">
+            <summary>
+            GetBranchesError Méthode Get/Set de type bool qui me permet de verifier si la requette et faus
+            </summary>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.IndexModel.#ctor(System.Net.Http.IHttpClientFactory)">
+            <summary>
+            Constructeur qui permet de charger un http client pour faire des requete (utiliser pour les Getsur API)
+            </summary>
+            <param name="clientFactory">Parametre charger</param>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.IndexModel.OnGet">
+            <summary>
+            OnGet Méthode qui est utiliser des lors de l'ouverture de la page. c'est la premier méhode a etre utiliser 
+            elle est de type  async Task pour utiliser les méhtode   await Load();  await LoadCO2();  await LoadOccupation();  await LoadTemp();
+            ces méthode on un await car elle attende une reponce de API.
+            Puis que c'est la permier méthode utiliser il y a une verification si la personne qui veut rentrait dans 
+            cette page c'est bien login alor elle pourrat voir la page sionn elle sera rediriger vers la page de login
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.IndexModel.Load">
+            <summary>
+            Load est une méthode qui est de type  async Task car elle attende une reponce de l'API
+            elle fait une requette Get sur l'API est charge la méthode Branches .
+            il y a une verification si la requtte c'est bien fait.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.IndexModel.LoadCO2">
+            <summary>
+            LoadCO2 est une méthode qui est de type  async Task car elle attende une reponce de l'API
+            elle fait une requette Get sur l'API est charge la méthode ListCo2 .
+            il y a une verification si la requtte c'est bien fait.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.IndexModel.LoadTemp">
+            <summary>
+            LoadTemp est une méthode qui est de type  async Task car elle attende une reponce de l'API
+            elle fait une requette Get sur l'API est charge la méthode ListTemp .
+            il y a une verification si la requtte c'est bien fait.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.IndexModel.LoadOccupation">
+            <summary>
+            LoadOccupation est une méthode qui est de type  async Task car elle attende une reponce de l'API
+            elle fait une requette Get sur l'API est charge la méthode ListOccu .
+            il y a une verification si la requtte c'est bien fait.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Smart_ECovid_IUT.Pages.IOTDevise.CreeModifIOTDeviseModel">
+            <summary>
+            CreeModifIOTDeviseModel est la class principale du back "CreeModifIOTDevise.cshtml.c" de la page web "CreeModifIOTDevise.cshtml"
+            c'est dans cette class que les requette sur API sont faite et retenu dans des methode Get Set pour les utiliser dans le 
+            front
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.IOTDevise.CreeModifIOTDeviseModel.DDTypeCapteur">
+            <summary>
+            DDTypeCapteur Méthode Get/Set de type IEnumerable TypeCapteur   qui me permet de charger les DDTypeCapteur(nom ,id) et de les afficher dans une DropDown 
+            pour faire mon formulaire.Il est afficher grace a un foreach qui boucle dessu sur le front
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.IOTDevise.CreeModifIOTDeviseModel.DDValeurCapteur">
+            <summary>
+            DDValeurCapteur Méthode Get/Set de type IEnumerable ValeurCapteur   qui me permet de charger les DDValeurCapteur(nom ,id) et de les afficher dans une DropDown 
+            pour faire mon formulaire.Il est afficher grace a un foreach qui boucle dessu sur le front
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.IOTDevise.CreeModifIOTDeviseModel.DDBox">
+            <summary>
+            DDBox Méthode Get/Set de type IEnumerable IOTDevise   qui me permet de charger les DDBox(nom ,id) et de les afficher dans une DropDown 
+            pour faire mon formulaire.Il est afficher grace a un foreach qui boucle dessu sur le front
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.IOTDevise.CreeModifIOTDeviseModel.DDSalle">
+            <summary>
+            DDSalle Méthode Get/Set de type IEnumerable Salle  qui me permet de charger les DDSalle(nom ,id) et de les afficher dans une DropDown 
+            pour faire mon formulaire.Il est afficher grace a un foreach qui boucle dessu sur le front
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.IOTDevise.CreeModifIOTDeviseModel.GetBranchesError">
+            <summary>
+            GetBranchesError Méthode Get/Set de type bool qui me permet de verifier si la requette et faus
+            </summary>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.IOTDevise.CreeModifIOTDeviseModel.#ctor(System.Net.Http.IHttpClientFactory)">
+            <summary>
+            Constructeur qui permet de charger un http client pour faire des requete (utiliser pour les Getsur API)
+            </summary>
+            <param name="clientFactory">Parametre charger</param>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.IOTDevise.CreeModifIOTDeviseModel.OnGet">
+            <summary>
+            OnGet Méthode qui est utiliser des lors de l'ouverture de la page. c'est la premier méhode a etre utiliser 
+            elle est de type  async Task pour utiliser les méhtode  await LoadTypeCapteur(); await LoadIOTDevise();await LoadSale();await LoadDDValuerCapteur();
+            ces méthode on un await car elle attende une reponce de API.
+            Puis que c'est la permier méthode utiliser il y a une verification si la personne qui veut rentrait dans 
+            cette page c'est bien login alor elle pourrat voir la page sionn elle sera rediriger vers la page de login
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.IOTDevise.CreeModifIOTDeviseModel.LoadIOTDevise">
+            <summary>
+            LoadIOTDevise est une méthode qui est de type  async Task car elle attende une reponce de l'API
+            elle fait une requette Get sur l'API est charge la méthode DDBox .
+            il y a une verification si la requtte c'est bien fait.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.IOTDevise.CreeModifIOTDeviseModel.LoadDDValuerCapteur">
+            <summary>
+            LoadDDValuerCapteur est une méthode qui est de type  async Task car elle attende une reponce de l'API
+            elle fait une requette Get sur l'API est charge la méthode DDValeurCapteur .
+            il y a une verification si la requtte c'est bien fait.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.IOTDevise.CreeModifIOTDeviseModel.LoadSale">
+            <summary>
+            LoadSale est une méthode qui est de type  async Task car elle attende une reponce de l'API
+            elle fait une requette Get sur l'API est charge la méthode DDSalle .
+            il y a une verification si la requtte c'est bien fait.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.IOTDevise.CreeModifIOTDeviseModel.LoadTypeCapteur">
+            <summary>
+            LoadTypeCapteur est une méthode qui est de type  async Task car elle attende une reponce de l'API
+            elle fait une requette Get sur l'API est charge la méthode DDTypeCapteur.
+            il y a une verification si la requtte c'est bien fait.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.IOTDevise.CreeModifIOTDeviseModel.Save(ClasseE_Covid.IOTDevise.Capteur,ClasseE_Covid.IOTDevise.Actionneur,ClasseE_Covid.IOTDevise.PanneauSolaire)">
+            <summary>
+            Save est une méthode qui est de type async Task car elle attende une reponce de l'API
+            elle fait une requette Post sur l'API en fonction du param qui n'est pas null.
+            il y a une verification si la requtte c'est bien fait. 
+            pour les requette post les valuer post sont mit dans url le jsonData ne ce doit pas d'étre correcte 
+            mais il est obligatoire. toute les post ce doit d'avoir un Headers.Authorization qui comporte "Bearer"et le Token
+            qui a etait recuppérait dans le login
+            </summary>
+            <param name="capteur">un objet de type Capteur fait un post avec c'est parametre si il n'y pas null</param>
+            <param name="actionneur">un objet de type Actionneur fait un post avec c'est parametre si il n'y pas null</param>
+            <param name="panneauSolaire">un objet de type PanneauSolaire fait un post avec c'est parametre si il n'y pas null</param>
+            <returns> Message (théoriquemet redirige sur la page web des list campus)</returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.IOTDevise.CreeModifIOTDeviseModel.OnPostEnvoieCapteur">
+            <summary>
+            OnPostEnvoieCapteur est une méthode qui appler lors de l'envoie du formulaire grace  "asp-page-handler" 
+            le OnPost devent le nom est obligatoire en .Net core il indicque que le form et en Post
+            il vas donc recupérait les reponce ranplie dans le formulaire et les charger dans un objer 
+            elle apple la méthode GetDataAsync et lui donne un objet de type Capteur en parametre
+            sont dexieme et troisieme parametre n'a pas besoin etre ecrit car il est null de base
+            </summary>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.IOTDevise.CreeModifIOTDeviseModel.OnPostEnvoieActionneur">
+            <summary>
+            OnPostEnvoieActionneur est une méthode qui appler lors de l'envoie du formulaire grace  "asp-page-handler" 
+            le OnPost devent le nom est obligatoire en .Net core il indicque que le form et en Post
+            il vas donc recupérait les reponce ranplie dans le formulaire et les charger dans un objer 
+            elle apple la méthode GetDataAsync et lui donne un objet de type Actionneur en parametre
+             troisieme parametre n'a pas besoin etre ecrit car il est null de base
+            </summary>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.IOTDevise.CreeModifIOTDeviseModel.OnPostEnvoiePannauxSolaire">
+            <summary>
+            OnPostEnvoiePannauxSolaire est une méthode qui appler lors de l'envoie du formulaire grace  "asp-page-handler" 
+            le OnPost devent le nom est obligatoire en .Net core il indicque que le form et en Post
+            il vas donc recupérait les reponce ranplie dans le formulaire et les charger dans un objer 
+            elle apple la méthode GetDataAsync et lui donne un objet de type PanneauSolaire en parametre
+            </summary>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.IOTDevise.CreeModifIOTDeviseModel.GetDataAsync(ClasseE_Covid.IOTDevise.Capteur,ClasseE_Covid.IOTDevise.Actionneur,ClasseE_Covid.IOTDevise.PanneauSolaire)">
+            <summary>
+            cette méthode sert de passerelle entre les methode du from et celui du save pour mettre les bon parametre 
+            </summary>
+            <param name="capteur">Objet de type Capteur qui est null de base  </param>
+            <param name="actionneur">Objet de type Actionneur qui est null de base  </param>
+            <param name="panneauSolaire">Objet de type PanneauSolaire qui est null de base  </param>
+            <returns></returns>
+        </member>
+        <member name="T:Smart_ECovid_IUT.Pages.IOTDevise.ListeIOTDeviseModel">
+            <summary>
+            ListeIOTDeviseModel est la class principale du back " ListeIOTDevise.cshtml.c" de la page web " ListeIOTDevise.cshtml"
+            c'est dans cette class que les requette sur API sont faite et retenu dans des methode Get Set pour les utiliser dans le front 
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.IOTDevise.ListeIOTDeviseModel.Devise">
+            <summary>
+            Devise Méthode Get/Set de type IEnumerable IOTDevise qui me permet de charger tout les donner des box et de les afficher dans un tableau 
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.IOTDevise.ListeIOTDeviseModel.Capteur">
+            <summary>
+            Capteur Méthode Get/Set de type IEnumerable ListeCapteur qui me permet de charger tout les donner des capteur et de les afficher dans un tableau 
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.IOTDevise.ListeIOTDeviseModel.GetBranchesError">
+            <summary>
+            GetBranchesError Méthode Get/Set de type bool qui me permet de verifier si la requette et faus
+            </summary>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.IOTDevise.ListeIOTDeviseModel.#ctor(System.Net.Http.IHttpClientFactory)">
+            <summary>
+            Constructeur qui permet de charger un http client pour faire des requete (utiliser pour les Getsur API)
+            </summary>
+            <param name="clientFactory">Parametre charger</param>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.IOTDevise.ListeIOTDeviseModel.OnGet">
+            <summary>
+            OnGet Méthode qui est utiliser des lors de l'ouverture de la page. c'est la premier méhode a etre utiliser 
+            elle est de type  async Task pour utiliser les méhtode   await LoadIOTDevise();  await LoadCapteur();
+            ces méthode on un await car elle attende une reponce de API.
+            Puis que c'est la permier méthode utiliser il y a une verification si la personne qui veut rentrait dans 
+            cette page c'est bien login alor elle pourrat voir la page sionn elle sera rediriger vers la page de login
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.IOTDevise.ListeIOTDeviseModel.LoadIOTDevise">
+            <summary>
+            LoadIOTDevise est une méthode qui est de type  async Task car elle attende une reponce de l'API
+            elle fait une requette Get sur l'API est charge la méthode Devise .
+            il y a une verification si la requtte c'est bien fait.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.IOTDevise.ListeIOTDeviseModel.LoadCapteur">
+            <summary>
+            LoadCapteur est une méthode qui est de type  async Task car elle attende une reponce de l'API
+            elle fait une requette Get sur l'API est charge la méthode Capteur .
+            il y a une verification si la requtte c'est bien fait.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.IOTDevise.ListeIOTDeviseModel.OnGetRecherche(System.String)">
+            <summary>
+            OnGetRecherche et une methode qui permet de faire une recherche sur la liste . elle modifi donc la liste ù
+            en fonction de ce qu'il a dans les parametre pour cela je charge la methode Branches par une requette Get 
+            cette méthode et activer par de l'ajax dans le front qui recuper le text inscrit dans input et vas charger la 
+            list . la nouvelle list sera utiliser ensuit dans le partial _PartialListIOT
+            </summary>
+            <param name="nomBox">la rechere choisi dans input</param>
+            <returns>elle retune le resulta dans le partial PartialIOTDevise/_PartialListIOT</returns>
+        </member>
+        <member name="T:Smart_ECovid_IUT.Pages.LogAlerte.AfficheLogAlerteModel">
+            <summary>
+            AfficheLogAlerteModel est la class principale du back " AfficheLogAlerte.cshtml.c" de la page web " AfficheLogAlerte.cshtml"
+            c'est dans cette class que les requette sur API sont faite et retenu dans des methode Get Set pour les utiliser dans le front 
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.LogAlerte.AfficheLogAlerteModel.Branches">
+            <summary>
+            Branches Méthode Get/Set de type IEnumerable LogAlerte qui me permet de charger tout les donner des cas covid et de les afficher dans un tableau 
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.LogAlerte.AfficheLogAlerteModel.ListCo2">
+            <summary>
+            ListCo2 Méthode Get/Set de type IEnumerable Co2 qui me permet de charger tout les donner du Co2 et de les afficher dans un tableau 
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.LogAlerte.AfficheLogAlerteModel.GetBranchesError">
+            <summary>
+            GetBranchesError Méthode Get/Set de type bool qui me permet de verifier si la requette et faus
+            </summary>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.LogAlerte.AfficheLogAlerteModel.#ctor(System.Net.Http.IHttpClientFactory)">
+            <summary>
+            Constructeur qui permet de charger un http client pour faire des requete (utiliser pour les Getsur API)
+            </summary>
+            <param name="clientFactory">Parametre charger</param>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.LogAlerte.AfficheLogAlerteModel.OnGet">
+            <summary>
+            OnGet Méthode qui est utiliser des lors de l'ouverture de la page. c'est la premier méhode a etre utiliser 
+            elle est de type  async Task pour utiliser les méhtode   await LoadCasCovid(); await LoadCO2();
+            ces méthode on un await car elle attende une reponce de API.
+            Puis que c'est la permier méthode utiliser il y a une verification si la personne qui veut rentrait dans 
+            cette page c'est bien login alor elle pourrat voir la page sionn elle sera rediriger vers la page de login
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.LogAlerte.AfficheLogAlerteModel.LoadCasCovid">
+            <summary>
+            LoadCasCovid est une méthode qui est de type  async Task car elle attende une reponce de l'API
+            elle fait une requette Get sur l'API est charge la méthode Branches .
+            il y a une verification si la requtte c'est bien fait.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.LogAlerte.AfficheLogAlerteModel.LoadCO2">
+            <summary>
+            LoadCO2 est une méthode qui est de type  async Task car elle attende une reponce de l'API
+            elle fait une requette Get sur l'API est charge la méthode ListCo2 .
+            il y a une verification si la requtte c'est bien fait. 
+            j'utilise la methode Where sur ma listre pour filtrer les valleur et mettre celle qui son au dessus de 80
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Smart_ECovid_IUT.Pages.loginModel">
+            <summary>
+            loginModel est la class principale du back " login.cshtml.c" de la page web " login.cshtml"
+            c'est dans cette class que les requette sur API sont faite et retenu dans des methode Get Set pour les utiliser dans le front 
+            </summary>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.loginModel.#ctor(System.Net.Http.IHttpClientFactory)">
+            <summary>
+            Constructeur qui permet de charger un http client pour faire des requete (utiliser pour les Getsur API)
+            </summary>
+            <param name="clientFactory">Parametre charger</param>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.loginModel.OnGet">
+            <summary>
+            méthode non utiliser
+            </summary>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.loginModel.OnPostLogin">
+            <summary>
+            OnPostLogin est une méthode qui appler lors de l'envoie du formulaire grace  "asp-page-handler" 
+            le OnPost devent le nom est obligatoire en .Net core il indicque que le form et en Post
+            il vas donc recupérait les reponce ranplie dans le formulaire et les charger dans un objer 
+            elle apple la méthode LoadToken elle est de type  async Task pour utiliser cette méthode
+            </summary>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.loginModel.LoadToken">
+            <summary>
+            LoadToken est une méthode qui est de type  async Task car elle attende une reponce de l'API
+            elle fait une requette Get avec des parmetre le nom et mpd sur l'API est donnée le token d'identification .
+            les donner qui on etait ecrit et le tokent sont sauvegarder par le  HttpContext.Session ou la class Login qui est static
+            il y a une verification si la requtte c'est bien fait.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Smart_ECovid_IUT.Pages.Promotion.CréeModifPromotionModel">
+            <summary>
+            CréeModifPromotionModel est la class principale du back " CréeModif.cshtml.c" de la page web " CréeModif.cshtml"
+            c'est dans cette class que les requette sur API sont faite et retenu dans des methode Get Set pour les utiliser dans le 
+            front
+            </summary>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Promotion.CréeModifPromotionModel.#ctor(System.Net.Http.IHttpClientFactory)">
+            <summary>
+            Constructeur qui permet de charger un http client pour faire des requete (utiliser pour les Getsur API)
+            </summary>
+            <param name="clientFactory">Parametre charger</param>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.Promotion.CréeModifPromotionModel.ModifPromo">
+            <summary>
+            ModifPromo Méthode Get/Set de type PromotionClass et une méthode qui vas etre charger de la liste de promotion pour etre 
+            ensuit utiliser dans un foreach
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.Promotion.CréeModifPromotionModel.DDBat">
+            <summary>
+            DDBat Méthode Get/Set de type IEnumerable Campus   qui me permet de charger les DDBat(nom ,id) et de les afficher dans une DropDown 
+            pour faire mon formulaire.Il est afficher grace a un foreach qui boucle dessu sur le front
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.Promotion.CréeModifPromotionModel.DDProf">
+            <summary>
+            DDProf Méthode Get/Set de type IEnumerable Prof  qui me permet de charger les DDBat(nom ,id) et de les afficher dans une DropDown 
+            pour faire mon formulaire.Il est afficher grace a un foreach qui boucle dessu sur le front
+            </summary>
+        </member>
+        <member name="F:Smart_ECovid_IUT.Pages.Promotion.CréeModifPromotionModel.promo">
+            <summary>
+            objet de type PromotionClass qui me permetra d'afficher les valeur de la promotion que l'on veut modifier
+            </summary>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Promotion.CréeModifPromotionModel.OnGet(System.Nullable{System.Int32})">
+            <summary>
+            OnGet Méthode qui est utiliser des lors de l'ouverture de la page. c'est la premier méhode a etre utiliser 
+            elle est de type  async Task pour utiliser les méhtode   await LoadDDProf(); await LoadBati();
+            ces méthode on un await car elle attende une reponce de API.
+            Puis que c'est la permier méthode utiliser il y a une verification si la personne qui veut rentrait dans 
+            cette page c'est bien login alor elle pourrat voir la page sionn elle sera rediriger vers la page de login 
+            si id est non null je charge la methode  await LoadCampus(id); et les méthode de PutFormationId pour pouvoir 
+            fait une requette put
+            </summary>
+            <param name="id">parametre qui peut etre null. ce parametre est non null quan il y a un id dans URL</param>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Promotion.CréeModifPromotionModel.OnPostEnvoieDonne">
+            <summary>
+            OnPostEnvoieDonne est une méthode qui appler lors de l'envoie du formulaire grace  "asp-page-handler" 
+            le OnPost devent le nom est obligatoire en .Net core il indicque que le form et en Post
+            il vas donc recupérait les reponce ranplie dans le formulaire et les charger dans un objer 
+            elle apple la méthode Save et lui donne un objet de type Formation en parametre
+            </summary>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Promotion.CréeModifPromotionModel.LoadCampus(System.Nullable{System.Int32})">
+            <summary>
+            LoadCampus est une méthode qui est de type  async Task car elle attende une reponce de l'API
+            elle fait une requette Get sur l'API est charge la méthode ModifPromo .
+            il y a une verification si la requtte c'est bien fait. 
+            la methode recupaire id de la promotion que l'on veut modifer pour pouvoir boucler sur la liste 
+            de la promotion et recupéraer les bonne information de la promotion voulu . pour pouvoir les afficher dans 
+            les Dropdwon et input 
+            </summary>
+            <param name="id">id dans URL</param>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Promotion.CréeModifPromotionModel.Save(ClasseE_Covid.Promotion.Formation)">
+            <summary>
+            Save est une méthode qui est de type async Task car elle attende une reponce de l'API
+            elle fait une requette Post ou put  sur l'API en fonction du param PutFormationId.IdProm .
+            il y a une verification si la requtte c'est bien fait.
+            pour les requette post et put les valuer sont mit dans url et le jsonData ne ce doit pas d'est correcte 
+            mais il est obligatoire. toute les post et put ce doit d'avoir un Headers.Authorization qui comporte "Bearer"et le Token
+            qui a etait recuppérait dans le login. la différence du put c'est qu'il faut metre l'id a la fin de la requette 
+            </summary>
+            <param name="item">un objet de type Formation fait un post avec c'est parametre si il n'y pas null</param>
+            <returns>Message (théoriquemet redirige sur la page web des list campus)</returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Promotion.CréeModifPromotionModel.LoadDDProf">
+            <summary>
+            LoadDDProf est une méthode qui est de type  async Task car elle attende une reponce de l'API
+            elle fait une requette Get sur l'API est charge la méthode DDProf .
+            il y a une verification si la requtte c'est bien fait.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Promotion.CréeModifPromotionModel.LoadBati">
+            <summary>
+            LoadBati est une méthode qui est de type  async Task car elle attende une reponce de l'API
+            elle fait une requette Get sur l'API est charge la méthode DDBat .
+            il y a une verification si la requtte c'est bien fait.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Smart_ECovid_IUT.Pages.Promotion.ListePromotionModel">
+            <summary>
+            ListePromotionModel est la class principale du back " ListePromotion.cshtml.c" de la page web " ListePromotion.cshtml"
+            c'est dans cette class que les requette sur API sont faite et retenu dans des methode Get Set pour les utiliser dans le front 
+            il posible aussi de faire une modification ou une suppression de batiment front
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.Promotion.ListePromotionModel.Branches">
+            <summary>
+            Branches Méthode Get/Set de type IEnumerable PromotionClass qui me permet de charger tout les donner des Promotion et Fromation et de les afficher dans un tableau 
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.Promotion.ListePromotionModel.GetBranchesError">
+            <summary>
+            GetBranchesError Méthode Get/Set de type bool qui me permet de verifier si la requette et faus
+            </summary>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Promotion.ListePromotionModel.#ctor(System.Net.Http.IHttpClientFactory)">
+            <summary>
+            Constructeur qui permet de charger un http client pour faire des requete (utiliser pour les Getsur API)
+            </summary>
+            <param name="clientFactory">Parametre charger</param>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Promotion.ListePromotionModel.OnGet">
+            <summary>
+            OnGet Méthode qui est utiliser des lors de l'ouverture de la page. c'est la premier méhode a etre utiliser 
+            elle est de type  async Task pour utiliser les méhtode await Load();
+            ces méthode on un await car elle attende une reponce de API.
+            Puis que c'est la permier méthode utiliser il y a une verification si la personne qui veut rentrait dans 
+            cette page c'est bien login alor elle pourrat voir la page sionn elle sera rediriger vers la page de login
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Promotion.ListePromotionModel.Load">
+            <summary>
+            Load est une méthode qui est de type  async Task car elle attende une reponce de l'API
+            elle fait une requette Get sur l'API est charge la méthode Branches .
+            il y a une verification si la requtte c'est bien fait.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Promotion.ListePromotionModel.OnGetDeleteUser(System.Int32)">
+            <summary>
+            OnGetDeleteUser est une méthode qui permet de faire une requette de delete sur l'API. cette requette suprime une promotion et formation
+            La méthode est acitonner dans le front grasse a de l'Ajax avec l'id de l'apromotion que l'ont veus supp .la requette ce fait dans url est je 
+            met id a la fin de url.le OnGet devent le nom de la méthode est obligatoire pour appeler cette methode depuis l'Ajax. Attention le nom du 
+            parametre doit etre identique.
+            </summary>
+            <param name="id">id de la promotion que l'on veut supriment</param>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Promotion.ListePromotionModel.OnGetRecherche(System.String)">
+            <summary>
+            OnGetRecherche et une methode qui permet de faire une recherche sur la liste . elle modifi donc la liste ù
+            en fonction de ce qu'il a dans les parametre pour cela je charge la methode Branches par une requette Get 
+            cette méthode et activer par de l'ajax dans le front qui recuper le text inscrit dans input et vas charger la 
+            list . la nouvelle list sera utiliser ensuit dans le partial _PatialListPromotion
+            </summary>
+            <param name="seach">la rechere choisi dans input</param>
+            <returns>elle retune le resulta dans le partial PartialIOTDevise/_PatialListPromotion</returns>
+        </member>
+        <member name="T:Smart_ECovid_IUT.Pages.Utilisateur.CreeModifUtilisateurModel">
+            <summary>
+            CreeModifUtilisateurModel est la class principale du back " CreeModifUtilisateur.cshtml.c" de la page web " CreeModifUtilisateur.cshtml"
+            c'est dans cette class que les requette sur API sont faite et retenu dans des methode Get Set pour les utiliser dans le 
+            front
+            </summary>
+        </member>
+        <member name="F:Smart_ECovid_IUT.Pages.Utilisateur.CreeModifUtilisateurModel.utilisateur">
+            <summary>
+            objet de type Utilisateur qui me permetra d'afficher les valeur de la Utilisateur que l'on veut modifier
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.Utilisateur.CreeModifUtilisateurModel.DDNiveau">
+            <summary>
+            DDNiveau Méthode Get/Set de type IEnumerable Niveau  qui me permet de charger les Niveau(nom ,id) et de les afficher dans une DropDown 
+            pour faire mon formulaire.Il est afficher grace a un foreach qui boucle dessu sur le front
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.Utilisateur.CreeModifUtilisateurModel.User">
+            <summary>
+            User Méthode Get/Set de type Utilisateur et une méthode qui vas etre charger de la liste de promotion pour etre 
+            ensuit utiliser dans un foreach
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.Utilisateur.CreeModifUtilisateurModel.DDPromotion">
+            <summary>
+            DDPromotion Méthode Get/Set de type IEnumerable PromotionClass  qui me permet de charger les Promotion(nom ,id) et de les afficher dans une DropDown 
+            pour faire mon formulaire.Il est afficher grace a un foreach qui boucle dessu sur le front
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.Utilisateur.CreeModifUtilisateurModel.GetBranchesError">
+            <summary>
+            GetBranchesError Méthode Get/Set de type bool qui me permet de verifier si la requette et faus
+            </summary>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Utilisateur.CreeModifUtilisateurModel.#ctor(System.Net.Http.IHttpClientFactory)">
+            <summary>
+            Constructeur qui permet de charger un http client pour faire des requete (utiliser pour les Getsur API)
+            </summary>
+            <param name="clientFactory">Parametre charger</param>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Utilisateur.CreeModifUtilisateurModel.OnGet(System.Nullable{System.Int32})">
+            <summary>
+            OnGet Méthode qui est utiliser des lors de l'ouverture de la page. c'est la premier méhode a etre utiliser 
+            elle est de type  async Task pour utiliser les méhtode   await LoadDDNiveau();  await LoadFormation();
+            ces méthode on un await car elle attende une reponce de API.
+            Puis que c'est la permier méthode utiliser il y a une verification si la personne qui veut rentrait dans 
+            cette page c'est bien login alor elle pourrat voir la page sionn elle sera rediriger vers la page de login 
+            si id est non null je charge la methode  await LoadUtilisateur(id); et l'objet  utilisateur pour pouvoir 
+            fait une requette put
+            </summary>
+            <param name="id">parametre qui peut etre null. ce parametre est non null quan il y a un id dans URL</param>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Utilisateur.CreeModifUtilisateurModel.LoadUtilisateur(System.Nullable{System.Int32})">
+            <summary>
+            LoadUtilisateur est une méthode qui est de type  async Task car elle attende une reponce de l'API
+            elle fait une requette Get sur l'API est charge la méthode utilisateur .
+            il y a une verification si la requtte c'est bien fait. 
+            la methode recupaire id de la utilisateur que l'on veut modifer pour pouvoir boucler sur la liste 
+            de la utilisateur et recupéraer les bonne information de la utilisateur voulu . pour pouvoir les afficher dans 
+            les Dropdwon et input 
+            </summary>
+            <param name="id">id dans URL</param>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Utilisateur.CreeModifUtilisateurModel.LoadDDNiveau">
+            <summary>
+            LoadDDNiveau est une méthode qui est de type  async Task car elle attende une reponce de l'API
+            elle fait une requette Get sur l'API est charge la méthode DDNiveau .
+            il y a une verification si la requtte c'est bien fait.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Utilisateur.CreeModifUtilisateurModel.LoadFormation">
+            <summary>
+            LoadFormation est une méthode qui est de type  async Task car elle attende une reponce de l'API
+            elle fait une requette Get sur l'API est charge la méthode DDPromotion .
+            il y a une verification si la requtte c'est bien fait.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Utilisateur.CreeModifUtilisateurModel.Save(ClasseE_Covid.Utilisateur.Utilisateur)">
+            <summary>
+            Save est une méthode qui est de type async Task car elle attende une reponce de l'API
+            elle fait une requette Post ou put  sur l'API en fonction du param GetUtilisateurById.Id .
+            il y a une verification si la requtte c'est bien fait.
+            pour les requette post et put les valuer post sont mit dans url et le jsonData ne ce doit pas d'est correcte 
+            mais il est obligatoire. toute les post et put ce doit d'avoir un Headers.Authorization qui comporte "Bearer"et le Token
+            qui a etait recuppérait dans le login. la différence du put c'est qu'il faut metre l'id a la fin de la requette 
+            </summary>
+            <param name="item">un objet de type Utilisateur fait un post avec c'est parametre si il n'y pas null</param>
+            <returns>Message (théoriquemet redirige sur la page web des list campus)</returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Utilisateur.CreeModifUtilisateurModel.OnPostEnvoieDonne">
+            <summary>
+            OnPostEnvoieDonne est une méthode qui appler lors de l'envoie du formulaire grace  "asp-page-handler" 
+            le OnPost devent le nom est obligatoire en .Net core il indicque que le form et en Post
+            il vas donc recupérait les reponce ranplie dans le formulaire et les charger dans un objer 
+            elle apple la méthode Save et lui donne un objet de type Utilisateur en parametre
+            </summary>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Utilisateur.CreeModifUtilisateurModel.GetDataAsync(ClasseE_Covid.Utilisateur.Utilisateur)">
+            <summary>
+            cette méthode sert de passerelle entre les methode du from et celui du save pour mettre les bon parametre 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Smart_ECovid_IUT.Pages.Utilisateur.ListeUtilisateurModel">
+            <summary>
+            ListeUtilisateurModel est la class principale du back "ListeUtilisateur.cshtml.c" de la page web "ListeUtilisateur.cshtml"
+            c'est dans cette class que les requette sur API sont faite et retenu dans des methode Get Set pour les utiliser dans le front 
+            il posible aussi de faire une modification ou une suppression de batiment front
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.Utilisateur.ListeUtilisateurModel.Branches">
+            <summary>
+            Branches Méthode Get/Set de type IEnumerable Utilisateur qui me permet de charger tout les donner des Promotion et Fromation et de les afficher dans un tableau 
+            </summary>
+        </member>
+        <member name="P:Smart_ECovid_IUT.Pages.Utilisateur.ListeUtilisateurModel.GetBranchesError">
+            <summary>
+            GetBranchesError Méthode Get/Set de type bool qui me permet de verifier si la requette et faus
+            </summary>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Utilisateur.ListeUtilisateurModel.#ctor(System.Net.Http.IHttpClientFactory)">
+            <summary>
+            Constructeur qui permet de charger un http client pour faire des requete (utiliser pour les Getsur API)
+            </summary>
+            <param name="clientFactory">Parametre charger</param>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Utilisateur.ListeUtilisateurModel.OnGet">
+            <summary>
+            OnGet Méthode qui est utiliser des lors de l'ouverture de la page. c'est la premier méhode a etre utiliser 
+            elle est de type  async Task pour utiliser les méhtode await Load();
+            ces méthode on un await car elle attende une reponce de API.
+            Puis que c'est la permier méthode utiliser il y a une verification si la personne qui veut rentrait dans 
+            cette page c'est bien login alor elle pourrat voir la page sionn elle sera rediriger vers la page de login
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Utilisateur.ListeUtilisateurModel.Load">
+            <summary>
+            Load est une méthode qui est de type  async Task car elle attende une reponce de l'API
+            elle fait une requette Get sur l'API est charge la méthode Branches .
+            il y a une verification si la requtte c'est bien fait.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Utilisateur.ListeUtilisateurModel.OnGetDeleteUser(System.Int32)">
+            <summary>
+            OnGetDeleteUser est une méthode qui permet de faire une requette de delete sur l'API. cette requette suprime un utilisateur
+            La méthode est acitonner dans le front grasse a de l'Ajax avec l'id de l'apromotion que l'ont veus supp .la requette ce fait dans url est je 
+            met id a la fin de url.le OnGet devent le nom de la méthode est obligatoire pour appeler cette methode depuis l'Ajax. Attention le nom du 
+            parametre doit etre identique.
+            </summary>
+            <param name="id">id de l'utilisateur que l'on veut supriment</param>
+        </member>
+        <member name="M:Smart_ECovid_IUT.Pages.Utilisateur.ListeUtilisateurModel.OnGetRecherche(System.String)">
+            <summary>
+            OnGetRecherche et une methode qui permet de faire une recherche sur la liste . elle modifi donc la liste ù
+            en fonction de ce qu'il a dans les parametre pour cela je charge la methode Branches par une requette Get 
+            cette méthode et activer par de l'ajax dans le front qui recuper le text inscrit dans input et vas charger la 
+            list . la nouvelle list sera utiliser ensuit dans le partial _PatialListUtilisateur
+            </summary>
+            <param name="seach">la rechere choisi dans input</param>
+            <returns>elle retune le resulta dans le partial PartialIOTDevise/_PatialListUtilisateu</returns>
+        </member>
+    </members>
+</doc>

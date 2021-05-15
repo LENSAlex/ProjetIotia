@@ -15,24 +15,60 @@ using System.Net.Http.Headers;
 
 namespace Smart_ECovid_IUT.Pages.IOTDevise
 {
-   
+    /// <summary>
+    /// CreeModifIOTDeviseModel est la class principale du back "CreeModifIOTDevise.cshtml.c" de la page web "CreeModifIOTDevise.cshtml"
+    /// c'est dans cette class que les requette sur API sont faite et retenu dans des methode Get Set pour les utiliser dans le 
+    /// front
+    /// </summary>
     public class CreeModifIOTDeviseModel : PageModel
     {
         private readonly IHttpClientFactory _clientFactory;
-
+        /// <summary>
+        /// DDTypeCapteur Méthode Get/Set de type IEnumerable TypeCapteur   qui me permet de charger les DDTypeCapteur(nom ,id) et de les afficher dans une DropDown 
+        /// pour faire mon formulaire.Il est afficher grace a un foreach qui boucle dessu sur le front
+        /// </summary>
         public IEnumerable<TypeCapteur> DDTypeCapteur { get; private set; }
 
+        /// <summary>
+        /// DDValeurCapteur Méthode Get/Set de type IEnumerable ValeurCapteur   qui me permet de charger les DDValeurCapteur(nom ,id) et de les afficher dans une DropDown 
+        /// pour faire mon formulaire.Il est afficher grace a un foreach qui boucle dessu sur le front
+        /// </summary>
         public IEnumerable<ValeurCapteur> DDValeurCapteur { get; private set; }
+
+        /// <summary>
+        /// DDBox Méthode Get/Set de type IEnumerable IOTDevise   qui me permet de charger les DDBox(nom ,id) et de les afficher dans une DropDown 
+        /// pour faire mon formulaire.Il est afficher grace a un foreach qui boucle dessu sur le front
+        /// </summary>
         public IEnumerable<ClasseE_Covid.IOTDevise.IOTDevise> DDBox { get; private set; }
 
+        /// <summary>
+        /// DDSalle Méthode Get/Set de type IEnumerable Salle  qui me permet de charger les DDSalle(nom ,id) et de les afficher dans une DropDown 
+        /// pour faire mon formulaire.Il est afficher grace a un foreach qui boucle dessu sur le front
+        /// </summary>
         public IEnumerable<Salle> DDSalle { get; private set; }
 
+        /// <summary>
+        /// GetBranchesError Méthode Get/Set de type bool qui me permet de verifier si la requette et faus
+        /// </summary>
         public bool GetBranchesError { get; private set; }
 
+        /// <summary>
+        /// Constructeur qui permet de charger un http client pour faire des requete (utiliser pour les Getsur API)
+        /// </summary>
+        /// <param name="clientFactory">Parametre charger</param>
         public CreeModifIOTDeviseModel(IHttpClientFactory clientFactory)
         {
             _clientFactory = clientFactory;
         }
+
+        /// <summary>
+        /// OnGet Méthode qui est utiliser des lors de l'ouverture de la page. c'est la premier méhode a etre utiliser 
+        /// elle est de type  async Task pour utiliser les méhtode  await LoadTypeCapteur(); await LoadIOTDevise();await LoadSale();await LoadDDValuerCapteur();
+        /// ces méthode on un await car elle attende une reponce de API.
+        /// Puis que c'est la permier méthode utiliser il y a une verification si la personne qui veut rentrait dans 
+        /// cette page c'est bien login alor elle pourrat voir la page sionn elle sera rediriger vers la page de login
+        /// </summary>
+        /// <returns></returns>
         public async Task OnGet()
         {
             string login = Login.Current(HttpContext);
@@ -46,7 +82,14 @@ namespace Smart_ECovid_IUT.Pages.IOTDevise
             await LoadSale();
             await LoadDDValuerCapteur();
         }
-        public  async Task LoadIOTDevise()
+
+        /// <summary>
+        /// LoadIOTDevise est une méthode qui est de type  async Task car elle attende une reponce de l'API
+        /// elle fait une requette Get sur l'API est charge la méthode DDBox .
+        /// il y a une verification si la requtte c'est bien fait.
+        /// </summary>
+        /// <returns></returns>
+        public async Task LoadIOTDevise()
         {
             var request = new HttpRequestMessage(HttpMethod.Get,
            "http://webservice.lensalex.fr:3005/InfraProd/Box/Info");
@@ -69,6 +112,13 @@ namespace Smart_ECovid_IUT.Pages.IOTDevise
                 DDBox = Array.Empty<ClasseE_Covid.IOTDevise.IOTDevise>();
             }
         }
+
+        /// <summary>
+        /// LoadDDValuerCapteur est une méthode qui est de type  async Task car elle attende une reponce de l'API
+        /// elle fait une requette Get sur l'API est charge la méthode DDValeurCapteur .
+        /// il y a une verification si la requtte c'est bien fait.
+        /// </summary>
+        /// <returns></returns>
         public async Task LoadDDValuerCapteur()
         {
             var request = new HttpRequestMessage(HttpMethod.Get,
@@ -92,6 +142,13 @@ namespace Smart_ECovid_IUT.Pages.IOTDevise
                 DDValeurCapteur = Array.Empty<ValeurCapteur>();
             }
         }
+
+        /// <summary>
+        /// LoadSale est une méthode qui est de type  async Task car elle attende une reponce de l'API
+        /// elle fait une requette Get sur l'API est charge la méthode DDSalle .
+        /// il y a une verification si la requtte c'est bien fait.
+        /// </summary>
+        /// <returns></returns>
         public async Task LoadSale()
         {
             var request = new HttpRequestMessage(HttpMethod.Get,
@@ -115,7 +172,14 @@ namespace Smart_ECovid_IUT.Pages.IOTDevise
                 DDSalle = Array.Empty<Salle>();
             }
         }
-        public  async Task LoadTypeCapteur()
+
+        /// <summary>
+        /// LoadTypeCapteur est une méthode qui est de type  async Task car elle attende une reponce de l'API
+        /// elle fait une requette Get sur l'API est charge la méthode DDTypeCapteur.
+        /// il y a une verification si la requtte c'est bien fait.
+        /// </summary>
+        /// <returns></returns>
+        public async Task LoadTypeCapteur()
         {
             var request = new HttpRequestMessage(HttpMethod.Get,
            "http://webservice.lensalex.fr:3005/InfraProd/ListDevice");
@@ -138,6 +202,19 @@ namespace Smart_ECovid_IUT.Pages.IOTDevise
                 DDTypeCapteur = Array.Empty<TypeCapteur>();
             }
         }
+
+        /// <summary>
+        /// Save est une méthode qui est de type async Task car elle attende une reponce de l'API
+        /// elle fait une requette Post sur l'API en fonction du param qui n'est pas null.
+        /// il y a une verification si la requtte c'est bien fait. 
+        /// pour les requette post les valuer post sont mit dans url le jsonData ne ce doit pas d'étre correcte 
+        /// mais il est obligatoire. toute les post ce doit d'avoir un Headers.Authorization qui comporte "Bearer"et le Token
+        /// qui a etait recuppérait dans le login
+        /// </summary>
+        /// <param name="capteur">un objet de type Capteur fait un post avec c'est parametre si il n'y pas null</param>
+        /// <param name="actionneur">un objet de type Actionneur fait un post avec c'est parametre si il n'y pas null</param>
+        /// <param name="panneauSolaire">un objet de type PanneauSolaire fait un post avec c'est parametre si il n'y pas null</param>
+        /// <returns> Message (théoriquemet redirige sur la page web des list campus)</returns>
         internal async Task<string> Save(ClasseE_Covid.IOTDevise.Capteur capteur , Actionneur actionneur , PanneauSolaire panneauSolaire)
         {
             var httpClient = new HttpClient();
@@ -229,6 +306,13 @@ namespace Smart_ECovid_IUT.Pages.IOTDevise
             }
         }
 
+        /// <summary>
+        /// OnPostEnvoieCapteur est une méthode qui appler lors de l'envoie du formulaire grace  "asp-page-handler" 
+        /// le OnPost devent le nom est obligatoire en .Net core il indicque que le form et en Post
+        /// il vas donc recupérait les reponce ranplie dans le formulaire et les charger dans un objer 
+        /// elle apple la méthode GetDataAsync et lui donne un objet de type Capteur en parametre
+        /// sont dexieme et troisieme parametre n'a pas besoin etre ecrit car il est null de base
+        /// </summary>
         public void OnPostEnvoieCapteur()
         {
             ClasseE_Covid.IOTDevise.Capteur capteur = new ClasseE_Covid.IOTDevise.Capteur();
@@ -248,6 +332,13 @@ namespace Smart_ECovid_IUT.Pages.IOTDevise
             GetDataAsync(capteur);
         }
 
+        /// <summary>
+        /// OnPostEnvoieActionneur est une méthode qui appler lors de l'envoie du formulaire grace  "asp-page-handler" 
+        /// le OnPost devent le nom est obligatoire en .Net core il indicque que le form et en Post
+        /// il vas donc recupérait les reponce ranplie dans le formulaire et les charger dans un objer 
+        /// elle apple la méthode GetDataAsync et lui donne un objet de type Actionneur en parametre
+        ///  troisieme parametre n'a pas besoin etre ecrit car il est null de base
+        /// </summary>
         public void OnPostEnvoieActionneur()
         {
            Actionneur actionneur = new Actionneur();
@@ -259,6 +350,12 @@ namespace Smart_ECovid_IUT.Pages.IOTDevise
             GetDataAsync(null , actionneur);
         }
 
+        /// <summary>
+        /// OnPostEnvoiePannauxSolaire est une méthode qui appler lors de l'envoie du formulaire grace  "asp-page-handler" 
+        /// le OnPost devent le nom est obligatoire en .Net core il indicque que le form et en Post
+        /// il vas donc recupérait les reponce ranplie dans le formulaire et les charger dans un objer 
+        /// elle apple la méthode GetDataAsync et lui donne un objet de type PanneauSolaire en parametre
+        /// </summary>
         public void OnPostEnvoiePannauxSolaire()
         {
             PanneauSolaire panneauSolaire = new PanneauSolaire();
@@ -268,6 +365,14 @@ namespace Smart_ECovid_IUT.Pages.IOTDevise
 
             GetDataAsync(null ,null , panneauSolaire);
         }
+
+        /// <summary>
+        /// cette méthode sert de passerelle entre les methode du from et celui du save pour mettre les bon parametre 
+        /// </summary>
+        /// <param name="capteur">Objet de type Capteur qui est null de base  </param>
+        /// <param name="actionneur">Objet de type Actionneur qui est null de base  </param>
+        /// <param name="panneauSolaire">Objet de type PanneauSolaire qui est null de base  </param>
+        /// <returns></returns>
         public async Task GetDataAsync(ClasseE_Covid.IOTDevise.Capteur capteur = null, Actionneur actionneur = null, PanneauSolaire panneauSolaire = null)
         {
             await Save(capteur , actionneur , panneauSolaire);
