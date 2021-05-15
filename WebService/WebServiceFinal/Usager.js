@@ -55,7 +55,7 @@ app.get("/Usager/Load/User/:id", (req, res) => {
     console.log("test");
     //Affichage formation avec departement et duree
     console.log(req.params.id);
-    conn.query("select * from Personne where id_personne = '" + req.params.id + "'", function(err, result) {
+    conn.query("select Personne.id_personne , Personne.num_ref , Personne.email , Personne.telephone , Personne.sexe , Personne.nom , Personne.prenom , Personne.date_anniversaire , Personne.rfid , Formation.id_formation , Formation.nom , PersonneType.libelle from Personne , Contenir , Promotion , Formation , PersonneType where Personne.id_pers_type = PersonneType.id_pers_type AND Personne.id_personne = Contenir.id_eleve AND Contenir.id_promotion = Promotion.id_promotion AND Promotion.id_formation = Formation.id_formation AND Personne.id_personne = '" + req.params.id + "'  ", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -68,7 +68,7 @@ app.get("/Usager/Load/User/:id", (req, res) => {
 app.get("/Usager/ListPromo", (req, res) => {
 
     //Affichage formation avec departement et duree
-    conn.query("select P.id_professeur ,Pers.nom as nomProf ,Pers.prenom, P.id_promotion , F.nom , P.annee ,F.duree from Promotion P , Formation F , Departement D , Personne Pers where P.id_formation = F.id_formation and D.id_departement = F.id_departement and P.id_professeur = Pers.id_personne", function(err, result) {
+    conn.query("select P.id_professeur ,Pers.nom as nomProf ,Pers.prenom, P.id_promotion , F.nom , P.annee ,F.duree , D.id_departement , D.name from Promotion P , Formation F , Departement D , Personne Pers where P.id_formation = F.id_formation and D.id_departement = F.id_departement and P.id_professeur = Pers.id_personne", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
@@ -78,7 +78,7 @@ app.get("/Usager/ListPromo", (req, res) => {
     })
 })
 
-app.get("/Usager/ListPromo/:id", (req, res) => {
+app.get("/Usager/ListPromo/Detail/:id", (req, res) => {
 
     //Affichage formation avec departement et duree
     conn.query("select P.id_professeur ,Pers.nom ,Pers.prenom, P.id_promotion , F.nom as NomPromo , P.annee ,F.duree , D.name as NomDepartement , D.id_departement from Promotion P , Formation F , Departement D , Personne Pers where P.id_formation = F.id_formation and D.id_departement = F.id_departement and P.id_professeur = Pers.id_personne and F.id_formation = '" + req.params.id + "'", function(err, result) {
