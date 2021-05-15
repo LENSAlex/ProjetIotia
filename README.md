@@ -9,7 +9,9 @@ Ce web service est une api de type REST , codé grace a Node JS.
 
 Les codes qui constitue le WebService ce trouve [ici](https://github.com/LENSAlex/ProjetIotia/tree/WebService/WebService)
 
-Pour **utiliser** les service cela se passe pour l'instant sur l'ip ```http://51.75.125.121```
+Vous pouvez vous rendre sur le site [webservice.lensalex.fr](http://webservice.lensalex.fr)  il y a une page d'acceuil qui ramene sur les **documentations des services**.
+
+Il est également possible de **tester** ces requetes avec la documentation swagger en renseignant les parametres requis si il y en a.
 
 Ce WebService est décomposé en plusieurs services voir le tableau ci dessous:
 | Nom du service | Port | Remarque |
@@ -20,8 +22,6 @@ Ce WebService est décomposé en plusieurs services voir le tableau ci dessous:
 | Infra admin  | 3004 | Modification de valeur , usager , capteur , ...  |
 | Infra PROD  | 3005 | Capteur et actionneurs |
 | Alerte  | 3006 | Alerte (covid , personne , actionneur)  |
-
-A remplacer infrastcture et capteurs et mettre alerte.
 
 --> Tout ces services possede leurs propres documentation sur la route  ```/docs ``` (exemple:  ```localhost:3000/docs ``` documentation pour le service Batiment)
 

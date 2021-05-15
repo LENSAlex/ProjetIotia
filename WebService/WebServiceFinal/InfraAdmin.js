@@ -7,10 +7,10 @@ var app = express();
 var swaggerTools  = require('swagger-tools');
 var swaggerDoc = require('./InfraAdmin.json')  
 
-
 //JWT
 const jwt = require('jsonwebtoken');
 
+//PORT
 const port = 3004;
 
 // BDD--------------------
