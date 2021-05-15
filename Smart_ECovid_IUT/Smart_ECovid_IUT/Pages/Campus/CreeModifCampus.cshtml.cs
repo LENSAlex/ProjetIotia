@@ -36,7 +36,7 @@ namespace Smart_ECovid_IUT.Pages.Campus
         public IEnumerable<ClasseE_Covid.Campus.Campus> DDCampus { get; private set; } //IOTDevise et une class
 
         /// <summary>
-        /// etage  Méthode Get/Set de type  IEnumerable Etage qui me permet de charger les DDCampus(nom ,id) et de les afficher dans une DropDown 
+        /// etage  Méthode Get/Set de type  IEnumerable Etage qui me permet de charger les etage(nom ,id) et de les afficher dans une DropDown 
         /// pour faire mon formulaire. Il est afficher grace a un foreach qui boucle dessu sur le front
         /// </summary>
         public IEnumerable<Etage> etage { get; set; } //IOTDevise et une class

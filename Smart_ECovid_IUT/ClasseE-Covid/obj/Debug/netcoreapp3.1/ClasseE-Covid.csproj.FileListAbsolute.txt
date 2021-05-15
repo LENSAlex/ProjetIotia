@@ -43,3 +43,4 @@ D:\TAFF\IOTIATravaille\CourAcctuelle\ProjetFinAnnee\Smart_ECovid_IUT\ClasseE-Cov
 D:\TAFF\IOTIATravaille\CourAcctuelle\ProjetFinAnnee\Smart_ECovid_IUT\ClasseE-Covid\obj\Debug\netcoreapp3.1\ClasseE-Covid.dll
 D:\TAFF\IOTIATravaille\CourAcctuelle\ProjetFinAnnee\Smart_ECovid_IUT\ClasseE-Covid\obj\Debug\netcoreapp3.1\ClasseE-Covid.pdb
 D:\TAFF\IOTIATravaille\CourAcctuelle\ProjetFinAnnee\Smart_ECovid_IUT\ClasseE-Covid\obj\Debug\netcoreapp3.1\ClasseE-Covid.csprojAssemblyReference.cache
+D:\TAFF\IOTIATravaille\CourAcctuelle\ProjetFinAnnee\Smart_ECovid_IUT\ClasseE-Covid\bin\Debug\netcoreapp3.1\ClasseE-Covid.xml

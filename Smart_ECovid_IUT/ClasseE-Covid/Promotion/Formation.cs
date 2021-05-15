@@ -7,23 +7,35 @@ using ClasseE_Covid.Promotion.Manager;
 
 namespace ClasseE_Covid.Promotion
 {
+    /// <summary>
+    /// Formation et une class qui est utiliser pour recupére les valuer des requette Post , Put Formation
+    /// </summary>
     public class Formation
     {
-      //  ManagerFormation managerFormation;
+        /// <summary>
+        /// int Recupére la valeur du IdDepartement
+        /// </summary>
         public int IdDepartement { get; set; }
 
+        /// <summary>
+        /// string Recupére la valeur du NomFormation
+        /// </summary>
         public string NomFormation { get; set; }
 
+        /// <summary>
+        /// int Recupére la valeur du DureeFormation
+        /// </summary>
         public int DureeFormation { get; set; }
 
+        /// <summary>
+        /// int Recupére la valeur du AnneePromotion
+        /// </summary>
         public int AnneePromotion { get; set; }
 
+        /// <summary>
+        /// int Recupére la valeur du IdProfesseurPromotion
+        /// </summary>
         public int IdProfesseurPromotion { get; set; }
-
-        //public static async Task PostFormation(Formation formation)
-        //{
-        //    await ManagerFormation.Save(formation);
-        //}
 
     }
 }

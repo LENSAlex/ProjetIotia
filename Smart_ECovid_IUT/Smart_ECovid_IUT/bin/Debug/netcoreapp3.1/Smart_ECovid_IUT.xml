@@ -24,7 +24,7 @@
         </member>
         <member name="P:Smart_ECovid_IUT.Pages.Campus.CreeModifCampusModel.etage">
             <summary>
-            etage  Méthode Get/Set de type  IEnumerable Etage qui me permet de charger les DDCampus(nom ,id) et de les afficher dans une DropDown 
+            etage  Méthode Get/Set de type  IEnumerable Etage qui me permet de charger les etage(nom ,id) et de les afficher dans une DropDown 
             pour faire mon formulaire. Il est afficher grace a un foreach qui boucle dessu sur le front
             </summary>
         </member>

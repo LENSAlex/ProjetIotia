@@ -1,0 +1,849 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ClasseE-Covid</name>
+    </assembly>
+    <members>
+        <member name="T:ClasseE_Covid.Campus.Campus">
+            <summary>
+            Campus et une class qui est utiliser pour recupére les valuer des requette Get l'aure de l'affichage d'un campus
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.Campus.IdCampus">
+            <summary>
+            Recupére le parametre id_site dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.Campus.NomCampus">
+            <summary>
+            Recupére le parametre nom dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.Campus.NBSalleCampus">
+            <summary>
+            Recupére le parametre nbsalle (nombre de salle) dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.Campus.IdBatiment">
+            <summary>
+            Recupére le parametre id_batiment  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.Campus.NomBatimen">
+            <summary>
+            Recupére le parametre NomBatiment  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.Campus.NBEtageCampus">
+            <summary>
+            Recupére le parametre NBEtage (nombre d'etage)  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.Campus.IdEtage">
+            <summary>
+            Recupére le parametre id_etage  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.Campus.NomBatEtage">
+            <summary>
+            Recupére le parametre nomff (nom bat etage)  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.Campus.NumEtage">
+            <summary>
+            Recupére le parametre num (numéro de l'etage)  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="T:ClasseE_Covid.Campus.DDEtage">
+            <summary>
+            class utiliser pour recupérer la superfucie des etage dans un formulaire
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.DDEtage.DDIdEtage">
+            <summary>
+            recupere l'id 
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.DDEtage.DDNumEtage">
+            <summary>
+            recupaire le numéro de l'étage
+            </summary>
+        </member>
+        <member name="T:ClasseE_Covid.Campus.Etage">
+            <summary>
+            Etage et une class qui est utiliser pour recupére les valuer des requette Get l'aure de l'affichage des etages
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.Etage.IdEtage">
+            <summary>
+            Recupére le parametre id_etage dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.Etage.NomBatiment">
+            <summary>
+            Recupére le parametre nom dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.Etage.NumEtage">
+            <summary>
+            Recupére le parametre num (numéro d'étage) dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="T:ClasseE_Covid.Campus.OccupationBatiment">
+            <summary>
+            OccupationBatiment et une class qui est utiliser pour recupére les valuer des requette Get  d'un taux d'Occupation Batiment
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.OccupationBatiment.IdBatiment">
+            <summary>
+            Recupére le parametre id_batiment dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.OccupationBatiment.NomBatiment">
+            <summary>
+            Recupére le parametre nom batiment dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.OccupationBatiment.TauxOccupation">
+            <summary>
+            Recupére le parametre taux_occupation dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.OccupationBatiment.CapaciteMaxBat">
+            <summary>
+            Recupére le parametre capacite_max_batiment dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="T:ClasseE_Covid.Campus.OccupationSite">
+            <summary>
+            OccupationSite et une class qui est utiliser pour recupére les valuer des requette Get  d'un taux d'Occupation Site
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.OccupationSite.IdSite">
+            <summary>
+            Recupére le parametre id_site dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.OccupationSite.NomSite">
+            <summary>
+            Recupére le parametre nom site dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.OccupationSite.TauxOccupation">
+            <summary>
+            Recupére le parametre taux_occupation dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.OccupationSite.CapaciteMaxSite">
+            <summary>
+            Recupére le parametre capacite_max_site dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="T:ClasseE_Covid.Campus.PostBatiementEtage">
+            <summary>
+            PostBatiementEtage et une class qui est utiliser pour recupére les valuer des requette Post des Etage du Batiement 
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.PostBatiementEtage.Nom">
+            <summary>
+            string Recupére la valeur du nom
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.PostBatiementEtage.Superficie">
+            <summary>
+            intRecupére la valeur du Superficie
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.PostBatiementEtage.IdCampus">
+            <summary>
+            int  Recupére la valeur du IdCampus
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.PostBatiementEtage.EtageSuperficie">
+            <summary>
+            string[]  Recupére la valeur du EtageSuperficie
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.PostBatiementEtage.NbEtage">
+            <summary>
+            int  Recupére la valeur du NbEtage
+            </summary>
+        </member>
+        <member name="T:ClasseE_Covid.Campus.PostBatimentSalle">
+            <summary>
+            PostBatimentSalle et une class qui est utiliser pour recupére les valuer des requette Post  des Salle du Batiement 
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.PostBatimentSalle.Nom">
+            <summary>
+            string Recupére la valeur du nom
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.PostBatimentSalle.Volume">
+            <summary>
+            int Recupére la valeur du Volume
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.PostBatimentSalle.NomSalle">
+            <summary>
+            int Recupére la valeur du NomSalle
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.PostBatimentSalle.CapaciteMax">
+            <summary>
+            int Recupére la valeur du CapaciteMax
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.PostBatimentSalle.SalleSurface">
+            <summary>
+            int Recupére la valeur du SalleSurface
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.PostBatimentSalle.IdEtage">
+            <summary>
+            int Recupére la valeur du IdEtage
+            </summary>
+        </member>
+        <member name="T:ClasseE_Covid.Campus.Salle">
+            <summary>
+            Salle et une class qui est utiliser pour recupére les valuer des requette Get  d'un salle
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.Salle.IdSalle">
+            <summary>
+            Recupére le parametre id_salle dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Campus.Salle.NomBatiment">
+            <summary>
+            Recupére le parametre nom dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="T:ClasseE_Covid.Capteur.Co2">
+            <summary>
+            Co2 et une class qui est utiliser pour recupére les valuer des requette Get du Co2
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Capteur.Co2.NomCo2">
+            <summary>
+            Recupére le parametre libelle_type (Nom Co2) dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Capteur.Co2.NomBox">
+            <summary>
+            Recupére le parametre libelle (Nom Box) dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Capteur.Co2.ValeurCo2">
+            <summary>
+            Recupére le parametre valeur  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Capteur.Co2.NomSalle">
+            <summary>
+            Recupére le parametre Nom Salle dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Capteur.Co2.NomEtage">
+            <summary>
+            Recupére le parametre Nom Etage dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Capteur.Co2.NomBatiment">
+            <summary>
+            Recupére le parametre Nom Batiment dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Capteur.Co2.NomSite">
+            <summary>
+            Recupére le parametre Nom Site dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Capteur.Co2.Date">
+            <summary>
+            Recupére le parametre date_historique dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="T:ClasseE_Covid.Capteur.Energie">
+            <summary>
+            Energie et une class qui est utiliser pour recupére les valuer des requette Get sur la depence énergétique des box
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Capteur.Energie.NomBox">
+            <summary>
+            Recupére le parametre libelle_type (Nom Box) dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Capteur.Energie.ValeurEnergie">
+            <summary>
+            Recupére le parametre valeur dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="T:ClasseE_Covid.Capteur.Temperature">
+            <summary>
+            Temperature et une class qui est utiliser pour recupére les valuer des requette Get sur la température
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Capteur.Temperature.NomTemp">
+            <summary>
+            Recupére le parametre libelle_type (Nom capteur temp) dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Capteur.Temperature.NomBox">
+            <summary>
+            Recupére le parametre libelle (Nom Box) dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Capteur.Temperature.ValeurTemp">
+            <summary>
+            Recupére le parametre valeur  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="T:ClasseE_Covid.Capteur.TypeCapteur">
+            <summary>
+            TypeCapteur et une class qui est utiliser pour recupére les valuer des requette Get sur les Type de Capteur
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Capteur.TypeCapteur.IdTypeDevice">
+            <summary>
+            Recupére le parametre id_devicetype dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Capteur.TypeCapteur.NomTypeDevice">
+            <summary>
+            Recupére le parametre libelle_type (Nom Type Device) dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="T:ClasseE_Covid.Capteur.ValeurCapteur">
+            <summary>
+            TypeCapteur et une class qui est utiliser pour recupére les valuer des requette Get sur les Type de Capteur
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Capteur.ValeurCapteur.IdValuetype">
+            <summary>
+            Recupére le parametre id_valuetype dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Capteur.ValeurCapteur.NomValuetype">
+            <summary>
+            Recupére le parametre libelle (Nom Valuetype) dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Capteur.ValeurCapteur.UniterValuetype">
+            <summary>
+            Recupére le parametre unite  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="T:ClasseE_Covid.IOTDevise.Actionneur">
+            <summary>
+            Actionneur et une class qui est utiliser pour recupére les valuer des requette Post, Put des Actionneur
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.IOTDevise.Actionneur.IdBox">
+            <summary>
+            int Recupére la valeur du IdBox
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.IOTDevise.Actionneur.IdValueType">
+            <summary>
+            int Recupére la valeur du IdValueType
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.IOTDevise.Actionneur.Libelle">
+            <summary>
+            string Recupére la valeur du Libelle
+            </summary>
+        </member>
+        <member name="T:ClasseE_Covid.IOTDevise.Capteur">
+            <summary>
+            Capteur et une class qui est utiliser pour recupére les valuer des requette Post , Put des Capteur
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.IOTDevise.Capteur.IdSalle">
+            <summary>
+            int Recupére la valeur du IdSalle
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.IOTDevise.Capteur.IdDeviceType">
+            <summary>
+            int Recupére la valeur du IdDeviceType
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.IOTDevise.Capteur.AddrMac">
+            <summary>
+            string Recupére la valeur du AddrMac
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.IOTDevise.Capteur.AddrIp">
+            <summary>
+            string Recupére la valeur du AddrIp
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.IOTDevise.Capteur.LibelleBox">
+            <summary>
+            string Recupére la valeur du LibelleBox
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.IOTDevise.Capteur.DescriptionBox">
+            <summary>
+            string Recupére la valeur du DescriptionBox
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.IOTDevise.Capteur.DateInstallation">
+            <summary>
+            string Recupére la valeur du DateInstallation
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.IOTDevise.Capteur.LibelleDevice">
+            <summary>
+            string Recupére la valeur du LibelleDevice
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.IOTDevise.Capteur.SeuilMin">
+            <summary>
+            int Recupére la valeur du SeuilMin
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.IOTDevise.Capteur.SeuilMax">
+            <summary>
+            int Recupére la valeur du SeuilMax
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.IOTDevise.Capteur.IdValeurType">
+            <summary>
+            int Recupére la valeur du IdValeurType
+            </summary>
+        </member>
+        <member name="T:ClasseE_Covid.IOTDevise.IOTDevise">
+            <summary>
+            IOTDevise et une class qui est utiliser pour recupére les valuer des requette Get sur les IOT Devise
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.IOTDevise.IOTDevise.Id_box">
+            <summary>
+            Recupére le parametre id_box  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.IOTDevise.IOTDevise.NomBox">
+            <summary>
+            Recupére le parametre libelle (Nom Box) dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.IOTDevise.IOTDevise.AdrIpBox">
+            <summary>
+            Recupére le parametre adr_ip  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.IOTDevise.IOTDevise.DescriptionBox">
+            <summary>
+            Recupére le parametre description  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.IOTDevise.IOTDevise.NomBatimentBox">
+            <summary>
+            Recupére le parametre nom (Nom Batiment Box) dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.IOTDevise.IOTDevise.IdEtageBox">
+            <summary>
+            Recupére le parametre id_etage  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.IOTDevise.IOTDevise.IdSalleBox">
+            <summary>
+            Recupére le parametre NomSalle dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.IOTDevise.IOTDevise.NbPanneauSolaire">
+            <summary>
+            Recupére le parametre PanneauSolaire  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.IOTDevise.IOTDevise.NbBouton">
+            <summary>
+            Recupére le parametre NbBouton dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="T:ClasseE_Covid.IOTDevise.ListeCapteur">
+            <summary>
+            ListeCapteur et une class qui est utiliser pour recupére les valuer des requette Get des Liste apteur
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.IOTDevise.ListeCapteur.IdCapteur">
+            <summary>
+            Recupére le parametre id_device  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.IOTDevise.ListeCapteur.NomCapteur">
+            <summary>
+            Recupére le parametre libelle_type (Nom Capteur)  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.IOTDevise.ListeCapteur.NomBox">
+            <summary>
+            Recupére le parametre libelle (Nom Box)  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="T:ClasseE_Covid.IOTDevise.PanneauSolaire">
+            <summary>
+            PostBatimentSalle et une class qui est utiliser pour recupére les valuer des requette Post  des Salle du Batiement 
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.IOTDevise.PanneauSolaire.IdBox">
+            <summary>
+            int Recupére la valeur du IdBox
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.IOTDevise.PanneauSolaire.Libelle">
+            <summary>
+            string Recupére la valeur du Libelle
+            </summary>
+        </member>
+        <member name="T:ClasseE_Covid.LogAlerte.LogAlerte">
+            <summary>
+            LogAlerte et une class qui est utiliser pour recupére les valuer des requette Get sur Alert des cas covid
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.LogAlerte.LogAlerte.nomCasCovid">
+            <summary>
+            Recupére le parametre nom  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.LogAlerte.LogAlerte.prenomCasCovid">
+            <summary>
+            Recupére le parametre prenom  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.LogAlerte.LogAlerte.DateCasCovid">
+            <summary>
+            Recupére le parametre date_declaration dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.LogAlerte.LogAlerte.PromoCasCovid">
+            <summary>
+            Recupére le parametre name dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.LogAlerte.LogAlerte.NbCasCovid">
+            <summary>
+            Recupére le parametre NbCasCovid dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="T:ClasseE_Covid.Login">
+            <summary>
+            Login est la class qui permet de grade la session ouverte de l'admin et peut aussi logout 
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Login.Mdp">
+            <summary>
+            sauvgarde du mdp du login de la session
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Login.NomLogin">
+            <summary>
+            sauvgarde du Nom  du login de la session
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Login.Token">
+            <summary>
+            sauvgarde du Token  du login de la session
+            </summary>
+        </member>
+        <member name="M:ClasseE_Covid.Login.Current(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Verification si la personne qui vas sur une page qu'il a bien le token 
+            </summary>
+            <param name="context">La session</param>
+            <returns>null si il a pas de token et le token si il a le token </returns>
+        </member>
+        <member name="M:ClasseE_Covid.Login.logout(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            deconnertion
+            </summary>
+            <param name="context">La session</param>
+        </member>
+        <member name="T:ClasseE_Covid.Promotion.Formation">
+            <summary>
+            Formation et une class qui est utiliser pour recupére les valuer des requette Post , Put Formation
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Promotion.Formation.IdDepartement">
+            <summary>
+            int Recupére la valeur du IdDepartement
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Promotion.Formation.NomFormation">
+            <summary>
+            string Recupére la valeur du NomFormation
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Promotion.Formation.DureeFormation">
+            <summary>
+            int Recupére la valeur du DureeFormation
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Promotion.Formation.AnneePromotion">
+            <summary>
+            int Recupére la valeur du AnneePromotion
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Promotion.Formation.IdProfesseurPromotion">
+            <summary>
+            int Recupére la valeur du IdProfesseurPromotion
+            </summary>
+        </member>
+        <member name="T:ClasseE_Covid.Promotion.PromotionClass">
+            <summary>
+            PromotionClass et une class qui est utiliser pour recupére les valuer des requette Get sur Promotion Class
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Promotion.PromotionClass.Nom">
+            <summary>
+            Recupére le parametre nom  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Promotion.PromotionClass.Annee">
+            <summary>
+            Recupére le parametre annee  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Promotion.PromotionClass.Duree">
+            <summary>
+            Recupére le parametre duree  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Promotion.PromotionClass.Id">
+            <summary>
+            Recupére le parametre id_promotion  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Promotion.PromotionClass.IdProf">
+            <summary>
+            Recupére le parametre id_professeur  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Promotion.PromotionClass.PernomProf">
+            <summary>
+            Recupére le parametre prenom dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Promotion.PromotionClass.NomProf">
+            <summary>
+            Recupére le parametre nomProf  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="T:ClasseE_Covid.Promotion.PutFormationId">
+            <summary>
+            PostBatimentSalle et une class qui est utiliser pour recupére les valuer des requette Put  des Salle du Batiement 
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Promotion.PutFormationId.IdFormation">
+            <summary>
+            int? Recupére la valeur de l'id de la Formation modifer
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Promotion.PutFormationId.IdPromo">
+            <summary>
+            int? Recupére la valeur de l'id de la Promotion modifer
+            </summary>
+        </member>
+        <member name="T:ClasseE_Covid.Utilisateur.GetUtilisateurById">
+            <summary>
+            GetUtilisateurById et une class qui est utiliser pour recupére les valuer des requette Get avec un parametre sur un utilisateur 
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Utilisateur.GetUtilisateurById.Id">
+            <summary>
+            Recupére le parametre id_personne  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="T:ClasseE_Covid.Utilisateur.Niveau">
+            <summary>
+            Niveau et une class qui est utiliser pour recupére les valuer des requette Get sur Niveau 
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Utilisateur.Niveau.IdNiveau">
+            <summary>
+            Recupére le parametre id_pers_type  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Utilisateur.Niveau.LeNiveau">
+            <summary>
+            Recupére le parametre libelle  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="T:ClasseE_Covid.Utilisateur.Prof">
+            <summary>
+            Prof et une class qui est utiliser pour recupére les valuer des requette Get sur Professeur 
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Utilisateur.Prof.IdProf">
+            <summary>
+            Recupére le parametre id_professeur  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Utilisateur.Prof.NomProf">
+            <summary>
+            Recupére le parametre nom  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Utilisateur.Prof.PrenomProf">
+            <summary>
+            Recupére le parametre prenom  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="T:ClasseE_Covid.Utilisateur.Utilisateur">
+            <summary>
+            Utilisateur et une class qui est utiliser pour recupére les valuer des requette Get avec un parametre sur utilisateur 
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Utilisateur.Utilisateur.Id">
+            <summary>
+            Recupére le parametre id_personne  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Utilisateur.Utilisateur.NumRef">
+            <summary>
+            Recupére le parametre num_ref  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Utilisateur.Utilisateur.IdPersType">
+            <summary>
+            Recupére le parametre id_pers_type  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Utilisateur.Utilisateur.Pwd">
+            <summary>
+            Recupére le parametre password  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Utilisateur.Utilisateur.Email">
+            <summary>
+            Recupére le parametre email  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Utilisateur.Utilisateur.Telephone">
+            <summary>
+            Recupére le parametre telephone  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Utilisateur.Utilisateur.Sexe">
+            <summary>
+            Recupére le parametre sexe  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Utilisateur.Utilisateur.NomFormation">
+            <summary>
+            Recupére le parametre NomFormation  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Utilisateur.Utilisateur.Nom">
+            <summary>
+            Recupére le parametre nom  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Utilisateur.Utilisateur.Prenom">
+            <summary>
+            Recupére le parametre prenom  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Utilisateur.Utilisateur.Anniv">
+            <summary>
+            Recupére le parametre date_anniversaire  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Utilisateur.Utilisateur.Niveau">
+            <summary>
+            Recupére le parametre libelle  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+        <member name="P:ClasseE_Covid.Utilisateur.Utilisateur.Promotion">
+            <summary>
+            Recupére le parametre IdPromo  dans sur la requette Get
+            JsonPropertyName est utiliser pour sibler la variable de API
+            </summary>
+        </member>
+    </members>
+</doc>
