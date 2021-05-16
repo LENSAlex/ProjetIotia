@@ -1,4 +1,4 @@
-# ProjetIotia
+# Projet E-Covid
 
 # Présentation :
 Vous trouverez l'ensemble des codes pour les différents capteurs (PIR, Ouverture/fermeture fenêtre et Gaz) ainsi que le code pour l'haut parleur utilisé pour les alertes qui est déployé sur un M5Stack.
