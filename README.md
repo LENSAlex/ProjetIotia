@@ -140,17 +140,17 @@ et faire :
 
 `sudo nano python_RFID.service`
 
-et mettre le code [suivant](https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/CodePython/face_detetection/haarcascade_frontalface_default.xml)
+et mettre le code [suivant](https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/Service/python_RFID.service)
 puis faire CTRL+X et Y pour retourner sur le bash.
 
 `sudo nano python_face_detection.service`
 
-et mettre le code [suivant](https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/CodePython/face_detetection/haarcascade_frontalface_default.xml)
+et mettre le code [suivant](https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/Service/python_face_detection.service)
 puis faire CTRL+X et Y pour retourner sur le bash.
 
 `sudo nano python_BTH.service`
 
-et mettre le code [suivant](https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/CodePython/face_detetection/haarcascade_frontalface_default.xml)
+et mettre le code [suivant](https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/Service/python_BTH.service)
 puis faire CTRL+X et Y pour retourner sur le bash.
 
 pour donner les droit des fichiers et activer les services:
