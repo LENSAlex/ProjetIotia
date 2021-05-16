@@ -58,6 +58,10 @@ Pour le projet Web:
 - 1] Ouvrez l'application
 - 2] Vous arrivez ensuite sur une page d'authentification, utiliser vos identifiants de connexion 
 - 3] Vous avez ensuite accès aux pages de l'application web et au tableau de bord (Acccuil) avec c'est 3 card clicable et ca bar de navigation a gauche
+- 4] Pour crée un Utilisateur , Promotion , Module ou Batiment il vous faul aller dans la bar de navigation et choisir ce que vous voulez créé
+- 5] Pour voir un Utilisateur , Promotion , Module ou Batiment il vous faul aller dans la bar de navigation et choisir ce que vous voulez regarder
+- 6] Pour modifier un Utilisateur , Promotion , Module ou Batiment il vous faul aller dans la bar de navigation , puis dans la liste d'affichage que vous voulez puit choisir
+- 7] Pour supprimer un Utilisateur , Promotion , Module ou Batiment il vous faul aller dans la bar de navigation , puis dans la liste d'affichage que vous voulez puit choisir
 
 
 # Définitions des WebServices:
