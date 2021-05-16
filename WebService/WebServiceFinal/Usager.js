@@ -68,7 +68,7 @@ app.get("/Usager/Load/User/:id", (req, res) => {
 app.get("/Usager/ListPromo", (req, res) => {
 
     //Affichage formation avec departement et duree
-    conn.query("select P.id_professeur ,Pers.nom as nomProf ,Pers.prenom, P.id_promotion , F.nom , P.annee ,F.duree , D.id_departement , D.name from Promotion P , Formation F , Departement D , Personne Pers where P.id_formation = F.id_formation and D.id_departement = F.id_departement and P.id_professeur = Pers.id_personne", function(err, result) {
+    conn.query("select P.id_professeur ,Pers.nom as nomProf ,Pers.prenom, P.id_promotion , F.nom , P.annee ,F.duree , D.id_departement , D.name , F.id_formation from Promotion P , Formation F , Departement D , Personne Pers where P.id_formation = F.id_formation and D.id_departement = F.id_departement and P.id_professeur = Pers.id_personne", function(err, result) {
         if (err)
             res.status(400).json({ ErrorRequete: 'Requete invalid' });
         else {
