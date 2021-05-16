@@ -13,7 +13,7 @@ import paho.mqtt.client as mqtt
 #timer
 from time import sleep
 
-#addresse ip broker mqtt
+#adresse ip broker mqtt
 broker_address="192.168.143.136"
 
 #nomde notre client mqtt
