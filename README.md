@@ -57,4 +57,117 @@ Veuillez réaliser les actions suivantes : (Avoir un M5Stack)</br>
 **5°** : Choissez le port de votre M5StickC puis téléverser votre programme.</br>
 
 _________________________________________________________________________________________________________________________________________________________________________________
+# Configuration Raspberry
+
+# Présentation :
+Vous trouverez ci dessous l'ensemble des codes python à installer sur le raspberry ainsi que les commande à utiliser pour parametrer le rapsberry et que le systeme fonctionne.
+
+# Installation des Packets :
+Normalement python est installé de base sur le raspberry, il faudra verifier si c'est bon et que python2 et python3 sont installé puis il vous faudra lancer les commandes suivantes pour installer les librairies python:
+
+`sudo pip3 install opencv-python`
+
+`sudo pip install paho-mqtt`
+
+`sudo pip3 install paho-mqtt`
+
+`sudo pip3 install bluepy`
+
+maintenant il faudra créer un dossier appelé project avec un doosier driver à l'interieur ce sera la librairie de l'écran lcd:
+
+`sudo mkdir project`
+
+`sudo mkdir drivers`
+
+et mettre les 4 fichiers qui se trouve [ici](https://github.com/LENSAlex/ProjetIotia/tree/Code_Capteur/CodePython/RFID/drivers) puis faire un :
+
+`cd ..`
+
+# Installation des Codes python :
+
+## Code lecteur RFID :
+
+L'explication du code RFID se trouve [ici](https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationRFID.adoc)
+
+Pour mettre le code suivant il faudra que vous soyez dans le dossier project puis faire :
+
+`sudo nano RFID.py`
+
+Copié le code [suivant](https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/CodePython/RFID/read_RFID.py)
+puis faire CTRL+X et Y pour retourner sur le bash.
+
+## Code de detection des visages :
+
+L'explication du code de detection des visages se trouve [ici](https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationFaceDetection.adoc)
+
+Pour mettre le code suivant il faudra que vous soyez dans le dossier project puis faire :
+
+`sudo nano face_detection.py`
+
+Copié le code [suivant](https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/CodePython/face_detetection/face_detection.py)
+puis faire CTRL+X et Y pour retourner sur le bash.
+
+Et pour ajouter le fichier XML qui permet de detecter les visages il faudra faire :
+
+`sudo nano haarcascade_frontalface_default.xml`
+
+Copié le code [suivant](https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/CodePython/face_detetection/haarcascade_frontalface_default.xml)
+puis faire CTRL+X et Y pour retournersur le bash.
+
+## Code des capteurs bluetooth :
+
+L'explication du code des capteurs bluetooth se trouve [ici](https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationFaceDetection.adoc)
+
+Pour mettre le code suivant il faudra que vous soyez dans le dossier project puis faire :
+
+`sudo nano codeCapteurs_Fenetre_HautParleur_Mouvements_Gaz.py`
+
+Copié le code [suivant](https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/CodePython/Fenetre_HautParleur_Mouvement_Gaz/codeCapteurs_Fenetre_HautParleur_Mouvements_Gaz.py)
+puis faire CTRL+X et Y pour retourner sur le bash.
+
+# Service
+
+# Présentation 
+Pour qu'un raspberry lance des programmes automatiquement lors de son démmarage, il faut créer des services pour lancer les programmes python.
+Cela va nous permettre ainsi de pouvoir relancer le programme sans aller la ou ce situe le code et de connaitre le status du service. 
+
+## installation des services 
+Pour installer les services il faudra aller dans le dossier system en faisant cette commande :
+
+`cd /lib/systemd/system`
+
+et faire :
+
+`sudo nano python_RFID.service`
+
+et mettre le code [suivant](https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/CodePython/face_detetection/haarcascade_frontalface_default.xml)
+puis faire CTRL+X et Y pour retourner sur le bash.
+
+`sudo nano python_face_detection.service`
+
+et mettre le code [suivant](https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/CodePython/face_detetection/haarcascade_frontalface_default.xml)
+puis faire CTRL+X et Y pour retourner sur le bash.
+
+`sudo nano python_BTH.service`
+
+et mettre le code [suivant](https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/CodePython/face_detetection/haarcascade_frontalface_default.xml)
+puis faire CTRL+X et Y pour retourner sur le bash.
+
+pour donner les droit des fichiers et activer les services:
+
+`sudo chmod 644 /lib/systemd/system/python_RFID.service`
+
+`sudo chmod 644 /lib/systemd/system/python_face_detection.service`
+
+`sudo chmod 644 /lib/systemd/system/python_BTH.service`
+
+`sudo systemctl daemon-reload`
+
+`sudo systemctl enable python_RFID.service`
+
+`sudo systemctl enable python_face_detection.service`
+
+`sudo systemctl enable python_BTH.service`
+
+et faire un `sudo reboot` pour voir si les services ce lance et que les programmes fonctionnent
 _________________________________________________________________________________________________________________________________________________________________________________
