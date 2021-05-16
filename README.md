@@ -55,3 +55,5 @@ Veuillez réaliser les actions suivantes : (Avoir un M5Stack)</br>
 **3°** : Dans *Outils* -> *Type de cartes* -> *Gestionnaire de Carte* -> Recherchez "*esp32*"</br>
 **4°** : Toujours dans *Outils* -> *Type de cartes* -> *Gestionnaire de Carte* -> *ESP32 Arduino* -> Sélectionnez "*M5Stack-core-ESP 32*"</br>
 **5°** : Choissez le port de votre M5StickC puis téléverser votre programme.</br>
+
+_________________________________________________________________________________________________________________________________________________________________________________
