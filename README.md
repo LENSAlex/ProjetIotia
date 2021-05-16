@@ -116,7 +116,7 @@ puis faire CTRL+X et Y pour retournersur le bash.
 
 ## Code des capteurs bluetooth :
 
-L'explication du code des capteurs bluetooth se trouve [ici](https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationFaceDetection.adoc)
+L'explication du code des capteurs bluetooth se trouve [ici](https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/documentation_raspCapteurs.adoc)
 
 Pour mettre le code suivant il faudra que vous soyez dans le dossier project puis faire :
 
