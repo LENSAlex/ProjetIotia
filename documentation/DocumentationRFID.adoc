@@ -1,7 +1,6 @@
 
 // PAGE TITLE
-= Documentation Détecteur de Gaz
-
+= Documentation Lecteur RFID
 
 
 // OVERVIEW SECTION STARTS
@@ -11,61 +10,130 @@
 [float]
 === Description
 // Describe what this Reference term does, and what it is used for	►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-Réceptionne le taux de gaz dans une salle. Les données sont reçus par un M5StickC sur le pin 36. 
+Lit les puces RFID qui sont dans les cartes étudiante pour récuperer l'identifiant de la carte (IUD)
 [%hardbreaks]
 
-image::gaz.jpg[caption="", title="Détecteur de gaz"]
+image::lecteur_RFID_RC522.jpg[caption="", title="Lecteur RFID RC522   "]
+[%hardbreaks]
+
+[float]
+=== Branchement
+// Describe what this Reference term does, and what it is used for	►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+Branchement du lecteur RFID sur le Raspberry
+[%hardbreaks]
+
+image::RFID-Fritz.png[caption="", title=""]
 [%hardbreaks]
 
 
 [float]
-=== Setup
-`void setup()`
+=== Librairie Python
+[source,python]
+----
+#gpio raspberry
+import RPi.GPIO as GPIO
+#librairie lecteur RFID
+import MFRC522
+import signal
+#librairie écran lcd
+import drivers
+#librairie pour client mqtt
+import paho.mqtt.client as mqtt
+#timer
+from time import sleep
+----
+[%hardbreaks]
 
 [#howtouse]
 --
 
 [float]
-=== Code Setup
-Initialisation du M5StickC auquel est relié ce capteur, la lecture de données sur le pin 36 ainsi que le Bluetooth.
+=== Initialisation
+Initialisation du client MQTT, des PINS GPIO pour allumer la led en vert ou en rouge et de l'écran LCD.
 
-[source,arduino]
+[source,python]
 ----
- M5.begin();
- SerialBT.begin("BtGaz"); //Bluetooth device name
- M5.Lcd.setCursor(10, 10);
- M5.Lcd.println(" Taux Gaz :");
- pinMode(36,INPUT);
+#adresse ip broker mqtt
+broker_address="192.168.143.136"
+
+#nomde notre client mqtt
+client = mqtt.Client("RFID_IUD")
+
+#initialisation des pin GPIO
+GPIO.setmode(GPIO.BOARD)
+#variable pour le driver lcd
+display = drivers.Lcd()
+#lecture mqtt
+continue_reading = True
+
+#couleur pour la led 
+GREEN = 11
+RED = 13
+
+#setup des pins pour dire qu'ils sont en sortie
+GPIO.setup(GREEN, GPIO.OUT)
+GPIO.setup(RED, GPIO.OUT)
 ----
 [%hardbreaks]
 
-[float]
-=== Loop
-`void loop()`
 
-[#howtouse]
---
 
 [float]
-=== Code Loop
-Programme qui tourne en permanance sur le M5StickC. Il lis les valeurs du pin 36 et les transmet via Bluetooth
-Il y a également la valeur du capteur affiché sur l'écran du M5StickC
-
-[source,arduino]
+=== Focntion While
+Focntion qui tourne en boucle.
+Elle attend qu'un tag RFID soit lu pour savoir si l'identifiant est correct afin de laisser l'accès à la salle.
+[source,python]
 ----
-  int gaz;
-  //Récupération de la valeur du capteur sur le pin 36
-  gaz=analogRead(36);
-  Serial.println("GAZ Level :");
-  // Affichage dans le terminal pour vérification 
-  Serial.println(gaz);
-  // Envoi de la donnée en bluetooth 
-  SerialBT.println(gaz);
-  //Placement du curseur sur l'écran LCD
-  M5.Lcd.setCursor(25, 70);
-  //Affichage de la donnée sur l'écran LCD
-  M5.Lcd.print(gaz);
-  delay(2000);
+while continue_reading:
+    #extinction des pins
+    GPIO.output(GREEN, GPIO.LOW)
+    GPIO.output(RED, GPIO.LOW)
+    display.lcd_display_string(" Passer le tag:   ",1)
+    display.lcd_display_string("      RFID",2)
+	
+    #Detecte les tags
+    (status,TagType) = MIFAREReader.MFRC522_Request(MIFAREReader.PICC_REQIDL)
+
+    #Une carte a été detecté
+    if status == MIFAREReader.MI_OK:
+        print ("Carte detectee")
+    
+    #Recuperation UID
+    (status,uid) = MIFAREReader.MFRC522_Anticoll()
+
+    if status == MIFAREReader.MI_OK:
+	display.lcd_clear()
+	#integration de l'iud dans une variable string
+	UID = str(uid[0])+str(uid[1])+str(uid[2])+str(uid[3])
+	#print (UID)
+	display.lcd_display_string("UID:"+UID,1)
+	#affiche l'IUD
+        print ("UID de la carte : "+str(uid[0])+"."+str(uid[1])+"."+str(uid[2])+"."+str(uid[3]))
+	sleep(1)
+	
+	if UID == "21713017272":
+		#connection au broker
+		client.connect(broker_address)
+		#publie sur le topic
+		client.publish("/batiment/etages/salles/UID",UID)
+		display.lcd_clear()
+		#accès autoriser et allume le led en vert
+		display.lcd_display_string("      Acces",1)
+		display.lcd_display_string("    Autorisee",2)
+		GPIO.output(GREEN, GPIO.HIGH)
+		sleep(1)
+	else:
+		#connection au broker
+		client.connect(broker_address)
+		#publie sur le topic
+                client.publish("/batiment/etages/salles/UID",UID)
+		#accès autoriser et allume le led en rouge
+		display.lcd_clear()
+		display.lcd_display_string("     Acces",1)
+                display.lcd_display_string("    Refusee",2)
+		GPIO.output(RED, GPIO.HIGH)
+		sleep(1)
+
 ----
 [%hardbreaks]
 
