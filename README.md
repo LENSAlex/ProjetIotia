@@ -66,10 +66,9 @@ Pour le projet Web:
 
 # Définitions des WebServices:
 
-- Get All Capteur (Liste les capteurs via un select *)
-- Post Alerte Covid (Requête post vers la table AlertCovid en envoyé une ligne avec la date et la personne qui à le covid)
-- Put Alerte pénurie (Update un produit en stock par un 0 (donc pas en stock))
-- Get Capteur de la salle via search (Cherche les capteurs d'une salle via le numéro de salle)
-- Get Count des malades d'un salle, bâtiment et iut (Récupère le nombre de malade en fonction de ce qu'on a choisit)
-- Get list des équipements pour le stock (Liste les équipements disponible dans l'établissement)
+- Get sont utiliser pour recupérair est afficher les donnée sur un tableau , le token ou des dropdwon
+- Post sont utiliser pour crée des donnée en fonction de ce que vous avez ramplie dans le formulaire 
+- Put sont utiliser pour modifier les donnée en fonction de ce que vous avez ramplie dans le formulaire 
+- Delete sont utiliser pour supprimer les donnée en fonction de celui que vous avez choisi 
+
 
