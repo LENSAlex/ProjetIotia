@@ -141,9 +141,6 @@ while continue_reading:
 [#see_also]
 --
 
-[float]
-=== Voir d'autres documentations
 
-[role="language"]
 
 
