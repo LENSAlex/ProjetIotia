@@ -1,5 +1,35 @@
-#Librairie python 
 
+// PAGE TITLE
+= Documentation Lecteur RFID
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+// Describe what this Reference term does, and what it is used for	►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+Lit les puces RFID qui sont dans les cartes étudiante pour récuperer l'identifiant de la carte (IUD)
+[%hardbreaks]
+
+image::lecteur_RFID_RC522.jpg[caption="", title="Lecteur RFID RC522   "]
+[%hardbreaks]
+
+[float]
+=== Branchement
+// Describe what this Reference term does, and what it is used for	►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+Branchement du lecteur RFID sur le Raspberry
+[%hardbreaks]
+
+image::RFID-Fritz.png[caption="", title=""]
+[%hardbreaks]
+
+
+[float]
+=== Librairie Python
+[source,python]
+----
 #gpio raspberry
 import RPi.GPIO as GPIO
 #librairie lecteur RFID
@@ -9,10 +39,20 @@ import signal
 import drivers
 #librairie pour client mqtt
 import paho.mqtt.client as mqtt
-
 #timer
 from time import sleep
+----
+[%hardbreaks]
 
+[#howtouse]
+--
+
+[float]
+=== Initialisation
+Initialisation du client MQTT, des PINS GPIO pour allumer la led en vert ou en rouge et de l'écran LCD.
+
+[source,python]
+----
 #adresse ip broker mqtt
 broker_address="192.168.143.136"
 
@@ -33,24 +73,17 @@ RED = 13
 #setup des pins pour dire qu'ils sont en sortie
 GPIO.setup(GREEN, GPIO.OUT)
 GPIO.setup(RED, GPIO.OUT)
+----
+[%hardbreaks]
 
-#Fonction qui arrete la lecture et le programme proprement 
-def end_read(signal,frame):
-    display.lcd_clear()
-    global continue_reading
-    print ("Lecture terminée")
-    continue_reading = False
-    GPIO.cleanup()
 
-signal.signal(signal.SIGINT, end_read)
 
-#Lectrure protocole MIFARE pour le lecteur RFID
-MIFAREReader = MFRC522.MFRC522()
-
-print ("Passer le tag RFID a lire")
-display.lcd_display_string(" Passer le tag:",1)
-display.lcd_display_string("      RFID",2)
-
+[float]
+=== Focntion While
+Focntion qui tourne en boucle.
+Elle attend qu'un tag RFID soit lu pour savoir si l'identifiant est correct afin de laisser l'accès à la salle.
+[source,python]
+----
 while continue_reading:
     #extinction des pins
     GPIO.output(GREEN, GPIO.LOW)
@@ -100,4 +133,20 @@ while continue_reading:
                 display.lcd_display_string("    Refusee",2)
 		GPIO.output(RED, GPIO.HIGH)
 		sleep(1)
+
+----
+[%hardbreaks]
+
+--
+[#see_also]
+--
+
+[float]
+=== Voir d'autres documentations
+
+[role="language"]
+* #LIEN :# link:https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationHaut_parleur.adoc[Documentation Haut Parleur]
+* #LIEN :# link:https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationPorte.adoc[Documentation Porte]
+* #LIEN :# link:https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationPIR.adoc[Documentation PIR]
+* #LIEN :# link:https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationPIR_sortie.adoc[Documentation PIR Sortie]
 

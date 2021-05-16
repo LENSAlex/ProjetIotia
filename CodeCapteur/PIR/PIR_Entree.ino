@@ -7,7 +7,7 @@ void setup() {
   //Initialisation du bluetooph nom du peripherique
     SerialBT.begin("PirEntreeBL");
     
-  //Initialisation du M5stack 
+  //Initialisation du M5stickC
     M5.begin();
     //Couleur Ecran
     M5.Lcd.fillScreen(BLACK);

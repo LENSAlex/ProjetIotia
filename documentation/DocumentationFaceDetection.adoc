@@ -1,0 +1,108 @@
+
+// PAGE TITLE
+= Documentation de la detection des visages
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Description
+// Describe what this Reference term does, and what it is used for	►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+Une camera va envoyé un flux vidéo au raspberry, à l'aide de python et d'une librairie intitulé Opencv, elle va nous permettre de lire le flux vidéo et de detecter les visages 
+afin de savoir combien de personnes se trouve dans une salle.
+[%hardbreaks]
+
+image::webcam.jpg[caption="", title="camera connecté au raspberry en USB"]
+[%hardbreaks]
+
+[float]
+=== Librairie Python
+[source,python]
+----
+#librairie OpenCV
+import cv2
+#timer
+from time import sleep
+import sys
+#libairie mqtt client
+import paho.mqtt.client as mqtt
+----
+[%hardbreaks]
+
+[#howtouse]
+--
+
+[float]
+=== Initialisation
+Initialisation du client MQTT du fichier XML qui contient les vecteurs qui permette de detecter les visages et du flux video.
+
+[source,python]
+----
+#adresse ip broker mqtt
+broker_address = "192.168.143.136"
+
+#nom de notre client mqtt
+client = mqtt.Client("camera")
+
+#lecture du fichier contenant les vecteurs pour detecter les visages
+face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+
+#http://192.168.1.114:99/videostream.cgi?user=admin&pwd=&resolution=32&rate=0
+#cap = cv2.VideoCapture("http://192.168.143.141:8081/")
+
+#lecture du flux video de la camera connecté en USB
+cap = cv2.VideoCapture(0)
+print("lancement du flux vidéo")
+----
+[%hardbreaks]
+
+
+
+[float]
+=== Focntion While
+Focntion qui tourne en boucle.
+Elle envoie en permanence le nombre de personne que la camera detecte meme quand il y en a pas sur le broker MQTT.
+[source,python]
+----
+while True:
+    _, img = cap.read()
+    #convertie l'image en gris 
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    #detecte les visages 
+    faces = face_cascade.detectMultiScale(gray, 1.1, 4)
+    #dessine un rectancgle autour du visages
+    for (x, y, w, h) in faces:
+        cv2.rectangle(img, (x, y), (x+w, y+h), (255, 0, 0), 2)
+    #variables qui enregistre le nombres de rectangles qu'il detecte
+    nb_pers = len(faces)
+    #print(nb_pers)
+    
+    #connection au broker
+    client.connect(broker_address)
+    #publie sur le topic le nombre de personne
+    client.publish("/batiment/etages/salles/nombre_pers",nb_pers)
+    sleep(1)
+    #cv2.imshow('img', img)
+    #stop le programme si la touche escape est appuyé
+    k = cv2.waitKey(30) & 0xff
+    if k == 27:
+        break
+cap.release()
+----
+[%hardbreaks]
+
+--
+[#see_also]
+--
+
+[float]
+=== Voir d'autres documentations
+
+[role="language"]
+* #LIEN :# link:https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationHaut_parleur.adoc[Documentation Haut Parleur]
+* #LIEN :# link:https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationPorte.adoc[Documentation Porte]
+* #LIEN :# link:https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationPIR.adoc[Documentation PIR]
+* #LIEN :# link:https://github.com/LENSAlex/ProjetIotia/blob/Code_Capteur/documentation/DocumentationPIR_sortie.adoc[Documentation PIR Sortie]
+
