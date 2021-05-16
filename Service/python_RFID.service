@@ -1,0 +1,10 @@
+[Unit]
+Description=lis RFID et envoie en mqtt
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python /home/pi/Documents/python/project/read_RFID.py
+
+[Install]
+WantedBy=multi-user.target

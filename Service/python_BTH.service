@@ -1,0 +1,10 @@
+[Unit]
+Description=lis RFID et envoie en mqtt
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python3 /home/pi/project/codeCapteurs_Fenetre_HautParleur_Mouvements_Gaz.py
+
+[Install]
+WantedBy=multi-user.target

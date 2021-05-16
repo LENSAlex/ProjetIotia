@@ -1,0 +1,10 @@
+[Unit]
+Description=donne le nombre de visage que la camera detecte et envoie en mqtt
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python3 /home/pi/project/face_detection.py
+
+[Install]
+WantedBy=multi-user.target
