@@ -1,0 +1,21 @@
+#Configuration du server DHCP
+
+Tout d'abord, configuration du routeur 
+linksys ip 192.168.1.12(255.255.255.0)
+info routeur 
+[hard reset(https://karsmic.wordpress.com/2010/05/05/resetting-the-root-password-in-openwrt/)
+
+Instalation du paquet isc-dhcp-serveri
+
+Info dhcp 
+https://www.reddit.com/r/sysadmin/comments/fdcmdn/iscdhcpserver_bugs_on_either_our_web_page_or_in/fjghzyr/ 
+country=FR
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+
+network={
+	ssid="iot-ecovid"
+	key_mgmt=NONE
+}
+
+

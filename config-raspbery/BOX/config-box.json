@@ -1,0 +1,28 @@
+# Configuration file for a BOX 
+{
+   "hostname": "BOX-1",
+   "mac": "ec:22:4e:ff:ab:b1", 
+   "localisation": {
+      "campus"    : "campus1",
+      "batiment"  : "batiment1",
+      "etage"     : "1",
+      "salle"     : "1"
+   },
+
+   "ipGateway": "192.168.1.1",
+   "modules": [
+   "capteurs": [
+      {"id": "tmp-1", "type":"temperature", "mac":"80:c5:f2:e7:38:6f", "label": "temperature salle"},
+      {"id": "co2-1", "type":"co2", "mac":"e0:c5:f2:e7:38:6e", "seuil":"35", "label": " co2"},
+      {"id": "cam-1", "type":"camera", "mac":"f2:e7:66:e7:38:6f", "label": "camera salle"},
+      {"id": "rfid-1", "type":"rfid", "mac":"f2:e7:66:e7:38:6f", "label": "badgeur rfid"}
+   ],
+   "actionneurs": [
+      {"id": "ver-1",  "type":"verou", "mac":"80:c5:f2:e7:38:6f", "label": "verrou porte 1"},
+      {"id": "ver-2",  "type":"verou", "mac":"e0:c5:f2:e7:38:6e", "label": "verrou porte 2"},
+      {"id": "ala-1",  "type":"alarme", "mac":"f2:e7:66:e7:38:6f", "label": "alarme salle"},
+      {"id": "lcd-1",  "type":"ecranLcd", "mac":"f2:e7:66:e7:38:6f", "label": "ecran lcd"}
+   ]
+   ]
+ 
+}

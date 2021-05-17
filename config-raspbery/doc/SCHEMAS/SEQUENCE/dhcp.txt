@@ -1,0 +1,62 @@
+@startuml
+
+Serveur  -[#green]>     Dhcp     : <color #3cb371> MQTT  **sub** -h @ipDHCP(static) -t **/iotCONFIG/*** //QoS 3//</color>
+activate Broker #blue
+Broker 	-[#blue]>      Dhcp 	   : <color #0000ff> **Discover**</color>
+note right                        : **Initialisation**
+Dhcp 	   -[#blue]>      Broker   : <color #0000ff> Attribution **@ipBroker** (dynamique)
+deactivate Broker
+Broker   -[#green]>     Dhcp     : <color #3cb371> MQTT  **sub** -h @ipDHCP -t **/iotCONFIG/BROKER/$MAC_BROKER**//QoS 2//</color>
+Broker   -[#green]>     Dhcp     : <color #3cb371> MQTT  **pub** -h @ipDHCP -t **/iotCONFIG/BROKER/$MAC_BROKER** -m {MAC:$MAC_BROKER, IP:$BROKER} //QoS 2//</color>
+Serveur  -[#green]>     Dhcp     :  <color #3cb371> MQTT  **pub** -h @ipDHCP -t **/iotCONFIG/BROKER/$MAC_BROKER** -m {LOCATISATION :"c/b", CONFIGURATION_BROKER=$confBROKER} //QoS 2//</color>
+note left                        
+ **Le serveur** stock $IP_BROKER et envoie 
+la configuration correspondant a $MAC_BROKER
+end note
+
+activate Box #blue
+note right                        : **Initialisationi Box**
+Box      -[#blue]>      Dhcp     : <color #0000ff> **Discover**</color>
+Dhcp 	   -[#blue]>      Box      : <color #0000ff> Attribution **@ipBox**(dynamique) recuperation @ipDHCP
+deactivate Box
+Box      -[#green]>     Dhcp     : <color #3cb371> MQTT  **sub** -h @ipDHCP -t **/iotCONFIG/BOX/$MAC_BOX**//QoS 2//</color>
+Box   -[#green]>     Dhcp     : <color #3cb371> MQTT  **pub** -h @ipDHCP -t **/iotCONFIG/BOX/$MAC_BOX** -m {MAC:$MAC_BOX, IP:$ipBOX} //QoS 2//</color>
+Serveur  -[#green]>     Dhcp     :  <color #3cb371> MQTT  **pub** -h @ipDHCP -t **/iotCONFIG/BOX/$MAC_BOX** -m {LOCATISATION :"c/b/e/s", IP_BROKER=$ipBROKER, CONFIGURATION_BOX=$confBOX} //QoS 2//</color>
+Serveur  -[#green]>     Broker     : <color #3cb371> MQTT  **sub** -h @ipiBroker -t **/iot/*** //QoS 3//</color>
+Broker  -[#green]>      Serveur     : <color #3cb371> MQTT  **sub** -h @ipDHCP -t **/iot/*** //QoS 3//</color>
+note left                        
+**Le serveur** stocke $IP_BOX et envoie 
+la configuration correspondant a $MAC_BOX
+confBOX={ 
+   hostname , 
+   localisation, 
+
+   lst_SENSOR=[mac,type],
+   lst_ACTION=[mac,type]}
+end note
+
+Dhcp     -->            Box      
+note right
+Initialisation de la box 
+écoute sur le topic **/BOX/$MAC_BOX** sur lequel
+est publié sa configuration qui lui permet de s'initialiser:
+définition hostname
+initialisation de ses devices (actionneurs/Senseurs)
+souscription topic MQTT
+end note
+activate Box #yellow
+Box      ->             Box      :  Définition **HOSTNAME**=$hostname
+Box      ->             Box      :  Sauvegarde **IP_BROKER**=$ipBROKER 
+Box      ->             Box      :  Définition **LOCALISATION**={**campus**=$c,**batiment**=$b,**etage**=$e,**salle**=$s}
+Box   -[#green]>        Broker   : <color #3cb371> MQTT  **sub** -h @ipBROKER -t **/iot/$campus/$batiment/$etage/$salle** </color>
+
+activate  Box #red
+Box      ->             Box      :  Initialisation devices
+Box      -[#green]>     Broker   : <color #3cb371> MQTT  **pub** -h @ipDHCP -t **/iot/$campus/$batiment/$etage/$salle/${capteur|actionneur}** -m {init ok} </QoS 2//</color>
+Box      -[#green]>     Broker   : <color #3cb371> MQTT  **sub** -h @ipDHCP -t **/iot/$campus/$batiment/$etage/$salle/${capteur|actionneur}** </QoS 2//</color>
+deactivate Box
+Box      ->             Box      : debut relevé capteurs 
+deactivate Box
+
+
+@enduml

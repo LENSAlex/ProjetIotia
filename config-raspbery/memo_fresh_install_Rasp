@@ -23,3 +23,13 @@ To configure wpa suplicant(https://linuxconfig.org/how-to-connect-to-wifi-from-t
 /!\ interface reseau par defaut : p2p-interfqce, l'enlever dans /var/run/wpa_supplicant/p2p...
 
 
+country=FR
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+
+network={
+	ssid="iot-ecovid"
+	key_mgmt=NONE
+}
+
+
