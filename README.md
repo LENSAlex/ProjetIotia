@@ -73,4 +73,6 @@ Pour le projet Web:
 
 
 # Documentation:
+https://github.com/LENSAlex/ProjetIotia/blob/DevWeb/Smart_ECovid_IUT/Documentation/ClasseE-Covid.xml
+
 
