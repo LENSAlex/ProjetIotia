@@ -1,0 +1,26 @@
+#tramme envoie mqtt de la collecte de donnes
+
+mosauitto_pub -h $IP_GATEWAY -t /iot/$campus/$batiment/$etage/$salle -m "
+{
+   "mesure": [
+      {"id": "tmp-1", "type":"temperature", "value":"12.5"},
+      {"id": "co2-1", "type":"co2", "value": "32.5"},
+      {"id": "cam-1", "type":"camera",  "value": "5"},
+      {"id": "rfid-1", "type":"rfid",  "value": "3154126"}
+   ]
+}"
+
+mosauitto_sub -h $IP_GATEWAY -t /iot/$campus/$batiment/$etage/$salle >>  "
+{
+   "actionneurs": [
+      {"id": "ver-1", "type":"verou", "value":"true"},
+      {"id": "alarme", "type":"co2", "value": "32.5"},
+      {"id": "lcd-1", "type":"lcd",  "value": ["antoine", "plantier"]},
+      {"id": "rfid-1", "type":"rfid",  "value": "32.5"}
+   ]
+   "seuil": [
+       "co2":"45",
+      "temperature-bas": "11",
+      "temperature-haut": "35"
+   ]
+}"
