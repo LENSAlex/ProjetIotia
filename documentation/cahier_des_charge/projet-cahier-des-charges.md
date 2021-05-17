@@ -39,9 +39,9 @@ Ces données seront transmises a un noeud collecteur du campus.
 
 Le campus possède un noeud collectant les rapports de tous les batiments.
 
-##Définitions des services 
+## Définitions des services 
 
-##Schéma Fonctionnel
+## Schéma Fonctionnel
 
 ##
 =======
