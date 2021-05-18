@@ -58,14 +58,24 @@ Pour le projet Web:
 - 1] Ouvrez l'application
 - 2] Vous arrivez ensuite sur une page d'authentification, utiliser vos identifiants de connexion 
 - 3] Vous avez ensuite accès aux pages de l'application web et au tableau de bord (Acccuil) avec c'est 3 card clicable et ca bar de navigation a gauche
+- 4] Pour crée un Utilisateur , Promotion , Module ou Batiment il vous faul aller dans la bar de navigation et choisir ce que vous voulez créé
+- 5] Pour voir un Utilisateur , Promotion , Module ou Batiment il vous faul aller dans la bar de navigation et choisir ce que vous voulez regarder
+- 6] Pour modifier un Utilisateur , Promotion , Module ou Batiment il vous faul aller dans la bar de navigation , puis dans la liste d'affichage que vous voulez puit choisir
+- 7] Pour supprimer un Utilisateur , Promotion , Module ou Batiment il vous faul aller dans la bar de navigation , puis dans la liste d'affichage que vous voulez puit choisir
 
 
 # Définitions des WebServices:
 
-- Get All Capteur (Liste les capteurs via un select *)
-- Post Alerte Covid (Requête post vers la table AlertCovid en envoyé une ligne avec la date et la personne qui à le covid)
-- Put Alerte pénurie (Update un produit en stock par un 0 (donc pas en stock))
-- Get Capteur de la salle via search (Cherche les capteurs d'une salle via le numéro de salle)
-- Get Count des malades d'un salle, bâtiment et iut (Récupère le nombre de malade en fonction de ce qu'on a choisit)
-- Get list des équipements pour le stock (Liste les équipements disponible dans l'établissement)
+- Get sont utiliser pour recupérair est afficher les donnée sur un tableau , le token ou des dropdwon
+- Post sont utiliser pour crée des donnée en fonction de ce que vous avez ramplie dans le formulaire 
+- Put sont utiliser pour modifier les donnée en fonction de ce que vous avez ramplie dans le formulaire 
+- Delete sont utiliser pour supprimer les donnée en fonction de celui que vous avez choisi 
+
+
+# Documentation:
+- 1] Documentation du code (Class) : https://github.com/LENSAlex/ProjetIotia/blob/DevWeb/Smart_ECovid_IUT/Documentation/ClasseE-Covid.xml
+- 2] Documentation du code (Back) : https://github.com/LENSAlex/ProjetIotia/blob/DevWeb/Smart_ECovid_IUT/Documentation/Smart_ECovid_IUT.xml
+- 3] Documentation Use case : https://github.com/LENSAlex/ProjetIotia/blob/documentation/IHM_Web.drawio
+- 4]  Documentation IHM : https://github.com/LENSAlex/ProjetIotia/blob/documentation/UseCaseWebAdmin.drawio
+
 
