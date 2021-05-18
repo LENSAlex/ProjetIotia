@@ -84,3 +84,7 @@ pour utiliser les documentations 3 et 4 il faut :
 - 3] chercher les deux ficher de documentation 
 - 4] selectionner les ficher puit le tour et fait
 
+# Diaporama personelle:
+url: https://github.com/LENSAlex/ProjetIotia/edit/DevWeb
+attention c'est un zip il faudra donc le telechager 
+
