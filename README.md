@@ -79,8 +79,8 @@ Pour le projet Web:
 - 4]  Documentation IHM : https://github.com/LENSAlex/ProjetIotia/blob/documentation/UseCaseWebAdmin.drawio
 
 pour utiliser les documentations 3 et 4 il faut : 
-- 1] aller sur https://app.diagrams.net/
-- 2] ce connecter a GitHub 
+- 1] aller sur https://app.diagrams.net/ 
+- 2] ce connecter a GitHub (si vous n'aver pas la posibilier de vous connecter a GitHub dans la permier page il faut alor cliker sur changer storage)
 - 3] chercher les deux ficher de documentation 
 - 4] selectionner les ficher puit le tour et fait
 
