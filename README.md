@@ -85,6 +85,6 @@ pour utiliser les documentations 3 et 4 il faut :
 - 4] selectionner les ficher puit le tour et fait
 
 # Diaporama personelle:
--1] url: https://github.com/LENSAlex/ProjetIotia/blob/DevWeb/PresentationPersonelle.zip
--2] attention c'est un zip il faudra donc clicker sur "View raw" pour le telechager
+- 1] url: https://github.com/LENSAlex/ProjetIotia/blob/DevWeb/PresentationPersonelle.zip
+- 2] attention c'est un zip il faudra donc clicker sur "View raw" pour le telechager
 
